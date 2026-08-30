@@ -1,0 +1,17 @@
+{
+  "all_parameter_gradients_finite": true,
+  "created_at": "2026-08-23T05:13:07+00:00",
+  "encoder": "companion-transformer-state-dict-copy",
+  "encoder_gradient_l1": 63.77564245695248,
+  "family": "hamiltonian",
+  "fixture": "dense-splits-v1",
+  "head_gradient_l1": 0.9162641130387783,
+  "kind": "local_head_encoder_integration_smoke",
+  "n_qubits": 1,
+  "optimization_steps": 0,
+  "reverse_loss": 0.040082331746816635,
+  "schema_version": 1,
+  "seed": 2501,
+  "trajectory_batch_size": 8,
+  "unitary_max_residual": 5.551503538957827e-16
+}

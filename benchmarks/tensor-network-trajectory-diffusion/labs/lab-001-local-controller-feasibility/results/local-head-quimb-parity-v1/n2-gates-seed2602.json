@@ -1,0 +1,17 @@
+{
+  "analytic_gradient": -7.367791840806603e-05,
+  "central_finite_difference_gradient": -7.372970382372539e-05,
+  "circuit_mps_state_max_abs_error": 2.7755575615628914e-17,
+  "created_at": "2026-08-23T05:25:26+00:00",
+  "dense_quimb_unitary_max_abs_error": 8.326672684688674e-17,
+  "family": "gates",
+  "finite_difference_epsilon": 0.0003,
+  "fixture": "dense-splits-v1",
+  "gradient_abs_error": 5.178541565935269e-08,
+  "kind": "local_head_quimb_parity_gradient_check",
+  "n_qubits": 2,
+  "optimization_steps": 0,
+  "quimb_version": "1.11.2",
+  "schema_version": 1,
+  "seed": 2602
+}

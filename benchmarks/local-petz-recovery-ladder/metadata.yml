@@ -1,0 +1,50 @@
+benchmark_id: local-petz-recovery-ladder
+title: Petz Recovery Gap at Mixed-State Criticality
+stage: problem-opened
+paper_ids:
+- liu2025mqdm
+summary: Determine whether the gap between local and global Petz recovery is a finite-size diagnostic of a mixed-state phase transition where the conditional-mutual-information length diverges.
+idea_sources:
+- paper_id: liu2025mqdm
+  source_field: followup_ideas
+  item_index: 1
+  role: recovery-gap-method
+- paper_id: liu2025mqdm
+  source_field: followup_ideas
+  item_index: 0
+  role: scalable-numerics
+- paper_id: liu2025mqdm
+  source_field: potential_pitfalls
+  item_index: 0
+  role: numerical-control
+- paper_id: liu2025mqdm
+  source_field: potential_pitfalls
+  item_index: 1
+  role: diagnostic-control
+research_question: Can the finite-window local-versus-global Petz recovery gap locate and characterize a mixed-state phase transition by tracking the divergence of the conditional-mutual-information Markov length?
+scientific_domain:
+- mixed-state quantum phases
+- quantum error correction
+- quantum information
+- statistical mechanics
+expected_outcomes:
+- Away from a mixed-state transition, the local-global Petz gap is expected to decay exponentially with recovery radius at a scale proportional to the CMI Markov length.
+- At a genuine transition, the recovery radius required to match global recovery is expected to grow with system size and exhibit finite-size scaling consistent with a diverging Markov length.
+- A generic short-range one-dimensional chain is not assumed to host a finite-noise Markov-length transition; the benchmark will either identify a source-supported 1D counterexample or record 1D models as endpoint or negative controls.
+- The decohered toric-code decodability transition is the default primary model because its Markov-length divergence is source-supported and admits a commuting Pauli representation of Petz recovery.
+expected_outputs:
+- A documented model-selection result distinguishing true finite-parameter mixed-state transitions from pure-state criticality, endpoints, and crossovers.
+- Finite-size data for CMI, local-global Petz gap, minimum recovery radius, and logical recovery error across the selected transition.
+- A dense small-system validation of the commuting Petz formulation against a classical Bayesian reverse channel.
+- Tensor-network or statistical-mechanics calculations that scale the selected model beyond dense density matrices.
+- A final research note reporting the transition estimate, scaling analysis, negative controls, and limitations.
+evidence_requirements:
+- Demonstrate CMI-length growth or divergence independently of the Petz gap before labeling any parameter a mixed-state transition.
+- Show that full-system local recovery equals global Petz recovery and that the commuting reduction agrees with dense matrix calculations on the smallest systems.
+- Perform joint finite-size scaling in system size and recovery radius; a single-size peak or pure-state Hamiltonian critical point is insufficient.
+- Compare against at least one 1D negative or endpoint control to establish that the proposed diagnostic does not manufacture a finite transition.
+- Report complete positivity, normalization, numerical convergence, and sampling or contraction uncertainty as controls rather than as the central scientific objective.
+estimated_active_hours: 40
+workstation_feasible: 'yes'
+expert_review: pending
+expert_notes: ''

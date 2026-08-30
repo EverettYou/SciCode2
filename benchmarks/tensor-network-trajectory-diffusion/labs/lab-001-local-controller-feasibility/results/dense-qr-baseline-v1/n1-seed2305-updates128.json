@@ -1,0 +1,29 @@
+{
+  "batch_size": 16,
+  "created_at": "2026-08-23T05:43:00+00:00",
+  "elapsed_seconds": 1.5813343347981572,
+  "epsilon": 0.5,
+  "final_train_batch_loss": 0.02285594679415226,
+  "final_validation_loss": 0.02295862464234233,
+  "fixture": "dense-splits-v1",
+  "initial_validation_loss": 0.05372666381299496,
+  "kind": "bounded_dense_qr_qualification_checkpoint",
+  "model": {
+    "d_model": 64,
+    "n_head": 4,
+    "n_layer": 2,
+    "source": "companion-unmodified PolicyModel",
+    "use_sep": true
+  },
+  "n_qubits": 1,
+  "note": "A fixed small qualification checkpoint only; not a converged baseline or local-head comparison.",
+  "optimizer": {
+    "lr": 0.001,
+    "name": "Adam"
+  },
+  "schema_version": 1,
+  "seed": 2305,
+  "test_loss": 0.022639972623437643,
+  "trajectory_length": 6,
+  "updates": 128
+}

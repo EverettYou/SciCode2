@@ -1,0 +1,40 @@
+paper_id: wang2025mlfgs
+title: Machine Learning for Ground State Preparation via Measurement and Feedback
+authors: Chuanxin Wang, Yi-Zhuang You
+year: 2025
+source_url: https://arxiv.org/abs/2502.06517
+research_area:
+- quantum state preparation
+- reinforcement learning
+- measurement and feedback
+summary: We present a recurrent neural network-based approach for ground state preparation utilizing mid-circuit
+  measurement and feedback. Unlike previous methods that use machine learning solely as an optimizer,
+  our approach dynamically adjusts quantum circuits based on real-time measurement outcomes and learns
+  distinct preparation protocols for different Hamiltonians. Notably, our machine learning algorithm consistently
+  identifies a state preparation strategy wherein all initial states are first steered toward an intermediate
+  state before transitioning to the target ground state. We demonstrate that performance systematically
+  improves as a larger fraction of ancilla qubits are utilized for measurement and feedback, highlighting
+  the efficacy of mid-circuit measurements in state preparation tasks.
+computational_core: Train a recurrent policy to choose measurement-feedback circuit actions for preparing ground states, then evaluate energy, fidelity proxies, robustness to initial states, and generalization across Hamiltonian parameters.
+computational_depth: high
+scientific_judgment: high
+validation_ease: high
+workstation_feasible: yes
+reference_solution_feasible: yes
+non_searchable_extension_possible: yes
+supervision_confidence: high
+followup_ideas:
+- Treat the measurement-feedback policy as a Maxwell-demon-like ground-state-preparation engine. For every trajectory, track system energy, von Neumann entropy, measurement-record information, entropy flow into traced-out ancillas, feedback work, and the Landauer cost of resetting the classical memory; then test the appropriate generalized second-law inequality and identify the thermodynamic role of the learned intermediate state.
+- >-
+  Establish a noise-robustness benchmark for the learned measurement-feedback controller: train in the noiseless simulator and evaluate under calibrated gate, measurement, reset, and classical-feedback noise across a noise-strength sweep; compare with noise-aware training and nonadaptive controls. Test whether adaptive measurements learn recovery behavior that suppresses logical error, while reserving “fault tolerant” for a demonstrated encoded, scalable threshold result.
+potential_pitfalls:
+- A policy may exploit simulator artifacts or a narrow Hamiltonian distribution rather than learn a transferable protocol.
+- Random seeds, reward shaping, and measurement trajectories can dominate apparent improvements.
+- A Maxwell-demon interpretation is invalid unless the measurement implementation, reset of the classical record, and all ancilla entropy flows are included in the thermodynamic accounting.
+- Improved small-system fidelity under noise is not evidence of fault tolerance; that claim requires an encoded noise model, a logical-error metric, and a scalable threshold analysis.
+suggested_task_types:
+- adaptive-control
+- policy-generalization
+- noisy-quantum-simulation
+ai_assessment: Strong benchmark candidate because it turns a clear physical objective into an open-ended adaptive-control problem with exact small-system references. The task can test scientific judgment in state representation, reward design, and validation while remaining workstation-feasible for few-qubit Hamiltonians.
+stage: reviewed

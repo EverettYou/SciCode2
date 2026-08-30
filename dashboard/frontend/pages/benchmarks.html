@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="../static/js/redirect-to-dashboard.js"></script>
+  <script src="../static/js/search-routing.js?v=20260823-1"></script>
+  <script defer src="../static/js/site-shell.js"></script>
+  <title>Benchmarks · Paper to Benchmark</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+  <link rel="stylesheet" href="../static/css/style.css?v=20260823-89">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
+</head>
+<body data-page="benchmarks">
+  <div id="site-header"></div>
+
+  <main class="shell">
+    <section class="page-intro">
+      <p class="eyebrow">SciCode2 PROJECT</p>
+      <h1>Benchmarks</h1>
+      <p>Browse benchmarks and the papers behind them.</p>
+    </section>
+
+    <section class="toolbar papers-toolbar" aria-label="Benchmark controls"><div class="search-control"><i class="fa-solid fa-magnifying-glass search-icon" aria-hidden="true"></i><input id="search" type="search" aria-label="Search benchmarks" placeholder="Title, domain, or describe what you need"></div><div class="sort-control"><span class="sort-label">SORT:</span><div class="sort-picker"><button id="sort-trigger" class="sort-value" type="button" aria-haspopup="menu" aria-expanded="false">stage</button><div id="sort-menu" class="picker-menu sort-menu" role="menu" hidden><button type="button" role="menuitem" data-sort-value="stage">stage</button><button type="button" role="menuitem" data-sort-value="title">title</button><button type="button" role="menuitem" data-sort-value="papers">papers</button></div></div></div></section>
+
+    <section id="benchmark-stats" class="stats" aria-label="Benchmark stage summary"></section>
+    <p id="result-count" class="result-count" aria-live="polite"></p>
+    <section id="benchmark-list" class="catalog benchmark-catalog" aria-live="polite"></section>
+  </main>
+  <div id="copy-notice" class="copy-notice" role="status" aria-live="polite"></div>
+
+  <script src="../static/generated/data.js?v=20260822-27"></script>
+  <script src="../static/js/app.js?v=20260823-41"></script>
+</body>
+</html>

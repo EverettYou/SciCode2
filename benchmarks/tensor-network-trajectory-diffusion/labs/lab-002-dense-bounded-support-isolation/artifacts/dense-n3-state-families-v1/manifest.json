@@ -1,0 +1,91 @@
+{
+  "companion_source": "papers/liu2025mqdm/repo",
+  "config_sha256": "69cde6c38020f51b37c80cf38538c10c90382be6a395aca8960a50da11d4f4e8",
+  "created_at": "2026-08-23T07:14:52+00:00",
+  "files": [
+    {
+      "count": 256,
+      "family": "product",
+      "measurement_seed": 3201,
+      "path": "product-train.pt",
+      "sha256": "33d8452a90344ed4febdbc7fc1fd330c386b1b6bcce24e6f0c526a13bb2b9845",
+      "split": "train",
+      "state_seed": 3231
+    },
+    {
+      "count": 64,
+      "family": "product",
+      "measurement_seed": 3202,
+      "path": "product-validation.pt",
+      "sha256": "a4c8958a1649ee57034f6fdd79e40034858dd7b028865742102089c990d17051",
+      "split": "validation",
+      "state_seed": 3232
+    },
+    {
+      "count": 64,
+      "family": "product",
+      "measurement_seed": 3203,
+      "path": "product-test.pt",
+      "sha256": "599e7d438dcc1395d237c3253085487c93fdec36fea8ef2e4ba08ef1ff44ab12",
+      "split": "test",
+      "state_seed": 3233
+    },
+    {
+      "count": 256,
+      "family": "weak-local",
+      "measurement_seed": 3211,
+      "path": "weak-local-train.pt",
+      "sha256": "0c905adb8edb34371823c89bf8c71802ad22736a578b0649651d3f2827c68bba",
+      "split": "train",
+      "state_seed": 3241
+    },
+    {
+      "count": 64,
+      "family": "weak-local",
+      "measurement_seed": 3212,
+      "path": "weak-local-validation.pt",
+      "sha256": "38326ef76111c25361e2f5e7859b7b819ff5fac025533ac01c52332c5cf0b7a2",
+      "split": "validation",
+      "state_seed": 3242
+    },
+    {
+      "count": 64,
+      "family": "weak-local",
+      "measurement_seed": 3213,
+      "path": "weak-local-test.pt",
+      "sha256": "8147f8a443f6b10919099227220138946f12559365d2ad04650712dcd4463689",
+      "split": "test",
+      "state_seed": 3243
+    },
+    {
+      "count": 256,
+      "family": "w3",
+      "measurement_seed": 3221,
+      "path": "w3-train.pt",
+      "sha256": "f6eae0d2a42e5fd408a0e288068543abc7163fd4fb57d9211be045659d20631c",
+      "split": "train",
+      "state_seed": null
+    },
+    {
+      "count": 64,
+      "family": "w3",
+      "measurement_seed": 3222,
+      "path": "w3-validation.pt",
+      "sha256": "45b7fab4eda2d458fdddbf98afe273da2b4d07d9df0ebbd1f8651d269c16701f",
+      "split": "validation",
+      "state_seed": null
+    },
+    {
+      "count": 64,
+      "family": "w3",
+      "measurement_seed": 3223,
+      "path": "w3-test.pt",
+      "sha256": "d094a4383aaa4509702883a37e72f8a7e92ee457457e01cdff1353893ee8b6eb",
+      "split": "test",
+      "state_seed": null
+    }
+  ],
+  "generator": "prepare_dense_n3_state_families.py",
+  "schema_version": 1,
+  "torch_version": "2.13.0"
+}

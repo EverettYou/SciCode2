@@ -1,0 +1,13 @@
+.env
+.env.*
+!.env.example
+.DS_Store
+*.log
+papers/*/history/
+.tmp/*
+!.tmp/README.md
+.venv/
+.uv-cache/
+.uv-python/
+__pycache__/
+*.pyc

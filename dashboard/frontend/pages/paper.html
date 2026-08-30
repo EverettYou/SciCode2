@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="../static/js/redirect-to-dashboard.js"></script>
+  <script defer src="../static/js/site-shell.js"></script>
+  <title>Paper · Paper to Benchmark</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+  <link rel="stylesheet" href="../static/css/style.css?v=20260823-89">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
+</head>
+<body data-page="paper-detail">
+  <div id="site-header"></div>
+
+  <main class="detail-shell">
+    <a class="back-link" href="papers.html">← All papers</a>
+    <section id="paper-header" class="paper-detail-header" aria-live="polite"></section>
+
+    <section class="paper-workspace">
+      <div class="paper-left-column">
+        <section id="assessment-panel" class="workspace-panel assessment-panel"></section>
+      </div>
+      <section id="pdf-panel" class="workspace-panel pdf-panel"></section>
+    </section>
+  </main>
+
+  <dialog id="delete-dialog" class="confirm-dialog" aria-labelledby="delete-dialog-message">
+    <form method="dialog">
+      <p id="delete-dialog-message">Delete this item?</p>
+      <div class="confirm-dialog-actions">
+        <button class="confirm-cancel-button" type="submit" value="cancel">Cancel</button>
+        <button class="confirm-delete-button" type="submit" value="delete">Delete</button>
+      </div>
+    </form>
+  </dialog>
+
+  <div id="copy-notice" class="copy-notice" role="status" aria-live="polite"></div>
+
+  <script src="../static/js/paper.js?v=20260822-17"></script>
+</body>
+</html>

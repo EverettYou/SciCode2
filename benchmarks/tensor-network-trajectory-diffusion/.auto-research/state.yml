@@ -1,0 +1,55 @@
+schema_version: 1
+benchmark_id: tensor-network-trajectory-diffusion
+status: active
+created_at: '2026-08-23T03:20:46Z'
+updated_at: '2026-08-23T17:15:00Z'
+automations:
+  research:
+    id: auto-research-tensor-network-trajectory-diffusion-research
+    name: auto-research:tensor-network-trajectory-diffusion:research
+    interval_minutes: 10
+  supervisor_synthesis:
+    id: auto-research-tensor-network-trajectory-diffusion-supervisor-synthesis
+    name: auto-research:tensor-network-trajectory-diffusion:supervisor-synthesis
+    interval_minutes: 60
+cursors:
+  last_reference_ingested: null
+  last_lab_ingested: lab:lab-001@sha256:dc32def94cb08ad944f33183ae9e85879eda374dcab7614dc1f4d2d2c9c34578
+  last_synthesis_evidence_digest: 5435fbd29156a7ff9455103ca44ef2982c72013f85da5cf8fb9247831cb05e06
+progress:
+  last_supported_evidence_at: '2026-08-23T06:59:43Z'
+  last_meaningful_progress_at: '2026-08-23T17:15:00Z'
+  last_lab_heartbeat_at: '2026-08-23T17:15:00Z'
+  consecutive_no_evidence_syntheses: 0
+  last_action_signature: lab-002:one-step:weak-local:depth-gate:r2:3307
+  repeated_action_count: 0
+  failure_signature: null
+  repeated_failure_count: 0
+  active_lab_id: lab-002
+  active_lab_stage: one-step-in-progress
+  last_steering_decision_at: null
+  last_direction_change_at: null
+  pending_human_thread_id: null
+policy:
+  diagnostic_after_no_progress_cycles: 3
+  repeated_action_limit: 3
+  repeated_failure_limit: 2
+  heartbeat_stale_minutes: 30
+  direction_change_cooldown_hours: 6
+  research_lease_minutes: 9
+  synthesis_lease_minutes: 55
+budgets:
+  max_active_hours: null
+  max_lab_runtime_minutes: null
+  max_consecutive_failures: 3
+last_run:
+  research:
+    timestamp: '2026-08-23T17:15:00Z'
+    outcome: progress
+    action: lab-002:one-step:weak-local:depth-gate:r2:3307
+    details: 'Completed weak-local/depth-gate/R2 seed 3307: 128/128 updates in 3.18 s, finite reloadable checkpoint, mean validation teacher-forced fidelity 0.154512, test sealed. Four of five R2 seeds are complete; advanced the next bounded cell to R2 seed 3309 without interval estimation, optimizer diagnosis, support comparison, cross-panel interpretation, locality inference, or prohibited scaling. Benchmark validation and git diff check pass.'
+  supervisor_synthesis:
+    timestamp: '2026-08-23T16:59:20Z'
+    outcome: healthy-in-flight
+    action: lab-002:await-weak-local-depth-gate-r2-row
+    details: 'Lab 002 has fresh bounded Stage 4 progress: weak-local/depth-gate full-reference row is complete and two of five paired R2 cells are complete; test remains sealed. The prior weak-local/coefficient panel remains correctly uninformative, and no cross-panel conclusion is made. The report is running and audit fails only on status, so candidate artifacts are not supported evidence and the synthesis digest remains unchanged. No locality conclusion, MPS, truncation, transfer, spatial sharing, Hamiltonian-head, or N>3 work has occurred.'

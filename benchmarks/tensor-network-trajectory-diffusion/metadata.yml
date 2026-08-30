@@ -1,0 +1,79 @@
+benchmark_id: tensor-network-trajectory-diffusion
+title: Scalable Tensor-Network Quantum Trajectory Diffusion
+stage: researching
+paper_ids:
+- liu2025mqdm
+summary: Construct and test a size-transferable tensor-network algorithm for trajectory-level reverse
+  quantum diffusion on low-entanglement one-dimensional chains.
+idea_sources:
+- paper_id: liu2025mqdm
+  source_field: followup_ideas
+  item_index: 0
+  role: primary-scaling-direction
+- paper_id: liu2025mqdm
+  source_field: potential_pitfalls
+  item_index: 0
+  role: physical-validity-control
+- paper_id: liu2025mqdm
+  source_field: potential_pitfalls
+  item_index: 1
+  role: distributional-validation
+- paper_id: liu2025mqdm
+  source_field: potential_pitfalls
+  item_index: 2
+  role: trajectory-ensemble-boundary
+research_question: Can a record-conditioned, translation-equivariant local control Hamiltonian or local-gate
+  circuit trained on short MPS trajectories reverse weak-measurement quantum diffusion on unseen longer
+  1D chains with controlled error and polynomial measured cost?
+scientific_domain:
+- quantum machine learning
+- tensor networks
+- quantum trajectories
+- measurement and feedback control
+expected_outcomes:
+- Local Kraus updates and finite-range feedback may admit MPS/MPO execution with polynomial cost in chain
+  length and bond dimension, avoiding dense state and unitary construction.
+- A spatially shared controller may transfer across system sizes if the required feedback range and temporal
+  record memory remain bounded.
+- Failure may be controlled by growth of trajectory entanglement, controller range, or record memory;
+  isolating that resource would define the algorithm's validity boundary.
+expected_outputs:
+- A one- and two-qubit companion dense-QR behavioral reference plus an exact encoder/QR refactor regression;
+  these sizes qualify the implementation but do not test locality when R is at least N.
+- A dense-to-MPS parity suite for forward weak-measurement trajectories and reverse updates on small chains.
+- A translation-equivariant bounded-range controller whose generic contiguous-block gates are parameterized
+  by QR; optional local-Hamiltonian/Trotter control is a later comparator, not a required low-qubit replacement
+  head.
+- A pinned Quimb reference backend using parametrized circuits, CircuitMPS or MPS gate application, and
+  an automatic-differentiation backend selected by an explicit gradient test.
+- Frozen-checkpoint train-short-test-long experiments with state, trajectory-distribution, entanglement,
+  runtime, and memory metrics.
+- Ablations over bond dimension, controller range, temporal window, measurement strength, diffusion time,
+  and training size.
+- A final research note describing the supported scaling regime or a quantitative obstruction to fixed-resource
+  transfer.
+evidence_requirements:
+- First reproduce and exactly refactor the companion implementation on its one- and two-qubit regime.
+  Test locality only in a separately reviewed experiment with N greater than R; a generic gate on an allowed
+  block may itself use dense QR.
+- Report trajectory-distribution and reduced-state accuracy; agreement of only a few low-order observables
+  is insufficient.
+- Separate tensor-network representation error, controller capacity, record decoding, and autoregressive
+  rollout error with controlled ablations.
+- Demonstrate one frozen checkpoint on at least two unseen larger sizes and measure empirical runtime
+  and memory scaling versus N and bond dimension.
+- Check normalization, outcome probabilities, Hermiticity or unitarity, MPS canonical residuals, and convergence
+  in timestep and bond dimension.
+- Verify reverse-loss gradients against finite differences before training and separately test gradients
+  with and without MPS SVD truncation; do not assume that every Quimb contraction or simplification path
+  is differentiable.
+estimated_active_hours: 48
+workstation_feasible: 'yes'
+expert_review: reviewed
+expert_notes: 'Lab 001 is complete and restricted to N=1,2 dense-baseline and interface qualification.
+  Closed checkpoint T-0006 approves only the state-aware dense N=3, R=2 Lab 002 design with complementary
+  resource panels, staged numerical gates, and conditional locality criteria. Lab 002 itself remains dense-only.
+  Separately, MPS execution at N=1,2,3 is authorized as a no-effective-truncation dense-parity correctness
+  suite; it must reproduce states, probabilities, reverse updates, losses, gradients, and fixed-budget training
+  behavior before large-N use. Truncation, size transfer, spatial sharing, Hamiltonian heads, and scaling claims
+  remain controlled follow-on work.'

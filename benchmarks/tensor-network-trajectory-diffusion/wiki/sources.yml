@@ -1,0 +1,36 @@
+version: 1
+sources:
+- source_id: benchmark:task
+  title: Tensor-network trajectory-diffusion task specification
+  kind: project
+  path: problem/TASK.md
+  revision: workspace:2026-08-23-low-qubit-feasibility-redesign
+  ingested_at: '2026-08-23T02:58:11Z'
+  updated_pages:
+  - wiki/index.md
+  - wiki/thesis.md
+  - wiki/questions/scalable-trajectory-reversal.md
+  - wiki/ideas/research-frontier.md
+- source_id: global:liu2025mqdm
+  title: Global MQDM paper and companion implementation synthesis
+  kind: project
+  path: wiki/papers/liu2025mqdm.md
+  revision: workspace:2026-08-22
+  ingested_at: '2026-08-23T00:00:00Z'
+  updated_pages:
+  - wiki/index.md
+  - wiki/thesis.md
+  - wiki/questions/scalable-trajectory-reversal.md
+  - wiki/ideas/research-frontier.md
+- source_id: lab:lab-001
+  title: Dense-baseline and controller-interface qualification
+  kind: lab
+  path: labs/lab-001-local-controller-feasibility/REPORT.md
+  revision: sha256:dc32def94cb08ad944f33183ae9e85879eda374dcab7614dc1f4d2d2c9c34578
+  ingested_at: '2026-08-23T06:13:50Z'
+  updated_pages:
+  - wiki/index.md
+  - wiki/thesis.md
+  - wiki/questions/scalable-trajectory-reversal.md
+  - wiki/ideas/research-frontier.md
+  - wiki/implementations/dense-qr-controller-reference.md

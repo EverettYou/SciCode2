@@ -1,0 +1,24 @@
+{
+  "batch_size": 16,
+  "created_at": "2026-08-23T05:54:23+00:00",
+  "epsilon": 0.5,
+  "fixture": "dense-splits-v1",
+  "kind": "held_out_dense_qr_reversal_fidelity",
+  "maximum_fidelity": 0.9685901730029862,
+  "mean_fidelity": 0.4139677192575532,
+  "minimum_fidelity": 0.00988823013154952,
+  "n_qubits": 2,
+  "note": "Held-out companion dense-QR baseline evidence only; not a locality or scaling result.",
+  "optimizer": {
+    "lr": 0.001,
+    "name": "Adam"
+  },
+  "reversal_steps": 5,
+  "sample_std_fidelity": 0.2907461538613686,
+  "schema_version": 1,
+  "seed": 2302,
+  "split": "test",
+  "target": "computational_zero",
+  "trajectory_length": 6,
+  "updates": 128
+}

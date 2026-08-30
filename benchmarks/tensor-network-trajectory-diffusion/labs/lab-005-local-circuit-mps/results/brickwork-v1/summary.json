@@ -1,0 +1,46 @@
+{
+  "created_at": "2026-08-30T04:54:43+00:00",
+  "large_n": [
+    {
+      "dense_state_bytes_complex128": 256,
+      "elapsed_seconds": 0.020868249994236976,
+      "kind": "local_qr_circuit_mps_sweep",
+      "layers": 6,
+      "n_qubits": 4,
+      "realized_max_bond": 4
+    },
+    {
+      "dense_state_bytes_complex128": 4096,
+      "elapsed_seconds": 0.05012816603993997,
+      "kind": "local_qr_circuit_mps_sweep",
+      "layers": 6,
+      "n_qubits": 8,
+      "realized_max_bond": 4
+    },
+    {
+      "dense_state_bytes_complex128": 1048576,
+      "elapsed_seconds": 0.13469524995889515,
+      "kind": "local_qr_circuit_mps_sweep",
+      "layers": 6,
+      "n_qubits": 16,
+      "realized_max_bond": 4
+    },
+    {
+      "dense_state_bytes_complex128": 268435456,
+      "elapsed_seconds": 0.38428929197834805,
+      "kind": "local_qr_circuit_mps_sweep",
+      "layers": 6,
+      "n_qubits": 24,
+      "realized_max_bond": 4
+    }
+  ],
+  "parity_n3": {
+    "kind": "local_qr_circuit_dense_mps_parity",
+    "layers": 6,
+    "max_state_abs_error": 3.393026882970953e-15,
+    "n_qubits": 3,
+    "realized_max_bond": 4,
+    "tolerance": 1e-10
+  },
+  "schema_version": 1
+}

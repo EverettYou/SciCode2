@@ -1,0 +1,42 @@
+paper_id: lin2022focni
+title: Fluctuation of Chern Numbers in a Parametric Random Matrix Model
+authors: Hung-Hwa Lin, Wei-Ting Kuo, Daniel P Arovas, Yi-Zhuang You
+year: 2022
+source_url: https://arxiv.org/abs/2207.12562
+research_area:
+- random matrix theory
+- Weyl semimetals
+- topological invariants
+summary: Band-touching Weyl points in Weyl semimetals give rise to many novel characteristics, one of
+  which the presence of surface Fermi-arc states that is topologically protected. The number of such states
+  can be computed by the Chern numbers at different momentum slices, which fluctuates with changing momentum
+  and depends on the distribution of Weyl points in the Brillouin zone. For realistic systems, it may
+  be difficult to locate the momenta at which these Weyl points and Fermi-arc states appear. Therefore,
+  we extend the analysis of a parametric random matrix model proposed by Walker and Wilkinson to find
+  the statistics of their distributions. Our numerical data shows that Weyl points with opposite polarities
+  are short range correlated, and the Chern number fluctuation only grows linearly for a limited momentum
+  difference before it saturates. We also find that the saturation value scales with the total number
+  of bands. We then compute the short-range correlation length from perturbation theory, and derive the
+  dependence of the Chern number fluctuation on the momentum difference, showing that the saturation results
+  from the short-range correlation.
+computational_core: Generate and track Weyl points in a parametric random-matrix Hamiltonian, compute Chern-number changes on momentum slices, and measure fluctuation and correlation-length scaling across ensemble parameters.
+computational_depth: medium
+scientific_judgment: medium
+validation_ease: high
+workstation_feasible: yes
+reference_solution_feasible: yes
+non_searchable_extension_possible: yes
+supervision_confidence: high
+followup_ideas:
+- Compare alternative point-tracking and Chern-number discretization schemes near avoided crossings.
+- Test how the fluctuation saturation changes under a controlled change in matrix ensemble or band count.
+potential_pitfalls:
+- Numerical eigenvalue crossings and branch tracking can create spurious Weyl points.
+- Topological charge requires orientation and discretization conventions to be checked explicitly.
+- Short simulations can confuse finite-window behavior with the asymptotic saturation law.
+suggested_task_types:
+- numerical-topology
+- scaling-analysis
+- implementation-validation
+ai_assessment: A compact and attractive benchmark seed. It has a self-contained random-matrix model, topological outputs with strong invariants, and a natural extension axis through ensemble choice and band number. The scientific difficulty is concentrated in robust point tracking and validation, making it suitable for a shorter workstation-scale task.
+stage: assessed

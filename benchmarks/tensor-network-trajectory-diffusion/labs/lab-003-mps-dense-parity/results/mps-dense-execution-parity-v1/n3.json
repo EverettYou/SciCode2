@@ -1,0 +1,18 @@
+{
+  "created_at": "2026-08-30T04:30:45+00:00",
+  "epsilon": 0.5,
+  "fixture": "dense-n3-state-families-v1/weak-local",
+  "kind": "mps_dense_execution_parity",
+  "max_final_reverse_infidelity": 0.9759315104728283,
+  "max_forward_state_abs_error": 1.0778315928076987e-15,
+  "max_reverse_state_abs_error": 5.978733960281817e-16,
+  "max_selected_probability_abs_error": 3.0531133177191805e-16,
+  "mps_cutoff": 0.0,
+  "mps_max_bond": null,
+  "n_qubits": 3,
+  "policy": "frozen-random-companion-dense-qr",
+  "schema_version": 1,
+  "time_steps": 6,
+  "tolerance": 1e-10,
+  "trajectories_checked": 8
+}

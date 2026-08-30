@@ -1,0 +1,17 @@
+[project]
+name = "scicode2"
+version = "0.1.0"
+description = "Paper-to-benchmark research workspace and dashboard"
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi>=0.109,<1",
+    "networkx>=3.2,<4",
+    "numpy>=2.0,<3",
+    "openai>=2.0,<3",
+    "python-dotenv>=1.0,<2",
+    "pyyaml>=6,<7",
+    "uvicorn>=0.27,<1",
+]
+
+[tool.uv]
+package = false

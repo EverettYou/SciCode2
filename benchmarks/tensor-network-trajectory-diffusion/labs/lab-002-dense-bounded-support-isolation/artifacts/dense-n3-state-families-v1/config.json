@@ -1,0 +1,59 @@
+{
+  "counts": {
+    "test": 64,
+    "train": 256,
+    "validation": 64
+  },
+  "dtype": "complex128",
+  "epsilon": 0.5,
+  "families": [
+    "product",
+    "weak-local",
+    "w3"
+  ],
+  "measurement_seeds": {
+    "product": {
+      "test": 3203,
+      "train": 3201,
+      "validation": 3202
+    },
+    "w3": {
+      "test": 3223,
+      "train": 3221,
+      "validation": 3222
+    },
+    "weak-local": {
+      "test": 3213,
+      "train": 3211,
+      "validation": 3212
+    }
+  },
+  "n_qubits": 3,
+  "product_zero_sentinel_index": 0,
+  "purpose": "approved Lab-002 dense N=3 state-family fixture",
+  "schema_version": 1,
+  "state_seeds": {
+    "product": {
+      "test": 3233,
+      "train": 3231,
+      "validation": 3232
+    },
+    "weak-local": {
+      "test": 3243,
+      "train": 3241,
+      "validation": 3242
+    }
+  },
+  "trajectory_length": 6,
+  "weak_active_bonds": [
+    [
+      0,
+      1
+    ],
+    [
+      1,
+      2
+    ]
+  ],
+  "weak_entangler": "exp(-i * pi/12 * X_j X_{j+1})"
+}

@@ -1,0 +1,50 @@
+{
+  "companion_source": "papers/liu2025mqdm/repo",
+  "created_at": "2026-08-23T04:44:03+00:00",
+  "files": [
+    {
+      "count": 256,
+      "n_qubits": 1,
+      "path": "n1-train.pt",
+      "sha256": "8bd2d6dae72441da300447ebb5c81b1bf98ff739f037c765988eef2420b4fad1",
+      "split": "train"
+    },
+    {
+      "count": 64,
+      "n_qubits": 1,
+      "path": "n1-validation.pt",
+      "sha256": "f2affce79bbf7c2b2360e5cc018ffb10f21f1df4ed541a9ab7c929394709ad10",
+      "split": "validation"
+    },
+    {
+      "count": 64,
+      "n_qubits": 1,
+      "path": "n1-test.pt",
+      "sha256": "57311baba4cee10216f5a94e0e1ebdd4bc6aa899fc9f525df8020dee7c80d162",
+      "split": "test"
+    },
+    {
+      "count": 256,
+      "n_qubits": 2,
+      "path": "n2-train.pt",
+      "sha256": "793ee4f783d778b8fab3faa9d5d097c1a55a90eea8f12cdcd3566d4a47662b52",
+      "split": "train"
+    },
+    {
+      "count": 64,
+      "n_qubits": 2,
+      "path": "n2-validation.pt",
+      "sha256": "fa7fc78a941361afc199290c6dec436ac14e3b4f189f45734ea494f2cf3989c5",
+      "split": "validation"
+    },
+    {
+      "count": 64,
+      "n_qubits": 2,
+      "path": "n2-test.pt",
+      "sha256": "cc6065eb6cc3c1086f43efb217d3c108dfdcbd4248cdafb873feaff4711839a2",
+      "split": "test"
+    }
+  ],
+  "generator": "prepare_dense_splits.py",
+  "torch_version": "2.13.0"
+}

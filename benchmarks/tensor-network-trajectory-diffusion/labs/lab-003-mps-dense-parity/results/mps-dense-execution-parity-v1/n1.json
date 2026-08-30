@@ -1,0 +1,18 @@
+{
+  "created_at": "2026-08-30T04:30:44+00:00",
+  "epsilon": 0.5,
+  "fixture": "dense-splits-v1",
+  "kind": "mps_dense_execution_parity",
+  "max_final_reverse_infidelity": 0.9980864866436433,
+  "max_forward_state_abs_error": 2.2887833992611187e-16,
+  "max_reverse_state_abs_error": 5.117875266520903e-16,
+  "max_selected_probability_abs_error": 8.326672684688674e-17,
+  "mps_cutoff": 0.0,
+  "mps_max_bond": null,
+  "n_qubits": 1,
+  "policy": "frozen-random-companion-dense-qr",
+  "schema_version": 1,
+  "time_steps": 6,
+  "tolerance": 1e-10,
+  "trajectories_checked": 8
+}

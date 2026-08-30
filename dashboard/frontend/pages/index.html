@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="../static/js/redirect-to-dashboard.js"></script>
+  <script src="../static/js/knowledge-types.js?v=20260823-1"></script>
+  <script defer src="../static/js/site-shell.js"></script>
+  <title>Home · Paper to Benchmark</title>
+  <link rel="stylesheet" href="../static/css/style.css?v=20260823-90">
+</head>
+<body data-page="home">
+  <div id="site-header"></div>
+  <main class="shell dashboard-shell">
+    <section class="dashboard-hero"><div><p class="eyebrow">SciCode2 PROJECT</p><h1>Paper to Benchmark</h1><p>See how papers move from discovery to benchmark-ready research tasks.</p></div><div class="hero-actions"><a class="outline-button" href="papers.html">Browse papers →</a><a class="solid-button" href="benchmarks.html">View benchmarks</a></div></section>
+    <section id="overview-stats" class="overview-stats" aria-label="Project overview"></section>
+    <section class="dashboard-grid">
+      <section class="dashboard-panel graph-panel">
+        <div class="panel-title-row graph-title-row">
+          <div><p class="panel-kicker">KNOWLEDGE GRAPH</p><h2>Project knowledge</h2></div>
+          <div class="graph-toolbar" aria-label="Graph controls">
+            <div class="graph-mode" role="group" aria-label="Color nodes by"><button class="active" type="button" data-graph-color="community">Communities</button><button type="button" data-graph-color="type">Types</button></div>
+            <button type="button" data-graph-action="zoom-in" aria-label="Zoom in">+</button>
+            <button type="button" data-graph-action="zoom-out" aria-label="Zoom out">−</button>
+            <button type="button" data-graph-action="fit">Fit</button>
+          </div>
+        </div>
+        <p class="panel-description">Explore the strongest links across papers, concepts, methods, and project knowledge.</p>
+        <div class="knowledge-workbench">
+          <div class="graph-stage"><div id="relation-graph" class="relation-graph knowledge-graph" role="img" aria-label="Weighted project knowledge graph"></div><div id="graph-tooltip" class="graph-tooltip" hidden></div></div>
+          <aside class="graph-sidebar"><div><p class="panel-kicker">LEGEND</p><div id="graph-legend" class="graph-legend"></div></div><div><p class="panel-kicker">GRAPH INSIGHTS</p><div id="graph-insights" class="graph-insights"></div></div></aside>
+        </div>
+        <div class="graph-footer"><span id="graph-count" class="panel-meta"></span><a class="panel-link" href="wiki.html">Open the global wiki →</a></div>
+      </section>
+      <section class="dashboard-panel progress-panel"><div class="panel-title-row"><div><p class="panel-kicker">WORKFLOW</p><h2>Processing progress</h2></div></div><div id="workflow-progress" class="workflow-progress"></div><a class="panel-link" href="papers.html">Open paper workflow →</a></section>
+    </section>
+    <section id="next-panel" class="dashboard-panel next-panel"><div class="panel-title-row"><div><p class="panel-kicker">NEXT STEP</p><h2>Build the first benchmark</h2></div><span class="empty-dot" aria-hidden="true"></span></div><p>No benchmark records exist yet. Once one is added to <code>benchmarks/benchmarks.yml</code>, its ID and source-paper links will appear in the graph automatically.</p><a class="panel-link" href="benchmarks.html">Open benchmark workspace →</a></section>
+  </main>
+    <script src="../static/generated/data.js?v=20260822-27"></script><script src="../static/js/app.js?v=20260823-42"></script>
+</body>
+</html>

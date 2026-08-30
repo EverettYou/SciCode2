@@ -1,0 +1,23 @@
+version: 1
+sources:
+- source_id: benchmark:task
+  title: Benchmark task specification
+  kind: project
+  path: problem/TASK.md
+  revision: workspace:2026-08-22-criticality-redesign
+  ingested_at: '2026-08-23T01:36:46Z'
+  updated_pages:
+  - wiki/index.md
+  - wiki/thesis.md
+  - wiki/questions/recovery-locality-boundary.md
+  - wiki/ideas/research-frontier.md
+- source_id: global:liu2025mqdm
+  title: Global MQDM knowledge page
+  kind: project
+  path: wiki/papers/liu2025mqdm.md
+  revision: workspace:2026-08-22
+  ingested_at: '2026-08-22T22:02:52Z'
+  updated_pages:
+  - wiki/ideas/research-frontier.md
+  - wiki/questions/recovery-locality-boundary.md
+  - wiki/thesis.md

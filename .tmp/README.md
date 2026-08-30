@@ -1,0 +1,3 @@
+# Temporary workspace
+
+This project-level directory holds short-lived staging directories created by download and benchmark-creation workflows, plus reproducible local caches for API-assisted tooling. Individual operation directories are removed after normal completion or failure. Semantic Wiki Lint caches structured results by model, prompt version, and evidence fingerprint here and appends credential-free token accounting to `llm-usage.jsonl`. Do not store canonical research artifacts here; everything under this directory may be regenerated or removed after confirming no process is using it.

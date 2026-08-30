@@ -1,0 +1,41 @@
+paper_id: hu2022lstee
+title: 'Logical shadow tomography: Efficient estimation of error-mitigated observables'
+authors: Hong-Ye Hu, Ryan LaRose, Yi-Zhuang You, Eleanor Rieffel, Zhihui Wang
+year: 2022
+source_url: https://arxiv.org/abs/2203.07263
+research_area:
+- quantum error mitigation
+- logical qubits
+- classical shadows
+summary: We introduce a technique to estimate error-mitigated expectation values on noisy quantum computers.
+  Our technique performs shadow tomography on a logical state to produce a memory-efficient classical
+  reconstruction of the noisy density matrix. Using efficient classical post-processing, one can mitigate
+  errors by projecting a general nonlinear function of the noisy density matrix into the codespace. The
+  subspace expansion and virtual distillation can be viewed as special cases of the new framekwork. We
+  show our method is favorable in the quantum and classical resources overhead. Relative to subspace expansion
+  which requires samples to estimate a logical Pauli observable with error correction code, our technique
+  requires only samples. Relative to virtual distillation, our technique can compute powers of the density
+  matrix without additional copies of quantum states or quantum memory. We present numerical evidence
+  using logical states encoded with up to sixty physical qubits and show fast convergence to error-free
+  expectation values with only samples under 1% depolarizing noise.
+computational_core: Construct logical-state classical shadows under a noise model, apply nonlinear error-mitigation maps in the codespace, and estimate observable bias and sample complexity against exact density-matrix references.
+computational_depth: medium
+scientific_judgment: high
+validation_ease: high
+workstation_feasible: yes
+reference_solution_feasible: yes
+non_searchable_extension_possible: yes
+supervision_confidence: high
+followup_ideas:
+- Compare logical-shadow mitigation with virtual distillation and subspace expansion under correlated rather than independent depolarizing noise.
+- Optimize the logical observable and shot allocation under a fixed sampling budget, reporting both bias and variance.
+potential_pitfalls:
+- A method can reduce bias while increasing variance or post-processing instability.
+- Results depend strongly on the code, decoder, noise channel, and logical observable.
+- Small-code simulations may not predict the resource scaling of larger encoded systems.
+suggested_task_types:
+- error-mitigation
+- resource-scaling
+- method-comparison
+ai_assessment: Strong benchmark candidate because it offers exact small-system references, multiple competing methods, and a scientifically meaningful bias–variance tradeoff. It is feasible on a workstation if the task uses modest stabilizer codes and requires careful resource accounting rather than reproducing the paper's largest demonstrations.
+stage: assessed

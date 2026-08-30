@@ -1,0 +1,50 @@
+paper_id: he2026smgia
+title: Symmetric Mass Generation in a Bilayer Honeycomb Lattice with \(\mathrm{SU}(2)\times\mathrm{SU}(2)\times\mathrm{SU}(2)/\mathbb{Z}_2\)
+  Symmetry
+authors: Cheng-Hao He, Yi-Zhuang You, Xiao Yan Xu
+year: 2026
+source_url: https://arxiv.org/abs/2603.18278
+research_area:
+- quantum Monte Carlo
+- quantum criticality
+- symmetric mass generation
+summary: A central question beyond the Landau paradigm is the non-perturbative critical theory of the
+  symmetric mass generation (SMG) transition, where strong interactions gap Dirac fermions in (2+1) dimensions
+  without triggering spontaneous symmetry breaking or topological order. While previous studies have already
+  provided evidence for direct SMG transitions in (2+1) dimensions, the fermion scaling dimension -- the
+  key observable for distinguishing candidate critical theories -- has not been determined in a controlled
+  unbiased way. In this Letter, using large-scale determinant quantum Monte Carlo (DQMC) simulations of
+  a bilayer honeycomb lattice model with symmetry, we establish a direct continuous transition by observing
+  the simultaneous opening of single-particle and bosonic gaps at a critical coupling with correlation
+  length exponent , while an exhaustive search over all 19 symmetry-inequivalent fermion bilinear order
+  parameters confirms the absence of any symmetry breaking. We further obtain the first controlled unbiased
+  estimate of the fermion anomalous dimension, , which deviates significantly from the large- prediction
+  ( ) and variational Monte Carlo estimates ( ), thereby placing direct quantitative constraints on SMG
+  criticality. By contrasting with a related model that develops an intermediate excitonic phase, we show
+  that pure non-Abelian symmetry plays a decisive role in stabilizing the direct SMG transition.
+computational_core: Finite-size determinant quantum Monte Carlo and scaling analysis of gaps, correlations,
+  and fermion observables near an SMG transition.
+computational_depth: medium
+scientific_judgment: high
+validation_ease: high
+workstation_feasible: uncertain
+reference_solution_feasible: 'yes'
+non_searchable_extension_possible: 'yes'
+supervision_confidence: high
+followup_ideas:
+- Test how a controlled symmetry-preserving perturbation changes the direct transition versus an intermediate
+  excitonic phase.
+- Construct a smaller sign-problem-free variant whose critical exponents can be estimated with multiple
+  finite-size scaling windows.
+potential_pitfalls:
+- Critical exponents can be biased by small system sizes and correction-to-scaling terms.
+- A finite-size gap closing can be mistaken for a continuous transition.
+- Absence of a detected order parameter is not proof of absence without a systematic symmetry analysis.
+suggested_task_types:
+- robustness-study
+- finite-size-scaling
+- method-comparison
+ai_assessment: Strong candidate because it has substantial scientific judgment and many physical checks,
+  but the full DQMC workload may exceed workstation limits unless the task is reduced to a carefully selected
+  observable or smaller model.
+stage: assessed

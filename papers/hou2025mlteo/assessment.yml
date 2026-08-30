@@ -1,0 +1,44 @@
+paper_id: hou2025mlteo
+title: Machine learning the effects of many quantum measurements
+authors: Wanda Hou, Samuel J Garratt, Norhan M Eassa, Eliott Rosenberg, Pedram Roushan, Yi-Zhuang You,
+  Ehud Altman
+year: 2025
+source_url: https://arxiv.org/abs/2509.08890
+research_area:
+- measurement-induced entanglement
+- quantum information
+- scientific machine learning
+summary: Measurements are essential for the processing and protection of information in quantum computers.
+  They can also induce long-range entanglement between unmeasured qubits. However, when post-measurement
+  states depend on many non-deterministic measurement outcomes, there is a barrier to observing and using
+  the entanglement induced by prior measurements. Here we demonstrate a new approach for detecting such
+  measurement-induced entanglement. We create short-range entangled states of one- and two-dimensional
+  arrays of qubits in a superconducting quantum processor, and aim to characterize the long-range entanglement
+  induced between distant pairs of qubits when we measure all of the others. To do this we use unsupervised
+  training of neural networks on observations to create computational models for post-measurement states
+  and, by correlating these models with experimental data, we reveal measurement-induced entanglement.
+  Our results additionally demonstrate a transition in the ability of a classical agent to accurately
+  model the experimental data; this is closely related to a measurement-induced phase transition. We anticipate
+  that our work can act as a basis for future experiments on quantum error correction and more general
+  problems in quantum control.
+computational_core: Train or fit a classical model of post-measurement quantum states and use held-out prediction, correlations, or entanglement proxies to identify a measurement-induced transition.
+computational_depth: medium
+scientific_judgment: high
+validation_ease: medium
+workstation_feasible: yes
+reference_solution_feasible: yes
+non_searchable_extension_possible: yes
+supervision_confidence: high
+followup_ideas:
+- Compare model capacity and inductive bias across one-dimensional and two-dimensional measurement patterns.
+- Determine whether a transition inferred from classical predictability agrees with direct entanglement diagnostics on synthetic circuits.
+potential_pitfalls:
+- Neural-network accuracy can reflect optimization or data imbalance rather than a physical transition.
+- Finite sampling and post-selection can distort long-range correlation estimates.
+- The task must avoid becoming generic hyperparameter tuning.
+suggested_task_types:
+- robustness-study
+- inverse-problem
+- method-comparison
+ai_assessment: "Very promising first benchmark candidate: it supports synthetic data, workstation-scale experiments, multiple validation routes, and a scientifically meaningful extension while allowing the task to focus on physical inference rather than ML tuning."
+stage: assessed

@@ -1,0 +1,745 @@
+{
+  "cells": {
+    "product/coefficient": {
+      "decision": {
+        "delta_f_threshold": 0.05,
+        "informative": false,
+        "label": "uninformative: R1 saturation or unresolved full-head advantage",
+        "multistep_eligible": false,
+        "practically_useful_partial_recovery": null,
+        "q": null,
+        "q_computed": false
+      },
+      "family": "product",
+      "paired_differences": {
+        "full_minus_r1": {
+          "ci95": [
+            0.004740014520563093,
+            0.04126647947921269
+          ],
+          "mean": 0.023003246999887893,
+          "sample_sd": 0.014708675217889072,
+          "values_by_seed": {
+            "3301": 0.034343164554837935,
+            "3303": 0.03861324423108714,
+            "3305": 0.02387206009341758,
+            "3307": 0.001833748201212737,
+            "3309": 0.01635401791888408
+          }
+        },
+        "r2_minus_r1": {
+          "ci95": [
+            -0.3287866708242291,
+            -0.014612723223906915
+          ],
+          "mean": -0.171699697024068,
+          "sample_sd": 0.12651327092305847,
+          "values_by_seed": {
+            "3301": 0.023872762962157734,
+            "3303": -0.22694000807077577,
+            "3305": -0.28605515932988784,
+            "3307": -0.2529074874421412,
+            "3309": -0.11646859323969305
+          }
+        }
+      },
+      "panel": "coefficient",
+      "seeds": [
+        3301,
+        3303,
+        3305,
+        3307,
+        3309
+      ],
+      "source_records": {
+        "full": [
+          {
+            "path": "results/one-step-v1/product/coefficient/full/seed-3301.json",
+            "seed": 3301,
+            "sha256": "aa39c81ec1cce33a211492ee0713f69cc3ced8436a72f725193afef6de826911"
+          },
+          {
+            "path": "results/one-step-v1/product/coefficient/full/seed-3303.json",
+            "seed": 3303,
+            "sha256": "84fbdc606874469735242e63b03749e9e057660b8cc3a4933251cdf2944ce0c7"
+          },
+          {
+            "path": "results/one-step-v1/product/coefficient/full/seed-3305.json",
+            "seed": 3305,
+            "sha256": "61837a2ea632792190b9868d9718500d54ac01755409fee8ef2c5bc1063c578c"
+          },
+          {
+            "path": "results/one-step-v1/product/coefficient/full/seed-3307.json",
+            "seed": 3307,
+            "sha256": "0d55d9644b6eecec0f6c31d052869ea2c72fc5e0e6a65a2fab6f91cd60261665"
+          },
+          {
+            "path": "results/one-step-v1/product/coefficient/full/seed-3309.json",
+            "seed": 3309,
+            "sha256": "e04d944b49fc6d037a9c8fec7b9c7c2bc639943fb506193e5cf50671fa614bdf"
+          }
+        ],
+        "r1": [
+          {
+            "path": "results/one-step-v1/product/coefficient/r1/seed-3301.json",
+            "seed": 3301,
+            "sha256": "1a1c5f3d662af1763e2edd6a6ff089ebcd0e98e6b3742f7bd17576aa78e12f9d"
+          },
+          {
+            "path": "results/one-step-v1/product/coefficient/r1/seed-3303.json",
+            "seed": 3303,
+            "sha256": "c1ae144092bd2631e7f0479eee8cc4d99be4cde96143ded848b52e4366f8eb38"
+          },
+          {
+            "path": "results/one-step-v1/product/coefficient/r1/seed-3305.json",
+            "seed": 3305,
+            "sha256": "deb577ce35d9c0b3bdcd59e579b896a1ec21ab2a3a88ada765432ef8844aa0f2"
+          },
+          {
+            "path": "results/one-step-v1/product/coefficient/r1/seed-3307.json",
+            "seed": 3307,
+            "sha256": "4e61b587f42b065db8198b32748766ec2c9c3d78abe268987a3570b3d977aa4a"
+          },
+          {
+            "path": "results/one-step-v1/product/coefficient/r1/seed-3309.json",
+            "seed": 3309,
+            "sha256": "a2bd0684f713033cea9e994a4ab7245e181994b7636fcb59979729048f2ebcd0"
+          }
+        ],
+        "r2": [
+          {
+            "path": "results/one-step-v1/product/coefficient/r2/seed-3301.json",
+            "seed": 3301,
+            "sha256": "1867557d62d8f84f68d2ae84f67f3db00ff2162ab5eb169f067a7902fd2781ba"
+          },
+          {
+            "path": "results/one-step-v1/product/coefficient/r2/seed-3303.json",
+            "seed": 3303,
+            "sha256": "388f0c2c9439a0ddd9cde316a8a1baed76cdc4e7e224d956da07bbf9894a525f"
+          },
+          {
+            "path": "results/one-step-v1/product/coefficient/r2/seed-3305.json",
+            "seed": 3305,
+            "sha256": "5621a16e7348d3c2b5d46f666fada8efae30e3af7010ae8df55e00c3a807a3e0"
+          },
+          {
+            "path": "results/one-step-v1/product/coefficient/r2/seed-3307.json",
+            "seed": 3307,
+            "sha256": "706f5907c7729fe262928176ace878009a6726f316623969e40278b309c791cc"
+          },
+          {
+            "path": "results/one-step-v1/product/coefficient/r2/seed-3309.json",
+            "seed": 3309,
+            "sha256": "91640e066b55a51aca9614624d61f8b032335f24bab5907897a9d2f9af22e5a0"
+          }
+        ]
+      },
+      "support_fidelity": {
+        "full": {
+          "ci95": [
+            0.4466902341765024,
+            0.4565503934857949
+          ],
+          "mean": 0.45162031383114865,
+          "sample_sd": 0.003970542483134157,
+          "values_by_seed": {
+            "3301": 0.4535515685403579,
+            "3303": 0.45223215166614805,
+            "3305": 0.4553422390095516,
+            "3307": 0.44491857609042335,
+            "3309": 0.45205703384926227
+          }
+        },
+        "r1": {
+          "ci95": [
+            0.4136508332845824,
+            0.443583300377939
+          ],
+          "mean": 0.4286170668312607,
+          "sample_sd": 0.012053368357566117,
+          "values_by_seed": {
+            "3301": 0.41920840398551995,
+            "3303": 0.4136189074350609,
+            "3305": 0.43147017891613404,
+            "3307": 0.4430848278892106,
+            "3309": 0.4357030159303782
+          }
+        },
+        "r2": {
+          "ci95": [
+            0.10438863463311399,
+            0.40944610498127143
+          ],
+          "mean": 0.2569173698071927,
+          "sample_sd": 0.12284219836826388,
+          "values_by_seed": {
+            "3301": 0.4430811669476777,
+            "3303": 0.18667889936428514,
+            "3305": 0.1454150195862462,
+            "3307": 0.1901773404470694,
+            "3309": 0.31923442269068514
+          }
+        }
+      },
+      "test_evaluated": false
+    },
+    "product/depth-gate": {
+      "decision": {
+        "delta_f_threshold": 0.05,
+        "informative": false,
+        "label": "uninformative: R1 saturation or unresolved full-head advantage",
+        "multistep_eligible": false,
+        "practically_useful_partial_recovery": null,
+        "q": null,
+        "q_computed": false
+      },
+      "family": "product",
+      "paired_differences": {
+        "full_minus_r1": {
+          "ci95": [
+            -0.32702832056327363,
+            -0.31484320408508265
+          ],
+          "mean": -0.32093576232417814,
+          "sample_sd": 0.004906768858490852,
+          "values_by_seed": {
+            "3301": -0.32377594883084454,
+            "3303": -0.32021922010877824,
+            "3305": -0.31880166622643413,
+            "3307": -0.3273896706358235,
+            "3309": -0.3144923058190102
+          }
+        },
+        "r2_minus_r1": {
+          "ci95": [
+            -0.31850332345497184,
+            -0.3106486757987635
+          ],
+          "mean": -0.31457599962686766,
+          "sample_sd": 0.0031629521624091475,
+          "values_by_seed": {
+            "3301": -0.31613187958475525,
+            "3303": -0.31062056242276204,
+            "3305": -0.3176852066236468,
+            "3307": -0.311768436478277,
+            "3309": -0.316673913024897
+          }
+        }
+      },
+      "panel": "depth-gate",
+      "seeds": [
+        3301,
+        3303,
+        3305,
+        3307,
+        3309
+      ],
+      "source_records": {
+        "full": [
+          {
+            "path": "results/one-step-v1/product/depth-gate/full/seed-3301.json",
+            "seed": 3301,
+            "sha256": "1d3eddd17aa5f24945cd092310eb30fff6272c44d934c4bc2ae07e1b1f3e7d64"
+          },
+          {
+            "path": "results/one-step-v1/product/depth-gate/full/seed-3303.json",
+            "seed": 3303,
+            "sha256": "a9ad5af7fe68419f06c16efb57dc0b0d1800749fd1a2834c3b7c139b0c64aa03"
+          },
+          {
+            "path": "results/one-step-v1/product/depth-gate/full/seed-3305.json",
+            "seed": 3305,
+            "sha256": "a27888e938b0f7353fcb8fe2acd930a0c9fcf2fbb325346749d73763b05005a4"
+          },
+          {
+            "path": "results/one-step-v1/product/depth-gate/full/seed-3307.json",
+            "seed": 3307,
+            "sha256": "17fee3de2f679acc040fdcb6d210cafbd4b3b56aa4a0f824b00c03b72f377a61"
+          },
+          {
+            "path": "results/one-step-v1/product/depth-gate/full/seed-3309.json",
+            "seed": 3309,
+            "sha256": "9a6b5b8f7dbc51c5d5001477bd0b11293c65971a3470fc4f9e9689ad21839747"
+          }
+        ],
+        "r1": [
+          {
+            "path": "results/one-step-v1/product/depth-gate/r1/seed-3301.json",
+            "seed": 3301,
+            "sha256": "a4a52e0638213e30d8e71ec38c850f57d778f2efcfb6a87d3ad152e630e55cae"
+          },
+          {
+            "path": "results/one-step-v1/product/depth-gate/r1/seed-3303.json",
+            "seed": 3303,
+            "sha256": "0cc9e0ebb21f199121f3aef61f37c527ca168f3fdab4a51e1f4cbaa129f53e21"
+          },
+          {
+            "path": "results/one-step-v1/product/depth-gate/r1/seed-3305.json",
+            "seed": 3305,
+            "sha256": "39ad7e0f37c910051c777812e50e0489301abac33d91fe0542220396fd6dd09e"
+          },
+          {
+            "path": "results/one-step-v1/product/depth-gate/r1/seed-3307.json",
+            "seed": 3307,
+            "sha256": "9c3329a44091dfb3bfa4396f7691a2d3892fdd8f0c5944c351172fec4caf46ae"
+          },
+          {
+            "path": "results/one-step-v1/product/depth-gate/r1/seed-3309.json",
+            "seed": 3309,
+            "sha256": "69299bdd2656dec3630020f67ef8ecd210c3ba2595925f5a72f6dde73c8b8c71"
+          }
+        ],
+        "r2": [
+          {
+            "path": "results/one-step-v1/product/depth-gate/r2/seed-3301.json",
+            "seed": 3301,
+            "sha256": "33bb110fb9f0fc1421cc33d5f1c503a6f25389f838aca8fde046b38a1eaf2e44"
+          },
+          {
+            "path": "results/one-step-v1/product/depth-gate/r2/seed-3303.json",
+            "seed": 3303,
+            "sha256": "394c2fa724f2f30a3dcdecd9b9c75da8c10d3e99816e74105980d8df8ae90082"
+          },
+          {
+            "path": "results/one-step-v1/product/depth-gate/r2/seed-3305.json",
+            "seed": 3305,
+            "sha256": "7becc17263fd6e05088d3979d531fabbaee270424bbbad4348eb57c7e8e54bb1"
+          },
+          {
+            "path": "results/one-step-v1/product/depth-gate/r2/seed-3307.json",
+            "seed": 3307,
+            "sha256": "e851e9939b4a4c55e1cd5d42649780f8fae37a4357d86e515f31a15a11b2cab2"
+          },
+          {
+            "path": "results/one-step-v1/product/depth-gate/r2/seed-3309.json",
+            "seed": 3309,
+            "sha256": "3690b11353f35f6eaf5e7ce3e32e48bbfd8518e8cabc94965b23b20e226ab0ae"
+          }
+        ]
+      },
+      "support_fidelity": {
+        "full": {
+          "ci95": [
+            0.12001463736218765,
+            0.14487745669975172
+          ],
+          "mean": 0.13244604703096968,
+          "sample_sd": 0.010011895075290688,
+          "values_by_seed": {
+            "3301": 0.12790720979717235,
+            "3303": 0.13486628834439163,
+            "3305": 0.12620854654950905,
+            "3307": 0.1243628763946389,
+            "3309": 0.14888531406913652
+          }
+        },
+        "r1": {
+          "ci95": [
+            0.4450885915719376,
+            0.46167502713835795
+          ],
+          "mean": 0.45338180935514777,
+          "sample_sd": 0.006679115924442869,
+          "values_by_seed": {
+            "3301": 0.4516831586280169,
+            "3303": 0.45508550845316986,
+            "3305": 0.4450102127759432,
+            "3307": 0.4517525470304624,
+            "3309": 0.46337761988814674
+          }
+        },
+        "r2": {
+          "ci95": [
+            0.12922422131222655,
+            0.14838739814433388
+          ],
+          "mean": 0.13880580972828022,
+          "sample_sd": 0.007716732086872719,
+          "values_by_seed": {
+            "3301": 0.13555127904326164,
+            "3303": 0.14446494603040783,
+            "3305": 0.12732500615229642,
+            "3307": 0.13998411055218543,
+            "3309": 0.14670370686324974
+          }
+        }
+      },
+      "test_evaluated": false
+    },
+    "weak-local/coefficient": {
+      "decision": {
+        "delta_f_threshold": 0.05,
+        "informative": false,
+        "label": "uninformative: R1 saturation or unresolved full-head advantage",
+        "multistep_eligible": false,
+        "practically_useful_partial_recovery": null,
+        "q": null,
+        "q_computed": false
+      },
+      "family": "weak-local",
+      "paired_differences": {
+        "full_minus_r1": {
+          "ci95": [
+            0.0009690811786059964,
+            0.01768316701097636
+          ],
+          "mean": 0.009326124094791177,
+          "sample_sd": 0.006730518826570443,
+          "values_by_seed": {
+            "3301": 0.01263822935388259,
+            "3303": 0.013387779788687604,
+            "3305": 0.01636279273845176,
+            "3307": 0.0025610798858740624,
+            "3309": 0.00168073870705987
+          }
+        },
+        "r2_minus_r1": {
+          "ci95": [
+            -0.2984611369069954,
+            -0.03003549347491749
+          ],
+          "mean": -0.16424831519095642,
+          "sample_sd": 0.10809109542532908,
+          "values_by_seed": {
+            "3301": 0.007287920729636133,
+            "3303": -0.2205969445432409,
+            "3305": -0.12512115984190764,
+            "3307": -0.2227317273857351,
+            "3309": -0.26007966491353457
+          }
+        }
+      },
+      "panel": "coefficient",
+      "seeds": [
+        3301,
+        3303,
+        3305,
+        3307,
+        3309
+      ],
+      "source_records": {
+        "full": [
+          {
+            "path": "results/one-step-v1/weak-local/coefficient/full/seed-3301.json",
+            "seed": 3301,
+            "sha256": "293b134f748347b8860ce968f8e74a22ff46c8bd5d57958bf3b7cb4fe65bb284"
+          },
+          {
+            "path": "results/one-step-v1/weak-local/coefficient/full/seed-3303.json",
+            "seed": 3303,
+            "sha256": "e96fe90f65d66d6d56d9223592484f234c37e4800d6413aa49d1f90735545796"
+          },
+          {
+            "path": "results/one-step-v1/weak-local/coefficient/full/seed-3305.json",
+            "seed": 3305,
+            "sha256": "f3d8c2a5ac8503dd0146fdc85c2edcc63b3454e85180afd9ae69bb742d42f825"
+          },
+          {
+            "path": "results/one-step-v1/weak-local/coefficient/full/seed-3307.json",
+            "seed": 3307,
+            "sha256": "a27c0ae51efb2f3aa84865811e7bebdef489072181cca66cf1f61959e164c831"
+          },
+          {
+            "path": "results/one-step-v1/weak-local/coefficient/full/seed-3309.json",
+            "seed": 3309,
+            "sha256": "501b98db3be1669318c5222fa9aadb6ec4c9e1c730f57d8383ace2429bfbcdb3"
+          }
+        ],
+        "r1": [
+          {
+            "path": "results/one-step-v1/weak-local/coefficient/r1/seed-3301.json",
+            "seed": 3301,
+            "sha256": "1cddb9e6c9139d01e08cd9628f779e91ab7feb49d248100b244d5c23bba26ad3"
+          },
+          {
+            "path": "results/one-step-v1/weak-local/coefficient/r1/seed-3303.json",
+            "seed": 3303,
+            "sha256": "7c1e516732af4dab14a042aba5b479c9a1c659b0e4e16ba46d043d090f5428ca"
+          },
+          {
+            "path": "results/one-step-v1/weak-local/coefficient/r1/seed-3305.json",
+            "seed": 3305,
+            "sha256": "ade3426b1eb0ed6558d47957b4bf93b411b5ec95f9225fad795466c25b2b8905"
+          },
+          {
+            "path": "results/one-step-v1/weak-local/coefficient/r1/seed-3307.json",
+            "seed": 3307,
+            "sha256": "168e67b966693c5cb8c21ec017c0d7d9dbfb2d9183787ae2f66c2e3ceda3aa59"
+          },
+          {
+            "path": "results/one-step-v1/weak-local/coefficient/r1/seed-3309.json",
+            "seed": 3309,
+            "sha256": "b9bfddcedc07a663b02550fb914334b9a69ea050a9f039853fde0d5416b63d7a"
+          }
+        ],
+        "r2": [
+          {
+            "path": "results/one-step-v1/weak-local/coefficient/r2/seed-3301.json",
+            "seed": 3301,
+            "sha256": "638a5a03c9280e15b4754f6da68df0e0975cd22928a2132ce94b2130653c3b3a"
+          },
+          {
+            "path": "results/one-step-v1/weak-local/coefficient/r2/seed-3303.json",
+            "seed": 3303,
+            "sha256": "3e764dd2b656fd1e79a62358ceb83a805e1ceb2f664a22e5cc26bbf6ed0ca144"
+          },
+          {
+            "path": "results/one-step-v1/weak-local/coefficient/r2/seed-3305.json",
+            "seed": 3305,
+            "sha256": "c3a175bb52b0608be86f44a931ef5b00739a343ec0f431b53a827df564d3ba3a"
+          },
+          {
+            "path": "results/one-step-v1/weak-local/coefficient/r2/seed-3307.json",
+            "seed": 3307,
+            "sha256": "76e606e38c0ee8ca3840f62cb7c5e4d1dd04535969be54cdb0818a67ee2a0ab0"
+          },
+          {
+            "path": "results/one-step-v1/weak-local/coefficient/r2/seed-3309.json",
+            "seed": 3309,
+            "sha256": "2f15f678d26692377ff702cfdf52b20e481089f8f86ab14e59af49768d208337"
+          }
+        ]
+      },
+      "support_fidelity": {
+        "full": {
+          "ci95": [
+            0.43675224712971855,
+            0.44065542669319585
+          ],
+          "mean": 0.4387038369114572,
+          "sample_sd": 0.0015717535376413405,
+          "values_by_seed": {
+            "3301": 0.4364956601184808,
+            "3303": 0.4389323489106936,
+            "3305": 0.4393988524749435,
+            "3307": 0.4379961308244086,
+            "3309": 0.4406961922287598
+          }
+        },
+        "r1": {
+          "ci95": [
+            0.42027536589220116,
+            0.438480059741131
+          ],
+          "mean": 0.4293777128166661,
+          "sample_sd": 0.007330764955440984,
+          "values_by_seed": {
+            "3301": 0.4238574307645982,
+            "3303": 0.425544569122006,
+            "3305": 0.4230360597364917,
+            "3307": 0.4354350509385345,
+            "3309": 0.4390154535216999
+          }
+        },
+        "r2": {
+          "ci95": [
+            0.13723821167525221,
+            0.3930205835761671
+          ],
+          "mean": 0.26512939762570964,
+          "sample_sd": 0.10299983420270636,
+          "values_by_seed": {
+            "3301": 0.43114535149423433,
+            "3303": 0.2049476245787651,
+            "3305": 0.2979148998945841,
+            "3307": 0.21270332355279942,
+            "3309": 0.17893578860816534
+          }
+        }
+      },
+      "test_evaluated": false
+    },
+    "weak-local/depth-gate": {
+      "decision": {
+        "delta_f_threshold": 0.05,
+        "informative": false,
+        "label": "uninformative: R1 saturation or unresolved full-head advantage",
+        "multistep_eligible": false,
+        "practically_useful_partial_recovery": null,
+        "q": null,
+        "q_computed": false
+      },
+      "family": "weak-local",
+      "paired_differences": {
+        "full_minus_r1": {
+          "ci95": [
+            -0.31890816810671513,
+            -0.29401925384110256
+          ],
+          "mean": -0.30646371097390884,
+          "sample_sd": 0.010022403122591034,
+          "values_by_seed": {
+            "3301": -0.3144495622359564,
+            "3303": -0.289238087764514,
+            "3305": -0.31208858118897215,
+            "3307": -0.3070210778684792,
+            "3309": -0.3095212458116223
+          }
+        },
+        "r2_minus_r1": {
+          "ci95": [
+            -0.3106935306597793,
+            -0.26689756911455115
+          ],
+          "mean": -0.2887955498871652,
+          "sample_sd": 0.017635995570695798,
+          "values_by_seed": {
+            "3301": -0.31410970873677313,
+            "3303": -0.27288684871728225,
+            "3305": -0.2745015170455596,
+            "3307": -0.28305596645650566,
+            "3309": -0.29942370847970545
+          }
+        }
+      },
+      "panel": "depth-gate",
+      "seeds": [
+        3301,
+        3303,
+        3305,
+        3307,
+        3309
+      ],
+      "source_records": {
+        "full": [
+          {
+            "path": "results/one-step-v1/weak-local/depth-gate/full/seed-3301.json",
+            "seed": 3301,
+            "sha256": "15377892fb4fac9710fa29ac95548f0b91524fde0a8bf72163c775ba5ac10a1b"
+          },
+          {
+            "path": "results/one-step-v1/weak-local/depth-gate/full/seed-3303.json",
+            "seed": 3303,
+            "sha256": "f3f202991c95a359ecb4bdaef6f649f4612bf3beb14c3bdbaa621a0cd0d475e8"
+          },
+          {
+            "path": "results/one-step-v1/weak-local/depth-gate/full/seed-3305.json",
+            "seed": 3305,
+            "sha256": "72c757d28b3106958f7849d3d68f3b6b4fdea74dba0c28db1ec570d01731b888"
+          },
+          {
+            "path": "results/one-step-v1/weak-local/depth-gate/full/seed-3307.json",
+            "seed": 3307,
+            "sha256": "89add1874cc4185e3d09a800e60afceed40df10ee59540fa7187716083de1e23"
+          },
+          {
+            "path": "results/one-step-v1/weak-local/depth-gate/full/seed-3309.json",
+            "seed": 3309,
+            "sha256": "5a28cf2b6f6b4ef36e044cfe3d383a4f2fa5392d1ff67fdb550d2bf4ae28cc9f"
+          }
+        ],
+        "r1": [
+          {
+            "path": "results/one-step-v1/weak-local/depth-gate/r1/seed-3301.json",
+            "seed": 3301,
+            "sha256": "edfcca59755383de0f496597d9d2f161665abe5498f3058838f948067470aa26"
+          },
+          {
+            "path": "results/one-step-v1/weak-local/depth-gate/r1/seed-3303.json",
+            "seed": 3303,
+            "sha256": "904fa19c4fdcfb357f8546673b2def5351775c92dc32dc0842f8f3d50f3df9be"
+          },
+          {
+            "path": "results/one-step-v1/weak-local/depth-gate/r1/seed-3305.json",
+            "seed": 3305,
+            "sha256": "9dbd47b9b8f72a09c0954c901da16932d7f20671200fdc6dbf1f62b9012fb777"
+          },
+          {
+            "path": "results/one-step-v1/weak-local/depth-gate/r1/seed-3307.json",
+            "seed": 3307,
+            "sha256": "2a3424e6572f2e07a4ebcdd25e9c0022cda95a0df67a9159ac14148f3b3c8355"
+          },
+          {
+            "path": "results/one-step-v1/weak-local/depth-gate/r1/seed-3309.json",
+            "seed": 3309,
+            "sha256": "95d2c822e71240b421f77478c2af56ccd47f4c9bbc0ebc846156a6112c200938"
+          }
+        ],
+        "r2": [
+          {
+            "path": "results/one-step-v1/weak-local/depth-gate/r2/seed-3301.json",
+            "seed": 3301,
+            "sha256": "4b5ff7d5b6a988c64ba2c3b425def8b9faf690a784c22fa2b354f797e4f7b221"
+          },
+          {
+            "path": "results/one-step-v1/weak-local/depth-gate/r2/seed-3303.json",
+            "seed": 3303,
+            "sha256": "588f5857a4c2cffdedc7cb514b7bb840814b923d6136497093e348ecadbab61e"
+          },
+          {
+            "path": "results/one-step-v1/weak-local/depth-gate/r2/seed-3305.json",
+            "seed": 3305,
+            "sha256": "5d27fa359d9c1faf911f03eae81bb3dd65e57ac495cfa7103f3cdc210c743f06"
+          },
+          {
+            "path": "results/one-step-v1/weak-local/depth-gate/r2/seed-3307.json",
+            "seed": 3307,
+            "sha256": "49944a11f280e14fd1d2d2ef2a099aac3cb8071f9e8c5d0d65e9c8643dce828b"
+          },
+          {
+            "path": "results/one-step-v1/weak-local/depth-gate/r2/seed-3309.json",
+            "seed": 3309,
+            "sha256": "350ca0830c2bbecf3df45867957e32e13305969bdb7bc006fa30270232ef3999"
+          }
+        ]
+      },
+      "support_fidelity": {
+        "full": {
+          "ci95": [
+            0.11939405132743146,
+            0.14511178499066008
+          ],
+          "mean": 0.13225291815904577,
+          "sample_sd": 0.010356156617423385,
+          "values_by_seed": {
+            "3301": 0.12150593595373088,
+            "3303": 0.1494543989273379,
+            "3305": 0.13118766490859451,
+            "3307": 0.13054688171253914,
+            "3309": 0.12856970929302633
+          }
+        },
+        "r1": {
+          "ci95": [
+            0.4353090902655316,
+            0.4421241680003776
+          ],
+          "mean": 0.4387166291329546,
+          "sample_sd": 0.00274433250247446,
+          "values_by_seed": {
+            "3301": 0.43595549818968726,
+            "3303": 0.4386924866918519,
+            "3305": 0.44327624609756666,
+            "3307": 0.43756795958101835,
+            "3309": 0.4380909551046486
+          }
+        },
+        "r2": {
+          "ci95": [
+            0.1255284133997617,
+            0.174313745091817
+          ],
+          "mean": 0.14992107924578935,
+          "sample_sd": 0.019645142229552357,
+          "values_by_seed": {
+            "3301": 0.12184578945291412,
+            "3303": 0.16580563797456965,
+            "3305": 0.16877472905200708,
+            "3307": 0.15451199312451272,
+            "3309": 0.13866724662494315
+          }
+        }
+      },
+      "test_evaluated": false
+    }
+  },
+  "confidence_level": 0.95,
+  "kind": "lab002_one_step_validation_decision_table",
+  "schema_version": 1,
+  "student_t": {
+    "critical_value": 2.7764451051977987,
+    "degrees_of_freedom": 4,
+    "sample_count": 5
+  },
+  "test_evaluated": false
+}

@@ -1,0 +1,248 @@
+{
+  "controller_source_sha256": "15b4d3685fca5492e8df9f840fc312a75d783ad56ee9653731b2fb3666ee922b",
+  "created_at": "2026-08-23T07:24:55+00:00",
+  "kind": "lab002_interface_contract_check",
+  "numerical_gate_status": "not-run",
+  "optimizer_steps": 0,
+  "records": [
+    {
+      "encoder_parameters": 131904,
+      "gate_count": 1,
+      "head_parameters": 8320,
+      "output_shape": [
+        3,
+        8
+      ],
+      "panel": "coefficient",
+      "raw_qr_reals": 128,
+      "schedule": [
+        [
+          0,
+          1,
+          2
+        ]
+      ],
+      "sequential_depth": 1,
+      "support": "full",
+      "total_parameters": 140224
+    },
+    {
+      "encoder_parameters": 131904,
+      "gate_count": 4,
+      "head_parameters": 8320,
+      "output_shape": [
+        3,
+        8
+      ],
+      "panel": "coefficient",
+      "raw_qr_reals": 128,
+      "schedule": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "sequential_depth": 4,
+      "support": "r2",
+      "total_parameters": 140224
+    },
+    {
+      "encoder_parameters": 131904,
+      "gate_count": 16,
+      "head_parameters": 8320,
+      "output_shape": [
+        3,
+        8
+      ],
+      "panel": "coefficient",
+      "raw_qr_reals": 128,
+      "schedule": [
+        [
+          0
+        ],
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          2
+        ],
+        [
+          1
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          2
+        ],
+        [
+          1
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          1
+        ]
+      ],
+      "sequential_depth": 16,
+      "support": "r1",
+      "total_parameters": 140224
+    },
+    {
+      "encoder_parameters": 131904,
+      "gate_count": 6,
+      "head_parameters": 49920,
+      "output_shape": [
+        3,
+        8
+      ],
+      "panel": "depth-gate",
+      "raw_qr_reals": 768,
+      "schedule": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          1,
+          2
+        ]
+      ],
+      "sequential_depth": 6,
+      "support": "full",
+      "total_parameters": 181824
+    },
+    {
+      "encoder_parameters": 131904,
+      "gate_count": 6,
+      "head_parameters": 12480,
+      "output_shape": [
+        3,
+        8
+      ],
+      "panel": "depth-gate",
+      "raw_qr_reals": 192,
+      "schedule": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "sequential_depth": 6,
+      "support": "r2",
+      "total_parameters": 144384
+    },
+    {
+      "encoder_parameters": 131904,
+      "gate_count": 6,
+      "head_parameters": 3120,
+      "output_shape": [
+        3,
+        8
+      ],
+      "panel": "depth-gate",
+      "raw_qr_reals": 48,
+      "schedule": [
+        [
+          0
+        ],
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          2
+        ],
+        [
+          1
+        ],
+        [
+          0
+        ]
+      ],
+      "sequential_depth": 6,
+      "support": "r1",
+      "total_parameters": 135024
+    }
+  ],
+  "schema_version": 1,
+  "seed": 3401
+}

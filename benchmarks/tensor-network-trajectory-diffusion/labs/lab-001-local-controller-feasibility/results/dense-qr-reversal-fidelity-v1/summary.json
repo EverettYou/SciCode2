@@ -1,0 +1,148 @@
+{
+  "results": [
+    {
+      "batch_size": 16,
+      "created_at": "2026-08-23T05:53:36+00:00",
+      "epsilon": 0.5,
+      "fixture": "dense-splits-v1",
+      "kind": "held_out_dense_qr_reversal_fidelity",
+      "maximum_fidelity": 0.9986313492485647,
+      "mean_fidelity": 0.6723651291830804,
+      "minimum_fidelity": 0.029259836744757527,
+      "n_qubits": 1,
+      "note": "Held-out companion dense-QR baseline evidence only; not a locality or scaling result.",
+      "optimizer": {
+        "lr": 0.001,
+        "name": "Adam"
+      },
+      "reversal_steps": 5,
+      "sample_std_fidelity": 0.24270306159145982,
+      "schema_version": 1,
+      "seed": 2301,
+      "split": "test",
+      "target": "computational_zero",
+      "trajectory_length": 6,
+      "updates": 128
+    },
+    {
+      "batch_size": 16,
+      "created_at": "2026-08-23T05:53:48+00:00",
+      "epsilon": 0.5,
+      "fixture": "dense-splits-v1",
+      "kind": "held_out_dense_qr_reversal_fidelity",
+      "maximum_fidelity": 0.9991855686286818,
+      "mean_fidelity": 0.6282014435839529,
+      "minimum_fidelity": 0.018899860412687743,
+      "n_qubits": 1,
+      "note": "Held-out companion dense-QR baseline evidence only; not a locality or scaling result.",
+      "optimizer": {
+        "lr": 0.001,
+        "name": "Adam"
+      },
+      "reversal_steps": 5,
+      "sample_std_fidelity": 0.24954113920321863,
+      "schema_version": 1,
+      "seed": 2303,
+      "split": "test",
+      "target": "computational_zero",
+      "trajectory_length": 6,
+      "updates": 128
+    },
+    {
+      "batch_size": 16,
+      "created_at": "2026-08-23T05:54:08+00:00",
+      "epsilon": 0.5,
+      "fixture": "dense-splits-v1",
+      "kind": "held_out_dense_qr_reversal_fidelity",
+      "maximum_fidelity": 0.9997236405629304,
+      "mean_fidelity": 0.6573421247041131,
+      "minimum_fidelity": 0.038492434424716844,
+      "n_qubits": 1,
+      "note": "Held-out companion dense-QR baseline evidence only; not a locality or scaling result.",
+      "optimizer": {
+        "lr": 0.001,
+        "name": "Adam"
+      },
+      "reversal_steps": 5,
+      "sample_std_fidelity": 0.2450982150852262,
+      "schema_version": 1,
+      "seed": 2305,
+      "split": "test",
+      "target": "computational_zero",
+      "trajectory_length": 6,
+      "updates": 128
+    },
+    {
+      "batch_size": 16,
+      "created_at": "2026-08-23T05:54:23+00:00",
+      "epsilon": 0.5,
+      "fixture": "dense-splits-v1",
+      "kind": "held_out_dense_qr_reversal_fidelity",
+      "maximum_fidelity": 0.9685901730029862,
+      "mean_fidelity": 0.4139677192575532,
+      "minimum_fidelity": 0.00988823013154952,
+      "n_qubits": 2,
+      "note": "Held-out companion dense-QR baseline evidence only; not a locality or scaling result.",
+      "optimizer": {
+        "lr": 0.001,
+        "name": "Adam"
+      },
+      "reversal_steps": 5,
+      "sample_std_fidelity": 0.2907461538613686,
+      "schema_version": 1,
+      "seed": 2302,
+      "split": "test",
+      "target": "computational_zero",
+      "trajectory_length": 6,
+      "updates": 128
+    },
+    {
+      "batch_size": 16,
+      "created_at": "2026-08-23T05:55:05+00:00",
+      "epsilon": 0.5,
+      "fixture": "dense-splits-v1",
+      "kind": "held_out_dense_qr_reversal_fidelity",
+      "maximum_fidelity": 0.9938872845411352,
+      "mean_fidelity": 0.42077458121164557,
+      "minimum_fidelity": 0.004669641652021654,
+      "n_qubits": 2,
+      "note": "Held-out companion dense-QR baseline evidence only; not a locality or scaling result.",
+      "optimizer": {
+        "lr": 0.001,
+        "name": "Adam"
+      },
+      "reversal_steps": 5,
+      "sample_std_fidelity": 0.29103305145794356,
+      "schema_version": 1,
+      "seed": 2304,
+      "split": "test",
+      "target": "computational_zero",
+      "trajectory_length": 6,
+      "updates": 128
+    },
+    {
+      "batch_size": 16,
+      "created_at": "2026-08-23T05:55:33+00:00",
+      "epsilon": 0.5,
+      "fixture": "dense-splits-v1",
+      "kind": "held_out_dense_qr_reversal_fidelity",
+      "maximum_fidelity": 0.9818079383224181,
+      "mean_fidelity": 0.425512384168215,
+      "minimum_fidelity": 0.00536568207817054,
+      "n_qubits": 2,
+      "note": "Held-out companion dense-QR baseline evidence only; not a locality or scaling result.",
+      "optimizer": {
+        "lr": 0.001,
+        "name": "Adam"
+      },
+      "reversal_steps": 5,
+      "sample_std_fidelity": 0.2949398981317779,
+      "schema_version": 1,
+      "seed": 2306,
+      "split": "test",
+      "target": "computational_zero",
+      "trajectory_length": 6,
+      "updates": 128
+    }
+  ]
+}

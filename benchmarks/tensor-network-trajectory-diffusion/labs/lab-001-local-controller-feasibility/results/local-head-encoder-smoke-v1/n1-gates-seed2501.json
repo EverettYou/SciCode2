@@ -1,0 +1,17 @@
+{
+  "all_parameter_gradients_finite": true,
+  "created_at": "2026-08-23T05:13:11+00:00",
+  "encoder": "companion-transformer-state-dict-copy",
+  "encoder_gradient_l1": 38.38310548570007,
+  "family": "gates",
+  "fixture": "dense-splits-v1",
+  "head_gradient_l1": 0.5929370429366827,
+  "kind": "local_head_encoder_integration_smoke",
+  "n_qubits": 1,
+  "optimization_steps": 0,
+  "reverse_loss": 0.029062598943710327,
+  "schema_version": 1,
+  "seed": 2501,
+  "trajectory_batch_size": 8,
+  "unitary_max_residual": 3.332026856324515e-16
+}

@@ -1,0 +1,994 @@
+version: 1
+sources:
+- source_id: paper:akhtar2020meils
+  title: Multiregion entanglement in locally scrambled quantum dynamics
+  kind: paper
+  path: papers/akhtar2020meils/paper.pdf
+  revision: 82d6c0a7e2ea67bd00df93658a0fc1c123e585b9d335ea4b733249de464bb35f
+  ingested_at: '2026-08-23T10:17:31Z'
+  updated_pages:
+  - wiki/methods/entanglement-feature-dynamics.md
+  - wiki/papers/akhtar2020meils.md
+  - wiki/concepts/self-organized-error-correction.md
+  - wiki/concepts/classical-shadow-tomography.md
+  - wiki/topics/entanglement-structure-and-dynamics.md
+  - wiki/index.md
+  - wiki/papers/index.md
+- source_id: paper:akhtar2023safcs
+  title: Scalable and flexible classical shadow tomography with tensor networks
+  kind: paper
+  path: papers/akhtar2023safcs/paper.pdf
+  revision: sha256:10479725dea36cb21f724c8e5b2c6ba2fe139c83c87ffd04730e124536f13cd9
+  ingested_at: '2026-08-23T01:30:02Z'
+  updated_pages:
+  - wiki/papers/akhtar2023safcs.md
+  - wiki/concepts/classical-shadow-tomography.md
+  - wiki/comparisons/structured-classical-shadow-protocols.md
+  - wiki/index.md
+  - wiki/papers/index.md
+- source_id: paper:akhtar2024dcst
+  title: Dual-unitary classical shadow tomography
+  kind: paper
+  path: papers/akhtar2024dcst/paper.pdf
+  revision: sha256:fcac692fe793a78f21ede9819dc9c8c66eb215193c5173ee431ef8a01a958262
+  ingested_at: '2026-08-23T01:30:03Z'
+  updated_pages:
+  - wiki/papers/akhtar2024dcst.md
+  - wiki/concepts/classical-shadow-tomography.md
+  - wiki/comparisons/structured-classical-shadow-protocols.md
+  - wiki/index.md
+  - wiki/papers/index.md
+- source_id: paper:akhtar2024mcito
+  title: Measurement-Induced Criticality is Tomographically Optimal
+  kind: paper
+  path: papers/akhtar2024mcito/paper.pdf
+  revision: 0585f6d3d55ea56f548cb3af70cb4572cf7430f79beb41b51e86d993c155c6b6
+  ingested_at: '2026-08-23T09:44:58Z'
+  updated_pages:
+  - wiki/methods/hybrid-circuit-classical-shadows.md
+  - wiki/papers/akhtar2024mcito.md
+  - wiki/comparisons/structured-classical-shadow-protocols.md
+  - wiki/concepts/classical-shadow-tomography.md
+  - wiki/index.md
+  - wiki/papers/index.md
+- source_id: paper:akhtar2025dst
+  title: Dual-unitary shadow tomography
+  kind: paper
+  path: papers/akhtar2025dst/paper.pdf
+  revision: fcac692fe793a78f21ede9819dc9c8c66eb215193c5173ee431ef8a01a958262
+  ingested_at: '2026-08-23T09:34:50Z'
+  updated_pages:
+  - wiki/papers/akhtar2025dst.md
+  - wiki/papers/akhtar2024dcst.md
+  - wiki/papers/index.md
+- source_id: paper:chang2023fssmg
+  title: 'Fermi surface symmetric mass generation: a quantum Monte-Carlo study'
+  kind: paper
+  path: papers/chang2023fssmg/paper.pdf
+  revision: sha256:cb270a9ce56020341fe285812cb03d0e3a95eedd6365d2d0676c495ec7233f7c
+  ingested_at: '2026-08-23T01:30:03Z'
+  updated_pages:
+  - wiki/papers/chang2023fssmg.md
+  - wiki/concepts/symmetric-mass-generation.md
+  - wiki/comparisons/smg-regimes-and-diagnostics.md
+  - wiki/concepts/doped-smg-superconductivity.md
+  - wiki/index.md
+  - wiki/papers/index.md
+- source_id: paper:duque2021tasrq
+  title: Topological and symmetry-enriched random quantum critical points
+  kind: paper
+  path: papers/duque2021tasrq/paper.pdf
+  revision: af4afa2e50c5ca5cac4acf3d6bc1622064a77a95930d23530b2efaf4d62aac23
+  ingested_at: '2026-08-23T10:11:39Z'
+  updated_pages:
+  - wiki/concepts/symmetry-enriched-infinite-randomness.md
+  - wiki/papers/duque2021tasrq.md
+  - wiki/concepts/intrinsically-gapless-topological-states.md
+  - wiki/topics/topological-phase-transitions.md
+  - wiki/index.md
+  - wiki/papers/index.md
+- source_id: paper:fan2021secir
+  title: Self-organized error correction in random unitary circuits with measurement
+  kind: paper
+  path: papers/fan2021secir/paper.pdf
+  revision: d4dff32204cfc0d93968a50e9beaa51595ab55993c03e02a36d7f04e7642d18d
+  ingested_at: '2026-08-23T10:13:05Z'
+  updated_pages:
+  - wiki/concepts/self-organized-error-correction.md
+  - wiki/papers/fan2021secir.md
+  - wiki/topics/random-quantum-circuits-and-measurements.md
+  - wiki/topics/entanglement-structure-and-dynamics.md
+  - wiki/index.md
+  - wiki/papers/index.md
+- source_id: paper:guo2023smgok
+  title: Symmetric Mass Generation of Kähler-Dirac Fermions from the Perspective of Symmetry-Protected Topological Phases
+  kind: paper
+  path: papers/guo2023smgok/paper.pdf
+  revision: 13ea15382e27d942f015e978de7af9caf459df30fe0ab2bd1b897fe9e57e7146
+  ingested_at: '2026-08-23T09:54:02Z'
+  updated_pages:
+  - wiki/concepts/kahler-dirac-symmetric-mass-generation.md
+  - wiki/papers/guo2023smgok.md
+  - wiki/concepts/symmetric-mass-generation.md
+  - wiki/comparisons/smg-regimes-and-diagnostics.md
+  - wiki/index.md
+  - wiki/papers/index.md
+- source_id: paper:guo2026sidsm
+  title: 'Superconductivity in doped symmetric mass generation insulator: a quantum Monte-Carlo study'
+  kind: paper
+  path: papers/guo2026sidsm/paper.pdf
+  revision: sha256:03aab3915eda9af83ebdd974db6a5c4385753e2bacf9392ae52700e43df89120
+  ingested_at: '2026-08-23T01:30:04Z'
+  updated_pages:
+  - wiki/papers/guo2026sidsm.md
+  - wiki/concepts/symmetric-mass-generation.md
+  - wiki/concepts/doped-smg-superconductivity.md
+  - wiki/index.md
+  - wiki/papers/index.md
+- source_id: paper:he2026csaas
+  title: Continuous symmetry analysis and systematic identification of candidate order parameters for interacting fermion models
+  kind: paper
+  path: papers/he2026csaas/paper.pdf
+  revision: sha256:61c8196a99813c652a68294db66a1fdb3f03952ce4ec906262a6f53a7b2a5c6b
+  ingested_at: '2026-08-23T01:30:04Z'
+  updated_pages:
+  - wiki/papers/he2026csaas.md
+  - wiki/methods/systematic-fermion-symmetry-analysis.md
+  - wiki/concepts/symmetric-mass-generation.md
+  - wiki/index.md
+  - wiki/papers/index.md
+- source_id: paper:he2026smgia
+  title: Symmetric Mass Generation in a Bilayer Honeycomb Lattice with \(\mathrm{SU}(2)\times\mathrm{SU}(2)\times\mathrm{SU}(2)/\mathbb{Z}_2\) Symmetry
+  kind: paper
+  path: papers/he2026smgia/paper.pdf
+  revision: sha256:de0746eeb9bd4bd9226481ebaff436703ea3dbeb55dc816d67a5ae0a5276ac3e
+  ingested_at: '2026-08-23T01:30:04Z'
+  updated_pages:
+  - wiki/papers/he2026smgia.md
+  - wiki/concepts/symmetric-mass-generation.md
+  - wiki/comparisons/smg-regimes-and-diagnostics.md
+  - wiki/methods/systematic-fermion-symmetry-analysis.md
+  - wiki/index.md
+  - wiki/papers/index.md
+- source_id: paper:hou2023mlrgf
+  title: Machine learning renormalization group for statistical physics
+  kind: paper
+  path: papers/hou2023mlrgf/paper.pdf
+  revision: sha256:35571f0e533f846b43246d5c71987c4cebe706e3ae1a3e79fa4bf65eea1bb850
+  ingested_at: '2026-08-23T01:30:05Z'
+  updated_pages:
+  - wiki/papers/hou2023mlrgf.md
+  - wiki/methods/machine-learning-renormalization-group.md
+  - wiki/index.md
+  - wiki/papers/index.md
+- source_id: paper:hou2023vmcso
+  title: Variational Monte Carlo study of symmetric mass generation in a bilayer honeycomb lattice model
+  kind: paper
+  path: papers/hou2023vmcso/paper.pdf
+  revision: 68507d39e739bb3944e01ee7aa8771c7697687faf26951e0f1250b5c78a7ba21
+  ingested_at: '2026-08-23T09:59:57Z'
+  updated_pages:
+  - wiki/methods/parton-guided-variational-monte-carlo.md
+  - wiki/papers/hou2023vmcso.md
+  - wiki/concepts/symmetric-mass-generation.md
+  - wiki/comparisons/smg-regimes-and-diagnostics.md
+  - wiki/papers/he2026smgia.md
+  - wiki/index.md
+  - wiki/papers/index.md
+- source_id: paper:hou2025hfala
+  title: How focused are llms? a quantitative study via repetitive deterministic prediction tasks
+  kind: paper
+  path: papers/hou2025hfala/paper.pdf
+  revision: sha256:9577c0962fd2665df8356b12733dac91cb4cba3d5b48db1da151dda66207f897
+  ingested_at: '2026-08-23T01:30:06Z'
+  updated_pages:
+  - wiki/papers/hou2025hfala.md
+  - wiki/concepts/repetitive-task-accuracy-cliffs.md
+  - wiki/methods/output-space-model-evaluation.md
+  - wiki/index.md
+  - wiki/papers/index.md
+- source_id: paper:hou2025mlteo
+  title: Machine learning the effects of many quantum measurements
+  kind: paper
+  path: papers/hou2025mlteo/paper.pdf
+  revision: sha256:6903c1d15d0a71eb1c484e403614a6d927a0ade44a9b7ef52c79e1d2417d4cbb
+  ingested_at: '2026-08-23T01:30:07Z'
+  updated_pages:
+  - wiki/papers/hou2025mlteo.md
+  - wiki/concepts/learned-quantum-state-models.md
+  - wiki/methods/measurement-conditioned-quantum-control.md
+  - wiki/index.md
+  - wiki/papers/index.md
+- source_id: paper:hou2025sloat
+  title: Sequential learning on a Tensor Network Born machine with Trainable Token Embedding
+  kind: paper
+  path: papers/hou2025sloat/paper.pdf
+  revision: 8fe37ecbc1e34aae67aea7a6994b92f683ab059aa02f26ab5654937b761f91db
+  ingested_at: '2026-08-23T09:36:23Z'
+  updated_pages:
+  - wiki/methods/trainable-povm-tensor-network-born-machines.md
+  - wiki/papers/hou2025sloat.md
+  - wiki/topics/machine-learning-and-physics.md
+  - wiki/index.md
+  - wiki/papers/index.md
+- source_id: paper:hou2026mlsdf
+  title: Machine learning symmetry discovery for integrable Hamiltonian dynamics
+  kind: paper
+  path: papers/hou2026mlsdf/paper.pdf
+  revision: sha256:d98d1604b8c961a978e5d5d76125d76e9fad290939133c50cf194878b01991ce
+  ingested_at: '2026-08-23T09:27:47Z'
+  updated_pages:
+  - wiki/papers/hou2026mlsdf.md
+  - wiki/methods/machine-learning-symmetry-discovery.md
+  - wiki/topics/machine-learning-and-physics.md
+  - wiki/index.md
+  - wiki/papers/index.md
+- source_id: paper:hu2020mlhmb
+  title: Machine learning holographic mapping by neural network renormalization group
+  kind: paper
+  path: papers/hu2020mlhmb/paper.pdf
+  revision: sha256:020a25f39697c93017a08a0c926e0599c9c4c4a7f464bba27060a3310b1a6004
+  ingested_at: '2026-08-23T01:30:08Z'
+  updated_pages:
+  - wiki/papers/hu2020mlhmb.md
+  - wiki/methods/machine-learning-renormalization-group.md
+  - wiki/index.md
+  - wiki/papers/index.md
+- source_id: paper:hu2022hstoq
+  title: Hamiltonian-driven shadow tomography of quantum states
+  kind: paper
+  path: papers/hu2022hstoq/paper.pdf
+  revision: sha256:ba45d801a55992bd2b05db271661a41b29b082b59f01264c5c320cf16703705b
+  ingested_at: '2026-08-23T01:30:08Z'
+  updated_pages:
+  - wiki/papers/hu2022hstoq.md
+  - wiki/concepts/classical-shadow-tomography.md
+  - wiki/comparisons/structured-classical-shadow-protocols.md
+  - wiki/index.md
+  - wiki/papers/index.md
+- source_id: paper:hu2022lstee
+  title: Logical shadow tomography
+  kind: paper
+  path: papers/hu2022lstee/paper.pdf
+  revision: sha256:212c51b90baa57a246b82ee38ce4dbe7565b1fabaa522376a0ec214f8887c22c
+  ingested_at: '2026-08-23T01:30:08Z'
+  updated_pages:
+  - wiki/papers/hu2022lstee.md
+  - wiki/concepts/classical-shadow-tomography.md
+  - wiki/comparisons/structured-classical-shadow-protocols.md
+  - wiki/index.md
+  - wiki/papers/index.md
+- source_id: paper:hu2022rahae
+  title: 'RG-Flow: A hierarchical and explainable flow model based on renormalization group and sparse prior'
+  kind: paper
+  path: papers/hu2022rahae/paper.pdf
+  revision: sha256:cbd0a2377aea2df249202abfde0dd37037c181e5e3e3e4bb7d7d6b596f570650
+  ingested_at: '2026-08-23T01:30:09Z'
+  updated_pages:
+  - wiki/papers/hu2022rahae.md
+  - wiki/methods/machine-learning-renormalization-group.md
+  - wiki/index.md
+  - wiki/papers/index.md
+- source_id: paper:hu2023cstwl
+  title: Classical shadow tomography with locally scrambled quantum dynamics
+  kind: paper
+  path: papers/hu2023cstwl/paper.pdf
+  revision: sha256:05f45653830f9632afde570b40c049037d3c5cbc13f2597d9fb0ea73908238de
+  ingested_at: '2026-08-23T01:30:09Z'
+  updated_pages:
+  - wiki/papers/hu2023cstwl.md
+  - wiki/concepts/classical-shadow-tomography.md
+  - wiki/comparisons/structured-classical-shadow-protocols.md
+  - wiki/index.md
+  - wiki/papers/index.md
+- source_id: paper:hu2025dorae
+  title: Demonstration of robust and efficient quantum property learning with shallow shadows
+  kind: paper
+  path: papers/hu2025dorae/paper.pdf
+  revision: sha256:18fcc385528bbf7b7419a6774a27a2b81bdd15ef1e7ce0d65c2db2bdd5a394a3
+  ingested_at: '2026-08-23T01:30:09Z'
+  updated_pages:
+  - wiki/papers/hu2025dorae.md
+  - wiki/concepts/classical-shadow-tomography.md
+  - wiki/comparisons/structured-classical-shadow-protocols.md
+  - wiki/index.md
+  - wiki/papers/index.md
+- source_id: paper:huang2019esacc
+  title: Emergent symmetry and conserved current at a one-dimensional incarnation of deconfined quantum critical point
+  kind: paper
+  path: papers/huang2019esacc/paper.pdf
+  revision: 86e4e307db40e32ce95a6ac666f28fa5dbfa4eee4f0309538a6f8f58800c6acd
+  ingested_at: '2026-08-23T10:25:51Z'
+  updated_pages:
+  - wiki/methods/emergent-symmetry-current-diagnostics.md
+  - wiki/papers/huang2019esacc.md
+  - wiki/topics/topological-phase-transitions.md
+  - wiki/index.md
+  - wiki/papers/index.md
+- source_id: paper:huang2024qmiwm
+  title: Quantum Magnetism in Wannier-Obstructed Mott Insulators
+  kind: paper
+  path: papers/huang2024qmiwm/paper.pdf
+  revision: 130ec8b795f75e69296b74f19ef4a6a71d03968d721e68bc86d03bba15d826f8
+  ingested_at: '2026-08-23T09:46:17Z'
+  updated_pages:
+  - wiki/methods/nonorthogonal-orbital-strong-coupling.md
+  - wiki/papers/huang2024qmiwm.md
+  - wiki/topics/correlated-quantum-many-body-systems.md
+  - wiki/topics/topological-phases.md
+  - wiki/index.md
+  - wiki/papers/index.md
+- source_id: paper:jian2019lcodw
+  title: Lattice construction of duality with non-Abelian gauge fields in 2+1D
+  kind: paper
+  path: papers/jian2019lcodw/paper.pdf
+  revision: b1c9ad699b2902271b92ceb895319afc1d0c3079ca8ed57f9bbea4e65606f6e1
+  ingested_at: '2026-08-23T10:26:47Z'
+  updated_pages:
+  - wiki/methods/exact-lattice-duality-constructions.md
+  - wiki/papers/jian2019lcodw.md
+  - wiki/topics/topological-phase-transitions.md
+  - wiki/index.md
+  - wiki/papers/index.md
+- source_id: paper:jian2020mcirq
+  title: Measurement-induced criticality in random quantum circuits
+  kind: paper
+  path: papers/jian2020mcirq/paper.pdf
+  revision: 6fff6fd6e962c044be57e8d64bcb3e1ef00264ee741f6bdd8fa87e8427d1c8dd
+  ingested_at: '2026-08-23T10:19:50Z'
+  updated_pages:
+  - wiki/methods/replica-statistical-mechanics-of-monitored-circuits.md
+  - wiki/papers/jian2020mcirq.md
+  - wiki/topics/random-quantum-circuits-and-measurements.md
+  - wiki/index.md
+  - wiki/papers/index.md
+- source_id: paper:kuo2020medul
+  title: Markovian entanglement dynamics under locally scrambled quantum evolution
+  kind: paper
+  path: papers/kuo2020medul/paper.pdf
+  revision: 2078f140afe09431bd109b46c599f48275011f0b24cbdac8c046d45ffdfe998d
+  ingested_at: '2026-08-23T10:21:13Z'
+  updated_pages:
+  - wiki/methods/entanglement-feature-dynamics.md
+  - wiki/papers/kuo2020medul.md
+  - wiki/papers/index.md
+- source_id: paper:kuo2021dqdaq
+  title: Decoherent quench dynamics across quantum phase transitions
+  kind: paper
+  path: papers/kuo2021dqdaq/paper.pdf
+  revision: 01dad009e3e2d38134a323ef45f21de2055fd7accdcf74b240339199a8ed5af5
+  ingested_at: '2026-08-23T10:14:10Z'
+  updated_pages:
+  - wiki/methods/decoherent-kibble-zurek-scaling.md
+  - wiki/papers/kuo2021dqdaq.md
+  - wiki/topics/topological-phase-transitions.md
+  - wiki/topics/random-quantum-circuits-and-measurements.md
+  - wiki/index.md
+  - wiki/papers/index.md
+- source_id: paper:lam2021mlsgf
+  title: Machine learning statistical gravity from multi-region entanglement entropy
+  kind: paper
+  path: papers/lam2021mlsgf/paper.pdf
+  revision: 8b1568068c510215d7414eb934a83abe7c2541e2660500ef7416a6fb1c6ee5f7
+  ingested_at: '2026-08-23T10:15:15Z'
+  updated_pages:
+  - wiki/methods/learned-statistical-gravity.md
+  - wiki/papers/lam2021mlsgf.md
+  - wiki/topics/deep-learning-renormalization-and-holography.md
+  - wiki/topics/entanglement-structure-and-dynamics.md
+  - wiki/index.md
+  - wiki/papers/index.md
+- source_id: paper:lee2019soadp
+  title: Signatures of a deconfined phase transition on the Shastry-Sutherland lattice
+  kind: paper
+  path: papers/lee2019soadp/paper.pdf
+  revision: 6c7d495f8e2302a8d005b667d14512969ffbe8bdc8a4546aedd4ab02f2b5216a
+  ingested_at: '2026-08-23T10:27:50Z'
+  updated_pages:
+  - wiki/methods/material-facing-dqcp-diagnostics.md
+  - wiki/papers/lee2019soadp.md
+  - wiki/topics/topological-phase-transitions.md
+  - wiki/index.md
+  - wiki/papers/index.md
+- source_id: paper:lee2025sptpu
+  title: Symmetry protected topological phases under decoherence
+  kind: paper
+  path: papers/lee2025sptpu/paper.pdf
+  revision: 809e490715b5f4bb2411209eea908c8cc6b304ca36485c8a098ed1299e73d6b3
+  ingested_at: '2026-08-23T09:38:06Z'
+  updated_pages:
+  - wiki/concepts/symmetry-protected-topological-ensembles.md
+  - wiki/papers/lee2025sptpu.md
+  - wiki/topics/topological-phases.md
+  - wiki/topics/topological-phases-of-matter.md
+  - wiki/topics/quantum-information-dynamics.md
+  - wiki/index.md
+  - wiki/papers/index.md
+- source_id: paper:li2024qmlcs
+  title: 'Quantum many-body lattice CRT symmetry: Fractionalization, anomaly, and symmetric mass generation'
+  kind: paper
+  path: papers/li2024qmlcs/paper.pdf
+  revision: sha256:31fc519bf4f384ac29e3092429913bfb95d360307d4cb315b393af91c6e74f6f
+  ingested_at: '2026-08-23T01:30:09Z'
+  updated_pages:
+  - wiki/papers/li2024qmlcs.md
+  - wiki/concepts/crt-fractionalization.md
+  - wiki/concepts/symmetric-mass-generation.md
+  - wiki/index.md
+  - wiki/papers/index.md
+- source_id: paper:li2026cfifh
+  title: CRT fractionalization in first-quantized Hamiltonian theory
+  kind: paper
+  path: papers/li2026cfifh/paper.pdf
+  revision: sha256:365fa0eab30e2238cdd291e47e5c9f1aab9522fedf71edc3e853e671532d24fb
+  ingested_at: '2026-08-23T09:29:20Z'
+  updated_pages:
+  - wiki/papers/li2026cfifh.md
+  - wiki/concepts/crt-fractionalization.md
+  - wiki/methods/clifford-algebra-crt-classification.md
+  - wiki/index.md
+  - wiki/papers/index.md
+- source_id: paper:lin2022focni
+  title: Fluctuation of Chern Numbers in a Parametric Random Matrix Model
+  kind: paper
+  path: papers/lin2022focni/paper.pdf
+  revision: sha256:1ca28bafbdc6014338d74b91522c1a42776a05a6a90f8385a40f635171e57dc9
+  ingested_at: '2026-08-23T01:30:09Z'
+  updated_pages:
+  - wiki/papers/lin2022focni.md
+  - wiki/models/parametric-random-matrix-topology.md
+  - wiki/index.md
+  - wiki/papers/index.md
+- source_id: paper:liu2023eohpd
+  title: Evaluation of human-model prediction difference on the Internet Scale of Data
+  kind: paper
+  path: papers/liu2023eohpd/paper.pdf
+  revision: sha256:7bee9e0f8dd782de52851834288d377826eceeeead1ff0e1fba9d09126ad376d
+  ingested_at: '2026-08-23T01:30:09Z'
+  updated_pages:
+  - wiki/papers/liu2023eohpd.md
+  - wiki/methods/output-space-model-evaluation.md
+  - wiki/index.md
+  - wiki/papers/index.md
+- source_id: paper:liu2023gwaan
+  title: 'Gradient-based Wang–Landau algorithm: A novel sampler for output distribution of neural networks over the input space'
+  kind: paper
+  path: papers/liu2023gwaan/paper.pdf
+  revision: a49fd74e2a1b52682a11c1f1697555369ff35684783cce5d30fd93d0ee89678d
+  ingested_at: '2026-08-23T10:01:31Z'
+  updated_pages:
+  - wiki/papers/liu2023gwaan.md
+  - wiki/methods/output-space-model-evaluation.md
+  - wiki/papers/index.md
+- source_id: paper:liu2024doare
+  title: Disorder operator and Rényi entanglement entropy of symmetric mass generation
+  kind: paper
+  path: papers/liu2024doare/paper.pdf
+  revision: sha256:15a05cd093bee05c88595f07b3523b553512a0e6eb7dec1fa54071ecfc93dd10
+  ingested_at: '2026-08-23T01:30:09Z'
+  updated_pages:
+  - wiki/papers/liu2024doare.md
+  - wiki/concepts/symmetric-mass-generation.md
+  - wiki/comparisons/smg-regimes-and-diagnostics.md
+  - wiki/index.md
+  - wiki/papers/index.md
+- source_id: paper:liu2025mqdm
+  title: Liu et al. (2025)
+  kind: paper
+  path: papers/liu2025mqdm/paper.pdf
+  revision: sha256:6d76145f9cff1c0c3e547c5e48f1b06f922db72381ec2143e6b282c1015b76ab
+  ingested_at: '2026-08-22T22:02:52Z'
+  updated_pages:
+  - wiki/papers/liu2025mqdm.md
+  - wiki/concepts/weak-measurement-quantum-diffusion.md
+  - wiki/concepts/finite-markov-length.md
+  - wiki/methods/twirled-petz-recovery.md
+  - wiki/comparisons/global-vs-local-petz.md
+  - wiki/comparisons/trajectory-vs-ensemble-recovery.md
+  - wiki/index.md
+  - wiki/papers/index.md
+- source_id: paper:lu2021spmid
+  title: Self-duality protected multicriticality in deconfined quantum phase transitions
+  kind: paper
+  path: papers/lu2021spmid/paper.pdf
+  revision: 7a6ec25cbb87e9354b02de50cfeb803a519e92f8d00dfed26b5ce9d9d234d280
+  ingested_at: '2026-08-23T10:16:20Z'
+  updated_pages:
+  - wiki/concepts/self-duality-protected-multicriticality.md
+  - wiki/papers/lu2021spmid.md
+  - wiki/topics/topological-phase-transitions.md
+  - wiki/methods/twisted-lattice-gauging.md
+  - wiki/index.md
+  - wiki/papers/index.md
+- source_id: paper:lu2022cmaus
+  title: 'Correlated metals and unconventional superconductivity in rhombohedral trilayer graphene: A renormalization group analysis'
+  kind: paper
+  path: papers/lu2022cmaus/paper.pdf
+  revision: 1f1c5489233b6832ab42eab5844b38d1592a375f1fbe27c12678090c84ed4d9c
+  ingested_at: '2026-08-23T10:07:01Z'
+  updated_pages:
+  - wiki/methods/symmetry-complete-hot-spot-rg.md
+  - wiki/papers/lu2022cmaus.md
+  - wiki/topics/unconventional-superconductivity.md
+  - wiki/topics/fermi-and-non-fermi-liquids.md
+  - wiki/index.md
+  - wiki/papers/index.md
+- source_id: paper:lu2023fssmg
+  title: Fermi surface symmetric mass generation
+  kind: paper
+  path: papers/lu2023fssmg/paper.pdf
+  revision: sha256:9afd02bfb4ab3ea5963b8136c39d68248bb790fa0882b3107264523d98ed15d2
+  ingested_at: '2026-08-23T01:30:09Z'
+  updated_pages:
+  - wiki/papers/lu2023fssmg.md
+  - wiki/concepts/symmetric-mass-generation.md
+  - wiki/comparisons/smg-regimes-and-diagnostics.md
+  - wiki/index.md
+  - wiki/papers/index.md
+- source_id: paper:lu2023gfzif
+  title: Green's function zeros in Fermi surface symmetric mass generation
+  kind: paper
+  path: papers/lu2023gfzif/paper.pdf
+  revision: 8f584b1eb333cff13e5daf749397f88b6bb6a9182ea5ba2d9a89b070a97670ca
+  ingested_at: '2026-08-23T10:03:42Z'
+  updated_pages:
+  - wiki/concepts/green-function-zero-surfaces.md
+  - wiki/papers/lu2023gfzif.md
+  - wiki/concepts/fermi-surface-anomalies.md
+  - wiki/comparisons/smg-regimes-and-diagnostics.md
+  - wiki/index.md
+  - wiki/papers/index.md
+- source_id: paper:lu2023sfdsm
+  title: 'Superconductivity from Doping Symmetric Mass Generation Insulators: Application to \(\mathrm{La}_3\mathrm{Ni}_2\mathrm{O}_7\) under Pressure'
+  kind: paper
+  path: papers/lu2023sfdsm/paper.pdf
+  revision: sha256:3060326e2da92aa27dffe453dfe799afbcc4b0cb17e78b4b0d15ead8dfa7880a
+  ingested_at: '2026-08-23T01:30:09Z'
+  updated_pages:
+  - wiki/papers/lu2023sfdsm.md
+  - wiki/concepts/doped-smg-superconductivity.md
+  - wiki/concepts/symmetric-mass-generation.md
+  - wiki/index.md
+  - wiki/papers/index.md
+- source_id: paper:lu2024dacof
+  title: Definition and Classification of Fermi Surface Anomalies
+  kind: paper
+  path: papers/lu2024dacof/paper.pdf
+  revision: af756b838a4ac1c662ff9e3e6d9f83dcbeeafb37ae605f92adaa8b28f416576c
+  ingested_at: '2026-08-23T09:47:42Z'
+  updated_pages:
+  - wiki/concepts/fermi-surface-anomalies.md
+  - wiki/papers/lu2024dacof.md
+  - wiki/concepts/symmetric-mass-generation.md
+  - wiki/topics/fermi-and-non-fermi-liquids.md
+  - wiki/index.md
+  - wiki/papers/index.md
+- source_id: paper:lu2024rtapb
+  title: Realizing triality and p-ality by lattice twisted gauging in (1+1)d quantum spin systems
+  kind: paper
+  path: papers/lu2024rtapb/paper.pdf
+  revision: 98e457390cacf938c2c9f388465d6cb5b11c38ffbcd431320da078d0d621a111
+  ingested_at: '2026-08-23T09:49:12Z'
+  updated_pages:
+  - wiki/methods/twisted-lattice-gauging.md
+  - wiki/papers/lu2024rtapb.md
+  - wiki/concepts/noninvertible-spt-diagnostics.md
+  - wiki/methods/quantum-process-code-constructions.md
+  - wiki/topics/topological-phase-transitions.md
+  - wiki/index.md
+  - wiki/papers/index.md
+- source_id: paper:lu2025scaso
+  title: Strange correlator and string order parameter for non-invertible symmetry protected topological phases in 1+ 1d
+  kind: paper
+  path: papers/lu2025scaso/paper.pdf
+  revision: sha256:e0826f38082840c5fb0200110c2dd4854b99a2331bbc91a1fd6397bec6eb6e8b
+  ingested_at: '2026-08-23T01:30:10Z'
+  updated_pages:
+  - wiki/papers/lu2025scaso.md
+  - wiki/concepts/noninvertible-spt-diagnostics.md
+  - wiki/index.md
+  - wiki/papers/index.md
+- source_id: paper:shen2020isiqn
+  title: Information scrambling in quantum neural networks
+  kind: paper
+  path: papers/shen2020isiqn/paper.pdf
+  revision: 84bb71a29b9494860e047c10d81ff1738ff19cb35d7b2f30aaa29ad6f7934973
+  ingested_at: '2026-08-23T10:22:16Z'
+  updated_pages:
+  - wiki/methods/information-scrambling-diagnostics-for-quantum-neural-networks.md
+  - wiki/papers/shen2020isiqn.md
+  - wiki/topics/machine-learning-and-quantum-physics.md
+  - wiki/index.md
+  - wiki/papers/index.md
+- source_id: paper:sheshmani2023crlar
+  title: Categorical representation learning and RG flow operators for algorithmic classifiers
+  kind: paper
+  path: papers/sheshmani2023crlar/paper.pdf
+  revision: 482fe451f7538b384dc9e525210cd580e0b4deff3c1f7196175c29006c0a81c8
+  ingested_at: '2026-08-23T10:05:34Z'
+  updated_pages:
+  - wiki/papers/sheshmani2023crlar.md
+  - wiki/methods/machine-learning-renormalization-group.md
+  - wiki/topics/deep-learning-renormalization-and-holography.md
+  - wiki/papers/index.md
+- source_id: paper:sheshmani2025rgfot
+  title: Renormalization group flow, optimal transport and diffusion-based generative model
+  kind: paper
+  path: papers/sheshmani2025rgfot/paper.pdf
+  revision: 3afef71b930851ff3f448a4762ad5e8d26fea282b9a9b0828bf9f80aa33699ac
+  ingested_at: '2026-08-23T09:39:24Z'
+  updated_pages:
+  - wiki/methods/frequency-domain-diffusion-models.md
+  - wiki/papers/sheshmani2025rgfot.md
+  - wiki/methods/machine-learning-renormalization-group.md
+  - wiki/topics/deep-learning-renormalization-and-holography.md
+  - wiki/index.md
+  - wiki/papers/index.md
+- source_id: paper:song2025mcsoo
+  title: Monte Carlo Simulation of Operator Dynamics and Entanglement in Dual-Unitary Circuits
+  kind: paper
+  path: papers/song2025mcsoo/paper.pdf
+  revision: 9c0e092e4d3b1a4dddd7182ff4aff054c54859082d4dd9347acede8eeff32b4b
+  ingested_at: '2026-08-23T09:40:51Z'
+  updated_pages:
+  - wiki/methods/monte-carlo-operator-dynamics.md
+  - wiki/papers/song2025mcsoo.md
+  - wiki/topics/random-quantum-circuits-and-measurements.md
+  - wiki/topics/entanglement-structure-and-dynamics.md
+  - wiki/index.md
+  - wiki/papers/index.md
+- source_id: paper:tao2025ddmfs
+  title: Data Driven Modeling for Self-Similar Dynamics
+  kind: paper
+  path: papers/tao2025ddmfs/paper.pdf
+  revision: de95bb68f8b5b176d23c83ed5b775574e9577b5e9a58429a8d113ab45b9bdde5
+  ingested_at: '2026-08-23T09:42:03Z'
+  updated_pages:
+  - wiki/methods/data-driven-self-similar-dynamics.md
+  - wiki/papers/tao2025ddmfs.md
+  - wiki/methods/machine-learning-renormalization-group.md
+  - wiki/topics/deep-learning-renormalization-and-holography.md
+  - wiki/index.md
+  - wiki/papers/index.md
+- source_id: paper:vasseur2019etfhr
+  title: Entanglement transitions from holographic random tensor networks
+  kind: paper
+  path: papers/vasseur2019etfhr/paper.pdf
+  revision: 3068a3e40bf652f3e7b0d429f76355bc9aa293ad175426c9582d4de53d34779a
+  ingested_at: '2026-08-23T10:28:50Z'
+  updated_pages:
+  - wiki/concepts/random-tensor-network-entanglement-transitions.md
+  - wiki/papers/vasseur2019etfhr.md
+  - wiki/topics/entanglement-structure-and-dynamics.md
+  - wiki/index.md
+  - wiki/papers/index.md
+- source_id: paper:wan2023cffam
+  title: CRT fractionalization, fermions, and mod 8 periodicity
+  kind: paper
+  path: papers/wan2023cffam/paper.pdf
+  revision: sha256:7a3124a367c7e19533f68cc0b57a86920439420f94b55fab3915f9359333b4b6
+  ingested_at: '2026-08-23T01:30:10Z'
+  updated_pages:
+  - wiki/papers/wan2023cffam.md
+  - wiki/concepts/crt-fractionalization.md
+  - wiki/index.md
+  - wiki/papers/index.md
+- source_id: paper:wan2024trots
+  title: Topological responses of the Standard Model gauge group
+  kind: paper
+  path: papers/wan2024trots/paper.pdf
+  revision: sha256:71de610cabc7797b16c236dcb6668af2c102eef0939e99126d8d2d394ad34971
+  ingested_at: '2026-08-23T01:30:10Z'
+  updated_pages:
+  - wiki/papers/wan2024trots.md
+  - wiki/concepts/topological-responses-of-gauge-groups.md
+  - wiki/concepts/crt-fractionalization.md
+  - wiki/index.md
+  - wiki/papers/index.md
+- source_id: paper:wang2019docqe
+  title: Dynamics of compact quantum electrodynamics at large fermion flavor
+  kind: paper
+  path: papers/wang2019docqe/paper.pdf
+  revision: 66e0b9e0ce01f981716ab31e0380f388215a8b4f3909d4f300921c5f7131a03e
+  ingested_at: '2026-08-23T10:29:58Z'
+  updated_pages:
+  - wiki/concepts/dynamical-signatures-of-compact-qed3.md
+  - wiki/papers/wang2019docqe.md
+  - wiki/topics/quantum-spin-liquids.md
+  - wiki/index.md
+  - wiki/papers/index.md
+- source_id: paper:wang2019eseia
+  title: Emergent Schrödinger equation in an introspective machine learning architecture
+  kind: paper
+  path: papers/wang2019eseia/paper.pdf
+  revision: d15ea936e32c7f828c8aeae870e7b33a69bbe80f13c0fb544b1a7cc9d436382f
+  ingested_at: '2026-08-23T10:31:04Z'
+  updated_pages:
+  - wiki/methods/introspective-latent-dynamics-discovery.md
+  - wiki/papers/wang2019eseia.md
+  - wiki/topics/physics-of-artificial-intelligence.md
+  - wiki/index.md
+  - wiki/papers/index.md
+- source_id: paper:wang2020mlioi
+  title: Machine learning identification of impurities in the STM images
+  kind: paper
+  path: papers/wang2020mlioi/paper.pdf
+  revision: 7ee2f1865c7f0e4dcd9d396523069e1aebc02cbceff744704dd31e1522146479
+  ingested_at: '2026-08-23T10:24:49Z'
+  updated_pages:
+  - wiki/methods/simulation-to-experiment-image-transfer.md
+  - wiki/papers/wang2020mlioi.md
+  - wiki/topics/machine-learning-and-physics.md
+  - wiki/index.md
+  - wiki/papers/index.md
+- source_id: paper:wang2022smg
+  title: Symmetric mass generation
+  kind: paper
+  path: papers/wang2022smg/paper.pdf
+  revision: sha256:439f3d2bb881153c13207b8d16bf020dba8b1276faa692e5004120e3f46451d7
+  ingested_at: '2026-08-23T01:30:10Z'
+  updated_pages:
+  - wiki/papers/wang2022smg.md
+  - wiki/concepts/symmetric-mass-generation.md
+  - wiki/comparisons/smg-regimes-and-diagnostics.md
+  - wiki/index.md
+  - wiki/papers/index.md
+- source_id: paper:wang2025mlfgs
+  title: Machine Learning for Ground State Preparation via Measurement and Feedback
+  kind: paper
+  path: papers/wang2025mlfgs/paper.pdf
+  revision: sha256:3fc84f8a787eeb0e52e58c311a71d4aec1a0e26d09a8f361f20fdda684cf4912
+  ingested_at: '2026-08-23T01:30:10Z'
+  updated_pages:
+  - wiki/papers/wang2025mlfgs.md
+  - wiki/methods/measurement-conditioned-quantum-control.md
+  - wiki/concepts/learned-quantum-state-models.md
+  - wiki/index.md
+  - wiki/papers/index.md
+- source_id: paper:wu2025dstpb
+  title: Designing Shadow Tomography Protocols by Natural Language Processing
+  kind: paper
+  path: papers/wu2025dstpb/paper.pdf
+  revision: sha256:5a44432dd8d10ea7e1f7b71301e60c66a9a86bca57e863b369b2f5f5d635b522
+  ingested_at: '2026-08-23T01:30:10Z'
+  updated_pages:
+  - wiki/papers/wu2025dstpb.md
+  - wiki/comparisons/structured-classical-shadow-protocols.md
+  - wiki/concepts/classical-shadow-tomography.md
+  - wiki/index.md
+  - wiki/papers/index.md
+- source_id: paper:wu2026cuacs
+  title: Contractive unitary and classical shadow tomography
+  kind: paper
+  path: papers/wu2026cuacs/paper.pdf
+  revision: sha256:e59783b15673e272f2f8e1a511b6e270071ec3fcce60181755e7377de762b898
+  ingested_at: '2026-08-23T01:30:10Z'
+  updated_pages:
+  - wiki/papers/wu2026cuacs.md
+  - wiki/comparisons/structured-classical-shadow-protocols.md
+  - wiki/concepts/classical-shadow-tomography.md
+  - wiki/index.md
+  - wiki/papers/index.md
+- source_id: paper:yang2026dcaig
+  title: Deconfined criticality as intrinsically gapless topological state in one dimension
+  kind: paper
+  path: papers/yang2026dcaig/paper.pdf
+  revision: sha256:4ec92d88ef6a05422c4e03d29e781bd3cf2a9994f8e32f8af9b4786b9015f5e3
+  ingested_at: '2026-08-23T09:30:42Z'
+  updated_pages:
+  - wiki/papers/yang2026dcaig.md
+  - wiki/concepts/intrinsically-gapless-topological-states.md
+  - wiki/topics/topological-phase-transitions.md
+  - wiki/topics/topological-phases.md
+  - wiki/index.md
+  - wiki/papers/index.md
+- source_id: paper:yao2024sltsq
+  title: ShadowGPT
+  kind: paper
+  path: papers/yao2024sltsq/paper.pdf
+  revision: sha256:863cd875c5e7a89606f7a7d8a53dba930cd13dbdf4d71ec250720b151a5d8c48
+  ingested_at: '2026-08-23T01:30:10Z'
+  updated_pages:
+  - wiki/papers/yao2024sltsq.md
+  - wiki/concepts/learned-quantum-state-models.md
+  - wiki/concepts/classical-shadow-tomography.md
+  - wiki/index.md
+  - wiki/papers/index.md
+- source_id: paper:you2018sfmga
+  title: Symmetric fermion mass generation as deconfined quantum criticality
+  kind: paper
+  path: papers/you2018sfmga/paper.pdf
+  revision: sha256:4d5e68a04f714eaa719e9d44615de0d00d028c9dfd1834ebb264e1a5c8ca5dee
+  ingested_at: '2026-08-23T01:30:11Z'
+  updated_pages:
+  - wiki/papers/you2018sfmga.md
+  - wiki/concepts/symmetric-mass-generation.md
+  - wiki/comparisons/smg-regimes-and-diagnostics.md
+  - wiki/index.md
+  - wiki/papers/index.md
+- source_id: paper:you2019sfvfa
+  title: Superconductivity from valley fluctuations and approximate SO(4) symmetry in twisted bilayer graphene
+  kind: paper
+  path: papers/you2019sfvfa/paper.pdf
+  revision: 2888e271094ed55bcff9c22012b1a07500035aee4aa90f0aaa3c667a6ced8f79
+  ingested_at: '2026-08-23T10:34:30Z'
+  updated_pages:
+  - wiki/concepts/intervalley-coherence.md
+  - wiki/papers/you2019sfvfa.md
+  - wiki/topics/unconventional-superconductivity.md
+  - wiki/papers/index.md
+- source_id: paper:you2022dqcag
+  title: Deconfined quantum criticality among grand unified theories
+  kind: paper
+  path: papers/you2022dqcag/paper.pdf
+  revision: 2115c94b7eb1911eaadf4b71f5cba395eac6906fc7ff53ee7be948d0315f575d
+  ingested_at: '2026-08-23T10:08:25Z'
+  updated_pages:
+  - wiki/concepts/grand-unified-deconfined-criticality.md
+  - wiki/papers/you2022dqcag.md
+  - wiki/concepts/topological-responses-of-gauge-groups.md
+  - wiki/concepts/symmetric-mass-generation.md
+  - wiki/index.md
+  - wiki/papers/index.md
+- source_id: paper:you2022ksaic
+  title: Kohn-Luttinger superconductivity and intervalley coherence in rhombohedral trilayer graphene
+  kind: paper
+  path: papers/you2022ksaic/paper.pdf
+  revision: 296ae8a1d17ce37417e92b753b8c464caa3d9602809d6e6282cbd552d0041136
+  ingested_at: '2026-08-23T10:10:08Z'
+  updated_pages:
+  - wiki/concepts/intervalley-coherence.md
+  - wiki/papers/you2022ksaic.md
+  - wiki/methods/symmetry-complete-hot-spot-rg.md
+  - wiki/topics/unconventional-superconductivity.md
+  - wiki/index.md
+  - wiki/papers/index.md
+- source_id: paper:zeng2022smgit
+  title: Symmetric Mass Generation in the 1+1 Dimensional Chiral Fermion 3-4-5-0 Model
+  kind: paper
+  path: papers/zeng2022smgit/paper.pdf
+  revision: sha256:a892a1bd71a4b1b73b63d9c44897c94c2027c48eda6289a0536778508f571e5f
+  ingested_at: '2026-08-23T01:30:11Z'
+  updated_pages:
+  - wiki/papers/zeng2022smgit.md
+  - wiki/concepts/symmetric-mass-generation.md
+  - wiki/concepts/crt-fractionalization.md
+  - wiki/index.md
+  - wiki/papers/index.md
+- source_id: paper:zeng2024htsbn
+  title: High-order Time-Reversal Symmetry Breaking Normal State
+  kind: paper
+  path: papers/zeng2024htsbn/paper.pdf
+  revision: 10160676623c545808d8a87b13a3716aee57d63ed89d0fea67de02275ebe9d9f
+  ingested_at: '2026-08-23T09:50:29Z'
+  updated_pages:
+  - wiki/concepts/vestigial-and-charge-4e-superconducting-order.md
+  - wiki/papers/zeng2024htsbn.md
+  - wiki/topics/unconventional-superconductivity.md
+  - wiki/topics/correlated-quantum-many-body-systems.md
+  - wiki/index.md
+  - wiki/papers/index.md
+- source_id: paper:zeng2024ocism
+  title: Optical conductivity in symmetric mass generation insulators
+  kind: paper
+  path: papers/zeng2024ocism/paper.pdf
+  revision: sha256:7a30cd8b30e9bbe592283d189ceff274ebafec60279bc06db1fe3520b3162906
+  ingested_at: '2026-08-23T01:30:11Z'
+  updated_pages:
+  - wiki/papers/zeng2024ocism.md
+  - wiki/comparisons/smg-regimes-and-diagnostics.md
+  - wiki/concepts/symmetric-mass-generation.md
+  - wiki/index.md
+  - wiki/papers/index.md
+- source_id: paper:zhang2024oscwa
+  title: Observing Schrödinger’s Cat with Artificial Intelligence
+  kind: paper
+  path: papers/zhang2024oscwa/paper.pdf
+  revision: 9a7f48f38cc5dfc354f1eb54e61821fdd9e1622d866d3ade1072000cbb450087
+  ingested_at: '2026-08-23T09:52:16Z'
+  updated_pages:
+  - wiki/concepts/information-bottleneck-quantum-classicality.md
+  - wiki/papers/zhang2024oscwa.md
+  - wiki/concepts/learned-quantum-state-models.md
+  - wiki/topics/machine-learning-and-quantum-physics.md
+  - wiki/index.md
+  - wiki/papers/index.md
+- source_id: paper:zhang2025hcst
+  title: Holographic Classical Shadow Tomography
+  kind: paper
+  path: papers/zhang2025hcst/paper.pdf
+  revision: 031579ec4f33d70dce94c7a15c22c93f658ee36de635f8bf4de1594154ea8723
+  ingested_at: '2026-08-23T09:43:26Z'
+  updated_pages:
+  - wiki/methods/holographic-classical-shadows.md
+  - wiki/papers/zhang2025hcst.md
+  - wiki/comparisons/structured-classical-shadow-protocols.md
+  - wiki/concepts/classical-shadow-tomography.md
+  - wiki/index.md
+  - wiki/papers/index.md
+- source_id: paper:zhang2026qprol
+  title: Quantum Process Realization of LDPC Code Dualities and Product Constructions
+  kind: paper
+  path: papers/zhang2026qprol/paper.pdf
+  revision: sha256:253618d45a6f04c6dffcbfc75e2f18fded4a5140891fa4c64c05fc2cbc507541
+  ingested_at: '2026-08-23T01:30:11Z'
+  updated_pages:
+  - wiki/papers/zhang2026qprol.md
+  - wiki/methods/quantum-process-code-constructions.md
+  - wiki/index.md
+  - wiki/papers/index.md
+- source_id: paper:zhao2026aodnn
+  title: Application of deep neural networks for computing the renormalization group flow of the two-dimensional phi4 field theory
+  kind: paper
+  path: papers/zhao2026aodnn/paper.pdf
+  revision: 00fd7917521803f950f7cf1d1e306c691762074d53f94e474a8288c628223d17
+  ingested_at: '2026-08-23T09:33:47Z'
+  updated_pages:
+  - wiki/methods/machine-learning-renormalization-group.md
+  - wiki/topics/deep-learning-renormalization-and-holography.md
+  - wiki/papers/zhao2026aodnn.md
+  - wiki/papers/index.md
+- source_id: project:benchmark-wiki-schema
+  title: Local benchmark wiki schema
+  kind: project
+  path: benchmarks/local-petz-recovery-ladder/wiki/SCHEMA.md
+  revision: workspace:2026-08-22
+  ingested_at: '2026-08-22T00:00:00Z'
+  updated_pages:
+  - wiki/project/knowledge-layer.md
+- source_id: project:benchmarks
+  title: Benchmark README
+  kind: project
+  path: benchmarks/README.md
+  revision: workspace:2026-08-22
+  ingested_at: '2026-08-22T00:00:00Z'
+  updated_pages:
+  - wiki/thesis.md
+  - wiki/project/overview.md
+  - wiki/project/problem-design-strategy.md
+  - wiki/project/research-loop.md
+  - wiki/project/knowledge-layer.md
+  - wiki/benchmarks/index.md
+- source_id: project:papers
+  title: Paper catalog
+  kind: project
+  path: papers/papers.yml
+  revision: sha256:19e1f92b734c187dc844db12a67da8b77f6c26aca4c814afa5da0b15c2ec3a3a
+  ingested_at: '2026-08-23T01:30:38Z'
+  updated_pages:
+  - wiki/project/overview.md
+  - wiki/papers/index.md
+  - wiki/thesis.md
+- source_id: project:skills
+  title: Skills catalog
+  kind: skill
+  path: skills/README.md
+  revision: workspace:2026-08-22
+  ingested_at: '2026-08-22T00:00:00Z'
+  updated_pages:
+  - wiki/thesis.md
+  - wiki/project/agent-workflow.md
+  - wiki/project/knowledge-layer.md
+  - wiki/project/skills.md
+- source_id: project:talk
+  title: Research talk README
+  kind: talk
+  path: talk/README.md
+  revision: workspace:2026-08-22
+  ingested_at: '2026-08-22T00:00:00Z'
+  updated_pages:
+  - wiki/project/talk.md
+  - wiki/project/agent-workflow.md
+- source_id: repository:liu2025mqdm
+  title: Liu quantum-diffusion repository
+  kind: repository
+  path: papers/liu2025mqdm/repo
+  revision: sha256:4b914163b7bbc8f3902a731e3a71984ef8cdb38416e8813ab8a953e3c2c4023f
+  ingested_at: '2026-08-22T22:02:53Z'
+  updated_pages:
+  - wiki/papers/liu2025mqdm.md
+  - wiki/concepts/weak-measurement-quantum-diffusion.md
+  - wiki/comparisons/trajectory-vs-ensemble-recovery.md
+  - wiki/implementations/liu-quantum-diffusion-companion.md
+  - wiki/index.md
+  - wiki/papers/index.md

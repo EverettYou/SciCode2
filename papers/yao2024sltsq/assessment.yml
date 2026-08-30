@@ -1,0 +1,38 @@
+paper_id: yao2024sltsq
+title: 'Shadowgpt: Learning to solve quantum many-body problems from randomized measurements'
+authors: Jian Yao, Yi-Zhuang You
+year: 2024
+source_url: https://arxiv.org/abs/2411.03285
+research_area:
+- quantum many-body physics
+- classical shadows
+- scientific machine learning
+summary: We propose ShadowGPT, a novel approach for solving quantum many-body problems by learning from
+  randomized measurement data collected from quantum experiments. The model is a generative pretrained
+  transformer (GPT) trained on simulated classical shadow data of ground states of quantum Hamiltonians,
+  obtained through randomized Pauli measurements. Once trained, the model can predict a range of ground
+  state properties across the Hamiltonian parameter space. We demonstrate its effectiveness on the transverse-field
+  Ising model and the cluster-Ising model, accurately predicting ground state energy, correlation functions,
+  and entanglement entropy. This approach highlights the potential of combining quantum data with classical
+  machine learning to address complex quantum many-body challenges.
+computational_core: Train a conditional autoregressive model on randomized Pauli measurement strings from parameterized Hamiltonians, then predict ground-state energies, correlations, and entanglement observables across held-out couplings or models.
+computational_depth: high
+scientific_judgment: high
+validation_ease: high
+workstation_feasible: yes
+reference_solution_feasible: yes
+non_searchable_extension_possible: yes
+supervision_confidence: high
+followup_ideas:
+- Test transfer from one Hamiltonian family to a deliberately perturbed family while separating interpolation from genuine generalization.
+- Compare measurement budgets and observable choices to determine when a classical-shadow representation loses phase information.
+potential_pitfalls:
+- Apparent generalization can be interpolation in coupling space or leakage through the measurement representation.
+- Transformer accuracy can hide poor calibration or failure near phase transitions.
+- Exact diagonalization references become expensive quickly, so the task needs a controlled system-size ladder.
+suggested_task_types:
+- out-of-distribution-generalization
+- measurement-budget-study
+- phase-diagnostic
+ai_assessment: Strong benchmark candidate because the paper combines a concrete data-generation pipeline with exact or high-precision physical observables. A workstation-scale task can require the solver to choose a measurement encoding, model capacity, and validation split, then test whether learned observables remain reliable near a transition rather than merely reproduce in-distribution samples.
+stage: assessed

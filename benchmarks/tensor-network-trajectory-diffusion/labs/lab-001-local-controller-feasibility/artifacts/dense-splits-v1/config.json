@@ -1,0 +1,22 @@
+{
+  "counts": {
+    "test": 64,
+    "train": 256,
+    "validation": 64
+  },
+  "dtype": "complex128",
+  "epsilon": 0.5,
+  "initial_state": "computational_zero",
+  "n_qubits": [
+    1,
+    2
+  ],
+  "purpose": "qualification fixture before dense-QR baseline timing",
+  "schema_version": 1,
+  "seeds": {
+    "test": 1703,
+    "train": 1701,
+    "validation": 1702
+  },
+  "trajectory_length": 6
+}

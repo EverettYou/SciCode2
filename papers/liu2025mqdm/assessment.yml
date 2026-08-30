@@ -1,0 +1,56 @@
+paper_id: liu2025mqdm
+title: Measurement-based quantum diffusion models
+authors: Xinyu Liu, Jingze Zhuang, Wanda Hou, Yi-Zhuang You
+year: 2025
+source_url: https://arxiv.org/abs/2508.08799
+research_area:
+- quantum diffusion
+- weak measurement
+- quantum state generation
+summary: 'We introduce measurement-based quantum diffusion models that bridge classical and quantum diffusion
+  theory through randomized weak measurements. The measurement-based approach naturally generates stochastic
+  quantum trajectories while preserving purity at the trajectory level and inducing depolarization at
+  the ensemble level. We address two quantum state generation problems: trajectory-level recovery of pure
+  state ensembles and ensemble-average recovery of mixed states. For trajectory-level recovery, we establish
+  that quantum score matching is mathematically equivalent to learning unitary generators for the reverse
+  process. For ensemble-average recovery, we introduce local Petz recovery maps for states with finite
+  correlation length and classical shadow reconstruction for general states, both with rigorous error
+  bounds. Our framework establishes Petz recovery maps as quantum generalizations of reverse Fokker-Planck
+  equations, providing a rigorous bridge between quantum recovery channels and classical stochastic reversals.
+  This work enables new approaches to quantum state generation with potential applications in quantum
+  information science.'
+computational_core: Simulate weak-measurement quantum trajectories and ensemble-level recovery, using
+  tensor-network representations to compare local reverse-process and Petz-map reconstruction against
+  exact small-system baselines.
+computational_depth: high
+scientific_judgment: high
+validation_ease: high
+workstation_feasible: 'yes'
+reference_solution_feasible: 'yes'
+non_searchable_extension_possible: 'yes'
+supervision_confidence: high
+followup_ideas:
+- Scale trajectory-level reverse diffusion from the paper's one- and two-qubit state-vector demonstrations
+  to low-entanglement one-dimensional chains using matrix-product states. On the same weak-measurement
+  protocol, construct local reduced density matrices from the MPS and compare the ensemble-average recovery
+  against local Petz recovery as system size, correlation length, and bond dimension vary; report local-observable
+  recovery and runtime scaling.
+- 'Build an exact-to-local validation ladder on short one-dimensional chains: compare local Petz recovery
+  with the exact global Petz map while varying correlation length and recovery-window size. Use fidelity
+  and trace distance in this tractable regime to calibrate the local-recovery implementation before MPS
+  scale-up.'
+potential_pitfalls:
+- Violating complete positivity or normalization in a discretized recovery map.
+- Numerical error can be hidden by comparing only low-order observables.
+- Directly comparing a single pure trajectory recovered by the control Hamiltonian with local Petz output,
+  which is an ensemble-average mixed state. Compare matched ensemble averages or local observables instead.
+suggested_task_types:
+- reconstruction
+- method-comparison
+- robustness-study
+ai_assessment: Strong candidate for a controlled computational task because the paper provides analytic
+  recovery channels, exact low-qubit trajectory tests, and a 10-qubit local-Petz reference, while extending
+  the simulation beyond small state vectors requires real quantum-information and numerical judgment.
+  The solver-facing formulation should keep the formalism focused on implementable recovery methods and
+  scientifically meaningful validation checks.
+stage: reviewed

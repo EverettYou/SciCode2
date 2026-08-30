@@ -1,0 +1,9 @@
+[project]
+name = "{{BENCHMARK_ID}}"
+version = "0.1.0"
+description = "Independent numerical environment for the {{BENCHMARK_ID}} benchmark"
+requires-python = ">=3.11,<3.14"
+dependencies = []
+
+[tool.uv]
+package = false

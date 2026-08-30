@@ -1,0 +1,43 @@
+paper_id: chang2023fssmg
+title: 'Fermi surface symmetric mass generation: a quantum Monte-Carlo study'
+authors: Wei-Xuan Chang, Sibo Guo, Yi-Zhuang You, Zi-Xiang Li
+year: 2023
+source_url: https://arxiv.org/abs/2311.09970
+research_area:
+- quantum Monte Carlo
+- symmetric mass generation
+- strongly correlated electrons
+summary: The symmetric mass generation (SMG) phase is an insulator in which a single-particle gap is intrinsically
+  opened by the interaction, without involving symmetry spontaneously breaking or topological order. Here,
+  we perform unbiased quantum Monte-Carlo simulation and systematically investigate a bilayer fermionic
+  model hosting Fermi surface SMG in the strongly interacting regime. With increasing interaction strength,
+  the model undergoes a quantum phase transition from an exciton insulator to an SMG phase, belonging
+  to the (2+1)-dimensional O(4) universality class. We access the spectral properties of the SMG phase,
+  resembling a Mott insulating phase with relatively flat dispersion and pronounced spectral broadening.
+  The dispersion of Green's function zeros is extracted from spectral function, featuring a surface at
+  zero frequency precisely located at the original non-interacting Fermi surface, which constitutes a
+  hallmark of the Fermi surface SMG phase. The bilayer model we study is potentially relevant to the newly
+  discovered high- superconductor . Our results in SMG phase qualitatively capture the salient features
+  of spectral function unveiled in recent ARPES experiments, shedding new insight on the underlying physics
+  of .
+computational_core: Simulate a bilayer fermionic model with sign-problem-free quantum Monte Carlo, distinguish exciton and symmetric-mass-generation regimes, and validate the transition through finite-size scaling and Green-function diagnostics.
+computational_depth: high
+scientific_judgment: high
+validation_ease: medium
+workstation_feasible: uncertain
+reference_solution_feasible: uncertain
+non_searchable_extension_possible: yes
+supervision_confidence: high
+followup_ideas:
+- Construct a reduced-size parameter sweep that tests whether the inferred O(4) scaling survives a controlled perturbation of the bilayer couplings.
+- Compare spectral-function and Green-function-zero diagnostics using independent estimators and finite-size windows.
+potential_pitfalls:
+- Sign-problem-free does not mean low cost; lattice size and autocorrelation can exceed workstation limits.
+- Apparent universality can be an artifact of a narrow interaction or finite-size window.
+- Spectral reconstruction and analytic continuation can introduce structure not present in the raw correlators.
+suggested_task_types:
+- finite-size-scaling
+- phase-diagnosis
+- robustness-study
+ai_assessment: Scientifically rich benchmark candidate, especially as a reduced follow-up to the paper's large-scale study. It offers meaningful competing diagnostics and a natural non-searchable perturbation, but the benchmark must be aggressively scoped around small lattices and a validated observable so the workload remains workstation-feasible.
+stage: assessed

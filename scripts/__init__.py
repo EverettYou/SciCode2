@@ -1,0 +1,1 @@
+"""Shared project automation helpers."""

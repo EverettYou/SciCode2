@@ -1,0 +1,40 @@
+paper_id: zhang2026qprol
+title: Quantum Process Realization of LDPC Code Dualities and Product Constructions
+authors: Shuhan Zhang, Deepak Aryal, Yi-Zhuang You
+year: 2026
+source_url: https://arxiv.org/abs/2603.13538
+research_area:
+- quantum error-correcting codes
+- quantum circuits
+- ZX calculus
+summary: We realize a broad class of code constructions, including Kramers-Wannier duality, tensor product,
+  and check product, as quantum processes consisting of ancilla initialization, local unitaries, and projective
+  measurements. Using ZX-calculus, we represent these transformations diagrammatically and provide a systematic
+  algorithm for extracting quantum circuits. Central to our framework is the observation that the physical
+  content of a classical LDPC code is captured by the operator algebra associated with its Tanner graph,
+  and that code transformations correspond to maps between such algebras. Kramers-Wannier duality then
+  admits a natural interpretation as gauging, while tensor and check products correspond to coupled-layer
+  constructions in which interlayer coupling and projection implement a quotient on stacked operator algebras.
+  Together, these results establish a unified framework connecting code transformations, quantum circuits,
+  and mappings between distinct quantum phases of matter.
+computational_core: Convert LDPC-code algebraic constructions into quantum processes, extract circuits from operator relations, and verify the resulting maps on small Tanner graphs and exactly solvable code families.
+computational_depth: high
+scientific_judgment: high
+validation_ease: medium
+workstation_feasible: yes
+reference_solution_feasible: yes
+non_searchable_extension_possible: yes
+supervision_confidence: medium
+followup_ideas:
+- Implement and compare circuit extraction for a small family of tensor, check, and gauging products with independent stabilizer verification.
+- Search for a new small Tanner-graph construction whose process has a prescribed logical action and quantify ancilla and depth overhead.
+potential_pitfalls:
+- Equivalent stabilizer or ZX representations can obscure whether two extracted processes really implement the same map.
+- Boundary conventions and qubit ordering are easy sources of silent circuit errors.
+- A benchmark should constrain graph sizes enough to keep exhaustive verification feasible.
+suggested_task_types:
+- circuit-synthesis
+- algebra-to-algorithm
+- exact-verification
+ai_assessment: Promising but technically demanding benchmark candidate. It naturally requires translation between algebra, graph structure, and executable circuits, with exact stabilizer checks available for validation. The task should use small, fully specified graph families and ask for a nontrivial new construction rather than a literature transcription.
+stage: assessed

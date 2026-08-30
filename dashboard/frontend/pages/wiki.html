@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="../static/js/redirect-to-dashboard.js"></script>
+  <script src="../static/js/knowledge-types.js?v=20260823-1"></script>
+  <script src="../static/js/search-routing.js?v=20260823-1"></script>
+  <script defer src="../static/js/site-shell.js"></script>
+  <title>Wiki · Paper to Benchmark</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+  <link rel="stylesheet" href="../static/css/style.css?v=20260823-89">
+</head>
+<body data-page="wiki">
+  <div id="site-header"></div>
+  <main class="wiki-shell">
+    <aside class="wiki-sidebar">
+      <div class="wiki-sidebar-heading"><p id="wiki-scope-label" class="eyebrow">GLOBAL WIKI</p><h1 id="wiki-scope-title">Explore</h1></div>
+      <div class="search-control wiki-search"><i class="fa-solid fa-magnifying-glass search-icon" aria-hidden="true"></i><input id="wiki-search" type="search" aria-label="Search knowledge" placeholder="Search knowledge"></div>
+      <nav id="wiki-page-list" class="wiki-page-list" aria-label="Explore wiki"></nav>
+    </aside>
+    <article id="wiki-article" class="wiki-article" aria-live="polite"><div class="wiki-loading">Loading knowledge…</div></article>
+    <aside id="wiki-context" class="wiki-context" aria-label="Page context"></aside>
+  </main>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
+  <script defer src="../static/js/wiki.js?v=20260823-19"></script>
+</body>
+</html>

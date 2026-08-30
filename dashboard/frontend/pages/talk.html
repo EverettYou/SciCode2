@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="../static/js/redirect-to-dashboard.js"></script>
+  <script defer src="../static/js/site-shell.js"></script>
+  <title>Project talk · Paper to Benchmark</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+  <link rel="stylesheet" href="../static/css/style.css?v=20260823-89">
+  <script defer src="https://cdn.jsdelivr.net/npm/marked@15.0.7/lib/marked.umd.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/dompurify@3.2.3/dist/purify.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
+</head>
+<body data-page="project-talk">
+  <div id="site-header"></div>
+  <main class="detail-shell benchmark-detail-shell">
+    <section id="benchmark-header" class="benchmark-detail-header" aria-live="polite"></section>
+    <section id="talk-stats" class="talk-stats" aria-label="Research supervision status"></section>
+    <section class="research-forum" aria-label="Project research talk">
+      <aside class="forum-sidebar workspace-panel">
+        <div class="forum-panel-heading"><div><p class="panel-kicker">ALL BENCHMARKS</p><h2>Threads</h2></div><span id="thread-total" class="panel-meta"></span></div>
+        <div id="thread-list" class="issue-list"></div>
+        <form id="new-thread-form" class="general-advice-form">
+          <p class="panel-kicker">USER STARTS</p>
+          <h3>New thread</h3>
+          <input id="new-thread-title" maxlength="160" placeholder="Conversation title" aria-label="Thread title" required>
+          <label class="scope-label" for="new-thread-context">CONTEXT</label>
+          <textarea id="new-thread-context" class="talk-context-input" rows="4" maxlength="12000" placeholder="Paste context here."></textarea>
+          <div class="thread-create-options">
+            <div class="thread-option-picker">
+              <span class="thread-option-label">TOPIC</span>
+              <button id="new-thread-category-trigger" class="thread-option-value option-category-task" type="button" data-value="task" aria-haspopup="menu" aria-expanded="false">task</button>
+              <div id="new-thread-category-menu" class="picker-menu thread-option-menu" role="menu" hidden>
+                <button type="button" role="menuitem" data-thread-option="category" data-value="task" class="selected">task</button>
+                <button type="button" role="menuitem" data-thread-option="category" data-value="scientific">scientific</button>
+                <button type="button" role="menuitem" data-thread-option="category" data-value="scope">scope</button>
+                <button type="button" role="menuitem" data-thread-option="category" data-value="checkpoint">checkpoint</button>
+                <button type="button" role="menuitem" data-thread-option="category" data-value="other">other</button>
+              </div>
+            </div>
+            <div class="thread-option-picker">
+              <span class="thread-option-label">PRIORITY</span>
+              <button id="new-thread-priority-trigger" class="thread-option-value option-priority-normal" type="button" data-value="normal" aria-haspopup="menu" aria-expanded="false">normal</button>
+              <div id="new-thread-priority-menu" class="picker-menu thread-option-menu" role="menu" hidden>
+                <button type="button" role="menuitem" data-thread-option="priority" data-value="normal" class="selected">normal</button>
+                <button type="button" role="menuitem" data-thread-option="priority" data-value="high">high</button>
+                <button type="button" role="menuitem" data-thread-option="priority" data-value="blocking">blocking</button>
+                <button type="button" role="menuitem" data-thread-option="priority" data-value="low">low</button>
+              </div>
+            </div>
+          </div>
+          <textarea id="new-thread-message" rows="5" maxlength="12000" placeholder="Ask a question, assign a task, or give project guidance." required></textarea>
+          <div class="forum-form-actions"><span id="new-thread-notice" class="forum-notice" aria-live="polite"></span><button type="submit">Open thread</button></div>
+        </form>
+      </aside>
+      <section id="thread-panel" class="thread-panel workspace-panel" aria-live="polite"></section>
+    </section>
+  </main>
+  <script src="../static/js/benchmark.js?v=20260823-29"></script>
+</body>
+</html>
