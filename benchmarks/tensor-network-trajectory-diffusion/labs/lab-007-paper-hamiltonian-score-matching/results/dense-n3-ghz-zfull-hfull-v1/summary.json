@@ -1,0 +1,563 @@
+{
+  "kind": "dense_n3_ghz_zfull-hfull",
+  "created_at": "2026-08-31T23:51:50+00:00",
+  "started_at": "2026-08-31T23:31:03+00:00",
+  "elapsed_seconds": 1246.924371728208,
+  "environment": {
+    "torch_version": "2.6.0+cu124",
+    "device": "cuda:0",
+    "gpu_name": "NVIDIA H200 NVL",
+    "cuda_visible_devices": "1",
+    "seed": 2026,
+    "gamma": 1.0,
+    "T": 3.0,
+    "dt": 0.01,
+    "n_steps": 300,
+    "n_qubits": 3,
+    "target": "ghz",
+    "z_mode": "full",
+    "h_mode": "full",
+    "n_z": 63,
+    "n_h": 63,
+    "batch": 64,
+    "hidden": 128,
+    "protocol": "dense-n3-ghz-see-vs-do",
+    "ghz_sanity": {
+      "n_pauli": 63,
+      "n_local": 27,
+      "ghz_XXX": 0.9999999999999998,
+      "ghz_ZZI": 0.9999999999999998,
+      "ghz_IZZ": 0.9999999999999998,
+      "ghz_ZIZ": 0.9999999999999998,
+      "ghz_XXI": 0.0,
+      "ghz_XII": 0.0
+    }
+  },
+  "loss_curve": [
+    {
+      "epoch": 1,
+      "loss": 0.04003288104734136,
+      "elapsed_seconds": 21.442281666211784,
+      "one_step_infidelity": 0.039861913715008614,
+      "same_record_oracle_z_fidelity": 0.09933156475111238,
+      "same_record_closed_loop_z_fidelity": 0.12521035682595053,
+      "closed_loop_fidelity_to_ghz": 0.12521035682595053,
+      "closed_loop_W1_to_initial_ensemble": 0.9336794565085835,
+      "closed_loop_mean_XXX": -0.005681498003192708,
+      "closed_loop_mean_YYX": -0.011007047707766487,
+      "closed_loop_mean_YXY": -0.06638678087667786,
+      "closed_loop_mean_XYY": 0.0018036957511503894,
+      "closed_loop_mean_ZZI": -0.005008464616294542,
+      "closed_loop_mean_ZIZ": -0.10115782327620992,
+      "closed_loop_mean_IZZ": 0.03794050767000752
+    },
+    {
+      "epoch": 2,
+      "loss": 0.03982830764835274,
+      "elapsed_seconds": 67.720323539339
+    },
+    {
+      "epoch": 3,
+      "loss": 0.03985149843669323,
+      "elapsed_seconds": 88.4751699171029
+    },
+    {
+      "epoch": 4,
+      "loss": 0.03982373764716884,
+      "elapsed_seconds": 109.12929267017171
+    },
+    {
+      "epoch": 5,
+      "loss": 0.03991755141837052,
+      "elapsed_seconds": 129.88128005107865
+    },
+    {
+      "epoch": 6,
+      "loss": 0.03990549354244196,
+      "elapsed_seconds": 150.49782347120345
+    },
+    {
+      "epoch": 7,
+      "loss": 0.03983469803914451,
+      "elapsed_seconds": 171.26749872835353
+    },
+    {
+      "epoch": 8,
+      "loss": 0.03979491048314732,
+      "elapsed_seconds": 191.92120569525287
+    },
+    {
+      "epoch": 9,
+      "loss": 0.03992576296761371,
+      "elapsed_seconds": 212.67537988442928
+    },
+    {
+      "epoch": 10,
+      "loss": 0.03984679566761433,
+      "elapsed_seconds": 233.37817222904414,
+      "one_step_infidelity": 0.03980918138140096,
+      "same_record_oracle_z_fidelity": 0.12402331023631664,
+      "same_record_closed_loop_z_fidelity": 0.6585424270098246,
+      "closed_loop_fidelity_to_ghz": 0.6585424270098246,
+      "closed_loop_W1_to_initial_ensemble": 0.571272636402734,
+      "closed_loop_mean_XXX": 0.6315217660613877,
+      "closed_loop_mean_YYX": -0.5812091350552041,
+      "closed_loop_mean_YXY": -0.6277986619163899,
+      "closed_loop_mean_XYY": -0.5357784463036062,
+      "closed_loop_mean_ZZI": 0.636470280285192,
+      "closed_loop_mean_ZIZ": 0.6308017135255953,
+      "closed_loop_mean_IZZ": 0.6247594129312226
+    },
+    {
+      "epoch": 11,
+      "loss": 0.03987415055480439,
+      "elapsed_seconds": 279.4095777301118
+    },
+    {
+      "epoch": 12,
+      "loss": 0.03978624400032668,
+      "elapsed_seconds": 300.067457373254
+    },
+    {
+      "epoch": 13,
+      "loss": 0.0396625430012075,
+      "elapsed_seconds": 307.26329216035083
+    },
+    {
+      "epoch": 14,
+      "loss": 0.03970455281701582,
+      "elapsed_seconds": 309.35550679732114
+    },
+    {
+      "epoch": 15,
+      "loss": 0.03983805400098526,
+      "elapsed_seconds": 311.4485202389769
+    },
+    {
+      "epoch": 16,
+      "loss": 0.03984558998736081,
+      "elapsed_seconds": 313.5401533613913
+    },
+    {
+      "epoch": 17,
+      "loss": 0.03970692503842268,
+      "elapsed_seconds": 315.6344636580907
+    },
+    {
+      "epoch": 18,
+      "loss": 0.03976228743609143,
+      "elapsed_seconds": 317.7240759911947
+    },
+    {
+      "epoch": 19,
+      "loss": 0.039856759240765004,
+      "elapsed_seconds": 319.8184704440646
+    },
+    {
+      "epoch": 20,
+      "loss": 0.039832884687576314,
+      "elapsed_seconds": 321.913130084984,
+      "one_step_infidelity": 0.03965637648757485,
+      "same_record_oracle_z_fidelity": 0.11869350962849222,
+      "same_record_closed_loop_z_fidelity": 0.7936537418462558,
+      "closed_loop_fidelity_to_ghz": 0.7936537418462558,
+      "closed_loop_W1_to_initial_ensemble": 0.44527280863434904,
+      "closed_loop_mean_XXX": 0.8206010761184086,
+      "closed_loop_mean_YYX": -0.7720368899542447,
+      "closed_loop_mean_YXY": -0.7729292517014933,
+      "closed_loop_mean_XYY": -0.6843119904231607,
+      "closed_loop_mean_ZZI": 0.7751503596811102,
+      "closed_loop_mean_ZIZ": 0.8363264204997836,
+      "closed_loop_mean_IZZ": 0.6878739463918467
+    },
+    {
+      "epoch": 21,
+      "loss": 0.03974628251304158,
+      "elapsed_seconds": 326.79564044298604
+    },
+    {
+      "epoch": 22,
+      "loss": 0.03967947656230603,
+      "elapsed_seconds": 328.88536185910925
+    },
+    {
+      "epoch": 23,
+      "loss": 0.03979205073296391,
+      "elapsed_seconds": 330.9795248042792
+    },
+    {
+      "epoch": 24,
+      "loss": 0.03985413084635627,
+      "elapsed_seconds": 333.06825558329
+    },
+    {
+      "epoch": 25,
+      "loss": 0.0397506212201336,
+      "elapsed_seconds": 335.1553111691028
+    },
+    {
+      "epoch": 26,
+      "loss": 0.039769403699943376,
+      "elapsed_seconds": 337.3678015982732
+    },
+    {
+      "epoch": 27,
+      "loss": 0.039742870507881875,
+      "elapsed_seconds": 339.45715990429744
+    },
+    {
+      "epoch": 28,
+      "loss": 0.03968986987497679,
+      "elapsed_seconds": 341.5464667719789
+    },
+    {
+      "epoch": 29,
+      "loss": 0.03980976348691508,
+      "elapsed_seconds": 343.63341705314815
+    },
+    {
+      "epoch": 30,
+      "loss": 0.039718408189820226,
+      "elapsed_seconds": 345.7221956080757,
+      "one_step_infidelity": 0.03970370883535274,
+      "same_record_oracle_z_fidelity": 0.1394385192431984,
+      "same_record_closed_loop_z_fidelity": 0.9713842008804753,
+      "closed_loop_fidelity_to_ghz": 0.9713842008804753,
+      "closed_loop_W1_to_initial_ensemble": 0.16445703377228682,
+      "closed_loop_mean_XXX": 0.969605344623828,
+      "closed_loop_mean_YYX": -0.9688934778497087,
+      "closed_loop_mean_YXY": -0.962572074417716,
+      "closed_loop_mean_XYY": -0.9649347154152426,
+      "closed_loop_mean_ZZI": 0.9767847329717346,
+      "closed_loop_mean_ZIZ": 0.9649241668112172,
+      "closed_loop_mean_IZZ": 0.9633590949543562
+    },
+    {
+      "epoch": 31,
+      "loss": 0.03974143637316965,
+      "elapsed_seconds": 350.6080630761571
+    },
+    {
+      "epoch": 32,
+      "loss": 0.03964860841812618,
+      "elapsed_seconds": 352.70101710315794
+    },
+    {
+      "epoch": 33,
+      "loss": 0.03973771741357976,
+      "elapsed_seconds": 354.8248076559976
+    },
+    {
+      "epoch": 34,
+      "loss": 0.03979190400311837,
+      "elapsed_seconds": 356.9108844380826
+    },
+    {
+      "epoch": 35,
+      "loss": 0.04000282890742257,
+      "elapsed_seconds": 359.0063833342865
+    },
+    {
+      "epoch": 36,
+      "loss": 0.039915781861148615,
+      "elapsed_seconds": 361.09422803111374
+    },
+    {
+      "epoch": 37,
+      "loss": 0.03969664101563256,
+      "elapsed_seconds": 363.17869097040966
+    },
+    {
+      "epoch": 38,
+      "loss": 0.0399771858261873,
+      "elapsed_seconds": 365.2619005711749
+    },
+    {
+      "epoch": 39,
+      "loss": 0.03975497995128604,
+      "elapsed_seconds": 367.3503145161085
+    },
+    {
+      "epoch": 40,
+      "loss": 0.03976715370165132,
+      "elapsed_seconds": 369.43716378323734,
+      "one_step_infidelity": 0.039828689090189266,
+      "same_record_oracle_z_fidelity": 0.13151434318590133,
+      "same_record_closed_loop_z_fidelity": 0.9828406538346046,
+      "closed_loop_fidelity_to_ghz": 0.9828406538346046,
+      "closed_loop_W1_to_initial_ensemble": 0.12444995886793765,
+      "closed_loop_mean_XXX": 0.9839068244276142,
+      "closed_loop_mean_YYX": -0.9768136749568695,
+      "closed_loop_mean_YXY": -0.9780065557251927,
+      "closed_loop_mean_XYY": -0.9836005816729733,
+      "closed_loop_mean_ZZI": 0.9782662421726824,
+      "closed_loop_mean_ZIZ": 0.9804006955349063,
+      "closed_loop_mean_IZZ": 0.9817306561866002
+    },
+    {
+      "epoch": 41,
+      "loss": 0.039817087739584416,
+      "elapsed_seconds": 374.33495522430167
+    },
+    {
+      "epoch": 42,
+      "loss": 0.03993086787970661,
+      "elapsed_seconds": 376.5256494330242
+    },
+    {
+      "epoch": 43,
+      "loss": 0.03975722748790344,
+      "elapsed_seconds": 384.3237060541287
+    },
+    {
+      "epoch": 44,
+      "loss": 0.03977819074095701,
+      "elapsed_seconds": 405.07272544130683
+    },
+    {
+      "epoch": 45,
+      "loss": 0.03980746065665075,
+      "elapsed_seconds": 425.8179200720042
+    },
+    {
+      "epoch": 46,
+      "loss": 0.03980130621881758,
+      "elapsed_seconds": 446.401885072235
+    },
+    {
+      "epoch": 47,
+      "loss": 0.03981444540725822,
+      "elapsed_seconds": 467.13987809838727
+    },
+    {
+      "epoch": 48,
+      "loss": 0.039639357293706684,
+      "elapsed_seconds": 487.69173824740574
+    },
+    {
+      "epoch": 49,
+      "loss": 0.039730810493258446,
+      "elapsed_seconds": 508.4284972450696
+    },
+    {
+      "epoch": 50,
+      "loss": 0.03981377033896827,
+      "elapsed_seconds": 529.0741861960851,
+      "one_step_infidelity": 0.0396704571232936,
+      "same_record_oracle_z_fidelity": 0.13463128451648598,
+      "same_record_closed_loop_z_fidelity": 0.9790403303358733,
+      "closed_loop_fidelity_to_ghz": 0.9790403303358733,
+      "closed_loop_W1_to_initial_ensemble": 0.11269045969751204,
+      "closed_loop_mean_XXX": 0.9794747489297219,
+      "closed_loop_mean_YYX": -0.9776230082408025,
+      "closed_loop_mean_YXY": -0.9736566334958994,
+      "closed_loop_mean_XYY": -0.9699295944675536,
+      "closed_loop_mean_ZZI": 0.982457754211365,
+      "closed_loop_mean_ZIZ": 0.9762716554679842,
+      "closed_loop_mean_IZZ": 0.9729092478736616
+    },
+    {
+      "epoch": 51,
+      "loss": 0.03968785859755559,
+      "elapsed_seconds": 575.1469495054334
+    },
+    {
+      "epoch": 52,
+      "loss": 0.039759934183630836,
+      "elapsed_seconds": 595.9022212773561
+    },
+    {
+      "epoch": 53,
+      "loss": 0.039830913754182636,
+      "elapsed_seconds": 613.5629558973014
+    },
+    {
+      "epoch": 54,
+      "loss": 0.03988339784310697,
+      "elapsed_seconds": 634.1576050859876
+    },
+    {
+      "epoch": 55,
+      "loss": 0.039826114525688856,
+      "elapsed_seconds": 654.8671769490466
+    },
+    {
+      "epoch": 56,
+      "loss": 0.039968260418695487,
+      "elapsed_seconds": 675.4775259732269
+    },
+    {
+      "epoch": 57,
+      "loss": 0.03979391823546874,
+      "elapsed_seconds": 696.2252228991129
+    },
+    {
+      "epoch": 58,
+      "loss": 0.039811576792865955,
+      "elapsed_seconds": 716.9479791400954
+    },
+    {
+      "epoch": 59,
+      "loss": 0.03973713020251405,
+      "elapsed_seconds": 737.7017583423294
+    },
+    {
+      "epoch": 60,
+      "loss": 0.03976154395746386,
+      "elapsed_seconds": 758.4438860961236,
+      "one_step_infidelity": 0.03982066843473442,
+      "same_record_oracle_z_fidelity": 0.13272286335698175,
+      "same_record_closed_loop_z_fidelity": 0.9956382016577174,
+      "closed_loop_fidelity_to_ghz": 0.9956382016577174,
+      "closed_loop_W1_to_initial_ensemble": 0.06566644614193037,
+      "closed_loop_mean_XXX": 0.9975643407430933,
+      "closed_loop_mean_YYX": -0.9941690567269654,
+      "closed_loop_mean_YXY": -0.994481190646824,
+      "closed_loop_mean_XYY": -0.9955010069779706,
+      "closed_loop_mean_ZZI": 0.9943860128607616,
+      "closed_loop_mean_ZIZ": 0.9935300590749612,
+      "closed_loop_mean_IZZ": 0.9954739462311644
+    },
+    {
+      "epoch": 61,
+      "loss": 0.03960286413112632,
+      "elapsed_seconds": 804.2912535201758
+    },
+    {
+      "epoch": 62,
+      "loss": 0.039813329550916175,
+      "elapsed_seconds": 824.941443618387
+    },
+    {
+      "epoch": 63,
+      "loss": 0.03970817606094332,
+      "elapsed_seconds": 845.6895264904015
+    },
+    {
+      "epoch": 64,
+      "loss": 0.0397555627951083,
+      "elapsed_seconds": 866.3383712493815
+    },
+    {
+      "epoch": 65,
+      "loss": 0.03976886843663361,
+      "elapsed_seconds": 887.0895087542012
+    },
+    {
+      "epoch": 66,
+      "loss": 0.03977189041662889,
+      "elapsed_seconds": 907.6985728680156
+    },
+    {
+      "epoch": 67,
+      "loss": 0.039588279726879845,
+      "elapsed_seconds": 928.4568801149726
+    },
+    {
+      "epoch": 68,
+      "loss": 0.03986982091979491,
+      "elapsed_seconds": 949.1540017863736
+    },
+    {
+      "epoch": 69,
+      "loss": 0.03978227255392069,
+      "elapsed_seconds": 969.9116820851341
+    },
+    {
+      "epoch": 70,
+      "loss": 0.03963806841101408,
+      "elapsed_seconds": 990.6774199623615,
+      "one_step_infidelity": 0.03978106540770678,
+      "same_record_oracle_z_fidelity": 0.13285649872106142,
+      "same_record_closed_loop_z_fidelity": 0.9948049286346767,
+      "closed_loop_fidelity_to_ghz": 0.9948049286346767,
+      "closed_loop_W1_to_initial_ensemble": 0.06960031044112068,
+      "closed_loop_mean_XXX": 0.9948232101816258,
+      "closed_loop_mean_YYX": -0.9936061869496959,
+      "closed_loop_mean_YXY": -0.9941204627549416,
+      "closed_loop_mean_XYY": -0.995107544508504,
+      "closed_loop_mean_ZZI": 0.9919850670609697,
+      "closed_loop_mean_ZIZ": 0.9914983699092298,
+      "closed_loop_mean_IZZ": 0.997298587712449
+    },
+    {
+      "epoch": 71,
+      "loss": 0.03988633518646499,
+      "elapsed_seconds": 1035.4314816803671
+    },
+    {
+      "epoch": 72,
+      "loss": 0.039567606320679925,
+      "elapsed_seconds": 1056.0507519822568
+    },
+    {
+      "epoch": 73,
+      "loss": 0.03982364410967238,
+      "elapsed_seconds": 1076.7813362083398
+    },
+    {
+      "epoch": 74,
+      "loss": 0.03979139542634734,
+      "elapsed_seconds": 1097.424128876999
+    },
+    {
+      "epoch": 75,
+      "loss": 0.03980295525306095,
+      "elapsed_seconds": 1118.164771253243
+    },
+    {
+      "epoch": 76,
+      "loss": 0.039711225317736014,
+      "elapsed_seconds": 1138.842994602397
+    },
+    {
+      "epoch": 77,
+      "loss": 0.03981140334851857,
+      "elapsed_seconds": 1159.7428437271155
+    },
+    {
+      "epoch": 78,
+      "loss": 0.03978417447984665,
+      "elapsed_seconds": 1180.471690816339
+    },
+    {
+      "epoch": 79,
+      "loss": 0.03976331546159742,
+      "elapsed_seconds": 1201.1175652532838
+    },
+    {
+      "epoch": 80,
+      "loss": 0.03973660400156442,
+      "elapsed_seconds": 1221.864190572407,
+      "one_step_infidelity": 0.03984213086739827,
+      "same_record_oracle_z_fidelity": 0.10498412894839598,
+      "same_record_closed_loop_z_fidelity": 0.9980387403096129,
+      "closed_loop_fidelity_to_ghz": 0.9980387403096129,
+      "closed_loop_W1_to_initial_ensemble": 0.04243921557945723,
+      "closed_loop_mean_XXX": 0.9981672236758337,
+      "closed_loop_mean_YYX": -0.9974003083043503,
+      "closed_loop_mean_YXY": -0.9976124450658119,
+      "closed_loop_mean_XYY": -0.9974764933889039,
+      "closed_loop_mean_ZZI": 0.998295278958484,
+      "closed_loop_mean_ZIZ": 0.9976283685487184,
+      "closed_loop_mean_IZZ": 0.997729804534802
+    }
+  ],
+  "final": {
+    "epoch": 80,
+    "loss": 0.03973660400156442,
+    "elapsed_seconds": 1221.864190572407,
+    "one_step_infidelity": 0.03984213086739827,
+    "same_record_oracle_z_fidelity": 0.10498412894839598,
+    "same_record_closed_loop_z_fidelity": 0.9980387403096129,
+    "closed_loop_fidelity_to_ghz": 0.9980387403096129,
+    "closed_loop_W1_to_initial_ensemble": 0.04243921557945723,
+    "closed_loop_mean_XXX": 0.9981672236758337,
+    "closed_loop_mean_YYX": -0.9974003083043503,
+    "closed_loop_mean_YXY": -0.9976124450658119,
+    "closed_loop_mean_XYY": -0.9974764933889039,
+    "closed_loop_mean_ZZI": 0.998295278958484,
+    "closed_loop_mean_ZIZ": 0.9976283685487184,
+    "closed_loop_mean_IZZ": 0.997729804534802
+  }
+}

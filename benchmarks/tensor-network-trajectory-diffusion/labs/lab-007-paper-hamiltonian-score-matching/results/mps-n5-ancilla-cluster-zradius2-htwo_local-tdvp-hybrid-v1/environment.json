@@ -1,0 +1,37 @@
+{
+  "created_at": "2026-09-02T20:56:57+00:00",
+  "torch_version": "2.6.0+cu124",
+  "device": "cuda:0",
+  "gpu_name": "NVIDIA H200 NVL",
+  "cuda_visible_devices": "1",
+  "seed": 2026,
+  "n_qubits": 5,
+  "target": "ancilla_locked_cluster",
+  "z_mode": "radius2",
+  "h_mode": "two_local",
+  "n_z": 159,
+  "n_h": 51,
+  "chi_pad": 4,
+  "reverse": "1-site-tdvp",
+  "closed_loop_apply": "dense-32-exact-chi4",
+  "one_step_apply": "dense-32-exact-chi4",
+  "eval_reverse": "1-site-tdvp",
+  "loss": "hybrid",
+  "batch": 8,
+  "hidden": 128,
+  "protocol": "mps-n5-ancilla-cluster-tdvp",
+  "checks": [
+    "ZAZ1",
+    "XAX1Z2",
+    "ZXZ",
+    "Z3ZAR",
+    "Z2X3XAR"
+  ],
+  "sanity": {
+    "ZAZ1": 0.9999999999999998,
+    "XAX1Z2": 0.9999999999999998,
+    "ZXZ": 0.9999999999999998,
+    "Z3ZAR": 0.9999999999999998,
+    "Z2X3XAR": 0.9999999999999998
+  }
+}

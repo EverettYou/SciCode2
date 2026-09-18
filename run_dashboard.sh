@@ -33,8 +33,42 @@ saved_pid() {
     fi
 }
 
+listener_pid_from_proc() {
+    hex=$(printf '%04X' "$dashboard_port")
+    inodes=$(
+        for table in /proc/net/tcp /proc/net/tcp6; do
+            [ -r "$table" ] || continue
+            awk -v hex="$hex" '
+                NR == 1 { next }
+                $4 == "0A" {
+                    n = split($2, parts, ":")
+                    if (n >= 2 && parts[n] == hex) print $10
+                }
+            ' "$table"
+        done
+    )
+    for inode in $inodes; do
+        [ -n "$inode" ] || continue
+        for fd in /proc/[0-9]*/fd/*; do
+            case "$(readlink "$fd" 2>/dev/null || true)" in
+                "socket:[$inode]")
+                    printf '%s\n' "$fd" | sed -n 's|^/proc/\([0-9][0-9]*\)/fd/.*|\1|p'
+                    return 0
+                    ;;
+            esac
+        done
+    done
+}
+
 listener_pid() {
-    lsof -tiTCP:"$dashboard_port" -sTCP:LISTEN 2>/dev/null | sed -n '1p'
+    if command -v lsof >/dev/null 2>&1; then
+        pid=$(lsof -tiTCP:"$dashboard_port" -sTCP:LISTEN 2>/dev/null | sed -n '1p')
+        if [ -n "$pid" ]; then
+            printf '%s\n' "$pid"
+            return 0
+        fi
+    fi
+    listener_pid_from_proc || true
 }
 
 process_command() {
@@ -42,6 +76,11 @@ process_command() {
 }
 
 process_cwd() {
+    cwd=$(readlink "/proc/$1/cwd" 2>/dev/null || true)
+    if [ -n "$cwd" ]; then
+        printf '%s\n' "$cwd"
+        return 0
+    fi
     lsof -a -p "$1" -d cwd -Fn 2>/dev/null | sed -n 's/^n//p' | sed -n '1p'
 }
 

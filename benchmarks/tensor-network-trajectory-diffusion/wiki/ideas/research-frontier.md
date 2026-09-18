@@ -2,8 +2,10 @@
 title: Tensor-network trajectory-learning frontier
 page_type: ideas
 status: provisional
-updated: '2026-08-23'
+updated: '2026-09-08'
 source_refs:
+- labs/lab-009-encoded-recoverability/REPORT.md
+- labs/lab-007-paper-hamiltonian-score-matching/REPORT.md
 - wiki/papers/liu2025mqdm.md
 - problem/TASK.md
 - labs/lab-001-local-controller-feasibility/REPORT.md
@@ -25,11 +27,15 @@ idea_ids:
 
 **Sources**: [MQDM paper synthesis](../../../../wiki/papers/liu2025mqdm.md); [benchmark task](../../problem/TASK.md); [completed Lab 001](../../labs/lab-001-local-controller-feasibility/REPORT.md)
 
-**Last updated**: 2026-08-23
+**Last updated**: 2026-09-08
 
 ---
 
 ## Active ideas
+
+The user-requested [certified-recoverability candidate](recoverability-candidate.md)
+adds k-003 as a separate frontier branch. Lab 009 now verifies N=2,4 optima and
+an N=6 width-1.51e-5 pilot; N=8 and blind difficulty calibration remain open.
 
 ### x-001 — cross — active
 
@@ -116,6 +122,25 @@ idea_ids:
 - Keep a scalable controller only after one frozen checkpoint transfers to at least two unseen sizes with convergence in $\chi$, $R$, and $W$.
 - Treat a growing resource as a scientific boundary and preserve the negative result.
 - Distill code only after dense-to-MPS parity and physical invariant tests pass.
+
+## 2026-09-07 — corrected TDVP and frozen transfer
+
+- **Parents:** c-003, c-002, k-001. Historical proposals below remain as history.
+- **Evidence:** The corrected site-forward/bond-backward engine matches dense
+  small-system states and gradients. The original projected-gate exactness
+  claim is withdrawn. One frozen N=5 shared controller executes to N=32,
+  but F falls to 0.04674 while local stabilizers remain partly restored
+  [Lab 007 findings](../../labs/lab-007-paper-hamiltonian-score-matching/REPORT.md#findings).
+- **Retain:** corrected TDVP, individual stabilizer/full-state metrics, and the
+  N=3 transfer failure as a negative branch. Do not equate chi-insensitive
+  target F with state convergence.
+- **Alternatives:** larger Hamiltonian support; mixed-size training; larger
+  MPS manifolds. Decoder changes alone cannot resolve a controller that
+  already fails with exact state features (inference).
+- **Next action:** compare support and training-size controls at matched
+  resources; replicate seeds before a robust scaling claim. Keep the current
+  question and separate Petz scope unchanged
+  [Lab 007 decision](../../labs/lab-007-paper-hamiltonian-score-matching/REPORT.md#search-decision).
 
 ## Related pages
 

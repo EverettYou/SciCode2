@@ -34,3 +34,37 @@ sources:
   - wiki/questions/scalable-trajectory-reversal.md
   - wiki/ideas/research-frontier.md
   - wiki/implementations/dense-qr-controller-reference.md
+- source_id: lab:lab-007
+  title: Corrected TDVP and frozen local-Hamiltonian transfer
+  kind: lab
+  path: labs/lab-007-paper-hamiltonian-score-matching/REPORT.md
+  revision: sha256:1a09c1e089340f0d34f6a3142a161670e5ff9495f3de7c36880881695b942d43
+  ingested_at: '2026-09-07T18:52:34Z'
+  updated_pages:
+  - wiki/thesis.md
+  - wiki/index.md
+  - wiki/ideas/research-frontier.md
+  - wiki/questions/scalable-trajectory-reversal.md
+  - wiki/implementations/corrected-tdvp-controller.md
+- source_id: lab:lab-008
+  title: Exact recoverability anchors and saved-evidence audit
+  kind: lab
+  path: labs/lab-008-recoverability-anchors/REPORT.md
+  revision: sha256:403b91ea8f213d3859f714a0045d5eb0489db158acebe9a5640c5dc45abe879a
+  ingested_at: '2026-09-07T23:24:11Z'
+  updated_pages:
+  - wiki/ideas/recoverability-candidate.md
+  - wiki/ideas/research-frontier.md
+  - wiki/index.md
+  - wiki/thesis.md
+- source_id: lab:lab-009
+  title: Encoded small-system recovery bounds and precision calibration
+  kind: lab
+  path: labs/lab-009-encoded-recoverability/REPORT.md
+  revision: sha256:902c64d0bb384d79b95eb32f10787c6105058652905239e8b028b183b7a886f0
+  ingested_at: '2026-09-08T00:07:06Z'
+  updated_pages:
+  - wiki/ideas/recoverability-candidate.md
+  - wiki/ideas/research-frontier.md
+  - wiki/index.md
+  - wiki/thesis.md

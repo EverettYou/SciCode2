@@ -1,0 +1,7 @@
+[project]
+name = "encoded-recoverability-reference"
+version = "0.1.0"
+requires-python = ">=3.11"
+dependencies = ["numpy>=2,<3", "scipy>=1.14,<2", "cvxpy>=1.6,<2", "pytest>=8,<10"]
+[tool.uv]
+package = false

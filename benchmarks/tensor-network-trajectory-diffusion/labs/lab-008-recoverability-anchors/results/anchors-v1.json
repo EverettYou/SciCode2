@@ -1,0 +1,414 @@
+{
+  "status": "anchor-only",
+  "python": "3.11.15",
+  "numpy": "2.3.5",
+  "source_sha256": "044163335c7883e02a95ae76770a9a0c1302e0d9cbc0978c7ea86ca62472de9c",
+  "rows": [
+    {
+      "g": 0.0,
+      "eta": 0.0,
+      "exact": 1.0,
+      "lower": 1.0000000000000002,
+      "upper": 1.0000000000000002,
+      "diagnostics": [
+        {
+          "record": "+",
+          "trace_residual": 0.0,
+          "primal_min_eigenvalue": 0.0,
+          "dual_slack_min_eigenvalue": 0.0
+        },
+        {
+          "record": "-",
+          "trace_residual": 0.0,
+          "primal_min_eigenvalue": 0.0,
+          "dual_slack_min_eigenvalue": 0.0
+        },
+        {
+          "record": "?",
+          "trace_residual": 0.0,
+          "primal_min_eigenvalue": 0.0,
+          "dual_slack_min_eigenvalue": 2.7755575615628914e-17
+        }
+      ]
+    },
+    {
+      "g": 0.0,
+      "eta": 0.75,
+      "exact": 1.0,
+      "lower": 1.0000000000000002,
+      "upper": 1.0000000000000002,
+      "diagnostics": [
+        {
+          "record": "+",
+          "trace_residual": 0.0,
+          "primal_min_eigenvalue": 0.0,
+          "dual_slack_min_eigenvalue": -1.387778780781464e-17
+        },
+        {
+          "record": "-",
+          "trace_residual": 0.0,
+          "primal_min_eigenvalue": 0.0,
+          "dual_slack_min_eigenvalue": -1.387778780781464e-17
+        },
+        {
+          "record": "?",
+          "trace_residual": 0.0,
+          "primal_min_eigenvalue": 0.0,
+          "dual_slack_min_eigenvalue": 6.938893903907228e-18
+        }
+      ]
+    },
+    {
+      "g": 0.0,
+      "eta": 1.0,
+      "exact": 1.0,
+      "lower": 1.0000000000000002,
+      "upper": 1.0000000000000002,
+      "diagnostics": [
+        {
+          "record": "+",
+          "trace_residual": 0.0,
+          "primal_min_eigenvalue": 0.0,
+          "dual_slack_min_eigenvalue": 1.3877787807814457e-17
+        },
+        {
+          "record": "-",
+          "trace_residual": 0.0,
+          "primal_min_eigenvalue": 0.0,
+          "dual_slack_min_eigenvalue": 1.3877787807814457e-17
+        },
+        {
+          "record": "?",
+          "trace_residual": 0.0,
+          "primal_min_eigenvalue": 0.0,
+          "dual_slack_min_eigenvalue": 0.0
+        }
+      ]
+    },
+    {
+      "g": 0.2,
+      "eta": 0.0,
+      "exact": 0.9898979485566356,
+      "lower": 0.9898979485566357,
+      "upper": 0.9898979485566357,
+      "diagnostics": [
+        {
+          "record": "+",
+          "trace_residual": 0.0,
+          "primal_min_eigenvalue": 0.0,
+          "dual_slack_min_eigenvalue": 0.0
+        },
+        {
+          "record": "-",
+          "trace_residual": 0.0,
+          "primal_min_eigenvalue": 0.0,
+          "dual_slack_min_eigenvalue": 0.0
+        },
+        {
+          "record": "?",
+          "trace_residual": 0.0,
+          "primal_min_eigenvalue": 0.0,
+          "dual_slack_min_eigenvalue": 2.7755575615628914e-17
+        }
+      ]
+    },
+    {
+      "g": 0.2,
+      "eta": 0.75,
+      "exact": 0.9898979485566356,
+      "lower": 0.9898979485566355,
+      "upper": 0.9898979485566355,
+      "diagnostics": [
+        {
+          "record": "+",
+          "trace_residual": 0.0,
+          "primal_min_eigenvalue": 0.0,
+          "dual_slack_min_eigenvalue": 0.0
+        },
+        {
+          "record": "-",
+          "trace_residual": 0.0,
+          "primal_min_eigenvalue": 0.0,
+          "dual_slack_min_eigenvalue": 0.0
+        },
+        {
+          "record": "?",
+          "trace_residual": 0.0,
+          "primal_min_eigenvalue": 0.0,
+          "dual_slack_min_eigenvalue": 6.938893903907228e-18
+        }
+      ]
+    },
+    {
+      "g": 0.2,
+      "eta": 1.0,
+      "exact": 0.9898979485566356,
+      "lower": 0.9898979485566357,
+      "upper": 0.9898979485566357,
+      "diagnostics": [
+        {
+          "record": "+",
+          "trace_residual": 0.0,
+          "primal_min_eigenvalue": 0.0,
+          "dual_slack_min_eigenvalue": -5.386379817018277e-25
+        },
+        {
+          "record": "-",
+          "trace_residual": 0.0,
+          "primal_min_eigenvalue": 0.0,
+          "dual_slack_min_eigenvalue": 1.3877787807814457e-17
+        },
+        {
+          "record": "?",
+          "trace_residual": 0.0,
+          "primal_min_eigenvalue": 0.0,
+          "dual_slack_min_eigenvalue": 0.0
+        }
+      ]
+    },
+    {
+      "g": 0.5,
+      "eta": 0.0,
+      "exact": 0.9330127018922193,
+      "lower": 0.9330127018922192,
+      "upper": 0.9330127018922192,
+      "diagnostics": [
+        {
+          "record": "+",
+          "trace_residual": 0.0,
+          "primal_min_eigenvalue": 0.0,
+          "dual_slack_min_eigenvalue": 0.0
+        },
+        {
+          "record": "-",
+          "trace_residual": 0.0,
+          "primal_min_eigenvalue": 0.0,
+          "dual_slack_min_eigenvalue": 0.0
+        },
+        {
+          "record": "?",
+          "trace_residual": 0.0,
+          "primal_min_eigenvalue": 0.0,
+          "dual_slack_min_eigenvalue": -5.551115123125783e-17
+        }
+      ]
+    },
+    {
+      "g": 0.5,
+      "eta": 0.75,
+      "exact": 0.9330127018922193,
+      "lower": 0.9330127018922191,
+      "upper": 0.9330127018922191,
+      "diagnostics": [
+        {
+          "record": "+",
+          "trace_residual": 0.0,
+          "primal_min_eigenvalue": 0.0,
+          "dual_slack_min_eigenvalue": -1.3877787807814457e-17
+        },
+        {
+          "record": "-",
+          "trace_residual": 0.0,
+          "primal_min_eigenvalue": 0.0,
+          "dual_slack_min_eigenvalue": -2.7755575615628926e-17
+        },
+        {
+          "record": "?",
+          "trace_residual": 0.0,
+          "primal_min_eigenvalue": 0.0,
+          "dual_slack_min_eigenvalue": -1.3877787807814457e-17
+        }
+      ]
+    },
+    {
+      "g": 0.5,
+      "eta": 1.0,
+      "exact": 0.9330127018922193,
+      "lower": 0.9330127018922192,
+      "upper": 0.9330127018922192,
+      "diagnostics": [
+        {
+          "record": "+",
+          "trace_residual": 0.0,
+          "primal_min_eigenvalue": 0.0,
+          "dual_slack_min_eigenvalue": 0.0
+        },
+        {
+          "record": "-",
+          "trace_residual": 0.0,
+          "primal_min_eigenvalue": 0.0,
+          "dual_slack_min_eigenvalue": -4.0425112555512924e-30
+        },
+        {
+          "record": "?",
+          "trace_residual": 0.0,
+          "primal_min_eigenvalue": 0.0,
+          "dual_slack_min_eigenvalue": 0.0
+        }
+      ]
+    },
+    {
+      "g": 0.8,
+      "eta": 0.0,
+      "exact": 0.7999999999999999,
+      "lower": 0.7999999999999998,
+      "upper": 0.7999999999999998,
+      "diagnostics": [
+        {
+          "record": "+",
+          "trace_residual": 0.0,
+          "primal_min_eigenvalue": 0.0,
+          "dual_slack_min_eigenvalue": 0.0
+        },
+        {
+          "record": "-",
+          "trace_residual": 0.0,
+          "primal_min_eigenvalue": 0.0,
+          "dual_slack_min_eigenvalue": 0.0
+        },
+        {
+          "record": "?",
+          "trace_residual": 0.0,
+          "primal_min_eigenvalue": 0.0,
+          "dual_slack_min_eigenvalue": -5.55111512312579e-17
+        }
+      ]
+    },
+    {
+      "g": 0.8,
+      "eta": 0.75,
+      "exact": 0.7999999999999999,
+      "lower": 0.7999999999999998,
+      "upper": 0.7999999999999998,
+      "diagnostics": [
+        {
+          "record": "+",
+          "trace_residual": 0.0,
+          "primal_min_eigenvalue": 0.0,
+          "dual_slack_min_eigenvalue": 6.938893903907228e-18
+        },
+        {
+          "record": "-",
+          "trace_residual": 0.0,
+          "primal_min_eigenvalue": 0.0,
+          "dual_slack_min_eigenvalue": 2.0816681711721685e-17
+        },
+        {
+          "record": "?",
+          "trace_residual": 0.0,
+          "primal_min_eigenvalue": 0.0,
+          "dual_slack_min_eigenvalue": -1.3877787807814475e-17
+        }
+      ]
+    },
+    {
+      "g": 0.8,
+      "eta": 1.0,
+      "exact": 0.7999999999999999,
+      "lower": 0.7999999999999998,
+      "upper": 0.7999999999999998,
+      "diagnostics": [
+        {
+          "record": "+",
+          "trace_residual": 0.0,
+          "primal_min_eigenvalue": 0.0,
+          "dual_slack_min_eigenvalue": -2.0816681711721685e-17
+        },
+        {
+          "record": "-",
+          "trace_residual": 0.0,
+          "primal_min_eigenvalue": 0.0,
+          "dual_slack_min_eigenvalue": -2.0816681711721685e-17
+        },
+        {
+          "record": "?",
+          "trace_residual": 0.0,
+          "primal_min_eigenvalue": 0.0,
+          "dual_slack_min_eigenvalue": 0.0
+        }
+      ]
+    },
+    {
+      "g": 1.0,
+      "eta": 0.0,
+      "exact": 0.5,
+      "lower": 0.5,
+      "upper": 0.5,
+      "diagnostics": [
+        {
+          "record": "+",
+          "trace_residual": 0.0,
+          "primal_min_eigenvalue": 0.0,
+          "dual_slack_min_eigenvalue": 0.0
+        },
+        {
+          "record": "-",
+          "trace_residual": 0.0,
+          "primal_min_eigenvalue": 0.0,
+          "dual_slack_min_eigenvalue": 0.0
+        },
+        {
+          "record": "?",
+          "trace_residual": 0.0,
+          "primal_min_eigenvalue": 0.0,
+          "dual_slack_min_eigenvalue": 0.0
+        }
+      ]
+    },
+    {
+      "g": 1.0,
+      "eta": 0.75,
+      "exact": 0.5,
+      "lower": 0.49999999999999994,
+      "upper": 0.49999999999999994,
+      "diagnostics": [
+        {
+          "record": "+",
+          "trace_residual": 0.0,
+          "primal_min_eigenvalue": 0.0,
+          "dual_slack_min_eigenvalue": 0.0
+        },
+        {
+          "record": "-",
+          "trace_residual": 0.0,
+          "primal_min_eigenvalue": 0.0,
+          "dual_slack_min_eigenvalue": 0.0
+        },
+        {
+          "record": "?",
+          "trace_residual": 0.0,
+          "primal_min_eigenvalue": 0.0,
+          "dual_slack_min_eigenvalue": 0.0
+        }
+      ]
+    },
+    {
+      "g": 1.0,
+      "eta": 1.0,
+      "exact": 0.5,
+      "lower": 0.5,
+      "upper": 0.5,
+      "diagnostics": [
+        {
+          "record": "+",
+          "trace_residual": 0.0,
+          "primal_min_eigenvalue": 0.0,
+          "dual_slack_min_eigenvalue": 0.0
+        },
+        {
+          "record": "-",
+          "trace_residual": 0.0,
+          "primal_min_eigenvalue": 0.0,
+          "dual_slack_min_eigenvalue": 0.0
+        },
+        {
+          "record": "?",
+          "trace_residual": 0.0,
+          "primal_min_eigenvalue": 0.0,
+          "dual_slack_min_eigenvalue": 0.0
+        }
+      ]
+    }
+  ],
+  "reset_fidelity": 0.24999999999999994
+}

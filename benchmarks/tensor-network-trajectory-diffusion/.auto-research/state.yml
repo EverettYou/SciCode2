@@ -1,8 +1,8 @@
 schema_version: 1
 benchmark_id: tensor-network-trajectory-diffusion
-status: active
+status: paused
 created_at: '2026-08-23T03:20:46Z'
-updated_at: '2026-08-23T17:15:00Z'
+updated_at: '2026-09-08T00:05:43Z'
 automations:
   research:
     id: auto-research-tensor-network-trajectory-diffusion-research
@@ -18,16 +18,16 @@ cursors:
   last_synthesis_evidence_digest: 5435fbd29156a7ff9455103ca44ef2982c72013f85da5cf8fb9247831cb05e06
 progress:
   last_supported_evidence_at: '2026-08-23T06:59:43Z'
-  last_meaningful_progress_at: '2026-08-23T17:15:00Z'
-  last_lab_heartbeat_at: '2026-08-23T17:15:00Z'
+  last_meaningful_progress_at: '2026-09-08T00:05:43Z'
+  last_lab_heartbeat_at: '2026-09-07T18:34:38Z'
   consecutive_no_evidence_syntheses: 0
-  last_action_signature: lab-002:one-step:weak-local:depth-gate:r2:3307
+  last_action_signature: lab-009:manual:encoded-bounds-and-calibration
   repeated_action_count: 0
   failure_signature: null
   repeated_failure_count: 0
-  active_lab_id: lab-002
-  active_lab_stage: one-step-in-progress
-  last_steering_decision_at: null
+  active_lab_id: lab-009
+  active_lab_stage: completed-small-grid-and-n6-pilot
+  last_steering_decision_at: '2026-09-07T18:45:47Z'
   last_direction_change_at: null
   pending_human_thread_id: null
 policy:
@@ -44,10 +44,10 @@ budgets:
   max_consecutive_failures: 3
 last_run:
   research:
-    timestamp: '2026-08-23T17:15:00Z'
+    timestamp: '2026-09-08T00:05:43Z'
     outcome: progress
-    action: lab-002:one-step:weak-local:depth-gate:r2:3307
-    details: 'Completed weak-local/depth-gate/R2 seed 3307: 128/128 updates in 3.18 s, finite reloadable checkpoint, mean validation teacher-forced fidelity 0.154512, test sealed. Four of five R2 seeds are complete; advanced the next bounded cell to R2 seed 3309 without interval estimation, optimizer diagnosis, support comparison, cross-panel interpretation, locality inference, or prohibited scaling. Benchmark validation and git diff check pass.'
+    action: lab-009:manual:encoded-bounds-and-calibration
+    details: User-authorized manual continuation completed. N=2,4 exact dense grid independently verified below width 1e-8; N=6 g=.5 eta=.75 refined to width 1.51e-5 over 729 records. Explicit Bell recovery checks pass; locked lab environment and source revisions saved. Retired .02 threshold after simple baseline; propose N=8 pilot at 1e-4. No AI difficulty claim, source promotion, scheduler activation, or synthesis digest advance.
   supervisor_synthesis:
     timestamp: '2026-08-23T16:59:20Z'
     outcome: healthy-in-flight

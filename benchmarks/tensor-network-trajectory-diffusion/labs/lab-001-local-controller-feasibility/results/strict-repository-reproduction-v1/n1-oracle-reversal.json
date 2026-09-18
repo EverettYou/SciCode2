@@ -1,0 +1,16 @@
+{
+  "kind": "n1_oracle_kraus_pair_reversal",
+  "created_at": "2026-08-30T08:03:08+00:00",
+  "device": "cpu",
+  "config": {
+    "n": 1,
+    "epsilon": 0.8,
+    "T": 30,
+    "n_traj": 512
+  },
+  "mean_frobenius_residual": 0.01288038262012162,
+  "companion_trajectory_reversal_indexing_fidelity_to_zero": 0.4750947468120659,
+  "skip2_indexing_fidelity_to_zero": 0.4849237859811647,
+  "mean_two_step_state_fidelity_U_on_psi_tplus1_to_psi_tminus1": 0.5217683039870121,
+  "note": "Oracle U is the polar factor of (K_t K_{t-1}).H. Two-step state fidelity is the quantity the paper-style infidelity loss would maximize."
+}

@@ -15,7 +15,6 @@ from typing import Annotated, Any, Literal
 
 import uvicorn
 import yaml
-from dotenv import load_dotenv
 from fastapi import FastAPI, HTTPException
 from fastapi.responses import FileResponse, Response
 from fastapi.staticfiles import StaticFiles
@@ -28,9 +27,9 @@ from dashboard.backend.knowledge_graph import build_knowledge_graph, retrieve_pa
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 if str(PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(PROJECT_ROOT))
-load_dotenv(PROJECT_ROOT / ".env", override=False)
+from scripts.llm import LLMConfigurationError, load_project_env  # noqa: E402
+load_project_env(PROJECT_ROOT)
 from dashboard.backend.catalog_search import CatalogSearch  # noqa: E402
-from scripts.llm import LLMConfigurationError  # noqa: E402
 
 DASHBOARD_FRONTEND_ROOT = PROJECT_ROOT / "dashboard" / "frontend"
 DASHBOARD_PAGES_ROOT = DASHBOARD_FRONTEND_ROOT / "pages"

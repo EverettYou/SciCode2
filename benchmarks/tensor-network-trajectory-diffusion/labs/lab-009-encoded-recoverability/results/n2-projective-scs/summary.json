@@ -1,0 +1,119 @@
+{
+  "n": 2,
+  "g": 1.0,
+  "eta": 1.0,
+  "solver": "SCS",
+  "eps": 1e-10,
+  "lower": 0.4999999999748876,
+  "upper": 0.5000000001674695,
+  "gap": 1.9258189487558752e-10,
+  "seconds": 0.05162129830569029,
+  "peak_rss_kib": 126184,
+  "full_record_formula": 0.5,
+  "rows": [
+    {
+      "record": [
+        -1,
+        -1
+      ],
+      "weight": 0.03690830991760937,
+      "certificate": "branch-0000.npz",
+      "status": "optimal",
+      "solver_value": 0.9999999999504169,
+      "seconds": 0.021447456441819668,
+      "iterations": 50,
+      "lower": 0.9999999999495016,
+      "upper": 1.000000000334991,
+      "gap": 3.8548930714199514e-10,
+      "tp_residual": 1.1102230246251565e-16,
+      "primal_min_eig": 5.0498549786226476e-11,
+      "dual_min_eig": 9.999382299031798e-13,
+      "primal_scale": 1.0000000000013411,
+      "dual_shift": 1.0799153782260894e-10,
+      "slack_factor_residual": 1.0699157253615383e-10
+    },
+    {
+      "record": [
+        -1,
+        1
+      ],
+      "weight": 0.013071776518537177,
+      "certificate": "branch-0001.npz",
+      "status": "optimal",
+      "solver_value": 0.999999999950414,
+      "seconds": 0.009775417856872082,
+      "iterations": 50,
+      "lower": 0.9999999999493246,
+      "upper": 1.0000000003349443,
+      "gap": 3.8561964732508613e-10,
+      "tp_residual": 1.1102230246251565e-16,
+      "primal_min_eig": 5.067518626944434e-11,
+      "dual_min_eig": 1.0000672238494102e-12,
+      "primal_scale": 1.0000000000013425,
+      "dual_shift": 1.0798036066711164e-10,
+      "slack_factor_residual": 1.0698032020600825e-10
+    },
+    {
+      "record": [
+        1,
+        -1
+      ],
+      "weight": 0.21309169008239065,
+      "certificate": "branch-0002.npz",
+      "status": "optimal",
+      "solver_value": 0.9999999999504111,
+      "seconds": 0.009357982315123081,
+      "iterations": 50,
+      "lower": 0.999999999949178,
+      "upper": 1.0000000003349065,
+      "gap": 3.8572856020380186e-10,
+      "tp_residual": 1.1102230246251565e-16,
+      "primal_min_eig": 5.082184673099732e-11,
+      "dual_min_eig": 9.999666601453847e-13,
+      "primal_scale": 1.0000000000013431,
+      "dual_shift": 1.0797112089856286e-10,
+      "slack_factor_residual": 1.0697115517448175e-10
+    },
+    {
+      "record": [
+        1,
+        1
+      ],
+      "weight": 0.23692822348146278,
+      "certificate": "branch-0003.npz",
+      "status": "optimal",
+      "solver_value": 0.9999999999504132,
+      "seconds": 0.008801253512501717,
+      "iterations": 50,
+      "lower": 0.9999999999503799,
+      "upper": 1.0000000003349598,
+      "gap": 3.845799234625247e-10,
+      "tp_residual": 0.0,
+      "primal_min_eig": 4.962014132914305e-11,
+      "dual_min_eig": 9.999778133839922e-13,
+      "primal_scale": 1.000000000001343,
+      "dual_shift": 1.0798436769270176e-10,
+      "slack_factor_residual": 1.0698434454132656e-10
+    }
+  ],
+  "numerical_scope": "Explicit residual-repaired double-precision bounds; not interval-arithmetic proof",
+  "versions": {
+    "python": "3.13.2",
+    "numpy": "2.5.3",
+    "cvxpy": "1.9.2"
+  },
+  "threads": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1"
+  },
+  "source_sha256": {
+    "solve_compressed.py": "a9124691e58f778d71eeb804359bf82a1cbde4d8b18f2c1e01be86ac87b1b5bf",
+    "certificates.py": "2b3b98f4f83d6a6809044d8244aca94e854022d0adcbac0f11eba7e403c83f0a",
+    "solve.py": "f79ba1eb62328b66c31ad63d460f36c9509b6d4401204b3d5380efa1298ae7d8",
+    "baselines.py": "16e0d691d52d943b9db5c39a919032f90f2324387e6b780bd96f212ddadbfa89",
+    "test_physics.py": "b573aa02b5ade8addf580054f97ce0da72e2b5439fdc369a4d1ed1af75ce88a2",
+    "physical.py": "fa221c40ca7d5009ae887375d5ea72d46f54ebbe574539c45bd4e5fc04b633c8",
+    "verify_saved.py": "d03ca3318f43f8f90797cf2f8bd6a6cbd96eeadaa7208d8953abf87c7794b38f"
+  },
+  "lock_sha256": "13e80e2e546f5a83399738507cf6680b08a11f7d54a5e7d191701cd0c72d0fee"
+}

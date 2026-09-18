@@ -1,0 +1,487 @@
+{
+  "kind": "local_pauli_hamiltonian_n2_bell",
+  "created_at": "2026-08-31T15:07:43+00:00",
+  "started_at": "2026-08-31T14:55:33+00:00",
+  "elapsed_seconds": 729.7229705611244,
+  "environment": {
+    "torch_version": "2.6.0+cu124",
+    "device": "cuda:0",
+    "gpu_name": "NVIDIA H200 NVL",
+    "n_qubits": 2,
+    "target": "bell",
+    "chi_max": null,
+    "hidden": 128,
+    "seed": 2026,
+    "n_hamiltonian_params": 15,
+    "parameterization": "shared-local-pauli-coefficients",
+    "parity": {
+      "2": {
+        "n_qubits": 2,
+        "n2_z_error": 8.881784197001252e-16,
+        "tebd_vs_dense_step_fidelity": 0.9999999981219194
+      },
+      "3": {
+        "n_qubits": 3,
+        "tebd_vs_dense_step_fidelity": 0.9999999874126826
+      }
+    },
+    "protocol": "per-step-infidelity-tebd"
+  },
+  "loss_curve": [
+    {
+      "epoch": 1,
+      "loss": 0.013800723230372283,
+      "elapsed_seconds": 7.913304286077619,
+      "one_step_infidelity": 0.013819733694031373,
+      "same_record_closed_loop_z_fidelity": 0.21916998819033218,
+      "max_bond_dim": 2,
+      "n_hamiltonian_params": 15,
+      "closed_loop_fidelity_to_bell": 0.21916998819033218
+    },
+    {
+      "epoch": 2,
+      "loss": 0.013885651951853916,
+      "elapsed_seconds": 26.759320246055722
+    },
+    {
+      "epoch": 3,
+      "loss": 0.013791905505807563,
+      "elapsed_seconds": 34.63391017308459
+    },
+    {
+      "epoch": 4,
+      "loss": 0.013757311742959745,
+      "elapsed_seconds": 42.642459330148995
+    },
+    {
+      "epoch": 5,
+      "loss": 0.013737679721223035,
+      "elapsed_seconds": 50.45187734439969
+    },
+    {
+      "epoch": 6,
+      "loss": 0.013710041988614436,
+      "elapsed_seconds": 58.28801721194759
+    },
+    {
+      "epoch": 7,
+      "loss": 0.013816485766803352,
+      "elapsed_seconds": 66.12927863327786
+    },
+    {
+      "epoch": 8,
+      "loss": 0.013820925075076065,
+      "elapsed_seconds": 74.04922129912302
+    },
+    {
+      "epoch": 9,
+      "loss": 0.013785734392942938,
+      "elapsed_seconds": 81.89949720026925
+    },
+    {
+      "epoch": 10,
+      "loss": 0.013777306600106355,
+      "elapsed_seconds": 89.7519221752882,
+      "one_step_infidelity": 0.013730745892082005,
+      "same_record_closed_loop_z_fidelity": 0.7017398412415545,
+      "max_bond_dim": 2,
+      "n_hamiltonian_params": 15,
+      "closed_loop_fidelity_to_bell": 0.7017398412415545
+    },
+    {
+      "epoch": 11,
+      "loss": 0.013754498264997526,
+      "elapsed_seconds": 108.63970378227532
+    },
+    {
+      "epoch": 12,
+      "loss": 0.013716414018068543,
+      "elapsed_seconds": 116.49428692320362
+    },
+    {
+      "epoch": 13,
+      "loss": 0.01383115718450504,
+      "elapsed_seconds": 124.35408934997395
+    },
+    {
+      "epoch": 14,
+      "loss": 0.013783742664724992,
+      "elapsed_seconds": 132.25804758118466
+    },
+    {
+      "epoch": 15,
+      "loss": 0.013878644275161231,
+      "elapsed_seconds": 140.10777182411402
+    },
+    {
+      "epoch": 16,
+      "loss": 0.013774694967811172,
+      "elapsed_seconds": 147.96526026632637
+    },
+    {
+      "epoch": 17,
+      "loss": 0.013793488268900742,
+      "elapsed_seconds": 155.88284858921543
+    },
+    {
+      "epoch": 18,
+      "loss": 0.01378484464541245,
+      "elapsed_seconds": 163.74766797805205
+    },
+    {
+      "epoch": 19,
+      "loss": 0.01375525060454131,
+      "elapsed_seconds": 171.62010364839807
+    },
+    {
+      "epoch": 20,
+      "loss": 0.013766464651657576,
+      "elapsed_seconds": 179.5471602641046,
+      "one_step_infidelity": 0.013737244579318877,
+      "same_record_closed_loop_z_fidelity": 0.7345544607539545,
+      "max_bond_dim": 2,
+      "n_hamiltonian_params": 15,
+      "closed_loop_fidelity_to_bell": 0.7345544607539545
+    },
+    {
+      "epoch": 21,
+      "loss": 0.013778741702401617,
+      "elapsed_seconds": 198.41803352721035
+    },
+    {
+      "epoch": 22,
+      "loss": 0.013694461746107582,
+      "elapsed_seconds": 206.40999693097547
+    },
+    {
+      "epoch": 23,
+      "loss": 0.013819168235952514,
+      "elapsed_seconds": 214.4171271440573
+    },
+    {
+      "epoch": 24,
+      "loss": 0.013814362255422045,
+      "elapsed_seconds": 222.34927081502974
+    },
+    {
+      "epoch": 25,
+      "loss": 0.013850667727084577,
+      "elapsed_seconds": 230.2835774323903
+    },
+    {
+      "epoch": 26,
+      "loss": 0.013735192758164648,
+      "elapsed_seconds": 238.26247049495578
+    },
+    {
+      "epoch": 27,
+      "loss": 0.013733357850164146,
+      "elapsed_seconds": 246.22817691136152
+    },
+    {
+      "epoch": 28,
+      "loss": 0.013707695781046766,
+      "elapsed_seconds": 254.1208915822208
+    },
+    {
+      "epoch": 29,
+      "loss": 0.013870582754356915,
+      "elapsed_seconds": 262.10029121208936
+    },
+    {
+      "epoch": 30,
+      "loss": 0.013797581053617896,
+      "elapsed_seconds": 269.99919662298635,
+      "one_step_infidelity": 0.013800231378238128,
+      "same_record_closed_loop_z_fidelity": 0.7366500347626304,
+      "max_bond_dim": 2,
+      "n_hamiltonian_params": 15,
+      "closed_loop_fidelity_to_bell": 0.7366500347626304
+    },
+    {
+      "epoch": 31,
+      "loss": 0.013767386362899649,
+      "elapsed_seconds": 288.93289039935917
+    },
+    {
+      "epoch": 32,
+      "loss": 0.013901282970513422,
+      "elapsed_seconds": 296.8560659480281
+    },
+    {
+      "epoch": 33,
+      "loss": 0.013776890152656396,
+      "elapsed_seconds": 304.72847387427464
+    },
+    {
+      "epoch": 34,
+      "loss": 0.01380673811418586,
+      "elapsed_seconds": 312.5933059551753
+    },
+    {
+      "epoch": 35,
+      "loss": 0.013809586866601602,
+      "elapsed_seconds": 320.6265187943354
+    },
+    {
+      "epoch": 36,
+      "loss": 0.01367402493718875,
+      "elapsed_seconds": 328.4652184341103
+    },
+    {
+      "epoch": 37,
+      "loss": 0.01370530313302397,
+      "elapsed_seconds": 336.3527859970927
+    },
+    {
+      "epoch": 38,
+      "loss": 0.01376435142225462,
+      "elapsed_seconds": 344.20600712439045
+    },
+    {
+      "epoch": 39,
+      "loss": 0.013757826980672537,
+      "elapsed_seconds": 352.1948186289519
+    },
+    {
+      "epoch": 40,
+      "loss": 0.013735043840708058,
+      "elapsed_seconds": 360.10984989395365,
+      "one_step_infidelity": 0.013909625005589298,
+      "same_record_closed_loop_z_fidelity": 0.8089286952653361,
+      "max_bond_dim": 2,
+      "n_hamiltonian_params": 15,
+      "closed_loop_fidelity_to_bell": 0.8089286952653361
+    },
+    {
+      "epoch": 41,
+      "loss": 0.013776111510091355,
+      "elapsed_seconds": 379.0806263531558
+    },
+    {
+      "epoch": 42,
+      "loss": 0.013824401589537379,
+      "elapsed_seconds": 386.94559298921376
+    },
+    {
+      "epoch": 43,
+      "loss": 0.013733900177952266,
+      "elapsed_seconds": 394.7892111162655
+    },
+    {
+      "epoch": 44,
+      "loss": 0.013726263085402804,
+      "elapsed_seconds": 402.72567556099966
+    },
+    {
+      "epoch": 45,
+      "loss": 0.013843169700475302,
+      "elapsed_seconds": 410.6130933710374
+    },
+    {
+      "epoch": 46,
+      "loss": 0.013822541539643615,
+      "elapsed_seconds": 418.4711941280402
+    },
+    {
+      "epoch": 47,
+      "loss": 0.013814508550527455,
+      "elapsed_seconds": 426.32764972839504
+    },
+    {
+      "epoch": 48,
+      "loss": 0.013795962511686043,
+      "elapsed_seconds": 434.24750537239015
+    },
+    {
+      "epoch": 49,
+      "loss": 0.013736503659132126,
+      "elapsed_seconds": 442.0789221781306
+    },
+    {
+      "epoch": 50,
+      "loss": 0.013749124261440593,
+      "elapsed_seconds": 449.9210815150291,
+      "one_step_infidelity": 0.01375383850382671,
+      "same_record_closed_loop_z_fidelity": 0.7688532334246251,
+      "max_bond_dim": 2,
+      "n_hamiltonian_params": 15,
+      "closed_loop_fidelity_to_bell": 0.7688532334246251
+    },
+    {
+      "epoch": 51,
+      "loss": 0.013816705002564158,
+      "elapsed_seconds": 468.7705544270575
+    },
+    {
+      "epoch": 52,
+      "loss": 0.013761914972348917,
+      "elapsed_seconds": 476.6043688203208
+    },
+    {
+      "epoch": 53,
+      "loss": 0.013716270750076904,
+      "elapsed_seconds": 484.4508484513499
+    },
+    {
+      "epoch": 54,
+      "loss": 0.013761205172354731,
+      "elapsed_seconds": 492.3590177721344
+    },
+    {
+      "epoch": 55,
+      "loss": 0.013839766764863967,
+      "elapsed_seconds": 500.18839240120724
+    },
+    {
+      "epoch": 56,
+      "loss": 0.013762223803360797,
+      "elapsed_seconds": 508.0347625333816
+    },
+    {
+      "epoch": 57,
+      "loss": 0.013827061386520194,
+      "elapsed_seconds": 515.9324023183435
+    },
+    {
+      "epoch": 58,
+      "loss": 0.013790527173903493,
+      "elapsed_seconds": 523.7671509282663
+    },
+    {
+      "epoch": 59,
+      "loss": 0.01371414011972846,
+      "elapsed_seconds": 531.6078614732251
+    },
+    {
+      "epoch": 60,
+      "loss": 0.013741511133243184,
+      "elapsed_seconds": 539.5130578069948,
+      "one_step_infidelity": 0.013766899303989383,
+      "same_record_closed_loop_z_fidelity": 0.7490501770695073,
+      "max_bond_dim": 2,
+      "n_hamiltonian_params": 15,
+      "closed_loop_fidelity_to_bell": 0.7490501770695073
+    },
+    {
+      "epoch": 61,
+      "loss": 0.013851166598051872,
+      "elapsed_seconds": 558.3521208041348
+    },
+    {
+      "epoch": 62,
+      "loss": 0.013669717779566007,
+      "elapsed_seconds": 566.2187969391234
+    },
+    {
+      "epoch": 63,
+      "loss": 0.013774429963587478,
+      "elapsed_seconds": 574.1144256819971
+    },
+    {
+      "epoch": 64,
+      "loss": 0.013902933491283586,
+      "elapsed_seconds": 581.9335755170323
+    },
+    {
+      "epoch": 65,
+      "loss": 0.013851872876292824,
+      "elapsed_seconds": 589.762316762004
+    },
+    {
+      "epoch": 66,
+      "loss": 0.013796588607370926,
+      "elapsed_seconds": 597.6729767513461
+    },
+    {
+      "epoch": 67,
+      "loss": 0.013888031692766863,
+      "elapsed_seconds": 605.5352984969504
+    },
+    {
+      "epoch": 68,
+      "loss": 0.013793086904852016,
+      "elapsed_seconds": 613.3928707530722
+    },
+    {
+      "epoch": 69,
+      "loss": 0.013806961737053928,
+      "elapsed_seconds": 621.3166309003718
+    },
+    {
+      "epoch": 70,
+      "loss": 0.013785534232836993,
+      "elapsed_seconds": 629.1471344283782,
+      "one_step_infidelity": 0.013779571592112837,
+      "same_record_closed_loop_z_fidelity": 0.7468784474238555,
+      "max_bond_dim": 2,
+      "n_hamiltonian_params": 15,
+      "closed_loop_fidelity_to_bell": 0.7468784474238555
+    },
+    {
+      "epoch": 71,
+      "loss": 0.013839057158061609,
+      "elapsed_seconds": 647.9953091330826
+    },
+    {
+      "epoch": 72,
+      "loss": 0.013792320607309878,
+      "elapsed_seconds": 655.9207880790345
+    },
+    {
+      "epoch": 73,
+      "loss": 0.013830816768761203,
+      "elapsed_seconds": 663.7451157202013
+    },
+    {
+      "epoch": 74,
+      "loss": 0.013818902727439162,
+      "elapsed_seconds": 671.637669139076
+    },
+    {
+      "epoch": 75,
+      "loss": 0.013686600158510124,
+      "elapsed_seconds": 679.5591153292917
+    },
+    {
+      "epoch": 76,
+      "loss": 0.01376169408947599,
+      "elapsed_seconds": 687.3921791343018
+    },
+    {
+      "epoch": 77,
+      "loss": 0.013814885543235454,
+      "elapsed_seconds": 695.2254920243286
+    },
+    {
+      "epoch": 78,
+      "loss": 0.013699920064124441,
+      "elapsed_seconds": 703.1382700139657
+    },
+    {
+      "epoch": 79,
+      "loss": 0.01375506915904394,
+      "elapsed_seconds": 710.9537989343517
+    },
+    {
+      "epoch": 80,
+      "loss": 0.013740810657424224,
+      "elapsed_seconds": 718.7843903759494,
+      "one_step_infidelity": 0.013739052604485035,
+      "same_record_closed_loop_z_fidelity": 0.7256828059067998,
+      "max_bond_dim": 2,
+      "n_hamiltonian_params": 15,
+      "closed_loop_fidelity_to_bell": 0.7256828059067998
+    }
+  ],
+  "final": {
+    "epoch": 80,
+    "loss": 0.013740810657424224,
+    "elapsed_seconds": 718.7843903759494,
+    "one_step_infidelity": 0.013739052604485035,
+    "same_record_closed_loop_z_fidelity": 0.7256828059067998,
+    "max_bond_dim": 2,
+    "n_hamiltonian_params": 15,
+    "closed_loop_fidelity_to_bell": 0.7256828059067998
+  }
+}

@@ -1,0 +1,222 @@
+{
+  "n": 2,
+  "g": 0.2,
+  "eta": 0.75,
+  "solver": "SCS",
+  "eps": 1e-10,
+  "lower": 0.991273927498032,
+  "upper": 0.9912739275790257,
+  "gap": 8.09936562262692e-11,
+  "seconds": 0.29428298212587833,
+  "peak_rss_kib": 125400,
+  "full_record_formula": 0.9915539521519425,
+  "rows": [
+    {
+      "record": [
+        -1,
+        -1
+      ],
+      "weight": 0.05932954086277284,
+      "certificate": "branch-0000.npz",
+      "status": "optimal",
+      "solver_value": 1.9799184449964824,
+      "seconds": 0.030998666770756245,
+      "iterations": 75,
+      "lower": 1.9799184449746672,
+      "upper": 1.9799184452189476,
+      "gap": 2.4428037370682887e-10,
+      "tp_residual": 0.0,
+      "primal_min_eig": 1.8011498833725005e-14,
+      "dual_min_eig": 1.0000047998052306e-12,
+      "primal_scale": 1.0000000000120557,
+      "dual_shift": 5.696527514053521e-11,
+      "slack_factor_residual": 5.596525887874594e-11
+    },
+    {
+      "record": [
+        -1,
+        0
+      ],
+      "weight": 0.039374253241355524,
+      "certificate": "branch-0001.npz",
+      "status": "optimal",
+      "solver_value": 1.9843647166053546,
+      "seconds": 0.030922723934054375,
+      "iterations": 325,
+      "lower": 1.984364716591129,
+      "upper": 1.9843647166343599,
+      "gap": 4.323097435587897e-11,
+      "tp_residual": 1.1102230246251565e-16,
+      "primal_min_eig": 3.615478424874119e-15,
+      "dual_min_eig": 1.000000714058355e-12,
+      "primal_scale": 1.0000000000095093,
+      "dual_shift": 7.214732464018303e-12,
+      "slack_factor_residual": 6.214726746035245e-12
+    },
+    {
+      "record": [
+        -1,
+        1
+      ],
+      "weight": 0.058793218861293725,
+      "certificate": "branch-0002.npz",
+      "status": "optimal",
+      "solver_value": 1.9888574320427048,
+      "seconds": 0.011627914384007454,
+      "iterations": 75,
+      "lower": 1.9888574320218362,
+      "upper": 1.9888574322492665,
+      "gap": 2.2743029681748794e-10,
+      "tp_residual": 2.220446049250313e-16,
+      "primal_min_eig": 3.6034707788374143e-12,
+      "dual_min_eig": 1.000054131023044e-12,
+      "primal_scale": 1.0000000000141527,
+      "dual_shift": 5.346349110488666e-11,
+      "slack_factor_residual": 5.246350751575994e-11
+    },
+    {
+      "record": [
+        0,
+        -1
+      ],
+      "weight": 0.046875000000000014,
+      "certificate": "branch-0003.npz",
+      "status": "optimal",
+      "solver_value": 1.9818076921922172,
+      "seconds": 0.04262029007077217,
+      "iterations": 475,
+      "lower": 1.9818076920145424,
+      "upper": 1.981807692210161,
+      "gap": 1.9561863240369348e-10,
+      "tp_residual": 1.1102230246251565e-16,
+      "primal_min_eig": 1.1437490585642138e-12,
+      "dual_min_eig": 1.0000111959175109e-12,
+      "primal_scale": 1.0000000001123988,
+      "dual_shift": 4.484549089290757e-12,
+      "slack_factor_residual": 3.484548666581456e-12
+    },
+    {
+      "record": [
+        0,
+        0
+      ],
+      "weight": 0.031250000000000014,
+      "certificate": "branch-0004.npz",
+      "status": "optimal",
+      "solver_value": 1.9780514630316945,
+      "seconds": 0.05762246623635292,
+      "iterations": 675,
+      "lower": 1.978051462903173,
+      "upper": 1.9780514630797308,
+      "gap": 1.7655787942771894e-10,
+      "tp_residual": 0.0,
+      "primal_min_eig": 9.783125886885247e-14,
+      "dual_min_eig": 9.998664720488082e-13,
+      "primal_scale": 1.0000000000830191,
+      "dual_shift": 1.175919692799678e-11,
+      "slack_factor_residual": 1.0759202028300476e-11
+    },
+    {
+      "record": [
+        0,
+        1
+      ],
+      "weight": 0.046875000000000014,
+      "certificate": "branch-0005.npz",
+      "status": "optimal",
+      "solver_value": 1.9818100357891126,
+      "seconds": 0.04711048677563667,
+      "iterations": 425,
+      "lower": 1.981810035752507,
+      "upper": 1.9818100358005124,
+      "gap": 4.8005377450976994e-11,
+      "tp_residual": 1.1102230246251565e-16,
+      "primal_min_eig": 7.258034134617704e-13,
+      "dual_min_eig": 1.0000236934716539e-12,
+      "primal_scale": 1.0000000000255533,
+      "dual_shift": 2.8785339579490515e-12,
+      "slack_factor_residual": 1.8785339579490517e-12
+    },
+    {
+      "record": [
+        1,
+        -1
+      ],
+      "weight": 0.08129545913722722,
+      "certificate": "branch-0006.npz",
+      "status": "optimal",
+      "solver_value": 1.985435576212651,
+      "seconds": 0.014219282194972038,
+      "iterations": 75,
+      "lower": 1.9854355761960767,
+      "upper": 1.985435576386421,
+      "gap": 1.9034440690290921e-10,
+      "tp_residual": 2.220446049250313e-16,
+      "primal_min_eig": 1.3751369079233288e-14,
+      "dual_min_eig": 9.998881930888348e-13,
+      "primal_scale": 1.000000000009184,
+      "dual_shift": 4.450440927212354e-11,
+      "slack_factor_residual": 4.350440961748345e-11
+    },
+    {
+      "record": [
+        1,
+        0
+      ],
+      "weight": 0.05437574675864452,
+      "certificate": "branch-0007.npz",
+      "status": "optimal",
+      "solver_value": 1.98219367573212,
+      "seconds": 0.04180154390633106,
+      "iterations": 475,
+      "lower": 1.9821936757249052,
+      "upper": 1.9821936757710403,
+      "gap": 4.6135095743693455e-11,
+      "tp_residual": 0.0,
+      "primal_min_eig": 7.362058938732689e-14,
+      "dual_min_eig": 9.999691636487133e-13,
+      "primal_scale": 1.0000000000050553,
+      "dual_shift": 1.0382211892864885e-11,
+      "slack_factor_residual": 9.38220453647664e-12
+    },
+    {
+      "record": [
+        1,
+        1
+      ],
+      "weight": 0.08183178113870634,
+      "certificate": "branch-0008.npz",
+      "status": "optimal",
+      "solver_value": 1.978977073498117,
+      "seconds": 0.011502969078719616,
+      "iterations": 75,
+      "lower": 1.9789770734863854,
+      "upper": 1.9789770736881043,
+      "gap": 2.0171886383479887e-10,
+      "tp_residual": 0.0,
+      "primal_min_eig": 2.223109897432655e-12,
+      "dual_min_eig": 9.999682392521378e-13,
+      "primal_scale": 1.0000000000081866,
+      "dual_shift": 4.839358359741058e-11,
+      "slack_factor_residual": 4.739362512962987e-11
+    }
+  ],
+  "numerical_scope": "Explicit residual-repaired double-precision bounds; not interval-arithmetic proof",
+  "versions": {
+    "python": "3.13.2",
+    "numpy": "2.5.3",
+    "cvxpy": "1.9.2"
+  },
+  "threads": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1"
+  },
+  "source_sha256": {
+    "certificates.py": "2b3b98f4f83d6a6809044d8244aca94e854022d0adcbac0f11eba7e403c83f0a",
+    "solve.py": "f79ba1eb62328b66c31ad63d460f36c9509b6d4401204b3d5380efa1298ae7d8",
+    "test_physics.py": "5b96391e3c7aa447f13f9e5b91d49be43c6411c27ae64e40e0c0740431c19da4",
+    "physical.py": "fa221c40ca7d5009ae887375d5ea72d46f54ebbe574539c45bd4e5fc04b633c8",
+    "verify_saved.py": "d03ca3318f43f8f90797cf2f8bd6a6cbd96eeadaa7208d8953abf87c7794b38f"
+  },
+  "lock_sha256": "13e80e2e546f5a83399738507cf6680b08a11f7d54a5e7d191701cd0c72d0fee"
+}

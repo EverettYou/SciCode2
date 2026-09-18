@@ -1,0 +1,13 @@
+{
+  "kind": "mps_n2_bell_reverse_parity",
+  "created_at": "2026-08-30T18:56:46+00:00",
+  "elapsed_seconds": 1.2628807090222836,
+  "n_traj": 32,
+  "checkpoint": "/home/yzyou/SciCode2/benchmarks/tensor-network-trajectory-diffusion/labs/lab-007-paper-hamiltonian-score-matching/results/paper-fig4-n2-bell-v1/model.pt",
+  "dense_closed_loop_fidelity": 0.9933774672005562,
+  "mps_exact_gate_fidelity": 0.9933774672005564,
+  "mps_trotter_fidelity": 0.9935377974440317,
+  "dense_vs_mps_exact_state_fidelity": 1.0,
+  "dense_vs_mps_trotter_state_fidelity": 0.9999980265315647,
+  "max_abs_dense_minus_mps_exact": 4.0182694286589216e-14
+}

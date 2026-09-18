@@ -1,0 +1,43 @@
+- decision_id: steer-0001
+  created_at: '2026-09-07T18:14:16Z'
+  diagnosis: technical-block
+  summary: User authorized closing the Lab 007 dense/MPS gap and increasing system size on 2026-09-07. Static inspection suggests the legacy projected-gate sweep is not projector-splitting TDVP; experimental diagnosis pending. Automation management unavailable; manual research continues with schedules paused.
+  wiki_basis: []
+  lab_basis:
+  - labs/lab-007-paper-hamiltonian-score-matching/PLAN.md
+  target_idea_ids:
+  - c-003
+  decision: unblock
+  recommendation: Validate proper site-forward/bond-backward TDVP against dense states and gradients, reevaluate frozen ancilla weights, then run bounded larger-chain controls and transfer tests. Preserve legacy results.
+  alternatives: []
+  requires_human: false
+  thread_id: null
+- decision_id: steer-0002
+  created_at: '2026-09-07T18:24:43Z'
+  diagnosis: scientific-stall
+  summary: Corrected TDVP matches dense at full bonds; frozen N=3 shared-controller transfer fails already at exact N=4. Bond dimension alone does not recover transfer.
+  wiki_basis: []
+  lab_basis:
+  - labs/lab-007-paper-hamiltonian-score-matching/PLAN.md
+  target_idea_ids:
+  - k-001
+  decision: redesign-lab
+  recommendation: Keep the N=3 negative baseline and train the identical local-window architecture at N=5 for the same 80 epochs, then freeze it for N=6,8,12. This tests the local-geometry coverage hypothesis; do not attribute failure to it before the control finishes.
+  alternatives: []
+  requires_human: false
+  thread_id: null
+- decision_id: steer-0003
+  created_at: '2026-09-07T18:45:47Z'
+  diagnosis: technical-block
+  summary: Full-bond corrected TDVP state and 300-step gradient audits pass. At N=6 exact chi=8 gives F=0.8871 versus chi=4 F=0.8896; at N=8 chi=8 gives F=0.6646 versus chi=4 F=0.6667. Internal projector refinement changes F by only about 1e-5 or less.
+  wiki_basis: []
+  lab_basis:
+  - labs/lab-007-paper-hamiltonian-score-matching/REPORT.md
+  target_idea_ids:
+  - c-003
+  - k-001
+  decision: unblock
+  recommendation: Retain corrected TDVP; do not attribute the remaining global-recovery loss to this old backend bug. Next compare controller support or mixed-size training under matched budgets before developing a record decoder, since the present controller already has exact state features.
+  alternatives: []
+  requires_human: false
+  thread_id: null

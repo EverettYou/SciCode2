@@ -2,11 +2,12 @@
 title: Scalable trajectory reversal
 page_type: question
 status: open
-updated: '2026-08-23'
+updated: '2026-09-07'
 source_refs:
 - wiki/papers/liu2025mqdm.md
 - problem/TASK.md
 - labs/lab-001-local-controller-feasibility/REPORT.md
+- labs/lab-007-paper-hamiltonian-score-matching/REPORT.md
 idea_ids:
 - x-001
 - c-002
@@ -22,7 +23,7 @@ idea_ids:
 
 **Sources**: [MQDM paper synthesis](../../../../wiki/papers/liu2025mqdm.md); [benchmark task](../../problem/TASK.md); [completed Lab 001](../../labs/lab-001-local-controller-feasibility/REPORT.md)
 
-**Last updated**: 2026-08-23
+**Last updated**: 2026-09-07
 
 ---
 
@@ -31,6 +32,20 @@ idea_ids:
 The dense companion policy uses the full future record and emits a global QR-parameterized unitary [implementation analysis](../../../../wiki/implementations/liu-quantum-diffusion-companion.md). A scalable replacement can reuse QR inside each gate on at most $R$ consecutive sites, then compose such blocks across the chain. The open problem is whether bounded-support composition succeeds when $N>R$, and how the required $R$, temporal window $W$, and MPS environment information change with size. No bounded locality is assumed.
 
 Lab 001 now supplies the frozen low-qubit reference and exact encoder/QR seam needed to isolate that question. It also shows why the first controller experiment must use $N>R$: at $N\leq R$, a generic QR block covers the whole system and a renamed local head cannot discriminate locality [Lab 001 search decision](../../labs/lab-001-local-controller-feasibility/REPORT.md#search-decision). The observed $N=1,2$ loss and fidelity are behavioral baselines only, not evidence that bounded-range control will work.
+
+## 2026-09-07 evidence update
+
+The numerical backend gap is closed on tested full-bond cases, including
+300-step gradients. Frozen local-Hamiltonian reversal now executes through
+N=32, but target F falls from 0.9869 at training size N=5 to 0.04674 at N=32.
+Small-N chi/refinement controls do not explain most of the transfer loss.
+Larger-size state convergence, robust MPS training and record-only conditioning
+remain unresolved [completed Lab 007](../../labs/lab-007-paper-hamiltonian-score-matching/REPORT.md#findings).
+
+The next discriminating controls are Hamiltonian support at fixed observation
+access and mixed-size training at matched budgets. These are hypotheses,
+not established explanations of the current failure
+[search decision](../../labs/lab-007-paper-hamiltonian-score-matching/REPORT.md#search-decision).
 
 ## Open questions
 

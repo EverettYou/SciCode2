@@ -1,0 +1,33 @@
+{
+  "created_at": "2026-09-07T18:19:13.928034+00:00",
+  "python": "3.11.15 (main, Mar  3 2026, 09:26:23) [GCC 11.4.0]",
+  "executable": "/usr/bin/python",
+  "torch": "2.6.0+cu124",
+  "platform": "Linux-6.8.0-110-generic-x86_64-with-glibc2.35",
+  "cuda": "12.4",
+  "source_sha256": {
+    "diagnose_tdvp_gap.py": "7e83d8716a3eef17e950f500d44ec2638d4c093ea303b0d85d5a3e19ff4ce181",
+    "mps_backend.py": "1b4445eb20da02c0449fe6671d94d7f836fa3a2a29b99386e8712014a065b08a",
+    "train_mps_ancilla_cluster.py": "4dab9ce356f0701666935d56ea07e939fe5b2fcd99e3033fb4f98214efeb1d51"
+  },
+  "environment_deviation": "Historical ambient Torch 2.6.0 runtime; declared uv environment absent.",
+  "config": {
+    "n": 3,
+    "epochs": 80,
+    "batch": 8,
+    "seed": 72026,
+    "output": "benchmarks/tensor-network-trajectory-diffusion/labs/lab-007-paper-hamiltonian-score-matching/results/shared-cluster-n3-hybrid-v2",
+    "hidden": 32,
+    "lr": 0.003
+  },
+  "model_parameters": 8780,
+  "gradient_parity_max": 0.0,
+  "training_backend": "dense short-chain ceiling; corrected TDVP and feature gradient parity passed",
+  "objective": "0.5 one-step infidelity (16 uniformly sampled times) + 0.5 full 300-step endpoint infidelity",
+  "validation_seed": 172026,
+  "checkpoint_selection": "final epoch only",
+  "source_hashes": {
+    "train_shared_cluster.py": "b4fc2a797cbf5c3cea50708ff22e4d2585b5cfe8e564871026a27c0a8aeab399",
+    "shared_cluster.py": "65cd76c7d4160cd9ebeacb89212cf724b1462d4b398448acda63a7b1005b7eff"
+  }
+}

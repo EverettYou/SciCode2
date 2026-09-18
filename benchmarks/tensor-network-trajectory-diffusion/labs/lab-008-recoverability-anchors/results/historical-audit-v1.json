@@ -1,0 +1,57 @@
+{
+  "status": "saved-artifact-audit-passed",
+  "artifact_hashes": 12,
+  "paired_fidelity": {
+    "dense": 0.8050414011918432,
+    "legacy": 0.28532627971649566,
+    "tdvp": 0.80504140131956
+  },
+  "historical_transfer": [
+    {
+      "n": 3,
+      "fidelity": 0.6617843721604058,
+      "samples": 16
+    },
+    {
+      "n": 4,
+      "fidelity": 0.9064014975692943,
+      "samples": 16
+    },
+    {
+      "n": 5,
+      "fidelity": 0.9869471194819893,
+      "samples": 16
+    },
+    {
+      "n": 6,
+      "fidelity": 0.8895805146005514,
+      "samples": 16
+    },
+    {
+      "n": 8,
+      "fidelity": 0.6666553618944103,
+      "samples": 16
+    },
+    {
+      "n": 12,
+      "fidelity": 0.4156769484721967,
+      "samples": 16
+    },
+    {
+      "n": 16,
+      "fidelity": 0.2665855687209886,
+      "samples": 16
+    },
+    {
+      "n": 24,
+      "fidelity": 0.11054613199255903,
+      "samples": 16
+    },
+    {
+      "n": 32,
+      "fidelity": 0.04674196525338891,
+      "samples": 16
+    }
+  ],
+  "scope": "Numerical infrastructure evidence; not optimal recovery gold"
+}

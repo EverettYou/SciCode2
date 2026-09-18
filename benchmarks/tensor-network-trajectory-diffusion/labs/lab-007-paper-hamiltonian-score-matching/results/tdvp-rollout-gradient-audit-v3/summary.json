@@ -1,0 +1,47 @@
+{
+  "environment": {
+    "created_at": "2026-09-07T18:34:08.689870+00:00",
+    "python": "3.11.15 (main, Mar  3 2026, 09:26:23) [GCC 11.4.0]",
+    "executable": "/usr/bin/python",
+    "torch": "2.6.0+cu124",
+    "platform": "Linux-6.8.0-110-generic-x86_64-with-glibc2.35",
+    "cuda": "12.4",
+    "source_sha256": {
+      "diagnose_tdvp_gap.py": "7e83d8716a3eef17e950f500d44ec2638d4c093ea303b0d85d5a3e19ff4ce181",
+      "mps_backend.py": "9f43dde9157ea90cf88fee0b3448902d38b3700b11d1108937c85a82cce8b7bc",
+      "train_mps_ancilla_cluster.py": "4dab9ce356f0701666935d56ea07e939fe5b2fcd99e3033fb4f98214efeb1d51"
+    },
+    "environment_deviation": "Historical ambient Torch 2.6.0 runtime; declared uv environment absent."
+  },
+  "source_sha256": "723dd795da741c8972a97605f123ed06a3f9643af7b3361981cd7622b884ac3a",
+  "rows": [
+    {
+      "max_dense_gradient": 0.8534497022628784,
+      "n": 3,
+      "seed": 915,
+      "batch": 2,
+      "steps": 300,
+      "dense_loss": 0.7746874921248671,
+      "mps_loss": 0.7746874921248692,
+      "max_gradient_error": 0.0,
+      "all_gradients_finite": true,
+      "dense_seconds": 0.7716252161189914,
+      "mps_seconds": 7.445273753255606,
+      "passed": true
+    },
+    {
+      "max_dense_gradient": 0.5102078318595886,
+      "n": 5,
+      "seed": 917,
+      "batch": 2,
+      "steps": 300,
+      "dense_loss": 0.9821166353184949,
+      "mps_loss": 0.9821166353184947,
+      "max_gradient_error": 0.0,
+      "all_gradients_finite": true,
+      "dense_seconds": 2.28188125602901,
+      "mps_seconds": 15.589569657109678,
+      "passed": true
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "created_at": "2026-08-30T07:56:53+00:00",
+  "torch_version": "2.6.0+cu124",
+  "cuda_available": true,
+  "device": "cuda:0",
+  "gpu_name": "NVIDIA H200 NVL",
+  "cuda_device_count": 1,
+  "python": "3.11.15",
+  "cwd": "/home/yzyou/SciCode2",
+  "cuda_visible_devices": "1",
+  "seed": 7011,
+  "config": {
+    "n": 1,
+    "epsilon": 0.8,
+    "T": 30,
+    "trajectories_per_epoch": 1024,
+    "epochs": 2,
+    "lr": 0.001,
+    "dtype_state": "complex128",
+    "policy_param_dtype": "torch.float32"
+  }
+}

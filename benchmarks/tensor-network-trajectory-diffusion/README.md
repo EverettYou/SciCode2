@@ -14,19 +14,26 @@ This benchmark asks whether trajectory-level learned reverse diffusion can becom
 
 ## Current research status
 
-- **Stage:** `researching`; `expert_review: reviewed` for the bounded Lab 002 design in closed checkpoint `T-0006`.
-- **Overall state:** Lab 001 has completed its dense-baseline/interface qualification: frozen splits, a three-seed 128-update loss checkpoint, held-out reversal fidelity, and exact QR-refactor regression are recorded.
-- **Current thesis:** Generic one- and two-site gates may retain dense QR internally. The open question is whether composing bounded-support blocks works when $N>R$, not whether a different full-system parameterization matches QR at $N\leq2$; see [the synthesis](wiki/thesis.md).
-- **Active frontier:** Lab 003 has passed small-system MPS/dense execution parity at $N=1,2,3$. Lab 004 then ran the MPS forward backend through $N=32$ in a product-state regime. The next algorithmic task is a scalable bounded-support reverse controller; the companion global dense-QR policy cannot run at large $N$.
-- **Completed lab:** [Lab 001](labs/lab-001-local-controller-feasibility/REPORT.md) is the one- and two-qubit dense-baseline and interface qualification.
-- **Active lab:** [Lab 002](labs/lab-002-dense-bounded-support-isolation/REPORT.md) has closed both product-family panels and the weak-local/coefficient panel as uninformative, completed the weak-local/depth-gate full-reference row, and completed four of five paired $R=2$ cells; the test split remains sealed.
-- **Latest supported evidence:** MPS/dense probability and state-update parity passes at $N=1,2,3$ with errors below $1.1\times10^{-15}$. In the fixed-record product regime, untruncated MPS forward trajectories complete through $N=32$ with realized bond dimension one and a 5.0-second $N=32$ sweep. These results establish backend correctness and a low-entanglement forward regime, not learned reverse scalability.
-- **Main uncertainty:** Whether a controller composed of gates on at most $R$ consecutive sites can reverse the task when $N>R$, and how the required $R$ changes with size and regime.
-- **Next decisive action:** Implement and validate a bounded-support MPS reverse controller, then measure its frozen-policy rollout at larger $N$; retain Lab 002's remaining reviewed cell and sealed test split unchanged.
-- **Blockers or pending human input:** None for the reviewed dense Lab 002 stages. The MPS parity suite must be specified and passed before any large-$N$ experiment; truncation, transfer, spatial sharing, and Hamiltonian heads still need their own controlled tests.
-- **Last meaningful update:** 2026-08-23.
+- **Current thesis:** Corrected local-Hamiltonian execution is validated at small N; frozen recovery at larger N retains a quantitative accuracy boundary.
+- **Active lab:** [Lab 007](labs/lab-007-paper-hamiltonian-score-matching/REPORT.md), with the bounded continuation completed and follow-on controller controls documented.
+- **Stage:** researching. User-authorized Lab 007 continuation completed on 2026-09-07.
+- **Latest supported evidence:** corrected projector-splitting TDVP matches dense small-system states and gradients, including complete 300-step AD checks. On frozen five-qubit weights, paired fidelity rises from legacy 0.2853 to 0.8050, matching dense evaluation.
+- **Active frontier:** a frozen shared controller trained at N=5 runs on entangled chains through N=32. F=0.8896, 0.6667, 0.4157 and 0.04674 at N=6,8,12,32 (chi=4). These are partial recovery results, not uniform high-fidelity scalability.
+- **Controls:** N=3 training fails earlier. Ancilla-locked transfer is tested through N=12. Chi and projector-refinement controls at N=6,8 leave substantial controller error; convergence is not established at N=32.
+- **Main uncertainty:** local state expectations are supplied directly; short-chain training remains dense. Record decoding, robust scalable training, multiple training seeds and broader state ensembles remain open.
+- **Next decisive action:** matched-budget controller-support and mixed-size-training controls, preserving the failed branches.
+- **Blockers or pending human input:** durable state is initialized but schedules are paused because this session lacks automation management. Cached schedule IDs are unverified. Manual checkpoints and steering decisions are saved; no user decision is pending.
+- **Evidence:** [Lab 007 report](labs/lab-007-paper-hamiltonian-score-matching/REPORT.md), [implementation synthesis](wiki/implementations/corrected-tdvp-controller.md), [figure](labs/lab-007-paper-hamiltonian-score-matching/figures/tdvp-transfer-v2/repair-and-transfer.png).
+- **Historical work:** Lab 001 dense QR qualification and the separate Lab 002 reviewed cells remain preserved.
+- **Last meaningful update:** 2026-09-07.
 
 ## Start here
+
+New SciCode 2 draft: [recoverability candidate](problem/recoverability/README.md),
+a physical-optimum task with verified N=2,4 reference grids and an N=6 pilot
+(width 1.51e-5). Next calibrate N=8 at width 1e-4; AI difficulty remains unmeasured. It is a candidate alongside the existing task.
+
+The latest results are in [Lab 007](labs/lab-007-paper-hamiltonian-score-matching/REPORT.md). The earlier phase documents below remain as history.
 
 1. [metadata.yml](metadata.yml)
 2. [problem/TASK.md](problem/TASK.md)

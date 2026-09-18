@@ -2,6 +2,20 @@
 
 <!-- Append entries; never rewrite prior entries. Format: ## [YYYY-MM-DD] operation | subject -->
 
+## [2026-08-31] experiment | MPS local-z + TEBD training loop vs dense
+
+- Lab 007 closed the MPS mechanics gap: local Pauli contractions on a batched MPS match dense \(z\) to \(10^{-15}\) at N=1,2. The control MLP still outputs on-site plus nearest-neighbor coefficients; reverse is TEBD (backaction, on-site \(H\), two-site \(H\)).
+- Same dense weights executed on that loop: N=1 \(F=0.907\) (dense 0.904), N=2 Bell \(F=0.939\) (dense 0.973). From-scratch MPS training: N=1 \(F=0.899\), N=2 Bell \(F\approx 0.90\) at 80 epochs.
+- Paper-style \(W_1(t)\) on the Bell TEBD reverse falls from 0.86 at \(t=T\) to 0.13 at \(t=0\).
+- Remaining paper gap: \(z\) is still contracted from the current state, not the shadow decoder.
+
+## [2026-08-30] experiment | paper control-Hamiltonian dense N=1/2 then MPS reverse
+
+- Lab 007 followed Liu et al. Figs. 2–4: learn \(H_\theta(z,t)\), reverse with \(V=\exp[(\sum_j-\gamma/2\,\delta O_j^2+2iH)\,dt]\), not QR gates.
+- Dense N=1: closed-loop \(F=0.904\). Dense N=2 Bell: \(F=0.973\), \(W_1=0.094\). Dense N=2 Heisenberg thermal: \(F=0.978\), \(W_1=0.091\). Frozen-forward \(z\) fails in all three.
+- MPS reverse of the same \(V\) matches dense to \(10^{-14}\) at N=1 and N=2. First-order Trotter (local backaction then Hamiltonian, the 1D TDVP/TEBD split) keeps state fidelity \(0.999998\) at \(dt=0.01\).
+- Boundary: N=2 still uses a full 15-parameter Hamiltonian. Scaling \(N>2\) needs a bounded-range MPO, not \(4^N\times 4^N\) matrix exponentials.
+
 ## [2026-08-29] experiment | MPS dense-parity and forward resource gates
 
 - Lab 003: untruncated MPS execution reproduced the dense selected-outcome probabilities, normalized forward states, and frozen-policy reverse updates for eight validation trajectories at each of $N=1,2,3$, with all maximum state errors below $1.1\times10^{-15}$.
@@ -105,3 +119,29 @@
 - Registered design: three frozen state families, coefficient-matched and depth/gate-count-matched panels, five paired initialization seeds, conditional informativeness and recovery tolerances, and an oracle attribution diagnostic.
 - Execution boundary: this transition created planning artifacts only. No $N=3$ fixture, controller code, optimizer step, MPS path, truncation, transfer, spatial sharing, Hamiltonian head, or $N>3$ experiment ran.
 - Next action: Lab 002 Stage 1 may freeze and validate the dense $N=3$ state-family fixtures in the benchmark-local uv environment.
+
+
+## [2026-09-07] ingest | corrected TDVP and frozen transfer through 32 qubits
+
+- Source: [completed Lab 007](../labs/lab-007-paper-hamiltonian-score-matching/REPORT.md); numerical audit passes and exact source revisions are archived.
+- Findings: fixed-weight dense/MPS gap closed; 300-step AD verified at N=3,5; N=3 transfer failure preserved; N=5-trained shared-controller and ancilla controls completed; entangled MPS reversal measured through N=32.
+- Boundary: global F declines with size, while local checks partly recover. Dense short-chain training and simulator-state features remain limitations. No asymptotic, seed-robust, arbitrary-logical or record-decoder claim.
+- Pages: thesis, index, implementation, question and frontier updated. Historical QR branches and old log entries preserved.
+- Control: manual research authorized in the active session; scheduling unavailable, cached schedule IDs unverified, state paused. Prior digest is retained pending all wiki validation gates.
+
+
+## [2026-09-07] ingest | recoverability candidate and exact certificate anchors
+
+- User requested a draft with an algorithm-independent physical answer and verifiable evaluation.
+- [Lab 008](../labs/lab-008-recoverability-anchors/REPORT.md) proves one-qubit optimality and checks 15 parameter pairs, seven tests, and 12 historical result hashes.
+- Candidate, frontier, index and thesis distinguish the proposed encoded-channel question from historical fixed-target controller results.
+- Encoded-chain gold, larger-size feasibility, a transition and AI failure rates remain unestablished. No central-task replacement or stable-code promotion.
+
+
+## [2026-09-08] ingest | encoded recoverability reference and precision calibration
+
+- Source: [completed Lab 009](../labs/lab-009-encoded-recoverability/REPORT.md).
+- N=2,4 full grid: independently verified numerical bounds below 1e-8; all six full-record advantages resolved. N=6,g=.5,eta=.75: width 1.51e-5 across all 729 records, with explicit recovery-action validation.
+- Preserve interrupted uniform-precision and pre-refinement adaptive attempts. One targeted refinement reduces the N=6 aggregate gap from 2.12e-4 to 1.51e-5.
+- Retire width .02: a standard no-training transpose baseline passes it at N=4,6. Next pilot N=8,g=.5,.8 at width 1e-4 before freezing the grid or making AI-difficulty claims.
+- Candidate task/evaluation/evidence, source registry, thesis, frontier and indexes updated. Historical trajectory task and Lab 007 evidence remain distinct; no source/note promotion or automatic scheduler activation.

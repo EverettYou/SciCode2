@@ -1,0 +1,572 @@
+{
+  "status": "pilot-not-final-release",
+  "physical_spec": "TASK.md",
+  "codes": [
+    {
+      "n": 2,
+      "logical_site": 1,
+      "other_inputs": "zero",
+      "layers": [
+        {
+          "layer": 0,
+          "rotations": [
+            {
+              "site": 0,
+              "ry_pi_ratio": [
+                2,
+                11
+              ],
+              "rz_pi_ratio": [
+                1,
+                13
+              ]
+            },
+            {
+              "site": 1,
+              "ry_pi_ratio": [
+                3,
+                11
+              ],
+              "rz_pi_ratio": [
+                3,
+                13
+              ]
+            }
+          ],
+          "cnots": [
+            [
+              0,
+              1
+            ]
+          ]
+        }
+      ],
+      "measurement_theta_pi_ratios": [
+        [
+          1,
+          10
+        ],
+        [
+          2,
+          10
+        ]
+      ]
+    },
+    {
+      "n": 4,
+      "logical_site": 2,
+      "other_inputs": "zero",
+      "layers": [
+        {
+          "layer": 0,
+          "rotations": [
+            {
+              "site": 0,
+              "ry_pi_ratio": [
+                2,
+                11
+              ],
+              "rz_pi_ratio": [
+                1,
+                13
+              ]
+            },
+            {
+              "site": 1,
+              "ry_pi_ratio": [
+                3,
+                11
+              ],
+              "rz_pi_ratio": [
+                3,
+                13
+              ]
+            },
+            {
+              "site": 2,
+              "ry_pi_ratio": [
+                4,
+                11
+              ],
+              "rz_pi_ratio": [
+                5,
+                13
+              ]
+            },
+            {
+              "site": 3,
+              "ry_pi_ratio": [
+                5,
+                11
+              ],
+              "rz_pi_ratio": [
+                7,
+                13
+              ]
+            }
+          ],
+          "cnots": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              3
+            ]
+          ]
+        },
+        {
+          "layer": 1,
+          "rotations": [
+            {
+              "site": 0,
+              "ry_pi_ratio": [
+                4,
+                11
+              ],
+              "rz_pi_ratio": [
+                2,
+                13
+              ]
+            },
+            {
+              "site": 1,
+              "ry_pi_ratio": [
+                5,
+                11
+              ],
+              "rz_pi_ratio": [
+                4,
+                13
+              ]
+            },
+            {
+              "site": 2,
+              "ry_pi_ratio": [
+                6,
+                11
+              ],
+              "rz_pi_ratio": [
+                6,
+                13
+              ]
+            },
+            {
+              "site": 3,
+              "ry_pi_ratio": [
+                2,
+                11
+              ],
+              "rz_pi_ratio": [
+                1,
+                13
+              ]
+            }
+          ],
+          "cnots": [
+            [
+              1,
+              2
+            ]
+          ]
+        }
+      ],
+      "measurement_theta_pi_ratios": [
+        [
+          1,
+          10
+        ],
+        [
+          2,
+          10
+        ],
+        [
+          3,
+          10
+        ],
+        [
+          1,
+          10
+        ]
+      ]
+    },
+    {
+      "n": 6,
+      "logical_site": 3,
+      "other_inputs": "zero",
+      "layers": [
+        {
+          "layer": 0,
+          "rotations": [
+            {
+              "site": 0,
+              "ry_pi_ratio": [
+                2,
+                11
+              ],
+              "rz_pi_ratio": [
+                1,
+                13
+              ]
+            },
+            {
+              "site": 1,
+              "ry_pi_ratio": [
+                3,
+                11
+              ],
+              "rz_pi_ratio": [
+                3,
+                13
+              ]
+            },
+            {
+              "site": 2,
+              "ry_pi_ratio": [
+                4,
+                11
+              ],
+              "rz_pi_ratio": [
+                5,
+                13
+              ]
+            },
+            {
+              "site": 3,
+              "ry_pi_ratio": [
+                5,
+                11
+              ],
+              "rz_pi_ratio": [
+                7,
+                13
+              ]
+            },
+            {
+              "site": 4,
+              "ry_pi_ratio": [
+                6,
+                11
+              ],
+              "rz_pi_ratio": [
+                2,
+                13
+              ]
+            },
+            {
+              "site": 5,
+              "ry_pi_ratio": [
+                2,
+                11
+              ],
+              "rz_pi_ratio": [
+                4,
+                13
+              ]
+            }
+          ],
+          "cnots": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              4,
+              5
+            ]
+          ]
+        },
+        {
+          "layer": 1,
+          "rotations": [
+            {
+              "site": 0,
+              "ry_pi_ratio": [
+                4,
+                11
+              ],
+              "rz_pi_ratio": [
+                2,
+                13
+              ]
+            },
+            {
+              "site": 1,
+              "ry_pi_ratio": [
+                5,
+                11
+              ],
+              "rz_pi_ratio": [
+                4,
+                13
+              ]
+            },
+            {
+              "site": 2,
+              "ry_pi_ratio": [
+                6,
+                11
+              ],
+              "rz_pi_ratio": [
+                6,
+                13
+              ]
+            },
+            {
+              "site": 3,
+              "ry_pi_ratio": [
+                2,
+                11
+              ],
+              "rz_pi_ratio": [
+                1,
+                13
+              ]
+            },
+            {
+              "site": 4,
+              "ry_pi_ratio": [
+                3,
+                11
+              ],
+              "rz_pi_ratio": [
+                3,
+                13
+              ]
+            },
+            {
+              "site": 5,
+              "ry_pi_ratio": [
+                4,
+                11
+              ],
+              "rz_pi_ratio": [
+                5,
+                13
+              ]
+            }
+          ],
+          "cnots": [
+            [
+              1,
+              2
+            ],
+            [
+              3,
+              4
+            ]
+          ]
+        },
+        {
+          "layer": 2,
+          "rotations": [
+            {
+              "site": 0,
+              "ry_pi_ratio": [
+                6,
+                11
+              ],
+              "rz_pi_ratio": [
+                3,
+                13
+              ]
+            },
+            {
+              "site": 1,
+              "ry_pi_ratio": [
+                2,
+                11
+              ],
+              "rz_pi_ratio": [
+                5,
+                13
+              ]
+            },
+            {
+              "site": 2,
+              "ry_pi_ratio": [
+                3,
+                11
+              ],
+              "rz_pi_ratio": [
+                7,
+                13
+              ]
+            },
+            {
+              "site": 3,
+              "ry_pi_ratio": [
+                4,
+                11
+              ],
+              "rz_pi_ratio": [
+                2,
+                13
+              ]
+            },
+            {
+              "site": 4,
+              "ry_pi_ratio": [
+                5,
+                11
+              ],
+              "rz_pi_ratio": [
+                4,
+                13
+              ]
+            },
+            {
+              "site": 5,
+              "ry_pi_ratio": [
+                6,
+                11
+              ],
+              "rz_pi_ratio": [
+                6,
+                13
+              ]
+            }
+          ],
+          "cnots": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              4,
+              5
+            ]
+          ]
+        }
+      ],
+      "measurement_theta_pi_ratios": [
+        [
+          1,
+          10
+        ],
+        [
+          2,
+          10
+        ],
+        [
+          3,
+          10
+        ],
+        [
+          1,
+          10
+        ],
+        [
+          2,
+          10
+        ],
+        [
+          3,
+          10
+        ]
+      ]
+    }
+  ],
+  "instances": [
+    {
+      "id": "n2-g0.2-eta0.75",
+      "n": 2,
+      "g": 0.2,
+      "eta": 0.75,
+      "target_width": 1e-08
+    },
+    {
+      "id": "n2-g0.2-eta1.0",
+      "n": 2,
+      "g": 0.2,
+      "eta": 1.0,
+      "target_width": 1e-08
+    },
+    {
+      "id": "n2-g0.5-eta0.75",
+      "n": 2,
+      "g": 0.5,
+      "eta": 0.75,
+      "target_width": 1e-08
+    },
+    {
+      "id": "n2-g0.5-eta1.0",
+      "n": 2,
+      "g": 0.5,
+      "eta": 1.0,
+      "target_width": 1e-08
+    },
+    {
+      "id": "n2-g0.8-eta0.75",
+      "n": 2,
+      "g": 0.8,
+      "eta": 0.75,
+      "target_width": 1e-08
+    },
+    {
+      "id": "n2-g0.8-eta1.0",
+      "n": 2,
+      "g": 0.8,
+      "eta": 1.0,
+      "target_width": 1e-08
+    },
+    {
+      "id": "n4-g0.2-eta0.75",
+      "n": 4,
+      "g": 0.2,
+      "eta": 0.75,
+      "target_width": 1e-08
+    },
+    {
+      "id": "n4-g0.2-eta1.0",
+      "n": 4,
+      "g": 0.2,
+      "eta": 1.0,
+      "target_width": 1e-08
+    },
+    {
+      "id": "n4-g0.5-eta0.75",
+      "n": 4,
+      "g": 0.5,
+      "eta": 0.75,
+      "target_width": 1e-08
+    },
+    {
+      "id": "n4-g0.5-eta1.0",
+      "n": 4,
+      "g": 0.5,
+      "eta": 1.0,
+      "target_width": 1e-08
+    },
+    {
+      "id": "n4-g0.8-eta0.75",
+      "n": 4,
+      "g": 0.8,
+      "eta": 0.75,
+      "target_width": 1e-08
+    },
+    {
+      "id": "n4-g0.8-eta1.0",
+      "n": 4,
+      "g": 0.8,
+      "eta": 1.0,
+      "target_width": 1e-08
+    },
+    {
+      "id": "n6-g0.5-eta0.75",
+      "n": 6,
+      "g": 0.5,
+      "eta": 0.75,
+      "target_width": 0.0001
+    }
+  ]
+}

@@ -1,0 +1,508 @@
+{
+  "kind": "local_pauli_hamiltonian_n3_ghz",
+  "created_at": "2026-08-31T18:27:11+00:00",
+  "started_at": "2026-08-31T17:58:21+00:00",
+  "elapsed_seconds": 1729.2822639490478,
+  "environment": {
+    "torch_version": "2.6.0+cu124",
+    "device": "cuda:0",
+    "gpu_name": "NVIDIA H200 NVL",
+    "n_qubits": 3,
+    "target": "ghz",
+    "chi_max": 16,
+    "hidden": 128,
+    "seed": 2026,
+    "n_hamiltonian_params": 27,
+    "parameterization": "shared-local-pauli-coefficients",
+    "ensemble": "ghz",
+    "parity": {
+      "2": {
+        "n_qubits": 2,
+        "n2_z_error": 3.3306690738754696e-16,
+        "tebd_vs_dense_step_fidelity": 0.9999999982916898,
+        "tdvp_vs_dense_step_fidelity": 0.9999999982916898,
+        "tdvp_backward_ok": true
+      },
+      "3": {
+        "n_qubits": 3,
+        "tebd_vs_dense_step_fidelity": 0.9999999905937345,
+        "tdvp_vs_dense_step_fidelity": 0.9999853771286026,
+        "tdvp_backward_ok": true
+      },
+      "4": {
+        "n_qubits": 4,
+        "tebd_vs_dense_step_fidelity": 0.9999999815467231,
+        "tdvp_vs_dense_step_fidelity": 0.9999935339675103,
+        "tdvp_backward_ok": true
+      }
+    },
+    "protocol": "per-step-infidelity-tdvp"
+  },
+  "loss_curve": [
+    {
+      "epoch": 1,
+      "loss": 0.02076406260784756,
+      "elapsed_seconds": 18.52032684814185,
+      "one_step_infidelity": 0.02071299837182627,
+      "same_record_closed_loop_z_fidelity": 0.27549176132772574,
+      "closed_loop_W1_to_initial_ensemble": 0.8476469105080968,
+      "max_bond_dim": 2,
+      "n_hamiltonian_params": 27,
+      "closed_loop_fidelity_to_ghz": 0.27549176132772574
+    },
+    {
+      "epoch": 2,
+      "loss": 0.020650021270042153,
+      "elapsed_seconds": 64.10316352779046
+    },
+    {
+      "epoch": 3,
+      "loss": 0.02066769590237737,
+      "elapsed_seconds": 82.61506060184911
+    },
+    {
+      "epoch": 4,
+      "loss": 0.020765870192672082,
+      "elapsed_seconds": 101.2663607550785
+    },
+    {
+      "epoch": 5,
+      "loss": 0.020718729432224543,
+      "elapsed_seconds": 120.02084506582469
+    },
+    {
+      "epoch": 6,
+      "loss": 0.020734969238587465,
+      "elapsed_seconds": 138.67042034305632
+    },
+    {
+      "epoch": 7,
+      "loss": 0.020653127048965284,
+      "elapsed_seconds": 157.3487685341388
+    },
+    {
+      "epoch": 8,
+      "loss": 0.02080740255398889,
+      "elapsed_seconds": 176.1404007920064
+    },
+    {
+      "epoch": 9,
+      "loss": 0.020718228094231492,
+      "elapsed_seconds": 194.69273326406255
+    },
+    {
+      "epoch": 10,
+      "loss": 0.020554901342918524,
+      "elapsed_seconds": 213.311261117924,
+      "one_step_infidelity": 0.020702424860255055,
+      "same_record_closed_loop_z_fidelity": 0.39002621336807486,
+      "closed_loop_W1_to_initial_ensemble": 0.7782192326932029,
+      "max_bond_dim": 2,
+      "n_hamiltonian_params": 27,
+      "closed_loop_fidelity_to_ghz": 0.39002621336807486
+    },
+    {
+      "epoch": 11,
+      "loss": 0.02083534641139191,
+      "elapsed_seconds": 259.011231679935
+    },
+    {
+      "epoch": 12,
+      "loss": 0.020659319546167003,
+      "elapsed_seconds": 277.67031522793695
+    },
+    {
+      "epoch": 13,
+      "loss": 0.020759430249285265,
+      "elapsed_seconds": 296.2103917519562
+    },
+    {
+      "epoch": 14,
+      "loss": 0.020836677408355035,
+      "elapsed_seconds": 314.8127548880875
+    },
+    {
+      "epoch": 15,
+      "loss": 0.02064077582711027,
+      "elapsed_seconds": 333.43010704685
+    },
+    {
+      "epoch": 16,
+      "loss": 0.020733454386352115,
+      "elapsed_seconds": 351.94083231594414
+    },
+    {
+      "epoch": 17,
+      "loss": 0.020764544161059932,
+      "elapsed_seconds": 370.56330258818343
+    },
+    {
+      "epoch": 18,
+      "loss": 0.020679165738780116,
+      "elapsed_seconds": 389.1894980678335
+    },
+    {
+      "epoch": 19,
+      "loss": 0.02078192390728342,
+      "elapsed_seconds": 407.9060296951793
+    },
+    {
+      "epoch": 20,
+      "loss": 0.020779768959161383,
+      "elapsed_seconds": 426.55184644879773,
+      "one_step_infidelity": 0.020666415866270823,
+      "same_record_closed_loop_z_fidelity": 0.4116839839589974,
+      "closed_loop_W1_to_initial_ensemble": 0.7646830892916496,
+      "max_bond_dim": 2,
+      "n_hamiltonian_params": 27,
+      "closed_loop_fidelity_to_ghz": 0.4116839839589974
+    },
+    {
+      "epoch": 21,
+      "loss": 0.020779926253204566,
+      "elapsed_seconds": 472.2912979470566
+    },
+    {
+      "epoch": 22,
+      "loss": 0.02064832493983326,
+      "elapsed_seconds": 490.8136708261445
+    },
+    {
+      "epoch": 23,
+      "loss": 0.020712819543079297,
+      "elapsed_seconds": 509.44597832718864
+    },
+    {
+      "epoch": 24,
+      "loss": 0.0206569160070632,
+      "elapsed_seconds": 528.0152324121445
+    },
+    {
+      "epoch": 25,
+      "loss": 0.020677096105647535,
+      "elapsed_seconds": 546.7945745838806
+    },
+    {
+      "epoch": 26,
+      "loss": 0.020615781349179543,
+      "elapsed_seconds": 565.4427150571719
+    },
+    {
+      "epoch": 27,
+      "loss": 0.02058154103613975,
+      "elapsed_seconds": 584.0032196021639
+    },
+    {
+      "epoch": 28,
+      "loss": 0.020633286864124363,
+      "elapsed_seconds": 602.7422369387932
+    },
+    {
+      "epoch": 29,
+      "loss": 0.02061476716705447,
+      "elapsed_seconds": 621.3940152488649
+    },
+    {
+      "epoch": 30,
+      "loss": 0.02073152144632908,
+      "elapsed_seconds": 640.0451648738235,
+      "one_step_infidelity": 0.020598173031521855,
+      "same_record_closed_loop_z_fidelity": 0.3744689311042463,
+      "closed_loop_W1_to_initial_ensemble": 0.7859723795244197,
+      "max_bond_dim": 2,
+      "n_hamiltonian_params": 27,
+      "closed_loop_fidelity_to_ghz": 0.3744689311042463
+    },
+    {
+      "epoch": 31,
+      "loss": 0.02061190016813313,
+      "elapsed_seconds": 685.4742499738932
+    },
+    {
+      "epoch": 32,
+      "loss": 0.02074904085621737,
+      "elapsed_seconds": 704.0644830651581
+    },
+    {
+      "epoch": 33,
+      "loss": 0.020630485403656862,
+      "elapsed_seconds": 722.5844329581596
+    },
+    {
+      "epoch": 34,
+      "loss": 0.020693148981620158,
+      "elapsed_seconds": 741.156114009209
+    },
+    {
+      "epoch": 35,
+      "loss": 0.02075706886738571,
+      "elapsed_seconds": 759.8256693799049
+    },
+    {
+      "epoch": 36,
+      "loss": 0.020602793107772254,
+      "elapsed_seconds": 778.4793948498555
+    },
+    {
+      "epoch": 37,
+      "loss": 0.020890616922344687,
+      "elapsed_seconds": 797.0700966250151
+    },
+    {
+      "epoch": 38,
+      "loss": 0.020688067391342588,
+      "elapsed_seconds": 815.562034253031
+    },
+    {
+      "epoch": 39,
+      "loss": 0.020621739168817734,
+      "elapsed_seconds": 834.1359391869046
+    },
+    {
+      "epoch": 40,
+      "loss": 0.020724911731170956,
+      "elapsed_seconds": 852.7298502940685,
+      "one_step_infidelity": 0.020672409842217247,
+      "same_record_closed_loop_z_fidelity": 0.43255848318372436,
+      "closed_loop_W1_to_initial_ensemble": 0.7513161485413122,
+      "max_bond_dim": 2,
+      "n_hamiltonian_params": 27,
+      "closed_loop_fidelity_to_ghz": 0.43255848318372436
+    },
+    {
+      "epoch": 41,
+      "loss": 0.020682397958794015,
+      "elapsed_seconds": 898.1797456918284
+    },
+    {
+      "epoch": 42,
+      "loss": 0.020618407172279765,
+      "elapsed_seconds": 916.684220538009
+    },
+    {
+      "epoch": 43,
+      "loss": 0.02064641776012918,
+      "elapsed_seconds": 935.2789717419073
+    },
+    {
+      "epoch": 44,
+      "loss": 0.020730716751456397,
+      "elapsed_seconds": 953.8714157128707
+    },
+    {
+      "epoch": 45,
+      "loss": 0.02079339612535642,
+      "elapsed_seconds": 972.3575430200435
+    },
+    {
+      "epoch": 46,
+      "loss": 0.020603788028172795,
+      "elapsed_seconds": 990.9324360559694
+    },
+    {
+      "epoch": 47,
+      "loss": 0.02059446727908914,
+      "elapsed_seconds": 1009.4102273299359
+    },
+    {
+      "epoch": 48,
+      "loss": 0.02069029945159897,
+      "elapsed_seconds": 1027.968622148037
+    },
+    {
+      "epoch": 49,
+      "loss": 0.02062550455102855,
+      "elapsed_seconds": 1046.5296897529624
+    },
+    {
+      "epoch": 50,
+      "loss": 0.020598015433475888,
+      "elapsed_seconds": 1064.9988888618536,
+      "one_step_infidelity": 0.02067123320949449,
+      "same_record_closed_loop_z_fidelity": 0.3373352537276265,
+      "closed_loop_W1_to_initial_ensemble": 0.80966653558295,
+      "max_bond_dim": 2,
+      "n_hamiltonian_params": 27,
+      "closed_loop_fidelity_to_ghz": 0.3373352537276265
+    },
+    {
+      "epoch": 51,
+      "loss": 0.020647701422874993,
+      "elapsed_seconds": 1110.4151801308617
+    },
+    {
+      "epoch": 52,
+      "loss": 0.02065153827644046,
+      "elapsed_seconds": 1128.999987429008
+    },
+    {
+      "epoch": 53,
+      "loss": 0.020764713491991514,
+      "elapsed_seconds": 1147.4956476120278
+    },
+    {
+      "epoch": 54,
+      "loss": 0.020636513202545684,
+      "elapsed_seconds": 1166.076179951895
+    },
+    {
+      "epoch": 55,
+      "loss": 0.020776460624364577,
+      "elapsed_seconds": 1184.6727739782073
+    },
+    {
+      "epoch": 56,
+      "loss": 0.02060617671342343,
+      "elapsed_seconds": 1203.1580438660458
+    },
+    {
+      "epoch": 57,
+      "loss": 0.020605069311671588,
+      "elapsed_seconds": 1221.750391505193
+    },
+    {
+      "epoch": 58,
+      "loss": 0.020531437106283076,
+      "elapsed_seconds": 1240.2475633639842
+    },
+    {
+      "epoch": 59,
+      "loss": 0.020804971732459553,
+      "elapsed_seconds": 1258.8145461971872
+    },
+    {
+      "epoch": 60,
+      "loss": 0.020667898052424777,
+      "elapsed_seconds": 1277.4100420558825,
+      "one_step_infidelity": 0.020601227980162378,
+      "same_record_closed_loop_z_fidelity": 0.4565167942168693,
+      "closed_loop_W1_to_initial_ensemble": 0.7360203586540427,
+      "max_bond_dim": 2,
+      "n_hamiltonian_params": 27,
+      "closed_loop_fidelity_to_ghz": 0.4565167942168693
+    },
+    {
+      "epoch": 61,
+      "loss": 0.02057012171217483,
+      "elapsed_seconds": 1322.9259912138805
+    },
+    {
+      "epoch": 62,
+      "loss": 0.02057089912328014,
+      "elapsed_seconds": 1341.3920510169119
+    },
+    {
+      "epoch": 63,
+      "loss": 0.02076343888833142,
+      "elapsed_seconds": 1359.9858792149462
+    },
+    {
+      "epoch": 64,
+      "loss": 0.02060012328298715,
+      "elapsed_seconds": 1378.4843795089982
+    },
+    {
+      "epoch": 65,
+      "loss": 0.020651207965862,
+      "elapsed_seconds": 1397.066419791896
+    },
+    {
+      "epoch": 66,
+      "loss": 0.0207959957371465,
+      "elapsed_seconds": 1415.6479776292108
+    },
+    {
+      "epoch": 67,
+      "loss": 0.020665775555168832,
+      "elapsed_seconds": 1434.1427189311944
+    },
+    {
+      "epoch": 68,
+      "loss": 0.020753076712900994,
+      "elapsed_seconds": 1452.69743237691
+    },
+    {
+      "epoch": 69,
+      "loss": 0.0207101112334788,
+      "elapsed_seconds": 1471.1779114669189
+    },
+    {
+      "epoch": 70,
+      "loss": 0.020724786087133636,
+      "elapsed_seconds": 1489.7437349050306,
+      "one_step_infidelity": 0.020798353062190765,
+      "same_record_closed_loop_z_fidelity": 0.4001163821724803,
+      "closed_loop_W1_to_initial_ensemble": 0.7717763965518178,
+      "max_bond_dim": 2,
+      "n_hamiltonian_params": 27,
+      "closed_loop_fidelity_to_ghz": 0.4001163821724803
+    },
+    {
+      "epoch": 71,
+      "loss": 0.020677251337793672,
+      "elapsed_seconds": 1535.2486605099402
+    },
+    {
+      "epoch": 72,
+      "loss": 0.02060980776628209,
+      "elapsed_seconds": 1553.749908615835
+    },
+    {
+      "epoch": 73,
+      "loss": 0.020668669792012345,
+      "elapsed_seconds": 1572.3267223071307
+    },
+    {
+      "epoch": 74,
+      "loss": 0.020716067655382513,
+      "elapsed_seconds": 1590.9104760601185
+    },
+    {
+      "epoch": 75,
+      "loss": 0.020631316312918528,
+      "elapsed_seconds": 1609.44505768409
+    },
+    {
+      "epoch": 76,
+      "loss": 0.02075974641695603,
+      "elapsed_seconds": 1628.0498681240715
+    },
+    {
+      "epoch": 77,
+      "loss": 0.02069275744770388,
+      "elapsed_seconds": 1646.6464055669494
+    },
+    {
+      "epoch": 78,
+      "loss": 0.02069463340273713,
+      "elapsed_seconds": 1665.1650051088072
+    },
+    {
+      "epoch": 79,
+      "loss": 0.020646878146466402,
+      "elapsed_seconds": 1683.7696409882046
+    },
+    {
+      "epoch": 80,
+      "loss": 0.020662391983285025,
+      "elapsed_seconds": 1702.2982568000443,
+      "one_step_infidelity": 0.020573261461816005,
+      "same_record_closed_loop_z_fidelity": 0.41747807965061223,
+      "closed_loop_W1_to_initial_ensemble": 0.7610149008599683,
+      "max_bond_dim": 2,
+      "n_hamiltonian_params": 27,
+      "closed_loop_fidelity_to_ghz": 0.41747807965061223
+    }
+  ],
+  "final": {
+    "epoch": 80,
+    "loss": 0.020662391983285025,
+    "elapsed_seconds": 1702.2982568000443,
+    "one_step_infidelity": 0.020573261461816005,
+    "same_record_closed_loop_z_fidelity": 0.41747807965061223,
+    "closed_loop_W1_to_initial_ensemble": 0.7610149008599683,
+    "max_bond_dim": 2,
+    "n_hamiltonian_params": 27,
+    "closed_loop_fidelity_to_ghz": 0.41747807965061223
+  }
+}

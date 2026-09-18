@@ -1,0 +1,488 @@
+{
+  "kind": "local_pauli_hamiltonian_n3_product",
+  "created_at": "2026-08-31T17:16:58+00:00",
+  "started_at": "2026-08-31T16:48:45+00:00",
+  "elapsed_seconds": 1693.3925206279382,
+  "environment": {
+    "torch_version": "2.6.0+cu124",
+    "device": "cuda:0",
+    "gpu_name": "NVIDIA H200 NVL",
+    "n_qubits": 3,
+    "target": "product",
+    "chi_max": 16,
+    "hidden": 128,
+    "seed": 2026,
+    "n_hamiltonian_params": 27,
+    "parameterization": "shared-local-pauli-coefficients",
+    "ensemble": "per-site-noisy-zero",
+    "parity": {
+      "2": {
+        "n_qubits": 2,
+        "n2_z_error": 3.3306690738754696e-16,
+        "tebd_vs_dense_step_fidelity": 0.9999999982916898,
+        "tdvp_vs_dense_step_fidelity": 0.9999999982916898,
+        "tdvp_backward_ok": true
+      },
+      "3": {
+        "n_qubits": 3,
+        "tebd_vs_dense_step_fidelity": 0.9999999905937345,
+        "tdvp_vs_dense_step_fidelity": 0.9999853771286026,
+        "tdvp_backward_ok": true
+      },
+      "4": {
+        "n_qubits": 4,
+        "tebd_vs_dense_step_fidelity": 0.9999999815467231,
+        "tdvp_vs_dense_step_fidelity": 0.9999935339675103,
+        "tdvp_backward_ok": true
+      }
+    },
+    "protocol": "per-step-infidelity-tdvp"
+  },
+  "loss_curve": [
+    {
+      "epoch": 1,
+      "loss": 0.020241687303764643,
+      "elapsed_seconds": 18.326769740786403,
+      "one_step_infidelity": 0.02015170842283396,
+      "same_record_closed_loop_z_fidelity": 0.23393974854222793,
+      "max_bond_dim": 2,
+      "n_hamiltonian_params": 27
+    },
+    {
+      "epoch": 2,
+      "loss": 0.020180514783251103,
+      "elapsed_seconds": 63.014599525835365
+    },
+    {
+      "epoch": 3,
+      "loss": 0.020059248660666374,
+      "elapsed_seconds": 81.27784678479657
+    },
+    {
+      "epoch": 4,
+      "loss": 0.020183539056626603,
+      "elapsed_seconds": 99.3873138888739
+    },
+    {
+      "epoch": 5,
+      "loss": 0.020083881966667688,
+      "elapsed_seconds": 117.67773015284911
+    },
+    {
+      "epoch": 6,
+      "loss": 0.020065967030762303,
+      "elapsed_seconds": 135.9889910160564
+    },
+    {
+      "epoch": 7,
+      "loss": 0.020096878330824075,
+      "elapsed_seconds": 154.11720951506868
+    },
+    {
+      "epoch": 8,
+      "loss": 0.020140531285554878,
+      "elapsed_seconds": 172.48575259186327
+    },
+    {
+      "epoch": 9,
+      "loss": 0.020055778380013666,
+      "elapsed_seconds": 190.6973125608638
+    },
+    {
+      "epoch": 10,
+      "loss": 0.0200226902184799,
+      "elapsed_seconds": 208.90471906075254,
+      "one_step_infidelity": 0.020032766794140556,
+      "same_record_closed_loop_z_fidelity": 0.7590514128638804,
+      "max_bond_dim": 2,
+      "n_hamiltonian_params": 27
+    },
+    {
+      "epoch": 11,
+      "loss": 0.020140115445178613,
+      "elapsed_seconds": 253.56044439971447
+    },
+    {
+      "epoch": 12,
+      "loss": 0.020078239211752696,
+      "elapsed_seconds": 271.75547466194257
+    },
+    {
+      "epoch": 13,
+      "loss": 0.02018144388970973,
+      "elapsed_seconds": 290.0514973127283
+    },
+    {
+      "epoch": 14,
+      "loss": 0.020104373901505435,
+      "elapsed_seconds": 308.2749402518384
+    },
+    {
+      "epoch": 15,
+      "loss": 0.02001956901102427,
+      "elapsed_seconds": 326.51332192402333
+    },
+    {
+      "epoch": 16,
+      "loss": 0.0200470223823181,
+      "elapsed_seconds": 344.73813238786533
+    },
+    {
+      "epoch": 17,
+      "loss": 0.020025279879162087,
+      "elapsed_seconds": 363.0154863637872
+    },
+    {
+      "epoch": 18,
+      "loss": 0.020000292020556764,
+      "elapsed_seconds": 381.2232043738477
+    },
+    {
+      "epoch": 19,
+      "loss": 0.020099553825970548,
+      "elapsed_seconds": 399.4297152478248
+    },
+    {
+      "epoch": 20,
+      "loss": 0.02016225467573039,
+      "elapsed_seconds": 417.57695481786504,
+      "one_step_infidelity": 0.020157926652357588,
+      "same_record_closed_loop_z_fidelity": 0.7383622393130729,
+      "max_bond_dim": 2,
+      "n_hamiltonian_params": 27
+    },
+    {
+      "epoch": 21,
+      "loss": 0.020152129249768575,
+      "elapsed_seconds": 462.08564218273386
+    },
+    {
+      "epoch": 22,
+      "loss": 0.020060295212482003,
+      "elapsed_seconds": 480.25694376276806
+    },
+    {
+      "epoch": 23,
+      "loss": 0.02002739744618014,
+      "elapsed_seconds": 498.4598805378191
+    },
+    {
+      "epoch": 24,
+      "loss": 0.020053955547773825,
+      "elapsed_seconds": 516.5744046368636
+    },
+    {
+      "epoch": 25,
+      "loss": 0.020100530374446323,
+      "elapsed_seconds": 534.726284654811
+    },
+    {
+      "epoch": 26,
+      "loss": 0.020023388236444672,
+      "elapsed_seconds": 552.8872334077023
+    },
+    {
+      "epoch": 27,
+      "loss": 0.020094601920938517,
+      "elapsed_seconds": 571.0745273251086
+    },
+    {
+      "epoch": 28,
+      "loss": 0.020020494093110023,
+      "elapsed_seconds": 589.2062532966956
+    },
+    {
+      "epoch": 29,
+      "loss": 0.020046202478740633,
+      "elapsed_seconds": 607.4106393018737
+    },
+    {
+      "epoch": 30,
+      "loss": 0.020160580432153043,
+      "elapsed_seconds": 625.539059638977,
+      "one_step_infidelity": 0.019962181334566512,
+      "same_record_closed_loop_z_fidelity": 0.746426317794826,
+      "max_bond_dim": 2,
+      "n_hamiltonian_params": 27
+    },
+    {
+      "epoch": 31,
+      "loss": 0.020016718197820502,
+      "elapsed_seconds": 670.149935356807
+    },
+    {
+      "epoch": 32,
+      "loss": 0.020088183377398636,
+      "elapsed_seconds": 688.2658506869338
+    },
+    {
+      "epoch": 33,
+      "loss": 0.020093164899599326,
+      "elapsed_seconds": 706.4279148229398
+    },
+    {
+      "epoch": 34,
+      "loss": 0.02006578801597019,
+      "elapsed_seconds": 724.5992545080371
+    },
+    {
+      "epoch": 35,
+      "loss": 0.020055453329538734,
+      "elapsed_seconds": 742.7118710088544
+    },
+    {
+      "epoch": 36,
+      "loss": 0.02005327410404029,
+      "elapsed_seconds": 760.8947087661363
+    },
+    {
+      "epoch": 37,
+      "loss": 0.020151242117905647,
+      "elapsed_seconds": 779.0619129268453
+    },
+    {
+      "epoch": 38,
+      "loss": 0.020103111369238136,
+      "elapsed_seconds": 797.170290174894
+    },
+    {
+      "epoch": 39,
+      "loss": 0.0199904503414551,
+      "elapsed_seconds": 815.317616798915
+    },
+    {
+      "epoch": 40,
+      "loss": 0.0201148880421188,
+      "elapsed_seconds": 833.4662122870795,
+      "one_step_infidelity": 0.02008258220950551,
+      "same_record_closed_loop_z_fidelity": 0.7869736872479018,
+      "max_bond_dim": 2,
+      "n_hamiltonian_params": 27
+    },
+    {
+      "epoch": 41,
+      "loss": 0.02009116401094273,
+      "elapsed_seconds": 877.9358373568393
+    },
+    {
+      "epoch": 42,
+      "loss": 0.020059378381822226,
+      "elapsed_seconds": 896.0329485707916
+    },
+    {
+      "epoch": 43,
+      "loss": 0.020008124944765494,
+      "elapsed_seconds": 914.2068942389451
+    },
+    {
+      "epoch": 44,
+      "loss": 0.02019588364499433,
+      "elapsed_seconds": 932.3843980189413
+    },
+    {
+      "epoch": 45,
+      "loss": 0.020067191636527097,
+      "elapsed_seconds": 950.4886670019478
+    },
+    {
+      "epoch": 46,
+      "loss": 0.020095412217606533,
+      "elapsed_seconds": 968.6605872609653
+    },
+    {
+      "epoch": 47,
+      "loss": 0.020020542507150903,
+      "elapsed_seconds": 986.8345991387032
+    },
+    {
+      "epoch": 48,
+      "loss": 0.020103970075966787,
+      "elapsed_seconds": 1004.9638584018685
+    },
+    {
+      "epoch": 49,
+      "loss": 0.020099374064579838,
+      "elapsed_seconds": 1023.1379101579078
+    },
+    {
+      "epoch": 50,
+      "loss": 0.01998935607704445,
+      "elapsed_seconds": 1041.3326906231232,
+      "one_step_infidelity": 0.020092084192742304,
+      "same_record_closed_loop_z_fidelity": 0.7640511777645,
+      "max_bond_dim": 2,
+      "n_hamiltonian_params": 27
+    },
+    {
+      "epoch": 51,
+      "loss": 0.020066302952539333,
+      "elapsed_seconds": 1085.8399603059515
+    },
+    {
+      "epoch": 52,
+      "loss": 0.020101054983890965,
+      "elapsed_seconds": 1103.977464494761
+    },
+    {
+      "epoch": 53,
+      "loss": 0.02006607930649612,
+      "elapsed_seconds": 1122.1524707018398
+    },
+    {
+      "epoch": 54,
+      "loss": 0.020164668500151042,
+      "elapsed_seconds": 1140.3716475507244
+    },
+    {
+      "epoch": 55,
+      "loss": 0.02011542938288263,
+      "elapsed_seconds": 1158.4912697067484
+    },
+    {
+      "epoch": 56,
+      "loss": 0.020090222357827335,
+      "elapsed_seconds": 1176.7026510429569
+    },
+    {
+      "epoch": 57,
+      "loss": 0.02001222833989415,
+      "elapsed_seconds": 1194.885164562147
+    },
+    {
+      "epoch": 58,
+      "loss": 0.020031645711641465,
+      "elapsed_seconds": 1213.04539344972
+    },
+    {
+      "epoch": 59,
+      "loss": 0.020086564866124503,
+      "elapsed_seconds": 1231.2914107921533
+    },
+    {
+      "epoch": 60,
+      "loss": 0.02004239936639738,
+      "elapsed_seconds": 1249.6513974871486,
+      "one_step_infidelity": 0.02010351498161271,
+      "same_record_closed_loop_z_fidelity": 0.7354471654749503,
+      "max_bond_dim": 2,
+      "n_hamiltonian_params": 27
+    },
+    {
+      "epoch": 61,
+      "loss": 0.020002801392186343,
+      "elapsed_seconds": 1294.2178059318103
+    },
+    {
+      "epoch": 62,
+      "loss": 0.020040805168726392,
+      "elapsed_seconds": 1312.345728578046
+    },
+    {
+      "epoch": 63,
+      "loss": 0.02017905517705044,
+      "elapsed_seconds": 1330.5656742257997
+    },
+    {
+      "epoch": 64,
+      "loss": 0.019950452797979624,
+      "elapsed_seconds": 1348.7110908539034
+    },
+    {
+      "epoch": 65,
+      "loss": 0.020107785106009676,
+      "elapsed_seconds": 1366.9214771329425
+    },
+    {
+      "epoch": 66,
+      "loss": 0.020101291167111447,
+      "elapsed_seconds": 1385.1324838967994
+    },
+    {
+      "epoch": 67,
+      "loss": 0.020141907509793257,
+      "elapsed_seconds": 1403.383498897776
+    },
+    {
+      "epoch": 68,
+      "loss": 0.02017350602490763,
+      "elapsed_seconds": 1421.5390988970175
+    },
+    {
+      "epoch": 69,
+      "loss": 0.020066665140190353,
+      "elapsed_seconds": 1440.033270958811
+    },
+    {
+      "epoch": 70,
+      "loss": 0.020080402469650142,
+      "elapsed_seconds": 1458.3072395729832,
+      "one_step_infidelity": 0.02011827821936401,
+      "same_record_closed_loop_z_fidelity": 0.7876944988573971,
+      "max_bond_dim": 2,
+      "n_hamiltonian_params": 27
+    },
+    {
+      "epoch": 71,
+      "loss": 0.020113461414498778,
+      "elapsed_seconds": 1502.9131009010598
+    },
+    {
+      "epoch": 72,
+      "loss": 0.020039435532880644,
+      "elapsed_seconds": 1521.0606553000398
+    },
+    {
+      "epoch": 73,
+      "loss": 0.02014153446183843,
+      "elapsed_seconds": 1539.2831503087655
+    },
+    {
+      "epoch": 74,
+      "loss": 0.020164809116209454,
+      "elapsed_seconds": 1557.453730134759
+    },
+    {
+      "epoch": 75,
+      "loss": 0.019970171657343876,
+      "elapsed_seconds": 1575.6627093958668
+    },
+    {
+      "epoch": 76,
+      "loss": 0.0200594312001113,
+      "elapsed_seconds": 1593.8807828100398
+    },
+    {
+      "epoch": 77,
+      "loss": 0.02007910278523542,
+      "elapsed_seconds": 1612.1172595229
+    },
+    {
+      "epoch": 78,
+      "loss": 0.020082340692821617,
+      "elapsed_seconds": 1630.2753425687551
+    },
+    {
+      "epoch": 79,
+      "loss": 0.02001627408891598,
+      "elapsed_seconds": 1648.6713490998372
+    },
+    {
+      "epoch": 80,
+      "loss": 0.02014689610988475,
+      "elapsed_seconds": 1666.8678786410019,
+      "one_step_infidelity": 0.01989586300244962,
+      "same_record_closed_loop_z_fidelity": 0.7363592256258346,
+      "max_bond_dim": 2,
+      "n_hamiltonian_params": 27
+    }
+  ],
+  "final": {
+    "epoch": 80,
+    "loss": 0.02014689610988475,
+    "elapsed_seconds": 1666.8678786410019,
+    "one_step_infidelity": 0.01989586300244962,
+    "same_record_closed_loop_z_fidelity": 0.7363592256258346,
+    "max_bond_dim": 2,
+    "n_hamiltonian_params": 27
+  }
+}

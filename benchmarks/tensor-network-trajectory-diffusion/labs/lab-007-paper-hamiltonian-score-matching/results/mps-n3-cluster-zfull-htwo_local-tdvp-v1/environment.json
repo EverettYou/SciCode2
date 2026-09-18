@@ -1,0 +1,25 @@
+{
+  "created_at": "2026-09-02T17:07:45+00:00",
+  "torch_version": "2.6.0+cu124",
+  "device": "cuda:0",
+  "gpu_name": "NVIDIA H200 NVL",
+  "cuda_visible_devices": "1",
+  "seed": 2026,
+  "n_qubits": 3,
+  "target": "cluster",
+  "z_mode": "full",
+  "h_mode": "two_local",
+  "n_z": 63,
+  "n_h": 27,
+  "chi_pad": 2,
+  "reverse": "1-site-tdvp",
+  "loss": "one_step",
+  "batch": 16,
+  "hidden": 128,
+  "protocol": "mps-n3-cluster-tdvp",
+  "sanity": {
+    "XZI": 0.9999999999999998,
+    "ZXZ": 0.9999999999999998,
+    "IZX": 0.9999999999999998
+  }
+}

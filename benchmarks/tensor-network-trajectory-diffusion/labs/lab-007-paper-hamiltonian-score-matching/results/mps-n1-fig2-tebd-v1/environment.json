@@ -1,0 +1,22 @@
+{
+  "created_at": "2026-08-31T04:03:23+00:00",
+  "torch_version": "2.6.0+cu124",
+  "device": "cuda:0",
+  "gpu_name": "NVIDIA H200 NVL",
+  "cuda_visible_devices": "1",
+  "n_qubits": 1,
+  "target": "fig2",
+  "apply": "tebd",
+  "seed": 2026,
+  "gamma": 1.0,
+  "T": 3.0,
+  "dt": 0.01,
+  "n_steps": 300,
+  "batch": 64,
+  "protocol": "mps-local-z-tebd-control-hamiltonian",
+  "self_test": {
+    "n1_max_z_error": 4.440892098500626e-16,
+    "n2_max_z_error": 9.992007221626409e-16,
+    "n2_roundtrip_fidelity": 1.0
+  }
+}

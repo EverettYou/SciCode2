@@ -1,0 +1,90 @@
+{
+  "kind": "n1_infidelity_reversal",
+  "created_at": "2026-08-30T08:04:54+00:00",
+  "started_at": "2026-08-30T08:04:26+00:00",
+  "elapsed_seconds": 28.06107371021062,
+  "environment": {
+    "torch_version": "2.6.0+cu124",
+    "device": "cuda:0",
+    "gpu_name": "NVIDIA H200 NVL",
+    "cuda_visible_devices": "0",
+    "seed": 7111
+  },
+  "config": {
+    "n": 1,
+    "epsilon": 0.8,
+    "T": 30,
+    "trajectories_per_epoch": 1024,
+    "epochs": 5,
+    "lr": 0.001,
+    "loss": "mean_one_step_infidelity"
+  },
+  "loss_curve": [
+    {
+      "epoch": 1,
+      "loss": 0.44496578161356415,
+      "elapsed_seconds": 1.533122313208878,
+      "eval_infidelity_loss": 0.4752092214332211,
+      "deterministic_same_record_reversal_fidelity_to_zero": 0.43870719647203105,
+      "deterministic_population_on_zero": 0.43870719647203105,
+      "deterministic_mean_polarization": 0.1379737353465768,
+      "paper_style_stochastic_fidelity_to_zero": 0.48966250107727466,
+      "paper_style_mean_polarization": 0.033359124187034975
+    },
+    {
+      "epoch": 2,
+      "loss": 0.47333400377260837,
+      "elapsed_seconds": 7.062294943258166,
+      "eval_infidelity_loss": 0.35613671632600075,
+      "deterministic_same_record_reversal_fidelity_to_zero": 0.4889152752621422,
+      "deterministic_population_on_zero": 0.4889152752621422,
+      "deterministic_mean_polarization": 0.10660354545215013,
+      "paper_style_stochastic_fidelity_to_zero": 0.5004842908259614,
+      "paper_style_mean_polarization": 0.010175682156217359
+    },
+    {
+      "epoch": 3,
+      "loss": 0.3533487852841026,
+      "elapsed_seconds": 12.542815612163395,
+      "eval_infidelity_loss": 0.28178961188296564,
+      "deterministic_same_record_reversal_fidelity_to_zero": 0.5324716471739507,
+      "deterministic_population_on_zero": 0.5324716471739507,
+      "deterministic_mean_polarization": 0.1513176563196723,
+      "paper_style_stochastic_fidelity_to_zero": 0.4989123442329031,
+      "paper_style_mean_polarization": 0.01856505309684951
+    },
+    {
+      "epoch": 4,
+      "loss": 0.2791449291399791,
+      "elapsed_seconds": 18.021769560407847,
+      "eval_infidelity_loss": 0.2636938571915835,
+      "deterministic_same_record_reversal_fidelity_to_zero": 0.44272137459805716,
+      "deterministic_population_on_zero": 0.44272137459805716,
+      "deterministic_mean_polarization": 0.11991407034095933,
+      "paper_style_stochastic_fidelity_to_zero": 0.507580644543187,
+      "paper_style_mean_polarization": 0.03840948242584988
+    },
+    {
+      "epoch": 5,
+      "loss": 0.26401264289849474,
+      "elapsed_seconds": 23.506225270219147,
+      "eval_infidelity_loss": 0.27375991884194645,
+      "deterministic_same_record_reversal_fidelity_to_zero": 0.5876202581453208,
+      "deterministic_population_on_zero": 0.5876202581453208,
+      "deterministic_mean_polarization": 0.2413080611255673,
+      "paper_style_stochastic_fidelity_to_zero": 0.4993639027006026,
+      "paper_style_mean_polarization": 0.005639888555651683
+    }
+  ],
+  "final": {
+    "epoch": 5,
+    "loss": 0.26401264289849474,
+    "elapsed_seconds": 23.506225270219147,
+    "eval_infidelity_loss": 0.27375991884194645,
+    "deterministic_same_record_reversal_fidelity_to_zero": 0.5876202581453208,
+    "deterministic_population_on_zero": 0.5876202581453208,
+    "deterministic_mean_polarization": 0.2413080611255673,
+    "paper_style_stochastic_fidelity_to_zero": 0.4993639027006026,
+    "paper_style_mean_polarization": 0.005639888555651683
+  }
+}

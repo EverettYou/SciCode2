@@ -15,6 +15,18 @@ from dotenv import load_dotenv
 from openai import OpenAI
 
 
+def load_project_env(project_root: Path | None = None) -> None:
+    """Load the project `.env`, then fill missing keys from `~/.env`.
+
+    Shared secrets such as ``OPENAI_API_KEY`` live in the home file. A project
+    file still wins for keys it actually sets, so per-repo model overrides
+    stay local.
+    """
+    if project_root is not None:
+        load_dotenv(Path(project_root) / ".env", override=False)
+    load_dotenv(Path.home() / ".env", override=False)
+
+
 class LLMConfigurationError(RuntimeError):
     """Raised when an explicitly requested LLM operation is not configured."""
 
@@ -38,11 +50,11 @@ class LLMSettings:
         model_env: str,
         default_model: str = "gpt-5.6-luna",
     ) -> "LLMSettings":
-        load_dotenv(project_root / ".env", override=False)
+        load_project_env(project_root)
         api_key = os.getenv("OPENAI_API_KEY", "").strip()
         if not api_key:
             raise LLMConfigurationError(
-                "OPENAI_API_KEY is required for this operation; add it to the project .env file"
+                "OPENAI_API_KEY is required for this operation; add it to the project .env or ~/.env"
             )
         model = (
             os.getenv(model_env, "").strip()

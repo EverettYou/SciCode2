@@ -1,0 +1,36 @@
+{
+  "created_at": "2026-08-31T16:48:45+00:00",
+  "torch_version": "2.6.0+cu124",
+  "device": "cuda:0",
+  "gpu_name": "NVIDIA H200 NVL",
+  "n_qubits": 3,
+  "target": "product",
+  "chi_max": 16,
+  "hidden": 128,
+  "seed": 2026,
+  "n_hamiltonian_params": 27,
+  "parameterization": "shared-local-pauli-coefficients",
+  "ensemble": "per-site-noisy-zero",
+  "parity": {
+    "2": {
+      "n_qubits": 2,
+      "n2_z_error": 3.3306690738754696e-16,
+      "tebd_vs_dense_step_fidelity": 0.9999999982916898,
+      "tdvp_vs_dense_step_fidelity": 0.9999999982916898,
+      "tdvp_backward_ok": true
+    },
+    "3": {
+      "n_qubits": 3,
+      "tebd_vs_dense_step_fidelity": 0.9999999905937345,
+      "tdvp_vs_dense_step_fidelity": 0.9999853771286026,
+      "tdvp_backward_ok": true
+    },
+    "4": {
+      "n_qubits": 4,
+      "tebd_vs_dense_step_fidelity": 0.9999999815467231,
+      "tdvp_vs_dense_step_fidelity": 0.9999935339675103,
+      "tdvp_backward_ok": true
+    }
+  },
+  "protocol": "per-step-infidelity-tdvp"
+}

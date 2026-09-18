@@ -1,0 +1,13 @@
+{
+  "kind": "mps_n1_reverse_parity",
+  "created_at": "2026-08-30T18:40:05+00:00",
+  "elapsed_seconds": 0.8107206178829074,
+  "n_traj": 64,
+  "checkpoint": "/home/yzyou/SciCode2/benchmarks/tensor-network-trajectory-diffusion/labs/lab-007-paper-hamiltonian-score-matching/results/paper-fig2-n1-v1/model.pt",
+  "dense_closed_loop_fidelity": 0.8980752471833691,
+  "mps_exact_gate_fidelity": 0.8980752471833691,
+  "mps_trotter_fidelity": 0.8982301942405415,
+  "dense_vs_mps_exact_state_fidelity": 1.0,
+  "dense_vs_mps_trotter_state_fidelity": 0.9999986388608471,
+  "max_abs_dense_minus_mps_exact": 1.2325475812854657e-15
+}

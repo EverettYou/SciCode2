@@ -1,0 +1,73 @@
+{
+  "kind": "strict_repository_n1_reproduction",
+  "created_at": "2026-08-30T07:57:08+00:00",
+  "started_at": "2026-08-30T07:56:53+00:00",
+  "elapsed_seconds": 15.016843037679791,
+  "seed": 7011,
+  "environment": {
+    "torch_version": "2.6.0+cu124",
+    "cuda_available": true,
+    "device": "cuda:0",
+    "gpu_name": "NVIDIA H200 NVL",
+    "cuda_device_count": 1,
+    "python": "3.11.15",
+    "cwd": "/home/yzyou/SciCode2",
+    "cuda_visible_devices": "1"
+  },
+  "config": {
+    "n": 1,
+    "epsilon": 0.8,
+    "T": 30,
+    "trajectories_per_epoch": 1024,
+    "epochs": 2,
+    "lr": 0.001,
+    "eval_trajectories": 2000
+  },
+  "loss_curve": [
+    {
+      "epoch": 1,
+      "loss": 0.05699973925948143,
+      "elapsed_seconds": 2.3504508999176323,
+      "paper_style_stochastic_fidelity_to_zero": 0.5009392103573744,
+      "paper_style_mean_bloch_x": -0.01831655443668035,
+      "paper_style_mean_bloch_y": 0.006668387067828538,
+      "paper_style_mean_bloch_z": 0.0018784207194065684,
+      "paper_style_mean_polarization": 0.019582952201273266,
+      "deterministic_recorded_trajectory_reversal_fidelity_to_zero": 0.5028290359596463,
+      "deterministic_mean_bloch_z": 0.005658071923852565,
+      "deterministic_mean_polarization": 0.006350337210264696
+    },
+    {
+      "epoch": 2,
+      "loss": 0.0474347285926342,
+      "elapsed_seconds": 9.518934404943138,
+      "paper_style_stochastic_fidelity_to_zero": 0.5096802363607116,
+      "paper_style_mean_bloch_x": 0.011529875926873673,
+      "paper_style_mean_bloch_y": -0.00923559583298392,
+      "paper_style_mean_bloch_z": 0.01936047272603605,
+      "paper_style_mean_polarization": 0.024352867869204167,
+      "deterministic_recorded_trajectory_reversal_fidelity_to_zero": 0.5205700025880559,
+      "deterministic_mean_bloch_z": 0.04114000518069159,
+      "deterministic_mean_polarization": 0.13555286176861497
+    }
+  ],
+  "final": {
+    "epoch": 2,
+    "loss": 0.0474347285926342,
+    "elapsed_seconds": 9.518934404943138,
+    "paper_style_stochastic_fidelity_to_zero": 0.5096802363607116,
+    "paper_style_mean_bloch_x": 0.011529875926873673,
+    "paper_style_mean_bloch_y": -0.00923559583298392,
+    "paper_style_mean_bloch_z": 0.01936047272603605,
+    "paper_style_mean_polarization": 0.024352867869204167,
+    "deterministic_recorded_trajectory_reversal_fidelity_to_zero": 0.5205700025880559,
+    "deterministic_mean_bloch_z": 0.04114000518069159,
+    "deterministic_mean_polarization": 0.13555286176861497
+  },
+  "notebook_reference": {
+    "source": "papers/liu2025mqdm/repo/test/2026-03-14.ipynb",
+    "epoch1_loss": 0.0498,
+    "epoch2000_loss": 0.040487,
+    "note": "Notebook trains on CUDA and evaluates stochastic BackwardDiffusion.trajectory from random pure states. It does not print a numerical fidelity; Fig-style concentration at |0> is visual. The notebook loss plateaus near 0.040."
+  }
+}
