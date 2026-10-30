@@ -43,11 +43,11 @@
       "peaks": [
         [
           -5.199999999999999,
-          0.2464483748910238
+          0.2227679340834574
         ],
         [
           6.800000000000001,
-          0.2789379155382713
+          0.25342624329790026
         ]
       ],
       "spans": [
@@ -60,7 +60,7 @@
           10.0
         ]
       ],
-      "gap_center_over_peak": 0.0026885359042900336
+      "gap_center_over_peak": 0.002663283201838145
     },
     "stm_nu03_low": {
       "peaks": [
@@ -178,8 +178,8 @@
       "mu": -1.6386473261003354,
       "gap": 2.4894333371562745,
       "Tc": 0.2,
-      "nmr": "single activation on the tunneling gap through Tc, no coherence peak",
-      "resistivity": "zero below 0.20D; above it, one third of the way in the logarithm from the nu=0.2 metal to the half-filled activation"
+      "nmr": "activated with 2.5 up to 2D, Korringa at and above 4D, no feature at Tc",
+      "resistivity": "zero below 0.20D; above it, the activated curve previously anchored at 0.36D, translated down by 0.16D"
     },
     "nu02": {
       "nu": 0.2,
@@ -187,7 +187,7 @@
       "gap": 1.7341500057344117,
       "Tc": 0.4,
       "nmr": "activated with 1.75 below a Hebel\u2013Slichter peak at 0.334D, Korringa above the peak; the gap equation closes near 1.00D and is not the published transition",
-      "resistivity": "zero below 0.40D, normal-state metal at and above it",
+      "resistivity": "zero at and below 0.40D, normal-state metal above it",
       "gap_equation_Tc": 1.0020294508764658
     }
   },

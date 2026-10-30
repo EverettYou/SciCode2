@@ -5,6 +5,8 @@ The single-particle gap is the strong-coupling value Delta_1 = 7.99, so the
 inner edges sit at about +/-4. Each side disperses as eps(k)/2, which puts
 the saddle 4*t2 above the middle of that side. The side weights are the
 residues of Eq. (19) of arXiv:2307.12223, so the two sides are not copies.
+One tenth of each residue is moved to a Gaussian 3.5 outside that pole,
+with half-width 1.5, so each side band carries an outer shoulder.
 
 The lower density, nu = 0.2, is on the BCS side. Its low-temperature trace
 is the Bogoliubov spectrum at the g = 3J/4 gap, a complete gap with sharp
@@ -33,15 +35,14 @@ spin relaxation on this crystal stays activated through the same window.
 
 At nu = 0.2 the pair amplitude of the gap equation closes at the fixed-density
 temperature, 1.00D. That scale exceeds the bilayer stiffness bound, so the
-published transition is 0.55D. Below a Hebel–Slichter peak near 0.47D, 1/(T1 T)
+published transition is 0.40D. Below a Hebel–Slichter peak near 0.34D, 1/(T1 T)
 falls as exp(-1.75/T); above the peak it is the Korringa value. The resistivity
-is the normal-state metal above 0.55D and zero at and below it. At nu = 0.3 the
-resistivity above 0.36D is the same one-third interpolation, in the logarithm,
-between that metal and the half-filled activation, so it rises on cooling
-more gently than the half-filled curve. It is zero below 0.20D. The nuclear rate on that crystal is one activation
-on the tunneling gap at every temperature, with no break at the transition
-and no coherence peak. At nu = 0.2 the published transition is 0.40D, below
-the diamagnetic Kosterlitz–Thouless bound of the paired bilayer.
+is the normal-state metal above 0.40D and zero at and below it. At nu = 0.3 the
+resistivity is zero below 0.20D. Above that, the curve is the previous
+activated metal translated down by 0.16D, so the shape that used to start at
+0.36D now reaches 0.20D, and it still rises on cooling. The nuclear rate is
+activated with 2.5 up to about 2D, crosses over to the Korringa value between
+2D and 4D, and is flat for T at and above 4D. Nothing happens to it at 0.20D.
 Noise is added before the normalization,
 and every nuclear and resistivity curve is then divided by its noisy value
 at T = 4D, so that point is exactly 1.
@@ -94,6 +95,11 @@ NMR_ABSOLUTE_ERROR = 1e-4
 # readable while the bar still grows near the cutoff.
 NMR_POINT_SIGMA = 1e-5
 DYNES_GAMMA = 0.04
+# Fraction of each residue moved out of the coherent pole. The Gaussian sits
+# 3.5 beyond that pole, on the side away from the gap, with half-width 1.5.
+INCOHERENT_FRACTION = 0.10
+INCOHERENT_SHIFT = 3.5
+INCOHERENT_SIGMA = 1.5
 
 
 def momentum_mesh(n: int = NK):
@@ -121,17 +127,42 @@ def lorentzian(centers: np.ndarray, weights: np.ndarray, omega: np.ndarray, eta:
     return density
 
 
+def gaussian_dos(centers: np.ndarray, weights: np.ndarray, omega: np.ndarray, sigma: float):
+    """k-averaged Gaussian spectral density. Each Gaussian integrates to its weight."""
+    density = np.zeros_like(omega)
+    norm = 1.0 / (sigma * np.sqrt(2.0 * np.pi))
+    chunk = 24
+    for start in range(0, len(omega), chunk):
+        w = omega[start : start + chunk][:, None]
+        kernel = norm * np.exp(-0.5 * ((w - centers[None, :]) / sigma) ** 2)
+        density[start : start + chunk] = (kernel * weights[None, :]).mean(axis=1)
+    return density
+
+
 def half_filled(omega: np.ndarray):
-    """eps/2 dispersion, gap fixed at the J=8 strong-coupling value."""
+    """eps/2 dispersion, gap fixed at the J=8 strong-coupling value.
+
+    Nine tenths of each residue stays on the coherent pole. One tenth is a
+    Gaussian 3.5 further from the gap, so the side band has an outer shoulder.
+    """
     eps = momentum_mesh()
     # eps runs from -4.8 to 3.2. Poles at eps/2 +/- E0 have gap 2*E0 - 4.
     # Delta_1(J=8) = 7.99, so E0 = 6 and the centered inner edges are +/-4.
     e0 = 6.0
     gap_center = -0.4
     upper_w, lower_w = residues(eps)
-    upper = lorentzian(eps / 2.0 + e0 - gap_center, upper_w, omega, ETA)
-    lower = lorentzian(eps / 2.0 - e0 - gap_center, lower_w, omega, ETA)
-    return upper + lower
+    coherent = 1.0 - INCOHERENT_FRACTION
+    upper_c = eps / 2.0 + e0 - gap_center
+    lower_c = eps / 2.0 - e0 - gap_center
+    upper = lorentzian(upper_c, coherent * upper_w, omega, ETA)
+    lower = lorentzian(lower_c, coherent * lower_w, omega, ETA)
+    shoulder = gaussian_dos(
+        upper_c + INCOHERENT_SHIFT, INCOHERENT_FRACTION * upper_w, omega, INCOHERENT_SIGMA
+    )
+    shoulder += gaussian_dos(
+        lower_c - INCOHERENT_SHIFT, INCOHERENT_FRACTION * lower_w, omega, INCOHERENT_SIGMA
+    )
+    return upper + lower + shoulder
 
 
 def mu_of_nu(eps: np.ndarray, nu: float) -> float:
@@ -902,35 +933,53 @@ def main():
             )
             # The metal is the same normal-state curve. Only the zero interval moves.
             rho_d = rho_metal.copy()
-            rho_d[temps_doped < tc - 1e-8] = 0.0
+            rho_d[temps_doped <= tc + 1e-8] = 0.0
             nmr_note = (
                 f"activated with 1.75 below a Hebel–Slichter peak at {t_peak:.3f}D, "
                 "Korringa above the peak; the gap equation closes near "
                 f"{tc_gap:.2f}D and is not the published transition"
             )
-            rho_note = "zero below 0.40D, normal-state metal at and above it"
+            rho_note = "zero at and below 0.40D, normal-state metal above it"
         else:
             delta0, mu = gap_03_edge, mu_03
             tc = 0.20
-            # One activation on the tunneling gap, continuous through Tc.
-            scaled_d = np.exp(-gap_03_edge * (1.0 / t_pub - 0.25))
-            # Log-interpolation at the first point above Tc, then a single
-            # activation so the curve cannot dip on the way to T = 4.
-            cold = int(np.argmax(temps_doped >= tc))
+            # Activated with 2.5 up to 2D, smooth crossover to a Korringa plateau
+            # by 4D. The plateau is 1, and the Arrhenius is the one that would
+            # equal 1 at T = 4, so the two pieces meet after the crossover.
+            # Tc lies inside the activated piece and leaves no feature.
+            activation_pg = 2.5
+            arrh = np.exp(-activation_pg * (1.0 / t_pub - 0.25))
+            scaled_d = arrh.copy()
+            scaled_d[t_pub >= 4.0] = 1.0
+            mid = (t_pub > 2.0) & (t_pub < 4.0)
+            u = (t_pub[mid] - 2.0) / 2.0
+            y0 = float(np.exp(-activation_pg * (0.5 - 0.25)))
+            dy0 = y0 * activation_pg / 4.0
+            h00 = (2.0 * u - 3.0) * u * u + 1.0
+            h10 = u * u * (u - 2.0) + u
+            h01 = u * u * (3.0 - 2.0 * u)
+            scaled_d[mid] = h00 * y0 + h10 * (dy0 * 2.0) + h01 * 1.0
+            # The activated metal used to start at 0.36D. Translate that shape
+            # down by 0.16D so the zero-resistance interval ends at 0.20D.
+            onset_old = 0.36
+            shift = onset_old - tc
+            cold = int(np.argmax(temps_doped >= onset_old))
             rho_half_cold = float(np.exp(activation * (1.0 / temps_doped[cold] - 0.25)))
             log_cold = (
                 (1.0 - BEC_FILLING_WEIGHT) * np.log(rho_metal[cold])
                 + BEC_FILLING_WEIGHT * np.log(rho_half_cold)
             )
             ea_bec = float(log_cold / (1.0 / temps_doped[cold] - 0.25))
-            rho_d = np.exp(ea_bec * (1.0 / temps_doped - 0.25))
+            rho_d = np.exp(ea_bec * (1.0 / (temps_doped + shift) - 0.25))
             rho_d[temps_doped < tc] = 0.0
+            rho_d = rho_d / float(rho_d[np.argmin(np.abs(temps_doped - 4.0))])
             nmr_note = (
-                "single activation on the tunneling gap through Tc, no coherence peak"
+                "activated with 2.5 up to 2D, Korringa at and above 4D, "
+                "no feature at Tc"
             )
             rho_note = (
-                "zero below 0.20D; above it, one third of the way in the logarithm "
-                "from the nu=0.2 metal to the half-filled activation"
+                "zero below 0.20D; above it, the activated curve previously "
+                "anchored at 0.36D, translated down by 0.16D"
             )
         noisy = scaled_d * rng.lognormal(0.0, log_sigma_nmr, size=len(t_pub))
         noisy = add_nmr_background(noisy, nmr_background)
