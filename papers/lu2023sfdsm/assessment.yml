@@ -1,0 +1,62 @@
+paper_id: lu2023sfdsm
+title: 'Superconductivity from Doping Symmetric Mass Generation Insulators: Application to La3Ni2O7 under Pressure'
+authors: Da-Chuan Lu, Miao Li, Zhao-Yi Zeng, Wanda Hou, Juven Wang, Fan Yang, Yi-Zhuang You
+year: 2023
+source_url: https://arxiv.org/abs/2308.11195
+research_area:
+- symmetric mass generation
+- superconductivity
+- nickelates
+summary: >-
+  A bilayer square-lattice model with intralayer hopping and interlayer
+  exchange has a filling-enforced symmetric-mass-generation insulator at
+  half filling and no superconductivity there. Doping destabilizes that
+  insulator and produces interlayer spin-singlet superconductivity, with
+  a strong-coupling transition-temperature peak near quarter filling.
+  The paper sets other band-structure details aside.
+computational_core: >-
+  Compare weak-coupling BCS and strong-coupling BEC mean-field estimates
+  of interlayer pairing as functions of J/t and filling, using the
+  half-filled symmetric insulator as the parent state.
+computational_depth: medium
+scientific_judgment: high
+validation_ease: medium
+workstation_feasible: yes
+reference_solution_feasible: yes
+non_searchable_extension_possible: yes
+supervision_confidence: high
+followup_ideas:
+- >-
+    Use the doping and filling structure as a hidden reference for a
+    phenomenology benchmark. At half filling the parent state has no
+    superconductivity. Moving the filling destroys the symmetric
+    insulator, and superconductivity can appear near quarter filling.
+    Do not give the solver the Hamiltonian, the filling fractions, or
+    the conclusion that superconductivity is absent.
+potential_pitfalls:
+- >-
+    The paper uses one nearest-neighbor hopping and explicitly sets
+    other band-structure details aside. It does not show that a
+    symmetric gap survives a change in Fermi-surface shape while
+    nesting-driven magnetic or exciton order disappears. That contrast
+    is a separate hypothesis.
+- >-
+    Mean-field transition temperatures are not a diagnosis of the parent
+    state. A solver can match a doping trend while misidentifying the
+    insulator.
+- >-
+    Quarter filling is both a strong-coupling peak of the transition
+    temperature and the nominal dx2-y2 filling in the materials
+    discussion. Infinitesimal doping already leaves the half-filled
+    symmetric insulator in the paper's argument. Do not treat one doping
+    level as the only superconducting regime.
+suggested_task_types:
+- inverse-problem
+- phase-diagnosis
+ai_assessment: >-
+  Useful hidden reference for a data-level modeling task. The
+  filling-enforced parent state and the doping-driven interlayer pairing
+  are source-backed. Fermi-surface geometry is not. The public problem
+  must show resistivity, tunneling, and neutron curves rather than name
+  the lattice or the absence of superconductivity.
+stage: reviewed

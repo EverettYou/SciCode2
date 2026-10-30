@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="../static/js/redirect-to-dashboard.js"></script>
+  <title>PDF · Paper to Benchmark</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="../static/css/style.css?v=20261026-pdf">
+</head>
+<body class="pdf-standalone-page">
+  <header class="pdf-standalone-bar">
+    <a id="pdf-back" href="papers.html">← All papers</a>
+  </header>
+  <div id="pdf-viewer" class="pdf-shell" role="region" aria-label="PDF"></div>
+  <script src="../static/js/pdf-viewer.js?v=20261026-pdf"></script>
+  <script>
+    const paperId = new URLSearchParams(window.location.search).get('id') || '';
+    const back = document.getElementById('pdf-back');
+    const viewer = document.getElementById('pdf-viewer');
+    if (!paperId) {
+      viewer.innerHTML = '<p class="pdf-status">No paper selected.</p>';
+    } else {
+      document.title = `${paperId} · PDF`;
+      viewer.setAttribute('aria-label', `PDF for ${paperId}`);
+      back.href = `paper.html?id=${encodeURIComponent(paperId)}`;
+      back.textContent = '← Back to paper';
+      window.SciCodePdfViewer.mount(viewer, `/api/papers/${encodeURIComponent(paperId)}/pdf`);
+    }
+  </script>
+</body>
+</html>

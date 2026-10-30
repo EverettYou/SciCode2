@@ -331,3 +331,18 @@ Append one dated entry for each ingest, saved query, or lint operation. Do not r
 - Extended intervalley coherence with the tBLG valley-fluctuation mechanism, mixed chiral/helical pairing forms, and approximate \(SO(4)\) singlet–triplet organization.
 - Preserved the weak-coupling, RPA, band-structure, and filling-mismatch limits rather than treating the scenario as a magic-angle strong-coupling result.
 - Project thesis unchanged because the source deepens a reusable correlated-electron concept without evaluating the project knowledge workflow.
+
+## [2026-10-26] ingest | chang2023fssmg assessment review
+
+- Source: `papers/chang2023fssmg/assessment.yml`, with the existing global paper page left as the scientific synthesis.
+- Recorded the reviewed modeling follow-up: a solver-facing prompt gives square-lattice symmetry and experimental facts only, and asks for a model plus an ARPES prediction.
+- Updated the paper page and paper index from inventory stage assessed to reviewed.
+- Project thesis unchanged because this records assessment status, not a new scientific claim.
+
+## [2026-10-26] ingest | lu2023sfdsm assessment review
+
+- Source: `papers/lu2023sfdsm/assessment.yml`. The global paper synthesis was already present.
+- Recorded a reviewed hidden-reference use: half filling has a symmetric insulator and no superconductivity; doping can produce interlayer pairing, with a strong-coupling peak near quarter filling.
+- Recorded the boundary that the paper sets extra band-structure details aside, so Fermi-surface-shape stability is not a result of that paper.
+- Updated the paper page and paper index from inventory stage fetched to reviewed.
+- Project thesis unchanged because this records assessment status, not a new scientific claim.

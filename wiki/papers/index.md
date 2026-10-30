@@ -84,12 +84,12 @@ Global ingest should update shared concept, method, model, comparison, implement
 - [[papers/vasseur2019etfhr|Entanglement transitions from holographic random tensor networks]] — 2019; inventory stage `fetched`.
 - [[papers/wang2019docqe|Dynamics of compact quantum electrodynamics at large fermion flavor]] — 2019; inventory stage `fetched`.
 - [[papers/wang2019eseia|Emergent Schrödinger equation in an introspective machine learning architecture]] — 2019; inventory stage `fetched`.
-- [[papers/chang2023fssmg|Fermi surface symmetric mass generation: a quantum Monte-Carlo study]] — 2023; inventory stage `assessed`.
+- [[papers/chang2023fssmg|Fermi surface symmetric mass generation: a quantum Monte-Carlo study]] — 2023; inventory stage `reviewed`.
 - [[papers/hou2023mlrgf|Machine learning renormalization group for statistical physics]] — 2023; inventory stage `fetched`.
 - [[papers/hu2023cstwl|Classical shadow tomography with locally scrambled quantum dynamics]] — 2023; inventory stage `fetched`.
 - [[papers/liu2023eohpd|Evaluation of human-model prediction difference on the Internet Scale of Data]] — 2023; inventory stage `assessed`.
 - [[papers/lu2023fssmg|Fermi surface symmetric mass generation]] — 2023; inventory stage `fetched`.
-- [[papers/lu2023sfdsm|Superconductivity from Doping Symmetric Mass Generation Insulators: Application to \(\mathrm{La}_3\mathrm{Ni}_2\mathrm{O}_7\) under Pressure]] — 2023; inventory stage `fetched`.
+- [[papers/lu2023sfdsm|Superconductivity from Doping Symmetric Mass Generation Insulators: Application to \(\mathrm{La}_3\mathrm{Ni}_2\mathrm{O}_7\) under Pressure]] — 2023; inventory stage `reviewed`.
 - [[papers/wan2023cffam|CRT fractionalization, fermions, and mod 8 periodicity]] — 2023; inventory stage `fetched`.
 - [[papers/hu2022hstoq|Hamiltonian-driven shadow tomography of quantum states]] — 2022; inventory stage `fetched`.
 - [[papers/hu2022lstee|Logical shadow tomography: Efficient estimation of error-mitigated observables]] — 2022; inventory stage `assessed`.

@@ -1,0 +1,21 @@
+\documentclass[tikz]{standalone}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+\begin{document}
+\begin{tikzpicture}
+\begin{axis}[
+  width=7.2cm, height=4.2cm,
+  scale only axis,
+  title={transport},
+  xlabel={temperature $/D$},
+  ylabel={resistivity ratio},
+  xmin=0.8, xmax=4.2, ymin=0, ymax=100,
+  tick label style={font=\small},
+  label style={font=\small},
+  title style={font=\small},
+  every axis plot/.append style={thick, mark size=1.4pt}
+]
+\addplot+[color=black, mark=*] table[x=temperature, y=ratio] {../figures/data/resistivity.dat};
+\end{axis}
+\end{tikzpicture}
+\end{document}

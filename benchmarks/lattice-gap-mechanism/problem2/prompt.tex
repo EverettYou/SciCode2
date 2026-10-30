@@ -1,0 +1,63 @@
+\documentclass[11pt]{article}
+
+\usepackage[margin=0.9in]{geometry}
+\usepackage{amsmath,amssymb,bm}
+\usepackage[hidelinks]{hyperref}
+
+\setlength{\parskip}{0.45em}
+\setlength{\parindent}{0em}
+\pagestyle{plain}
+
+\begin{document}
+\begin{center}
+{\Large Bilayer square lattice}\\[0.35em]
+{\large Phase diagram from a neural quantum state}
+\end{center}
+
+\section{Hamiltonian}
+
+The lattice is a bilayer square lattice. The index $i$ runs over the lattice sites of the square lattice, and $\ell=1,2$ is the layer. The fermion $c_{i\ell\sigma}$ carries spin $\sigma\in\{\uparrow,\downarrow\}$.
+
+The spin on layer $\ell$ of lattice site $i$ is
+\begin{equation}
+\bm S_{i\ell}=\frac12\sum_{\sigma\sigma'}c_{i\ell\sigma}^{\dagger}\,\bm\sigma_{\sigma\sigma'}\,c_{i\ell\sigma'}.
+\end{equation}
+Nearest-neighbor pairs on one layer are $\langle ij\rangle$. Next-nearest-neighbor pairs, the diagonals of the plaquettes, are $\langle\langle ij\rangle\rangle$. The Hamiltonian is
+\begin{equation}
+\begin{aligned}
+H={}&-t_1\sum_{\langle ij\rangle,\ell,\sigma}\bigl(c_{i\ell\sigma}^{\dagger}c_{j\ell\sigma}+\mathrm{h.c.}\bigr)
+-t_2\sum_{\langle\langle ij\rangle\rangle,\ell,\sigma}\bigl(c_{i\ell\sigma}^{\dagger}c_{j\ell\sigma}+\mathrm{h.c.}\bigr)\\
+&+J\sum_{i}\bm S_{i1}\cdot\bm S_{i2}.
+\end{aligned}
+\end{equation}
+There is no interlayer hopping. $J>0$ is antiferromagnetic. Set $t_1=1$. This fixes the energy unit. Set $t_2=0.2$.
+
+Each lattice site has two layers and two spin states, four single-particle states in all. The filling $\nu$ is the number of electrons divided by four times the number of lattice sites. Equivalently, $\nu$ is the electron number per layer, per spin, divided by the number of lattice sites. Full filling is $\nu=1$: both layers and both spins are occupied. Half filling is $\nu=1/2$. Quarter filling is $\nu=1/4$. The particles need not be polarized; $\nu$ fixes only the density.
+
+\section{Task}
+
+Solve $H$ by variational Monte Carlo with a neural-network wavefunction. State the lattice size, the boundary conditions, the ansatz, the sampler, the optimizer, and the statistical uncertainty on every reported number.
+
+\subsection{Line cuts}
+
+Compute two cuts through the ground-state phase diagram, each against $J$, from weak coupling through strong coupling. One cut is at half filling, $\nu=1/2$. The other is at quarter filling, $\nu=1/4$. For each point, report the energy per lattice site and the diagnostics that decide the phase: a charge gap, a spin gap, a magnetic order parameter, a superconducting pair correlation, and the momentum distribution. Say whether that point is a Fermi liquid, a gapped state that preserves every symmetry of $H$, a superconductor, or another phase. A label without the diagnostic is not an answer.
+
+On the half-filling cut, identify whether a gapped phase is present.
+
+\subsection{Phase diagram}
+
+Repeat the identification on the plane of $\nu$ and $J$, for $0<\nu\le 1$. The required figure is that phase diagram, with the two line cuts marked on it.
+
+\subsection{Spectra of the gapped phase}
+
+At one point inside the gapped phase found on the half-filling cut, compute three spectra.
+
+\begin{itemize}
+\item The charge spectrum measured by scanning tunneling: differential conductance versus bias.
+\item The spin excitation spectrum that enters muon spin relaxation or nuclear spin-lattice relaxation, as a function of excitation energy.
+\item The resistivity, or the conductivity, as a function of temperature.
+\end{itemize}
+
+If a spectrum is not a direct ground-state expectation value, state the approximation that produces it. Give every energy in units of $t_1$.
+
+\end{document}

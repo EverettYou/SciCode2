@@ -30,7 +30,7 @@ Proposes interlayer singlet superconductivity from doping a bilayer SMG insulato
 
 ## Assessment boundary
 
-Inventory stage at ingest: `fetched`. Wiki ingestion records source knowledge; it does not promote a fetched-only paper to assessed status. No assessment file exists yet.
+Inventory stage at ingest was `fetched`. An assessment was reviewed on 2026-10-26 for use as a hidden doping and filling reference; see [assessment.yml](../../papers/lu2023sfdsm/assessment.yml). The paper's own Hamiltonian and materials names stay out of the solver prompt. Wiki ingestion still does not by itself promote a paper to reviewed status.
 
 ## Related pages
 

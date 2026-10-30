@@ -31,13 +31,37 @@ supervision_confidence: high
 followup_ideas:
 - Construct a reduced-size parameter sweep that tests whether the inferred O(4) scaling survives a controlled perturbation of the bilayer couplings.
 - Compare spectral-function and Green-function-zero diagnostics using independent estimators and finite-size windows.
+- >-
+    Pose a solver-facing modeling problem that states only square-lattice symmetry
+    and experimental phenomena: STM dI/dV shows a charge gap, neutron scattering
+    shows a spin gap, and transport shows no superconductivity. Withhold the
+    microscopic Hamiltonian, hopping terms, orbital content, and phase name.
+    Require an explicit model and a falsifiable ARPES prediction. Treat band
+    folding, quasiparticle coherence, and Green's function zeros as possible
+    predictions rather than given data.
 potential_pitfalls:
 - Sign-problem-free does not mean low cost; lattice size and autocorrelation can exceed workstation limits.
 - Apparent universality can be an artifact of a narrow interaction or finite-size window.
 - Spectral reconstruction and analytic continuation can introduce structure not present in the raw correlators.
+- >-
+    Revealing nearest-neighbor hopping, interlayer exchange, orbital content,
+    or the target phase name turns the task into recall of a known Hamiltonian
+    instead of a test of physical modeling.
+- >-
+    A charge gap alone is shared by band insulators, magnetic order, exciton
+    order, and symmetric interaction-generated gaps. The spin gap and the
+    absence of superconductivity have to stay in the prompt, and ARPES has to
+    be scored as a prediction, or the mechanisms remain indistinguishable.
 suggested_task_types:
 - finite-size-scaling
 - phase-diagnosis
 - robustness-study
-ai_assessment: Scientifically rich benchmark candidate, especially as a reduced follow-up to the paper's large-scale study. It offers meaningful competing diagnostics and a natural non-searchable perturbation, but the benchmark must be aggressively scoped around small lattices and a validated observable so the workload remains workstation-feasible.
-stage: assessed
+- inverse-problem
+ai_assessment: >-
+  Scientifically rich benchmark candidate. The selected direction is a
+  phenomenology-only modeling task, not a rerun of the paper's large-scale
+  Monte Carlo. The public facts underdetermine the mechanism, bilinear
+  mean-field theory misses a symmetric gapped phase, and ARPES is the
+  discriminating prediction. Any author-side check must stay on small clusters
+  or precomputed spectra so the workload remains workstation-feasible.
+stage: reviewed

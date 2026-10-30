@@ -1,0 +1,51 @@
+version: 1
+sources:
+- source_id: paper-chang2023fssmg
+  title: Fermi surface symmetric mass generation QMC study
+  kind: paper
+  path: wiki/papers/chang2023fssmg.md
+  revision: workspace:2026-10-26
+  ingested_at: '2026-10-26T18:50:00Z'
+  updated_pages:
+  - wiki/index.md
+  - wiki/thesis.md
+  - wiki/ideas/research-frontier.md
+  - wiki/questions/arpes-prediction.md
+- source_id: problem-task
+  title: Benchmark task specification
+  kind: project
+  path: problem/TASK.md
+  revision: workspace:2026-10-26
+  ingested_at: '2026-10-26T18:50:00Z'
+  updated_pages:
+  - wiki/index.md
+  - wiki/thesis.md
+  - wiki/ideas/research-frontier.md
+  - wiki/questions/arpes-prediction.md
+- source_id: lab-002-cluster-spectra
+  title: Bilayer plaquette spectra and nearest-neighbor band
+  kind: lab
+  path: labs/lab-002-cluster-spectra/REPORT.md
+  revision: workspace:2026-10-26
+  ingested_at: '2026-10-26T21:10:00Z'
+  updated_pages:
+  - wiki/thesis.md
+  - wiki/ideas/research-frontier.md
+- source_id: lab-004-stm-greens-function
+  title: Tunneling spectrum from the strong-coupling Green's function
+  kind: lab
+  path: labs/lab-004-stm-greens-function/REPORT.md
+  revision: workspace:2026-10-26
+  ingested_at: '2026-10-26T22:50:00Z'
+  updated_pages:
+  - wiki/thesis.md
+  - wiki/ideas/research-frontier.md
+- source_id: lab-003-local-spin-dos
+  title: Leading-order local magnetic density of states
+  kind: lab
+  path: labs/lab-003-local-spin-dos/REPORT.md
+  revision: workspace:2026-10-26
+  ingested_at: '2026-10-26T22:40:00Z'
+  updated_pages:
+  - wiki/thesis.md
+  - wiki/ideas/research-frontier.md

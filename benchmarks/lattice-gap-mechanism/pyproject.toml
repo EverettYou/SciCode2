@@ -1,0 +1,9 @@
+[project]
+name = "lattice-gap-mechanism"
+version = "0.1.0"
+description = "Independent numerical environment for the lattice-gap-mechanism benchmark"
+requires-python = ">=3.11,<3.14"
+dependencies = []
+
+[tool.uv]
+package = false

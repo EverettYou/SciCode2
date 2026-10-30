@@ -1,0 +1,256 @@
+{
+  "J": 8.0,
+  "t2": 0.2,
+  "eta": 0.08,
+  "seed": 20261027,
+  "bcs": {
+    "nu_0.3": {
+      "nu": 0.3,
+      "Delta_gap_equation": 2.1211952797655993,
+      "mu_gap_equation": -1.5108419096028336,
+      "occupied_gap_equation": 0.3,
+      "Delta": 2.4894333371562745,
+      "mu": -1.6386473261003354,
+      "mu_normal": -0.904234616189167,
+      "occupied": 0.3,
+      "interpolation_weight_toward_half_filling": 0.33333333333333326
+    },
+    "nu_0.2": {
+      "nu": 0.2,
+      "Delta": 1.7341500057344117,
+      "mu": -2.4684713902523354,
+      "mu_normal": -1.9261325614381826,
+      "occupied": 0.20000000000000007
+    }
+  },
+  "triplon_edges": [
+    5.430418538494035,
+    8.744127037478787
+  ],
+  "strong_coupling_gaps": {
+    "spin": 5.430418538494035,
+    "single": 7.9888845622548,
+    "pair": 3.4715981378068044,
+    "trion_min": 3.5981623361701445,
+    "holon_min": 4.390722226084655
+  },
+  "stm_background": {
+    "form": "V^2 outside a hard gap, zero inside the gap",
+    "fraction_of_model_peak_at_absV_9": 0.11
+  },
+  "landmarks_clean": {
+    "stm_100_low": {
+      "peaks": [
+        [
+          -5.199999999999999,
+          0.2464483748910238
+        ],
+        [
+          6.800000000000001,
+          0.2789379155382713
+        ]
+      ],
+      "spans": [
+        [
+          -10.0,
+          -3.8
+        ],
+        [
+          3.950000000000001,
+          10.0
+        ]
+      ],
+      "gap_center_over_peak": 0.0026885359042900336
+    },
+    "stm_nu03_low": {
+      "peaks": [
+        [
+          -5.425,
+          0.14747443799653465
+        ],
+        [
+          5.450000000000001,
+          0.3671367142597039
+        ]
+      ],
+      "spans": [
+        [
+          -10.0,
+          -2.6999999999999993
+        ],
+        [
+          2.700000000000001,
+          10.0
+        ]
+      ],
+      "gap_center_over_peak": 0.002929347456133617
+    },
+    "stm_nu02_low": {
+      "peaks": [
+        [
+          -3.675,
+          0.026604639214316605
+        ],
+        [
+          -1.7750000000000004,
+          0.21314348370604522
+        ],
+        [
+          1.7750000000000004,
+          0.22731393726046817
+        ],
+        [
+          3.700000000000001,
+          0.3056157606354393
+        ]
+      ],
+      "spans": [
+        [
+          -10.0,
+          -1.4000000000000004
+        ],
+        [
+          1.3500000000000014,
+          10.0
+        ]
+      ],
+      "gap_center_over_peak": 0.010549422957015853
+    },
+    "stm_nu03_high": {
+      "peaks": [
+        [
+          1.700000000000001,
+          0.2889527772050032
+        ]
+      ],
+      "spans": [
+        [
+          -10.0,
+          -5.8999999999999995
+        ],
+        [
+          -4.074999999999999,
+          4.675000000000001
+        ],
+        [
+          5.625,
+          10.0
+        ]
+      ],
+      "gap_center_over_peak": 0.3842561985376058
+    }
+  },
+  "resistivity_at_T": {
+    "0.45": 1597.3618964545497,
+    "0.75": 56.687788165275855,
+    "1.05": 13.633457846734157,
+    "1.36": 6.186272632109815,
+    "1.66": 3.7435518504457006,
+    "1.96": 2.6446579498291545,
+    "2.26": 2.050008932161991,
+    "2.56": 1.6873343508395278,
+    "2.87": 1.44699599055505,
+    "3.17": 1.2777841954463434,
+    "3.47": 1.1530531960613353,
+    "3.77": 1.0577536173266766
+  },
+  "resistivity_activation": {
+    "published": "low-T Boltzmann slope, held fixed through the window",
+    "fit_temperatures": "T <= 0.8",
+    "activation_energy": 3.739998794055709
+  },
+  "nmr": {
+    "formula": "int rho(w)^2 n_B(w)(1+n_B(w)) dw",
+    "plotted": "1/(T1 T) divided by its value at T=4",
+    "inverse_temperature_window": [
+      0.1,
+      5.0
+    ],
+    "public_half_filled_T_max": 5.0,
+    "normalized_at": 4.0,
+    "arrhenius_slope_D_over_T_1_to_5": 5.590828159294237,
+    "arrhenius_slope_D_over_T_below_0.4": 6.671112093120594,
+    "triplon_edge": 5.430418538494035
+  },
+  "doped_pairs": {
+    "nu03": {
+      "nu": 0.3,
+      "mu": -1.6386473261003354,
+      "gap": 2.4894333371562745,
+      "Tc": 0.2,
+      "nmr": "single activation on the tunneling gap through Tc, no coherence peak",
+      "resistivity": "zero below 0.20D; above it, one third of the way in the logarithm from the nu=0.2 metal to the half-filled activation"
+    },
+    "nu02": {
+      "nu": 0.2,
+      "mu": -2.4684713902523354,
+      "gap": 1.7341500057344117,
+      "Tc": 0.4,
+      "nmr": "activated with 1.75 below a Hebel\u2013Slichter peak at 0.334D, Korringa above the peak; the gap equation closes near 1.00D and is not the published transition",
+      "resistivity": "zero below 0.40D, normal-state metal at and above it",
+      "gap_equation_Tc": 1.0020294508764658
+    }
+  },
+  "high_temperature_peaks": {
+    "sigma_floor": 0.025,
+    "sigma_slope_per_abs_energy": 0.012,
+    "seed": 20261027,
+    "mu": {
+      "1/2": 0.4767084798076934,
+      "0.3": -0.904234616189167,
+      "0.2": -1.9261325614381826
+    },
+    "shown": {
+      "1/2": [
+        -5.38,
+        -2.53,
+        0.3,
+        1.56,
+        2.7,
+        -0.49
+      ],
+      "0.3": [
+        -3.94,
+        -1.09,
+        1.61,
+        2.83,
+        4.15,
+        0.91
+      ],
+      "0.2": [
+        -2.85,
+        -0.08,
+        2.75,
+        3.77,
+        5.23,
+        1.96
+      ]
+    },
+    "uncertainty": {
+      "1/2": [
+        0.09,
+        0.05,
+        0.03,
+        0.04,
+        0.06,
+        0.03
+      ],
+      "0.3": [
+        0.07,
+        0.04,
+        0.05,
+        0.06,
+        0.07,
+        0.04
+      ],
+      "0.2": [
+        0.06,
+        0.03,
+        0.06,
+        0.07,
+        0.09,
+        0.05
+      ]
+    }
+  }
+}

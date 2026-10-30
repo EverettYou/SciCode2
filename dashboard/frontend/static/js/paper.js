@@ -181,11 +181,13 @@ function renderAssessment() {
 
 function renderPdf() {
   const { assets, assessment } = state.paper;
+  const separate = assets.pdf ? `pdf.html?id=${encodeURIComponent(paperId)}` : '';
   el('pdf-panel').innerHTML = `
-    <div class="panel-heading"><p class="panel-kicker">Full text</p>${assets.pdf ? `<a class="text-button" href="${assets.pdf}" target="_blank">Open separately ↗</a>` : ''}</div>
+    <div class="panel-heading"><p class="panel-kicker">Full text</p>${assets.pdf ? `<a class="text-button" href="${separate}" target="_blank">Open separately ↗</a>` : ''}</div>
     ${assets.pdf
-      ? `<iframe class="pdf-viewer" title="PDF for ${escapeText(assessment.title)}" src="${assets.pdf}#view=FitH"></iframe>`
+      ? `<div id="pdf-viewer" class="pdf-shell" role="region" aria-label="PDF for ${escapeText(assessment.title)}"></div>`
       : `<div class="pdf-empty"><strong>Local PDF unavailable</strong><p>Ingest this paper to display its PDF here.</p>${assets.source_url ? `<a class="source-button" href="${escapeText(assets.source_url)}" target="_blank" rel="noreferrer">Open source paper ↗</a>` : ''}</div>`}`;
+  if (assets.pdf) window.SciCodePdfViewer.mount(el('pdf-viewer'), assets.pdf);
 }
 
 function showNotice(message, isError = false) {
@@ -422,8 +424,8 @@ async function saveAssessmentPatch(patch, control, errorMessage = 'Could not sav
     if (!response.ok) throw new Error(data.detail || errorMessage);
     state.paper = data.paper;
     beforeRender?.();
-    // Assessment edits are local to the left panel. Keep the PDF iframe alive so
-    // its scroll position and browser-managed full-text state are not reset.
+    // Assessment edits are local to the left panel. Leave the PDF canvas mounted so
+    // its scroll position is not reset.
     renderHeader(); renderAssessment();
     showNotice('Saved');
     return true;

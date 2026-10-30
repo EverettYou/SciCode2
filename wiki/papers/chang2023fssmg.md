@@ -29,7 +29,7 @@ Provides sign-problem-free QMC evidence and spectral diagnostics for a Fermi-sur
 
 ## Assessment boundary
 
-Inventory stage at ingest: `assessed`. Wiki ingestion records source knowledge; it does not promote a fetched-only paper to assessed status. See [assessment.yml](../../papers/chang2023fssmg/assessment.yml) for benchmark-oriented review state.
+Inventory stage at ingest was `assessed`. The assessment was reviewed on 2026-10-26 when the phenomenology-only modeling follow-up was selected; see [assessment.yml](../../papers/chang2023fssmg/assessment.yml). Wiki ingestion still does not by itself promote a paper to reviewed status.
 
 ## Related pages
 

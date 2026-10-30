@@ -327,13 +327,36 @@ button.rating-value:hover { background:#f0f3f2; filter:none; }
 .empty-copy { color:var(--muted)!important; font-style:italic; }
 .pdf-panel { display:flex; flex-direction:column; height:100%; min-height:0; position:static; }
 .pdf-panel .panel-heading { height:44px; padding:0 14px; }
-.pdf-viewer { border:0; border-top:1px solid var(--line); display:block; flex:1; min-height:0; width:100%; }
+.pdf-panel .pdf-shell { border:0; border-radius:0; border-top:1px solid var(--line); flex:1; min-height:0; }
 .pdf-empty { align-items:center; color:var(--muted); display:flex; flex:1; flex-direction:column; justify-content:center; min-height:0; padding:30px; text-align:center; }
 .pdf-empty strong { color:#344247; font:600 21px/1.2 ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; letter-spacing:-.02em; }
+.pdf-shell { background:#3f4b4b; display:flex; flex-direction:column; min-height:0; overflow:hidden; width:100%; }
+.pdf-toolbar { align-items:center; background:#102c2c; color:#e7f4ef; display:flex; flex-shrink:0; gap:12px; justify-content:space-between; min-height:44px; padding:6px 10px; }
+.pdf-toolbar-group { align-items:center; display:flex; gap:3px; }
+.pdf-toolbar-zoom { margin:0 auto; }
+.pdf-toolbar button,.pdf-download { align-items:center; background:transparent; border:0; border-radius:8px; color:#d4ebe4; cursor:pointer; display:inline-flex; font-size:13px; height:32px; justify-content:center; min-height:0; padding:0; text-decoration:none; width:32px; }
+.pdf-toolbar button:hover:not(:disabled),.pdf-download:hover { background:#1b4440; color:#9ef0e0; filter:none; }
+.pdf-toolbar button.active { background:#0d5f56; color:#bff5ea; }
+.pdf-toolbar button:disabled { cursor:default; opacity:.35; }
+.pdf-toolbar button:focus-visible,.pdf-download:focus-visible { outline:2px solid #74d8c9; outline-offset:2px; }
+.pdf-page-control { align-items:center; color:#b7d8d0; display:inline-flex; font:650 12px ui-sans-serif,system-ui,sans-serif; gap:6px; margin:0 4px; }
+.pdf-page-control input { background:#0c2424; border:1px solid #2d524c; border-radius:6px; color:#e7f4ef; font:650 12px ui-monospace,monospace; height:28px; text-align:center; width:44px; }
+.pdf-page-control em { font-style:normal; }
+.pdf-zoom-label { color:#b7d8d0; font:650 12px ui-sans-serif,system-ui,sans-serif; min-width:52px; text-align:center; }
+.pdf-stage { background:#525659; flex:1; min-height:0; overflow:auto; }
+.pdf-pages { align-items:center; display:flex; flex-direction:column; gap:14px; padding:18px 12px 32px; }
+.pdf-page { background:#fff; box-shadow:0 2px 10px rgba(0,0,0,.32); }
+.pdf-page canvas { display:block; }
+.pdf-status { color:#d7dde1; margin:0; padding:36px 16px; text-align:center; }
+.pdf-status a { color:#9ef0e0; }
+body.pdf-standalone-page { background:#102c2c; margin:0; min-height:100vh; }
+.pdf-standalone-bar { align-items:center; border-bottom:1px solid #1e3f3b; display:flex; height:44px; padding:0 18px; }
+.pdf-standalone-bar a { color:#9ee0d4; font:650 13px ui-sans-serif,system-ui,sans-serif; overflow:hidden; text-decoration:none; text-overflow:ellipsis; white-space:nowrap; }
+body.pdf-standalone-page .pdf-shell { border:0; border-radius:0; height:calc(100vh - 44px); }
 .text-button { background:none; color:var(--accent); font-size:12px; padding:4px; }
 .text-button:hover { background:var(--accent-hover); border-radius:4px; text-decoration:none; }
-@media (max-width:1050px) { .paper-workspace { grid-template-columns:1fr; height:auto; } .paper-left-column,.assessment-panel,.pdf-panel { height:auto; } .assessment-scroll-body { overflow:visible; padding-right:0; } .pdf-viewer { flex:none; height:760px; min-height:0; } }
-@media (max-width:700px) { .detail-shell { padding:22px 14px 40px; } .detail-heading-row { align-items:flex-start; flex-direction:column; } .source-actions { justify-content:flex-start; } .detail-ratings,.assessment-columns { grid-template-columns:1fr; } .pdf-viewer { height:620px; } }
+@media (max-width:1050px) { .paper-workspace { grid-template-columns:1fr; height:auto; } .paper-left-column,.assessment-panel,.pdf-panel { height:auto; } .assessment-scroll-body { overflow:visible; padding-right:0; } .pdf-panel .pdf-shell { flex:none; height:760px; min-height:0; } }
+@media (max-width:700px) { .detail-shell { padding:22px 14px 40px; } .detail-heading-row { align-items:flex-start; flex-direction:column; } .source-actions { justify-content:flex-start; } .detail-ratings,.assessment-columns { grid-template-columns:1fr; } .pdf-panel .pdf-shell { height:620px; } .pdf-toolbar { flex-wrap:wrap; height:auto; } .pdf-toolbar-zoom { margin:0; } }
 
 /* Benchmark research forum */
 body[data-page="benchmark-detail"] { min-height:100vh; overflow-y:auto; }

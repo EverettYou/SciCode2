@@ -832,21 +832,27 @@ window.SCICODE_PAPERS = [
     "supervision_confidence": "high",
     "followup_ideas": [
       "Construct a reduced-size parameter sweep that tests whether the inferred O(4) scaling survives a controlled perturbation of the bilayer couplings.",
-      "Compare spectral-function and Green-function-zero diagnostics using independent estimators and finite-size windows."
+      "Compare spectral-function and Green-function-zero diagnostics using independent estimators and finite-size windows.",
+      "Pose a solver-facing modeling problem that states only square-lattice symmetry and experimental phenomena: STM dI/dV shows a charge gap, neutron scattering shows a spin gap, and transport shows no superconductivity. Withhold the microscopic Hamiltonian, hopping terms, orbital content, and phase name. Require an explicit model and a falsifiable ARPES prediction. Treat band folding, quasiparticle coherence, and Green's function zeros as possible predictions rather than given data."
     ],
     "potential_pitfalls": [
       "Sign-problem-free does not mean low cost; lattice size and autocorrelation can exceed workstation limits.",
       "Apparent universality can be an artifact of a narrow interaction or finite-size window.",
-      "Spectral reconstruction and analytic continuation can introduce structure not present in the raw correlators."
+      "Spectral reconstruction and analytic continuation can introduce structure not present in the raw correlators.",
+      "Revealing nearest-neighbor hopping, interlayer exchange, orbital content, or the target phase name turns the task into recall of a known Hamiltonian instead of a test of physical modeling.",
+      "A charge gap alone is shared by band insulators, magnetic order, exciton order, and symmetric interaction-generated gaps. The spin gap and the absence of superconductivity have to stay in the prompt, and ARPES has to be scored as a prediction, or the mechanisms remain indistinguishable."
     ],
     "suggested_task_types": [
       "finite-size-scaling",
       "phase-diagnosis",
-      "robustness-study"
+      "robustness-study",
+      "inverse-problem"
     ],
-    "ai_assessment": "Scientifically rich benchmark candidate, especially as a reduced follow-up to the paper's large-scale study. It offers meaningful competing diagnostics and a natural non-searchable perturbation, but the benchmark must be aggressively scoped around small lattices and a validated observable so the workload remains workstation-feasible.",
-    "stage": "assessed",
-    "benchmark_ids": []
+    "ai_assessment": "Scientifically rich benchmark candidate. The selected direction is a phenomenology-only modeling task, not a rerun of the paper's large-scale Monte Carlo. The public facts underdetermine the mechanism, bilinear mean-field theory misses a symmetric gapped phase, and ARPES is the discriminating prediction. Any author-side check must stay on small clusters or precomputed spectra so the workload remains workstation-feasible.",
+    "stage": "reviewed",
+    "benchmark_ids": [
+      "lattice-gap-mechanism"
+    ]
   },
   {
     "paper_id": "lu2023gfzif",
@@ -892,17 +898,44 @@ window.SCICODE_PAPERS = [
   },
   {
     "paper_id": "lu2023sfdsm",
-    "title": "Superconductivity from Doping Symmetric Mass Generation Insulators: Application to \\(\\mathrm{La}_3\\mathrm{Ni}_2\\mathrm{O}_7\\) under Pressure",
+    "title": "Superconductivity from Doping Symmetric Mass Generation Insulators: Application to La3Ni2O7 under Pressure",
     "authors": "Da-Chuan Lu, Miao Li, Zhao-Yi Zeng, Wanda Hou, Juven Wang, Fan Yang, Yi-Zhuang You",
     "year": 2023,
     "type": "preprint",
     "venue": "ArXiv Preprint arXiv:2308.11195 (2023)",
     "source_url": "https://arxiv.org/abs/2308.11195",
-    "summary": "We investigate the bilayer nickelates as a platform to realize the symmetric mass generation (SMG) insulator, a featureless Mott insulator that arises due to the Lieb-Schultz-Mattis (LSM) anomaly cancellation in bilayer spin-1/2 lattice systems. Through a single-orbital bilayer square lattice model involving intralayer hopping and interlayer superexchange interaction , we demonstrate the emergence of high-temperature superconductivity (SC) upon doping the SMG insulator. The SC phase features -wave interlayer spin-singlet pairing and exhibits a crossover between the BCS and BEC limits by tuning the ratio. We estimate the SC transition temperature from both the weak and strong coupling limits at the mean-field level. Our findings offer insights into the experimentally observed decrease in with pressure and the strange metal behavior above . Additionally, we propose that both Ni and orbitals can exhibit superconductivity in La Ni O under pressure, but their should vary in opposite ways under doping. This characteristic difference suggests a potential experimental pathway to identify which electronic orbital plays the principal role in the formation of superconductivity in this system.",
-    "research_area": [],
-    "has_assessment": false,
-    "stage": "fetched",
-    "benchmark_ids": []
+    "summary": "A bilayer square-lattice model with intralayer hopping and interlayer exchange has a filling-enforced symmetric-mass-generation insulator at half filling and no superconductivity there. Doping destabilizes that insulator and produces interlayer spin-singlet superconductivity, with a strong-coupling transition-temperature peak near quarter filling. The paper sets other band-structure details aside.",
+    "research_area": [
+      "symmetric mass generation",
+      "superconductivity",
+      "nickelates"
+    ],
+    "has_assessment": true,
+    "computational_core": "Compare weak-coupling BCS and strong-coupling BEC mean-field estimates of interlayer pairing as functions of J/t and filling, using the half-filled symmetric insulator as the parent state.",
+    "computational_depth": "medium",
+    "scientific_judgment": "high",
+    "validation_ease": "medium",
+    "workstation_feasible": "yes",
+    "reference_solution_feasible": "yes",
+    "non_searchable_extension_possible": "yes",
+    "supervision_confidence": "high",
+    "followup_ideas": [
+      "Use the doping and filling structure as a hidden reference for a phenomenology benchmark. At half filling the parent state has no superconductivity. Moving the filling destroys the symmetric insulator, and superconductivity can appear near quarter filling. Do not give the solver the Hamiltonian, the filling fractions, or the conclusion that superconductivity is absent."
+    ],
+    "potential_pitfalls": [
+      "The paper uses one nearest-neighbor hopping and explicitly sets other band-structure details aside. It does not show that a symmetric gap survives a change in Fermi-surface shape while nesting-driven magnetic or exciton order disappears. That contrast is a separate hypothesis.",
+      "Mean-field transition temperatures are not a diagnosis of the parent state. A solver can match a doping trend while misidentifying the insulator.",
+      "Quarter filling is both a strong-coupling peak of the transition temperature and the nominal dx2-y2 filling in the materials discussion. Infinitesimal doping already leaves the half-filled symmetric insulator in the paper's argument. Do not treat one doping level as the only superconducting regime."
+    ],
+    "suggested_task_types": [
+      "inverse-problem",
+      "phase-diagnosis"
+    ],
+    "ai_assessment": "Useful hidden reference for a data-level modeling task. The filling-enforced parent state and the doping-driven interlayer pairing are source-backed. Fermi-surface geometry is not. The public problem must show resistivity, tunneling, and neutron curves rather than name the lattice or the absence of superconductivity.",
+    "stage": "reviewed",
+    "benchmark_ids": [
+      "lattice-gap-mechanism"
+    ]
   },
   {
     "paper_id": "liu2023gwaan",
@@ -2540,6 +2573,81 @@ window.SCICODE_BENCHMARKS = [
     "expert_notes": "Lab 001 is complete and restricted to N=1,2 dense-baseline and interface qualification. Closed checkpoint T-0006 approves only the state-aware dense N=3, R=2 Lab 002 design with complementary resource panels, staged numerical gates, and conditional locality criteria. Lab 002 itself remains dense-only. Separately, MPS execution at N=1,2,3 is authorized as a no-effective-truncation dense-parity correctness suite; it must reproduce states, probabilities, reverse updates, losses, gradients, and fixed-budget training behavior before large-N use. Truncation, size transfer, spatial sharing, Hamiltonian heads, and scaling claims remain controlled follow-on work. On 2026-09-07 the user authorized closing the active Hamiltonian/MPS gap and increasing system size, then requested auto-research. The Lab 007 continuation completed corrected-TDVP audits and frozen-policy tests through N=32; this does not alter Lab 002 or establish record-conditioned scalable recovery.",
     "open_thread_count": 0,
     "waiting_user_count": 0,
+    "waiting_agent_count": 0
+  },
+  {
+    "benchmark_id": "lattice-gap-mechanism",
+    "title": "Lattice Gap Mechanism from Experiment",
+    "stage": "problem-opened",
+    "summary": "From the computed spectra of a fourfold layered oxide, construct an explicit model and predict the low-temperature photoemission at 0.75 electrons per metal site, without being given the microscopic Hamiltonian.",
+    "paper_ids": [
+      "chang2023fssmg",
+      "lu2023sfdsm"
+    ],
+    "idea_sources": [
+      {
+        "paper_id": "chang2023fssmg",
+        "source_field": "followup_ideas",
+        "item_index": 2,
+        "role": "primary-question"
+      },
+      {
+        "paper_id": "chang2023fssmg",
+        "source_field": "potential_pitfalls",
+        "item_index": 3,
+        "role": "risk-control"
+      },
+      {
+        "paper_id": "chang2023fssmg",
+        "source_field": "potential_pitfalls",
+        "item_index": 4,
+        "role": "evidence"
+      },
+      {
+        "paper_id": "lu2023sfdsm",
+        "source_field": "followup_ideas",
+        "item_index": 0,
+        "role": "supporting-method"
+      },
+      {
+        "paper_id": "lu2023sfdsm",
+        "source_field": "potential_pitfalls",
+        "item_index": 0,
+        "role": "risk-control"
+      }
+    ],
+    "research_question": "What microscopic mechanism accounts for a fourfold layered oxide whose spectra at one electron per metal site are gapped, whose high-temperature photoemission follows a square-lattice dispersion with both nearest-neighbor and next-nearest-neighbor hopping, and what low-temperature photoemission does that mechanism predict at 0.75 electrons per metal site?",
+    "scientific_domain": [
+      "correlated electrons",
+      "symmetric mass generation",
+      "experimental modeling"
+    ],
+    "expected_outcomes": [
+      "The three public facts leave more than one gapped, non-superconducting mechanism viable, so the prompt alone does not identify a unique phase.",
+      "A bilinear mean-field or Hubbard-style magnetic model can fit a charge gap while missing a symmetric gapped state that has no bilinear order parameter.",
+      "ARPES predictions that specify folding, coherence, and Green's-function poles or zeros can separate the surviving mechanisms; a prediction that only says there is a gap cannot.",
+      "Doping and Fermi-surface shape are later predictions, not public labels. A filling-enforced symmetric gap should disappear when the density moves, and superconductivity can appear near quarter filling. Nesting-driven magnetic and exciton order should disappear when the Fermi-surface shape changes at fixed density."
+    ],
+    "expected_outputs": [
+      "A solver-facing prompt and schematic curves that show symmetry, tunneling conductance, local magnetic intensity, and resistivity, without naming the lattice or stating the inferred conclusions.",
+      "An author-side table of candidate mechanisms, the public facts each one survives, and the ARPES feature that would rule it out.",
+      "A frozen model and an ARPES prediction produced from that prompt.",
+      "A small-cluster or precomputed spectral comparison that checks the author key against at least one symmetry-breaking alternative.",
+      "Stable code under src/ and a final note under note/ only after that comparison exists."
+    ],
+    "evidence_requirements": [
+      "The extracted solver prompt must be rejected if it names the lattice, a charge or spin gap, superconductivity, hoppings, orbitals, filling, or a target phase. The curves have to carry those inferences.",
+      "Each candidate mechanism must be scored against the charge gap, the spin gap, and the absence of superconductivity separately.",
+      "The author key must include one symmetric-gapping reference and one symmetry-breaking alternative whose ARPES predictions differ.",
+      "No ARPES curve may be presented as a measured result unless a lab actually computed it.",
+      "Large-scale quantum Monte Carlo and critical-exponent fits are not evidence for this question."
+    ],
+    "estimated_active_hours": null,
+    "workstation_feasible": "uncertain",
+    "expert_review": "pending",
+    "expert_notes": "",
+    "open_thread_count": 1,
+    "waiting_user_count": 1,
     "waiting_agent_count": 0
   }
 ];

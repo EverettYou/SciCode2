@@ -1,0 +1,24 @@
+{
+  "J": 8.0,
+  "t": 1.0,
+  "unperturbed_gap": 7.999999999999998,
+  "singlet_shift_per_bond": -0.16666666666666674,
+  "triplon_diagonal_per_bond": -0.49999999999999994,
+  "triplon_hopping_per_bond": 0.49999999999999994,
+  "band_center": 6.666666666666665,
+  "band_bottom": 4.666666666666665,
+  "band_top": 8.666666666666664,
+  "small_t_check": {
+    "t": 0.05,
+    "perturbation_gaps": [
+      8.000416666666665,
+      7.997916666666665
+    ],
+    "exact_gaps": [
+      7.997918303179801,
+      8.000416742629877
+    ]
+  },
+  "broadening": 0.035,
+  "normalization": "unsmeared edge value 1/(2 pi)"
+}
