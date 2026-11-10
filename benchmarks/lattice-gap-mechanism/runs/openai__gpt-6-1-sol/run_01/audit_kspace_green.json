@@ -1,0 +1,317 @@
+{
+  "N": 10,
+  "parameters": {
+    "t": 0.9970683327571924,
+    "tp": 0.19534428112180086,
+    "U": 11.493525192155293
+  },
+  "E0": -3.8032359623859584,
+  "mu_canonical_mid": 5.793606522515816,
+  "momenta_exact": true,
+  "definition": "c_k and c_k^dagger are physical electron Fourier operators; complex vectors split into cosine/sine channels for real-symmetric resolvents.",
+  "checks": [
+    {
+      "k": [
+        0.0,
+        0.0
+      ],
+      "epsilon_k_D": -4.769650455515973,
+      "M0": 1.0000000000000062,
+      "M1_D": -4.816494381944361,
+      "M1_exact_D": -4.816494381954143,
+      "M1_error_D": 9.781508936157479e-12,
+      "variance_D2": 33.025280335768215,
+      "variance_exact_D2": 33.02528033567709,
+      "variance_error_D2": 9.112710586123285e-11,
+      "G0_200": 0.08848863693159964,
+      "G0_400": 0.08848863693159961,
+      "G0_CG": 0.08848863693159831,
+      "G0_difference_200_400": 2.7755575615628914e-17,
+      "G0_difference_400_CG": 1.304512053934559e-15,
+      "CG_checks": [
+        {
+          "addition": true,
+          "info": 0,
+          "relative_residual": 5.936076860865576e-13
+        },
+        {
+          "addition": false,
+          "info": 0,
+          "relative_residual": 4.466444266638448e-13
+        }
+      ],
+      "pole_checks": [
+        {
+          "addition": true,
+          "steps": 200,
+          "minimum_absolute_pole_D": 4.000932046577384,
+          "norm": 0.1766263509057763,
+          "first_raw_H_moment_error": 3.3306690738754696e-15
+        },
+        {
+          "addition": true,
+          "steps": 400,
+          "minimum_absolute_pole_D": 4.0009320465773826,
+          "norm": 0.17662635090577633,
+          "first_raw_H_moment_error": 2.886579864025407e-15
+        },
+        {
+          "addition": false,
+          "steps": 200,
+          "minimum_absolute_pole_D": 4.000932046577387,
+          "norm": 0.8233736490942304,
+          "first_raw_H_moment_error": 4.440892098500626e-15
+        },
+        {
+          "addition": false,
+          "steps": 400,
+          "minimum_absolute_pole_D": 4.000932046577404,
+          "norm": 0.82337364909423,
+          "first_raw_H_moment_error": 4.218847493575595e-15
+        }
+      ]
+    },
+    {
+      "k": [
+        0.1,
+        -0.3
+      ],
+      "epsilon_k_D": -0.8017240516353918,
+      "M0": 0.9999999999999993,
+      "M1_D": -0.8485679780557205,
+      "M1_exact_D": -0.8485679780735618,
+      "M1_error_D": 1.7841284005726266e-11,
+      "variance_D2": 33.02528033570951,
+      "variance_exact_D2": 33.02528033567709,
+      "variance_error_D2": 3.242206503273337e-11,
+      "G0_200": 0.05772088906388613,
+      "G0_400": 0.05772088906388613,
+      "G0_CG": 0.05772088906388559,
+      "G0_difference_200_400": 0.0,
+      "G0_difference_400_CG": 5.412337245047638e-16,
+      "CG_checks": [
+        {
+          "addition": true,
+          "info": 0,
+          "relative_residual": 8.260616107567689e-13
+        },
+        {
+          "addition": false,
+          "info": 0,
+          "relative_residual": 9.298054741112066e-13
+        }
+      ],
+      "pole_checks": [
+        {
+          "addition": true,
+          "steps": 200,
+          "minimum_absolute_pole_D": 4.0009320465773826,
+          "norm": 0.19346542369615996,
+          "first_raw_H_moment_error": 1.5543122344752192e-15
+        },
+        {
+          "addition": true,
+          "steps": 400,
+          "minimum_absolute_pole_D": 4.0009320465774,
+          "norm": 0.19346542369616013,
+          "first_raw_H_moment_error": 3.1086244689504383e-15
+        },
+        {
+          "addition": true,
+          "steps": 200,
+          "minimum_absolute_pole_D": 4.000932046577411,
+          "norm": 0.1934654236943728,
+          "first_raw_H_moment_error": 4.440892098500626e-16
+        },
+        {
+          "addition": true,
+          "steps": 400,
+          "minimum_absolute_pole_D": 4.0009320465773826,
+          "norm": 0.19346542369437295,
+          "first_raw_H_moment_error": 8.881784197001252e-16
+        },
+        {
+          "addition": false,
+          "steps": 200,
+          "minimum_absolute_pole_D": 4.000932046577393,
+          "norm": 0.30653457630384007,
+          "first_raw_H_moment_error": 2.220446049250313e-16
+        },
+        {
+          "addition": false,
+          "steps": 400,
+          "minimum_absolute_pole_D": 4.000932046577345,
+          "norm": 0.3065345763038399,
+          "first_raw_H_moment_error": 4.440892098500626e-16
+        },
+        {
+          "addition": false,
+          "steps": 200,
+          "minimum_absolute_pole_D": 4.000932046577389,
+          "norm": 0.3065345763056263,
+          "first_raw_H_moment_error": 5.329070518200751e-15
+        },
+        {
+          "addition": false,
+          "steps": 400,
+          "minimum_absolute_pole_D": 4.000932046577364,
+          "norm": 0.3065345763056264,
+          "first_raw_H_moment_error": 5.551115123125783e-15
+        }
+      ]
+    },
+    {
+      "k": [
+        0.2,
+        0.4
+      ],
+      "epsilon_k_D": 1.192412613878993,
+      "M0": 1.0000000000000022,
+      "M1_D": 1.14556868745587,
+      "M1_exact_D": 1.1455686874408233,
+      "M1_error_D": 1.504663060813982e-11,
+      "variance_D2": 33.02528033564771,
+      "variance_exact_D2": 33.02528033567709,
+      "variance_error_D2": -2.938094212368014e-11,
+      "G0_200": -0.04850274791023175,
+      "G0_400": -0.04850274791023173,
+      "G0_CG": -0.04850274791023086,
+      "G0_difference_200_400": -2.0816681711721685e-17,
+      "G0_difference_400_CG": -8.673617379884035e-16,
+      "CG_checks": [
+        {
+          "addition": true,
+          "info": 0,
+          "relative_residual": 7.522031830086876e-13
+        },
+        {
+          "addition": false,
+          "info": 0,
+          "relative_residual": 5.518739205759158e-13
+        }
+      ],
+      "pole_checks": [
+        {
+          "addition": true,
+          "steps": 200,
+          "minimum_absolute_pole_D": 4.00093204657737,
+          "norm": 0.3067529084646947,
+          "first_raw_H_moment_error": 5.329070518200751e-15
+        },
+        {
+          "addition": true,
+          "steps": 400,
+          "minimum_absolute_pole_D": 4.000932046577368,
+          "norm": 0.3067529084646948,
+          "first_raw_H_moment_error": 4.440892098500626e-15
+        },
+        {
+          "addition": true,
+          "steps": 200,
+          "minimum_absolute_pole_D": 4.0009320465773754,
+          "norm": 0.30675290847178144,
+          "first_raw_H_moment_error": 6.217248937900877e-15
+        },
+        {
+          "addition": true,
+          "steps": 400,
+          "minimum_absolute_pole_D": 4.000932046577333,
+          "norm": 0.3067529084717812,
+          "first_raw_H_moment_error": 4.440892098500626e-15
+        },
+        {
+          "addition": false,
+          "steps": 200,
+          "minimum_absolute_pole_D": 4.000932046577421,
+          "norm": 0.19324709153530625,
+          "first_raw_H_moment_error": 8.881784197001252e-16
+        },
+        {
+          "addition": false,
+          "steps": 400,
+          "minimum_absolute_pole_D": 4.000932046577407,
+          "norm": 0.19324709153530614,
+          "first_raw_H_moment_error": 8.881784197001252e-16
+        },
+        {
+          "addition": false,
+          "steps": 200,
+          "minimum_absolute_pole_D": 4.000932046577405,
+          "norm": 0.1932470915282196,
+          "first_raw_H_moment_error": 0.0
+        },
+        {
+          "addition": false,
+          "steps": 400,
+          "minimum_absolute_pole_D": 4.000932046577386,
+          "norm": 0.19324709152821948,
+          "first_raw_H_moment_error": 6.661338147750939e-16
+        }
+      ]
+    },
+    {
+      "k": [
+        0.5,
+        0.5
+      ],
+      "epsilon_k_D": 3.2068962065415665,
+      "M0": 1.0000000000000009,
+      "M1_D": 3.160052280100425,
+      "M1_exact_D": 3.160052280103397,
+      "M1_error_D": -2.971844992316619e-12,
+      "variance_D2": 33.025280335713,
+      "variance_exact_D2": 33.02528033567709,
+      "variance_error_D2": 3.5910829865315463e-11,
+      "G0_200": -0.12423946912416131,
+      "G0_400": -0.12423946912416121,
+      "G0_CG": -0.12423946912416145,
+      "G0_difference_200_400": -9.71445146547012e-17,
+      "G0_difference_400_CG": 2.3592239273284576e-16,
+      "CG_checks": [
+        {
+          "addition": true,
+          "info": 0,
+          "relative_residual": 4.388748368507081e-13
+        },
+        {
+          "addition": false,
+          "info": 0,
+          "relative_residual": 4.267092338366498e-13
+        }
+      ],
+      "pole_checks": [
+        {
+          "addition": true,
+          "steps": 200,
+          "minimum_absolute_pole_D": 4.000932046577397,
+          "norm": 0.821626991919678,
+          "first_raw_H_moment_error": 4.440892098500626e-15
+        },
+        {
+          "addition": true,
+          "steps": 400,
+          "minimum_absolute_pole_D": 4.000932046577374,
+          "norm": 0.8216269919196773,
+          "first_raw_H_moment_error": 2.6645352591003757e-15
+        },
+        {
+          "addition": false,
+          "steps": 200,
+          "minimum_absolute_pole_D": 4.000932046577396,
+          "norm": 0.17837300808032297,
+          "first_raw_H_moment_error": 1.249000902703301e-16
+        },
+        {
+          "addition": false,
+          "steps": 400,
+          "minimum_absolute_pole_D": 4.000932046577393,
+          "norm": 0.17837300808032283,
+          "first_raw_H_moment_error": 2.0816681711721685e-16
+        }
+      ]
+    }
+  ],
+  "maximum_G0_200_400_difference": 9.71445146547012e-17,
+  "maximum_G0_400_direct_CG_difference": 1.304512053934559e-15,
+  "seconds": 20.57283592224121
+}

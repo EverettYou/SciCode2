@@ -1,0 +1,280 @@
+{
+  "geometry": {
+    "w": 3,
+    "h": 2,
+    "periodic_x": false,
+    "periodic_y": false,
+    "sites": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        2,
+        1
+      ]
+    ],
+    "edges": [
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        3,
+        1
+      ],
+      [
+        1,
+        2,
+        0
+      ],
+      [
+        1,
+        4,
+        1
+      ],
+      [
+        2,
+        5,
+        1
+      ],
+      [
+        3,
+        4,
+        0
+      ],
+      [
+        4,
+        5,
+        0
+      ]
+    ]
+  },
+  "n": 6,
+  "weights": [
+    1.5,
+    0.7646484375,
+    1.5,
+    4.470703125,
+    0.7646484375,
+    1.5,
+    1.5
+  ],
+  "us": [
+    2.4287109375,
+    19.142578125,
+    2.4287109375,
+    2.4287109375,
+    19.142578125,
+    2.4287109375
+  ],
+  "spin_lower_bounds": [
+    -1.0000000000000002e-12,
+    -5.434360061869858,
+    -6.199008499369957,
+    -6.398016998738838,
+    -6.199008499369956,
+    -5.434360061869858,
+    -1.0000000000000002e-12
+  ],
+  "results": [
+    {
+      "lower": -17.501600774312113,
+      "ritz": -17.50160077429112,
+      "dimension": 400,
+      "eta": 1.023050398205856e-11,
+      "residual_norm_bound": 1.9991546934396152e-11,
+      "sparse_row_nnz": 15,
+      "entry_roundoff_bound": 4.816694398920747e-14,
+      "method": "full-eigenbasis-residual",
+      "a": 3,
+      "b": 3,
+      "seconds": 0.05836791708134115
+    },
+    {
+      "lower": -17.14724259770112,
+      "ritz": -17.14724259768954,
+      "dimension": 225,
+      "eta": 3.26608613254175e-12,
+      "residual_norm_bound": 1.0575170571332824e-11,
+      "sparse_row_nnz": 11,
+      "entry_roundoff_bound": 4.5448033890535905e-14,
+      "method": "full-eigenbasis-residual",
+      "a": 2,
+      "b": 4,
+      "seconds": 0.02055608294904232
+    },
+    {
+      "lower": -16.54005222916124,
+      "ritz": -16.540052229159148,
+      "dimension": 36,
+      "eta": 1.140724216291267e-13,
+      "residual_norm_bound": 1.0907467401238338e-12,
+      "sparse_row_nnz": 7,
+      "entry_roundoff_bound": 2.8236517534168573e-14,
+      "method": "full-eigenbasis-residual",
+      "a": 1,
+      "b": 5,
+      "seconds": 0.0029317080043256283
+    },
+    {
+      "a": 0,
+      "b": 6,
+      "lower": -12.000000000003002,
+      "dimension": 1,
+      "method": "kinetic-plus-min-interaction",
+      "seconds": 0.000295999925583601
+    },
+    {
+      "lower": -16.475657409149722,
+      "ritz": -16.475657409138744,
+      "dimension": 300,
+      "eta": 5.4415624747384145e-12,
+      "residual_norm_bound": 9.976048759626248e-12,
+      "sparse_row_nnz": 13,
+      "entry_roundoff_bound": 3.189469811660069e-14,
+      "method": "full-eigenbasis-residual",
+      "a": 2,
+      "b": 3,
+      "seconds": 0.11902108392678201
+    },
+    {
+      "lower": -16.163689751267462,
+      "ritz": -16.16368975126351,
+      "dimension": 90,
+      "eta": 5.259085748687942e-13,
+      "residual_norm_bound": 2.9487068336231802e-12,
+      "sparse_row_nnz": 9,
+      "entry_roundoff_bound": 3.0869067359695054e-14,
+      "method": "full-eigenbasis-residual",
+      "a": 1,
+      "b": 4,
+      "seconds": 0.012326458003371954
+    },
+    {
+      "a": 0,
+      "b": 5,
+      "lower": -16.22000459312186,
+      "dimension": 6,
+      "method": "kinetic-plus-min-interaction",
+      "seconds": 0.001020750030875206
+    },
+    {
+      "lower": -15.409572402562235,
+      "ritz": -15.409572402550644,
+      "dimension": 225,
+      "eta": 3.2716716186247713e-12,
+      "residual_norm_bound": 1.0588226167426477e-11,
+      "sparse_row_nnz": 11,
+      "entry_roundoff_bound": 4.5448033890536044e-14,
+      "method": "full-eigenbasis-residual",
+      "a": 2,
+      "b": 2,
+      "seconds": 0.013257874874398112
+    },
+    {
+      "lower": -15.207559727738191,
+      "ritz": -15.207559727733482,
+      "dimension": 120,
+      "eta": 9.269674982330596e-13,
+      "residual_norm_bound": 3.706651358227665e-12,
+      "sparse_row_nnz": 11,
+      "entry_roundoff_bound": 2.934957066069595e-14,
+      "method": "full-eigenbasis-residual",
+      "a": 1,
+      "b": 3,
+      "seconds": 0.009052125038579106
+    },
+    {
+      "a": 0,
+      "b": 4,
+      "lower": -15.770297561871958,
+      "dimension": 15,
+      "method": "kinetic-plus-min-interaction",
+      "seconds": 0.00033466704189777374
+    },
+    {
+      "lower": -13.73344022892633,
+      "ritz": -13.73344022892238,
+      "dimension": 90,
+      "eta": 5.223879722244439e-13,
+      "residual_norm_bound": 2.948320576249906e-12,
+      "sparse_row_nnz": 9,
+      "entry_roundoff_bound": 3.0869067359695124e-14,
+      "method": "full-eigenbasis-residual",
+      "a": 1,
+      "b": 2,
+      "seconds": 0.003734834026545286
+    },
+    {
+      "a": 0,
+      "b": 3,
+      "lower": -14.75495059249084,
+      "dimension": 20,
+      "method": "kinetic-plus-min-interaction",
+      "seconds": 0.0003508329391479492
+    },
+    {
+      "lower": -11.786335700797668,
+      "ritz": -11.786335700795586,
+      "dimension": 36,
+      "eta": 1.148096571676843e-13,
+      "residual_norm_bound": 1.079440960393663e-12,
+      "sparse_row_nnz": 7,
+      "entry_roundoff_bound": 2.823651753416855e-14,
+      "method": "full-eigenbasis-residual",
+      "a": 1,
+      "b": 1,
+      "seconds": 0.002261499874293804
+    },
+    {
+      "a": 0,
+      "b": 2,
+      "lower": -13.34158662437196,
+      "dimension": 15,
+      "method": "kinetic-plus-min-interaction",
+      "seconds": 0.0002608750946819782
+    },
+    {
+      "a": 0,
+      "b": 1,
+      "lower": -3.005649124371859,
+      "dimension": 6,
+      "method": "kinetic-plus-min-interaction",
+      "seconds": 0.00024283304810523987
+    },
+    {
+      "a": 0,
+      "b": 0,
+      "lower": 11.999999999996998,
+      "dimension": 1,
+      "method": "kinetic-plus-min-interaction",
+      "seconds": 0.0003357499372214079
+    }
+  ],
+  "cluster_ritz": -17.50160077429112,
+  "cluster_lower": -17.501600774312113,
+  "target_lower": -14.670935398165632,
+  "target_ritz_suggested": -14.670935398109648,
+  "elapsed_seconds": 0.2941632920410484,
+  "peak_rss_bytes": 70729728,
+  "numerical_model": "IEEE754 binary64 round-to-nearest; standard gamma_k dot-product bounds"
+}

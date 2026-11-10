@@ -1,0 +1,49 @@
+benchmark_id: u1-directional-logical-gap
+title: What Drives the Gain from Directional Noise?
+stage: problem-opened
+paper_ids: []
+summary: Quantify typical-gap and ambiguous-record contributions to directional logical recovery, with
+  controlled inference and a reserved mechanism prediction.
+idea_sources:
+- source_path: problem/USER_REQUEST.md
+  source_field: user-provided-research-question
+  role: primary-question
+research_question: Which physical record populations account for direction-bias changes in logical risk,
+  and how can their contribution be distinguished from reference-inference error and practical decoder
+  loss?
+scientific_domain:
+- quantum error correction
+- symmetry-informed decoding
+- statistical inference
+expected_outcomes:
+- A supported gain, informative small-gain bound, or controlled unresolved/null comparison is acceptable.
+- Intrinsic information and physical risk changes are distinguished from algorithmic losses.
+expected_outputs:
+- Revised standalone English TASK.md and freshly generated problem/problem.pdf for human review.
+- A reproducible scientific investigation of the stated comparison, with controlled references, executable
+  decisions and an independently checked prediction.
+evidence_requirements:
+- Independent checks of the supplied likelihood and logical target.
+- Physical-prior risks or informative bounds, separating sampling, inference and interpretation uncertainty.
+- An executable public-input decision routine and reserved evaluation of the proposed mechanism.
+estimated_active_hours: null
+workstation_feasible: uncertain
+expert_review: pending
+expert_notes: ' v0.2 (2026-10-16): actual SciCode2-directed question revision; detailed changes and prior
+  version are preserved in problem/REVISION-v0.2.md and problem/history/review-draft-v0.1/.'
+source_mode: user-provided-problem
+problem_sources:
+- path: problem/USER_REQUEST.md
+  sha256: 54d562fc56b785910a3b337b587354a129205a7f48bb762d8cb79c2db9d2c1f9
+  origin: Actual user message in this chat on 2026-10-07; direction from the preceding approved research
+    review.
+- path: problem/REVISION-v0.2.md
+  sha256: c1814da0f270d870eb6ae73f40be4a6d7fae7c5abb1664bccc757c1c294c8041
+  origin: Actual user request on 2026-10-16 and implemented editorial revision.
+editorial_screen: pass-to-testing
+scientific_execution: not-started
+model_testing: not-started
+formulation_revision: review-draft-v0.2
+reference_status: Reference support and trial-specific budgets are to be developed during separately authorized
+  exploratory testing; no formal calibration or model trial has been performed for this revision.
+formulation_updated: '2026-10-16'

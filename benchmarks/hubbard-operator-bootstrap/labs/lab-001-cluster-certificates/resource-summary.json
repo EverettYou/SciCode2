@@ -1,0 +1,215 @@
+{
+  "clusters": [
+    {
+      "file": "results-2x2.json",
+      "total_energy_lower": -16.821987867705097,
+      "elapsed_seconds": 0.03986562509089708,
+      "peak_rss_bytes": 59195392,
+      "largest_sector_dimension": 36
+    },
+    {
+      "file": "results-2x3-optimized.json",
+      "total_energy_lower": -14.670935398165632,
+      "elapsed_seconds": 0.2941632920410484,
+      "peak_rss_bytes": 70729728,
+      "largest_sector_dimension": 400
+    },
+    {
+      "file": "results-2x3.json",
+      "total_energy_lower": -15.373681303807615,
+      "elapsed_seconds": 0.202654791995883,
+      "peak_rss_bytes": 70057984,
+      "largest_sector_dimension": 400
+    },
+    {
+      "file": "results-2x4-cylinder.json",
+      "total_energy_lower": -14.25342469000384,
+      "elapsed_seconds": 105.36517791706137,
+      "peak_rss_bytes": 978436096,
+      "largest_sector_dimension": 4900
+    }
+  ],
+  "audits": [
+    {
+      "file": "audit-adaptive-t2-final.json",
+      "passed": true,
+      "full_export_audit_complete": true,
+      "elapsed_seconds": 23.737341957865283,
+      "peak_rss_bytes": 137723904,
+      "affine_nonzero_coefficients_checked": 372326
+    },
+    {
+      "file": "audit-dual-16-pqg.json",
+      "passed": true,
+      "full_export_audit_complete": true,
+      "elapsed_seconds": 7.435628707986325,
+      "peak_rss_bytes": 107446272,
+      "affine_nonzero_coefficients_checked": 16707
+    },
+    {
+      "file": "audit-dual-blocks-pqg-portable.json",
+      "passed": true,
+      "full_export_audit_complete": true,
+      "elapsed_seconds": 3.1474691671319306,
+      "peak_rss_bytes": 187990016,
+      "affine_nonzero_coefficients_checked": 30613
+    },
+    {
+      "file": "audit-dual-blocks-pqg.json",
+      "passed": true,
+      "full_export_audit_complete": true,
+      "elapsed_seconds": 3.518579750088975,
+      "peak_rss_bytes": 113410048,
+      "affine_nonzero_coefficients_checked": 30613
+    },
+    {
+      "file": "audit-full-t1-t2prime-sym-s0.json",
+      "passed": true,
+      "full_export_audit_complete": true,
+      "elapsed_seconds": 13.675940917106345,
+      "peak_rss_bytes": 114819072,
+      "affine_nonzero_coefficients_checked": 200448
+    },
+    {
+      "file": "audit-full-t2prime-sym.json",
+      "passed": true,
+      "full_export_audit_complete": true,
+      "elapsed_seconds": 20.909021999919787,
+      "peak_rss_bytes": 113623040,
+      "affine_nonzero_coefficients_checked": 174132
+    },
+    {
+      "file": "audit-mixed-t2-sym.json",
+      "passed": true,
+      "full_export_audit_complete": true,
+      "elapsed_seconds": 5.061510582920164,
+      "peak_rss_bytes": 97189888,
+      "affine_nonzero_coefficients_checked": 96552
+    },
+    {
+      "file": "audit-pqg-eps6.json",
+      "passed": true,
+      "full_export_audit_complete": true,
+      "elapsed_seconds": 2.3002159579191357,
+      "peak_rss_bytes": 55754752,
+      "affine_nonzero_coefficients_checked": 37600
+    },
+    {
+      "file": "audit-pqg-eps8.json",
+      "passed": true,
+      "full_export_audit_complete": true,
+      "elapsed_seconds": 7.203500667121261,
+      "peak_rss_bytes": 91275264,
+      "affine_nonzero_coefficients_checked": 37600
+    },
+    {
+      "file": "audit-pqgt1.json",
+      "passed": true,
+      "full_export_audit_complete": true,
+      "elapsed_seconds": 35.54439162509516,
+      "peak_rss_bytes": 82837504,
+      "affine_nonzero_coefficients_checked": 219232
+    },
+    {
+      "file": "audit-selected-t2-eps6-fast.json",
+      "passed": true,
+      "full_export_audit_complete": true,
+      "elapsed_seconds": 29.06077166600153,
+      "peak_rss_bytes": 84082688,
+      "affine_nonzero_coefficients_checked": 112896
+    },
+    {
+      "file": "audit-selected-t2-eps6.json",
+      "passed": true,
+      "full_export_audit_complete": true,
+      "elapsed_seconds": 116.53258579201065,
+      "peak_rss_bytes": 97222656,
+      "affine_nonzero_coefficients_checked": 112896
+    },
+    {
+      "file": "audit-t1-sym.json",
+      "passed": true,
+      "full_export_audit_complete": true,
+      "elapsed_seconds": 4.948613249929622,
+      "peak_rss_bytes": 91045888,
+      "affine_nonzero_coefficients_checked": 63104
+    },
+    {
+      "file": "audit-t1-two-site-t2-sym-construction.json",
+      "passed": true,
+      "full_export_audit_complete": false,
+      "elapsed_seconds": 33.53306245803833,
+      "peak_rss_bytes": 146784256,
+      "affine_nonzero_coefficients_checked": null
+    },
+    {
+      "file": "audit-t1-two-site-t2-sym.json",
+      "passed": true,
+      "full_export_audit_complete": true,
+      "elapsed_seconds": 30.75643308297731,
+      "peak_rss_bytes": 132890624,
+      "affine_nonzero_coefficients_checked": 362097
+    },
+    {
+      "file": "audit-three-site-stars-clarabel.json",
+      "passed": true,
+      "full_export_audit_complete": true,
+      "elapsed_seconds": 11.952382582938299,
+      "peak_rss_bytes": 572784640,
+      "affine_nonzero_coefficients_checked": 856739
+    },
+    {
+      "file": "audit-two-site-spin-complete.json",
+      "passed": true,
+      "full_export_audit_complete": true,
+      "elapsed_seconds": 29.987516041845083,
+      "peak_rss_bytes": 159940608,
+      "affine_nonzero_coefficients_checked": 372286
+    },
+    {
+      "file": "audit-two-site-t2-sym.json",
+      "passed": true,
+      "full_export_audit_complete": true,
+      "elapsed_seconds": 34.386889667017385,
+      "peak_rss_bytes": 138592256,
+      "affine_nonzero_coefficients_checked": 335781
+    }
+  ],
+  "dual_witness_compressions": [
+    {
+      "directory": "compressed/full-t2prime-sym-q10",
+      "compression_seconds": 1.43637341610156,
+      "retained_factor_columns": 62,
+      "positive_square_terms_before_group_closure_and_residual_completion": 78,
+      "exact_verification_seconds": 1.3127874580677599,
+      "exact_verification_peak_rss_bytes": 76840960,
+      "certified_lower": "-8.764969112897",
+      "factor_entries": 6870
+    },
+    {
+      "directory": "compressed/two-site-t2-sym-q10",
+      "compression_seconds": 0.5007439171895385,
+      "retained_factor_columns": 83,
+      "positive_square_terms_before_group_closure_and_residual_completion": 93,
+      "exact_verification_seconds": 0.6377542910631746,
+      "exact_verification_peak_rss_bytes": 63946752,
+      "certified_lower": "-8.864558789095",
+      "factor_entries": 2346
+    }
+  ],
+  "sum_recorded_cluster_seconds": 105.9018616261892,
+  "sum_recorded_audit_seconds": 413.6918558739126,
+  "sum_recorded_compression_seconds": 1.9371173332910985,
+  "sum_recorded_compressed_exact_verification_seconds": 1.9505417491309345,
+  "additional_earlier_cylinder_run_seconds": 107.20985045912676,
+  "additional_earlier_cylinder_peak_rss_bytes": 1126678528,
+  "optimized_2x3_search_seconds": 0.9166597500443459,
+  "discovery_only_2x4_open_search_seconds": 8.901994958054274,
+  "notes": [
+    "These are per-process observed measurements on a workstation shared by concurrent agents.",
+    "Audits include independent CAR pattern tests, physical map reconstruction and symmetry/cone checks.",
+    "Original exact integer SOS verification is measured by lab004; compressed-certificate reverification is listed here separately.",
+    "Latest result JSON timings do not capture every exploratory failed invocation or earlier rerun; explicitly retained initial cylinder timing is listed separately.",
+    "Retained dual columns are witness ranks, not dimensions of the complete literal operator space including symmetry closure and residual positivity operators."
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "paired_inputs": 23,
+  "mean_qubit_ratio": 1.9979317313202076,
+  "median_qubit_ratio": 1.9820359281437125,
+  "mean_scale_ratio": 1.8056087416867899,
+  "beta_summary": {
+    "10.0": {
+      "paired": 23,
+      "standard_coverage_tv_25": 0,
+      "balanced_coverage_tv_25": 2,
+      "standard_coverage_tv_10": 0,
+      "balanced_coverage_tv_10": 0,
+      "standard_median_tv": 1.0,
+      "balanced_median_tv": 1.0,
+      "reference_inputs": 8,
+      "balanced_actual_original_optimum_improvements": 6,
+      "mean_original_optimum_ratio": 17.294459883248408,
+      "strict_root_order_balanced_numerical": 3,
+      "strict_root_order_standard_numerical": 0,
+      "maximum_standard_actual_aux_tv": 0.141779168085359,
+      "maximum_balanced_actual_aux_tv": 5.407051759456771e-16
+    },
+    "20.0": {
+      "paired": 23,
+      "standard_coverage_tv_25": 8,
+      "balanced_coverage_tv_25": 16,
+      "standard_coverage_tv_10": 7,
+      "balanced_coverage_tv_10": 10,
+      "standard_median_tv": 0.45276473202938045,
+      "balanced_median_tv": 0.15459261910303262,
+      "reference_inputs": 8,
+      "balanced_actual_original_optimum_improvements": 8,
+      "mean_original_optimum_ratio": 3.5244878988035637,
+      "strict_root_order_balanced_numerical": 6,
+      "strict_root_order_standard_numerical": 0,
+      "maximum_standard_actual_aux_tv": 0.0009792498372258717,
+      "maximum_balanced_actual_aux_tv": 5.474092299649581e-16
+    },
+    "40.0": {
+      "paired": 23,
+      "standard_coverage_tv_25": 22,
+      "balanced_coverage_tv_25": 23,
+      "standard_coverage_tv_10": 21,
+      "balanced_coverage_tv_10": 22,
+      "standard_median_tv": 0.03904318269323449,
+      "balanced_median_tv": 0.04874874257376242,
+      "reference_inputs": 8,
+      "balanced_actual_original_optimum_improvements": 8,
+      "mean_original_optimum_ratio": 2.5055769230138605,
+      "strict_root_order_balanced_numerical": 8,
+      "strict_root_order_standard_numerical": 0,
+      "maximum_standard_actual_aux_tv": 1.0479885592001417e-08,
+      "maximum_balanced_actual_aux_tv": 4.706720308168977e-16
+    },
+    "80.0": {
+      "paired": 23,
+      "standard_coverage_tv_25": 23,
+      "balanced_coverage_tv_25": 23,
+      "standard_coverage_tv_10": 23,
+      "balanced_coverage_tv_10": 23,
+      "standard_median_tv": 0.012383761860287954,
+      "balanced_median_tv": 0.04874529443672103,
+      "reference_inputs": 8,
+      "balanced_actual_original_optimum_improvements": 8,
+      "mean_original_optimum_ratio": 1.7403238930411724,
+      "strict_root_order_balanced_numerical": 8,
+      "strict_root_order_standard_numerical": 0,
+      "maximum_standard_actual_aux_tv": 2.1340833309544282e-16,
+      "maximum_balanced_actual_aux_tv": 5.282698627003233e-16
+    }
+  }
+}

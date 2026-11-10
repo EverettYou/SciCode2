@@ -1,0 +1,72 @@
+LAYERED OXIDE: SUPPLIED-DATA ANALYSIS
+
+Start with layered_oxide_analysis.pdf. It distinguishes measured empirical
+scales, conditional spectral results, rejected trial spectra, and unresolved
+microscopic inference. This package does not establish a single microscopic
+Hamiltonian or its complete phase diagram.
+
+CONTENTS
+  data/measurements.json and data/prompt.pdf: unchanged source copies.
+  data/source_manifest.json: SHA-256 checksums of those sources.
+  data/key_results.csv: concise numerical summary with conditional errors.
+  data/*.json: fits, covariances, assumptions and validation results.
+  data/*.npz: fit curves, bootstrap samples and spectral arrays.
+  figures/*.png: standalone high-resolution figures.
+  code/*.py: analysis and plotting code.
+
+RUNTIME
+  Python 3.13, NumPy 2.2.6, SciPy 1.15.3, Matplotlib 3.10.1 were used.
+  Report generation also uses ReportLab 4.4.9 and Pillow.
+  The report builder includes a fallback to the local Codex ReportLab bundle;
+  on another machine, install ReportLab normally. It falls back to Matplotlib's
+  bundled DejaVu fonts if the original font directory does not exist.
+  All measurement reads now use the bundled data/measurements.json copy.
+  Figures and fit results are already included; no rerun is needed to inspect.
+
+PRIMARY REPRODUCTION ORDER
+Run from this directory using a Python environment with the packages above:
+
+  python code/sts_fit.py
+  python code/sts_low_models.py
+  python code/sts_general_dispersion.py
+  python code/sts_half_linear_weights.py
+  python code/sts_bcs_density.py
+  python code/sts_bootstrap.py
+  python code/nmr_transport_analysis.py
+  python code/model_review_checks.py
+  python code/model_review_figures.py
+  python code/phase_constraints.py
+  python code/spectral_checks.py
+  python code/arpes_comparison.py
+
+The rejected intermediate-filling trials and their figures are reproduced by:
+
+  python code/bdg_fit.py
+  python code/bdg_general.py
+  python code/bdg_expanded.py
+  python code/bdg_linear_weights.py
+  python code/bdg_symmetric_poles.py
+  python code/bdg_symmetric_free_density.py
+  python code/bdg_symmetric_widths.py
+
+Then regenerate the report:
+
+  python code/build_report.py
+
+Some exploratory diagnostics have additional scripts and provenance files.
+Their results are retained to make model failures reviewable. Optimization
+trajectories may differ slightly with library versions. Random seeds are fixed
+in the uncertainty scripts. The STS bootstrap refits the high-temperature band
+and propagates it into the half-filled fit on every replicate.
+
+INTERPRETATION
+  The successful half-filled spectral ansatz is causal, positive and exactly
+  normalized, with filling 1/2 in the clean limit. Its zero-area confidence
+  interval is conditional on this spectral family and measurement model.
+  The auxiliary f operator is not an experimentally discovered physical orbital.
+  The nominal-0.3 ARPES panel is explicitly a rejected trial spectrum.
+  The nominal-0.2 BCS panel has a conditional number-equation tension.
+  No many-body phase diagram or ten-site material exact diagonalization is claimed.
+  The only many-body exact diagonalization performed is a 16-state Hubbard-dimer
+  consistency illustration; the other calculations are stated spectral ansatz
+  fits, response fits, momentum integrals and Kramers-Kronig checks.

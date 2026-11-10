@@ -1,0 +1,128 @@
+% Generated from TASK.md; sha256=d6de32fcf71690fed137a9761c22a5be4a81f31766d3ea9ddf61ed1c7c8909c6
+\documentclass[11pt,letterpaper]{article}
+\usepackage[margin=0.78in,headheight=15pt,headsep=17pt,footskip=27pt]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern,amsmath,amssymb,microtype,graphicx,longtable,booktabs,array}
+\usepackage{enumitem,xcolor,titlesec,fancyhdr,hyperref,needspace}
+\definecolor{accent}{HTML}{145E72}
+\definecolor{ink}{HTML}{172D3E}
+\hypersetup{colorlinks=true,urlcolor=accent,linkcolor=accent}
+\color{ink}
+\pagestyle{fancy}\fancyhf{}
+\fancyhead[L]{\footnotesize\sffamily\color{accent} SCI CODE 2 | RESEARCH BENCHMARK}
+\fancyhead[R]{\footnotesize\sffamily CANDIDATE 01}
+\fancyfoot[L]{\footnotesize\sffamily Review draft v0.8 | 16 October 2026}
+\fancyfoot[R]{\footnotesize\thepage}
+\renewcommand{\headrulewidth}{0.3pt}
+\renewcommand{\footrulewidth}{0.3pt}
+\setlength{\parindent}{0pt}\setlength{\parskip}{4pt}
+\setlength{\emergencystretch}{2em}
+\setlist{leftmargin=*,itemsep=3pt,topsep=4pt,parsep=0pt}
+\titleformat{\section}{\large\sffamily\bfseries\color{accent}}{}{0em}{}
+\titlespacing*{\section}{0pt}{12pt}{5pt}
+\widowpenalty=10000\clubpenalty=10000
+\newsavebox{\mathbox}
+\newcommand{\displayfit}[1]{\sbox{\mathbox}{$\displaystyle #1$}\ifdim\wd\mathbox>\linewidth\resizebox{\linewidth}{!}{\usebox{\mathbox}}\else\usebox{\mathbox}\fi}
+\begin{document}
+\fontsize{10.5}{12.7}\selectfont
+{\raggedright\hyphenpenalty=10000\exhyphenpenalty=10000\fontsize{24}{28}\selectfont\sffamily\bfseries How Much Symmetry Knowledge Does Decoding Need?\par}
+
+\vspace{7pt}{\large\sffamily\color{accent} The logical value of charge and irrep records under hidden-orientation SU(N) pair noise\par}
+
+\vspace{8pt}
+
+\section*{1. Research objective}
+
+For the channel defined below, determine when a full local SU(N) irrep record improves logical recovery beyond the local $\mathbb Z_N$ charge record, and how much of that information advantage a computationally practical decoder can retain as the patch grows. Focus on $N=3,4$, with $N=2$ as a control, and compare both richer records with syndrome-only decoding.\par
+
+Choose and justify a range of error rates $p\in[0,1]$ that can distinguish an information advantage, a small or absent advantage, and an algorithmic limitation. The principal result is a controlled finite-size comparison and an explanation tested on reserved inputs. A supported null result or informative bound is acceptable. A complete thermodynamic phase diagram and a large-$N$ theorem are optional extensions.\par
+
+\section*{2. Why this is unresolved}
+
+More informative observations cannot worsen the optimal decision when they are nested, but that ordering does not give the size or physical mechanism of the logical gain. Practical decoding can lose information that the record contains. A single most likely microscopic error also need not belong to the most probable logical class. The scientific challenge is to separate intrinsic information value from inference error, explain where a gain comes from, and determine what remains supported as genuinely two-dimensional patches grow.\par
+
+The channel below is a stipulated classical noise-and-observation model. Conditional independence of local irrep readouts, given the microscopic configuration, is part of its definition.\par
+
+\section*{3. Geometry and logical recovery}
+
+For integer $L\geq2$, consider points $(i,j)$ with $0\leq i\leq2L-1$ and $0\leq j\leq L$. The edges are:\par
+
+\begin{itemize}
+\item horizontal edges $((i,j),(i+1,j))$ for $0\leq i\leq2L-2$, only in the rows $1\leq j\leq L-1$ (rows $j=0$ and $j=L$ have no horizontal edges);
+\item vertical edges $((i,j),(i,j+1))$ for $0\leq j\leq L-1$, present exactly when $i+j$ is even.
+\end{itemize}
+
+The vertices are the endpoints of these edges; points of rows $0$ and $L$ that meet no edge are not vertices. Every vertex with $1\leq j\leq L-1$ has exactly one vertical edge, so the graph is a brick-wall drawing of a honeycomb patch whose interior faces are hexagons. Figure 1 shows $L=3$.\par
+
+The rows $j=0$ and $j=L$ are the two open (rough) boundaries. Each contains $L$ vertices of degree one, which are not measured. All vertices with $1\leq j\leq L-1$ are measured detectors; they have degree three, except the $2(L-1)$ detectors in the columns $i=0$ and $i=2L-1$, which form the closed (smooth) boundaries and have degree two. There are $3L^2-3L+1$ edges and $2L(L-1)$ detectors, and the shortest path between the two open boundaries has $2L-1$ edges.\par
+
+\begin{center}\begin{minipage}{\linewidth}\centering
+\includegraphics[width=\linewidth,height=2.85in,keepaspectratio]{figures/geometry-L3.png}
+\par\vspace{4pt}{\small Figure 1. The patch for $L=3$. (a) In the integer coordinates of the text. (b) The same graph drawn with hexagonal faces. Filled circles are detectors, open circles are unmeasured open-boundary vertices, and red edges form $\Gamma_T$.\par}
+\end{minipage}\end{center}
+
+Let $H$ be the detector-edge incidence matrix over $\mathbb F_2$, and let $\Gamma_T$ be the $L$ vertical edges that meet the top row $j=L$. For a binary edge vector $z$, define\par
+
+\begin{center}\displayfit{\ell(z)=\bigoplus_{e\in\Gamma_T} z_e.}\end{center}
+
+A decoder returns a binary correction $c$. On error vector $x$, it succeeds exactly when $Hc=Hx$ and $\ell(x\oplus c)=0$.\par
+
+\section*{4. Noise and public records}
+
+Independently on each edge, draw $x_e\sim\mathrm{Bernoulli}(p)$. For each active edge, independently choose one endpoint with probability $1/2$; it receives $V$ and the other endpoint receives $\bar V$. At detector $v$, let $a_v$ and $b_v$ be the numbers of $V$ and $\bar V$ received, and $s_v=(a_v+b_v)\ \mathrm{mod}\ 2$.\par
+
+\Needspace{4\baselineskip}
+
+Conditional on the microscopic configuration, each detector independently yields an irrep $R_v$ of SU(N) with\par
+
+\begin{center}\displayfit{P(R_v=R)=\frac{m_R(a_v,b_v)\,\mathrm{dim}\,R}{N^{a_v+b_v}},}\end{center}
+
+where $m_R(a,b)$ is the multiplicity of $R$ in $V^{\otimes a}\otimes\bar V^{\otimes b}$. Labels are isomorphism classes of SU(N) irreps. For example, $(a,b)=(1,1)$ gives the trivial irrep with probability $1/N^2$; at $N=2$, $n_v=2$ gives total spin $0$ or $1$ with probabilities $1/4$ and $3/4$.\par
+
+\Needspace{9\baselineskip}
+
+The three records, all given together with $(G_L,p,N)$, are:\par
+
+\begin{center}\begin{minipage}{\linewidth}\begin{tabular}{@{}p{0.29\linewidth}p{0.67\linewidth}@{}}
+\toprule \textbf{Record} & \textbf{Decoder-visible information} \\
+\midrule
+$O_0$ & syndrome $s$ \\[5pt]
+$O_1$ & $s$ and the charges $k_v=(a_v-b_v)\ \mathrm{mod}\ N$ \\[5pt]
+$O_2$ & $s$ and the irreps $R_v$ \\[5pt]
+\bottomrule\end{tabular}\end{minipage}\end{center}
+
+No decoder receives $x$, the orientations, $a_v$, $b_v$, or anything at the open boundaries. There is one round and no measurement error.\par
+
+An irrep with Dynkin labels $(w_1,\ldots,w_{N-1})$ has center charge $k(R)=\sum_{j=1}^{N-1}j w_j\pmod N$. Every irrep in the stipulated local tensor product has charge $(a_v-b_v)\pmod N$. Thus the irrep record determines the charge record, and either richer record determines the syndrome. Coupled comparisons can generate one microscopic trial and its irrep outcomes, then derive the coarser observations from that same trial.\par
+
+\section*{5. Logical risk and the value of information}
+
+For record type $r$ and a supported record $o$, let $Z_{r,\lambda}(o)$ be the total probability of microscopic errors, orientations and readout outcomes that produce $o$ and have $\ell(x)=\lambda$. Define\par
+
+\begin{center}\displayfit{q_{r,\lambda}(o)=\frac{Z_{r,\lambda}(o)}{Z_{r,0}(o)+Z_{r,1}(o)},\qquad R_{r,L}^*(p,N)=\mathbb E_o[1-\max_\lambda q_{r,\lambda}(o)].}\end{center}
+
+The expectation uses the physical record law. Unsupported records do not enter it; zero-mass sectors and ties must be handled explicitly. A submitted decoder $D_r$ has risk $R_{D_r,L}$ equal to its unconditional correction-failure probability under that same law, including randomness and invalid or missing outputs. The comparisons of interest are\par
+
+\begin{center}\displayfit{\Delta_{\rm info}=R_{1,L}^*-R_{2,L}^*,\qquad \Delta_{{\rm alg},r}=R_{D_r,L}-R_{r,L}^*.}\end{center}
+
+Report the syndrome-only baseline $R_{0,L}^*$ or controlled bounds as well. A difference between two practical decoders is not automatically $\Delta_{\rm info}$. Distinguish uncertainty in a Bayes reference from actual failures of a submitted decoder.\par
+
+\section*{6. Scientific investigation and evidence}
+
+Develop a public-input inference method for charge and irrep records. Establish independently checkable logical posteriors on small patches, including orientation averaging, local readout probabilities, sector sums, zero masses and ties. Then investigate increasing two-dimensional patches, including a regime beyond direct enumeration of all microscopic configurations. A valid exact reduction is welcome; its domain and complexity must be justified.\par
+
+Determine or informatively bound the information gain and the loss of at least one practical decoder under matched physical conditions. Where Bayes risk is not computed exactly, justify the reference uncertainty sufficiently to support the claimed comparison. Agreement between methods sharing the same approximation is not independent validation. Direct correction-success measurements validate practical risk; they do not alone establish posterior accuracy or Bayes optimality.\par
+
+Explain which public record structures are associated with the gain or the remaining ambiguity. Develop a quantitative prediction that distinguishes the proposed explanation from a plausible alternative, and check it on a size or parameter cohort reserved before tuning that explanation. Include the reserved result even when it contradicts the explanation. Methods, sizes, sampling allocation, representations and diagnostics remain researcher choices.\par
+
+Separate physical sampling, posterior approximation and finite-size uncertainty. Retain the mass of every sampled record: a failed reference calculation contributes unresolved probability to a bound, rather than disappearing from the average or becoming a physical Bayes failure. A decoder exception or invalid correction counts as an actual decoder failure. Unresolved results must give informative constraints and identify the missing evidence; vacuous intervals and unvalidated curves do not complete the investigation.\par
+
+\section*{7. Scope, resources and deliverables}
+
+Provide a concise English report stating the information comparison, practical-versus-optimal performance, mechanism, reserved prediction check, costs and limitations. Supply source, public or fully specified input generation, seeds, environment and commands reproducing the evidence. No private research record is required.\par
+
+Provide {\ttfamily\small decode(\allowbreak{}L,\allowbreak{} p,\allowbreak{} N,\allowbreak{} record\_\allowbreak{}type,\allowbreak{} record,\allowbreak{} rng=None)} returning a correction, and {\ttfamily\small posterior(\allowbreak{}L,\allowbreak{} p,\allowbreak{} N,\allowbreak{} record\_\allowbreak{}type,\allowbreak{} record)} returning $q_{r,0}$ or an explicitly qualified interval or estimate. Document how numerical uncertainty is justified; an empirical convergence diagnostic must not be presented as a rigorous certificate. Use {\ttfamily\small record\_\allowbreak{}type} equal to {\ttfamily\small O0}, {\ttfamily\small O1} or {\ttfamily\small O2}. A detector is its coordinate tuple {\ttfamily\small (\allowbreak{}i,\allowbreak{} j)}. Its record entry is {\ttfamily\small s} for {\ttfamily\small O0}, {\ttfamily\small (\allowbreak{}s,\allowbreak{} k)} for {\ttfamily\small O1}, and {\ttfamily\small (\allowbreak{}s,\allowbreak{} w)} for {\ttfamily\small O2}, where {\ttfamily\small w} is the tuple of $N-1$ Dynkin labels (for $N=2$, {\ttfamily\small (\allowbreak{}2J,\allowbreak{})}). An edge is its endpoint pair in lexicographic order; a correction is the set of edges with bit one. Decoders receive only the stipulated public inputs.\par
+
+Design a study feasible on a scientific workstation. Declare a resource allowance, stopping rules and comparison protocol before the main study, and report actual time and memory. Choose accuracy in relation to the scientific claim instead of assuming a universal numerical tolerance. No inference algorithm, positive information gain, exact transition location or prescribed scaling form is required.\par
+\end{document}

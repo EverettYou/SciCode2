@@ -1,0 +1,105 @@
+{
+  "name": "random_regular_n16_s2203",
+  "input_sha256": "91f3f59014a4196e84e1085682584f4e07093d49d5a5219a780b58e29c68b242",
+  "parameters": {
+    "n": 16,
+    "N": 59,
+    "eta": {
+      "numerator_hex": "0x1ccf7d7b52639",
+      "denominator_hex": "0x12000000000000"
+    },
+    "D": {
+      "numerator_hex": "0xb5",
+      "denominator_hex": "0x94"
+    },
+    "rho": {
+      "numerator_hex": "0x11",
+      "denominator_hex": "0x200000000000000"
+    },
+    "curvature": {
+      "numerator_hex": "0x28bd67706280b383",
+      "denominator_hex": "0xf9c00000000000000"
+    },
+    "g0": {
+      "numerator_hex": "0x3274ec6300a957",
+      "denominator_hex": "0x10000000000000"
+    },
+    "g1": {
+      "numerator_hex": "0x3274ec6300a957",
+      "denominator_hex": "0x10000000000000"
+    },
+    "lambda0": {
+      "numerator_hex": "0xc2af34c45ac45bad",
+      "denominator_hex": "0x400000000000000"
+    },
+    "lambda1": {
+      "numerator_hex": "0x61679be0c73a9e0b",
+      "denominator_hex": "0x200000000000000"
+    }
+  },
+  "parent_certificate": {
+    "coefficient_lower_exact": [
+      91738008265688653,
+      8998192055486251008
+    ],
+    "coefficient_lower": 0.01019516006104309,
+    "cost_advantage_positive": true,
+    "status": "strict_finite_forward_order",
+    "duration_exact": [
+      1,
+      32768
+    ],
+    "duration": 3.0517578125e-05,
+    "relative_probability_advantage_lower_exact": [
+      11397177526530428987347883624772800521291224559332374637522436193041907502789998101575010080892842656717753022956266359148592353029452933781022789303,
+      3802924367152730660836418420085868373767216409349609719781045482094711608659601140535927205523649888590384552989840656147189442898744560388769549927706299203584
+    ],
+    "relative_probability_advantage_lower": 2.9969508794263915e-12,
+    "remainder_upper_exact": [
+      283701083161730114344330956684194214148135808662136419165224863334625143804611970055951243582645010504529289547504724474799585,
+      43659540369352516441130789899639160244908276523019072911246798852969191211882864834466799092024213897623934486990542703962833095841808384
+    ],
+    "rounding_upper_exact": [
+      17,
+      4708328983001649824746
+    ],
+    "interpretation": "Actual rounded amplified program beats baseline at this certified standard-|+> finite-forward duration. This tiny interval is not a moderate-time guarantee."
+  },
+  "actual_curvature_global_control": {
+    "status": "strict_actual_original_optimum_order",
+    "duration": 3.0517578125e-05,
+    "duration_exact": {
+      "numerator_hex": "0x1",
+      "denominator_hex": "0x8000"
+    },
+    "relative_advantage_lower": 2.996950883036996e-12,
+    "relative_advantage_lower_exact": {
+      "numerator_hex": "0x1012db458299e84d8ef6e723766999fb1a3941f392f2c0d484035aa98056e9e574317e0ac453836042ee4bf77a0dd16bbc37d43",
+      "denominator_hex": "0x4e0bfcfd286605c0aba0e203d44c9a1184b74a9464cb3d835247cf6b413fd17da019756fd50c000000000000000000000000000000000000"
+    },
+    "remainder_exact": {
+      "numerator_hex": "0x8ee4a5490c71992b5707291d91d904233f1cc13ec13cad245f4ee1430999c1342e7a831e4c6fff268ba68b57fdba8823efbb",
+      "denominator_hex": "0x13ffff3a77847d808e621dbac45e74ded1cd14648da82a69ea8bde0678c2b54c864dc36114000000000000000000000000000000000000"
+    },
+    "menu_index": 15
+  },
+  "relative_event_local": {
+    "status": "strict_actual_original_optimum_order",
+    "duration": 6.103515625e-05,
+    "duration_exact": {
+      "numerator_hex": "0x1",
+      "denominator_hex": "0x4000"
+    },
+    "relative_advantage_lower": 5.960737215716079e-12,
+    "relative_advantage_lower_exact": {
+      "numerator_hex": "0xf27e79cf22b6731989ac2c8db62c031f72d2d9abc3b5344c9403e726fcdc7fe3142bd57a302a2aa8d97dcedc357eb6c0840d241ecad706d390b414f83981b4bcc2127cf456e35b5ff3ef9286c0e2b50564e382d76933f5d58cfb3de6e999b34b71e2ef5a5458551d1ce2f6709130898f102ff8f61a966413a778674cd8ea42b00bc86f54996746ca7687d3363f1e84d493c34c56fb038a76bedce622fb04552b65b70162998d1cd061e8712ca48770046ebca9b92df61ea9b356cf46e06bc26be17e80bce967626a78de3e679ab0e7778e77a6d03809081df14022280c899ef1b3d678f485104a13bf51ee3a1f18f3612690c7bb7761e0f06675b7f9b85aacbddeba62551b5e52edeac6ff759ff3ac3a8d98d045",
+      "denominator_hex": "0x24fffd81adae73561f7de07f107e718a26dc46f80dd5f82f506b28eb5d7d24a9b3c10b62b8c84aeca7ca8d60b78e911847fbd711a53c80b0567c817d5a631b390fc5cc0c29382870efe50d0709e7e47cb30e2e64615395c30d94b811ea704337f5008a99cd05f2800a930676a1e8ba17de9626ceb4bb37acd90872cffdcfb6e466f3afbd7cc1c0ebaf09ba92ee7f2427c4907dbe2cb1e0515b405908b428853d28adb43cfbf961e52d5c5a5628955b95c6d4debc5fbdf46cf48a3e7fc7fcfcbdf6bb7e4cc312036fe92c4ed8f411e766193cacb8934de2e95788b7557c57bd46b09e1140deedee7a5902b493b869950d8ba1ad8e6d12d7ecca9e9b0895f13ce2e219223025acee952500000000000000000000000000000000"
+    },
+    "remainder_exact": {
+      "numerator_hex": "0x233497af5cf78e1ec13784f875a0b5c666aafe90835cf71178c3833c540f7754cb1aef67f7ff4a59b2ddfe6bb752d04290620378d31fbbab6e97ecd6e73bbee8822e872b197419e599ec0f2369c8a875a1343c74d2350e08bd96fc0c86d300950e3b288ec4701eb22b077b0292ecc993a2249991f5aec70069c7434366162544b3da6d0598513f55f37c98d6241f1c7a735431c2c1a0d36348f22156d72ae99126ece74d504999153cc10162881a3dbe9800ab28a12a2b059ab74b7320fc781541d749191d6361d9201ce4f4b1f186bfb22114891d2bcae0a64d4613cd0153d98fe25ad9d4b481801d2fbb4a29860ed6f02c54ed411829b3ce246ccefa8a37fc88ba1c30a35104bdcd202da0f701625f4847fa5f",
+      "denominator_hex": "0xffffeebf8141633148975d614f8687317b933722f7f1f370e04d36cb2ce550b1d4c8f4d48fcaac733cd3637a9526841d9f05d00b628004c41133eea193f9d11c1a1a458492d0a91b3d8abb004489a281613f862c24da88bb2d886f2fd98546b3983b18e9dd90eeb42d7cb71921f73113da8b6d5ed4a0a3ce83b013758ffe062c4bc67abe2ec0065ead3c64d6036fae0c3b41ab31a3f14e4e9309534323b092f342f708913040ea84af78102a9c40bedbdc3d5f0981aca8ffb0b594c0374519e412e7bce2ad75b6eaa05528754c978d2346d43c57021ae3b641f71dfc7112f4129c7d01c0d5ff86c422aaef3c55e16f119c95fcee30f1143cd3daad347c243d7bbb7d76ec42f1b10100000000000000000000000000000000"
+    },
+    "menu_index": 14
+  },
+  "seconds": 0.006759915966540575
+}

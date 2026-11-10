@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "benchmark_id": "qec-annealing-embedding",
+  "question_revision": "0.4-finite-forward-general-H",
+  "created_at": "2026-10-07T18:41:59Z",
+  "phase": "early-question-revision",
+  "editorial_recommendation": "pass-to-testing",
+  "frozen_for_experiment": false,
+  "canonical_statement": "problem/TASK.md",
+  "convenience_copy": "evaluation/prompt.md",
+  "active_experimental_prompt_variants": [],
+  "required_input_files": [],
+  "input_contract": "General sparse H, feasible syndrome, finite signed mechanism weights, explicit hardware target and coefficient constraints; public finite-forward annealing model; no hidden error input.",
+  "optional_legacy_examples": [
+    "evaluation/inputs/seed-codes.json",
+    "evaluation/inputs/target-family.json"
+  ],
+  "hash_algorithm": "sha256",
+  "files": {
+    "problem/TASK.md": "a5a63231098651872e39336b3927403028d574f34d9646809866203328a5e7c4",
+    "problem/main.tex": "a5d0cfc859369561d092c52ef1136e740f1e248220a49e9083730ae027439673",
+    "problem/problem.pdf": "ed48c852865809452a28515cecb5655c83d4c0785eea203c612ebe7f4852e945",
+    "prompt.md": "af8d9f4a7b5f05fd0653b55ee7282de2349c9931d78ddeb792628a89d8706f99",
+    "evaluation/prompt.md": "af8d9f4a7b5f05fd0653b55ee7282de2349c9931d78ddeb792628a89d8706f99",
+    "README.md": "86760cd3173fb6d1a0f5e6e2e5ddc0421a0f0a386b05e9cc6e327947a3899ccf",
+    "problem/README.md": "9ff42c054376e1b02ddcf28e9b46cb6edd030bcb25c7b15a1700dce4c23ad027",
+    "evaluation/README.md": "f813604dba624cd8b0176f0ae20e4b28116262d8e4c57d0cbded29e418f2bcb5",
+    "evaluation/AUDIT.md": "7f63283339594ec9853c85fa918fe7bed1e9b99cbb729730f80612e6d901352c",
+    "metadata.yml": "4e40ab00c1721320c073a2193882bd7feacbdc79cd76b589f87ef385bfdbecee"
+  },
+  "author_requirements": {
+    "skills/create-benchmark/SKILL.md": "9a795e519be62e7dfccba7d6d04ddc74137faa7ef4c961c163621a2bb326206c",
+    "skills/create-benchmark/references/design-guidelines.md": "e2ac696e44930604616796da0b09861502a9df28a955a1c72c42c2bb368f8a72",
+    "docs/scicode2/requirements.md": "2453f9db323c67eff90df5ba78d25ed8b0d51a6f04b734ee6c9fe2ac0cccf320"
+  },
+  "reference_revision": null,
+  "evaluator_revision": null,
+  "model_trials": [],
+  "scientific_experiments": [],
+  "difficulty_status": "pass-to-testing by text-only judgment; useful-regime feasibility and empirical difficulty untested",
+  "example_bank_comparison": "pending-access",
+  "supersedes": "0.3-general-H",
+  "history": "problem/history/v0.3-general-H/",
+  "checks": {
+    "canonical_pdf_compile": "passed with TeX Live on 2026-10-16",
+    "pdf_pages": "3; text extracted and page renders reviewed before delivery",
+    "prompt_consistency": "root prompt and evaluation compatibility copy are byte-identical and contain current TASK.md body",
+    "historical_preservation": "revision 0.3 TASK, LaTeX, PDF, prompt, audit and version record preserved under problem/history/v0.3-general-H",
+    "research_execution": "none for revision 0.4",
+    "difficulty_calibration": "not performed"
+  },
+  "prompt_revision": "0.1-autonomous",
+  "canonical_prompt": "prompt.md",
+  "prompt_budget": {
+    "default_wall_clock_hours": 2,
+    "override": "execution-request budget; normally one to 24 hours",
+    "scope": "future run only"
+  },
+  "updated_at": "2026-10-16T15:21:05Z",
+  "prompt_design_requirements": {
+    "skills/test-benchmark/SKILL.md": "bedafe36c7a993762f95342798991cbc10a938d77fb1dbc6296d455699e4ff4a",
+    "skills/test-benchmark/references/prompt-design.md": "d924f61b741cdbf96cfb6673e7ffe3094cabb09f719632f685176231408033a3"
+  }
+}

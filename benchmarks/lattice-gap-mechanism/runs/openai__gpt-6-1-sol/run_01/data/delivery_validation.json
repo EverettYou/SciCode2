@@ -1,0 +1,33 @@
+{
+  "source_files": [
+    {
+      "file": "measurements.json",
+      "sha256": "dab44dfa1d052ed034c4cf632740411eed343c399f4ebb0045e9eea942b4ad7b",
+      "unchanged": true
+    },
+    {
+      "file": "prompt.pdf",
+      "sha256": "46874a6ff02cdc6545fd1b92d22c5ea5988b242f0fb78ca5f6ad2c49db4ce2ba",
+      "unchanged": true
+    }
+  ],
+  "python_syntax_files": 16,
+  "json_files": 23,
+  "png_files": 17,
+  "report_pages": 12,
+  "report_rendered_and_visually_inspected": true,
+  "report_status": "no_validated_joint_microscopic_solution",
+  "checks": [
+    "physical single-orbital Fock space",
+    "two-site analytical spectra",
+    "noninteracting spectrum and dispersion",
+    "warm/cold ground-state audit",
+    "spectral positivity, filling, first and second moments",
+    "spin sum rule",
+    "current commutator and optical sum rule",
+    "K-space Green function direct-resolvent audit",
+    "PDF layout and plot visual checks"
+  ],
+  "main_pdf_sha256": "976cbdfc9d4632cf26a3a7cc17794b4f3e85f6788622d2d10752e31c88899b23",
+  "scientific_review": "independent review completed; clarifications incorporated"
+}

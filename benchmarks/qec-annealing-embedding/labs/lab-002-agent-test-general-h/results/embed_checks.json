@@ -1,0 +1,500 @@
+{
+  "seed": 7107,
+  "versions": {
+    "networkx": "3.5",
+    "numpy": "2.2.6",
+    "minorminer": "0.2.21",
+    "dimod": "0.12.21",
+    "dwave-networkx": "0.8.18",
+    "dwave-system": "1.34.0"
+  },
+  "python": "3.13.2 (v3.13.2:4f8bb3947cf, Feb  4 2025, 11:51:10) [Clang 15.0.0 (clang-1500.3.9.4)]",
+  "platform": "macOS-26.5.1-arm64-arm-64bit-Mach-O",
+  "qubo_conversion": {
+    "assignments": 496,
+    "maximum_absolute_error": 1.7763568394002505e-15
+  },
+  "verifier_corruptions": {
+    "valid_case": true,
+    "invalid_cases_rejected": {
+      "missing_isolate": {
+        "valid": false,
+        "errors": [
+          {
+            "kind": "variable_set",
+            "missing": [
+              2
+            ],
+            "extra": []
+          },
+          {
+            "kind": "empty_chain",
+            "variable": 2
+          }
+        ],
+        "logical_variables": 3,
+        "logical_edges": 1,
+        "physical_qubits": 4,
+        "chain_max": 2,
+        "chain_mean": 1.3333333333333333
+      },
+      "overlap": {
+        "valid": false,
+        "errors": [
+          {
+            "kind": "overlap",
+            "qubit": 1,
+            "variables": [
+              0,
+              1
+            ]
+          }
+        ],
+        "logical_variables": 3,
+        "logical_edges": 1,
+        "physical_qubits": 4,
+        "chain_max": 2,
+        "chain_mean": 1.6666666666666667
+      },
+      "disconnected": {
+        "valid": false,
+        "errors": [
+          {
+            "kind": "disconnected_chain",
+            "variable": 0
+          }
+        ],
+        "logical_variables": 3,
+        "logical_edges": 1,
+        "physical_qubits": 4,
+        "chain_max": 2,
+        "chain_mean": 1.3333333333333333
+      },
+      "missing_coupler": {
+        "valid": false,
+        "errors": [
+          {
+            "kind": "missing_coupler",
+            "variables": [
+              0,
+              1
+            ]
+          }
+        ],
+        "logical_variables": 3,
+        "logical_edges": 1,
+        "physical_qubits": 3,
+        "chain_max": 1,
+        "chain_mean": 1.0
+      },
+      "empty_chain": {
+        "valid": false,
+        "errors": [
+          {
+            "kind": "empty_chain",
+            "variable": 0
+          },
+          {
+            "kind": "missing_coupler",
+            "variables": [
+              0,
+              1
+            ]
+          }
+        ],
+        "logical_variables": 3,
+        "logical_edges": 1,
+        "physical_qubits": 2,
+        "chain_max": 1,
+        "chain_mean": 0.6666666666666666
+      },
+      "unknown_target_node": {
+        "valid": false,
+        "errors": [
+          {
+            "kind": "unknown_qubits",
+            "variable": 0,
+            "qubits": [
+              100
+            ]
+          },
+          {
+            "kind": "missing_coupler",
+            "variables": [
+              0,
+              1
+            ]
+          }
+        ],
+        "logical_variables": 3,
+        "logical_edges": 1,
+        "physical_qubits": 2,
+        "chain_max": 1,
+        "chain_mean": 1.0
+      }
+    }
+  },
+  "pruning": {
+    "graphs_checked": 1024,
+    "all_valid": true,
+    "all_subsets_of_template": true,
+    "capacity": 24,
+    "target_g": 2
+  },
+  "physical_allocation": {
+    "instances": 16,
+    "consistent_assignment_checks": 144,
+    "physical_states_enumerated": 1076,
+    "broken_physical_ground_states": 0,
+    "maximum_raw_energy_error": 3.552713678800501e-15,
+    "group_constraints_checked": true
+  },
+  "exact_physical_allocation": {
+    "certified_instances": [
+      {
+        "trial": 0,
+        "physical_states": 64,
+        "ground_states_checked": 1,
+        "certificate": {
+          "float_ground_states_certified": true,
+          "condition": "all exact K_i>L_i, alpha>0, exact hardware ranges hold, and 2*rho<delta_physical",
+          "coefficient_error_l1_exact": [
+            0,
+            1
+          ],
+          "nonoptimal_gap_lower_bound_exact": [
+            1,
+            64
+          ],
+          "minimum_chain_margin_exact": [
+            1,
+            4
+          ],
+          "positive_exact_chain_margins": true,
+          "scale_exact": [
+            1,
+            16
+          ],
+          "offset_error_exact": [
+            0,
+            1
+          ],
+          "ranges": {
+            "valid": true,
+            "violations": [],
+            "arithmetic": "exact rational values of actual binary64 coefficients"
+          }
+        },
+        "scale_nextafter_adjustments": 0,
+        "corrupted_coefficient_rejected": true
+      },
+      {
+        "trial": 1,
+        "physical_states": 8,
+        "ground_states_checked": 1,
+        "certificate": {
+          "float_ground_states_certified": true,
+          "condition": "all exact K_i>L_i, alpha>0, exact hardware ranges hold, and 2*rho<delta_physical",
+          "coefficient_error_l1_exact": [
+            1,
+            72057594037927936
+          ],
+          "nonoptimal_gap_lower_bound_exact": [
+            2620276146833743,
+            72057594037927936
+          ],
+          "minimum_chain_margin_exact": null,
+          "positive_exact_chain_margins": true,
+          "scale_exact": [
+            2620276146833743,
+            18014398509481984
+          ],
+          "offset_error_exact": [
+            3,
+            144115188075855872
+          ],
+          "ranges": {
+            "valid": true,
+            "violations": [],
+            "arithmetic": "exact rational values of actual binary64 coefficients"
+          }
+        },
+        "scale_nextafter_adjustments": 1,
+        "corrupted_coefficient_rejected": true
+      },
+      {
+        "trial": 2,
+        "physical_states": 64,
+        "ground_states_checked": 1,
+        "certificate": {
+          "float_ground_states_certified": true,
+          "condition": "all exact K_i>L_i, alpha>0, exact hardware ranges hold, and 2*rho<delta_physical",
+          "coefficient_error_l1_exact": [
+            17,
+            1152921504606846976
+          ],
+          "nonoptimal_gap_lower_bound_exact": [
+            5764607523034235,
+            576460752303423488
+          ],
+          "minimum_chain_margin_exact": [
+            2,
+            1
+          ],
+          "positive_exact_chain_margins": true,
+          "scale_exact": [
+            5764607523034235,
+            144115188075855872
+          ],
+          "offset_error_exact": [
+            3,
+            72057594037927936
+          ],
+          "ranges": {
+            "valid": true,
+            "violations": [],
+            "arithmetic": "exact rational values of actual binary64 coefficients"
+          }
+        },
+        "scale_nextafter_adjustments": 0,
+        "corrupted_coefficient_rejected": true
+      },
+      {
+        "trial": 3,
+        "physical_states": 8,
+        "ground_states_checked": 1,
+        "certificate": {
+          "float_ground_states_certified": true,
+          "condition": "all exact K_i>L_i, alpha>0, exact hardware ranges hold, and 2*rho<delta_physical",
+          "coefficient_error_l1_exact": [
+            1,
+            144115188075855872
+          ],
+          "nonoptimal_gap_lower_bound_exact": [
+            2620276146833743,
+            144115188075855872
+          ],
+          "minimum_chain_margin_exact": null,
+          "positive_exact_chain_margins": true,
+          "scale_exact": [
+            2620276146833743,
+            36028797018963968
+          ],
+          "offset_error_exact": [
+            3,
+            288230376151711744
+          ],
+          "ranges": {
+            "valid": true,
+            "violations": [],
+            "arithmetic": "exact rational values of actual binary64 coefficients"
+          }
+        },
+        "scale_nextafter_adjustments": 1,
+        "corrupted_coefficient_rejected": true
+      },
+      {
+        "trial": 4,
+        "physical_states": 64,
+        "ground_states_checked": 1,
+        "certificate": {
+          "float_ground_states_certified": true,
+          "condition": "all exact K_i>L_i, alpha>0, exact hardware ranges hold, and 2*rho<delta_physical",
+          "coefficient_error_l1_exact": [
+            11,
+            576460752303423488
+          ],
+          "nonoptimal_gap_lower_bound_exact": [
+            6004799503160661,
+            576460752303423488
+          ],
+          "minimum_chain_margin_exact": [
+            9,
+            8
+          ],
+          "positive_exact_chain_margins": true,
+          "scale_exact": [
+            6004799503160661,
+            144115188075855872
+          ],
+          "offset_error_exact": [
+            27,
+            1152921504606846976
+          ],
+          "ranges": {
+            "valid": true,
+            "violations": [],
+            "arithmetic": "exact rational values of actual binary64 coefficients"
+          }
+        },
+        "scale_nextafter_adjustments": 0,
+        "corrupted_coefficient_rejected": true
+      },
+      {
+        "trial": 5,
+        "physical_states": 8,
+        "ground_states_checked": 1,
+        "certificate": {
+          "float_ground_states_certified": true,
+          "condition": "all exact K_i>L_i, alpha>0, exact hardware ranges hold, and 2*rho<delta_physical",
+          "coefficient_error_l1_exact": [
+            1,
+            72057594037927936
+          ],
+          "nonoptimal_gap_lower_bound_exact": [
+            2620276146833743,
+            72057594037927936
+          ],
+          "minimum_chain_margin_exact": null,
+          "positive_exact_chain_margins": true,
+          "scale_exact": [
+            2620276146833743,
+            18014398509481984
+          ],
+          "offset_error_exact": [
+            3,
+            144115188075855872
+          ],
+          "ranges": {
+            "valid": true,
+            "violations": [],
+            "arithmetic": "exact rational values of actual binary64 coefficients"
+          }
+        },
+        "scale_nextafter_adjustments": 1,
+        "corrupted_coefficient_rejected": true
+      },
+      {
+        "trial": 6,
+        "physical_states": 64,
+        "ground_states_checked": 1,
+        "certificate": {
+          "float_ground_states_certified": true,
+          "condition": "all exact K_i>L_i, alpha>0, exact hardware ranges hold, and 2*rho<delta_physical",
+          "coefficient_error_l1_exact": [
+            7,
+            144115188075855872
+          ],
+          "nonoptimal_gap_lower_bound_exact": [
+            2001599834386887,
+            72057594037927936
+          ],
+          "minimum_chain_margin_exact": [
+            1,
+            4
+          ],
+          "positive_exact_chain_margins": true,
+          "scale_exact": [
+            2001599834386887,
+            18014398509481984
+          ],
+          "offset_error_exact": [
+            1,
+            72057594037927936
+          ],
+          "ranges": {
+            "valid": true,
+            "violations": [],
+            "arithmetic": "exact rational values of actual binary64 coefficients"
+          }
+        },
+        "scale_nextafter_adjustments": 0,
+        "corrupted_coefficient_rejected": true
+      },
+      {
+        "trial": 7,
+        "physical_states": 8,
+        "ground_states_checked": 1,
+        "certificate": {
+          "float_ground_states_certified": true,
+          "condition": "all exact K_i>L_i, alpha>0, exact hardware ranges hold, and 2*rho<delta_physical",
+          "coefficient_error_l1_exact": [
+            1,
+            144115188075855872
+          ],
+          "nonoptimal_gap_lower_bound_exact": [
+            2620276146833743,
+            144115188075855872
+          ],
+          "minimum_chain_margin_exact": null,
+          "positive_exact_chain_margins": true,
+          "scale_exact": [
+            2620276146833743,
+            36028797018963968
+          ],
+          "offset_error_exact": [
+            3,
+            288230376151711744
+          ],
+          "ranges": {
+            "valid": true,
+            "violations": [],
+            "arithmetic": "exact rational values of actual binary64 coefficients"
+          }
+        },
+        "scale_nextafter_adjustments": 1,
+        "corrupted_coefficient_rejected": true
+      }
+    ],
+    "non_dyadic_decimal_input_example": {
+      "weights": [
+        0.1,
+        0.2,
+        0.3
+      ],
+      "compiler_certificate": {
+        "float_ground_states_certified": false,
+        "coefficient_error_l1_exact": [
+          7,
+          36028797018963968
+        ],
+        "nonoptimal_gap_lower_bound_exact": [
+          1,
+          36028797018963968
+        ],
+        "weight_lattice_step_exact": [
+          1,
+          36028797018963968
+        ],
+        "exact_penalty_margin": [
+          36028797018963971,
+          36028797018963968
+        ],
+        "offset_error_exact": [
+          0,
+          1
+        ],
+        "condition": "2 * coefficient_error_l1 < nonoptimal_gap_lower_bound"
+      },
+      "physical_certificate": {
+        "float_ground_states_certified": true,
+        "condition": "all exact K_i>L_i, alpha>0, exact hardware ranges hold, and 2*rho<delta_physical",
+        "coefficient_error_l1_exact": [
+          0,
+          1
+        ],
+        "nonoptimal_gap_lower_bound_exact": [
+          1,
+          36028797018963968
+        ],
+        "minimum_chain_margin_exact": null,
+        "positive_exact_chain_margins": true,
+        "scale_exact": [
+          1,
+          1
+        ],
+        "offset_error_exact": [
+          3,
+          72057594037927936
+        ],
+        "ranges": {
+          "valid": true,
+          "violations": [],
+          "arithmetic": "exact rational values of actual binary64 coefficients"
+        }
+      },
+      "interpretation": "false means sufficient numerical certificate is inconclusive, not a proof of wrong physical ground states"
+    }
+  },
+  "elapsed_seconds": 3.7891661250032485
+}

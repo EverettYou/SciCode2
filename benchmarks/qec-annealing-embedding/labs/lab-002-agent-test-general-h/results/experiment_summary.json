@@ -1,0 +1,1362 @@
+{
+  "python": "3.13.2",
+  "versions": {
+    "networkx": "3.5",
+    "numpy": "2.2.6",
+    "minorminer": "0.2.21",
+    "dimod": "0.12.21",
+    "dwave-networkx": "0.8.18",
+    "dwave-system": "1.34.0"
+  },
+  "seed": 20261007,
+  "target": {
+    "g": 6,
+    "t": 4,
+    "nodes": 1248,
+    "edges": 11400,
+    "ideal": true
+  },
+  "template_capacity": 97,
+  "template_preprocessing_seconds": 0.02552637504413724,
+  "conditions": {
+    "h_range": [
+      -4,
+      4
+    ],
+    "J_range": [
+      -1,
+      1
+    ],
+    "coupling_group_range": [
+      -13,
+      10
+    ],
+    "status": "illustrative parametric ranges, no device export",
+    "cap_scale_at_one": true
+  },
+  "matrix_update_seconds": 0.0029248748905956745,
+  "cases": [
+    {
+      "name": "banded_three_body",
+      "n": 16,
+      "m": 14,
+      "nnz": 42,
+      "max_row_degree": 3,
+      "max_column_degree": 3,
+      "zero_columns": 0,
+      "qubo_variables": 44,
+      "actual_edges": 98,
+      "structural_edges": 98,
+      "compilation_seconds": 0.0021510841324925423,
+      "mappings": [
+        {
+          "method": "template_full",
+          "valid": true,
+          "errors": [],
+          "logical_variables": 44,
+          "logical_edges": 98,
+          "physical_qubits": 516,
+          "chain_max": 12,
+          "chain_mean": 11.727272727272727,
+          "scale": 0.0018115942028985507,
+          "scale_limiter": "J",
+          "programming_seconds": 0.09500591596588492,
+          "certificate_seconds": 0.004195499932393432,
+          "certificate_status": "inconclusive",
+          "certificate_g": -37.91256014492754,
+          "consistent_energy_max_error": 4.440892098500626e-14,
+          "physical_rounding_certificate": {
+            "float_ground_states_certified": true,
+            "condition": "all exact K_i>L_i, alpha>0, exact hardware ranges hold, and 2*rho<delta_physical",
+            "coefficient_error_l1_exact": [
+              685819,
+              73786976294838206464
+            ],
+            "nonoptimal_gap_lower_bound_exact": [
+              8354503656571355,
+              18446744073709551616
+            ],
+            "minimum_chain_margin_exact": [
+              1,
+              1
+            ],
+            "positive_exact_chain_margins": true,
+            "scale_exact": [
+              8354503656571355,
+              4611686018427387904
+            ],
+            "offset_error_exact": [
+              23755,
+              9223372036854775808
+            ],
+            "ranges": {
+              "valid": true,
+              "violations": [],
+              "arithmetic": "exact rational values of actual binary64 coefficients"
+            }
+          },
+          "embedding_seconds": 3.004097379744053e-05,
+          "independent_embedding_validation_seconds": 0.004244958981871605,
+          "embedding_with_validation_seconds": 0.0042749999556690454
+        },
+        {
+          "method": "template_pruned",
+          "valid": true,
+          "errors": [],
+          "logical_variables": 44,
+          "logical_edges": 98,
+          "physical_qubits": 126,
+          "chain_max": 6,
+          "chain_mean": 2.8636363636363638,
+          "scale": 0.0018115942028985507,
+          "scale_limiter": "J",
+          "programming_seconds": 0.07466245885007083,
+          "certificate_seconds": 0.0013387498911470175,
+          "certificate_status": "inconclusive",
+          "certificate_g": -37.15178695652174,
+          "consistent_energy_max_error": 1.4210854715202004e-14,
+          "physical_rounding_certificate": {
+            "float_ground_states_certified": true,
+            "condition": "all exact K_i>L_i, alpha>0, exact hardware ranges hold, and 2*rho<delta_physical",
+            "coefficient_error_l1_exact": [
+              78879,
+              36893488147419103232
+            ],
+            "nonoptimal_gap_lower_bound_exact": [
+              8354503656571355,
+              18446744073709551616
+            ],
+            "minimum_chain_margin_exact": [
+              1,
+              1
+            ],
+            "positive_exact_chain_margins": true,
+            "scale_exact": [
+              8354503656571355,
+              4611686018427387904
+            ],
+            "offset_error_exact": [
+              51039,
+              9223372036854775808
+            ],
+            "ranges": {
+              "valid": true,
+              "violations": [],
+              "arithmetic": "exact rational values of actual binary64 coefficients"
+            }
+          },
+          "embedding_seconds": 0.0004274998791515827,
+          "independent_embedding_validation_seconds": 0.002073083072900772,
+          "embedding_with_validation_seconds": 0.002500582952052355
+        },
+        {
+          "method": "minorminer_11",
+          "valid": true,
+          "errors": [],
+          "logical_variables": 44,
+          "logical_edges": 98,
+          "physical_qubits": 50,
+          "chain_max": 2,
+          "chain_mean": 1.1363636363636365,
+          "scale": 0.0018115942028985507,
+          "scale_limiter": "J",
+          "programming_seconds": 0.07223545806482434,
+          "certificate_seconds": 0.0006486671045422554,
+          "certificate_status": "inconclusive",
+          "certificate_g": -36.06178913043479,
+          "consistent_energy_max_error": 1.7763568394002505e-15,
+          "physical_rounding_certificate": {
+            "float_ground_states_certified": true,
+            "condition": "all exact K_i>L_i, alpha>0, exact hardware ranges hold, and 2*rho<delta_physical",
+            "coefficient_error_l1_exact": [
+              16423,
+              36893488147419103232
+            ],
+            "nonoptimal_gap_lower_bound_exact": [
+              8354503656571355,
+              18446744073709551616
+            ],
+            "minimum_chain_margin_exact": [
+              1,
+              1
+            ],
+            "positive_exact_chain_margins": true,
+            "scale_exact": [
+              8354503656571355,
+              4611686018427387904
+            ],
+            "offset_error_exact": [
+              8029,
+              9223372036854775808
+            ],
+            "ranges": {
+              "valid": true,
+              "violations": [],
+              "arithmetic": "exact rational values of actual binary64 coefficients"
+            }
+          },
+          "embedding_seconds": 0.05668674991466105,
+          "embedding_with_validation_seconds": 0.05668674991466105
+        },
+        {
+          "method": "minorminer_29",
+          "valid": true,
+          "errors": [],
+          "logical_variables": 44,
+          "logical_edges": 98,
+          "physical_qubits": 52,
+          "chain_max": 2,
+          "chain_mean": 1.1818181818181819,
+          "scale": 0.0018115942028985507,
+          "scale_limiter": "J",
+          "programming_seconds": 0.09709441708400846,
+          "certificate_seconds": 0.0009216251783072948,
+          "certificate_status": "inconclusive",
+          "certificate_g": -36.236155072463774,
+          "consistent_energy_max_error": 1.7763568394002505e-15,
+          "physical_rounding_certificate": {
+            "float_ground_states_certified": true,
+            "condition": "all exact K_i>L_i, alpha>0, exact hardware ranges hold, and 2*rho<delta_physical",
+            "coefficient_error_l1_exact": [
+              8793,
+              18446744073709551616
+            ],
+            "nonoptimal_gap_lower_bound_exact": [
+              8354503656571355,
+              18446744073709551616
+            ],
+            "minimum_chain_margin_exact": [
+              1,
+              1
+            ],
+            "positive_exact_chain_margins": true,
+            "scale_exact": [
+              8354503656571355,
+              4611686018427387904
+            ],
+            "offset_error_exact": [
+              20627,
+              36893488147419103232
+            ],
+            "ranges": {
+              "valid": true,
+              "violations": [],
+              "arithmetic": "exact rational values of actual binary64 coefficients"
+            }
+          },
+          "embedding_seconds": 0.0722640419844538,
+          "embedding_with_validation_seconds": 0.0722640419844538
+        },
+        {
+          "method": "minorminer_47",
+          "valid": true,
+          "errors": [],
+          "logical_variables": 44,
+          "logical_edges": 98,
+          "physical_qubits": 52,
+          "chain_max": 2,
+          "chain_mean": 1.1818181818181819,
+          "scale": 0.0018124150430448573,
+          "scale_limiter": "J",
+          "programming_seconds": 0.17249987507238984,
+          "certificate_seconds": 0.0011401670053601265,
+          "certificate_status": "inconclusive",
+          "certificate_g": -36.981160670593574,
+          "consistent_energy_max_error": 1.7763568394002505e-15,
+          "physical_rounding_certificate": {
+            "float_ground_states_certified": true,
+            "condition": "all exact K_i>L_i, alpha>0, exact hardware ranges hold, and 2*rho<delta_physical",
+            "coefficient_error_l1_exact": [
+              17701,
+              18446744073709551616
+            ],
+            "nonoptimal_gap_lower_bound_exact": [
+              8358289113597441,
+              18446744073709551616
+            ],
+            "minimum_chain_margin_exact": [
+              1,
+              1
+            ],
+            "positive_exact_chain_margins": true,
+            "scale_exact": [
+              8358289113597441,
+              4611686018427387904
+            ],
+            "offset_error_exact": [
+              3765,
+              36893488147419103232
+            ],
+            "ranges": {
+              "valid": true,
+              "violations": [],
+              "arithmetic": "exact rational values of actual binary64 coefficients"
+            }
+          },
+          "embedding_seconds": 0.07420150004327297,
+          "embedding_with_validation_seconds": 0.07420150004327297
+        }
+      ],
+      "numeric_update_mean_seconds": 0.00247495201183483,
+      "numeric_update_trials": 20
+    },
+    {
+      "name": "irregular_hyperchecks",
+      "n": 18,
+      "m": 10,
+      "nnz": 44,
+      "max_row_degree": 5,
+      "max_column_degree": 6,
+      "zero_columns": 2,
+      "qubo_variables": 66,
+      "actual_edges": 154,
+      "structural_edges": 154,
+      "compilation_seconds": 0.003695625113323331,
+      "mappings": [
+        {
+          "method": "template_full",
+          "valid": true,
+          "errors": [],
+          "logical_variables": 66,
+          "logical_edges": 154,
+          "physical_qubits": 780,
+          "chain_max": 12,
+          "chain_mean": 11.818181818181818,
+          "scale": 0.0009987515605493133,
+          "scale_limiter": "J",
+          "programming_seconds": 0.22235966683365405,
+          "certificate_seconds": 0.006367333000525832,
+          "certificate_status": "inconclusive",
+          "certificate_g": -31.830808988764044,
+          "consistent_energy_max_error": 7.904787935331115e-14,
+          "physical_rounding_certificate": {
+            "float_ground_states_certified": true,
+            "condition": "all exact K_i>L_i, alpha>0, exact hardware ranges hold, and 2*rho<delta_physical",
+            "coefficient_error_l1_exact": [
+              591367,
+              36893488147419103232
+            ],
+            "nonoptimal_gap_lower_bound_exact": [
+              4605928607667803,
+              18446744073709551616
+            ],
+            "minimum_chain_margin_exact": [
+              1,
+              1
+            ],
+            "positive_exact_chain_margins": true,
+            "scale_exact": [
+              4605928607667803,
+              4611686018427387904
+            ],
+            "offset_error_exact": [
+              41925,
+              2305843009213693952
+            ],
+            "ranges": {
+              "valid": true,
+              "violations": [],
+              "arithmetic": "exact rational values of actual binary64 coefficients"
+            }
+          },
+          "embedding_seconds": 9.154202416539192e-05,
+          "independent_embedding_validation_seconds": 0.00842450000345707,
+          "embedding_with_validation_seconds": 0.008516042027622461
+        },
+        {
+          "method": "template_pruned",
+          "valid": true,
+          "errors": [],
+          "logical_variables": 66,
+          "logical_edges": 154,
+          "physical_qubits": 287,
+          "chain_max": 9,
+          "chain_mean": 4.348484848484849,
+          "scale": 0.0009987515605493133,
+          "scale_limiter": "J",
+          "programming_seconds": 0.08542966586537659,
+          "certificate_seconds": 0.0026603329461067915,
+          "certificate_status": "inconclusive",
+          "certificate_g": -31.481184769038702,
+          "consistent_energy_max_error": 1.3322676295501878e-14,
+          "physical_rounding_certificate": {
+            "float_ground_states_certified": true,
+            "condition": "all exact K_i>L_i, alpha>0, exact hardware ranges hold, and 2*rho<delta_physical",
+            "coefficient_error_l1_exact": [
+              220247,
+              36893488147419103232
+            ],
+            "nonoptimal_gap_lower_bound_exact": [
+              4605928607667803,
+              18446744073709551616
+            ],
+            "minimum_chain_margin_exact": [
+              1,
+              1
+            ],
+            "positive_exact_chain_margins": true,
+            "scale_exact": [
+              4605928607667803,
+              4611686018427387904
+            ],
+            "offset_error_exact": [
+              9133,
+              36893488147419103232
+            ],
+            "ranges": {
+              "valid": true,
+              "violations": [],
+              "arithmetic": "exact rational values of actual binary64 coefficients"
+            }
+          },
+          "embedding_seconds": 0.0006934998091310263,
+          "independent_embedding_validation_seconds": 0.003003791905939579,
+          "embedding_with_validation_seconds": 0.0036972917150706053
+        },
+        {
+          "method": "minorminer_11",
+          "valid": true,
+          "errors": [],
+          "logical_variables": 66,
+          "logical_edges": 154,
+          "physical_qubits": 88,
+          "chain_max": 3,
+          "chain_mean": 1.3333333333333333,
+          "scale": 0.0009987515605493133,
+          "scale_limiter": "J",
+          "programming_seconds": 0.07447895780205727,
+          "certificate_seconds": 0.0011095409281551838,
+          "certificate_status": "inconclusive",
+          "certificate_g": -31.16755742821473,
+          "consistent_energy_max_error": 2.220446049250313e-15,
+          "physical_rounding_certificate": {
+            "float_ground_states_certified": true,
+            "condition": "all exact K_i>L_i, alpha>0, exact hardware ranges hold, and 2*rho<delta_physical",
+            "coefficient_error_l1_exact": [
+              19765,
+              18446744073709551616
+            ],
+            "nonoptimal_gap_lower_bound_exact": [
+              4605928607667803,
+              18446744073709551616
+            ],
+            "minimum_chain_margin_exact": [
+              1,
+              1
+            ],
+            "positive_exact_chain_margins": true,
+            "scale_exact": [
+              4605928607667803,
+              4611686018427387904
+            ],
+            "offset_error_exact": [
+              2367,
+              9223372036854775808
+            ],
+            "ranges": {
+              "valid": true,
+              "violations": [],
+              "arithmetic": "exact rational values of actual binary64 coefficients"
+            }
+          },
+          "embedding_seconds": 0.148126499960199,
+          "embedding_with_validation_seconds": 0.148126499960199
+        },
+        {
+          "method": "minorminer_29",
+          "valid": true,
+          "errors": [],
+          "logical_variables": 66,
+          "logical_edges": 154,
+          "physical_qubits": 86,
+          "chain_max": 3,
+          "chain_mean": 1.303030303030303,
+          "scale": 0.0009987515605493133,
+          "scale_limiter": "J",
+          "programming_seconds": 0.12183783389627934,
+          "certificate_seconds": 0.0017022080719470978,
+          "certificate_status": "inconclusive",
+          "certificate_g": -31.167457428214732,
+          "consistent_energy_max_error": 1.7763568394002505e-15,
+          "physical_rounding_certificate": {
+            "float_ground_states_certified": true,
+            "condition": "all exact K_i>L_i, alpha>0, exact hardware ranges hold, and 2*rho<delta_physical",
+            "coefficient_error_l1_exact": [
+              35197,
+              36893488147419103232
+            ],
+            "nonoptimal_gap_lower_bound_exact": [
+              4605928607667803,
+              18446744073709551616
+            ],
+            "minimum_chain_margin_exact": [
+              1,
+              1
+            ],
+            "positive_exact_chain_margins": true,
+            "scale_exact": [
+              4605928607667803,
+              4611686018427387904
+            ],
+            "offset_error_exact": [
+              30499,
+              36893488147419103232
+            ],
+            "ranges": {
+              "valid": true,
+              "violations": [],
+              "arithmetic": "exact rational values of actual binary64 coefficients"
+            }
+          },
+          "embedding_seconds": 0.22193345800042152,
+          "embedding_with_validation_seconds": 0.22193345800042152
+        },
+        {
+          "method": "minorminer_47",
+          "valid": true,
+          "errors": [],
+          "logical_variables": 66,
+          "logical_edges": 154,
+          "physical_qubits": 90,
+          "chain_max": 3,
+          "chain_mean": 1.3636363636363635,
+          "scale": 0.0009987515605493133,
+          "scale_limiter": "J",
+          "programming_seconds": 0.1216502080205828,
+          "certificate_seconds": 0.0017737499438226223,
+          "certificate_status": "inconclusive",
+          "certificate_g": -31.167457428214732,
+          "consistent_energy_max_error": 1.7763568394002505e-15,
+          "physical_rounding_certificate": {
+            "float_ground_states_certified": true,
+            "condition": "all exact K_i>L_i, alpha>0, exact hardware ranges hold, and 2*rho<delta_physical",
+            "coefficient_error_l1_exact": [
+              41067,
+              36893488147419103232
+            ],
+            "nonoptimal_gap_lower_bound_exact": [
+              4605928607667803,
+              18446744073709551616
+            ],
+            "minimum_chain_margin_exact": [
+              1,
+              1
+            ],
+            "positive_exact_chain_margins": true,
+            "scale_exact": [
+              4605928607667803,
+              4611686018427387904
+            ],
+            "offset_error_exact": [
+              12909,
+              36893488147419103232
+            ],
+            "ranges": {
+              "valid": true,
+              "violations": [],
+              "arithmetic": "exact rational values of actual binary64 coefficients"
+            }
+          },
+          "embedding_seconds": 0.16063495795242488,
+          "embedding_with_validation_seconds": 0.16063495795242488
+        }
+      ],
+      "numeric_update_mean_seconds": 0.0026393438689410686,
+      "numeric_update_trials": 20
+    },
+    {
+      "name": "high_column_degree_redundant_isolate",
+      "n": 18,
+      "m": 12,
+      "nnz": 44,
+      "max_row_degree": 4,
+      "max_column_degree": 11,
+      "zero_columns": 1,
+      "qubo_variables": 62,
+      "actual_edges": 140,
+      "structural_edges": 140,
+      "compilation_seconds": 0.002588667208328843,
+      "mappings": [
+        {
+          "method": "template_full",
+          "valid": true,
+          "errors": [],
+          "logical_variables": 62,
+          "logical_edges": 140,
+          "physical_qubits": 732,
+          "chain_max": 12,
+          "chain_mean": 11.806451612903226,
+          "scale": 0.00036345463631820454,
+          "scale_limiter": "J",
+          "programming_seconds": 0.1231839160900563,
+          "certificate_seconds": 0.005297292023897171,
+          "certificate_status": "inconclusive",
+          "certificate_g": -10.867348380355278,
+          "consistent_energy_max_error": 1.3766765505351941e-14,
+          "physical_rounding_certificate": {
+            "float_ground_states_certified": true,
+            "condition": "all exact K_i>L_i, alpha>0, exact hardware ranges hold, and 2*rho<delta_physical",
+            "coefficient_error_l1_exact": [
+              406607,
+              73786976294838206464
+            ],
+            "nonoptimal_gap_lower_bound_exact": [
+              1676138664641275,
+              18446744073709551616
+            ],
+            "minimum_chain_margin_exact": [
+              1,
+              1
+            ],
+            "positive_exact_chain_margins": true,
+            "scale_exact": [
+              1676138664641275,
+              4611686018427387904
+            ],
+            "offset_error_exact": [
+              18333,
+              18446744073709551616
+            ],
+            "ranges": {
+              "valid": true,
+              "violations": [],
+              "arithmetic": "exact rational values of actual binary64 coefficients"
+            }
+          },
+          "embedding_seconds": 3.224983811378479e-05,
+          "independent_embedding_validation_seconds": 0.0055690419394522905,
+          "embedding_with_validation_seconds": 0.005601291777566075
+        },
+        {
+          "method": "template_pruned",
+          "valid": true,
+          "errors": [],
+          "logical_variables": 62,
+          "logical_edges": 140,
+          "physical_qubits": 264,
+          "chain_max": 8,
+          "chain_mean": 4.258064516129032,
+          "scale": 0.00036345463631820454,
+          "scale_limiter": "J",
+          "programming_seconds": 0.08037970797158778,
+          "certificate_seconds": 0.0023569168988615274,
+          "certificate_status": "inconclusive",
+          "certificate_g": -10.748066589432558,
+          "consistent_energy_max_error": 7.993605777301127e-15,
+          "physical_rounding_certificate": {
+            "float_ground_states_certified": true,
+            "condition": "all exact K_i>L_i, alpha>0, exact hardware ranges hold, and 2*rho<delta_physical",
+            "coefficient_error_l1_exact": [
+              38073,
+              18446744073709551616
+            ],
+            "nonoptimal_gap_lower_bound_exact": [
+              1676138664641275,
+              18446744073709551616
+            ],
+            "minimum_chain_margin_exact": [
+              1,
+              1
+            ],
+            "positive_exact_chain_margins": true,
+            "scale_exact": [
+              1676138664641275,
+              4611686018427387904
+            ],
+            "offset_error_exact": [
+              13009,
+              4611686018427387904
+            ],
+            "ranges": {
+              "valid": true,
+              "violations": [],
+              "arithmetic": "exact rational values of actual binary64 coefficients"
+            }
+          },
+          "embedding_seconds": 0.0006240839138627052,
+          "independent_embedding_validation_seconds": 0.002626375062391162,
+          "embedding_with_validation_seconds": 0.003250458976253867
+        },
+        {
+          "method": "minorminer_11",
+          "valid": true,
+          "errors": [],
+          "logical_variables": 62,
+          "logical_edges": 140,
+          "physical_qubits": 82,
+          "chain_max": 4,
+          "chain_mean": 1.3225806451612903,
+          "scale": 0.00036345463631820454,
+          "scale_limiter": "J",
+          "programming_seconds": 0.14182216697372496,
+          "certificate_seconds": 0.0016753750387579203,
+          "certificate_status": "inconclusive",
+          "certificate_g": -10.589229916859752,
+          "consistent_energy_max_error": 8.881784197001252e-16,
+          "physical_rounding_certificate": {
+            "float_ground_states_certified": true,
+            "condition": "all exact K_i>L_i, alpha>0, exact hardware ranges hold, and 2*rho<delta_physical",
+            "coefficient_error_l1_exact": [
+              21687,
+              36893488147419103232
+            ],
+            "nonoptimal_gap_lower_bound_exact": [
+              1676138664641275,
+              18446744073709551616
+            ],
+            "minimum_chain_margin_exact": [
+              1,
+              1
+            ],
+            "positive_exact_chain_margins": true,
+            "scale_exact": [
+              1676138664641275,
+              4611686018427387904
+            ],
+            "offset_error_exact": [
+              823,
+              36893488147419103232
+            ],
+            "ranges": {
+              "valid": true,
+              "violations": [],
+              "arithmetic": "exact rational values of actual binary64 coefficients"
+            }
+          },
+          "embedding_seconds": 0.2992332079447806,
+          "embedding_with_validation_seconds": 0.2992332079447806
+        },
+        {
+          "method": "minorminer_29",
+          "valid": true,
+          "errors": [],
+          "logical_variables": 62,
+          "logical_edges": 140,
+          "physical_qubits": 82,
+          "chain_max": 4,
+          "chain_mean": 1.3225806451612903,
+          "scale": 0.00036345463631820454,
+          "scale_limiter": "J",
+          "programming_seconds": 0.0754361660219729,
+          "certificate_seconds": 0.0010122498497366905,
+          "certificate_status": "inconclusive",
+          "certificate_g": -10.589329916859752,
+          "consistent_energy_max_error": 1.7763568394002505e-15,
+          "physical_rounding_certificate": {
+            "float_ground_states_certified": true,
+            "condition": "all exact K_i>L_i, alpha>0, exact hardware ranges hold, and 2*rho<delta_physical",
+            "coefficient_error_l1_exact": [
+              10873,
+              18446744073709551616
+            ],
+            "nonoptimal_gap_lower_bound_exact": [
+              1676138664641275,
+              18446744073709551616
+            ],
+            "minimum_chain_margin_exact": [
+              1,
+              1
+            ],
+            "positive_exact_chain_margins": true,
+            "scale_exact": [
+              1676138664641275,
+              4611686018427387904
+            ],
+            "offset_error_exact": [
+              16223,
+              18446744073709551616
+            ],
+            "ranges": {
+              "valid": true,
+              "violations": [],
+              "arithmetic": "exact rational values of actual binary64 coefficients"
+            }
+          },
+          "embedding_seconds": 0.3052155419718474,
+          "embedding_with_validation_seconds": 0.3052155419718474
+        },
+        {
+          "method": "minorminer_47",
+          "valid": true,
+          "errors": [],
+          "logical_variables": 62,
+          "logical_edges": 140,
+          "physical_qubits": 82,
+          "chain_max": 4,
+          "chain_mean": 1.3225806451612903,
+          "scale": 0.00036345463631820454,
+          "scale_limiter": "J",
+          "programming_seconds": 0.12130449991673231,
+          "certificate_seconds": 0.001022583106532693,
+          "certificate_status": "inconclusive",
+          "certificate_g": -10.62622969878697,
+          "consistent_energy_max_error": 8.881784197001252e-16,
+          "physical_rounding_certificate": {
+            "float_ground_states_certified": true,
+            "condition": "all exact K_i>L_i, alpha>0, exact hardware ranges hold, and 2*rho<delta_physical",
+            "coefficient_error_l1_exact": [
+              10545,
+              18446744073709551616
+            ],
+            "nonoptimal_gap_lower_bound_exact": [
+              1676138664641275,
+              18446744073709551616
+            ],
+            "minimum_chain_margin_exact": [
+              1,
+              1
+            ],
+            "positive_exact_chain_margins": true,
+            "scale_exact": [
+              1676138664641275,
+              4611686018427387904
+            ],
+            "offset_error_exact": [
+              4039,
+              18446744073709551616
+            ],
+            "ranges": {
+              "valid": true,
+              "violations": [],
+              "arithmetic": "exact rational values of actual binary64 coefficients"
+            }
+          },
+          "embedding_seconds": 0.11775758396834135,
+          "embedding_with_validation_seconds": 0.11775758396834135
+        }
+      ],
+      "numeric_update_mean_seconds": 0.001780462544411421,
+      "numeric_update_trials": 20
+    },
+    {
+      "name": "graphlike_incidence",
+      "n": 24,
+      "m": 12,
+      "nnz": 48,
+      "max_row_degree": 7,
+      "max_column_degree": 2,
+      "zero_columns": 0,
+      "qubo_variables": 74,
+      "actual_edges": 160,
+      "structural_edges": 160,
+      "compilation_seconds": 0.0019416247960180044,
+      "mappings": [
+        {
+          "method": "template_full",
+          "valid": true,
+          "errors": [],
+          "logical_variables": 74,
+          "logical_edges": 160,
+          "physical_qubits": 876,
+          "chain_max": 12,
+          "chain_mean": 11.837837837837839,
+          "scale": 0.00199203187250996,
+          "scale_limiter": "J",
+          "programming_seconds": 0.10674508404918015,
+          "certificate_seconds": 0.0064694578759372234,
+          "certificate_status": "inconclusive",
+          "certificate_g": -65.43321752988048,
+          "consistent_energy_max_error": 6.927791673660977e-14,
+          "physical_rounding_certificate": {
+            "float_ground_states_certified": true,
+            "condition": "all exact K_i>L_i, alpha>0, exact hardware ranges hold, and 2*rho<delta_physical",
+            "coefficient_error_l1_exact": [
+              461211,
+              18446744073709551616
+            ],
+            "nonoptimal_gap_lower_bound_exact": [
+              1148328191839489,
+              2305843009213693952
+            ],
+            "minimum_chain_margin_exact": [
+              1,
+              1
+            ],
+            "positive_exact_chain_margins": true,
+            "scale_exact": [
+              1148328191839489,
+              576460752303423488
+            ],
+            "offset_error_exact": [
+              13803,
+              2305843009213693952
+            ],
+            "ranges": {
+              "valid": true,
+              "violations": [],
+              "arithmetic": "exact rational values of actual binary64 coefficients"
+            }
+          },
+          "embedding_seconds": 2.8458889573812485e-05,
+          "independent_embedding_validation_seconds": 0.0046362499706447124,
+          "embedding_with_validation_seconds": 0.004664708860218525
+        },
+        {
+          "method": "template_pruned",
+          "valid": true,
+          "errors": [],
+          "logical_variables": 74,
+          "logical_edges": 160,
+          "physical_qubits": 364,
+          "chain_max": 10,
+          "chain_mean": 4.918918918918919,
+          "scale": 0.00199203187250996,
+          "scale_limiter": "J",
+          "programming_seconds": 0.09245416708290577,
+          "certificate_seconds": 0.004391042049974203,
+          "certificate_status": "inconclusive",
+          "certificate_g": -65.38142151394423,
+          "consistent_energy_max_error": 3.019806626980426e-14,
+          "physical_rounding_certificate": {
+            "float_ground_states_certified": true,
+            "condition": "all exact K_i>L_i, alpha>0, exact hardware ranges hold, and 2*rho<delta_physical",
+            "coefficient_error_l1_exact": [
+              45721,
+              4611686018427387904
+            ],
+            "nonoptimal_gap_lower_bound_exact": [
+              1148328191839489,
+              2305843009213693952
+            ],
+            "minimum_chain_margin_exact": [
+              1,
+              1
+            ],
+            "positive_exact_chain_margins": true,
+            "scale_exact": [
+              1148328191839489,
+              576460752303423488
+            ],
+            "offset_error_exact": [
+              8693,
+              4611686018427387904
+            ],
+            "ranges": {
+              "valid": true,
+              "violations": [],
+              "arithmetic": "exact rational values of actual binary64 coefficients"
+            }
+          },
+          "embedding_seconds": 0.0007451251149177551,
+          "independent_embedding_validation_seconds": 0.003095207968726754,
+          "embedding_with_validation_seconds": 0.0038403330836445093
+        },
+        {
+          "method": "minorminer_11",
+          "valid": true,
+          "errors": [],
+          "logical_variables": 74,
+          "logical_edges": 160,
+          "physical_qubits": 92,
+          "chain_max": 2,
+          "chain_mean": 1.2432432432432432,
+          "scale": 0.00199252801992528,
+          "scale_limiter": "J",
+          "programming_seconds": 0.14196595805697143,
+          "certificate_seconds": 0.0016736248508095741,
+          "certificate_status": "inconclusive",
+          "certificate_g": -64.58416488169365,
+          "consistent_energy_max_error": 3.552713678800501e-15,
+          "physical_rounding_certificate": {
+            "float_ground_states_certified": true,
+            "condition": "all exact K_i>L_i, alpha>0, exact hardware ranges hold, and 2*rho<delta_physical",
+            "coefficient_error_l1_exact": [
+              9701,
+              9223372036854775808
+            ],
+            "nonoptimal_gap_lower_bound_exact": [
+              4594456805407111,
+              9223372036854775808
+            ],
+            "minimum_chain_margin_exact": [
+              1,
+              1
+            ],
+            "positive_exact_chain_margins": true,
+            "scale_exact": [
+              4594456805407111,
+              2305843009213693952
+            ],
+            "offset_error_exact": [
+              7329,
+              4611686018427387904
+            ],
+            "ranges": {
+              "valid": true,
+              "violations": [],
+              "arithmetic": "exact rational values of actual binary64 coefficients"
+            }
+          },
+          "embedding_seconds": 0.3347383339423686,
+          "embedding_with_validation_seconds": 0.3347383339423686
+        },
+        {
+          "method": "minorminer_29",
+          "valid": true,
+          "errors": [],
+          "logical_variables": 74,
+          "logical_edges": 160,
+          "physical_qubits": 94,
+          "chain_max": 3,
+          "chain_mean": 1.2702702702702702,
+          "scale": 0.001993024414549078,
+          "scale_limiter": "J",
+          "programming_seconds": 0.1479085828177631,
+          "certificate_seconds": 0.0022984170354902744,
+          "certificate_status": "inconclusive",
+          "certificate_g": -64.6003509217738,
+          "consistent_energy_max_error": 3.552713678800501e-15,
+          "physical_rounding_certificate": {
+            "float_ground_states_certified": true,
+            "condition": "all exact K_i>L_i, alpha>0, exact hardware ranges hold, and 2*rho<delta_physical",
+            "coefficient_error_l1_exact": [
+              51041,
+              18446744073709551616
+            ],
+            "nonoptimal_gap_lower_bound_exact": [
+              4595601413480207,
+              9223372036854775808
+            ],
+            "minimum_chain_margin_exact": [
+              1,
+              1
+            ],
+            "positive_exact_chain_margins": true,
+            "scale_exact": [
+              4595601413480207,
+              2305843009213693952
+            ],
+            "offset_error_exact": [
+              15077,
+              18446744073709551616
+            ],
+            "ranges": {
+              "valid": true,
+              "violations": [],
+              "arithmetic": "exact rational values of actual binary64 coefficients"
+            }
+          },
+          "embedding_seconds": 0.13678287505172193,
+          "embedding_with_validation_seconds": 0.13678287505172193
+        },
+        {
+          "method": "minorminer_47",
+          "valid": true,
+          "errors": [],
+          "logical_variables": 74,
+          "logical_edges": 160,
+          "physical_qubits": 95,
+          "chain_max": 2,
+          "chain_mean": 1.2837837837837838,
+          "scale": 0.00199203187250996,
+          "scale_limiter": "J",
+          "programming_seconds": 0.17374958284199238,
+          "certificate_seconds": 0.0032187080942094326,
+          "certificate_status": "inconclusive",
+          "certificate_g": -64.56808685258964,
+          "consistent_energy_max_error": 3.552713678800501e-15,
+          "physical_rounding_certificate": {
+            "float_ground_states_certified": true,
+            "condition": "all exact K_i>L_i, alpha>0, exact hardware ranges hold, and 2*rho<delta_physical",
+            "coefficient_error_l1_exact": [
+              8057,
+              4611686018427387904
+            ],
+            "nonoptimal_gap_lower_bound_exact": [
+              1148328191839489,
+              2305843009213693952
+            ],
+            "minimum_chain_margin_exact": [
+              1,
+              1
+            ],
+            "positive_exact_chain_margins": true,
+            "scale_exact": [
+              1148328191839489,
+              576460752303423488
+            ],
+            "offset_error_exact": [
+              5269,
+              4611686018427387904
+            ],
+            "ranges": {
+              "valid": true,
+              "violations": [],
+              "arithmetic": "exact rational values of actual binary64 coefficients"
+            }
+          },
+          "embedding_seconds": 0.156677832826972,
+          "embedding_with_validation_seconds": 0.156677832826972
+        }
+      ],
+      "numeric_update_mean_seconds": 0.0038617102894932032,
+      "numeric_update_trials": 20
+    },
+    {
+      "name": "single_large_hypercheck",
+      "n": 30,
+      "m": 1,
+      "nnz": 30,
+      "max_row_degree": 30,
+      "max_column_degree": 1,
+      "zero_columns": 0,
+      "qubo_variables": 86,
+      "actual_edges": 169,
+      "structural_edges": 169,
+      "compilation_seconds": 0.00316762481816113,
+      "mappings": [
+        {
+          "method": "template_full",
+          "valid": true,
+          "errors": [],
+          "logical_variables": 86,
+          "logical_edges": 169,
+          "physical_qubits": 1020,
+          "chain_max": 12,
+          "chain_mean": 11.86046511627907,
+          "scale": 0.0024937655860349127,
+          "scale_limiter": "J",
+          "programming_seconds": 0.1379359159618616,
+          "certificate_seconds": 0.006923874840140343,
+          "certificate_status": "inconclusive",
+          "certificate_g": -84.41933167082294,
+          "consistent_energy_max_error": 1.1368683772161603e-13,
+          "physical_rounding_certificate": {
+            "float_ground_states_certified": true,
+            "condition": "all exact K_i>L_i, alpha>0, exact hardware ranges hold, and 2*rho<delta_physical",
+            "coefficient_error_l1_exact": [
+              14287,
+              576460752303423488
+            ],
+            "nonoptimal_gap_lower_bound_exact": [
+              2875115971588147,
+              4611686018427387904
+            ],
+            "minimum_chain_margin_exact": [
+              1,
+              1
+            ],
+            "positive_exact_chain_margins": true,
+            "scale_exact": [
+              2875115971588147,
+              1152921504606846976
+            ],
+            "offset_error_exact": [
+              106457,
+              2305843009213693952
+            ],
+            "ranges": {
+              "valid": true,
+              "violations": [],
+              "arithmetic": "exact rational values of actual binary64 coefficients"
+            }
+          },
+          "embedding_seconds": 4.170904867351055e-05,
+          "independent_embedding_validation_seconds": 0.008897207910194993,
+          "embedding_with_validation_seconds": 0.008938916958868504
+        },
+        {
+          "method": "template_pruned",
+          "valid": true,
+          "errors": [],
+          "logical_variables": 86,
+          "logical_edges": 169,
+          "physical_qubits": 475,
+          "chain_max": 11,
+          "chain_mean": 5.523255813953488,
+          "scale": 0.0024937655860349127,
+          "scale_limiter": "J",
+          "programming_seconds": 0.08873987500555813,
+          "certificate_seconds": 0.0037019159644842148,
+          "certificate_status": "inconclusive",
+          "certificate_g": -83.37306608478804,
+          "consistent_energy_max_error": 4.085620730620576e-14,
+          "physical_rounding_certificate": {
+            "float_ground_states_certified": true,
+            "condition": "all exact K_i>L_i, alpha>0, exact hardware ranges hold, and 2*rho<delta_physical",
+            "coefficient_error_l1_exact": [
+              13249,
+              1152921504606846976
+            ],
+            "nonoptimal_gap_lower_bound_exact": [
+              2875115971588147,
+              4611686018427387904
+            ],
+            "minimum_chain_margin_exact": [
+              1,
+              1
+            ],
+            "positive_exact_chain_margins": true,
+            "scale_exact": [
+              2875115971588147,
+              1152921504606846976
+            ],
+            "offset_error_exact": [
+              45989,
+              2305843009213693952
+            ],
+            "ranges": {
+              "valid": true,
+              "violations": [],
+              "arithmetic": "exact rational values of actual binary64 coefficients"
+            }
+          },
+          "embedding_seconds": 0.0007259580306708813,
+          "independent_embedding_validation_seconds": 0.003189167007803917,
+          "embedding_with_validation_seconds": 0.003915125038474798
+        },
+        {
+          "method": "minorminer_11",
+          "valid": true,
+          "errors": [],
+          "logical_variables": 86,
+          "logical_edges": 169,
+          "physical_qubits": 93,
+          "chain_max": 2,
+          "chain_mean": 1.0813953488372092,
+          "scale": 0.0024937655860349127,
+          "scale_limiter": "J",
+          "programming_seconds": 0.1357359578832984,
+          "certificate_seconds": 0.001436250051483512,
+          "certificate_status": "inconclusive",
+          "certificate_g": -83.33827231920199,
+          "consistent_energy_max_error": 3.552713678800501e-15,
+          "physical_rounding_certificate": {
+            "float_ground_states_certified": true,
+            "condition": "all exact K_i>L_i, alpha>0, exact hardware ranges hold, and 2*rho<delta_physical",
+            "coefficient_error_l1_exact": [
+              17817,
+              9223372036854775808
+            ],
+            "nonoptimal_gap_lower_bound_exact": [
+              2875115971588147,
+              4611686018427387904
+            ],
+            "minimum_chain_margin_exact": [
+              1,
+              1
+            ],
+            "positive_exact_chain_margins": true,
+            "scale_exact": [
+              2875115971588147,
+              1152921504606846976
+            ],
+            "offset_error_exact": [
+              9133,
+              9223372036854775808
+            ],
+            "ranges": {
+              "valid": true,
+              "violations": [],
+              "arithmetic": "exact rational values of actual binary64 coefficients"
+            }
+          },
+          "embedding_seconds": 0.05914166709408164,
+          "embedding_with_validation_seconds": 0.05914166709408164
+        },
+        {
+          "method": "minorminer_29",
+          "valid": true,
+          "errors": [],
+          "logical_variables": 86,
+          "logical_edges": 169,
+          "physical_qubits": 99,
+          "chain_max": 2,
+          "chain_mean": 1.1511627906976745,
+          "scale": 0.0024937655860349127,
+          "scale_limiter": "J",
+          "programming_seconds": 0.12524591688998044,
+          "certificate_seconds": 0.0015755000058561563,
+          "certificate_status": "inconclusive",
+          "certificate_g": -82.5888957605985,
+          "consistent_energy_max_error": 3.552713678800501e-15,
+          "physical_rounding_certificate": {
+            "float_ground_states_certified": true,
+            "condition": "all exact K_i>L_i, alpha>0, exact hardware ranges hold, and 2*rho<delta_physical",
+            "coefficient_error_l1_exact": [
+              19347,
+              9223372036854775808
+            ],
+            "nonoptimal_gap_lower_bound_exact": [
+              2875115971588147,
+              4611686018427387904
+            ],
+            "minimum_chain_margin_exact": [
+              1,
+              1
+            ],
+            "positive_exact_chain_margins": true,
+            "scale_exact": [
+              2875115971588147,
+              1152921504606846976
+            ],
+            "offset_error_exact": [
+              9817,
+              9223372036854775808
+            ],
+            "ranges": {
+              "valid": true,
+              "violations": [],
+              "arithmetic": "exact rational values of actual binary64 coefficients"
+            }
+          },
+          "embedding_seconds": 0.11034037498757243,
+          "embedding_with_validation_seconds": 0.11034037498757243
+        },
+        {
+          "method": "minorminer_47",
+          "valid": true,
+          "errors": [],
+          "logical_variables": 86,
+          "logical_edges": 169,
+          "physical_qubits": 101,
+          "chain_max": 2,
+          "chain_mean": 1.1744186046511629,
+          "scale": 0.0024937655860349127,
+          "scale_limiter": "J",
+          "programming_seconds": 0.19123454205691814,
+          "certificate_seconds": 0.0018682500813156366,
+          "certificate_status": "inconclusive",
+          "certificate_g": -83.33390822942644,
+          "consistent_energy_max_error": 3.552713678800501e-15,
+          "physical_rounding_certificate": {
+            "float_ground_states_certified": true,
+            "condition": "all exact K_i>L_i, alpha>0, exact hardware ranges hold, and 2*rho<delta_physical",
+            "coefficient_error_l1_exact": [
+              9921,
+              4611686018427387904
+            ],
+            "nonoptimal_gap_lower_bound_exact": [
+              2875115971588147,
+              4611686018427387904
+            ],
+            "minimum_chain_margin_exact": [
+              1,
+              1
+            ],
+            "positive_exact_chain_margins": true,
+            "scale_exact": [
+              2875115971588147,
+              1152921504606846976
+            ],
+            "offset_error_exact": [
+              1231,
+              1152921504606846976
+            ],
+            "ranges": {
+              "valid": true,
+              "violations": [],
+              "arithmetic": "exact rational values of actual binary64 coefficients"
+            }
+          },
+          "embedding_seconds": 0.13031587493605912,
+          "embedding_with_validation_seconds": 0.13031587493605912
+        }
+      ],
+      "numeric_update_mean_seconds": 0.0035080918110907077,
+      "numeric_update_trials": 20
+    }
+  ],
+  "elapsed_seconds": 9.149656290886924,
+  "process_maxrss_bytes_macos": 208158720
+}

@@ -1,0 +1,26 @@
+{
+  "units": "all energies and temperatures in units of D; momenta in units of 2pi/a",
+  "lattice": "square, one transition-metal site (one orbital) per unit cell, spin-1/2 electrons; filling nu = n/2",
+  "dispersion": "eps_k = -2 t (cos kx + cos ky) - 4 t' cos kx cos ky  (band width 8t = 7.9, van Hove at (1/2,0): eps = +4t')",
+  "hamiltonian_coefficients": {
+    "t":  {"value": 0.99,  "uncertainty": 0.01,  "from": "band width in Fig.1(c),(d): 0.995+-0.003 and 0.984+-0.005; systematic from broadening model"},
+    "t'": {"value": 0.195, "uncertainty": 0.005, "from": "van Hove position in Fig.1(a),(c),(d): 0.198+-0.002, 0.192+-0.003, 0.194 (sign: vH above band centre)"},
+    "U":  {"value": 12.02, "uncertainty": 0.05,  "from": "separation of the two Hubbard bands in Fig.1(a): 12.023+-0.013 (stat.)"},
+    "g":  {"value": 6.1,   "uncertainty": 0.2,   "from": "cutoff-free BCS gap equation with Delta(0.2)=1.967 (g=5.97) and Delta(0.3)=2.45 (g=6.25)"},
+    "mu(nu=0.2)": -1.93, "mu(nu=0.3)": -0.93, "mu(nu=1/2)": "midgap, i.e. U/2 - 2t' above the atomic level"
+  },
+  "derived": {
+    "Mott_bands": "E_pm(k) = +-U/2 + eps_k/2 + c0, c0 = -(eps_min+eps_max)/4 = 0.39; compression 0.515+-0.03 (fit) ; weights (1 -+ eps_k/U)/2, slope (1.02+-0.07)/U",
+    "Mott_gap_edges": "+-4.02 (full gap 8.05)",
+    "Delta_nu0.2": 1.967, "Tc_nu0.2_bracket": [1.075, 1.15], "Tc_MF_nu0.2_g6.1": 1.12, "two_Delta_over_Tc_nu0.2": 3.5,
+    "gap_edge_nu0.3": 2.45, "Tc_nu0.3_bracket": [0.325, 0.40], "Tstar_nu0.3": "3.5 +- 1 (gap closed at T>=4.4 in NMR, open below ~4 in resistivity)",
+    "NMR_activation_energies": {"nu=1/2": "5.5+-0.4", "nu=0.3": "2.64+-0.07", "nu=0.2": "1.73+-0.04 (BCS; Hebel-Slichter peak 1.8 just below Tc)"},
+    "resistivity": {"nu=1/2": "activated, 3.7+-0.1 (p=0) / 4.4 (p=1)", "nu=0.3": "rho=0 below Tc; above: insulating-like, 0.94+-0.09 (p=0)", "nu=0.2": "rho=0 below Tc; above rho ~ T^(0.7-1)"},
+    "Luttinger": {"ReG_k0_min": 0.0108, "ReG_k0_max": 0.0121, "zero_energy_omega0": 0.39, "fraction_eps_lt_0": 0.417, "fraction_eps_lt_band_centre": 0.313},
+    "vH_filling": 0.58,
+    "kF_nu0.2": {"(1,0)": 0.252, "(1,1)": 0.177}, "kF_nu0.3": {"(1,0)": 0.310, "(1,1)": 0.215}
+  },
+  "pseudogap_state_nu0.3_parameters": {"c": 4.650, "a": 0.558, "b": 0.0181, "Delta1": 2.45, "alpha": 1.031, "beta": 0.507, "mu_prime": -0.897,
+     "meaning": "A(k,w)=Z_k[p+ d(w-E_k)+p- d(w+E_k)], E_k=c+a eps+b eps^2, Z_k=u_k^2 of BCS(Delta1) on bare band, p+- = (1 +- xt_k/E_k)/2, xt_k = alpha+beta eps_k"},
+  "numerics": "k grids 700x700 (fits), 400x400 (final model), Gaussian instrumental broadening 0.10-0.19, Lorentzian eta=0.12 for ARPES maps, Kramers-Kronig on 16001-point frequency grid"
+}

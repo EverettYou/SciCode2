@@ -1,0 +1,159 @@
+{
+  "geometry": {
+    "w": 2,
+    "h": 2,
+    "periodic_x": false,
+    "periodic_y": false,
+    "sites": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "edges": [
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        2,
+        1
+      ],
+      [
+        1,
+        3,
+        1
+      ],
+      [
+        2,
+        3,
+        0
+      ]
+    ]
+  },
+  "n": 4,
+  "weights": [
+    2.0,
+    2.0,
+    2.0,
+    2.0
+  ],
+  "us": [
+    8.0,
+    8.0,
+    8.0,
+    8.0
+  ],
+  "spin_lower_bounds": [
+    -1.0000000000000002e-12,
+    -4.000000000001013,
+    -4.000000000001038,
+    -4.000000000001013,
+    -1.0000000000000002e-12
+  ],
+  "results": [
+    {
+      "lower": -12.205496966926274,
+      "ritz": -12.20549696692416,
+      "dimension": 36,
+      "eta": 1.0623229258481052e-13,
+      "residual_norm_bound": 1.1121396298024318e-12,
+      "sparse_row_nnz": 9,
+      "entry_roundoff_bound": 2.8885359442216737e-14,
+      "method": "full-eigenbasis-residual",
+      "a": 2,
+      "b": 2,
+      "seconds": 0.007299457909539342
+    },
+    {
+      "lower": -11.612847703647462,
+      "ritz": -11.612847703646217,
+      "dimension": 16,
+      "eta": 2.6841807498192078e-14,
+      "residual_norm_bound": 2.4415820661117775e-13,
+      "sparse_row_nnz": 5,
+      "entry_roundoff_bound": 1.3710599579475119e-14,
+      "method": "full-eigenbasis-residual",
+      "a": 1,
+      "b": 3,
+      "seconds": 0.0017643331084400415
+    },
+    {
+      "a": 0,
+      "b": 4,
+      "lower": -8.000000000003002,
+      "dimension": 1,
+      "method": "kinetic-plus-min-interaction",
+      "seconds": 2.0458130165934563e-05
+    },
+    {
+      "a": 1,
+      "b": 2,
+      "lower": -12.000000000003054,
+      "dimension": 24,
+      "method": "kinetic-plus-min-interaction",
+      "seconds": 1.550000160932541e-05
+    },
+    {
+      "a": 0,
+      "b": 3,
+      "lower": -8.000000000003016,
+      "dimension": 4,
+      "method": "kinetic-plus-min-interaction",
+      "seconds": 1.3625016435980797e-05
+    },
+    {
+      "a": 1,
+      "b": 1,
+      "lower": -8.000000000003029,
+      "dimension": 16,
+      "method": "kinetic-plus-min-interaction",
+      "seconds": 1.3209180906414986e-05
+    },
+    {
+      "a": 0,
+      "b": 2,
+      "lower": -4.000000000003039,
+      "dimension": 6,
+      "method": "kinetic-plus-min-interaction",
+      "seconds": 1.2499978765845299e-05
+    },
+    {
+      "a": 0,
+      "b": 1,
+      "lower": -3.013500477460184e-12,
+      "dimension": 4,
+      "method": "kinetic-plus-min-interaction",
+      "seconds": 1.200009137392044e-05
+    },
+    {
+      "a": 0,
+      "b": 0,
+      "lower": 7.999999999996999,
+      "dimension": 1,
+      "method": "kinetic-plus-min-interaction",
+      "seconds": 1.1874828487634659e-05
+    }
+  ],
+  "cluster_ritz": -12.20549696692416,
+  "cluster_lower": -12.205496966926274,
+  "target_lower": -16.821987867705097,
+  "target_ritz_suggested": -16.82198786769664,
+  "elapsed_seconds": 0.03986562509089708,
+  "peak_rss_bytes": 59195392,
+  "numerical_model": "IEEE754 binary64 round-to-nearest; standard gamma_k dot-product bounds"
+}

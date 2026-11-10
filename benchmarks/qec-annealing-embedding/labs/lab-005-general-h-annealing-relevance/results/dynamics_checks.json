@@ -1,0 +1,136 @@
+{
+  "status": "pass",
+  "records": [
+    {
+      "beta": 2.0,
+      "physical_sites": 9,
+      "gap": 0.004075386199656195,
+      "exact_rayleigh_upper": 0.008069773149186197,
+      "actual_chain_break": 0.018418541316514256,
+      "root_flow": 0.0019859460610911687,
+      "cheap_certificate": {
+        "original_variable": 0,
+        "free_origin": 0,
+        "kernel_support": [
+          0,
+          1
+        ],
+        "absolute_weight_cost": 0.75,
+        "branch_size": 2,
+        "branch_defect_bound": 0.04761904761904765,
+        "logical_marginal_min": 0.40694710083429725,
+        "physical_marginal_min": 0.35932805311524957,
+        "root": 0,
+        "status": "certified",
+        "gap_upper_per_attempt": 0.02298324589394592,
+        "mixing_time_lower_attempts_tv_quarter": 29.810886161166014,
+        "mixing_time_lower_sweeps_tv_quarter": 3.3123206845740016
+      },
+      "warm_wrong_root_readout": [
+        {
+          "attempts": 1,
+          "actual_optimum_probability": 0.0022586534805147233,
+          "crossing_upper_bound": 0.00453904475443949
+        },
+        {
+          "attempts": 10,
+          "actual_optimum_probability": 0.015817832246488025,
+          "crossing_upper_bound": 0.0453904475443949
+        },
+        {
+          "attempts": 100,
+          "actual_optimum_probability": 0.09825774186334624,
+          "crossing_upper_bound": 0.45390447544394896
+        },
+        {
+          "attempts": 1000,
+          "actual_optimum_probability": 0.27844723862304804,
+          "crossing_upper_bound": 1.0
+        }
+      ],
+      "symmetry_error": 5.551115123125783e-17
+    },
+    {
+      "beta": 5.0,
+      "physical_sites": 9,
+      "gap": 3.5948255538764684e-05,
+      "exact_rayleigh_upper": 8.038363972707822e-05,
+      "actual_chain_break": 0.0001315894053842439,
+      "root_flow": 1.264502329589396e-05,
+      "cheap_certificate": {
+        "original_variable": 0,
+        "free_origin": 0,
+        "kernel_support": [
+          0,
+          1
+        ],
+        "absolute_weight_cost": 0.75,
+        "branch_size": 2,
+        "branch_defect_bound": 0.0476190476190476,
+        "logical_marginal_min": 0.06744596122814829,
+        "physical_marginal_min": 0.019826913509100687,
+        "root": 0,
+        "status": "certified",
+        "gap_upper_per_attempt": 0.2722577870787879,
+        "mixing_time_lower_attempts_tv_quarter": 2.1810222383075994,
+        "mixing_time_lower_sweeps_tv_quarter": 0.24233580425639994
+      },
+      "warm_wrong_root_readout": [
+        {
+          "attempts": 1,
+          "actual_optimum_probability": 1.950806212859012e-05,
+          "crossing_upper_bound": 6.466485373728524e-05
+        },
+        {
+          "attempts": 10,
+          "actual_optimum_probability": 0.0001403435462205231,
+          "crossing_upper_bound": 0.0006466485373728524
+        },
+        {
+          "attempts": 100,
+          "actual_optimum_probability": 0.0019464837526978367,
+          "crossing_upper_bound": 0.006466485373728524
+        },
+        {
+          "attempts": 1000,
+          "actual_optimum_probability": 0.027767906067671867,
+          "crossing_upper_bound": 0.06466485373728524
+        }
+      ],
+      "symmetry_error": 3.0531133177191805e-16
+    },
+    {
+      "beta": 10.0,
+      "physical_sites": 9,
+      "gap": 1.0324407107020761e-08,
+      "exact_rayleigh_upper": 2.148693411024895e-08,
+      "actual_chain_break": 1.8255912092780985e-08,
+      "root_flow": 1.1564608607135982e-09,
+      "cheap_certificate": null,
+      "warm_wrong_root_readout": [
+        {
+          "attempts": 1,
+          "actual_optimum_probability": 8.929218262473936e-10,
+          "crossing_upper_bound": 2.0260466900102414e-08
+        },
+        {
+          "attempts": 10,
+          "actual_optimum_probability": 7.296836833904754e-09,
+          "crossing_upper_bound": 2.026046690010241e-07
+        },
+        {
+          "attempts": 100,
+          "actual_optimum_probability": 4.301404186341323e-07,
+          "crossing_upper_bound": 2.0260466900102414e-06
+        },
+        {
+          "attempts": 1000,
+          "actual_optimum_probability": 9.363376138770946e-06,
+          "crossing_upper_bound": 2.0260466900102415e-05
+        }
+      ],
+      "symmetry_error": 5.967448757360216e-16
+    }
+  ],
+  "elapsed_seconds": 0.27473295805975795
+}

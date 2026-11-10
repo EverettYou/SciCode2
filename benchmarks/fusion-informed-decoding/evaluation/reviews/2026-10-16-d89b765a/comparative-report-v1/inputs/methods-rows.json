@@ -1,0 +1,1468 @@
+{
+  "version": "comparative-methods-v1",
+  "score_source": "/Users/home/Library/CloudStorage/Dropbox/Research/[Mercor]SciCode2/benchmarks/fusion-informed-decoding/evaluation/reviews/2026-10-16-d89b765a/reference-v1/scores-v1.json",
+  "scores_frozen": true,
+  "aspects": [
+    {
+      "id": "D1",
+      "title": "R4 joint partition sum",
+      "max": 6.0,
+      "question": "Was the correct joint partition sum evaluated, with sums separated by logical sector?",
+      "why_it_matters": "Optimal logical decoding compares the total posterior mass of the two logical sectors. Separating the shared edge orientation, or finding only the single most likely error, changes the probability model specified in the problem.",
+      "possible_mistakes": [
+        "Sample the orientation at the two endpoints of the same edge independently.",
+        "Replace the global joint sum with vertex-by-vertex local likelihoods.",
+        "Treat the MAP microscopic configuration as the logical-sector posterior.",
+        "Omit the top-boundary logical parity."
+      ],
+      "observed_summary": "All seven submissions retain three-state edge variables 0,+,- and carry logical parity to compute Z0,Z1; none of these modeling errors was found in the checked cases. Using two states in O0/SU2 special cases where orientations can be eliminated exactly is a valid optimization.",
+      "conclusion": "All seven receive the same score here; the main differences concern extreme numerical range and evidence for larger-size approximations, rather than the partition-sum definition.",
+      "rows": [
+        {
+          "run": "Fable03",
+          "score": 6,
+          "max": 6,
+          "done": "Joint three-state summation preserves shared orientations and separates Z0,Z1 by logical parity.",
+          "issue": "No specific error found in this item; the conclusion is limited to the reviewed material and checked domain.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-fable-5-1/run_03/src/model.py",
+              "line": 1
+            }
+          ],
+          "review_evidence": "/Users/home/Library/CloudStorage/Dropbox/Research/[Mercor]SciCode2/benchmarks/fusion-informed-decoding/evaluation/reviews/2026-10-16-d89b765a/results/anthropic__claude-fable-5-1-run_03-checks.json",
+          "canonical_reason": "Uses three-state edge variables 0,+,- to preserve orientation and separates Z0,Z1 by ell; it does not make the arrivals at the two endpoints independent. Independent routine checks support the implementation."
+        },
+        {
+          "run": "Opus01",
+          "score": 6,
+          "max": 6,
+          "done": "Joint three-state summation preserves shared orientations and separates Z0,Z1 by logical parity.",
+          "issue": "No specific error found in this item; the conclusion is limited to the reviewed material and checked domain.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_01/src/tm.py",
+              "line": 1
+            }
+          ],
+          "review_evidence": "/Users/home/Library/CloudStorage/Dropbox/Research/[Mercor]SciCode2/benchmarks/fusion-informed-decoding/evaluation/reviews/2026-10-16-d89b765a/results/anthropic__claude-opus-5-5-run_01-checks.json",
+          "canonical_reason": "Uses three-state edge variables 0,+,- to preserve orientation and separates Z0,Z1 by ell; it does not make the arrivals at the two endpoints independent. Independent routine checks support the implementation."
+        },
+        {
+          "run": "Opus02",
+          "score": 6,
+          "max": 6,
+          "done": "Joint three-state summation preserves shared orientations and separates Z0,Z1 by logical parity.",
+          "issue": "No specific error found in this item; the conclusion is limited to the reviewed material and checked domain.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_02/hexsym/api.py",
+              "line": 43
+            }
+          ],
+          "review_evidence": "/Users/home/Library/CloudStorage/Dropbox/Research/[Mercor]SciCode2/benchmarks/fusion-informed-decoding/evaluation/reviews/2026-10-16-d89b765a/results/anthropic__claude-opus-5-5-run_02-checks.json",
+          "canonical_reason": "Uses three-state edge variables 0,+,- to preserve orientation and separates Z0,Z1 by ell; it does not make the arrivals at the two endpoints independent. Independent routine checks support the implementation."
+        },
+        {
+          "run": "Opus03",
+          "score": 6,
+          "max": 6,
+          "done": "Joint three-state summation preserves shared orientations and separates Z0,Z1 by logical parity.",
+          "issue": "No specific error found in this item; the conclusion is limited to the reviewed material and checked domain.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_03/symdec/tm.py",
+              "line": 1
+            }
+          ],
+          "review_evidence": "/Users/home/Library/CloudStorage/Dropbox/Research/[Mercor]SciCode2/benchmarks/fusion-informed-decoding/evaluation/reviews/2026-10-16-d89b765a/results/anthropic__claude-opus-5-5-run_03-checks.json",
+          "canonical_reason": "Uses three-state edge variables 0,+,- to preserve orientation and separates Z0,Z1 by ell; it does not make the arrivals at the two endpoints independent. Independent routine checks support the implementation."
+        },
+        {
+          "run": "GPT01",
+          "score": 6,
+          "max": 6,
+          "done": "Joint three-state summation preserves shared orientations and separates Z0,Z1 by logical parity.",
+          "issue": "No specific error found in this item; the conclusion is limited to the reviewed material and checked domain.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_01/decoder.py",
+              "line": 232
+            }
+          ],
+          "review_evidence": "/Users/home/Library/CloudStorage/Dropbox/Research/[Mercor]SciCode2/benchmarks/fusion-informed-decoding/evaluation/reviews/2026-10-16-d89b765a/results/openai__gpt-6-astra-run_01-checks.json",
+          "canonical_reason": "Uses three-state edge variables 0,+,- to preserve orientation and separates Z0,Z1 by ell; it does not make the arrivals at the two endpoints independent. Independent routine checks support the implementation."
+        },
+        {
+          "run": "GPT02",
+          "score": 6,
+          "max": 6,
+          "done": "Joint three-state summation preserves shared orientations and separates Z0,Z1 by logical parity.",
+          "issue": "No specific error found in this item; the conclusion is limited to the reviewed material and checked domain.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_02/decoder.py",
+              "line": 175
+            }
+          ],
+          "review_evidence": "/Users/home/Library/CloudStorage/Dropbox/Research/[Mercor]SciCode2/benchmarks/fusion-informed-decoding/evaluation/reviews/2026-10-16-d89b765a/results/openai__gpt-6-astra-run_02-checks.json",
+          "canonical_reason": "Uses three-state edge variables 0,+,- to preserve orientation and separates Z0,Z1 by ell; it does not make the arrivals at the two endpoints independent. Independent routine checks support the implementation."
+        },
+        {
+          "run": "GPT03",
+          "score": 6,
+          "max": 6,
+          "done": "Joint three-state summation preserves shared orientations and separates Z0,Z1 by logical parity.",
+          "issue": "No specific error found in this item; the conclusion is limited to the reviewed material and checked domain.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_03/decoder.py",
+              "line": 182
+            }
+          ],
+          "review_evidence": "/Users/home/Library/CloudStorage/Dropbox/Research/[Mercor]SciCode2/benchmarks/fusion-informed-decoding/evaluation/reviews/2026-10-16-d89b765a/results/openai__gpt-6-astra-run_03-checks.json",
+          "canonical_reason": "Uses three-state edge variables 0,+,- to preserve orientation and separates Z0,Z1 by ell; it does not make the arrivals at the two endpoints independent. Independent routine checks support the implementation."
+        }
+      ]
+    },
+    {
+      "id": "D2",
+      "title": "R4 exact algorithm",
+      "max": 3.0,
+      "question": "Does the prescribed small-size regime L≤4,N≤8 use an exact or certified algorithm?",
+      "why_it_matters": "The small-size exact API is an automatically checkable deliverable. The algorithm should retain all configurations. Its complexity may grow exponentially with width, without first proving that the model is free fermionic.",
+      "possible_mistakes": [
+        "Call a truncated MPS result an untruncated exact result.",
+        "Conflate a large-size approximation with the prescribed small-size API.",
+        "Substitute an unimplemented Pfaffian/free-fermion theory for a working algorithm."
+      ],
+      "observed_summary": "All seven prescribed small-size APIs use untruncated frontier/transfer-matrix summation. The Opus large-size MPS computations are separate approximations; their error claims are scored in A3 and are not penalized twice here.",
+      "conclusion": "All satisfy the original small-size algorithm requirement. Opus02's public API switches to MPS at L>9, so exactness claims must specify the size range.",
+      "rows": [
+        {
+          "run": "Fable03",
+          "score": 3,
+          "max": 3,
+          "done": "The prescribed L≤4 API uses untruncated exact contraction; complexity grows exponentially with width.",
+          "issue": "No specific error found in this item; the conclusion is limited to the reviewed material and checked domain.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-fable-5-1/run_03/README.md",
+              "line": 25
+            }
+          ],
+          "review_evidence": null,
+          "canonical_reason": "Exact finite-width frontier/transfer-matrix contraction; memory grows exponentially with width. The task does not prescribe free fermions or a particular tensor-network method."
+        },
+        {
+          "run": "Opus01",
+          "score": 3,
+          "max": 3,
+          "done": "The prescribed L≤4 API uses untruncated exact contraction; complexity grows exponentially with width.",
+          "issue": "No specific error found in this item; the conclusion is limited to the reviewed material and checked domain.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_01/report.md",
+              "line": 67
+            }
+          ],
+          "review_evidence": null,
+          "canonical_reason": "Exact finite-width frontier/transfer-matrix contraction; memory grows exponentially with width. The task does not prescribe free fermions or a particular tensor-network method."
+        },
+        {
+          "run": "Opus02",
+          "score": 3,
+          "max": 3,
+          "done": "The prescribed L≤4 API uses untruncated exact contraction; complexity grows exponentially with width.",
+          "issue": "The public API switches to MPS at L>9; small sizes remain exact, so the no-truncation wording needs qualification.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_02/README.md",
+              "line": 18
+            }
+          ],
+          "review_evidence": null,
+          "canonical_reason": "Exact finite-width frontier/transfer-matrix contraction; memory grows exponentially with width. The task does not prescribe free fermions or a particular tensor-network method."
+        },
+        {
+          "run": "Opus03",
+          "score": 3,
+          "max": 3,
+          "done": "The prescribed L≤4 API uses untruncated exact contraction; complexity grows exponentially with width.",
+          "issue": "No specific error found in this item; the conclusion is limited to the reviewed material and checked domain.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_03/solution.py",
+              "line": 12
+            }
+          ],
+          "review_evidence": null,
+          "canonical_reason": "Exact finite-width frontier/transfer-matrix contraction; memory grows exponentially with width. The task does not prescribe free fermions or a particular tensor-network method."
+        },
+        {
+          "run": "GPT01",
+          "score": 3,
+          "max": 3,
+          "done": "The prescribed L≤4 API uses untruncated exact contraction; complexity grows exponentially with width.",
+          "issue": "No specific error found in this item; the conclusion is limited to the reviewed material and checked domain.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_01/decoder.py",
+              "line": 279
+            }
+          ],
+          "review_evidence": null,
+          "canonical_reason": "Exact finite-width frontier/transfer-matrix contraction; memory grows exponentially with width. The task does not prescribe free fermions or a particular tensor-network method."
+        },
+        {
+          "run": "GPT02",
+          "score": 3,
+          "max": 3,
+          "done": "The prescribed L≤4 API uses untruncated exact contraction; complexity grows exponentially with width.",
+          "issue": "No specific error found in this item; the conclusion is limited to the reviewed material and checked domain.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_02/decoder.py",
+              "line": 314
+            }
+          ],
+          "review_evidence": null,
+          "canonical_reason": "Exact finite-width frontier/transfer-matrix contraction; memory grows exponentially with width. The task does not prescribe free fermions or a particular tensor-network method."
+        },
+        {
+          "run": "GPT03",
+          "score": 3,
+          "max": 3,
+          "done": "The prescribed L≤4 API uses untruncated exact contraction; complexity grows exponentially with width.",
+          "issue": "No specific error found in this item; the conclusion is limited to the reviewed material and checked domain.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_03/decoder.py",
+              "line": 267
+            }
+          ],
+          "review_evidence": null,
+          "canonical_reason": "Exact finite-width frontier/transfer-matrix contraction; memory grows exponentially with width. The task does not prescribe free fermions or a particular tensor-network method."
+        }
+      ]
+    },
+    {
+      "id": "D3",
+      "title": "R4 independent validation",
+      "max": 5.0,
+      "question": "Can independent validation detect a shared modeling or implementation error?",
+      "why_it_matters": "Agreement between two functions sharing the same erroneous core does not prove correctness. Enumeration, different elimination orders, and independently implemented irreps and geometry reduce this risk.",
+      "possible_mistakes": [
+        "Compare only two wrappers around the same code.",
+        "Treat posterior normalization as a complete correctness check.",
+        "Describe passing finite tests as correctness for every record."
+      ],
+      "observed_summary": "All seven include small-lattice enumeration or independent contraction checks; the existing external review also checked 210 routine cases per submission. Of these, 140 are O1/O2 and the additional 70 are O0 controls; not all 210 are original R4 cases.",
+      "conclusion": "All routine checks pass, supporting correctness on the tested domain; this is not an exhaustive proof for all legal records.",
+      "rows": [
+        {
+          "run": "Fable03",
+          "score": 5,
+          "max": 5,
+          "done": "Includes independent small-lattice checks; passes 210/210 external routine posterior checks.",
+          "issue": "Of 210 cases, 140 are O1/O2 and 70 are extra O0 controls; this is not all records.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-fable-5-1/run_03/tests_validate.py",
+              "line": 18
+            }
+          ],
+          "review_evidence": "/Users/home/Library/CloudStorage/Dropbox/Research/[Mercor]SciCode2/benchmarks/fusion-informed-decoding/evaluation/reviews/2026-10-16-d89b765a/results/anthropic__claude-fable-5-1-run_03-checks.json",
+          "canonical_reason": "The submission includes independent small-lattice enumeration or comparisons using different elimination orders; the review additionally checks 210 routine cases per submission with independent irreps, geometry and generic einsum."
+        },
+        {
+          "run": "Opus01",
+          "score": 5,
+          "max": 5,
+          "done": "Includes independent small-lattice checks; passes 210/210 external routine posterior checks.",
+          "issue": "Of 210 cases, 140 are O1/O2 and 70 are extra O0 controls; this is not all records.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_01/tests/test_small.py",
+              "line": 8
+            }
+          ],
+          "review_evidence": "/Users/home/Library/CloudStorage/Dropbox/Research/[Mercor]SciCode2/benchmarks/fusion-informed-decoding/evaluation/reviews/2026-10-16-d89b765a/results/anthropic__claude-opus-5-5-run_01-checks.json",
+          "canonical_reason": "The submission includes independent small-lattice enumeration or comparisons using different elimination orders; the review additionally checks 210 routine cases per submission with independent irreps, geometry and generic einsum."
+        },
+        {
+          "run": "Opus02",
+          "score": 5,
+          "max": 5,
+          "done": "Includes independent small-lattice checks; passes 210/210 external routine posterior checks.",
+          "issue": "Of 210 cases, 140 are O1/O2 and 70 are extra O0 controls; this is not all records.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_02/tests/validate.py",
+              "line": 21
+            }
+          ],
+          "review_evidence": "/Users/home/Library/CloudStorage/Dropbox/Research/[Mercor]SciCode2/benchmarks/fusion-informed-decoding/evaluation/reviews/2026-10-16-d89b765a/results/anthropic__claude-opus-5-5-run_02-checks.json",
+          "canonical_reason": "The submission includes independent small-lattice enumeration or comparisons using different elimination orders; the review additionally checks 210 routine cases per submission with independent irreps, geometry and generic einsum."
+        },
+        {
+          "run": "Opus03",
+          "score": 5,
+          "max": 5,
+          "done": "Includes independent small-lattice checks; passes 210/210 external routine posterior checks.",
+          "issue": "Of 210 cases, 140 are O1/O2 and 70 are extra O0 controls; this is not all records.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_03/tests/test_validate_small.py",
+              "line": 7
+            }
+          ],
+          "review_evidence": "/Users/home/Library/CloudStorage/Dropbox/Research/[Mercor]SciCode2/benchmarks/fusion-informed-decoding/evaluation/reviews/2026-10-16-d89b765a/results/anthropic__claude-opus-5-5-run_03-checks.json",
+          "canonical_reason": "The submission includes independent small-lattice enumeration or comparisons using different elimination orders; the review additionally checks 210 routine cases per submission with independent irreps, geometry and generic einsum."
+        },
+        {
+          "run": "GPT01",
+          "score": 5,
+          "max": 5,
+          "done": "Includes independent small-lattice checks; passes 210/210 external routine posterior checks.",
+          "issue": "Of 210 cases, 140 are O1/O2 and 70 are extra O0 controls; this is not all records.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_01/validate.py",
+              "line": 1
+            }
+          ],
+          "review_evidence": "/Users/home/Library/CloudStorage/Dropbox/Research/[Mercor]SciCode2/benchmarks/fusion-informed-decoding/evaluation/reviews/2026-10-16-d89b765a/results/openai__gpt-6-astra-run_01-checks.json",
+          "canonical_reason": "The submission includes independent small-lattice enumeration or comparisons using different elimination orders; the review additionally checks 210 routine cases per submission with independent irreps, geometry and generic einsum."
+        },
+        {
+          "run": "GPT02",
+          "score": 5,
+          "max": 5,
+          "done": "Includes independent small-lattice checks; passes 210/210 external routine posterior checks.",
+          "issue": "Of 210 cases, 140 are O1/O2 and 70 are extra O0 controls; this is not all records.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_02/validate.py",
+              "line": 1
+            }
+          ],
+          "review_evidence": "/Users/home/Library/CloudStorage/Dropbox/Research/[Mercor]SciCode2/benchmarks/fusion-informed-decoding/evaluation/reviews/2026-10-16-d89b765a/results/openai__gpt-6-astra-run_02-checks.json",
+          "canonical_reason": "The submission includes independent small-lattice enumeration or comparisons using different elimination orders; the review additionally checks 210 routine cases per submission with independent irreps, geometry and generic einsum."
+        },
+        {
+          "run": "GPT03",
+          "score": 5,
+          "max": 5,
+          "done": "Includes independent small-lattice checks; passes 210/210 external routine posterior checks.",
+          "issue": "Of 210 cases, 140 are O1/O2 and 70 are extra O0 controls; this is not all records.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_03/validate.py",
+              "line": 1
+            }
+          ],
+          "review_evidence": "/Users/home/Library/CloudStorage/Dropbox/Research/[Mercor]SciCode2/benchmarks/fusion-informed-decoding/evaluation/reviews/2026-10-16-d89b765a/results/openai__gpt-6-astra-run_03-checks.json",
+          "canonical_reason": "The submission includes independent small-lattice enumeration or comparisons using different elimination orders; the review additionally checks 210 routine cases per submission with independent irreps, geometry and generic einsum."
+        }
+      ]
+    },
+    {
+      "id": "D4",
+      "title": "R4 numerical range",
+      "max": 3.0,
+      "question": "Can the posterior of a legal record still be evaluated at extremely small but positive probabilities?",
+      "why_it_matters": "Z0 and Z1 may both be tiny while their ratio remains defined. Stepwise normalization cannot restore edge weights or local products that have already underflowed to zero.",
+      "possible_mistakes": [
+        "Misreport numerical underflow as a zero-probability record.",
+        "Normalize only after each column, after already forming extremely small products in ordinary float arithmetic.",
+        "Use a dtype name instead of checking the floating-point range across platforms."
+      ],
+      "observed_summary": "All seven pass routine cases. On 18 additional extremely low-p positive-probability stress cases, all three GPT runs pass, whereas Fable03 and all three Opus runs do not. Existing rubric scores are retained, with the macOS/Linux longdouble difference noted.",
+      "conclusion": "This item reveals a substantive posterior-API difference: GPT's high-precision or log-domain fallback covers the checked domain; the other four have numerical-underflow gaps.",
+      "rows": [
+        {
+          "run": "Fable03",
+          "score": 1,
+          "max": 3,
+          "done": "Uses ordinary normalization; passes 210/210 routine posterior checks.",
+          "issue": "Fails 18/18 extremely low-p stress cases; local underflow can make a positive-probability record appear to have zero probability.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-fable-5-1/run_03/src/model.py",
+              "line": 198
+            }
+          ],
+          "review_evidence": "/Users/home/Library/CloudStorage/Dropbox/Research/[Mercor]SciCode2/benchmarks/fusion-informed-decoding/evaluation/reviews/2026-10-16-d89b765a/results/anthropic__claude-fable-5-1-run_03-checks.json",
+          "canonical_reason": "Passes 210/210 routine cases; fails 18 extremely low-p positive-probability stress cases. Ordinary stepwise normalization is present, but local products or edge weights can still underflow."
+        },
+        {
+          "run": "Opus01",
+          "score": 1,
+          "max": 3,
+          "done": "Uses ordinary normalization; passes 210/210 routine posterior checks.",
+          "issue": "Fails 18/18 extremely low-p stress cases; local underflow can make a positive-probability record appear to have zero probability.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_01/solution.py",
+              "line": 71
+            }
+          ],
+          "review_evidence": "/Users/home/Library/CloudStorage/Dropbox/Research/[Mercor]SciCode2/benchmarks/fusion-informed-decoding/evaluation/reviews/2026-10-16-d89b765a/results/anthropic__claude-opus-5-5-run_01-checks.json",
+          "canonical_reason": "Passes 210/210 routine cases; fails 18 extremely low-p positive-probability stress cases. Ordinary stepwise normalization is present, but local products or edge weights can still underflow."
+        },
+        {
+          "run": "Opus02",
+          "score": 1,
+          "max": 3,
+          "done": "Uses ordinary normalization; passes 210/210 routine posterior checks.",
+          "issue": "Fails 18/18; some failures depend on platform range, but float p/2 rounding to zero before conversion is a cross-platform issue.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_02/hexsym/api.py",
+              "line": 45
+            }
+          ],
+          "review_evidence": "/Users/home/Library/CloudStorage/Dropbox/Research/[Mercor]SciCode2/benchmarks/fusion-informed-decoding/evaluation/reviews/2026-10-16-d89b765a/results/anthropic__claude-opus-5-5-run_02-checks.json",
+          "canonical_reason": "Passes 210/210 routine cases; fails 18 extremely low-p positive-probability stress cases. Ordinary stepwise normalization is present, but local products or edge weights can still underflow. macOS longdouble has a different range from the original Linux environment, so not all macOS failures can be attributed directly to the original environment; however, p/2 in pri rounds to zero in Python float before conversion to dtype, a cross-platform issue at the smallest positive float."
+        },
+        {
+          "run": "Opus03",
+          "score": 1,
+          "max": 3,
+          "done": "Uses ordinary normalization; passes 210/210 routine posterior checks.",
+          "issue": "Fails 18/18 extremely low-p stress cases; local underflow can make a positive-probability record appear to have zero probability.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_03/symdec/api.py",
+              "line": 43
+            }
+          ],
+          "review_evidence": "/Users/home/Library/CloudStorage/Dropbox/Research/[Mercor]SciCode2/benchmarks/fusion-informed-decoding/evaluation/reviews/2026-10-16-d89b765a/results/anthropic__claude-opus-5-5-run_03-checks.json",
+          "canonical_reason": "Passes 210/210 routine cases; fails 18 extremely low-p positive-probability stress cases. Ordinary stepwise normalization is present, but local products or edge weights can still underflow."
+        },
+        {
+          "run": "GPT01",
+          "score": 3,
+          "max": 3,
+          "done": "Uses high-precision or log fallback; passes 210/210 routine and 18/18 stress cases.",
+          "issue": "Passes 18/18 stress cases; finite tests do not replace a proof for every input.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_01/decoder.py",
+              "line": 271
+            }
+          ],
+          "review_evidence": "/Users/home/Library/CloudStorage/Dropbox/Research/[Mercor]SciCode2/benchmarks/fusion-informed-decoding/evaluation/reviews/2026-10-16-d89b765a/results/openai__gpt-6-astra-run_01-checks.json",
+          "canonical_reason": "Passes 210/210 routine and 18/18 extremely low-p positive-probability stress cases; uses Decimal or log-domain fallback."
+        },
+        {
+          "run": "GPT02",
+          "score": 3,
+          "max": 3,
+          "done": "Uses high-precision or log fallback; passes 210/210 routine and 18/18 stress cases.",
+          "issue": "Passes 18/18 stress cases; finite tests do not replace a proof for every input.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_02/decoder.py",
+              "line": 224
+            }
+          ],
+          "review_evidence": "/Users/home/Library/CloudStorage/Dropbox/Research/[Mercor]SciCode2/benchmarks/fusion-informed-decoding/evaluation/reviews/2026-10-16-d89b765a/results/openai__gpt-6-astra-run_02-checks.json",
+          "canonical_reason": "Passes 210/210 routine and 18/18 extremely low-p positive-probability stress cases; uses Decimal or log-domain fallback."
+        },
+        {
+          "run": "GPT03",
+          "score": 3,
+          "max": 3,
+          "done": "Uses high-precision or log fallback; passes 210/210 routine and 18/18 stress cases.",
+          "issue": "Passes 18/18 stress cases; finite tests do not replace a proof for every input.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_03/decoder.py",
+              "line": 187
+            }
+          ],
+          "review_evidence": "/Users/home/Library/CloudStorage/Dropbox/Research/[Mercor]SciCode2/benchmarks/fusion-informed-decoding/evaluation/reviews/2026-10-16-d89b765a/results/openai__gpt-6-astra-run_03-checks.json",
+          "canonical_reason": "Passes 210/210 routine and 18/18 extremely low-p positive-probability stress cases; uses Decimal or log-domain fallback."
+        }
+      ]
+    },
+    {
+      "id": "D5",
+      "title": "decode interface",
+      "max": 3.0,
+      "question": "Does decode return a legal correction and choose the maximum-posterior logical sector?",
+      "why_it_matters": "Correct posterior values are insufficient: the output must be an edge set in the specified geometry, satisfy Hc=s, and have logical parity consistent with the posterior decision. Either sector is valid at a tie.",
+      "possible_mistakes": [
+        "Output edges outside the geometry.",
+        "Return only a logical bit without constructing a correction.",
+        "Construct a correction with the correct syndrome but wrong logical parity.",
+        "Treat the correction as a microscopic configuration that must recover the true arrows."
+      ],
+      "observed_summary": "On 210 routine cases, all seven corrections are legal, have the correct syndrome, and agree with the reference maximum-posterior logical sector; extreme numerical failures already scored in D4 are not penalized again here.",
+      "conclusion": "The routine decode interface does not distinguish the seven submissions; these checks do not validate the large-size phase-diagram limit.",
+      "rows": [
+        {
+          "run": "Fable03",
+          "score": 3,
+          "max": 3,
+          "done": "All 210/210 routine corrections are legal, with correct syndrome and logical sector.",
+          "issue": "No specific error found in this item; the conclusion is limited to the reviewed material and checked domain.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-fable-5-1/run_03/src/model.py",
+              "line": 280
+            }
+          ],
+          "review_evidence": "/Users/home/Library/CloudStorage/Dropbox/Research/[Mercor]SciCode2/benchmarks/fusion-informed-decoding/evaluation/reviews/2026-10-16-d89b765a/results/anthropic__claude-fable-5-1-run_03-checks.json",
+          "canonical_reason": "In the review, 210/210 routine corrections are legal edge sets, satisfy the syndrome, and choose the reference posterior's maximum logical sector; either sector is allowed at a tie."
+        },
+        {
+          "run": "Opus01",
+          "score": 3,
+          "max": 3,
+          "done": "All 210/210 routine corrections are legal, with correct syndrome and logical sector.",
+          "issue": "No specific error found in this item; the conclusion is limited to the reviewed material and checked domain.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_01/solution.py",
+              "line": 102
+            }
+          ],
+          "review_evidence": "/Users/home/Library/CloudStorage/Dropbox/Research/[Mercor]SciCode2/benchmarks/fusion-informed-decoding/evaluation/reviews/2026-10-16-d89b765a/results/anthropic__claude-opus-5-5-run_01-checks.json",
+          "canonical_reason": "In the review, 210/210 routine corrections are legal edge sets, satisfy the syndrome, and choose the reference posterior's maximum logical sector; either sector is allowed at a tie."
+        },
+        {
+          "run": "Opus02",
+          "score": 3,
+          "max": 3,
+          "done": "All 210/210 routine corrections are legal, with correct syndrome and logical sector.",
+          "issue": "No specific error found in this item; the conclusion is limited to the reviewed material and checked domain.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_02/hexsym/api.py",
+              "line": 143
+            }
+          ],
+          "review_evidence": "/Users/home/Library/CloudStorage/Dropbox/Research/[Mercor]SciCode2/benchmarks/fusion-informed-decoding/evaluation/reviews/2026-10-16-d89b765a/results/anthropic__claude-opus-5-5-run_02-checks.json",
+          "canonical_reason": "In the review, 210/210 routine corrections are legal edge sets, satisfy the syndrome, and choose the reference posterior's maximum logical sector; either sector is allowed at a tie."
+        },
+        {
+          "run": "Opus03",
+          "score": 3,
+          "max": 3,
+          "done": "All 210/210 routine corrections are legal, with correct syndrome and logical sector.",
+          "issue": "No specific error found in this item; the conclusion is limited to the reviewed material and checked domain.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_03/symdec/api.py",
+              "line": 74
+            }
+          ],
+          "review_evidence": "/Users/home/Library/CloudStorage/Dropbox/Research/[Mercor]SciCode2/benchmarks/fusion-informed-decoding/evaluation/reviews/2026-10-16-d89b765a/results/anthropic__claude-opus-5-5-run_03-checks.json",
+          "canonical_reason": "In the review, 210/210 routine corrections are legal edge sets, satisfy the syndrome, and choose the reference posterior's maximum logical sector; either sector is allowed at a tie."
+        },
+        {
+          "run": "GPT01",
+          "score": 3,
+          "max": 3,
+          "done": "All 210/210 routine corrections are legal, with correct syndrome and logical sector.",
+          "issue": "No specific error found in this item; the conclusion is limited to the reviewed material and checked domain.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_01/decoder.py",
+              "line": 403
+            }
+          ],
+          "review_evidence": "/Users/home/Library/CloudStorage/Dropbox/Research/[Mercor]SciCode2/benchmarks/fusion-informed-decoding/evaluation/reviews/2026-10-16-d89b765a/results/openai__gpt-6-astra-run_01-checks.json",
+          "canonical_reason": "In the review, 210/210 routine corrections are legal edge sets, satisfy the syndrome, and choose the reference posterior's maximum logical sector; either sector is allowed at a tie."
+        },
+        {
+          "run": "GPT02",
+          "score": 3,
+          "max": 3,
+          "done": "All 210/210 routine corrections are legal, with correct syndrome and logical sector.",
+          "issue": "No specific error found in this item; the conclusion is limited to the reviewed material and checked domain.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_02/decoder.py",
+              "line": 391
+            }
+          ],
+          "review_evidence": "/Users/home/Library/CloudStorage/Dropbox/Research/[Mercor]SciCode2/benchmarks/fusion-informed-decoding/evaluation/reviews/2026-10-16-d89b765a/results/openai__gpt-6-astra-run_02-checks.json",
+          "canonical_reason": "In the review, 210/210 routine corrections are legal edge sets, satisfy the syndrome, and choose the reference posterior's maximum logical sector; either sector is allowed at a tie."
+        },
+        {
+          "run": "GPT03",
+          "score": 3,
+          "max": 3,
+          "done": "All 210/210 routine corrections are legal, with correct syndrome and logical sector.",
+          "issue": "No specific error found in this item; the conclusion is limited to the reviewed material and checked domain.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_03/decoder.py",
+              "line": 312
+            }
+          ],
+          "review_evidence": "/Users/home/Library/CloudStorage/Dropbox/Research/[Mercor]SciCode2/benchmarks/fusion-informed-decoding/evaluation/reviews/2026-10-16-d89b765a/results/openai__gpt-6-astra-run_03-checks.json",
+          "canonical_reason": "In the review, 210/210 routine corrections are legal edge sets, satisfy the syndrome, and choose the reference posterior's maximum logical sector; either sector is allowed at a tie."
+        }
+      ]
+    },
+    {
+      "id": "E1",
+      "title": "answers.json",
+      "max": 4.0,
+      "question": "Is answers.json complete, readable, and aligned with the report's requirements?",
+      "why_it_matters": "Machine-readable results enable subsequent automated evaluation and comparison. File completeness and reliable scientific classification are separate evaluation dimensions.",
+      "possible_mistakes": [
+        "Omit record/rank entries.",
+        "Provide unparseable JSON or an N0 of the wrong type.",
+        "Give different results in the report and machine-readable file.",
+        "Treat unresolved as a missing file."
+      ],
+      "observed_summary": "All seven provide parseable answers.json files covering all 21 O0/O1/O2 entries at N=2..8, with integer R3_N0. An honest unresolved answer is permitted.",
+      "conclusion": "All seven receive the same completeness score; whether evidence supports the phase assignments is assessed separately in A2—A5.",
+      "rows": [
+        {
+          "run": "Fable03",
+          "score": 4,
+          "max": 4,
+          "done": "JSON parses, all 21 record/rank entries are present, and N0 is an integer.",
+          "issue": "Full completeness credit does not mean all 21 phase assignments are resolved; scientific support is scored separately.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-fable-5-1/run_03/answers.json",
+              "line": 1
+            }
+          ],
+          "review_evidence": null,
+          "canonical_reason": "answers.json parses; R1 contains all 21 O0/O1/O2 entries at N=2..8, and R3_N0 is an integer. Scientific support is scored separately under R1/R2/R3."
+        },
+        {
+          "run": "Opus01",
+          "score": 4,
+          "max": 4,
+          "done": "JSON parses, all 21 record/rank entries are present, and N0 is an integer.",
+          "issue": "Full completeness credit does not mean all 21 phase assignments are resolved; scientific support is scored separately.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_01/answers.json",
+              "line": 1
+            }
+          ],
+          "review_evidence": null,
+          "canonical_reason": "answers.json parses; R1 contains all 21 O0/O1/O2 entries at N=2..8, and R3_N0 is an integer. Scientific support is scored separately under R1/R2/R3."
+        },
+        {
+          "run": "Opus02",
+          "score": 4,
+          "max": 4,
+          "done": "JSON parses, all 21 record/rank entries are present, and N0 is an integer.",
+          "issue": "Full completeness credit does not mean all 21 phase assignments are resolved; scientific support is scored separately.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_02/answers.json",
+              "line": 1
+            }
+          ],
+          "review_evidence": null,
+          "canonical_reason": "answers.json parses; R1 contains all 21 O0/O1/O2 entries at N=2..8, and R3_N0 is an integer. Scientific support is scored separately under R1/R2/R3."
+        },
+        {
+          "run": "Opus03",
+          "score": 4,
+          "max": 4,
+          "done": "JSON parses, all 21 record/rank entries are present, and N0 is an integer.",
+          "issue": "Full completeness credit does not mean all 21 phase assignments are resolved; scientific support is scored separately.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_03/answers.json",
+              "line": 1
+            }
+          ],
+          "review_evidence": null,
+          "canonical_reason": "answers.json parses; R1 contains all 21 O0/O1/O2 entries at N=2..8, and R3_N0 is an integer. Scientific support is scored separately under R1/R2/R3."
+        },
+        {
+          "run": "GPT01",
+          "score": 4,
+          "max": 4,
+          "done": "JSON parses, all 21 record/rank entries are present, and N0 is an integer.",
+          "issue": "Full completeness credit does not mean all 21 phase assignments are resolved; scientific support is scored separately.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_01/answers.json",
+              "line": 1
+            }
+          ],
+          "review_evidence": null,
+          "canonical_reason": "answers.json parses; R1 contains all 21 O0/O1/O2 entries at N=2..8, and R3_N0 is an integer. Scientific support is scored separately under R1/R2/R3."
+        },
+        {
+          "run": "GPT02",
+          "score": 4,
+          "max": 4,
+          "done": "JSON parses, all 21 record/rank entries are present, and N0 is an integer.",
+          "issue": "Full completeness credit does not mean all 21 phase assignments are resolved; scientific support is scored separately.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_02/answers.json",
+              "line": 1
+            }
+          ],
+          "review_evidence": null,
+          "canonical_reason": "answers.json parses; R1 contains all 21 O0/O1/O2 entries at N=2..8, and R3_N0 is an integer. Scientific support is scored separately under R1/R2/R3."
+        },
+        {
+          "run": "GPT03",
+          "score": 4,
+          "max": 4,
+          "done": "JSON parses, all 21 record/rank entries are present, and N0 is an integer.",
+          "issue": "Full completeness credit does not mean all 21 phase assignments are resolved; scientific support is scored separately.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_03/answers.json",
+              "line": 1
+            }
+          ],
+          "review_evidence": null,
+          "canonical_reason": "answers.json parses; R1 contains all 21 O0/O1/O2 entries at N=2..8, and R3_N0 is an integer. Scientific support is scored separately under R1/R2/R3."
+        }
+      ]
+    },
+    {
+      "id": "E2",
+      "title": "Report/figures",
+      "max": 3.0,
+      "question": "Are the report, proofs and combined phase diagram complete and locatable?",
+      "why_it_matters": "Research conclusions must connect to proofs, data and limitations, rather than only a figure or number. Complete deliverables do not automatically close scientific gaps.",
+      "possible_mistakes": [
+        "Provide a figure without a basis for its classifications.",
+        "Give an N0 without a proof.",
+        "Scatter graphical and written results so they cannot be located.",
+        "Deduct scientific credit for personal aesthetic preferences."
+      ],
+      "observed_summary": "All seven contain a report, R2/R3 proofs and a combined phase diagram, so deliverable completeness receives the same score. The original task did not require the cell-by-cell teaching diagrams added in this discussion.",
+      "conclusion": "All deliver the report; differences in phase extrapolation and approximation-error quality are scored separately in the scientific items.",
+      "rows": [
+        {
+          "run": "Fable03",
+          "score": 3,
+          "max": 3,
+          "done": "Report, R2/R3 proofs and combined phase diagram are complete.",
+          "issue": "Completeness and scientific correctness are separate; full credit here does not remove reservations about phase extrapolation.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-fable-5-1/run_03/README.md",
+              "line": 6
+            }
+          ],
+          "review_evidence": null,
+          "canonical_reason": "The required report, proofs and combined (p,N) phase diagram are delivered; correctness and evidence strength are scored in the scientific items, without double penalties."
+        },
+        {
+          "run": "Opus01",
+          "score": 3,
+          "max": 3,
+          "done": "Report, R2/R3 proofs and combined phase diagram are complete.",
+          "issue": "Completeness and scientific correctness are separate; full credit here does not remove reservations about phase extrapolation.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_01/report.md",
+              "line": 5
+            }
+          ],
+          "review_evidence": null,
+          "canonical_reason": "The required report, proofs and combined (p,N) phase diagram are delivered; correctness and evidence strength are scored in the scientific items, without double penalties."
+        },
+        {
+          "run": "Opus02",
+          "score": 3,
+          "max": 3,
+          "done": "Report, R2/R3 proofs and combined phase diagram are complete.",
+          "issue": "Completeness and scientific correctness are separate; full credit here does not remove reservations about phase extrapolation.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_02/README.md",
+              "line": 4
+            }
+          ],
+          "review_evidence": null,
+          "canonical_reason": "The required report, proofs and combined (p,N) phase diagram are delivered; correctness and evidence strength are scored in the scientific items, without double penalties."
+        },
+        {
+          "run": "Opus03",
+          "score": 3,
+          "max": 3,
+          "done": "Report, R2/R3 proofs and combined phase diagram are complete.",
+          "issue": "Completeness and scientific correctness are separate; full credit here does not remove reservations about phase extrapolation.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_03/README.md",
+              "line": 3
+            }
+          ],
+          "review_evidence": null,
+          "canonical_reason": "The required report, proofs and combined (p,N) phase diagram are delivered; correctness and evidence strength are scored in the scientific items, without double penalties."
+        },
+        {
+          "run": "GPT01",
+          "score": 3,
+          "max": 3,
+          "done": "Report, R2/R3 proofs and combined phase diagram are complete.",
+          "issue": "Completeness and scientific correctness are separate; full credit here does not remove reservations about phase extrapolation.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_01/README.md",
+              "line": 3
+            }
+          ],
+          "review_evidence": null,
+          "canonical_reason": "The required report, proofs and combined (p,N) phase diagram are delivered; correctness and evidence strength are scored in the scientific items, without double penalties."
+        },
+        {
+          "run": "GPT02",
+          "score": 3,
+          "max": 3,
+          "done": "Report, R2/R3 proofs and combined phase diagram are complete.",
+          "issue": "Completeness and scientific correctness are separate; full credit here does not remove reservations about phase extrapolation.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_02/README.md",
+              "line": 3
+            }
+          ],
+          "review_evidence": null,
+          "canonical_reason": "The required report, proofs and combined (p,N) phase diagram are delivered; correctness and evidence strength are scored in the scientific items, without double penalties."
+        },
+        {
+          "run": "GPT03",
+          "score": 3,
+          "max": 3,
+          "done": "Report, R2/R3 proofs and combined phase diagram are complete.",
+          "issue": "Completeness and scientific correctness are separate; full credit here does not remove reservations about phase extrapolation.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_03/README.md",
+              "line": 3
+            }
+          ],
+          "review_evidence": null,
+          "canonical_reason": "The required report, proofs and combined (p,N) phase diagram are delivered; correctness and evidence strength are scored in the scientific items, without double penalties."
+        }
+      ]
+    },
+    {
+      "id": "E3",
+      "title": "Code/reproduction/resources",
+      "max": 3.0,
+      "question": "Do source code, environment, commands and resource records support reproduction?",
+      "why_it_matters": "Reproduction requires the API, dependency versions, random seeds and commands, together with evidence of the CPU, memory and GPU conditions used.",
+      "possible_mistakes": [
+        "Provide results without code or an execution entry point.",
+        "Omit dependency versions and seeds.",
+        "Treat a resource-monitoring fragment as a complete run audit.",
+        "Describe this small-scale review as a full replay of production experiments."
+      ],
+      "observed_summary": "All seven provide code, dependency environments, reproduction commands and resource descriptions. The review reused existing finite checks; it did not rerun all production experiments or independently monitor the entire original run.",
+      "conclusion": "All receive full credit under the frozen rubric; this assesses the availability of reproduction materials, rather than certifying all historical resource usage.",
+      "rows": [
+        {
+          "run": "Fable03",
+          "score": 3,
+          "max": 3,
+          "done": "Provides code, dependency environment, reproduction commands and resource descriptions.",
+          "issue": "Production research was not fully replayed, nor was the entire original run independently monitored.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-fable-5-1/run_03/README.md",
+              "line": 30
+            }
+          ],
+          "review_evidence": null,
+          "canonical_reason": "Provides code, environment/dependency versions and reproduction commands. The review inspected and reused existing small-scale checks, without rerunning all production research."
+        },
+        {
+          "run": "Opus01",
+          "score": 3,
+          "max": 3,
+          "done": "Provides code, dependency environment, reproduction commands and resource descriptions.",
+          "issue": "Production research was not fully replayed, nor was the entire original run independently monitored.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_01/reproduce.sh",
+              "line": 1
+            }
+          ],
+          "review_evidence": null,
+          "canonical_reason": "Provides code, environment/dependency versions and reproduction commands. The review inspected and reused existing small-scale checks, without rerunning all production research."
+        },
+        {
+          "run": "Opus02",
+          "score": 3,
+          "max": 3,
+          "done": "Provides code, dependency environment, reproduction commands and resource descriptions.",
+          "issue": "Production research was not fully replayed, nor was the entire original run independently monitored.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_02/README.md",
+              "line": 24
+            }
+          ],
+          "review_evidence": null,
+          "canonical_reason": "Provides code, environment/dependency versions and reproduction commands. The review inspected and reused existing small-scale checks, without rerunning all production research."
+        },
+        {
+          "run": "Opus03",
+          "score": 3,
+          "max": 3,
+          "done": "Provides code, dependency environment, reproduction commands and resource descriptions.",
+          "issue": "Production research was not fully replayed, nor was the entire original run independently monitored.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_03/README.md",
+              "line": 29
+            }
+          ],
+          "review_evidence": null,
+          "canonical_reason": "Provides code, environment/dependency versions and reproduction commands. The review inspected and reused existing small-scale checks, without rerunning all production research."
+        },
+        {
+          "run": "GPT01",
+          "score": 3,
+          "max": 3,
+          "done": "Provides code, dependency environment, reproduction commands and resource descriptions.",
+          "issue": "Resource monitoring begins during refinement; cumulative CPU figures exclude some development and pilots.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_01/README.md",
+              "line": 17
+            }
+          ],
+          "review_evidence": null,
+          "canonical_reason": "Provides code, environment/dependency versions and reproduction commands. The review inspected and reused existing small-scale checks, without rerunning all production research."
+        },
+        {
+          "run": "GPT02",
+          "score": 3,
+          "max": 3,
+          "done": "Provides code, dependency environment, reproduction commands and resource descriptions.",
+          "issue": "Production research was not fully replayed, nor was the entire original run independently monitored.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_02/README.md",
+              "line": 32
+            }
+          ],
+          "review_evidence": null,
+          "canonical_reason": "Provides code, environment/dependency versions and reproduction commands. The review inspected and reused existing small-scale checks, without rerunning all production research."
+        },
+        {
+          "run": "GPT03",
+          "score": 3,
+          "max": 3,
+          "done": "Provides code, dependency environment, reproduction commands and resource descriptions.",
+          "issue": "Production research was not fully replayed, nor was the entire original run independently monitored.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_03/README.md",
+              "line": 24
+            }
+          ],
+          "review_evidence": null,
+          "canonical_reason": "Provides code, environment/dependency versions and reproduction commands. The review inspected and reused existing small-scale checks, without rerunning all production research."
+        }
+      ]
+    },
+    {
+      "id": "E4",
+      "title": "Data/unconditional accounting",
+      "max": 5.0,
+      "question": "Are all attempts, exceptions, stopping rules and raw data accounted for unconditionally?",
+      "why_it_matters": "Dropping difficult records biases risk downward. The exception-as-failure rule must enter the reported metrics; reserved slots must not be presented as completed physical trials.",
+      "possible_mistakes": [
+        "Remove exceptional samples from the denominator.",
+        "Assign hard failure 1 but posterior-min risk only 0.5.",
+        "Save only successful posterior evaluations, preventing selection-bias auditing.",
+        "Report the reserved slots of an externally terminated batch as completed trials."
+      ],
+      "observed_summary": "All seven preserve data and denominators. Fable03 has a latent half-failure exception-accounting defect, but zero archived exceptions; Opus01 reports 2 actual exceptions, and all three Opus codes assign exception risk 0.5 and hard failure 1. GPT conservatively assigns 1; GPT03 explicitly discloses 200 reserved slots.",
+      "conclusion": "Distinguish risk estimation from hard failure: the task requires exceptions to count as failures, so both should receive 1. Fable's issue has not affected saved estimates; Opus01 has actual triggering records.",
+      "rows": [
+        {
+          "run": "Fable03",
+          "score": 4,
+          "max": 5,
+          "done": "Preserves raw data, seeds, stopping rules and denominators for all attempts.",
+          "issue": "Exceptions set P0=0.5 and risk/hard tie to 0.5; zero archived exceptions make this a latent defect.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-fable-5-1/run_03/src/run_mc.py",
+              "line": 56
+            }
+          ],
+          "review_evidence": null,
+          "canonical_reason": "Preserves seeds, fixed job counts, resources, raw arrays and denominators; exceptions become P0=.5 and aggregation gives both risk and hard tie .5, whereas the task requires failure. data/summary.csv has total nfail_exc=0, so this is a latent defect with no observed effect on archived estimates."
+        },
+        {
+          "run": "Opus01",
+          "score": 4.5,
+          "max": 5,
+          "done": "Preserves raw data, seeds, stopping rules and denominators for all attempts.",
+          "issue": "Reports 2 actual exceptions; hard failure is 1, but reported risk remains 0.5.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_01/src/mc.py",
+              "line": 146
+            }
+          ],
+          "review_evidence": null,
+          "canonical_reason": "Raw data, seeds, fixed-block stopping rules, resources and denominators for all attempts are recorded; bad hard failure is 1, but the reported posterior-min risk is still .5 rather than 1 on exception."
+        },
+        {
+          "run": "Opus02",
+          "score": 4.5,
+          "max": 5,
+          "done": "Preserves raw data, seeds, stopping rules and denominators for all attempts.",
+          "issue": "Exceptions receive hard failure 1 and risk 0.5; this row makes no inference about their actual count.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_02/hexsym/sim.py",
+              "line": 49
+            }
+          ],
+          "review_evidence": null,
+          "canonical_reason": "Raw data, seeds, fixed-block stopping rules, resources and denominators for all attempts are recorded; bad hard failure is 1, but the reported posterior-min risk is still .5 rather than 1 on exception."
+        },
+        {
+          "run": "Opus03",
+          "score": 4.5,
+          "max": 5,
+          "done": "Preserves raw data, seeds, stopping rules and denominators for all attempts.",
+          "issue": "Exceptions receive hard failure 1 and risk 0.5; this row makes no inference about their actual count.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_03/symdec/mc.py",
+              "line": 121
+            }
+          ],
+          "review_evidence": null,
+          "canonical_reason": "Raw data, seeds, fixed-block stopping rules, resources and denominators for all attempts are recorded; bad hard failure is 1, but the reported posterior-min risk is still .5 rather than 1 on exception."
+        },
+        {
+          "run": "GPT01",
+          "score": 5,
+          "max": 5,
+          "done": "Preserves raw data, seeds, stopping rules and denominators for all attempts.",
+          "issue": "Exceptions and invalid outputs receive risk and failure 1; saved-array auditing found no inconsistency.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_01/README.md",
+              "line": 50
+            }
+          ],
+          "review_evidence": null,
+          "canonical_reason": "Retains all attempts; exception/invalid-correction risk and actual failure are both 1. Planned seeds, fixed stopping counts, resources and raw arrays can be recomputed; the existing archive audit found no inconsistency."
+        },
+        {
+          "run": "GPT02",
+          "score": 5,
+          "max": 5,
+          "done": "Preserves raw data, seeds, stopping rules and denominators for all attempts.",
+          "issue": "Exceptions and invalid outputs receive 1; checks of 305024 evaluation rows and 4 archive hashes agree.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_02/README.md",
+              "line": 61
+            }
+          ],
+          "review_evidence": null,
+          "canonical_reason": "Retains all attempts; exception/invalid-correction risk and actual failure are both 1. Planned seeds, fixed stopping counts, resources and raw arrays can be recomputed; the existing archive audit found no inconsistency."
+        },
+        {
+          "run": "GPT03",
+          "score": 5,
+          "max": 5,
+          "done": "Preserves raw data, seeds, stopping rules and denominators for all attempts.",
+          "issue": "340600 archived slots include 200 reservations from a terminated batch; the physical-trial total is unknown.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_03/README.md",
+              "line": 62
+            }
+          ],
+          "review_evidence": null,
+          "canonical_reason": "Raw arrays and summaries agree; 423 NPZ files /340600 archived slots include 200 conservatively failed reserved slots from an externally terminated batch, and the number of completed physical trials is unknown. This is disclosed correctly and the denominator is retained; slots are not called completed trials, and no scientific-failure penalty is assigned for this incident."
+        }
+      ]
+    }
+  ],
+  "diagnostics": [
+    {
+      "id": "Q18",
+      "title": "The partition function preserves global orientations; distinguish small-size exact inference from large-size MPS",
+      "question": "Does the prescribed small-size regime L≤4,N≤8 use an exact or certified algorithm?",
+      "why_it_matters": "The small-size exact API is an automatically checkable deliverable. The algorithm should retain all configurations. Its complexity may grow exponentially with width, without first proving that the model is free fermionic.",
+      "possible_mistakes": [
+        "Call a truncated MPS result an untruncated exact result.",
+        "Conflate a large-size approximation with the prescribed small-size API.",
+        "Substitute an unimplemented Pfaffian/free-fermion theory for a working algorithm."
+      ],
+      "rows": [
+        {
+          "run": "Fable03",
+          "status": "E",
+          "done": "Exact contraction in the prescribed small-size regime; larger-size methods require separate checking.",
+          "issue": "The original text and independent checks support the small-size exact construction.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-fable-5-1/run_03/README.md",
+              "line": 25
+            }
+          ],
+          "canonical_note": "The original text and independent checks support the small-size exact construction."
+        },
+        {
+          "run": "Opus01",
+          "status": "E",
+          "done": "Exact contraction in the prescribed small-size regime; larger-size methods require separate checking.",
+          "issue": "The original text and independent checks support the small-size exact construction.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_01/report.md",
+              "line": 67
+            }
+          ],
+          "canonical_note": "The original text and independent checks support the small-size exact construction."
+        },
+        {
+          "run": "Opus02",
+          "status": "I",
+          "done": "Exact contraction in the prescribed small-size regime; larger-size methods require separate checking.",
+          "issue": "The public API switches to MPS at L>9; small sizes remain exact, so the no-truncation wording needs qualification.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_02/README.md",
+              "line": 18
+            }
+          ],
+          "canonical_note": "Opus02 remains exact at small sizes; its public API switches to MPS at L>9, so the README's broad no-truncation wording needs qualification."
+        },
+        {
+          "run": "Opus03",
+          "status": "E",
+          "done": "Exact contraction in the prescribed small-size regime; larger-size methods require separate checking.",
+          "issue": "The original text and independent checks support the small-size exact construction.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_03/solution.py",
+              "line": 12
+            }
+          ],
+          "canonical_note": "The original text and independent checks support the small-size exact construction."
+        },
+        {
+          "run": "GPT01",
+          "status": "E",
+          "done": "Exact contraction in the prescribed small-size regime; larger-size methods require separate checking.",
+          "issue": "The original text and independent checks support the small-size exact construction.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_01/decoder.py",
+              "line": 279
+            }
+          ],
+          "canonical_note": "The original text and independent checks support the small-size exact construction."
+        },
+        {
+          "run": "GPT02",
+          "status": "E",
+          "done": "Exact contraction in the prescribed small-size regime; larger-size methods require separate checking.",
+          "issue": "The original text and independent checks support the small-size exact construction.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_02/decoder.py",
+              "line": 314
+            }
+          ],
+          "canonical_note": "The original text and independent checks support the small-size exact construction."
+        },
+        {
+          "run": "GPT03",
+          "status": "E",
+          "done": "Exact contraction in the prescribed small-size regime; larger-size methods require separate checking.",
+          "issue": "The original text and independent checks support the small-size exact construction.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_03/decoder.py",
+              "line": 267
+            }
+          ],
+          "canonical_note": "The original text and independent checks support the small-size exact construction."
+        }
+      ],
+      "conclusion": "All seven small-size exact constructions are supported; this does not make the Opus large-size MPS exact. Opus02's wording is incomplete, marked I rather than R4 failure."
+    },
+    {
+      "id": "Q20",
+      "title": "Count every exception as failure; reserved slots are not completed trials",
+      "question": "Are all attempts, exceptions, stopping rules and raw data accounted for unconditionally?",
+      "why_it_matters": "Dropping difficult records biases risk downward. The exception-as-failure rule must enter the reported metrics; reserved slots must not be presented as completed physical trials.",
+      "possible_mistakes": [
+        "Remove exceptional samples from the denominator.",
+        "Assign hard failure 1 but posterior-min risk only 0.5.",
+        "Save only successful posterior evaluations, preventing selection-bias auditing.",
+        "Report the reserved slots of an externally terminated batch as completed trials."
+      ],
+      "rows": [
+        {
+          "run": "Fable03",
+          "status": "X",
+          "done": "Preserves raw data, seeds, stopping rules and denominators for all attempts.",
+          "issue": "Exceptions set P0=0.5 and risk/hard tie to 0.5; zero archived exceptions make this a latent defect.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-fable-5-1/run_03/src/run_mc.py",
+              "line": 56
+            }
+          ],
+          "canonical_note": "Preserves seeds, fixed job counts, resources, raw arrays and denominators; exceptions become P0=.5 and aggregation gives both risk and hard tie .5, whereas the task requires failure. data/summary.csv has total nfail_exc=0, so this is a latent defect with no observed effect on archived estimates."
+        },
+        {
+          "run": "Opus01",
+          "status": "X",
+          "done": "Preserves raw data, seeds, stopping rules and denominators for all attempts.",
+          "issue": "Reports 2 actual exceptions; hard failure is 1, but reported risk remains 0.5.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_01/src/mc.py",
+              "line": 146
+            }
+          ],
+          "canonical_note": "Raw data, seeds, fixed-block stopping rules, resources and denominators for all attempts are recorded; bad hard failure is 1, but the reported posterior-min risk is still .5 rather than 1 on exception."
+        },
+        {
+          "run": "Opus02",
+          "status": "X",
+          "done": "Preserves raw data, seeds, stopping rules and denominators for all attempts.",
+          "issue": "Exceptions receive hard failure 1 and risk 0.5; this row makes no inference about their actual count.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_02/hexsym/sim.py",
+              "line": 49
+            }
+          ],
+          "canonical_note": "Raw data, seeds, fixed-block stopping rules, resources and denominators for all attempts are recorded; bad hard failure is 1, but the reported posterior-min risk is still .5 rather than 1 on exception."
+        },
+        {
+          "run": "Opus03",
+          "status": "X",
+          "done": "Preserves raw data, seeds, stopping rules and denominators for all attempts.",
+          "issue": "Exceptions receive hard failure 1 and risk 0.5; this row makes no inference about their actual count.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_03/symdec/mc.py",
+              "line": 121
+            }
+          ],
+          "canonical_note": "Raw data, seeds, fixed-block stopping rules, resources and denominators for all attempts are recorded; bad hard failure is 1, but the reported posterior-min risk is still .5 rather than 1 on exception."
+        },
+        {
+          "run": "GPT01",
+          "status": "E",
+          "done": "Preserves raw data, seeds, stopping rules and denominators for all attempts.",
+          "issue": "Exceptions and invalid outputs receive risk and failure 1; saved-array auditing found no inconsistency.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_01/README.md",
+              "line": 50
+            }
+          ],
+          "canonical_note": "Retains all attempts; exception/invalid-correction risk and actual failure are both 1. Planned seeds, fixed stopping counts, resources and raw arrays can be recomputed; the existing archive audit found no inconsistency."
+        },
+        {
+          "run": "GPT02",
+          "status": "E",
+          "done": "Preserves raw data, seeds, stopping rules and denominators for all attempts.",
+          "issue": "Exceptions and invalid outputs receive 1; checks of 305024 evaluation rows and 4 archive hashes agree.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_02/README.md",
+              "line": 61
+            }
+          ],
+          "canonical_note": "Retains all attempts; exception/invalid-correction risk and actual failure are both 1. Planned seeds, fixed stopping counts, resources and raw arrays can be recomputed; the existing archive audit found no inconsistency."
+        },
+        {
+          "run": "GPT03",
+          "status": "E",
+          "done": "Preserves raw data, seeds, stopping rules and denominators for all attempts.",
+          "issue": "340600 archived slots include 200 reservations from a terminated batch; the physical-trial total is unknown.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_03/README.md",
+              "line": 62
+            }
+          ],
+          "canonical_note": "Raw arrays and summaries agree; 423 NPZ files /340600 archived slots include 200 conservatively failed reserved slots from an externally terminated batch, and the number of completed physical trials is unknown. This is disclosed correctly and the denominator is retained; slots are not called completed trials, and no scientific-failure penalty is assigned for this incident."
+        }
+      ],
+      "conclusion": "X indicates a defect in this detail, not automatic whole-task failure; GPT03 adequately discloses reserved slots, which must not be used to inflate completed-trial counts."
+    }
+  ],
+  "algorithm_comparison": {
+    "question": "How does each run compute the partition function, and what are its exact and approximate ranges?",
+    "rows": [
+      {
+        "run": "Fable03",
+        "exact_small_L": "Exact three-state frontier transfer matrix, with two-state special cases where appropriate.",
+        "large_L_method": "The study uses exact contraction: three-state L≤12, two-state L≤16, without MPS truncation.",
+        "limit": "Exact up to rounding; external small-size checks pass, but do not validate infinite-size extrapolation.",
+        "ordinary_posterior_pass": 210,
+        "ordinary_decode_pass": 210,
+        "stress_posterior_pass": 0,
+        "ordinary_max_error": 1.0325074129013956e-14,
+        "evidence": [
+          {
+            "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-fable-5-1/run_03/README.md",
+            "line": 25
+          }
+        ]
+      },
+      {
+        "run": "Opus01",
+        "exact_small_L": "Untruncated column transfer matrix with explicit logical parity.",
+        "large_L_method": "The report states exact ternary L≤14 and binary L≤18; larger sizes through L48 use χ64 MPS.",
+        "limit": "The χ64/128 difference is an empirical stability check, not a rigorous bound on true bias; see A3.",
+        "ordinary_posterior_pass": 210,
+        "ordinary_decode_pass": 210,
+        "stress_posterior_pass": 0,
+        "ordinary_max_error": 1.0325074129013956e-14,
+        "evidence": [
+          {
+            "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_01/report.md",
+            "line": 67
+          }
+        ]
+      },
+      {
+        "run": "Opus02",
+        "exact_small_L": "The public API uses an exact frontier at L≤9; L≤4 satisfies R4.",
+        "large_L_method": "The public API uses χ64 MPS at L>9; production scans also use χ32/48 and other settings.",
+        "limit": "API and study-scan parameters differ; the README's broad exactness wording does not cover L>9.",
+        "ordinary_posterior_pass": 210,
+        "ordinary_decode_pass": 210,
+        "stress_posterior_pass": 0,
+        "ordinary_max_error": 1.0325074129013956e-14,
+        "evidence": [
+          {
+            "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_02/hexsym/api.py",
+            "line": 15
+          }
+        ]
+      },
+      {
+        "run": "Opus03",
+        "exact_small_L": "The public small-size API uses an exact frontier, with valid elimination in two-state special cases.",
+        "large_L_method": "Exploration at L≤12 uses exact inference; production Q2—Q9 use χ64 MPS at all L, with some χ128 checks.",
+        "limit": "Truncation weights and χ comparisons are present; these do not automatically certify every production posterior's error.",
+        "ordinary_posterior_pass": 210,
+        "ordinary_decode_pass": 210,
+        "stress_posterior_pass": 0,
+        "ordinary_max_error": 1.021405182655144e-14,
+        "evidence": [
+          {
+            "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_03/report.md",
+            "line": 90
+          }
+        ]
+      },
+      {
+        "run": "GPT01",
+        "exact_small_L": "Untruncated three-state column frontier with Decimal fallback.",
+        "large_L_method": "Dense and exact sparse support storage; sparsification uses no weight threshold.",
+        "limit": "Deleting zero support in an exact storage variant is not approximate truncation; large-size limits still require extrapolation or theorems.",
+        "ordinary_posterior_pass": 210,
+        "ordinary_decode_pass": 210,
+        "stress_posterior_pass": 18,
+        "ordinary_max_error": 1.0325074129013956e-14,
+        "evidence": [
+          {
+            "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_01/README.md",
+            "line": 60
+          }
+        ]
+      },
+      {
+        "run": "GPT02",
+        "exact_small_L": "Nonnegative exact column summation, with log-domain inference near endpoints.",
+        "large_L_method": "compressed.py performs exact support pruning and removes no positive-weight configurations.",
+        "limit": "Memory is exponential in width; MPS or free fermions are not needed to satisfy the small-size requirement.",
+        "ordinary_posterior_pass": 210,
+        "ordinary_decode_pass": 210,
+        "stress_posterior_pass": 18,
+        "ordinary_max_error": 1.0325074129013956e-14,
+        "evidence": [
+          {
+            "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_02/README.md",
+            "line": 16
+          }
+        ]
+      },
+      {
+        "run": "GPT03",
+        "exact_small_L": "Exact column-frontier summation with log arithmetic for extremely small probabilities.",
+        "large_L_method": "The study uses the same kind of exact frontier, without MPS truncation.",
+        "limit": "The archived study has reserved slots from external termination; exact summation does not mean every planned trial ran.",
+        "ordinary_posterior_pass": 210,
+        "ordinary_decode_pass": 210,
+        "stress_posterior_pass": 18,
+        "ordinary_max_error": 1.0325074129013956e-14,
+        "evidence": [
+          {
+            "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_03/README.md",
+            "line": 18
+          }
+        ]
+      }
+    ],
+    "conclusion": "All seven core methods are finite-width tensor/transfer contractions; none requires a free-fermion mapping to complete R4. Opus03 discusses a Pfaffian route, but its implementation uses transfer/MPS. R4 small-size exact inference and R1 large-size approximation must be assessed in separate columns."
+  },
+  "verification_scope": {
+    "routine_cases": 210,
+    "original_R4_O1_O2_cases": 140,
+    "extra_O0_cases": 70,
+    "stress_cases": 18,
+    "stress_parameters": "L=2,3,4; N=8; O1/O2; p=1e-180,1e-310,and the smallest positive float 5e-324.",
+    "routine_result": "All seven pass 210/210 posterior and decode checks; this is not exhaustive validation of all legal records.",
+    "oracle_independence": "The existing reference uses independent geometry, irrep construction and generic einsum; 21 L2 cases are additionally compared with microscopic enumeration, with maximum difference 8.67e-19.",
+    "platform_caveat": "Stress validation runs on macOS. np.longdouble may have a different exponent range from the original Linux environment, so not all macOS failures can be extrapolated directly to that environment. Opus02 computes edge-weight p/2 in Python float before conversion to dtype; rounding to zero at the smallest positive float is a cross-platform issue.",
+    "resource_limit": "Only the submitted 8CPU/32GiB/no-GPU records and existing resource files were inspected; the full study was not rerun, nor was resource use throughout the original run independently certified.",
+    "saved_data": {
+      "GPT1": {
+        "files": 677,
+        "trials": 1319100,
+        "inconsistencies": []
+      },
+      "GPT2": {
+        "decoder_evaluation_rows": 305024,
+        "matching_archived_data_hashes": 4,
+        "inconsistencies": []
+      },
+      "GPT3": {
+        "files": 423,
+        "archived_trial_slots": 340600,
+        "inconsistencies": [],
+        "note": "Includes the 200 conservatively failed reserved slots in the externally terminated batch; these are not evidence that 200 physical trials actually ran."
+      }
+    },
+    "review_evidence": [
+      "/Users/home/Library/CloudStorage/Dropbox/Research/[Mercor]SciCode2/benchmarks/fusion-informed-decoding/evaluation/reviews/2026-10-16-d89b765a/results/oracle-check.json",
+      "/Users/home/Library/CloudStorage/Dropbox/Research/[Mercor]SciCode2/benchmarks/fusion-informed-decoding/evaluation/reviews/2026-10-16-d89b765a/results/heldout-cases.json",
+      "/Users/home/Library/CloudStorage/Dropbox/Research/[Mercor]SciCode2/benchmarks/fusion-informed-decoding/evaluation/reviews/2026-10-16-d89b765a/results/saved-data-audit.json"
+    ],
+    "scores_meaning": "Full credit means sufficient evidence for this rubric item within its required scope; it does not mean the complete true phase diagram is solved, or change the incomplete status of formal A/B difficulty calibration."
+  }
+}

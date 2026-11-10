@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import argparse
+import hashlib
 import re
 import sys
 from pathlib import Path
@@ -227,6 +228,45 @@ def validate_idea_sources(
         elif isinstance(item_index, int) and not isinstance(item_index, bool):
             if item_index < 0 or item_index >= len(items):
                 errors.append(f"{label}.item_index is outside the assessment list")
+
+
+def validate_problem_sources(errors: list[str], metadata: dict, benchmark_dir: Path) -> None:
+    """Validate explicit user-supplied questions without inventing paper reviews."""
+    sources = metadata.get("problem_sources")
+    if not isinstance(sources, list) or not sources:
+        errors.append("user-provided-problem requires non-empty problem_sources")
+        return
+    valid_paths = set()
+    for position, source in enumerate(sources):
+        label = f"problem_sources[{position}]"
+        if not isinstance(source, dict):
+            errors.append(f"{label} must be a mapping")
+            continue
+        value = source.get("path", "")
+        relative = Path(value) if isinstance(value, str) else Path()
+        if (not isinstance(value, str) or not value or relative.is_absolute()
+                or ".." in relative.parts or not relative.parts or relative.parts[0] != "problem"):
+            errors.append(f"{label}.path must be a safe benchmark-relative problem path")
+            continue
+        path = benchmark_dir / relative
+        if not path.is_file() or not path.resolve().is_relative_to(benchmark_dir.resolve()):
+            errors.append(f"{label}.path does not resolve to a local problem file")
+            continue
+        digest = hashlib.sha256(path.read_bytes()).hexdigest()
+        if source.get("sha256") != digest:
+            errors.append(f"{label}.sha256 does not match the immutable problem input")
+        if not isinstance(source.get("origin"), str) or not source["origin"].strip():
+            errors.append(f"{label}.origin must record the supplied input's provenance")
+        valid_paths.add(relative.as_posix())
+    ideas = metadata.get("idea_sources")
+    if not isinstance(ideas, list) or not ideas:
+        errors.append("idea_sources must identify a supplied problem source")
+        return
+    for position, idea in enumerate(ideas):
+        if (not isinstance(idea, dict) or idea.get("source_path") not in valid_paths
+                or idea.get("source_field") != "user-provided-research-question"
+                or not isinstance(idea.get("role"), str) or not idea["role"].strip()):
+            errors.append(f"idea_sources[{position}] must identify a registered problem question")
 
 
 def validate_idea_graph(errors: list[str], benchmark_dir: Path, metadata: dict) -> None:
@@ -566,15 +606,21 @@ def main() -> None:
         errors.append("workstation_feasible must be yes, no, or uncertain")
     if metadata.get("expert_review") not in {"pending", "reviewed"}:
         errors.append("expert_review must be pending or reviewed")
+    direct_problem = metadata.get("source_mode") == "user-provided-problem"
+    if direct_problem:
+        if not isinstance(metadata.get("paper_ids"), list):
+            errors.append("paper_ids must be a list (may be empty for a direct problem)")
+        validate_problem_sources(errors, metadata, benchmark_dir)
+    else:
+        validate_string_list(errors, metadata, "paper_ids")
+        validate_idea_sources(errors, metadata, repo_root)
     for field in (
-        "paper_ids",
         "scientific_domain",
         "expected_outcomes",
         "expected_outputs",
         "evidence_requirements",
     ):
         validate_string_list(errors, metadata, field)
-    validate_idea_sources(errors, metadata, repo_root)
     validate_readme(errors, benchmark_dir)
     validate_task(errors, benchmark_dir, metadata)
     validate_workspace_nodes(errors, benchmark_dir)

@@ -1,0 +1,69 @@
+{
+  "status": "completed",
+  "scope": "General sparse-matrix compilation and deterministic ideal-Zephyr embedding with a conditional closed-system pause-dynamics comparison; no full-anneal or hardware superiority claim",
+  "trial_start_utc": "2026-10-07T19:55:30.405000+00:00",
+  "scientific_launch_utc": "2026-10-07T20:11:04.521000+00:00",
+  "scientific_finish_utc": "2026-10-07T20:52:21.174756+00:00",
+  "original_deadline_utc": "2026-10-07T21:55:30.405000+00:00",
+  "budget_seconds": 7200,
+  "total_trial_elapsed_seconds": 3410.769756,
+  "scientific_session_elapsed_seconds": 2476.653756,
+  "remaining_seconds_at_scientific_completion": 3789.230244,
+  "deadline_extended": false,
+  "scientific_solver_session": "01a117fd-a459-7621-b36c-1c49df7bcbbf",
+  "assistants": [
+    {
+      "session": "01a117fe-0bfd-7be3-bceb-77efccafaa8b",
+      "scope": "pause theorem/evaluator and independent compiler/report review",
+      "status": "completed"
+    },
+    {
+      "session": "01a117fe-343f-7a11-96fa-c440be5b285c",
+      "scope": "Zephyr template, physical programming, embedding checks and report review",
+      "status": "completed"
+    }
+  ],
+  "checks": {
+    "compiler_primary_cases": 38,
+    "compiler_primary_states": 14052,
+    "syndrome_updates": 32,
+    "chained_update_checks": 100,
+    "embedding_witnesses_independently_verified": 25,
+    "general_matrix_examples": 5,
+    "small_pruned_graphs": 1024,
+    "quantum_validation_random_models": 24,
+    "quantum_durations_per_model": 4,
+    "extreme_weight_exact_cases": 4,
+    "default_cli_overflow_fallback": "passed",
+    "scientific_command_exit_status": "all final reproduction commands exited zero"
+  },
+  "resources": {
+    "python": "3.13.2",
+    "platform": "macOS-26.5.1-arm64-arm-64bit-Mach-O",
+    "machine": "arm64",
+    "versions": {
+      "networkx": "3.5",
+      "numpy": "2.2.6",
+      "minorminer": "0.2.21",
+      "dimod": "0.12.21",
+      "dwave-networkx": "0.8.18",
+      "dwave-system": "1.34.0"
+    },
+    "final_experiment_wall_seconds": 9.149656290886924,
+    "final_experiment_maxrss_bytes_macos": 208158720,
+    "qpu_access": false
+  },
+  "limitations": [
+    "conditional fixed-Hamiltonian hold with specified initial state; preparation and ramps excluded",
+    "all 25 ordinary-strength broad-example dynamics certificates inconclusive",
+    "template fit guarantee is sufficient and incurs worst-case quadratic hardware overhead",
+    "no device working graph, calibration noise or finite-device-precision measurements",
+    "no causal window integration or observable-class likelihood assessment"
+  ],
+  "failures_resolved": [
+    "native g=1 clique calls stalled/exited137; replaced by explicit construction",
+    "floating expansion and gap-sign issues repaired with exact rational certificates",
+    "numeric allocation overflow now triggers exact-program fallback"
+  ],
+  "report": "RESEARCH_REPORT.md"
+}

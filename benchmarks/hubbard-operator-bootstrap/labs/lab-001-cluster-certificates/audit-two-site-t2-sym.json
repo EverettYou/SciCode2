@@ -1,0 +1,435 @@
+{
+  "passed": true,
+  "input_directory": "/Users/home/Library/CloudStorage/Dropbox/Research/[Mercor]SciCode2/benchmarks/hubbard-operator-bootstrap/labs/lab-002-moment-sdp/results/two-site-t2-sym",
+  "independent_CAR_Fock_action_tests": 4000,
+  "exhaustive_T2_CAR_order_equality_patterns": 46656,
+  "distinct_lattice_bonds": 32,
+  "full_variables": 3240,
+  "variables": 331,
+  "symmetry_expansion_audit": {
+    "group": "D4 spatial rotations/reflections and spin interchange",
+    "signed_nonzero_variable_orbits": 331,
+    "signed_zero_variable_orbits": 11
+  },
+  "character_projection_sources_audited": 6,
+  "equalities": 66,
+  "blocks": 66,
+  "affine_nonzero_coefficients_checked": 335781,
+  "all_affine_coefficient_differences": 0,
+  "objective_float_max_difference": 0.0,
+  "objective_handling": "Use independently reconstructed exact half-integer coefficients in final certificate.",
+  "elapsed_seconds": 34.386889667017385,
+  "peak_rss_bytes": 138592256,
+  "block_details": [
+    {
+      "name": "P_(1, 0)",
+      "dim": 8,
+      "nnz": 64,
+      "seconds": 0.015981792006641626
+    },
+    {
+      "name": "Q_(1, 0)",
+      "dim": 8,
+      "nnz": 80,
+      "seconds": 0.011009249836206436
+    },
+    {
+      "name": "P_(2, 0)",
+      "dim": 6,
+      "nnz": 28,
+      "seconds": 0.007600625045597553
+    },
+    {
+      "name": "Q_(2, 0)",
+      "dim": 6,
+      "nnz": 38,
+      "seconds": 0.005710249999538064
+    },
+    {
+      "name": "P_(5, 0)",
+      "dim": 8,
+      "nnz": 56,
+      "seconds": 0.00632491591386497
+    },
+    {
+      "name": "Q_(5, 0)",
+      "dim": 8,
+      "nnz": 70,
+      "seconds": 0.012481915997341275
+    },
+    {
+      "name": "P_(6, 0)",
+      "dim": 8,
+      "nnz": 64,
+      "seconds": 0.011924708029255271
+    },
+    {
+      "name": "Q_(6, 0)",
+      "dim": 8,
+      "nnz": 80,
+      "seconds": 0.012625459115952253
+    },
+    {
+      "name": "P_(10, 0)",
+      "dim": 6,
+      "nnz": 34,
+      "seconds": 0.005567166954278946
+    },
+    {
+      "name": "Q_(10, 0)",
+      "dim": 6,
+      "nnz": 45,
+      "seconds": 0.008367415983229876
+    },
+    {
+      "name": "P_(0, 1)",
+      "dim": 16,
+      "nnz": 256,
+      "seconds": 0.025274416897445917
+    },
+    {
+      "name": "Q_(0, 1)",
+      "dim": 16,
+      "nnz": 272,
+      "seconds": 0.015469459118321538
+    },
+    {
+      "name": "P_(1, 1)",
+      "dim": 16,
+      "nnz": 256,
+      "seconds": 0.022070166189223528
+    },
+    {
+      "name": "Q_(1, 1)",
+      "dim": 16,
+      "nnz": 288,
+      "seconds": 0.010961499996483326
+    },
+    {
+      "name": "P_(2, 1)",
+      "dim": 16,
+      "nnz": 256,
+      "seconds": 0.03480900009162724
+    },
+    {
+      "name": "Q_(2, 1)",
+      "dim": 16,
+      "nnz": 280,
+      "seconds": 0.01564833289012313
+    },
+    {
+      "name": "P_(5, 1)",
+      "dim": 16,
+      "nnz": 256,
+      "seconds": 0.035138332983478904
+    },
+    {
+      "name": "Q_(5, 1)",
+      "dim": 16,
+      "nnz": 284,
+      "seconds": 0.04753283294849098
+    },
+    {
+      "name": "P_(6, 1)",
+      "dim": 16,
+      "nnz": 256,
+      "seconds": 0.07771208393387496
+    },
+    {
+      "name": "Q_(6, 1)",
+      "dim": 16,
+      "nnz": 288,
+      "seconds": 0.15801362483762205
+    },
+    {
+      "name": "P_(10, 1)",
+      "dim": 16,
+      "nnz": 256,
+      "seconds": 0.24463666696101427
+    },
+    {
+      "name": "Q_(10, 1)",
+      "dim": 16,
+      "nnz": 282,
+      "seconds": 0.009295167168602347
+    },
+    {
+      "name": "P_(0, 0)",
+      "dim": 6,
+      "nnz": 26,
+      "seconds": 0.0036897920072078705
+    },
+    {
+      "name": "Q_(0, 0)",
+      "dim": 6,
+      "nnz": 32,
+      "seconds": 0.005922290962189436
+    },
+    {
+      "name": "G_(0, 0)",
+      "dim": 32,
+      "nnz": 1024,
+      "seconds": 0.024322249926626682
+    },
+    {
+      "name": "G_(2, 0)",
+      "dim": 32,
+      "nnz": 1008,
+      "seconds": 0.02824112493544817
+    },
+    {
+      "name": "G_(1, 0)",
+      "dim": 32,
+      "nnz": 960,
+      "seconds": 0.03589429194107652
+    },
+    {
+      "name": "G_(10, 0)",
+      "dim": 32,
+      "nnz": 1024,
+      "seconds": 0.02466879109852016
+    },
+    {
+      "name": "G_(6, 0)",
+      "dim": 32,
+      "nnz": 960,
+      "seconds": 0.051123457960784435
+    },
+    {
+      "name": "G_(5, 0)",
+      "dim": 32,
+      "nnz": 944,
+      "seconds": 0.07726808288134634
+    },
+    {
+      "name": "G_(0, 1)",
+      "dim": 16,
+      "nnz": 272,
+      "seconds": 0.03782395808957517
+    },
+    {
+      "name": "G_(2, 1)",
+      "dim": 16,
+      "nnz": 272,
+      "seconds": 0.006649291142821312
+    },
+    {
+      "name": "G_(1, 1)",
+      "dim": 16,
+      "nnz": 272,
+      "seconds": 0.01747937500476837
+    },
+    {
+      "name": "G_(10, 1)",
+      "dim": 16,
+      "nnz": 272,
+      "seconds": 0.016895707929506898
+    },
+    {
+      "name": "G_(6, 1)",
+      "dim": 16,
+      "nnz": 272,
+      "seconds": 0.006327125011011958
+    },
+    {
+      "name": "G_(5, 1)",
+      "dim": 16,
+      "nnz": 272,
+      "seconds": 0.006439457880333066
+    },
+    {
+      "name": "n_0",
+      "dim": 1,
+      "nnz": 1,
+      "seconds": 0.0017131250351667404
+    },
+    {
+      "name": "hole_0",
+      "dim": 1,
+      "nnz": 1,
+      "seconds": 0.001391374971717596
+    },
+    {
+      "name": "n_1",
+      "dim": 1,
+      "nnz": 1,
+      "seconds": 0.0031445410568267107
+    },
+    {
+      "name": "hole_1",
+      "dim": 1,
+      "nnz": 1,
+      "seconds": 0.0013303752057254314
+    },
+    {
+      "name": "n_2",
+      "dim": 1,
+      "nnz": 1,
+      "seconds": 0.0013561670202761889
+    },
+    {
+      "name": "hole_2",
+      "dim": 1,
+      "nnz": 1,
+      "seconds": 0.0015074589755386114
+    },
+    {
+      "name": "n_5",
+      "dim": 1,
+      "nnz": 1,
+      "seconds": 0.0012457920238375664
+    },
+    {
+      "name": "hole_5",
+      "dim": 1,
+      "nnz": 1,
+      "seconds": 0.0013751669321209192
+    },
+    {
+      "name": "n_6",
+      "dim": 1,
+      "nnz": 1,
+      "seconds": 0.0013319579884409904
+    },
+    {
+      "name": "hole_6",
+      "dim": 1,
+      "nnz": 1,
+      "seconds": 0.0050682921428233385
+    },
+    {
+      "name": "n_10",
+      "dim": 1,
+      "nnz": 1,
+      "seconds": 0.005513833137229085
+    },
+    {
+      "name": "hole_10",
+      "dim": 1,
+      "nnz": 1,
+      "seconds": 0.0013452500570565462
+    },
+    {
+      "name": "T2prime_two_site_spin0_k0_char(1, 1)",
+      "dim": 33,
+      "nnz": 28927,
+      "seconds": 4.6504048749338835
+    },
+    {
+      "name": "T2prime_two_site_spin0_k0_char(1, -1)",
+      "dim": 12,
+      "nnz": 6443,
+      "seconds": 0.008099375059828162
+    },
+    {
+      "name": "T2prime_two_site_spin0_k0_char(-1, 1)",
+      "dim": 12,
+      "nnz": 6443,
+      "seconds": 0.02151479199528694
+    },
+    {
+      "name": "T2prime_two_site_spin0_k0_char(-1, -1)",
+      "dim": 4,
+      "nnz": 918,
+      "seconds": 0.03947416599839926
+    },
+    {
+      "name": "T2prime_two_site_spin0_k1_char(1,)",
+      "dim": 45,
+      "nnz": 52631,
+      "seconds": 7.362021749839187
+    },
+    {
+      "name": "T2prime_two_site_spin0_k1_char(-1,)",
+      "dim": 16,
+      "nnz": 11875,
+      "seconds": 0.03534595784731209
+    },
+    {
+      "name": "T2prime_two_site_spin0_k2_char(1, 1)",
+      "dim": 33,
+      "nnz": 29088,
+      "seconds": 5.2601974999997765
+    },
+    {
+      "name": "T2prime_two_site_spin0_k2_char(1, -1)",
+      "dim": 12,
+      "nnz": 6345,
+      "seconds": 0.020421916851773858
+    },
+    {
+      "name": "T2prime_two_site_spin0_k2_char(-1, 1)",
+      "dim": 12,
+      "nnz": 6345,
+      "seconds": 0.01030754204839468
+    },
+    {
+      "name": "T2prime_two_site_spin0_k2_char(-1, -1)",
+      "dim": 4,
+      "nnz": 924,
+      "seconds": 0.017403666861355305
+    },
+    {
+      "name": "T2prime_two_site_spin0_k5_char(1,)",
+      "dim": 37,
+      "nnz": 42308,
+      "seconds": 6.762777749914676
+    },
+    {
+      "name": "T2prime_two_site_spin0_k5_char(-1,)",
+      "dim": 24,
+      "nnz": 24804,
+      "seconds": 0.010656291851773858
+    },
+    {
+      "name": "T2prime_two_site_spin0_k6_char(1,)",
+      "dim": 45,
+      "nnz": 52631,
+      "seconds": 3.3196194579359144
+    },
+    {
+      "name": "T2prime_two_site_spin0_k6_char(-1,)",
+      "dim": 16,
+      "nnz": 11875,
+      "seconds": 0.004290666896849871
+    },
+    {
+      "name": "T2prime_two_site_spin0_k10_char(1, 1)",
+      "dim": 33,
+      "nnz": 29009,
+      "seconds": 2.933444624999538
+    },
+    {
+      "name": "T2prime_two_site_spin0_k10_char(1, -1)",
+      "dim": 12,
+      "nnz": 6443,
+      "seconds": 0.0034012501128017902
+    },
+    {
+      "name": "T2prime_two_site_spin0_k10_char(-1, 1)",
+      "dim": 12,
+      "nnz": 6443,
+      "seconds": 0.003421915927901864
+    },
+    {
+      "name": "T2prime_two_site_spin0_k10_char(-1, -1)",
+      "dim": 4,
+      "nnz": 918,
+      "seconds": 0.0021462920121848583
+    }
+  ],
+  "physical_sector": {
+    "L": 4,
+    "t": 1,
+    "U": 8,
+    "Nup": 8,
+    "Ndown": 8
+  },
+  "notes": [
+    "All sparse coefficients and constants compared exactly.",
+    "Real Hermitian moments and momentum/spin block selection are rebuilt from variable names.",
+    "T1 degree-six cancellation uses independent exterior multiplication; the T2 contraction table is exhaustively verified against it for all 46,656 relative-order/equality patterns.",
+    "Symmetry expansion is independently checked by signed orbit traversal; character projections are checked for the declared reflection action, complete orthogonal span, and exact vanishing cross-character maps.",
+    "Fermionic real moment symmetrization is valid because the Fourier Hamiltonian and operator spaces are closed under complex conjugation."
+  ]
+}

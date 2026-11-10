@@ -1,0 +1,1444 @@
+{
+  "status": "pass",
+  "instances": 12,
+  "self_check": {
+    "status": "pass",
+    "expanded_assignments": 256,
+    "interval": {
+      "lower": 0.5479163519087584,
+      "upper": 0.5479163519087662,
+      "decoded_error_lower": 0.5486611357220604,
+      "decoded_error_upper": 0.5486611357220755,
+      "ground_cost": -0.5,
+      "ground_degeneracy": 1,
+      "auxiliary_partition_summed": true,
+      "original_patterns": 16,
+      "relative_interval_width": 1.4183846029238678e-14
+    },
+    "dense_probability": "0.547916351908762103984130599886590032630423864910123714579894",
+    "dense_decoded_error_probability": "0.548661135722068074923559665178416424410935431831202459185146"
+  },
+  "consistent_optimal_improvement_certificates": 8,
+  "root_decoded_improvement_certificates": 0,
+  "lp_consistent_optimal_improvement_certificates": 11,
+  "seconds": 14.81962287495844,
+  "interpretation": "Certified endpoint Gibbs comparisons for explicitly distinguished readout events. Logical Gibbs mass includes all auxiliary excited states. Full-QUBO ground and decoded original-error optimum events are distinct; excited auxiliaries count for the latter. Exact original-error enumeration is validation only, not construction or selection. Interval enclosures use positive transfer arithmetic and Decimal-enclosed exponential constants.",
+  "records": [
+    {
+      "instance": "irregular_hubs_n16_s1101",
+      "split": "development",
+      "records": {
+        "first": {
+          "scale": 0.018291316013498402,
+          "logical_gibbs_ground_mass": {
+            "lower": 0.007832572904260919,
+            "upper": 0.0078325729044892,
+            "decoded_error_lower": 0.007918177286629625,
+            "decoded_error_upper": 0.007918177287091148,
+            "ground_cost": 1.75,
+            "ground_degeneracy": 1,
+            "auxiliary_partition_summed": true,
+            "original_patterns": 65536,
+            "relative_interval_width": 2.914507641420482e-11
+          },
+          "consistent_optimal_lower": 0.007451193346685739,
+          "consistent_optimal_upper": 0.007832572904495586,
+          "root_decoded_optimal_upper": 0.05660965609371493,
+          "root_decoded_optimal_lower": 0.007532629525084585
+        },
+        "size_only_pool": {
+          "scale": 0.023204695432716655,
+          "logical_gibbs_ground_mass": {
+            "lower": 0.01481131824805097,
+            "upper": 0.014811318248482645,
+            "decoded_error_lower": 0.014825138665385169,
+            "decoded_error_upper": 0.01482513866624928,
+            "ground_cost": 1.75,
+            "ground_degeneracy": 1,
+            "auxiliary_partition_summed": true,
+            "original_patterns": 65536,
+            "relative_interval_width": 2.9144859808593996e-11
+          },
+          "consistent_optimal_lower": 0.014090911450968208,
+          "consistent_optimal_upper": 0.01481131824849649,
+          "root_decoded_optimal_upper": 0.06346407714592142,
+          "root_decoded_optimal_lower": 0.014104059657873924
+        },
+        "guided_pool": {
+          "scale": 0.023204695432716655,
+          "logical_gibbs_ground_mass": {
+            "lower": 0.01481131824805097,
+            "upper": 0.014811318248482645,
+            "decoded_error_lower": 0.014825138665385169,
+            "decoded_error_upper": 0.01482513866624928,
+            "ground_cost": 1.75,
+            "ground_degeneracy": 1,
+            "auxiliary_partition_summed": true,
+            "original_patterns": 65536,
+            "relative_interval_width": 2.9144859808593996e-11
+          },
+          "consistent_optimal_lower": 0.014090911450968208,
+          "consistent_optimal_upper": 0.01481131824849649,
+          "root_decoded_optimal_upper": 0.06346407714592142,
+          "root_decoded_optimal_lower": 0.014104059657873924
+        },
+        "guided_pruned": {
+          "scale": 0.023204695432716655,
+          "logical_gibbs_ground_mass": {
+            "lower": 0.01481131824805097,
+            "upper": 0.014811318248482645,
+            "decoded_error_lower": 0.014825138665385169,
+            "decoded_error_upper": 0.01482513866624928,
+            "ground_cost": 1.75,
+            "ground_degeneracy": 1,
+            "auxiliary_partition_summed": true,
+            "original_patterns": 65536,
+            "relative_interval_width": 2.9144859808593996e-11
+          },
+          "consistent_optimal_lower": 0.014090911450968208,
+          "consistent_optimal_upper": 0.01481131824849649,
+          "root_decoded_optimal_upper": 0.06346407714592142,
+          "root_decoded_optimal_lower": 0.014104059657873924
+        },
+        "size_only_pruned": {
+          "scale": 0.023204695432716655,
+          "logical_gibbs_ground_mass": {
+            "lower": 0.01481131824805097,
+            "upper": 0.014811318248482645,
+            "decoded_error_lower": 0.014825138665385169,
+            "decoded_error_upper": 0.01482513866624928,
+            "ground_cost": 1.75,
+            "ground_degeneracy": 1,
+            "auxiliary_partition_summed": true,
+            "original_patterns": 65536,
+            "relative_interval_width": 2.9144859808593996e-11
+          },
+          "consistent_optimal_lower": 0.014090911450968208,
+          "consistent_optimal_upper": 0.01481131824849649,
+          "root_decoded_optimal_upper": 0.06346407714592142,
+          "root_decoded_optimal_lower": 0.014104059657873924
+        },
+        "lp_selected": {
+          "scale": 0.023204694934026243,
+          "logical_gibbs_ground_mass": {
+            "lower": 0.014811317538090986,
+            "upper": 0.014811317538522663,
+            "decoded_error_lower": 0.014825137958210059,
+            "decoded_error_upper": 0.014825137959074171,
+            "ground_cost": 1.75,
+            "ground_degeneracy": 1,
+            "auxiliary_partition_summed": true,
+            "original_patterns": 65536,
+            "relative_interval_width": 2.914509544857855e-11
+          },
+          "consistent_optimal_lower": 0.014647616566500486,
+          "consistent_optimal_upper": 0.014811317538557429,
+          "root_decoded_optimal_upper": 0.02587756264280913,
+          "root_decoded_optimal_lower": 0.014661284237467096
+        }
+      },
+      "conditional_mass_ratio_lower": 1.8909901546606656,
+      "strict_consistent_order_proved": true,
+      "root_decoded_order_proved": false,
+      "lp_strict_consistent_order_proved": true
+    },
+    {
+      "instance": "irregular_hubs_n16_s2203",
+      "split": "held_out",
+      "records": {
+        "first": {
+          "scale": 0.02514614683580961,
+          "logical_gibbs_ground_mass": {
+            "lower": 0.020575239169826134,
+            "upper": 0.020575239170425676,
+            "decoded_error_lower": 0.02058927380471878,
+            "decoded_error_upper": 0.0205892738059187,
+            "ground_cost": 0.0,
+            "ground_degeneracy": 1,
+            "auxiliary_partition_summed": true,
+            "original_patterns": 65536,
+            "relative_interval_width": 2.9138968690145854e-11
+          },
+          "consistent_optimal_lower": 0.019574211413528525,
+          "consistent_optimal_upper": 0.020575239170441083,
+          "root_decoded_optimal_upper": 0.0692413331098654,
+          "root_decoded_optimal_lower": 0.019587563234532066
+        },
+        "size_only_pool": {
+          "scale": 0.02514614683580961,
+          "logical_gibbs_ground_mass": {
+            "lower": 0.020575239169826134,
+            "upper": 0.020575239170425676,
+            "decoded_error_lower": 0.02058927380471878,
+            "decoded_error_upper": 0.0205892738059187,
+            "ground_cost": 0.0,
+            "ground_degeneracy": 1,
+            "auxiliary_partition_summed": true,
+            "original_patterns": 65536,
+            "relative_interval_width": 2.9138968690145854e-11
+          },
+          "consistent_optimal_lower": 0.019574211413528525,
+          "consistent_optimal_upper": 0.020575239170441083,
+          "root_decoded_optimal_upper": 0.0692413331098654,
+          "root_decoded_optimal_lower": 0.019587563234532066
+        },
+        "guided_pool": {
+          "scale": 0.02514614683580961,
+          "logical_gibbs_ground_mass": {
+            "lower": 0.020575239169826134,
+            "upper": 0.020575239170425676,
+            "decoded_error_lower": 0.02058927380471878,
+            "decoded_error_upper": 0.0205892738059187,
+            "ground_cost": 0.0,
+            "ground_degeneracy": 1,
+            "auxiliary_partition_summed": true,
+            "original_patterns": 65536,
+            "relative_interval_width": 2.9138968690145854e-11
+          },
+          "consistent_optimal_lower": 0.019574211413528525,
+          "consistent_optimal_upper": 0.020575239170441083,
+          "root_decoded_optimal_upper": 0.0692413331098654,
+          "root_decoded_optimal_lower": 0.019587563234532066
+        },
+        "guided_pruned": {
+          "scale": 0.02514614683580961,
+          "logical_gibbs_ground_mass": {
+            "lower": 0.020575239169826134,
+            "upper": 0.020575239170425676,
+            "decoded_error_lower": 0.02058927380471878,
+            "decoded_error_upper": 0.0205892738059187,
+            "ground_cost": 0.0,
+            "ground_degeneracy": 1,
+            "auxiliary_partition_summed": true,
+            "original_patterns": 65536,
+            "relative_interval_width": 2.9138968690145854e-11
+          },
+          "consistent_optimal_lower": 0.019574211413528525,
+          "consistent_optimal_upper": 0.020575239170441083,
+          "root_decoded_optimal_upper": 0.0692413331098654,
+          "root_decoded_optimal_lower": 0.019587563234532066
+        },
+        "size_only_pruned": {
+          "scale": 0.02514614683580961,
+          "logical_gibbs_ground_mass": {
+            "lower": 0.020575239169826134,
+            "upper": 0.020575239170425676,
+            "decoded_error_lower": 0.02058927380471878,
+            "decoded_error_upper": 0.0205892738059187,
+            "ground_cost": 0.0,
+            "ground_degeneracy": 1,
+            "auxiliary_partition_summed": true,
+            "original_patterns": 65536,
+            "relative_interval_width": 2.9138968690145854e-11
+          },
+          "consistent_optimal_lower": 0.019574211413528525,
+          "consistent_optimal_upper": 0.020575239170441083,
+          "root_decoded_optimal_upper": 0.0692413331098654,
+          "root_decoded_optimal_lower": 0.019587563234532066
+        },
+        "lp_selected": {
+          "scale": 0.03017537555342186,
+          "logical_gibbs_ground_mass": {
+            "lower": 0.029071947311734677,
+            "upper": 0.029071947312581805,
+            "decoded_error_lower": 0.029073908491984872,
+            "decoded_error_upper": 0.02907390849367928,
+            "ground_cost": 0.0,
+            "ground_degeneracy": 1,
+            "auxiliary_partition_summed": true,
+            "original_patterns": 65536,
+            "relative_interval_width": 2.913901550027881e-11
+          },
+          "consistent_optimal_lower": 0.02878311462433278,
+          "consistent_optimal_upper": 0.029071947312641483,
+          "root_decoded_optimal_upper": 0.03900900792982761,
+          "root_decoded_optimal_lower": 0.028785056320062175
+        }
+      },
+      "conditional_mass_ratio_lower": 0.9999999999708611,
+      "strict_consistent_order_proved": false,
+      "root_decoded_order_proved": false,
+      "lp_strict_consistent_order_proved": true
+    },
+    {
+      "instance": "irregular_hubs_n16_s3307",
+      "split": "held_out",
+      "records": {
+        "first": {
+          "scale": 0.02782608129295254,
+          "logical_gibbs_ground_mass": {
+            "lower": 0.017046640120991195,
+            "upper": 0.01704664012148801,
+            "decoded_error_lower": 0.017092898245887982,
+            "decoded_error_upper": 0.01709289824688423,
+            "ground_cost": -1.0,
+            "ground_degeneracy": 1,
+            "auxiliary_partition_summed": true,
+            "original_patterns": 65536,
+            "relative_interval_width": 2.9144417412358356e-11
+          },
+          "consistent_optimal_lower": 0.016216710089935346,
+          "consistent_optimal_upper": 0.01704664012150574,
+          "root_decoded_optimal_upper": 0.06577874045090344,
+          "root_decoded_optimal_lower": 0.016260716099062756
+        },
+        "size_only_pool": {
+          "scale": 0.03020992839381582,
+          "logical_gibbs_ground_mass": {
+            "lower": 0.020662966675596795,
+            "upper": 0.020662966676199,
+            "decoded_error_lower": 0.02068561688345177,
+            "decoded_error_upper": 0.020685616884657417,
+            "ground_cost": -1.0,
+            "ground_degeneracy": 1,
+            "auxiliary_partition_summed": true,
+            "original_patterns": 65536,
+            "relative_interval_width": 2.914420734811802e-11
+          },
+          "consistent_optimal_lower": 0.019657107082826142,
+          "consistent_optimal_upper": 0.020662966676237227,
+          "root_decoded_optimal_upper": 0.06936495749081588,
+          "root_decoded_optimal_lower": 0.019678654693498145
+        },
+        "guided_pool": {
+          "scale": 0.03020992839381582,
+          "logical_gibbs_ground_mass": {
+            "lower": 0.020662966675596795,
+            "upper": 0.020662966676199,
+            "decoded_error_lower": 0.02068561688345177,
+            "decoded_error_upper": 0.020685616884657417,
+            "ground_cost": -1.0,
+            "ground_degeneracy": 1,
+            "auxiliary_partition_summed": true,
+            "original_patterns": 65536,
+            "relative_interval_width": 2.914420734811802e-11
+          },
+          "consistent_optimal_lower": 0.019657107082826142,
+          "consistent_optimal_upper": 0.020662966676237227,
+          "root_decoded_optimal_upper": 0.06936495749081588,
+          "root_decoded_optimal_lower": 0.019678654693498145
+        },
+        "guided_pruned": {
+          "scale": 0.03020992839381582,
+          "logical_gibbs_ground_mass": {
+            "lower": 0.020662966675596795,
+            "upper": 0.020662966676199,
+            "decoded_error_lower": 0.02068561688345177,
+            "decoded_error_upper": 0.020685616884657417,
+            "ground_cost": -1.0,
+            "ground_degeneracy": 1,
+            "auxiliary_partition_summed": true,
+            "original_patterns": 65536,
+            "relative_interval_width": 2.914420734811802e-11
+          },
+          "consistent_optimal_lower": 0.019657107082826142,
+          "consistent_optimal_upper": 0.020662966676237227,
+          "root_decoded_optimal_upper": 0.06936495749081588,
+          "root_decoded_optimal_lower": 0.019678654693498145
+        },
+        "size_only_pruned": {
+          "scale": 0.03020992839381582,
+          "logical_gibbs_ground_mass": {
+            "lower": 0.020662966675596795,
+            "upper": 0.020662966676199,
+            "decoded_error_lower": 0.02068561688345177,
+            "decoded_error_upper": 0.020685616884657417,
+            "ground_cost": -1.0,
+            "ground_degeneracy": 1,
+            "auxiliary_partition_summed": true,
+            "original_patterns": 65536,
+            "relative_interval_width": 2.914420734811802e-11
+          },
+          "consistent_optimal_lower": 0.019657107082826142,
+          "consistent_optimal_upper": 0.020662966676237227,
+          "root_decoded_optimal_upper": 0.06936495749081588,
+          "root_decoded_optimal_lower": 0.019678654693498145
+        },
+        "lp_selected": {
+          "scale": 0.036251913289043466,
+          "logical_gibbs_ground_mass": {
+            "lower": 0.029938538803624584,
+            "upper": 0.029938538804497115,
+            "decoded_error_lower": 0.029941841220131212,
+            "decoded_error_upper": 0.029941841221876347,
+            "ground_cost": -1.0,
+            "ground_degeneracy": 1,
+            "auxiliary_partition_summed": true,
+            "original_patterns": 65536,
+            "relative_interval_width": 2.914408146785541e-11
+          },
+          "consistent_optimal_lower": 0.029595502004283927,
+          "consistent_optimal_upper": 0.02993853880451561,
+          "root_decoded_optimal_upper": 0.04139987534882561,
+          "root_decoded_optimal_lower": 0.02959876658158952
+        }
+      },
+      "conditional_mass_ratio_lower": 1.212143069152393,
+      "strict_consistent_order_proved": true,
+      "root_decoded_order_proved": false,
+      "lp_strict_consistent_order_proved": true
+    },
+    {
+      "instance": "mixed_hypergraph_n16_s1101",
+      "split": "development",
+      "records": {
+        "first": {
+          "scale": 0.018508549040165977,
+          "logical_gibbs_ground_mass": {
+            "lower": 0.012972133183211236,
+            "upper": 0.012972133183589547,
+            "decoded_error_lower": 0.013261535144475624,
+            "decoded_error_upper": 0.013261535145249137,
+            "ground_cost": -0.25,
+            "ground_degeneracy": 2,
+            "auxiliary_partition_summed": true,
+            "original_patterns": 65536,
+            "relative_interval_width": 2.9163301440898025e-11
+          },
+          "consistent_optimal_lower": 0.012339860075924398,
+          "consistent_optimal_upper": 0.012972133183642978,
+          "root_decoded_optimal_upper": 0.06200240900977308,
+          "root_decoded_optimal_lower": 0.012615156332698668
+        },
+        "size_only_pool": {
+          "scale": 0.02002200708120589,
+          "logical_gibbs_ground_mass": {
+            "lower": 0.016857082780285165,
+            "upper": 0.016857082780776782,
+            "decoded_error_lower": 0.01703808542199003,
+            "decoded_error_upper": 0.017038085422983823,
+            "ground_cost": -0.25,
+            "ground_degeneracy": 2,
+            "auxiliary_partition_summed": true,
+            "original_patterns": 65536,
+            "relative_interval_width": 2.9163833982324503e-11
+          },
+          "consistent_optimal_lower": 0.01603564353507102,
+          "consistent_optimal_upper": 0.016857082780780082,
+          "root_decoded_optimal_upper": 0.0657677058393799,
+          "root_decoded_optimal_lower": 0.016207825986751245
+        },
+        "guided_pool": {
+          "scale": 0.02002200708120589,
+          "logical_gibbs_ground_mass": {
+            "lower": 0.016857082780285165,
+            "upper": 0.016857082780776782,
+            "decoded_error_lower": 0.01703808542199003,
+            "decoded_error_upper": 0.017038085422983823,
+            "ground_cost": -0.25,
+            "ground_degeneracy": 2,
+            "auxiliary_partition_summed": true,
+            "original_patterns": 65536,
+            "relative_interval_width": 2.9163833982324503e-11
+          },
+          "consistent_optimal_lower": 0.01603564353507102,
+          "consistent_optimal_upper": 0.016857082780780082,
+          "root_decoded_optimal_upper": 0.0657677058393799,
+          "root_decoded_optimal_lower": 0.016207825986751245
+        },
+        "guided_pruned": {
+          "scale": 0.02002200708120589,
+          "logical_gibbs_ground_mass": {
+            "lower": 0.016857082780285165,
+            "upper": 0.016857082780776782,
+            "decoded_error_lower": 0.01703808542199003,
+            "decoded_error_upper": 0.017038085422983823,
+            "ground_cost": -0.25,
+            "ground_degeneracy": 2,
+            "auxiliary_partition_summed": true,
+            "original_patterns": 65536,
+            "relative_interval_width": 2.9163833982324503e-11
+          },
+          "consistent_optimal_lower": 0.01603564353507102,
+          "consistent_optimal_upper": 0.016857082780780082,
+          "root_decoded_optimal_upper": 0.0657677058393799,
+          "root_decoded_optimal_lower": 0.016207825986751245
+        },
+        "size_only_pruned": {
+          "scale": 0.02002200708120589,
+          "logical_gibbs_ground_mass": {
+            "lower": 0.016857082780285165,
+            "upper": 0.016857082780776782,
+            "decoded_error_lower": 0.01703808542199003,
+            "decoded_error_upper": 0.017038085422983823,
+            "ground_cost": -0.25,
+            "ground_degeneracy": 2,
+            "auxiliary_partition_summed": true,
+            "original_patterns": 65536,
+            "relative_interval_width": 2.9163833982324503e-11
+          },
+          "consistent_optimal_lower": 0.01603564353507102,
+          "consistent_optimal_upper": 0.016857082780780082,
+          "root_decoded_optimal_upper": 0.0657677058393799,
+          "root_decoded_optimal_lower": 0.016207825986751245
+        },
+        "lp_selected": {
+          "scale": 0.020022006642910605,
+          "logical_gibbs_ground_mass": {
+            "lower": 0.016857081644635553,
+            "upper": 0.016857081645127173,
+            "decoded_error_lower": 0.0170380843123977,
+            "decoded_error_upper": 0.01703808431339149,
+            "ground_cost": -0.25,
+            "ground_degeneracy": 2,
+            "auxiliary_partition_summed": true,
+            "original_patterns": 65536,
+            "relative_interval_width": 2.916404176246833e-11
+          },
+          "consistent_optimal_lower": 0.01682782621333115,
+          "consistent_optimal_upper": 0.01685708164518031,
+          "root_decoded_optimal_upper": 0.018773582299874938,
+          "root_decoded_optimal_lower": 0.017008514751327856
+        }
+      },
+      "conditional_mass_ratio_lower": 1.2994842514884362,
+      "strict_consistent_order_proved": true,
+      "root_decoded_order_proved": false,
+      "lp_strict_consistent_order_proved": true
+    },
+    {
+      "instance": "mixed_hypergraph_n16_s2203",
+      "split": "held_out",
+      "records": {
+        "first": {
+          "scale": 0.022359624811476197,
+          "logical_gibbs_ground_mass": {
+            "lower": 0.0052318455534868715,
+            "upper": 0.0052318455536394136,
+            "decoded_error_lower": 0.005493569100428688,
+            "decoded_error_upper": 0.005493569100749022,
+            "ground_cost": -1.75,
+            "ground_degeneracy": 1,
+            "auxiliary_partition_summed": true,
+            "original_patterns": 65536,
+            "relative_interval_width": 2.915644965707563e-11
+          },
+          "consistent_optimal_lower": 0.0049768097707199215,
+          "consistent_optimal_upper": 0.0052318455536461885,
+          "root_decoded_optimal_upper": 0.0542403794095064,
+          "root_decoded_optimal_lower": 0.005225775129565633
+        },
+        "size_only_pool": {
+          "scale": 0.02294577384370853,
+          "logical_gibbs_ground_mass": {
+            "lower": 0.005791095755861002,
+            "upper": 0.005791095756029849,
+            "decoded_error_lower": 0.006023389810848876,
+            "decoded_error_upper": 0.006023389811200107,
+            "ground_cost": -1.75,
+            "ground_degeneracy": 1,
+            "auxiliary_partition_summed": true,
+            "original_patterns": 65536,
+            "relative_interval_width": 2.91564121755227e-11
+          },
+          "consistent_optimal_lower": 0.0055089880697216645,
+          "consistent_optimal_upper": 0.005791095756039235,
+          "root_decoded_optimal_upper": 0.05473743254567745,
+          "root_decoded_optimal_lower": 0.005729966142187896
+        },
+        "guided_pool": {
+          "scale": 0.02294577384370853,
+          "logical_gibbs_ground_mass": {
+            "lower": 0.005791095755861002,
+            "upper": 0.005791095756029849,
+            "decoded_error_lower": 0.006023389810848876,
+            "decoded_error_upper": 0.006023389811200107,
+            "ground_cost": -1.75,
+            "ground_degeneracy": 1,
+            "auxiliary_partition_summed": true,
+            "original_patterns": 65536,
+            "relative_interval_width": 2.91564121755227e-11
+          },
+          "consistent_optimal_lower": 0.0055089880697216645,
+          "consistent_optimal_upper": 0.005791095756039235,
+          "root_decoded_optimal_upper": 0.05473743254567745,
+          "root_decoded_optimal_lower": 0.005729966142187896
+        },
+        "guided_pruned": {
+          "scale": 0.02294577384370853,
+          "logical_gibbs_ground_mass": {
+            "lower": 0.005791095755861002,
+            "upper": 0.005791095756029849,
+            "decoded_error_lower": 0.006023389810848876,
+            "decoded_error_upper": 0.006023389811200107,
+            "ground_cost": -1.75,
+            "ground_degeneracy": 1,
+            "auxiliary_partition_summed": true,
+            "original_patterns": 65536,
+            "relative_interval_width": 2.91564121755227e-11
+          },
+          "consistent_optimal_lower": 0.0055089880697216645,
+          "consistent_optimal_upper": 0.005791095756039235,
+          "root_decoded_optimal_upper": 0.05473743254567745,
+          "root_decoded_optimal_lower": 0.005729966142187896
+        },
+        "size_only_pruned": {
+          "scale": 0.02294577384370853,
+          "logical_gibbs_ground_mass": {
+            "lower": 0.005791095755861002,
+            "upper": 0.005791095756029849,
+            "decoded_error_lower": 0.006023389810848876,
+            "decoded_error_upper": 0.006023389811200107,
+            "ground_cost": -1.75,
+            "ground_degeneracy": 1,
+            "auxiliary_partition_summed": true,
+            "original_patterns": 65536,
+            "relative_interval_width": 2.91564121755227e-11
+          },
+          "consistent_optimal_lower": 0.0055089880697216645,
+          "consistent_optimal_upper": 0.005791095756039235,
+          "root_decoded_optimal_upper": 0.05473743254567745,
+          "root_decoded_optimal_lower": 0.005729966142187896
+        },
+        "lp_selected": {
+          "scale": 0.022945773344003467,
+          "logical_gibbs_ground_mass": {
+            "lower": 0.005791095273827237,
+            "upper": 0.005791095273996083,
+            "decoded_error_lower": 0.006023389353132123,
+            "decoded_error_upper": 0.006023389353483351,
+            "ground_cost": -1.75,
+            "ground_degeneracy": 1,
+            "auxiliary_partition_summed": true,
+            "original_patterns": 65536,
+            "relative_interval_width": 2.915611505226373e-11
+          },
+          "consistent_optimal_lower": 0.005777142428863685,
+          "consistent_optimal_upper": 0.005791095274019815,
+          "root_decoded_optimal_upper": 0.00843275136192337,
+          "root_decoded_optimal_lower": 0.006008876827639113
+        }
+      },
+      "conditional_mass_ratio_lower": 1.1068934846198888,
+      "strict_consistent_order_proved": true,
+      "root_decoded_order_proved": false,
+      "lp_strict_consistent_order_proved": true
+    },
+    {
+      "instance": "mixed_hypergraph_n16_s3307",
+      "split": "held_out",
+      "records": {
+        "first": {
+          "scale": 0.024525939341975365,
+          "logical_gibbs_ground_mass": {
+            "lower": 0.00432607805082916,
+            "upper": 0.004326078050955352,
+            "decoded_error_lower": 0.004542730541708233,
+            "decoded_error_upper": 0.004542730541973249,
+            "ground_cost": -0.5,
+            "ground_degeneracy": 1,
+            "auxiliary_partition_summed": true,
+            "original_patterns": 65536,
+            "relative_interval_width": 2.9169975763689065e-11
+          },
+          "consistent_optimal_lower": 0.004115243879408423,
+          "consistent_optimal_upper": 0.004326078050972587,
+          "root_decoded_optimal_upper": 0.05327836797782719,
+          "root_decoded_optimal_lower": 0.004321337673042443
+        },
+        "size_only_pool": {
+          "scale": 0.02505645473782536,
+          "logical_gibbs_ground_mass": {
+            "lower": 0.004669873981665316,
+            "upper": 0.004669873981801537,
+            "decoded_error_lower": 0.004862477056061112,
+            "decoded_error_upper": 0.0048624770563447835,
+            "ground_cost": -0.5,
+            "ground_degeneracy": 1,
+            "auxiliary_partition_summed": true,
+            "original_patterns": 65536,
+            "relative_interval_width": 2.9170329556460816e-11
+          },
+          "consistent_optimal_lower": 0.004442352585726896,
+          "consistent_optimal_upper": 0.004669873981818339,
+          "root_decoded_optimal_upper": 0.053583576772483016,
+          "root_decoded_optimal_lower": 0.004625571826529423
+        },
+        "guided_pool": {
+          "scale": 0.02505645473782536,
+          "logical_gibbs_ground_mass": {
+            "lower": 0.004669873981665316,
+            "upper": 0.004669873981801537,
+            "decoded_error_lower": 0.004862477056061112,
+            "decoded_error_upper": 0.0048624770563447835,
+            "ground_cost": -0.5,
+            "ground_degeneracy": 1,
+            "auxiliary_partition_summed": true,
+            "original_patterns": 65536,
+            "relative_interval_width": 2.9170329556460816e-11
+          },
+          "consistent_optimal_lower": 0.004442352585726896,
+          "consistent_optimal_upper": 0.004669873981818339,
+          "root_decoded_optimal_upper": 0.053583576772483016,
+          "root_decoded_optimal_lower": 0.004625571826529423
+        },
+        "guided_pruned": {
+          "scale": 0.02505645473782536,
+          "logical_gibbs_ground_mass": {
+            "lower": 0.004669873981665316,
+            "upper": 0.004669873981801537,
+            "decoded_error_lower": 0.004862477056061112,
+            "decoded_error_upper": 0.0048624770563447835,
+            "ground_cost": -0.5,
+            "ground_degeneracy": 1,
+            "auxiliary_partition_summed": true,
+            "original_patterns": 65536,
+            "relative_interval_width": 2.9170329556460816e-11
+          },
+          "consistent_optimal_lower": 0.004442352585726896,
+          "consistent_optimal_upper": 0.004669873981818339,
+          "root_decoded_optimal_upper": 0.053583576772483016,
+          "root_decoded_optimal_lower": 0.004625571826529423
+        },
+        "size_only_pruned": {
+          "scale": 0.02505645473782536,
+          "logical_gibbs_ground_mass": {
+            "lower": 0.004669873981665316,
+            "upper": 0.004669873981801537,
+            "decoded_error_lower": 0.004862477056061112,
+            "decoded_error_upper": 0.0048624770563447835,
+            "ground_cost": -0.5,
+            "ground_degeneracy": 1,
+            "auxiliary_partition_summed": true,
+            "original_patterns": 65536,
+            "relative_interval_width": 2.9170329556460816e-11
+          },
+          "consistent_optimal_lower": 0.004442352585726896,
+          "consistent_optimal_upper": 0.004669873981818339,
+          "root_decoded_optimal_upper": 0.053583576772483016,
+          "root_decoded_optimal_lower": 0.004625571826529423
+        },
+        "lp_selected": {
+          "scale": 0.026846200918917405,
+          "logical_gibbs_ground_mass": {
+            "lower": 0.005807496256089986,
+            "upper": 0.005807496256259397,
+            "decoded_error_lower": 0.005932361538674925,
+            "decoded_error_upper": 0.005932361539021021,
+            "ground_cost": -0.5,
+            "ground_degeneracy": 1,
+            "auxiliary_partition_summed": true,
+            "original_patterns": 65536,
+            "relative_interval_width": 2.917115267320666e-11
+          },
+          "consistent_optimal_lower": 0.005783180973767131,
+          "consistent_optimal_upper": 0.005807496256276233,
+          "root_decoded_optimal_upper": 0.010119240227180007,
+          "root_decoded_optimal_lower": 0.005907523460561527
+        }
+      },
+      "conditional_mass_ratio_lower": 1.0794705797400121,
+      "strict_consistent_order_proved": true,
+      "root_decoded_order_proved": false,
+      "lp_strict_consistent_order_proved": true
+    },
+    {
+      "instance": "random_regular_n16_s1101",
+      "split": "development",
+      "records": {
+        "first": {
+          "scale": 0.030445488962122902,
+          "logical_gibbs_ground_mass": {
+            "lower": 0.044353297792036485,
+            "upper": 0.044353297793328986,
+            "decoded_error_lower": 0.044498315814317305,
+            "decoded_error_upper": 0.04449831581691079,
+            "ground_cost": -1.5,
+            "ground_degeneracy": 4,
+            "auxiliary_partition_summed": true,
+            "original_patterns": 65536,
+            "relative_interval_width": 2.914103105950547e-11
+          },
+          "consistent_optimal_lower": 0.04219494206181296,
+          "consistent_optimal_upper": 0.04435329779335744,
+          "root_decoded_optimal_upper": 0.09316111740424261,
+          "root_decoded_optimal_lower": 0.042332903100848945
+        },
+        "size_only_pool": {
+          "scale": 0.029850909792186894,
+          "logical_gibbs_ground_mass": {
+            "lower": 0.04204665652191925,
+            "upper": 0.042046656523144536,
+            "decoded_error_lower": 0.04221200627211323,
+            "decoded_error_upper": 0.04221200627457347,
+            "ground_cost": -1.5,
+            "ground_degeneracy": 4,
+            "auxiliary_partition_summed": true,
+            "original_patterns": 65536,
+            "relative_interval_width": 2.9141051028998944e-11
+          },
+          "consistent_optimal_lower": 0.04000100009526165,
+          "consistent_optimal_upper": 0.04204665652316678,
+          "root_decoded_optimal_upper": 0.09086406557852701,
+          "root_decoded_optimal_lower": 0.040158305239603294
+        },
+        "guided_pool": {
+          "scale": 0.030445488962122902,
+          "logical_gibbs_ground_mass": {
+            "lower": 0.044353297792036485,
+            "upper": 0.044353297793328986,
+            "decoded_error_lower": 0.044498315814317305,
+            "decoded_error_upper": 0.04449831581691079,
+            "ground_cost": -1.5,
+            "ground_degeneracy": 4,
+            "auxiliary_partition_summed": true,
+            "original_patterns": 65536,
+            "relative_interval_width": 2.914103105950547e-11
+          },
+          "consistent_optimal_lower": 0.04219494206181296,
+          "consistent_optimal_upper": 0.04435329779335744,
+          "root_decoded_optimal_upper": 0.09316111740424261,
+          "root_decoded_optimal_lower": 0.042332903100848945
+        },
+        "guided_pruned": {
+          "scale": 0.030445488962122902,
+          "logical_gibbs_ground_mass": {
+            "lower": 0.044353297792036485,
+            "upper": 0.044353297793328986,
+            "decoded_error_lower": 0.044498315814317305,
+            "decoded_error_upper": 0.04449831581691079,
+            "ground_cost": -1.5,
+            "ground_degeneracy": 4,
+            "auxiliary_partition_summed": true,
+            "original_patterns": 65536,
+            "relative_interval_width": 2.914103105950547e-11
+          },
+          "consistent_optimal_lower": 0.04219494206181296,
+          "consistent_optimal_upper": 0.04435329779335744,
+          "root_decoded_optimal_upper": 0.09316111740424261,
+          "root_decoded_optimal_lower": 0.042332903100848945
+        },
+        "size_only_pruned": {
+          "scale": 0.030445488962122902,
+          "logical_gibbs_ground_mass": {
+            "lower": 0.044353297792036485,
+            "upper": 0.044353297793328986,
+            "decoded_error_lower": 0.044498315814317305,
+            "decoded_error_upper": 0.04449831581691079,
+            "ground_cost": -1.5,
+            "ground_degeneracy": 4,
+            "auxiliary_partition_summed": true,
+            "original_patterns": 65536,
+            "relative_interval_width": 2.914103105950547e-11
+          },
+          "consistent_optimal_lower": 0.04219494206181296,
+          "consistent_optimal_upper": 0.04435329779335744,
+          "root_decoded_optimal_upper": 0.09316111740424261,
+          "root_decoded_optimal_lower": 0.042332903100848945
+        },
+        "lp_selected": {
+          "scale": 0.03731363643702703,
+          "logical_gibbs_ground_mass": {
+            "lower": 0.07032363934425981,
+            "upper": 0.07032363934630916,
+            "decoded_error_lower": 0.07035095281170835,
+            "decoded_error_upper": 0.07035095281580865,
+            "ground_cost": -1.5,
+            "ground_degeneracy": 4,
+            "auxiliary_partition_summed": true,
+            "original_patterns": 65536,
+            "relative_interval_width": 2.914164884550057e-11
+          },
+          "consistent_optimal_lower": 0.06962563263515431,
+          "consistent_optimal_upper": 0.07032363934632098,
+          "root_decoded_optimal_upper": 0.08027658686437684,
+          "root_decoded_optimal_lower": 0.06965267499912037
+        }
+      },
+      "conditional_mass_ratio_lower": 0.999999999970859,
+      "strict_consistent_order_proved": false,
+      "root_decoded_order_proved": false,
+      "lp_strict_consistent_order_proved": true
+    },
+    {
+      "instance": "random_regular_n16_s2203",
+      "split": "held_out",
+      "records": {
+        "first": {
+          "scale": 0.02813526215740897,
+          "logical_gibbs_ground_mass": {
+            "lower": 0.0462765366590033,
+            "upper": 0.04627653666035182,
+            "decoded_error_lower": 0.046299843303089706,
+            "decoded_error_upper": 0.04629984330578805,
+            "ground_cost": -0.75,
+            "ground_degeneracy": 2,
+            "auxiliary_partition_summed": true,
+            "original_patterns": 65536,
+            "relative_interval_width": 2.914043738775516e-11
+          },
+          "consistent_optimal_lower": 0.04402459073739013,
+          "consistent_optimal_upper": 0.046276536660381805,
+          "root_decoded_optimal_upper": 0.0949626448931214,
+          "root_decoded_optimal_lower": 0.044046763214879686
+        },
+        "size_only_pool": {
+          "scale": 0.021295625722397103,
+          "logical_gibbs_ground_mass": {
+            "lower": 0.02268618397697594,
+            "upper": 0.022686183977637026,
+            "decoded_error_lower": 0.022875531544326415,
+            "decoded_error_upper": 0.02287553154565959,
+            "ground_cost": -0.75,
+            "ground_degeneracy": 2,
+            "auxiliary_partition_summed": true,
+            "original_patterns": 65536,
+            "relative_interval_width": 2.914045703374656e-11
+          },
+          "consistent_optimal_lower": 0.02158312384436535,
+          "consistent_optimal_upper": 0.0226861839776642,
+          "root_decoded_optimal_upper": 0.0714980823327305,
+          "root_decoded_optimal_lower": 0.021763264850005928
+        },
+        "guided_pool": {
+          "scale": 0.030777545572875622,
+          "logical_gibbs_ground_mass": {
+            "lower": 0.05539225327621631,
+            "upper": 0.05539225327783048,
+            "decoded_error_lower": 0.05540169424714187,
+            "decoded_error_upper": 0.05540169425037069,
+            "ground_cost": -0.75,
+            "ground_degeneracy": 2,
+            "auxiliary_partition_summed": true,
+            "original_patterns": 65536,
+            "relative_interval_width": 2.9140790934935013e-11
+          },
+          "consistent_optimal_lower": 0.05269730608479106,
+          "consistent_optimal_upper": 0.05539225327788556,
+          "root_decoded_optimal_upper": 0.10405375355435698,
+          "root_decoded_optimal_lower": 0.052706287733039266
+        },
+        "guided_pruned": {
+          "scale": 0.030777545572875622,
+          "logical_gibbs_ground_mass": {
+            "lower": 0.05539225327621631,
+            "upper": 0.05539225327783048,
+            "decoded_error_lower": 0.05540169424714187,
+            "decoded_error_upper": 0.05540169425037069,
+            "ground_cost": -0.75,
+            "ground_degeneracy": 2,
+            "auxiliary_partition_summed": true,
+            "original_patterns": 65536,
+            "relative_interval_width": 2.9140790934935013e-11
+          },
+          "consistent_optimal_lower": 0.05269730608479106,
+          "consistent_optimal_upper": 0.05539225327788556,
+          "root_decoded_optimal_upper": 0.10405375355435698,
+          "root_decoded_optimal_lower": 0.052706287733039266
+        },
+        "size_only_pruned": {
+          "scale": 0.030777545572875622,
+          "logical_gibbs_ground_mass": {
+            "lower": 0.05539225327621631,
+            "upper": 0.05539225327783048,
+            "decoded_error_lower": 0.05540169424714187,
+            "decoded_error_upper": 0.05540169425037069,
+            "ground_cost": -0.75,
+            "ground_degeneracy": 2,
+            "auxiliary_partition_summed": true,
+            "original_patterns": 65536,
+            "relative_interval_width": 2.9140790934935013e-11
+          },
+          "consistent_optimal_lower": 0.05269730608479106,
+          "consistent_optimal_upper": 0.05539225327788556,
+          "root_decoded_optimal_upper": 0.10405375355435698,
+          "root_decoded_optimal_lower": 0.052706287733039266
+        },
+        "lp_selected": {
+          "scale": 0.033855299401400134,
+          "logical_gibbs_ground_mass": {
+            "lower": 0.06617888951259322,
+            "upper": 0.06617888951452175,
+            "decoded_error_lower": 0.06618208278748382,
+            "decoded_error_upper": 0.06618208279134094,
+            "ground_cost": -0.75,
+            "ground_degeneracy": 2,
+            "auxiliary_partition_summed": true,
+            "original_patterns": 65536,
+            "relative_interval_width": 2.914111730886261e-11
+          },
+          "consistent_optimal_lower": 0.06584836575230268,
+          "consistent_optimal_upper": 0.06617888951460636,
+          "root_decoded_optimal_upper": 0.07117648149833417,
+          "root_decoded_optimal_lower": 0.06585154307870529
+        }
+      },
+      "conditional_mass_ratio_lower": 1.196983553085867,
+      "strict_consistent_order_proved": true,
+      "root_decoded_order_proved": false,
+      "lp_strict_consistent_order_proved": true
+    },
+    {
+      "instance": "random_regular_n16_s3307",
+      "split": "held_out",
+      "records": {
+        "first": {
+          "scale": 0.017886917131303897,
+          "logical_gibbs_ground_mass": {
+            "lower": 0.021287744748810674,
+            "upper": 0.021287744749431004,
+            "decoded_error_lower": 0.021421092091836402,
+            "decoded_error_upper": 0.021421092093084848,
+            "ground_cost": -0.5,
+            "ground_degeneracy": 2,
+            "auxiliary_partition_summed": true,
+            "original_patterns": 65536,
+            "relative_interval_width": 2.9140248693182165e-11
+          },
+          "consistent_optimal_lower": 0.020253128366231575,
+          "consistent_optimal_upper": 0.021287744749440826,
+          "root_decoded_optimal_upper": 0.0700225947312527,
+          "root_decoded_optimal_lower": 0.020379994828013445
+        },
+        "size_only_pool": {
+          "scale": 0.024078115519711916,
+          "logical_gibbs_ground_mass": {
+            "lower": 0.044853191677458715,
+            "upper": 0.044853191678765766,
+            "decoded_error_lower": 0.04486668084073015,
+            "decoded_error_upper": 0.044866680843345046,
+            "ground_cost": -0.5,
+            "ground_degeneracy": 2,
+            "auxiliary_partition_summed": true,
+            "original_patterns": 65536,
+            "relative_interval_width": 2.914066179424571e-11
+          },
+          "consistent_optimal_lower": 0.042676272860732625,
+          "consistent_optimal_upper": 0.04485319167878461,
+          "root_decoded_optimal_upper": 0.09340099323661517,
+          "root_decoded_optimal_lower": 0.042689107336739925
+        },
+        "guided_pool": {
+          "scale": 0.024078115519711916,
+          "logical_gibbs_ground_mass": {
+            "lower": 0.044853191677458715,
+            "upper": 0.044853191678765766,
+            "decoded_error_lower": 0.04486668084073015,
+            "decoded_error_upper": 0.044866680843345046,
+            "ground_cost": -0.5,
+            "ground_degeneracy": 2,
+            "auxiliary_partition_summed": true,
+            "original_patterns": 65536,
+            "relative_interval_width": 2.914066179424571e-11
+          },
+          "consistent_optimal_lower": 0.042676272860732625,
+          "consistent_optimal_upper": 0.04485319167878461,
+          "root_decoded_optimal_upper": 0.09340099323661517,
+          "root_decoded_optimal_lower": 0.042689107336739925
+        },
+        "guided_pruned": {
+          "scale": 0.024078115519711916,
+          "logical_gibbs_ground_mass": {
+            "lower": 0.044853191677458715,
+            "upper": 0.044853191678765766,
+            "decoded_error_lower": 0.04486668084073015,
+            "decoded_error_upper": 0.044866680843345046,
+            "ground_cost": -0.5,
+            "ground_degeneracy": 2,
+            "auxiliary_partition_summed": true,
+            "original_patterns": 65536,
+            "relative_interval_width": 2.914066179424571e-11
+          },
+          "consistent_optimal_lower": 0.042676272860732625,
+          "consistent_optimal_upper": 0.04485319167878461,
+          "root_decoded_optimal_upper": 0.09340099323661517,
+          "root_decoded_optimal_lower": 0.042689107336739925
+        },
+        "size_only_pruned": {
+          "scale": 0.024078115519711916,
+          "logical_gibbs_ground_mass": {
+            "lower": 0.044853191677458715,
+            "upper": 0.044853191678765766,
+            "decoded_error_lower": 0.04486668084073015,
+            "decoded_error_upper": 0.044866680843345046,
+            "ground_cost": -0.5,
+            "ground_degeneracy": 2,
+            "auxiliary_partition_summed": true,
+            "original_patterns": 65536,
+            "relative_interval_width": 2.914066179424571e-11
+          },
+          "consistent_optimal_lower": 0.042676272860732625,
+          "consistent_optimal_upper": 0.04485319167878461,
+          "root_decoded_optimal_upper": 0.09340099323661517,
+          "root_decoded_optimal_lower": 0.042689107336739925
+        },
+        "lp_selected": {
+          "scale": 0.024078115006845997,
+          "logical_gibbs_ground_mass": {
+            "lower": 0.044853189733513786,
+            "upper": 0.04485318973482083,
+            "decoded_error_lower": 0.04486667889959091,
+            "decoded_error_upper": 0.04486667890220579,
+            "ground_cost": -0.5,
+            "ground_degeneracy": 2,
+            "auxiliary_partition_summed": true,
+            "original_patterns": 65536,
+            "relative_interval_width": 2.914050835485594e-11
+          },
+          "consistent_optimal_lower": 0.04440909223577787,
+          "consistent_optimal_upper": 0.044853189734887576,
+          "root_decoded_optimal_upper": 0.05476781414612822,
+          "root_decoded_optimal_lower": 0.04442244784379733
+        }
+      },
+      "conditional_mass_ratio_lower": 2.1069959361786124,
+      "strict_consistent_order_proved": true,
+      "root_decoded_order_proved": false,
+      "lp_strict_consistent_order_proved": true
+    },
+    {
+      "instance": "rewired_band_n16_s1101",
+      "split": "development",
+      "records": {
+        "first": {
+          "scale": 0.051031886225613624,
+          "logical_gibbs_ground_mass": {
+            "lower": 0.10010301641556998,
+            "upper": 0.10010301641848708,
+            "decoded_error_lower": 0.1001031681457542,
+            "decoded_error_upper": 0.10010316815158828,
+            "ground_cost": -1.5,
+            "ground_degeneracy": 4,
+            "auxiliary_partition_summed": true,
+            "original_patterns": 65536,
+            "relative_interval_width": 2.9140951229877824e-11
+          },
+          "consistent_optimal_lower": 0.09523279852440165,
+          "consistent_optimal_upper": 0.10010301641850351,
+          "root_decoded_optimal_upper": 0.14875522745553602,
+          "root_decoded_optimal_lower": 0.09523294287259995
+        },
+        "size_only_pool": {
+          "scale": 0.04971177636308152,
+          "logical_gibbs_ground_mass": {
+            "lower": 0.09666842942486246,
+            "upper": 0.09666842942767949,
+            "decoded_error_lower": 0.09666865895448558,
+            "decoded_error_upper": 0.09666865896011952,
+            "ground_cost": -1.5,
+            "ground_degeneracy": 4,
+            "auxiliary_partition_summed": true,
+            "original_patterns": 65536,
+            "relative_interval_width": 2.914110023521319e-11
+          },
+          "consistent_optimal_lower": 0.09197290774857762,
+          "consistent_optimal_upper": 0.09666842942770955,
+          "root_decoded_optimal_upper": 0.1452421353701076,
+          "root_decoded_optimal_lower": 0.091973126129149
+        },
+        "guided_pool": {
+          "scale": 0.051360038506957716,
+          "logical_gibbs_ground_mass": {
+            "lower": 0.10096066010437425,
+            "upper": 0.10096066010731627,
+            "decoded_error_lower": 0.10096079697853573,
+            "decoded_error_upper": 0.10096079698441972,
+            "ground_cost": -1.5,
+            "ground_degeneracy": 4,
+            "auxiliary_partition_summed": true,
+            "original_patterns": 65536,
+            "relative_interval_width": 2.9140277244526726e-11
+          },
+          "consistent_optimal_lower": 0.09605169528093321,
+          "consistent_optimal_upper": 0.10096066010734008,
+          "root_decoded_optimal_upper": 0.14958334777148719,
+          "root_decoded_optimal_lower": 0.09605182549992383
+        },
+        "guided_pruned": {
+          "scale": 0.051360038506957716,
+          "logical_gibbs_ground_mass": {
+            "lower": 0.10096066010437425,
+            "upper": 0.10096066010731627,
+            "decoded_error_lower": 0.10096079697853573,
+            "decoded_error_upper": 0.10096079698441972,
+            "ground_cost": -1.5,
+            "ground_degeneracy": 4,
+            "auxiliary_partition_summed": true,
+            "original_patterns": 65536,
+            "relative_interval_width": 2.9140277244526726e-11
+          },
+          "consistent_optimal_lower": 0.09605169528093321,
+          "consistent_optimal_upper": 0.10096066010734008,
+          "root_decoded_optimal_upper": 0.14958334777148719,
+          "root_decoded_optimal_lower": 0.09605182549992383
+        },
+        "size_only_pruned": {
+          "scale": 0.051360038506957716,
+          "logical_gibbs_ground_mass": {
+            "lower": 0.10096066010437425,
+            "upper": 0.10096066010731627,
+            "decoded_error_lower": 0.10096079697853573,
+            "decoded_error_upper": 0.10096079698441972,
+            "ground_cost": -1.5,
+            "ground_degeneracy": 4,
+            "auxiliary_partition_summed": true,
+            "original_patterns": 65536,
+            "relative_interval_width": 2.9140277244526726e-11
+          },
+          "consistent_optimal_lower": 0.09605169528093321,
+          "consistent_optimal_upper": 0.10096066010734008,
+          "root_decoded_optimal_upper": 0.14958334777148719,
+          "root_decoded_optimal_lower": 0.09605182549992383
+        },
+        "lp_selected": {
+          "scale": 0.06904413236292721,
+          "logical_gibbs_ground_mass": {
+            "lower": 0.1499809666369423,
+            "upper": 0.14998096664131208,
+            "decoded_error_lower": 0.14998096713246564,
+            "decoded_error_upper": 0.149980967141205,
+            "ground_cost": -1.5,
+            "ground_degeneracy": 4,
+            "auxiliary_partition_summed": true,
+            "original_patterns": 65536,
+            "relative_interval_width": 2.913557907800371e-11
+          },
+          "consistent_optimal_lower": 0.1450840455404879,
+          "consistent_optimal_upper": 0.14998096664146418,
+          "root_decoded_optimal_upper": 0.18263125074808434,
+          "root_decoded_optimal_lower": 0.14508404601983227
+        }
+      },
+      "conditional_mass_ratio_lower": 1.0085676108130621,
+      "strict_consistent_order_proved": false,
+      "root_decoded_order_proved": false,
+      "lp_strict_consistent_order_proved": true
+    },
+    {
+      "instance": "rewired_band_n16_s2203",
+      "split": "held_out",
+      "records": {
+        "first": {
+          "scale": 0.04595371866412007,
+          "logical_gibbs_ground_mass": {
+            "lower": 0.050079119166230084,
+            "upper": 0.05007911916768934,
+            "decoded_error_lower": 0.050079175308511845,
+            "decoded_error_upper": 0.05007917531143027,
+            "ground_cost": -0.5,
+            "ground_degeneracy": 1,
+            "auxiliary_partition_summed": true,
+            "original_patterns": 65536,
+            "relative_interval_width": 2.9139017441566644e-11
+          },
+          "consistent_optimal_lower": 0.04764414465114907,
+          "consistent_optimal_upper": 0.0500791191677425,
+          "root_decoded_optimal_upper": 0.09870172609852708,
+          "root_decoded_optimal_lower": 0.04764419806364989
+        },
+        "size_only_pool": {
+          "scale": 0.03725771559365949,
+          "logical_gibbs_ground_mass": {
+            "lower": 0.033277762981824506,
+            "upper": 0.033277762982794216,
+            "decoded_error_lower": 0.033278779035061455,
+            "decoded_error_upper": 0.033278779037000876,
+            "ground_cost": -0.5,
+            "ground_degeneracy": 1,
+            "auxiliary_partition_summed": true,
+            "original_patterns": 65536,
+            "relative_interval_width": 2.913989211271232e-11
+          },
+          "consistent_optimal_lower": 0.03166264963750031,
+          "consistent_optimal_upper": 0.03327776298281077,
+          "root_decoded_optimal_upper": 0.08181309143026867,
+          "root_decoded_optimal_lower": 0.03166361637729205
+        },
+        "guided_pool": {
+          "scale": 0.0463322477068194,
+          "logical_gibbs_ground_mass": {
+            "lower": 0.05089758339028048,
+            "upper": 0.0508975833917635,
+            "decoded_error_lower": 0.050897632805447936,
+            "decoded_error_upper": 0.050897632808413903,
+            "ground_cost": -0.5,
+            "ground_degeneracy": 1,
+            "auxiliary_partition_summed": true,
+            "original_patterns": 65536,
+            "relative_interval_width": 2.9137376269743804e-11
+          },
+          "consistent_optimal_lower": 0.04842531082412115,
+          "consistent_optimal_upper": 0.05089758339179258,
+          "root_decoded_optimal_upper": 0.09947110921840101,
+          "root_decoded_optimal_lower": 0.04842535783902214
+        },
+        "guided_pruned": {
+          "scale": 0.0463322477068194,
+          "logical_gibbs_ground_mass": {
+            "lower": 0.05089758339028048,
+            "upper": 0.0508975833917635,
+            "decoded_error_lower": 0.050897632805447936,
+            "decoded_error_upper": 0.050897632808413903,
+            "ground_cost": -0.5,
+            "ground_degeneracy": 1,
+            "auxiliary_partition_summed": true,
+            "original_patterns": 65536,
+            "relative_interval_width": 2.9137376269743804e-11
+          },
+          "consistent_optimal_lower": 0.04842531082412115,
+          "consistent_optimal_upper": 0.05089758339179258,
+          "root_decoded_optimal_upper": 0.09947110921840101,
+          "root_decoded_optimal_lower": 0.04842535783902214
+        },
+        "size_only_pruned": {
+          "scale": 0.0463322477068194,
+          "logical_gibbs_ground_mass": {
+            "lower": 0.05089758339028048,
+            "upper": 0.0508975833917635,
+            "decoded_error_lower": 0.050897632805447936,
+            "decoded_error_upper": 0.050897632808413903,
+            "ground_cost": -0.5,
+            "ground_degeneracy": 1,
+            "auxiliary_partition_summed": true,
+            "original_patterns": 65536,
+            "relative_interval_width": 2.9137376269743804e-11
+          },
+          "consistent_optimal_lower": 0.04842531082412115,
+          "consistent_optimal_upper": 0.05089758339179258,
+          "root_decoded_optimal_upper": 0.09947110921840101,
+          "root_decoded_optimal_lower": 0.04842535783902214
+        },
+        "lp_selected": {
+          "scale": 0.046332246717227465,
+          "logical_gibbs_ground_mass": {
+            "lower": 0.050897581240191295,
+            "upper": 0.050897581241674296,
+            "decoded_error_lower": 0.050897630655375226,
+            "decoded_error_upper": 0.05089763065834116,
+            "ground_cost": -0.5,
+            "ground_degeneracy": 1,
+            "auxiliary_partition_summed": true,
+            "original_patterns": 65536,
+            "relative_interval_width": 2.9136968509035986e-11
+          },
+          "consistent_optimal_lower": 0.05005958754836295,
+          "consistent_optimal_upper": 0.05089758124167791,
+          "root_decoded_optimal_upper": 0.06736194333108664,
+          "root_decoded_optimal_lower": 0.05005963614995984
+        }
+      },
+      "conditional_mass_ratio_lower": 1.0163434228914954,
+      "strict_consistent_order_proved": false,
+      "root_decoded_order_proved": false,
+      "lp_strict_consistent_order_proved": false
+    },
+    {
+      "instance": "rewired_band_n16_s3307",
+      "split": "held_out",
+      "records": {
+        "first": {
+          "scale": 0.04931337296660498,
+          "logical_gibbs_ground_mass": {
+            "lower": 0.13110536838029146,
+            "upper": 0.131105368384112,
+            "decoded_error_lower": 0.13110558816238718,
+            "decoded_error_upper": 0.13110558817002807,
+            "ground_cost": -2.25,
+            "ground_degeneracy": 4,
+            "auxiliary_partition_summed": true,
+            "original_patterns": 65536,
+            "relative_interval_width": 2.9140890834632636e-11
+          },
+          "consistent_optimal_lower": 0.12472423957189104,
+          "consistent_optimal_upper": 0.13110536838415854,
+          "root_decoded_optimal_upper": 0.17977734652131702,
+          "root_decoded_optimal_lower": 0.12472444865680571
+        },
+        "size_only_pool": {
+          "scale": 0.057489809399482034,
+          "logical_gibbs_ground_mass": {
+            "lower": 0.16564441052478152,
+            "upper": 0.16564441052960777,
+            "decoded_error_lower": 0.16564442639718369,
+            "decoded_error_upper": 0.16564442640683588,
+            "ground_cost": -2.25,
+            "ground_degeneracy": 4,
+            "auxiliary_partition_summed": true,
+            "original_patterns": 65536,
+            "relative_interval_width": 2.9136211085645776e-11
+          },
+          "consistent_optimal_lower": 0.1575984856576715,
+          "consistent_optimal_upper": 0.1656444105296531,
+          "root_decoded_optimal_upper": 0.2142179028168392,
+          "root_decoded_optimal_lower": 0.15759850075909593
+        },
+        "guided_pool": {
+          "scale": 0.057489809399482034,
+          "logical_gibbs_ground_mass": {
+            "lower": 0.16564441052478152,
+            "upper": 0.16564441052960777,
+            "decoded_error_lower": 0.16564442639718369,
+            "decoded_error_upper": 0.16564442640683588,
+            "ground_cost": -2.25,
+            "ground_degeneracy": 4,
+            "auxiliary_partition_summed": true,
+            "original_patterns": 65536,
+            "relative_interval_width": 2.9136211085645776e-11
+          },
+          "consistent_optimal_lower": 0.1575984856576715,
+          "consistent_optimal_upper": 0.1656444105296531,
+          "root_decoded_optimal_upper": 0.2142179028168392,
+          "root_decoded_optimal_lower": 0.15759850075909593
+        },
+        "guided_pruned": {
+          "scale": 0.057489809399482034,
+          "logical_gibbs_ground_mass": {
+            "lower": 0.16564441052478152,
+            "upper": 0.16564441052960777,
+            "decoded_error_lower": 0.16564442639718369,
+            "decoded_error_upper": 0.16564442640683588,
+            "ground_cost": -2.25,
+            "ground_degeneracy": 4,
+            "auxiliary_partition_summed": true,
+            "original_patterns": 65536,
+            "relative_interval_width": 2.9136211085645776e-11
+          },
+          "consistent_optimal_lower": 0.1575984856576715,
+          "consistent_optimal_upper": 0.1656444105296531,
+          "root_decoded_optimal_upper": 0.2142179028168392,
+          "root_decoded_optimal_lower": 0.15759850075909593
+        },
+        "size_only_pruned": {
+          "scale": 0.057489809399482034,
+          "logical_gibbs_ground_mass": {
+            "lower": 0.16564441052478152,
+            "upper": 0.16564441052960777,
+            "decoded_error_lower": 0.16564442639718369,
+            "decoded_error_upper": 0.16564442640683588,
+            "ground_cost": -2.25,
+            "ground_degeneracy": 4,
+            "auxiliary_partition_summed": true,
+            "original_patterns": 65536,
+            "relative_interval_width": 2.9136211085645776e-11
+          },
+          "consistent_optimal_lower": 0.1575984856576715,
+          "consistent_optimal_upper": 0.1656444105296531,
+          "root_decoded_optimal_upper": 0.2142179028168392,
+          "root_decoded_optimal_lower": 0.15759850075909593
+        },
+        "lp_selected": {
+          "scale": 0.06707144286684356,
+          "logical_gibbs_ground_mass": {
+            "lower": 0.20900989694404892,
+            "upper": 0.20900989695013864,
+            "decoded_error_lower": 0.20900989764126762,
+            "decoded_error_upper": 0.20900989765344663,
+            "ground_cost": -2.25,
+            "ground_degeneracy": 4,
+            "auxiliary_partition_summed": true,
+            "original_patterns": 65536,
+            "relative_interval_width": 2.9135998614457107e-11
+          },
+          "consistent_optimal_lower": 0.20728250171169124,
+          "consistent_optimal_upper": 0.20900989695020725,
+          "root_decoded_optimal_upper": 0.217274555248902,
+          "root_decoded_optimal_lower": 0.20728250240314766
+        }
+      },
+      "conditional_mass_ratio_lower": 1.2634449112676849,
+      "strict_consistent_order_proved": true,
+      "root_decoded_order_proved": false,
+      "lp_strict_consistent_order_proved": true
+    }
+  ]
+}

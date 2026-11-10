@@ -1,0 +1,56 @@
+{
+  "completed": true,
+  "total_wall_seconds": 22.953032874967903,
+  "stages": [
+    {
+      "stage": "solve",
+      "wall_seconds_including_python_startup": 13.959793332964182,
+      "exit_code": 0,
+      "log": "solve.log"
+    },
+    {
+      "stage": "physical-audit",
+      "wall_seconds_including_python_startup": 6.975857000099495,
+      "exit_code": 0,
+      "log": "physical-audit.log"
+    },
+    {
+      "stage": "exact-certificate",
+      "wall_seconds_including_python_startup": 0.8819330839905888,
+      "exit_code": 0,
+      "log": "exact-certificate.log"
+    },
+    {
+      "stage": "operator-rank",
+      "wall_seconds_including_python_startup": 1.1258335418533534,
+      "exit_code": 0,
+      "log": "operator-rank.log"
+    }
+  ],
+  "certified_total_energy_lower_bound": "-8.763353354793",
+  "operator_space_dimension": 2257,
+  "nvar": 331,
+  "nblocks": 54,
+  "max_psd_dim": 32,
+  "psd_entries": 11446,
+  "construction_seconds": 0.8353099159430712,
+  "solve_seconds": 11.276892333989963,
+  "export_seconds": 0.23357241600751877,
+  "largest_stage_process_peak_rss_bytes": 404488192,
+  "resource_scope": "Sequential fixed-operator construction, solve, export, independent audit, exact certificate and exact operator rank. Full-operator discovery and earlier exploratory research are recorded separately.",
+  "input_sha256": {
+    "operator_space.json": "58d638d2bd5131c67b9cc33bb0faa7e167ef1a899a04118bbe5513f31ea5e53b",
+    "projection_000.npz": "45aee8cc6ac4b373e3626b013e43a73c8bd0b763302ac7b3d0120902f9055c76",
+    "projection_001.npz": "331b84f097a5aaeb82226ae435fd2db9f89480cc78fe2f2ecdfae4bc0db0c6a9",
+    "projection_002.npz": "5e1e5739790701754ae10cecc374ca76152b7adace31348f3d1c6c86c2ddf8a2",
+    "projection_003.npz": "92a05b2809edb02d899f7a111c81387d1a469aefda79945857259c913185357c",
+    "projection_004.npz": "6c6320638fec8a3a7ff04376f0e94f9315b991b7e18ac1bd48c06cea05d0d4b9",
+    "projection_005.npz": "897e2b0e737d4d563bd172be41b7bd614e7429535e776925b58c9492d137a274",
+    "rank_proof/operators.json.gz": "978bc8edb0e6f9b05e9eeed9ae3251142a0828cb6cded6d3b044523e5a75d8d7",
+    "rank_proof/source_columns.json.gz": "f3538ed3c2fac60af302ddebb4211036e2dfdff2a991253af8ffb04c69e4c941",
+    "rank_proof/span_relations.json.gz": "2521f24c77411f49dc0b818ea5701f721f9d00de3e35b4a43c8f54108d17030b",
+    "reference_variable_names.json": "93390a3c83dff439fdaa380145913e3ed298a6a32f504ce2290b80c244218333",
+    "selection_summary.json": "d78718ce1b4c10ae336b6338c3f0fe29f2d1d717ab9cb2cef4c03c8d49260c5b",
+    "source_blocks.json": "3930e11eff653b2adb637d67a32ee5999ee09c936ed4f22ce7f460efe3f040dd"
+  }
+}

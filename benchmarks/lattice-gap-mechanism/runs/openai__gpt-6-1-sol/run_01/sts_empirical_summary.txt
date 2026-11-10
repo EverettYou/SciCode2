@@ -1,0 +1,23 @@
+EMPIRICAL CONSTRAINTS FOR THE SINGLE-ORBITAL REANALYSIS
+
+All activation uncertainties below are conditional on the stated empirical prefactor and the supplied independent errors. They are not microscopic Hamiltonian parameter confidence intervals.
+
+nu=0.5: NMR E/D=5.5383 +/- 0.1346 (1 sigma), bootstrap95%=[5.279074427062977, 5.8085706640429]; raw-rate fit R=A*T*exp(-E/T), T range=[0.4472, 4.4318].
+  Resistivity E/D=3.7217 +/- 0.0485; bootstrap95%=[3.6221885738672306, 3.8116560873354843]; rho=A*exp(E/T).
+nu=0.3: NMR E/D=2.6342 +/- 0.0475 (1 sigma), bootstrap95%=[2.539837753193333, 2.7358345022404325]; raw-rate fit R=A*T*exp(-E/T), T range=[0.2052, 4.4318].
+  Resistivity E/D=0.8999 +/- 0.0436; bootstrap95%=[0.8064680479024016, 0.9799112697732316]; rho=A*exp(E/T).
+  Last-zero/first-positive bracket=[0.325, 0.4]D; these endpoints are sampling limits, not a fitted uncertainty distribution.
+nu=0.2: NMR E/D=1.7466 +/- 0.0526 (1 sigma), bootstrap95%=[1.6439408137014417, 1.8494790288996252]; raw-rate fit R=A*T*exp(-E/T), T range=[0.2, 0.4739].
+  Last-zero/first-positive bracket=[1.075, 1.15]D; these endpoints are sampling limits, not a fitted uncertainty distribution.
+
+Below T=.45D unmeasured; activated positive resistivity from .45D to4D. No zero resistance observed.
+Measured zero resistance .1-.325D; onset bracket(.325,.4]D; activated positive resistivity .4-4D.
+Measured zero resistance .1-1.075D; onset bracket(1.075,1.15]D; positive resistivity with metallic T trend1.15-4D.
+
+One-site in-plane crystallographic period, equivalent transition-metal sites, and fourfold in-plane axis; no observed structural transition. Does not independently measure time reversal or every electronic order.
+Low-T spectra have a gap interval by the prompt, centered at plotted zero; only half-filled low-T chemical potential is explicitly fixed to that midpoint. Spatially uniform on the measured surface. Independent trace normalization and unknown matrix elements/background prevent an absolute spectral-weight sum-rule inversion. STS temperatures are only labeled low/high.
+One line persists in each sample. Low-T relaxation is strongly suppressed. Empirical activation parameters characterize the measured rate; they are not automatically exact many-body singlet-triplet gaps. ν≈.2 has a suggestive coherence-like enhancement near the resistive onset, not a determination of pairing symmetry.
+Zero values define onset intervals, not exact transition temperatures or error-free finite weights in fits. Positive branches atν=.5,.3 show activated insulating trends;ν=.2 shows a metallic temperature trend. Zero resistance is consistent with superconductivity, but no Meissner or stiffness measurement was supplied.
+Local STS integrates over momentum with tunneling weights. Even if calibrated STS were the complete local spectral function, frequency Kramers–Kronig would yield only the local Green function; G(k,ω) and its momentum zero contour require a microscopic model or momentum-resolved information.
+
+Illustrative exact one-orbital HK models have identical local spectra and Gamma-side zero areas 0.31170773 and 0.68829227. They are not material fits; agreement with the supplied NMR and transport is not asserted.

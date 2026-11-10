@@ -1,0 +1,181 @@
+[
+  {
+    "name": "random_regular_n128_s4409",
+    "status": "ok",
+    "total_seconds": 11.426176165929064,
+    "selected": {
+      "first": {
+        "physical_qubits": 716,
+        "scale": 0.0016586460796118193,
+        "classical_break_bound": 0.0487669944160003
+      },
+      "size_only_pool": {
+        "physical_qubits": 678,
+        "scale": 0.0018316191788933338,
+        "classical_break_bound": 0.04876653160638288
+      },
+      "guided_pool": {
+        "physical_qubits": 678,
+        "scale": 0.0018316191788933338,
+        "classical_break_bound": 0.04876653160638288
+      }
+    }
+  },
+  {
+    "name": "irregular_hubs_n128_s4409",
+    "status": "ok",
+    "total_seconds": 15.1943330001086,
+    "selected": {
+      "first": {
+        "physical_qubits": 817,
+        "scale": 0.0007761034083721733,
+        "classical_break_bound": 0.04876762527525438
+      },
+      "size_only_pool": {
+        "physical_qubits": 759,
+        "scale": 0.0009073824538762858,
+        "classical_break_bound": 0.04876712934257889
+      },
+      "guided_pool": {
+        "physical_qubits": 759,
+        "scale": 0.0009073824538762858,
+        "classical_break_bound": 0.04876712934257889
+      }
+    }
+  },
+  {
+    "name": "rewired_band_n128_s4409",
+    "status": "ok",
+    "total_seconds": 10.656765459105372,
+    "selected": {
+      "first": {
+        "physical_qubits": 555,
+        "scale": 0.0025368315421904052,
+        "classical_break_bound": 0.04876362339756315
+      },
+      "size_only_pool": {
+        "physical_qubits": 528,
+        "scale": 0.0026159116794739487,
+        "classical_break_bound": 0.04876232017448968
+      },
+      "guided_pool": {
+        "physical_qubits": 528,
+        "scale": 0.0026159116794739487,
+        "classical_break_bound": 0.04876232017448968
+      }
+    }
+  },
+  {
+    "name": "mixed_hypergraph_n128_s4409",
+    "status": "all_heuristic_failures",
+    "total_seconds": 42.57495270809159
+  },
+  {
+    "name": "random_regular_n256_s4409",
+    "status": "all_heuristic_failures",
+    "total_seconds": 42.8649949580431
+  },
+  {
+    "name": "irregular_hubs_n256_s4409",
+    "status": "all_heuristic_failures",
+    "total_seconds": 44.605010458035395
+  },
+  {
+    "name": "rewired_band_n256_s4409",
+    "status": "all_heuristic_failures",
+    "total_seconds": 43.118880375055596
+  },
+  {
+    "name": "mixed_hypergraph_n256_s4409",
+    "status": "all_heuristic_failures",
+    "total_seconds": 45.75762058305554
+  },
+  {
+    "name": "random_regular_n64_s5501",
+    "status": "ok",
+    "total_seconds": 4.736657749861479,
+    "selected": {
+      "first": {
+        "physical_qubits": 337,
+        "scale": 0.004655164823254856,
+        "classical_break_bound": 0.048762377094925084
+      },
+      "size_only_pool": {
+        "physical_qubits": 281,
+        "scale": 0.003844970203785733,
+        "classical_break_bound": 0.048757220443332944
+      },
+      "guided_pool": {
+        "physical_qubits": 305,
+        "scale": 0.004895381179125591,
+        "classical_break_bound": 0.04876005609467233
+      }
+    }
+  },
+  {
+    "name": "irregular_hubs_n64_s5501",
+    "status": "ok",
+    "total_seconds": 7.379107082961127,
+    "selected": {
+      "first": {
+        "physical_qubits": 332,
+        "scale": 0.004006835651205096,
+        "classical_break_bound": 0.048761569876322575
+      },
+      "size_only_pool": {
+        "physical_qubits": 323,
+        "scale": 0.004278965445862836,
+        "classical_break_bound": 0.048760911103471014
+      },
+      "guided_pool": {
+        "physical_qubits": 323,
+        "scale": 0.004278965445862836,
+        "classical_break_bound": 0.048760911103471014
+      }
+    }
+  },
+  {
+    "name": "rewired_band_n64_s5501",
+    "status": "ok",
+    "total_seconds": 3.3653704170137644,
+    "selected": {
+      "first": {
+        "physical_qubits": 276,
+        "scale": 0.005865567393920191,
+        "classical_break_bound": 0.048756425808914546
+      },
+      "size_only_pool": {
+        "physical_qubits": 246,
+        "scale": 0.007219085352736601,
+        "classical_break_bound": 0.04874856962777184
+      },
+      "guided_pool": {
+        "physical_qubits": 246,
+        "scale": 0.007219085352736601,
+        "classical_break_bound": 0.04874856962777184
+      }
+    }
+  },
+  {
+    "name": "mixed_hypergraph_n64_s5501",
+    "status": "ok",
+    "total_seconds": 10.568707500118762,
+    "selected": {
+      "first": {
+        "physical_qubits": 623,
+        "scale": 0.0034219528482071744,
+        "classical_break_bound": 0.04876696176499135
+      },
+      "size_only_pool": {
+        "physical_qubits": 553,
+        "scale": 0.0034481841737626123,
+        "classical_break_bound": 0.04876598520337027
+      },
+      "guided_pool": {
+        "physical_qubits": 553,
+        "scale": 0.0034481841737626123,
+        "classical_break_bound": 0.04876598520337027
+      }
+    }
+  }
+]

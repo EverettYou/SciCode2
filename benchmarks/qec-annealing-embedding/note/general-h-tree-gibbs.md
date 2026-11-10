@@ -1,0 +1,13 @@
+# General sparse-H embedding: stable research takeaway
+
+Validated in [Lab 004](../labs/lab-004-general-h-evaluation-embedding-loop/REPORT.md), 16 October 2026. This note records the supported result; it is not a replacement benchmark question or a full-anneal theorem.
+
+For a branch-tree embedding, root repair and descendant absolute loads give positive margins delta_e=F_e-alpha L_e. The wall/root bijection bounds terminal classical Gibbs chain failure by 1-product_e(1+exp(-2 beta delta_e))^(-1), without solving decoding or evaluating a partition function. Consistent samples have the full compiled logical Gibbs distribution at beta*alpha. Full-QUBO ground mass is monotone in alpha; original-error-optimal mass with excited auxiliaries need not be.
+
+Choose a thermal margin, maximize alpha under actual programming constraints, and select compact mappings subject to the reference alpha floor. Uniform splitting admits a one-dimensional affine calculation; fixed-root/tree contact allocation admits a sparse LP. The evaluator uses sparse tree/contact/group arithmetic. It has no code-family prerequisite. The implementation's measured median main evaluation cost is 18.6 ms; heuristic candidate search and exact final audits are additional costs.
+
+On 36 ordinary matrices the uniform guided-and-pruned rule reduces physical qubits on 33/36, mean 6.57%, preserving scale and a <5% classical Gibbs defect certificate. An adaptive LP-plus-pruning combination reduces qubits on 7/8 entirely new inputs, mean 5.53%. Independent actual-coefficient audits pass 313 saved selected programs. These are finite sampled-instance results, not universal compactness bounds.
+
+Separated probability intervals prove strict chain-consistent full-QUBO-ground readout improvement on 8/12 ordinary n=16 inputs for uniform-guided-pruned, and 11/12 for LP-selected. They prove no strict unconditional root-decoded optimum ordering there. A local-driver correction extends chain-failure certificates to quantum Gibbs equilibrium at sufficiently small transverse field. It does not establish equilibration, finite-time annealing performance or real-device success.
+
+Reusable input/output entry: [constructor](../labs/lab-004-general-h-evaluation-embedding-loop/scripts/construct.py). Mathematical details: [theory](../labs/lab-004-general-h-evaluation-embedding-loop/THEORY.md). Failures, null ablations, fresh-input provenance and actual costs: [report](../labs/lab-004-general-h-evaluation-embedding-loop/REPORT.md). Retain the lab as the canonical reproducible source rather than duplicating its code into an unversioned library.

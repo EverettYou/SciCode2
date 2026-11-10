@@ -1,4 +1,4 @@
 interface:
-  display_name: "Create Benchmark"
-  short_description: "Build a wiki-centered research benchmark loop."
-  default_prompt: "Use $create-benchmark to initialize a review-ready benchmark with problem sources, wiki, idea graph, first lab, and solution boundary."
+  display_name: "Create SciCode2 Benchmark"
+  short_description: "Formulate clear questions and screen nontriviality."
+  default_prompt: "Use $create-benchmark to formulate this research question clearly and assess from its text whether it is coherent and probably nontrivial."

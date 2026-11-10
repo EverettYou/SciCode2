@@ -14,3 +14,27 @@
   summary: From the computed spectra of a fourfold layered oxide, construct an explicit model and predict
     the low-temperature photoemission at 0.75 electrons per metal site, without being given the microscopic
     Hamiltonian.
+- benchmark_id: hubbard-operator-bootstrap
+  title: Affordable Hubbard Quantum Bootstrap Bounds
+  stage: solution-drafted
+  summary: Discover and certify affordable Hubbard energy lower bounds through operator-space selection
+    on the half-filled periodic 4x4 lattice.
+- benchmark_id: qec-annealing-embedding
+  title: Fast Embedding Decisions for General Sparse-H Decoding
+  stage: researching
+  summary: Theory-guided compact mappings evaluated by original-error decoding under a common finite anneal.
+- benchmark_id: fusion-informed-decoding
+  title: How Much Symmetry Knowledge Does Decoding Need?
+  stage: problem-opened
+  summary: Resolve intrinsic and practical logical value of charge versus irrep information for hidden-orientation
+    SU(N) pair errors, focusing on N=3,4 with N=2 as a control.
+- benchmark_id: u1-directional-logical-gap
+  title: What Drives the Gain from Directional Noise?
+  stage: problem-opened
+  summary: Quantify typical-gap and ambiguous-record contributions to directional logical recovery, with
+    controlled inference and a reserved mechanism prediction.
+- benchmark_id: d4-adaptive-readout-value
+  title: Can an Extra Measurement Improve Logical Recovery?
+  stage: problem-opened
+  summary: Resolve full-prior adaptive measurement value, policy regret and decoder loss in a fixed D4
+    instrument with noisy second readout.

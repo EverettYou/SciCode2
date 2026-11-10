@@ -1,0 +1,1940 @@
+{
+  "version": "comparative-proof-narratives-v1",
+  "date": "2026-10-16",
+  "frozen_scores_source": "/Users/home/Library/CloudStorage/Dropbox/Research/[Mercor]SciCode2/benchmarks/fusion-informed-decoding/evaluation/reviews/2026-10-16-d89b765a/reference-v1/scores-v1.json",
+  "scope": "C1–C5 score the original task; Q09–Q17 and Q21 are diagnostics without additional scoring. Seven valid scientific submissions; the two API failures are not scientific zero scores.",
+  "status_legend": {
+    "E": "Explicit in the original text",
+    "I": "Inferable / corresponding teaching explanation is dispersed",
+    "M": "This explanation was not provided",
+    "X": "Actual error",
+    "NA": "Not applicable to a valid alternative proof"
+  },
+  "interpretation_notes": [
+    "possible_mistakes lists potential errors, not errors all seven actually made. Each run’s issue field is the actual diagnosis.",
+    "Proof correctness, completeness of the original certification, and depth of teaching presentation are separate; absence of a counterexample is not formal verification.",
+    "Smaller N0 is separately recorded as result strength; valid conservative alternatives are not penalized.",
+    "For non-M routes, I at Q11 means the corresponding explanation is dispersed, not that M is mandatory; NA at Q14/Q15 must not count as missing.",
+    "A later full-p certificate can support the scientific conclusion without retroactively raising the original submission score.",
+    "Q21 is a new teaching request outside the frozen 100 points; the chat figure’s a/b conflict is not an original-run error."
+  ],
+  "proof_summary": [
+    {
+      "run": "Fable03",
+      "N0": 19,
+      "method": "Visible randomized degradation→MAP support→Bhattacharyya→occupancy matrix",
+      "original_R3_score": 19.5,
+      "review_supported_R3_score": 20,
+      "actual_gap": "Half a point is reserved for original full-p rigorous arithmetic and auditability of the large-memory count; later checks support the theorem."
+    },
+    {
+      "run": "Opus01",
+      "N0": 15,
+      "method": "Visible randomized degradation→MAP configuration→Bhattacharyya and chord bounds",
+      "original_R3_score": 20,
+      "review_supported_R3_score": 20,
+      "actual_gap": "No confirmed R3 scientific gap."
+    },
+    {
+      "run": "Opus02",
+      "N0": 15,
+      "method": "Visible randomized degradation→direct posterior/polymer→fractional moment",
+      "original_R3_score": 20,
+      "review_supported_R3_score": 20,
+      "actual_gap": "No confirmed R3 scientific gap; an auxiliary MAP rule should not be required."
+    },
+    {
+      "run": "Opus03",
+      "N0": 15,
+      "method": "Visible randomized degradation→MAP configuration→Bhattacharyya",
+      "original_R3_score": 19,
+      "review_supported_R3_score": 20,
+      "actual_gap": "The original grid plus floating-point optimization did not certify the full-p maximum; later rational coverage closed the gap."
+    },
+    {
+      "run": "GPT01",
+      "N0": 13,
+      "method": "Weighted coarse-count decoder→orientation norms→chords→occupancy summation",
+      "original_R3_score": 20,
+      "review_supported_R3_score": 20,
+      "actual_gap": "No confirmed R3 scientific gap; the occupancy-matrix teaching explanation could be stronger."
+    },
+    {
+      "run": "GPT02",
+      "N0": 13,
+      "method": "Min/max count→orientation norms→positive-cycle expansion, Ihara–Bass, and tail",
+      "original_R3_score": 20,
+      "review_supported_R3_score": 20,
+      "actual_gap": "No confirmed R3 scientific gap; the final supplementary file must be read."
+    },
+    {
+      "run": "GPT03",
+      "N0": 14,
+      "method": "Min-cardinality coarse count→bipartite Cauchy–Schwarz→Chernoff matrix",
+      "original_R3_score": 20,
+      "review_supported_R3_score": 20,
+      "actual_gap": "No confirmed R3 scientific gap; not using an arrow matrix is not an omission."
+    }
+  ],
+  "aspects": [
+    {
+      "question": "Is an explicit large-N decodability theorem given for every N≥N0 and every noise rate p?",
+      "why_matters": "R3 requires a sufficient integer and complete quantifiers, not success at a few N,p values or finite sizes. A smaller N0 measures result strength, not the sole criterion for satisfying the requirement.",
+      "possible_mistakes": [
+        "Proving only p=1/2 or a sparse-noise region while claiming all p.",
+        "Treating the smallest numerically tested N as theorem N0, or omitting p=0,1.",
+        "Calling N0 the minimum critical rank."
+      ],
+      "conclusion": "All seven satisfy the R3 statement requirement. Final sufficient integers are 19,15,15,15,13,13,14; their differences reflect proof tightness, not contradictions.",
+      "id": "C1",
+      "title": "R3 statement",
+      "scored": true,
+      "rows": [
+        {
+          "run": "Fable03",
+          "done": "The final theorem uses N0=19, covers all larger N and all p, and treats endpoints as known binary errors.",
+          "issue": "The text retains the earlier memory-20→20 step; the final memory-22→19 revision is explicit and not a conflict in the final answer.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-fable-5-1/run_03/docs/theory.md",
+              "start": 171,
+              "end": 181
+            },
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-fable-5-1/run_03/docs/theory.md",
+              "start": 237,
+              "end": 247,
+              "role": "Final N19 statement, rather than earlier N20 process value"
+            }
+          ],
+          "score": 3,
+          "max_points": 3,
+          "status": "supported",
+          "review_supported_score": 3,
+          "issue_kind": "no_confirmed_scientific_error"
+        },
+        {
+          "run": "Opus01",
+          "done": "N0=15, every N≥15, and p∈[0,1] are explicit, including deterministic endpoints.",
+          "issue": "No quantifier gap here; 15 does not mean N14 or smaller ranks are nondecodable.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_01/proofs/R2_R3_proofs.md",
+              "start": 95,
+              "end": 101
+            }
+          ],
+          "score": 3,
+          "max_points": 3,
+          "status": "supported",
+          "review_supported_score": 3,
+          "issue_kind": "no_confirmed_scientific_error"
+        },
+        {
+          "run": "Opus02",
+          "done": "The opening theorem gives exponential all-p decodability at N0=15 and notes error parameters decrease monotonically with N.",
+          "issue": "Complete here; 15 is described as this method’s smallest value, not the true minimum.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_02/report/03_large_N.md",
+              "start": 1,
+              "end": 6
+            }
+          ],
+          "score": 3,
+          "max_points": 3,
+          "status": "supported",
+          "review_supported_score": 3,
+          "issue_kind": "no_confirmed_scientific_error"
+        },
+        {
+          "run": "Opus03",
+          "done": "The final N0=15 statement includes all target quantifiers and the size limit.",
+          "issue": "The statement is complete; the original full-p arithmetic-certification gap is separate under C4.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_03/docs/proofs.md",
+              "start": 134,
+              "end": 158
+            }
+          ],
+          "score": 3,
+          "max_points": 3,
+          "status": "supported",
+          "review_supported_score": 3,
+          "issue_kind": "no_confirmed_scientific_error"
+        },
+        {
+          "run": "GPT01",
+          "done": "N0=13 is explicit; the path factor decreases for larger N and p=0,1 are handled exactly and separately.",
+          "issue": "No gap here; 13 is an explicit sufficient value.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_01/proofs.md",
+              "start": 194,
+              "end": 205
+            }
+          ],
+          "score": 3,
+          "max_points": 3,
+          "status": "supported",
+          "review_supported_score": 3,
+          "issue_kind": "no_confirmed_scientific_error"
+        },
+        {
+          "run": "GPT02",
+          "done": "The base proof gives 14; large_N_13.md improves the final sufficient integer to 13 while retaining full-p quantifiers.",
+          "issue": "The final N13 supplement must be included; recording only the base proofs.md value 14 is incomplete.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_02/proofs.md",
+              "start": 130,
+              "end": 145
+            },
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_02/large_N_13.md",
+              "start": 132,
+              "end": 173,
+              "role": "Final N13 improvement"
+            }
+          ],
+          "score": 3,
+          "max_points": 3,
+          "status": "supported",
+          "review_supported_score": 3,
+          "issue_kind": "no_confirmed_scientific_error"
+        },
+        {
+          "run": "GPT03",
+          "done": "N0=14 is explicit, with separate low/high-noise control and endpoint treatment.",
+          "issue": "No gap here; 14 is a sufficient value from the method.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_03/proofs.md",
+              "start": 189,
+              "end": 222
+            }
+          ],
+          "score": 3,
+          "max_points": 3,
+          "status": "supported",
+          "review_supported_score": 3,
+          "issue_kind": "no_confirmed_scientific_error"
+        }
+      ],
+      "max_points": 3.0
+    },
+    {
+      "question": "Is the failure witness valid, and does the decoder or direct Bayes argument use only visible observations?",
+      "why_matters": "A legitimate executable rule or valid posterior inequality must precede the reduction of logical error to a spanning difference component. Local ambiguity without a selection condition cannot establish that the decoder selects incorrectly.",
+      "possible_mistakes": [
+        "Letting the decoder use true arrows or true arrival counts.",
+        "Equating one singlet/hiding event with logical failure.",
+        "Assuming an arbitrary geometric subpath can be flipped feasibly instead of a complete difference component.",
+        "Substituting MAP configuration for optimal logical-sector inference without identifying it as an auxiliary rule."
+      ],
+      "conclusion": "All seven have substantive witness/decoder arguments. Opus02’s direct-posterior method is a valid alternative and cannot be penalized for not reproducing GPT01’s weighted decoder.",
+      "id": "C2",
+      "title": "R3 witness/decoder",
+      "scored": true,
+      "rows": [
+        {
+          "run": "Fable03",
+          "done": "A MAP-support auxiliary decoder is constructed on a legitimately degraded degree record; complete-component flips are feasible and failure supplies a spanning component with likelihood ratio≥1.",
+          "issue": "No scientific error was found here; assess the actual proof route used.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-fable-5-1/run_03/docs/theory.md",
+              "start": 183,
+              "end": 202
+            }
+          ],
+          "score": 5,
+          "max_points": 5,
+          "status": "supported",
+          "review_supported_score": 5,
+          "issue_kind": "no_confirmed_scientific_error"
+        },
+        {
+          "run": "Opus01",
+          "done": "Visible irreps are randomly degraded to a degree channel; MAP-configuration component flips and the score inequality give a failure witness.",
+          "issue": "No scientific error was found here; assess the actual proof route used.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_01/proofs/R2_R3_proofs.md",
+              "start": 103,
+              "end": 109
+            }
+          ],
+          "score": 5,
+          "max_points": 5,
+          "status": "supported",
+          "review_supported_score": 5,
+          "issue_kind": "no_confirmed_scientific_error"
+        },
+        {
+          "run": "Opus02",
+          "done": "An injective polymer map and fractional-moment bound directly control wrong-sector posterior mass; no GPT-style auxiliary decoder is needed.",
+          "issue": "No scientific error was found here; assess the actual proof route used.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_02/report/03_large_N.md",
+              "start": 8,
+              "end": 17
+            }
+          ],
+          "score": 5,
+          "max_points": 5,
+          "status": "supported",
+          "review_supported_score": 5,
+          "issue_kind": "no_confirmed_scientific_error"
+        },
+        {
+          "run": "Opus03",
+          "done": "An explicit degradation kernel and MAP-configuration rule give a full chain of degree-0/2 components, feasibility, and a ratio condition.",
+          "issue": "No scientific error was found here; assess the actual proof route used.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_03/docs/proofs.md",
+              "start": 163,
+              "end": 179
+            }
+          ],
+          "score": 5,
+          "max_points": 5,
+          "status": "supported",
+          "review_supported_score": 5,
+          "issue_kind": "no_confirmed_scientific_error"
+        },
+        {
+          "run": "GPT01",
+          "done": "A weighted feasible decoder uses the observed minimum compatible count m; the true configuration is feasible and a complete spanning-component flip yields W ratio≥1.",
+          "issue": "No scientific error was found here; assess the actual proof route used.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_01/proofs.md",
+              "start": 104,
+              "end": 125
+            }
+          ],
+          "score": 5,
+          "max_points": 5,
+          "status": "supported",
+          "review_supported_score": 5,
+          "issue_kind": "no_confirmed_scientific_error"
+        },
+        {
+          "run": "GPT02",
+          "done": "Min/max-cardinality decoders use the same visible count constraints; failure witnesses satisfy both local hiding and half-path occupancy conditions.",
+          "issue": "No scientific error was found here; assess the actual proof route used.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_02/proofs.md",
+              "start": 138,
+              "end": 147
+            }
+          ],
+          "score": 5,
+          "max_points": 5,
+          "status": "supported",
+          "review_supported_score": 5,
+          "issue_kind": "no_confirmed_scientific_error"
+        },
+        {
+          "run": "GPT03",
+          "done": "A minimum-cardinality coarse-count decoder forces at least half the spanning difference edges truly active, with hiding required at 11 vertices.",
+          "issue": "No scientific error was found here; assess the actual proof route used.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_03/proofs.md",
+              "start": 213,
+              "end": 225
+            }
+          ],
+          "score": 5,
+          "max_points": 5,
+          "status": "supported",
+          "review_supported_score": 5,
+          "issue_kind": "no_confirmed_scientific_error"
+        }
+      ],
+      "max_points": 5.0
+    },
+    {
+      "question": "Does the single-path probability correctly handle shared arrows, side edges, and chord correlations?",
+      "why_matters": "Readouts are independent across vertices only after conditioning on complete microscopic edge states. Fixing binary support still leaves shared arrows; an off-path chord may touch two path vertices. Incorrect independence changes the exponential growth factor.",
+      "possible_mistakes": [
+        "Independently redrawing the orientation at the two ends of one shared edge.",
+        "Unconditionally multiplying vertex hiding probabilities.",
+        "Handling side edges used once but omitting chords used twice.",
+        "Claiming a transfer matrix automatically resolves all external correlations."
+      ],
+      "conclusion": "All seven actually handle correlations, through different methods. GPT01/02 retain orientation information and obtain stronger sufficient values; garbling and bipartite second-moment methods are more conservative but scientifically valid.",
+      "id": "C3",
+      "title": "R3 correlations",
+      "scored": true,
+      "rows": [
+        {
+          "run": "Fable03",
+          "done": "Visible random degradation first removes orientation dependence; Bhattacharyya overlaps and grouping by physical side edges handle single/double uses before occupancy-matrix summation.",
+          "issue": "No independence error was found; an alternative method is not an omitted arrow matrix.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-fable-5-1/run_03/docs/theory.md",
+              "start": 204,
+              "end": 222
+            }
+          ],
+          "score": 6,
+          "max_points": 6,
+          "status": "supported",
+          "review_supported_score": 6,
+          "issue_kind": "no_confirmed_scientific_error"
+        },
+        {
+          "run": "Opus01",
+          "done": "A valid orientation-blind channel, square-root likelihood overlaps, chord Cauchy–Schwarz, and an occupancy matrix yield the path bound.",
+          "issue": "No independence error was found; an alternative method is not an omitted arrow matrix.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_01/proofs/R2_R3_proofs.md",
+              "start": 111,
+              "end": 120
+            }
+          ],
+          "score": 6,
+          "max_points": 6,
+          "status": "supported",
+          "review_supported_score": 6,
+          "issue_kind": "no_confirmed_scientific_error"
+        },
+        {
+          "run": "Opus02",
+          "done": "General-θ fractional posterior moments and readout overlaps use Cauchy–Schwarz on chords and Jensen at single endpoints; the Perron root bounds the pattern sum.",
+          "issue": "No independence error was found; an alternative method is not an omitted arrow matrix.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_02/report/03_large_N.md",
+              "start": 19,
+              "end": 24
+            }
+          ],
+          "score": 6,
+          "max_points": 6,
+          "status": "supported",
+          "review_supported_score": 6,
+          "issue_kind": "no_confirmed_scientific_error"
+        },
+        {
+          "run": "Opus03",
+          "done": "After random degradation, likelihood depends only on degree; occupancy patterns are summed first, then shared factors are averaged by physical third edge.",
+          "issue": "No independence error was found; an alternative method is not an omitted arrow matrix.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_03/docs/proofs.md",
+              "start": 181,
+              "end": 197
+            }
+          ],
+          "score": 6,
+          "max_points": 6,
+          "status": "supported",
+          "review_supported_score": 6,
+          "issue_kind": "no_confirmed_scientific_error"
+        },
+        {
+          "run": "GPT01",
+          "done": "With off-path microscopic states fixed, ± orientation matrices and operator norms are used; side edges appearing once/twice handle chords, giving a tighter ηN(p).",
+          "issue": "No independence error was found; an alternative method is not an omitted arrow matrix.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_01/proofs.md",
+              "start": 142,
+              "end": 192
+            }
+          ],
+          "score": 6,
+          "max_points": 6,
+          "status": "supported",
+          "review_supported_score": 6,
+          "issue_kind": "no_confirmed_scientific_error"
+        },
+        {
+          "run": "GPT02",
+          "done": "The base orientation-norm and chord bounds are complete; the N13 improvement uses positive-cycle expansion, Ihara–Bass, and an analytic tail for residual orientation/cycle correlations.",
+          "issue": "No independence error was found; an alternative method is not an omitted arrow matrix.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_02/proofs.md",
+              "start": 149,
+              "end": 203
+            }
+          ],
+          "score": 6,
+          "max_points": 6,
+          "status": "supported",
+          "review_supported_score": 6,
+          "issue_kind": "no_confirmed_scientific_error"
+        },
+        {
+          "run": "GPT03",
+          "done": "No arrow matrix is used: honeycomb bipartite grouping and second-moment Cauchy–Schwarz control shared microscopic edges, followed by an occupancy Chernoff matrix.",
+          "issue": "No independence error was found; an alternative method is not an omitted arrow matrix.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_03/proofs.md",
+              "start": 227,
+              "end": 275
+            }
+          ],
+          "score": 6,
+          "max_points": 6,
+          "status": "supported",
+          "review_supported_score": 6,
+          "issue_kind": "no_confirmed_scientific_error"
+        }
+      ],
+      "max_points": 6.0
+    },
+    {
+      "question": "How does the path bound yield a rigorous L→∞ result, and is the full-p growth factor<1 certified?",
+      "why_matters": "Path counts, minimum spanning length, finite prefactors, and a strict margin all need control. A floating-point maximum below one or a dense p scan is evidence, not automatic coverage of the full continuum.",
+      "possible_mistakes": [
+        "Treating the maximum on a finite grid or from a floating-point optimizer as a rigorous bound over the entire interval.",
+        "Using the asymptotic definition of exact μ to assume a common finite prefactor at every length without an ε margin.",
+        "Reporting a growth factor<1 without the geometric series or length lower bound.",
+        "Crediting a later reviewer-supplied certificate to the original agent."
+      ],
+      "conclusion": "Frozen original-submission scores are Fable03 3.5/4, Opus03 3/4, and 4/4 for the others. Existing independent checks support all seven theorems but cannot retrospectively supply original certificates; squared and unsquared factors are not directly rankable.",
+      "id": "C4",
+      "title": "R3 exponential bound and certification",
+      "scored": true,
+      "rows": [
+        {
+          "run": "Fable03",
+          "done": "Length≥2L−1, L starting points, and the geometric series are supplied; final λ=1.876764 gives N19. Later rational coverage supports squared growth≤0.997854.",
+          "issue": "The original h19 is floating-point output and the large memory-22 proof was not rebuilt here, reserving half a point for certification/auditability. Later λ>known exact μ can independently replace the large count.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-fable-5-1/run_03/docs/theory.md",
+              "start": 224,
+              "end": 247
+            }
+          ],
+          "score": 3.5,
+          "max_points": 4,
+          "status": "partial",
+          "review_supported_score": 4,
+          "issue_kind": "original_certificate_gap"
+        },
+        {
+          "run": "Opus01",
+          "done": "The μ+δ prefactor, geometric series, and original rational interval cover are complete; existing checks give squared growth≤0.998799.",
+          "issue": "The original certification is rigorous; a margin near one indicates a conservative bound, not a proof gap.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_01/proofs/R2_R3_proofs.md",
+              "start": 122,
+              "end": 130
+            }
+          ],
+          "score": 4,
+          "max_points": 4,
+          "status": "supported",
+          "review_supported_score": 4,
+          "issue_kind": "no_confirmed_scientific_error"
+        },
+        {
+          "run": "Opus02",
+          "done": "Path counts and exponential decay are complete; the original 120-bit interval-arithmetic full-p cover and N monotonicity extend N15 to all larger N.",
+          "issue": "The original has interval certification; “many grid points” is not a substitute for its interval cover.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_02/report/03_large_N.md",
+              "start": 26,
+              "end": 33
+            }
+          ],
+          "score": 4,
+          "max_points": 4,
+          "status": "supported",
+          "review_supported_score": 4,
+          "issue_kind": "no_confirmed_scientific_error"
+        },
+        {
+          "run": "Opus03",
+          "done": "Counting and the geometric series hold; later rational interval coverage supports squared growth≤0.996797.",
+          "issue": "Original r3_bound.py uses a 200001-point grid plus floating-point optimization without rigorous full-p certification. This original-certificate gap loses one point; no counterexample was found.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_03/docs/proofs.md",
+              "start": 199,
+              "end": 211
+            },
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_03/scripts/r3_bound.py",
+              "start": 31,
+              "end": 37,
+              "role": "Original grid plus floating-point optimization"
+            }
+          ],
+          "score": 3,
+          "max_points": 4,
+          "status": "partial",
+          "review_supported_score": 4,
+          "issue_kind": "original_certificate_gap"
+        },
+        {
+          "run": "GPT01",
+          "done": "A three-part rational certificate covers all p with worst-segment growth<0.999129; endpoints and the μ+ε margin are complete.",
+          "issue": "Original certification is complete; the exponential upper bound may be very loose at practical sizes.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_01/proofs.md",
+              "start": 132,
+              "end": 138
+            }
+          ],
+          "score": 4,
+          "max_points": 4,
+          "status": "supported",
+          "review_supported_score": 4,
+          "issue_kind": "no_confirmed_scientific_error"
+        },
+        {
+          "run": "GPT02",
+          "done": "The N13 supplement bounds the cycle factor with exact return-walk terms and an analytic tail; a rational full-p certificate gives growth<0.999888.",
+          "issue": "Original certification is complete but technically involved; small-hexagon enumerations are validation examples, not substitutes for the general tail proof.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_02/proofs.md",
+              "start": 208,
+              "end": 219
+            },
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_02/large_N_13.md",
+              "start": 62,
+              "end": 173,
+              "role": "Final N13 cycle tail and uniform certificate"
+            }
+          ],
+          "score": 4,
+          "max_points": 4,
+          "status": "supported",
+          "review_supported_score": 4,
+          "issue_kind": "no_confirmed_scientific_error"
+        },
+        {
+          "run": "GPT03",
+          "done": "A rational full-p certificate, separate high-p analysis, and μ+ε are supplied; existing checks give growth<0.999950.",
+          "issue": "Original certification is complete; a uniform factor near one permits a very long crossover.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_03/proofs.md",
+              "start": 278,
+              "end": 312
+            }
+          ],
+          "score": 4,
+          "max_points": 4,
+          "status": "supported",
+          "review_supported_score": 4,
+          "issue_kind": "no_confirmed_scientific_error"
+        }
+      ],
+      "max_points": 4.0
+    },
+    {
+      "question": "Is the relation between sufficient N0, probability bounds, actual phases, and critical exponents properly limited?",
+      "why_matters": "Boundaries of rigorous decodable subsets, sufficient ranks, and exponential upper bounds may all be conservative. Failure of a proof does not imply physical nondecodability; a larger sufficient N0 is not an error.",
+      "possible_mistakes": [
+        "Declaring nondecodability when r≥1.",
+        "Treating roots of a sufficient bound as true transition boundaries.",
+        "Calling the decay rate in an exponential upper bound a true critical exponent.",
+        "Misreading average Bayes-risk comparison as recordwise inclusion of failure events."
+      ],
+      "conclusion": "All seven are generally restrained about R3 scope. Full marks here do not mean the phase diagram is complete or formal difficulty calibration has passed.",
+      "id": "C5",
+      "title": "R3 scope of conclusions",
+      "scored": true,
+      "rows": [
+        {
+          "run": "Fable03",
+          "done": "The N19 theorem is separate from numerical behavior at N≥3; risk ordering uses average Bayes risk.",
+          "issue": "No overclaim was found here; other phase-extrapolation issues are assessed under A2/A3 without duplicate penalties.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-fable-5-1/run_03/docs/theory.md",
+              "start": 229,
+              "end": 247
+            }
+          ],
+          "score": 2,
+          "max_points": 2,
+          "status": "supported",
+          "review_supported_score": 2,
+          "issue_kind": "no_confirmed_scientific_error"
+        },
+        {
+          "run": "Opus01",
+          "done": "The text calls 15 this method’s upper bound, deliberately discards orientation information, and presents smaller-N all-p behavior only as numerical evidence.",
+          "issue": "No overclaim was found here; other phase-extrapolation issues are assessed under A2/A3 without duplicate penalties.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_01/proofs/R2_R3_proofs.md",
+              "start": 132,
+              "end": 135
+            }
+          ],
+          "score": 2,
+          "max_points": 2,
+          "status": "supported",
+          "review_supported_score": 2,
+          "issue_kind": "no_confirmed_scientific_error"
+        },
+        {
+          "run": "Opus02",
+          "done": "15 is explicitly a sufficient value from the current proof; numerical all-p behavior at N≥3 is not presented as a theorem.",
+          "issue": "No overclaim was found here; other phase-extrapolation issues are assessed under A2/A3 without duplicate penalties.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_02/report/03_large_N.md",
+              "start": 39,
+              "end": 40
+            }
+          ],
+          "score": 2,
+          "max_points": 2,
+          "status": "supported",
+          "review_supported_score": 2,
+          "issue_kind": "no_confirmed_scientific_error"
+        },
+        {
+          "run": "Opus03",
+          "done": "Discarded information, proved N15, and smaller-N numerical extrapolations are separated.",
+          "issue": "No overclaim was found here; other phase-extrapolation issues are assessed under A2/A3 without duplicate penalties.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_03/docs/proofs.md",
+              "start": 218,
+              "end": 223
+            }
+          ],
+          "score": 2,
+          "max_points": 2,
+          "status": "supported",
+          "review_supported_score": 2,
+          "issue_kind": "no_confirmed_scientific_error"
+        },
+        {
+          "run": "GPT01",
+          "done": "13 is not claimed minimal; sufficient roots are not actual phase boundaries and auxiliary risk bounds optimal average risk.",
+          "issue": "No overclaim was found here; other phase-extrapolation issues are assessed under A2/A3 without duplicate penalties.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_01/proofs.md",
+              "start": 208,
+              "end": 212
+            }
+          ],
+          "score": 2,
+          "max_points": 2,
+          "status": "supported",
+          "review_supported_score": 2,
+          "issue_kind": "no_confirmed_scientific_error"
+        },
+        {
+          "run": "GPT02",
+          "done": "The growth-factor condition is explicitly sufficient; equality is not interpreted as a phase boundary.",
+          "issue": "No overclaim was found here; other phase-extrapolation issues are assessed under A2/A3 without duplicate penalties.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_02/proofs.md",
+              "start": 219,
+              "end": 219
+            }
+          ],
+          "score": 2,
+          "max_points": 2,
+          "status": "supported",
+          "review_supported_score": 2,
+          "issue_kind": "no_confirmed_scientific_error"
+        },
+        {
+          "run": "GPT03",
+          "done": "14 is not claimed minimal, and the proof bound may be impractical at simulated sizes.",
+          "issue": "No overclaim was found here; other phase-extrapolation issues are assessed under A2/A3 without duplicate penalties.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_03/proofs.md",
+              "start": 313,
+              "end": 315
+            }
+          ],
+          "score": 2,
+          "max_points": 2,
+          "status": "supported",
+          "review_supported_score": 2,
+          "issue_kind": "no_confirmed_scientific_error"
+        }
+      ],
+      "max_points": 2.0
+    },
+    {
+      "question": "Are binary X,C separated from latent arrow σ, and is σ incorrectly supplied to the decoder?",
+      "why_matters": "X records edge occupancy; σ determines which endpoint of an occupied edge receives V. Together they determine readout probabilities, but correction remains binary; conditioning on hidden variables in analysis does not make them visible to the decoder.",
+      "possible_mistakes": [
+        "Assuming a binary operator intrinsically has a direction, or that the task has no additional orientation.",
+        "Giving the decoder access to true σ.",
+        "Confusing edge identifier ei, occupancy bit Xi, and sign σi."
+      ],
+      "conclusion": "The frozen diagnostic is E for all seven. Reader confusion about arrows mainly concerns presentation depth; no run was found to replace binary correction with a directed operator.",
+      "id": "Q09",
+      "title": "Separate binary X,C from latent sigma; sigma is not given to the decoder",
+      "scored": false,
+      "rows": [
+        {
+          "run": "Fable03",
+          "done": "Support x and ε are separated at the outset, with prior 1−p,p/2,p/2; later visible degree garbling does not retain orientation.",
+          "issue": "The teaching statement that latent orientation is not provided to the decoder is dispersed, but the legitimate degradation establishes no hidden access.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-fable-5-1/run_03/docs/theory.md",
+              "start": 3,
+              "end": 8
+            }
+          ],
+          "status": "E",
+          "issue_kind": "no_confirmed_scientific_error"
+        },
+        {
+          "run": "Opus01",
+          "done": "Binary x and additional orientation σ are explicit; the private-randomness kernel uses only visible irreps.",
+          "issue": "Scientific modeling is complete; local arrow diagrams requested in this discussion are not additionally supplied.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_01/proofs/R2_R3_proofs.md",
+              "start": 3,
+              "end": 6
+            }
+          ],
+          "status": "E",
+          "issue_kind": "no_confirmed_scientific_error"
+        },
+        {
+          "run": "Opus02",
+          "done": "exact_structure models x and orientation before degrading observations to degree-only dependence.",
+          "issue": "Scientific modeling is complete; the degraded proof need not retain σ states.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_02/report/02_exact_structure.md",
+              "start": 3,
+              "end": 6
+            }
+          ],
+          "status": "E",
+          "issue_kind": "no_confirmed_scientific_error"
+        },
+        {
+          "run": "Opus03",
+          "done": "Three-state microscopic y identifies the V endpoint, while correction and success conditions remain binary.",
+          "issue": "Scientific modeling is complete; missing diagrams are separately assessed under Q21.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_03/docs/sec_model.md",
+              "start": 10,
+              "end": 26
+            }
+          ],
+          "status": "E",
+          "issue_kind": "no_confirmed_scientific_error"
+        },
+        {
+          "run": "GPT01",
+          "done": "Three-state microscopic variables and binary occupancy are separate; conditioning off-path microstates is only for probability bounds.",
+          "issue": "Modeling is correct; the original does not illustrate different σ values on the same binary support.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_01/proofs.md",
+              "start": 70,
+              "end": 77
+            }
+          ],
+          "status": "E",
+          "issue_kind": "no_confirmed_scientific_error"
+        },
+        {
+          "run": "GPT02",
+          "done": "Latent arrows, path reference direction, and endpoint sign sharing are explicit; the auxiliary decoder uses only m.",
+          "issue": "Modeling and reference direction are clearest; a four-panel teaching diagram is still absent.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_02/proofs.md",
+              "start": 108,
+              "end": 116
+            }
+          ],
+          "status": "E",
+          "issue_kind": "no_confirmed_scientific_error"
+        },
+        {
+          "run": "GPT03",
+          "done": "Additional orientations and conditionally independent readouts are introduced at the outset; second-moment analysis averages hidden orientations.",
+          "issue": "Modeling is correct; the second-moment method needs no arrow transfer matrix.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_03/proofs.md",
+              "start": 3,
+              "end": 6
+            }
+          ],
+          "status": "E",
+          "issue_kind": "no_confirmed_scientific_error"
+        }
+      ],
+      "scope": "Core model"
+    },
+    {
+      "question": "Why may a failure witness be a self-avoiding path rather than an arbitrary walk with loops?",
+      "why_matters": "At honeycomb measured vertices, the difference degree is even and at most three, so a nonzero degree is two. Complete components are simple cycles or paths. Self-avoidance is a property of the difference graph, not an assumed physical repulsion.",
+      "possible_mistakes": [
+        "Inferring that every representative is self-avoiding merely because logical operators can be deformed.",
+        "Omitting multiple difference components or additional loops.",
+        "Confusing even difference degree with an even true arrival count."
+      ],
+      "conclusion": "All seven are E. The proof counts an extractable simple difference component; it does not restrict all true errors or logical-operator representatives to self-avoiding forms.",
+      "id": "Q10",
+      "title": "Difference components are self-avoiding because degrees are 0/2, not because of physical repulsion",
+      "scored": false,
+      "rows": [
+        {
+          "run": "Fable03",
+          "done": "Equal syndrome and maximum degree three yield degree0/2; disjoint simple cycles/paths follow, with a bottom–top component for logical failure.",
+          "issue": "No error here; stepwise loop-deformation diagrams would be an expository addition, not a change to the structural argument.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-fable-5-1/run_03/docs/theory.md",
+              "start": 190,
+              "end": 202
+            }
+          ],
+          "status": "E",
+          "issue_kind": "no_confirmed_scientific_error"
+        },
+        {
+          "run": "Opus01",
+          "done": "Degree0/2 and spanning components are explicit; complete-component flips preserve local feasibility.",
+          "issue": "No error here; stepwise loop-deformation diagrams would be an expository addition, not a change to the structural argument.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_01/proofs/R2_R3_proofs.md",
+              "start": 103,
+              "end": 106
+            }
+          ],
+          "status": "E",
+          "issue_kind": "no_confirmed_scientific_error"
+        },
+        {
+          "run": "Opus02",
+          "done": "Direct posterior decomposition distinguishes cycles, same-side paths, and spanning paths; an odd number of spanning components changes logical sector.",
+          "issue": "No error here; stepwise loop-deformation diagrams would be an expository addition, not a change to the structural argument.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_02/report/03_large_N.md",
+              "start": 8,
+              "end": 13
+            }
+          ],
+          "status": "E",
+          "issue_kind": "no_confirmed_scientific_error"
+        },
+        {
+          "run": "Opus03",
+          "done": "The MAP-support difference decomposes by degree0/2; a spanning component witnesses failure.",
+          "issue": "No error here; stepwise loop-deformation diagrams would be an expository addition, not a change to the structural argument.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_03/docs/proofs.md",
+              "start": 166,
+              "end": 171
+            }
+          ],
+          "status": "E",
+          "issue_kind": "no_confirmed_scientific_error"
+        },
+        {
+          "run": "GPT01",
+          "done": "A separate geometry section establishes simple components and minimum length without assuming actual errors self-avoiding.",
+          "issue": "No error here; stepwise loop-deformation diagrams would be an expository addition, not a change to the structural argument.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_01/proofs.md",
+              "start": 7,
+              "end": 18
+            }
+          ],
+          "status": "E",
+          "issue_kind": "no_confirmed_scientific_error"
+        },
+        {
+          "run": "GPT02",
+          "done": "Equal-syndrome differences at trivalent detectors force degree0/2 and a spanning component on failure.",
+          "issue": "No error here; stepwise loop-deformation diagrams would be an expository addition, not a change to the structural argument.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_02/proofs.md",
+              "start": 145,
+              "end": 147
+            }
+          ],
+          "status": "E",
+          "issue_kind": "no_confirmed_scientific_error"
+        },
+        {
+          "run": "GPT03",
+          "done": "The detailed geometry proof covers logical representatives, boundaries, and minimum spanning length.",
+          "issue": "No error here; stepwise loop-deformation diagrams would be an expository addition, not a change to the structural argument.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_03/proofs.md",
+              "start": 8,
+              "end": 18
+            }
+          ],
+          "status": "E",
+          "issue_kind": "no_confirmed_scientific_error"
+        }
+      ],
+      "scope": "Required when using a path proof"
+    },
+    {
+      "question": "Are M, true/candidate arrival counts, and local 00/01/10/11 changes explained correctly?",
+      "why_matters": "In the direct coarse-constraint route, M is the smallest same-parity arrival count allowed by the current readout. Degree≤3 gives n∈{M,M+2}. Only deleting true 11 to 00 forces the true record to hide a pair.",
+      "possible_mistakes": [
+        "Treating M as the true count or an observation-independent threshold.",
+        "Saying every path vertex must hide.",
+        "Ignoring the degree cap and allowing M+2,M+4,… .",
+        "Forcing the same notation onto a valid proof that does not use M."
+      ],
+      "conclusion": "G01/02/03 are explicit on the direct-M route. F03 and all three Opus runs complete the science through equivalent degree-channel arguments; frozen I means only that the corresponding teaching explanation is dispersed.",
+      "id": "Q11",
+      "title": "M is the minimum compatible count; only 11 forces true hiding, while 01/10 preserve the count",
+      "scored": false,
+      "rows": [
+        {
+          "run": "Fable03",
+          "done": "Noisy-degree-channel feasibility is used; double-edge flips change counts by ±2, while alternating patterns preserve them. Equivalent M content is inferable.",
+          "issue": "Frozen I: equivalent content is dispersed. This is not a scientific error or a requirement to adopt a GPT-style M decoder.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-fable-5-1/run_03/docs/theory.md",
+              "start": 130,
+              "end": 143
+            },
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-fable-5-1/run_03/docs/theory.md",
+              "start": 201,
+              "end": 218
+            }
+          ],
+          "status": "I",
+          "issue_kind": "exposition_or_correspondence_gap"
+        },
+        {
+          "run": "Opus01",
+          "done": "Degree garbling and double/alternating overlaps cover the same local mechanism without a separate M table.",
+          "issue": "Frozen I: no dedicated M table; legitimate degradation incurs no method-choice penalty.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_01/proofs/R2_R3_proofs.md",
+              "start": 62,
+              "end": 75
+            },
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_01/proofs/R2_R3_proofs.md",
+              "start": 114,
+              "end": 115
+            }
+          ],
+          "status": "I",
+          "issue_kind": "exposition_or_correspondence_gap"
+        },
+        {
+          "run": "Opus02",
+          "done": "Readout overlaps distinguish equal degree, +2, and −2; the direct-posterior route does not require M.",
+          "issue": "Frozen I: correspondence to this discussion is not expanded; the direct-posterior method itself needs no M.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_02/report/03_large_N.md",
+              "start": 19,
+              "end": 21
+            },
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_02/report/03_large_N.md",
+              "start": 19,
+              "end": 21
+            }
+          ],
+          "status": "I",
+          "issue_kind": "exposition_or_correspondence_gap"
+        },
+        {
+          "run": "Opus03",
+          "done": "Degradation kernels and overlaps distinguish degrees; M-form content is implicit in feasibility rather than main notation.",
+          "issue": "Frozen I: local feasibility is correct; M exposition is not the original’s main route.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_03/docs/proofs.md",
+              "start": 138,
+              "end": 158
+            },
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_03/docs/proofs.md",
+              "start": 184,
+              "end": 188
+            }
+          ],
+          "status": "I",
+          "issue_kind": "exposition_or_correspondence_gap"
+        },
+        {
+          "run": "GPT01",
+          "done": "m and true n∈{m,m+2} are explicit; only 11 requires B=1, 00 adds a pair, and mixed patterns preserve counts.",
+          "issue": "Frozen E; teaching notation may standardize m to M to avoid confusion with path length.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_01/proofs.md",
+              "start": 106,
+              "end": 116
+            },
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_01/proofs.md",
+              "start": 119,
+              "end": 129
+            }
+          ],
+          "status": "E",
+          "issue_kind": "no_confirmed_scientific_error"
+        },
+        {
+          "run": "GPT02",
+          "done": "The minimum same-parity count M, min/max decoders, and 11 hiding are all explicit.",
+          "issue": "Frozen E; this must not be read as saying every vertex has an even total arrival count.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_02/proofs.md",
+              "start": 130,
+              "end": 136
+            },
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_02/proofs.md",
+              "start": 147,
+              "end": 147
+            }
+          ],
+          "status": "E",
+          "issue_kind": "no_confirmed_scientific_error"
+        },
+        {
+          "run": "GPT03",
+          "done": "h is the minimum compatible count with n∈{h,h+2}; min-cardinality and hiding only at 11 are explicit.",
+          "issue": "Frozen E; original h must be distinguished from the chat’s use of h for side-edge occupancy.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_03/proofs.md",
+              "start": 194,
+              "end": 205
+            },
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_03/proofs.md",
+              "start": 219,
+              "end": 225
+            }
+          ],
+          "status": "E",
+          "issue_kind": "no_confirmed_scientific_error"
+        }
+      ],
+      "scope": "Required when using this coarse constraint"
+    },
+    {
+      "question": "Why can hiding bounds control mismatch, and is a necessary condition being mistaken for a sufficient one?",
+      "why_matters": "C is a function of global observations, so direct vertexwise mismatch calculation is difficult. The proof bounds failure by necessary local ambiguity plus a global selection condition, permitting overcounting rather than claiming every hiding event causes failure.",
+      "possible_mistakes": [
+        "Declaring logical failure after a single hiding event.",
+        "Applying the necessary condition to any syndrome-compatible correction while omitting the constructed auxiliary rule’s feasibility constraints.",
+        "Calling every geometric path counted by the upper bound a fully signal-compatible solution."
+      ],
+      "conclusion": "None of the seven treats hiding as sufficient. They bound mismatch/wrong-sector probability; rarity of local events must be used together with global candidate selection.",
+      "id": "Q12",
+      "title": "Hiding is necessary, not sufficient, and applies to the specified auxiliary decoder",
+      "scored": false,
+      "rows": [
+        {
+          "run": "Fable03",
+          "done": "The degraded failure witness needs a feasible complete component and rD≥1; hiding/overlap is only one part of the probability calculation.",
+          "issue": "Frozen E: no “hiding means failure” error was found. The current discussion needs a more intuitive account of event inclusion.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-fable-5-1/run_03/docs/theory.md",
+              "start": 188,
+              "end": 218
+            }
+          ],
+          "status": "E",
+          "issue_kind": "no_confirmed_scientific_error"
+        },
+        {
+          "run": "Opus01",
+          "done": "MAP selection and component feasibility precede Bhattacharyya summation; a local low count is not equated with failure.",
+          "issue": "Frozen E: no “hiding means failure” error was found. The current discussion needs a more intuitive account of event inclusion.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_01/proofs/R2_R3_proofs.md",
+              "start": 100,
+              "end": 115
+            }
+          ],
+          "status": "E",
+          "issue_kind": "no_confirmed_scientific_error"
+        },
+        {
+          "run": "Opus02",
+          "done": "The direct posterior/polymer inequality bounds total wrong-sector weight, including feasibility and fractional ratios, rather than vertexwise hiding counts.",
+          "issue": "Frozen E: no “hiding means failure” error was found. The current discussion needs a more intuitive account of event inclusion.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_02/report/03_large_N.md",
+              "start": 15,
+              "end": 24
+            }
+          ],
+          "status": "E",
+          "issue_kind": "no_confirmed_scientific_error"
+        },
+        {
+          "run": "Opus03",
+          "done": "The complete witness includes a likelihood ratio; local confusion contributes only the overlap.",
+          "issue": "Frozen E: no “hiding means failure” error was found. The current discussion needs a more intuitive account of event inclusion.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_03/docs/proofs.md",
+              "start": 163,
+              "end": 188
+            }
+          ],
+          "status": "E",
+          "issue_kind": "no_confirmed_scientific_error"
+        },
+        {
+          "run": "GPT01",
+          "done": "B=1 is only necessary to delete 11, followed by A≥1 and the auxiliary-risk comparison.",
+          "issue": "Frozen E: no “hiding means failure” error was found. The current discussion needs a more intuitive account of event inclusion.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_01/proofs.md",
+              "start": 112,
+              "end": 138
+            }
+          ],
+          "status": "E",
+          "issue_kind": "no_confirmed_scientific_error"
+        },
+        {
+          "run": "GPT02",
+          "done": "Local hiding, at least/at most half-path activity, and Chernoff are used jointly.",
+          "issue": "Frozen E: no “hiding means failure” error was found. The current discussion needs a more intuitive account of event inclusion.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_02/proofs.md",
+              "start": 138,
+              "end": 147
+            }
+          ],
+          "status": "E",
+          "issue_kind": "no_confirmed_scientific_error"
+        },
+        {
+          "run": "GPT03",
+          "done": "Necessary conditions apply only to the h-constrained auxiliary decoder, with a separate at-least-half-active requirement.",
+          "issue": "Frozen E: no “hiding means failure” error was found. The current discussion needs a more intuitive account of event inclusion.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_03/proofs.md",
+              "start": 213,
+              "end": 225
+            }
+          ],
+          "status": "E",
+          "issue_kind": "no_confirmed_scientific_error"
+        }
+      ],
+      "scope": "Required when using a hiding proof"
+    },
+    {
+      "question": "How does the decoder selection condition enter the whole-path probability bound?",
+      "why_matters": "An alternating path may have no 11-hiding vertices. Scores, likelihood ratios, or direct posterior weights must also be included to suppress all occupancy patterns and obtain a valid ρ^d.",
+      "possible_mistakes": [
+        "Assuming multiplying only 11-hiding factors makes every path probability exponentially small.",
+        "Omitting the prior p/(1−p) from the score ratio.",
+        "Applying the min-cardinality “at least half active” condition to a max-cardinality rule."
+      ],
+      "conclusion": "All seven retain the crucial selection/posterior-weight step. “Every 11 hides” alone is insufficient; valid proofs do not stop at local probabilities.",
+      "id": "Q13",
+      "title": "Decoder scores/minimum or maximum cardinality/Chernoff conditions enter the probability bound",
+      "scored": false,
+      "rows": [
+        {
+          "run": "Fable03",
+          "done": "MAP support yields rD≥1; indicator≤√rD introduces Bhattacharyya overlaps and square-root edge priors.",
+          "issue": "Frozen E: the scientific step is complete. A direct-posterior route needs no fabricated MAP score threshold.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-fable-5-1/run_03/docs/theory.md",
+              "start": 196,
+              "end": 207
+            }
+          ],
+          "status": "E",
+          "issue_kind": "no_confirmed_scientific_error"
+        },
+        {
+          "run": "Opus01",
+          "done": "A component likelihood ratio≥1 leads to the square-root moment; edges contribute √p(1−p) and vertices contribute overlaps.",
+          "issue": "Frozen E: the scientific step is complete. A direct-posterior route needs no fabricated MAP score threshold.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_01/proofs/R2_R3_proofs.md",
+              "start": 107,
+              "end": 112
+            }
+          ],
+          "status": "E",
+          "issue_kind": "no_confirmed_scientific_error"
+        },
+        {
+          "run": "Opus02",
+          "done": "No hard selection threshold is needed: wrong posterior≤the sum of path ratios, followed by fractional moment r^θ with an equivalent role.",
+          "issue": "Frozen E: the scientific step is complete. A direct-posterior route needs no fabricated MAP score threshold.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_02/report/03_large_N.md",
+              "start": 15,
+              "end": 24
+            }
+          ],
+          "status": "E",
+          "issue_kind": "no_confirmed_scientific_error"
+        },
+        {
+          "run": "Opus03",
+          "done": "MAP ratio≥1 combines with Bhattacharyya and includes every occupancy pattern.",
+          "issue": "Frozen E: the scientific step is complete. A direct-posterior route needs no fabricated MAP score threshold.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_03/docs/proofs.md",
+              "start": 173,
+              "end": 184
+            }
+          ],
+          "status": "E",
+          "issue_kind": "no_confirmed_scientific_error"
+        },
+        {
+          "run": "GPT01",
+          "done": "Score ratio A≥1 combines square-root score weights with hiding rates so both 00 and 11 receive √t.",
+          "issue": "Frozen E: the scientific step is complete. A direct-posterior route needs no fabricated MAP score threshold.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_01/proofs.md",
+              "start": 119,
+              "end": 129
+            }
+          ],
+          "status": "E",
+          "issue_kind": "no_confirmed_scientific_error"
+        },
+        {
+          "run": "GPT02",
+          "done": "p selects minimum/maximum cardinality, forcing true active counts ≥/≤d/2 before Chernoff optimization.",
+          "issue": "Frozen E: the scientific step is complete. A direct-posterior route needs no fabricated MAP score threshold.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_02/proofs.md",
+              "start": 190,
+              "end": 203
+            }
+          ],
+          "status": "E",
+          "issue_kind": "no_confirmed_scientific_error"
+        },
+        {
+          "run": "GPT03",
+          "done": "Min-cardinality forces u≥d/2; Chernoff and an occupancy matrix average Bernoulli patterns, with separate high-p control.",
+          "issue": "Frozen E: the scientific step is complete. A direct-posterior route needs no fabricated MAP score threshold.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_03/proofs.md",
+              "start": 253,
+              "end": 275
+            }
+          ],
+          "status": "E",
+          "issue_kind": "no_confirmed_scientific_error"
+        }
+      ],
+      "scope": "Required for the corresponding proof route"
+    },
+    {
+      "question": "When an orientation matrix is used, are ± states, entries, and endpoint normalization correct?",
+      "why_matters": "On fixed active runs the orientation matrix propagates shared arrows. Entries are conditional readout weights given adjacent orientations, not transitions of a binary correction or a row-normalized Markov kernel.",
+      "possible_mistakes": [
+        "Treating ± orientations as occupancy 0/1.",
+        "Reversing the relative signs of left/right arrivals at the shared vertex.",
+        "Omitting the 1/2 prior for each active arrow or endpoint summation.",
+        "Requiring every valid proof to use an arrow matrix."
+      ],
+      "conclusion": "Only G01/02 directly use this method and both are E; the others are NA. Drawing an arrow matrix cannot become mandatory for R3 correctness.",
+      "id": "Q14",
+      "title": "Orientation-matrix states and individual entries are interpreted correctly",
+      "scored": false,
+      "rows": [
+        {
+          "run": "Fable03",
+          "done": "After valid random degradation, observations depend only on degree and orientations are summed out; no arrow matrix is used.",
+          "issue": "Frozen NA: a valid alternative, not an omission.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-fable-5-1/run_03/docs/theory.md",
+              "start": 183,
+              "end": 186
+            }
+          ],
+          "status": "NA",
+          "issue_kind": "valid_alternative_not_applicable"
+        },
+        {
+          "run": "Opus01",
+          "done": "Visible irreps are first degraded to an orientation-blind channel; ± states need not be retained.",
+          "issue": "Frozen NA: a valid alternative, not an omission.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_01/proofs/R2_R3_proofs.md",
+              "start": 97,
+              "end": 98
+            }
+          ],
+          "status": "NA",
+          "issue_kind": "valid_alternative_not_applicable"
+        },
+        {
+          "run": "Opus02",
+          "done": "A direct degree-channel posterior proof makes the arrow matrix inapplicable.",
+          "issue": "Frozen NA: a valid alternative, not an omission.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_02/report/03_large_N.md",
+              "start": 8,
+              "end": 8
+            }
+          ],
+          "status": "NA",
+          "issue_kind": "valid_alternative_not_applicable"
+        },
+        {
+          "run": "Opus03",
+          "done": "The degraded likelihood explicitly omits orientation, which has been legitimately eliminated.",
+          "issue": "Frozen NA: a valid alternative, not an omission.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_03/docs/proofs.md",
+              "start": 158,
+              "end": 161
+            }
+          ],
+          "status": "NA",
+          "issue_kind": "valid_alternative_not_applicable"
+        },
+        {
+          "run": "GPT01",
+          "done": "Active runs use ± states and a 1/2 prior for the next arrow; endpoint vector (1,1)/√2 has norm one, followed by operator norms.",
+          "issue": "Frozen E: the formulas are correct; missing entry-by-entry teaching diagrams are assessed under Q21.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_01/proofs.md",
+              "start": 155,
+              "end": 168
+            }
+          ],
+          "status": "E",
+          "issue_kind": "no_confirmed_scientific_error"
+        },
+        {
+          "run": "GPT02",
+          "done": "Path reference direction, arrivals ui and −ui+1, F/2, endpoint vectors, and rank-dependent matrix norms are explicit.",
+          "issue": "Frozen E: states/endpoints are adequately explained; four-panel diagrams remain absent.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_02/proofs.md",
+              "start": 149,
+              "end": 173
+            }
+          ],
+          "status": "E",
+          "issue_kind": "no_confirmed_scientific_error"
+        },
+        {
+          "run": "GPT03",
+          "done": "Bipartite second-moment Cauchy–Schwarz averages true orientations without an arrow matrix.",
+          "issue": "Frozen NA: second moments handle the same correlation, not an omission.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_03/proofs.md",
+              "start": 227,
+              "end": 252
+            }
+          ],
+          "status": "NA",
+          "issue_kind": "valid_alternative_not_applicable"
+        }
+      ],
+      "scope": "Applies to the direct-matrix route; alternative routes are NA"
+    },
+    {
+      "question": "Are occupancy-pattern sums distinguished from arrow sums, and where does ρ come from?",
+      "why_matters": "The ± matrix averages latent orientations; the 0/1 matrix sums true Bernoulli occupancy patterns. The latter, together with score/Chernoff weights, produces ρ, not a single-vertex hiding probability. Proofs using only one matrix can also be valid.",
+      "possible_mistakes": [
+        "Equating ρ with 1/N².",
+        "Resampling the same edge at its two vertices.",
+        "Interpreting every transfer matrix as physical time evolution.",
+        "Penalizing an alternative proof for using only an occupancy matrix."
+      ],
+      "conclusion": "G02 explicitly separates the two matrices; G01 gives an inferable formula with shorter teaching explanation. The others do sum patterns, but legitimately avoid the two-matrix route.",
+      "id": "Q15",
+      "title": "Occupancy and orientation matrices have different state spaces",
+      "scored": false,
+      "rows": [
+        {
+          "run": "Fable03",
+          "done": "The occupancy/candidate-pattern matrix [[β,1],[1,β]] and binary-sequence sum are explicit; no second arrow matrix can be confused with it.",
+          "issue": "Frozen NA concerns distinguishing two matrices; occupancy summation itself is explicit, not missing.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-fable-5-1/run_03/docs/theory.md",
+              "start": 220,
+              "end": 222
+            }
+          ],
+          "status": "NA",
+          "issue_kind": "valid_alternative_not_applicable"
+        },
+        {
+          "run": "Opus01",
+          "done": "The occupancy matrix is explicit; β comes from readout overlap and side-edge averaging, with no two-matrix distinction needed.",
+          "issue": "Frozen NA concerns the two-matrix route; the occupancy matrix is a valid core step.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_01/proofs/R2_R3_proofs.md",
+              "start": 118,
+              "end": 120
+            }
+          ],
+          "status": "NA",
+          "issue_kind": "valid_alternative_not_applicable"
+        },
+        {
+          "run": "Opus02",
+          "done": "General-θ edge occupancy weights w and T are explicit; a Perron root controls all patterns after degradation removes orientations.",
+          "issue": "Frozen NA concerns the two-matrix route and cannot mean pattern summation is absent.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_02/report/03_large_N.md",
+              "start": 19,
+              "end": 24
+            }
+          ],
+          "status": "NA",
+          "issue_kind": "valid_alternative_not_applicable"
+        },
+        {
+          "run": "Opus03",
+          "done": "An occupancy matrix with a common eigenvector is used after true arrows are summed out.",
+          "issue": "Frozen NA concerns the two-matrix route; the occupancy-matrix content is complete.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_03/docs/proofs.md",
+              "start": 186,
+              "end": 194
+            }
+          ],
+          "status": "NA",
+          "issue_kind": "valid_alternative_not_applicable"
+        },
+        {
+          "run": "GPT01",
+          "done": "Lines125–129 correctly sum equal-occupancy pairs; an orientation matrix is separate, but no occupancy K matrix is separately named.",
+          "issue": "Frozen I: the equivalent sequence formula is complete; drawing K and its 0/1 states would be clearer, not a correction to the probability bound.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_01/proofs.md",
+              "start": 125,
+              "end": 129
+            }
+          ],
+          "status": "I",
+          "issue_kind": "exposition_or_correspondence_gap"
+        },
+        {
+          "run": "GPT02",
+          "done": "The 0/1 occupancy matrix and Chernoff weights are explicitly separate from the preceding ± orientation matrix.",
+          "issue": "Frozen E: the two state spaces are most explicit.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_02/proofs.md",
+              "start": 190,
+              "end": 203
+            }
+          ],
+          "status": "E",
+          "issue_kind": "no_confirmed_scientific_error"
+        },
+        {
+          "run": "GPT03",
+          "done": "Occupancy A_z and Chernoff are explicit; correlation uses second moments rather than another ± matrix.",
+          "issue": "Frozen NA concerns the two-matrix route; the 0/1 matrix is already explicit.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_03/proofs.md",
+              "start": 253,
+              "end": 275
+            }
+          ],
+          "status": "NA",
+          "issue_kind": "valid_alternative_not_applicable"
+        }
+      ],
+      "scope": "Applies to the two-matrix route; alternative routes are NA"
+    },
+    {
+      "question": "If a third off-path edge is a chord, is its use twice handled as one shared variable?",
+      "why_matters": "A self-avoiding geometric path need not be chordless. One off-path edge may touch two path vertices, so its state must be shared rather than averaged independently at the two endpoints.",
+      "possible_mistakes": [
+        "Assuming self-avoiding paths automatically have no chords.",
+        "Independently sampling activity or arrows at both ends of one side edge.",
+        "Using a matrix within active runs, then independently averaging every side-edge occurrence."
+      ],
+      "conclusion": "This is a key detail all seven accomplish. GPT02 retains finer cycle corrections; the other routes relax correlations through valid inequalities.",
+      "id": "Q16",
+      "title": "Shared off-path edges/chords cannot be independently redrawn at each vertex",
+      "scored": false,
+      "rows": [
+        {
+          "run": "Fable03",
+          "done": "Side edges used once/twice are summed separately; a chord pair gives (1+p)/N² and is uniformly bounded by β².",
+          "issue": "Frozen E: no missing chord contribution was found.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-fable-5-1/run_03/docs/theory.md",
+              "start": 212,
+              "end": 216
+            }
+          ],
+          "status": "E",
+          "issue_kind": "no_confirmed_scientific_error"
+        },
+        {
+          "run": "Opus01",
+          "done": "Chord sharing is explicit; Cauchy–Schwarz controls two-end averaging and separate control handles nonchord single endpoints.",
+          "issue": "Frozen E: no missing chord contribution was found.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_01/proofs/R2_R3_proofs.md",
+              "start": 116,
+              "end": 119
+            }
+          ],
+          "status": "E",
+          "issue_kind": "no_confirmed_scientific_error"
+        },
+        {
+          "run": "Opus02",
+          "done": "Chords use Cauchy–Schwarz and single endpoints use Jensen; each side edge touches at most two path vertices.",
+          "issue": "Frozen E: no missing chord contribution was found.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_02/report/03_large_N.md",
+              "start": 22,
+              "end": 24
+            }
+          ],
+          "status": "E",
+          "issue_kind": "no_confirmed_scientific_error"
+        },
+        {
+          "run": "Opus03",
+          "done": "Averaging is grouped by physical third edge rather than independently by vertex.",
+          "issue": "Frozen E: no missing chord contribution was found.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_03/docs/proofs.md",
+              "start": 190,
+              "end": 196
+            }
+          ],
+          "status": "E",
+          "issue_kind": "no_confirmed_scientific_error"
+        },
+        {
+          "run": "GPT01",
+          "done": "After conditioning, occurrences j=1,2 of the same third edge are grouped and bounded by ((1−p)τ0+pτ1)^(j/2).",
+          "issue": "Frozen E: no missing chord contribution was found.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_01/proofs.md",
+              "start": 179,
+              "end": 192
+            }
+          ],
+          "status": "E",
+          "issue_kind": "no_confirmed_scientific_error"
+        },
+        {
+          "run": "GPT02",
+          "done": "The base proof explicitly handles chords; the N13 improvement retains correlated cycle factors by positive-cycle expansion.",
+          "issue": "Frozen E: no missing chord contribution was found.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_02/proofs.md",
+              "start": 175,
+              "end": 188
+            }
+          ],
+          "status": "E",
+          "issue_kind": "no_confirmed_scientific_error"
+        },
+        {
+          "run": "GPT03",
+          "done": "Same-color bipartite vertices depend on disjoint microscopic edges; cross-color Cauchy–Schwarz covers chords.",
+          "issue": "Frozen E: no missing chord contribution was found.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_03/proofs.md",
+              "start": 227,
+              "end": 252
+            }
+          ],
+          "status": "E",
+          "issue_kind": "no_confirmed_scientific_error"
+        }
+      ],
+      "scope": "Core correlation issue; legitimate avoidance may receive E"
+    },
+    {
+      "question": "Are R*≤Raux and exponential scaling interpreted correctly?",
+      "why_matters": "R is average logical-failure probability. One legitimate rule with vanishing average risk implies vanishing optimal average risk; no recordwise comparison or auxiliary optimality is required. An exponential upper bound does not give a true critical exponent.",
+      "possible_mistakes": [
+        "Claiming the optimal decoder does no worse than the auxiliary decoder on every sample.",
+        "Using failure-event inclusion as the reason for optimal-risk comparison.",
+        "Presenting the exponential upper bound as the exact logical error rate or critical scaling."
+      ],
+      "conclusion": "All seven correctly interpret risk and scope. A vanishing upper bound is sufficient evidence of decodability; a nonvanishing upper bound cannot conversely prove nondecodability.",
+      "id": "Q17",
+      "title": "R*<=R_aux compares average risks; an exponential bound is not a critical exponent",
+      "scored": false,
+      "rows": [
+        {
+          "run": "Fable03",
+          "done": "Bayes/data-processing risk comparison is explicit; MAP support is auxiliary, not claimed sector-optimal.",
+          "issue": "Frozen E: this step’s scientific meaning is correct. Explaining why R is an average probability is a teaching addition.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-fable-5-1/run_03/docs/theory.md",
+              "start": 13,
+              "end": 16
+            }
+          ],
+          "status": "E",
+          "issue_kind": "no_confirmed_scientific_error"
+        },
+        {
+          "run": "Opus01",
+          "done": "Average-risk degradation ordering and the auxiliary bound are explicit; the sufficient theorem and numerical phases are separate.",
+          "issue": "Frozen E: this step’s scientific meaning is correct. Explaining why R is an average probability is a teaching addition.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_01/proofs/R2_R3_proofs.md",
+              "start": 9,
+              "end": 14
+            }
+          ],
+          "status": "E",
+          "issue_kind": "no_confirmed_scientific_error"
+        },
+        {
+          "run": "Opus02",
+          "done": "Wrong-sector Bayes risk is averaged directly and bounded by path fractional moments, without a recordwise optimality assumption.",
+          "issue": "Frozen E: this step’s scientific meaning is correct. Explaining why R is an average probability is a teaching addition.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_02/report/03_large_N.md",
+              "start": 15,
+              "end": 17
+            }
+          ],
+          "status": "E",
+          "issue_kind": "no_confirmed_scientific_error"
+        },
+        {
+          "run": "Opus03",
+          "done": "MAP-configuration risk bounds optimal logical risk; the exponential theorem is only sufficient.",
+          "issue": "Frozen E: this step’s scientific meaning is correct. Explaining why R is an average probability is a teaching addition.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_03/docs/proofs.md",
+              "start": 163,
+              "end": 164
+            }
+          ],
+          "status": "E",
+          "issue_kind": "no_confirmed_scientific_error"
+        },
+        {
+          "run": "GPT01",
+          "done": "Auxiliary risk explicitly bounds optimal risk, with risk≤constant·Lr^(2L−1)/(1−r), not a true phase boundary.",
+          "issue": "Frozen E: this step’s scientific meaning is correct. Explaining why R is an average probability is a teaching addition.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_01/proofs.md",
+              "start": 138,
+              "end": 138
+            },
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_01/proofs.md",
+              "start": 130,
+              "end": 138
+            },
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_01/proofs.md",
+              "start": 208,
+              "end": 212
+            }
+          ],
+          "status": "E",
+          "issue_kind": "no_confirmed_scientific_error"
+        },
+        {
+          "run": "GPT02",
+          "done": "The complete geometric-series bound and optimal-average-risk comparison are supplied; equality is not a phase boundary.",
+          "issue": "Frozen E: this step’s scientific meaning is correct. Explaining why R is an average probability is a teaching addition.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_02/proofs.md",
+              "start": 145,
+              "end": 145
+            },
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_02/proofs.md",
+              "start": 208,
+              "end": 219
+            }
+          ],
+          "status": "E",
+          "issue_kind": "no_confirmed_scientific_error"
+        },
+        {
+          "run": "GPT03",
+          "done": "Average Bayes ordering is explicit; the loose bound may not visibly decrease at finite simulation sizes.",
+          "issue": "Frozen E: this step’s scientific meaning is correct. Explaining why R is an average probability is a teaching addition.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_03/proofs.md",
+              "start": 189,
+              "end": 192
+            },
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_03/proofs.md",
+              "start": 313,
+              "end": 315
+            }
+          ],
+          "status": "E",
+          "issue_kind": "no_confirmed_scientific_error"
+        }
+      ],
+      "scope": "Core proof conclusion"
+    },
+    {
+      "question": "Does the original submission explain σ, matrix entries, and endpoint sums in diagrams without notation conflicts?",
+      "why_matters": "This is a new teaching request in the current discussion. It can assess readability and explanatory depth but cannot be added retroactively to the original 100 points. The chat figure’s a/b conflict arose in this explanation and cannot be attributed to an original run.",
+      "possible_mistakes": [
+        "Retroactively treating a later teaching request as mandatory in the original task.",
+        "Attributing the chat’s use of a,b for both ± indices and arrival counts to an original submission.",
+        "Requiring a valid proof without an arrow matrix to draw a matrix it does not use."
+      ],
+      "conclusion": "None of the seven meets this newly requested entry-by-entry diagram requirement. It is a shared presentation layer to add to a teaching reference answer, not evidence that all seven R3 proofs are wrong.",
+      "id": "Q21",
+      "title": "Use diagrams to explain sigma, F, and endpoint summation entry by entry",
+      "scored": false,
+      "rows": [
+        {
+          "run": "Fable03",
+          "done": "No four-panel arrow teaching figure is supplied; the scientific proof first eliminates orientation, so a degree-channel diagram would be more suitable.",
+          "issue": "Frozen M records only the absent new teaching deliverable, without original-task deduction; the chat’s notation conflict is not attributed to this run.",
+          "evidence": [],
+          "status": "M",
+          "issue_kind": "later_teaching_request_missing"
+        },
+        {
+          "run": "Opus01",
+          "done": "No four-panel arrow teaching figure is supplied; diagrams of the degradation kernel and occupancy matrix could be added.",
+          "issue": "Frozen M records only the absent new teaching deliverable, without original-task deduction; the chat’s notation conflict is not attributed to this run.",
+          "evidence": [],
+          "status": "M",
+          "issue_kind": "later_teaching_request_missing"
+        },
+        {
+          "run": "Opus02",
+          "done": "No four-panel arrow teaching figure is supplied; posterior-component maps and fractional moments would be more suitable diagrams.",
+          "issue": "Frozen M records only the absent new teaching deliverable, without original-task deduction; the chat’s notation conflict is not attributed to this run.",
+          "evidence": [],
+          "status": "M",
+          "issue_kind": "later_teaching_request_missing"
+        },
+        {
+          "run": "Opus03",
+          "done": "No four-panel arrow teaching figure is supplied; degree-kernel and chord-grouping diagrams could be added.",
+          "issue": "Frozen M records only the absent new teaching deliverable, without original-task deduction; the chat’s notation conflict is not attributed to this run.",
+          "evidence": [],
+          "status": "M",
+          "issue_kind": "later_teaching_request_missing"
+        },
+        {
+          "run": "GPT01",
+          "done": "Orientation-matrix formulas are present, but no entry-by-entry ± diagram or endpoint-summation figure.",
+          "issue": "Frozen M records only the absent new teaching deliverable, without original-task deduction; the chat’s notation conflict is not attributed to this run.",
+          "evidence": [],
+          "status": "M",
+          "issue_kind": "later_teaching_request_missing"
+        },
+        {
+          "run": "GPT02",
+          "done": "States and reference direction are explained more fully, but no four-panel diagram for each matrix entry is supplied.",
+          "issue": "Frozen M records only the absent new teaching deliverable, without original-task deduction; the chat’s notation conflict is not attributed to this run.",
+          "evidence": [],
+          "status": "M",
+          "issue_kind": "later_teaching_request_missing"
+        },
+        {
+          "run": "GPT03",
+          "done": "No four-panel arrow teaching figure is supplied; this method has no arrow matrix and could use a bipartite second-moment diagram.",
+          "issue": "Frozen M records only the absent new teaching deliverable, without original-task deduction; the chat’s notation conflict is not attributed to this run.",
+          "evidence": [],
+          "status": "M",
+          "issue_kind": "later_teaching_request_missing"
+        }
+      ],
+      "scope": "New teaching request in this discussion; not mandatory in the original task"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "purpose": "Self-contained inputs for empirical plots and audit of retired spectral interpolation. Prior spectral parameters are audit inputs only, not microscopic Hamiltonian estimates.",
+  "files": [
+    {
+      "path": "data/sts_empirical_response_fits.json",
+      "sha256": "cf663255d2c2fe10ec7e54e4f9fed13ca01a615f4278fa6cd3110c6053b1a4a6"
+    },
+    {
+      "path": "data/sts_prior_spectral_fit_results.json",
+      "sha256": "b6d99407e78ede44b1c5f0680bfa0e9760cf93137ece769c4255a71a71be0dab"
+    },
+    {
+      "path": "data/sts_prior_spectral_bootstrap_samples.npz",
+      "sha256": "90145383d9d50cc411797e085b6092b17e90a3e69c75dc493d4de74448d3f5ca"
+    },
+    {
+      "path": "data/measurements.json",
+      "sha256": "dab44dfa1d052ed034c4cf632740411eed343c399f4ebb0045e9eea942b4ad7b"
+    }
+  ]
+}

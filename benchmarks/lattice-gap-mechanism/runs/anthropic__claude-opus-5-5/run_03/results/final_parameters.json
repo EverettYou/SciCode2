@@ -1,0 +1,69 @@
+{
+  "units": "energies in D; momenta in 2pi/a; k_B=1",
+  "lattice": "bilayer square lattice (two equivalent TM sites per primitive cell = one rung), lattice constant a",
+  "hamiltonian": "H = -t sum_<ij>,l,s c+c - t' sum_<<ij>>,l,s c+c + J_perp sum_i S_i1.S_i2  [+ t_perp, U, J_par terms consistent with zero]",
+  "coefficients": {
+    "t": {
+      "value": 0.9992959143234026,
+      "stat": 0.003652854147141019,
+      "syst": 0.003,
+      "from": "STS (d) band edges; consistent with (a),(c)"
+    },
+    "t_prime": {
+      "value": 0.19449849289897614,
+      "stat": 0.0021504997092405822,
+      "syst": 0.002,
+      "from": "STS (d) van Hove position; STS (a) gives 0.1937"
+    },
+    "J_perp": {
+      "value": 7.989182231766758,
+      "stat": 0.005745160652730196,
+      "syst": 0.3,
+      "from": "STS (c) gap via HFB coupling V=3J/4=5.9919; Tc(0.2) window -> J in (7.951, 8.276); Phi(a); NMR spin gap"
+    },
+    "U": {
+      "value": 0.0380643558763758,
+      "stat": 0.009217244163504168,
+      "syst_upper": 0.6,
+      "from": "Phi(a) = 3J/4 + U/2 at leading order; O(t^2/J) corrections allow up to ~0.6"
+    },
+    "t_perp": {
+      "value": 0.0,
+      "bound": 0.1,
+      "from": "no bonding/antibonding splitting in STS (d),(a)"
+    },
+    "J_par": {
+      "value": 0.0,
+      "bound": 0.1,
+      "from": "spin-gap agreement; isotropic gap at nu=0.2"
+    }
+  },
+  "derived": {
+    "Phi_rung_charge_energy": 6.010918851763257,
+    "single_particle_gap_nu_half": 8.050954716096848,
+    "spin_gap_theory_2D": 5.429094361611469,
+    "spin_gap_NMR": {
+      "E": 5.538280946479497,
+      "dE": 0.13462567136048448,
+      "chi2": 1.693742908130277,
+      "dof": 16
+    },
+    "transport_activation_nu_half": {
+      "E": 3.7217458104276844,
+      "dE": 0.048503024132956804,
+      "chi2": 10.914371369474335,
+      "dof": 46
+    },
+    "BCS_gap_nu0.2": [
+      1.9630232627643018,
+      0.0018355318609065497
+    ],
+    "Tc_MF_nu0.2": 1.0837734907961427,
+    "pair_hopping_dense_dilute": [
+      0.3027756377319961,
+      0.473921623140669,
+      0.5808476254057114
+    ],
+    "luttinger_zero_fraction": 0.31475555555555557
+  }
+}

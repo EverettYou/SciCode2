@@ -1,0 +1,1 @@
+First run halted before outcome collection when exact Fraction serialization exceeded Python 4300-digit integer limit. Controlled local exact integers now serialize with the interpreter limit disabled. No scientific method changed.

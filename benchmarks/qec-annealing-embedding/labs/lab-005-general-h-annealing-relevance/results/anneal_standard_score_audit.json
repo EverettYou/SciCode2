@@ -1,0 +1,1399 @@
+{
+  "status": "pass",
+  "physical_outputs_checked": 55296,
+  "cases": [
+    {
+      "name": "irregular_hubs_n16_s8807_standard",
+      "paired_results": [
+        {
+          "attempts": 1600,
+          "replicas": 512,
+          "consistent": {
+            "after_only": 0,
+            "before_only": 3,
+            "paired_rate_difference": -0.005859375
+          },
+          "feasible": {
+            "after_only": 43,
+            "before_only": 36,
+            "paired_rate_difference": 0.013671875
+          },
+          "optimal": {
+            "after_only": 1,
+            "before_only": 0,
+            "paired_rate_difference": 0.001953125
+          }
+        },
+        {
+          "attempts": 16000,
+          "replicas": 512,
+          "consistent": {
+            "after_only": 0,
+            "before_only": 1,
+            "paired_rate_difference": -0.001953125
+          },
+          "feasible": {
+            "after_only": 95,
+            "before_only": 70,
+            "paired_rate_difference": 0.048828125
+          },
+          "optimal": {
+            "after_only": 0,
+            "before_only": 1,
+            "paired_rate_difference": -0.001953125
+          }
+        },
+        {
+          "attempts": 160000,
+          "replicas": 512,
+          "consistent": {
+            "after_only": 0,
+            "before_only": 1,
+            "paired_rate_difference": -0.001953125
+          },
+          "feasible": {
+            "after_only": 187,
+            "before_only": 71,
+            "paired_rate_difference": 0.2265625
+          },
+          "optimal": {
+            "after_only": 3,
+            "before_only": 2,
+            "paired_rate_difference": 0.001953125
+          }
+        }
+      ]
+    },
+    {
+      "name": "irregular_hubs_n16_s9901_standard",
+      "paired_results": [
+        {
+          "attempts": 1600,
+          "replicas": 512,
+          "consistent": {
+            "after_only": 0,
+            "before_only": 5,
+            "paired_rate_difference": -0.009765625
+          },
+          "feasible": {
+            "after_only": 55,
+            "before_only": 50,
+            "paired_rate_difference": 0.009765625
+          },
+          "optimal": {
+            "after_only": 0,
+            "before_only": 0,
+            "paired_rate_difference": 0.0
+          }
+        },
+        {
+          "attempts": 16000,
+          "replicas": 512,
+          "consistent": {
+            "after_only": 0,
+            "before_only": 4,
+            "paired_rate_difference": -0.0078125
+          },
+          "feasible": {
+            "after_only": 164,
+            "before_only": 75,
+            "paired_rate_difference": 0.173828125
+          },
+          "optimal": {
+            "after_only": 8,
+            "before_only": 2,
+            "paired_rate_difference": 0.01171875
+          }
+        },
+        {
+          "attempts": 160000,
+          "replicas": 512,
+          "consistent": {
+            "after_only": 0,
+            "before_only": 0,
+            "paired_rate_difference": 0.0
+          },
+          "feasible": {
+            "after_only": 155,
+            "before_only": 20,
+            "paired_rate_difference": 0.263671875
+          },
+          "optimal": {
+            "after_only": 12,
+            "before_only": 8,
+            "paired_rate_difference": 0.0078125
+          }
+        }
+      ]
+    },
+    {
+      "name": "irregular_hubs_n32_s8807_standard",
+      "paired_results": [
+        {
+          "attempts": 3200,
+          "replicas": 512,
+          "consistent": {
+            "after_only": 0,
+            "before_only": 8,
+            "paired_rate_difference": -0.015625
+          },
+          "feasible": {
+            "after_only": 0,
+            "before_only": 0,
+            "paired_rate_difference": 0.0
+          },
+          "optimal": {
+            "after_only": 0,
+            "before_only": 0,
+            "paired_rate_difference": 0.0
+          }
+        },
+        {
+          "attempts": 32000,
+          "replicas": 512,
+          "consistent": {
+            "after_only": 0,
+            "before_only": 4,
+            "paired_rate_difference": -0.0078125
+          },
+          "feasible": {
+            "after_only": 0,
+            "before_only": 0,
+            "paired_rate_difference": 0.0
+          },
+          "optimal": {
+            "after_only": 0,
+            "before_only": 0,
+            "paired_rate_difference": 0.0
+          }
+        },
+        {
+          "attempts": 320000,
+          "replicas": 512,
+          "consistent": {
+            "after_only": 0,
+            "before_only": 4,
+            "paired_rate_difference": -0.0078125
+          },
+          "feasible": {
+            "after_only": 5,
+            "before_only": 0,
+            "paired_rate_difference": 0.009765625
+          },
+          "optimal": {
+            "after_only": 0,
+            "before_only": 0,
+            "paired_rate_difference": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "name": "irregular_hubs_n32_s9901_standard",
+      "paired_results": [
+        {
+          "attempts": 3200,
+          "replicas": 512,
+          "consistent": {
+            "after_only": 0,
+            "before_only": 9,
+            "paired_rate_difference": -0.017578125
+          },
+          "feasible": {
+            "after_only": 0,
+            "before_only": 0,
+            "paired_rate_difference": 0.0
+          },
+          "optimal": {
+            "after_only": 0,
+            "before_only": 0,
+            "paired_rate_difference": 0.0
+          }
+        },
+        {
+          "attempts": 32000,
+          "replicas": 512,
+          "consistent": {
+            "after_only": 0,
+            "before_only": 5,
+            "paired_rate_difference": -0.009765625
+          },
+          "feasible": {
+            "after_only": 2,
+            "before_only": 0,
+            "paired_rate_difference": 0.00390625
+          },
+          "optimal": {
+            "after_only": 0,
+            "before_only": 0,
+            "paired_rate_difference": 0.0
+          }
+        },
+        {
+          "attempts": 320000,
+          "replicas": 512,
+          "consistent": {
+            "after_only": 0,
+            "before_only": 4,
+            "paired_rate_difference": -0.0078125
+          },
+          "feasible": {
+            "after_only": 2,
+            "before_only": 0,
+            "paired_rate_difference": 0.00390625
+          },
+          "optimal": {
+            "after_only": 0,
+            "before_only": 0,
+            "paired_rate_difference": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "name": "irregular_hubs_n64_s8807_standard",
+      "paired_results": [
+        {
+          "attempts": 6400,
+          "replicas": 128,
+          "consistent": {
+            "after_only": 22,
+            "before_only": 8,
+            "paired_rate_difference": 0.109375
+          },
+          "feasible": {
+            "after_only": 0,
+            "before_only": 0,
+            "paired_rate_difference": 0.0
+          },
+          "optimal": null
+        },
+        {
+          "attempts": 64000,
+          "replicas": 128,
+          "consistent": {
+            "after_only": 0,
+            "before_only": 3,
+            "paired_rate_difference": -0.0234375
+          },
+          "feasible": {
+            "after_only": 0,
+            "before_only": 0,
+            "paired_rate_difference": 0.0
+          },
+          "optimal": null
+        },
+        {
+          "attempts": 640000,
+          "replicas": 128,
+          "consistent": {
+            "after_only": 0,
+            "before_only": 2,
+            "paired_rate_difference": -0.015625
+          },
+          "feasible": {
+            "after_only": 0,
+            "before_only": 0,
+            "paired_rate_difference": 0.0
+          },
+          "optimal": null
+        }
+      ]
+    },
+    {
+      "name": "irregular_hubs_n64_s9901_standard",
+      "paired_results": [
+        {
+          "attempts": 6400,
+          "replicas": 128,
+          "consistent": {
+            "after_only": 37,
+            "before_only": 9,
+            "paired_rate_difference": 0.21875
+          },
+          "feasible": {
+            "after_only": 0,
+            "before_only": 0,
+            "paired_rate_difference": 0.0
+          },
+          "optimal": null
+        },
+        {
+          "attempts": 64000,
+          "replicas": 128,
+          "consistent": {
+            "after_only": 0,
+            "before_only": 2,
+            "paired_rate_difference": -0.015625
+          },
+          "feasible": {
+            "after_only": 0,
+            "before_only": 0,
+            "paired_rate_difference": 0.0
+          },
+          "optimal": null
+        },
+        {
+          "attempts": 640000,
+          "replicas": 128,
+          "consistent": {
+            "after_only": 0,
+            "before_only": 0,
+            "paired_rate_difference": 0.0
+          },
+          "feasible": {
+            "after_only": 0,
+            "before_only": 0,
+            "paired_rate_difference": 0.0
+          },
+          "optimal": null
+        }
+      ]
+    },
+    {
+      "name": "mixed_hypergraph_n16_s8807_standard",
+      "paired_results": [
+        {
+          "attempts": 1600,
+          "replicas": 512,
+          "consistent": {
+            "after_only": 0,
+            "before_only": 0,
+            "paired_rate_difference": 0.0
+          },
+          "feasible": {
+            "after_only": 0,
+            "before_only": 0,
+            "paired_rate_difference": 0.0
+          },
+          "optimal": {
+            "after_only": 0,
+            "before_only": 0,
+            "paired_rate_difference": 0.0
+          }
+        },
+        {
+          "attempts": 16000,
+          "replicas": 512,
+          "consistent": {
+            "after_only": 0,
+            "before_only": 0,
+            "paired_rate_difference": 0.0
+          },
+          "feasible": {
+            "after_only": 0,
+            "before_only": 0,
+            "paired_rate_difference": 0.0
+          },
+          "optimal": {
+            "after_only": 0,
+            "before_only": 0,
+            "paired_rate_difference": 0.0
+          }
+        },
+        {
+          "attempts": 160000,
+          "replicas": 512,
+          "consistent": {
+            "after_only": 0,
+            "before_only": 0,
+            "paired_rate_difference": 0.0
+          },
+          "feasible": {
+            "after_only": 0,
+            "before_only": 0,
+            "paired_rate_difference": 0.0
+          },
+          "optimal": {
+            "after_only": 0,
+            "before_only": 0,
+            "paired_rate_difference": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "name": "mixed_hypergraph_n16_s9901_standard",
+      "paired_results": [
+        {
+          "attempts": 1600,
+          "replicas": 512,
+          "consistent": {
+            "after_only": 0,
+            "before_only": 17,
+            "paired_rate_difference": -0.033203125
+          },
+          "feasible": {
+            "after_only": 2,
+            "before_only": 4,
+            "paired_rate_difference": -0.00390625
+          },
+          "optimal": {
+            "after_only": 0,
+            "before_only": 0,
+            "paired_rate_difference": 0.0
+          }
+        },
+        {
+          "attempts": 16000,
+          "replicas": 512,
+          "consistent": {
+            "after_only": 0,
+            "before_only": 4,
+            "paired_rate_difference": -0.0078125
+          },
+          "feasible": {
+            "after_only": 13,
+            "before_only": 7,
+            "paired_rate_difference": 0.01171875
+          },
+          "optimal": {
+            "after_only": 0,
+            "before_only": 0,
+            "paired_rate_difference": 0.0
+          }
+        },
+        {
+          "attempts": 160000,
+          "replicas": 512,
+          "consistent": {
+            "after_only": 0,
+            "before_only": 1,
+            "paired_rate_difference": -0.001953125
+          },
+          "feasible": {
+            "after_only": 22,
+            "before_only": 11,
+            "paired_rate_difference": 0.021484375
+          },
+          "optimal": {
+            "after_only": 0,
+            "before_only": 0,
+            "paired_rate_difference": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "name": "mixed_hypergraph_n32_s8807_standard",
+      "paired_results": [
+        {
+          "attempts": 3200,
+          "replicas": 512,
+          "consistent": {
+            "after_only": 40,
+            "before_only": 43,
+            "paired_rate_difference": -0.005859375
+          },
+          "feasible": {
+            "after_only": 0,
+            "before_only": 0,
+            "paired_rate_difference": 0.0
+          },
+          "optimal": {
+            "after_only": 0,
+            "before_only": 0,
+            "paired_rate_difference": 0.0
+          }
+        },
+        {
+          "attempts": 32000,
+          "replicas": 512,
+          "consistent": {
+            "after_only": 5,
+            "before_only": 5,
+            "paired_rate_difference": 0.0
+          },
+          "feasible": {
+            "after_only": 0,
+            "before_only": 0,
+            "paired_rate_difference": 0.0
+          },
+          "optimal": {
+            "after_only": 0,
+            "before_only": 0,
+            "paired_rate_difference": 0.0
+          }
+        },
+        {
+          "attempts": 320000,
+          "replicas": 512,
+          "consistent": {
+            "after_only": 0,
+            "before_only": 3,
+            "paired_rate_difference": -0.005859375
+          },
+          "feasible": {
+            "after_only": 1,
+            "before_only": 0,
+            "paired_rate_difference": 0.001953125
+          },
+          "optimal": {
+            "after_only": 0,
+            "before_only": 0,
+            "paired_rate_difference": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "name": "mixed_hypergraph_n32_s9901_standard",
+      "paired_results": [
+        {
+          "attempts": 3200,
+          "replicas": 512,
+          "consistent": {
+            "after_only": 0,
+            "before_only": 16,
+            "paired_rate_difference": -0.03125
+          },
+          "feasible": {
+            "after_only": 0,
+            "before_only": 0,
+            "paired_rate_difference": 0.0
+          },
+          "optimal": {
+            "after_only": 0,
+            "before_only": 0,
+            "paired_rate_difference": 0.0
+          }
+        },
+        {
+          "attempts": 32000,
+          "replicas": 512,
+          "consistent": {
+            "after_only": 0,
+            "before_only": 4,
+            "paired_rate_difference": -0.0078125
+          },
+          "feasible": {
+            "after_only": 0,
+            "before_only": 0,
+            "paired_rate_difference": 0.0
+          },
+          "optimal": {
+            "after_only": 0,
+            "before_only": 0,
+            "paired_rate_difference": 0.0
+          }
+        },
+        {
+          "attempts": 320000,
+          "replicas": 512,
+          "consistent": {
+            "after_only": 0,
+            "before_only": 3,
+            "paired_rate_difference": -0.005859375
+          },
+          "feasible": {
+            "after_only": 2,
+            "before_only": 0,
+            "paired_rate_difference": 0.00390625
+          },
+          "optimal": {
+            "after_only": 0,
+            "before_only": 0,
+            "paired_rate_difference": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "name": "mixed_hypergraph_n64_s8807_standard",
+      "paired_results": [
+        {
+          "attempts": 6400,
+          "replicas": 128,
+          "consistent": {
+            "after_only": 23,
+            "before_only": 8,
+            "paired_rate_difference": 0.1171875
+          },
+          "feasible": {
+            "after_only": 0,
+            "before_only": 0,
+            "paired_rate_difference": 0.0
+          },
+          "optimal": null
+        },
+        {
+          "attempts": 64000,
+          "replicas": 128,
+          "consistent": {
+            "after_only": 10,
+            "before_only": 6,
+            "paired_rate_difference": 0.03125
+          },
+          "feasible": {
+            "after_only": 0,
+            "before_only": 0,
+            "paired_rate_difference": 0.0
+          },
+          "optimal": null
+        },
+        {
+          "attempts": 640000,
+          "replicas": 128,
+          "consistent": {
+            "after_only": 0,
+            "before_only": 1,
+            "paired_rate_difference": -0.0078125
+          },
+          "feasible": {
+            "after_only": 0,
+            "before_only": 0,
+            "paired_rate_difference": 0.0
+          },
+          "optimal": null
+        }
+      ]
+    },
+    {
+      "name": "mixed_hypergraph_n64_s9901_standard",
+      "paired_results": [
+        {
+          "attempts": 6400,
+          "replicas": 128,
+          "consistent": {
+            "after_only": 43,
+            "before_only": 9,
+            "paired_rate_difference": 0.265625
+          },
+          "feasible": {
+            "after_only": 0,
+            "before_only": 0,
+            "paired_rate_difference": 0.0
+          },
+          "optimal": null
+        },
+        {
+          "attempts": 64000,
+          "replicas": 128,
+          "consistent": {
+            "after_only": 3,
+            "before_only": 2,
+            "paired_rate_difference": 0.0078125
+          },
+          "feasible": {
+            "after_only": 0,
+            "before_only": 0,
+            "paired_rate_difference": 0.0
+          },
+          "optimal": null
+        },
+        {
+          "attempts": 640000,
+          "replicas": 128,
+          "consistent": {
+            "after_only": 0,
+            "before_only": 1,
+            "paired_rate_difference": -0.0078125
+          },
+          "feasible": {
+            "after_only": 0,
+            "before_only": 0,
+            "paired_rate_difference": 0.0
+          },
+          "optimal": null
+        }
+      ]
+    },
+    {
+      "name": "random_regular_n16_s8807_standard",
+      "paired_results": [
+        {
+          "attempts": 1600,
+          "replicas": 512,
+          "consistent": {
+            "after_only": 0,
+            "before_only": 4,
+            "paired_rate_difference": -0.0078125
+          },
+          "feasible": {
+            "after_only": 23,
+            "before_only": 24,
+            "paired_rate_difference": -0.001953125
+          },
+          "optimal": {
+            "after_only": 0,
+            "before_only": 0,
+            "paired_rate_difference": 0.0
+          }
+        },
+        {
+          "attempts": 16000,
+          "replicas": 512,
+          "consistent": {
+            "after_only": 0,
+            "before_only": 3,
+            "paired_rate_difference": -0.005859375
+          },
+          "feasible": {
+            "after_only": 146,
+            "before_only": 79,
+            "paired_rate_difference": 0.130859375
+          },
+          "optimal": {
+            "after_only": 1,
+            "before_only": 0,
+            "paired_rate_difference": 0.001953125
+          }
+        },
+        {
+          "attempts": 160000,
+          "replicas": 512,
+          "consistent": {
+            "after_only": 0,
+            "before_only": 2,
+            "paired_rate_difference": -0.00390625
+          },
+          "feasible": {
+            "after_only": 233,
+            "before_only": 48,
+            "paired_rate_difference": 0.361328125
+          },
+          "optimal": {
+            "after_only": 6,
+            "before_only": 0,
+            "paired_rate_difference": 0.01171875
+          }
+        }
+      ]
+    },
+    {
+      "name": "random_regular_n16_s9901_standard",
+      "paired_results": [
+        {
+          "attempts": 1600,
+          "replicas": 512,
+          "consistent": {
+            "after_only": 0,
+            "before_only": 0,
+            "paired_rate_difference": 0.0
+          },
+          "feasible": {
+            "after_only": 0,
+            "before_only": 0,
+            "paired_rate_difference": 0.0
+          },
+          "optimal": {
+            "after_only": 0,
+            "before_only": 0,
+            "paired_rate_difference": 0.0
+          }
+        },
+        {
+          "attempts": 16000,
+          "replicas": 512,
+          "consistent": {
+            "after_only": 0,
+            "before_only": 0,
+            "paired_rate_difference": 0.0
+          },
+          "feasible": {
+            "after_only": 0,
+            "before_only": 0,
+            "paired_rate_difference": 0.0
+          },
+          "optimal": {
+            "after_only": 0,
+            "before_only": 0,
+            "paired_rate_difference": 0.0
+          }
+        },
+        {
+          "attempts": 160000,
+          "replicas": 512,
+          "consistent": {
+            "after_only": 0,
+            "before_only": 0,
+            "paired_rate_difference": 0.0
+          },
+          "feasible": {
+            "after_only": 0,
+            "before_only": 0,
+            "paired_rate_difference": 0.0
+          },
+          "optimal": {
+            "after_only": 0,
+            "before_only": 0,
+            "paired_rate_difference": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "name": "random_regular_n32_s8807_standard",
+      "paired_results": [
+        {
+          "attempts": 3200,
+          "replicas": 512,
+          "consistent": {
+            "after_only": 0,
+            "before_only": 3,
+            "paired_rate_difference": -0.005859375
+          },
+          "feasible": {
+            "after_only": 1,
+            "before_only": 1,
+            "paired_rate_difference": 0.0
+          },
+          "optimal": {
+            "after_only": 0,
+            "before_only": 0,
+            "paired_rate_difference": 0.0
+          }
+        },
+        {
+          "attempts": 32000,
+          "replicas": 512,
+          "consistent": {
+            "after_only": 0,
+            "before_only": 4,
+            "paired_rate_difference": -0.0078125
+          },
+          "feasible": {
+            "after_only": 4,
+            "before_only": 0,
+            "paired_rate_difference": 0.0078125
+          },
+          "optimal": {
+            "after_only": 0,
+            "before_only": 0,
+            "paired_rate_difference": 0.0
+          }
+        },
+        {
+          "attempts": 320000,
+          "replicas": 512,
+          "consistent": {
+            "after_only": 0,
+            "before_only": 3,
+            "paired_rate_difference": -0.005859375
+          },
+          "feasible": {
+            "after_only": 35,
+            "before_only": 0,
+            "paired_rate_difference": 0.068359375
+          },
+          "optimal": {
+            "after_only": 0,
+            "before_only": 0,
+            "paired_rate_difference": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "name": "random_regular_n32_s9901_standard",
+      "paired_results": [
+        {
+          "attempts": 3200,
+          "replicas": 512,
+          "consistent": {
+            "after_only": 0,
+            "before_only": 0,
+            "paired_rate_difference": 0.0
+          },
+          "feasible": {
+            "after_only": 0,
+            "before_only": 0,
+            "paired_rate_difference": 0.0
+          },
+          "optimal": {
+            "after_only": 0,
+            "before_only": 0,
+            "paired_rate_difference": 0.0
+          }
+        },
+        {
+          "attempts": 32000,
+          "replicas": 512,
+          "consistent": {
+            "after_only": 0,
+            "before_only": 0,
+            "paired_rate_difference": 0.0
+          },
+          "feasible": {
+            "after_only": 0,
+            "before_only": 0,
+            "paired_rate_difference": 0.0
+          },
+          "optimal": {
+            "after_only": 0,
+            "before_only": 0,
+            "paired_rate_difference": 0.0
+          }
+        },
+        {
+          "attempts": 320000,
+          "replicas": 512,
+          "consistent": {
+            "after_only": 0,
+            "before_only": 0,
+            "paired_rate_difference": 0.0
+          },
+          "feasible": {
+            "after_only": 0,
+            "before_only": 0,
+            "paired_rate_difference": 0.0
+          },
+          "optimal": {
+            "after_only": 0,
+            "before_only": 0,
+            "paired_rate_difference": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "name": "random_regular_n64_s8807_standard",
+      "paired_results": [
+        {
+          "attempts": 6400,
+          "replicas": 128,
+          "consistent": {
+            "after_only": 28,
+            "before_only": 3,
+            "paired_rate_difference": 0.1953125
+          },
+          "feasible": {
+            "after_only": 0,
+            "before_only": 0,
+            "paired_rate_difference": 0.0
+          },
+          "optimal": null
+        },
+        {
+          "attempts": 64000,
+          "replicas": 128,
+          "consistent": {
+            "after_only": 0,
+            "before_only": 3,
+            "paired_rate_difference": -0.0234375
+          },
+          "feasible": {
+            "after_only": 0,
+            "before_only": 0,
+            "paired_rate_difference": 0.0
+          },
+          "optimal": null
+        },
+        {
+          "attempts": 640000,
+          "replicas": 128,
+          "consistent": {
+            "after_only": 0,
+            "before_only": 1,
+            "paired_rate_difference": -0.0078125
+          },
+          "feasible": {
+            "after_only": 0,
+            "before_only": 0,
+            "paired_rate_difference": 0.0
+          },
+          "optimal": null
+        }
+      ]
+    },
+    {
+      "name": "random_regular_n64_s9901_standard",
+      "paired_results": [
+        {
+          "attempts": 6400,
+          "replicas": 128,
+          "consistent": {
+            "after_only": 34,
+            "before_only": 5,
+            "paired_rate_difference": 0.2265625
+          },
+          "feasible": {
+            "after_only": 0,
+            "before_only": 0,
+            "paired_rate_difference": 0.0
+          },
+          "optimal": null
+        },
+        {
+          "attempts": 64000,
+          "replicas": 128,
+          "consistent": {
+            "after_only": 1,
+            "before_only": 1,
+            "paired_rate_difference": 0.0
+          },
+          "feasible": {
+            "after_only": 0,
+            "before_only": 0,
+            "paired_rate_difference": 0.0
+          },
+          "optimal": null
+        },
+        {
+          "attempts": 640000,
+          "replicas": 128,
+          "consistent": {
+            "after_only": 0,
+            "before_only": 3,
+            "paired_rate_difference": -0.0234375
+          },
+          "feasible": {
+            "after_only": 0,
+            "before_only": 0,
+            "paired_rate_difference": 0.0
+          },
+          "optimal": null
+        }
+      ]
+    },
+    {
+      "name": "rewired_band_n16_s8807_standard",
+      "paired_results": [
+        {
+          "attempts": 1600,
+          "replicas": 512,
+          "consistent": {
+            "after_only": 0,
+            "before_only": 5,
+            "paired_rate_difference": -0.009765625
+          },
+          "feasible": {
+            "after_only": 43,
+            "before_only": 37,
+            "paired_rate_difference": 0.01171875
+          },
+          "optimal": {
+            "after_only": 1,
+            "before_only": 0,
+            "paired_rate_difference": 0.001953125
+          }
+        },
+        {
+          "attempts": 16000,
+          "replicas": 512,
+          "consistent": {
+            "after_only": 0,
+            "before_only": 9,
+            "paired_rate_difference": -0.017578125
+          },
+          "feasible": {
+            "after_only": 157,
+            "before_only": 86,
+            "paired_rate_difference": 0.138671875
+          },
+          "optimal": {
+            "after_only": 2,
+            "before_only": 0,
+            "paired_rate_difference": 0.00390625
+          }
+        },
+        {
+          "attempts": 160000,
+          "replicas": 512,
+          "consistent": {
+            "after_only": 0,
+            "before_only": 10,
+            "paired_rate_difference": -0.01953125
+          },
+          "feasible": {
+            "after_only": 157,
+            "before_only": 7,
+            "paired_rate_difference": 0.29296875
+          },
+          "optimal": {
+            "after_only": 4,
+            "before_only": 9,
+            "paired_rate_difference": -0.009765625
+          }
+        }
+      ]
+    },
+    {
+      "name": "rewired_band_n16_s9901_standard",
+      "paired_results": [
+        {
+          "attempts": 1600,
+          "replicas": 512,
+          "consistent": {
+            "after_only": 0,
+            "before_only": 0,
+            "paired_rate_difference": 0.0
+          },
+          "feasible": {
+            "after_only": 0,
+            "before_only": 0,
+            "paired_rate_difference": 0.0
+          },
+          "optimal": {
+            "after_only": 0,
+            "before_only": 0,
+            "paired_rate_difference": 0.0
+          }
+        },
+        {
+          "attempts": 16000,
+          "replicas": 512,
+          "consistent": {
+            "after_only": 0,
+            "before_only": 0,
+            "paired_rate_difference": 0.0
+          },
+          "feasible": {
+            "after_only": 0,
+            "before_only": 0,
+            "paired_rate_difference": 0.0
+          },
+          "optimal": {
+            "after_only": 0,
+            "before_only": 0,
+            "paired_rate_difference": 0.0
+          }
+        },
+        {
+          "attempts": 160000,
+          "replicas": 512,
+          "consistent": {
+            "after_only": 0,
+            "before_only": 0,
+            "paired_rate_difference": 0.0
+          },
+          "feasible": {
+            "after_only": 0,
+            "before_only": 0,
+            "paired_rate_difference": 0.0
+          },
+          "optimal": {
+            "after_only": 0,
+            "before_only": 0,
+            "paired_rate_difference": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "name": "rewired_band_n32_s8807_standard",
+      "paired_results": [
+        {
+          "attempts": 3200,
+          "replicas": 512,
+          "consistent": {
+            "after_only": 0,
+            "before_only": 0,
+            "paired_rate_difference": 0.0
+          },
+          "feasible": {
+            "after_only": 0,
+            "before_only": 0,
+            "paired_rate_difference": 0.0
+          },
+          "optimal": {
+            "after_only": 0,
+            "before_only": 0,
+            "paired_rate_difference": 0.0
+          }
+        },
+        {
+          "attempts": 32000,
+          "replicas": 512,
+          "consistent": {
+            "after_only": 0,
+            "before_only": 0,
+            "paired_rate_difference": 0.0
+          },
+          "feasible": {
+            "after_only": 0,
+            "before_only": 0,
+            "paired_rate_difference": 0.0
+          },
+          "optimal": {
+            "after_only": 0,
+            "before_only": 0,
+            "paired_rate_difference": 0.0
+          }
+        },
+        {
+          "attempts": 320000,
+          "replicas": 512,
+          "consistent": {
+            "after_only": 0,
+            "before_only": 0,
+            "paired_rate_difference": 0.0
+          },
+          "feasible": {
+            "after_only": 0,
+            "before_only": 0,
+            "paired_rate_difference": 0.0
+          },
+          "optimal": {
+            "after_only": 0,
+            "before_only": 0,
+            "paired_rate_difference": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "name": "rewired_band_n32_s9901_standard",
+      "paired_results": [
+        {
+          "attempts": 3200,
+          "replicas": 512,
+          "consistent": {
+            "after_only": 0,
+            "before_only": 0,
+            "paired_rate_difference": 0.0
+          },
+          "feasible": {
+            "after_only": 0,
+            "before_only": 0,
+            "paired_rate_difference": 0.0
+          },
+          "optimal": {
+            "after_only": 0,
+            "before_only": 0,
+            "paired_rate_difference": 0.0
+          }
+        },
+        {
+          "attempts": 32000,
+          "replicas": 512,
+          "consistent": {
+            "after_only": 0,
+            "before_only": 0,
+            "paired_rate_difference": 0.0
+          },
+          "feasible": {
+            "after_only": 0,
+            "before_only": 0,
+            "paired_rate_difference": 0.0
+          },
+          "optimal": {
+            "after_only": 0,
+            "before_only": 0,
+            "paired_rate_difference": 0.0
+          }
+        },
+        {
+          "attempts": 320000,
+          "replicas": 512,
+          "consistent": {
+            "after_only": 0,
+            "before_only": 0,
+            "paired_rate_difference": 0.0
+          },
+          "feasible": {
+            "after_only": 0,
+            "before_only": 0,
+            "paired_rate_difference": 0.0
+          },
+          "optimal": {
+            "after_only": 0,
+            "before_only": 0,
+            "paired_rate_difference": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "name": "rewired_band_n64_s8807_standard",
+      "paired_results": [
+        {
+          "attempts": 6400,
+          "replicas": 128,
+          "consistent": {
+            "after_only": 0,
+            "before_only": 0,
+            "paired_rate_difference": 0.0
+          },
+          "feasible": {
+            "after_only": 0,
+            "before_only": 0,
+            "paired_rate_difference": 0.0
+          },
+          "optimal": null
+        },
+        {
+          "attempts": 64000,
+          "replicas": 128,
+          "consistent": {
+            "after_only": 0,
+            "before_only": 0,
+            "paired_rate_difference": 0.0
+          },
+          "feasible": {
+            "after_only": 0,
+            "before_only": 0,
+            "paired_rate_difference": 0.0
+          },
+          "optimal": null
+        },
+        {
+          "attempts": 640000,
+          "replicas": 128,
+          "consistent": {
+            "after_only": 0,
+            "before_only": 0,
+            "paired_rate_difference": 0.0
+          },
+          "feasible": {
+            "after_only": 0,
+            "before_only": 0,
+            "paired_rate_difference": 0.0
+          },
+          "optimal": null
+        }
+      ]
+    },
+    {
+      "name": "rewired_band_n64_s9901_standard",
+      "paired_results": [
+        {
+          "attempts": 6400,
+          "replicas": 128,
+          "consistent": {
+            "after_only": 2,
+            "before_only": 2,
+            "paired_rate_difference": 0.0
+          },
+          "feasible": {
+            "after_only": 0,
+            "before_only": 0,
+            "paired_rate_difference": 0.0
+          },
+          "optimal": null
+        },
+        {
+          "attempts": 64000,
+          "replicas": 128,
+          "consistent": {
+            "after_only": 0,
+            "before_only": 1,
+            "paired_rate_difference": -0.0078125
+          },
+          "feasible": {
+            "after_only": 1,
+            "before_only": 0,
+            "paired_rate_difference": 0.0078125
+          },
+          "optimal": null
+        },
+        {
+          "attempts": 640000,
+          "replicas": 128,
+          "consistent": {
+            "after_only": 1,
+            "before_only": 0,
+            "paired_rate_difference": 0.0078125
+          },
+          "feasible": {
+            "after_only": 9,
+            "before_only": 0,
+            "paired_rate_difference": 0.0703125
+          },
+          "optimal": null
+        }
+      ]
+    }
+  ],
+  "elapsed_seconds": 1.1634764589834958
+}

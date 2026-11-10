@@ -1,0 +1,39 @@
+{
+  "type": "measurement-constrained map, not a computed Hamiltonian phase diagram",
+  "nu_0.2": {
+    "rho_zero_T_range": [
+      0.1,
+      1.075
+    ],
+    "Tc_interval": [
+      1.075,
+      1.15
+    ],
+    "positive_rho_metallic_T_range": [
+      1.15,
+      4
+    ]
+  },
+  "nu_0.3": {
+    "rho_zero_T_range": [
+      0.1,
+      0.325
+    ],
+    "Tc_interval": [
+      0.325,
+      0.4
+    ],
+    "positive_rho_activated_T_range": [
+      0.4,
+      4
+    ]
+  },
+  "nu_0.5": {
+    "positive_rho_activated_T_range": [
+      0.45,
+      4
+    ],
+    "T_below_.45": "unmeasured"
+  },
+  "assumption": "Interpretation of zero resistance as superconductivity; no Meissner or phase-stiffness measurement supplied"
+}

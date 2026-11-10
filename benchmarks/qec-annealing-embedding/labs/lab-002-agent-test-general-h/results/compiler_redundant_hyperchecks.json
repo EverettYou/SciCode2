@@ -1,0 +1,454 @@
+{
+  "schema": "xor-chain-qubo-v1",
+  "n_original": 4,
+  "rows": [
+    [
+      0,
+      1,
+      2
+    ],
+    [
+      0,
+      1,
+      2
+    ],
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      2
+    ],
+    []
+  ],
+  "syndrome": [
+    1,
+    1,
+    0,
+    1,
+    0
+  ],
+  "weights": [
+    -1.0,
+    0.0,
+    2.0,
+    0.0
+  ],
+  "penalty": 4.0,
+  "weight_l1": 3.0,
+  "linear": [
+    7.0,
+    12.0,
+    -10.0,
+    0.0,
+    16.0,
+    0.0,
+    16.0,
+    0.0
+  ],
+  "quadratic": [
+    [
+      0,
+      1,
+      8.0
+    ],
+    [
+      0,
+      2,
+      8.0
+    ],
+    [
+      0,
+      4,
+      -16.0
+    ],
+    [
+      0,
+      5,
+      -8.0
+    ],
+    [
+      0,
+      6,
+      -16.0
+    ],
+    [
+      0,
+      7,
+      -8.0
+    ],
+    [
+      1,
+      4,
+      -16.0
+    ],
+    [
+      1,
+      5,
+      -8.0
+    ],
+    [
+      1,
+      6,
+      -16.0
+    ],
+    [
+      1,
+      7,
+      -8.0
+    ],
+    [
+      2,
+      5,
+      8.0
+    ],
+    [
+      2,
+      7,
+      8.0
+    ],
+    [
+      4,
+      5,
+      16.0
+    ],
+    [
+      6,
+      7,
+      16.0
+    ]
+  ],
+  "offset": 12.0,
+  "variables": [
+    {
+      "kind": "error",
+      "column": 0
+    },
+    {
+      "kind": "error",
+      "column": 1
+    },
+    {
+      "kind": "error",
+      "column": 2
+    },
+    {
+      "kind": "error",
+      "column": 3
+    },
+    {
+      "kind": "carry",
+      "row": 0,
+      "stage": 0
+    },
+    {
+      "kind": "prefix",
+      "row": 0,
+      "stage": 0
+    },
+    {
+      "kind": "carry",
+      "row": 1,
+      "stage": 0
+    },
+    {
+      "kind": "prefix",
+      "row": 1,
+      "stage": 0
+    }
+  ],
+  "constraints": [
+    {
+      "row": 0,
+      "kind": "xor",
+      "terms": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          4,
+          -2
+        ],
+        [
+          5,
+          -1
+        ]
+      ],
+      "constant": 0
+    },
+    {
+      "row": 0,
+      "kind": "parity",
+      "inputs": [
+        5,
+        2
+      ],
+      "target": 1
+    },
+    {
+      "row": 1,
+      "kind": "xor",
+      "terms": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          6,
+          -2
+        ],
+        [
+          7,
+          -1
+        ]
+      ],
+      "constant": 0
+    },
+    {
+      "row": 1,
+      "kind": "parity",
+      "inputs": [
+        7,
+        2
+      ],
+      "target": 1
+    },
+    {
+      "row": 2,
+      "kind": "parity",
+      "inputs": [
+        0,
+        1
+      ],
+      "target": 0
+    },
+    {
+      "row": 3,
+      "kind": "parity",
+      "inputs": [
+        0,
+        2
+      ],
+      "target": 1
+    }
+  ],
+  "structural_edges": [
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      2
+    ],
+    [
+      0,
+      4
+    ],
+    [
+      0,
+      5
+    ],
+    [
+      0,
+      6
+    ],
+    [
+      0,
+      7
+    ],
+    [
+      1,
+      4
+    ],
+    [
+      1,
+      5
+    ],
+    [
+      1,
+      6
+    ],
+    [
+      1,
+      7
+    ],
+    [
+      2,
+      5
+    ],
+    [
+      2,
+      7
+    ],
+    [
+      4,
+      5
+    ],
+    [
+      6,
+      7
+    ]
+  ],
+  "exact_coefficients": {
+    "linear": [
+      [
+        7,
+        1
+      ],
+      [
+        12,
+        1
+      ],
+      [
+        -10,
+        1
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        16,
+        1
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        16,
+        1
+      ],
+      [
+        0,
+        1
+      ]
+    ],
+    "quadratic": [
+      [
+        0,
+        1,
+        8,
+        1
+      ],
+      [
+        0,
+        2,
+        8,
+        1
+      ],
+      [
+        0,
+        4,
+        -16,
+        1
+      ],
+      [
+        0,
+        5,
+        -8,
+        1
+      ],
+      [
+        0,
+        6,
+        -16,
+        1
+      ],
+      [
+        0,
+        7,
+        -8,
+        1
+      ],
+      [
+        1,
+        4,
+        -16,
+        1
+      ],
+      [
+        1,
+        5,
+        -8,
+        1
+      ],
+      [
+        1,
+        6,
+        -16,
+        1
+      ],
+      [
+        1,
+        7,
+        -8,
+        1
+      ],
+      [
+        2,
+        5,
+        8,
+        1
+      ],
+      [
+        2,
+        7,
+        8,
+        1
+      ],
+      [
+        4,
+        5,
+        16,
+        1
+      ],
+      [
+        6,
+        7,
+        16,
+        1
+      ]
+    ],
+    "offset": [
+      12,
+      1
+    ],
+    "interpretation": "authoritative exact rational model for the binary64 input weights and penalty"
+  },
+  "numeric_certificate": {
+    "float_ground_states_certified": true,
+    "coefficient_error_l1_exact": [
+      0,
+      1
+    ],
+    "nonoptimal_gap_lower_bound_exact": [
+      1,
+      1
+    ],
+    "weight_lattice_step_exact": [
+      1,
+      1
+    ],
+    "exact_penalty_margin": [
+      1,
+      1
+    ],
+    "offset_error_exact": [
+      0,
+      1
+    ],
+    "condition": "2 * coefficient_error_l1 < nonoptimal_gap_lower_bound"
+  }
+}

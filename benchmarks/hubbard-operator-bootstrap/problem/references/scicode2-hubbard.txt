@@ -1,0 +1,106 @@
+SciCode 2: Finding Affordable
+Quantum Bootstrap Bounds
+Operator-space discovery for the Hubbard model
+
+Scientific objective. Given a quantum many-body Hamiltonian, find an operator subspace that
+produces the strongest ground-state energy lower bound within a computational budget. The central
+challenge is scientific judgement: which positivity constraints capture the important correlations, and
+how much computational effort is their improvement worth?
+
+
+1    The bootstrap problem
+
+Let H be a Hamiltonian on a finite Hilbert space, with a specified physical sector if needed. Let P
+project onto that sector (P = I if there is no sector restriction), and let E0 be its ground-state energy.
+Choose an operator subspace
+                                        O = span{O1 , . . . , Om }.                                    (1)
+The operators act on the original Hilbert space and need not preserve the sector; the candidate ρ is
+supported in the target sector. Every physical state satisfies Tr(ρO† O) ≥ 0 for every operator O. The
+bootstrap relaxes full state positivity by testing this condition only on the selected subspace:
+
+                          Elb (O) = inf    Tr(ρH)
+                                      ρ
+
+                             subject to   ρ = ρ† ,           Tr ρ = 1,     ρ = P ρP,                    (2)
+                                                   †
+                                           Tr(ρO O) ≥ 0             for every O ∈ O.
+
+Here ρ is a relaxed density-matrix candidate: global positivity ρ ⪰ 0 is not imposed. Otherwise every
+operator test would be automatic and the choice of O would not affect the bound. The formulation
+does not require storing ρ explicitly; the solver must find an efficient representation of the optimization
+problem.
+A physical ground-state density matrix is feasible in Equation (2), so Elb (O) ≤ E0 . Enlarging a
+subspace while retaining its constraints cannot decrease the ideal lower bound. If O is the full operator
+algebra, its positivity tests enforce ρ ⪰ 0 and the bound becomes exact. That full problem is generally
+computationally prohibitive for a many-body system.
+Let C(O) measure the computational cost of the chosen subspace and its induced optimization, and let
+B be the available budget. The research objective is the nested max–min problem
+                    ⋆
+                   EB =      sup      Elb (O) =        sup           inf       Tr(ρH) ≤ E0 .            (3)
+                          O: C(O)≤B               O: C(O)≤B ρ satisfying (2)
+
+
+The inner minimization determines a lower bound; the outer maximization seeks an affordable operator
+space that makes it as tight as possible. A larger space can strengthen the bound while making the
+calculation unaffordable. The goal is to discover an effective compromise, not to enumerate the full
+operator algebra or prove that the chosen subspace is globally optimal.
+SciCode 2 | Affordable quantum bootstrap                                                            Problem proposal
+
+
+2     Physical system and concrete instance
+
+Consider the repulsive Hubbard model on the periodic square lattice Λ = ZL × ZL , of volume V = L2 :
+                                            X  †                    
+                                                     ciσ cjσ + c†jσ ciσ + U
+                                                                              X
+                                 H = −t                                             ni↑ ni↓ .                    (4)
+                                           ⟨i,j⟩,σ                            i∈Λ
+
+
+Here ⟨i, j⟩ runs over distinct nearest-neighbor bonds, σ ∈ {↑, ↓}, niσ = c†iσ ciσ , and the fermionic
+operators obey {ciσ , c†jτ } = δij δστ and {ciσ , cjτ } = 0. The parameters satisfy t > 0, U > 0. The
+                                                                         P
+particle-number sector is part of the instance specification, with Nσ = i niσ .
+For this task, use the spin-balanced, half-filled instance
+
+                        L = 4,       V = 16,          t = 1,       U/t = 8,          N↑ = N↓ = 8.                (5)
+
+The Hamiltonian above fixes the total-energy convention. Results may also be reported per site as
+e = E/V , with the normalization stated explicitly.
+
+
+3     Task and evaluation
+
+Task. For this Hubbard instance, find an affordable operator subspace and a validated ground-state
+energy lower bound. Seek the strongest bound within the supplied budget. Choose and justify the
+mathematical representation, translation into a solvable optimization problem, computational method,
+valid symmetry reductions, refinement strategy and validation procedure.
+Account for the cost of the induced computation, not just seed count. Report resolved operator-
+space size, runtime and peak memory, including representation, construction, solving and validation.
+Assess operator degree, spatial support and correlation choices by their bound improvement relative to
+computational cost.
+Submit:
+
+1. The operator subspace, or a reproducible construction of it, together with the code and mathematical
+   formulation used for the calculation.
+
+2. The reported lower bound and sufficient evidence to independently validate it, including control of
+   numerical errors.
+
+3. The resource measurements and a short scientific explanation of the main operator-selection decisions,
+   supported by comparisons or refinements.
+
+Validation. Independently check the physical constraints, claimed lower bound and resource use. One
+feasible ρ alone does not validate the minimum in Equation (2); the bound itself must be justified. A
+known ground-state energy can guide comparisons but does not replace this justification. No particular
+SDP formulation, solver or certificate construction is prescribed.
+Automated evaluation accepts any independently validated construction reaching a public target Etarget
+within budget B. Organizers calibrate these against a private reference solution; no operator sets, best
+results or search history are disclosed. Pilot trials must establish workstation feasibility, 10–20 hours of
+active scientific work and agent difficulty.
+Background: X. Han, Quantum Many-body Bootstrap (2020), arXiv:2006.06002. This proposal leaves numerical targets
+and budgets to private reference calibration.
+
+
+                                                               2
+

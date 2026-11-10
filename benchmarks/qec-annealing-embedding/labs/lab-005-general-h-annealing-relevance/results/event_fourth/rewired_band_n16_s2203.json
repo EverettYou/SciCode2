@@ -1,0 +1,698 @@
+{
+  "status": "strict_actual_original_optimum_order",
+  "certificate": {
+    "duration": 0.015625,
+    "duration_exact": [
+      1,
+      64
+    ],
+    "relative_advantage_lower": 1.2036809719633824e-06,
+    "relative_advantage_lower_exact": {
+      "numerator_hex": "0x1c31341128555b5fd4faf4efe37a21c10467d203e8496ad6c004c20b1427cf11af699e9988476463d406320a07497c5b6a82402b9c7dd804f738a8354e02ecd7314b65a85455458a420011357a1ca047ccd0c120265465576d046e70c7789b85cd164e486303cf9ea143f51b25f21d8b3b26779502d43e3d94f961c6653f9a56ebc74a377969501867d577f411b7cc6c896b6e8a4ec47eb3fddb74022336720f0493b3b8d1324000af27f3919259481909d88382b255b7b551766006ebc6691b6cf656ffadfe5ed80773d8848e82796f46ee3d594d87facd04f92ba900381471de2684c978c56fbc777a754d5e55973dc0221c3ed4733489ac83376f7e7e6b7701d0e867df2bfe971889bb3e8f38680159726f0619556ccd568901f8637d025d1793e5110d4971394d5387497c548c71cf36abf2cc129aa0018a90f6db46871d9cee360eeb5405d40f425b636364be1314a369634a1ee2c42f5a647427f211eb89d628323eb4ede95c9b749fd4062476855f2b7b03924e1244354f489f094841fd21f04ef99c055b46942135d5f36272bbf7c5f2f670ad6f6cd780b86795b17bddbbd48d241549e7a9e4d6fa1b41dcf6db43e9dd5d7820cb834638c0d72df6bb6d81f6d516406de86df0e267da073f3035cdd70e6263ea8932caedeb25001d7aac9eb3a1e431e1c263a91292abbfad32352aac4ca468e70968cfde7c24790e58abd495f35d989bf72cb64f52b05fef20baf903702266773a2669d53a30cf28e42b2761daac01e0c5c73b9d2ba0cf075a34a3cb910e91980662f2e0f252fbb9e3a5db1717",
+      "denominator_hex": "0x16562d73a572c4b96f202c0073db75dba2460a2c4ac4c7ba4fffd7eb8c8dad09924e5047742f4ca6523d0fd1ce51b8d5764c92ef9e3d38b0aade076659ad14da3bd8f8f6dce8b07e1ba70a10ac065d9988f921caa67be3d60fc24e39f024a3208f12992892cf7e3b89f3ba826a39946fd353c65b8ebe7afeab8d97b63ccc611e4cbab699d5965c3258de19996de250a5730577290d3f812829ed428500f77b010a5c1de3809822b158f8730ae935f8672768af8c76e20abf87578df79bd69780679314d5c98c3dbfec7d38e2c8dd2c2599f97722fbf116900b346dc9c4e8c11ed914ff06b0cccc6f9c9651c25cb514ee4c56bf0bbe44f5830861db11a31763a298f4b7e5864b9b0e2217df7ee44caffb8e6a6568c608c7987882332471844d518e3b9b71b6a561eb915e7ae64dca113625d6061bdfd3cfe188ed7ca96d7a957ff6758fb01c5e6784983e9e8c1e6efd56481754e71970a3d1a78a57a80ce52861718e25c5d12f0297108f9e3f5fddcef4acaa3d4e7ece499b62076b254826ca55a0e6ede9f620d33b828fe97d0e9806caabba74597ed2b7c217e6a5837301ff2f9eb1e598d0605f9dbda65dcdbf8f7179af71c1fe0d368af205cbca5231416998b5201eaba0aa390a5e164c95687b5ad40625193a1a0ac196f63e196b7438feddb35b9b1123ebb62a7829a5600000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+    },
+    "remainder_upper": 1.6867749892050115e-07
+  },
+  "fourth_lower": -0.04261016732524359,
+  "fourth_lower_exact": {
+    "numerator_hex": "-0xabcddfb3707c015ff6dc183940176baf664a14bad161",
+    "denominator_hex": "0xfc0000000000000000000000000000000000000000000"
+  },
+  "difference_terms": 96,
+  "difference_walsh_exact": [
+    [
+      "0x0",
+      {
+        "numerator_hex": "0x6aebf6d93d27d5e7c8ae40b37f",
+        "denominator_hex": "0x48000000000000000000000000000"
+      }
+    ],
+    [
+      "0x1",
+      {
+        "numerator_hex": "0x71dc27961b258d2c21d0110c10d0a45910a1752f",
+        "denominator_hex": "0x2a00000000000000000000000000000000000000000"
+      }
+    ],
+    [
+      "0x2",
+      {
+        "numerator_hex": "-0x5c8836e4796e388bdc991211bdd08e1aefe6ffa1",
+        "denominator_hex": "0x5400000000000000000000000000000000000000000"
+      }
+    ],
+    [
+      "0x3",
+      {
+        "numerator_hex": "-0x5b3f51fdbf954068ccd2a6924f",
+        "denominator_hex": "0x48000000000000000000000000000"
+      }
+    ],
+    [
+      "0x4",
+      {
+        "numerator_hex": "-0x64cea1022c2492539a776ee239d489cbc0de2a69",
+        "denominator_hex": "0x1500000000000000000000000000000000000000000"
+      }
+    ],
+    [
+      "0x5",
+      {
+        "numerator_hex": "-0x19dee8ea4576764c31ca34426f",
+        "denominator_hex": "0x24000000000000000000000000000"
+      }
+    ],
+    [
+      "0x6",
+      {
+        "numerator_hex": "-0x75e0b872a885217ceb951f028f",
+        "denominator_hex": "0x48000000000000000000000000000"
+      }
+    ],
+    [
+      "0x7",
+      {
+        "numerator_hex": "0x695955c3371631112a760f283",
+        "denominator_hex": "0xc000000000000000000000000000"
+      }
+    ],
+    [
+      "0x8",
+      {
+        "numerator_hex": "-0x17ee74acff14face16f4cabc12d7f264564475873",
+        "denominator_hex": "0x15000000000000000000000000000000000000000000"
+      }
+    ],
+    [
+      "0x9",
+      {
+        "numerator_hex": "-0xbea6da6db8ad6938832f60b39",
+        "denominator_hex": "0x12000000000000000000000000000"
+      }
+    ],
+    [
+      "0xa",
+      {
+        "numerator_hex": "-0x127a7792c157a6b1d351c92f90f",
+        "denominator_hex": "0x90000000000000000000000000000"
+      }
+    ],
+    [
+      "0xb",
+      {
+        "numerator_hex": "-0x9e0600a4d2a0d9d754c890a39",
+        "denominator_hex": "0x12000000000000000000000000000"
+      }
+    ],
+    [
+      "0xc",
+      {
+        "numerator_hex": "-0xbb553cbf3f657c1bb31872f61",
+        "denominator_hex": "0x4800000000000000000000000000"
+      }
+    ],
+    [
+      "0x10",
+      {
+        "numerator_hex": "-0x1194042ad9151ee7cbee49ea556b888df8b69e9b1",
+        "denominator_hex": "0x2400000000000000000000000000000000000000000"
+      }
+    ],
+    [
+      "0x11",
+      {
+        "numerator_hex": "-0x25369e091a7469979e76fa87d",
+        "denominator_hex": "0x3000000000000000000000000000"
+      }
+    ],
+    [
+      "0x12",
+      {
+        "numerator_hex": "-0x74288eda94de416ae5fb01278d",
+        "denominator_hex": "0x24000000000000000000000000000"
+      }
+    ],
+    [
+      "0x14",
+      {
+        "numerator_hex": "-0x4dd50781e4c34a9da79c9f9a7f",
+        "denominator_hex": "0x12000000000000000000000000000"
+      }
+    ],
+    [
+      "0x18",
+      {
+        "numerator_hex": "-0x5a9b89f4ca21969d517b596b69",
+        "denominator_hex": "0x24000000000000000000000000000"
+      }
+    ],
+    [
+      "0x20",
+      {
+        "numerator_hex": "-0x141ad8e5a889c4b0656099933477c35ef2011bfd3f",
+        "denominator_hex": "0x3f000000000000000000000000000000000000000000"
+      }
+    ],
+    [
+      "0x21",
+      {
+        "numerator_hex": "-0x4ac3acc19a023d4969bd27642f",
+        "denominator_hex": "0x10000000000000000000000000000"
+      }
+    ],
+    [
+      "0x22",
+      {
+        "numerator_hex": "-0x2d734d7c72a5f695ca6d5e0fcd",
+        "denominator_hex": "0x30000000000000000000000000000"
+      }
+    ],
+    [
+      "0x24",
+      {
+        "numerator_hex": "-0xa6f0b4a1af9da7791c0586b31f",
+        "denominator_hex": "0x48000000000000000000000000000"
+      }
+    ],
+    [
+      "0x26",
+      {
+        "numerator_hex": "-0x10581a44de87b17480f251169b1",
+        "denominator_hex": "0x120000000000000000000000000000"
+      }
+    ],
+    [
+      "0x28",
+      {
+        "numerator_hex": "-0x272f9c24b9ee6fc98ca582bb7",
+        "denominator_hex": "0x2400000000000000000000000000"
+      }
+    ],
+    [
+      "0x2a",
+      {
+        "numerator_hex": "0x7ca2a951491b2cbbfe09405daf",
+        "denominator_hex": "0x48000000000000000000000000000"
+      }
+    ],
+    [
+      "0x30",
+      {
+        "numerator_hex": "-0x4a4ab1edcfed7a58ad4c33a68520db7dfb4b11ad",
+        "denominator_hex": "0xe00000000000000000000000000000000000000000"
+      }
+    ],
+    [
+      "0x31",
+      {
+        "numerator_hex": "0x695955c3371631112a760f283",
+        "denominator_hex": "0x6000000000000000000000000000"
+      }
+    ],
+    [
+      "0x32",
+      {
+        "numerator_hex": "-0xed0900f73bf1b6856a155f0e1",
+        "denominator_hex": "0x9000000000000000000000000000"
+      }
+    ],
+    [
+      "0x34",
+      {
+        "numerator_hex": "-0xed0900f73bf1b6856a155f0e1",
+        "denominator_hex": "0x9000000000000000000000000000"
+      }
+    ],
+    [
+      "0x38",
+      {
+        "numerator_hex": "-0x2781802934a8446e228f34ebfb",
+        "denominator_hex": "0x24000000000000000000000000000"
+      }
+    ],
+    [
+      "0x40",
+      {
+        "numerator_hex": "-0x32cf10c374fafa06b2fbafdc08afb3ff81f386553",
+        "denominator_hex": "0x7e00000000000000000000000000000000000000000"
+      }
+    ],
+    [
+      "0x41",
+      {
+        "numerator_hex": "-0xbea6da6db8ad6938832f60b39",
+        "denominator_hex": "0x9000000000000000000000000000"
+      }
+    ],
+    [
+      "0x42",
+      {
+        "numerator_hex": "-0x5f62c7f7b359b81cf3bc273b45",
+        "denominator_hex": "0x24000000000000000000000000000"
+      }
+    ],
+    [
+      "0x43",
+      {
+        "numerator_hex": "0x9e0600a4d2a0d9d754c890a39",
+        "denominator_hex": "0x12000000000000000000000000000"
+      }
+    ],
+    [
+      "0x44",
+      {
+        "numerator_hex": "-0x86e44820e801fd9a9148d66e07",
+        "denominator_hex": "0x24000000000000000000000000000"
+      }
+    ],
+    [
+      "0x48",
+      {
+        "numerator_hex": "-0x8fbfa15cedfb97723db20d6bc9",
+        "denominator_hex": "0x48000000000000000000000000000"
+      }
+    ],
+    [
+      "0x50",
+      {
+        "numerator_hex": "-0x3b5678a8ecdc6fcbbda4717561a8d425fd11cb0ff",
+        "denominator_hex": "0x7e00000000000000000000000000000000000000000"
+      }
+    ],
+    [
+      "0x51",
+      {
+        "numerator_hex": "0x695955c3371631112a760f283",
+        "denominator_hex": "0x6000000000000000000000000000"
+      }
+    ],
+    [
+      "0x52",
+      {
+        "numerator_hex": "-0x52c537870b5849b062f5b6d3b9d",
+        "denominator_hex": "0x240000000000000000000000000000"
+      }
+    ],
+    [
+      "0x54",
+      {
+        "numerator_hex": "-0xed0900f73bf1b6856a155f0e1",
+        "denominator_hex": "0x9000000000000000000000000000"
+      }
+    ],
+    [
+      "0x58",
+      {
+        "numerator_hex": "-0x2781802934a8446e228f34ebfb",
+        "denominator_hex": "0x24000000000000000000000000000"
+      }
+    ],
+    [
+      "0x60",
+      {
+        "numerator_hex": "-0xa8fac23e3dfe76306ac65ee249",
+        "denominator_hex": "0x24000000000000000000000000000"
+      }
+    ],
+    [
+      "0x62",
+      {
+        "numerator_hex": "0x1c1995e97cb5a003c2a93dc2197",
+        "denominator_hex": "0x120000000000000000000000000000"
+      }
+    ],
+    [
+      "0x70",
+      {
+        "numerator_hex": "-0x1924e3b6689df7fd5671f133afce08cc11a7656239",
+        "denominator_hex": "0x3f000000000000000000000000000000000000000000"
+      }
+    ],
+    [
+      "0x71",
+      {
+        "numerator_hex": "-0xbea6da6db8ad6938832f60b39",
+        "denominator_hex": "0x12000000000000000000000000000"
+      }
+    ],
+    [
+      "0x72",
+      {
+        "numerator_hex": "-0x6e5c4a096475ab984f5d4fca43",
+        "denominator_hex": "0x48000000000000000000000000000"
+      }
+    ],
+    [
+      "0x73",
+      {
+        "numerator_hex": "-0x2781802934a8446e228f34ebfb",
+        "denominator_hex": "0x24000000000000000000000000000"
+      }
+    ],
+    [
+      "0x74",
+      {
+        "numerator_hex": "-0x95ddca32991df2da64907572fb",
+        "denominator_hex": "0x48000000000000000000000000000"
+      }
+    ],
+    [
+      "0x78",
+      {
+        "numerator_hex": "-0xf08dcd2881ed659b22e8d02e9",
+        "denominator_hex": "0x90000000000000000000000000000"
+      }
+    ],
+    [
+      "0x80",
+      {
+        "numerator_hex": "-0x57d543f8977111a023cc30bb2d98f9ded67a47cad7",
+        "denominator_hex": "0x240000000000000000000000000000000000000000000"
+      }
+    ],
+    [
+      "0x81",
+      {
+        "numerator_hex": "-0x48f3a0a837e518d6006295cb85",
+        "denominator_hex": "0x10000000000000000000000000000"
+      }
+    ],
+    [
+      "0x82",
+      {
+        "numerator_hex": "-0x3bf563079b72f2a5ccb1fb9859d",
+        "denominator_hex": "0x240000000000000000000000000000"
+      }
+    ],
+    [
+      "0x84",
+      {
+        "numerator_hex": "-0x190a817ea724722c645ba55e427",
+        "denominator_hex": "0x120000000000000000000000000000"
+      }
+    ],
+    [
+      "0x86",
+      {
+        "numerator_hex": "-0xd9ec08eb97113f83cd770a1d57",
+        "denominator_hex": "0x90000000000000000000000000000"
+      }
+    ],
+    [
+      "0x88",
+      {
+        "numerator_hex": "-0x1782f7493c5bdc0f08705f1035d",
+        "denominator_hex": "0x240000000000000000000000000000"
+      }
+    ],
+    [
+      "0x8a",
+      {
+        "numerator_hex": "0xcfb9c4dccf2d4c71e39895245d",
+        "denominator_hex": "0x48000000000000000000000000000"
+      }
+    ],
+    [
+      "0x90",
+      {
+        "numerator_hex": "-0xe3993a731787030cbe4e360b19",
+        "denominator_hex": "0x90000000000000000000000000000"
+      }
+    ],
+    [
+      "0x92",
+      {
+        "numerator_hex": "-0x1782f7493c5bdd018e341763eb",
+        "denominator_hex": "0x24000000000000000000000000000"
+      }
+    ],
+    [
+      "0x96",
+      {
+        "numerator_hex": "0x695955c3371631112a760f283",
+        "denominator_hex": "0xc000000000000000000000000000"
+      }
+    ],
+    [
+      "0x9a",
+      {
+        "numerator_hex": "-0x9e0600a4d2a0d9d754c890a39",
+        "denominator_hex": "0x12000000000000000000000000000"
+      }
+    ],
+    [
+      "0xa0",
+      {
+        "numerator_hex": "0x3d522db9275a0ac79e35f167e7d6177d81959d1e5",
+        "denominator_hex": "0x3f000000000000000000000000000000000000000000"
+      }
+    ],
+    [
+      "0xa1",
+      {
+        "numerator_hex": "0xaa2691d72cd1af215e23929c3",
+        "denominator_hex": "0x38000000000000000000000000000"
+      }
+    ],
+    [
+      "0xa2",
+      {
+        "numerator_hex": "0x28c31b726ca0f29f271904cf4dfa24d30225bb89",
+        "denominator_hex": "0x1c00000000000000000000000000000000000000000"
+      }
+    ],
+    [
+      "0xa3",
+      {
+        "numerator_hex": "-0xed0900f73bf1b6856a155f0e1",
+        "denominator_hex": "0x9000000000000000000000000000"
+      }
+    ],
+    [
+      "0xa4",
+      {
+        "numerator_hex": "-0x2fa9b69b6e2b62ebc17b0ca95b",
+        "denominator_hex": "0x30000000000000000000000000000"
+      }
+    ],
+    [
+      "0xa5",
+      {
+        "numerator_hex": "-0xed0900f73bf1b6856a155f0e1",
+        "denominator_hex": "0x9000000000000000000000000000"
+      }
+    ],
+    [
+      "0xa6",
+      {
+        "numerator_hex": "0x2a944b2c2a2dfa94cbdf438fd4f4e24540812f9e5",
+        "denominator_hex": "0x15000000000000000000000000000000000000000000"
+      }
+    ],
+    [
+      "0xa7",
+      {
+        "numerator_hex": "0x1bb25e83d75b682b095106b17f",
+        "denominator_hex": "0x18000000000000000000000000000"
+      }
+    ],
+    [
+      "0xa8",
+      {
+        "numerator_hex": "0xa21a1bddef62d9af5493611067",
+        "denominator_hex": "0x90000000000000000000000000000"
+      }
+    ],
+    [
+      "0xa9",
+      {
+        "numerator_hex": "-0x2781802934a8446e228f34ebfb",
+        "denominator_hex": "0x24000000000000000000000000000"
+      }
+    ],
+    [
+      "0xaa",
+      {
+        "numerator_hex": "-0x5b4e3c4b30557ae1831e1cdd6a83edaa629417d",
+        "denominator_hex": "0x600000000000000000000000000000000000000000"
+      }
+    ],
+    [
+      "0xab",
+      {
+        "numerator_hex": "-0x3d4c4dda5d5d36685eede99987",
+        "denominator_hex": "0x24000000000000000000000000000"
+      }
+    ],
+    [
+      "0xae",
+      {
+        "numerator_hex": "0xf531376975753df726d6a798d",
+        "denominator_hex": "0x12000000000000000000000000000"
+      }
+    ],
+    [
+      "0xb0",
+      {
+        "numerator_hex": "-0x124daee04e3a04148a522e49d35",
+        "denominator_hex": "0x90000000000000000000000000000"
+      }
+    ],
+    [
+      "0xb1",
+      {
+        "numerator_hex": "-0x695955c3371631112a760f283",
+        "denominator_hex": "0x3000000000000000000000000000"
+      }
+    ],
+    [
+      "0xb2",
+      {
+        "numerator_hex": "0x9e0600a4d2a0d9d754c890a39",
+        "denominator_hex": "0x12000000000000000000000000000"
+      }
+    ],
+    [
+      "0xb6",
+      {
+        "numerator_hex": "-0x25369e091a7469979e76fa87d",
+        "denominator_hex": "0x6000000000000000000000000000"
+      }
+    ],
+    [
+      "0xba",
+      {
+        "numerator_hex": "0x3575fb6c9e940ccd8c1b17bc5",
+        "denominator_hex": "0x2400000000000000000000000000"
+      }
+    ],
+    [
+      "0xc0",
+      {
+        "numerator_hex": "-0x1782f7493c5bdc0f08705f1035d",
+        "denominator_hex": "0x120000000000000000000000000000"
+      }
+    ],
+    [
+      "0xc2",
+      {
+        "numerator_hex": "0x30f146ad5912ad1a62e624d53",
+        "denominator_hex": "0x24000000000000000000000000000"
+      }
+    ],
+    [
+      "0xd0",
+      {
+        "numerator_hex": "-0x1c9c1950a04dcffbdbb72eddf7f",
+        "denominator_hex": "0x90000000000000000000000000000"
+      }
+    ],
+    [
+      "0xd1",
+      {
+        "numerator_hex": "-0x2781802934a8446e228f34ebfb",
+        "denominator_hex": "0x24000000000000000000000000000"
+      }
+    ],
+    [
+      "0xd2",
+      {
+        "numerator_hex": "-0x20604adc2baee866a247da4e2dab25cec35e3e585",
+        "denominator_hex": "0x3f000000000000000000000000000000000000000000"
+      }
+    ],
+    [
+      "0xd3",
+      {
+        "numerator_hex": "-0xbea6da6db8ad6938832f60b39",
+        "denominator_hex": "0x12000000000000000000000000000"
+      }
+    ],
+    [
+      "0xd6",
+      {
+        "numerator_hex": "-0x95ddca32991df2da64907572fb",
+        "denominator_hex": "0x48000000000000000000000000000"
+      }
+    ],
+    [
+      "0xda",
+      {
+        "numerator_hex": "-0xf08dcd2881ed659b22e8d02e9",
+        "denominator_hex": "0x90000000000000000000000000000"
+      }
+    ],
+    [
+      "0xe0",
+      {
+        "numerator_hex": "0x2a3eb08f8f7fa55a3342de3c5f",
+        "denominator_hex": "0x24000000000000000000000000000"
+      }
+    ],
+    [
+      "0xe1",
+      {
+        "numerator_hex": "-0x2781802934a8446e228f34ebfb",
+        "denominator_hex": "0x12000000000000000000000000000"
+      }
+    ],
+    [
+      "0xe2",
+      {
+        "numerator_hex": "-0x2eb5652d2af1db84509c5b7d14ea68950fa74a3",
+        "denominator_hex": "0x1200000000000000000000000000000000000000000"
+      }
+    ],
+    [
+      "0xe3",
+      {
+        "numerator_hex": "-0x46dac9e02fcdbf39e8f2688bf",
+        "denominator_hex": "0x9000000000000000000000000000"
+      }
+    ],
+    [
+      "0xe6",
+      {
+        "numerator_hex": "0x341f1099dca9b1e82d91ecffd1",
+        "denominator_hex": "0x24000000000000000000000000000"
+      }
+    ],
+    [
+      "0xea",
+      {
+        "numerator_hex": "0xdd5c5c1bbe5f11f3c9e99127db",
+        "denominator_hex": "0x48000000000000000000000000000"
+      }
+    ],
+    [
+      "0xf0",
+      {
+        "numerator_hex": "-0x3c23734a207b2dbd07a3c38acd",
+        "denominator_hex": "0x240000000000000000000000000000"
+      }
+    ],
+    [
+      "0xf2",
+      {
+        "numerator_hex": "0x20b03489bd0f67eb4cca3680a3",
+        "denominator_hex": "0x12000000000000000000000000000"
+      }
+    ],
+    [
+      "0xf6",
+      {
+        "numerator_hex": "0x695955c3371631112a760f283",
+        "denominator_hex": "0xc000000000000000000000000000"
+      }
+    ],
+    [
+      "0xfa",
+      {
+        "numerator_hex": "-0x9e0600a4d2a0d9d754c890a39",
+        "denominator_hex": "0x12000000000000000000000000000"
+      }
+    ]
+  ],
+  "name": "rewired_band_n16_s2203",
+  "seconds": 0.11675875005312264
+}

@@ -1,0 +1,132 @@
+{
+  "phase": "construction_done",
+  "construction_sec": 6.886264875065535,
+  "reduction": {
+    "original_nvar": 3240,
+    "reduced_nvar": 331,
+    "zero_variables": 60
+  },
+  "projections": [
+    {
+      "name": "T1_(0, 0, 0)",
+      "original_dim": 35,
+      "new_dims": [
+        9,
+        10,
+        10,
+        6
+      ],
+      "exact_cross_block_zero": true
+    },
+    {
+      "name": "T1_(0, 1, 0)",
+      "original_dim": 35,
+      "new_dims": [
+        19,
+        16
+      ],
+      "exact_cross_block_zero": true
+    },
+    {
+      "name": "T1_(0, 1, 1)",
+      "original_dim": 35,
+      "new_dims": [
+        15,
+        20
+      ],
+      "exact_cross_block_zero": true
+    },
+    {
+      "name": "T1_(0, 2, 0)",
+      "original_dim": 35,
+      "new_dims": [
+        9,
+        10,
+        10,
+        6
+      ],
+      "exact_cross_block_zero": true
+    },
+    {
+      "name": "T1_(0, 2, 1)",
+      "original_dim": 35,
+      "new_dims": [
+        19,
+        16
+      ],
+      "exact_cross_block_zero": true
+    },
+    {
+      "name": "T1_(0, 2, 2)",
+      "original_dim": 35,
+      "new_dims": [
+        9,
+        10,
+        10,
+        6
+      ],
+      "exact_cross_block_zero": true
+    },
+    {
+      "name": "T1_(1, 0, 0)",
+      "original_dim": 120,
+      "new_dims": [
+        42,
+        30,
+        30,
+        18
+      ],
+      "exact_cross_block_zero": true
+    },
+    {
+      "name": "T1_(1, 1, 0)",
+      "original_dim": 120,
+      "new_dims": [
+        72,
+        48
+      ],
+      "exact_cross_block_zero": true
+    },
+    {
+      "name": "T1_(1, 1, 1)",
+      "original_dim": 120,
+      "new_dims": [
+        60,
+        60
+      ],
+      "exact_cross_block_zero": true
+    },
+    {
+      "name": "T1_(1, 2, 0)",
+      "original_dim": 120,
+      "new_dims": [
+        42,
+        30,
+        30,
+        18
+      ],
+      "exact_cross_block_zero": true
+    },
+    {
+      "name": "T1_(1, 2, 1)",
+      "original_dim": 120,
+      "new_dims": [
+        72,
+        48
+      ],
+      "exact_cross_block_zero": true
+    },
+    {
+      "name": "T1_(1, 2, 2)",
+      "original_dim": 120,
+      "new_dims": [
+        42,
+        30,
+        30,
+        18
+      ],
+      "exact_cross_block_zero": true
+    }
+  ],
+  "physical_test_min_eig": -9.941439164577576e-17
+}

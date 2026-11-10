@@ -1,0 +1,301 @@
+{
+  "elapsed_seconds": 54.38611799990758,
+  "cases": [
+    {
+      "d": 2,
+      "n_error": 5,
+      "direct": {
+        "successes": 3,
+        "attempts": 3,
+        "logical_variables": 9,
+        "logical_edges": 14,
+        "median_search_seconds_all_attempts": 0.0160691668279469,
+        "physical_qubits_range": [
+          9,
+          10
+        ],
+        "physical_qubits_median": 9,
+        "max_chain_range": [
+          1,
+          2
+        ],
+        "scales": {
+          "direct_global": [
+            0.05263157894736842,
+            0.16666666666666666
+          ],
+          "direct_local": [
+            0.14285714285714285,
+            0.5
+          ]
+        }
+      },
+      "dual": {
+        "successes": 3,
+        "attempts": 3,
+        "logical_variables": 2,
+        "logical_edges": 1,
+        "median_search_seconds_all_attempts": 0.01452995790168643,
+        "physical_qubits_range": [
+          2,
+          2
+        ],
+        "physical_qubits_median": 2,
+        "max_chain_range": [
+          1,
+          1
+        ],
+        "scales": {
+          "dual_0": [
+            1.0,
+            1.0
+          ],
+          "dual_1": [
+            1.0,
+            1.0
+          ]
+        }
+      },
+      "median_qubit_ratio_direct_to_one_dual_class": 4.5,
+      "dual_two_parallel_nominal_qubits": 4
+    },
+    {
+      "d": 3,
+      "n_error": 13,
+      "direct": {
+        "successes": 3,
+        "attempts": 3,
+        "logical_variables": 29,
+        "logical_edges": 54,
+        "median_search_seconds_all_attempts": 0.12084912485443056,
+        "physical_qubits_range": [
+          30,
+          32
+        ],
+        "physical_qubits_median": 31,
+        "max_chain_range": [
+          2,
+          2
+        ],
+        "scales": {
+          "direct_global": [
+            0.014184397163120567,
+            0.017543859649122806
+          ],
+          "direct_local": [
+            0.09523809523809523,
+            0.1111111111111111
+          ]
+        }
+      },
+      "dual": {
+        "successes": 3,
+        "attempts": 3,
+        "logical_variables": 6,
+        "logical_edges": 7,
+        "median_search_seconds_all_attempts": 0.01840920909307897,
+        "physical_qubits_range": [
+          6,
+          6
+        ],
+        "physical_qubits_median": 6,
+        "max_chain_range": [
+          1,
+          1
+        ],
+        "scales": {
+          "dual_0": [
+            2.0,
+            2.0
+          ],
+          "dual_1": [
+            2.0,
+            2.0
+          ]
+        }
+      },
+      "median_qubit_ratio_direct_to_one_dual_class": 5.166666666666667,
+      "dual_two_parallel_nominal_qubits": 12
+    },
+    {
+      "d": 5,
+      "n_error": 41,
+      "direct": {
+        "successes": 3,
+        "attempts": 3,
+        "logical_variables": 105,
+        "logical_edges": 212,
+        "median_search_seconds_all_attempts": 0.24102908303029835,
+        "physical_qubits_range": [
+          119,
+          143
+        ],
+        "physical_qubits_median": 121,
+        "max_chain_range": [
+          2,
+          3
+        ],
+        "scales": {
+          "direct_global": [
+            0.004750593824228029,
+            0.004750593824228029
+          ],
+          "direct_local": [
+            0.06451612903225806,
+            0.06451612903225806
+          ]
+        }
+      },
+      "dual": {
+        "successes": 3,
+        "attempts": 3,
+        "logical_variables": 20,
+        "logical_edges": 31,
+        "median_search_seconds_all_attempts": 0.03333212505094707,
+        "physical_qubits_range": [
+          20,
+          20
+        ],
+        "physical_qubits_median": 20,
+        "max_chain_range": [
+          1,
+          1
+        ],
+        "scales": {
+          "dual_0": [
+            2.0,
+            2.0
+          ],
+          "dual_1": [
+            2.0,
+            2.0
+          ]
+        }
+      },
+      "median_qubit_ratio_direct_to_one_dual_class": 6.05,
+      "dual_two_parallel_nominal_qubits": 40
+    },
+    {
+      "d": 7,
+      "n_error": 85,
+      "direct": {
+        "successes": 3,
+        "attempts": 3,
+        "logical_variables": 229,
+        "logical_edges": 474,
+        "median_search_seconds_all_attempts": 0.8792640829924494,
+        "physical_qubits_range": [
+          316,
+          339
+        ],
+        "physical_qubits_median": 319,
+        "max_chain_range": [
+          4,
+          4
+        ],
+        "scales": {
+          "direct_global": [
+            0.0023228803716608595,
+            0.0023228803716608595
+          ],
+          "direct_local": [
+            0.04878048780487805,
+            0.04878048780487805
+          ]
+        }
+      },
+      "dual": {
+        "successes": 3,
+        "attempts": 3,
+        "logical_variables": 42,
+        "logical_edges": 71,
+        "median_search_seconds_all_attempts": 0.06206791615113616,
+        "physical_qubits_range": [
+          44,
+          49
+        ],
+        "physical_qubits_median": 44,
+        "max_chain_range": [
+          2,
+          2
+        ],
+        "scales": {
+          "dual_0": [
+            0.3333333333333333,
+            0.3333333333333333
+          ],
+          "dual_1": [
+            0.3333333333333333,
+            0.3333333333333333
+          ]
+        }
+      },
+      "median_qubit_ratio_direct_to_one_dual_class": 7.25,
+      "dual_two_parallel_nominal_qubits": 88
+    },
+    {
+      "d": 9,
+      "n_error": 145,
+      "direct": {
+        "successes": 3,
+        "attempts": 3,
+        "logical_variables": 401,
+        "logical_edges": 840,
+        "median_search_seconds_all_attempts": 2.727841041982174,
+        "physical_qubits_range": [
+          581,
+          646
+        ],
+        "physical_qubits_median": 639,
+        "max_chain_range": [
+          5,
+          9
+        ],
+        "scales": {
+          "direct_global": [
+            0.0013689253935660506,
+            0.0013689253935660506
+          ],
+          "direct_local": [
+            0.0392156862745098,
+            0.0392156862745098
+          ]
+        }
+      },
+      "dual": {
+        "successes": 3,
+        "attempts": 3,
+        "logical_variables": 72,
+        "logical_edges": 127,
+        "median_search_seconds_all_attempts": 0.10670054191723466,
+        "physical_qubits_range": [
+          76,
+          80
+        ],
+        "physical_qubits_median": 80,
+        "max_chain_range": [
+          2,
+          2
+        ],
+        "scales": {
+          "dual_0": [
+            0.3333333333333333,
+            0.3333333333333333
+          ],
+          "dual_1": [
+            0.3333333333333333,
+            0.3333333333333333
+          ]
+        }
+      },
+      "median_qubit_ratio_direct_to_one_dual_class": 7.9875,
+      "dual_two_parallel_nominal_qubits": 160
+    }
+  ],
+  "saved_validation": {
+    "valid": true,
+    "witnesses": 30,
+    "programs": 60
+  },
+  "interpretation": "Two dual logical classes require two separate anneals. Sequential runs reuse one embedding; twice the qubit count is only a lower accounting estimate for parallel independent placement, which is not constructed here. Search failure does not prove non-embeddability. No speed/success-probability/QPU claims."
+}

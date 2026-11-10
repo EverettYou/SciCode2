@@ -1,0 +1,2560 @@
+{
+  "physical": {
+    "cases": 300,
+    "max_pointwise_violation_roundoff": 4.440892098500626e-15,
+    "max_conditional_probability_error": 4.6074255521944e-15,
+    "records": [
+      {
+        "case": 0,
+        "physical_qubits": 9,
+        "beta": 5.0,
+        "actual_break_probability": 0.0196726224328675,
+        "certificate": 0.048534312393251226,
+        "conditional_error": 2.3314683517128287e-15
+      },
+      {
+        "case": 0,
+        "physical_qubits": 9,
+        "beta": 10.0,
+        "actual_break_probability": 0.019704059581806814,
+        "certificate": 0.04853431239325119,
+        "conditional_error": 1.1102230246251565e-16
+      },
+      {
+        "case": 0,
+        "physical_qubits": 9,
+        "beta": 20.0,
+        "actual_break_probability": 0.01970395278631335,
+        "certificate": 0.04853431239325123,
+        "conditional_error": 5.551115123125783e-17
+      },
+      {
+        "case": 1,
+        "physical_qubits": 9,
+        "beta": 5.0,
+        "actual_break_probability": 0.029411618984575456,
+        "certificate": 0.048534312393251185,
+        "conditional_error": 1.1102230246251565e-16
+      },
+      {
+        "case": 1,
+        "physical_qubits": 9,
+        "beta": 10.0,
+        "actual_break_probability": 0.029409852152577062,
+        "certificate": 0.048534312393251205,
+        "conditional_error": 2.220446049250313e-16
+      },
+      {
+        "case": 1,
+        "physical_qubits": 9,
+        "beta": 20.0,
+        "actual_break_probability": 0.029409852072355087,
+        "certificate": 0.048534312393251185,
+        "conditional_error": 1.1102230246251565e-16
+      },
+      {
+        "case": 2,
+        "physical_qubits": 8,
+        "beta": 5.0,
+        "actual_break_probability": 0.0364087388419062,
+        "certificate": 0.04847572478284702,
+        "conditional_error": 3.3306690738754696e-16
+      },
+      {
+        "case": 2,
+        "physical_qubits": 8,
+        "beta": 10.0,
+        "actual_break_probability": 0.03643480827191178,
+        "certificate": 0.04847572478284703,
+        "conditional_error": 1.1102230246251565e-16
+      },
+      {
+        "case": 2,
+        "physical_qubits": 8,
+        "beta": 20.0,
+        "actual_break_probability": 0.036434808792833145,
+        "certificate": 0.04847572478284704,
+        "conditional_error": 1.1102230246251565e-16
+      },
+      {
+        "case": 3,
+        "physical_qubits": 11,
+        "beta": 5.0,
+        "actual_break_probability": 0.0048837794893676735,
+        "certificate": 0.04860150263815805,
+        "conditional_error": 1.1102230246251565e-16
+      },
+      {
+        "case": 3,
+        "physical_qubits": 11,
+        "beta": 10.0,
+        "actual_break_probability": 0.0006034807626603285,
+        "certificate": 0.04860150263815801,
+        "conditional_error": 6.071532165918825e-18
+      },
+      {
+        "case": 3,
+        "physical_qubits": 11,
+        "beta": 20.0,
+        "actual_break_probability": 1.883031687931902e-05,
+        "certificate": 0.04860150263815801,
+        "conditional_error": 8.131516293641283e-20
+      },
+      {
+        "case": 4,
+        "physical_qubits": 9,
+        "beta": 5.0,
+        "actual_break_probability": 0.029773415632860754,
+        "certificate": 0.048534312393251185,
+        "conditional_error": 2.0816681711721685e-17
+      },
+      {
+        "case": 4,
+        "physical_qubits": 9,
+        "beta": 10.0,
+        "actual_break_probability": 0.029410298697310166,
+        "certificate": 0.048534312393251185,
+        "conditional_error": 1.1102230246251565e-16
+      },
+      {
+        "case": 4,
+        "physical_qubits": 9,
+        "beta": 20.0,
+        "actual_break_probability": 0.029409852092362257,
+        "certificate": 0.048534312393251205,
+        "conditional_error": 7.320548421094295e-23
+      },
+      {
+        "case": 5,
+        "physical_qubits": 8,
+        "beta": 5.0,
+        "actual_break_probability": 0.012614006359828964,
+        "certificate": 0.04847572478284702,
+        "conditional_error": 3.3306690738754696e-16
+      },
+      {
+        "case": 5,
+        "physical_qubits": 8,
+        "beta": 10.0,
+        "actual_break_probability": 0.012347371789855852,
+        "certificate": 0.04847572478284704,
+        "conditional_error": 2.220446049250313e-16
+      },
+      {
+        "case": 5,
+        "physical_qubits": 8,
+        "beta": 20.0,
+        "actual_break_probability": 0.012345679088688182,
+        "certificate": 0.04847572478284703,
+        "conditional_error": 1.1102230246251565e-16
+      },
+      {
+        "case": 6,
+        "physical_qubits": 6,
+        "beta": 5.0,
+        "actual_break_probability": 0.001710777774540642,
+        "certificate": 0.0481856038072576,
+        "conditional_error": 1.1657341758564144e-15
+      },
+      {
+        "case": 6,
+        "physical_qubits": 6,
+        "beta": 10.0,
+        "actual_break_probability": 8.47846731605753e-05,
+        "certificate": 0.04818560380725759,
+        "conditional_error": 2.275957200481571e-15
+      },
+      {
+        "case": 6,
+        "physical_qubits": 6,
+        "beta": 20.0,
+        "actual_break_probability": 5.675245643727465e-07,
+        "certificate": 0.0481856038072576,
+        "conditional_error": 4.440892098500626e-15
+      },
+      {
+        "case": 7,
+        "physical_qubits": 8,
+        "beta": 5.0,
+        "actual_break_probability": 0.026776175733957838,
+        "certificate": 0.048475724782847014,
+        "conditional_error": 6.661338147750939e-16
+      },
+      {
+        "case": 7,
+        "physical_qubits": 8,
+        "beta": 10.0,
+        "actual_break_probability": 0.024678035462185076,
+        "certificate": 0.04847572478284702,
+        "conditional_error": 1.1102230246251565e-16
+      },
+      {
+        "case": 7,
+        "physical_qubits": 8,
+        "beta": 20.0,
+        "actual_break_probability": 0.024539495782268064,
+        "certificate": 0.048475724782847014,
+        "conditional_error": 3.3306690738754696e-16
+      },
+      {
+        "case": 8,
+        "physical_qubits": 7,
+        "beta": 5.0,
+        "actual_break_probability": 0.0006454954759959301,
+        "certificate": 0.048378498640855395,
+        "conditional_error": 1.1657341758564144e-15
+      },
+      {
+        "case": 8,
+        "physical_qubits": 7,
+        "beta": 10.0,
+        "actual_break_probability": 2.1534534013650927e-05,
+        "certificate": 0.0483784986408554,
+        "conditional_error": 2.275957200481571e-15
+      },
+      {
+        "case": 8,
+        "physical_qubits": 7,
+        "beta": 20.0,
+        "actual_break_probability": 2.7009866058133782e-08,
+        "certificate": 0.048378498640855416,
+        "conditional_error": 4.6074255521944e-15
+      },
+      {
+        "case": 9,
+        "physical_qubits": 11,
+        "beta": 5.0,
+        "actual_break_probability": 0.006676243500354616,
+        "certificate": 0.04860150263815803,
+        "conditional_error": 5.551115123125783e-16
+      },
+      {
+        "case": 9,
+        "physical_qubits": 11,
+        "beta": 10.0,
+        "actual_break_probability": 0.0011606482023104364,
+        "certificate": 0.04860150263815803,
+        "conditional_error": 3.3306690738754696e-16
+      },
+      {
+        "case": 9,
+        "physical_qubits": 11,
+        "beta": 20.0,
+        "actual_break_probability": 4.142666109526015e-05,
+        "certificate": 0.048601502638158,
+        "conditional_error": 2.220446049250313e-16
+      },
+      {
+        "case": 10,
+        "physical_qubits": 7,
+        "beta": 5.0,
+        "actual_break_probability": 0.03251952436543334,
+        "certificate": 0.04837849864085543,
+        "conditional_error": 5.551115123125783e-17
+      },
+      {
+        "case": 10,
+        "physical_qubits": 7,
+        "beta": 10.0,
+        "actual_break_probability": 0.03251814031832826,
+        "certificate": 0.0483784986408554,
+        "conditional_error": 2.275957200481571e-15
+      },
+      {
+        "case": 10,
+        "physical_qubits": 7,
+        "beta": 20.0,
+        "actual_break_probability": 0.032518140284869865,
+        "certificate": 0.048378498640855444,
+        "conditional_error": 4.551914400963142e-15
+      },
+      {
+        "case": 11,
+        "physical_qubits": 8,
+        "beta": 5.0,
+        "actual_break_probability": 0.036377868488690665,
+        "certificate": 0.04847572478284702,
+        "conditional_error": 3.469446951953614e-18
+      },
+      {
+        "case": 11,
+        "physical_qubits": 8,
+        "beta": 10.0,
+        "actual_break_probability": 0.036435791329023165,
+        "certificate": 0.04847572478284702,
+        "conditional_error": 1.1102230246251565e-16
+      },
+      {
+        "case": 11,
+        "physical_qubits": 8,
+        "beta": 20.0,
+        "actual_break_probability": 0.03643481546109538,
+        "certificate": 0.04847572478284703,
+        "conditional_error": 1.1102230246251565e-16
+      },
+      {
+        "case": 12,
+        "physical_qubits": 9,
+        "beta": 5.0,
+        "actual_break_probability": 0.011806153796734602,
+        "certificate": 0.048534312393251185,
+        "conditional_error": 2.220446049250313e-16
+      },
+      {
+        "case": 12,
+        "physical_qubits": 9,
+        "beta": 10.0,
+        "actual_break_probability": 0.0018807689736514818,
+        "certificate": 0.048534312393251185,
+        "conditional_error": 1.1102230246251565e-16
+      },
+      {
+        "case": 12,
+        "physical_qubits": 9,
+        "beta": 20.0,
+        "actual_break_probability": 5.410054632654112e-05,
+        "certificate": 0.04853431239325119,
+        "conditional_error": 4.946672411965114e-19
+      },
+      {
+        "case": 13,
+        "physical_qubits": 8,
+        "beta": 5.0,
+        "actual_break_probability": 0.00889830150417001,
+        "certificate": 0.04847572478284702,
+        "conditional_error": 5.551115123125783e-17
+      },
+      {
+        "case": 13,
+        "physical_qubits": 8,
+        "beta": 10.0,
+        "actual_break_probability": 0.008316743720051275,
+        "certificate": 0.04847572478284704,
+        "conditional_error": 5.551115123125783e-17
+      },
+      {
+        "case": 13,
+        "physical_qubits": 8,
+        "beta": 20.0,
+        "actual_break_probability": 0.008315686221130799,
+        "certificate": 0.048475724782847056,
+        "conditional_error": 5.551115123125783e-17
+      },
+      {
+        "case": 14,
+        "physical_qubits": 10,
+        "beta": 5.0,
+        "actual_break_probability": 0.0006311927226602349,
+        "certificate": 0.04857347640995792,
+        "conditional_error": 1.1102230246251565e-16
+      },
+      {
+        "case": 14,
+        "physical_qubits": 10,
+        "beta": 10.0,
+        "actual_break_probability": 1.1853224823853643e-06,
+        "certificate": 0.04857347640995793,
+        "conditional_error": 1.1102230246251565e-16
+      },
+      {
+        "case": 14,
+        "physical_qubits": 10,
+        "beta": 20.0,
+        "actual_break_probability": 1.0003313446744076e-11,
+        "certificate": 0.048573476409957864,
+        "conditional_error": 3.261996823531848e-37
+      },
+      {
+        "case": 15,
+        "physical_qubits": 9,
+        "beta": 5.0,
+        "actual_break_probability": 0.0022460219034656998,
+        "certificate": 0.048534312393251226,
+        "conditional_error": 5.551115123125783e-17
+      },
+      {
+        "case": 15,
+        "physical_qubits": 9,
+        "beta": 10.0,
+        "actual_break_probability": 0.0003570739731643702,
+        "certificate": 0.048534312393251185,
+        "conditional_error": 1.1102230246251565e-16
+      },
+      {
+        "case": 15,
+        "physical_qubits": 9,
+        "beta": 20.0,
+        "actual_break_probability": 1.2726196873921584e-05,
+        "certificate": 0.04853431239325123,
+        "conditional_error": 5.551115123125783e-17
+      },
+      {
+        "case": 16,
+        "physical_qubits": 9,
+        "beta": 5.0,
+        "actual_break_probability": 0.018093390155415275,
+        "certificate": 0.048534312393251185,
+        "conditional_error": 3.3306690738754696e-16
+      },
+      {
+        "case": 16,
+        "physical_qubits": 9,
+        "beta": 10.0,
+        "actual_break_probability": 0.019577578080104144,
+        "certificate": 0.04853431239325114,
+        "conditional_error": 5.204170427930421e-18
+      },
+      {
+        "case": 16,
+        "physical_qubits": 9,
+        "beta": 20.0,
+        "actual_break_probability": 0.01970307473136053,
+        "certificate": 0.048534312393251136,
+        "conditional_error": 1.1102230246251565e-16
+      },
+      {
+        "case": 17,
+        "physical_qubits": 7,
+        "beta": 5.0,
+        "actual_break_probability": 0.0018255669001416158,
+        "certificate": 0.04837849864085543,
+        "conditional_error": 5.551115123125783e-16
+      },
+      {
+        "case": 17,
+        "physical_qubits": 7,
+        "beta": 10.0,
+        "actual_break_probability": 0.00011084082273509517,
+        "certificate": 0.0483784986408554,
+        "conditional_error": 1.1102230246251565e-16
+      },
+      {
+        "case": 17,
+        "physical_qubits": 7,
+        "beta": 20.0,
+        "actual_break_probability": 7.565962746856018e-07,
+        "certificate": 0.048378498640855416,
+        "conditional_error": 1.1102230246251565e-16
+      },
+      {
+        "case": 18,
+        "physical_qubits": 9,
+        "beta": 5.0,
+        "actual_break_probability": 0.03425691955645278,
+        "certificate": 0.048534312393251185,
+        "conditional_error": 5.551115123125783e-17
+      },
+      {
+        "case": 18,
+        "physical_qubits": 9,
+        "beta": 10.0,
+        "actual_break_probability": 0.030227716672553646,
+        "certificate": 0.048534312393251185,
+        "conditional_error": 5.551115123125783e-17
+      },
+      {
+        "case": 18,
+        "physical_qubits": 9,
+        "beta": 20.0,
+        "actual_break_probability": 0.02943544021076499,
+        "certificate": 0.048534312393251185,
+        "conditional_error": 5.551115123125783e-17
+      },
+      {
+        "case": 19,
+        "physical_qubits": 8,
+        "beta": 5.0,
+        "actual_break_probability": 0.013788035983315466,
+        "certificate": 0.048475724782847,
+        "conditional_error": 9.992007221626409e-16
+      },
+      {
+        "case": 19,
+        "physical_qubits": 8,
+        "beta": 10.0,
+        "actual_break_probability": 0.012427747026207149,
+        "certificate": 0.048475724782847014,
+        "conditional_error": 5.204170427930421e-18
+      },
+      {
+        "case": 19,
+        "physical_qubits": 8,
+        "beta": 20.0,
+        "actual_break_probability": 0.012346239454098703,
+        "certificate": 0.048475724782847014,
+        "conditional_error": 7.250602028496811e-19
+      },
+      {
+        "case": 20,
+        "physical_qubits": 9,
+        "beta": 5.0,
+        "actual_break_probability": 0.025885495393531095,
+        "certificate": 0.04853431239325119,
+        "conditional_error": 4.996003610813204e-16
+      },
+      {
+        "case": 20,
+        "physical_qubits": 9,
+        "beta": 10.0,
+        "actual_break_probability": 0.029125082996228197,
+        "certificate": 0.048534312393251185,
+        "conditional_error": 2.220446049250313e-16
+      },
+      {
+        "case": 20,
+        "physical_qubits": 9,
+        "beta": 20.0,
+        "actual_break_probability": 0.029313404538679366,
+        "certificate": 0.04853431239325122,
+        "conditional_error": 1.1102230246251565e-16
+      },
+      {
+        "case": 21,
+        "physical_qubits": 7,
+        "beta": 5.0,
+        "actual_break_probability": 0.0014323341991369762,
+        "certificate": 0.04837849864085538,
+        "conditional_error": 1.1102230246251565e-16
+      },
+      {
+        "case": 21,
+        "physical_qubits": 7,
+        "beta": 10.0,
+        "actual_break_probability": 4.395907826980621e-05,
+        "certificate": 0.04837849864085538,
+        "conditional_error": 1.1102230246251565e-16
+      },
+      {
+        "case": 21,
+        "physical_qubits": 7,
+        "beta": 20.0,
+        "actual_break_probability": 5.4055839833946344e-08,
+        "certificate": 0.048378498640855416,
+        "conditional_error": 2.895132143935597e-23
+      },
+      {
+        "case": 22,
+        "physical_qubits": 6,
+        "beta": 5.0,
+        "actual_break_probability": 0.024391190634790217,
+        "certificate": 0.04818560380725759,
+        "conditional_error": 1.3129010682441655e-20
+      },
+      {
+        "case": 22,
+        "physical_qubits": 6,
+        "beta": 10.0,
+        "actual_break_probability": 0.024390243952054746,
+        "certificate": 0.048185603807257574,
+        "conditional_error": 1.001664023013432e-25
+      },
+      {
+        "case": 22,
+        "physical_qubits": 6,
+        "beta": 20.0,
+        "actual_break_probability": 0.02439024390243925,
+        "certificate": 0.048185603807257546,
+        "conditional_error": 1.3870833339702993e-36
+      },
+      {
+        "case": 23,
+        "physical_qubits": 7,
+        "beta": 5.0,
+        "actual_break_probability": 0.013686092538162598,
+        "certificate": 0.048378498640855444,
+        "conditional_error": 1.942890293094024e-16
+      },
+      {
+        "case": 23,
+        "physical_qubits": 7,
+        "beta": 10.0,
+        "actual_break_probability": 0.016096648771834945,
+        "certificate": 0.0483784986408554,
+        "conditional_error": 3.3306690738754696e-16
+      },
+      {
+        "case": 23,
+        "physical_qubits": 7,
+        "beta": 20.0,
+        "actual_break_probability": 0.01639140543736537,
+        "certificate": 0.04837849864085546,
+        "conditional_error": 8.944667923005412e-19
+      },
+      {
+        "case": 24,
+        "physical_qubits": 9,
+        "beta": 5.0,
+        "actual_break_probability": 0.00013684702170845312,
+        "certificate": 0.048534312393251164,
+        "conditional_error": 1.1102230246251565e-16
+      },
+      {
+        "case": 24,
+        "physical_qubits": 9,
+        "beta": 10.0,
+        "actual_break_probability": 4.858798099850957e-08,
+        "certificate": 0.048534312393251185,
+        "conditional_error": 1.1102230246251565e-16
+      },
+      {
+        "case": 24,
+        "physical_qubits": 9,
+        "beta": 20.0,
+        "actual_break_probability": 7.86928130923786e-14,
+        "certificate": 0.04853431239325119,
+        "conditional_error": 1.1102230246251565e-16
+      },
+      {
+        "case": 25,
+        "physical_qubits": 7,
+        "beta": 5.0,
+        "actual_break_probability": 7.953314782092565e-06,
+        "certificate": 0.048378498640855465,
+        "conditional_error": 2.220446049250313e-16
+      },
+      {
+        "case": 25,
+        "physical_qubits": 7,
+        "beta": 10.0,
+        "actual_break_probability": 2.0783454961654435e-10,
+        "certificate": 0.04837849864085543,
+        "conditional_error": 3.3306690738754696e-16
+      },
+      {
+        "case": 25,
+        "physical_qubits": 7,
+        "beta": 20.0,
+        "actual_break_probability": 4.2837572090497846e-19,
+        "certificate": 0.048378498640855416,
+        "conditional_error": 7.444625512977249e-24
+      },
+      {
+        "case": 26,
+        "physical_qubits": 9,
+        "beta": 5.0,
+        "actual_break_probability": 0.019812498825373275,
+        "certificate": 0.04853431239325122,
+        "conditional_error": 1.4224732503009818e-16
+      },
+      {
+        "case": 26,
+        "physical_qubits": 9,
+        "beta": 10.0,
+        "actual_break_probability": 0.01970395665131878,
+        "certificate": 0.048534312393251205,
+        "conditional_error": 2.220446049250313e-16
+      },
+      {
+        "case": 26,
+        "physical_qubits": 9,
+        "beta": 20.0,
+        "actual_break_probability": 0.019703950593080624,
+        "certificate": 0.048534312393251205,
+        "conditional_error": 2.895132143935597e-23
+      },
+      {
+        "case": 27,
+        "physical_qubits": 6,
+        "beta": 5.0,
+        "actual_break_probability": 0.026387212621251748,
+        "certificate": 0.04818560380725758,
+        "conditional_error": 2.220446049250313e-16
+      },
+      {
+        "case": 27,
+        "physical_qubits": 6,
+        "beta": 10.0,
+        "actual_break_probability": 0.024554556345013415,
+        "certificate": 0.04818560380725759,
+        "conditional_error": 2.220446049250313e-16
+      },
+      {
+        "case": 27,
+        "physical_qubits": 6,
+        "beta": 20.0,
+        "actual_break_probability": 0.024391351216542092,
+        "certificate": 0.04818560380725758,
+        "conditional_error": 7.444625512977249e-24
+      },
+      {
+        "case": 28,
+        "physical_qubits": 8,
+        "beta": 5.0,
+        "actual_break_probability": 0.036463724876447445,
+        "certificate": 0.04847572478284702,
+        "conditional_error": 2.439454888092385e-19
+      },
+      {
+        "case": 28,
+        "physical_qubits": 8,
+        "beta": 10.0,
+        "actual_break_probability": 0.03644004871398773,
+        "certificate": 0.04847572478284699,
+        "conditional_error": 3.3306690738754696e-16
+      },
+      {
+        "case": 28,
+        "physical_qubits": 8,
+        "beta": 20.0,
+        "actual_break_probability": 0.036434995723232104,
+        "certificate": 0.04847572478284696,
+        "conditional_error": 3.004450713244088e-32
+      },
+      {
+        "case": 29,
+        "physical_qubits": 9,
+        "beta": 5.0,
+        "actual_break_probability": 0.002599846324587986,
+        "certificate": 0.048534312393251205,
+        "conditional_error": 1.6653345369377348e-16
+      },
+      {
+        "case": 29,
+        "physical_qubits": 9,
+        "beta": 10.0,
+        "actual_break_probability": 2.7770424889337062e-05,
+        "certificate": 0.04853431239325116,
+        "conditional_error": 1.942890293094024e-15
+      },
+      {
+        "case": 29,
+        "physical_qubits": 9,
+        "beta": 20.0,
+        "actual_break_probability": 3.2811070516095075e-08,
+        "certificate": 0.0485343123932512,
+        "conditional_error": 1.0672615135404184e-19
+      },
+      {
+        "case": 30,
+        "physical_qubits": 10,
+        "beta": 5.0,
+        "actual_break_probability": 0.000902929487589619,
+        "certificate": 0.04857347640995796,
+        "conditional_error": 1.1102230246251565e-16
+      },
+      {
+        "case": 30,
+        "physical_qubits": 10,
+        "beta": 10.0,
+        "actual_break_probability": 1.879856829650318e-06,
+        "certificate": 0.04857347640995789,
+        "conditional_error": 1.1102230246251565e-16
+      },
+      {
+        "case": 30,
+        "physical_qubits": 10,
+        "beta": 20.0,
+        "actual_break_probability": 3.439474586098724e-11,
+        "certificate": 0.04857347640995795,
+        "conditional_error": 1.1102230246251565e-16
+      },
+      {
+        "case": 31,
+        "physical_qubits": 10,
+        "beta": 5.0,
+        "actual_break_probability": 0.01006687915433759,
+        "certificate": 0.04857347640995789,
+        "conditional_error": 1.1102230246251565e-16
+      },
+      {
+        "case": 31,
+        "physical_qubits": 10,
+        "beta": 10.0,
+        "actual_break_probability": 0.008349729053400496,
+        "certificate": 0.04857347640995789,
+        "conditional_error": 1.1102230246251565e-16
+      },
+      {
+        "case": 31,
+        "physical_qubits": 10,
+        "beta": 20.0,
+        "actual_break_probability": 0.008264866740843197,
+        "certificate": 0.04857347640995789,
+        "conditional_error": 1.1102230246251565e-16
+      },
+      {
+        "case": 32,
+        "physical_qubits": 10,
+        "beta": 5.0,
+        "actual_break_probability": 0.0030372125462078147,
+        "certificate": 0.04857347640995788,
+        "conditional_error": 4.440892098500626e-16
+      },
+      {
+        "case": 32,
+        "physical_qubits": 10,
+        "beta": 10.0,
+        "actual_break_probability": 0.0004173644974479839,
+        "certificate": 0.04857347640995788,
+        "conditional_error": 1.1102230246251565e-16
+      },
+      {
+        "case": 32,
+        "physical_qubits": 10,
+        "beta": 20.0,
+        "actual_break_probability": 1.1374914570886978e-05,
+        "certificate": 0.04857347640995788,
+        "conditional_error": 1.1102230246251565e-16
+      },
+      {
+        "case": 33,
+        "physical_qubits": 9,
+        "beta": 5.0,
+        "actual_break_probability": 0.0008204028205788957,
+        "certificate": 0.04853431239325119,
+        "conditional_error": 4.440892098500626e-16
+      },
+      {
+        "case": 33,
+        "physical_qubits": 9,
+        "beta": 10.0,
+        "actual_break_probability": 8.207125974085253e-06,
+        "certificate": 0.048534312393251185,
+        "conditional_error": 1.1102230246251565e-16
+      },
+      {
+        "case": 33,
+        "physical_qubits": 9,
+        "beta": 20.0,
+        "actual_break_probability": 8.041418068898649e-10,
+        "certificate": 0.0485343123932514,
+        "conditional_error": 5.654554968624213e-25
+      },
+      {
+        "case": 34,
+        "physical_qubits": 8,
+        "beta": 5.0,
+        "actual_break_probability": 0.00039150117014648283,
+        "certificate": 0.04847572478284702,
+        "conditional_error": 3.3306690738754696e-16
+      },
+      {
+        "case": 34,
+        "physical_qubits": 8,
+        "beta": 10.0,
+        "actual_break_probability": 5.877707925529536e-07,
+        "certificate": 0.04847572478284702,
+        "conditional_error": 1.1102230246251565e-16
+      },
+      {
+        "case": 34,
+        "physical_qubits": 8,
+        "beta": 20.0,
+        "actual_break_probability": 2.579720900563208e-11,
+        "certificate": 0.04847572478284702,
+        "conditional_error": 2.727146893907707e-36
+      },
+      {
+        "case": 35,
+        "physical_qubits": 7,
+        "beta": 5.0,
+        "actual_break_probability": 0.00429518150164728,
+        "certificate": 0.04837849864085543,
+        "conditional_error": 3.3306690738754696e-16
+      },
+      {
+        "case": 35,
+        "physical_qubits": 7,
+        "beta": 10.0,
+        "actual_break_probability": 0.0004855420778672544,
+        "certificate": 0.0483784986408554,
+        "conditional_error": 2.220446049250313e-16
+      },
+      {
+        "case": 35,
+        "physical_qubits": 7,
+        "beta": 20.0,
+        "actual_break_probability": 5.709466731212562e-06,
+        "certificate": 0.04837849864085546,
+        "conditional_error": 3.321957340012959e-21
+      },
+      {
+        "case": 36,
+        "physical_qubits": 7,
+        "beta": 5.0,
+        "actual_break_probability": 0.024606926296632567,
+        "certificate": 0.04837849864085538,
+        "conditional_error": 7.28583859910259e-17
+      },
+      {
+        "case": 36,
+        "physical_qubits": 7,
+        "beta": 10.0,
+        "actual_break_probability": 0.024608814108478556,
+        "certificate": 0.04837849864085538,
+        "conditional_error": 5.828670879282072e-16
+      },
+      {
+        "case": 36,
+        "physical_qubits": 7,
+        "beta": 20.0,
+        "actual_break_probability": 0.02465422876695604,
+        "certificate": 0.04837849864085538,
+        "conditional_error": 1.1379786002407855e-15
+      },
+      {
+        "case": 37,
+        "physical_qubits": 8,
+        "beta": 5.0,
+        "actual_break_probability": 0.0013178514968502462,
+        "certificate": 0.04847572478284702,
+        "conditional_error": 1.214306433183765e-16
+      },
+      {
+        "case": 37,
+        "physical_qubits": 8,
+        "beta": 10.0,
+        "actual_break_probability": 1.647510302663747e-05,
+        "certificate": 0.04847572478284699,
+        "conditional_error": 7.453889935837843e-20
+      },
+      {
+        "case": 37,
+        "physical_qubits": 8,
+        "beta": 20.0,
+        "actual_break_probability": 2.0270723913451227e-08,
+        "certificate": 0.04847572478284696,
+        "conditional_error": 1.1102230246251565e-16
+      },
+      {
+        "case": 38,
+        "physical_qubits": 6,
+        "beta": 5.0,
+        "actual_break_probability": 0.024395648897830344,
+        "certificate": 0.04818560380725759,
+        "conditional_error": 1.1657341758564144e-15
+      },
+      {
+        "case": 38,
+        "physical_qubits": 6,
+        "beta": 10.0,
+        "actual_break_probability": 0.02439024395271107,
+        "certificate": 0.04818560380725759,
+        "conditional_error": 4.0657581468206416e-20
+      },
+      {
+        "case": 38,
+        "physical_qubits": 6,
+        "beta": 20.0,
+        "actual_break_probability": 0.024390243902438824,
+        "certificate": 0.04818560380725759,
+        "conditional_error": 1.1102230246251565e-16
+      },
+      {
+        "case": 39,
+        "physical_qubits": 8,
+        "beta": 5.0,
+        "actual_break_probability": 0.0027718868942159668,
+        "certificate": 0.04847572478284703,
+        "conditional_error": 3.3306690738754696e-16
+      },
+      {
+        "case": 39,
+        "physical_qubits": 8,
+        "beta": 10.0,
+        "actual_break_probability": 8.591944458839126e-05,
+        "certificate": 0.048475724782847014,
+        "conditional_error": 1.1102230246251565e-16
+      },
+      {
+        "case": 39,
+        "physical_qubits": 8,
+        "beta": 20.0,
+        "actual_break_probability": 5.675760931837957e-07,
+        "certificate": 0.04847572478284702,
+        "conditional_error": 2.220446049250313e-16
+      },
+      {
+        "case": 40,
+        "physical_qubits": 9,
+        "beta": 5.0,
+        "actual_break_probability": 0.015609307310565819,
+        "certificate": 0.048534312393251185,
+        "conditional_error": 2.914335439641036e-16
+      },
+      {
+        "case": 40,
+        "physical_qubits": 9,
+        "beta": 10.0,
+        "actual_break_probability": 0.010960739680746337,
+        "certificate": 0.04853431239325119,
+        "conditional_error": 1.1102230246251565e-16
+      },
+      {
+        "case": 40,
+        "physical_qubits": 9,
+        "beta": 20.0,
+        "actual_break_probability": 0.009938790181680939,
+        "certificate": 0.048534312393251185,
+        "conditional_error": 1.1102230246251565e-16
+      },
+      {
+        "case": 41,
+        "physical_qubits": 9,
+        "beta": 5.0,
+        "actual_break_probability": 0.0020538586845551612,
+        "certificate": 0.048534312393251185,
+        "conditional_error": 1.1657341758564144e-15
+      },
+      {
+        "case": 41,
+        "physical_qubits": 9,
+        "beta": 10.0,
+        "actual_break_probability": 0.00035755299905924437,
+        "certificate": 0.048534312393251185,
+        "conditional_error": 2.3314683517128287e-15
+      },
+      {
+        "case": 41,
+        "physical_qubits": 9,
+        "beta": 20.0,
+        "actual_break_probability": 1.2726217323925325e-05,
+        "certificate": 0.04853431239325116,
+        "conditional_error": 4.496403249731884e-15
+      },
+      {
+        "case": 42,
+        "physical_qubits": 7,
+        "beta": 5.0,
+        "actual_break_probability": 0.006874698124458478,
+        "certificate": 0.0483784986408554,
+        "conditional_error": 1.1102230246251565e-16
+      },
+      {
+        "case": 42,
+        "physical_qubits": 7,
+        "beta": 10.0,
+        "actual_break_probability": 0.0012099444570479968,
+        "certificate": 0.04837849864085538,
+        "conditional_error": 6.071532165918825e-18
+      },
+      {
+        "case": 42,
+        "physical_qubits": 7,
+        "beta": 20.0,
+        "actual_break_probability": 4.2447675271987357e-05,
+        "certificate": 0.04837849864085538,
+        "conditional_error": 3.1170812458958252e-19
+      },
+      {
+        "case": 43,
+        "physical_qubits": 5,
+        "beta": 5.0,
+        "actual_break_probability": 0.04761904761904763,
+        "certificate": 0.04761904761904763,
+        "conditional_error": 2.220446049250313e-16
+      },
+      {
+        "case": 43,
+        "physical_qubits": 5,
+        "beta": 10.0,
+        "actual_break_probability": 0.047619047619047644,
+        "certificate": 0.04761904761904763,
+        "conditional_error": 6.071532165918825e-18
+      },
+      {
+        "case": 43,
+        "physical_qubits": 5,
+        "beta": 20.0,
+        "actual_break_probability": 0.047619047619047644,
+        "certificate": 0.04761904761904763,
+        "conditional_error": 1.1102230246251565e-16
+      },
+      {
+        "case": 44,
+        "physical_qubits": 9,
+        "beta": 5.0,
+        "actual_break_probability": 0.029434561677356214,
+        "certificate": 0.048534312393251185,
+        "conditional_error": 2.220446049250313e-16
+      },
+      {
+        "case": 44,
+        "physical_qubits": 9,
+        "beta": 10.0,
+        "actual_break_probability": 0.029409883511650466,
+        "certificate": 0.048534312393251185,
+        "conditional_error": 1.1102230246251565e-16
+      },
+      {
+        "case": 44,
+        "physical_qubits": 9,
+        "beta": 20.0,
+        "actual_break_probability": 0.029409852072405998,
+        "certificate": 0.048534312393251185,
+        "conditional_error": 8.228460455756013e-36
+      },
+      {
+        "case": 45,
+        "physical_qubits": 10,
+        "beta": 5.0,
+        "actual_break_probability": 0.02471244657057565,
+        "certificate": 0.048573476409957905,
+        "conditional_error": 3.3306690738754696e-16
+      },
+      {
+        "case": 45,
+        "physical_qubits": 10,
+        "beta": 10.0,
+        "actual_break_probability": 0.02458979444407571,
+        "certificate": 0.04857347640995793,
+        "conditional_error": 6.071532165918825e-18
+      },
+      {
+        "case": 45,
+        "physical_qubits": 10,
+        "beta": 20.0,
+        "actual_break_probability": 0.02458904890058256,
+        "certificate": 0.04857347640995793,
+        "conditional_error": 1.1102230246251565e-16
+      },
+      {
+        "case": 46,
+        "physical_qubits": 8,
+        "beta": 5.0,
+        "actual_break_probability": 0.006994506183698648,
+        "certificate": 0.048475724782847014,
+        "conditional_error": 9.992007221626409e-16
+      },
+      {
+        "case": 46,
+        "physical_qubits": 8,
+        "beta": 10.0,
+        "actual_break_probability": 0.0002538334979345669,
+        "certificate": 0.04847572478284703,
+        "conditional_error": 3.3306690738754696e-16
+      },
+      {
+        "case": 46,
+        "physical_qubits": 8,
+        "beta": 20.0,
+        "actual_break_probability": 1.631391188195892e-07,
+        "certificate": 0.048475724782847014,
+        "conditional_error": 8.40256683676266e-18
+      },
+      {
+        "case": 47,
+        "physical_qubits": 9,
+        "beta": 5.0,
+        "actual_break_probability": 0.004747696836280331,
+        "certificate": 0.048534312393251185,
+        "conditional_error": 1.1102230246251565e-16
+      },
+      {
+        "case": 47,
+        "physical_qubits": 9,
+        "beta": 10.0,
+        "actual_break_probability": 0.0001796885144961452,
+        "certificate": 0.04853431239325119,
+        "conditional_error": 1.1102230246251565e-16
+      },
+      {
+        "case": 47,
+        "physical_qubits": 9,
+        "beta": 20.0,
+        "actual_break_probability": 4.863910118680445e-07,
+        "certificate": 0.04853431239325123,
+        "conditional_error": 3.004450713244088e-32
+      },
+      {
+        "case": 48,
+        "physical_qubits": 8,
+        "beta": 5.0,
+        "actual_break_probability": 0.022698881038428896,
+        "certificate": 0.04847572478284702,
+        "conditional_error": 2.220446049250313e-16
+      },
+      {
+        "case": 48,
+        "physical_qubits": 8,
+        "beta": 10.0,
+        "actual_break_probability": 0.02449258386972107,
+        "certificate": 0.048475724782847014,
+        "conditional_error": 1.1102230246251565e-16
+      },
+      {
+        "case": 48,
+        "physical_qubits": 8,
+        "beta": 20.0,
+        "actual_break_probability": 0.02453892659291703,
+        "certificate": 0.04847572478284694,
+        "conditional_error": 3.3306690738754696e-16
+      },
+      {
+        "case": 49,
+        "physical_qubits": 7,
+        "beta": 5.0,
+        "actual_break_probability": 8.694137426135699e-05,
+        "certificate": 0.04837849864085538,
+        "conditional_error": 4.163336342344337e-17
+      },
+      {
+        "case": 49,
+        "physical_qubits": 7,
+        "beta": 10.0,
+        "actual_break_probability": 9.607871958869752e-08,
+        "certificate": 0.04837849864085538,
+        "conditional_error": 6.071532165918825e-18
+      },
+      {
+        "case": 49,
+        "physical_qubits": 7,
+        "beta": 20.0,
+        "actual_break_probability": 1.3590773304105663e-13,
+        "certificate": 0.04837849864085546,
+        "conditional_error": 3.3306690738754696e-16
+      },
+      {
+        "case": 50,
+        "physical_qubits": 11,
+        "beta": 5.0,
+        "actual_break_probability": 0.015209471204566059,
+        "certificate": 0.04860150263815803,
+        "conditional_error": 1.1102230246251565e-16
+      },
+      {
+        "case": 50,
+        "physical_qubits": 11,
+        "beta": 10.0,
+        "actual_break_probability": 0.014135847144829248,
+        "certificate": 0.048601502638158024,
+        "conditional_error": 1.1102230246251565e-16
+      },
+      {
+        "case": 50,
+        "physical_qubits": 11,
+        "beta": 20.0,
+        "actual_break_probability": 0.014134097888818947,
+        "certificate": 0.04860150263815801,
+        "conditional_error": 1.9595030506929163e-56
+      },
+      {
+        "case": 51,
+        "physical_qubits": 6,
+        "beta": 5.0,
+        "actual_break_probability": 4.609181567265385e-05,
+        "certificate": 0.04818560380725759,
+        "conditional_error": 1.5265566588595902e-16
+      },
+      {
+        "case": 51,
+        "physical_qubits": 6,
+        "beta": 10.0,
+        "actual_break_probability": 7.647905184082561e-09,
+        "certificate": 0.04818560380725759,
+        "conditional_error": 1.1102230246251565e-16
+      },
+      {
+        "case": 51,
+        "physical_qubits": 6,
+        "beta": 20.0,
+        "actual_break_probability": 2.3394057471020736e-15,
+        "certificate": 0.04818560380725755,
+        "conditional_error": 1.1102230246251565e-16
+      },
+      {
+        "case": 52,
+        "physical_qubits": 8,
+        "beta": 5.0,
+        "actual_break_probability": 0.012400195063973924,
+        "certificate": 0.048475724782847,
+        "conditional_error": 1.1102230246251565e-16
+      },
+      {
+        "case": 52,
+        "physical_qubits": 8,
+        "beta": 10.0,
+        "actual_break_probability": 0.012345679560204378,
+        "certificate": 0.04847572478284705,
+        "conditional_error": 5.551115123125783e-17
+      },
+      {
+        "case": 52,
+        "physical_qubits": 8,
+        "beta": 20.0,
+        "actual_break_probability": 0.0123456790123459,
+        "certificate": 0.04847572478284706,
+        "conditional_error": 4.664361584062837e-35
+      },
+      {
+        "case": 53,
+        "physical_qubits": 9,
+        "beta": 5.0,
+        "actual_break_probability": 0.019813030279268576,
+        "certificate": 0.04853431239325122,
+        "conditional_error": 1.1102230246251565e-16
+      },
+      {
+        "case": 53,
+        "physical_qubits": 9,
+        "beta": 10.0,
+        "actual_break_probability": 0.01970395657057049,
+        "certificate": 0.04853431239325122,
+        "conditional_error": 2.220446049250313e-16
+      },
+      {
+        "case": 53,
+        "physical_qubits": 9,
+        "beta": 20.0,
+        "actual_break_probability": 0.019703950593078806,
+        "certificate": 0.04853431239325132,
+        "conditional_error": 2.220446049250313e-16
+      },
+      {
+        "case": 54,
+        "physical_qubits": 8,
+        "beta": 5.0,
+        "actual_break_probability": 0.0015512405123255725,
+        "certificate": 0.048475724782847,
+        "conditional_error": 2.275957200481571e-15
+      },
+      {
+        "case": 54,
+        "physical_qubits": 8,
+        "beta": 10.0,
+        "actual_break_probability": 1.677924686180519e-05,
+        "certificate": 0.04847572478284699,
+        "conditional_error": 2.439454888092385e-19
+      },
+      {
+        "case": 54,
+        "physical_qubits": 8,
+        "beta": 20.0,
+        "actual_break_probability": 2.0283639116996716e-08,
+        "certificate": 0.04847572478284696,
+        "conditional_error": 3.7223127564886245e-24
+      },
+      {
+        "case": 55,
+        "physical_qubits": 7,
+        "beta": 5.0,
+        "actual_break_probability": 0.0011715401502750068,
+        "certificate": 0.048378498640855444,
+        "conditional_error": 2.220446049250313e-16
+      },
+      {
+        "case": 55,
+        "physical_qubits": 7,
+        "beta": 10.0,
+        "actual_break_probability": 3.795130483669958e-06,
+        "certificate": 0.048378498640855416,
+        "conditional_error": 2.220446049250313e-16
+      },
+      {
+        "case": 55,
+        "physical_qubits": 7,
+        "beta": 20.0,
+        "actual_break_probability": 6.927766348824617e-11,
+        "certificate": 0.048378498640855444,
+        "conditional_error": 3.004450713244088e-32
+      },
+      {
+        "case": 56,
+        "physical_qubits": 7,
+        "beta": 5.0,
+        "actual_break_probability": 0.0008871252989676001,
+        "certificate": 0.048378498640855416,
+        "conditional_error": 2.220446049250313e-16
+      },
+      {
+        "case": 56,
+        "physical_qubits": 7,
+        "beta": 10.0,
+        "actual_break_probability": 2.2722871748582935e-06,
+        "certificate": 0.048378498640855416,
+        "conditional_error": 1.1102230246251565e-16
+      },
+      {
+        "case": 56,
+        "physical_qubits": 7,
+        "beta": 20.0,
+        "actual_break_probability": 1.0362707851314296e-10,
+        "certificate": 0.048378498640855444,
+        "conditional_error": 1.1102230246251565e-16
+      },
+      {
+        "case": 57,
+        "physical_qubits": 8,
+        "beta": 5.0,
+        "actual_break_probability": 0.013834438734209906,
+        "certificate": 0.048475724782847014,
+        "conditional_error": 3.3306690738754696e-16
+      },
+      {
+        "case": 57,
+        "physical_qubits": 8,
+        "beta": 10.0,
+        "actual_break_probability": 0.012445028041171672,
+        "certificate": 0.048475724782847014,
+        "conditional_error": 6.071532165918825e-18
+      },
+      {
+        "case": 57,
+        "physical_qubits": 8,
+        "beta": 20.0,
+        "actual_break_probability": 0.012346259525478626,
+        "certificate": 0.048475724782847014,
+        "conditional_error": 1.1102230246251565e-16
+      },
+      {
+        "case": 58,
+        "physical_qubits": 6,
+        "beta": 5.0,
+        "actual_break_probability": 0.020926708886827215,
+        "certificate": 0.0481856038072576,
+        "conditional_error": 2.7755575615628914e-17
+      },
+      {
+        "case": 58,
+        "physical_qubits": 6,
+        "beta": 10.0,
+        "actual_break_probability": 0.02416709817984211,
+        "certificate": 0.0481856038072576,
+        "conditional_error": 1.1102230246251565e-16
+      },
+      {
+        "case": 58,
+        "physical_qubits": 6,
+        "beta": 20.0,
+        "actual_break_probability": 0.024389163642616195,
+        "certificate": 0.0481856038072576,
+        "conditional_error": 1.1102230246251565e-16
+      },
+      {
+        "case": 59,
+        "physical_qubits": 10,
+        "beta": 5.0,
+        "actual_break_probability": 0.0008857476624592831,
+        "certificate": 0.048573476409957905,
+        "conditional_error": 2.220446049250313e-16
+      },
+      {
+        "case": 59,
+        "physical_qubits": 10,
+        "beta": 10.0,
+        "actual_break_probability": 3.3372096785832298e-06,
+        "certificate": 0.048573476409957905,
+        "conditional_error": 7.182839392716467e-19
+      },
+      {
+        "case": 59,
+        "physical_qubits": 10,
+        "beta": 20.0,
+        "actual_break_probability": 4.986553233024428e-10,
+        "certificate": 0.04857347640995789,
+        "conditional_error": 1.1102230246251565e-16
+      },
+      {
+        "case": 60,
+        "physical_qubits": 10,
+        "beta": 5.0,
+        "actual_break_probability": 0.008466935878772999,
+        "certificate": 0.04857347640995792,
+        "conditional_error": 5.551115123125783e-17
+      },
+      {
+        "case": 60,
+        "physical_qubits": 10,
+        "beta": 10.0,
+        "actual_break_probability": 0.0058206844690176255,
+        "certificate": 0.04857347640995789,
+        "conditional_error": 7.279189390466644e-22
+      },
+      {
+        "case": 60,
+        "physical_qubits": 10,
+        "beta": 20.0,
+        "actual_break_probability": 0.005535408466960271,
+        "certificate": 0.048573476409957975,
+        "conditional_error": 4.480729941655347e-28
+      },
+      {
+        "case": 61,
+        "physical_qubits": 4,
+        "beta": 5.0,
+        "actual_break_probability": 0.0,
+        "certificate": -0.0,
+        "conditional_error": 1.3877787807814457e-17
+      },
+      {
+        "case": 61,
+        "physical_qubits": 4,
+        "beta": 10.0,
+        "actual_break_probability": 0.0,
+        "certificate": -0.0,
+        "conditional_error": 3.0357660829594124e-18
+      },
+      {
+        "case": 61,
+        "physical_qubits": 4,
+        "beta": 20.0,
+        "actual_break_probability": 0.0,
+        "certificate": -0.0,
+        "conditional_error": 4.0657581468206416e-20
+      },
+      {
+        "case": 62,
+        "physical_qubits": 6,
+        "beta": 5.0,
+        "actual_break_probability": 2.2700034331736243e-06,
+        "certificate": 0.048185603807257574,
+        "conditional_error": 1.1102230246251565e-16
+      },
+      {
+        "case": 62,
+        "physical_qubits": 6,
+        "beta": 10.0,
+        "actual_break_probability": 1.0305768111753261e-10,
+        "certificate": 0.048185603807257504,
+        "conditional_error": 2.046300565911438e-34
+      },
+      {
+        "case": 62,
+        "physical_qubits": 6,
+        "beta": 20.0,
+        "actual_break_probability": 2.1241771277307514e-19,
+        "certificate": 0.0481856038072574,
+        "conditional_error": 5.605193857299268e-45
+      },
+      {
+        "case": 63,
+        "physical_qubits": 6,
+        "beta": 5.0,
+        "actual_break_probability": 0.02216516629973154,
+        "certificate": 0.04818560380725759,
+        "conditional_error": 2.3592239273284576e-16
+      },
+      {
+        "case": 63,
+        "physical_qubits": 6,
+        "beta": 10.0,
+        "actual_break_probability": 0.024337758037700802,
+        "certificate": 0.04818560380725759,
+        "conditional_error": 2.220446049250313e-16
+      },
+      {
+        "case": 63,
+        "physical_qubits": 6,
+        "beta": 20.0,
+        "actual_break_probability": 0.024390214872404153,
+        "certificate": 0.0481856038072576,
+        "conditional_error": 1.7364175418713157e-20
+      },
+      {
+        "case": 64,
+        "physical_qubits": 6,
+        "beta": 5.0,
+        "actual_break_probability": 0.0020501093161941993,
+        "certificate": 0.04818560380725758,
+        "conditional_error": 1.1102230246251565e-16
+      },
+      {
+        "case": 64,
+        "physical_qubits": 6,
+        "beta": 10.0,
+        "actual_break_probability": 0.00016842040749864148,
+        "certificate": 0.04818560380725759,
+        "conditional_error": 1.1102230246251565e-16
+      },
+      {
+        "case": 64,
+        "physical_qubits": 6,
+        "beta": 20.0,
+        "actual_break_probability": 1.1349969558541332e-06,
+        "certificate": 0.04818560380725759,
+        "conditional_error": 8.131516293641283e-20
+      },
+      {
+        "case": 65,
+        "physical_qubits": 9,
+        "beta": 5.0,
+        "actual_break_probability": 0.01250768931316909,
+        "certificate": 0.048534312393251185,
+        "conditional_error": 3.7470027081099033e-16
+      },
+      {
+        "case": 65,
+        "physical_qubits": 9,
+        "beta": 10.0,
+        "actual_break_probability": 0.010254077962441606,
+        "certificate": 0.048534312393251185,
+        "conditional_error": 1.1102230246251565e-16
+      },
+      {
+        "case": 65,
+        "physical_qubits": 9,
+        "beta": 20.0,
+        "actual_break_probability": 0.00991359027332433,
+        "certificate": 0.04853431239325123,
+        "conditional_error": 2.220446049250313e-16
+      },
+      {
+        "case": 66,
+        "physical_qubits": 9,
+        "beta": 5.0,
+        "actual_break_probability": 0.002625564964704937,
+        "certificate": 0.04853431239325119,
+        "conditional_error": 6.661338147750939e-16
+      },
+      {
+        "case": 66,
+        "physical_qubits": 9,
+        "beta": 10.0,
+        "actual_break_probability": 0.00021307172557879584,
+        "certificate": 0.048534312393251185,
+        "conditional_error": 3.3306690738754696e-16
+      },
+      {
+        "case": 66,
+        "physical_qubits": 9,
+        "beta": 20.0,
+        "actual_break_probability": 1.4356718363250347e-06,
+        "certificate": 0.048534312393251275,
+        "conditional_error": 1.0028870095490916e-18
+      },
+      {
+        "case": 67,
+        "physical_qubits": 8,
+        "beta": 5.0,
+        "actual_break_probability": 0.0012459514349296298,
+        "certificate": 0.048475724782847014,
+        "conditional_error": 1.1102230246251565e-16
+      },
+      {
+        "case": 67,
+        "physical_qubits": 8,
+        "beta": 10.0,
+        "actual_break_probability": 3.555528012662162e-05,
+        "certificate": 0.048475724782847014,
+        "conditional_error": 1.1102230246251565e-16
+      },
+      {
+        "case": 67,
+        "physical_qubits": 8,
+        "beta": 20.0,
+        "actual_break_probability": 4.123893125792799e-08,
+        "certificate": 0.048475724782847014,
+        "conditional_error": 2.895132143935597e-23
+      },
+      {
+        "case": 68,
+        "physical_qubits": 7,
+        "beta": 5.0,
+        "actual_break_probability": 0.00014102149350583306,
+        "certificate": 0.04837849864085546,
+        "conditional_error": 2.220446049250313e-16
+      },
+      {
+        "case": 68,
+        "physical_qubits": 7,
+        "beta": 10.0,
+        "actual_break_probability": 1.2461941018395164e-08,
+        "certificate": 0.04837849864085538,
+        "conditional_error": 2.9778502051908996e-22
+      },
+      {
+        "case": 68,
+        "physical_qubits": 7,
+        "beta": 20.0,
+        "actual_break_probability": 2.2961222950391934e-16,
+        "certificate": 0.04837849864085546,
+        "conditional_error": 1.0014835710813626e-31
+      },
+      {
+        "case": 69,
+        "physical_qubits": 11,
+        "beta": 5.0,
+        "actual_break_probability": 0.0021509079187336066,
+        "certificate": 0.048601502638158066,
+        "conditional_error": 7.771561172376096e-16
+      },
+      {
+        "case": 69,
+        "physical_qubits": 11,
+        "beta": 10.0,
+        "actual_break_probability": 1.234873779251686e-05,
+        "certificate": 0.048601502638158045,
+        "conditional_error": 1.2212453270876722e-15
+      },
+      {
+        "case": 69,
+        "physical_qubits": 11,
+        "beta": 20.0,
+        "actual_break_probability": 5.413160487090015e-10,
+        "certificate": 0.04860150263815801,
+        "conditional_error": 3.3306690738754696e-16
+      },
+      {
+        "case": 70,
+        "physical_qubits": 9,
+        "beta": 5.0,
+        "actual_break_probability": 0.010779778131912781,
+        "certificate": 0.048534312393251185,
+        "conditional_error": 1.1102230246251565e-16
+      },
+      {
+        "case": 70,
+        "physical_qubits": 9,
+        "beta": 10.0,
+        "actual_break_probability": 0.009968145599952016,
+        "certificate": 0.048534312393251185,
+        "conditional_error": 1.1102230246251565e-16
+      },
+      {
+        "case": 70,
+        "physical_qubits": 9,
+        "beta": 20.0,
+        "actual_break_probability": 0.009901439623467326,
+        "certificate": 0.0485343123932512,
+        "conditional_error": 1.1102230246251565e-16
+      },
+      {
+        "case": 71,
+        "physical_qubits": 7,
+        "beta": 5.0,
+        "actual_break_probability": 0.0018055791249365547,
+        "certificate": 0.04837849864085538,
+        "conditional_error": 1.1102230246251565e-16
+      },
+      {
+        "case": 71,
+        "physical_qubits": 7,
+        "beta": 10.0,
+        "actual_break_probability": 0.00013259362768927184,
+        "certificate": 0.04837849864085538,
+        "conditional_error": 1.1102230246251565e-16
+      },
+      {
+        "case": 71,
+        "physical_qubits": 7,
+        "beta": 20.0,
+        "actual_break_probability": 7.836225838589151e-07,
+        "certificate": 0.04837849864085546,
+        "conditional_error": 1.1102230246251565e-16
+      },
+      {
+        "case": 72,
+        "physical_qubits": 10,
+        "beta": 5.0,
+        "actual_break_probability": 0.016137582463612344,
+        "certificate": 0.04857347640995789,
+        "conditional_error": 2.220446049250313e-16
+      },
+      {
+        "case": 72,
+        "physical_qubits": 10,
+        "beta": 10.0,
+        "actual_break_probability": 0.016377395349922254,
+        "certificate": 0.04857347640995789,
+        "conditional_error": 1.1102230246251565e-16
+      },
+      {
+        "case": 72,
+        "physical_qubits": 10,
+        "beta": 20.0,
+        "actual_break_probability": 0.016459916794573225,
+        "certificate": 0.048573476409957905,
+        "conditional_error": 1.1102230246251565e-16
+      },
+      {
+        "case": 73,
+        "physical_qubits": 8,
+        "beta": 5.0,
+        "actual_break_probability": 0.004136553413028953,
+        "certificate": 0.048475724782847014,
+        "conditional_error": 4.163336342344337e-17
+      },
+      {
+        "case": 73,
+        "physical_qubits": 8,
+        "beta": 10.0,
+        "actual_break_probability": 0.0005263449709135442,
+        "certificate": 0.048475724782847014,
+        "conditional_error": 5.377642775528102e-17
+      },
+      {
+        "case": 73,
+        "physical_qubits": 8,
+        "beta": 20.0,
+        "actual_break_probability": 1.6474402312291454e-05,
+        "certificate": 0.048475724782847014,
+        "conditional_error": 3.1848438816761693e-19
+      },
+      {
+        "case": 74,
+        "physical_qubits": 10,
+        "beta": 5.0,
+        "actual_break_probability": 0.01746101622817354,
+        "certificate": 0.04857347640995788,
+        "conditional_error": 2.3418766925686896e-17
+      },
+      {
+        "case": 74,
+        "physical_qubits": 10,
+        "beta": 10.0,
+        "actual_break_probability": 0.016500865119604496,
+        "certificate": 0.04857347640995788,
+        "conditional_error": 4.87890977618477e-19
+      },
+      {
+        "case": 74,
+        "physical_qubits": 10,
+        "beta": 20.0,
+        "actual_break_probability": 0.01646067719602355,
+        "certificate": 0.04857347640995788,
+        "conditional_error": 2.220446049250313e-16
+      },
+      {
+        "case": 75,
+        "physical_qubits": 6,
+        "beta": 5.0,
+        "actual_break_probability": 0.024827700643359818,
+        "certificate": 0.0481856038072576,
+        "conditional_error": 1.1102230246251565e-16
+      },
+      {
+        "case": 75,
+        "physical_qubits": 6,
+        "beta": 10.0,
+        "actual_break_probability": 0.02440577605621165,
+        "certificate": 0.0481856038072576,
+        "conditional_error": 5.293955920339377e-22
+      },
+      {
+        "case": 75,
+        "physical_qubits": 6,
+        "beta": 20.0,
+        "actual_break_probability": 0.024390263653648582,
+        "certificate": 0.0481856038072576,
+        "conditional_error": 5.551115123125783e-17
+      },
+      {
+        "case": 76,
+        "physical_qubits": 8,
+        "beta": 5.0,
+        "actual_break_probability": 0.013416470479553737,
+        "certificate": 0.04847572478284702,
+        "conditional_error": 5.551115123125783e-16
+      },
+      {
+        "case": 76,
+        "physical_qubits": 8,
+        "beta": 10.0,
+        "actual_break_probability": 0.012348966899899793,
+        "certificate": 0.04847572478284705,
+        "conditional_error": 1.1102230246251565e-16
+      },
+      {
+        "case": 76,
+        "physical_qubits": 8,
+        "beta": 20.0,
+        "actual_break_probability": 0.01234567904809738,
+        "certificate": 0.04847572478284706,
+        "conditional_error": 8.61940727125976e-18
+      },
+      {
+        "case": 77,
+        "physical_qubits": 10,
+        "beta": 5.0,
+        "actual_break_probability": 0.0018882255413545852,
+        "certificate": 0.04857347640995793,
+        "conditional_error": 2.220446049250313e-16
+      },
+      {
+        "case": 77,
+        "physical_qubits": 10,
+        "beta": 10.0,
+        "actual_break_probability": 0.00010792969852278038,
+        "certificate": 0.04857347640995795,
+        "conditional_error": 1.1102230246251565e-16
+      },
+      {
+        "case": 77,
+        "physical_qubits": 10,
+        "beta": 20.0,
+        "actual_break_probability": 3.783326048888758e-07,
+        "certificate": 0.048573476409957995,
+        "conditional_error": 1.2094840050751841e-31
+      },
+      {
+        "case": 78,
+        "physical_qubits": 9,
+        "beta": 5.0,
+        "actual_break_probability": 0.02040867784446258,
+        "certificate": 0.048534312393251185,
+        "conditional_error": 2.220446049250313e-16
+      },
+      {
+        "case": 78,
+        "physical_qubits": 9,
+        "beta": 10.0,
+        "actual_break_probability": 0.01976915524024589,
+        "certificate": 0.048534312393251205,
+        "conditional_error": 7.318364664277155e-19
+      },
+      {
+        "case": 78,
+        "physical_qubits": 9,
+        "beta": 20.0,
+        "actual_break_probability": 0.01970439560683352,
+        "certificate": 0.048534312393251185,
+        "conditional_error": 1.1102230246251565e-16
+      },
+      {
+        "case": 79,
+        "physical_qubits": 8,
+        "beta": 5.0,
+        "actual_break_probability": 0.002881649808414113,
+        "certificate": 0.048475724782847014,
+        "conditional_error": 2.220446049250313e-16
+      },
+      {
+        "case": 79,
+        "physical_qubits": 8,
+        "beta": 10.0,
+        "actual_break_probability": 0.00020105735580893894,
+        "certificate": 0.048475724782847014,
+        "conditional_error": 2.220446049250313e-16
+      },
+      {
+        "case": 79,
+        "physical_qubits": 8,
+        "beta": 20.0,
+        "actual_break_probability": 1.1825783446735501e-06,
+        "certificate": 0.048475724782847014,
+        "conditional_error": 3.2526065174565133e-19
+      },
+      {
+        "case": 80,
+        "physical_qubits": 7,
+        "beta": 5.0,
+        "actual_break_probability": 0.008316646779656024,
+        "certificate": 0.048378498640855416,
+        "conditional_error": 3.3306690738754696e-16
+      },
+      {
+        "case": 80,
+        "physical_qubits": 7,
+        "beta": 10.0,
+        "actual_break_probability": 0.0014045094047821203,
+        "certificate": 0.0483784986408554,
+        "conditional_error": 1.1102230246251565e-16
+      },
+      {
+        "case": 80,
+        "physical_qubits": 7,
+        "beta": 20.0,
+        "actual_break_probability": 4.394359243700582e-05,
+        "certificate": 0.04837849864085538,
+        "conditional_error": 7.182839392716467e-19
+      },
+      {
+        "case": 81,
+        "physical_qubits": 8,
+        "beta": 5.0,
+        "actual_break_probability": 0.02882194648717732,
+        "certificate": 0.04847572478284703,
+        "conditional_error": 1.1102230246251565e-16
+      },
+      {
+        "case": 81,
+        "physical_qubits": 8,
+        "beta": 10.0,
+        "actual_break_probability": 0.025258680351610333,
+        "certificate": 0.04847572478284703,
+        "conditional_error": 1.1102230246251565e-16
+      },
+      {
+        "case": 81,
+        "physical_qubits": 8,
+        "beta": 20.0,
+        "actual_break_probability": 0.02442128296155495,
+        "certificate": 0.04847572478284705,
+        "conditional_error": 7.444625512977249e-24
+      },
+      {
+        "case": 82,
+        "physical_qubits": 7,
+        "beta": 5.0,
+        "actual_break_probability": 2.8610503482103264e-05,
+        "certificate": 0.048378498640855416,
+        "conditional_error": 1.1102230246251565e-16
+      },
+      {
+        "case": 82,
+        "physical_qubits": 7,
+        "beta": 10.0,
+        "actual_break_probability": 1.5330173702769318e-08,
+        "certificate": 0.048378498640855465,
+        "conditional_error": 7.444625512977249e-24
+      },
+      {
+        "case": 82,
+        "physical_qubits": 7,
+        "beta": 20.0,
+        "actual_break_probability": 4.678882300215787e-15,
+        "certificate": 0.04837849864085538,
+        "conditional_error": 9.090389337507753e-32
+      },
+      {
+        "case": 83,
+        "physical_qubits": 8,
+        "beta": 5.0,
+        "actual_break_probability": 0.0007565321708606702,
+        "certificate": 0.048475724782847014,
+        "conditional_error": 1.1102230246251565e-16
+      },
+      {
+        "case": 83,
+        "physical_qubits": 8,
+        "beta": 10.0,
+        "actual_break_probability": 1.590769563725199e-05,
+        "certificate": 0.048475724782847014,
+        "conditional_error": 1.1102230246251565e-16
+      },
+      {
+        "case": 83,
+        "physical_qubits": 8,
+        "beta": 20.0,
+        "actual_break_probability": 2.0244959494372818e-08,
+        "certificate": 0.048475724782847014,
+        "conditional_error": 1.509929076399593e-31
+      },
+      {
+        "case": 84,
+        "physical_qubits": 7,
+        "beta": 5.0,
+        "actual_break_probability": 0.03257424708480524,
+        "certificate": 0.048378498640855395,
+        "conditional_error": 5.551115123125783e-17
+      },
+      {
+        "case": 84,
+        "physical_qubits": 7,
+        "beta": 10.0,
+        "actual_break_probability": 0.0325185123561521,
+        "certificate": 0.048378498640855416,
+        "conditional_error": 5.551115123125783e-17
+      },
+      {
+        "case": 84,
+        "physical_qubits": 7,
+        "beta": 20.0,
+        "actual_break_probability": 0.03251814030176001,
+        "certificate": 0.048378498640855444,
+        "conditional_error": 5.551115123125783e-17
+      },
+      {
+        "case": 85,
+        "physical_qubits": 9,
+        "beta": 5.0,
+        "actual_break_probability": 0.023751649860754724,
+        "certificate": 0.048534312393251185,
+        "conditional_error": 8.131516293641283e-20
+      },
+      {
+        "case": 85,
+        "physical_qubits": 9,
+        "beta": 10.0,
+        "actual_break_probability": 0.020415706087202234,
+        "certificate": 0.048534312393251185,
+        "conditional_error": 7.031035206700735e-24
+      },
+      {
+        "case": 85,
+        "physical_qubits": 9,
+        "beta": 20.0,
+        "actual_break_probability": 0.01972891746968086,
+        "certificate": 0.048534312393251185,
+        "conditional_error": 1.2094840050751841e-31
+      },
+      {
+        "case": 86,
+        "physical_qubits": 8,
+        "beta": 5.0,
+        "actual_break_probability": 0.002841598786665909,
+        "certificate": 0.048475724782847014,
+        "conditional_error": 1.1102230246251565e-16
+      },
+      {
+        "case": 86,
+        "physical_qubits": 8,
+        "beta": 10.0,
+        "actual_break_probability": 9.351021033973686e-05,
+        "certificate": 0.048475724782847014,
+        "conditional_error": 1.1102230246251565e-16
+      },
+      {
+        "case": 86,
+        "physical_qubits": 8,
+        "beta": 20.0,
+        "actual_break_probability": 5.682210182197251e-07,
+        "certificate": 0.04847572478284691,
+        "conditional_error": 1.1102230246251565e-16
+      },
+      {
+        "case": 87,
+        "physical_qubits": 6,
+        "beta": 5.0,
+        "actual_break_probability": 0.0009238050777268128,
+        "certificate": 0.0481856038072576,
+        "conditional_error": 1.1102230246251565e-16
+      },
+      {
+        "case": 87,
+        "physical_qubits": 6,
+        "beta": 10.0,
+        "actual_break_probability": 3.1856333041868505e-05,
+        "certificate": 0.0481856038072576,
+        "conditional_error": 9.855081516745056e-26
+      },
+      {
+        "case": 87,
+        "physical_qubits": 6,
+        "beta": 20.0,
+        "actual_break_probability": 4.048998538569372e-08,
+        "certificate": 0.0481856038072576,
+        "conditional_error": 1.234039479623007e-40
+      },
+      {
+        "case": 88,
+        "physical_qubits": 8,
+        "beta": 5.0,
+        "actual_break_probability": 9.312224769017136e-06,
+        "certificate": 0.04847572478284699,
+        "conditional_error": 1.1102230246251565e-16
+      },
+      {
+        "case": 88,
+        "physical_qubits": 8,
+        "beta": 10.0,
+        "actual_break_probability": 2.668587944447696e-11,
+        "certificate": 0.04847572478284696,
+        "conditional_error": 3.004450713244088e-32
+      },
+      {
+        "case": 88,
+        "physical_qubits": 8,
+        "beta": 20.0,
+        "actual_break_probability": 5.317201090249996e-20,
+        "certificate": 0.04847572478284688,
+        "conditional_error": 7.697562365065523e-49
+      },
+      {
+        "case": 89,
+        "physical_qubits": 5,
+        "beta": 5.0,
+        "actual_break_probability": 0.0003390219881065546,
+        "certificate": 0.0476190476190476,
+        "conditional_error": 1.1102230246251565e-16
+      },
+      {
+        "case": 89,
+        "physical_qubits": 5,
+        "beta": 10.0,
+        "actual_break_probability": 2.270094383130633e-06,
+        "certificate": 0.04761904761904763,
+        "conditional_error": 1.1102230246251565e-16
+      },
+      {
+        "case": 89,
+        "physical_qubits": 5,
+        "beta": 20.0,
+        "actual_break_probability": 1.0305768132578242e-10,
+        "certificate": 0.0476190476190476,
+        "conditional_error": 1.1102230246251565e-16
+      },
+      {
+        "case": 90,
+        "physical_qubits": 9,
+        "beta": 5.0,
+        "actual_break_probability": 0.01361190034312321,
+        "certificate": 0.048534312393251205,
+        "conditional_error": 3.3306690738754696e-16
+      },
+      {
+        "case": 90,
+        "physical_qubits": 9,
+        "beta": 10.0,
+        "actual_break_probability": 0.010339141305691685,
+        "certificate": 0.048534312393251185,
+        "conditional_error": 3.3306690738754696e-16
+      },
+      {
+        "case": 90,
+        "physical_qubits": 9,
+        "beta": 20.0,
+        "actual_break_probability": 0.009909326032515684,
+        "certificate": 0.04853431239325116,
+        "conditional_error": 1.3444106938820255e-17
+      },
+      {
+        "case": 91,
+        "physical_qubits": 9,
+        "beta": 5.0,
+        "actual_break_probability": 0.029552010818887434,
+        "certificate": 0.048534312393251185,
+        "conditional_error": 1.1102230246251565e-16
+      },
+      {
+        "case": 91,
+        "physical_qubits": 9,
+        "beta": 10.0,
+        "actual_break_probability": 0.02941074371061344,
+        "certificate": 0.048534312393251185,
+        "conditional_error": 2.3418766925686896e-17
+      },
+      {
+        "case": 91,
+        "physical_qubits": 9,
+        "beta": 20.0,
+        "actual_break_probability": 0.029409852112568174,
+        "certificate": 0.048534312393251205,
+        "conditional_error": 1.1102230246251565e-16
+      },
+      {
+        "case": 92,
+        "physical_qubits": 6,
+        "beta": 5.0,
+        "actual_break_probability": 8.128502546689128e-07,
+        "certificate": 0.048185603807257574,
+        "conditional_error": 5.551115123125783e-16
+      },
+      {
+        "case": 92,
+        "physical_qubits": 6,
+        "beta": 10.0,
+        "actual_break_probability": 1.0045195847800765e-12,
+        "certificate": 0.0481856038072576,
+        "conditional_error": 6.071532165918825e-18
+      },
+      {
+        "case": 92,
+        "physical_qubits": 6,
+        "beta": 20.0,
+        "actual_break_probability": 1.0356326045070543e-23,
+        "certificate": 0.0481856038072576,
+        "conditional_error": 8.131516293641283e-20
+      },
+      {
+        "case": 93,
+        "physical_qubits": 7,
+        "beta": 5.0,
+        "actual_break_probability": 0.0012526791243190783,
+        "certificate": 0.048378498640855395,
+        "conditional_error": 1.1102230246251565e-16
+      },
+      {
+        "case": 93,
+        "physical_qubits": 7,
+        "beta": 10.0,
+        "actual_break_probability": 0.00011152548515162325,
+        "certificate": 0.0483784986408554,
+        "conditional_error": 1.1102230246251565e-16
+      },
+      {
+        "case": 93,
+        "physical_qubits": 7,
+        "beta": 20.0,
+        "actual_break_probability": 7.566305694431701e-07,
+        "certificate": 0.04837849864085546,
+        "conditional_error": 1.1102230246251565e-16
+      },
+      {
+        "case": 94,
+        "physical_qubits": 6,
+        "beta": 5.0,
+        "actual_break_probability": 0.00016962022164747242,
+        "certificate": 0.04818560380725758,
+        "conditional_error": 1.1102230246251565e-16
+      },
+      {
+        "case": 94,
+        "physical_qubits": 6,
+        "beta": 10.0,
+        "actual_break_probability": 1.1350493077977259e-06,
+        "certificate": 0.04818560380725759,
+        "conditional_error": 5.551115123125783e-17
+      },
+      {
+        "case": 94,
+        "physical_qubits": 6,
+        "beta": 20.0,
+        "actual_break_probability": 5.152884066687809e-11,
+        "certificate": 0.04818560380725755,
+        "conditional_error": 1.1102230246251565e-16
+      },
+      {
+        "case": 95,
+        "physical_qubits": 8,
+        "beta": 5.0,
+        "actual_break_probability": 0.017155190319309625,
+        "certificate": 0.048475724782847014,
+        "conditional_error": 1.1102230246251565e-16
+      },
+      {
+        "case": 95,
+        "physical_qubits": 8,
+        "beta": 10.0,
+        "actual_break_probability": 0.013236646445594632,
+        "certificate": 0.048475724782847014,
+        "conditional_error": 2.220446049250313e-16
+      },
+      {
+        "case": 95,
+        "physical_qubits": 8,
+        "beta": 20.0,
+        "actual_break_probability": 0.012377120414988134,
+        "certificate": 0.048475724782847014,
+        "conditional_error": 1.1102230246251565e-16
+      },
+      {
+        "case": 96,
+        "physical_qubits": 8,
+        "beta": 5.0,
+        "actual_break_probability": 0.0030128443958222758,
+        "certificate": 0.04847572478284703,
+        "conditional_error": 2.220446049250313e-16
+      },
+      {
+        "case": 96,
+        "physical_qubits": 8,
+        "beta": 10.0,
+        "actual_break_probability": 0.00012250296976747105,
+        "certificate": 0.04847572478284705,
+        "conditional_error": 8.673617379884035e-19
+      },
+      {
+        "case": 96,
+        "physical_qubits": 8,
+        "beta": 20.0,
+        "actual_break_probability": 3.26283147736155e-07,
+        "certificate": 0.04847572478284706,
+        "conditional_error": 1.1102230246251565e-16
+      },
+      {
+        "case": 97,
+        "physical_qubits": 8,
+        "beta": 5.0,
+        "actual_break_probability": 0.00048645188961037885,
+        "certificate": 0.048475724782847014,
+        "conditional_error": 8.673617379884035e-18
+      },
+      {
+        "case": 97,
+        "physical_qubits": 8,
+        "beta": 10.0,
+        "actual_break_probability": 1.1776186855246722e-06,
+        "certificate": 0.048475724782847014,
+        "conditional_error": 2.220446049250313e-16
+      },
+      {
+        "case": 97,
+        "physical_qubits": 8,
+        "beta": 20.0,
+        "actual_break_probability": 5.1594544026336926e-11,
+        "certificate": 0.048475724782847014,
+        "conditional_error": 8.06501097239202e-23
+      },
+      {
+        "case": 98,
+        "physical_qubits": 9,
+        "beta": 5.0,
+        "actual_break_probability": 0.010928662874238972,
+        "certificate": 0.04853431239325122,
+        "conditional_error": 1.1102230246251565e-16
+      },
+      {
+        "case": 98,
+        "physical_qubits": 9,
+        "beta": 10.0,
+        "actual_break_probability": 0.009905589207219722,
+        "certificate": 0.048534312393251185,
+        "conditional_error": 1.1102230246251565e-16
+      },
+      {
+        "case": 98,
+        "physical_qubits": 9,
+        "beta": 20.0,
+        "actual_break_probability": 0.009900990303113697,
+        "certificate": 0.04853431239325122,
+        "conditional_error": 1.1102230246251565e-16
+      },
+      {
+        "case": 99,
+        "physical_qubits": 9,
+        "beta": 5.0,
+        "actual_break_probability": 0.006432252957953559,
+        "certificate": 0.04853431239325122,
+        "conditional_error": 5.134781488891349e-16
+      },
+      {
+        "case": 99,
+        "physical_qubits": 9,
+        "beta": 10.0,
+        "actual_break_probability": 0.0005588914884222752,
+        "certificate": 0.048534312393251185,
+        "conditional_error": 1.1102230246251565e-16
+      },
+      {
+        "case": 99,
+        "physical_qubits": 9,
+        "beta": 20.0,
+        "actual_break_probability": 1.4092674331997676e-05,
+        "certificate": 0.048534312393251205,
+        "conditional_error": 1.1102230246251565e-16
+      }
+    ]
+  },
+  "compiler": {
+    "cases": 24,
+    "records": [
+      {
+        "case": 0,
+        "variables": 8,
+        "ground_states": 1,
+        "optimum": -1.75
+      },
+      {
+        "case": 1,
+        "variables": 8,
+        "ground_states": 2,
+        "optimum": -0.25
+      },
+      {
+        "case": 2,
+        "variables": 8,
+        "ground_states": 1,
+        "optimum": -1.25
+      },
+      {
+        "case": 3,
+        "variables": 6,
+        "ground_states": 1,
+        "optimum": 0.5
+      },
+      {
+        "case": 4,
+        "variables": 8,
+        "ground_states": 1,
+        "optimum": -0.5
+      },
+      {
+        "case": 5,
+        "variables": 6,
+        "ground_states": 1,
+        "optimum": -1.0
+      },
+      {
+        "case": 6,
+        "variables": 8,
+        "ground_states": 1,
+        "optimum": -1.25
+      },
+      {
+        "case": 7,
+        "variables": 6,
+        "ground_states": 2,
+        "optimum": -0.75
+      },
+      {
+        "case": 8,
+        "variables": 8,
+        "ground_states": 1,
+        "optimum": 0.0
+      },
+      {
+        "case": 9,
+        "variables": 6,
+        "ground_states": 1,
+        "optimum": 0.0
+      },
+      {
+        "case": 10,
+        "variables": 6,
+        "ground_states": 2,
+        "optimum": 0.0
+      },
+      {
+        "case": 11,
+        "variables": 8,
+        "ground_states": 1,
+        "optimum": -0.75
+      },
+      {
+        "case": 12,
+        "variables": 8,
+        "ground_states": 2,
+        "optimum": 0.0
+      },
+      {
+        "case": 13,
+        "variables": 6,
+        "ground_states": 1,
+        "optimum": 0.5
+      },
+      {
+        "case": 14,
+        "variables": 6,
+        "ground_states": 1,
+        "optimum": -1.0
+      },
+      {
+        "case": 15,
+        "variables": 8,
+        "ground_states": 1,
+        "optimum": -0.75
+      },
+      {
+        "case": 16,
+        "variables": 6,
+        "ground_states": 1,
+        "optimum": -1.0
+      },
+      {
+        "case": 17,
+        "variables": 8,
+        "ground_states": 1,
+        "optimum": -1.0
+      },
+      {
+        "case": 18,
+        "variables": 8,
+        "ground_states": 1,
+        "optimum": -0.75
+      },
+      {
+        "case": 19,
+        "variables": 8,
+        "ground_states": 1,
+        "optimum": -0.75
+      },
+      {
+        "case": 20,
+        "variables": 6,
+        "ground_states": 1,
+        "optimum": 0.0
+      },
+      {
+        "case": 21,
+        "variables": 6,
+        "ground_states": 2,
+        "optimum": -0.25
+      },
+      {
+        "case": 22,
+        "variables": 8,
+        "ground_states": 2,
+        "optimum": -0.25
+      },
+      {
+        "case": 23,
+        "variables": 8,
+        "ground_states": 1,
+        "optimum": -1.5
+      }
+    ]
+  },
+  "elapsed_seconds": 0.31887291604653,
+  "passed": true
+}

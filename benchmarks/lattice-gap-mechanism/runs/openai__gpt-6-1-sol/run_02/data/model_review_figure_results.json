@@ -1,0 +1,46 @@
+{
+  "nonuniqueness": {
+    "grid_for_fractions": [
+      2000,
+      2000
+    ],
+    "lambda": [
+      0.1,
+      0.2,
+      0.3
+    ],
+    "gamma_side_fractions": [
+      0.84556,
+      0.711488,
+      0.656411
+    ],
+    "display_gaussian_sigma_D": 0.13,
+    "green_sign_check": "G(0)=sum_j w_j/(0-E_j)=1/60+(7lambda/24)f"
+  },
+  "stiffness": {
+    "t_D": 0.9970683327571924,
+    "tprime_D": 0.19534428112180086,
+    "covariance_t_tprime": [
+      [
+        1.4997023845439365e-05,
+        4.735391510222962e-06
+      ],
+      [
+        4.735391510221323e-06,
+        4.833753404731284e-06
+      ]
+    ],
+    "nu_fixed": 0.2,
+    "bound_D": 0.4359766866303077,
+    "standard_error_D": 0.0022930097941730103,
+    "conditional_95_percent_interval_D": [
+      0.4314823874337286,
+      0.4404709858268868
+    ],
+    "observed_transition_bracket_D": [
+      1.075,
+      1.15
+    ],
+    "uncertainty_scope": "Covariance from high-temperature DOS fit only; no model uncertainty or filling uncertainty."
+  }
+}

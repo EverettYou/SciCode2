@@ -1,0 +1,329 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=20mm,headheight=14pt]{geometry}
+\usepackage{fontspec}
+\setmainfont{lmroman10-regular.otf}[BoldFont=lmroman10-bold.otf,ItalicFont=lmroman10-italic.otf]
+\setsansfont{lmsans10-regular.otf}
+\setmonofont{lmmono10-regular.otf}[Scale=0.82]
+\usepackage{amsmath,amssymb,booktabs,longtable,array,xurl,enumitem,graphicx}
+\usepackage[colorlinks=true,linkcolor=blue,urlcolor=blue]{hyperref}
+\usepackage{fancyhdr,lastpage}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt}
+\setlength{\emergencystretch}{3em}
+\setlist[itemize]{nosep,leftmargin=1.5em}
+\renewcommand{\arraystretch}{1.18}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small SciCode2 / Decoder v0.7}
+\fancyhead[R]{\small Post hoc independent review / 2026-10-16}
+\fancyfoot[C]{\small \thepage\ / \pageref{LastPage}}
+\begin{document}
+\section*{v0.7 Decoder: rubric v1 scored against the original deliverables}
+
+Date: 2026-10-16. Scope: nine existing attempts, seven scientific submissions; see standard-answer.md for the original prompt hash.
+
+\section*{1. Nature and limits of the scoring}
+
+This is a post hoc local 100-point scale created at the user's request in this round, not official SciCode weights or an evaluator frozen before the original runs. Existing pass/\allowbreak{}fail/\allowbreak{}unknown judgments and original score files are retained. Quantification in this version helps compare completion; a total-score threshold does not substitute for scientific correctness or formal difficulty calibration. The A/\allowbreak{}B difficulty conditions remain incomplete.
+
+The main score follows the original R1-R4 and explicit deliverables, totaling 100 points. The original problem permits unresolved with valid bounds, so honest preservation of unknowns does not itself lose points. The problem specifies no algorithm; correct alternatives are accepted equally. A smaller valid R3 N0 is compared separately as strength of the result; a valid but larger N0 is not treated as a failed proof.
+
+General proportional anchors: 0=missing or a core error; approximately 25\%=fragments only; approximately 50\%=substantial completion with a clear gap; approximately 75\%=mostly complete with a specific reservation; 100\%=sufficient evidence for the requirement. Half-points or quarter-points are allowed, with reasons and evidence locations. Do not deduct twice for the same defect: for example, claims about approximation bias are primarily scored under A3, while D items assess only the required small-size API.
+
+Infrastructure failures are unknown/\allowbreak{}NA, not scientific zeroes. An incomplete submission must also be distinguished from the absence of a reference answer. Each score records what the submission actually stated, what independent checks support, and what remains unknown. A new proof supplied by reviewers cannot be represented as work completed in the AI's original submission.
+
+\section*{2. Main scoring table: 100 points}
+
+{\fontsize{9}{12.5}\selectfont
+\setlength{\tabcolsep}{2.2pt}
+
+\begin{longtable}{>{\raggedright\arraybackslash}p{\dimexpr 0.07\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.08\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.17\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.68\linewidth-2\tabcolsep\relax}}
+\toprule
+\textbf{ID} & \textbf{Max.} & \textbf{Requirement} & \textbf{Evidence for full credit and main deduction grounds}\tabularnewline
+\midrule
+\endfirsthead
+\toprule
+\textbf{ID} & \textbf{Max.} & \textbf{Requirement} & \textbf{Evidence for full credit and main deduction grounds}\tabularnewline
+\midrule
+\endhead
+{}A1 & 5 & R1 coverage & All 21 O0/\allowbreak{}O1/\allowbreak{}O2 entries for N=2,...,8, with intervals/\allowbreak{}uncertainties or justified unresolved; deduct corresponding coverage for missing entries\tabularnewline
+{}A2 & 8 & R1 basis for phase classification & Increasing two-dimensional sizes, probability coverage, statistics, and extrapolation sufficiently support the classifications; slow decline/\allowbreak{}apparent plateaus alone do not determine zero/\allowbreak{}positive limits; a theorem can directly support a phase region without mandatory repeat MC\tabularnewline
+{}A3 & 8 & R1 uncertainty control & Statistical, finite-size, and approximation errors reported separately, with justified numerical error estimates; chi differences are not presented as true-bias upper bounds. Do not repeat deductions here for gaps in central-region limiting-risk inference already scored under A2\tabularnewline
+{}A4 & 5 & R1 figure and classification semantics & Distinguish rigorous sufficient bounds, rigorous undecodability, numerical boundaries, and unknowns; bound roots are not true transitions; figures/\allowbreak{}tables agree with answers\tabularnewline
+{}A5 & 4 & R1 structural consistency & Phase classifications respect information inclusion/\allowbreak{}equivalence classes, inheriting subsets where necessary; handle the N4 anomaly and asymmetry appropriately; individual sufficient bounds need not all be strictly nested\tabularnewline
+{}B1 & 4 & R2 model/\allowbreak{}geometry & Correct noise, conditional independence of observations, boundaries, and binary success condition; no access to hidden information or replacement of the noise channel\tabularnewline
+{}B2 & 4 & R2 information order & O2-to-O1-to-O0 degradation, risk inequalities, and inclusion of decodable sets; cross-N ordering must actually be proved if used\tabularnewline
+{}B3 & 5 & R2 charge equivalence & O1(N2)=O0, N3=N6, N5=N7=N8 reveal full integer q, and N4 is a separate class; only relations relied on by the answer need proof; incorrect all-N monotonicity is not rewarded\tabularnewline
+{}B4 & 2 & R2 special ranks & Correct irrep probabilities and small-N exceptions where used, particularly SU2 and N4 determinant coincidences; avoid the incorrect identification O2(N2)=O0\tabularnewline
+{}C1 & 3 & R3 statement & Explicit integer N0, every N>=N0 and every p, and the risk conclusion as L tends to infinity; domain and endpoints complete\tabularnewline
+{}C2 & 5 & R3 witness/\allowbreak{}decoder & A valid auxiliary rule and feasible witness, or an equivalent valid direct Bayes/\allowbreak{}posterior argument; the implication from failure to a spanning component and its required conditions is sound; hiding is not mistaken for sufficiency\tabularnewline
+{}C3 & 6 & R3 correlations & Valid treatment of shared-edge orientations, side edges/\allowbreak{}chords, and conditional independence of readouts; effective alternatives such as matrices, stochastic coarse-graining, and grouped Cauchy-Schwarz are accepted equally\tabularnewline
+{}C4 & 4 & R3 exponential bound and certification & Fixed-path probability, path count, length lower bound, strict all-p factor<1, and finite prefactor; numerical optimization alone without a certified global maximum warrants a reservation\tabularnewline
+{}C5 & 2 & R3 scope of conclusions & Sufficient N0 is clearly not the minimum/\allowbreak{}a phase boundary, and r>=1 does not mean undecodability; evidence is auditable; smaller N0 separately records result strength\tabularnewline
+{}D1 & 6 & R4 joint partition sum & Preserve shared orientations at the two ends of the same edge, with correct local probabilities and logical sectors; do not independently orient vertices or replace sector posterior with MAP\tabularnewline
+{}D2 & 3 & R4 exact algorithm & Exact or certified as required for L<=4,N<=8; explain contraction/\allowbreak{}enumeration and complexity; approximations at larger L do not compromise the small-size commitment\tabularnewline
+{}D3 & 5 & R4 independent verification & Compare against independent enumeration/\allowbreak{}reference without reusing the same core error; evidence supports the required precision and coverage; retain the limitations of existing external heldout checks\tabularnewline
+{}D4 & 3 & R4 numerical range & Positive-probability records are not misclassified as zero through underflow; normalization/\allowbreak{}log/\allowbreak{}high precision and endpoints work; distinguish platform differences from original-environment gaps\tabularnewline
+{}D5 & 3 & decode interface & Return a valid edge set with the correct syndrome and a logical decision compatible with the posterior rule used; exceptions and invalid outputs can be located\tabularnewline
+{}E1 & 4 & answers.json & Structure, 21 entries, endpoint uncertainties/\allowbreak{}unresolved forms, and R3\_N0 agree with the report\tabularnewline
+{}E2 & 3 & Report/\allowbreak{}figures & Phase diagram, R2/\allowbreak{}R3 proofs, evidence, and limitations are provided in locatable files; scientific points are not deducted for personal aesthetic preferences\tabularnewline
+{}E3 & 3 & Source/\allowbreak{}reproduction/\allowbreak{}resources & API, dependency environment, commands, seeds/\allowbreak{}resource descriptions support reproduction; the 8CPU/\allowbreak{}32GiB/\allowbreak{}no-GPU requirements are documented\tabularnewline
+{}E4 & 5 & Data/\allowbreak{}unconditional accounting & Raw data, seeds, stopping rules, trial denominators, and exceptions/\allowbreak{}invalid outputs counted as failures; reserved slots distinguished from actual execution\tabularnewline
+\bottomrule
+\end{longtable}
+}
+
+Subtotals: R1=30, R2=15, R3=20, R4=20, deliverables/\allowbreak{}reproducibility=15.
+
+\section*{3. Scientific pass conditions are not replaced by the total score}
+
+R1: exact unknowns may remain unresolved, but high scores elsewhere cannot turn a key definite phase classification without sufficient evidence, or an approximation difference presented as a true error bound, into a pass.
+
+R3: a fatal gap in the core witness, correlations, or strict all-p bound means this requirement is unmet; a valid larger N0 still passes. Arithmetic evidence in the original submission is listed separately from independent repairs after review.
+
+R4: the small-size precision and interface required by the problem must be met. Passing ordinary heldout checks does not establish robustness over the entire positive-probability input domain; stress-test gaps should identify engineering and platform aspects. Such readily repairable problems should not alone be treated as failures of the scientific judgment sought by SciCode.
+
+Whole task: review each main requirement, allowing qualified/\allowbreak{}partial/\allowbreak{}unknown outcomes; no post hoc automatic pass threshold of 80 points. Without guided B, there is no formal A/\allowbreak{}B difficulty conclusion.
+
+\section*{4. Discussion-detail diagnostics: no extra points within the 100-point score}
+
+The following address whether the AI handled each detail properly. Each run is marked E=explicitly correct discussion, I=implicit or only partly developed, M=no discussion found, X=explicit error/\allowbreak{}inference with insufficient evidence, NA=not required by a valid alternative method, U=no scientific submission. M does not automatically mean failure of the original task; X requires a specific claim and location.
+
+{\fontsize{9}{12.5}\selectfont
+\setlength{\tabcolsep}{2.2pt}
+
+\begin{longtable}{>{\raggedright\arraybackslash}p{\dimexpr 0.12\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.53\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.35\linewidth-2\tabcolsep\relax}}
+\toprule
+\textbf{ID} & \textbf{Diagnostic question} & \textbf{Relation to the original task}\tabularnewline
+\midrule
+\endfirsthead
+\toprule
+\textbf{ID} & \textbf{Diagnostic question} & \textbf{Relation to the original task}\tabularnewline
+\midrule
+\endhead
+{}Q01 & D\_r(N) is the full-p set; more information cannot shrink it but need not strictly enlarge it & Core R2 meaning\tabularnewline
+{}Q02 & N5 already recovers full integer q; exact saturation for N>=7, with N6 an exception & R2 core\tabularnewline
+{}Q03 & mod4 and mod6 do not contain one another; no all-N ordering & Required when making cross-N comparisons\tabularnewline
+{}Q04 & Non-nested standalone sufficient bounds do not imply that true phases violate information ordering & R1 interpretation\tabularnewline
+{}Q05 & Transfer reliable Z4 decodable subsets to full integer q & R1/\allowbreak{}R2 consistency\tabularnewline
+{}Q06 & Distinguish Z4 confusion of pure triples with singles from mixed triples with singles & Feature mechanism\tabularnewline
+{}Q07 & High-p active-component orientation identity and the scope of its proof & Optional enhanced analysis\tabularnewline
+{}Q08 & O1 cannot see neutral pairs, while O2 hiding becomes rarer with N & R3/\allowbreak{}phase-diagram mechanism\tabularnewline
+{}Q09 & Separate binary X,C from latent sigma orientation; sigma is not given to the decoder & Core model\tabularnewline
+{}Q10 & Difference-component self-avoidance follows from degree 0/\allowbreak{}2, not physical repulsion & Required when using a path proof\tabularnewline
+{}Q11 & M is the minimum compatible count; only 11 forces true hiding, while 01/\allowbreak{}10 leaves the count unchanged & Required when using this coarse constraint\tabularnewline
+{}Q12 & Hiding is necessary, not sufficient, and applies to the specified auxiliary decoder & Required when using a hiding proof\tabularnewline
+{}Q13 & Decoder score/\allowbreak{}minimum or maximum edge count/\allowbreak{}Chernoff conditions enter the probability bound & Required for the corresponding proof approach\tabularnewline
+{}Q14 & Correct explanation of orientation-matrix states and every element & Applies to the direct matrix approach; NA for alternatives\tabularnewline
+{}Q15 & Occupation and orientation matrices have different state spaces & Applies to the two-matrix approach; NA for alternatives\tabularnewline
+{}Q16 & Shared off-path edges/\allowbreak{}chords cannot be independently resampled vertex by vertex & Core correlations; valid avoidance can receive E\tabularnewline
+{}Q17 & R*<=R\_aux compares average risks, and the exponential bound is not a critical exponent & Core proof conclusion\tabularnewline
+{}Q18 & The partition function preserves global orientations; small-size exact computation is separate from large-size MPS & R4 core\tabularnewline
+{}Q19 & Separate phase estimates/\allowbreak{}sufficient bounds/\allowbreak{}unknowns and statistical/\allowbreak{}finite-size/\allowbreak{}approximation uncertainties & R1 core\tabularnewline
+{}Q20 & Every exception counts as a failure; reserved slots are not completed trials & Explicit deliverable requirement\tabularnewline
+{}Q21 & Illustrate sigma, F, and endpoint summation element by element & New teaching request in this discussion; not required by the original task\tabularnewline
+\bottomrule
+\end{longtable}
+}
+
+Using a,b for both matrix indices and arrival counts in this chat was a notation error in the review explanation; it must not be recorded as a shared error in the seven AI submissions. The reference answer uses alpha,beta and n\_V,n\_barV instead.
+
+\section*{5. Preservation and review}
+
+scores-v1.json retains weights, item scores, reasons, evidence, and diagnostics; scores-v1.csv facilitates sorting; scorecards.md supports human review. All original run directories are read-only. New review conclusions and differences from existing reviews are listed separately, without overwriting the old scores.json. These detailed weights can be frozen in advance for a future batch of new tests; for this batch they remain a post hoc detailed review.
+\clearpage
+\section*{Aspect scores and discussion-detail audit for nine attempts, v1}
+
+This is a post hoc local completion rubric, not official SciCode weights or a prefrozen evaluator. Totals do not replace the R1-R4 scientific pass conditions. Seven scientific submissions and two API failures are retained.
+
+\section*{1. Overview}
+
+{\fontsize{8.1}{11}\selectfont
+\setlength{\tabcolsep}{2.2pt}
+\renewcommand{\arraystretch}{1.05}
+\begin{longtable}{>{\raggedright\arraybackslash}p{\dimexpr 0.12\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.07\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.07\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.07\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.07\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.07\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.07\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.07\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.39\linewidth-2\tabcolsep\relax}}
+\toprule
+\textbf{Run} & \textbf{R1 /\allowbreak{}30} & \textbf{R2 /\allowbreak{}15} & \textbf{R3 /\allowbreak{}20} & \textbf{R4 /\allowbreak{}20} & \textbf{Deliv. /\allowbreak{}15} & \textbf{Total /\allowbreak{}100} & \textbf{N0} & \textbf{Scientific assessment}\tabularnewline
+\midrule
+\endfirsthead
+\toprule
+\textbf{Run} & \textbf{R1 /\allowbreak{}30} & \textbf{R2 /\allowbreak{}15} & \textbf{R3 /\allowbreak{}20} & \textbf{R4 /\allowbreak{}20} & \textbf{Deliv. /\allowbreak{}15} & \textbf{Total /\allowbreak{}100} & \textbf{N0} & \textbf{Scientific assessment}\tabularnewline
+\midrule
+\endhead
+{}Fable03 & 26 & 15 & 19.5 & 18 & 14 & 92.5 & 19 & Partial completion: gaps in central-phase evidence and numerical range\tabularnewline
+{}Opus01 & 22 & 15 & 20 & 18 & 14.5 & 89.5 & 15 & Partial completion: gaps in central extrapolation, approximation guarantees, and numerical range\tabularnewline
+{}Opus02 & 22 & 15 & 20 & 18 & 14.5 & 89.5 & 15 & Partial completion: gaps in central extrapolation, approximation guarantees, and numerical range\tabularnewline
+{}Opus03 & 22 & 15 & 19 & 18 & 14.5 & 88.5 & 15 & Partial completion: as above, with additional caveats on the original all-p arithmetic certification\tabularnewline
+{}GPT01 & 30 & 15 & 20 & 20 & 15 & 100 & 13 & Provisional pass with the conservative answer permitted by the original task\tabularnewline
+{}GPT02 & 30 & 15 & 20 & 20 & 15 & 100 & 13 & Provisional pass with the conservative answer permitted by the original task\tabularnewline
+{}GPT03 & 29 & 15 & 20 & 20 & 15 & 99 & 14 & Provisional pass with caveats: numerical all-p extrapolation at small N\tabularnewline
+{}Fable01 & NA & NA & NA & NA & NA & NA & NA & API output limit; not scientifically assessable\tabularnewline
+{}Fable02 & NA & NA & NA & NA & NA & NA & NA & API output limit; not scientifically assessable\tabularnewline
+\bottomrule
+\end{longtable}
+}
+
+The 100 for GPT01/\allowbreak{}02 means that the limited conclusions permitted by the original task satisfy this rubric, not that the complete physical phase diagram is solved. All seven produce high-quality core theory and ordinary posteriors, so partial submissions can still receive high completion scores; totals do not obscure key scientific gaps. Smaller valid N0 values are reported separately as stronger results.
+
+R3 is scored as submitted: 0.5 and 1 point are withheld for Fable03 and Opus03, respectively, for incomplete all-p arithmetic certification. Existing independent rational verification supports their theorems; their N0 conclusions have not been refuted.
+
+\section*{2. Matrix of 23 scoring criteria}
+
+{\fontsize{8.1}{11}\selectfont
+\setlength{\tabcolsep}{2.2pt}
+\renewcommand{\arraystretch}{1.05}
+\begin{longtable}{>{\raggedright\arraybackslash}p{\dimexpr 0.3\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.06\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.09143\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.09143\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.09143\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.09143\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.09143\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.09143\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.09143\linewidth-2\tabcolsep\relax}}
+\toprule
+\textbf{Criterion} & \textbf{Max.} & \textbf{Fable03} & \textbf{Opus01} & \textbf{Opus02} & \textbf{Opus03} & \textbf{GPT01} & \textbf{GPT02} & \textbf{GPT03}\tabularnewline
+\midrule
+\endfirsthead
+\toprule
+\textbf{Criterion} & \textbf{Max.} & \textbf{Fable03} & \textbf{Opus01} & \textbf{Opus02} & \textbf{Opus03} & \textbf{GPT01} & \textbf{GPT02} & \textbf{GPT03}\tabularnewline
+\midrule
+\endhead
+{}A1 R1 coverage & 5.0 & 5 & 5 & 5 & 5 & 5 & 5 & 5\tabularnewline
+{}A2 R1 basis for phase classification & 8.0 & 4 & 5 & 5 & 5 & 8 & 8 & 7\tabularnewline
+{}A3 R1 uncertainty control & 8.0 & 8 & 3 & 3 & 3 & 8 & 8 & 8\tabularnewline
+{}A4 R1 figure and classification semantics & 5.0 & 5 & 5 & 5 & 5 & 5 & 5 & 5\tabularnewline
+{}A5 R1 structural consistency & 4.0 & 4 & 4 & 4 & 4 & 4 & 4 & 4\tabularnewline
+{}B1 R2 model/\allowbreak{}geometry & 4.0 & 4 & 4 & 4 & 4 & 4 & 4 & 4\tabularnewline
+{}B2 R2 information order & 4.0 & 4 & 4 & 4 & 4 & 4 & 4 & 4\tabularnewline
+{}B3 R2 charge equivalence & 5.0 & 5 & 5 & 5 & 5 & 5 & 5 & 5\tabularnewline
+{}B4 R2 special ranks & 2.0 & 2 & 2 & 2 & 2 & 2 & 2 & 2\tabularnewline
+{}C1 R3 statement & 3.0 & 3 & 3 & 3 & 3 & 3 & 3 & 3\tabularnewline
+{}C2 R3 witness/\allowbreak{}decoder & 5.0 & 5 & 5 & 5 & 5 & 5 & 5 & 5\tabularnewline
+{}C3 R3 correlations & 6.0 & 6 & 6 & 6 & 6 & 6 & 6 & 6\tabularnewline
+{}C4 R3 exponential bound and certification & 4.0 & 3.5 & 4 & 4 & 3 & 4 & 4 & 4\tabularnewline
+{}C5 R3 scope of conclusions & 2.0 & 2 & 2 & 2 & 2 & 2 & 2 & 2\tabularnewline
+{}D1 R4 joint partition sum & 6.0 & 6 & 6 & 6 & 6 & 6 & 6 & 6\tabularnewline
+{}D2 R4 exact algorithm & 3.0 & 3 & 3 & 3 & 3 & 3 & 3 & 3\tabularnewline
+{}D3 R4 independent verification & 5.0 & 5 & 5 & 5 & 5 & 5 & 5 & 5\tabularnewline
+{}D4 R4 numerical range & 3.0 & 1 & 1 & 1 & 1 & 3 & 3 & 3\tabularnewline
+{}D5 decode interface & 3.0 & 3 & 3 & 3 & 3 & 3 & 3 & 3\tabularnewline
+{}E1 answers.json & 4.0 & 4 & 4 & 4 & 4 & 4 & 4 & 4\tabularnewline
+{}E2 Report/\allowbreak{}figures & 3.0 & 3 & 3 & 3 & 3 & 3 & 3 & 3\tabularnewline
+{}E3 Source/\allowbreak{}reproduction/\allowbreak{}resources & 3.0 & 3 & 3 & 3 & 3 & 3 & 3 & 3\tabularnewline
+{}E4 Data/\allowbreak{}unconditional accounting & 5.0 & 4 & 4.5 & 4.5 & 4.5 & 5 & 5 & 5\tabularnewline
+\bottomrule
+\end{longtable}
+}
+
+\section*{3. The 21 details discussed}
+
+E=explicit and correct; I=implicit/\allowbreak{}partially developed; M=not found; X=specific error or insufficiently supported inference; NA=unneeded for a valid alternative route; U=no scientific submission. Teaching diagrams were requested later and do not incur retrospective deductions.
+
+{\fontsize{8.1}{11}\selectfont
+\setlength{\tabcolsep}{2.2pt}
+\renewcommand{\arraystretch}{1.05}
+\begin{longtable}{>{\raggedright\arraybackslash}p{\dimexpr 0.37\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.09\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.09\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.09\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.09\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.09\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.09\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.09\linewidth-2\tabcolsep\relax}}
+\toprule
+\textbf{Detail} & \textbf{Fable03} & \textbf{Opus01} & \textbf{Opus02} & \textbf{Opus03} & \textbf{GPT01} & \textbf{GPT02} & \textbf{GPT03}\tabularnewline
+\midrule
+\endfirsthead
+\toprule
+\textbf{Detail} & \textbf{Fable03} & \textbf{Opus01} & \textbf{Opus02} & \textbf{Opus03} & \textbf{GPT01} & \textbf{GPT02} & \textbf{GPT03}\tabularnewline
+\midrule
+\endhead
+{}D\_r(N) is the full-p set; more information cannot shrink it but need not strictly enlarge it & E & E & E & E & E & E & E\tabularnewline
+{}N5 already recovers full integer q; exact saturation for N>=7, with N6 an exception & E & E & E & E & E & E & E\tabularnewline
+{}mod4 and mod6 do not contain one another; no all-N ordering & E & E & E & E & E & E & E\tabularnewline
+{}Non-nested standalone sufficient bounds do not imply that true phases violate information ordering & I & I & I & I & E & E & I\tabularnewline
+{}Transfer reliable Z4 decodable subsets to full integer q & I & I & I & I & E & E & I\tabularnewline
+{}Distinguish Z4 confusion of pure triples with singles from mixed triples with singles & I & I & I & E & E & I & I\tabularnewline
+{}High-p active-component orientation identity and the scope of its proof & M & M & M & E & E & M & M\tabularnewline
+{}O1 cannot see neutral pairs, while O2 hiding becomes rarer with N & E & E & E & E & E & E & E\tabularnewline
+{}Separate binary X,C from latent sigma orientation; sigma is not given to the decoder & E & E & E & E & E & E & E\tabularnewline
+{}Difference-component self-avoidance follows from degree 0/\allowbreak{}2, not physical repulsion & E & E & E & E & E & E & E\tabularnewline
+{}M is the minimum compatible count; only 11 forces true hiding, while 01/\allowbreak{}10 leaves the count unchanged & I & I & I & I & E & E & E\tabularnewline
+{}Hiding is necessary, not sufficient, and applies to the specified auxiliary decoder & E & E & E & E & E & E & E\tabularnewline
+{}Decoder score/\allowbreak{}minimum or maximum edge count/\allowbreak{}Chernoff conditions enter the probability bound & E & E & E & E & E & E & E\tabularnewline
+{}Correct explanation of orientation-matrix states and every element & NA & NA & NA & NA & E & E & NA\tabularnewline
+{}Occupation and orientation matrices have different state spaces & NA & NA & NA & NA & I & E & NA\tabularnewline
+{}Shared off-path edges/\allowbreak{}chords cannot be independently resampled vertex by vertex & E & E & E & E & E & E & E\tabularnewline
+{}R*<=R\_aux compares average risks, and the exponential bound is not a critical exponent & E & E & E & E & E & E & E\tabularnewline
+{}The partition function preserves global orientations; small-size exact computation is separate from large-size MPS & E & E & I & E & E & E & E\tabularnewline
+{}Separate phase estimates/\allowbreak{}sufficient bounds/\allowbreak{}unknowns and statistical/\allowbreak{}finite-size/\allowbreak{}approximation uncertainties & I & X & X & X & E & E & E\tabularnewline
+{}Every exception counts as a failure; reserved slots are not completed trials & X & X & X & X & E & E & E\tabularnewline
+{}Illustrate sigma, F, and endpoint summation element by element & M & M & M & M & M & M & M\tabularnewline
+\bottomrule
+\end{longtable}
+}
+
+NA does not mean correlations were ignored: Fable/\allowbreak{}Opus/\allowbreak{}GPT03 use valid alternative proofs. I/\allowbreak{}M also does not automatically mean task failure; the high-p Z4 identity and cell-by-cell teaching diagrams are enhanced explanations. For Q20, read the run-specific evidence to distinguish latent implementation defects from exceptions that actually occurred.
+
+\section*{4. Corrections to earlier assessments}
+
+All seven correctly analyze complete integer q at N5 and saturation for N>=7; this is not a widespread omission. GPT01 and Opus03 give the Z4 active-component identity. Nonnested individual sufficient bounds do not imply that the true optimal phase regions violate information inclusion.
+
+The earlier REPORT characterized the three Opus central-region explanations too broadly: the Gaussian/\allowbreak{}BKT risk-lower-bound exclusion argument explicitly belongs to Opus02/\allowbreak{}03. Opus01 should be described as a physical explanation of typical charges pinning the clean-loop critical phase, together with slow-drift extrapolation. This corrects the attribution without revising the historical assessment.
+
+All seven pass all 210 ordinary posterior/\allowbreak{}correction cases each: 140 original R4 cases and 70 O0 controls. GPT passes all 18 extremely-low-p stress inputs; the other four fail locally. The Linux/\allowbreak{}macOS longdouble range difference for Opus02 remains a caveat.
+
+The Fable03 exception fallback to posterior=.5 would undercount failures, but its archived exception count is zero, making this a latent defect. Opus records hard failure as 1 but still uses .5 for posterior risk. GPT03 has 340600 archived slots, including 200 reserved conservative failure slots; these cannot all be called completed physical trials.
+
+\section*{Appendix: evidence for deductions and caveats}
+
+All 161 scientific-submission scores, 21 discussion diagnostics, and full absolute paths are retained in scorecards.md, scores-v1.json, and score-details-v1.csv. Items affecting scores or conclusions are collected below.
+
+\section*{Fable03}
+
+\begin{itemize}
+\item A2: 4/\allowbreak{}8.0. Provides exact-posterior data at increasing two-dimensional sizes, but the positive-risk central charge phase is assigned from slow drift/\allowbreak{}positive-limit fits at L<=12; a very long crossover is not excluded. Source: \nolinkurl{anthropic__claude-fable-5-1/run_03/report.md:213}.
+\item C4: 3.5/\allowbreak{}4. The original all-p rigorous arithmetic certification has caveats; existing independent rational verification supports the theorem. Source: \nolinkurl{anthropic__claude-fable-5-1/run_03/docs/theory.md:224}.
+\item D4: 1/\allowbreak{}3. Passes 210/\allowbreak{}210 routine cases; fails 18 extremely low-p positive-probability stress cases. Ordinary stepwise normalization is present, but local products or edge weights can still underflow. Source: \nolinkurl{anthropic__claude-fable-5-1/run_03/src/model.py:198}.
+\item E4: 4/\allowbreak{}5. Preserves seeds, fixed job counts, resources, raw arrays and denominators; exceptions become P0=.5 and aggregation gives both risk and hard tie .5, whereas the task requires failure. data/\allowbreak{}summary.csv has total nfail\_exc=0, so this is a latent defect with no observed effect on archived estimates. Source: \nolinkurl{anthropic__claude-fable-5-1/run_03/src/run_mc.py:56}.
+\item The exception-accounting defect is latent: the archived summaries total zero exceptions, and no change to the archived phase-diagram values was found.
+\end{itemize}
+
+\section*{Opus01}
+
+\begin{itemize}
+\item A2: 5/\allowbreak{}8.0. Two-dimensional sizes reach about L48 and the diagnostics are useful; the zero central charge limit and charge-pinning explanation for the clean-loop phase still do not exclude alternative positive limits. Source: \nolinkurl{anthropic__claude-opus-5-5/run_01/report.md:326}.
+\item A3: 3/\allowbreak{}8.0. Substantial chi comparisons and error classification are provided, but agreement between two approximations is not an upper bound on bias relative to the true posterior. Source: \nolinkurl{anthropic__claude-opus-5-5/run_01/report.md:82}.
+\item D4: 1/\allowbreak{}3. Passes 210/\allowbreak{}210 routine cases; fails 18 extremely low-p positive-probability stress cases. Ordinary stepwise normalization is present, but local products or edge weights can still underflow. Source: \nolinkurl{anthropic__claude-opus-5-5/run_01/solution.py:71}.
+\item E4: 4.5/\allowbreak{}5. Raw data, seeds, fixed-block stopping rules, resources and denominators for all attempts are recorded; bad hard failure is 1, but the reported posterior-min risk is still .5 rather than 1 on exception. Source: \nolinkurl{anthropic__claude-opus-5-5/run_01/src/mc.py:146}.
+\end{itemize}
+
+\section*{Opus02}
+
+\begin{itemize}
+\item A2: 5/\allowbreak{}8.0. Two-dimensional sizes reach about L96; the Gaussian/\allowbreak{}BKT heuristic is not proved sufficient to exclude every nondecodable phase of the specified posterior model. Source: \nolinkurl{anthropic__claude-opus-5-5/run_02/REPORT.md:184}.
+\item A3: 3/\allowbreak{}8.0. Promotes the difference between chi and larger chi to an induced-bias upper bound without controlling the error of the latter. Source: \nolinkurl{anthropic__claude-opus-5-5/run_02/REPORT.md:301}.
+\item D4: 1/\allowbreak{}3. Passes 210/\allowbreak{}210 routine cases; fails 18 extremely low-p positive-probability stress cases. Ordinary stepwise normalization is present, but local products or edge weights can still underflow. macOS longdouble has a different range from the original Linux environment, so not all macOS failures can be attributed directly to the original environment; however, p/\allowbreak{}2 in pri rounds to zero in Python float before conversion to dtype, a cross-platform issue at the smallest positive float. Source: \nolinkurl{anthropic__claude-opus-5-5/run_02/hexsym/api.py:45}.
+\item E4: 4.5/\allowbreak{}5. Raw data, seeds, fixed-block stopping rules, resources and denominators for all attempts are recorded; bad hard failure is 1, but the reported posterior-min risk is still .5 rather than 1 on exception. Source: \nolinkurl{anthropic__claude-opus-5-5/run_02/hexsym/sim.py:49}.
+\item The extremely-low-p numerical gap includes the longdouble range difference between the original Linux environment and the macOS review; loss of the smallest subnormal when computing p/\allowbreak{}2 first in Python float is independent of that difference.
+\end{itemize}
+
+\section*{Opus03}
+
+\begin{itemize}
+\item A2: 5/\allowbreak{}8.0. Two-dimensional sizes reach about L64; slow decline and Gaussian/\allowbreak{}BKT exclusion do not establish a zero central charge limit. Source: \nolinkurl{anthropic__claude-opus-5-5/run_03/report.md:239}.
+\item A3: 3/\allowbreak{}8.0. Larger chi can share the same bias; empirical convergence differences do not provide the claimed guarantee on true bias. Source: \nolinkurl{anthropic__claude-opus-5-5/run_03/report.md:355}.
+\item C4: 3/\allowbreak{}4. The original all-p rigorous arithmetic certification has caveats; existing independent rational verification supports the theorem. Source: \nolinkurl{anthropic__claude-opus-5-5/run_03/docs/proofs.md:199}.
+\item D4: 1/\allowbreak{}3. Passes 210/\allowbreak{}210 routine cases; fails 18 extremely low-p positive-probability stress cases. Ordinary stepwise normalization is present, but local products or edge weights can still underflow. Source: \nolinkurl{anthropic__claude-opus-5-5/run_03/symdec/api.py:43}.
+\item E4: 4.5/\allowbreak{}5. Raw data, seeds, fixed-block stopping rules, resources and denominators for all attempts are recorded; bad hard failure is 1, but the reported posterior-min risk is still .5 rather than 1 on exception. Source: \nolinkurl{anthropic__claude-opus-5-5/run_03/symdec/mc.py:121}.
+\end{itemize}
+
+\section*{GPT01}
+
+All main criteria of this rubric are satisfied. The central phase region remains unknown, as in the reference answer; the full phase diagram is not thereby solved.
+
+
+\section*{GPT02}
+
+All main criteria of this rubric are satisfied. The central phase region remains unknown, as in the reference answer; the full phase diagram is not thereby solved.
+
+
+\section*{GPT03}
+
+\begin{itemize}
+\item A2: 7/\allowbreak{}8.0. Exact posteriors at increasing two-dimensional sizes support a numerical all-p assignment for small-N O2; finite grids and late crossovers remain caveats, and this is not an all-p theorem. Source: \nolinkurl{openai__gpt-6-astra/run_03/report.md:3}.
+\item The 340600 archived slots include 200 reserved failure slots whose execution is unverified; the report interprets them with this qualification.
+\end{itemize}
+
+\section*{Appendix: version and review scope}
+
+Original prompt SHA-256: \nolinkurl{d89b765a4af1e50b2824d40d0c2d8590e722202219411bd49f5ea7d63c64d6a9}. The task is unchanged, with no new model runs or production phase-diagram experiments. Existing independent oracles, 210 ordinary checks, 18 stress checks, and large-N rational certificates are reused; this review adds the rubric, detailed deliverable audit, and certification of reference safe endpoints.
+
+The scores are not a formal SciCode A/\allowbreak{}B difficulty conclusion. The full official template remains unverified; local weights are not represented as official rules. Totals measure completion, while key scientific pass conditions remain individually stated.
+\end{document}

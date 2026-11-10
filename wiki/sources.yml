@@ -940,8 +940,8 @@ sources:
   title: Benchmark README
   kind: project
   path: benchmarks/README.md
-  revision: workspace:2026-08-22
-  ingested_at: '2026-08-22T00:00:00Z'
+  revision: sha256:243449671c610686430d2b64b373b5ecd83f3f74c4e180ebb0c95de98cd934b7
+  ingested_at: '2026-10-07T19:23:17Z'
   updated_pages:
   - wiki/thesis.md
   - wiki/project/overview.md
@@ -959,17 +959,30 @@ sources:
   - wiki/project/overview.md
   - wiki/papers/index.md
   - wiki/thesis.md
+- source_id: project:scicode2-email-requirements
+  title: SciCode2 organizer email requirements
+  kind: project
+  path: docs/scicode2/requirements.md
+  revision: sha256:d485e928ac1185f72b47949f0e510b27c5ab2a54ba4de8f48e48b9ee422fc750
+  ingested_at: '2026-10-07T19:23:16Z'
+  updated_pages:
+  - wiki/project/overview.md
+  - wiki/project/problem-design-strategy.md
+  - wiki/thesis.md
+  - wiki/index.md
 - source_id: project:skills
   title: Skills catalog
   kind: skill
   path: skills/README.md
-  revision: workspace:2026-08-22
-  ingested_at: '2026-08-22T00:00:00Z'
+  revision: sha256:2d18204f1f162e765c627c2f829d91f2f97a8f99dac2e215a5067d96adf4f74a
+  ingested_at: '2026-10-07T19:23:17Z'
   updated_pages:
   - wiki/thesis.md
   - wiki/project/agent-workflow.md
   - wiki/project/knowledge-layer.md
   - wiki/project/skills.md
+  - wiki/project/overview.md
+  - wiki/index.md
 - source_id: project:talk
   title: Research talk README
   kind: talk
@@ -992,3 +1005,21 @@ sources:
   - wiki/implementations/liu-quantum-diffusion-companion.md
   - wiki/index.md
   - wiki/papers/index.md
+- source_id: skill:create-benchmark
+  title: SciCode2 early problem formulation skill
+  kind: skill
+  path: skills/create-benchmark/SKILL.md
+  revision: sha256:9733a53d5becad853312dd88b7d46cdd4df2da21d5bc8bdea2fd1f62df9540ab
+  ingested_at: '2026-10-07T19:23:17Z'
+  updated_pages:
+  - wiki/project/skills.md
+  - wiki/project/problem-design-strategy.md
+- source_id: skill:test-benchmark
+  title: SciCode2 iterative testing skill
+  kind: skill
+  path: skills/test-benchmark/SKILL.md
+  revision: sha256:bedafe36c7a993762f95342798991cbc10a938d77fb1dbc6296d455699e4ff4a
+  ingested_at: '2026-10-07T19:23:17Z'
+  updated_pages:
+  - wiki/project/skills.md
+  - wiki/project/problem-design-strategy.md

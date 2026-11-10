@@ -1,0 +1,15 @@
+{
+  "revision": "review-draft-v0.1",
+  "purpose": "human question review; editable and not frozen for trials",
+  "canonical_question": "problem/TASK.md",
+  "files": {
+    "problem/TASK.md": "5381e8df657787cfcca179035b9de189d8975cfaa81487f9e664f0a26cb7d136",
+    "output/pdf/problem.pdf": "846d4ee654939546d103252a0a785110183f6d62bd6876be4368c25df4a8e41b",
+    "problem/inputs/d4-instrument-v1.json": "aede0559cfd08a10dd118b6792b3ea14135f6dfb3411e6e73be8c2ec23794fb7"
+  },
+  "pdf_pages": 6,
+  "qa": "All pages rendered and visually inspected; metadata, provenance, artifact links and PDF structure checked. D4 embedded JSON matches supplied input byte-for-byte.",
+  "scientific_execution": "not-started",
+  "model_trials": "not-started",
+  "creation_skill_sha256": "9a795e519be62e7dfccba7d6d04ddc74137faa7ef4c961c163621a2bb326206c"
+}

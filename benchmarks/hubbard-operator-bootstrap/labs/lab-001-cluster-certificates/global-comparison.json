@@ -1,0 +1,1749 @@
+{
+  "measurement_convention": [
+    "Times are per-process observed elapsed phases on a workstation shared by concurrent agents. Summing them is work accounting, not end-to-end wall time.",
+    "Process peak RSS is not global concurrent peak RSS. It includes all prior phases of the same process and adaptive checkpoint peaks are cumulative.",
+    "Physical-map validation includes CAR tests, geometry, reconstruction, exact coefficient comparisons and symmetry checks. Exact SOS validation alone does not include those costs.",
+    "A reused physical audit is listed only after exact semantic map/constant/objective/equality hashes match.",
+    "Missing construction times remain null; phase sums then omit that unrecorded phase. Failed and abandoned runs are retained separately; uninstrumented invocation overhead may remain uncounted.",
+    "Discovery of q20 directions required full-T2 optimization and audit. The13.82s six-block replay is a deployment cost, not the total discovery cost.",
+    "Literal O dimensions count original full Fock polynomials before further fixed-sector identities; cone entry counts and dual square counts are distinct."
+  ],
+  "global_experiments": [
+    {
+      "experiment": "labs/lab-002-moment-sdp/results/adaptive-t2-cuts/round_01",
+      "name": "round_01",
+      "operator_dimension": null,
+      "solver": "CLARABEL",
+      "status": "optimal_inaccurate",
+      "primal_energy": -8.860729620354746,
+      "floating_residual_corrected_lower": -8.860870243142466,
+      "exact_certified_lower": null,
+      "certificate": null,
+      "physical_map_audit": null,
+      "physical_audit_reused_after_exact_map_signature_match": false,
+      "variables": 331,
+      "cones": 186,
+      "max_cone_dim": 45,
+      "cone_entries": 22170,
+      "model_construction_seconds": 0.9541214159689844,
+      "cvxpy_build_seconds": 0.0008051667828112841,
+      "solve_seconds": 33.798591000027955,
+      "recorded_process_phase_seconds": 33.799396166810766,
+      "process_peak_rss_bytes": 578650112,
+      "singlet_ground_sector_refinement": false,
+      "scope": "adaptive checkpoint; shared construction/load charged once",
+      "full_physical_and_exact_certificate_audit_complete": false
+    },
+    {
+      "experiment": "labs/lab-002-moment-sdp/results/adaptive-t2-cuts/round_02",
+      "name": "round_02",
+      "operator_dimension": null,
+      "solver": "CLARABEL",
+      "status": "optimal_inaccurate",
+      "primal_energy": -8.860480010091775,
+      "floating_residual_corrected_lower": -8.860649934126512,
+      "exact_certified_lower": null,
+      "certificate": null,
+      "physical_map_audit": null,
+      "physical_audit_reused_after_exact_map_signature_match": false,
+      "variables": 331,
+      "cones": 186,
+      "max_cone_dim": 45,
+      "cone_entries": 22170,
+      "model_construction_seconds": 0.9541214159689844,
+      "cvxpy_build_seconds": 0.0004977090284228325,
+      "solve_seconds": 19.01753483293578,
+      "recorded_process_phase_seconds": 19.018032541964203,
+      "process_peak_rss_bytes": 899153920,
+      "singlet_ground_sector_refinement": false,
+      "scope": "adaptive checkpoint; shared construction/load charged once",
+      "full_physical_and_exact_certificate_audit_complete": false
+    },
+    {
+      "experiment": "labs/lab-002-moment-sdp/results/adaptive-t2-cuts/round_03",
+      "name": "round_03",
+      "operator_dimension": null,
+      "solver": "CLARABEL",
+      "status": "optimal_inaccurate",
+      "primal_energy": -8.860438660055824,
+      "floating_residual_corrected_lower": -8.861000863720225,
+      "exact_certified_lower": null,
+      "certificate": null,
+      "physical_map_audit": null,
+      "physical_audit_reused_after_exact_map_signature_match": false,
+      "variables": 331,
+      "cones": 186,
+      "max_cone_dim": 45,
+      "cone_entries": 22170,
+      "model_construction_seconds": 0.9541214159689844,
+      "cvxpy_build_seconds": 0.0002538328990340233,
+      "solve_seconds": 13.580910874996334,
+      "recorded_process_phase_seconds": 13.581164707895368,
+      "process_peak_rss_bytes": 900136960,
+      "singlet_ground_sector_refinement": false,
+      "scope": "adaptive checkpoint; shared construction/load charged once",
+      "full_physical_and_exact_certificate_audit_complete": false
+    },
+    {
+      "experiment": "labs/lab-002-moment-sdp/results/adaptive-t2-cuts/round_04",
+      "name": "round_04",
+      "operator_dimension": null,
+      "solver": "CLARABEL",
+      "status": "optimal_inaccurate",
+      "primal_energy": -8.859869310809813,
+      "floating_residual_corrected_lower": -8.860047786393482,
+      "exact_certified_lower": null,
+      "certificate": null,
+      "physical_map_audit": null,
+      "physical_audit_reused_after_exact_map_signature_match": false,
+      "variables": 331,
+      "cones": 186,
+      "max_cone_dim": 45,
+      "cone_entries": 22170,
+      "model_construction_seconds": 0.9541214159689844,
+      "cvxpy_build_seconds": 0.00022870907559990883,
+      "solve_seconds": 13.26768491603434,
+      "recorded_process_phase_seconds": 13.26791362510994,
+      "process_peak_rss_bytes": 914374656,
+      "singlet_ground_sector_refinement": false,
+      "scope": "adaptive checkpoint; shared construction/load charged once",
+      "full_physical_and_exact_certificate_audit_complete": false
+    },
+    {
+      "experiment": "labs/lab-002-moment-sdp/results/adaptive-t2-cuts/round_05",
+      "name": "round_05",
+      "operator_dimension": null,
+      "solver": "CLARABEL",
+      "status": "optimal_inaccurate",
+      "primal_energy": -8.859700371877048,
+      "floating_residual_corrected_lower": -8.859807628643573,
+      "exact_certified_lower": null,
+      "certificate": null,
+      "physical_map_audit": null,
+      "physical_audit_reused_after_exact_map_signature_match": false,
+      "variables": 331,
+      "cones": 186,
+      "max_cone_dim": 45,
+      "cone_entries": 22170,
+      "model_construction_seconds": 0.9541214159689844,
+      "cvxpy_build_seconds": 0.00023112492635846138,
+      "solve_seconds": 18.277345333015546,
+      "recorded_process_phase_seconds": 18.277576457941905,
+      "process_peak_rss_bytes": 914374656,
+      "singlet_ground_sector_refinement": false,
+      "scope": "adaptive checkpoint; shared construction/load charged once",
+      "full_physical_and_exact_certificate_audit_complete": false
+    },
+    {
+      "experiment": "labs/lab-002-moment-sdp/results/adaptive-t2-cuts/round_06",
+      "name": "round_06",
+      "operator_dimension": null,
+      "solver": "CLARABEL",
+      "status": "optimal_inaccurate",
+      "primal_energy": -8.859600086719432,
+      "floating_residual_corrected_lower": -8.860244405659781,
+      "exact_certified_lower": null,
+      "certificate": null,
+      "physical_map_audit": null,
+      "physical_audit_reused_after_exact_map_signature_match": false,
+      "variables": 331,
+      "cones": 186,
+      "max_cone_dim": 45,
+      "cone_entries": 22170,
+      "model_construction_seconds": 0.9541214159689844,
+      "cvxpy_build_seconds": 0.000985124846920371,
+      "solve_seconds": 37.3034985831473,
+      "recorded_process_phase_seconds": 37.30448370799422,
+      "process_peak_rss_bytes": 914374656,
+      "singlet_ground_sector_refinement": false,
+      "scope": "adaptive checkpoint; shared construction/load charged once",
+      "full_physical_and_exact_certificate_audit_complete": false
+    },
+    {
+      "experiment": "labs/lab-002-moment-sdp/results/adaptive-t2-cuts/round_07",
+      "name": "round_07",
+      "operator_dimension": null,
+      "solver": "CLARABEL",
+      "status": "optimal_inaccurate",
+      "primal_energy": -8.859463022152138,
+      "floating_residual_corrected_lower": -8.859640300282726,
+      "exact_certified_lower": null,
+      "certificate": null,
+      "physical_map_audit": null,
+      "physical_audit_reused_after_exact_map_signature_match": false,
+      "variables": 331,
+      "cones": 186,
+      "max_cone_dim": 45,
+      "cone_entries": 22170,
+      "model_construction_seconds": 0.9541214159689844,
+      "cvxpy_build_seconds": 0.0002903328277170658,
+      "solve_seconds": 59.34905862505548,
+      "recorded_process_phase_seconds": 59.349348957883194,
+      "process_peak_rss_bytes": 914374656,
+      "singlet_ground_sector_refinement": false,
+      "scope": "adaptive checkpoint; shared construction/load charged once",
+      "full_physical_and_exact_certificate_audit_complete": false
+    },
+    {
+      "experiment": "labs/lab-002-moment-sdp/results/adaptive-t2-cuts/round_08",
+      "name": "round_08",
+      "operator_dimension": null,
+      "solver": "CLARABEL",
+      "status": "optimal_inaccurate",
+      "primal_energy": -8.859395416668393,
+      "floating_residual_corrected_lower": -8.859559067424854,
+      "exact_certified_lower": null,
+      "certificate": null,
+      "physical_map_audit": null,
+      "physical_audit_reused_after_exact_map_signature_match": false,
+      "variables": 331,
+      "cones": 186,
+      "max_cone_dim": 45,
+      "cone_entries": 22170,
+      "model_construction_seconds": 0.9541214159689844,
+      "cvxpy_build_seconds": 0.0003132498823106289,
+      "solve_seconds": 36.63236533314921,
+      "recorded_process_phase_seconds": 36.63267858303152,
+      "process_peak_rss_bytes": 914374656,
+      "singlet_ground_sector_refinement": false,
+      "scope": "adaptive checkpoint; shared construction/load charged once",
+      "full_physical_and_exact_certificate_audit_complete": false
+    },
+    {
+      "experiment": "labs/lab-002-moment-sdp/results/adaptive-t2-cuts/round_09",
+      "name": "round_09",
+      "operator_dimension": null,
+      "solver": "CLARABEL",
+      "status": "optimal_inaccurate",
+      "primal_energy": -8.859318779832071,
+      "floating_residual_corrected_lower": -8.859734755695856,
+      "exact_certified_lower": null,
+      "certificate": null,
+      "physical_map_audit": null,
+      "physical_audit_reused_after_exact_map_signature_match": false,
+      "variables": 331,
+      "cones": 186,
+      "max_cone_dim": 45,
+      "cone_entries": 22170,
+      "model_construction_seconds": 0.9541214159689844,
+      "cvxpy_build_seconds": 0.0005132080987095833,
+      "solve_seconds": 38.680281166918576,
+      "recorded_process_phase_seconds": 38.680794375017285,
+      "process_peak_rss_bytes": 914374656,
+      "singlet_ground_sector_refinement": false,
+      "scope": "adaptive checkpoint; shared construction/load charged once",
+      "full_physical_and_exact_certificate_audit_complete": false
+    },
+    {
+      "experiment": "labs/lab-002-moment-sdp/results/adaptive-t2-cuts/round_10",
+      "name": "round_10",
+      "operator_dimension": null,
+      "solver": "CLARABEL",
+      "status": "optimal_inaccurate",
+      "primal_energy": -8.859248662602948,
+      "floating_residual_corrected_lower": -8.859542438484446,
+      "exact_certified_lower": null,
+      "certificate": null,
+      "physical_map_audit": {
+        "path": "labs/lab-001-cluster-certificates/audit-adaptive-t2-final.json",
+        "seconds": 23.737341957865283,
+        "peak_rss_bytes": 137723904,
+        "portable": false
+      },
+      "physical_audit_reused_after_exact_map_signature_match": false,
+      "variables": 331,
+      "cones": 186,
+      "max_cone_dim": 45,
+      "cone_entries": 22170,
+      "model_construction_seconds": 0.9541214159689844,
+      "cvxpy_build_seconds": 0.00037258281372487545,
+      "solve_seconds": 30.02411387511529,
+      "recorded_process_phase_seconds": 30.024486457929015,
+      "process_peak_rss_bytes": 914374656,
+      "singlet_ground_sector_refinement": false,
+      "scope": "adaptive checkpoint; shared construction/load charged once",
+      "full_physical_and_exact_certificate_audit_complete": false
+    },
+    {
+      "experiment": "labs/lab-002-moment-sdp/results/dual-16-pqg",
+      "name": "dual-16-pqg",
+      "operator_dimension": 2257,
+      "solver": "CLARABEL",
+      "status": "optimal_inaccurate",
+      "primal_energy": -8.76336480714283,
+      "floating_residual_corrected_lower": -8.763365270206636,
+      "exact_certified_lower": "-8.763365270237",
+      "certificate": {
+        "path": "labs/lab-001-cluster-certificates/distilled/dual-16-pqg-exact/verification.json",
+        "source_directory": "/Users/home/Library/CloudStorage/Dropbox/Research/[Mercor]SciCode2/benchmarks/hubbard-operator-bootstrap/labs/lab-002-moment-sdp/results/dual-16-pqg",
+        "lower_bound": "-8.763365270237",
+        "seconds": 0.6024798329453915,
+        "peak_rss_bytes": 62111744
+      },
+      "physical_map_audit": {
+        "path": "labs/lab-001-cluster-certificates/audit-dual-16-pqg.json",
+        "seconds": 7.435628707986325,
+        "peak_rss_bytes": 107446272,
+        "portable": false
+      },
+      "physical_audit_reused_after_exact_map_signature_match": false,
+      "variables": 331,
+      "cones": 64,
+      "max_cone_dim": 32,
+      "cone_entries": 11380,
+      "model_construction_seconds": 0.8052003339398652,
+      "cvxpy_build_seconds": 0.055422750068828464,
+      "solve_seconds": 27.6023864580784,
+      "recorded_process_phase_seconds": 28.463009542087093,
+      "process_peak_rss_bytes": 262635520,
+      "singlet_ground_sector_refinement": false,
+      "scope": "independent measured run",
+      "full_physical_and_exact_certificate_audit_complete": true
+    },
+    {
+      "experiment": "labs/lab-002-moment-sdp/results/dual-blocks-pqg",
+      "name": "dual-blocks-pqg",
+      "operator_dimension": 2257,
+      "solver": "CLARABEL",
+      "status": "optimal_inaccurate",
+      "primal_energy": -8.763353211029347,
+      "floating_residual_corrected_lower": -8.763353354908359,
+      "exact_certified_lower": "-8.763353354793",
+      "certificate": {
+        "path": "labs/lab-004-exact-dual-verification/results/dual-blocks-pqg/verification.json",
+        "source_directory": "/Users/home/Library/CloudStorage/Dropbox/Research/[Mercor]SciCode2/benchmarks/hubbard-operator-bootstrap/labs/lab-002-moment-sdp/results/dual-blocks-pqg",
+        "lower_bound": "-8.763353354793",
+        "seconds": 0.27806108305230737,
+        "peak_rss_bytes": 56950784
+      },
+      "physical_map_audit": {
+        "path": "labs/lab-001-cluster-certificates/audit-dual-blocks-pqg-portable.json",
+        "seconds": 3.1474691671319306,
+        "peak_rss_bytes": 187990016,
+        "portable": true
+      },
+      "physical_audit_reused_after_exact_map_signature_match": false,
+      "variables": 331,
+      "cones": 54,
+      "max_cone_dim": 32,
+      "cone_entries": 11446,
+      "model_construction_seconds": 0.5892979160416871,
+      "cvxpy_build_seconds": 0.01798966689966619,
+      "solve_seconds": 13.81980475015007,
+      "recorded_process_phase_seconds": 14.427092333091423,
+      "process_peak_rss_bytes": 361857024,
+      "singlet_ground_sector_refinement": false,
+      "scope": "independent measured run",
+      "full_physical_and_exact_certificate_audit_complete": true
+    },
+    {
+      "experiment": "labs/lab-002-moment-sdp/results/pqg-eps6",
+      "name": "pqg-eps6",
+      "operator_dimension": 2081,
+      "solver": "SCS",
+      "status": "optimal",
+      "primal_energy": -10.566677907992453,
+      "floating_residual_corrected_lower": -10.566825373995018,
+      "exact_certified_lower": "-10.566825373980",
+      "certificate": {
+        "path": "labs/lab-004-exact-dual-verification/results/pqg-eps6/verification.json",
+        "source_directory": "/Users/home/Library/CloudStorage/Dropbox/Research/[Mercor]SciCode2/benchmarks/hubbard-operator-bootstrap/labs/lab-002-moment-sdp/results/pqg-eps6",
+        "lower_bound": "-10.566825373980",
+        "seconds": 1.353796707931906,
+        "peak_rss_bytes": 54984704
+      },
+      "physical_map_audit": {
+        "path": "labs/lab-001-cluster-certificates/audit-pqg-eps6.json",
+        "seconds": 2.3002159579191357,
+        "peak_rss_bytes": 55754752,
+        "portable": false
+      },
+      "physical_audit_reused_after_exact_map_signature_match": false,
+      "variables": 3240,
+      "cones": 208,
+      "max_cone_dim": 32,
+      "cone_entries": 36480,
+      "model_construction_seconds": null,
+      "cvxpy_build_seconds": 0.09380337479524314,
+      "solve_seconds": 41.254630708135664,
+      "recorded_process_phase_seconds": 41.34843408293091,
+      "process_peak_rss_bytes": 138002432,
+      "singlet_ground_sector_refinement": false,
+      "scope": "independent measured run",
+      "full_physical_and_exact_certificate_audit_complete": true
+    },
+    {
+      "experiment": "labs/lab-002-moment-sdp/results/pqg-eps8",
+      "name": "pqg-eps8",
+      "operator_dimension": 2081,
+      "solver": "SCS",
+      "status": "optimal_inaccurate",
+      "primal_energy": -10.566670715093291,
+      "floating_residual_corrected_lower": -10.56672199057255,
+      "exact_certified_lower": "-10.566721990544",
+      "certificate": {
+        "path": "labs/lab-004-exact-dual-verification/results/pqg-eps8/verification.json",
+        "source_directory": "/Users/home/Library/CloudStorage/Dropbox/Research/[Mercor]SciCode2/benchmarks/hubbard-operator-bootstrap/labs/lab-002-moment-sdp/results/pqg-eps8",
+        "lower_bound": "-10.566721990544",
+        "seconds": 0.763717541936785,
+        "peak_rss_bytes": 55427072
+      },
+      "physical_map_audit": {
+        "path": "labs/lab-001-cluster-certificates/audit-pqg-eps8.json",
+        "seconds": 7.203500667121261,
+        "peak_rss_bytes": 91275264,
+        "portable": false
+      },
+      "physical_audit_reused_after_exact_map_signature_match": false,
+      "variables": 3240,
+      "cones": 208,
+      "max_cone_dim": 32,
+      "cone_entries": 36480,
+      "model_construction_seconds": 0.09742045891471207,
+      "cvxpy_build_seconds": 0.08986583398655057,
+      "solve_seconds": 314.17362270806916,
+      "recorded_process_phase_seconds": 314.3609090009704,
+      "process_peak_rss_bytes": 160088064,
+      "singlet_ground_sector_refinement": false,
+      "scope": "independent measured run",
+      "full_physical_and_exact_certificate_audit_complete": true
+    },
+    {
+      "experiment": "labs/lab-002-moment-sdp/results/selected-t2-eps6",
+      "name": "selected-t2-eps6",
+      "operator_dimension": 3041,
+      "solver": "SCS",
+      "status": "optimal",
+      "primal_energy": -10.267642827071663,
+      "floating_residual_corrected_lower": -10.268038996855985,
+      "exact_certified_lower": "-10.268038996818",
+      "certificate": {
+        "path": "labs/lab-004-exact-dual-verification/results/selected-t2-eps6/verification.json",
+        "source_directory": "/Users/home/Library/CloudStorage/Dropbox/Research/[Mercor]SciCode2/benchmarks/hubbard-operator-bootstrap/labs/lab-002-moment-sdp/results/selected-t2-eps6",
+        "lower_bound": "-10.268038996818",
+        "seconds": 1.2692072079516947,
+        "peak_rss_bytes": 55050240
+      },
+      "physical_map_audit": {
+        "path": "labs/lab-001-cluster-certificates/audit-selected-t2-eps6-fast.json",
+        "seconds": 29.06077166600153,
+        "peak_rss_bytes": 84082688,
+        "portable": false
+      },
+      "physical_audit_reused_after_exact_map_signature_match": false,
+      "variables": 3240,
+      "cones": 240,
+      "max_cone_dim": 32,
+      "cone_entries": 44672,
+      "model_construction_seconds": 2.008127166889608,
+      "cvxpy_build_seconds": 0.07625225000083447,
+      "solve_seconds": 46.838989166077226,
+      "recorded_process_phase_seconds": 48.92336858296767,
+      "process_peak_rss_bytes": 189890560,
+      "singlet_ground_sector_refinement": false,
+      "scope": "independent measured run",
+      "full_physical_and_exact_certificate_audit_complete": true
+    },
+    {
+      "experiment": "labs/lab-002-moment-sdp/results/t1-two-site-t2-sym",
+      "name": "t1-two-site-t2-sym",
+      "operator_dimension": 15841,
+      "solver": "SCS",
+      "status": "optimal_inaccurate",
+      "primal_energy": -8.855823880624285,
+      "floating_residual_corrected_lower": -8.856092835008097,
+      "exact_certified_lower": "-8.856092835155",
+      "certificate": {
+        "path": "labs/lab-004-exact-dual-verification/results/t1-two-site-t2-sym/verification.json",
+        "source_directory": "/Users/home/Library/CloudStorage/Dropbox/Research/[Mercor]SciCode2/benchmarks/hubbard-operator-bootstrap/labs/lab-002-moment-sdp/results/t1-two-site-t2-sym",
+        "lower_bound": "-8.856092835155",
+        "seconds": 3.669392667012289,
+        "peak_rss_bytes": 60653568
+      },
+      "physical_map_audit": {
+        "path": "labs/lab-001-cluster-certificates/audit-t1-two-site-t2-sym.json",
+        "seconds": 30.75643308297731,
+        "peak_rss_bytes": 132890624,
+        "portable": false
+      },
+      "physical_audit_reused_after_exact_map_signature_match": false,
+      "variables": 331,
+      "cones": 102,
+      "max_cone_dim": 72,
+      "cone_entries": 58700,
+      "model_construction_seconds": 111.0488760410808,
+      "cvxpy_build_seconds": 0.08441187487915158,
+      "solve_seconds": 569.2357702499721,
+      "recorded_process_phase_seconds": 680.3690581659321,
+      "process_peak_rss_bytes": 256049152,
+      "singlet_ground_sector_refinement": false,
+      "scope": "independent measured run",
+      "full_physical_and_exact_certificate_audit_complete": true
+    },
+    {
+      "experiment": "labs/lab-002-moment-sdp/results/three-site-stars-clarabel",
+      "name": "three-site-stars-clarabel",
+      "operator_dimension": 7457,
+      "solver": "CLARABEL",
+      "status": "optimal_inaccurate",
+      "primal_energy": -8.858969216748955,
+      "floating_residual_corrected_lower": -8.859051476570004,
+      "exact_certified_lower": "-8.859051476423",
+      "certificate": {
+        "path": "labs/lab-004-exact-dual-verification/results/three-site-stars-clarabel/verification.json",
+        "source_directory": "/Users/home/Library/CloudStorage/Dropbox/Research/[Mercor]SciCode2/benchmarks/hubbard-operator-bootstrap/labs/lab-002-moment-sdp/results/three-site-stars-clarabel",
+        "lower_bound": "-8.859051476423",
+        "seconds": 4.7788399590644985,
+        "peak_rss_bytes": 63488000
+      },
+      "physical_map_audit": {
+        "path": "labs/lab-001-cluster-certificates/audit-three-site-stars-clarabel.json",
+        "seconds": 11.952382582938299,
+        "peak_rss_bytes": 572784640,
+        "portable": false
+      },
+      "physical_audit_reused_after_exact_map_signature_match": false,
+      "variables": 331,
+      "cones": 66,
+      "max_cone_dim": 59,
+      "cone_entries": 30554,
+      "model_construction_seconds": 2.3616401250474155,
+      "cvxpy_build_seconds": 0.03661470813676715,
+      "solve_seconds": 43.14869941701181,
+      "recorded_process_phase_seconds": 45.546954250195995,
+      "process_peak_rss_bytes": 1475133440,
+      "singlet_ground_sector_refinement": false,
+      "scope": "independent measured run",
+      "full_physical_and_exact_certificate_audit_complete": true
+    },
+    {
+      "experiment": "labs/lab-002-moment-sdp/results/two-site-spin-complete",
+      "name": "two-site-spin-complete",
+      "operator_dimension": 6881,
+      "solver": "SCS",
+      "status": "optimal_inaccurate",
+      "primal_energy": -8.864032626503342,
+      "floating_residual_corrected_lower": -8.864590506285367,
+      "exact_certified_lower": "-8.864590506761",
+      "certificate": {
+        "path": "labs/lab-004-exact-dual-verification/results/two-site-spin-complete/verification.json",
+        "source_directory": "/Users/home/Library/CloudStorage/Dropbox/Research/[Mercor]SciCode2/benchmarks/hubbard-operator-bootstrap/labs/lab-002-moment-sdp/results/two-site-spin-complete",
+        "lower_bound": "-8.864590506761",
+        "seconds": 3.0770824998617172,
+        "peak_rss_bytes": 60211200
+      },
+      "physical_map_audit": {
+        "path": "labs/lab-001-cluster-certificates/audit-two-site-spin-complete.json",
+        "seconds": 29.987516041845083,
+        "peak_rss_bytes": 159940608,
+        "portable": false
+      },
+      "physical_audit_reused_after_exact_map_signature_match": false,
+      "variables": 331,
+      "cones": 84,
+      "max_cone_dim": 45,
+      "cone_entries": 22690,
+      "model_construction_seconds": 2.025312792044133,
+      "cvxpy_build_seconds": 0.024202500004321337,
+      "solve_seconds": 249.04187866603024,
+      "recorded_process_phase_seconds": 251.0913939580787,
+      "process_peak_rss_bytes": 261275648,
+      "singlet_ground_sector_refinement": false,
+      "scope": "independent measured run",
+      "full_physical_and_exact_certificate_audit_complete": true
+    },
+    {
+      "experiment": "labs/lab-002-moment-sdp/results/two-site-t2-eps5",
+      "name": "two-site-t2-eps5",
+      "operator_dimension": 5921,
+      "solver": "SCS",
+      "status": "optimal",
+      "primal_energy": -8.863749348434862,
+      "floating_residual_corrected_lower": -8.88502336922286,
+      "exact_certified_lower": null,
+      "certificate": null,
+      "physical_map_audit": null,
+      "physical_audit_reused_after_exact_map_signature_match": false,
+      "variables": 3240,
+      "cones": 240,
+      "max_cone_dim": 61,
+      "cone_entries": 155552,
+      "model_construction_seconds": 34.63417850015685,
+      "cvxpy_build_seconds": 0.29656862490810454,
+      "solve_seconds": 911.5599479579832,
+      "recorded_process_phase_seconds": 946.4906950830482,
+      "process_peak_rss_bytes": 657768448,
+      "singlet_ground_sector_refinement": false,
+      "scope": "independent measured run",
+      "full_physical_and_exact_certificate_audit_complete": false
+    },
+    {
+      "experiment": "labs/lab-002-moment-sdp/results/two-site-t2-sym",
+      "name": "two-site-t2-sym",
+      "operator_dimension": 5921,
+      "solver": "SCS",
+      "status": "optimal",
+      "primal_energy": -8.864001438200098,
+      "floating_residual_corrected_lower": -8.864558788544501,
+      "exact_certified_lower": "-8.864558789088",
+      "certificate": {
+        "path": "labs/lab-004-exact-dual-verification/results/two-site-t2-sym/verification.json",
+        "source_directory": "/Users/home/Library/CloudStorage/Dropbox/Research/[Mercor]SciCode2/benchmarks/hubbard-operator-bootstrap/labs/lab-002-moment-sdp/results/two-site-t2-sym",
+        "lower_bound": "-8.864558789088",
+        "seconds": 1.3856047501321882,
+        "peak_rss_bytes": 58589184
+      },
+      "physical_map_audit": {
+        "path": "labs/lab-001-cluster-certificates/audit-two-site-t2-sym.json",
+        "seconds": 34.386889667017385,
+        "peak_rss_bytes": 138592256,
+        "portable": false
+      },
+      "physical_audit_reused_after_exact_map_signature_match": false,
+      "variables": 331,
+      "cones": 66,
+      "max_cone_dim": 45,
+      "cone_entries": 22050,
+      "model_construction_seconds": 61.05761433299631,
+      "cvxpy_build_seconds": 0.09736791695468128,
+      "solve_seconds": 278.21007083309814,
+      "recorded_process_phase_seconds": 339.36505308304913,
+      "process_peak_rss_bytes": 188481536,
+      "singlet_ground_sector_refinement": false,
+      "scope": "independent measured run",
+      "full_physical_and_exact_certificate_audit_complete": true
+    },
+    {
+      "experiment": "labs/lab-002-moment-sdp/results/two-site-t2-sym-clarabel",
+      "name": "two-site-t2-sym-clarabel",
+      "operator_dimension": 5921,
+      "solver": "CLARABEL",
+      "status": "optimal_inaccurate",
+      "primal_energy": -8.863938173163053,
+      "floating_residual_corrected_lower": -8.864118703508716,
+      "exact_certified_lower": "-8.864118703137",
+      "certificate": {
+        "path": "labs/lab-004-exact-dual-verification/results/two-site-t2-sym-clarabel/verification.json",
+        "source_directory": "/Users/home/Library/CloudStorage/Dropbox/Research/[Mercor]SciCode2/benchmarks/hubbard-operator-bootstrap/labs/lab-002-moment-sdp/results/two-site-t2-sym-clarabel",
+        "lower_bound": "-8.864118703137",
+        "seconds": 1.917239333037287,
+        "peak_rss_bytes": 58294272
+      },
+      "physical_map_audit": {
+        "path": "labs/lab-001-cluster-certificates/audit-two-site-t2-sym.json",
+        "seconds": 34.386889667017385,
+        "peak_rss_bytes": 138592256,
+        "portable": false
+      },
+      "physical_audit_reused_after_exact_map_signature_match": true,
+      "variables": 331,
+      "cones": 66,
+      "max_cone_dim": 45,
+      "cone_entries": 22050,
+      "model_construction_seconds": 0.27304716710932553,
+      "cvxpy_build_seconds": 0.03301929193548858,
+      "solve_seconds": 64.05785745801404,
+      "recorded_process_phase_seconds": 64.36392391705886,
+      "process_peak_rss_bytes": 600539136,
+      "singlet_ground_sector_refinement": false,
+      "scope": "independent measured run",
+      "full_physical_and_exact_certificate_audit_complete": true
+    },
+    {
+      "experiment": "labs/lab-003-theory-audit/outputs/pqgt1",
+      "name": "pqgt1",
+      "operator_dimension": 12001,
+      "solver": "SCS",
+      "status": "optimal",
+      "primal_energy": -9.839851740215877,
+      "floating_residual_corrected_lower": -9.847999995187534,
+      "exact_certified_lower": "-9.847999995266",
+      "certificate": {
+        "path": "labs/lab-003-theory-audit/outputs/pqgt1_exact/verification.json",
+        "source_directory": "/Users/home/Library/CloudStorage/Dropbox/Research/[Mercor]SciCode2/benchmarks/hubbard-operator-bootstrap/labs/lab-003-theory-audit/outputs/pqgt1",
+        "lower_bound": "-9.847999995266",
+        "seconds": 7.740334250032902,
+        "peak_rss_bytes": 55345152
+      },
+      "physical_map_audit": {
+        "path": "labs/lab-001-cluster-certificates/audit-pqgt1.json",
+        "seconds": 35.54439162509516,
+        "peak_rss_bytes": 82837504,
+        "portable": false
+      },
+      "physical_audit_reused_after_exact_map_signature_match": false,
+      "variables": 3240,
+      "cones": 272,
+      "max_cone_dim": 120,
+      "cone_entries": 536480,
+      "model_construction_seconds": 35.60486799990758,
+      "cvxpy_build_seconds": 0.2466059159487486,
+      "solve_seconds": 472.9772689170204,
+      "recorded_process_phase_seconds": 508.82874283287674,
+      "process_peak_rss_bytes": 390496256,
+      "singlet_ground_sector_refinement": false,
+      "scope": "independent measured run",
+      "full_physical_and_exact_certificate_audit_complete": true
+    },
+    {
+      "experiment": "labs/lab-003-theory-audit/outputs/pqgt1_sym",
+      "name": "pqgt1_sym",
+      "operator_dimension": 12001,
+      "solver": "SCS",
+      "status": "optimal",
+      "primal_energy": -9.839810515650292,
+      "floating_residual_corrected_lower": -9.83989871910774,
+      "exact_certified_lower": "-9.839898719195",
+      "certificate": {
+        "path": "labs/lab-003-theory-audit/outputs/pqgt1_sym_exact/verification.json",
+        "source_directory": "/Users/home/Library/CloudStorage/Dropbox/Research/[Mercor]SciCode2/benchmarks/hubbard-operator-bootstrap/labs/lab-003-theory-audit/outputs/pqgt1_sym",
+        "lower_bound": "-9.839898719195",
+        "seconds": 2.888043000129983,
+        "peak_rss_bytes": 55394304
+      },
+      "physical_map_audit": {
+        "path": "labs/lab-001-cluster-certificates/audit-t1-sym.json",
+        "seconds": 4.948613249929622,
+        "peak_rss_bytes": 91045888,
+        "portable": false
+      },
+      "physical_audit_reused_after_exact_map_signature_match": false,
+      "variables": 331,
+      "cones": 244,
+      "max_cone_dim": 72,
+      "cone_entries": 73130,
+      "model_construction_seconds": 6.886264875065535,
+      "cvxpy_build_seconds": 0.06277725007385015,
+      "solve_seconds": 156.99055583309382,
+      "recorded_process_phase_seconds": 163.9395979582332,
+      "process_peak_rss_bytes": 192200704,
+      "singlet_ground_sector_refinement": false,
+      "scope": "independent measured run",
+      "full_physical_and_exact_certificate_audit_complete": true
+    },
+    {
+      "experiment": "labs/lab-003-theory-audit/outputs/pqgt1t2prime_sym_s0",
+      "name": "pqgt1t2prime_sym_s0",
+      "operator_dimension": 43745,
+      "solver": "SCS",
+      "status": "optimal_inaccurate",
+      "primal_energy": -8.762268357676852,
+      "floating_residual_corrected_lower": -8.763432534470299,
+      "exact_certified_lower": "-8.763432534493",
+      "certificate": {
+        "path": "labs/lab-003-theory-audit/outputs/pqgt1t2prime_sym_s0_exact/verification.json",
+        "source_directory": "/Users/home/Library/CloudStorage/Dropbox/Research/[Mercor]SciCode2/benchmarks/hubbard-operator-bootstrap/labs/lab-003-theory-audit/outputs/pqgt1t2prime_sym_s0",
+        "lower_bound": "-8.763432534493",
+        "seconds": 4.086623042123392,
+        "peak_rss_bytes": 75956224
+      },
+      "physical_map_audit": {
+        "path": "labs/lab-001-cluster-certificates/audit-full-t1-t2prime-sym-s0.json",
+        "seconds": 13.675940917106345,
+        "peak_rss_bytes": 114819072,
+        "portable": false
+      },
+      "physical_audit_reused_after_exact_map_signature_match": false,
+      "variables": 331,
+      "cones": 280,
+      "max_cone_dim": 233,
+      "cone_entries": 446924,
+      "model_construction_seconds": 39.82280629198067,
+      "cvxpy_build_seconds": 0.17944237496703863,
+      "solve_seconds": 1273.2892838749103,
+      "recorded_process_phase_seconds": 1313.291532541858,
+      "process_peak_rss_bytes": 330727424,
+      "singlet_ground_sector_refinement": true,
+      "scope": "independent measured run",
+      "full_physical_and_exact_certificate_audit_complete": true
+    },
+    {
+      "experiment": "labs/lab-003-theory-audit/outputs/pqgt2prime_mixed_sym",
+      "name": "pqgt2prime_mixed_sym",
+      "operator_dimension": 18465,
+      "solver": "SCS",
+      "status": "optimal_inaccurate",
+      "primal_energy": -8.789897834221106,
+      "floating_residual_corrected_lower": -8.790405273735438,
+      "exact_certified_lower": "-8.790405273878",
+      "certificate": {
+        "path": "labs/lab-003-theory-audit/outputs/pqgt2prime_mixed_sym_exact/verification.json",
+        "source_directory": "/Users/home/Library/CloudStorage/Dropbox/Research/[Mercor]SciCode2/benchmarks/hubbard-operator-bootstrap/labs/lab-003-theory-audit/outputs/pqgt2prime_mixed_sym",
+        "lower_bound": "-8.790405273878",
+        "seconds": 4.4706782079301775,
+        "peak_rss_bytes": 59539456
+      },
+      "physical_map_audit": {
+        "path": "labs/lab-001-cluster-certificates/audit-mixed-t2-sym.json",
+        "seconds": 5.061510582920164,
+        "peak_rss_bytes": 97189888,
+        "portable": false
+      },
+      "physical_audit_reused_after_exact_map_signature_match": false,
+      "variables": 331,
+      "cones": 226,
+      "max_cone_dim": 161,
+      "cone_entries": 196014,
+      "model_construction_seconds": 4.650585792027414,
+      "cvxpy_build_seconds": 0.07022245903499424,
+      "solve_seconds": 559.2023335001431,
+      "recorded_process_phase_seconds": 563.9231417512055,
+      "process_peak_rss_bytes": 237387776,
+      "singlet_ground_sector_refinement": false,
+      "scope": "independent measured run",
+      "full_physical_and_exact_certificate_audit_complete": true
+    },
+    {
+      "experiment": "labs/lab-003-theory-audit/outputs/pqgt2prime_sym",
+      "name": "pqgt2prime_sym",
+      "operator_dimension": 33825,
+      "solver": "SCS",
+      "status": "optimal_inaccurate",
+      "primal_energy": -8.762902853699883,
+      "floating_residual_corrected_lower": -8.764969112960843,
+      "exact_certified_lower": "-8.764969112905",
+      "certificate": {
+        "path": "labs/lab-003-theory-audit/outputs/pqgt2prime_sym_exact/verification.json",
+        "source_directory": "/Users/home/Library/CloudStorage/Dropbox/Research/[Mercor]SciCode2/benchmarks/hubbard-operator-bootstrap/labs/lab-003-theory-audit/outputs/pqgt2prime_sym",
+        "lower_bound": "-8.764969112905",
+        "seconds": 3.394080749945715,
+        "peak_rss_bytes": 74481664
+      },
+      "physical_map_audit": {
+        "path": "labs/lab-001-cluster-certificates/audit-full-t2prime-sym.json",
+        "seconds": 20.909021999919787,
+        "peak_rss_bytes": 113623040,
+        "portable": false
+      },
+      "physical_audit_reused_after_exact_map_signature_match": false,
+      "variables": 331,
+      "cones": 244,
+      "max_cone_dim": 233,
+      "cone_entries": 410274,
+      "model_construction_seconds": 50.87699945806526,
+      "cvxpy_build_seconds": 0.2650065829511732,
+      "solve_seconds": 511.5246743329335,
+      "recorded_process_phase_seconds": 562.6666803739499,
+      "process_peak_rss_bytes": 265568256,
+      "singlet_ground_sector_refinement": false,
+      "scope": "independent measured run",
+      "full_physical_and_exact_certificate_audit_complete": true
+    },
+    {
+      "experiment": "labs/lab-003-theory-audit/outputs/warm_start_smoke",
+      "name": "warm_start_smoke",
+      "operator_dimension": 33825,
+      "solver": "SCS",
+      "status": "optimal_inaccurate",
+      "primal_energy": -8.762933876480105,
+      "floating_residual_corrected_lower": -8.765749109616342,
+      "exact_certified_lower": null,
+      "certificate": null,
+      "physical_map_audit": {
+        "path": "labs/lab-001-cluster-certificates/audit-full-t2prime-sym.json",
+        "seconds": 20.909021999919787,
+        "peak_rss_bytes": 113623040,
+        "portable": false
+      },
+      "physical_audit_reused_after_exact_map_signature_match": true,
+      "variables": 331,
+      "cones": 244,
+      "max_cone_dim": 233,
+      "cone_entries": 410274,
+      "model_construction_seconds": null,
+      "cvxpy_build_seconds": 0.000563708133995533,
+      "solve_seconds": 0.19283420802094042,
+      "recorded_process_phase_seconds": 0.19339791615493596,
+      "process_peak_rss_bytes": 272220160,
+      "singlet_ground_sector_refinement": false,
+      "scope": "warm-start continuation, prior discovery cost additional",
+      "full_physical_and_exact_certificate_audit_complete": false
+    },
+    {
+      "experiment": "labs/lab-006-true-cubic-grams/outputs/fixed_full_t2_extension",
+      "name": "fixed_full_t2_extension",
+      "operator_dimension": null,
+      "solver": null,
+      "status": "optimal_inaccurate",
+      "primal_energy": null,
+      "floating_residual_corrected_lower": null,
+      "exact_certified_lower": null,
+      "certificate": null,
+      "physical_map_audit": null,
+      "physical_audit_reused_after_exact_map_signature_match": false,
+      "variables": null,
+      "cones": 12,
+      "max_cone_dim": 32,
+      "cone_entries": null,
+      "model_construction_seconds": null,
+      "cvxpy_build_seconds": null,
+      "solve_seconds": 3.1318134171888232,
+      "recorded_process_phase_seconds": 3.1318134171888232,
+      "process_peak_rss_bytes": 278167552,
+      "singlet_ground_sector_refinement": false,
+      "scope": "feasibility pilot with fixed prior moments; no energy lower claimed",
+      "full_physical_and_exact_certificate_audit_complete": false
+    },
+    {
+      "experiment": "labs/lab-006-true-cubic-grams/outputs/full_t2_plus_true_density",
+      "name": "full_t2_plus_true_density",
+      "operator_dimension": null,
+      "solver": "SCS",
+      "status": "optimal_inaccurate",
+      "primal_energy": -8.760518040925408,
+      "floating_residual_corrected_lower": -10.663187970822502,
+      "exact_certified_lower": null,
+      "certificate": null,
+      "physical_map_audit": null,
+      "physical_audit_reused_after_exact_map_signature_match": false,
+      "variables": 531,
+      "cones": 656,
+      "max_cone_dim": 233,
+      "cone_entries": 422962,
+      "model_construction_seconds": 5.120019958121702,
+      "cvxpy_build_seconds": 0.2087805001065135,
+      "solve_seconds": 628.2705361249391,
+      "recorded_process_phase_seconds": 633.5993365831673,
+      "process_peak_rss_bytes": 457621504,
+      "singlet_ground_sector_refinement": false,
+      "scope": "true cubic Gram pilot; semantic X maps not independently audited here, no promoted lower claim",
+      "full_physical_and_exact_certificate_audit_complete": false
+    }
+  ],
+  "validated_cluster_experiments": [
+    {
+      "experiment": "labs/lab-001-cluster-certificates/results-2x2.json",
+      "name": "results-2x2",
+      "exact_or_validated_lower": -16.821987867705097,
+      "seconds": 0.03986562509089708,
+      "peak_rss_bytes": 59195392,
+      "largest_sector_dim": 36
+    },
+    {
+      "experiment": "labs/lab-001-cluster-certificates/results-2x3-optimized.json",
+      "name": "results-2x3-optimized",
+      "exact_or_validated_lower": -14.670935398165632,
+      "seconds": 0.2941632920410484,
+      "peak_rss_bytes": 70729728,
+      "largest_sector_dim": 400
+    },
+    {
+      "experiment": "labs/lab-001-cluster-certificates/results-2x3.json",
+      "name": "results-2x3",
+      "exact_or_validated_lower": -15.373681303807615,
+      "seconds": 0.202654791995883,
+      "peak_rss_bytes": 70057984,
+      "largest_sector_dim": 400
+    },
+    {
+      "experiment": "labs/lab-001-cluster-certificates/results-2x4-cylinder.json",
+      "name": "results-2x4-cylinder",
+      "exact_or_validated_lower": -14.25342469000384,
+      "seconds": 105.36517791706137,
+      "peak_rss_bytes": 978436096,
+      "largest_sector_dim": 4900
+    }
+  ],
+  "fresh_sequential_reproductions": [
+    {
+      "completed": true,
+      "total_wall_seconds": 198.86504200077616,
+      "stages": [
+        {
+          "stage": "solve",
+          "wall_seconds_including_python_startup": 192.1257920837961,
+          "exit_code": 0,
+          "log": "solve.log"
+        },
+        {
+          "stage": "physical-audit",
+          "wall_seconds_including_python_startup": 4.44704629201442,
+          "exit_code": 0,
+          "log": "physical-audit.log"
+        },
+        {
+          "stage": "exact-certificate",
+          "wall_seconds_including_python_startup": 2.2834349169861525,
+          "exit_code": 0,
+          "log": "exact-certificate.log"
+        }
+      ],
+      "certified_total_energy_lower_bound": "-8.764969112905",
+      "operator_space_dimension": 33825,
+      "nvar": 331,
+      "nblocks": 244,
+      "max_psd_dim": 233,
+      "psd_entries": 410274,
+      "construction_seconds": 5.666435499908403,
+      "solve_seconds": 183.91089579183608,
+      "export_seconds": 0.7625926251057535,
+      "largest_stage_process_peak_rss_bytes": 388218880,
+      "resource_scope": "Sequential full T2-prime model construction, solve, export, independent physical audit and exact certificate.",
+      "input_sha256": {},
+      "resumed_successful_stage_seconds": 192.1257920837961,
+      "prior_failed_stages": [
+        {
+          "stage": "physical-audit",
+          "wall_seconds_including_python_startup": 2.857834459049627,
+          "exit_code": 1,
+          "log": "physical-audit.log",
+          "diagnostic": "KeyError: kind during descriptor physical-basis check; original failure log was overwritten on resume, traceback retained in task tool history."
+        }
+      ],
+      "total_wall_seconds_scope": "Successful prior stage walls plus current elapsed; manual restart gap and prior failed stages are excluded and recorded separately.",
+      "validation_repair": "Initial audit failed because source_operator_blocks.json lacked kind metadata. Added kind=T2prime to source descriptors and fixed the exporter; reused completed solve and resumed the independent audit. Matrix coefficients were unchanged.",
+      "metadata_path": "labs/lab-004-exact-dual-verification/results/full-reproduction/reproduction.json",
+      "model_stage": {
+        "solver": "SCS",
+        "status": "optimal_inaccurate",
+        "energy_primal": -8.762902853699883,
+        "dual_unadjusted": -8.76298265321515,
+        "residual_l1": 0.0019864597456928723,
+        "certificate_float_lower": -8.764969112960843,
+        "dual_min_eigenvalue": -8.617733355857607e-14,
+        "equality_max_residual": 5.283336976802389e-07,
+        "nvar": 331,
+        "nblocks": 244,
+        "max_psd_dim": 233,
+        "psd_entries": 410274,
+        "model_construction_sec": 5.666435499908403,
+        "build_sec": 0.029951042030006647,
+        "solve_sec": 183.91089579183608,
+        "solver_solve_time": 183.48410195800002,
+        "iterations": 3000,
+        "peak_rss_bytes": 388218880,
+        "eps": 1e-05,
+        "export_sec": 0.7625926251057535,
+        "build_solve_export_sec": 184.70344237494282,
+        "reduction": {
+          "original_nvar": 3240,
+          "reduced_nvar": 331,
+          "zero_variables": 60
+        }
+      },
+      "physical_audit_stage": {
+        "passed": true,
+        "input_directory": "/Users/home/Library/CloudStorage/Dropbox/Research/[Mercor]SciCode2/benchmarks/hubbard-operator-bootstrap/labs/lab-004-exact-dual-verification/results/full-reproduction/model",
+        "portable_operator_input_directory": null,
+        "portable_selected_maps_checked": 0,
+        "independent_CAR_Fock_action_tests": 4000,
+        "exhaustive_T2_CAR_order_equality_patterns": 46656,
+        "distinct_lattice_bonds": 32,
+        "full_variables": 3240,
+        "variables": 331,
+        "symmetry_expansion_audit": {
+          "group": "D4 spatial rotations/reflections and spin interchange",
+          "signed_nonzero_variable_orbits": 331,
+          "signed_zero_variable_orbits": 11
+        },
+        "singlet_ground_sector_restriction": false,
+        "character_projection_sources_audited": 12,
+        "star_selected_subspace_rank_per_source": null,
+        "adaptive_cut_maps_checked": 0,
+        "equalities": 66,
+        "blocks": 244,
+        "affine_nonzero_coefficients_checked": 174132,
+        "all_affine_coefficient_differences": 0,
+        "objective_float_max_difference": 0.0,
+        "objective_handling": "Use independently reconstructed exact half-integer coefficients in final certificate.",
+        "elapsed_seconds": 4.133058625040576,
+        "peak_rss_bytes": 114245632,
+        "physical_sector": {
+          "L": 4,
+          "t": 1,
+          "U": 8,
+          "Nup": 8,
+          "Ndown": 8
+        }
+      },
+      "exact_stage": {
+        "source_directory": "/Users/home/Library/CloudStorage/Dropbox/Research/[Mercor]SciCode2/benchmarks/hubbard-operator-bootstrap/labs/lab-004-exact-dual-verification/results/full-reproduction/model",
+        "certificate_type": "exact dyadic Gram SOS with exact coefficient residual correction",
+        "factor_fractional_bits": 40,
+        "denominator": "1208925819614629174706176",
+        "dual_constant_numerator": "-10593795986303525314270440",
+        "residual_l1_numerator": "2401482411216555404778",
+        "lower_bound_numerator": "-10596197468714741869675218",
+        "lower_bound_exact_decimal": "-8.764969112904301481781591109298077291612366623851926306087989360094071",
+        "reported_total_energy_lower_bound": "-8.764969112905",
+        "per_site_lower_bound_decimal": "-0.5478105695565188426113494443311298307257729139907453941304993350058795",
+        "residual_l1_float": 0.0019864596919454323,
+        "dual_constant_float": -8.762982653212356,
+        "independent_hubbard_objective_max_difference": 0.0,
+        "nvar": 331,
+        "nblocks": 244,
+        "max_psd_dim": 233,
+        "factor_entries": 410274,
+        "validation_seconds": 2.047004709020257,
+        "peak_rss_bytes": 74383360,
+        "assumptions": [
+          "All stored affine coefficients and RHS are treated as exact dyadic numbers; physical-map audits separately justify those coefficients.",
+          "The objective is independently reconstructed from the exact4x4 Hubbard Fourier coefficients.",
+          "Each coordinate is a real occupation or pair-RDM moment with absolute value<=1, proved using n/hole,P,G positivity.",
+          "Equalities are valid on the fixed-spin sector; block maps follow exact CAR and momentum conservation."
+        ],
+        "symmetry_expansion_audit": {
+          "full_variables": 3240,
+          "reduced_variables": 331,
+          "orbits": 342,
+          "zero_orbits": 11,
+          "passed": true
+        },
+        "affine_coefficient_fractional_bits": 0,
+        "equality_multiplier_denominator": "1208925819614629174706176"
+      }
+    },
+    {
+      "completed": true,
+      "total_wall_seconds": 22.953032874967903,
+      "stages": [
+        {
+          "stage": "solve",
+          "wall_seconds_including_python_startup": 13.959793332964182,
+          "exit_code": 0,
+          "log": "solve.log"
+        },
+        {
+          "stage": "physical-audit",
+          "wall_seconds_including_python_startup": 6.975857000099495,
+          "exit_code": 0,
+          "log": "physical-audit.log"
+        },
+        {
+          "stage": "exact-certificate",
+          "wall_seconds_including_python_startup": 0.8819330839905888,
+          "exit_code": 0,
+          "log": "exact-certificate.log"
+        },
+        {
+          "stage": "operator-rank",
+          "wall_seconds_including_python_startup": 1.1258335418533534,
+          "exit_code": 0,
+          "log": "operator-rank.log"
+        }
+      ],
+      "certified_total_energy_lower_bound": "-8.763353354793",
+      "operator_space_dimension": 2257,
+      "nvar": 331,
+      "nblocks": 54,
+      "max_psd_dim": 32,
+      "psd_entries": 11446,
+      "construction_seconds": 0.8353099159430712,
+      "solve_seconds": 11.276892333989963,
+      "export_seconds": 0.23357241600751877,
+      "largest_stage_process_peak_rss_bytes": 404488192,
+      "resource_scope": "Sequential fixed-operator construction, solve, export, independent audit, exact certificate and exact operator rank. Full-operator discovery and earlier exploratory research are recorded separately.",
+      "input_sha256": {
+        "operator_space.json": "58d638d2bd5131c67b9cc33bb0faa7e167ef1a899a04118bbe5513f31ea5e53b",
+        "projection_000.npz": "45aee8cc6ac4b373e3626b013e43a73c8bd0b763302ac7b3d0120902f9055c76",
+        "projection_001.npz": "331b84f097a5aaeb82226ae435fd2db9f89480cc78fe2f2ecdfae4bc0db0c6a9",
+        "projection_002.npz": "5e1e5739790701754ae10cecc374ca76152b7adace31348f3d1c6c86c2ddf8a2",
+        "projection_003.npz": "92a05b2809edb02d899f7a111c81387d1a469aefda79945857259c913185357c",
+        "projection_004.npz": "6c6320638fec8a3a7ff04376f0e94f9315b991b7e18ac1bd48c06cea05d0d4b9",
+        "projection_005.npz": "897e2b0e737d4d563bd172be41b7bd614e7429535e776925b58c9492d137a274",
+        "rank_proof/operators.json.gz": "978bc8edb0e6f9b05e9eeed9ae3251142a0828cb6cded6d3b044523e5a75d8d7",
+        "rank_proof/source_columns.json.gz": "f3538ed3c2fac60af302ddebb4211036e2dfdff2a991253af8ffb04c69e4c941",
+        "rank_proof/span_relations.json.gz": "2521f24c77411f49dc0b818ea5701f721f9d00de3e35b4a43c8f54108d17030b",
+        "reference_variable_names.json": "93390a3c83dff439fdaa380145913e3ed298a6a32f504ce2290b80c244218333",
+        "selection_summary.json": "d78718ce1b4c10ae336b6338c3f0fe29f2d1d717ab9cb2cef4c03c8d49260c5b",
+        "source_blocks.json": "3930e11eff653b2adb637d67a32ee5999ee09c936ed4f22ce7f460efe3f040dd"
+      },
+      "metadata_path": "labs/lab-004-exact-dual-verification/results/portable-reproduction/reproduction.json",
+      "model_stage": {
+        "solver": "CLARABEL",
+        "status": "optimal_inaccurate",
+        "energy_primal": -8.763353211029347,
+        "dual_unadjusted": -8.763353237128793,
+        "residual_l1": 1.1777956633574581e-07,
+        "certificate_float_lower": -8.763353354908359,
+        "dual_min_eigenvalue": 5.088206357104129e-12,
+        "equality_max_residual": 1.386932235725169e-12,
+        "nvar": 331,
+        "nblocks": 54,
+        "max_psd_dim": 32,
+        "psd_entries": 11446,
+        "model_construction_sec": 0.8353099159430712,
+        "build_sec": 0.0077355410903692245,
+        "solve_sec": 11.276892333989963,
+        "solver_solve_time": 11.207578957,
+        "iterations": 23,
+        "peak_rss_bytes": 404488192,
+        "eps": 1e-09,
+        "export_sec": 0.23357241600751877,
+        "build_solve_export_sec": 11.518204291118309
+      },
+      "physical_audit_stage": {
+        "passed": true,
+        "input_directory": "/Users/home/Library/CloudStorage/Dropbox/Research/[Mercor]SciCode2/benchmarks/hubbard-operator-bootstrap/labs/lab-004-exact-dual-verification/results/portable-reproduction/model",
+        "portable_operator_input_directory": "/Users/home/Library/CloudStorage/Dropbox/Research/[Mercor]SciCode2/benchmarks/hubbard-operator-bootstrap/src/input",
+        "portable_selected_maps_checked": 6,
+        "independent_CAR_Fock_action_tests": 4000,
+        "exhaustive_T2_CAR_order_equality_patterns": 46656,
+        "distinct_lattice_bonds": 32,
+        "full_variables": 3240,
+        "variables": 331,
+        "symmetry_expansion_audit": {
+          "group": "D4 spatial rotations/reflections and spin interchange",
+          "signed_nonzero_variable_orbits": 331,
+          "signed_zero_variable_orbits": 11
+        },
+        "singlet_ground_sector_restriction": false,
+        "character_projection_sources_audited": 0,
+        "star_selected_subspace_rank_per_source": null,
+        "adaptive_cut_maps_checked": 0,
+        "equalities": 66,
+        "blocks": 54,
+        "affine_nonzero_coefficients_checked": 30613,
+        "all_affine_coefficient_differences": 0,
+        "objective_float_max_difference": 0.0,
+        "objective_handling": "Use independently reconstructed exact half-integer coefficients in final certificate.",
+        "elapsed_seconds": 6.4704729579389095,
+        "peak_rss_bytes": 188989440,
+        "physical_sector": {
+          "L": 4,
+          "t": 1,
+          "U": 8,
+          "Nup": 8,
+          "Ndown": 8
+        }
+      },
+      "exact_stage": {
+        "source_directory": "/Users/home/Library/CloudStorage/Dropbox/Research/[Mercor]SciCode2/benchmarks/hubbard-operator-bootstrap/labs/lab-004-exact-dual-verification/results/portable-reproduction/model",
+        "certificate_type": "exact dyadic Gram SOS with exact coefficient residual correction",
+        "factor_fractional_bits": 40,
+        "denominator": "1329227995784915872903807060280344576",
+        "dual_constant_numerator": "-11648494459740328305517417798722973073",
+        "residual_l1_numerator": "156405819699308294720645486415",
+        "lower_bound_numerator": "-11648494616146148004825712519368459488",
+        "lower_bound_exact_decimal": "-8.763353354792721512598053203251481663369516624734210050829812523780394",
+        "reported_total_energy_lower_bound": "-8.763353354793",
+        "per_site_lower_bound_decimal": "-0.5477095846745450945373783252032176039605947890458881281768632827362747",
+        "residual_l1_float": 1.1766666079505034e-07,
+        "dual_constant_float": -8.763353237126061,
+        "independent_hubbard_objective_max_difference": 0.0,
+        "nvar": 331,
+        "nblocks": 54,
+        "max_psd_dim": 32,
+        "factor_entries": 11446,
+        "validation_seconds": 0.4487131249625236,
+        "peak_rss_bytes": 56983552,
+        "assumptions": [
+          "All stored affine coefficients and RHS are treated as exact dyadic numbers; physical-map audits separately justify those coefficients.",
+          "The objective is independently reconstructed from the exact4x4 Hubbard Fourier coefficients.",
+          "Each coordinate is a real occupation or pair-RDM moment with absolute value<=1, proved using n/hole,P,G positivity.",
+          "Equalities are valid on the fixed-spin sector; block maps follow exact CAR and momentum conservation."
+        ],
+        "symmetry_expansion_audit": {
+          "full_variables": 3240,
+          "reduced_variables": 331,
+          "orbits": 342,
+          "zero_orbits": 11,
+          "passed": true
+        },
+        "affine_coefficient_fractional_bits": 40,
+        "equality_multiplier_denominator": "1208925819614629174706176"
+      },
+      "operator_rank_stage": {
+        "compressed_certificate": "/Users/home/Library/CloudStorage/Dropbox/Research/[Mercor]SciCode2/benchmarks/hubbard-operator-bootstrap/src/input",
+        "exact_certificate_directory": "/Users/home/Library/CloudStorage/Dropbox/Research/[Mercor]SciCode2/benchmarks/hubbard-operator-bootstrap/labs/lab-004-exact-dual-verification/results/portable-reproduction/exact",
+        "exact_total_energy_lower_bound": "-8.763353354793",
+        "active_source_T2_factor_columns": 16,
+        "symmetry_group_order": 16,
+        "distinct_closed_cubic_generators": 88,
+        "exact_closed_cubic_span_dimension": 88,
+        "adjoint_span_dimension": 88,
+        "PQG_core_dimension": 2081,
+        "declared_operator_space_dimension": 2257,
+        "dimension_convention": "Original full Fock-space polynomial span, before further fixed-sector identities. Cubic net+1 and adjoint net-1 have disjoint canonical monomial supports; PQG has degree<=2.",
+        "rank_proof": "Exact rational dependency relations provide upper bounds; Gaussian elimination modulo proven prime1000003 gives matching lower bounds in every charge/momentum sector.",
+        "operator_definition": "O=span{I,allc,allc\u2020,allpairannihilators/creators,allc\u2020c,selected_basisclosedcubicpolynomials,theiradjoints}.",
+        "bound_proof": "Every retained dual square has its cubic part in this closed span and its linear part in PQG. All coefficient-residual positivity SOS operators have degree<=2 and lie in PQG. D4/spin closure permits certificate twirling, hence the inherited exact lower bound is valid for the literal operator-space relaxation.",
+        "elapsed_seconds": 0.6768781249411404,
+        "peak_rss_bytes": 64012288
+      }
+    }
+  ],
+  "adaptive_campaign": {
+    "trace_file": "labs/lab-002-moment-sdp/results/adaptive-t2-cuts/trace.json",
+    "rounds": 10,
+    "oracle_load_seconds_once": 0.9541214159689844,
+    "cumulative_oracle_seconds": 1.8026410010643303,
+    "elapsed_total_seconds": 313.7521604159847,
+    "sum_round_solve_seconds": 299.9313845403958,
+    "peak_rss_bytes": 914374656,
+    "last_round_floating_lower": -8.859542438484446,
+    "note": "Checkpoint model_construction_sec repeats the same oracle load. It is charged once here, not once per round. Peak RSS is cumulative for one continuing process."
+  },
+  "abandoned_runs": [
+    {
+      "pid": 98502,
+      "command": [
+        "benchmarks/hubbard-operator-bootstrap/.venv/bin/python",
+        "benchmarks/hubbard-operator-bootstrap/labs/lab-003-theory-audit/run_t2.py",
+        "--out",
+        "benchmarks/hubbard-operator-bootstrap/labs/lab-003-theory-audit/outputs/pqgt2mixed",
+        "--eps",
+        "1e-4",
+        "--max-iters",
+        "2000",
+        "--verbose"
+      ],
+      "wall_seconds": 777.0975697040558,
+      "rss_bytes_before_stop": 343490560,
+      "cpu_seconds": 331.61994752000004,
+      "outcome": "Stopped unreduced comparison after successful exact symmetry reduction; no bound claimed."
+    },
+    {
+      "pid": 98933,
+      "command": [
+        "benchmarks/hubbard-operator-bootstrap/.venv/bin/python",
+        "benchmarks/hubbard-operator-bootstrap/labs/lab-003-theory-audit/run_t2.py",
+        "--out",
+        "benchmarks/hubbard-operator-bootstrap/labs/lab-003-theory-audit/outputs/pqgt2primefull",
+        "--full",
+        "--eps",
+        "1e-4",
+        "--max-iters",
+        "1000",
+        "--verbose"
+      ],
+      "wall_seconds": 671.0189168453217,
+      "rss_bytes_before_stop": 414744576,
+      "cpu_seconds": 273.934283776,
+      "outcome": "Stopped unreduced comparison after successful exact symmetry reduction; no bound claimed."
+    }
+  ],
+  "saved_certificate_postprocess": [
+    {
+      "name": "full-T2 equality-multiplier LP correction",
+      "exact_lower": "-8.764879966348",
+      "exact_validation_seconds": 1.854705790989101,
+      "exact_validation_peak_rss_bytes": 99057664,
+      "note": "Uses saved full-T2 dual factors; copied result.json is not a new solve. LP solve cost is separately recorded by lab004 when available."
+    }
+  ],
+  "physical_audit_invocations": [
+    {
+      "path": "labs/lab-001-cluster-certificates/audit-adaptive-t2-final.json",
+      "seconds": 23.737341957865283,
+      "peak_rss_bytes": 137723904,
+      "portable": false
+    },
+    {
+      "path": "labs/lab-001-cluster-certificates/audit-dual-16-pqg.json",
+      "seconds": 7.435628707986325,
+      "peak_rss_bytes": 107446272,
+      "portable": false
+    },
+    {
+      "path": "labs/lab-001-cluster-certificates/audit-dual-blocks-pqg-portable.json",
+      "seconds": 3.1474691671319306,
+      "peak_rss_bytes": 187990016,
+      "portable": true
+    },
+    {
+      "path": "labs/lab-001-cluster-certificates/audit-dual-blocks-pqg.json",
+      "seconds": 3.518579750088975,
+      "peak_rss_bytes": 113410048,
+      "portable": false
+    },
+    {
+      "path": "labs/lab-001-cluster-certificates/audit-full-t1-t2prime-sym-s0.json",
+      "seconds": 13.675940917106345,
+      "peak_rss_bytes": 114819072,
+      "portable": false
+    },
+    {
+      "path": "labs/lab-001-cluster-certificates/audit-full-t2prime-sym.json",
+      "seconds": 20.909021999919787,
+      "peak_rss_bytes": 113623040,
+      "portable": false
+    },
+    {
+      "path": "labs/lab-001-cluster-certificates/audit-mixed-t2-sym.json",
+      "seconds": 5.061510582920164,
+      "peak_rss_bytes": 97189888,
+      "portable": false
+    },
+    {
+      "path": "labs/lab-001-cluster-certificates/audit-pqg-eps6.json",
+      "seconds": 2.3002159579191357,
+      "peak_rss_bytes": 55754752,
+      "portable": false
+    },
+    {
+      "path": "labs/lab-001-cluster-certificates/audit-pqg-eps8.json",
+      "seconds": 7.203500667121261,
+      "peak_rss_bytes": 91275264,
+      "portable": false
+    },
+    {
+      "path": "labs/lab-001-cluster-certificates/audit-pqgt1.json",
+      "seconds": 35.54439162509516,
+      "peak_rss_bytes": 82837504,
+      "portable": false
+    },
+    {
+      "path": "labs/lab-001-cluster-certificates/audit-selected-t2-eps6-fast.json",
+      "seconds": 29.06077166600153,
+      "peak_rss_bytes": 84082688,
+      "portable": false
+    },
+    {
+      "path": "labs/lab-001-cluster-certificates/audit-selected-t2-eps6.json",
+      "seconds": 116.53258579201065,
+      "peak_rss_bytes": 97222656,
+      "portable": false
+    },
+    {
+      "path": "labs/lab-001-cluster-certificates/audit-t1-sym.json",
+      "seconds": 4.948613249929622,
+      "peak_rss_bytes": 91045888,
+      "portable": false
+    },
+    {
+      "path": "labs/lab-001-cluster-certificates/audit-t1-two-site-t2-sym.json",
+      "seconds": 30.75643308297731,
+      "peak_rss_bytes": 132890624,
+      "portable": false
+    },
+    {
+      "path": "labs/lab-001-cluster-certificates/audit-three-site-stars-clarabel.json",
+      "seconds": 11.952382582938299,
+      "peak_rss_bytes": 572784640,
+      "portable": false
+    },
+    {
+      "path": "labs/lab-001-cluster-certificates/audit-two-site-spin-complete.json",
+      "seconds": 29.987516041845083,
+      "peak_rss_bytes": 159940608,
+      "portable": false
+    },
+    {
+      "path": "labs/lab-001-cluster-certificates/audit-two-site-t2-sym.json",
+      "seconds": 34.386889667017385,
+      "peak_rss_bytes": 138592256,
+      "portable": false
+    },
+    {
+      "path": "labs/lab-004-exact-dual-verification/results/full-reproduction/physical-audit.json",
+      "seconds": 4.133058625040576,
+      "peak_rss_bytes": 114245632,
+      "portable": false
+    },
+    {
+      "path": "labs/lab-004-exact-dual-verification/results/portable-reproduction/physical-audit.json",
+      "seconds": 6.4704729579389095,
+      "peak_rss_bytes": 188989440,
+      "portable": true
+    }
+  ],
+  "construction_only_audit_invocations": [
+    {
+      "path": "labs/lab-001-cluster-certificates/audit-t1-two-site-t2-sym-construction.json",
+      "seconds": 33.53306245803833,
+      "peak_rss_bytes": 146784256,
+      "full_export_audit_complete": false
+    }
+  ],
+  "exact_certificate_invocations": [
+    {
+      "path": "labs/lab-001-cluster-certificates/compressed/full-t2prime-sym-q10-exact/verification.json",
+      "source_directory": "/Users/home/Library/CloudStorage/Dropbox/Research/[Mercor]SciCode2/benchmarks/hubbard-operator-bootstrap/labs/lab-001-cluster-certificates/compressed/full-t2prime-sym-q10",
+      "lower_bound": "-8.764969112897",
+      "seconds": 1.3127874580677599,
+      "peak_rss_bytes": 76840960
+    },
+    {
+      "path": "labs/lab-001-cluster-certificates/compressed/two-site-t2-sym-q10-exact/verification.json",
+      "source_directory": "/Users/home/Library/CloudStorage/Dropbox/Research/[Mercor]SciCode2/benchmarks/hubbard-operator-bootstrap/labs/lab-001-cluster-certificates/compressed/two-site-t2-sym-q10",
+      "lower_bound": "-8.864558789095",
+      "seconds": 0.6377542910631746,
+      "peak_rss_bytes": 63946752
+    },
+    {
+      "path": "labs/lab-001-cluster-certificates/distilled/dual-16-pqg-exact/verification.json",
+      "source_directory": "/Users/home/Library/CloudStorage/Dropbox/Research/[Mercor]SciCode2/benchmarks/hubbard-operator-bootstrap/labs/lab-002-moment-sdp/results/dual-16-pqg",
+      "lower_bound": "-8.763365270237",
+      "seconds": 0.6024798329453915,
+      "peak_rss_bytes": 62111744
+    },
+    {
+      "path": "labs/lab-003-theory-audit/outputs/pqgt1_exact/verification.json",
+      "source_directory": "/Users/home/Library/CloudStorage/Dropbox/Research/[Mercor]SciCode2/benchmarks/hubbard-operator-bootstrap/labs/lab-003-theory-audit/outputs/pqgt1",
+      "lower_bound": "-9.847999995266",
+      "seconds": 7.740334250032902,
+      "peak_rss_bytes": 55345152
+    },
+    {
+      "path": "labs/lab-003-theory-audit/outputs/pqgt1_sym_exact/verification.json",
+      "source_directory": "/Users/home/Library/CloudStorage/Dropbox/Research/[Mercor]SciCode2/benchmarks/hubbard-operator-bootstrap/labs/lab-003-theory-audit/outputs/pqgt1_sym",
+      "lower_bound": "-9.839898719195",
+      "seconds": 2.888043000129983,
+      "peak_rss_bytes": 55394304
+    },
+    {
+      "path": "labs/lab-003-theory-audit/outputs/pqgt1t2prime_sym_s0_exact/verification.json",
+      "source_directory": "/Users/home/Library/CloudStorage/Dropbox/Research/[Mercor]SciCode2/benchmarks/hubbard-operator-bootstrap/labs/lab-003-theory-audit/outputs/pqgt1t2prime_sym_s0",
+      "lower_bound": "-8.763432534493",
+      "seconds": 4.086623042123392,
+      "peak_rss_bytes": 75956224
+    },
+    {
+      "path": "labs/lab-003-theory-audit/outputs/pqgt2prime_mixed_sym_exact/verification.json",
+      "source_directory": "/Users/home/Library/CloudStorage/Dropbox/Research/[Mercor]SciCode2/benchmarks/hubbard-operator-bootstrap/labs/lab-003-theory-audit/outputs/pqgt2prime_mixed_sym",
+      "lower_bound": "-8.790405273878",
+      "seconds": 4.4706782079301775,
+      "peak_rss_bytes": 59539456
+    },
+    {
+      "path": "labs/lab-003-theory-audit/outputs/pqgt2prime_sym_exact/verification.json",
+      "source_directory": "/Users/home/Library/CloudStorage/Dropbox/Research/[Mercor]SciCode2/benchmarks/hubbard-operator-bootstrap/labs/lab-003-theory-audit/outputs/pqgt2prime_sym",
+      "lower_bound": "-8.764969112905",
+      "seconds": 3.394080749945715,
+      "peak_rss_bytes": 74481664
+    },
+    {
+      "path": "labs/lab-004-exact-dual-verification/results/dual-16-pqg/verification.json",
+      "source_directory": "/Users/home/Library/CloudStorage/Dropbox/Research/[Mercor]SciCode2/benchmarks/hubbard-operator-bootstrap/labs/lab-002-moment-sdp/results/dual-16-pqg",
+      "lower_bound": "-8.763365270237",
+      "seconds": 1.1716462920885533,
+      "peak_rss_bytes": 57098240
+    },
+    {
+      "path": "labs/lab-004-exact-dual-verification/results/dual-blocks-pqg/verification.json",
+      "source_directory": "/Users/home/Library/CloudStorage/Dropbox/Research/[Mercor]SciCode2/benchmarks/hubbard-operator-bootstrap/labs/lab-002-moment-sdp/results/dual-blocks-pqg",
+      "lower_bound": "-8.763353354793",
+      "seconds": 0.27806108305230737,
+      "peak_rss_bytes": 56950784
+    },
+    {
+      "path": "labs/lab-004-exact-dual-verification/results/full-reproduction/exact/verification.json",
+      "source_directory": "/Users/home/Library/CloudStorage/Dropbox/Research/[Mercor]SciCode2/benchmarks/hubbard-operator-bootstrap/labs/lab-004-exact-dual-verification/results/full-reproduction/model",
+      "lower_bound": "-8.764969112905",
+      "seconds": 2.047004709020257,
+      "peak_rss_bytes": 74383360
+    },
+    {
+      "path": "labs/lab-004-exact-dual-verification/results/portable-reproduction/exact/verification.json",
+      "source_directory": "/Users/home/Library/CloudStorage/Dropbox/Research/[Mercor]SciCode2/benchmarks/hubbard-operator-bootstrap/labs/lab-004-exact-dual-verification/results/portable-reproduction/model",
+      "lower_bound": "-8.763353354793",
+      "seconds": 0.4487131249625236,
+      "peak_rss_bytes": 56983552
+    },
+    {
+      "path": "labs/lab-004-exact-dual-verification/results/pqg-eps6/verification.json",
+      "source_directory": "/Users/home/Library/CloudStorage/Dropbox/Research/[Mercor]SciCode2/benchmarks/hubbard-operator-bootstrap/labs/lab-002-moment-sdp/results/pqg-eps6",
+      "lower_bound": "-10.566825373980",
+      "seconds": 1.353796707931906,
+      "peak_rss_bytes": 54984704
+    },
+    {
+      "path": "labs/lab-004-exact-dual-verification/results/pqg-eps8/verification.json",
+      "source_directory": "/Users/home/Library/CloudStorage/Dropbox/Research/[Mercor]SciCode2/benchmarks/hubbard-operator-bootstrap/labs/lab-002-moment-sdp/results/pqg-eps8",
+      "lower_bound": "-10.566721990544",
+      "seconds": 0.763717541936785,
+      "peak_rss_bytes": 55427072
+    },
+    {
+      "path": "labs/lab-004-exact-dual-verification/results/pqg-regression/verification.json",
+      "source_directory": "/Users/home/Library/CloudStorage/Dropbox/Research/[Mercor]SciCode2/benchmarks/hubbard-operator-bootstrap/labs/lab-002-moment-sdp/results/pqg-eps6",
+      "lower_bound": "-10.566825373980",
+      "seconds": 1.5874690830241889,
+      "peak_rss_bytes": 56246272
+    },
+    {
+      "path": "labs/lab-004-exact-dual-verification/results/pqgt1/verification.json",
+      "source_directory": "/Users/home/Library/CloudStorage/Dropbox/Research/[Mercor]SciCode2/benchmarks/hubbard-operator-bootstrap/labs/lab-003-theory-audit/outputs/pqgt1",
+      "lower_bound": "-9.847999995266",
+      "seconds": 5.437502166023478,
+      "peak_rss_bytes": 55607296
+    },
+    {
+      "path": "labs/lab-004-exact-dual-verification/results/pqgt2prime_sym/verification.json",
+      "source_directory": "/Users/home/Library/CloudStorage/Dropbox/Research/[Mercor]SciCode2/benchmarks/hubbard-operator-bootstrap/labs/lab-003-theory-audit/outputs/pqgt2prime_sym",
+      "lower_bound": "-8.764969112905",
+      "seconds": 4.447196958819404,
+      "peak_rss_bytes": 72925184
+    },
+    {
+      "path": "labs/lab-004-exact-dual-verification/results/pqgt2prime_sym-lp/exact/verification.json",
+      "source_directory": "/Users/home/Library/CloudStorage/Dropbox/Research/[Mercor]SciCode2/benchmarks/hubbard-operator-bootstrap/labs/lab-004-exact-dual-verification/results/pqgt2prime_sym-lp/data",
+      "lower_bound": "-8.764879966348",
+      "seconds": 1.854705790989101,
+      "peak_rss_bytes": 99057664
+    },
+    {
+      "path": "labs/lab-004-exact-dual-verification/results/selected-t2-eps6/verification.json",
+      "source_directory": "/Users/home/Library/CloudStorage/Dropbox/Research/[Mercor]SciCode2/benchmarks/hubbard-operator-bootstrap/labs/lab-002-moment-sdp/results/selected-t2-eps6",
+      "lower_bound": "-10.268038996818",
+      "seconds": 1.2692072079516947,
+      "peak_rss_bytes": 55050240
+    },
+    {
+      "path": "labs/lab-004-exact-dual-verification/results/t1-two-site-t2-sym/verification.json",
+      "source_directory": "/Users/home/Library/CloudStorage/Dropbox/Research/[Mercor]SciCode2/benchmarks/hubbard-operator-bootstrap/labs/lab-002-moment-sdp/results/t1-two-site-t2-sym",
+      "lower_bound": "-8.856092835155",
+      "seconds": 3.669392667012289,
+      "peak_rss_bytes": 60653568
+    },
+    {
+      "path": "labs/lab-004-exact-dual-verification/results/three-site-stars-clarabel/verification.json",
+      "source_directory": "/Users/home/Library/CloudStorage/Dropbox/Research/[Mercor]SciCode2/benchmarks/hubbard-operator-bootstrap/labs/lab-002-moment-sdp/results/three-site-stars-clarabel",
+      "lower_bound": "-8.859051476423",
+      "seconds": 4.7788399590644985,
+      "peak_rss_bytes": 63488000
+    },
+    {
+      "path": "labs/lab-004-exact-dual-verification/results/two-site-spin-complete/verification.json",
+      "source_directory": "/Users/home/Library/CloudStorage/Dropbox/Research/[Mercor]SciCode2/benchmarks/hubbard-operator-bootstrap/labs/lab-002-moment-sdp/results/two-site-spin-complete",
+      "lower_bound": "-8.864590506761",
+      "seconds": 3.0770824998617172,
+      "peak_rss_bytes": 60211200
+    },
+    {
+      "path": "labs/lab-004-exact-dual-verification/results/two-site-t2-sym/verification.json",
+      "source_directory": "/Users/home/Library/CloudStorage/Dropbox/Research/[Mercor]SciCode2/benchmarks/hubbard-operator-bootstrap/labs/lab-002-moment-sdp/results/two-site-t2-sym",
+      "lower_bound": "-8.864558789088",
+      "seconds": 1.3856047501321882,
+      "peak_rss_bytes": 58589184
+    },
+    {
+      "path": "labs/lab-004-exact-dual-verification/results/two-site-t2-sym-clarabel/verification.json",
+      "source_directory": "/Users/home/Library/CloudStorage/Dropbox/Research/[Mercor]SciCode2/benchmarks/hubbard-operator-bootstrap/labs/lab-002-moment-sdp/results/two-site-t2-sym-clarabel",
+      "lower_bound": "-8.864118703137",
+      "seconds": 1.917239333037287,
+      "peak_rss_bytes": 58294272
+    }
+  ],
+  "operator_count_audit": {
+    "passed": true,
+    "dimension_convention": "Original full Fock polynomial span, before further fixed-sector identities. This is not the sum of reduced cone dimensions.",
+    "core_formula": "1+2*32+2*C(32,2)+32^2=2081",
+    "T1_increment": "2*C(32,3)=9920; net particle charge +/-3 separates it from selected mixed cubics of charge +/-1.",
+    "selected_family_ranks": {
+      "selected-t2-eps6": {
+        "source_blocks": 32,
+        "rank_per_source": [
+          15
+        ],
+        "total_cubic_dimension_before_adjoints": 480
+      },
+      "two-site-t2-eps5": {
+        "source_blocks": 32,
+        "rank_per_source": [
+          60
+        ],
+        "total_cubic_dimension_before_adjoints": 1920
+      },
+      "two-site-spin-complete": {
+        "source_blocks": 32,
+        "rank_per_source": [
+          15
+        ],
+        "total_cubic_dimension_before_adjoints": 480
+      }
+    },
+    "star_representative_cubic_ranks": [
+      84,
+      84,
+      84,
+      84,
+      84,
+      84
+    ],
+    "star_full_spin_momentum_sources": 32,
+    "star_onebody_augmentation_already_in_core": true,
+    "operator_dimensions": {
+      "PQG": 2081,
+      "density_selected_T2": 3041,
+      "two_site_selected_T2": 5921,
+      "two_site_spin_complete": 6881,
+      "three_site_stars": 7457,
+      "T1_only": 12001,
+      "T1_plus_two_site": 15841,
+      "full_T2prime": 33825,
+      "T1_plus_full_T2prime": 43745,
+      "mixed_spin_T2prime": 18465,
+      "distilled_six_blocks": 2257
+    },
+    "rank_argument": "Canonical CAR monomials give an upper bound from advertised columns. A full modular column rank over proven prime1000003 proves exact rational independence. Symmetry copies preserve ranks. Different charge/momentum sectors and adjoints have disjoint canonical supports.",
+    "reported_count_discrepancies": [],
+    "elapsed_seconds": 1.0969105830881745,
+    "peak_rss_bytes": 142819328
+  },
+  "exact_operator_distillation_invocations": [
+    {
+      "path": "labs/lab-001-cluster-certificates/distilled/dual-16-pqg-q20/operator_space.json",
+      "operator_dimension": 2257,
+      "exact_lower": "-8.763365270237",
+      "seconds": 0.7378861668985337,
+      "peak_rss_bytes": 73072640
+    },
+    {
+      "path": "labs/lab-001-cluster-certificates/distilled/dual-blocks-pqg-q20/operator_space.json",
+      "operator_dimension": 2257,
+      "exact_lower": "-8.763353354793",
+      "seconds": 0.42702941689640284,
+      "peak_rss_bytes": 63815680
+    },
+    {
+      "path": "labs/lab-001-cluster-certificates/distilled/full-t2prime-sym-q40/operator_space.json",
+      "operator_dimension": 2273,
+      "exact_lower": "-8.764969112897",
+      "seconds": 1.4835844580084085,
+      "peak_rss_bytes": 66158592
+    },
+    {
+      "path": "labs/lab-001-cluster-certificates/distilled/portable-dual-blocks-q20/operator_space.json",
+      "operator_dimension": 2257,
+      "exact_lower": "-8.763353354793",
+      "seconds": 0.36538350000046194,
+      "peak_rss_bytes": 67420160
+    },
+    {
+      "path": "labs/lab-004-exact-dual-verification/results/portable-reproduction/operator-space/operator_space.json",
+      "operator_dimension": 2257,
+      "exact_lower": "-8.763353354793",
+      "seconds": 0.6768781249411404,
+      "peak_rss_bytes": 64012288
+    }
+  ],
+  "dual_compression_invocations": [
+    {
+      "path": "labs/lab-001-cluster-certificates/compressed/full-t2prime-sym-q10/compression.json",
+      "seconds": 1.43637341610156
+    },
+    {
+      "path": "labs/lab-001-cluster-certificates/compressed/two-site-t2-sym-q10/compression.json",
+      "seconds": 0.5007439171895385
+    }
+  ],
+  "cluster_weight_searches": [
+    {
+      "path": "labs/lab-001-cluster-certificates/weights-2x3.json",
+      "seconds": 0.9166597500443459,
+      "discovery_only": true
+    },
+    {
+      "path": "labs/lab-001-cluster-certificates/weights-2x4-open.json",
+      "seconds": 8.901994958054274,
+      "discovery_only": true
+    }
+  ],
+  "earlier_repeated_cylinder_run": {
+    "seconds": 107.20985045912676,
+    "peak_rss_bytes": 1126678528,
+    "note": "An earlier completed validation rerun retained separately from the latest cylinder JSON."
+  },
+  "sum_recorded_global_process_phases_seconds": 6824.260010955622,
+  "sum_recorded_cluster_seconds": 105.9018616261892,
+  "sum_completed_physical_audit_invocation_seconds": 390.7623249988537,
+  "sum_construction_only_audit_seconds": 33.53306245803833,
+  "sum_exact_verification_invocation_seconds": 60.619960707146674,
+  "sum_operator_distillation_seconds": 3.6907616667449474,
+  "sum_dual_compression_seconds": 1.9371173332910985,
+  "operator_count_audit_seconds": 1.0969105830881745,
+  "sum_abandoned_wall_seconds": 1448.1164865493774,
+  "aggregation_seconds": 5.165328125003725
+}

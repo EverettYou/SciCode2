@@ -1,0 +1,1 @@
+- [Layered-oxide inverse problem](layered-oxide-inverse-problem.md) — bilayer t-t'-J_perp SMG model findings & parameters for /app task

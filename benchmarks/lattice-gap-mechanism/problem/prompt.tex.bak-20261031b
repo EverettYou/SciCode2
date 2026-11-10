@@ -1,0 +1,242 @@
+\documentclass[12pt]{article}
+
+\usepackage[margin=0.92in]{geometry}
+\usepackage{newtxtext,newtxmath}
+\usepackage{microtype}
+\usepackage{caption}
+\usepackage{float}
+\usepackage{titlesec}
+\usepackage{needspace}
+\usepackage{pgfplots}
+\usepgfplotslibrary{groupplots}
+\pgfplotsset{compat=1.18}
+\definecolor{nuHalf}{RGB}{190,30,40}
+\definecolor{nuThree}{RGB}{0,140,50}
+\definecolor{nuTwo}{RGB}{30,75,190}
+
+\setlength{\parskip}{0.42em}
+\setlength{\parindent}{0em}
+\pagestyle{plain}
+\captionsetup{font=small, labelfont=bf, skip=8pt}
+\titleformat{\section}{\normalsize\bfseries}{\thesection.}{0.55em}{}
+\titlespacing*{\section}{0pt}{0.95em}{0.28em}
+
+\pgfplotsset{
+  public axis/.style={
+    scale only axis,
+    tick label style={font=\footnotesize},
+    label style={font=\small},
+    title style={font=\small},
+    tick style={black, line width=0.3pt},
+    axis line style={black, line width=0.4pt},
+    every axis plot/.append style={line width=0.42pt},
+    clip=true
+  }
+}
+
+\begin{document}
+\begin{center}
+{\Large\bfseries A layered oxide built from perovskite-type blocks}\\[0.28em]
+{\normalsize Low-temperature state of matter at half filling}
+\end{center}
+\vspace{-0.15em}
+\noindent\rule{\textwidth}{0.45pt}
+
+\section{Samples}
+
+We study the low-temperature state at half filling of a layered oxide built from perovskite-type blocks. Crystals of several compositions were grown by replacing a fraction of the cations on sites other than the transition metal. The transition-metal site itself is unchanged, and the replacement changes the filling of the band at the Fermi level. That band is dominated by a single orbital on the transition metal, with some admixture from other orbitals. Filling fraction \(\nu=1\) corresponds to two electrons of opposite spin in that orbital on each transition-metal site. The three crystals have \(\nu=1/2\), \(\nu\approx 0.3\), and \(\nu\approx 0.2\).
+
+In a metal–oxygen plane the nearest metal–metal distances along the two in-plane axes are equal, and the fourfold axis takes one axis into the other. At every temperature, diffraction gives that metal–metal distance as the in-plane period, and the transition-metal sites are crystallographically equivalent. Cooling through the temperature range of the measurement data below adds no diffraction peaks and splits none.
+
+Momenta are in units of \(2\pi\) divided by that in-plane metal–metal distance. Energies and temperatures are in units of \(D\), with \(k_B=1\).
+
+\section{Scanning tunneling spectroscopy (STS)}
+
+Figure~\ref{fig:stm} shows the STS differential conductance. The differential conductance is \(dI/dV\), with \(I\) the tunneling current and \(V\) the bias voltage. Each trace is divided by its own maximum. In Figure~\ref{fig:stm}(a)--(c), the differential conductance vanishes over a finite interval of \(V\), and the origin of \(V\) is the midpoint of that interval. Figure~\ref{fig:stm}(d) is at high \(T\). In that panel the origin is the chemical potential, and the thermal broadening has been deconvolved. On each crystal the differential conductance is the same at every location measured on the surface.
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}
+\begin{groupplot}[
+  group style={group size=2 by 2, horizontal sep=1.55cm, vertical sep=1.15cm},
+  public axis,
+  width=6.15cm, height=3.72cm,
+  xmin=-9.2, xmax=9.2, ymin=0, ymax=1.18,
+  xtick={-8,-4,0,4,8},
+  ytick={0,0.5,1},
+  title style={font=\footnotesize, yshift=-1pt},
+]
+\nextgroupplot[title={(a) \(\nu=1/2\), low \(T\)}, ylabel={\(dI/dV\)}, xticklabels={}]
+\addplot[nuHalf, line width=0.45pt, no markers] table[x=x, y=y] {figures/data/stm_100_low.dat};
+\nextgroupplot[title={(b) \(\nu\approx 0.3\), low \(T\)}, xticklabels={}]
+\addplot[nuThree, line width=0.45pt, no markers] table[x=x, y=y] {figures/data/stm_nu03_low.dat};
+\nextgroupplot[title={(c) \(\nu\approx 0.2\), low \(T\)}, ylabel={\(dI/dV\)}, xlabel={bias \(V/D\)}]
+\addplot[nuTwo, line width=0.45pt, no markers] table[x=x, y=y] {figures/data/stm_nu02_low.dat};
+\nextgroupplot[title={(d) \(\nu\approx 0.3\), high \(T\)}, xlabel={bias \(V/D\)}]
+\addplot[nuThree, line width=0.45pt, no markers] table[x=x, y=y] {figures/data/stm_nu03_high.dat};
+\end{groupplot}
+\end{tikzpicture}
+\caption{STS differential conductance.}
+\label{fig:stm}
+\end{figure}
+
+\section{Nuclear magnetic resonance (NMR) and resistivity}
+
+On each of the three crystals the transition-metal NMR remains a single line over the temperature range of the measurements below. Figure~\ref{fig:local} shows the spin-lattice relaxation rate divided by temperature, \(1/(T_1 T)\), versus inverse temperature. Figure~\ref{fig:transport} shows the in-plane resistivity. Each curve in Figures~\ref{fig:local} and~\ref{fig:transport} is normalized to its value at \(T=4D\). Below the temperature range of Figure~\ref{fig:transport} the resistance of the \(\nu=1/2\) crystal exceeds the range of the instrument; it keeps rising down to \(T=0.05D\), and no diffraction peak appears down to that temperature.
+
+\begin{center}
+\begin{minipage}[t]{0.48\textwidth}
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+  public axis,
+  width=5.55cm, height=4.35cm,
+  xmin=0, xmax=5.25,
+  ymode=log,
+  ymin=1e-5, ymax=8,
+  xlabel={\(D/T\)},
+  ylabel={\(1/(T_1 T)\)},
+  only marks,
+  xtick={0,1,2,3,4,5},
+  legend style={font=\scriptsize, draw=none, fill=none, inner sep=1.5pt, anchor=north east, at={(0.97,0.96)}},
+  legend cell align=left,
+]
+\addplot+[
+  nuHalf,
+  mark=*,
+  mark size=1.15pt,
+  mark options={solid, draw=nuHalf, fill=nuHalf},
+  error bars/y dir=both,
+  error bars/y explicit,
+  error bars/error bar style={nuHalf, line width=0.25pt}
+] table[
+  x expr={1/\thisrow{temperature}},
+  y=rate,
+  y error plus expr={\thisrow{uncertainty}},
+  y error minus expr={min(\thisrow{uncertainty},\thisrow{rate}-1e-8)}
+] {figures/data/relaxation.dat};
+\addlegendentry{\(\nu=1/2\)}
+\addplot+[
+  nuThree,
+  mark=*,
+  mark size=1.15pt,
+  mark options={solid, draw=nuThree, fill=nuThree},
+  error bars/y dir=both,
+  error bars/y explicit,
+  error bars/error bar style={nuThree, line width=0.25pt}
+] table[
+  x expr={1/\thisrow{temperature}},
+  y=rate,
+  y error plus expr={\thisrow{uncertainty}},
+  y error minus expr={min(\thisrow{uncertainty},\thisrow{rate}-1e-8)}
+] {figures/data/relaxation_nu03.dat};
+\addlegendentry{\(\nu\approx 0.3\)}
+\addplot+[
+  nuTwo,
+  mark=*,
+  mark size=1.15pt,
+  mark options={solid, draw=nuTwo, fill=nuTwo},
+  error bars/y dir=both,
+  error bars/y explicit,
+  error bars/error bar style={nuTwo, line width=0.25pt}
+] table[
+  x expr={1/\thisrow{temperature}},
+  y=rate,
+  y error plus expr={\thisrow{uncertainty}},
+  y error minus expr={min(\thisrow{uncertainty},\thisrow{rate}-1e-8)}
+] {figures/data/relaxation_nu02.dat};
+\addlegendentry{\(\nu\approx 0.2\)}
+\end{axis}
+\end{tikzpicture}
+\captionof{figure}{Spin-lattice relaxation rate divided by temperature.}
+\label{fig:local}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.48\textwidth}
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+  public axis,
+  width=5.55cm, height=4.35cm,
+  xmin=0, xmax=4.15,
+  xtick={0,1,2,3,4},
+  xlabel={temperature \(T / D\)},
+  ylabel={in-plane resistivity},
+  ylabel style={font=\scriptsize},
+  ymin=0, ymax=5,
+  ytick={0,1,2,3,4,5},
+  yticklabels={$0$,$1$,$10$,$10^{2}$,$10^{3}$,$10^{4}$},
+  tick align=outside,
+  major tick length=3.2pt,
+  extra y ticks={0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9,1.3010,1.4771,1.6021,1.6990,1.7782,1.8451,1.9031,1.9542,2.3010,2.4771,2.6021,2.6990,2.7782,2.8451,2.9031,2.9542,3.3010,3.4771,3.6021,3.6990,3.7782,3.8451,3.9031,3.9542,4.3010,4.4771,4.6021,4.6990,4.7782,4.8451,4.9031,4.9542},
+  extra y tick style={
+    major tick length=1.7pt,
+    tick style={black, line width=0.4pt},
+    tick label style={opacity=0, text opacity=0, font=\fontsize{0.1}{0.1}\selectfont},
+  },
+  legend style={font=\scriptsize, draw=none, fill=none, inner sep=1.5pt, anchor=north east, at={(0.98,0.98)}},
+  legend cell align=left,
+  clip marker paths=false,
+]
+\addplot+[
+  nuHalf,
+  mark=*,
+  mark size=1.15pt,
+  mark options={solid, draw=nuHalf, fill=nuHalf},
+  error bars/y dir=both,
+  error bars/y explicit,
+  error bars/error bar style={nuHalf, line width=0.25pt}
+] table[
+  x=temperature, y=position, y error plus=plus, y error minus=minus
+] {figures/data/resistivity_axis.dat};
+\addlegendentry{\(\nu=1/2\)}
+\addplot+[
+  nuThree,
+  mark=*,
+  mark size=1.15pt,
+  mark options={solid, draw=nuThree, fill=nuThree},
+  error bars/y dir=both,
+  error bars/y explicit,
+  error bars/error bar style={nuThree, line width=0.25pt}
+] table[
+  x=temperature, y=position, y error plus=plus, y error minus=minus
+] {figures/data/resistivity_nu03_axis.dat};
+\addlegendentry{\(\nu\approx 0.3\)}
+\addplot+[
+  nuTwo,
+  mark=*,
+  mark size=1.15pt,
+  mark options={solid, draw=nuTwo, fill=nuTwo},
+  error bars/y dir=both,
+  error bars/y explicit,
+  error bars/error bar style={nuTwo, line width=0.25pt}
+] table[
+  x=temperature, y=position, y error plus=plus, y error minus=minus
+] {figures/data/resistivity_nu02_axis.dat};
+\addlegendentry{\(\nu\approx 0.2\)}
+\end{axis}
+\end{tikzpicture}
+\captionof{figure}{In-plane resistivity.}
+\label{fig:transport}
+\end{minipage}
+\end{center}
+
+\Needspace{22\baselineskip}
+\section{Task}
+
+Use the measurement data in \texttt{measurements.json} as given, rather than data published for a named compound. Give energies in units of \(D\).
+
+\begin{enumerate}
+\item Propose the effective theory you find most credible. State the degrees of freedom, the lattice and the unit cell, and which symmetries the model has and which it lacks. Write out every term in the Hamiltonian. You may use a distinct symbol to denote the coefficient of each term. Give the value of each coefficient and an estimate of its uncertainty, both determined from the available measurement data.
+
+\item Draw the phase diagram of this Hamiltonian. The horizontal axis is the filling fraction \(\nu\), from 0 to 1. The vertical axis is the temperature. Mark the three crystals by vertical lines at \(\nu=1/2\), \(\nu\approx 0.3\), and \(\nu\approx 0.2\). For each crystal, state the phases from low temperature to high temperature.
+
+\item Use this effective theory to explain the diffraction, the STS differential conductance, the NMR spin-lattice relaxation rate, and the resistivity. For each set of measurement data, state which feature of the theory produces it.
+
+\item Predict the low-temperature angle-resolved photoemission spectroscopy (ARPES) intensity at \(\nu=1/2\), at \(\nu\approx 0.3\), and at \(\nu\approx 0.2\), after division by the Fermi function. For each filling, draw a density plot of this intensity along \((0,0)\) to \((1/2,0)\), then to \((1/2,1/2)\), and back to \((0,0)\), with momentum on the horizontal axis and energy on the vertical axis. Choose the energy window. Compare the three fillings. Name the features of physical significance, and state what each implies. State the momentum assignment you use for the band minimum.
+
+\item From your predicted spectrum at \(\nu=1/2\), recover the Green's function by the Kramers–Kronig relation. Measure \(\omega\) from the chemical potential of this crystal in the low-temperature limit; that chemical potential lies at the midpoint of the gap. Inside the gap the Green's function is real and has a surface of zeros \(\omega_0(k)\). Plot \(\omega_0(k)\) along the same path as in task 4, and state where it lies in the gap, in which direction it disperses relative to the two bands, and by how much. Then, for a reference energy \(\omega_r\) swept across the gap, plot the fraction of the Brillouin zone on which \(\operatorname{Re} G(k,\omega_r)>0\), mark the value at \(\omega_r=0\), and compare that value with \(\nu\).
+\end{enumerate}
+
+A workstation-scale calculation is enough when you use one. State the approximation and the system size.
+
+\end{document}

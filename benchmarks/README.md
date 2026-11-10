@@ -105,4 +105,17 @@ At every active stage before `verified`, keep at least one `frontier` or `active
 
 Use `skills/create-benchmark/`. It owns the metadata schema, design guidance, scaffold assets, creation script, and structural validator. The `benchmarks/` directory contains project instances and the canonical index, not reusable templates.
 
+Early creation formulates the question and reviews its text for coherence and
+likely nontriviality. A plausible nontrivial candidate can proceed without a
+reference solution, exact prompts, or a full scaffold. Prompt design and repeated
+test/revision cycles use `test-benchmark`; formal calibration follows after the
+question stabilizes. The full research layout and validator below apply when a
+full workspace is requested, not as early candidate acceptance requirements.
+
+Agent tests are labs too: use `labs/lab-NNN-agent-test-<label>/` for the exact
+prompt, problem snapshot, input data, PLAN/REPORT, implementation, results,
+transcript, and run record. The user invokes `test-benchmark` from a fresh agent
+window for each new attempt. File storage stays inside this benchmark; no external
+workspace is required. Keep aggregate calibration reports linked to these labs.
+
 Keep `problem/TASK.md` navigable as the question evolves. `Why this is unresolved` and `Scope and approach` are each limited to 250 words; move detailed architectures, ansatzes, libraries, and execution recipes into `wiki/ideas/` or lab plans. A material central-question change must refresh both bounded sections and synchronize metadata, README, thesis, and frontier while preserving the superseded formulation in research history.

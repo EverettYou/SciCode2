@@ -1,0 +1,1194 @@
+{
+  "comparison": {
+    "decoding_H": [
+      [
+        1,
+        1
+      ]
+    ],
+    "syndrome": [
+      1
+    ],
+    "weights": [
+      0,
+      0
+    ],
+    "tied_optima": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ]
+    ],
+    "target_path_edges": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "native_branches_on_target": [
+      [
+        1
+      ],
+      [
+        2
+      ]
+    ],
+    "encoded_branches_on_target": [
+      [
+        0,
+        1
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "Gamma": 0.02,
+    "physical_problem_J": 0.0001,
+    "physical_chain_K": 1.0,
+    "duration": 39.269785451984625,
+    "initial_logical_state": [
+      0,
+      0
+    ],
+    "native_success_exact_formula": 0.49999687501953116,
+    "native_success_matrix": 0.499996875019531,
+    "encoded_consistent_ground_success_matrix": 0.000493233421335849,
+    "encoded_representative_decode_success_matrix": 0.0012909781490331495,
+    "encoded_success_upper_certificate": 0.016476688757570787,
+    "strict_comparison_proved_without_encoded_simulation": true,
+    "retention_from_optimal_logical_state_01": {
+      "native_success_exact_formula": 0.5000031249804688,
+      "native_success_matrix": 0.500003124980469,
+      "encoded_consistent_ground_success_matrix": 0.997911790904749,
+      "encoded_success_lower_certificate": 0.9835233112424292,
+      "ordering_reverses_when_initial_state_changes": true
+    },
+    "certificate": {
+      "physical_qubits": 4,
+      "logical_variables": 2,
+      "singleton_branches": 0,
+      "size_two_branches": 2,
+      "nonsingleton_physical_qubits": 4,
+      "R": 0.0001,
+      "Gamma": 0.02,
+      "duration": 39.269785451984625,
+      "cut_methods": [
+        "tree-min-edge-exact",
+        "tree-min-edge-exact"
+      ],
+      "branch_minimum_cuts": [
+        1.0,
+        1.0
+      ],
+      "branch_cut_lower_bounds": [
+        1.0,
+        1.0
+      ],
+      "frozen_logical_variables": [
+        0,
+        1
+      ],
+      "required_initial_support": "all branches internally consistent",
+      "numeric_certification": "exact-binary64-rational-with-upward-error-bounds",
+      "sqrt_bound_significant_bits": 128,
+      "exp_taylor_degree": 24,
+      "Delta": 2.0,
+      "g": 1.9198,
+      "b": 0.05656854249492381,
+      "rational_g_witness": {
+        "numerator": "70828118545415194323",
+        "denominator": "36893488147419103232"
+      },
+      "status": "certified",
+      "s": 0.029465851909013338,
+      "unclipped_epsilon": 0.12836155482686704,
+      "state_vector_error_bound": 0.12836155482686704,
+      "event_probability_change_bound": 0.12836155482686704,
+      "initially_zero_event_probability_bound": 0.016476688757570787,
+      "chain_leakage_probability_bound": 0.016476688757570787
+    },
+    "programming_model": {
+      "field_abs_cap": 1,
+      "coupler_abs_cap": 1,
+      "node_absolute_group_cap": 2,
+      "max_actual_node_absolute_coupling_sum": 1.0001,
+      "normalization": "B=2, A=0.04, physical coefficients as stated"
+    },
+    "scope": "closed-system constant hold, conditional on encoded initial state; common problem-energy scale"
+  },
+  "random_validation": {
+    "seed": 20261007,
+    "count": 24,
+    "checks_passed": true,
+    "cases": [
+      {
+        "branch_sizes": [
+          2
+        ],
+        "N": 2,
+        "actual_block_gap": 1.7761548036525263,
+        "certified_block_gap": 1.7425587299394407,
+        "actual_offdiagonal_norm": 0.03345074630416641,
+        "certified_offdiagonal_norm": 0.03345074630416641,
+        "conjugation_residual_norm": 0.0006220448301389017,
+        "conjugation_residual_bound": 0.0006672643559526427,
+        "dynamics": [
+          {
+            "duration": 0,
+            "state_vector_error": 4.025880518535903e-16,
+            "state_vector_error_bound": 0.03839267593044503,
+            "leakage_probability_worst_initial_state": 8.348893956924044e-32,
+            "leakage_probability_bound": 0.0014739975651001727
+          },
+          {
+            "duration": 1,
+            "state_vector_error": 0.029117832138482663,
+            "state_vector_error_bound": 0.03905994028639767,
+            "leakage_probability_worst_initial_state": 0.0008475871207402241,
+            "leakage_probability_bound": 0.0015256789351769514
+          },
+          {
+            "duration": 10,
+            "state_vector_error": 0.01680374951408337,
+            "state_vector_error_bound": 0.04506531948997145,
+            "leakage_probability_worst_initial_state": 0.0002410615308603015,
+            "leakage_probability_bound": 0.0020308830207332006
+          },
+          {
+            "duration": 40,
+            "state_vector_error": 0.042649911690037234,
+            "state_vector_error_bound": 0.06508325016855074,
+            "leakage_probability_worst_initial_state": 0.0012254772645244995,
+            "leakage_probability_bound": 0.004235829452502159
+          }
+        ]
+      },
+      {
+        "branch_sizes": [
+          3
+        ],
+        "N": 3,
+        "actual_block_gap": 1.8494321632884252,
+        "certified_block_gap": 1.800095414079921,
+        "actual_offdiagonal_norm": 0.011065534058310799,
+        "certified_offdiagonal_norm": 0.0110655340583108,
+        "conjugation_residual_norm": 5.508201374882358e-05,
+        "conjugation_residual_bound": 6.886342467823806e-05,
+        "dynamics": [
+          {
+            "duration": 0,
+            "state_vector_error": 6.125900859985662e-16,
+            "state_vector_error_bound": 0.012294386143933045,
+            "leakage_probability_worst_initial_state": 3.6293284353298395e-31,
+            "leakage_probability_bound": 0.00015115193065613286
+          },
+          {
+            "duration": 1,
+            "state_vector_error": 0.008389609413026602,
+            "state_vector_error_bound": 0.012363249568611285,
+            "leakage_probability_worst_initial_state": 7.038315379521253e-05,
+            "leakage_probability_bound": 0.00015284993989576708
+          },
+          {
+            "duration": 10,
+            "state_vector_error": 0.002470345608385351,
+            "state_vector_error_bound": 0.012983020390715427,
+            "leakage_probability_worst_initial_state": 5.817074999367505e-06,
+            "leakage_probability_bound": 0.00016855881846573252
+          },
+          {
+            "duration": 40,
+            "state_vector_error": 0.00807946756707413,
+            "state_vector_error_bound": 0.015048923131062568,
+            "leakage_probability_worst_initial_state": 6.063939844623645e-05,
+            "leakage_probability_bound": 0.00022647008740462997
+          }
+        ]
+      },
+      {
+        "branch_sizes": [
+          4
+        ],
+        "N": 4,
+        "actual_block_gap": 1.6357883246185432,
+        "certified_block_gap": 1.5731225867203096,
+        "actual_offdiagonal_norm": 0.026128322666514707,
+        "certified_offdiagonal_norm": 0.026128322666514704,
+        "conjugation_residual_norm": 0.0002963505047311729,
+        "conjugation_residual_bound": 0.0004486287182072119,
+        "dynamics": [
+          {
+            "duration": 0,
+            "state_vector_error": 5.777376385616931e-16,
+            "state_vector_error_bound": 0.033218419069282794,
+            "leakage_probability_worst_initial_state": 2.228503055625599e-31,
+            "leakage_probability_bound": 0.0011034633654624906
+          },
+          {
+            "duration": 1,
+            "state_vector_error": 0.018470945674962817,
+            "state_vector_error_bound": 0.03366704778749,
+            "leakage_probability_worst_initial_state": 0.00034111177242264907,
+            "leakage_probability_bound": 0.0011334701067251356
+          },
+          {
+            "duration": 10,
+            "state_vector_error": 0.018140607857589065,
+            "state_vector_error_bound": 0.037704706251354914,
+            "leakage_probability_worst_initial_state": 0.00032041443362432247,
+            "leakage_probability_bound": 0.001421644873500962
+          },
+          {
+            "duration": 40,
+            "state_vector_error": 0.02268871558889247,
+            "state_vector_error_bound": 0.051163567797571266,
+            "leakage_probability_worst_initial_state": 0.0003843960493744447,
+            "leakage_probability_bound": 0.0026177106697766713
+          }
+        ]
+      },
+      {
+        "branch_sizes": [
+          1,
+          2
+        ],
+        "N": 3,
+        "actual_block_gap": 1.5602127014177831,
+        "certified_block_gap": 1.495960373096613,
+        "actual_offdiagonal_norm": 0.0341343009269341,
+        "certified_offdiagonal_norm": 0.0341343009269341,
+        "conjugation_residual_norm": 0.0007190161622664063,
+        "conjugation_residual_bound": 0.0008152317693157162,
+        "dynamics": [
+          {
+            "duration": 0,
+            "state_vector_error": 8.559439529828333e-15,
+            "state_vector_error_bound": 0.04563530096225299,
+            "leakage_probability_worst_initial_state": 7.478960754013774e-32,
+            "leakage_probability_bound": 0.0020825806939154083
+          },
+          {
+            "duration": 1,
+            "state_vector_error": 0.03051510297741703,
+            "state_vector_error_bound": 0.046450532731568704,
+            "leakage_probability_worst_initial_state": 0.000930878615741236,
+            "leakage_probability_bound": 0.002157651991046535
+          },
+          {
+            "duration": 10,
+            "state_vector_error": 0.041159643169161333,
+            "state_vector_error_bound": 0.053787618655410145,
+            "leakage_probability_worst_initial_state": 0.0016390797677086162,
+            "leakage_probability_bound": 0.0028931079206198254
+          },
+          {
+            "duration": 40,
+            "state_vector_error": 0.04366894437437697,
+            "state_vector_error_bound": 0.07824457173488164,
+            "leakage_probability_worst_initial_state": 0.0011840500405140416,
+            "leakage_probability_bound": 0.006122213005975037
+          }
+        ]
+      },
+      {
+        "branch_sizes": [
+          2,
+          2
+        ],
+        "N": 4,
+        "actual_block_gap": 1.8007815520542723,
+        "certified_block_gap": 1.6946386159774365,
+        "actual_offdiagonal_norm": 0.048644250576707876,
+        "certified_offdiagonal_norm": 0.048644250576707876,
+        "conjugation_residual_norm": 0.0011211926317144817,
+        "conjugation_residual_bound": 0.0014788311901558467,
+        "dynamics": [
+          {
+            "duration": 0,
+            "state_vector_error": 4.557705386602905e-15,
+            "state_vector_error_bound": 0.05740958587639733,
+            "leakage_probability_worst_initial_state": 4.200961950400974e-31,
+            "leakage_probability_bound": 0.0032958605504994393
+          },
+          {
+            "duration": 1,
+            "state_vector_error": 0.03953661802587161,
+            "state_vector_error_bound": 0.05888841706655317,
+            "leakage_probability_worst_initial_state": 0.0015620893759346677,
+            "leakage_probability_bound": 0.003467845664604311
+          },
+          {
+            "duration": 10,
+            "state_vector_error": 0.014702550147870218,
+            "state_vector_error_bound": 0.0721978977779558,
+            "leakage_probability_worst_initial_state": 0.00010293370993515671,
+            "leakage_probability_bound": 0.005212536443556154
+          },
+          {
+            "duration": 40,
+            "state_vector_error": 0.05132701887269747,
+            "state_vector_error_bound": 0.1165628334826312,
+            "leakage_probability_worst_initial_state": 0.000835739390653154,
+            "leakage_probability_bound": 0.013586894149499608
+          }
+        ]
+      },
+      {
+        "branch_sizes": [
+          1,
+          2,
+          3
+        ],
+        "N": 6,
+        "actual_block_gap": 2.34408137223549,
+        "certified_block_gap": 2.2177951470531085,
+        "actual_offdiagonal_norm": 0.04050686871747512,
+        "certified_offdiagonal_norm": 0.04050686871747512,
+        "conjugation_residual_norm": 0.0006282526148187571,
+        "conjugation_residual_bound": 0.0007673619121667481,
+        "dynamics": [
+          {
+            "duration": 0,
+            "state_vector_error": 2.6748616353541292e-14,
+            "state_vector_error_bound": 0.03652895423754403,
+            "leakage_probability_worst_initial_state": 2.665803010200021e-30,
+            "leakage_probability_bound": 0.0013343644976885859
+          },
+          {
+            "duration": 1,
+            "state_vector_error": 0.02909996622625395,
+            "state_vector_error_bound": 0.03729631614971078,
+            "leakage_probability_worst_initial_state": 0.0008463973208840159,
+            "leakage_probability_bound": 0.001391015198339177
+          },
+          {
+            "duration": 10,
+            "state_vector_error": 0.012898147882111272,
+            "state_vector_error_bound": 0.04420257335921151,
+            "leakage_probability_worst_initial_state": 0.0001264037313088226,
+            "leakage_probability_bound": 0.001953867491576475
+          },
+          {
+            "duration": 40,
+            "state_vector_error": 0.03796419960021509,
+            "state_vector_error_bound": 0.06722343072421395,
+            "leakage_probability_worst_initial_state": 0.0008295410827693884,
+            "leakage_probability_bound": 0.004518989638333191
+          }
+        ]
+      },
+      {
+        "branch_sizes": [
+          3,
+          3
+        ],
+        "N": 6,
+        "actual_block_gap": 3.07864237518997,
+        "certified_block_gap": 1.0314447759436396,
+        "actual_offdiagonal_norm": 0.0194012865170105,
+        "certified_offdiagonal_norm": 0.0194012865170105,
+        "conjugation_residual_norm": 0.00010337245072785791,
+        "conjugation_residual_bound": 0.00037892484073742395,
+        "dynamics": [
+          {
+            "duration": 0,
+            "state_vector_error": 7.487718313029347e-16,
+            "state_vector_error_bound": 0.03761963213059238,
+            "leakage_probability_worst_initial_state": 2.658867960915148e-31,
+            "leakage_probability_bound": 0.001415236721641098
+          },
+          {
+            "duration": 1,
+            "state_vector_error": 0.01021934903664102,
+            "state_vector_error_bound": 0.0379985569713298,
+            "leakage_probability_worst_initial_state": 0.00010441922989466489,
+            "leakage_probability_bound": 0.0014438903319033965
+          },
+          {
+            "duration": 10,
+            "state_vector_error": 0.008174386797466087,
+            "state_vector_error_bound": 0.04140888053796661,
+            "leakage_probability_worst_initial_state": 6.575833842139435e-05,
+            "leakage_probability_bound": 0.00171469538740759
+          },
+          {
+            "duration": 40,
+            "state_vector_error": 0.009966836094925683,
+            "state_vector_error_bound": 0.05277662576008933,
+            "leakage_probability_worst_initial_state": 8.276066833589592e-05,
+            "leakage_probability_bound": 0.0027853722266205244
+          }
+        ]
+      },
+      {
+        "branch_sizes": [
+          2,
+          3
+        ],
+        "N": 5,
+        "actual_block_gap": 1.6577234760320616,
+        "certified_block_gap": 1.5210276655484163,
+        "actual_offdiagonal_norm": 0.04490776906458483,
+        "certified_offdiagonal_norm": 0.04490776906458483,
+        "conjugation_residual_norm": 0.0010582590905133763,
+        "conjugation_residual_bound": 0.001406535215159154,
+        "dynamics": [
+          {
+            "duration": 0,
+            "state_vector_error": 1.0594980255926749e-15,
+            "state_vector_error_bound": 0.05904924687664119,
+            "leakage_probability_worst_initial_state": 1.0175740416976259e-30,
+            "leakage_probability_bound": 0.003486813556698519
+          },
+          {
+            "duration": 1,
+            "state_vector_error": 0.03684034291753579,
+            "state_vector_error_bound": 0.060455782091800345,
+            "leakage_probability_worst_initial_state": 0.0013564782281761901,
+            "leakage_probability_bound": 0.0036549015883312465
+          },
+          {
+            "duration": 10,
+            "state_vector_error": 0.0391927549418415,
+            "state_vector_error_bound": 0.07311459902823272,
+            "leakage_probability_worst_initial_state": 0.0014165815858849238,
+            "leakage_probability_bound": 0.00534574459105925
+          },
+          {
+            "duration": 40,
+            "state_vector_error": 0.05253364539946499,
+            "state_vector_error_bound": 0.11531065548300734,
+            "leakage_probability_worst_initial_state": 0.0010111284846074872,
+            "leakage_probability_bound": 0.013296547267920811
+          }
+        ]
+      },
+      {
+        "branch_sizes": [
+          2
+        ],
+        "N": 2,
+        "actual_block_gap": 1.6341558864438528,
+        "certified_block_gap": 1.5990633600374808,
+        "actual_offdiagonal_norm": 0.03288871878634356,
+        "certified_offdiagonal_norm": 0.03288871878634356,
+        "conjugation_residual_norm": 0.0006577980048059109,
+        "conjugation_residual_bound": 0.0007048438796034229,
+        "dynamics": [
+          {
+            "duration": 0,
+            "state_vector_error": 6.3433289408087515e-16,
+            "state_vector_error_bound": 0.04113497889861309,
+            "leakage_probability_worst_initial_state": 1.456818499069709e-32,
+            "leakage_probability_bound": 0.0016920864889893438
+          },
+          {
+            "duration": 1,
+            "state_vector_error": 0.02930538789384287,
+            "state_vector_error_bound": 0.04183982277821651,
+            "leakage_probability_worst_initial_state": 0.0008585543860711103,
+            "leakage_probability_bound": 0.001750570770112565
+          },
+          {
+            "duration": 10,
+            "state_vector_error": 0.03781783851381127,
+            "state_vector_error_bound": 0.04818341769464732,
+            "leakage_probability_worst_initial_state": 0.0013828985588624073,
+            "leakage_probability_bound": 0.0023216417407368522
+          },
+          {
+            "duration": 40,
+            "state_vector_error": 0.04729245118436576,
+            "state_vector_error_bound": 0.06932873408275,
+            "leakage_probability_worst_initial_state": 0.0015547931659361627,
+            "leakage_probability_bound": 0.004806473369516662
+          }
+        ]
+      },
+      {
+        "branch_sizes": [
+          3
+        ],
+        "N": 3,
+        "actual_block_gap": 2.859220072357171,
+        "certified_block_gap": 0.9340949967465849,
+        "actual_offdiagonal_norm": 0.013252025453875733,
+        "certified_offdiagonal_norm": 0.013252025453875733,
+        "conjugation_residual_norm": 5.3650745949308816e-05,
+        "conjugation_residual_bound": 0.00019341767872225901,
+        "dynamics": [
+          {
+            "duration": 0,
+            "state_vector_error": 5.725254373677143e-16,
+            "state_vector_error_bound": 0.02837404225487129,
+            "leakage_probability_worst_initial_state": 3.277843889298612e-31,
+            "leakage_probability_bound": 0.0008050862738812214
+          },
+          {
+            "duration": 1,
+            "state_vector_error": 0.00793826587704353,
+            "state_vector_error_bound": 0.02856745993359355,
+            "leakage_probability_worst_initial_state": 6.301210872047823e-05,
+            "leakage_probability_bound": 0.0008160997670574728
+          },
+          {
+            "duration": 10,
+            "state_vector_error": 0.006591945777739249,
+            "state_vector_error_bound": 0.03030821904209388,
+            "leakage_probability_worst_initial_state": 4.317050166806022e-05,
+            "leakage_probability_bound": 0.0009185881415035421
+          },
+          {
+            "duration": 40,
+            "state_vector_error": 0.006464581280917639,
+            "state_vector_error_bound": 0.036110749403761654,
+            "leakage_probability_worst_initial_state": 3.725562535099253e-05,
+            "leakage_probability_bound": 0.0013039862225012722
+          }
+        ]
+      },
+      {
+        "branch_sizes": [
+          4
+        ],
+        "N": 4,
+        "actual_block_gap": 1.7400193874487964,
+        "certified_block_gap": 1.6547074866664915,
+        "actual_offdiagonal_norm": 0.03271803701993338,
+        "certified_offdiagonal_norm": 0.03271803701993338,
+        "conjugation_residual_norm": 0.00047556867070468667,
+        "conjugation_residual_bound": 0.0006730194220205796,
+        "dynamics": [
+          {
+            "duration": 0,
+            "state_vector_error": 4.052966996349429e-16,
+            "state_vector_error_bound": 0.0395454027779204,
+            "leakage_probability_worst_initial_state": 5.33304557609183e-32,
+            "leakage_probability_bound": 0.0015638388808679544
+          },
+          {
+            "duration": 1,
+            "state_vector_error": 0.024097773027433572,
+            "state_vector_error_bound": 0.04021842219994098,
+            "leakage_probability_worst_initial_state": 0.0005805490375932124,
+            "leakage_probability_bound": 0.0016175214842527052
+          },
+          {
+            "duration": 10,
+            "state_vector_error": 0.021493753484001406,
+            "state_vector_error_bound": 0.046275596998126195,
+            "leakage_probability_worst_initial_state": 0.0004410952401746627,
+            "leakage_probability_bound": 0.002141430877532986
+          },
+          {
+            "duration": 40,
+            "state_vector_error": 0.024000837928487163,
+            "state_vector_error_bound": 0.06646617965874359,
+            "leakage_probability_worst_initial_state": 0.00024699193957416956,
+            "leakage_probability_bound": 0.004417753038428379
+          }
+        ]
+      },
+      {
+        "branch_sizes": [
+          1,
+          2
+        ],
+        "N": 3,
+        "actual_block_gap": 1.7308182012527253,
+        "certified_block_gap": 1.689787317027755,
+        "actual_offdiagonal_norm": 0.021718857997791406,
+        "certified_offdiagonal_norm": 0.021718857997791406,
+        "conjugation_residual_norm": 0.0002637886158933623,
+        "conjugation_residual_bound": 0.000286421695053441,
+        "dynamics": [
+          {
+            "duration": 0,
+            "state_vector_error": 7.079311412974515e-15,
+            "state_vector_error_bound": 0.02570602557959035,
+            "leakage_probability_worst_initial_state": 1.0319668981751857e-31,
+            "leakage_probability_bound": 0.0006607997510985531
+          },
+          {
+            "duration": 1,
+            "state_vector_error": 0.018937419230810118,
+            "state_vector_error_bound": 0.02599244727464379,
+            "leakage_probability_worst_initial_state": 0.0003585793547407641,
+            "leakage_probability_bound": 0.0006756073153251373
+          },
+          {
+            "duration": 10,
+            "state_vector_error": 0.01173005911409718,
+            "state_vector_error_bound": 0.028570242530124756,
+            "leakage_probability_worst_initial_state": 0.0001300597624933448,
+            "leakage_probability_bound": 0.0008162587582301494
+          },
+          {
+            "duration": 40,
+            "state_vector_error": 0.024026904695355487,
+            "state_vector_error_bound": 0.037162893381727985,
+            "leakage_probability_worst_initial_state": 0.0004748861196120233,
+            "leakage_probability_bound": 0.0013810806445016816
+          }
+        ]
+      },
+      {
+        "branch_sizes": [
+          2,
+          2
+        ],
+        "N": 4,
+        "actual_block_gap": 1.7133023058998362,
+        "certified_block_gap": 1.677333215139627,
+        "actual_offdiagonal_norm": 0.013613524498375362,
+        "certified_offdiagonal_norm": 0.013613524498375364,
+        "conjugation_residual_norm": 9.178531735934902e-05,
+        "conjugation_residual_bound": 0.00011229784560947975,
+        "dynamics": [
+          {
+            "duration": 0,
+            "state_vector_error": 1.3675361700343644e-14,
+            "state_vector_error_bound": 0.016232343550463976,
+            "leakage_probability_worst_initial_state": 8.605520247192484e-31,
+            "leakage_probability_bound": 0.0002634889771402894
+          },
+          {
+            "duration": 1,
+            "state_vector_error": 0.011283873844219968,
+            "state_vector_error_bound": 0.016344641396073455,
+            "leakage_probability_worst_initial_state": 0.00012731915517059188,
+            "leakage_probability_bound": 0.000267147302366238
+          },
+          {
+            "duration": 10,
+            "state_vector_error": 0.007867202401645191,
+            "state_vector_error_bound": 0.017355322006558774,
+            "leakage_probability_worst_initial_state": 6.100730816774137e-05,
+            "leakage_probability_bound": 0.0003012072019513432
+          },
+          {
+            "duration": 40,
+            "state_vector_error": 0.009661202976653061,
+            "state_vector_error_bound": 0.020724257374843166,
+            "leakage_probability_worst_initial_state": 8.405441519453424e-05,
+            "leakage_probability_bound": 0.0004294948437387413
+          }
+        ]
+      },
+      {
+        "branch_sizes": [
+          1,
+          2,
+          3
+        ],
+        "N": 6,
+        "actual_block_gap": 1.6969878593446894,
+        "certified_block_gap": 1.6120984428800818,
+        "actual_offdiagonal_norm": 0.012663143837165691,
+        "certified_offdiagonal_norm": 0.012663143837165691,
+        "conjugation_residual_norm": 6.685617700719364e-05,
+        "conjugation_residual_bound": 0.00010104488809419137,
+        "dynamics": [
+          {
+            "duration": 0,
+            "state_vector_error": 1.594950687846002e-14,
+            "state_vector_error_bound": 0.015710137173189562,
+            "leakage_probability_worst_initial_state": 8.959842551363175e-31,
+            "leakage_probability_bound": 0.0002468084100004325
+          },
+          {
+            "duration": 1,
+            "state_vector_error": 0.009521752357398758,
+            "state_vector_error_bound": 0.015811182061283752,
+            "leakage_probability_worst_initial_state": 9.065950735749572e-05,
+            "leakage_probability_bound": 0.00024999347817506113
+          },
+          {
+            "duration": 10,
+            "state_vector_error": 0.006082248549249932,
+            "state_vector_error_bound": 0.016720586054131476,
+            "leakage_probability_worst_initial_state": 3.6576020757459916e-05,
+            "leakage_probability_bound": 0.00027957799799361595
+          },
+          {
+            "duration": 40,
+            "state_vector_error": 0.007809717974517533,
+            "state_vector_error_bound": 0.019751932696957214,
+            "leakage_probability_worst_initial_state": 5.432635772757079e-05,
+            "leakage_probability_bound": 0.0003901388452651275
+          }
+        ]
+      },
+      {
+        "branch_sizes": [
+          3,
+          3
+        ],
+        "N": 6,
+        "actual_block_gap": 1.7666834037291188,
+        "certified_block_gap": 1.6358677656898688,
+        "actual_offdiagonal_norm": 0.030045039115774507,
+        "certified_offdiagonal_norm": 0.030045039115774507,
+        "conjugation_residual_norm": 0.00036363908741371913,
+        "conjugation_residual_bound": 0.0005724666943866068,
+        "dynamics": [
+          {
+            "duration": 0,
+            "state_vector_error": 9.32065162218742e-14,
+            "state_vector_error_bound": 0.03673284570541566,
+            "leakage_probability_worst_initial_state": 2.1334105291139285e-30,
+            "leakage_probability_bound": 0.0013493019536178737
+          },
+          {
+            "duration": 1,
+            "state_vector_error": 0.021125455149771846,
+            "state_vector_error_bound": 0.03730531239980227,
+            "leakage_probability_worst_initial_state": 0.0004461708701292416,
+            "leakage_probability_bound": 0.0013916863332468408
+          },
+          {
+            "duration": 10,
+            "state_vector_error": 0.011927062150067419,
+            "state_vector_error_bound": 0.04245751264928173,
+            "leakage_probability_worst_initial_state": 0.00012941414726044316,
+            "leakage_probability_bound": 0.001802640380363918
+          },
+          {
+            "duration": 40,
+            "state_vector_error": 0.025139769659872524,
+            "state_vector_error_bound": 0.05963151348087993,
+            "leakage_probability_worst_initial_state": 0.00043541855147697934,
+            "leakage_probability_bound": 0.0035559174000203645
+          }
+        ]
+      },
+      {
+        "branch_sizes": [
+          2,
+          3
+        ],
+        "N": 5,
+        "actual_block_gap": 1.733623418054494,
+        "certified_block_gap": 0.7371736304826184,
+        "actual_offdiagonal_norm": 0.015239613074243513,
+        "certified_offdiagonal_norm": 0.015239613074243515,
+        "conjugation_residual_norm": 0.0001046438265678947,
+        "conjugation_residual_bound": 0.0003283480609602198,
+        "dynamics": [
+          {
+            "duration": 0,
+            "state_vector_error": 1.5770928169310365e-15,
+            "state_vector_error_bound": 0.041346061345863196,
+            "leakage_probability_worst_initial_state": 6.585387038230772e-31,
+            "leakage_probability_bound": 0.0017094967888158822
+          },
+          {
+            "duration": 1,
+            "state_vector_error": 0.01126473405383508,
+            "state_vector_error_bound": 0.04167440940682341,
+            "leakage_probability_worst_initial_state": 0.00012688634368846212,
+            "leakage_probability_bound": 0.0017367563994075315
+          },
+          {
+            "duration": 10,
+            "state_vector_error": 0.00865445412586343,
+            "state_vector_error_bound": 0.04462954195546539,
+            "leakage_probability_worst_initial_state": 7.380162039552904e-05,
+            "leakage_probability_bound": 0.0019917960151546454
+          },
+          {
+            "duration": 40,
+            "state_vector_error": 0.010385134507118355,
+            "state_vector_error_bound": 0.05447998378427198,
+            "leakage_probability_worst_initial_state": 9.188433122791458e-05,
+            "leakage_probability_bound": 0.0029680686331345378
+          }
+        ]
+      },
+      {
+        "branch_sizes": [
+          2
+        ],
+        "N": 2,
+        "actual_block_gap": 1.8074916720662144,
+        "certified_block_gap": 1.7710531584968707,
+        "actual_offdiagonal_norm": 0.019440170022774324,
+        "certified_offdiagonal_norm": 0.01944017002277432,
+        "conjugation_residual_norm": 0.00020681594550147248,
+        "conjugation_residual_bound": 0.00021812361582201404,
+        "dynamics": [
+          {
+            "duration": 0,
+            "state_vector_error": 2.0165091742482012e-15,
+            "state_vector_error_bound": 0.021953231532896047,
+            "leakage_probability_worst_initial_state": 1.552834483784906e-33,
+            "leakage_probability_bound": 0.0004819443747369413
+          },
+          {
+            "duration": 1,
+            "state_vector_error": 0.016845169129775867,
+            "state_vector_error_bound": 0.022171355148718062,
+            "leakage_probability_worst_initial_state": 0.0002837301181637838,
+            "leakage_probability_bound": 0.0004915689891305869
+          },
+          {
+            "duration": 10,
+            "state_vector_error": 0.006636307182382448,
+            "state_vector_error_bound": 0.02413446769111619,
+            "leakage_probability_worst_initial_state": 3.951313055651398e-05,
+            "leakage_probability_bound": 0.0005824725307335311
+          },
+          {
+            "duration": 40,
+            "state_vector_error": 0.0201594693513182,
+            "state_vector_error_bound": 0.03067817616577661,
+            "leakage_probability_worst_initial_state": 0.00033698416709381613,
+            "leakage_probability_bound": 0.0009411504928584239
+          }
+        ]
+      },
+      {
+        "branch_sizes": [
+          3
+        ],
+        "N": 3,
+        "actual_block_gap": 1.9388667622079405,
+        "certified_block_gap": 1.8865107276413222,
+        "actual_offdiagonal_norm": 0.0183742492061394,
+        "certified_offdiagonal_norm": 0.018374249206139403,
+        "conjugation_residual_norm": 0.00013165136020863323,
+        "conjugation_residual_bound": 0.00018248190825795687,
+        "dynamics": [
+          {
+            "duration": 0,
+            "state_vector_error": 2.82247750860751e-16,
+            "state_vector_error_bound": 0.019479612744224852,
+            "leakage_probability_worst_initial_state": 3.0360438155295785e-32,
+            "leakage_probability_bound": 0.00037945531266496727
+          },
+          {
+            "duration": 1,
+            "state_vector_error": 0.01268625983775981,
+            "state_vector_error_bound": 0.01966209465248281,
+            "leakage_probability_worst_initial_state": 0.00016092568260847465,
+            "leakage_probability_bound": 0.0003865979661231931
+          },
+          {
+            "duration": 10,
+            "state_vector_error": 0.004331068693916949,
+            "state_vector_error_bound": 0.021304431826804422,
+            "leakage_probability_worst_initial_state": 1.7201296362336425e-05,
+            "leakage_probability_bound": 0.0004538788154629571
+          },
+          {
+            "duration": 40,
+            "state_vector_error": 0.01314331464709553,
+            "state_vector_error_bound": 0.026778889074543125,
+            "leakage_probability_worst_initial_state": 0.0001469986145691498,
+            "leakage_probability_bound": 0.0007171089000666851
+          }
+        ]
+      },
+      {
+        "branch_sizes": [
+          4
+        ],
+        "N": 4,
+        "actual_block_gap": 4.323889270209867,
+        "certified_block_gap": 0.8051569535067149,
+        "actual_offdiagonal_norm": 0.02799769999075834,
+        "certified_offdiagonal_norm": 0.02799769999075834,
+        "conjugation_residual_norm": 0.000154215713009108,
+        "conjugation_residual_bound": 0.0010436805322028178,
+        "dynamics": [
+          {
+            "duration": 0,
+            "state_vector_error": 5.81482329555044e-16,
+            "state_vector_error_bound": 0.06954594348050885,
+            "leakage_probability_worst_initial_state": 3.257954976179964e-31,
+            "leakage_probability_bound": 0.00483663825459413
+          },
+          {
+            "duration": 1,
+            "state_vector_error": 0.006613202793219532,
+            "state_vector_error_bound": 0.07058962401271167,
+            "leakage_probability_worst_initial_state": 4.3702131524482985e-05,
+            "leakage_probability_bound": 0.0049828950182559985
+          },
+          {
+            "duration": 10,
+            "state_vector_error": 0.007185551570027127,
+            "state_vector_error_bound": 0.07998274880253703,
+            "leakage_probability_worst_initial_state": 4.929759230237718e-05,
+            "leakage_probability_bound": 0.006397240106009738
+          },
+          {
+            "duration": 40,
+            "state_vector_error": 0.010811408175025704,
+            "state_vector_error_bound": 0.11129316476862157,
+            "leakage_probability_worst_initial_state": 7.910990392460643e-05,
+            "leakage_probability_bound": 0.012386168524215547
+          }
+        ]
+      },
+      {
+        "branch_sizes": [
+          1,
+          2
+        ],
+        "N": 3,
+        "actual_block_gap": 1.5715555618461217,
+        "certified_block_gap": 1.5253192096687622,
+        "actual_offdiagonal_norm": 0.02946669874633705,
+        "certified_offdiagonal_norm": 0.02946669874633705,
+        "conjugation_residual_norm": 0.0005378212080627164,
+        "conjugation_residual_bound": 0.0005916732836329678,
+        "dynamics": [
+          {
+            "duration": 0,
+            "state_vector_error": 8.164443258314627e-15,
+            "state_vector_error_bound": 0.03863676345194135,
+            "leakage_probability_worst_initial_state": 8.243683150542743e-32,
+            "leakage_probability_bound": 0.001492799490041271
+          },
+          {
+            "duration": 1,
+            "state_vector_error": 0.026368287121132997,
+            "state_vector_error_bound": 0.03922843673557432,
+            "leakage_probability_worst_initial_state": 0.0006951236890111931,
+            "leakage_probability_bound": 0.0015388702487169567
+          },
+          {
+            "duration": 10,
+            "state_vector_error": 0.03598612988074583,
+            "state_vector_error_bound": 0.04455349628827103,
+            "leakage_probability_worst_initial_state": 0.0012641666192958398,
+            "leakage_probability_bound": 0.0019850140315089805
+          },
+          {
+            "duration": 40,
+            "state_vector_error": 0.03529194775186127,
+            "state_vector_error_bound": 0.06230369479726006,
+            "leakage_probability_worst_initial_state": 0.0008028675847794551,
+            "leakage_probability_bound": 0.00388175038539013
+          }
+        ]
+      },
+      {
+        "branch_sizes": [
+          2,
+          2
+        ],
+        "N": 4,
+        "actual_block_gap": 2.0502572444057465,
+        "certified_block_gap": 1.9618775863947648,
+        "actual_offdiagonal_norm": 0.046319771209798445,
+        "certified_offdiagonal_norm": 0.04631977120979845,
+        "conjugation_residual_norm": 0.0009502213431360543,
+        "conjugation_residual_bound": 0.0011464845875896153,
+        "dynamics": [
+          {
+            "duration": 0,
+            "state_vector_error": 5.95594243938259e-14,
+            "state_vector_error_bound": 0.04721983831307004,
+            "leakage_probability_worst_initial_state": 9.503587833186286e-31,
+            "leakage_probability_bound": 0.0022297131303124773
+          },
+          {
+            "duration": 1,
+            "state_vector_error": 0.036937892569898406,
+            "state_vector_error_bound": 0.048366322900659654,
+            "leakage_probability_worst_initial_state": 0.0013635525529912909,
+            "leakage_probability_bound": 0.0023393011909308746
+          },
+          {
+            "duration": 10,
+            "state_vector_error": 0.030093426932602065,
+            "state_vector_error_bound": 0.05868468418896619,
+            "leakage_probability_worst_initial_state": 0.0008199704389142428,
+            "leakage_probability_bound": 0.003443892158358698
+          },
+          {
+            "duration": 40,
+            "state_vector_error": 0.049986405783740154,
+            "state_vector_error_bound": 0.09307922181665464,
+            "leakage_probability_worst_initial_state": 0.0011887013539192812,
+            "leakage_probability_bound": 0.008663741533993997
+          }
+        ]
+      },
+      {
+        "branch_sizes": [
+          1,
+          2,
+          3
+        ],
+        "N": 6,
+        "actual_block_gap": 2.4177924122139713,
+        "certified_block_gap": 0.8679549122679697,
+        "actual_offdiagonal_norm": 0.029194461124813425,
+        "certified_offdiagonal_norm": 0.029194461124813425,
+        "conjugation_residual_norm": 0.0002992324732520032,
+        "conjugation_residual_bound": 0.0010503149553113826,
+        "dynamics": [
+          {
+            "duration": 0,
+            "state_vector_error": 6.954538830819128e-14,
+            "state_vector_error_bound": 0.06727183800026704,
+            "leakage_probability_worst_initial_state": 6.42919186900152e-31,
+            "leakage_probability_bound": 0.004525500187934171
+          },
+          {
+            "duration": 1,
+            "state_vector_error": 0.01956943016470603,
+            "state_vector_error_bound": 0.06832215295557842,
+            "leakage_probability_worst_initial_state": 0.00038286015417597543,
+            "leakage_probability_bound": 0.004667916584485452
+          },
+          {
+            "duration": 10,
+            "state_vector_error": 0.008379922064744699,
+            "state_vector_error_bound": 0.07777498755338086,
+            "leakage_probability_worst_initial_state": 6.256226071959952e-05,
+            "leakage_probability_bound": 0.006048948688928546
+          },
+          {
+            "duration": 40,
+            "state_vector_error": 0.018156371906376482,
+            "state_vector_error_bound": 0.10928443621272232,
+            "leakage_probability_worst_initial_state": 0.00019340363934236193,
+            "leakage_probability_bound": 0.011943087998332574
+          }
+        ]
+      },
+      {
+        "branch_sizes": [
+          3,
+          3
+        ],
+        "N": 6,
+        "actual_block_gap": 1.8537856925388394,
+        "certified_block_gap": 1.7595366001858805,
+        "actual_offdiagonal_norm": 0.02191658279987962,
+        "certified_offdiagonal_norm": 0.02191658279987962,
+        "conjugation_residual_norm": 0.00019376707546855888,
+        "conjugation_residual_bound": 0.00027987649018432925,
+        "dynamics": [
+          {
+            "duration": 0,
+            "state_vector_error": 3.6429255916739055e-14,
+            "state_vector_error_bound": 0.024911766879488966,
+            "leakage_probability_worst_initial_state": 1.5979379885779377e-30,
+            "leakage_probability_bound": 0.0006205961290580034
+          },
+          {
+            "duration": 1,
+            "state_vector_error": 0.015604379835393938,
+            "state_vector_error_bound": 0.025191643369673295,
+            "leakage_probability_worst_initial_state": 0.00024346347049113596,
+            "leakage_probability_bound": 0.0006346188956648045
+          },
+          {
+            "duration": 10,
+            "state_vector_error": 0.014292077149318072,
+            "state_vector_error_bound": 0.02771053178133226,
+            "leakage_probability_worst_initial_state": 0.00020076838608247828,
+            "leakage_probability_bound": 0.0007678735716042251
+          },
+          {
+            "duration": 40,
+            "state_vector_error": 0.01758331197246541,
+            "state_vector_error_bound": 0.036106826486862136,
+            "leakage_probability_worst_initial_state": 0.00025199916476883024,
+            "leakage_probability_bound": 0.001303702918952369
+          }
+        ]
+      },
+      {
+        "branch_sizes": [
+          2,
+          3
+        ],
+        "N": 5,
+        "actual_block_gap": 1.6696560286615603,
+        "certified_block_gap": 1.5536807925292906,
+        "actual_offdiagonal_norm": 0.038243623180805514,
+        "certified_offdiagonal_norm": 0.03824362318080552,
+        "conjugation_residual_norm": 0.0006284808786463847,
+        "conjugation_residual_bound": 0.0009888637415803017,
+        "dynamics": [
+          {
+            "duration": 0,
+            "state_vector_error": 7.6279856855049e-15,
+            "state_vector_error_bound": 0.04922970453737463,
+            "leakage_probability_worst_initial_state": 7.04529056232968e-31,
+            "leakage_probability_bound": 0.0024235638088372044
+          },
+          {
+            "duration": 1,
+            "state_vector_error": 0.029197770793468573,
+            "state_vector_error_bound": 0.050218568278954934,
+            "leakage_probability_worst_initial_state": 0.0008521463736804202,
+            "leakage_probability_bound": 0.0025219045999880585
+          },
+          {
+            "duration": 10,
+            "state_vector_error": 0.0173987660409427,
+            "state_vector_error_bound": 0.059118341953177646,
+            "leakage_probability_worst_initial_state": 0.0002692027418325576,
+            "leakage_probability_bound": 0.003494978355292844
+          },
+          {
+            "duration": 40,
+            "state_vector_error": 0.03068567460319515,
+            "state_vector_error_bound": 0.08878425420058669,
+            "leakage_probability_worst_initial_state": 0.00034380808770843136,
+            "leakage_probability_bound": 0.007882643793954395
+          }
+        ]
+      }
+    ]
+  },
+  "numeric_bound_validation": {
+    "checks_passed": true,
+    "directed_rounding_cases": 8,
+    "sqrt_enclosure_cases": 6,
+    "exp_tail_comparison_cases": 4,
+    "gap_boundary_statuses": {
+      "exact_zero": "inconclusive",
+      "positive_neighbor": "valid-but-vacuous",
+      "negative_neighbor": "inconclusive"
+    },
+    "cancellation_rounded_gap": 1.734723475976807e-17,
+    "cancellation_exact_gap_witness": {
+      "numerator": "-860871538955415",
+      "denominator": "324518553658426726783156020576256"
+    },
+    "cancellation_status": "inconclusive",
+    "subnormal_positive_probability_upper": 5e-324,
+    "extreme_magnitude_status": "certified",
+    "overflowing_radius_status": "inconclusive",
+    "cyclic_cut_method": "connected-graph-min-edge-lower-bound"
+  },
+  "environment": {
+    "python": "3.13.2 (v3.13.2:4f8bb3947cf, Feb  4 2025, 11:51:10) [Clang 15.0.0 (clang-1500.3.9.4)]",
+    "platform": "macOS-26.5.1-arm64-arm-64bit-Mach-O",
+    "numpy": "2.2.6",
+    "scipy": "1.15.3",
+    "networkx": "3.5"
+  },
+  "elapsed_seconds": 0.17338325013406575
+}

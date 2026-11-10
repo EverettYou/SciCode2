@@ -1,0 +1,973 @@
+{
+  "version": "reference-v1-methods",
+  "status": "post-hoc reviewer-defined weighted rubric; not an original frozen official score",
+  "input_root": "/Users/home/Downloads/20261014-102308_d89b765a",
+  "max_total": 35,
+  "criteria": {
+    "D1": {
+      "max": 6,
+      "name": "Correct joint microstate and logical-sector posterior"
+    },
+    "D2": {
+      "max": 3,
+      "name": "Exact computation method and complexity description"
+    },
+    "D3": {
+      "max": 5,
+      "name": "Independent enumeration and validation of inference methods"
+    },
+    "D4": {
+      "max": 3,
+      "name": "Numerical robustness for positive-probability records"
+    },
+    "D5": {
+      "max": 3,
+      "name": "Valid logical MAP correction"
+    },
+    "E1": {
+      "max": 4,
+      "name": "answers.json interface and entry completeness"
+    },
+    "E2": {
+      "max": 3,
+      "name": "Delivery of report, proofs and combined phase diagram"
+    },
+    "E3": {
+      "max": 3,
+      "name": "Source code, environment and reproduction commands"
+    },
+    "E4": {
+      "max": 5,
+      "name": "Raw data, seeds, stopping rules, resources and unconditional failure accounting"
+    }
+  },
+  "runs": {
+    "Fable03": {
+      "folder": "anthropic__claude-fable-5-1/run_03",
+      "scores": [
+        {
+          "aspect": "D1",
+          "max": 6,
+          "score": 6,
+          "reason": "Uses three-state edge variables 0,+,- to preserve orientation and separates Z0,Z1 by ell; it does not make the arrivals at the two endpoints independent. Independent routine checks support the implementation.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-fable-5-1/run_03/src/model.py",
+              "line": 1
+            }
+          ],
+          "review_evidence": "/Users/home/Library/CloudStorage/Dropbox/Research/[Mercor]SciCode2/benchmarks/fusion-informed-decoding/evaluation/reviews/2026-10-16-d89b765a/results/anthropic__claude-fable-5-1-run_03-checks.json"
+        },
+        {
+          "aspect": "D2",
+          "max": 3,
+          "score": 3,
+          "reason": "Exact finite-width frontier/transfer-matrix contraction; memory grows exponentially with width. The task does not prescribe free fermions or a particular tensor-network method.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-fable-5-1/run_03/README.md",
+              "line": 25
+            }
+          ],
+          "review_evidence": null
+        },
+        {
+          "aspect": "D3",
+          "max": 5,
+          "score": 5,
+          "reason": "The submission includes independent small-lattice enumeration or comparisons using different elimination orders; the review additionally checks 210 routine cases per submission with independent irreps, geometry and generic einsum.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-fable-5-1/run_03/tests_validate.py",
+              "line": 18
+            }
+          ],
+          "review_evidence": "/Users/home/Library/CloudStorage/Dropbox/Research/[Mercor]SciCode2/benchmarks/fusion-informed-decoding/evaluation/reviews/2026-10-16-d89b765a/results/anthropic__claude-fable-5-1-run_03-checks.json"
+        },
+        {
+          "aspect": "D4",
+          "max": 3,
+          "score": 1,
+          "reason": "Passes 210/210 routine cases; fails 18 extremely low-p positive-probability stress cases. Ordinary stepwise normalization is present, but local products or edge weights can still underflow.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-fable-5-1/run_03/src/model.py",
+              "line": 198
+            }
+          ],
+          "review_evidence": "/Users/home/Library/CloudStorage/Dropbox/Research/[Mercor]SciCode2/benchmarks/fusion-informed-decoding/evaluation/reviews/2026-10-16-d89b765a/results/anthropic__claude-fable-5-1-run_03-checks.json"
+        },
+        {
+          "aspect": "D5",
+          "max": 3,
+          "score": 3,
+          "reason": "In the review, 210/210 routine corrections are legal edge sets, satisfy the syndrome, and choose the reference posterior's maximum logical sector; either sector is allowed at a tie.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-fable-5-1/run_03/src/model.py",
+              "line": 280
+            }
+          ],
+          "review_evidence": "/Users/home/Library/CloudStorage/Dropbox/Research/[Mercor]SciCode2/benchmarks/fusion-informed-decoding/evaluation/reviews/2026-10-16-d89b765a/results/anthropic__claude-fable-5-1-run_03-checks.json"
+        },
+        {
+          "aspect": "E1",
+          "max": 4,
+          "score": 4,
+          "reason": "answers.json parses; R1 contains all 21 O0/O1/O2 entries at N=2..8, and R3_N0 is an integer. Scientific support is scored separately under R1/R2/R3.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-fable-5-1/run_03/answers.json",
+              "line": 1
+            }
+          ],
+          "review_evidence": null
+        },
+        {
+          "aspect": "E2",
+          "max": 3,
+          "score": 3,
+          "reason": "The required report, proofs and combined (p,N) phase diagram are delivered; correctness and evidence strength are scored in the scientific items, without double penalties.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-fable-5-1/run_03/README.md",
+              "line": 6
+            }
+          ],
+          "review_evidence": null
+        },
+        {
+          "aspect": "E3",
+          "max": 3,
+          "score": 3,
+          "reason": "Provides code, environment/dependency versions and reproduction commands. The review inspected and reused existing small-scale checks, without rerunning all production research.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-fable-5-1/run_03/README.md",
+              "line": 30
+            }
+          ],
+          "review_evidence": null
+        },
+        {
+          "aspect": "E4",
+          "max": 5,
+          "score": 4,
+          "reason": "Preserves seeds, fixed job counts, resources, raw arrays and denominators; exceptions become P0=.5 and aggregation gives both risk and hard tie .5, whereas the task requires failure. data/summary.csv has total nfail_exc=0, so this is a latent defect with no observed effect on archived estimates.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-fable-5-1/run_03/src/run_mc.py",
+              "line": 56
+            }
+          ],
+          "review_evidence": null
+        }
+      ],
+      "total": 32,
+      "max_total": 35,
+      "ordinary_posterior_pass": 210,
+      "ordinary_decode_pass": 210,
+      "stress_posterior_pass": 0,
+      "ordinary_max_error": 1.0325074129013956e-14
+    },
+    "Opus01": {
+      "folder": "anthropic__claude-opus-5-5/run_01",
+      "scores": [
+        {
+          "aspect": "D1",
+          "max": 6,
+          "score": 6,
+          "reason": "Uses three-state edge variables 0,+,- to preserve orientation and separates Z0,Z1 by ell; it does not make the arrivals at the two endpoints independent. Independent routine checks support the implementation.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_01/src/tm.py",
+              "line": 1
+            }
+          ],
+          "review_evidence": "/Users/home/Library/CloudStorage/Dropbox/Research/[Mercor]SciCode2/benchmarks/fusion-informed-decoding/evaluation/reviews/2026-10-16-d89b765a/results/anthropic__claude-opus-5-5-run_01-checks.json"
+        },
+        {
+          "aspect": "D2",
+          "max": 3,
+          "score": 3,
+          "reason": "Exact finite-width frontier/transfer-matrix contraction; memory grows exponentially with width. The task does not prescribe free fermions or a particular tensor-network method.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_01/report.md",
+              "line": 67
+            }
+          ],
+          "review_evidence": null
+        },
+        {
+          "aspect": "D3",
+          "max": 5,
+          "score": 5,
+          "reason": "The submission includes independent small-lattice enumeration or comparisons using different elimination orders; the review additionally checks 210 routine cases per submission with independent irreps, geometry and generic einsum.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_01/tests/test_small.py",
+              "line": 8
+            }
+          ],
+          "review_evidence": "/Users/home/Library/CloudStorage/Dropbox/Research/[Mercor]SciCode2/benchmarks/fusion-informed-decoding/evaluation/reviews/2026-10-16-d89b765a/results/anthropic__claude-opus-5-5-run_01-checks.json"
+        },
+        {
+          "aspect": "D4",
+          "max": 3,
+          "score": 1,
+          "reason": "Passes 210/210 routine cases; fails 18 extremely low-p positive-probability stress cases. Ordinary stepwise normalization is present, but local products or edge weights can still underflow.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_01/solution.py",
+              "line": 71
+            }
+          ],
+          "review_evidence": "/Users/home/Library/CloudStorage/Dropbox/Research/[Mercor]SciCode2/benchmarks/fusion-informed-decoding/evaluation/reviews/2026-10-16-d89b765a/results/anthropic__claude-opus-5-5-run_01-checks.json"
+        },
+        {
+          "aspect": "D5",
+          "max": 3,
+          "score": 3,
+          "reason": "In the review, 210/210 routine corrections are legal edge sets, satisfy the syndrome, and choose the reference posterior's maximum logical sector; either sector is allowed at a tie.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_01/solution.py",
+              "line": 102
+            }
+          ],
+          "review_evidence": "/Users/home/Library/CloudStorage/Dropbox/Research/[Mercor]SciCode2/benchmarks/fusion-informed-decoding/evaluation/reviews/2026-10-16-d89b765a/results/anthropic__claude-opus-5-5-run_01-checks.json"
+        },
+        {
+          "aspect": "E1",
+          "max": 4,
+          "score": 4,
+          "reason": "answers.json parses; R1 contains all 21 O0/O1/O2 entries at N=2..8, and R3_N0 is an integer. Scientific support is scored separately under R1/R2/R3.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_01/answers.json",
+              "line": 1
+            }
+          ],
+          "review_evidence": null
+        },
+        {
+          "aspect": "E2",
+          "max": 3,
+          "score": 3,
+          "reason": "The required report, proofs and combined (p,N) phase diagram are delivered; correctness and evidence strength are scored in the scientific items, without double penalties.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_01/report.md",
+              "line": 5
+            }
+          ],
+          "review_evidence": null
+        },
+        {
+          "aspect": "E3",
+          "max": 3,
+          "score": 3,
+          "reason": "Provides code, environment/dependency versions and reproduction commands. The review inspected and reused existing small-scale checks, without rerunning all production research.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_01/reproduce.sh",
+              "line": 1
+            }
+          ],
+          "review_evidence": null
+        },
+        {
+          "aspect": "E4",
+          "max": 5,
+          "score": 4.5,
+          "reason": "Raw data, seeds, fixed-block stopping rules, resources and denominators for all attempts are recorded; bad hard failure is 1, but the reported posterior-min risk is still .5 rather than 1 on exception.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_01/src/mc.py",
+              "line": 146
+            }
+          ],
+          "review_evidence": null
+        }
+      ],
+      "total": 32.5,
+      "max_total": 35,
+      "ordinary_posterior_pass": 210,
+      "ordinary_decode_pass": 210,
+      "stress_posterior_pass": 0,
+      "ordinary_max_error": 1.0325074129013956e-14
+    },
+    "Opus02": {
+      "folder": "anthropic__claude-opus-5-5/run_02",
+      "scores": [
+        {
+          "aspect": "D1",
+          "max": 6,
+          "score": 6,
+          "reason": "Uses three-state edge variables 0,+,- to preserve orientation and separates Z0,Z1 by ell; it does not make the arrivals at the two endpoints independent. Independent routine checks support the implementation.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_02/hexsym/api.py",
+              "line": 43
+            }
+          ],
+          "review_evidence": "/Users/home/Library/CloudStorage/Dropbox/Research/[Mercor]SciCode2/benchmarks/fusion-informed-decoding/evaluation/reviews/2026-10-16-d89b765a/results/anthropic__claude-opus-5-5-run_02-checks.json"
+        },
+        {
+          "aspect": "D2",
+          "max": 3,
+          "score": 3,
+          "reason": "Exact finite-width frontier/transfer-matrix contraction; memory grows exponentially with width. The task does not prescribe free fermions or a particular tensor-network method.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_02/README.md",
+              "line": 18
+            }
+          ],
+          "review_evidence": null
+        },
+        {
+          "aspect": "D3",
+          "max": 5,
+          "score": 5,
+          "reason": "The submission includes independent small-lattice enumeration or comparisons using different elimination orders; the review additionally checks 210 routine cases per submission with independent irreps, geometry and generic einsum.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_02/tests/validate.py",
+              "line": 21
+            }
+          ],
+          "review_evidence": "/Users/home/Library/CloudStorage/Dropbox/Research/[Mercor]SciCode2/benchmarks/fusion-informed-decoding/evaluation/reviews/2026-10-16-d89b765a/results/anthropic__claude-opus-5-5-run_02-checks.json"
+        },
+        {
+          "aspect": "D4",
+          "max": 3,
+          "score": 1,
+          "reason": "Passes 210/210 routine cases; fails 18 extremely low-p positive-probability stress cases. Ordinary stepwise normalization is present, but local products or edge weights can still underflow. macOS longdouble has a different range from the original Linux environment, so not all macOS failures can be attributed directly to the original environment; however, p/2 in pri rounds to zero in Python float before conversion to dtype, a cross-platform issue at the smallest positive float.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_02/hexsym/api.py",
+              "line": 45
+            }
+          ],
+          "review_evidence": "/Users/home/Library/CloudStorage/Dropbox/Research/[Mercor]SciCode2/benchmarks/fusion-informed-decoding/evaluation/reviews/2026-10-16-d89b765a/results/anthropic__claude-opus-5-5-run_02-checks.json"
+        },
+        {
+          "aspect": "D5",
+          "max": 3,
+          "score": 3,
+          "reason": "In the review, 210/210 routine corrections are legal edge sets, satisfy the syndrome, and choose the reference posterior's maximum logical sector; either sector is allowed at a tie.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_02/hexsym/api.py",
+              "line": 143
+            }
+          ],
+          "review_evidence": "/Users/home/Library/CloudStorage/Dropbox/Research/[Mercor]SciCode2/benchmarks/fusion-informed-decoding/evaluation/reviews/2026-10-16-d89b765a/results/anthropic__claude-opus-5-5-run_02-checks.json"
+        },
+        {
+          "aspect": "E1",
+          "max": 4,
+          "score": 4,
+          "reason": "answers.json parses; R1 contains all 21 O0/O1/O2 entries at N=2..8, and R3_N0 is an integer. Scientific support is scored separately under R1/R2/R3.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_02/answers.json",
+              "line": 1
+            }
+          ],
+          "review_evidence": null
+        },
+        {
+          "aspect": "E2",
+          "max": 3,
+          "score": 3,
+          "reason": "The required report, proofs and combined (p,N) phase diagram are delivered; correctness and evidence strength are scored in the scientific items, without double penalties.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_02/README.md",
+              "line": 4
+            }
+          ],
+          "review_evidence": null
+        },
+        {
+          "aspect": "E3",
+          "max": 3,
+          "score": 3,
+          "reason": "Provides code, environment/dependency versions and reproduction commands. The review inspected and reused existing small-scale checks, without rerunning all production research.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_02/README.md",
+              "line": 24
+            }
+          ],
+          "review_evidence": null
+        },
+        {
+          "aspect": "E4",
+          "max": 5,
+          "score": 4.5,
+          "reason": "Raw data, seeds, fixed-block stopping rules, resources and denominators for all attempts are recorded; bad hard failure is 1, but the reported posterior-min risk is still .5 rather than 1 on exception.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_02/hexsym/sim.py",
+              "line": 49
+            }
+          ],
+          "review_evidence": null
+        }
+      ],
+      "total": 32.5,
+      "max_total": 35,
+      "ordinary_posterior_pass": 210,
+      "ordinary_decode_pass": 210,
+      "stress_posterior_pass": 0,
+      "ordinary_max_error": 1.0325074129013956e-14
+    },
+    "Opus03": {
+      "folder": "anthropic__claude-opus-5-5/run_03",
+      "scores": [
+        {
+          "aspect": "D1",
+          "max": 6,
+          "score": 6,
+          "reason": "Uses three-state edge variables 0,+,- to preserve orientation and separates Z0,Z1 by ell; it does not make the arrivals at the two endpoints independent. Independent routine checks support the implementation.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_03/symdec/tm.py",
+              "line": 1
+            }
+          ],
+          "review_evidence": "/Users/home/Library/CloudStorage/Dropbox/Research/[Mercor]SciCode2/benchmarks/fusion-informed-decoding/evaluation/reviews/2026-10-16-d89b765a/results/anthropic__claude-opus-5-5-run_03-checks.json"
+        },
+        {
+          "aspect": "D2",
+          "max": 3,
+          "score": 3,
+          "reason": "Exact finite-width frontier/transfer-matrix contraction; memory grows exponentially with width. The task does not prescribe free fermions or a particular tensor-network method.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_03/solution.py",
+              "line": 12
+            }
+          ],
+          "review_evidence": null
+        },
+        {
+          "aspect": "D3",
+          "max": 5,
+          "score": 5,
+          "reason": "The submission includes independent small-lattice enumeration or comparisons using different elimination orders; the review additionally checks 210 routine cases per submission with independent irreps, geometry and generic einsum.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_03/tests/test_validate_small.py",
+              "line": 7
+            }
+          ],
+          "review_evidence": "/Users/home/Library/CloudStorage/Dropbox/Research/[Mercor]SciCode2/benchmarks/fusion-informed-decoding/evaluation/reviews/2026-10-16-d89b765a/results/anthropic__claude-opus-5-5-run_03-checks.json"
+        },
+        {
+          "aspect": "D4",
+          "max": 3,
+          "score": 1,
+          "reason": "Passes 210/210 routine cases; fails 18 extremely low-p positive-probability stress cases. Ordinary stepwise normalization is present, but local products or edge weights can still underflow.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_03/symdec/api.py",
+              "line": 43
+            }
+          ],
+          "review_evidence": "/Users/home/Library/CloudStorage/Dropbox/Research/[Mercor]SciCode2/benchmarks/fusion-informed-decoding/evaluation/reviews/2026-10-16-d89b765a/results/anthropic__claude-opus-5-5-run_03-checks.json"
+        },
+        {
+          "aspect": "D5",
+          "max": 3,
+          "score": 3,
+          "reason": "In the review, 210/210 routine corrections are legal edge sets, satisfy the syndrome, and choose the reference posterior's maximum logical sector; either sector is allowed at a tie.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_03/symdec/api.py",
+              "line": 74
+            }
+          ],
+          "review_evidence": "/Users/home/Library/CloudStorage/Dropbox/Research/[Mercor]SciCode2/benchmarks/fusion-informed-decoding/evaluation/reviews/2026-10-16-d89b765a/results/anthropic__claude-opus-5-5-run_03-checks.json"
+        },
+        {
+          "aspect": "E1",
+          "max": 4,
+          "score": 4,
+          "reason": "answers.json parses; R1 contains all 21 O0/O1/O2 entries at N=2..8, and R3_N0 is an integer. Scientific support is scored separately under R1/R2/R3.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_03/answers.json",
+              "line": 1
+            }
+          ],
+          "review_evidence": null
+        },
+        {
+          "aspect": "E2",
+          "max": 3,
+          "score": 3,
+          "reason": "The required report, proofs and combined (p,N) phase diagram are delivered; correctness and evidence strength are scored in the scientific items, without double penalties.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_03/README.md",
+              "line": 3
+            }
+          ],
+          "review_evidence": null
+        },
+        {
+          "aspect": "E3",
+          "max": 3,
+          "score": 3,
+          "reason": "Provides code, environment/dependency versions and reproduction commands. The review inspected and reused existing small-scale checks, without rerunning all production research.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_03/README.md",
+              "line": 29
+            }
+          ],
+          "review_evidence": null
+        },
+        {
+          "aspect": "E4",
+          "max": 5,
+          "score": 4.5,
+          "reason": "Raw data, seeds, fixed-block stopping rules, resources and denominators for all attempts are recorded; bad hard failure is 1, but the reported posterior-min risk is still .5 rather than 1 on exception.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_03/symdec/mc.py",
+              "line": 121
+            }
+          ],
+          "review_evidence": null
+        }
+      ],
+      "total": 32.5,
+      "max_total": 35,
+      "ordinary_posterior_pass": 210,
+      "ordinary_decode_pass": 210,
+      "stress_posterior_pass": 0,
+      "ordinary_max_error": 1.021405182655144e-14
+    },
+    "GPT01": {
+      "folder": "openai__gpt-6-astra/run_01",
+      "scores": [
+        {
+          "aspect": "D1",
+          "max": 6,
+          "score": 6,
+          "reason": "Uses three-state edge variables 0,+,- to preserve orientation and separates Z0,Z1 by ell; it does not make the arrivals at the two endpoints independent. Independent routine checks support the implementation.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_01/decoder.py",
+              "line": 232
+            }
+          ],
+          "review_evidence": "/Users/home/Library/CloudStorage/Dropbox/Research/[Mercor]SciCode2/benchmarks/fusion-informed-decoding/evaluation/reviews/2026-10-16-d89b765a/results/openai__gpt-6-astra-run_01-checks.json"
+        },
+        {
+          "aspect": "D2",
+          "max": 3,
+          "score": 3,
+          "reason": "Exact finite-width frontier/transfer-matrix contraction; memory grows exponentially with width. The task does not prescribe free fermions or a particular tensor-network method.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_01/decoder.py",
+              "line": 279
+            }
+          ],
+          "review_evidence": null
+        },
+        {
+          "aspect": "D3",
+          "max": 5,
+          "score": 5,
+          "reason": "The submission includes independent small-lattice enumeration or comparisons using different elimination orders; the review additionally checks 210 routine cases per submission with independent irreps, geometry and generic einsum.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_01/validate.py",
+              "line": 1
+            }
+          ],
+          "review_evidence": "/Users/home/Library/CloudStorage/Dropbox/Research/[Mercor]SciCode2/benchmarks/fusion-informed-decoding/evaluation/reviews/2026-10-16-d89b765a/results/openai__gpt-6-astra-run_01-checks.json"
+        },
+        {
+          "aspect": "D4",
+          "max": 3,
+          "score": 3,
+          "reason": "Passes 210/210 routine and 18/18 extremely low-p positive-probability stress cases; uses Decimal or log-domain fallback.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_01/decoder.py",
+              "line": 271
+            }
+          ],
+          "review_evidence": "/Users/home/Library/CloudStorage/Dropbox/Research/[Mercor]SciCode2/benchmarks/fusion-informed-decoding/evaluation/reviews/2026-10-16-d89b765a/results/openai__gpt-6-astra-run_01-checks.json"
+        },
+        {
+          "aspect": "D5",
+          "max": 3,
+          "score": 3,
+          "reason": "In the review, 210/210 routine corrections are legal edge sets, satisfy the syndrome, and choose the reference posterior's maximum logical sector; either sector is allowed at a tie.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_01/decoder.py",
+              "line": 403
+            }
+          ],
+          "review_evidence": "/Users/home/Library/CloudStorage/Dropbox/Research/[Mercor]SciCode2/benchmarks/fusion-informed-decoding/evaluation/reviews/2026-10-16-d89b765a/results/openai__gpt-6-astra-run_01-checks.json"
+        },
+        {
+          "aspect": "E1",
+          "max": 4,
+          "score": 4,
+          "reason": "answers.json parses; R1 contains all 21 O0/O1/O2 entries at N=2..8, and R3_N0 is an integer. Scientific support is scored separately under R1/R2/R3.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_01/answers.json",
+              "line": 1
+            }
+          ],
+          "review_evidence": null
+        },
+        {
+          "aspect": "E2",
+          "max": 3,
+          "score": 3,
+          "reason": "The required report, proofs and combined (p,N) phase diagram are delivered; correctness and evidence strength are scored in the scientific items, without double penalties.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_01/README.md",
+              "line": 3
+            }
+          ],
+          "review_evidence": null
+        },
+        {
+          "aspect": "E3",
+          "max": 3,
+          "score": 3,
+          "reason": "Provides code, environment/dependency versions and reproduction commands. The review inspected and reused existing small-scale checks, without rerunning all production research.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_01/README.md",
+              "line": 17
+            }
+          ],
+          "review_evidence": null
+        },
+        {
+          "aspect": "E4",
+          "max": 5,
+          "score": 5,
+          "reason": "Retains all attempts; exception/invalid-correction risk and actual failure are both 1. Planned seeds, fixed stopping counts, resources and raw arrays can be recomputed; the existing archive audit found no inconsistency.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_01/README.md",
+              "line": 50
+            }
+          ],
+          "review_evidence": null
+        }
+      ],
+      "total": 35,
+      "max_total": 35,
+      "ordinary_posterior_pass": 210,
+      "ordinary_decode_pass": 210,
+      "stress_posterior_pass": 18,
+      "ordinary_max_error": 1.0325074129013956e-14
+    },
+    "GPT02": {
+      "folder": "openai__gpt-6-astra/run_02",
+      "scores": [
+        {
+          "aspect": "D1",
+          "max": 6,
+          "score": 6,
+          "reason": "Uses three-state edge variables 0,+,- to preserve orientation and separates Z0,Z1 by ell; it does not make the arrivals at the two endpoints independent. Independent routine checks support the implementation.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_02/decoder.py",
+              "line": 175
+            }
+          ],
+          "review_evidence": "/Users/home/Library/CloudStorage/Dropbox/Research/[Mercor]SciCode2/benchmarks/fusion-informed-decoding/evaluation/reviews/2026-10-16-d89b765a/results/openai__gpt-6-astra-run_02-checks.json"
+        },
+        {
+          "aspect": "D2",
+          "max": 3,
+          "score": 3,
+          "reason": "Exact finite-width frontier/transfer-matrix contraction; memory grows exponentially with width. The task does not prescribe free fermions or a particular tensor-network method.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_02/decoder.py",
+              "line": 314
+            }
+          ],
+          "review_evidence": null
+        },
+        {
+          "aspect": "D3",
+          "max": 5,
+          "score": 5,
+          "reason": "The submission includes independent small-lattice enumeration or comparisons using different elimination orders; the review additionally checks 210 routine cases per submission with independent irreps, geometry and generic einsum.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_02/validate.py",
+              "line": 1
+            }
+          ],
+          "review_evidence": "/Users/home/Library/CloudStorage/Dropbox/Research/[Mercor]SciCode2/benchmarks/fusion-informed-decoding/evaluation/reviews/2026-10-16-d89b765a/results/openai__gpt-6-astra-run_02-checks.json"
+        },
+        {
+          "aspect": "D4",
+          "max": 3,
+          "score": 3,
+          "reason": "Passes 210/210 routine and 18/18 extremely low-p positive-probability stress cases; uses Decimal or log-domain fallback.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_02/decoder.py",
+              "line": 224
+            }
+          ],
+          "review_evidence": "/Users/home/Library/CloudStorage/Dropbox/Research/[Mercor]SciCode2/benchmarks/fusion-informed-decoding/evaluation/reviews/2026-10-16-d89b765a/results/openai__gpt-6-astra-run_02-checks.json"
+        },
+        {
+          "aspect": "D5",
+          "max": 3,
+          "score": 3,
+          "reason": "In the review, 210/210 routine corrections are legal edge sets, satisfy the syndrome, and choose the reference posterior's maximum logical sector; either sector is allowed at a tie.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_02/decoder.py",
+              "line": 391
+            }
+          ],
+          "review_evidence": "/Users/home/Library/CloudStorage/Dropbox/Research/[Mercor]SciCode2/benchmarks/fusion-informed-decoding/evaluation/reviews/2026-10-16-d89b765a/results/openai__gpt-6-astra-run_02-checks.json"
+        },
+        {
+          "aspect": "E1",
+          "max": 4,
+          "score": 4,
+          "reason": "answers.json parses; R1 contains all 21 O0/O1/O2 entries at N=2..8, and R3_N0 is an integer. Scientific support is scored separately under R1/R2/R3.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_02/answers.json",
+              "line": 1
+            }
+          ],
+          "review_evidence": null
+        },
+        {
+          "aspect": "E2",
+          "max": 3,
+          "score": 3,
+          "reason": "The required report, proofs and combined (p,N) phase diagram are delivered; correctness and evidence strength are scored in the scientific items, without double penalties.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_02/README.md",
+              "line": 3
+            }
+          ],
+          "review_evidence": null
+        },
+        {
+          "aspect": "E3",
+          "max": 3,
+          "score": 3,
+          "reason": "Provides code, environment/dependency versions and reproduction commands. The review inspected and reused existing small-scale checks, without rerunning all production research.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_02/README.md",
+              "line": 32
+            }
+          ],
+          "review_evidence": null
+        },
+        {
+          "aspect": "E4",
+          "max": 5,
+          "score": 5,
+          "reason": "Retains all attempts; exception/invalid-correction risk and actual failure are both 1. Planned seeds, fixed stopping counts, resources and raw arrays can be recomputed; the existing archive audit found no inconsistency.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_02/README.md",
+              "line": 61
+            }
+          ],
+          "review_evidence": null
+        }
+      ],
+      "total": 35,
+      "max_total": 35,
+      "ordinary_posterior_pass": 210,
+      "ordinary_decode_pass": 210,
+      "stress_posterior_pass": 18,
+      "ordinary_max_error": 1.0325074129013956e-14
+    },
+    "GPT03": {
+      "folder": "openai__gpt-6-astra/run_03",
+      "scores": [
+        {
+          "aspect": "D1",
+          "max": 6,
+          "score": 6,
+          "reason": "Uses three-state edge variables 0,+,- to preserve orientation and separates Z0,Z1 by ell; it does not make the arrivals at the two endpoints independent. Independent routine checks support the implementation.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_03/decoder.py",
+              "line": 182
+            }
+          ],
+          "review_evidence": "/Users/home/Library/CloudStorage/Dropbox/Research/[Mercor]SciCode2/benchmarks/fusion-informed-decoding/evaluation/reviews/2026-10-16-d89b765a/results/openai__gpt-6-astra-run_03-checks.json"
+        },
+        {
+          "aspect": "D2",
+          "max": 3,
+          "score": 3,
+          "reason": "Exact finite-width frontier/transfer-matrix contraction; memory grows exponentially with width. The task does not prescribe free fermions or a particular tensor-network method.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_03/decoder.py",
+              "line": 267
+            }
+          ],
+          "review_evidence": null
+        },
+        {
+          "aspect": "D3",
+          "max": 5,
+          "score": 5,
+          "reason": "The submission includes independent small-lattice enumeration or comparisons using different elimination orders; the review additionally checks 210 routine cases per submission with independent irreps, geometry and generic einsum.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_03/validate.py",
+              "line": 1
+            }
+          ],
+          "review_evidence": "/Users/home/Library/CloudStorage/Dropbox/Research/[Mercor]SciCode2/benchmarks/fusion-informed-decoding/evaluation/reviews/2026-10-16-d89b765a/results/openai__gpt-6-astra-run_03-checks.json"
+        },
+        {
+          "aspect": "D4",
+          "max": 3,
+          "score": 3,
+          "reason": "Passes 210/210 routine and 18/18 extremely low-p positive-probability stress cases; uses Decimal or log-domain fallback.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_03/decoder.py",
+              "line": 187
+            }
+          ],
+          "review_evidence": "/Users/home/Library/CloudStorage/Dropbox/Research/[Mercor]SciCode2/benchmarks/fusion-informed-decoding/evaluation/reviews/2026-10-16-d89b765a/results/openai__gpt-6-astra-run_03-checks.json"
+        },
+        {
+          "aspect": "D5",
+          "max": 3,
+          "score": 3,
+          "reason": "In the review, 210/210 routine corrections are legal edge sets, satisfy the syndrome, and choose the reference posterior's maximum logical sector; either sector is allowed at a tie.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_03/decoder.py",
+              "line": 312
+            }
+          ],
+          "review_evidence": "/Users/home/Library/CloudStorage/Dropbox/Research/[Mercor]SciCode2/benchmarks/fusion-informed-decoding/evaluation/reviews/2026-10-16-d89b765a/results/openai__gpt-6-astra-run_03-checks.json"
+        },
+        {
+          "aspect": "E1",
+          "max": 4,
+          "score": 4,
+          "reason": "answers.json parses; R1 contains all 21 O0/O1/O2 entries at N=2..8, and R3_N0 is an integer. Scientific support is scored separately under R1/R2/R3.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_03/answers.json",
+              "line": 1
+            }
+          ],
+          "review_evidence": null
+        },
+        {
+          "aspect": "E2",
+          "max": 3,
+          "score": 3,
+          "reason": "The required report, proofs and combined (p,N) phase diagram are delivered; correctness and evidence strength are scored in the scientific items, without double penalties.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_03/README.md",
+              "line": 3
+            }
+          ],
+          "review_evidence": null
+        },
+        {
+          "aspect": "E3",
+          "max": 3,
+          "score": 3,
+          "reason": "Provides code, environment/dependency versions and reproduction commands. The review inspected and reused existing small-scale checks, without rerunning all production research.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_03/README.md",
+              "line": 24
+            }
+          ],
+          "review_evidence": null
+        },
+        {
+          "aspect": "E4",
+          "max": 5,
+          "score": 5,
+          "reason": "Raw arrays and summaries agree; 423 NPZ files /340600 archived slots include 200 conservatively failed reserved slots from an externally terminated batch, and the number of completed physical trials is unknown. This is disclosed correctly and the denominator is retained; slots are not called completed trials, and no scientific-failure penalty is assigned for this incident.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_03/README.md",
+              "line": 62
+            }
+          ],
+          "review_evidence": null
+        }
+      ],
+      "total": 35,
+      "max_total": 35,
+      "ordinary_posterior_pass": 210,
+      "ordinary_decode_pass": 210,
+      "stress_posterior_pass": 18,
+      "ordinary_max_error": 1.0325074129013956e-14
+    }
+  },
+  "infrastructure_only": [
+    "Fable01",
+    "Fable02"
+  ],
+  "diagnostics": {
+    "ordinary_per_run": 210,
+    "R4_O1_O2_per_run": 140,
+    "O0_controls_per_run": 70,
+    "endpoint_stress_per_run": 18,
+    "reviewer_platform": "macOS NumPy 1.26.4; longdouble exponent range equals binary64",
+    "original_platform": "Linux NumPy 2.1.3",
+    "independent_oracle_check": "21 L=2 literal microscopic enumerations, max deviation 8.67e-19",
+    "trial_archive_audit": {
+      "GPT1": {
+        "files": 677,
+        "trials": 1319100,
+        "inconsistencies": []
+      },
+      "GPT2": {
+        "decoder_evaluation_rows": 305024,
+        "matching_archived_data_hashes": 4,
+        "inconsistencies": []
+      },
+      "GPT3": {
+        "files": 423,
+        "archived_trial_slots": 340600,
+        "inconsistencies": [],
+        "note": "Includes the 200 conservatively failed reserved slots in the externally terminated batch; these are not evidence that 200 physical trials actually ran."
+      }
+    }
+  }
+}

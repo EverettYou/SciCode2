@@ -1,0 +1,25 @@
+{
+  "id": "T-0008",
+  "title": "General-H evaluation-guided embedding research loop",
+  "status": "open",
+  "priority": "normal",
+  "category": "task",
+  "created": "2026-10-16T08:08:51Z",
+  "updated": "2026-10-16T08:08:51Z",
+  "context": "Benchmark: qec-annealing-embedding. User-authorized scientific follow-up after Lab 002 and Lab 003. Methods are autonomous; no new blind trial or formal difficulty claim.",
+  "benchmark_ids": [
+    "qec-annealing-embedding"
+  ],
+  "related": [
+    "benchmarks/qec-annealing-embedding/labs/lab-004-general-h-evaluation-embedding-loop/REPORT.md"
+  ],
+  "messages": [
+    {
+      "id": "M-001",
+      "author": "user",
+      "type": "advice",
+      "created": "2026-10-16T08:08:51Z",
+      "content": "那下一轮就重点解决这个闭环：针对一般稀疏 H，发展在常规实例上有用、计算成本低的理论评价准则，并用它指导更紧凑的 embedding。让 agent 自主选择方法，不要再只靠特殊 toy case 或某一种 code 的结构来完成任务。"
+    }
+  ]
+}

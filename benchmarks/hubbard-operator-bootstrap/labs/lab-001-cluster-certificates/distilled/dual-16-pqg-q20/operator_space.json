@@ -1,0 +1,556 @@
+{
+  "compressed_certificate": "/Users/home/Library/CloudStorage/Dropbox/Research/[Mercor]SciCode2/benchmarks/hubbard-operator-bootstrap/labs/lab-002-moment-sdp/results/dual-16-pqg",
+  "exact_certificate_directory": "/Users/home/Library/CloudStorage/Dropbox/Research/[Mercor]SciCode2/benchmarks/hubbard-operator-bootstrap/labs/lab-001-cluster-certificates/distilled/dual-16-pqg-exact",
+  "exact_total_energy_lower_bound": "-8.763365270237",
+  "active_source_T2_factor_columns": 16,
+  "symmetry_group_order": 16,
+  "distinct_closed_cubic_generators": 88,
+  "exact_closed_cubic_span_dimension": 88,
+  "adjoint_span_dimension": 88,
+  "PQG_core_dimension": 2081,
+  "declared_operator_space_dimension": 2257,
+  "dimension_convention": "Original full Fock-space polynomial span, before further fixed-sector identities. Cubic net+1 and adjoint net-1 have disjoint canonical monomial supports; PQG has degree<=2.",
+  "rank_proof": "Exact rational dependency relations provide upper bounds; Gaussian elimination modulo proven prime1000003 gives matching lower bounds in every charge/momentum sector.",
+  "operator_definition": "O=span{I,allc,allc\u2020,allpairannihilators/creators,allc\u2020c,selected_basisclosedcubicpolynomials,theiradjoints}.",
+  "bound_proof": "Every retained dual square has its cubic part in this closed span and its linear part in PQG. All coefficient-residual positivity SOS operators have degree<=2 and lie in PQG. D4/spin closure permits certificate twirling, hence the inherited exact lower bound is valid for the literal operator-space relaxation.",
+  "elapsed_seconds": 0.7378861668985337,
+  "peak_rss_bytes": 73072640,
+  "sector_ranks": [
+    {
+      "charge_momentum": [
+        0,
+        0
+      ],
+      "raw_cubic_dimension": 376,
+      "distinct_primitive_generators": 3,
+      "exact_rank": 3,
+      "modular_rank_lower": 3,
+      "selected_basis_column_indices": [
+        0,
+        1,
+        2
+      ],
+      "global_operator_offset": 0,
+      "dependent_relations": 0
+    },
+    {
+      "charge_momentum": [
+        0,
+        1
+      ],
+      "raw_cubic_dimension": 376,
+      "distinct_primitive_generators": 3,
+      "exact_rank": 3,
+      "modular_rank_lower": 3,
+      "selected_basis_column_indices": [
+        0,
+        1,
+        2
+      ],
+      "global_operator_offset": 3,
+      "dependent_relations": 0
+    },
+    {
+      "charge_momentum": [
+        0,
+        2
+      ],
+      "raw_cubic_dimension": 376,
+      "distinct_primitive_generators": 3,
+      "exact_rank": 3,
+      "modular_rank_lower": 3,
+      "selected_basis_column_indices": [
+        0,
+        1,
+        2
+      ],
+      "global_operator_offset": 6,
+      "dependent_relations": 0
+    },
+    {
+      "charge_momentum": [
+        0,
+        3
+      ],
+      "raw_cubic_dimension": 376,
+      "distinct_primitive_generators": 3,
+      "exact_rank": 3,
+      "modular_rank_lower": 3,
+      "selected_basis_column_indices": [
+        0,
+        1,
+        2
+      ],
+      "global_operator_offset": 9,
+      "dependent_relations": 0
+    },
+    {
+      "charge_momentum": [
+        0,
+        4
+      ],
+      "raw_cubic_dimension": 376,
+      "distinct_primitive_generators": 3,
+      "exact_rank": 3,
+      "modular_rank_lower": 3,
+      "selected_basis_column_indices": [
+        0,
+        1,
+        2
+      ],
+      "global_operator_offset": 12,
+      "dependent_relations": 0
+    },
+    {
+      "charge_momentum": [
+        0,
+        5
+      ],
+      "raw_cubic_dimension": 376,
+      "distinct_primitive_generators": 3,
+      "exact_rank": 3,
+      "modular_rank_lower": 3,
+      "selected_basis_column_indices": [
+        0,
+        1,
+        2
+      ],
+      "global_operator_offset": 15,
+      "dependent_relations": 0
+    },
+    {
+      "charge_momentum": [
+        0,
+        6
+      ],
+      "raw_cubic_dimension": 376,
+      "distinct_primitive_generators": 2,
+      "exact_rank": 2,
+      "modular_rank_lower": 2,
+      "selected_basis_column_indices": [
+        0,
+        1
+      ],
+      "global_operator_offset": 18,
+      "dependent_relations": 0
+    },
+    {
+      "charge_momentum": [
+        0,
+        7
+      ],
+      "raw_cubic_dimension": 376,
+      "distinct_primitive_generators": 3,
+      "exact_rank": 3,
+      "modular_rank_lower": 3,
+      "selected_basis_column_indices": [
+        0,
+        1,
+        2
+      ],
+      "global_operator_offset": 20,
+      "dependent_relations": 0
+    },
+    {
+      "charge_momentum": [
+        0,
+        8
+      ],
+      "raw_cubic_dimension": 376,
+      "distinct_primitive_generators": 3,
+      "exact_rank": 3,
+      "modular_rank_lower": 3,
+      "selected_basis_column_indices": [
+        0,
+        1,
+        2
+      ],
+      "global_operator_offset": 23,
+      "dependent_relations": 0
+    },
+    {
+      "charge_momentum": [
+        0,
+        9
+      ],
+      "raw_cubic_dimension": 376,
+      "distinct_primitive_generators": 2,
+      "exact_rank": 2,
+      "modular_rank_lower": 2,
+      "selected_basis_column_indices": [
+        0,
+        1
+      ],
+      "global_operator_offset": 26,
+      "dependent_relations": 0
+    },
+    {
+      "charge_momentum": [
+        0,
+        10
+      ],
+      "raw_cubic_dimension": 376,
+      "distinct_primitive_generators": 3,
+      "exact_rank": 3,
+      "modular_rank_lower": 3,
+      "selected_basis_column_indices": [
+        0,
+        1,
+        2
+      ],
+      "global_operator_offset": 28,
+      "dependent_relations": 0
+    },
+    {
+      "charge_momentum": [
+        0,
+        11
+      ],
+      "raw_cubic_dimension": 376,
+      "distinct_primitive_generators": 2,
+      "exact_rank": 2,
+      "modular_rank_lower": 2,
+      "selected_basis_column_indices": [
+        0,
+        1
+      ],
+      "global_operator_offset": 31,
+      "dependent_relations": 0
+    },
+    {
+      "charge_momentum": [
+        0,
+        12
+      ],
+      "raw_cubic_dimension": 376,
+      "distinct_primitive_generators": 3,
+      "exact_rank": 3,
+      "modular_rank_lower": 3,
+      "selected_basis_column_indices": [
+        0,
+        1,
+        2
+      ],
+      "global_operator_offset": 33,
+      "dependent_relations": 0
+    },
+    {
+      "charge_momentum": [
+        0,
+        13
+      ],
+      "raw_cubic_dimension": 376,
+      "distinct_primitive_generators": 3,
+      "exact_rank": 3,
+      "modular_rank_lower": 3,
+      "selected_basis_column_indices": [
+        0,
+        1,
+        2
+      ],
+      "global_operator_offset": 36,
+      "dependent_relations": 0
+    },
+    {
+      "charge_momentum": [
+        0,
+        14
+      ],
+      "raw_cubic_dimension": 376,
+      "distinct_primitive_generators": 2,
+      "exact_rank": 2,
+      "modular_rank_lower": 2,
+      "selected_basis_column_indices": [
+        0,
+        1
+      ],
+      "global_operator_offset": 39,
+      "dependent_relations": 0
+    },
+    {
+      "charge_momentum": [
+        0,
+        15
+      ],
+      "raw_cubic_dimension": 376,
+      "distinct_primitive_generators": 3,
+      "exact_rank": 3,
+      "modular_rank_lower": 3,
+      "selected_basis_column_indices": [
+        0,
+        1,
+        2
+      ],
+      "global_operator_offset": 41,
+      "dependent_relations": 0
+    },
+    {
+      "charge_momentum": [
+        1,
+        0
+      ],
+      "raw_cubic_dimension": 376,
+      "distinct_primitive_generators": 3,
+      "exact_rank": 3,
+      "modular_rank_lower": 3,
+      "selected_basis_column_indices": [
+        0,
+        1,
+        2
+      ],
+      "global_operator_offset": 44,
+      "dependent_relations": 0
+    },
+    {
+      "charge_momentum": [
+        1,
+        1
+      ],
+      "raw_cubic_dimension": 376,
+      "distinct_primitive_generators": 3,
+      "exact_rank": 3,
+      "modular_rank_lower": 3,
+      "selected_basis_column_indices": [
+        0,
+        1,
+        2
+      ],
+      "global_operator_offset": 47,
+      "dependent_relations": 0
+    },
+    {
+      "charge_momentum": [
+        1,
+        2
+      ],
+      "raw_cubic_dimension": 376,
+      "distinct_primitive_generators": 3,
+      "exact_rank": 3,
+      "modular_rank_lower": 3,
+      "selected_basis_column_indices": [
+        0,
+        1,
+        2
+      ],
+      "global_operator_offset": 50,
+      "dependent_relations": 0
+    },
+    {
+      "charge_momentum": [
+        1,
+        3
+      ],
+      "raw_cubic_dimension": 376,
+      "distinct_primitive_generators": 3,
+      "exact_rank": 3,
+      "modular_rank_lower": 3,
+      "selected_basis_column_indices": [
+        0,
+        1,
+        2
+      ],
+      "global_operator_offset": 53,
+      "dependent_relations": 0
+    },
+    {
+      "charge_momentum": [
+        1,
+        4
+      ],
+      "raw_cubic_dimension": 376,
+      "distinct_primitive_generators": 3,
+      "exact_rank": 3,
+      "modular_rank_lower": 3,
+      "selected_basis_column_indices": [
+        0,
+        1,
+        2
+      ],
+      "global_operator_offset": 56,
+      "dependent_relations": 0
+    },
+    {
+      "charge_momentum": [
+        1,
+        5
+      ],
+      "raw_cubic_dimension": 376,
+      "distinct_primitive_generators": 3,
+      "exact_rank": 3,
+      "modular_rank_lower": 3,
+      "selected_basis_column_indices": [
+        0,
+        1,
+        2
+      ],
+      "global_operator_offset": 59,
+      "dependent_relations": 0
+    },
+    {
+      "charge_momentum": [
+        1,
+        6
+      ],
+      "raw_cubic_dimension": 376,
+      "distinct_primitive_generators": 2,
+      "exact_rank": 2,
+      "modular_rank_lower": 2,
+      "selected_basis_column_indices": [
+        0,
+        1
+      ],
+      "global_operator_offset": 62,
+      "dependent_relations": 0
+    },
+    {
+      "charge_momentum": [
+        1,
+        7
+      ],
+      "raw_cubic_dimension": 376,
+      "distinct_primitive_generators": 3,
+      "exact_rank": 3,
+      "modular_rank_lower": 3,
+      "selected_basis_column_indices": [
+        0,
+        1,
+        2
+      ],
+      "global_operator_offset": 64,
+      "dependent_relations": 0
+    },
+    {
+      "charge_momentum": [
+        1,
+        8
+      ],
+      "raw_cubic_dimension": 376,
+      "distinct_primitive_generators": 3,
+      "exact_rank": 3,
+      "modular_rank_lower": 3,
+      "selected_basis_column_indices": [
+        0,
+        1,
+        2
+      ],
+      "global_operator_offset": 67,
+      "dependent_relations": 0
+    },
+    {
+      "charge_momentum": [
+        1,
+        9
+      ],
+      "raw_cubic_dimension": 376,
+      "distinct_primitive_generators": 2,
+      "exact_rank": 2,
+      "modular_rank_lower": 2,
+      "selected_basis_column_indices": [
+        0,
+        1
+      ],
+      "global_operator_offset": 70,
+      "dependent_relations": 0
+    },
+    {
+      "charge_momentum": [
+        1,
+        10
+      ],
+      "raw_cubic_dimension": 376,
+      "distinct_primitive_generators": 3,
+      "exact_rank": 3,
+      "modular_rank_lower": 3,
+      "selected_basis_column_indices": [
+        0,
+        1,
+        2
+      ],
+      "global_operator_offset": 72,
+      "dependent_relations": 0
+    },
+    {
+      "charge_momentum": [
+        1,
+        11
+      ],
+      "raw_cubic_dimension": 376,
+      "distinct_primitive_generators": 2,
+      "exact_rank": 2,
+      "modular_rank_lower": 2,
+      "selected_basis_column_indices": [
+        0,
+        1
+      ],
+      "global_operator_offset": 75,
+      "dependent_relations": 0
+    },
+    {
+      "charge_momentum": [
+        1,
+        12
+      ],
+      "raw_cubic_dimension": 376,
+      "distinct_primitive_generators": 3,
+      "exact_rank": 3,
+      "modular_rank_lower": 3,
+      "selected_basis_column_indices": [
+        0,
+        1,
+        2
+      ],
+      "global_operator_offset": 77,
+      "dependent_relations": 0
+    },
+    {
+      "charge_momentum": [
+        1,
+        13
+      ],
+      "raw_cubic_dimension": 376,
+      "distinct_primitive_generators": 3,
+      "exact_rank": 3,
+      "modular_rank_lower": 3,
+      "selected_basis_column_indices": [
+        0,
+        1,
+        2
+      ],
+      "global_operator_offset": 80,
+      "dependent_relations": 0
+    },
+    {
+      "charge_momentum": [
+        1,
+        14
+      ],
+      "raw_cubic_dimension": 376,
+      "distinct_primitive_generators": 2,
+      "exact_rank": 2,
+      "modular_rank_lower": 2,
+      "selected_basis_column_indices": [
+        0,
+        1
+      ],
+      "global_operator_offset": 83,
+      "dependent_relations": 0
+    },
+    {
+      "charge_momentum": [
+        1,
+        15
+      ],
+      "raw_cubic_dimension": 376,
+      "distinct_primitive_generators": 3,
+      "exact_rank": 3,
+      "modular_rank_lower": 3,
+      "selected_basis_column_indices": [
+        0,
+        1,
+        2
+      ],
+      "global_operator_offset": 85,
+      "dependent_relations": 0
+    }
+  ]
+}

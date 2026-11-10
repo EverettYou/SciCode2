@@ -1,0 +1,138 @@
+{
+  "purpose": "Audit previous successful half-filled two-pole spectral interpolation against exact one-orbital Hubbard moment identities; this does not test measurements directly.",
+  "exact_hubbard": {
+    "M0": "1",
+    "M1": "epsilon_k + U*n_opposite - mu",
+    "M2_minus_M1_squared": "U^2*n_opposite*(1-n_opposite)",
+    "half_filling": "n_opposite=1/2, hence variance=U^2/4 independent of k"
+  },
+  "prior_ansatz": {
+    "E_plus_minus": "s*(epsilon_k+4*tprime) +/- V",
+    "w_plus_minus": "1/2 +/- r*epsilon_k",
+    "M1": "(s+2*V*r)*epsilon_k+4*s*tprime",
+    "M2_minus_M1_squared": "V^2*(1-4*r^2*epsilon_k^2)"
+  },
+  "summary": {
+    "M1_dispersion_coefficient": {
+      "value": 0.8907018460552482,
+      "bootstrap_sd": 0.009337823667272182,
+      "bootstrap_95": [
+        0.8727554348802427,
+        0.9084627304005567
+      ]
+    },
+    "M1_constant": {
+      "value": 0.3922408759680534,
+      "bootstrap_sd": 0.0029755756224662477,
+      "bootstrap_95": [
+        0.38785158872748704,
+        0.3981614731822483
+      ]
+    },
+    "variance_min": {
+      "value": 32.59846545792463,
+      "bootstrap_sd": 0.1492092752709416,
+      "bootstrap_95": [
+        32.32047709943336,
+        32.877193656142424
+      ]
+    },
+    "variance_max": {
+      "value": 36.035913715111356,
+      "bootstrap_sd": 0.0198973195209168,
+      "bootstrap_95": [
+        35.99466991600463,
+        36.07304207968844
+      ]
+    },
+    "variance_mean": {
+      "value": 35.411990797657324,
+      "bootstrap_sd": 0.037738314410112876,
+      "bootstrap_95": [
+        35.34435456778606,
+        35.48015226559661
+      ]
+    },
+    "variance_range": {
+      "value": 3.4374482571867233,
+      "bootstrap_sd": 0.14120811067057917,
+      "bootstrap_95": [
+        3.18107118062726,
+        3.714228304719627
+      ]
+    },
+    "relative_variance_range": {
+      "value": 0.09707017820116816,
+      "bootstrap_sd": 0.004077429900416488,
+      "bootstrap_95": [
+        0.08963057861267433,
+        0.10504304674083459
+      ]
+    },
+    "U_apparent_min": {
+      "value": 11.419013172411114,
+      "bootstrap_sd": 0.02613633265295336,
+      "bootstrap_95": [
+        11.370220232229162,
+        11.467727524099363
+      ]
+    },
+    "U_apparent_max": {
+      "value": 12.005984127111173,
+      "bootstrap_sd": 0.0033147015752573476,
+      "bootstrap_95": [
+        11.999111619241477,
+        12.012167511212692
+      ]
+    },
+    "U_from_local_moments_redefined_band": {
+      "value": 11.90159498515343,
+      "bootstrap_sd": 0.0063418368415392445,
+      "bootstrap_95": [
+        11.890223640919519,
+        11.913043647806301
+      ]
+    },
+    "U_from_local_moments_highT_band": {
+      "value": 11.757327393753954,
+      "bootstrap_sd": 0.00808639156890474,
+      "bootstrap_95": [
+        11.739239863838167,
+        11.775093284231822
+      ]
+    },
+    "local_M1": {
+      "value": 0.3922408759680534,
+      "bootstrap_sd": 0.0029755756224662477,
+      "bootstrap_95": [
+        0.38785158872748704,
+        0.3981614731822483
+      ]
+    },
+    "local_M2": {
+      "value": 38.841758359176275,
+      "bootstrap_sd": 0.0326620797203691,
+      "bootstrap_95": [
+        38.78277221519213,
+        38.90905623778687
+      ]
+    },
+    "eps_second_moment": {
+      "value": 4.129218593416803,
+      "bootstrap_sd": 0.029564967588297787,
+      "bootstrap_95": [
+        4.079844815833856,
+        4.186336198173645
+      ]
+    }
+  },
+  "checks": {
+    "M0_max_error": 0.0,
+    "M1_analytic_max_error": 1.7763568394002505e-15,
+    "central_variance_analytic_max_error": 2.1316282072803006e-14,
+    "occupied_weight": 0.49999999999999983
+  },
+  "conclusion": "The prior exact two-pole interpolation cannot be an exact spectrum of an onsite-U-only one-orbital Hubbard Hamiltonian, even allowing hopping renormalization, because its second central moment varies with momentum. A true Hubbard spectral function can redistribute unmeasured weight/linewidths and need not equal that interpolation, so this is not a rejection of Hubbard physics by STS data.",
+  "reference": "https://arxiv.org/abs/cond-mat/9702188",
+  "broadening_warning": "Moment identities are applied before observational Lorentz broadening. Lorentzians have divergent full second moments; integrating broadened curves over finite windows is not an exact moment test."
+}

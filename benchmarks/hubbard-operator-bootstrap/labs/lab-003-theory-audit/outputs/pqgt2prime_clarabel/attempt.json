@@ -1,0 +1,15 @@
+{
+  "solver": "CLARABEL",
+  "model": "Full strict Nup=Ndown=8 T2-prime, 331 variables, 244 cones, maximum dimension233",
+  "requested_tolerance": 1e-8,
+  "requested_max_iterations": 150,
+  "requested_time_watchdog_seconds": 600,
+  "requested_memory_watchdog_bytes": 2000000000,
+  "observed_exit_code": 137,
+  "status": "Terminated during native solver call without completed solution",
+  "termination_cause": "Not independently determined; no watchdog record was written",
+  "solver_log_start_utc": "2026-10-07 08:20:44",
+  "termination_observed_by_utc": "2026-10-07 08:30:34",
+  "peak_rss_bytes": null,
+  "no_bound_claimed": true
+}

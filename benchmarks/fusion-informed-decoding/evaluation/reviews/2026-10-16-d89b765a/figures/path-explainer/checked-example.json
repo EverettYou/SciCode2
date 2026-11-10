@@ -1,0 +1,84 @@
+{
+  "L": 3,
+  "path_nodes": [
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      1
+    ],
+    [
+      1,
+      1
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      0,
+      2
+    ],
+    [
+      0,
+      3
+    ]
+  ],
+  "true_bits": [
+    1,
+    1,
+    0,
+    1,
+    0
+  ],
+  "correction_bits": [
+    0,
+    0,
+    1,
+    0,
+    1
+  ],
+  "path_difference_bits": [
+    1,
+    1,
+    1,
+    1,
+    1
+  ],
+  "true_counts": [
+    2,
+    1,
+    1,
+    1
+  ],
+  "correction_counts": [
+    0,
+    1,
+    1,
+    1
+  ],
+  "M": [
+    0,
+    1,
+    1,
+    1
+  ],
+  "syndrome": [
+    0,
+    1,
+    1,
+    1
+  ],
+  "ell_true": 0,
+  "ell_correction": 1,
+  "O2_record": [
+    "singlet",
+    "V",
+    "Vbar",
+    "V"
+  ],
+  "minimum_correction_cardinality": 2,
+  "purpose": "exact illustrative configuration, not a new phase-diagram experiment"
+}

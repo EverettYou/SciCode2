@@ -1,0 +1,2489 @@
+{
+  "version": "comparative-report-v1-phase-narratives",
+  "frozen_score_source": "reference-v1/scores-v1.json",
+  "score_changes": false,
+  "run_order": [
+    "Fable03",
+    "Opus01",
+    "Opus02",
+    "Opus03",
+    "GPT01",
+    "GPT02",
+    "GPT03"
+  ],
+  "scope": "A1–A5, B1–B4, and Q01–Q08/Q19; aspect-by-aspect comparison of seven valid scientific submissions; no new model trials.",
+  "notes": [
+    "Scores use the frozen scores-v1.json. Where the older phase-audit recommendations differ, they do not override the frozen version.",
+    "Q items diagnose explanatory coverage: E explicit, I implicit or partial, M not found, X problematic. They do not add to the 100-point total and do not retroactively impose new teaching requests.",
+    "No independent gold answer is available for the unknown central O1 phase; disagreement with the majority of runs is not itself an error."
+  ],
+  "aspects": [
+    {
+      "id": "A1",
+      "title": "R1 coverage",
+      "question": "Were all record/rank phase-diagram entries delivered?",
+      "why_matters": "R1 requests O0, O1, and O2 at each N=2,…,8: 21 entries. A justified unresolved answer is also valid.",
+      "possible_mistake": "Omitting equivalent rows, supplying only one noise point, or using unresolved to conceal the absence of analysis.",
+      "possible_mistake_label": "Potential error types; not a claim that any particular run actually made them",
+      "conclusion": "All seven valid submissions cover all 21 entries. Full coverage does not mean all 21 true phase boundaries have been resolved.",
+      "rows": [
+        {
+          "run": "Fable03",
+          "done": "All 21 phase entries and the combined plot are supplied, using exact equivalence of the four charge classes.",
+          "issue": "Coverage is adequate; the basis for assigning central charge nondecodability is assessed under A2.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-fable-5-1/run_03/report.md",
+              "line": 213,
+              "claim": "Positive-limit fit at L≤12 used for central phase."
+            },
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-fable-5-1/run_03/report.md",
+              "line": 219,
+              "claim": "Exponential decay with length ≥50 explicitly not excluded."
+            },
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-fable-5-1/run_03/report.md",
+              "line": 311,
+              "claim": "Final text nevertheless calls central charge region a critical phase."
+            }
+          ],
+          "score": 5,
+          "max": 5.0,
+          "status": "supported"
+        },
+        {
+          "run": "Opus01",
+          "done": "All 21 entries and the joint plot are supplied, merging duplicate rows by equivalence class.",
+          "issue": "Coverage is adequate; credibility of the all-p charge conclusion is assessed under A2.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_01/report.md",
+              "line": 326,
+              "claim": "All-p charge assignment from no plateau and drift."
+            },
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_01/report.md",
+              "line": 329,
+              "claim": "Positive narrow phase not excluded."
+            },
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_01/report.md",
+              "line": 337,
+              "claim": "Typical charges pin/gap clean critical phase proposed as physical picture, not established theorem."
+            }
+          ],
+          "score": 5,
+          "max": 5.0,
+          "status": "supported"
+        },
+        {
+          "run": "Opus02",
+          "done": "All 21 entries and a unified table are supplied, with evidence labels for each class.",
+          "issue": "Coverage is adequate; having no unresolved entries does not mean every true phase boundary has been proved.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_02/REPORT.md",
+              "line": 184,
+              "claim": "Monotone size drift/log odds used as assignment rule."
+            },
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_02/REPORT.md",
+              "line": 247,
+              "claim": "Gaussian/BKT risk≥.45 heuristic promoted to exclusion criterion."
+            },
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_02/REPORT.md",
+              "line": 310,
+              "claim": "R96≈.2 yet all-p classification, positive limit acknowledged possible."
+            }
+          ],
+          "score": 5,
+          "max": 5.0,
+          "status": "supported"
+        },
+        {
+          "run": "Opus03",
+          "done": "All 21 entries are supplied, distinguishing syndrome, Z4, other charge records, and full irreps.",
+          "issue": "Coverage is adequate; a detailed report does not replace adequate evidence for each conclusion.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_03/report.md",
+              "line": 239,
+              "claim": "All-p charge classification."
+            },
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_03/report.md",
+              "line": 297,
+              "claim": "Gaussian stiffness/risk lower bound remains heuristic."
+            },
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_03/report.md",
+              "line": 373,
+              "claim": "Late rough/glassy crossover explicitly not excluded."
+            }
+          ],
+          "score": 5,
+          "max": 5.0,
+          "status": "supported"
+        },
+        {
+          "run": "GPT01",
+          "done": "All 21 entries are supplied; 11 remain unresolved, with proved and inherited subsets.",
+          "issue": "These unknowns are justified, valid deliverables; their number does not reduce the coverage score.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_01/report.md",
+              "line": 55,
+              "claim": "Slow central charge decay not promoted to limit."
+            },
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_01/report.md",
+              "line": 86,
+              "claim": "O2 all-p conjecture but corresponding entries unresolved."
+            }
+          ],
+          "score": 5,
+          "max": 5.0,
+          "status": "supported"
+        },
+        {
+          "run": "GPT02",
+          "done": "All 21 entries are supplied; 12 unknowns have theorem-based tails and size diagnostics.",
+          "issue": "Unknowns are not drawn as fabricated phase boundaries; full coverage does not mean the true phase diagram is solved.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_02/report.md",
+              "line": 51,
+              "claim": "Z4 unstable bootstrap/extrapolation unresolved; slowly varying other charges unresolved."
+            },
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_02/report.md",
+              "line": 70,
+              "claim": "O2 continuum/rare tails not resolved by sampled decay."
+            }
+          ],
+          "score": 5,
+          "max": 5.0,
+          "status": "supported"
+        },
+        {
+          "run": "GPT03",
+          "done": "All 21 entries are supplied; five charge entries remain unknown and all-p O2 is labeled numerical.",
+          "issue": "Coverage is adequate; continuous-parameter risks in the small-N all-p claim are assessed under A2.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_03/report.md",
+              "line": 3,
+              "claim": "O2 N3/4 all-p numerical inference vs N14 theorem."
+            },
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_03/report.md",
+              "line": 15,
+              "claim": "Narrow unsampled phases cannot be excluded."
+            },
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_03/report.md",
+              "line": 92,
+              "claim": "Central charge remains unresolved despite drift."
+            }
+          ],
+          "score": 5,
+          "max": 5.0,
+          "status": "supported"
+        }
+      ]
+    },
+    {
+      "id": "A2",
+      "title": "R1 basis for phase assignments",
+      "question": "Do the finite-size data adequately support the assigned phases?",
+      "why_matters": "Changes in risk with growing two-dimensional size must support the specific choice of a zero limit, positive limit, or unresolved status.",
+      "possible_mistake": "Calling slow decay a zero limit; calling a plateau-like trend and positive-intercept fit a positive limit; presenting a finite grid as proof over a continuous parameter range.",
+      "possible_mistake_label": "Potential error types; not a claim that any particular run actually made them",
+      "conclusion": "The main disagreement concerns the central charge phase: Fable assigns a positive limit and Opus a zero limit, but neither evidence base excludes competing explanations. GPT01/02 more reliably retain unresolved status.",
+      "rows": [
+        {
+          "run": "Fable03",
+          "done": "Exact-posterior data grow in two dimensions, with crossings, fits, and risk distributions.",
+          "issue": "Slow drift at L≤12 cannot establish a positive limit; the text also does not exclude decay with correlation length≥50.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-fable-5-1/run_03/report.md",
+              "line": 213,
+              "claim": "Positive-limit fit at L≤12 used for central phase."
+            },
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-fable-5-1/run_03/report.md",
+              "line": 219,
+              "claim": "Exponential decay with length ≥50 explicitly not excluded."
+            },
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-fable-5-1/run_03/report.md",
+              "line": 311,
+              "claim": "Final text nevertheless calls central charge region a critical phase."
+            }
+          ],
+          "score": 4,
+          "max": 8.0,
+          "status": "partial"
+        },
+        {
+          "run": "Opus01",
+          "done": "Sizes reach about L48, with log-odds analysis and central-charge drift diagnostics.",
+          "issue": "Absence of a plateau does not exclude a positive limit; charge pinning of the clean-loop phase remains a physical picture, not a proof.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_01/report.md",
+              "line": 326,
+              "claim": "All-p charge assignment from no plateau and drift."
+            },
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_01/report.md",
+              "line": 329,
+              "claim": "Positive narrow phase not excluded."
+            },
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_01/report.md",
+              "line": 337,
+              "claim": "Typical charges pin/gap clean critical phase proposed as physical picture, not established theorem."
+            }
+          ],
+          "score": 5,
+          "max": 8.0,
+          "status": "partial"
+        },
+        {
+          "run": "Opus02",
+          "done": "Central integer charge is studied to about L96, comparing sizes and Gaussian/BKT pictures.",
+          "issue": "Risk remains about 0.2; the heuristic lower bound is not proved to exclude every nondecodable phase of this posterior model.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_02/REPORT.md",
+              "line": 184,
+              "claim": "Monotone size drift/log odds used as assignment rule."
+            },
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_02/REPORT.md",
+              "line": 247,
+              "claim": "Gaussian/BKT risk≥.45 heuristic promoted to exclusion criterion."
+            },
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_02/REPORT.md",
+              "line": 310,
+              "claim": "R96≈.2 yet all-p classification, positive limit acknowledged possible."
+            }
+          ],
+          "score": 5,
+          "max": 8.0,
+          "status": "partial"
+        },
+        {
+          "run": "Opus03",
+          "done": "Central charge is studied to about L64, with slow drift and posterior distributions.",
+          "issue": "Gaussian/BKT exclusion remains heuristic; the text allows a later rough/glassy crossover.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_03/report.md",
+              "line": 239,
+              "claim": "All-p charge classification."
+            },
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_03/report.md",
+              "line": 297,
+              "claim": "Gaussian stiffness/risk lower bound remains heuristic."
+            },
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_03/report.md",
+              "line": 373,
+              "claim": "Late rough/glassy crossover explicitly not excluded."
+            }
+          ],
+          "score": 5,
+          "max": 8.0,
+          "status": "partial"
+        },
+        {
+          "run": "GPT01",
+          "done": "Resolved crossings receive extrapolation sensitivity analysis; slow charge and small-N O2 remain unresolved.",
+          "issue": "The unknown true phases remain unsolved, but insufficient data are not forced into definitive assignments, consistent with the rubric.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_01/report.md",
+              "line": 55,
+              "claim": "Slow central charge decay not promoted to limit."
+            },
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_01/report.md",
+              "line": 86,
+              "claim": "O2 all-p conjecture but corresponding entries unresolved."
+            }
+          ],
+          "score": 8,
+          "max": 8.0,
+          "status": "supported"
+        },
+        {
+          "run": "GPT02",
+          "done": "Unstable Z4 fits and central charge remain unresolved, with the full fit family and bootstrap results.",
+          "issue": "These are still unknown rather than solved central boundaries; retaining them is consistent with the task.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_02/report.md",
+              "line": 51,
+              "claim": "Z4 unstable bootstrap/extrapolation unresolved; slowly varying other charges unresolved."
+            },
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_02/report.md",
+              "line": 70,
+              "claim": "O2 continuum/rare tails not resolved by sampled decay."
+            }
+          ],
+          "score": 8,
+          "max": 8.0,
+          "status": "supported"
+        },
+        {
+          "run": "GPT03",
+          "done": "Growing two-dimensional exact posteriors and cross-N maps support a numerical small-N O2 all-p assignment.",
+          "issue": "A finite p grid and late crossovers can still miss structure; these are disclosed, but the all-p assignment still loses one point.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_03/report.md",
+              "line": 3,
+              "claim": "O2 N3/4 all-p numerical inference vs N14 theorem."
+            },
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_03/report.md",
+              "line": 15,
+              "claim": "Narrow unsampled phases cannot be excluded."
+            },
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_03/report.md",
+              "line": 92,
+              "claim": "Central charge remains unresolved despite drift."
+            }
+          ],
+          "score": 7,
+          "max": 8.0,
+          "status": "partial"
+        }
+      ]
+    },
+    {
+      "id": "A3",
+      "title": "R1 error control",
+      "question": "Are statistical, finite-size, and numerical-approximation errors separated and justified?",
+      "why_matters": "Accurate posteriors for individual samples, adequate finite-sample statistics, and a reliable thermodynamic extrapolation are three different questions.",
+      "possible_mistake": "Declaring a bound on bias relative to the exact posterior merely because results at two bond dimensions are close.",
+      "possible_mistake_label": "Potential error types; not a claim that any particular run actually made them",
+      "conclusion": "Fable and GPT use contraction without bond truncation. The three Opus runs provide useful χ-convergence studies, but their shared bias is unbounded, so the strongest error guarantees are unsupported.",
+      "rows": [
+        {
+          "run": "Fable03",
+          "done": "Exact contraction has no bond truncation; statistics and finite-size fit variation are reported.",
+          "issue": "The inadequate central positive-limit inference is penalized under A2, not again here.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-fable-5-1/run_03/report.md",
+              "line": 213,
+              "claim": "Positive-limit fit at L≤12 used for central phase."
+            },
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-fable-5-1/run_03/report.md",
+              "line": 219,
+              "claim": "Exponential decay with length ≥50 explicitly not excluded."
+            },
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-fable-5-1/run_03/report.md",
+              "line": 311,
+              "claim": "Final text nevertheless calls central charge region a critical phase."
+            }
+          ],
+          "score": 8,
+          "max": 8.0,
+          "status": "supported"
+        },
+        {
+          "run": "Opus01",
+          "done": "Error sources are separated; χ64/128 comparisons and large-size convergence are studied.",
+          "issue": "Two close approximations cannot bound their common true bias; the stated R* error bound is too strong.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_01/report.md",
+              "line": 82,
+              "claim": "χ64/χ128 posterior comparison is empirical convergence evidence."
+            },
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_01/report.md",
+              "line": 164,
+              "claim": "Observed difference promoted to error bound on R*."
+            }
+          ],
+          "score": 3,
+          "max": 8.0,
+          "status": "partial"
+        },
+        {
+          "run": "Opus02",
+          "done": "χ studies and empirical convergence diagnostics are saved, with acknowledgment that they are not a priori bounds.",
+          "issue": "Differences from larger χ are still elevated to an induced-bias bound without control relative to the truth.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_02/REPORT.md",
+              "line": 301,
+              "claim": "Induced bias claimed at most χ comparison deviation."
+            },
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_02/REPORT.md",
+              "line": 319,
+              "claim": "Acknowledges empirical control rather than prior bounds."
+            }
+          ],
+          "score": 3,
+          "max": 8.0,
+          "status": "partial"
+        },
+        {
+          "run": "Opus03",
+          "done": "A subset of records receives χ64/128 comparisons; statistical and size errors are reported.",
+          "issue": "An empirical maximum change on a subset cannot guarantee every phase assignment is unchanged; larger χ can share the same bias.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_03/report.md",
+              "line": 355,
+              "claim": "χ64/χ128 max change said to ensure no R1 answer can change."
+            },
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_03/report.md",
+              "line": 391,
+              "claim": "Subset empirical tests, not formal every-sample bound."
+            }
+          ],
+          "score": 3,
+          "max": 8.0,
+          "status": "partial"
+        },
+        {
+          "run": "GPT01",
+          "done": "No MPS truncation; rounding-perturbation refits are separated from statistical and size allowances.",
+          "issue": "The reported extrapolation sensitivity is not claimed as a rigorous thermodynamic confidence interval; no error was found here.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_01/report.md",
+              "line": 123,
+              "claim": "Complete contraction, rounding perturbation refits, no truncation."
+            }
+          ],
+          "score": 8,
+          "max": 8.0,
+          "status": "supported"
+        },
+        {
+          "run": "GPT02",
+          "done": "Exact contraction, numerical-range checks, and nonlinear perturbation refits are reported separately.",
+          "issue": "Unknowns are not upgraded because numerical errors are tiny; floating-point conditions must still be read in their recorded original environment.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_02/report.md",
+              "line": 99,
+              "claim": "No truncation, rounding perturbation refits and separate uncertainty."
+            }
+          ],
+          "score": 8,
+          "max": 8.0,
+          "status": "supported"
+        },
+        {
+          "run": "GPT03",
+          "done": "No bond truncation; bootstrap, fit variants, and round/log checks are supplied.",
+          "issue": "The size allowance is explicitly not a rigorous confidence bound on the limit; no deduction-worthy issue was found here.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_03/report.md",
+              "line": 185,
+              "claim": "No truncation, round/log checks."
+            }
+          ],
+          "score": 8,
+          "max": 8.0,
+          "status": "supported"
+        }
+      ]
+    },
+    {
+      "id": "A4",
+      "title": "R1 figure and assignment semantics",
+      "question": "What type of conclusion do the phase-diagram colors and boundaries represent?",
+      "why_matters": "Rigorous sufficient subsets, rigorously nondecodable regions, numerical phase boundaries, and unknown regions need distinct meanings.",
+      "possible_mistake": "Calling a root of μρ=1 the true threshold; calling the region where a sufficient condition fails nondecodable; using closed intervals to imply critical-point membership is settled.",
+      "possible_mistake_label": "Potential error types; not a claim that any particular run actually made them",
+      "conclusion": "All seven distinguish large-N theorems from finite-N numerical inference. A larger N0 is not a scientific error; small-N phase inference still requires a separate A2 assessment.",
+      "rows": [
+        {
+          "run": "Fable03",
+          "done": "The N19 sufficient theorem is separated from numerical inference beginning at N3, with distinct plot sources.",
+          "issue": "The inadequate central-phase support is assessed under A2, not attributed to conflating the large-N theorem.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-fable-5-1/run_03/report.md",
+              "line": 36,
+              "claim": "N19 theorem distinguished from N3 numerical claim."
+            }
+          ],
+          "score": 5,
+          "max": 5.0,
+          "status": "supported"
+        },
+        {
+          "run": "Opus01",
+          "done": "The N15 theorem is separate; finite-N phase assignments are labeled numerical.",
+          "issue": "N15 is the range this proof establishes, not the smallest physical N0.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_01/report.md",
+              "line": 503,
+              "claim": "R3 upper bound on smallest N0, not proof numerical N3."
+            }
+          ],
+          "score": 5,
+          "max": 5.0,
+          "status": "supported"
+        },
+        {
+          "run": "Opus02",
+          "done": "The μρ<1 sufficient region, N15 certification, and failure at N14 are distinguished.",
+          "issue": "Failure of the certificate at N14 does not imply nondecodability there; low-rank all-p behavior remains numerical inference.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_02/REPORT.md",
+              "line": 142,
+              "claim": "No proof below N15; allp low-rank remains numerical."
+            }
+          ],
+          "score": 5,
+          "max": 5.0,
+          "status": "supported"
+        },
+        {
+          "run": "Opus03",
+          "done": "The N15 theorem and low-rank numerical diagram are discussed separately.",
+          "issue": "N15 cannot directly validate all-p decoding at N3; the text does not use it that way.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_03/report.md",
+              "line": 654,
+              "claim": "N15 sufficient proof and low-rank numerical statement separated."
+            }
+          ],
+          "score": 5,
+          "max": 5.0,
+          "status": "supported"
+        },
+        {
+          "run": "GPT01",
+          "done": "The plot separately encodes rigorous tails, inherited numerical subsets, and hatched unknowns.",
+          "issue": "Sufficient-bound endpoints are not threshold estimates; closed-interval JSON does not settle critical-point membership.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_01/report.md",
+              "line": 53,
+              "claim": "Sufficient roots are not estimated thresholds."
+            },
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_01/report.md",
+              "line": 5,
+              "claim": "N13 theorem vs unresolved small-rank phase."
+            }
+          ],
+          "score": 5,
+          "max": 5.0,
+          "status": "supported"
+        },
+        {
+          "run": "GPT02",
+          "done": "A rigorous-only plot is provided, separate from statistical estimates and unresolved regions.",
+          "issue": "μρ=1 is not used as a true phase boundary; an unknown hatched region may contain no internal transition.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_02/proofs.md",
+              "line": 219,
+              "claim": "μρ<1 only sufficient; equality not phase boundary."
+            },
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_02/report.md",
+              "line": 83,
+              "claim": "N13 refined proof."
+            }
+          ],
+          "score": 5,
+          "max": 5.0,
+          "status": "supported"
+        },
+        {
+          "run": "GPT03",
+          "done": "The N14 theorem, numerical all-p assignment, and charge sufficient tails are separated.",
+          "issue": "The small-N numerical assignment has an A2 reservation, but is not presented as the N14 theorem.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_03/report.md",
+              "line": 3,
+              "claim": "N14 theorem separate from all-p numerical assignments."
+            },
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_03/report.md",
+              "line": 29,
+              "claim": "Charge tails sufficient, not guessed thresholds."
+            }
+          ],
+          "score": 5,
+          "max": 5.0,
+          "status": "supported"
+        }
+      ]
+    },
+    {
+      "id": "A5",
+      "title": "R1 structural consistency",
+      "question": "Is the phase diagram consistent with information inclusions and equivalences?",
+      "why_matters": "A richer record can first be degraded to a coarser one, so the true decodable set cannot shrink; equivalent channels must agree.",
+      "possible_mistake": "Treating a nominal crossing as a failure of information theory; forcing O1/O2 symmetry about p=1/2; treating every independently derived sufficient bound as a true phase boundary.",
+      "possible_mistake_label": "Potential error types; not a claim that any particular run actually made them",
+      "conclusion": "All seven check equivalence classes and inclusions. Z4 high-noise differences must be interpreted with their uncertainty and bound semantics; the plots cannot establish that Z4 outperforms integer charge.",
+      "rows": [
+        {
+          "run": "Fable03",
+          "done": "Charge-equivalent rows are reused, with checks of both Z4 endpoints and the information hierarchy.",
+          "issue": "High-p Z4 gain is small; its local explanation does not reach an exact active-component theorem.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-fable-5-1/run_03/report.md",
+              "line": 190,
+              "claim": "Both Z4 finite-size endpoints assessed."
+            },
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-fable-5-1/run_03/report.md",
+              "line": 201,
+              "claim": "Z4 adds little at high p but more at low p; no exact active-component explanation here."
+            }
+          ],
+          "score": 4,
+          "max": 4.0,
+          "status": "supported"
+        },
+        {
+          "run": "Opus01",
+          "done": "The high Z4 endpoint is constrained within errors to respect O0 inclusion; equivalent rows agree.",
+          "issue": "Adjusting a nominal center does not prove the true thresholds are exactly equal.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_01/report.md",
+              "line": 268,
+              "claim": "High-p crossing shifted/constrained to respect O0 nesting."
+            },
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_01/report.md",
+              "line": 275,
+              "claim": "Charge4 defects proposed to explain central disorder."
+            }
+          ],
+          "score": 4,
+          "max": 4.0,
+          "status": "supported"
+        },
+        {
+          "run": "Opus02",
+          "done": "Paired same-sample comparisons verify risk inclusion and discuss asymmetric low/high-p Z4 gains.",
+          "issue": "A tiny high-p difference does not prove channel or threshold equivalence.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_02/REPORT.md",
+              "line": 212,
+              "claim": "Low/high asymmetric usefulness and high-p numerical nesting check."
+            },
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_02/REPORT.md",
+              "line": 214,
+              "claim": "Paired same-sample risk nesting checked, tiny high-p gain."
+            }
+          ],
+          "score": 4,
+          "max": 4.0,
+          "status": "supported"
+        },
+        {
+          "run": "Opus03",
+          "done": "High-p nesting is checked and a Z4 component-orientation identity is derived.",
+          "issue": "The identity retains information on closed components; it does not show complete high-p reduction to O0.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_03/report.md",
+              "line": 229,
+              "claim": "High-p nesting checked."
+            },
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_03/report.md",
+              "line": 668,
+              "claim": "Exact affine incidence calculation on boundary-connected active components."
+            },
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_03/report.md",
+              "line": 681,
+              "claim": "Z4 retains extra information only at zero-arrival vertices and closed active components."
+            }
+          ],
+          "score": 4,
+          "max": 4.0,
+          "status": "supported"
+        },
+        {
+          "run": "GPT01",
+          "done": "The nominal Z4 reversal is explained within its allowance; reliable subsets are transferred to integer q.",
+          "issue": "An N-independent universal O1 tail bound reflects discarded information, not equality of every true boundary.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_01/report.md",
+              "line": 33,
+              "claim": "Apparent upper boundary reversal lies within allowances; ordering prevails."
+            },
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_01/proofs.md",
+              "line": 256,
+              "claim": "Exact closed-active-component orientation sum, used as independent posterior check."
+            }
+          ],
+          "score": 4,
+          "max": 4.0,
+          "status": "supported"
+        },
+        {
+          "run": "GPT02",
+          "done": "Unstable Z4 remains unknown; same-N and cross-N maps support conservative inclusions.",
+          "issue": "The central unknown has no independent truth; common sufficient tails cannot numerically prove phase-region saturation.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_02/report.md",
+              "line": 51,
+              "claim": "Z4 high-p estimate must obey nesting; diagnostics lead unresolved, not anomaly claim."
+            },
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_02/proofs.md",
+              "line": 173,
+              "claim": "Z4 all triple arrival counts have M1; worst-case proof special constant."
+            }
+          ],
+          "score": 4,
+          "max": 4.0,
+          "status": "supported"
+        },
+        {
+          "run": "GPT03",
+          "done": "The high Z4 nominal center is projected to O0 and its uncertainty enlarged to retain the original interval.",
+          "issue": "This implements exact information ordering in reporting; it is not a threshold-equality theorem.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_03/report.md",
+              "line": 40,
+              "claim": "Upper Z4 mean projected to O0 while retaining original uncertainty; no equality theorem."
+            }
+          ],
+          "score": 4,
+          "max": 4.0,
+          "status": "supported"
+        }
+      ]
+    },
+    {
+      "id": "B1",
+      "title": "R2 model and geometry",
+      "question": "Does the solution use the specified noise, geometry, and success conditions?",
+      "why_matters": "A complete microscopic edge state includes occupancy and orientation; the recovery target is the binary syndrome and logical sector.",
+      "possible_mistake": "Allowing the decoder to see true orientations; independently redrawing the two endpoints; declaring logical success after correcting only the syndrome.",
+      "possible_mistake_label": "Potential error types; not a claim that any particular run actually made them",
+      "conclusion": "All seven valid solutions correctly retain shared microscopic edge states and the binary recovery target. Their structural differences mainly arise in subsequent proofs and inference.",
+      "rows": [
+        {
+          "run": "Fable03",
+          "done": "Microscopic 0/± edge weights 1−p,p/2 define the model; sector partition sums define Bayes risk.",
+          "issue": "No access to true orientations was found; the text also uses c for a microscopic state, which must be distinguished from a correction.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-fable-5-1/run_03/docs/theory.md",
+              "line": 3,
+              "claim": "Microscopic 0/± edges, conditional product law, and logical-sector risk definition"
+            }
+          ],
+          "score": 4,
+          "max": 4.0,
+          "status": "supported"
+        },
+        {
+          "run": "Opus01",
+          "done": "True occupancy and shared orientations define the joint likelihood; recovery targets the logical sector.",
+          "issue": "The microscopic state is also called c; readers must not confuse it with a binary correction.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_01/report.md",
+              "line": 105,
+              "claim": "Microscopic configurations and joint observation likelihood"
+            }
+          ],
+          "score": 4,
+          "max": 4.0,
+          "status": "supported"
+        },
+        {
+          "run": "Opus02",
+          "done": "Three-state ψ edges retain opposite endpoint representations; risk and the binary correction API are separate.",
+          "issue": "Readouts are conditionally independent only given the complete microscopic state, not unconditionally independent across vertices.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_02/REPORT.md",
+              "line": 40,
+              "claim": "Three-state edge prior and microscopic input definition"
+            }
+          ],
+          "score": 4,
+          "max": 4.0,
+          "status": "supported"
+        },
+        {
+          "run": "Opus03",
+          "done": "The model uses 0/± flow edges, binary occupancy, syndrome, and top-flux parity.",
+          "issue": "Directed flow variables do not give additional visible information to the binary correction.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_03/report.md",
+              "line": 502,
+              "claim": "Integer charge as flow divergence and the top-flux logical variable"
+            }
+          ],
+          "score": 4,
+          "max": 4.0,
+          "status": "supported"
+        },
+        {
+          "run": "GPT01",
+          "done": "Geometry and 0/± edge tensors retain shared orientations; a valid correction follows the sector decision.",
+          "issue": "Hidden orientations enter probability calculations and are not supplied to the decoder; no model substitution was found.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_01/proofs.md",
+              "line": 70,
+              "claim": "Shared three-state edges and the global sector partition sum"
+            }
+          ],
+          "score": 4,
+          "max": 4.0,
+          "status": "supported"
+        },
+        {
+          "run": "GPT02",
+          "done": "The rank of H, shortest paths, and correction existence in each sector are proved before posterior-based recovery.",
+          "issue": "The coarse-constraint auxiliary decoder and the actual exact-posterior decoder serve different purposes.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_02/proofs.md",
+              "line": 3,
+              "claim": "Shared orientations, geometric rank, and correction representatives"
+            }
+          ],
+          "score": 4,
+          "max": 4.0,
+          "status": "supported"
+        },
+        {
+          "run": "GPT03",
+          "done": "Three-state edges reverse sign at the other endpoint; Gaussian elimination with H and the logical row finds representatives.",
+          "issue": "Representatives in the same sector may have different weights without affecting the task’s definition of logical success.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_03/proofs.md",
+              "line": 3,
+              "claim": "Three-state shared orientations and binary sector representatives"
+            }
+          ],
+          "score": 4,
+          "max": 4.0,
+          "status": "supported"
+        }
+      ]
+    },
+    {
+      "id": "B2",
+      "title": "R2 information ordering",
+      "question": "Is information ordering proved by a valid degradation map?",
+      "why_matters": "A degradation map may use only visible records and independent randomness, not the true microscopic input; the comparison concerns average risk.",
+      "possible_mistake": "Inferring a stronger full spatial channel from apparently richer single-vertex information; claiming every fine record has smaller conditional error; assuming monotonicity at every successive N.",
+      "possible_mistake_label": "Potential error types; not a claim that any particular run actually made them",
+      "conclusion": "All seven prove O2→O1→O0 at fixed N. Cross-N comparisons are accepted only when backed by maps. GPT also constructs the specific comparison from N≥5 to SU3.",
+      "rows": [
+        {
+          "run": "Fable03",
+          "done": "Superadditivity of min proves degradation increases risk; center characters establish the hierarchy.",
+          "issue": "The comparison is of average risk; no erroneous total order is built from conditional probabilities of individual records.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-fable-5-1/run_03/docs/theory.md",
+              "line": 18,
+              "claim": "Bayes data-processing proof."
+            },
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-fable-5-1/run_03/report.md",
+              "line": 128,
+              "claim": "Numerical same-N and equivalence checks."
+            }
+          ],
+          "score": 4,
+          "max": 4.0,
+          "status": "supported"
+        },
+        {
+          "run": "Opus01",
+          "done": "Jensen data processing is proved; center N-ality degrades an irrep to charge.",
+          "issue": "True cross-N ordering is limited to constructible garblings; the two integer-charge branches do not form a total order.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_01/report.md",
+              "line": 109,
+              "claim": "Jensen data-processing proof."
+            },
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_01/report.md",
+              "line": 114,
+              "claim": "Center maps O2 to O1."
+            }
+          ],
+          "score": 4,
+          "max": 4.0,
+          "status": "supported"
+        },
+        {
+          "run": "Opus02",
+          "done": "Jensen and the center map are used; LP reports low-rank exceptions and an analytic map covers N≥7.",
+          "issue": "Finite local LP tables and the analytic N≥7 range must remain distinct; neither establishes every successive-N comparison.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_02/REPORT.md",
+              "line": 45,
+              "claim": "Jensen proof."
+            },
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_02/REPORT.md",
+              "line": 86,
+              "claim": "Cross-rank LP comparisons and exceptions disclosed; analytical N≥7 order."
+            }
+          ],
+          "score": 4,
+          "max": 4.0,
+          "status": "supported"
+        },
+        {
+          "run": "Opus03",
+          "done": "A same-N hierarchy is proved and N≥7 degradation is constructed from likelihood vectors.",
+          "issue": "Low-rank determinant coincidences prevent a blanket ordering by N.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_03/report.md",
+              "line": 17,
+              "claim": "Same-N nesting."
+            },
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_03/report.md",
+              "line": 540,
+              "claim": "Analytical cross-N≥7 map; no every-consecutive N assertion."
+            }
+          ],
+          "score": 4,
+          "max": 4.0,
+          "status": "supported"
+        },
+        {
+          "run": "GPT01",
+          "done": "A same-N center map and an N≥5→SU3 construction are supplied, handling N6 separately.",
+          "issue": "SU4 is not assumed stronger than SU3; average-risk ordering does not hold record by record.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_01/report.md",
+              "line": 53,
+              "claim": "Numerical low-noise Z4 region transferred to integer charge and appropriate O2 rows."
+            },
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_01/proofs.md",
+              "line": 225,
+              "claim": "Constructive SU(N≥5)→SU3 stochastic comparison."
+            }
+          ],
+          "score": 4,
+          "max": 4.0,
+          "status": "supported"
+        },
+        {
+          "run": "GPT02",
+          "done": "Center degradation preserves the full correlated channel; exact cross-N kernels and the N6 exception are listed.",
+          "issue": "Kernels may read outcomes, not true (a,b); the text checks the kernels for each input.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_02/report.md",
+              "line": 75,
+              "claim": "Center-derived same-N order."
+            },
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_02/proofs.md",
+              "line": 89,
+              "claim": "Exact cross-N statistical channels including N5 parity and N6 exception."
+            }
+          ],
+          "score": 4,
+          "max": 4.0,
+          "status": "supported"
+        },
+        {
+          "run": "GPT03",
+          "done": "The center map and average Bayes ordering are proved, with an implemented N≥5→SU3 kernel.",
+          "issue": "The text explicitly notes that a fine record’s conditional error need not be below that of a particular coarse record.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_03/proofs.md",
+              "line": 36,
+              "claim": "Center map and average Bayes risk ordering, not each conditional record."
+            },
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_03/report.md",
+              "line": 121,
+              "claim": "Cross-N≥5 SU3 refinement with N6 exception."
+            }
+          ],
+          "score": 4,
+          "max": 4.0,
+          "status": "supported"
+        }
+      ]
+    },
+    {
+      "id": "B3",
+      "title": "R2 charge equivalences",
+      "question": "Are the complete charge equivalence classes and saturation derived?",
+      "why_matters": "Vertex degree is at most three, q∈[-3,3], and the syndrome supplies q parity; modular information must be analyzed together with parity.",
+      "possible_mistake": "Ignoring parity and wrongly concluding N5 still has aliases; missing the N6 exception; assuming increasing N always adds charge information.",
+      "possible_mistake_label": "Potential error types; not a claim that any particular run actually made them",
+      "conclusion": "All seven correctly give four classes: N2; N3/6; N4; N5/7/8. N5 exactness and N≥7 saturation, discussed earlier, are not common omissions in these runs.",
+      "rows": [
+        {
+          "run": "Fable03",
+          "done": "The CRT table gives lcm(2,N), explicitly listing the integer-q class at N5 and every N≥7.",
+          "issue": "Close data for N3/6 and integer q do not establish exact channel equivalence.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-fable-5-1/run_03/docs/theory.md",
+              "line": 69,
+              "claim": "CRT table and integer-charge equivalence; N5 already exact."
+            },
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-fable-5-1/run_03/docs/theory.md",
+              "line": 82,
+              "claim": "Full information order and mod4/mod6 incomparability."
+            }
+          ],
+          "score": 5,
+          "max": 5.0,
+          "status": "supported"
+        },
+        {
+          "run": "Opus01",
+          "done": "M=lcm(2,N) is derived; four classes are listed and only distinct charge classes are simulated.",
+          "issue": "Only N5/7/8 are fully equivalent; numerical closeness of N3 and N5 does not justify merging them.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_01/report.md",
+              "line": 119,
+              "claim": "CRT and saturation classes."
+            },
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_01/report.md",
+              "line": 127,
+              "claim": "Both modular channels degraded from integer charge."
+            }
+          ],
+          "score": 5,
+          "max": 5.0,
+          "status": "supported"
+        },
+        {
+          "run": "Opus02",
+          "done": "Equivalent per-configuration likelihood tables prove equivalence; integer-q degradation to both modular records is listed.",
+          "issue": "The M≥7 criterion uses finite q support and cannot be generalized to higher-degree vertices.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_02/REPORT.md",
+              "line": 54,
+              "claim": "CRT all classes and integer/modular risk inclusions."
+            }
+          ],
+          "score": 5,
+          "max": 5.0,
+          "status": "supported"
+        },
+        {
+          "run": "Opus03",
+          "done": "CRT and degree≤3 yield four classes; divergence explains integer charge.",
+          "issue": "Knowing divergence still does not reveal n; neutral-pair information remains absent.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_03/report.md",
+              "line": 489,
+              "claim": "CRT and classes."
+            },
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_03/report.md",
+              "line": 498,
+              "claim": "Integer-charge degradation orders."
+            }
+          ],
+          "score": 5,
+          "max": 5.0,
+          "status": "supported"
+        },
+        {
+          "run": "GPT01",
+          "done": "Equivalences are proved as conditional relabelings for each microscopic state, preserving the full spatial posterior.",
+          "issue": "Finite-size risks within a class are exactly identical; coincident bounds from different proofs are a separate matter.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_01/proofs.md",
+              "line": 46,
+              "claim": "CRT and full charge classes."
+            },
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_01/proofs.md",
+              "line": 51,
+              "claim": "Integer charge dominates both modular records, no general N order."
+            }
+          ],
+          "score": 5,
+          "max": 5.0,
+          "status": "supported"
+        },
+        {
+          "run": "GPT02",
+          "done": "Same-parity q values cannot differ by a nonzero multiple of five at N5; N6 retains the ±3 alias.",
+          "issue": "Consecutive N is not assumed monotone; the common N5/N6 confusion is avoided.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_02/proofs.md",
+              "line": 25,
+              "claim": "Full charge classes and N5 parity resolution."
+            }
+          ],
+          "score": 5,
+          "max": 5.0,
+          "status": "supported"
+        },
+        {
+          "run": "GPT03",
+          "done": "The CRT four-class table establishes exact equivalence of the joint spatial law as well.",
+          "issue": "This is channel equivalence, not merely fitted boundaries agreeing within errors.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_03/proofs.md",
+              "line": 57,
+              "claim": "Complete CRT table, exact equality including spatial law."
+            },
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_03/proofs.md",
+              "line": 72,
+              "claim": "Integer refines mod4/mod6; latter incomparable."
+            }
+          ],
+          "score": 5,
+          "max": 5.0,
+          "status": "supported"
+        }
+      ]
+    },
+    {
+      "id": "B4",
+      "title": "R2 special ranks",
+      "question": "Are low-rank representation coincidences and local probabilities correct?",
+      "why_matters": "SU2 self-conjugacy and determinant-column coincidences change the available information; generic-N tables cannot be substituted.",
+      "possible_mistake": "Identifying O2 at SU2 with O0; omitting a pure triple returning the conjugate fundamental at N4; treating an odd-parity N3 singlet as zero arrivals.",
+      "possible_mistake_label": "Potential error types; not a claim that any particular run actually made them",
+      "conclusion": "The low-rank laws used by all seven are supported. SU2 gives an orientation-blind record with additional count information, not a syndrome-only record.",
+      "rows": [
+        {
+          "run": "Fable03",
+          "done": "SU2 spin laws and the additional N4 pure-triple coincidence are listed, with an independent coarsening check.",
+          "issue": "Integrating SU2 orientations does not discard the extra distinctions between n=0/2 and n=1/3.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-fable-5-1/run_03/docs/theory.md",
+              "line": 94,
+              "claim": "SU2 orientation-blind proposition."
+            }
+          ],
+          "score": 2,
+          "max": 2.0,
+          "status": "supported"
+        },
+        {
+          "run": "Opus01",
+          "done": "All four SU2 degree laws are given as a noisy-degree record.",
+          "issue": "Generic-N garbling must also handle low-rank coincidences; the used tables and kernels have been checked.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_01/report.md",
+              "line": 140,
+              "claim": "Complete spin table and noisy-degree interpretation."
+            }
+          ],
+          "score": 2,
+          "max": 2.0,
+          "status": "supported"
+        },
+        {
+          "run": "Opus02",
+          "done": "SU2 degree laws, low-rank LP, and general irrep tables are checked together.",
+          "issue": "Generic-N unique-label structure cannot be applied directly at N3/4/6.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_02/REPORT.md",
+              "line": 26,
+              "claim": "SU2 orientation-blind degree record included in exact structure."
+            }
+          ],
+          "score": 2,
+          "max": 2.0,
+          "status": "supported"
+        },
+        {
+          "run": "Opus03",
+          "done": "Highest-weight vectors provide an independent check; determinant coincidences at N2 through N6 are listed.",
+          "issue": "Exact low-rank tables underlie posteriors and cross-N comparisons; a large-N approximation alone is insufficient.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_03/report.md",
+              "line": 506,
+              "claim": "Independent highest-weight checks and the N2-through-N6 coincidence table"
+            }
+          ],
+          "score": 2,
+          "max": 2.0,
+          "status": "supported"
+        },
+        {
+          "run": "GPT01",
+          "done": "SU2 spin tables, Pieri/Weyl rules, and independent character checks are supplied.",
+          "issue": "O2(2)≠O0 is explicit, and the N3 singlet with odd syndrome is retained.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_01/proofs.md",
+              "line": 64,
+              "claim": "SU2 orientation integration, not equivalent to syndrome only."
+            }
+          ],
+          "score": 2,
+          "max": 2.0,
+          "status": "supported"
+        },
+        {
+          "run": "GPT02",
+          "done": "Pieri/Weyl rules and independent tensor formulas check low ranks; N4 path constants are separate.",
+          "issue": "An N4 pure triple returning the conjugate fundamental changes the O2 constant; the ordinary mixed-only constant is inapplicable.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_02/proofs.md",
+              "line": 173,
+              "claim": "N4 pure triples returning the conjugate fundamental and special path-matrix constants"
+            }
+          ],
+          "score": 2,
+          "max": 2.0,
+          "status": "supported"
+        },
+        {
+          "run": "GPT03",
+          "done": "Determinant-column coincidences and SU2 probabilities are computed exactly; odd syndrome is retained.",
+          "issue": "An N3 triple singlet and a zero-arrival singlet are not the same (s,R) record.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_03/proofs.md",
+              "line": 142,
+              "claim": "SU2 degree laws and the odd-syndrome SU3 singlet"
+            }
+          ],
+          "score": 2,
+          "max": 2.0,
+          "status": "supported"
+        }
+      ]
+    },
+    {
+      "id": "Q01",
+      "title": "D_r(N) is the full-p set; more information cannot shrink it but need not strictly expand it",
+      "question": "What set does D_r(N) denote?",
+      "why_matters": "D_r(N)={p∈[0,1]:R*_{r,L}(p,N)→0}; it includes low-noise and high-noise ends and any possible central regions.",
+      "possible_mistake": "Interpreting D1 as only the interval near p=1; asserting that inclusion guarantees strict expansion.",
+      "possible_mistake_label": "Potential error types; not a claim that any particular run actually made them",
+      "conclusion": "All seven use the full-parameter decodable set and data processing. More information guarantees no shrinkage, not strict expansion.",
+      "rows": [
+        {
+          "run": "Fable03",
+          "done": "Finite-L average Bayes risk defines the decodable set and proves same-N inclusion.",
+          "issue": "D1 is not restricted to the high-p tail; inclusion need not be strict expansion.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-fable-5-1/run_03/docs/theory.md",
+              "line": 18,
+              "claim": "Bayes data-processing proof."
+            },
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-fable-5-1/run_03/report.md",
+              "line": 128,
+              "claim": "Numerical same-N and equivalence checks."
+            }
+          ],
+          "status": "E"
+        },
+        {
+          "run": "Opus01",
+          "done": "Jensen proves garbling cannot improve risk, yielding inclusion of D sets.",
+          "issue": "All-p and endpoint tails belong to the same D; inclusion alone does not imply strict gain.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_01/report.md",
+              "line": 109,
+              "claim": "Jensen data-processing proof."
+            },
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_01/report.md",
+              "line": 114,
+              "claim": "Center maps O2 to O1."
+            }
+          ],
+          "status": "E"
+        },
+        {
+          "run": "Opus02",
+          "done": "D0⊆D1(N)⊆D2(N) is explicit and holds pointwise in the parameters.",
+          "issue": "The definition does not require D to have exactly two intervals; topology still depends on evidence.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_02/REPORT.md",
+              "line": 45,
+              "claim": "Jensen proof."
+            },
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_02/REPORT.md",
+              "line": 86,
+              "claim": "Cross-rank LP comparisons and exceptions disclosed; analytical N≥7 order."
+            }
+          ],
+          "status": "E"
+        },
+        {
+          "run": "Opus03",
+          "done": "Same-N nesting applies over the entire p∈[0,1] range.",
+          "issue": "The central all-p charge assignment has an A2 gap without changing the definition of D.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_03/report.md",
+              "line": 17,
+              "claim": "Same-N nesting."
+            },
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_03/report.md",
+              "line": 540,
+              "claim": "Analytical cross-N≥7 map; no every-consecutive N assertion."
+            }
+          ],
+          "status": "E"
+        },
+        {
+          "run": "GPT01",
+          "done": "The hierarchy theorem and inherited subsets apply over the whole noise axis.",
+          "issue": "Reliable plotted subsets are not the full solution for D; unknown regions may be decodable.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_01/report.md",
+              "line": 53,
+              "claim": "Numerical low-noise Z4 region transferred to integer charge and appropriate O2 rows."
+            },
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_01/proofs.md",
+              "line": 225,
+              "claim": "Constructive SU(N≥5)→SU3 stochastic comparison."
+            }
+          ],
+          "status": "E"
+        },
+        {
+          "run": "GPT02",
+          "done": "Finite-patch risk ordering yields full-p set inclusion, retaining unresolved entries.",
+          "issue": "Sufficient tails are known subsets, not a definition restricting D to tails.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_02/report.md",
+              "line": 75,
+              "claim": "Center-derived same-N order."
+            },
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_02/proofs.md",
+              "line": 89,
+              "claim": "Exact cross-N statistical channels including N5 parity and N6 exception."
+            }
+          ],
+          "status": "E"
+        },
+        {
+          "run": "GPT03",
+          "done": "Average Bayes-risk ordering and the hierarchy are explicit.",
+          "issue": "Conditional risk of individual fine records need not be monotone; average-risk and D inclusions still hold.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_03/proofs.md",
+              "line": 36,
+              "claim": "Center map and average Bayes risk ordering, not each conditional record."
+            },
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_03/report.md",
+              "line": 121,
+              "claim": "Cross-N≥5 SU3 refinement with N6 exception."
+            }
+          ],
+          "status": "E"
+        }
+      ]
+    },
+    {
+      "id": "Q02",
+      "title": "N5 already recovers integer q; N≥7 strictly saturates, with N6 exceptional",
+      "question": "Why is N5 already exact, N≥7 saturated, and N6 exceptional?",
+      "why_matters": "Only q values of the same syndrome parity need distinguishing. The apparent mod-5 collisions at N5 cross parity and are separated by the syndrome.",
+      "possible_mistake": "Counting seven integer q values and concluding N≥7 is necessary; incorrectly inferring from N5 exactness that all N≥5 are exact.",
+      "possible_mistake_label": "Potential error types; not a claim that any particular run actually made them",
+      "conclusion": "All seven explicitly analyze parity/CRT. N5 is equivalent to N7/8, while N6 still merges q=±3.",
+      "rows": [
+        {
+          "run": "Fable03",
+          "done": "The table explicitly gives no q aliases at N5 and N≥7, with only ±3 merged at N3/6.",
+          "issue": "N5 exactness is a strict parity/CRT result, not a numerical observation.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-fable-5-1/run_03/docs/theory.md",
+              "line": 69,
+              "claim": "CRT table and integer-charge equivalence; N5 already exact."
+            },
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-fable-5-1/run_03/docs/theory.md",
+              "line": 82,
+              "claim": "Full information order and mod4/mod6 incomparability."
+            }
+          ],
+          "status": "E"
+        },
+        {
+          "run": "Opus01",
+          "done": "lcm(2,N) gives equivalence of N5/7/8 and a separate N3/6 class.",
+          "issue": "N6 cannot join the full-integer class; it is correctly distinguished.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_01/report.md",
+              "line": 119,
+              "claim": "CRT and saturation classes."
+            },
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_01/report.md",
+              "line": 127,
+              "claim": "Both modular channels degraded from integer charge."
+            }
+          ],
+          "status": "E"
+        },
+        {
+          "run": "Opus02",
+          "done": "Per-configuration tables and bit-for-bit checks verify N5/7/8 equivalence.",
+          "issue": "Numerical checks supplement the analytic finite-support argument, not replace it.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_02/REPORT.md",
+              "line": 54,
+              "claim": "CRT all classes and integer/modular risk inclusions."
+            }
+          ],
+          "status": "E"
+        },
+        {
+          "run": "Opus03",
+          "done": "The CRT table identifies N5/7/8 with exact integer divergence.",
+          "issue": "Charge information does not increase monotonically at consecutive integers; N6 is exceptional.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_03/report.md",
+              "line": 489,
+              "claim": "CRT and classes."
+            },
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_03/report.md",
+              "line": 498,
+              "claim": "Integer-charge degradation orders."
+            }
+          ],
+          "status": "E"
+        },
+        {
+          "run": "GPT01",
+          "done": "The syndrome recovers mod2N at odd N, so N5 already suffices.",
+          "issue": "N3/6 and the integer class are not the same channel merely because weak proof tails coincide.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_01/proofs.md",
+              "line": 46,
+              "claim": "CRT and full charge classes."
+            },
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_01/proofs.md",
+              "line": 51,
+              "claim": "Integer charge dominates both modular records, no general N order."
+            }
+          ],
+          "status": "E"
+        },
+        {
+          "run": "GPT02",
+          "done": "Separate parity sets prove apparent mod5 aliases at N5 are removed by syndrome.",
+          "issue": "At N6, ±3 have the same parity and residue and remain merged.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_02/proofs.md",
+              "line": 25,
+              "claim": "Full charge classes and N5 parity resolution."
+            }
+          ],
+          "status": "E"
+        },
+        {
+          "run": "GPT03",
+          "done": "The exact four-class table includes isomorphism of the joint spatial law.",
+          "issue": "Saturation is strict at every finite L and p, not just equality of thermodynamic boundaries.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_03/proofs.md",
+              "line": 57,
+              "claim": "Complete CRT table, exact equality including spatial law."
+            },
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_03/proofs.md",
+              "line": 72,
+              "claim": "Integer refines mod4/mod6; latter incomparable."
+            }
+          ],
+          "status": "E"
+        }
+      ]
+    },
+    {
+      "id": "Q03",
+      "title": "mod4 and mod6 are incomparable; N cannot be totally ordered",
+      "question": "Can mod4 and mod6 be ordered relative to each other?",
+      "why_matters": "The two modular records lose different information; only integer q refines both.",
+      "possible_mistake": "Assuming N4>N3 guarantees better information; treating Z4 merging ±2 and Z6 merging ±3 as the same degradation.",
+      "possible_mistake_label": "Potential error types; not a claim that any particular run actually made them",
+      "conclusion": "All seven use the correct branched inclusions and do not base results on a total order of consecutive N values.",
+      "rows": [
+        {
+          "run": "Fable03",
+          "done": "mod4 and mod6 are explicitly incomparable, with two branches below integer q.",
+          "issue": "Neither numerical similarity nor N magnitude is treated as a total information order.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-fable-5-1/run_03/docs/theory.md",
+              "line": 69,
+              "claim": "CRT table and integer-charge equivalence; N5 already exact."
+            },
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-fable-5-1/run_03/docs/theory.md",
+              "line": 82,
+              "claim": "Full information order and mod4/mod6 incomparability."
+            }
+          ],
+          "status": "E"
+        },
+        {
+          "run": "Opus01",
+          "done": "Integer q degrades separately to mod4/mod6, giving two independent risk chains.",
+          "issue": "The branches are not forced into an order; numerical all-p inference is assessed separately.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_01/report.md",
+              "line": 119,
+              "claim": "CRT and saturation classes."
+            },
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_01/report.md",
+              "line": 127,
+              "claim": "Both modular channels degraded from integer charge."
+            }
+          ],
+          "status": "E"
+        },
+        {
+          "run": "Opus02",
+          "done": "Two integer-to-modular risk chains are given; cross-N LP separately discloses exceptions.",
+          "issue": "A larger-N record refining both branches does not make the branches refine one another.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_02/REPORT.md",
+              "line": 54,
+              "claim": "CRT all classes and integer/modular risk inclusions."
+            }
+          ],
+          "status": "E"
+        },
+        {
+          "run": "Opus03",
+          "done": "Integer divergence degrades to each modular record without asserting all-N monotonicity.",
+          "issue": "Z4’s special boundaries do not directly imply N4 globally outperforms or underperforms N3.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_03/report.md",
+              "line": 489,
+              "claim": "CRT and classes."
+            },
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_03/report.md",
+              "line": 498,
+              "claim": "Integer-charge degradation orders."
+            }
+          ],
+          "status": "E"
+        },
+        {
+          "run": "GPT01",
+          "done": "No general N monotonicity is assumed; integer q refines both modular records.",
+          "issue": "Independent curve differences are separated from information ordering; no erroneous ordering was found.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_01/proofs.md",
+              "line": 46,
+              "claim": "CRT and full charge classes."
+            },
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_01/proofs.md",
+              "line": 51,
+              "claim": "Integer charge dominates both modular records, no general N order."
+            }
+          ],
+          "status": "E"
+        },
+        {
+          "run": "GPT02",
+          "done": "Different N4 aliases are listed; successive-N improvement is explicitly not assumed.",
+          "issue": "This is a full-channel relation on finite support, not a judgment from a single-p plot.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_02/proofs.md",
+              "line": 25,
+              "claim": "Full charge classes and N5 parity resolution."
+            }
+          ],
+          "status": "E"
+        },
+        {
+          "run": "GPT03",
+          "done": "No prior ordering of mod-four and mod-six is assumed; integer q refines both.",
+          "issue": "Equivalence classes and the partial order are exact results, not fit-dependent.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_03/proofs.md",
+              "line": 57,
+              "claim": "Complete CRT table, exact equality including spatial law."
+            },
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_03/proofs.md",
+              "line": 72,
+              "claim": "Integer refines mod4/mod6; latter incomparable."
+            }
+          ],
+          "status": "E"
+        }
+      ]
+    },
+    {
+      "id": "Q04",
+      "title": "Nonnested individual sufficient bounds do not imply true phases violate information ordering",
+      "question": "Do nonnested sufficient-bound curves mean the true phase regions violate information ordering?",
+      "why_matters": "Different inequalities may discard different information, so independently proved subsets need not automatically be closed under the strongest available comparisons.",
+      "possible_mistake": "Inferring a physical anomaly from a nominal reversal of weak bounds; ranking true thresholds by roots from different sufficient proofs.",
+      "possible_mistake_label": "Potential error types; not a claim that any particular run actually made them",
+      "conclusion": "GPT01/02 handle the semantics most explicitly. The others largely implement them through inclusion constraints or numerical processing, without all separately explaining sufficient bounds versus true phases.",
+      "rows": [
+        {
+          "run": "Fable03",
+          "done": "The N19 sufficient theorem and finite-N diagram are separated; nominal Z4 differences are handled.",
+          "issue": "The principle that independent weak bounds may be nonnested is not separately developed; coverage is implicit.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-fable-5-1/run_03/report.md",
+              "line": 190,
+              "claim": "Both Z4 finite-size endpoints assessed."
+            },
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-fable-5-1/run_03/report.md",
+              "line": 201,
+              "claim": "Z4 adds little at high p but more at low p; no exact active-component explanation here."
+            }
+          ],
+          "status": "I"
+        },
+        {
+          "run": "Opus01",
+          "done": "Crossings are adjusted to O0 nesting and the theorem has a separate table.",
+          "issue": "No separate rule closes the sufficient-bound envelope under inclusions; this is an explanatory reservation.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_01/report.md",
+              "line": 268,
+              "claim": "High-p crossing shifted/constrained to respect O0 nesting."
+            },
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_01/report.md",
+              "line": 275,
+              "claim": "Charge4 defects proposed to explain central disorder."
+            }
+          ],
+          "status": "I"
+        },
+        {
+          "run": "Opus02",
+          "done": "Paired risk nesting is checked; numerical diagrams and polymer sufficient regions are separate.",
+          "issue": "The text does not separately discuss nonnesting caused by information discarded in different sufficient proofs.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_02/REPORT.md",
+              "line": 212,
+              "claim": "Low/high asymmetric usefulness and high-p numerical nesting check."
+            },
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_02/REPORT.md",
+              "line": 214,
+              "claim": "Paired same-sample risk nesting checked, tiny high-p gain."
+            }
+          ],
+          "status": "I"
+        },
+        {
+          "run": "Opus03",
+          "done": "High-p nesting is verified, with sufficient bounds and exact orientation structure separately supplied.",
+          "issue": "Component-level explanation is not a complete analysis of the sufficient-bound envelope.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_03/report.md",
+              "line": 229,
+              "claim": "High-p nesting checked."
+            },
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_03/report.md",
+              "line": 668,
+              "claim": "Exact affine incidence calculation on boundary-connected active components."
+            },
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_03/report.md",
+              "line": 681,
+              "claim": "Z4 retains extra information only at zero-arrival vertices and closed active components."
+            }
+          ],
+          "status": "I"
+        },
+        {
+          "run": "GPT01",
+          "done": "Sufficient roots are explicitly not thresholds; the apparent reversal lies within allowances.",
+          "issue": "A common weak O1 bound is not treated as equality of true boundaries at different N.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_01/report.md",
+              "line": 33,
+              "claim": "Apparent upper boundary reversal lies within allowances; ordering prevails."
+            },
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_01/proofs.md",
+              "line": 256,
+              "claim": "Exact closed-active-component orientation sum, used as independent posterior check."
+            }
+          ],
+          "status": "E"
+        },
+        {
+          "run": "GPT02",
+          "done": "μρ<1 is explicitly sufficient; unstable Z4 fits remain unresolved.",
+          "issue": "Equality at a root is not assigned a phase, avoiding “proof failure means nondecodable.”",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_02/report.md",
+              "line": 51,
+              "claim": "Z4 high-p estimate must obey nesting; diagnostics lead unresolved, not anomaly claim."
+            },
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_02/proofs.md",
+              "line": 173,
+              "claim": "Z4 all triple arrival counts have M1; worst-case proof special constant."
+            }
+          ],
+          "status": "E"
+        },
+        {
+          "run": "GPT03",
+          "done": "Sufficient tails and numerical boundaries are separated; the nominal Z4 center is projected to respect ordering.",
+          "issue": "The inclusion closure of all independent bounds is not fully developed; coverage is implicit.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_03/report.md",
+              "line": 40,
+              "claim": "Upper Z4 mean projected to O0 while retaining original uncertainty; no equality theorem."
+            }
+          ],
+          "status": "I"
+        }
+      ]
+    },
+    {
+      "id": "Q05",
+      "title": "Transfer reliable Z4 decodable subsets to integer q",
+      "question": "Are reliable Z4 decodable subsets transferred to integer q?",
+      "why_matters": "Integer q can be reduced modulo four, so D1(4)⊆D1(5)=D1(7)=D1(8).",
+      "possible_mistake": "Giving integer q a known decodable region smaller than a reliable Z4 subset; treating an unvalidated nominal fit center as a rigorous conclusion.",
+      "possible_mistake_label": "Potential error types; not a claim that any particular run actually made them",
+      "conclusion": "GPT01 explicitly transfers numerical subsets outside the endpoint allowance. GPT02 organizes conservative bounds using exact information relations. For the others, transfer is mostly implicit in the inclusion theorem.",
+      "rows": [
+        {
+          "run": "Fable03",
+          "done": "The integer-q refinement of Z4 and numerical nesting are established.",
+          "issue": "Transferable reliable Z4 subsets are not separately tabulated; they are implicit in the hierarchy.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-fable-5-1/run_03/report.md",
+              "line": 190,
+              "claim": "Both Z4 finite-size endpoints assessed."
+            },
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-fable-5-1/run_03/report.md",
+              "line": 201,
+              "claim": "Z4 adds little at high p but more at low p; no exact active-component explanation here."
+            }
+          ],
+          "status": "I"
+        },
+        {
+          "run": "Opus01",
+          "done": "Two exact risk chains guarantee integer q is no weaker than Z4.",
+          "issue": "No separate transfer rule excludes the donor endpoint allowance.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_01/report.md",
+              "line": 268,
+              "claim": "High-p crossing shifted/constrained to respect O0 nesting."
+            },
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_01/report.md",
+              "line": 275,
+              "claim": "Charge4 defects proposed to explain central disorder."
+            }
+          ],
+          "status": "I"
+        },
+        {
+          "run": "Opus02",
+          "done": "Integer-q risk≤Z4 risk is explicit, with paired checks.",
+          "issue": "Subset transfer is implicit in the theorem; reliable intervals are not systematically closed under inclusions.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_02/REPORT.md",
+              "line": 212,
+              "claim": "Low/high asymmetric usefulness and high-p numerical nesting check."
+            },
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_02/REPORT.md",
+              "line": 214,
+              "claim": "Paired same-sample risk nesting checked, tiny high-p gain."
+            }
+          ],
+          "status": "I"
+        },
+        {
+          "run": "Opus03",
+          "done": "Integer-charge degradation and high-p nesting both hold.",
+          "issue": "The all-p charge assignment covers the subset but has an A2 gap; it is not a reliable proof of all-p decoding.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_03/report.md",
+              "line": 229,
+              "claim": "High-p nesting checked."
+            },
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_03/report.md",
+              "line": 668,
+              "claim": "Exact affine incidence calculation on boundary-connected active components."
+            },
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_03/report.md",
+              "line": 681,
+              "claim": "Z4 retains extra information only at zero-arrival vertices and closed active components."
+            }
+          ],
+          "status": "I"
+        },
+        {
+          "run": "GPT01",
+          "done": "Only reliable portions outside the donor’s endpoint allowance are explicitly transferred.",
+          "issue": "Numerical transfers retain their numerical source labels and are not promoted to rigorous theorems.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_01/report.md",
+              "line": 33,
+              "claim": "Apparent upper boundary reversal lies within allowances; ordering prevails."
+            },
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_01/proofs.md",
+              "line": 256,
+              "claim": "Exact closed-active-component orientation sum, used as independent posterior check."
+            }
+          ],
+          "status": "E"
+        },
+        {
+          "run": "GPT02",
+          "done": "Exact information ordering organizes conservative intervals; unknown Z4 fits do not force transfer of nominal centers.",
+          "issue": "Proved tails are retained; unstable nominal crossings are not used as donors.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_02/report.md",
+              "line": 51,
+              "claim": "Z4 high-p estimate must obey nesting; diagnostics lead unresolved, not anomaly claim."
+            },
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_02/proofs.md",
+              "line": 173,
+              "claim": "Z4 all triple arrival counts have M1; worst-case proof special constant."
+            }
+          ],
+          "status": "E"
+        },
+        {
+          "run": "GPT03",
+          "done": "Integer records refine Z4 and explicitly contain the full O0 decodable region.",
+          "issue": "Reliable numerical Z4 transfers are not listed individually as in GPT01.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_03/report.md",
+              "line": 40,
+              "claim": "Upper Z4 mean projected to O0 while retaining original uncertainty; no equality theorem."
+            }
+          ],
+          "status": "I"
+        }
+      ]
+    },
+    {
+      "id": "Q06",
+      "title": "Distinguish Z4 pure-triple/single and mixed-triple/single ambiguities",
+      "question": "How do pure and mixed triples become ambiguous at Z4?",
+      "why_matters": "q=±3 becomes confused with ∓1 modulo four. Pure triples are distinguishable with integer charge, whereas mixed triples already have q=±1.",
+      "possible_mistake": "Treating all triple aliases as new Z4 losses; deriving both true endpoint shifts directly from a local alias.",
+      "possible_mistake_label": "Potential error types; not a claim that any particular run actually made them",
+      "conclusion": "Opus03/GPT01 give more complete mechanisms. The others mostly supply equivalence tables or coarse constraints, without tracing every local pattern to the two-end behavior.",
+      "rows": [
+        {
+          "run": "Fable03",
+          "done": "The charge table lists q=3~−1 and −3~1 and discusses asymmetric Z4 behavior at low/high p.",
+          "issue": "Pure versus mixed triples are not fully traced to every local hiding pattern and both endpoints.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-fable-5-1/run_03/report.md",
+              "line": 190,
+              "claim": "Both Z4 finite-size endpoints assessed."
+            },
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-fable-5-1/run_03/report.md",
+              "line": 201,
+              "claim": "Z4 adds little at high p but more at low p; no exact active-component explanation here."
+            }
+          ],
+          "status": "I"
+        },
+        {
+          "run": "Opus01",
+          "done": "Z4 triple aliases are tabulated and a charge4-defect picture is proposed.",
+          "issue": "This local/effective-model physical picture does not prove both threshold shifts.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_01/report.md",
+              "line": 268,
+              "claim": "High-p crossing shifted/constrained to respect O0 nesting."
+            },
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_01/report.md",
+              "line": 275,
+              "claim": "Charge4 defects proposed to explain central disorder."
+            }
+          ],
+          "status": "I"
+        },
+        {
+          "run": "Opus02",
+          "done": "The CRT table lists triple aliases and discusses different low/high-p gains.",
+          "issue": "Pure triples are not individually contrasted with mixed triples that were already ambiguous.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_02/REPORT.md",
+              "line": 212,
+              "claim": "Low/high asymmetric usefulness and high-p numerical nesting check."
+            },
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_02/REPORT.md",
+              "line": 214,
+              "claim": "Paired same-sample risk nesting checked, tiny high-p gain."
+            }
+          ],
+          "status": "I"
+        },
+        {
+          "run": "Opus03",
+          "done": "The N4 low-rank table and high-p affine-incidence analysis distinguish the cases.",
+          "issue": "Local losses alone still do not fix true boundaries; the mechanism’s scope is retained.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_03/report.md",
+              "line": 229,
+              "claim": "High-p nesting checked."
+            },
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_03/report.md",
+              "line": 668,
+              "claim": "Exact affine incidence calculation on boundary-connected active components."
+            },
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_03/report.md",
+              "line": 681,
+              "claim": "Z4 retains extra information only at zero-arrival vertices and closed active components."
+            }
+          ],
+          "status": "E"
+        },
+        {
+          "run": "GPT01",
+          "done": "Charge classes and exact orientation summation jointly explain Z4 triple ambiguities.",
+          "issue": "The high-p identity retains closed-component information and cannot prove threshold equality with O0.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_01/report.md",
+              "line": 33,
+              "claim": "Apparent upper boundary reversal lies within allowances; ordering prevails."
+            },
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_01/proofs.md",
+              "line": 256,
+              "claim": "Exact closed-active-component orientation sum, used as independent posterior check."
+            }
+          ],
+          "status": "E"
+        },
+        {
+          "run": "GPT02",
+          "done": "Every N4 triple has M=1, and the path constant explicitly changes to a special value.",
+          "issue": "The link from local counts to high/low-p thresholds is not fully developed; coverage is implicit.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_02/report.md",
+              "line": 51,
+              "claim": "Z4 high-p estimate must obey nesting; diagnostics lead unresolved, not anomaly claim."
+            },
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_02/proofs.md",
+              "line": 173,
+              "claim": "Z4 all triple arrival counts have M1; worst-case proof special constant."
+            }
+          ],
+          "status": "I"
+        },
+        {
+          "run": "GPT03",
+          "done": "The charge-alias table is correct and information ordering controls the high Z4 endpoint.",
+          "issue": "Pure/mixed local mechanisms are not used to fully explain the asymmetric endpoints.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_03/report.md",
+              "line": 40,
+              "claim": "Upper Z4 mean projected to O0 while retaining original uncertainty; no equality theorem."
+            }
+          ],
+          "status": "I"
+        }
+      ]
+    },
+    {
+      "id": "Q07",
+      "title": "High-p active-component orientation identity and its scope",
+      "question": "Is there an exact active-component explanation for weak Z4 gains at high p?",
+      "why_matters": "For a fixed active graph, random-orientation mod-4 charge is the affine image of a binary incidence map; closed components retain constraints.",
+      "possible_mistake": "Upgrading a small high-p gain to channel or threshold equivalence O1(4)=O0; ignoring closed active components and zero-arrival vertices.",
+      "possible_mistake_label": "Potential error types; not a claim that any particular run actually made them",
+      "conclusion": "Opus03 and GPT01 independently derive exact identities. The same component analysis was not found in the others. This is an enhanced explanation, not an added original-task penalty.",
+      "rows": [
+        {
+          "run": "Fable03",
+          "done": "Weak high-p Z4 improvement is noted and finite-size endpoints are supplied.",
+          "issue": "No active-component affine-incidence identity was found; this is a missing optional enhancement.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-fable-5-1/run_03/report.md",
+              "line": 190,
+              "claim": "Both Z4 finite-size endpoints assessed."
+            },
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-fable-5-1/run_03/report.md",
+              "line": 201,
+              "claim": "Z4 adds little at high p but more at low p; no exact active-component explanation here."
+            }
+          ],
+          "status": "M"
+        },
+        {
+          "run": "Opus01",
+          "done": "Small high-p gain and nesting are discussed alongside a defect picture.",
+          "issue": "No exact component orientation sum is supplied; the physical picture cannot substitute for that identity.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_01/report.md",
+              "line": 268,
+              "claim": "High-p crossing shifted/constrained to respect O0 nesting."
+            },
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_01/report.md",
+              "line": 275,
+              "claim": "Charge4 defects proposed to explain central disorder."
+            }
+          ],
+          "status": "M"
+        },
+        {
+          "run": "Opus02",
+          "done": "Paired posterior comparisons show a very small high-p gain.",
+          "issue": "No exact uniform-image proof for the active graph is supplied; empirical checks cannot replace it.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_02/REPORT.md",
+              "line": 212,
+              "claim": "Low/high asymmetric usefulness and high-p numerical nesting check."
+            },
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_02/REPORT.md",
+              "line": 214,
+              "claim": "Paired same-sample risk nesting checked, tiny high-p gain."
+            }
+          ],
+          "status": "M"
+        },
+        {
+          "run": "Opus03",
+          "done": "Charge is proved uniform over parity-allowed labels on boundary-connected active components.",
+          "issue": "Closed active components and zero-arrival vertices retain extra information; threshold equivalence does not follow.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_03/report.md",
+              "line": 229,
+              "claim": "High-p nesting checked."
+            },
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_03/report.md",
+              "line": 668,
+              "claim": "Exact affine incidence calculation on boundary-connected active components."
+            },
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_03/report.md",
+              "line": 681,
+              "claim": "Z4 retains extra information only at zero-arrival vertices and closed active components."
+            }
+          ],
+          "status": "E"
+        },
+        {
+          "run": "GPT01",
+          "done": "Pr(k|x)=2^(c0−D) times closed-component charge-sum constraints is derived and independently checked.",
+          "issue": "The text explicitly uses the identity to check posteriors, not to assume high-noise channel equivalence.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_01/report.md",
+              "line": 33,
+              "claim": "Apparent upper boundary reversal lies within allowances; ordering prevails."
+            },
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_01/proofs.md",
+              "line": 256,
+              "claim": "Exact closed-active-component orientation sum, used as independent posterior check."
+            }
+          ],
+          "status": "E"
+        },
+        {
+          "run": "GPT02",
+          "done": "Special Z4 M values and conservative diagram handling are supplied.",
+          "issue": "The exact component identity given by Opus03/GPT01 was not found.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_02/report.md",
+              "line": 51,
+              "claim": "Z4 high-p estimate must obey nesting; diagnostics lead unresolved, not anomaly claim."
+            },
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_02/proofs.md",
+              "line": 173,
+              "claim": "Z4 all triple arrival counts have M1; worst-case proof special constant."
+            }
+          ],
+          "status": "M"
+        },
+        {
+          "run": "GPT03",
+          "done": "Nominal high-end uncertainty and information-order projection are explained.",
+          "issue": "No active-component orientation identity is supplied; the original task did not require this enhancement.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_03/report.md",
+              "line": 40,
+              "claim": "Upper Z4 mean projected to O0 while retaining original uncertainty; no equality theorem."
+            }
+          ],
+          "status": "M"
+        }
+      ]
+    },
+    {
+      "id": "Q08",
+      "title": "Neutral pairs remain invisible to O1; O2 hiding becomes rarer with N",
+      "question": "Why does O1 saturate while O2 can continue to improve with N?",
+      "why_matters": "A neutral V,Vbar pair always has integer charge zero. In O2, the probability that multiple arrivals yield a lower-count label decreases as N^-2.",
+      "possible_mistake": "Equating integer q with the full arrival count; treating N^-2 as an independent vertex-failure probability; using O1 saturation to prove its central phase nondecodable.",
+      "possible_mistake_label": "Potential error types; not a claim that any particular run actually made them",
+      "conclusion": "All seven identify the mechanism and handle it through valid correlation bounds or randomized coarsening. O1 saturation is an exact information fact; it alone does not decide the central thermodynamic phase.",
+      "rows": [
+        {
+          "run": "Fable03",
+          "done": "Irrep ambiguities of 1/N² and 2/N² are listed, followed by random degradation to noisy degree.",
+          "issue": "Neutral pairs remain invisible in full q; saturation cannot establish central nondecodability.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-fable-5-1/run_03/docs/theory.md",
+              "line": 113,
+              "claim": "Irrep lower-count ambiguity probabilities and orientation-blind randomized coarsening"
+            }
+          ],
+          "status": "E"
+        },
+        {
+          "run": "Opus01",
+          "done": "An orientation-blind degree garbling describes count ambiguity by 1/N² and 2/N².",
+          "issue": "The large-N theorem handles correlation through deliberate degradation, not independent original orientations at each vertex.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_01/report.md",
+              "line": 140,
+              "claim": "SU2 degree laws and general-N randomized garbling"
+            }
+          ],
+          "status": "E"
+        },
+        {
+          "run": "Opus02",
+          "done": "A degree-record kernel precedes the polymer/Chernoff path bound.",
+          "issue": "Original O2 vertex observations are correlated; independence is used only in the legitimately degraded count channel.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_02/REPORT.md",
+              "line": 76,
+              "claim": "General-N degree-record kernels and probabilities 1/N² and 2/N²"
+            }
+          ],
+          "status": "E"
+        },
+        {
+          "run": "Opus03",
+          "done": "Additional random coins give a uniform drop rate for each n, followed by path-overlap control.",
+          "issue": "1/N² is not a single logical-failure probability and cannot simply be multiplied over all vertices.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_03/report.md",
+              "line": 574,
+              "claim": "Random coins degrade original O2 to a degree record with uniform count-drop rates"
+            }
+          ],
+          "status": "E"
+        },
+        {
+          "run": "GPT01",
+          "done": "Shared-arrow matrix norms bound pair hiding; the O1 constants do not decrease at large N.",
+          "issue": "Decoder scores and path-pattern sums remain necessary; hiding is not sufficient for failure.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_01/proofs.md",
+              "line": 104,
+              "claim": "Path-witness lemma for necessary hiding events and decoder scores"
+            }
+          ],
+          "status": "E"
+        },
+        {
+          "run": "GPT02",
+          "done": "The O1/O2 α0/α1 table directly displays O1 saturation and O2 decline.",
+          "issue": "Shared side edges/chords are separately controlled by second moments, not products of marginal hiding rates.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_02/proofs.md",
+              "line": 158,
+              "claim": "O1/O2 hiding-orientation norm table and shared-chord treatment"
+            }
+          ],
+          "status": "E"
+        },
+        {
+          "run": "GPT03",
+          "done": "The integer O1 class and degradation of O2 to noisy degree are developed in parallel.",
+          "issue": "N^-2 strengthens the proof, but actual phases at finite small N require separate evidence.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_03/proofs.md",
+              "line": 157,
+              "claim": "Cross-N degradation kernels on visible outcomes and N dependence of low labels"
+            }
+          ],
+          "status": "E"
+        }
+      ]
+    },
+    {
+      "id": "Q19",
+      "title": "Separate estimates, sufficient bounds, unknowns, and statistical/finite-size/approximation uncertainty",
+      "question": "Are estimates, sufficient bounds, unknowns, and the three uncertainty sources clearly separated?",
+      "why_matters": "Readers must distinguish data-supported judgments, certified theorems, and possible long-scale crossovers.",
+      "possible_mistake": "Hiding unknowns behind a polished phase diagram; treating χ differences as bounds; treating zero failures or small sampled risks as a full-p thermodynamic proof.",
+      "possible_mistake_label": "Potential error types; not a claim that any particular run actually made them",
+      "conclusion": "GPT01/02 are most conservative. GPT03 makes a qualified numerical assignment for small-N O2. Fable’s limiting interpretation and Opus’s approximation guarantees are the main risk points.",
+      "rows": [
+        {
+          "run": "Fable03",
+          "done": "Exact contraction is separated from statistical/size errors, and possible long decay is disclosed.",
+          "issue": "The final positive central intercept is still interpreted as a nondecodable phase; disclosure does not remove the inference gap.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-fable-5-1/run_03/report.md",
+              "line": 213,
+              "claim": "Positive-limit fit at L≤12 used for central phase."
+            },
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-fable-5-1/run_03/report.md",
+              "line": 219,
+              "claim": "Exponential decay with length ≥50 explicitly not excluded."
+            },
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-fable-5-1/run_03/report.md",
+              "line": 311,
+              "claim": "Final text nevertheless calls central charge region a critical phase."
+            }
+          ],
+          "status": "I"
+        },
+        {
+          "run": "Opus01",
+          "done": "Numerical diagrams, large-N theorems, statistics, and χ diagnostics are distinguished.",
+          "issue": "χ differences are elevated to error bounds on true R*; the central zero limit also exceeds the evidence.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_01/report.md",
+              "line": 82,
+              "claim": "χ64/χ128 posterior comparison is empirical convergence evidence."
+            },
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_01/report.md",
+              "line": 164,
+              "claim": "Observed difference promoted to error bound on R*."
+            }
+          ],
+          "status": "X"
+        },
+        {
+          "run": "Opus02",
+          "done": "Large-χ, log-odds, and multiple-size reports are saved and empirical control is acknowledged.",
+          "issue": "Induced bias is still claimed bounded by χ differences, and BKT exclusion is not rigorously established.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_02/REPORT.md",
+              "line": 301,
+              "claim": "Induced bias claimed at most χ comparison deviation."
+            },
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_02/REPORT.md",
+              "line": 319,
+              "claim": "Acknowledges empirical control rather than prior bounds."
+            }
+          ],
+          "status": "X"
+        },
+        {
+          "run": "Opus03",
+          "done": "Error sources are fully classified; subset χ studies and late-crossover reservations are retained.",
+          "issue": "A maximum χ change is said to guarantee all R1 answers unchanged without a true-posterior error bound.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_03/report.md",
+              "line": 355,
+              "claim": "χ64/χ128 max change said to ensure no R1 answer can change."
+            },
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_03/report.md",
+              "line": 391,
+              "claim": "Subset empirical tests, not formal every-sample bound."
+            }
+          ],
+          "status": "X"
+        },
+        {
+          "run": "GPT01",
+          "done": "Rigorous subsets, inherited numerical regions, and unknowns are layered; statistics, size, and rounding are assessed separately.",
+          "issue": "The central thermodynamic phase remains unsolved and is accurately retained as unknown.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_01/report.md",
+              "line": 123,
+              "claim": "Complete contraction, rounding perturbation refits, no truncation."
+            }
+          ],
+          "status": "E"
+        },
+        {
+          "run": "GPT02",
+          "done": "A rigorous-only plot, all fits including failures, perturbation checks, and rare-event limitations are supplied.",
+          "issue": "The 12 unknown entries are justified; this is not a complete solution of all true phase boundaries.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_02/report.md",
+              "line": 99,
+              "claim": "No truncation, rounding perturbation refits and separate uncertainty."
+            }
+          ],
+          "status": "E"
+        },
+        {
+          "run": "GPT03",
+          "done": "The N14 theorem and small-N numerics are distinguished; bootstrap, size, and rounding are separate.",
+          "issue": "Small-N all-p assignments retain grid and late-crossover reservations; A2 already deducts one point.",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_03/report.md",
+              "line": 185,
+              "claim": "No truncation, round/log checks."
+            }
+          ],
+          "status": "E"
+        }
+      ]
+    }
+  ]
+}

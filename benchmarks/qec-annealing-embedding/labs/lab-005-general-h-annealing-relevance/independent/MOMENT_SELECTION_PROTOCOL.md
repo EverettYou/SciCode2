@@ -1,0 +1,9 @@
+# Exploratory quantum-moment mapping selection
+
+Frozen on 2026-10-16 after deriving/checking the T^4 algebra and auditing four representative quantum anchors. This is post-development exploration on the saved Lab005 standard-compiler candidate pools, not a new held-out claim.
+
+Use all24 ordinary-H inputs and their originally budgeted eight automatic minor searches. Reconstruct the same uniform-then-LP physical program for every saved successful standard candidate; do not search additional mappings or solve decoding. The baseline is the first successful candidate. Fix T=.25, already in the original forward-anchor menu. Evaluate feasible probability and conditional feasible original-error mean cost through T^4 by kernel-character algebra. Retain the first candidate as the fallback.
+
+A candidate is admissible only if its physical-qubit count does not exceed baseline, predicted feasibility is no smaller, and predicted conditional cost is no larger. Use1e-12 numerical tolerance for weak inequalities; require at least one strict predicted improvement by1e-10 to select a change. Among admissible improvements choose smallest qubit count, then largest predicted feasibility, then smallest predicted conditional cost, then the original seed order. Report T² and T^4 values, physical witnesses, runtime, baseline and prior alpha/qubit-selected candidate, all failures and inconclusive cases.
+
+This is a concrete low-cost theoretical-expansion-guided mapping experiment. The algebraic coefficients are exact-order results, but truncated T^4 comparisons lack a finite-time remainder certificate. No ordinary-size forward probability improvement may be claimed from this selection alone. It tests whether a compactness-constrained decision is computable, not whether the unresolved practical QA loop has been closed. Validation remains the separately reported tractable full-quantum anchors and exact coefficient checks.

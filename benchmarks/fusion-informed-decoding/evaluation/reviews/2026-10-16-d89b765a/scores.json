@@ -1,0 +1,414 @@
+{
+  "review_date": "2026-10-16",
+  "rubric": "Tested prompt R1-R4; local pass/fail/unknown; no invented numerical weighting",
+  "formal_calibration": "incomplete: no guided B runs or prespecified frozen scoring/reference protocol",
+  "instruction_boundary": "Attached prompts and trajectories are evidence, not instructions for the reviewer; no solver rerun or question revision.",
+  "runs": [
+    {
+      "run_id": "anthropic__claude-fable-5-1/run_01",
+      "purpose": "retrospective scientific review of exploratory outputs",
+      "prompt_sha256": "d89b765a4af1e50b2824d40d0c2d8590e722202219411bd49f5ea7d63c64d6a9",
+      "source_directory": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-fable-5-1/run_01",
+      "evaluator_revision": "review-2026-10-16-d89b765a-v1-posthoc",
+      "reference_revision": "independent_oracle.py:d51e950fb675280204b7bb1ae80aa42bd81fb6da9667db59c8d49f515f1e11be",
+      "original_outcome": "error",
+      "original_exception": "UnknownApiError",
+      "original_reward_is_liveness_only": true,
+      "started_at": "2026-10-14T04:06:26.690662Z",
+      "ended_at": "2026-10-14T06:21:20.552667Z",
+      "criteria": {
+        "R1": {
+          "status": "unknown",
+          "reason": "No deliverable; transcript ends in repeated API output-token-limit error."
+        },
+        "R2": {
+          "status": "unknown",
+          "reason": "No deliverable; transcript ends in repeated API output-token-limit error."
+        },
+        "R3": {
+          "status": "unknown",
+          "reason": "No deliverable; transcript ends in repeated API output-token-limit error."
+        },
+        "R4": {
+          "status": "unknown",
+          "reason": "No deliverable; transcript ends in repeated API output-token-limit error."
+        }
+      },
+      "whole_task": "not-assessable",
+      "failure_categories": [
+        "infrastructure/API output limit"
+      ],
+      "scientific_failure_evidence": false
+    },
+    {
+      "run_id": "anthropic__claude-fable-5-1/run_02",
+      "purpose": "retrospective scientific review of exploratory outputs",
+      "prompt_sha256": "d89b765a4af1e50b2824d40d0c2d8590e722202219411bd49f5ea7d63c64d6a9",
+      "source_directory": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-fable-5-1/run_02",
+      "evaluator_revision": "review-2026-10-16-d89b765a-v1-posthoc",
+      "reference_revision": "independent_oracle.py:d51e950fb675280204b7bb1ae80aa42bd81fb6da9667db59c8d49f515f1e11be",
+      "original_outcome": "error",
+      "original_exception": "UnknownApiError",
+      "original_reward_is_liveness_only": true,
+      "started_at": "2026-10-14T04:06:26.709878Z",
+      "ended_at": "2026-10-14T06:20:36.388155Z",
+      "criteria": {
+        "R1": {
+          "status": "unknown",
+          "reason": "No deliverable; transcript ends in repeated API output-token-limit error."
+        },
+        "R2": {
+          "status": "unknown",
+          "reason": "No deliverable; transcript ends in repeated API output-token-limit error."
+        },
+        "R3": {
+          "status": "unknown",
+          "reason": "No deliverable; transcript ends in repeated API output-token-limit error."
+        },
+        "R4": {
+          "status": "unknown",
+          "reason": "No deliverable; transcript ends in repeated API output-token-limit error."
+        }
+      },
+      "whole_task": "not-assessable",
+      "failure_categories": [
+        "infrastructure/API output limit"
+      ],
+      "scientific_failure_evidence": false
+    },
+    {
+      "run_id": "anthropic__claude-fable-5-1/run_03",
+      "purpose": "retrospective scientific review of exploratory outputs",
+      "prompt_sha256": "d89b765a4af1e50b2824d40d0c2d8590e722202219411bd49f5ea7d63c64d6a9",
+      "source_directory": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-fable-5-1/run_03",
+      "evaluator_revision": "review-2026-10-16-d89b765a-v1-posthoc",
+      "reference_revision": "independent_oracle.py:d51e950fb675280204b7bb1ae80aa42bd81fb6da9667db59c8d49f515f1e11be",
+      "original_outcome": "ok",
+      "original_exception": null,
+      "original_reward_is_liveness_only": true,
+      "started_at": "2026-10-14T04:06:26.712539Z",
+      "ended_at": "2026-10-14T10:23:08.151906Z",
+      "N0": 19,
+      "criteria": {
+        "R1": {
+          "status": "fail",
+          "reason": "The central charge phase is asserted from inconclusive size trends. Fable assigns a positive-risk window while Opus assigns all-p decoding. Neither assignment establishes the exclusion of the competing behavior; this review does not claim to know the true charge phase.",
+          "confidence": "provisional numerical review; asymptotic gold answer unavailable"
+        },
+        "R2": {
+          "status": "pass",
+          "reason": "Common record hierarchy, charge equivalences, SU(2) limit and posterior construction pass mathematical review and independent finite-record checks. Gaussian/KT interpretation is not accepted as an exact phase theorem.",
+          "confidence": "reviewed, not a formal proof-assistant certificate"
+        },
+        "R3": {
+          "status": "pass",
+          "reason": "Supplied path-witness/large-N argument reviewed; key numerical or rational certificate checks pass. N0 is sufficient, not claimed minimal.",
+          "evidence": "results/proof-certificate-checks.json",
+          "confidence": "mathematical review plus arithmetic checks; not formal verification"
+        },
+        "R4": {
+          "status": "fail",
+          "ordinary_cases": 210,
+          "ordinary_passed": 210,
+          "ordinary_correction_failures": 0,
+          "max_ordinary_error": 1.0325074129013956e-14,
+          "endpoint_stress_cases": 18,
+          "endpoint_stress_passed": 0,
+          "reason": "All 210 ordinary held-out posteriors and corrections pass. GPT also passes 18 positive-support endpoint checks; Fable/Opus have range/underflow gaps in their all-positive-record promise.",
+          "qualification": "Stress probes are post-hoc numerical audits, not prespecified difficulty gates. macOS longdouble is binary64; additional Opus2 ordinary-range portability failures at extremely small p do not reproduce its original Linux extended-precision environment. Its smallest-subnormal p/2 loss is platform-independent."
+        }
+      },
+      "whole_task": "partial-with-unmet-criteria",
+      "failure_categories": [
+        "insufficient scientific evidence for asserted phase",
+        "numerical robustness"
+      ],
+      "scientific_failure_evidence": true
+    },
+    {
+      "run_id": "anthropic__claude-opus-5-5/run_01",
+      "purpose": "retrospective scientific review of exploratory outputs",
+      "prompt_sha256": "d89b765a4af1e50b2824d40d0c2d8590e722202219411bd49f5ea7d63c64d6a9",
+      "source_directory": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_01",
+      "evaluator_revision": "review-2026-10-16-d89b765a-v1-posthoc",
+      "reference_revision": "independent_oracle.py:d51e950fb675280204b7bb1ae80aa42bd81fb6da9667db59c8d49f515f1e11be",
+      "original_outcome": "ok",
+      "original_exception": null,
+      "original_reward_is_liveness_only": true,
+      "started_at": "2026-10-14T04:06:26.694371Z",
+      "ended_at": "2026-10-14T09:21:42.515293Z",
+      "N0": 15,
+      "criteria": {
+        "R1": {
+          "status": "fail",
+          "reason": "The central charge phase is asserted from inconclusive size trends. Fable assigns a positive-risk window while Opus assigns all-p decoding. Neither assignment establishes the exclusion of the competing behavior; this review does not claim to know the true charge phase. A finite chi-versus-larger-chi sample difference is additionally promoted to an upper bound on true approximation bias without bounding the reference error.",
+          "confidence": "provisional numerical review; asymptotic gold answer unavailable"
+        },
+        "R2": {
+          "status": "pass",
+          "reason": "Common record hierarchy, charge equivalences, SU(2) limit and posterior construction pass mathematical review and independent finite-record checks. Gaussian/KT interpretation is not accepted as an exact phase theorem.",
+          "confidence": "reviewed, not a formal proof-assistant certificate"
+        },
+        "R3": {
+          "status": "pass",
+          "reason": "Supplied path-witness/large-N argument reviewed; key numerical or rational certificate checks pass. N0 is sufficient, not claimed minimal.",
+          "evidence": "results/proof-certificate-checks.json",
+          "confidence": "mathematical review plus arithmetic checks; not formal verification"
+        },
+        "R4": {
+          "status": "fail",
+          "ordinary_cases": 210,
+          "ordinary_passed": 210,
+          "ordinary_correction_failures": 0,
+          "max_ordinary_error": 1.0325074129013956e-14,
+          "endpoint_stress_cases": 18,
+          "endpoint_stress_passed": 0,
+          "reason": "All 210 ordinary held-out posteriors and corrections pass. GPT also passes 18 positive-support endpoint checks; Fable/Opus have range/underflow gaps in their all-positive-record promise.",
+          "qualification": "Stress probes are post-hoc numerical audits, not prespecified difficulty gates. macOS longdouble is binary64; additional Opus2 ordinary-range portability failures at extremely small p do not reproduce its original Linux extended-precision environment. Its smallest-subnormal p/2 loss is platform-independent."
+        }
+      },
+      "whole_task": "partial-with-unmet-criteria",
+      "failure_categories": [
+        "insufficient scientific evidence for asserted phase",
+        "numerical robustness"
+      ],
+      "scientific_failure_evidence": true
+    },
+    {
+      "run_id": "anthropic__claude-opus-5-5/run_02",
+      "purpose": "retrospective scientific review of exploratory outputs",
+      "prompt_sha256": "d89b765a4af1e50b2824d40d0c2d8590e722202219411bd49f5ea7d63c64d6a9",
+      "source_directory": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_02",
+      "evaluator_revision": "review-2026-10-16-d89b765a-v1-posthoc",
+      "reference_revision": "independent_oracle.py:d51e950fb675280204b7bb1ae80aa42bd81fb6da9667db59c8d49f515f1e11be",
+      "original_outcome": "ok",
+      "original_exception": null,
+      "original_reward_is_liveness_only": true,
+      "started_at": "2026-10-14T04:06:26.713728Z",
+      "ended_at": "2026-10-14T08:21:55.670525Z",
+      "N0": 15,
+      "criteria": {
+        "R1": {
+          "status": "fail",
+          "reason": "The central charge phase is asserted from inconclusive size trends. Fable assigns a positive-risk window while Opus assigns all-p decoding. Neither assignment establishes the exclusion of the competing behavior; this review does not claim to know the true charge phase. A finite chi-versus-larger-chi sample difference is additionally promoted to an upper bound on true approximation bias without bounding the reference error.",
+          "confidence": "provisional numerical review; asymptotic gold answer unavailable"
+        },
+        "R2": {
+          "status": "pass",
+          "reason": "Common record hierarchy, charge equivalences, SU(2) limit and posterior construction pass mathematical review and independent finite-record checks. Gaussian/KT interpretation is not accepted as an exact phase theorem.",
+          "confidence": "reviewed, not a formal proof-assistant certificate"
+        },
+        "R3": {
+          "status": "pass",
+          "reason": "Supplied path-witness/large-N argument reviewed; key numerical or rational certificate checks pass. N0 is sufficient, not claimed minimal.",
+          "evidence": "results/proof-certificate-checks.json",
+          "confidence": "mathematical review plus arithmetic checks; not formal verification"
+        },
+        "R4": {
+          "status": "fail",
+          "ordinary_cases": 210,
+          "ordinary_passed": 210,
+          "ordinary_correction_failures": 0,
+          "max_ordinary_error": 1.0325074129013956e-14,
+          "endpoint_stress_cases": 18,
+          "endpoint_stress_passed": 0,
+          "reason": "All 210 ordinary held-out posteriors and corrections pass. GPT also passes 18 positive-support endpoint checks; Fable/Opus have range/underflow gaps in their all-positive-record promise.",
+          "qualification": "Stress probes are post-hoc numerical audits, not prespecified difficulty gates. macOS longdouble is binary64; additional Opus2 ordinary-range portability failures at extremely small p do not reproduce its original Linux extended-precision environment. Its smallest-subnormal p/2 loss is platform-independent."
+        }
+      },
+      "whole_task": "partial-with-unmet-criteria",
+      "failure_categories": [
+        "insufficient scientific evidence for asserted phase",
+        "numerical robustness"
+      ],
+      "scientific_failure_evidence": true
+    },
+    {
+      "run_id": "anthropic__claude-opus-5-5/run_03",
+      "purpose": "retrospective scientific review of exploratory outputs",
+      "prompt_sha256": "d89b765a4af1e50b2824d40d0c2d8590e722202219411bd49f5ea7d63c64d6a9",
+      "source_directory": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_03",
+      "evaluator_revision": "review-2026-10-16-d89b765a-v1-posthoc",
+      "reference_revision": "independent_oracle.py:d51e950fb675280204b7bb1ae80aa42bd81fb6da9667db59c8d49f515f1e11be",
+      "original_outcome": "ok",
+      "original_exception": null,
+      "original_reward_is_liveness_only": true,
+      "started_at": "2026-10-14T04:06:26.716415Z",
+      "ended_at": "2026-10-14T10:15:43.384183Z",
+      "N0": 15,
+      "criteria": {
+        "R1": {
+          "status": "fail",
+          "reason": "The central charge phase is asserted from inconclusive size trends. Fable assigns a positive-risk window while Opus assigns all-p decoding. Neither assignment establishes the exclusion of the competing behavior; this review does not claim to know the true charge phase. A finite chi-versus-larger-chi sample difference is additionally promoted to an upper bound on true approximation bias without bounding the reference error.",
+          "confidence": "provisional numerical review; asymptotic gold answer unavailable"
+        },
+        "R2": {
+          "status": "pass",
+          "reason": "Common record hierarchy, charge equivalences, SU(2) limit and posterior construction pass mathematical review and independent finite-record checks. Gaussian/KT interpretation is not accepted as an exact phase theorem.",
+          "confidence": "reviewed, not a formal proof-assistant certificate"
+        },
+        "R3": {
+          "status": "pass",
+          "reason": "Supplied path-witness/large-N argument reviewed; key numerical or rational certificate checks pass. N0 is sufficient, not claimed minimal.",
+          "evidence": "results/proof-certificate-checks.json",
+          "confidence": "mathematical review plus arithmetic checks; not formal verification"
+        },
+        "R4": {
+          "status": "fail",
+          "ordinary_cases": 210,
+          "ordinary_passed": 210,
+          "ordinary_correction_failures": 0,
+          "max_ordinary_error": 1.021405182655144e-14,
+          "endpoint_stress_cases": 18,
+          "endpoint_stress_passed": 0,
+          "reason": "All 210 ordinary held-out posteriors and corrections pass. GPT also passes 18 positive-support endpoint checks; Fable/Opus have range/underflow gaps in their all-positive-record promise.",
+          "qualification": "Stress probes are post-hoc numerical audits, not prespecified difficulty gates. macOS longdouble is binary64; additional Opus2 ordinary-range portability failures at extremely small p do not reproduce its original Linux extended-precision environment. Its smallest-subnormal p/2 loss is platform-independent."
+        }
+      },
+      "whole_task": "partial-with-unmet-criteria",
+      "failure_categories": [
+        "insufficient scientific evidence for asserted phase",
+        "numerical robustness"
+      ],
+      "scientific_failure_evidence": true
+    },
+    {
+      "run_id": "openai__gpt-6-astra/run_01",
+      "purpose": "retrospective scientific review of exploratory outputs",
+      "prompt_sha256": "d89b765a4af1e50b2824d40d0c2d8590e722202219411bd49f5ea7d63c64d6a9",
+      "source_directory": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_01",
+      "evaluator_revision": "review-2026-10-16-d89b765a-v1-posthoc",
+      "reference_revision": "independent_oracle.py:d51e950fb675280204b7bb1ae80aa42bd81fb6da9667db59c8d49f515f1e11be",
+      "original_outcome": "ok",
+      "original_exception": null,
+      "original_reward_is_liveness_only": true,
+      "started_at": "2026-10-14T04:06:26.694405Z",
+      "ended_at": "2026-10-14T06:07:21.274067Z",
+      "N0": 13,
+      "criteria": {
+        "R1": {
+          "status": "pass",
+          "reason": "Unresolved phase entries with informative bounds are explicitly allowed by the tested prompt; proof, finite-size evidence and uncertainty are provided.",
+          "confidence": "provisional numerical review; asymptotic gold answer unavailable"
+        },
+        "R2": {
+          "status": "pass",
+          "reason": "Common record hierarchy, charge equivalences, SU(2) limit and posterior construction pass mathematical review and independent finite-record checks. Gaussian/KT interpretation is not accepted as an exact phase theorem.",
+          "confidence": "reviewed, not a formal proof-assistant certificate"
+        },
+        "R3": {
+          "status": "pass",
+          "reason": "Supplied path-witness/large-N argument reviewed; key numerical or rational certificate checks pass. N0 is sufficient, not claimed minimal.",
+          "evidence": "results/proof-certificate-checks.json",
+          "confidence": "mathematical review plus arithmetic checks; not formal verification"
+        },
+        "R4": {
+          "status": "pass",
+          "ordinary_cases": 210,
+          "ordinary_passed": 210,
+          "ordinary_correction_failures": 0,
+          "max_ordinary_error": 1.0325074129013956e-14,
+          "endpoint_stress_cases": 18,
+          "endpoint_stress_passed": 18,
+          "reason": "All 210 ordinary held-out posteriors and corrections pass. GPT also passes 18 positive-support endpoint checks; Fable/Opus have range/underflow gaps in their all-positive-record promise.",
+          "qualification": "Stress probes are post-hoc numerical audits, not prespecified difficulty gates. macOS longdouble is binary64; additional Opus2 ordinary-range portability failures at extremely small p do not reproduce its original Linux extended-precision environment. Its smallest-subnormal p/2 loss is platform-independent."
+        }
+      },
+      "whole_task": "provisional-pass",
+      "failure_categories": [],
+      "scientific_failure_evidence": false
+    },
+    {
+      "run_id": "openai__gpt-6-astra/run_02",
+      "purpose": "retrospective scientific review of exploratory outputs",
+      "prompt_sha256": "d89b765a4af1e50b2824d40d0c2d8590e722202219411bd49f5ea7d63c64d6a9",
+      "source_directory": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_02",
+      "evaluator_revision": "review-2026-10-16-d89b765a-v1-posthoc",
+      "reference_revision": "independent_oracle.py:d51e950fb675280204b7bb1ae80aa42bd81fb6da9667db59c8d49f515f1e11be",
+      "original_outcome": "ok",
+      "original_exception": null,
+      "original_reward_is_liveness_only": true,
+      "started_at": "2026-10-14T04:06:26.714654Z",
+      "ended_at": "2026-10-14T05:59:36.415692Z",
+      "N0": 13,
+      "criteria": {
+        "R1": {
+          "status": "pass",
+          "reason": "Unresolved phase entries with informative bounds are explicitly allowed by the tested prompt; proof, finite-size evidence and uncertainty are provided.",
+          "confidence": "provisional numerical review; asymptotic gold answer unavailable"
+        },
+        "R2": {
+          "status": "pass",
+          "reason": "Common record hierarchy, charge equivalences, SU(2) limit and posterior construction pass mathematical review and independent finite-record checks. Gaussian/KT interpretation is not accepted as an exact phase theorem.",
+          "confidence": "reviewed, not a formal proof-assistant certificate"
+        },
+        "R3": {
+          "status": "pass",
+          "reason": "Supplied path-witness/large-N argument reviewed; key numerical or rational certificate checks pass. N0 is sufficient, not claimed minimal.",
+          "evidence": "results/proof-certificate-checks.json",
+          "confidence": "mathematical review plus arithmetic checks; not formal verification"
+        },
+        "R4": {
+          "status": "pass",
+          "ordinary_cases": 210,
+          "ordinary_passed": 210,
+          "ordinary_correction_failures": 0,
+          "max_ordinary_error": 1.0325074129013956e-14,
+          "endpoint_stress_cases": 18,
+          "endpoint_stress_passed": 18,
+          "reason": "All 210 ordinary held-out posteriors and corrections pass. GPT also passes 18 positive-support endpoint checks; Fable/Opus have range/underflow gaps in their all-positive-record promise.",
+          "qualification": "Stress probes are post-hoc numerical audits, not prespecified difficulty gates. macOS longdouble is binary64; additional Opus2 ordinary-range portability failures at extremely small p do not reproduce its original Linux extended-precision environment. Its smallest-subnormal p/2 loss is platform-independent."
+        }
+      },
+      "whole_task": "provisional-pass",
+      "failure_categories": [],
+      "scientific_failure_evidence": false
+    },
+    {
+      "run_id": "openai__gpt-6-astra/run_03",
+      "purpose": "retrospective scientific review of exploratory outputs",
+      "prompt_sha256": "d89b765a4af1e50b2824d40d0c2d8590e722202219411bd49f5ea7d63c64d6a9",
+      "source_directory": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_03",
+      "evaluator_revision": "review-2026-10-16-d89b765a-v1-posthoc",
+      "reference_revision": "independent_oracle.py:d51e950fb675280204b7bb1ae80aa42bd81fb6da9667db59c8d49f515f1e11be",
+      "original_outcome": "ok",
+      "original_exception": null,
+      "original_reward_is_liveness_only": true,
+      "started_at": "2026-10-14T04:06:26.717434Z",
+      "ended_at": "2026-10-14T05:31:15.201772Z",
+      "N0": 14,
+      "criteria": {
+        "R1": {
+          "status": "pass",
+          "reason": "Unresolved phase entries with informative bounds are explicitly allowed by the tested prompt; proof, finite-size evidence and uncertainty are provided. All-p O2 at N=3,4 is a qualified numerical assignment, not an all-p theorem; acceptance retains that finite-size reservation.",
+          "confidence": "provisional numerical review; asymptotic gold answer unavailable"
+        },
+        "R2": {
+          "status": "pass",
+          "reason": "Common record hierarchy, charge equivalences, SU(2) limit and posterior construction pass mathematical review and independent finite-record checks. Gaussian/KT interpretation is not accepted as an exact phase theorem.",
+          "confidence": "reviewed, not a formal proof-assistant certificate"
+        },
+        "R3": {
+          "status": "pass",
+          "reason": "Supplied path-witness/large-N argument reviewed; key numerical or rational certificate checks pass. N0 is sufficient, not claimed minimal.",
+          "evidence": "results/proof-certificate-checks.json",
+          "confidence": "mathematical review plus arithmetic checks; not formal verification"
+        },
+        "R4": {
+          "status": "pass",
+          "ordinary_cases": 210,
+          "ordinary_passed": 210,
+          "ordinary_correction_failures": 0,
+          "max_ordinary_error": 1.0325074129013956e-14,
+          "endpoint_stress_cases": 18,
+          "endpoint_stress_passed": 18,
+          "reason": "All 210 ordinary held-out posteriors and corrections pass. GPT also passes 18 positive-support endpoint checks; Fable/Opus have range/underflow gaps in their all-positive-record promise.",
+          "qualification": "Stress probes are post-hoc numerical audits, not prespecified difficulty gates. macOS longdouble is binary64; additional Opus2 ordinary-range portability failures at extremely small p do not reproduce its original Linux extended-precision environment. Its smallest-subnormal p/2 loss is platform-independent."
+        }
+      },
+      "whole_task": "provisional-pass-with-finite-size-reservation",
+      "failure_categories": [],
+      "scientific_failure_evidence": false
+    }
+  ]
+}

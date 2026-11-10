@@ -1,0 +1,76 @@
+Hi all,
+
+It has been about a month since most of you started on SciCode 2. Thank you for the ideas and the patience with our changing docs. We have now been through enough proposals to see patterns: what makes a problem work, and what sinks it. This note shares where the project stands, restates what we are measuring, and covers the few lessons that will save you the most time.
+
+Where things stand
+SciCode 2 is now a network of 34 researchers: 22 in the physical sciences, 10 in the life sciences and 2 in engineering. Between you, you cover 16 subfields, from plasma physics and cosmology to genomics, neuroscience and aerospace engineering. Together you have put 44 problems into the pipeline. Of these, 24 have reached a runnable prompt and a round of test runs, 5 have passed our difficulty gate, and 13 were rejected, most often because the agent solved the clean prompt. We are still expanding our network, so please introduce us to colleagues who would be a good fit.
+
+What this benchmark is for
+One of the most common questions we heard this past month was what types of problems we are after, so here is another way to explain what this benchmark is for.
+
+Think about how you work with Claude Code or Codex today. To get from point A to point B, a correct implementation or analysis, you have to step in many times along the way. Those interventions come in different types:
+
+clarifying the objective;
+pivoting the objective;
+follow-up requests that were not in the original objective;
+minor adjustments to taste: formatting, figure aesthetics and so on;
+and most importantly, pointing out failures in the model’s scientific reasoning and its grasp of scientific principles.
+That last type is what SciCode 2 evaluates. The other four are about communicating what you want, which is not our focus. Correcting the science is the judgment that cannot yet be delegated to the agent.
+
+scicode2_objective_figure_compact_4x.png
+(a) A schematic of a typical agent session, with each message colored by intervention type. (b) The same session as a path from A to B: the agent goes straight until someone intervenes. Red marks the scientific corrections, the moments SciCode 2 aims to capture.
+
+Our goal is to extract benchmark problems from exactly this kind of experience in your day-to-day research. If you remember telling an agent “that’s physically wrong, because…”, that moment is a candidate problem. Whatever the model gets wrong is the most valuable thing you can send us.
+
+Why proposals were rejected
+Over the past month of working with you, we have seen a few failure modes that led to a proposal being rejected. Two account for most of them.
+
+Failure mode A: the local run looked promising, but the clean prompt was solved
+An expert’s own sessions suggest the problem is hard. Then the formal test run of the clean prompt solves it. We saw this several times:
+
+On a DFT problem, interactive sessions a month earlier had failed. Both clean autonomous runs returned the correct answer.
+On a heat-transfer problem, the expert’s own probes missed by orders of magnitude. About half the formal runs solved it.
+On a many-body problem, the dry-run plans looked wrong. In the full runs, the agent changed strategy partway through and got there.
+A dry run shows only the plan. Once an agent starts computing, it checks intermediate results and revises. In one run, it tried about ten variants of the physics in two hours until one fit. An interactive session also carries your own corrections and context, and the models improve every few weeks.
+
+Solution: do a full test run on your own. A dry run is not enough.
+
+How to do a clean test run
+Make a new, empty folder. Put in only the prompt and the input data the agent is allowed to see. Leave out your proposal, notes, reference code, and any paper you would not hand the agent.
+Start a fresh session in that folder, with no memory or project instructions carried over from your research directories.
+Use the strongest model at its highest effort setting, with internet access on, as we do.
+Paste the prompt and let the agent run to the end.
+Compare its final numbers with your reference answer, or check the qualitative results with your expectation.
+Failure mode B: task shape mismatch
+This one is best shown by example, so we have curated a set of problems that worked and problems that didn’t, along with why we rejected each one. Both are in the Example bank tab of the Project Sycamore Instructions.
+
+These are the shapes we saw fail:
+
+The problem hinges on a single insight. Once the agent sees it, the rest is solved in one shot, or one hint would fix it.
+The problem relies on niche domain knowledge rather than general reasoning.
+The problem is a standard workflow rather than a research question.
+The prompt fixes the whole recipe (method, parameters, settings), so the agent only has to execute it.
+As LLMs get much stronger, the bottleneck of science is shifting from execution to judgment. So the difficulty must come from things that cannot be delegated: the decisions a scientist makes when the procedure isn’t written down.
+
+A hint ladder to calibrate difficulty
+We want research objectives that humans can do but models can’t yet do autonomously. So every problem has to meet two conditions. The objective has to be achievable, so it is fair to ask an agent to automate it. It also has to require significant expert intervention.
+
+Our current way of checking both is to ask you for two versions of the prompt, plus an optional third:
+
+Prompt A, minimal: what you would write if you set out to achieve this research goal in the first place.
+Prompt B, guided: A plus a substantial set of hints, principles and anticipated model errors, well beyond a single hint.
+Prompt C, detailed (optional for now): B plus detailed execution instructions. These are the steps you could not have spelled out at the start, only learned in hindsight.
+Each version builds on the one before, so the differences between them show how much more guidance the agent needs. We read the results like this:
+
+Prompt A fails: this is the minimal bar. If the agent solves the minimal prompt, the problem is too easy.
+Prompt B fails: the difficulty is not too shallow. Even with substantial guidance, the agent does not reach the correct result.
+Prompt C fails, if you wrote one: not a rejection on its own, but a yellow flag. In this case, we will need to determine whether the task is achievable from what we give the agent, or whether the final test is too strict.
+We are still iterating on this calibration step, and we will also rely on our judgment case by case.
+
+The month ahead
+Our milestone for October is 30 proposals that pass difficulty calibration, up from 5 today. That sounds like a big jump, but with 31 of us it comes down to one task per person: if each of you lands one problem this month, we reach the target. It is an ambitious goal, and we think it is within reach if we keep in close contact. Send us drafts early, share runs as soon as you have them, and tell us when you are stuck. We will do our best to move quickly on our side.
+
+Thank you again for the time and care you are putting into this. Reply to this email or message us on Slack with questions.
+
+Best,
+The SciCode 2 team

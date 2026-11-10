@@ -1,0 +1,1679 @@
+{
+  "audit_date": "2026-10-16",
+  "scope": "R3 and related proof diagnostics in seven scientific runs; no new model trials or phase simulations",
+  "authority": {
+    "prompt": "/Users/home/Downloads/20261014-102308_d89b765a/prompt.md",
+    "R3_line": 143,
+    "deliverables_line": 153,
+    "grading_is_posthoc_local": true,
+    "not_official_frozen_score": true
+  },
+  "rubric": {
+    "C1": {
+      "max_points": 3,
+      "title": "Explicit N0 and quantifier scope"
+    },
+    "C2": {
+      "max_points": 5,
+      "title": "Valid auxiliary decoder or Bayes alternative and path witness"
+    },
+    "C3": {
+      "max_points": 6,
+      "title": "Valid fixed-path probability, orientation and side-edge correlations"
+    },
+    "C4": {
+      "max_points": 4,
+      "title": "Scaling and uniform-p certificate"
+    },
+    "C5": {
+      "max_points": 2,
+      "title": "Sufficient versus minimal/critical and averaged-risk scope"
+    }
+  },
+  "total_points": 20,
+  "diagnostic_status_legend": {
+    "E": "explicit",
+    "I": "implicit",
+    "M": "missing explanation",
+    "X": "incorrect",
+    "NA": "valid alternative route makes method inapplicable"
+  },
+  "certificate_evidence": "benchmarks/fusion-informed-decoding/evaluation/reviews/2026-10-16-d89b765a/results/proof-certificate-checks.json",
+  "runs": [
+    {
+      "run": "Fable03",
+      "N0": 19,
+      "theorem_status": "supported",
+      "method": "Randomized orientation-blind degree garbling; MAP configuration; Bhattacharyya; occupancy transfer matrix; finite-memory SAW bound.",
+      "total_as_submitted": 19.5,
+      "total_with_existing_independent_review": 20,
+      "criteria": [
+        {
+          "id": "C1",
+          "points_as_submitted": 3,
+          "points_with_existing_independent_review": 3,
+          "max_points": 3,
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-fable-5-1/run_03/docs/theory.md",
+              "start": 171,
+              "end": 181
+            }
+          ]
+        },
+        {
+          "id": "C2",
+          "points_as_submitted": 5,
+          "points_with_existing_independent_review": 5,
+          "max_points": 5,
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-fable-5-1/run_03/docs/theory.md",
+              "start": 183,
+              "end": 202
+            }
+          ]
+        },
+        {
+          "id": "C3",
+          "points_as_submitted": 6,
+          "points_with_existing_independent_review": 6,
+          "max_points": 6,
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-fable-5-1/run_03/docs/theory.md",
+              "start": 204,
+              "end": 222
+            }
+          ]
+        },
+        {
+          "id": "C4",
+          "points_as_submitted": 3.5,
+          "points_with_existing_independent_review": 4,
+          "max_points": 4,
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-fable-5-1/run_03/docs/theory.md",
+              "start": 224,
+              "end": 247
+            }
+          ],
+          "note": "Original global maximum printed numerically; memory-22 matrix not fully independently rebuilt. Existing rational review certifies reported lambda growth; exact honeycomb mu theorem supplies an independent route."
+        },
+        {
+          "id": "C5",
+          "points_as_submitted": 2,
+          "points_with_existing_independent_review": 2,
+          "max_points": 2,
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-fable-5-1/run_03/docs/theory.md",
+              "start": 229,
+              "end": 247
+            }
+          ]
+        }
+      ],
+      "diagnostics": [
+        {
+          "id": "binary_vs_latent",
+          "label": "Binary occupancy/correction versus latent orientation",
+          "status": "E",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-fable-5-1/run_03/docs/theory.md",
+              "start": 3,
+              "end": 8
+            }
+          ]
+        },
+        {
+          "id": "latent_not_decoder_visible",
+          "label": "Orientation conditionalization is only a probability calculation",
+          "status": "I",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-fable-5-1/run_03/docs/theory.md",
+              "start": 130,
+              "end": 143
+            }
+          ]
+        },
+        {
+          "id": "difference_component_simple",
+          "label": "Degree 0/2 gives simple cycles/paths and spanning failure witness",
+          "status": "E",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-fable-5-1/run_03/docs/theory.md",
+              "start": 190,
+              "end": 202
+            }
+          ]
+        },
+        {
+          "id": "M_local_minimum",
+          "label": "M from current readout is the least compatible same-parity count",
+          "status": "I",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-fable-5-1/run_03/docs/theory.md",
+              "start": 130,
+              "end": 143
+            }
+          ]
+        },
+        {
+          "id": "only_11_needs_hiding",
+          "label": "Not every path vertex must hide; only actual 11 removal forces hidden pair",
+          "status": "I",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-fable-5-1/run_03/docs/theory.md",
+              "start": 201,
+              "end": 218
+            }
+          ]
+        },
+        {
+          "id": "necessary_not_sufficient_auxiliary_scope",
+          "label": "Hiding necessary, not sufficient; tied to constructed auxiliary/channel feasibility",
+          "status": "E",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-fable-5-1/run_03/docs/theory.md",
+              "start": 188,
+              "end": 218
+            }
+          ]
+        },
+        {
+          "id": "decoder_selection_condition",
+          "label": "Likelihood/score/Chernoff selection condition retained",
+          "status": "E",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-fable-5-1/run_03/docs/theory.md",
+              "start": 196,
+              "end": 207
+            }
+          ]
+        },
+        {
+          "id": "orientation_matrix_states",
+          "label": "Latent +/- arrow matrix and endpoint normalization",
+          "status": "NA",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-fable-5-1/run_03/docs/theory.md",
+              "start": 183,
+              "end": 186
+            }
+          ],
+          "note": "Valid orientation-blind stochastic garbling removes arrows before the proof; no missing-method penalty."
+        },
+        {
+          "id": "occupancy_matrix_states",
+          "label": "0/1 occupancy matrix or equivalent binary sequence sum",
+          "status": "E",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-fable-5-1/run_03/docs/theory.md",
+              "start": 220,
+              "end": 222
+            }
+          ]
+        },
+        {
+          "id": "side_edges_chords",
+          "label": "Shared off-path edges/chords handled",
+          "status": "E",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-fable-5-1/run_03/docs/theory.md",
+              "start": 212,
+              "end": 216
+            }
+          ]
+        },
+        {
+          "id": "average_risk",
+          "label": "Optimal <= auxiliary comparison is average risk",
+          "status": "E",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-fable-5-1/run_03/docs/theory.md",
+              "start": 13,
+              "end": 16
+            }
+          ]
+        },
+        {
+          "id": "upper_bound_not_critical_exponent",
+          "label": "Sufficient exponential upper bound is not true critical scaling/phase boundary",
+          "status": "E",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-fable-5-1/run_03/docs/theory.md",
+              "start": 229,
+              "end": 247
+            }
+          ]
+        },
+        {
+          "id": "four_element_arrow_diagrams",
+          "label": "Pedagogic figures for all arrow matrix elements",
+          "status": "M",
+          "evidence": [],
+          "note": "Later pedagogic request, not an original deliverable requirement. Prior chat a/b notation conflict is not attributable to these runs."
+        }
+      ]
+    },
+    {
+      "run": "Opus01",
+      "N0": 15,
+      "theorem_status": "supported",
+      "method": "Randomized degree garbling; MAP configuration; Bhattacharyya; chord-aware occupancy sum and rational certificate.",
+      "total_as_submitted": 20,
+      "total_with_existing_independent_review": 20,
+      "criteria": [
+        {
+          "id": "C1",
+          "points_as_submitted": 3,
+          "points_with_existing_independent_review": 3,
+          "max_points": 3,
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_01/proofs/R2_R3_proofs.md",
+              "start": 95,
+              "end": 101
+            }
+          ]
+        },
+        {
+          "id": "C2",
+          "points_as_submitted": 5,
+          "points_with_existing_independent_review": 5,
+          "max_points": 5,
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_01/proofs/R2_R3_proofs.md",
+              "start": 103,
+              "end": 109
+            }
+          ]
+        },
+        {
+          "id": "C3",
+          "points_as_submitted": 6,
+          "points_with_existing_independent_review": 6,
+          "max_points": 6,
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_01/proofs/R2_R3_proofs.md",
+              "start": 111,
+              "end": 120
+            }
+          ]
+        },
+        {
+          "id": "C4",
+          "points_as_submitted": 4,
+          "points_with_existing_independent_review": 4,
+          "max_points": 4,
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_01/proofs/R2_R3_proofs.md",
+              "start": 122,
+              "end": 130
+            }
+          ]
+        },
+        {
+          "id": "C5",
+          "points_as_submitted": 2,
+          "points_with_existing_independent_review": 2,
+          "max_points": 2,
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_01/proofs/R2_R3_proofs.md",
+              "start": 132,
+              "end": 135
+            }
+          ]
+        }
+      ],
+      "diagnostics": [
+        {
+          "id": "binary_vs_latent",
+          "label": "Binary occupancy/correction versus latent orientation",
+          "status": "E",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_01/proofs/R2_R3_proofs.md",
+              "start": 3,
+              "end": 6
+            }
+          ]
+        },
+        {
+          "id": "latent_not_decoder_visible",
+          "label": "Orientation conditionalization is only a probability calculation",
+          "status": "E",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_01/proofs/R2_R3_proofs.md",
+              "start": 66,
+              "end": 75
+            }
+          ]
+        },
+        {
+          "id": "difference_component_simple",
+          "label": "Degree 0/2 gives simple cycles/paths and spanning failure witness",
+          "status": "E",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_01/proofs/R2_R3_proofs.md",
+              "start": 103,
+              "end": 106
+            }
+          ]
+        },
+        {
+          "id": "M_local_minimum",
+          "label": "M from current readout is the least compatible same-parity count",
+          "status": "I",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_01/proofs/R2_R3_proofs.md",
+              "start": 62,
+              "end": 75
+            }
+          ]
+        },
+        {
+          "id": "only_11_needs_hiding",
+          "label": "Not every path vertex must hide; only actual 11 removal forces hidden pair",
+          "status": "E",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_01/proofs/R2_R3_proofs.md",
+              "start": 114,
+              "end": 115
+            }
+          ]
+        },
+        {
+          "id": "necessary_not_sufficient_auxiliary_scope",
+          "label": "Hiding necessary, not sufficient; tied to constructed auxiliary/channel feasibility",
+          "status": "E",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_01/proofs/R2_R3_proofs.md",
+              "start": 100,
+              "end": 115
+            }
+          ]
+        },
+        {
+          "id": "decoder_selection_condition",
+          "label": "Likelihood/score/Chernoff selection condition retained",
+          "status": "E",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_01/proofs/R2_R3_proofs.md",
+              "start": 107,
+              "end": 112
+            }
+          ]
+        },
+        {
+          "id": "orientation_matrix_states",
+          "label": "Latent +/- arrow matrix and endpoint normalization",
+          "status": "NA",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_01/proofs/R2_R3_proofs.md",
+              "start": 97,
+              "end": 98
+            }
+          ],
+          "note": "Valid orientation-blind stochastic garbling removes arrows before the proof; no missing-method penalty."
+        },
+        {
+          "id": "occupancy_matrix_states",
+          "label": "0/1 occupancy matrix or equivalent binary sequence sum",
+          "status": "E",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_01/proofs/R2_R3_proofs.md",
+              "start": 118,
+              "end": 120
+            }
+          ]
+        },
+        {
+          "id": "side_edges_chords",
+          "label": "Shared off-path edges/chords handled",
+          "status": "E",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_01/proofs/R2_R3_proofs.md",
+              "start": 116,
+              "end": 119
+            }
+          ]
+        },
+        {
+          "id": "average_risk",
+          "label": "Optimal <= auxiliary comparison is average risk",
+          "status": "E",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_01/proofs/R2_R3_proofs.md",
+              "start": 9,
+              "end": 14
+            }
+          ]
+        },
+        {
+          "id": "upper_bound_not_critical_exponent",
+          "label": "Sufficient exponential upper bound is not true critical scaling/phase boundary",
+          "status": "E",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_01/proofs/R2_R3_proofs.md",
+              "start": 132,
+              "end": 135
+            }
+          ]
+        },
+        {
+          "id": "four_element_arrow_diagrams",
+          "label": "Pedagogic figures for all arrow matrix elements",
+          "status": "M",
+          "evidence": [],
+          "note": "Later pedagogic request, not an original deliverable requirement. Prior chat a/b notation conflict is not attributable to these runs."
+        }
+      ]
+    },
+    {
+      "run": "Opus02",
+      "N0": 15,
+      "theorem_status": "supported",
+      "method": "Randomized degree garbling; injective polymer posterior-ratio bound; fractional moment; occupancy transfer; interval certificate.",
+      "total_as_submitted": 20,
+      "total_with_existing_independent_review": 20,
+      "criteria": [
+        {
+          "id": "C1",
+          "points_as_submitted": 3,
+          "points_with_existing_independent_review": 3,
+          "max_points": 3,
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_02/report/03_large_N.md",
+              "start": 1,
+              "end": 6
+            }
+          ]
+        },
+        {
+          "id": "C2",
+          "points_as_submitted": 5,
+          "points_with_existing_independent_review": 5,
+          "max_points": 5,
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_02/report/03_large_N.md",
+              "start": 8,
+              "end": 17
+            }
+          ]
+        },
+        {
+          "id": "C3",
+          "points_as_submitted": 6,
+          "points_with_existing_independent_review": 6,
+          "max_points": 6,
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_02/report/03_large_N.md",
+              "start": 19,
+              "end": 24
+            }
+          ]
+        },
+        {
+          "id": "C4",
+          "points_as_submitted": 4,
+          "points_with_existing_independent_review": 4,
+          "max_points": 4,
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_02/report/03_large_N.md",
+              "start": 26,
+              "end": 33
+            }
+          ]
+        },
+        {
+          "id": "C5",
+          "points_as_submitted": 2,
+          "points_with_existing_independent_review": 2,
+          "max_points": 2,
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_02/report/03_large_N.md",
+              "start": 39,
+              "end": 40
+            }
+          ]
+        }
+      ],
+      "diagnostics": [
+        {
+          "id": "binary_vs_latent",
+          "label": "Binary occupancy/correction versus latent orientation",
+          "status": "E",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_02/report/02_exact_structure.md",
+              "start": 3,
+              "end": 6
+            }
+          ]
+        },
+        {
+          "id": "latent_not_decoder_visible",
+          "label": "Orientation conditionalization is only a probability calculation",
+          "status": "E",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_02/report/03_large_N.md",
+              "start": 5,
+              "end": 8
+            }
+          ]
+        },
+        {
+          "id": "difference_component_simple",
+          "label": "Degree 0/2 gives simple cycles/paths and spanning failure witness",
+          "status": "E",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_02/report/03_large_N.md",
+              "start": 8,
+              "end": 13
+            }
+          ]
+        },
+        {
+          "id": "M_local_minimum",
+          "label": "M from current readout is the least compatible same-parity count",
+          "status": "I",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_02/report/03_large_N.md",
+              "start": 19,
+              "end": 21
+            }
+          ]
+        },
+        {
+          "id": "only_11_needs_hiding",
+          "label": "Not every path vertex must hide; only actual 11 removal forces hidden pair",
+          "status": "E",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_02/report/03_large_N.md",
+              "start": 19,
+              "end": 21
+            }
+          ]
+        },
+        {
+          "id": "necessary_not_sufficient_auxiliary_scope",
+          "label": "Hiding necessary, not sufficient; tied to constructed auxiliary/channel feasibility",
+          "status": "E",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_02/report/03_large_N.md",
+              "start": 15,
+              "end": 24
+            }
+          ]
+        },
+        {
+          "id": "decoder_selection_condition",
+          "label": "Likelihood/score/Chernoff selection condition retained",
+          "status": "E",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_02/report/03_large_N.md",
+              "start": 15,
+              "end": 24
+            }
+          ]
+        },
+        {
+          "id": "orientation_matrix_states",
+          "label": "Latent +/- arrow matrix and endpoint normalization",
+          "status": "NA",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_02/report/03_large_N.md",
+              "start": 8,
+              "end": 8
+            }
+          ],
+          "note": "Valid orientation-blind stochastic garbling removes arrows before the proof; no missing-method penalty."
+        },
+        {
+          "id": "occupancy_matrix_states",
+          "label": "0/1 occupancy matrix or equivalent binary sequence sum",
+          "status": "E",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_02/report/03_large_N.md",
+              "start": 19,
+              "end": 24
+            }
+          ]
+        },
+        {
+          "id": "side_edges_chords",
+          "label": "Shared off-path edges/chords handled",
+          "status": "E",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_02/report/03_large_N.md",
+              "start": 22,
+              "end": 24
+            }
+          ]
+        },
+        {
+          "id": "average_risk",
+          "label": "Optimal <= auxiliary comparison is average risk",
+          "status": "E",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_02/report/03_large_N.md",
+              "start": 15,
+              "end": 17
+            }
+          ]
+        },
+        {
+          "id": "upper_bound_not_critical_exponent",
+          "label": "Sufficient exponential upper bound is not true critical scaling/phase boundary",
+          "status": "E",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_02/report/03_large_N.md",
+              "start": 33,
+              "end": 40
+            }
+          ]
+        },
+        {
+          "id": "four_element_arrow_diagrams",
+          "label": "Pedagogic figures for all arrow matrix elements",
+          "status": "M",
+          "evidence": [],
+          "note": "Later pedagogic request, not an original deliverable requirement. Prior chat a/b notation conflict is not attributable to these runs."
+        }
+      ]
+    },
+    {
+      "run": "Opus03",
+      "N0": 15,
+      "theorem_status": "supported",
+      "method": "Randomized degree garbling; MAP configuration; Bhattacharyya; sum occupancy first then side-edge grouping.",
+      "total_as_submitted": 19,
+      "total_with_existing_independent_review": 20,
+      "criteria": [
+        {
+          "id": "C1",
+          "points_as_submitted": 3,
+          "points_with_existing_independent_review": 3,
+          "max_points": 3,
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_03/docs/proofs.md",
+              "start": 134,
+              "end": 158
+            }
+          ]
+        },
+        {
+          "id": "C2",
+          "points_as_submitted": 5,
+          "points_with_existing_independent_review": 5,
+          "max_points": 5,
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_03/docs/proofs.md",
+              "start": 163,
+              "end": 179
+            }
+          ]
+        },
+        {
+          "id": "C3",
+          "points_as_submitted": 6,
+          "points_with_existing_independent_review": 6,
+          "max_points": 6,
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_03/docs/proofs.md",
+              "start": 181,
+              "end": 197
+            }
+          ]
+        },
+        {
+          "id": "C4",
+          "points_as_submitted": 3,
+          "points_with_existing_independent_review": 4,
+          "max_points": 4,
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_03/docs/proofs.md",
+              "start": 199,
+              "end": 211
+            }
+          ],
+          "note": "Original scripts/r3_bound.py:31-37 uses grid plus floating scipy optimization, without certified global upper bound. Existing review later supplied rational interval cover."
+        },
+        {
+          "id": "C5",
+          "points_as_submitted": 2,
+          "points_with_existing_independent_review": 2,
+          "max_points": 2,
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_03/docs/proofs.md",
+              "start": 218,
+              "end": 223
+            }
+          ]
+        }
+      ],
+      "diagnostics": [
+        {
+          "id": "binary_vs_latent",
+          "label": "Binary occupancy/correction versus latent orientation",
+          "status": "E",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_03/docs/sec_model.md",
+              "start": 10,
+              "end": 26
+            }
+          ]
+        },
+        {
+          "id": "latent_not_decoder_visible",
+          "label": "Orientation conditionalization is only a probability calculation",
+          "status": "E",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_03/docs/proofs.md",
+              "start": 138,
+              "end": 161
+            }
+          ]
+        },
+        {
+          "id": "difference_component_simple",
+          "label": "Degree 0/2 gives simple cycles/paths and spanning failure witness",
+          "status": "E",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_03/docs/proofs.md",
+              "start": 166,
+              "end": 171
+            }
+          ]
+        },
+        {
+          "id": "M_local_minimum",
+          "label": "M from current readout is the least compatible same-parity count",
+          "status": "I",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_03/docs/proofs.md",
+              "start": 138,
+              "end": 158
+            }
+          ]
+        },
+        {
+          "id": "only_11_needs_hiding",
+          "label": "Not every path vertex must hide; only actual 11 removal forces hidden pair",
+          "status": "E",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_03/docs/proofs.md",
+              "start": 184,
+              "end": 188
+            }
+          ]
+        },
+        {
+          "id": "necessary_not_sufficient_auxiliary_scope",
+          "label": "Hiding necessary, not sufficient; tied to constructed auxiliary/channel feasibility",
+          "status": "E",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_03/docs/proofs.md",
+              "start": 163,
+              "end": 188
+            }
+          ]
+        },
+        {
+          "id": "decoder_selection_condition",
+          "label": "Likelihood/score/Chernoff selection condition retained",
+          "status": "E",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_03/docs/proofs.md",
+              "start": 173,
+              "end": 184
+            }
+          ]
+        },
+        {
+          "id": "orientation_matrix_states",
+          "label": "Latent +/- arrow matrix and endpoint normalization",
+          "status": "NA",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_03/docs/proofs.md",
+              "start": 158,
+              "end": 161
+            }
+          ],
+          "note": "Valid orientation-blind stochastic garbling removes arrows before the proof; no missing-method penalty."
+        },
+        {
+          "id": "occupancy_matrix_states",
+          "label": "0/1 occupancy matrix or equivalent binary sequence sum",
+          "status": "E",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_03/docs/proofs.md",
+              "start": 186,
+              "end": 194
+            }
+          ]
+        },
+        {
+          "id": "side_edges_chords",
+          "label": "Shared off-path edges/chords handled",
+          "status": "E",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_03/docs/proofs.md",
+              "start": 190,
+              "end": 196
+            }
+          ]
+        },
+        {
+          "id": "average_risk",
+          "label": "Optimal <= auxiliary comparison is average risk",
+          "status": "E",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_03/docs/proofs.md",
+              "start": 163,
+              "end": 164
+            }
+          ]
+        },
+        {
+          "id": "upper_bound_not_critical_exponent",
+          "label": "Sufficient exponential upper bound is not true critical scaling/phase boundary",
+          "status": "E",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_03/docs/proofs.md",
+              "start": 218,
+              "end": 223
+            }
+          ]
+        },
+        {
+          "id": "four_element_arrow_diagrams",
+          "label": "Pedagogic figures for all arrow matrix elements",
+          "status": "M",
+          "evidence": [],
+          "note": "Later pedagogic request, not an original deliverable requirement. Prior chat a/b notation conflict is not attributable to these runs."
+        }
+      ]
+    },
+    {
+      "run": "GPT01",
+      "N0": 13,
+      "theorem_status": "supported",
+      "method": "Direct irrep coarse counts; parity-weighted auxiliary decoder; latent orientation matrix norms; chord grouping; occupancy sum; 3-piece rational certificate.",
+      "total_as_submitted": 20,
+      "total_with_existing_independent_review": 20,
+      "criteria": [
+        {
+          "id": "C1",
+          "points_as_submitted": 3,
+          "points_with_existing_independent_review": 3,
+          "max_points": 3,
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_01/proofs.md",
+              "start": 194,
+              "end": 205
+            }
+          ]
+        },
+        {
+          "id": "C2",
+          "points_as_submitted": 5,
+          "points_with_existing_independent_review": 5,
+          "max_points": 5,
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_01/proofs.md",
+              "start": 104,
+              "end": 125
+            }
+          ]
+        },
+        {
+          "id": "C3",
+          "points_as_submitted": 6,
+          "points_with_existing_independent_review": 6,
+          "max_points": 6,
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_01/proofs.md",
+              "start": 142,
+              "end": 192
+            }
+          ]
+        },
+        {
+          "id": "C4",
+          "points_as_submitted": 4,
+          "points_with_existing_independent_review": 4,
+          "max_points": 4,
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_01/proofs.md",
+              "start": 132,
+              "end": 138
+            }
+          ]
+        },
+        {
+          "id": "C5",
+          "points_as_submitted": 2,
+          "points_with_existing_independent_review": 2,
+          "max_points": 2,
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_01/proofs.md",
+              "start": 208,
+              "end": 212
+            }
+          ]
+        }
+      ],
+      "diagnostics": [
+        {
+          "id": "binary_vs_latent",
+          "label": "Binary occupancy/correction versus latent orientation",
+          "status": "E",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_01/proofs.md",
+              "start": 70,
+              "end": 77
+            }
+          ]
+        },
+        {
+          "id": "latent_not_decoder_visible",
+          "label": "Orientation conditionalization is only a probability calculation",
+          "status": "E",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_01/proofs.md",
+              "start": 155,
+              "end": 168
+            }
+          ]
+        },
+        {
+          "id": "difference_component_simple",
+          "label": "Degree 0/2 gives simple cycles/paths and spanning failure witness",
+          "status": "E",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_01/proofs.md",
+              "start": 7,
+              "end": 18
+            }
+          ]
+        },
+        {
+          "id": "M_local_minimum",
+          "label": "M from current readout is the least compatible same-parity count",
+          "status": "E",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_01/proofs.md",
+              "start": 106,
+              "end": 116
+            }
+          ]
+        },
+        {
+          "id": "only_11_needs_hiding",
+          "label": "Not every path vertex must hide; only actual 11 removal forces hidden pair",
+          "status": "E",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_01/proofs.md",
+              "start": 119,
+              "end": 129
+            }
+          ]
+        },
+        {
+          "id": "necessary_not_sufficient_auxiliary_scope",
+          "label": "Hiding necessary, not sufficient; tied to constructed auxiliary/channel feasibility",
+          "status": "E",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_01/proofs.md",
+              "start": 112,
+              "end": 138
+            }
+          ]
+        },
+        {
+          "id": "decoder_selection_condition",
+          "label": "Likelihood/score/Chernoff selection condition retained",
+          "status": "E",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_01/proofs.md",
+              "start": 119,
+              "end": 129
+            }
+          ]
+        },
+        {
+          "id": "orientation_matrix_states",
+          "label": "Latent +/- arrow matrix and endpoint normalization",
+          "status": "E",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_01/proofs.md",
+              "start": 155,
+              "end": 168
+            }
+          ]
+        },
+        {
+          "id": "occupancy_matrix_states",
+          "label": "0/1 occupancy matrix or equivalent binary sequence sum",
+          "status": "I",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_01/proofs.md",
+              "start": 125,
+              "end": 129
+            }
+          ]
+        },
+        {
+          "id": "side_edges_chords",
+          "label": "Shared off-path edges/chords handled",
+          "status": "E",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_01/proofs.md",
+              "start": 179,
+              "end": 192
+            }
+          ]
+        },
+        {
+          "id": "average_risk",
+          "label": "Optimal <= auxiliary comparison is average risk",
+          "status": "E",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_01/proofs.md",
+              "start": 138,
+              "end": 138
+            }
+          ]
+        },
+        {
+          "id": "upper_bound_not_critical_exponent",
+          "label": "Sufficient exponential upper bound is not true critical scaling/phase boundary",
+          "status": "E",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_01/proofs.md",
+              "start": 208,
+              "end": 212
+            }
+          ]
+        },
+        {
+          "id": "four_element_arrow_diagrams",
+          "label": "Pedagogic figures for all arrow matrix elements",
+          "status": "M",
+          "evidence": [],
+          "note": "Later pedagogic request, not an original deliverable requirement. Prior chat a/b notation conflict is not attributable to these runs."
+        }
+      ]
+    },
+    {
+      "run": "GPT02",
+      "N0": 13,
+      "theorem_status": "supported",
+      "method": "Min/max cardinality auxiliary; orientation norms and Chernoff; refined positive cycle expansion, Ihara-Bass and analytic tail gives N13.",
+      "total_as_submitted": 20,
+      "total_with_existing_independent_review": 20,
+      "criteria": [
+        {
+          "id": "C1",
+          "points_as_submitted": 3,
+          "points_with_existing_independent_review": 3,
+          "max_points": 3,
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_02/proofs.md",
+              "start": 130,
+              "end": 145
+            }
+          ]
+        },
+        {
+          "id": "C2",
+          "points_as_submitted": 5,
+          "points_with_existing_independent_review": 5,
+          "max_points": 5,
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_02/proofs.md",
+              "start": 138,
+              "end": 147
+            }
+          ]
+        },
+        {
+          "id": "C3",
+          "points_as_submitted": 6,
+          "points_with_existing_independent_review": 6,
+          "max_points": 6,
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_02/proofs.md",
+              "start": 149,
+              "end": 203
+            }
+          ]
+        },
+        {
+          "id": "C4",
+          "points_as_submitted": 4,
+          "points_with_existing_independent_review": 4,
+          "max_points": 4,
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_02/proofs.md",
+              "start": 208,
+              "end": 219
+            }
+          ]
+        },
+        {
+          "id": "C5",
+          "points_as_submitted": 2,
+          "points_with_existing_independent_review": 2,
+          "max_points": 2,
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_02/proofs.md",
+              "start": 219,
+              "end": 219
+            }
+          ]
+        }
+      ],
+      "diagnostics": [
+        {
+          "id": "binary_vs_latent",
+          "label": "Binary occupancy/correction versus latent orientation",
+          "status": "E",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_02/proofs.md",
+              "start": 108,
+              "end": 116
+            }
+          ]
+        },
+        {
+          "id": "latent_not_decoder_visible",
+          "label": "Orientation conditionalization is only a probability calculation",
+          "status": "E",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_02/proofs.md",
+              "start": 145,
+              "end": 153
+            }
+          ]
+        },
+        {
+          "id": "difference_component_simple",
+          "label": "Degree 0/2 gives simple cycles/paths and spanning failure witness",
+          "status": "E",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_02/proofs.md",
+              "start": 145,
+              "end": 147
+            }
+          ]
+        },
+        {
+          "id": "M_local_minimum",
+          "label": "M from current readout is the least compatible same-parity count",
+          "status": "E",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_02/proofs.md",
+              "start": 130,
+              "end": 136
+            }
+          ]
+        },
+        {
+          "id": "only_11_needs_hiding",
+          "label": "Not every path vertex must hide; only actual 11 removal forces hidden pair",
+          "status": "E",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_02/proofs.md",
+              "start": 147,
+              "end": 147
+            }
+          ]
+        },
+        {
+          "id": "necessary_not_sufficient_auxiliary_scope",
+          "label": "Hiding necessary, not sufficient; tied to constructed auxiliary/channel feasibility",
+          "status": "E",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_02/proofs.md",
+              "start": 138,
+              "end": 147
+            }
+          ]
+        },
+        {
+          "id": "decoder_selection_condition",
+          "label": "Likelihood/score/Chernoff selection condition retained",
+          "status": "E",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_02/proofs.md",
+              "start": 190,
+              "end": 203
+            }
+          ]
+        },
+        {
+          "id": "orientation_matrix_states",
+          "label": "Latent +/- arrow matrix and endpoint normalization",
+          "status": "E",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_02/proofs.md",
+              "start": 149,
+              "end": 173
+            }
+          ]
+        },
+        {
+          "id": "occupancy_matrix_states",
+          "label": "0/1 occupancy matrix or equivalent binary sequence sum",
+          "status": "E",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_02/proofs.md",
+              "start": 190,
+              "end": 203
+            }
+          ]
+        },
+        {
+          "id": "side_edges_chords",
+          "label": "Shared off-path edges/chords handled",
+          "status": "E",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_02/proofs.md",
+              "start": 175,
+              "end": 188
+            }
+          ]
+        },
+        {
+          "id": "average_risk",
+          "label": "Optimal <= auxiliary comparison is average risk",
+          "status": "E",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_02/proofs.md",
+              "start": 145,
+              "end": 145
+            }
+          ]
+        },
+        {
+          "id": "upper_bound_not_critical_exponent",
+          "label": "Sufficient exponential upper bound is not true critical scaling/phase boundary",
+          "status": "E",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_02/proofs.md",
+              "start": 219,
+              "end": 219
+            }
+          ]
+        },
+        {
+          "id": "four_element_arrow_diagrams",
+          "label": "Pedagogic figures for all arrow matrix elements",
+          "status": "M",
+          "evidence": [],
+          "note": "Later pedagogic request, not an original deliverable requirement. Prior chat a/b notation conflict is not attributable to these runs."
+        }
+      ],
+      "additional_evidence": [
+        {
+          "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_02/large_N_13.md",
+          "start": 132,
+          "end": 173,
+          "role": "Final N13 uniform certificate"
+        },
+        {
+          "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_02/large_N_13.md",
+          "start": 26,
+          "end": 130,
+          "role": "Orientation cycle correlations and analytic certificate"
+        }
+      ]
+    },
+    {
+      "run": "GPT03",
+      "N0": 14,
+      "theorem_status": "supported",
+      "method": "Minimum-cardinality coarse-count decoder; bipartite Cauchy-Schwarz handles correlated readouts/chords; occupancy Chernoff transfer; rational N14 certificate.",
+      "total_as_submitted": 20,
+      "total_with_existing_independent_review": 20,
+      "criteria": [
+        {
+          "id": "C1",
+          "points_as_submitted": 3,
+          "points_with_existing_independent_review": 3,
+          "max_points": 3,
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_03/proofs.md",
+              "start": 189,
+              "end": 222
+            }
+          ]
+        },
+        {
+          "id": "C2",
+          "points_as_submitted": 5,
+          "points_with_existing_independent_review": 5,
+          "max_points": 5,
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_03/proofs.md",
+              "start": 213,
+              "end": 225
+            }
+          ]
+        },
+        {
+          "id": "C3",
+          "points_as_submitted": 6,
+          "points_with_existing_independent_review": 6,
+          "max_points": 6,
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_03/proofs.md",
+              "start": 227,
+              "end": 275
+            }
+          ]
+        },
+        {
+          "id": "C4",
+          "points_as_submitted": 4,
+          "points_with_existing_independent_review": 4,
+          "max_points": 4,
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_03/proofs.md",
+              "start": 278,
+              "end": 312
+            }
+          ]
+        },
+        {
+          "id": "C5",
+          "points_as_submitted": 2,
+          "points_with_existing_independent_review": 2,
+          "max_points": 2,
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_03/proofs.md",
+              "start": 313,
+              "end": 315
+            }
+          ]
+        }
+      ],
+      "diagnostics": [
+        {
+          "id": "binary_vs_latent",
+          "label": "Binary occupancy/correction versus latent orientation",
+          "status": "E",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_03/proofs.md",
+              "start": 3,
+              "end": 6
+            }
+          ]
+        },
+        {
+          "id": "latent_not_decoder_visible",
+          "label": "Orientation conditionalization is only a probability calculation",
+          "status": "E",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_03/proofs.md",
+              "start": 194,
+              "end": 225
+            }
+          ]
+        },
+        {
+          "id": "difference_component_simple",
+          "label": "Degree 0/2 gives simple cycles/paths and spanning failure witness",
+          "status": "E",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_03/proofs.md",
+              "start": 8,
+              "end": 18
+            }
+          ]
+        },
+        {
+          "id": "M_local_minimum",
+          "label": "M from current readout is the least compatible same-parity count",
+          "status": "E",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_03/proofs.md",
+              "start": 194,
+              "end": 205
+            }
+          ]
+        },
+        {
+          "id": "only_11_needs_hiding",
+          "label": "Not every path vertex must hide; only actual 11 removal forces hidden pair",
+          "status": "E",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_03/proofs.md",
+              "start": 219,
+              "end": 225
+            }
+          ]
+        },
+        {
+          "id": "necessary_not_sufficient_auxiliary_scope",
+          "label": "Hiding necessary, not sufficient; tied to constructed auxiliary/channel feasibility",
+          "status": "E",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_03/proofs.md",
+              "start": 213,
+              "end": 225
+            }
+          ]
+        },
+        {
+          "id": "decoder_selection_condition",
+          "label": "Likelihood/score/Chernoff selection condition retained",
+          "status": "E",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_03/proofs.md",
+              "start": 253,
+              "end": 275
+            }
+          ]
+        },
+        {
+          "id": "orientation_matrix_states",
+          "label": "Latent +/- arrow matrix and endpoint normalization",
+          "status": "NA",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_03/proofs.md",
+              "start": 227,
+              "end": 252
+            }
+          ],
+          "note": "Valid bipartite second-moment method avoids an arrow transfer matrix."
+        },
+        {
+          "id": "occupancy_matrix_states",
+          "label": "0/1 occupancy matrix or equivalent binary sequence sum",
+          "status": "E",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_03/proofs.md",
+              "start": 253,
+              "end": 275
+            }
+          ]
+        },
+        {
+          "id": "side_edges_chords",
+          "label": "Shared off-path edges/chords handled",
+          "status": "E",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_03/proofs.md",
+              "start": 227,
+              "end": 252
+            }
+          ]
+        },
+        {
+          "id": "average_risk",
+          "label": "Optimal <= auxiliary comparison is average risk",
+          "status": "E",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_03/proofs.md",
+              "start": 189,
+              "end": 192
+            }
+          ]
+        },
+        {
+          "id": "upper_bound_not_critical_exponent",
+          "label": "Sufficient exponential upper bound is not true critical scaling/phase boundary",
+          "status": "E",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_03/proofs.md",
+              "start": 313,
+              "end": 315
+            }
+          ]
+        },
+        {
+          "id": "four_element_arrow_diagrams",
+          "label": "Pedagogic figures for all arrow matrix elements",
+          "status": "M",
+          "evidence": [],
+          "note": "Later pedagogic request, not an original deliverable requirement. Prior chat a/b notation conflict is not attributable to these runs."
+        }
+      ]
+    }
+  ],
+  "standard_proof": {
+    "N0": 13,
+    "preferred_source": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_01/proofs.md",
+    "start": 104,
+    "end": 208,
+    "mu": "sqrt(2+sqrt(2))",
+    "eta": "sqrt((1-p)/2+p*(1+sqrt(5))/2)/N",
+    "rho": "sqrt(p*(1-p))*(1+eta)",
+    "criterion": "mu*rho<1",
+    "risk_upper_bound": "constant*L*r^(2*L-1)/(1-r), r=(mu+epsilon)*rho<1",
+    "scope": "All fixed p in [0,1], all N>=13; endpoints deterministic; averaged Bayes risk; sufficient not minimal."
+  },
+  "fairness_notes": [
+    "Valid alternative methods receive full correctness credit; no mandatory arrow matrix.",
+    "Smaller valid N0 is separately reported proof strength, not failure for larger sufficient N0.",
+    "Detailed tutoring illustrations were not original deliverables.",
+    "Reviewer certificates may support theorem correctness without retroactively belonging to the original submission."
+  ]
+}

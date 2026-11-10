@@ -1,0 +1,1044 @@
+{
+  "audit_version": "posthoc-reference-v1",
+  "scope": "R1 plus R2 model/information structure, no formal difficulty calibration",
+  "source_root": "/Users/home/Downloads/20261014-102308_d89b765a/",
+  "score_status": "recommended local post-hoc analytic scores; root may integrate into full100 rubric",
+  "criteria": {
+    "A1": {
+      "max": 5,
+      "criterion": "R1 covers all 21 record/N cells and supplies combined phase figure; correct unresolved entries count as coverage."
+    },
+    "A2": {
+      "max": 8,
+      "criterion": "Phase assignments are justified by increasing two-dimensional sizes, fit/crossover sensitivity, and do not turn slow drift into a settled asymptotic limit."
+    },
+    "A3": {
+      "max": 8,
+      "criterion": "Statistical, finite-size and approximation/rounding uncertainty are separated; approximation robustness claim supported rather than inferred from two approximations agreeing."
+    },
+    "A4": {
+      "max": 5,
+      "criterion": "Exact theorem, sufficient bound, numerical phase inference and unresolved region distinguished; failed sufficient inequality not interpreted as nondecodability."
+    },
+    "A5": {
+      "max": 4,
+      "criterion": "Equivalent-channel rows and information inclusions are consistent, including treatment of Z4 high-noise apparent reversals and lack of enriched complement symmetry."
+    },
+    "B1": {
+      "max": 4,
+      "criterion": "Noise, geometry, syndrome, sectors and average risk defined consistently."
+    },
+    "B2": {
+      "max": 4,
+      "criterion": "Data processing proves same-N information order; any cross-N order used is justified, not presumed by increasing N."
+    },
+    "B3": {
+      "max": 5,
+      "criterion": "O1 parity/CRT equivalences and full integer-charge saturation including N5 are derived; mod4 vs mod6 kept distinct."
+    },
+    "B4": {
+      "max": 2,
+      "criterion": "Low-rank SU(2) V≅Vbar and irrep count laws handled correctly where used."
+    }
+  },
+  "runs": [
+    {
+      "id": "Fable03",
+      "report": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-fable-5-1/run_03/report.md",
+      "coverage_cells": 21,
+      "unresolved_cells": 0,
+      "R3_N0": 19,
+      "scores": {
+        "A1": 5,
+        "A2": 4,
+        "A3": 7,
+        "A4": 5,
+        "A5": 4,
+        "B1": 4,
+        "B2": 4,
+        "B3": 5,
+        "B4": 2
+      },
+      "score_rationales": {
+        "A1": "21/21 cells, combined figure and endpoint allowances supplied.",
+        "A2": "Substantial exact-posterior size data (binary L≤16; ternary L≤12) and crossing variants. Central charge nondecodability promoted from slowing drift/positive-limit fits although a long decay length remains explicitly possible; unresolved would have been supported.",
+        "A3": "Exact contraction removes bond approximation and statistical/finite-size errors are separated. Central classification model uncertainty is larger than endpoint brackets alone represent.",
+        "A4": "N0=19 sufficient theorem clearly separated from N≥3 numerical inference. No penalty for larger valid N0.",
+        "A5": "Equivalences, ordering checks and high/low Z4 asymmetry explicit. Tiny nominal low-p reversal versus integer charge lies well inside broad allowances and is not evidence of true inclusion failure.",
+        "B1_B4": "Primary derivations plus independent posterior checks support the exact model and structural properties."
+      },
+      "subtotal_max": 45,
+      "subtotal": 40,
+      "diagnostics": {
+        "phase_strength": {
+          "status": "insufficient_evidence",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-fable-5-1/run_03/report.md",
+              "line": 213,
+              "claim": "Positive-limit fit at L≤12 used for central phase."
+            },
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-fable-5-1/run_03/report.md",
+              "line": 219,
+              "claim": "Exponential decay with length ≥50 explicitly not excluded."
+            },
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-fable-5-1/run_03/report.md",
+              "line": 311,
+              "claim": "Final text nevertheless calls central charge region a critical phase."
+            }
+          ]
+        },
+        "charge_equivalence": {
+          "status": "explicit_correct",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-fable-5-1/run_03/docs/theory.md",
+              "line": 69,
+              "claim": "CRT table and integer-charge equivalence; N5 already exact."
+            },
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-fable-5-1/run_03/docs/theory.md",
+              "line": 82,
+              "claim": "Full information order and mod4/mod6 incomparability."
+            }
+          ]
+        },
+        "information_nesting": {
+          "status": "explicit_correct",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-fable-5-1/run_03/docs/theory.md",
+              "line": 18,
+              "claim": "Bayes data-processing proof."
+            },
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-fable-5-1/run_03/report.md",
+              "line": 128,
+              "claim": "Numerical same-N and equivalence checks."
+            }
+          ]
+        },
+        "z4_feature": {
+          "status": "explicit_partial_mechanism",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-fable-5-1/run_03/report.md",
+              "line": 190,
+              "claim": "Both Z4 finite-size endpoints assessed."
+            },
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-fable-5-1/run_03/report.md",
+              "line": 201,
+              "claim": "Z4 adds little at high p but more at low p; no exact active-component explanation here."
+            }
+          ]
+        },
+        "enriched_complement_symmetry": {
+          "status": "correct_scope_implicit",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-fable-5-1/run_03/docs/theory.md",
+              "line": 33,
+              "claim": "Complement theorem proved only for O0."
+            },
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-fable-5-1/run_03/report.md",
+              "line": 187,
+              "claim": "O2 N2 asymmetry explicitly discussed."
+            }
+          ]
+        },
+        "largeN_vs_phase": {
+          "status": "explicit_correct",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-fable-5-1/run_03/report.md",
+              "line": 36,
+              "claim": "N19 theorem distinguished from N3 numerical claim."
+            }
+          ]
+        },
+        "SU2": {
+          "status": "explicit_correct",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-fable-5-1/run_03/docs/theory.md",
+              "line": 94,
+              "claim": "SU2 orientation-blind proposition."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "Opus01",
+      "report": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_01/report.md",
+      "coverage_cells": 21,
+      "unresolved_cells": 0,
+      "R3_N0": 15,
+      "scores": {
+        "A1": 5,
+        "A2": 5,
+        "A3": 3,
+        "A4": 5,
+        "A5": 4,
+        "B1": 4,
+        "B2": 4,
+        "B3": 5,
+        "B4": 2
+      },
+      "score_rationales": {
+        "A1": "All 21 entries and joint figure supplied.",
+        "A2": "Growing 2D data reach L≈48 with valuable log-odds diagnostics, but slow central charge drift does not establish zero limit; the proposed pinning/gapping of the clean loop-model critical phase is a physical interpretation, not a demonstrated exclusion of every positive limiting risk.",
+        "A3": "Error sources listed and substantial χ studies performed; agreement of two truncations is not an upper bound against exact contraction, so asserted phase robustness is unsupported.",
+        "A4": "Finite-N assignments described as numerical and N15 theorem separated; larger valid N0 not a defect.",
+        "A5": "Equivalent rows and nested intervals handled, Z4 high-p near equality recognized; no demanded exact threshold equality.",
+        "B1_B4": "Exact model, information hierarchy, CRT saturation and SU2 laws supported."
+      },
+      "subtotal_max": 45,
+      "subtotal": 37,
+      "diagnostics": {
+        "phase_strength": {
+          "status": "insufficient_evidence",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_01/report.md",
+              "line": 326,
+              "claim": "All-p charge assignment from no plateau and drift."
+            },
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_01/report.md",
+              "line": 329,
+              "claim": "Positive narrow phase not excluded."
+            },
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_01/report.md",
+              "line": 337,
+              "claim": "Typical charges pin/gap clean critical phase proposed as physical picture, not established theorem."
+            }
+          ]
+        },
+        "approximation": {
+          "status": "unsupported_error_bound",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_01/report.md",
+              "line": 82,
+              "claim": "χ64/χ128 posterior comparison is empirical convergence evidence."
+            },
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_01/report.md",
+              "line": 164,
+              "claim": "Observed difference promoted to error bound on R*."
+            }
+          ]
+        },
+        "charge_equivalence": {
+          "status": "explicit_correct",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_01/report.md",
+              "line": 119,
+              "claim": "CRT and saturation classes."
+            },
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_01/report.md",
+              "line": 127,
+              "claim": "Both modular channels degraded from integer charge."
+            }
+          ]
+        },
+        "information_nesting": {
+          "status": "explicit_correct",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_01/report.md",
+              "line": 109,
+              "claim": "Jensen data-processing proof."
+            },
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_01/report.md",
+              "line": 114,
+              "claim": "Center maps O2 to O1."
+            }
+          ]
+        },
+        "z4_feature": {
+          "status": "explicit_partial_mechanism",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_01/report.md",
+              "line": 268,
+              "claim": "High-p crossing shifted/constrained to respect O0 nesting."
+            },
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_01/report.md",
+              "line": 275,
+              "claim": "Charge4 defects proposed to explain central disorder."
+            }
+          ]
+        },
+        "enriched_complement_symmetry": {
+          "status": "correct_scope_implicit",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_01/report.md",
+              "line": 131,
+              "claim": "Complement proof restricted to O0; enriched endpoints independently fitted."
+            }
+          ]
+        },
+        "largeN_vs_phase": {
+          "status": "explicit_correct",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_01/report.md",
+              "line": 503,
+              "claim": "R3 upper bound on smallest N0, not proof numerical N3."
+            }
+          ]
+        },
+        "SU2": {
+          "status": "explicit_correct",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_01/report.md",
+              "line": 140,
+              "claim": "Complete spin table and noisy-degree interpretation."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "Opus02",
+      "report": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_02/REPORT.md",
+      "coverage_cells": 21,
+      "unresolved_cells": 0,
+      "R3_N0": 15,
+      "scores": {
+        "A1": 5,
+        "A2": 5,
+        "A3": 3,
+        "A4": 5,
+        "A5": 4,
+        "B1": 4,
+        "B2": 4,
+        "B3": 5,
+        "B4": 2
+      },
+      "score_rationales": {
+        "A1": "All 21 entries and joint figure supplied.",
+        "A2": "Growing 2D data reach L≈96 with valuable diagnostics, but slow central charge drift does not establish zero limit; Gaussian/BKT argument not derived for this quenched posterior model.",
+        "A3": "Error sources listed and substantial χ studies performed; agreement of two truncations is not an upper bound against exact contraction, so asserted phase robustness is unsupported.",
+        "A4": "Finite-N assignments described as numerical and N15 theorem separated; larger valid N0 not a defect.",
+        "A5": "Equivalent rows and nested intervals handled, Z4 high-p near equality recognized; no demanded exact threshold equality.",
+        "B1_B4": "Exact model, information hierarchy, CRT saturation and SU2 laws supported."
+      },
+      "subtotal_max": 45,
+      "subtotal": 37,
+      "diagnostics": {
+        "phase_strength": {
+          "status": "insufficient_evidence",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_02/REPORT.md",
+              "line": 184,
+              "claim": "Monotone size drift/log odds used as assignment rule."
+            },
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_02/REPORT.md",
+              "line": 247,
+              "claim": "Gaussian/BKT risk≥.45 heuristic promoted to exclusion criterion."
+            },
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_02/REPORT.md",
+              "line": 310,
+              "claim": "R96≈.2 yet all-p classification, positive limit acknowledged possible."
+            }
+          ]
+        },
+        "approximation": {
+          "status": "unsupported_error_bound",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_02/REPORT.md",
+              "line": 301,
+              "claim": "Induced bias claimed at most χ comparison deviation."
+            },
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_02/REPORT.md",
+              "line": 319,
+              "claim": "Acknowledges empirical control rather than prior bounds."
+            }
+          ]
+        },
+        "charge_equivalence": {
+          "status": "explicit_correct",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_02/REPORT.md",
+              "line": 54,
+              "claim": "CRT all classes and integer/modular risk inclusions."
+            }
+          ]
+        },
+        "information_nesting": {
+          "status": "explicit_correct",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_02/REPORT.md",
+              "line": 45,
+              "claim": "Jensen proof."
+            },
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_02/REPORT.md",
+              "line": 86,
+              "claim": "Cross-rank LP comparisons and exceptions disclosed; analytical N≥7 order."
+            }
+          ]
+        },
+        "z4_feature": {
+          "status": "explicit_partial_mechanism",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_02/REPORT.md",
+              "line": 212,
+              "claim": "Low/high asymmetric usefulness and high-p numerical nesting check."
+            },
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_02/REPORT.md",
+              "line": 214,
+              "claim": "Paired same-sample risk nesting checked, tiny high-p gain."
+            }
+          ]
+        },
+        "enriched_complement_symmetry": {
+          "status": "correct_scope_implicit",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_02/REPORT.md",
+              "line": 61,
+              "claim": "Complement theorem O0 only."
+            }
+          ]
+        },
+        "largeN_vs_phase": {
+          "status": "explicit_correct",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_02/REPORT.md",
+              "line": 142,
+              "claim": "No proof below N15; allp low-rank remains numerical."
+            }
+          ]
+        },
+        "SU2": {
+          "status": "explicit_correct",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_02/REPORT.md",
+              "line": 26,
+              "claim": "SU2 orientation-blind degree record included in exact structure."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "Opus03",
+      "report": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_03/report.md",
+      "coverage_cells": 21,
+      "unresolved_cells": 0,
+      "R3_N0": 15,
+      "scores": {
+        "A1": 5,
+        "A2": 5,
+        "A3": 3,
+        "A4": 5,
+        "A5": 4,
+        "B1": 4,
+        "B2": 4,
+        "B3": 5,
+        "B4": 2
+      },
+      "score_rationales": {
+        "A1": "All 21 entries and joint figure supplied.",
+        "A2": "Growing 2D data reach L≈64 with valuable diagnostics, but slow central charge drift does not establish zero limit; Gaussian/BKT argument not derived for this quenched posterior model.",
+        "A3": "Error sources listed and substantial χ studies performed; agreement of two truncations is not an upper bound against exact contraction, so asserted phase robustness is unsupported.",
+        "A4": "Finite-N assignments described as numerical and N15 theorem separated; larger valid N0 not a defect.",
+        "A5": "Equivalent rows and nested intervals handled, Z4 high-p near equality recognized; no demanded exact threshold equality.",
+        "B1_B4": "Exact model, information hierarchy, CRT saturation and SU2 laws supported."
+      },
+      "subtotal_max": 45,
+      "subtotal": 37,
+      "diagnostics": {
+        "phase_strength": {
+          "status": "insufficient_evidence",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_03/report.md",
+              "line": 239,
+              "claim": "All-p charge classification."
+            },
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_03/report.md",
+              "line": 297,
+              "claim": "Gaussian stiffness/risk lower bound remains heuristic."
+            },
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_03/report.md",
+              "line": 373,
+              "claim": "Late rough/glassy crossover explicitly not excluded."
+            }
+          ]
+        },
+        "approximation": {
+          "status": "unsupported_error_bound",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_03/report.md",
+              "line": 355,
+              "claim": "χ64/χ128 max change said to ensure no R1 answer can change."
+            },
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_03/report.md",
+              "line": 391,
+              "claim": "Subset empirical tests, not formal every-sample bound."
+            }
+          ]
+        },
+        "charge_equivalence": {
+          "status": "explicit_correct",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_03/report.md",
+              "line": 489,
+              "claim": "CRT and classes."
+            },
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_03/report.md",
+              "line": 498,
+              "claim": "Integer-charge degradation orders."
+            }
+          ]
+        },
+        "information_nesting": {
+          "status": "explicit_correct",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_03/report.md",
+              "line": 17,
+              "claim": "Same-N nesting."
+            },
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_03/report.md",
+              "line": 540,
+              "claim": "Analytical cross-N≥7 map; no every-consecutive N assertion."
+            }
+          ]
+        },
+        "z4_feature": {
+          "status": "explicit_correct_mechanism",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_03/report.md",
+              "line": 229,
+              "claim": "High-p nesting checked."
+            },
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_03/report.md",
+              "line": 668,
+              "claim": "Exact affine incidence calculation on boundary-connected active components."
+            },
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_03/report.md",
+              "line": 681,
+              "claim": "Z4 retains extra information only at zero-arrival vertices and closed active components."
+            }
+          ]
+        },
+        "enriched_complement_symmetry": {
+          "status": "correct_scope_implicit",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_03/report.md",
+              "line": 480,
+              "claim": "Complement proof O0 only; independently inferred enriched endpoints."
+            }
+          ]
+        },
+        "largeN_vs_phase": {
+          "status": "explicit_correct",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_03/report.md",
+              "line": 654,
+              "claim": "N15 sufficient proof and low-rank numerical statement separated."
+            }
+          ]
+        },
+        "SU2": {
+          "status": "explicit_correct",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/anthropic__claude-opus-5-5/run_03/report.md",
+              "line": 514,
+              "claim": "Spin laws and orientation elimination."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "GPT01",
+      "report": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_01/report.md",
+      "coverage_cells": 21,
+      "unresolved_cells": 11,
+      "R3_N0": 13,
+      "scores": {
+        "A1": 5,
+        "A2": 8,
+        "A3": 8,
+        "A4": 5,
+        "A5": 4,
+        "B1": 4,
+        "B2": 4,
+        "B3": 5,
+        "B4": 2
+      },
+      "score_rationales": {
+        "A1": "All 21 cells present; unresolved+supported bounds fully satisfy allowed output form.",
+        "A2": "Slow charge regimes and small-N O2 deliberately unresolved; positive evidence reported without asserting a thermodynamic limit.",
+        "A3": "No inference truncation; statistical/finite-size/rounding uncertainties separated, perturbation and enumeration checks supplied.",
+        "A4": "Sufficient regions, numerical transitions, theorem and unresolved intervals distinguished.",
+        "A5": "Equivalence and information inclusions used; apparent Z4 high-p reversal treated with uncertainty/order instead of physical anomaly claim.",
+        "B1_B4": "Exact model, data processing, full-charge saturation and SU2 supported."
+      },
+      "subtotal_max": 45,
+      "subtotal": 45,
+      "diagnostics": {
+        "phase_strength": {
+          "status": "explicit_supported_conservative",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_01/report.md",
+              "line": 55,
+              "claim": "Slow central charge decay not promoted to limit."
+            },
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_01/report.md",
+              "line": 86,
+              "claim": "O2 all-p conjecture but corresponding entries unresolved."
+            }
+          ]
+        },
+        "approximation": {
+          "status": "explicit_supported",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_01/report.md",
+              "line": 123,
+              "claim": "Complete contraction, rounding perturbation refits, no truncation."
+            }
+          ]
+        },
+        "charge_equivalence": {
+          "status": "explicit_correct",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_01/proofs.md",
+              "line": 46,
+              "claim": "CRT and full charge classes."
+            },
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_01/proofs.md",
+              "line": 51,
+              "claim": "Integer charge dominates both modular records, no general N order."
+            }
+          ]
+        },
+        "information_nesting": {
+          "status": "explicit_correct",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_01/report.md",
+              "line": 53,
+              "claim": "Numerical low-noise Z4 region transferred to integer charge and appropriate O2 rows."
+            },
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_01/proofs.md",
+              "line": 225,
+              "claim": "Constructive SU(N≥5)→SU3 stochastic comparison."
+            }
+          ]
+        },
+        "z4_feature": {
+          "status": "explicit_correct_mechanism",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_01/report.md",
+              "line": 33,
+              "claim": "Apparent upper boundary reversal lies within allowances; ordering prevails."
+            },
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_01/proofs.md",
+              "line": 256,
+              "claim": "Exact closed-active-component orientation sum, used as independent posterior check."
+            }
+          ]
+        },
+        "enriched_complement_symmetry": {
+          "status": "explicit_correct_scope",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_01/proofs.md",
+              "line": 53,
+              "claim": "No enriched complement symmetry presumed."
+            }
+          ]
+        },
+        "largeN_vs_phase": {
+          "status": "explicit_correct",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_01/report.md",
+              "line": 53,
+              "claim": "Sufficient roots are not estimated thresholds."
+            },
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_01/report.md",
+              "line": 5,
+              "claim": "N13 theorem vs unresolved small-rank phase."
+            }
+          ]
+        },
+        "SU2": {
+          "status": "explicit_correct",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_01/proofs.md",
+              "line": 64,
+              "claim": "SU2 orientation integration, not equivalent to syndrome only."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "GPT02",
+      "report": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_02/report.md",
+      "coverage_cells": 21,
+      "unresolved_cells": 12,
+      "R3_N0": 13,
+      "scores": {
+        "A1": 5,
+        "A2": 8,
+        "A3": 8,
+        "A4": 5,
+        "A5": 4,
+        "B1": 4,
+        "B2": 4,
+        "B3": 5,
+        "B4": 2
+      },
+      "score_rationales": {
+        "A1": "All 21 cells present; unresolved+supported bounds fully satisfy allowed output form.",
+        "A2": "Slow charge regimes and small-N O2 deliberately unresolved; positive evidence reported without asserting a thermodynamic limit.",
+        "A3": "No inference truncation; statistical/finite-size/rounding uncertainties separated, perturbation and enumeration checks supplied.",
+        "A4": "Sufficient regions, numerical transitions, theorem and unresolved intervals distinguished.",
+        "A5": "Equivalence and information inclusions used; apparent Z4 high-p reversal treated with uncertainty/order instead of physical anomaly claim.",
+        "B1_B4": "Exact model, data processing, full-charge saturation and SU2 supported."
+      },
+      "subtotal_max": 45,
+      "subtotal": 45,
+      "diagnostics": {
+        "phase_strength": {
+          "status": "explicit_supported_conservative",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_02/report.md",
+              "line": 51,
+              "claim": "Z4 unstable bootstrap/extrapolation unresolved; slowly varying other charges unresolved."
+            },
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_02/report.md",
+              "line": 70,
+              "claim": "O2 continuum/rare tails not resolved by sampled decay."
+            }
+          ]
+        },
+        "approximation": {
+          "status": "explicit_supported",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_02/report.md",
+              "line": 99,
+              "claim": "No truncation, rounding perturbation refits and separate uncertainty."
+            }
+          ]
+        },
+        "charge_equivalence": {
+          "status": "explicit_correct",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_02/proofs.md",
+              "line": 25,
+              "claim": "Full charge classes and N5 parity resolution."
+            }
+          ]
+        },
+        "information_nesting": {
+          "status": "explicit_correct",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_02/report.md",
+              "line": 75,
+              "claim": "Center-derived same-N order."
+            },
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_02/proofs.md",
+              "line": 89,
+              "claim": "Exact cross-N statistical channels including N5 parity and N6 exception."
+            }
+          ]
+        },
+        "z4_feature": {
+          "status": "explicit_correct_limits",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_02/report.md",
+              "line": 51,
+              "claim": "Z4 high-p estimate must obey nesting; diagnostics lead unresolved, not anomaly claim."
+            },
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_02/proofs.md",
+              "line": 173,
+              "claim": "Z4 all triple arrival counts have M1; worst-case proof special constant."
+            }
+          ]
+        },
+        "enriched_complement_symmetry": {
+          "status": "explicit_counterexample",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_02/proofs.md",
+              "line": 43,
+              "claim": "Exact rational L2 richer-record counterexamples."
+            }
+          ]
+        },
+        "largeN_vs_phase": {
+          "status": "explicit_correct",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_02/proofs.md",
+              "line": 219,
+              "claim": "μρ<1 only sufficient; equality not phase boundary."
+            },
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_02/report.md",
+              "line": 83,
+              "claim": "N13 refined proof."
+            }
+          ]
+        },
+        "SU2": {
+          "status": "explicit_correct",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_02/report.md",
+              "line": 78,
+              "claim": "All low-rank isomorphisms; SU2 occupancy-only."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "GPT03",
+      "report": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_03/report.md",
+      "coverage_cells": 21,
+      "unresolved_cells": 5,
+      "R3_N0": 14,
+      "scores": {
+        "A1": 5,
+        "A2": 7,
+        "A3": 8,
+        "A4": 5,
+        "A5": 4,
+        "B1": 4,
+        "B2": 4,
+        "B3": 5,
+        "B4": 2
+      },
+      "score_rationales": {
+        "A1": "All 21 cells present; unresolved+supported bounds fully satisfy allowed output form.",
+        "A2": "Increasing exact-posterior sizes support small-N O2 all-p inference, explicitly numerical; finite-grid/late-crossover limitation remains. Central charge properly unresolved.",
+        "A3": "No inference truncation; statistical/finite-size/rounding uncertainties separated, perturbation and enumeration checks supplied.",
+        "A4": "Sufficient regions, numerical transitions, theorem and unresolved intervals distinguished.",
+        "A5": "Equivalence and information inclusions used; apparent Z4 high-p reversal treated with uncertainty/order instead of physical anomaly claim.",
+        "B1_B4": "Exact model, data processing, full-charge saturation and SU2 supported."
+      },
+      "subtotal_max": 45,
+      "subtotal": 44,
+      "diagnostics": {
+        "phase_strength": {
+          "status": "numerical_inference_with_reservation",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_03/report.md",
+              "line": 3,
+              "claim": "O2 N3/4 all-p numerical inference vs N14 theorem."
+            },
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_03/report.md",
+              "line": 15,
+              "claim": "Narrow unsampled phases cannot be excluded."
+            },
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_03/report.md",
+              "line": 92,
+              "claim": "Central charge remains unresolved despite drift."
+            }
+          ]
+        },
+        "approximation": {
+          "status": "explicit_supported",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_03/report.md",
+              "line": 185,
+              "claim": "No truncation, round/log checks."
+            }
+          ]
+        },
+        "charge_equivalence": {
+          "status": "explicit_correct",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_03/proofs.md",
+              "line": 57,
+              "claim": "Complete CRT table, exact equality including spatial law."
+            },
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_03/proofs.md",
+              "line": 72,
+              "claim": "Integer refines mod4/mod6; latter incomparable."
+            }
+          ]
+        },
+        "information_nesting": {
+          "status": "explicit_correct",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_03/proofs.md",
+              "line": 36,
+              "claim": "Center map and average Bayes risk ordering, not each conditional record."
+            },
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_03/report.md",
+              "line": 121,
+              "claim": "Cross-N≥5 SU3 refinement with N6 exception."
+            }
+          ]
+        },
+        "z4_feature": {
+          "status": "explicit_correct_limits",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_03/report.md",
+              "line": 40,
+              "claim": "Upper Z4 mean projected to O0 while retaining original uncertainty; no equality theorem."
+            }
+          ]
+        },
+        "enriched_complement_symmetry": {
+          "status": "explicit_correct_scope",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_03/proofs.md",
+              "line": 91,
+              "claim": "O0 complement not applied to richer records."
+            }
+          ]
+        },
+        "largeN_vs_phase": {
+          "status": "explicit_correct",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_03/report.md",
+              "line": 3,
+              "claim": "N14 theorem separate from all-p numerical assignments."
+            },
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_03/report.md",
+              "line": 29,
+              "claim": "Charge tails sufficient, not guessed thresholds."
+            }
+          ]
+        },
+        "SU2": {
+          "status": "explicit_correct",
+          "evidence": [
+            {
+              "file": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_03/report.md",
+              "line": 155,
+              "claim": "SU2 binary exact contraction."
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "infrastructure_excluded": [
+    "Fable01",
+    "Fable02"
+  ],
+  "important_limits": [
+    "No independent gold phase for central O1. Insufficient evidence does not establish that a guessed phase is false.",
+    "Different valid sufficient N0 or proof curves are not mutually inconsistent.",
+    "Drawing explanatory arrows and all later tutorial detail were not original deliverables; omissions not automatically scientific failures.",
+    "Scores are diagnostic and no organizer official pass cutoff is inferred."
+  ],
+  "reference_bounds": {
+    "O1_GPT02_conservative_closed_tails": {
+      "N2": [
+        [
+          0,
+          0.0795
+        ],
+        [
+          0.9205,
+          1
+        ]
+      ],
+      "N4": [
+        [
+          0,
+          0.106
+        ],
+        [
+          0.9191,
+          1
+        ]
+      ],
+      "N3_5_6_7_8": [
+        [
+          0,
+          0.109
+        ],
+        [
+          0.9096,
+          1
+        ]
+      ]
+    },
+    "source": "/Users/home/Downloads/20261014-102308_d89b765a/openai__gpt-6-astra/run_02/data/proved_bounds.csv",
+    "inequality": "mu*sqrt(p*(1-p))*(1+sqrt(delta(p)))<1; delta=sqrt((1-p)*alpha0^2+p*alpha1^2); O1 alpha=(.5,1) for N4, (.5,phi/2) for N3/5/6/7/8",
+    "strict_root_warning": "Listed conservative decimals satisfy strict inequality with certificates; exact root equality is not asserted decodable.",
+    "O1_information_envelope": "Integer q inherits union of mod4 and mod6 proved decodable sets, and all inherit O0; equal curves in a weak proof do not establish mod6=integer channels."
+  }
+}

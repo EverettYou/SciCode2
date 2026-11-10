@@ -1,0 +1,332 @@
+[
+  {
+    "run": "anthropic__claude-fable-5-1/run_01",
+    "model": {
+      "name": "claude-code",
+      "version": "2.1.292",
+      "model_name": "claude-fable-5-1",
+      "extra": {
+        "cwds": [
+          "/app"
+        ],
+        "git_branches": [
+          "HEAD"
+        ]
+      }
+    },
+    "steps": 12,
+    "terminal_step": 12,
+    "terminal_excerpt": "API Error: Claude's response exceeded the 128000 output token maximum. To configure this behavior, set the CLAUDE_CODE_MAX_OUTPUT_TOKENS environment variable.",
+    "additional_user_source_events": [
+      {
+        "step_id": 3,
+        "excerpt": "Output token limit hit. Resume directly — no apology, no recap of what you were doing. Pick up mid-thought if that is where the cut happened. Break remaining work into smaller pieces."
+      },
+      {
+        "step_id": 6,
+        "excerpt": "Output token limit hit. Resume directly — no apology, no recap of what you were doing. Pick up mid-thought if that is where the cut happened. Break remaining work into smaller pieces."
+      },
+      {
+        "step_id": 8,
+        "excerpt": "Output token limit hit. Resume directly — no apology, no recap of what you were doing. Pick up mid-thought if that is where the cut happened. Break remaining work into smaller pieces."
+      },
+      {
+        "step_id": 10,
+        "excerpt": "Output token limit hit. Resume directly — no apology, no recap of what you were doing. Pick up mid-thought if that is where the cut happened. Break remaining work into smaller pieces."
+      }
+    ]
+  },
+  {
+    "run": "anthropic__claude-fable-5-1/run_02",
+    "model": {
+      "name": "claude-code",
+      "version": "2.1.292",
+      "model_name": "claude-fable-5-1",
+      "extra": {
+        "cwds": [
+          "/app"
+        ],
+        "git_branches": [
+          "HEAD"
+        ]
+      }
+    },
+    "steps": 12,
+    "terminal_step": 12,
+    "terminal_excerpt": "API Error: Claude's response exceeded the 128000 output token maximum. To configure this behavior, set the CLAUDE_CODE_MAX_OUTPUT_TOKENS environment variable.",
+    "additional_user_source_events": [
+      {
+        "step_id": 3,
+        "excerpt": "Output token limit hit. Resume directly — no apology, no recap of what you were doing. Pick up mid-thought if that is where the cut happened. Break remaining work into smaller pieces."
+      },
+      {
+        "step_id": 6,
+        "excerpt": "Output token limit hit. Resume directly — no apology, no recap of what you were doing. Pick up mid-thought if that is where the cut happened. Break remaining work into smaller pieces."
+      },
+      {
+        "step_id": 8,
+        "excerpt": "Output token limit hit. Resume directly — no apology, no recap of what you were doing. Pick up mid-thought if that is where the cut happened. Break remaining work into smaller pieces."
+      },
+      {
+        "step_id": 10,
+        "excerpt": "Output token limit hit. Resume directly — no apology, no recap of what you were doing. Pick up mid-thought if that is where the cut happened. Break remaining work into smaller pieces."
+      }
+    ]
+  },
+  {
+    "run": "anthropic__claude-fable-5-1/run_03",
+    "model": {
+      "name": "claude-code",
+      "version": "2.1.292",
+      "model_name": "claude-fable-5-1",
+      "extra": {
+        "cwds": [
+          "/app"
+        ],
+        "git_branches": [
+          "HEAD"
+        ]
+      }
+    },
+    "steps": 126,
+    "terminal_step": 126,
+    "terminal_excerpt": "ords) and $L\\le12$ (three-state), no exceptions, seeds and job lists reproducible via `README.md`. Approximation error is zero (exact posteriors); statistical and finite-size errors are separated in `data/boundaries.json`.\n\n**Limitations** stated in the report: the $O_1$ critical-window edges are roughening-like and bracketed to ±0.1, and a decay with correlation length ≳50 cannot be excluded by $L\\le12$ alone; the certified $N_0=19$ reflects the annealed proof technique rather than the decoder.",
+    "additional_user_source_events": [
+      {
+        "step_id": 3,
+        "excerpt": "Output token limit hit. Resume directly — no apology, no recap of what you were doing. Pick up mid-thought if that is where the cut happened. Break remaining work into smaller pieces."
+      },
+      {
+        "step_id": 62,
+        "excerpt": "Base directory for this skill: /tmp/claude-0/bundled-skills/2.1.292/3b10b169c4438903d95db1e0254b76f5/dataviz\n\n# Data Visualization\n\nA chart is **read by people and executed by you**. This skill turns "
+      },
+      {
+        "step_id": 77,
+        "excerpt": "[Image: original 2550x630, displayed at 2000x494. Multiply coordinates by 1.27 to map to original image.]"
+      },
+      {
+        "step_id": 78,
+        "excerpt": "[Image: original 2100x630, displayed at 2000x600. Multiply coordinates by 1.05 to map to original image.]"
+      },
+      {
+        "step_id": 79,
+        "excerpt": "[Image: original 2250x990, displayed at 2000x880. Multiply coordinates by 1.13 to map to original image.]"
+      },
+      {
+        "step_id": 91,
+        "excerpt": "[Image: original 2550x630, displayed at 2000x494. Multiply coordinates by 1.27 to map to original image.]"
+      },
+      {
+        "step_id": 93,
+        "excerpt": "[Image: original 2240x980, displayed at 2000x875. Multiply coordinates by 1.12 to map to original image.]"
+      }
+    ]
+  },
+  {
+    "run": "anthropic__claude-opus-5-5/run_01",
+    "model": {
+      "name": "claude-code",
+      "version": "2.1.282",
+      "model_name": "claude-opus-5-5",
+      "extra": {
+        "cwds": [
+          "/app/tests",
+          "/app/scripts/specs",
+          "/app/proofs",
+          "/app/src",
+          "/app"
+        ],
+        "git_branches": [
+          "HEAD"
+        ]
+      }
+    },
+    "steps": 227,
+    "terminal_step": 227,
+    "terminal_excerpt": "the least stable estimate; I quote 0.833 ± 0.010, consistent with the requirement that it not exceed O0's 0.835.\n- 2 of about 1.64 million trials threw a numerical exception in the MPS code. Both are counted as failures, which shifts those two estimates by under 0.001. A replay of one didn't reproduce it, and the code now has a fallback for that case.\n\nEverything regenerates from fixed seeds with `reproduce.sh`. Total compute was about 24 core-hours on 8 cores; the only package I added is numba.",
+    "additional_user_source_events": [
+      {
+        "step_id": 3,
+        "excerpt": "Output token limit hit. Resume directly — no apology, no recap of what you were doing. Pick up mid-thought if that is where the cut happened. Break remaining work into smaller pieces."
+      },
+      {
+        "step_id": 66,
+        "excerpt": "Base directory for this skill: /tmp/claude-0/bundled-skills/2.1.282/133ab01bf5820399183904473972c64e/dataviz\n\n# Data Visualization\n\nA chart is **read by people and executed by you**. This skill turns "
+      },
+      {
+        "step_id": 75,
+        "excerpt": "[Image: original 2250x1575, displayed at 2000x1400. Multiply coordinates by 1.13 to map to original image.]"
+      },
+      {
+        "step_id": 160,
+        "excerpt": "[Image: original 2340x1230, displayed at 2000x1051. Multiply coordinates by 1.17 to map to original image.]"
+      },
+      {
+        "step_id": 190,
+        "excerpt": "[Image: original 2250x690, displayed at 2000x613. Multiply coordinates by 1.13 to map to original image.]"
+      },
+      {
+        "step_id": 191,
+        "excerpt": "[Image: original 2250x1575, displayed at 2000x1400. Multiply coordinates by 1.13 to map to original image.]"
+      }
+    ]
+  },
+  {
+    "run": "anthropic__claude-opus-5-5/run_02",
+    "model": {
+      "name": "claude-code",
+      "version": "2.1.282",
+      "model_name": "claude-opus-5-5",
+      "extra": {
+        "cwds": [
+          "/app",
+          "/app/data"
+        ],
+        "git_branches": [
+          "HEAD"
+        ]
+      }
+    },
+    "steps": 272,
+    "terminal_step": 272,
+    "terminal_excerpt": " most 8.5×10⁻⁴. That moves no boundary by more than 10⁻⁴, so it cannot change any R1 answer.\n- An independent self-consistency test (predicted vs counted failures) passes across about 775 tested cells.\n- One of all production trials failed (a numerical library hiccup at L=96). It is counted as a failure, and re-running that sample succeeds.\n- Two boundary runs were cut from 2000 to 1000 samples per point for time; I had looked at a 500-sample preview of one of them first. The report states this.",
+    "additional_user_source_events": [
+      {
+        "step_id": 3,
+        "excerpt": "Output token limit hit. Resume directly — no apology, no recap of what you were doing. Pick up mid-thought if that is where the cut happened. Break remaining work into smaller pieces."
+      },
+      {
+        "step_id": 6,
+        "excerpt": "Output token limit hit. Resume directly — no apology, no recap of what you were doing. Pick up mid-thought if that is where the cut happened. Break remaining work into smaller pieces."
+      },
+      {
+        "step_id": 59,
+        "excerpt": "Base directory for this skill: /tmp/claude-0/bundled-skills/2.1.282/e3652456e1e81a0af34c5d7fac8e809d/dataviz\n\n# Data Visualization\n\nA chart is **read by people and executed by you**. This skill turns "
+      },
+      {
+        "step_id": 88,
+        "excerpt": "[Image: original 2100x960, displayed at 2000x914. Multiply coordinates by 1.05 to map to original image.]"
+      },
+      {
+        "step_id": 116,
+        "excerpt": "[Image: original 2100x660, displayed at 2000x629. Multiply coordinates by 1.05 to map to original image.]"
+      },
+      {
+        "step_id": 193,
+        "excerpt": "[Image: original 2550x585, displayed at 2000x459. Multiply coordinates by 1.27 to map to original image.]"
+      },
+      {
+        "step_id": 203,
+        "excerpt": "[Image: original 2475x570, displayed at 2000x461. Multiply coordinates by 1.24 to map to original image.]"
+      },
+      {
+        "step_id": 218,
+        "excerpt": "[Image: original 2100x660, displayed at 2000x629. Multiply coordinates by 1.05 to map to original image.]"
+      },
+      {
+        "step_id": 221,
+        "excerpt": "[Image: original 2100x660, displayed at 2000x629. Multiply coordinates by 1.05 to map to original image.]"
+      },
+      {
+        "step_id": 248,
+        "excerpt": "[Image: original 2100x660, displayed at 2000x629. Multiply coordinates by 1.05 to map to original image.]"
+      }
+    ]
+  },
+  {
+    "run": "anthropic__claude-opus-5-5/run_03",
+    "model": {
+      "name": "claude-code",
+      "version": "2.1.282",
+      "model_name": "claude-opus-5-5",
+      "extra": {
+        "cwds": [
+          "/app"
+        ],
+        "git_branches": [
+          "HEAD"
+        ]
+      }
+    },
+    "steps": 230,
+    "terminal_step": 230,
+    "terminal_excerpt": "e thresholds by at most 2e-4, about ten times below the statistical errors, so no answer depends on the approximation.\n- No trial failed or was dropped.\n\nTotal wall-clock was about 5.7 h on 8 cores.\n\nFiles are in `/app`:\n- `answers.json`\n- `report.md` — includes the full proofs and the uncertainty budget\n- `solution.py`\n- `figures/` — main figure is `phase_diagram.png`; each figure has a CSV table\n- `data/` — raw per-sample posteriors and summaries\n- `README.md` — commands, seeds and environment",
+    "additional_user_source_events": [
+      {
+        "step_id": 3,
+        "excerpt": "Output token limit hit. Resume directly — no apology, no recap of what you were doing. Pick up mid-thought if that is where the cut happened. Break remaining work into smaller pieces."
+      },
+      {
+        "step_id": 85,
+        "excerpt": "Base directory for this skill: /tmp/claude-0/bundled-skills/2.1.282/e5944ffcbb259683ae9bafa26608dda2/dataviz\n\n# Data Visualization\n\nA chart is **read by people and executed by you**. This skill turns "
+      },
+      {
+        "step_id": 220,
+        "excerpt": "[Image: original 2640x576, displayed at 2000x436. Multiply coordinates by 1.32 to map to original image.]"
+      }
+    ]
+  },
+  {
+    "run": "openai__gpt-6-astra/run_01",
+    "model": {
+      "name": "codex",
+      "version": "0.160.1",
+      "model_name": "gpt-6-astra",
+      "extra": {
+        "originator": "codex_exec",
+        "cwd": "/app"
+      }
+    },
+    "steps": 103,
+    "terminal_step": 103,
+    "terminal_excerpt": "Saved in `/app`:\n\n- [Report and phase diagram](/app/report.md)\n- [answers.json](/app/answers.json)\n- [Proofs](/app/proofs.md)\n- [Posterior/decoder API](/app/decoder.py)\n- [Reproduction guide](/app/README.md)\n\nProved **\\(N_0=13\\)**. Completed **1,319,100 trials**, with no invalid trials. Posterior validation differences were below \\(2.56\\times10^{-14}\\).\n\nThe phase diagram remains partially unresolved; those regions have explicit supported bounds.",
+    "additional_user_source_events": [
+      {
+        "step_id": 5,
+        "excerpt": "Your working directory is `/app`. Write whatever files your answer consists of\nthere.\n\nEverything you leave in `/app` is collected when the run ends, so put the\ndeliverables there rather than in /tmp."
+      }
+    ]
+  },
+  {
+    "run": "openai__gpt-6-astra/run_02",
+    "model": {
+      "name": "codex",
+      "version": "0.160.1",
+      "model_name": "gpt-6-astra",
+      "extra": {
+        "originator": "codex_exec",
+        "cwd": "/app"
+      }
+    },
+    "steps": 87,
+    "terminal_step": 87,
+    "terminal_excerpt": "Saved in `/app`:\n\n- [Report and phase diagram](/app/report.md)\n- [answers.json](/app/answers.json)\n- [posterior/decode API](/app/solution.py)\n- [Reproduction instructions](/app/README.md)\n\nIncludes a proof of **\\(N_0=13\\)**, 291,200 physical trials, and independent posterior checks agreeing within \\(2\\times10^{-15}\\).\n\n**Twelve of 21 phase entries remain explicitly unresolved**, with rigorous bounds and supporting evidence.",
+    "additional_user_source_events": [
+      {
+        "step_id": 5,
+        "excerpt": "Your working directory is `/app`. Write whatever files your answer consists of\nthere.\n\nEverything you leave in `/app` is collected when the run ends, so put the\ndeliverables there rather than in /tmp."
+      }
+    ]
+  },
+  {
+    "run": "openai__gpt-6-astra/run_03",
+    "model": {
+      "name": "codex",
+      "version": "0.160.1",
+      "model_name": "gpt-6-astra",
+      "extra": {
+        "originator": "codex_exec",
+        "cwd": "/app"
+      }
+    },
+    "steps": 65,
+    "terminal_step": 65,
+    "terminal_excerpt": "deliverables in `/app`:\n\n- [Report and phase diagram](/app/report.md)\n- [answers.json](/app/answers.json)\n- [Exact posterior and decoder](/app/solution.py)\n- [Proofs](/app/proofs.md)\n- [Source, data, and reproduction instructions](/app/README.md)\n\nProved the sufficient bound **\\(N_0=14\\)**. Independent posterior checks agree within **\\(6\\times10^{-15}\\)**.\n\nFive charge-record phase entries remain explicitly unresolved. Numerical limitations and the lost batch’s failure accounting are documented.",
+    "additional_user_source_events": [
+      {
+        "step_id": 5,
+        "excerpt": "Your working directory is `/app`. Write whatever files your answer consists of\nthere.\n\nEverything you leave in `/app` is collected when the run ends, so put the\ndeliverables there rather than in /tmp."
+      }
+    ]
+  }
+]

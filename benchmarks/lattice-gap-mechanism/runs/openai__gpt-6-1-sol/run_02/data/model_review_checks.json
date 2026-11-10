@@ -1,0 +1,102 @@
+{
+  "status": "conditional model checks, not fitted microscopic parameters",
+  "dimer_hamiltonian": "-t sum_sigma(c0dag c1+h.c.) + U sum_i n_iup n_idown",
+  "illustrative_dimer_U12_t1": {
+    "U": 12.0,
+    "t": 1.0,
+    "spin_gap": 0.32455532033675905,
+    "single_particle_half_gap": 5.324555320336759,
+    "E_N1": -1.0,
+    "E_N2": -0.32455532033675905,
+    "E_N3": 11.0
+  },
+  "exact_16_state_ED_check": {
+    "spin_gap": 0.3245553203367585,
+    "single_particle_half_gap": 5.324555320336758
+  },
+  "required_rung_hopping_if_U12_and_spin_gap_5p54": {
+    "U": 12.0,
+    "t": 4.9287828112019705,
+    "spin_gap": 5.540000000000001,
+    "single_particle_half_gap": 6.61121718879803,
+    "E_N1": -4.9287828112019705,
+    "E_N2": -5.540000000000001,
+    "E_N3": 7.0712171887980295
+  },
+  "formal_two_gap_dimer_solution_NOT_material_fit": {
+    "U": 3.396016877603744,
+    "t": 3.518008438801872,
+    "spin_gap": 5.54,
+    "single_particle_half_gap": 3.7199999999999998,
+    "E_N1": -3.518008438801872,
+    "E_N2": -5.54,
+    "E_N3": -0.12199156119812837
+  },
+  "strict_2D_t1_tprime0p3_BKT_bound": {
+    "nu0p2": 0.5026548245743669,
+    "nu0p3": 0.7539822368615504,
+    "observed_nu0p2_Tc_lower_bound": 1.075,
+    "required_t_plus_2abs_tprime_nu0p2": 3.42183127647575,
+    "assumptions": [
+      "one band, strict 2D, n=2nu",
+      "hopping coefficients are bare and temperature-independent",
+      "interactions do not couple to vector potential (density interactions satisfy this)",
+      "zero resistance identifies a superconducting transition"
+    ],
+    "caveats": [
+      "high-temperature STS only fits an effective DOS, not necessarily bare hopping",
+      "additional bands, coupled layers, 3D coupling, or pair/correlated hopping can change the bound"
+    ],
+    "source": "https://doi.org/10.1103/PhysRevX.9.031049"
+  },
+  "spectral_nonidentifiability_counterexample": {
+    "status": "analytic counterexample; not fitted to data",
+    "grid": [
+      1200,
+      1200
+    ],
+    "poles_D": [
+      -4,
+      -6,
+      4,
+      8
+    ],
+    "same_local_pole_weights_for_all_lambda": [
+      0.1,
+      0.4,
+      0.1,
+      0.4
+    ],
+    "gap_edges_D": [
+      -4,
+      4
+    ],
+    "chemical_potential_D": 0,
+    "spectral_sum_each_k": 1,
+    "rows": [
+      {
+        "lambda": 0.1,
+        "f_on_zero_curve": -0.5714285714285714,
+        "gamma_side_BZ_fraction": 0.8455444444444444,
+        "occupied_weight_per_spin": 0.5,
+        "minimum_pole_weight": 0.1
+      },
+      {
+        "lambda": 0.2,
+        "f_on_zero_curve": -0.2857142857142857,
+        "gamma_side_BZ_fraction": 0.7114638888888889,
+        "occupied_weight_per_spin": 0.5,
+        "minimum_pole_weight": 0.1
+      },
+      {
+        "lambda": 0.3,
+        "f_on_zero_curve": -0.19047619047619047,
+        "gamma_side_BZ_fraction": 0.6564138888888889,
+        "occupied_weight_per_spin": 0.5,
+        "minimum_pole_weight": 0.1
+      }
+    ],
+    "G_real_at_zero": "1/60+(7lambda/24)*(cos(kx)+cos(ky))/2",
+    "scope": "Causal spectral nonuniqueness; a microscopic one-orbital realization and identical transport/spin vertices are not asserted."
+  }
+}

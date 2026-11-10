@@ -1,0 +1,8 @@
+# Large exploratory solver caches remain local and are reproducible from scripts.
+note/build/
+labs/**/model_cache.pkl
+labs/**/*.npy
+# Keep the complete promoted reference certificate and operator input portable.
+!src/input/*.npz
+!labs/lab-004-exact-dual-verification/results/portable-reproduction/**/*.npz
+!labs/lab-004-exact-dual-verification/results/portable-reproduction/**/*.npy

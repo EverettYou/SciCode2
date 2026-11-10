@@ -1,0 +1,199 @@
+{
+  "passed_construction_checks": true,
+  "full_export_audit_complete": false,
+  "input_directory": "/Users/home/Library/CloudStorage/Dropbox/Research/[Mercor]SciCode2/benchmarks/hubbard-operator-bootstrap/labs/lab-002-moment-sdp/results/t1-two-site-t2-sym",
+  "independent_CAR_Fock_action_tests": 4000,
+  "exhaustive_T2_CAR_order_equality_patterns": 46656,
+  "distinct_lattice_bonds": 32,
+  "symmetry_expansion_audit": {
+    "group": "D4 spatial rotations/reflections and spin interchange",
+    "signed_nonzero_variable_orbits": 331,
+    "signed_zero_variable_orbits": 11
+  },
+  "character_projection_sources": 18,
+  "elapsed_seconds": 33.53306245803833,
+  "peak_rss_bytes": 146784256,
+  "source_details": [
+    {
+      "source": "T1_(0, 0, 0)",
+      "source_dim": 35,
+      "character_dims": [
+        9,
+        10,
+        10,
+        6
+      ],
+      "seconds": 0.17471883306279778
+    },
+    {
+      "source": "T1_(0, 1, 0)",
+      "source_dim": 35,
+      "character_dims": [
+        19,
+        16
+      ],
+      "seconds": 0.05721054202876985
+    },
+    {
+      "source": "T1_(0, 1, 1)",
+      "source_dim": 35,
+      "character_dims": [
+        15,
+        20
+      ],
+      "seconds": 0.07414933294057846
+    },
+    {
+      "source": "T1_(0, 2, 0)",
+      "source_dim": 35,
+      "character_dims": [
+        9,
+        10,
+        10,
+        6
+      ],
+      "seconds": 0.1060357908718288
+    },
+    {
+      "source": "T1_(0, 2, 1)",
+      "source_dim": 35,
+      "character_dims": [
+        19,
+        16
+      ],
+      "seconds": 0.060286750085651875
+    },
+    {
+      "source": "T1_(0, 2, 2)",
+      "source_dim": 35,
+      "character_dims": [
+        9,
+        10,
+        10,
+        6
+      ],
+      "seconds": 0.07291016704402864
+    },
+    {
+      "source": "T1_(1, 0, 0)",
+      "source_dim": 120,
+      "character_dims": [
+        42,
+        30,
+        30,
+        18
+      ],
+      "seconds": 0.7884962919633836
+    },
+    {
+      "source": "T1_(1, 1, 0)",
+      "source_dim": 120,
+      "character_dims": [
+        72,
+        48
+      ],
+      "seconds": 0.8265514590311795
+    },
+    {
+      "source": "T1_(1, 1, 1)",
+      "source_dim": 120,
+      "character_dims": [
+        60,
+        60
+      ],
+      "seconds": 0.7369988330174237
+    },
+    {
+      "source": "T1_(1, 2, 0)",
+      "source_dim": 120,
+      "character_dims": [
+        42,
+        30,
+        30,
+        18
+      ],
+      "seconds": 0.6409874591045082
+    },
+    {
+      "source": "T1_(1, 2, 1)",
+      "source_dim": 120,
+      "character_dims": [
+        72,
+        48
+      ],
+      "seconds": 0.3914729580283165
+    },
+    {
+      "source": "T1_(1, 2, 2)",
+      "source_dim": 120,
+      "character_dims": [
+        42,
+        30,
+        30,
+        18
+      ],
+      "seconds": 0.557900584070012
+    },
+    {
+      "source": "T2prime_two_site_spin0_k0",
+      "source_dim": 61,
+      "character_dims": [
+        33,
+        12,
+        12,
+        4
+      ],
+      "seconds": 4.208030874840915
+    },
+    {
+      "source": "T2prime_two_site_spin0_k1",
+      "source_dim": 61,
+      "character_dims": [
+        45,
+        16
+      ],
+      "seconds": 4.328936457866803
+    },
+    {
+      "source": "T2prime_two_site_spin0_k2",
+      "source_dim": 61,
+      "character_dims": [
+        33,
+        12,
+        12,
+        4
+      ],
+      "seconds": 4.487390666035935
+    },
+    {
+      "source": "T2prime_two_site_spin0_k5",
+      "source_dim": 61,
+      "character_dims": [
+        37,
+        24
+      ],
+      "seconds": 3.403385791927576
+    },
+    {
+      "source": "T2prime_two_site_spin0_k6",
+      "source_dim": 61,
+      "character_dims": [
+        45,
+        16
+      ],
+      "seconds": 3.770550874993205
+    },
+    {
+      "source": "T2prime_two_site_spin0_k10",
+      "source_dim": 61,
+      "character_dims": [
+        33,
+        12,
+        12,
+        4
+      ],
+      "seconds": 5.146102083148435
+    }
+  ],
+  "remaining_check": "Compare every exported A,b,E,rhs,c coefficient after solver export completes."
+}

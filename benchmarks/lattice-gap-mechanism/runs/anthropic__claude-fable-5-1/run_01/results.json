@@ -1,0 +1,202 @@
+{
+ "units": "energies and temperatures in D; D equals the nearest-neighbour hopping t = 1.00 D; momenta in 2pi/a",
+ "bare_band_from_STS_panel_d": {
+  "t": {
+   "value": 1.0,
+   "stat_err": 0.004,
+   "syst_err": 0.02,
+   "note": "bandwidth W = 8t = 8.00 D"
+  },
+  "t_prime": {
+   "value": 0.196,
+   "stat_err": 0.002,
+   "syst_err": 0.01,
+   "note": "van Hove singularity at (1/2,0) sits 4t' = 0.8 D above the band centre; fitted t'' = -0.005 +- 0.003, consistent with 0"
+  },
+  "mu_at_nu_0.3_high_T": {
+   "value": -0.893,
+   "err": 0.013,
+   "filling_of_bare_band": 0.302
+  },
+  "lorentzian_broadening": {
+   "value": 0.1,
+   "err": 0.01
+  }
+ },
+ "half_filling_panel_a": {
+  "model": "two-pole strong-coupling spectrum: E_pm(k) = +-U/2 + (eps_k - ebar)/2, w_pm(k) = 1/2 (1 +- (eps_k - c)/D_c)",
+  "U_magnitude": {
+   "value": 12.0,
+   "stat_err": 0.004,
+   "syst_err": 0.15,
+   "note": "band-centre separation = |U|; gap E_g = |U| - W/2 = 8.00 +- 0.05 D"
+  },
+  "gap_edges": [
+   -4.0,
+   4.0
+  ],
+  "weight_tilt_scale_D_c": {
+   "value": 16.2,
+   "stat_err": 0.4,
+   "range_allowed_by_broadening_systematics": [
+    12,
+    17
+   ],
+   "note": "canonical strong-coupling value D_c = |U| = 12 fits with rms 0.0168 vs 0.0149"
+  },
+  "broadening": {
+   "value": 0.084,
+   "err": 0.003
+  },
+  "fit_rms": 0.0149,
+  "noise_rms": 0.0079
+ },
+ "nu_0.3_panel_b": {
+  "model": "local-pair (dispersionless-partner) self-energy Sigma = Delta_pg^2/omega: E_pm = xi/2 +- sqrt(xi^2/4 + Delta_pg^2); coherence-factor weights of scale D_c",
+  "Delta_pg": {
+   "value": 4.3,
+   "err": 0.1,
+   "note": "pair-binding scale; 2*Delta_pg = |U_eff| = 8.4 +- 0.4 D"
+  },
+  "single_particle_gap_edges": [
+   -2.62,
+   2.62
+  ],
+  "gap_err": 0.1,
+  "mu_fit": {
+   "value": -0.74,
+   "err": 0.04,
+   "bare_filling": 0.32
+  },
+  "weight_scale_D_c": {
+   "value": 2.0,
+   "err": 0.6
+  },
+  "fit_rms": 0.047,
+  "noise_rms": 0.009,
+  "note": "band edges and van Hove position reproduced; lower-band line shape only approximately"
+ },
+ "nu_0.2_panel_c": {
+  "model": "BCS s-wave on the bare band, mu at bare value",
+  "Delta": {
+   "value": 1.965,
+   "stat_err": 0.001,
+   "syst_err": 0.03
+  },
+  "mu": {
+   "value": -1.919,
+   "err": 0.003,
+   "bare_filling": 0.2005
+  },
+  "U_eff_from_gap_equation": {
+   "value": 6.05,
+   "err": 0.3,
+   "note": "1 = |U|/N sum_k 1/(2E_k) with Delta=1.965, mu bare; lambda = |U| rho0(mu) = 0.53"
+  },
+  "T_c_mean_field": 1.1,
+  "T_c_measured_interval": [
+   1.075,
+   1.15
+  ],
+  "two_Delta_over_Tc": 3.6,
+  "fit_rms": 0.0154,
+  "noise_rms": 0.0139
+ },
+ "NMR": {
+  "nu_0.5": {
+   "activation_energy_1_over_T1T": 5.7,
+   "err_stat": 0.3,
+   "err_syst_prefactor": 1.0,
+   "note": "exp(-Delta_s/T); compare |U|/2 = 6, E_g/2 = 4; single line, no order"
+  },
+  "nu_0.3": {
+   "activation_energy": 2.64,
+   "err": 0.1,
+   "saturation_T_star": [
+    2.5,
+    3.5
+   ],
+   "note": "no Hebel-Slichter peak, gap persists far above Tc"
+  },
+  "nu_0.2": {
+   "model": "BCS Hebel-Slichter with Dynes Gamma = 0.05",
+   "peak_height_ratio_data": 1.81,
+   "peak_height_ratio_model": 1.79,
+   "low_T_slope": 2.06,
+   "err": 0.05
+  }
+ },
+ "resistivity": {
+  "nu_0.5": {
+   "activation_energy": 3.72,
+   "err": 0.05,
+   "note": "rho ~ exp(Delta_rho/T), Delta_rho ~ E_g/2 = 4 within systematics"
+  },
+  "nu_0.3": {
+   "Tc_interval": [
+    0.325,
+    0.4
+   ],
+   "normal_state": "rho = 0.16 + 0.70 exp(0.98/T) (normalised), weakly insulating bad metal"
+  },
+  "nu_0.2": {
+   "Tc_interval": [
+    1.075,
+    1.15
+   ],
+   "normal_state": "rho = 0.18 + 0.175 T (normalised), metallic"
+  }
+ },
+ "exact_diagonalization_gaps": {
+  "note": "open clusters, t=1, t'=0.196; charge gap = E(N+1)+E(N-1)-2E(N); spin gap = E(N,S_z=1)-E(N,S_z=0)",
+  "U_+12": {
+   "2x2": {
+    "charge": 9.45,
+    "spin": 0.274
+   },
+   "2x4": {
+    "charge": 8.68,
+    "spin": 0.206
+   },
+   "3x4": {
+    "charge": 8.14,
+    "spin": 0.147
+   }
+  },
+  "U_-12": {
+   "2x2": {
+    "charge": 9.59,
+    "spin": 9.84
+   },
+   "2x4": {
+    "charge": 8.73,
+    "spin": 8.89
+   },
+   "3x4": {
+    "charge": 8.24,
+    "spin": 8.34
+   }
+  }
+ },
+ "luttinger_surface_nu_0.5": {
+  "CPT_U_-12": {
+   "2x2": 0.467,
+   "2x4_C4_symmetrised": 0.465,
+   "3x4_C4_symmetrised": 0.457
+  },
+  "CPT_U_+12": {
+   "2x2": 0.521,
+   "2x4_C4_symmetrised": 0.527,
+   "3x4_C4_symmetrised": 0.537
+  },
+  "two_pole_canonical_weights": "no zero curve (Sigma pole 0.39 D above mid-gap for all k)",
+  "two_pole_fitted_weights": 0.136,
+  "bare_Fermi_surface": 0.5,
+  "KK_check_2x4_U-12": {
+   "max_abs_diff_KK_vs_direct": 1.6e-05,
+   "sum_rule": 0.998,
+   "fraction_48x48_symmetrised": 0.462
+  },
+  "CPT_U_-12_gap_3x4": 6.5
+ }
+}

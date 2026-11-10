@@ -1,0 +1,33 @@
+{
+  "convention": "sigma=+ iff V at the forward endpoint along the selected path",
+  "N_range": "N>=5",
+  "row_and_column_order": [
+    "+",
+    "-"
+  ],
+  "F_side_empty_times_N_squared": [
+    [
+      1,
+      0
+    ],
+    [
+      0,
+      1
+    ]
+  ],
+  "F_side_V_times_N_squared": [
+    [
+      2,
+      0
+    ],
+    [
+      2,
+      2
+    ]
+  ],
+  "states": "microscopic absent / V-forward / V-backward; x,c binary",
+  "correlation_check_N5": {
+    "joint": 0.004,
+    "independent_product": 0.0036
+  }
+}

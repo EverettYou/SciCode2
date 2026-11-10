@@ -6,6 +6,18 @@ Start with the [global wiki](wiki/index.md) for the project map, research strate
 
 Canonical catalogs remain in [`papers/papers.yml`](papers/papers.yml) and [`benchmarks/benchmarks.yml`](benchmarks/benchmarks.yml). Detailed operational contracts remain with the resources that own them; the wiki connects and summarizes those resources without duplicating them.
 
+The organizer's [proposal and difficulty requirements](docs/scicode2/requirements.md)
+are archived separately from the research workflow. Use the [benchmark preparation,
+testing, and calibration skills](skills/README.md#proposal-testing-and-calibration)
+to turn research candidates into measured benchmark proposals.
+
+The participant-facing [Project Sycamore introduction](docs/scicode2/project-sycamore-introduction.md)
+records the project's purpose, expected researcher–AI collaboration, and iterative
+workflow. Read it alongside the organizer requirements before starting candidate work.
+The [motivation and task-design principles](docs/scicode2/project-motivation.md)
+and [strong and rejected example summaries](docs/scicode2/example-bank.md) preserve
+additional project context for candidate screening.
+
 ## Development environment
 
 This repository is managed as a uv project. Install the locked dependencies and create the local `.venv` with:

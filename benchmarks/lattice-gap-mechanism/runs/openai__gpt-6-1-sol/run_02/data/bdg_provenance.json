@@ -1,0 +1,113 @@
+{
+  "description": "Reproducibility manifest for rejected phenomenological BdG trial spectra; no fits rerun during packaging audit.",
+  "source": {
+    "relative_path": "data/measurements.json",
+    "sha256": "dab44dfa1d052ed034c4cf632740411eed343c399f4ebb0045e9eea942b4ad7b"
+  },
+  "hopping_input": "data/sts_fit_results.json, normal.params[0:2]",
+  "environment": "System Python 3.13 with NumPy 2.2.6, SciPy 1.15.3, Matplotlib 3.10.1; scripts set an MPLCONFIGDIR under /tmp.",
+  "execution_order": [
+    "sts_fit.py (or retain supplied sts_fit_results.json)",
+    "bdg_fit.py",
+    "bdg_general.py",
+    "bdg_expanded.py",
+    "bdg_linear_weights.py",
+    "bdg_symmetric_poles.py",
+    "bdg_symmetric_free_density.py",
+    "bdg_symmetric_widths.py"
+  ],
+  "independent_branches": "After sts_fit_results.json exists, bdg_linear_weights.py and bdg_symmetric_poles.py may run directly. bdg_expanded.py requires bdg_general_results.json; bdg_general.py requires bdg_fit_results.json.",
+  "report_figure_reproduction": {
+    "figure": "figures/bdg_linear_weights_fit.png",
+    "command": "python3 code/bdg_linear_weights.py",
+    "requires": [
+      "data/measurements.json",
+      "data/sts_fit_results.json",
+      "code/bdg_fit.py"
+    ]
+  },
+  "script_sha256": {
+    "bdg_expanded.py": "dfa1b365db69eab1d1b8b8917dade99f2132229aad86424419dc235ac2776dc8",
+    "bdg_fit.py": "1c19d640a0c876c3ff2d7d969c112b46b3bb846c49d143c0d5387e5890cc8377",
+    "bdg_general.py": "529432e392e99d3a14cbd886a2ad91aefdfa16bd4e99eae50592a95952603da9",
+    "bdg_linear_weights.py": "50e28ab6807927ac89a60f058eb76f9e0aa31782def915de991429f64a8dd860",
+    "bdg_symmetric_free_density.py": "3de0cbc2083eff828a7e4aee29e233bacda6e2d242d92708410dc34e320f55c6",
+    "bdg_symmetric_poles.py": "02ff00e0886172006f50888152ee7036a26849bf930277674ae644bbcb4b64f5",
+    "bdg_symmetric_widths.py": "1d552d319c7712bb04736f1affe7672cdb1002ade0b4e44f1fc9b51b4ac8cfd5"
+  },
+  "saved_array_reproduction_checks": [
+    {
+      "script": "bdg_fit.py",
+      "saved_data": "bdg_best_shared.npz",
+      "model_array_max_abs_difference": 0.0,
+      "shape": [
+        801
+      ],
+      "finite_arrays": true
+    },
+    {
+      "script": "bdg_general.py",
+      "saved_data": "bdg_general_best.npz",
+      "model_array_max_abs_difference": 0.0,
+      "shape": [
+        801
+      ],
+      "finite_arrays": true
+    },
+    {
+      "script": "bdg_expanded.py",
+      "saved_data": "bdg_expanded_best.npz",
+      "model_array_max_abs_difference": 0.0,
+      "shape": [
+        801
+      ],
+      "finite_arrays": true
+    },
+    {
+      "script": "bdg_linear_weights.py",
+      "saved_data": "bdg_linear_weights_best.npz",
+      "model_array_max_abs_difference": 0.0,
+      "shape": [
+        801
+      ],
+      "finite_arrays": true
+    },
+    {
+      "script": "bdg_symmetric_poles.py",
+      "saved_data": "bdg_symmetric_best.npz",
+      "model_array_max_abs_difference": 0.0,
+      "shape": [
+        801
+      ],
+      "finite_arrays": true
+    },
+    {
+      "script": "bdg_symmetric_widths.py",
+      "saved_data": "bdg_symmetric_widths_0.npz",
+      "model_array_max_abs_difference": 0.0,
+      "shape": [
+        801
+      ],
+      "finite_arrays": true
+    },
+    {
+      "script": "bdg_symmetric_widths.py",
+      "saved_data": "bdg_symmetric_widths_1.npz",
+      "model_array_max_abs_difference": 0.0,
+      "shape": [
+        801
+      ],
+      "finite_arrays": true
+    },
+    {
+      "script": "bdg_symmetric_free_density.py",
+      "saved_data": "bdg_symmetric_free_nu.npz",
+      "model_array_max_abs_difference": 0.0,
+      "shape": [
+        801
+      ],
+      "finite_arrays": true
+    }
+  ],
+  "note": "All checks only evaluate stored best-fit parameters; no optimizer was rerun. BdG code reads the bundled source through bdg_fit.py. No Downloads path is required."
+}

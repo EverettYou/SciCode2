@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/Users/home/Library/CloudStorage/Dropbox/Research/[Mercor]SciCode2/benchmarks/qec-annealing-embedding/labs/lab-005-general-h-annealing-relevance/scripts/repair_followup.py", line 65, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "/Users/home/Library/CloudStorage/Dropbox/Research/[Mercor]SciCode2/benchmarks/qec-annealing-embedding/labs/lab-005-general-h-annealing-relevance/scripts/repair_followup.py", line 36, in main
+    from run_suite import REPAIR
+ImportError: cannot import name 'REPAIR' from 'run_suite' (/Users/home/Library/CloudStorage/Dropbox/Research/[Mercor]SciCode2/benchmarks/qec-annealing-embedding/labs/lab-004-general-h-evaluation-embedding-loop/scripts/run_suite.py)

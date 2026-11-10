@@ -1,0 +1,211 @@
+[
+  {
+    "run": "Fable 03",
+    "O1_N4": [
+      [
+        0.0,
+        0.0,
+        0.3547,
+        0.0073
+      ],
+      [
+        0.8292,
+        0.0098,
+        1.0,
+        0.0
+      ]
+    ],
+    "O1_N3": [
+      [
+        0.0,
+        0.0,
+        0.35,
+        0.1
+      ],
+      [
+        0.7,
+        0.1,
+        1.0,
+        0.0
+      ]
+    ],
+    "O1_N5": [
+      [
+        0.0,
+        0.0,
+        0.35,
+        0.1
+      ],
+      [
+        0.7,
+        0.1,
+        1.0,
+        0.0
+      ]
+    ]
+  },
+  {
+    "run": "Opus 01",
+    "O1_N4": [
+      [
+        0,
+        0,
+        0.353,
+        0.018
+      ],
+      [
+        0.833,
+        0.01,
+        1,
+        0
+      ]
+    ],
+    "O1_N3": [
+      [
+        0,
+        0,
+        1,
+        0
+      ]
+    ],
+    "O1_N5": [
+      [
+        0,
+        0,
+        1,
+        0
+      ]
+    ]
+  },
+  {
+    "run": "Opus 02",
+    "O1_N4": [
+      [
+        0,
+        0,
+        0.3533,
+        0.003
+      ],
+      [
+        0.8364,
+        0.0061,
+        1,
+        0
+      ]
+    ],
+    "O1_N3": [
+      [
+        0,
+        0,
+        1,
+        0
+      ]
+    ],
+    "O1_N5": [
+      [
+        0,
+        0,
+        1,
+        0
+      ]
+    ]
+  },
+  {
+    "run": "Opus 03",
+    "O1_N4": [
+      [
+        0.0,
+        0.0,
+        0.3531,
+        0.0029
+      ],
+      [
+        0.8363,
+        0.0035,
+        1.0,
+        0.0
+      ]
+    ],
+    "O1_N3": [
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ]
+    ],
+    "O1_N5": [
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ]
+    ]
+  },
+  {
+    "run": "GPT 01",
+    "O1_N4": [
+      [
+        0,
+        0,
+        0.354,
+        0.02
+      ],
+      [
+        0.838,
+        0.051,
+        1,
+        0
+      ]
+    ],
+    "O1_N3": {
+      "unresolved": true,
+      "bounds": "Charge class N=3,6 (q mod 6). Proved decodable on [0,0.0795517923731) and (0.9204482076269,1]. The central asymptotic set remains unresolved; slow size dependence cannot distinguish zero risk from a positive limiting risk. See report and competing size models. Exact information ordering also transfers the numerically supported subsets [0.000000,0.139000] union [0.861000,1.000000], using donor regions outside their full reported endpoint allowances. These inherited subsets are numerical evidence, distinct from the proved bounds."
+    },
+    "O1_N5": {
+      "unresolved": true,
+      "bounds": "Charge class N=5,7,8 (integer q). Proved decodable on [0,0.0795517923731) and (0.9204482076269,1]. The central asymptotic set remains unresolved; slow size dependence cannot distinguish zero risk from a positive limiting risk. See report and competing size models. Exact information ordering also transfers the numerically supported subsets [0.000000,0.334000] union [0.861000,1.000000], using donor regions outside their full reported endpoint allowances. These inherited subsets are numerical evidence, distinct from the proved bounds."
+    }
+  },
+  {
+    "run": "GPT 02",
+    "O1_N4": {
+      "unresolved": true,
+      "bounds": "Proved decodable: [0,0.1060] union [0.9191,1]. Any additional phase structure is confined to (0.1060,0.9191). Two crossings are suggested, but extrapolations drift and the high-p fits approach their search-window boundary. Charge information must dominate parity-only information; no stable joint endpoint estimate is asserted. See report.md and proofs.md; these sufficient bounds are not critical-point estimates."
+    },
+    "O1_N3": {
+      "unresolved": true,
+      "bounds": "Proved decodable: [0,0.1090] union [0.9096,1]. Any additional phase structure is confined to (0.1090,0.9096). Slow central size dependence does not distinguish a positive limiting risk from continued decay or establish the transition endpoints. See report.md and proofs.md; these sufficient bounds are not critical-point estimates."
+    },
+    "O1_N5": {
+      "unresolved": true,
+      "bounds": "Proved decodable: [0,0.1090] union [0.9096,1]. Any additional phase structure is confined to (0.1090,0.9096). Integer-charge records show slow central size dependence. The thermodynamic endpoints and possible critical interval remain unresolved. See report.md and proofs.md; these sufficient bounds are not critical-point estimates."
+    }
+  },
+  {
+    "run": "GPT 03",
+    "O1_N4": [
+      [
+        0,
+        0,
+        0.358,
+        0.031
+      ],
+      [
+        0.831,
+        0.031,
+        1,
+        0
+      ]
+    ],
+    "O1_N3": {
+      "unresolved": true,
+      "bounds": "Rigorous decodable subset: [0,p_-) union (1-p_-,1], p_-=(1-2^(-1/4))/2. A safely rounded subset is [0,0.0795517923731427] union [0.9204482076268573,1]. Also includes the entire O0 decodable set by exact record refinement. Charge information is q mod 6 (exactly shared with N=3,6). The interior phase boundaries and possible non-decodable set are unresolved. Increasing-patch data show rapid improvement near p=0.2 and p=0.9, and much slower drift at p=0.4 to 0.7; these are not promoted to an asymptotic boundary or a proof of all-p decodability."
+    },
+    "O1_N5": {
+      "unresolved": true,
+      "bounds": "Rigorous decodable subset: [0,p_-) union (1-p_-,1], p_-=(1-2^(-1/4))/2. A safely rounded subset is [0,0.0795517923731427] union [0.9204482076268573,1]. Also includes the entire O0 decodable set by exact record refinement. Charge information is integer q (exactly shared with N=5,7,8). The interior phase boundaries and possible non-decodable set are unresolved. Increasing-patch data show rapid improvement near p=0.2 and p=0.9, and much slower drift at p=0.4 to 0.7; these are not promoted to an asymptotic boundary or a proof of all-p decodability."
+    }
+  }
+]

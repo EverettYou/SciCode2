@@ -1,0 +1,1417 @@
+{
+  "valid": true,
+  "witnesses": 30,
+  "programs": 60,
+  "records": [
+    {
+      "file": "resource_witness_d2_direct_seed11.json",
+      "embedding": {
+        "valid": true,
+        "errors": [],
+        "physical_qubits": 10,
+        "chain_max": 2,
+        "chain_mean": 1.1111111111111112,
+        "singletons": 8
+      },
+      "programs": [
+        {
+          "variant": "direct_global",
+          "valid": true,
+          "errors": [],
+          "float_ground_states_certified": true,
+          "coefficient_l1_error_exact": [
+            1,
+            18014398509481984
+          ],
+          "coefficient_l1_error": 5.551115123125783e-17,
+          "raw_nonoptimal_gap_lower_bound": 1,
+          "scaled_nonoptimal_gap_lower_bound": 0.05263157894736831,
+          "exact_ranges_valid": true,
+          "sampled_consistent_states": 16,
+          "max_raw_energy_error": 0.0,
+          "max_scaled_energy_error": 4.440892098500626e-16
+        },
+        {
+          "variant": "direct_local",
+          "valid": true,
+          "errors": [],
+          "float_ground_states_certified": true,
+          "coefficient_l1_error_exact": [
+            1,
+            18014398509481984
+          ],
+          "coefficient_l1_error": 5.551115123125783e-17,
+          "raw_nonoptimal_gap_lower_bound": 1,
+          "scaled_nonoptimal_gap_lower_bound": 0.14285714285714274,
+          "exact_ranges_valid": true,
+          "sampled_consistent_states": 16,
+          "max_raw_energy_error": 0.0,
+          "max_scaled_energy_error": 2.220446049250313e-16
+        }
+      ]
+    },
+    {
+      "file": "resource_witness_d2_direct_seed29.json",
+      "embedding": {
+        "valid": true,
+        "errors": [],
+        "physical_qubits": 9,
+        "chain_max": 1,
+        "chain_mean": 1,
+        "singletons": 9
+      },
+      "programs": [
+        {
+          "variant": "direct_global",
+          "valid": true,
+          "errors": [],
+          "float_ground_states_certified": true,
+          "coefficient_l1_error_exact": [
+            7,
+            9007199254740992
+          ],
+          "coefficient_l1_error": 7.771561172376096e-16,
+          "raw_nonoptimal_gap_lower_bound": 1,
+          "scaled_nonoptimal_gap_lower_bound": 0.1666666666666651,
+          "exact_ranges_valid": true,
+          "sampled_consistent_states": 16,
+          "max_raw_energy_error": 0.0,
+          "max_scaled_energy_error": 8.881784197001252e-16
+        },
+        {
+          "variant": "direct_local",
+          "valid": true,
+          "errors": [],
+          "float_ground_states_certified": true,
+          "coefficient_l1_error_exact": [
+            0,
+            1
+          ],
+          "coefficient_l1_error": 0.0,
+          "raw_nonoptimal_gap_lower_bound": 1,
+          "scaled_nonoptimal_gap_lower_bound": 0.5,
+          "exact_ranges_valid": true,
+          "sampled_consistent_states": 16,
+          "max_raw_energy_error": 0.0,
+          "max_scaled_energy_error": 0.0
+        }
+      ]
+    },
+    {
+      "file": "resource_witness_d2_direct_seed47.json",
+      "embedding": {
+        "valid": true,
+        "errors": [],
+        "physical_qubits": 9,
+        "chain_max": 1,
+        "chain_mean": 1,
+        "singletons": 9
+      },
+      "programs": [
+        {
+          "variant": "direct_global",
+          "valid": true,
+          "errors": [],
+          "float_ground_states_certified": true,
+          "coefficient_l1_error_exact": [
+            7,
+            9007199254740992
+          ],
+          "coefficient_l1_error": 7.771561172376096e-16,
+          "raw_nonoptimal_gap_lower_bound": 1,
+          "scaled_nonoptimal_gap_lower_bound": 0.1666666666666651,
+          "exact_ranges_valid": true,
+          "sampled_consistent_states": 16,
+          "max_raw_energy_error": 0.0,
+          "max_scaled_energy_error": 8.881784197001252e-16
+        },
+        {
+          "variant": "direct_local",
+          "valid": true,
+          "errors": [],
+          "float_ground_states_certified": true,
+          "coefficient_l1_error_exact": [
+            0,
+            1
+          ],
+          "coefficient_l1_error": 0.0,
+          "raw_nonoptimal_gap_lower_bound": 1,
+          "scaled_nonoptimal_gap_lower_bound": 0.5,
+          "exact_ranges_valid": true,
+          "sampled_consistent_states": 16,
+          "max_raw_energy_error": 0.0,
+          "max_scaled_energy_error": 0.0
+        }
+      ]
+    },
+    {
+      "file": "resource_witness_d2_dual_seed11.json",
+      "embedding": {
+        "valid": true,
+        "errors": [],
+        "physical_qubits": 2,
+        "chain_max": 1,
+        "chain_mean": 1,
+        "singletons": 2
+      },
+      "programs": [
+        {
+          "variant": "dual_0",
+          "valid": true,
+          "errors": [],
+          "float_ground_states_certified": true,
+          "coefficient_l1_error_exact": [
+            0,
+            1
+          ],
+          "coefficient_l1_error": 0.0,
+          "raw_nonoptimal_gap_lower_bound": 1,
+          "scaled_nonoptimal_gap_lower_bound": 1.0,
+          "exact_ranges_valid": true,
+          "sampled_consistent_states": 16,
+          "max_raw_energy_error": 0.0,
+          "max_scaled_energy_error": 0.0
+        },
+        {
+          "variant": "dual_1",
+          "valid": true,
+          "errors": [],
+          "float_ground_states_certified": true,
+          "coefficient_l1_error_exact": [
+            0,
+            1
+          ],
+          "coefficient_l1_error": 0.0,
+          "raw_nonoptimal_gap_lower_bound": 1,
+          "scaled_nonoptimal_gap_lower_bound": 1.0,
+          "exact_ranges_valid": true,
+          "sampled_consistent_states": 16,
+          "max_raw_energy_error": 0.0,
+          "max_scaled_energy_error": 0.0
+        }
+      ]
+    },
+    {
+      "file": "resource_witness_d2_dual_seed29.json",
+      "embedding": {
+        "valid": true,
+        "errors": [],
+        "physical_qubits": 2,
+        "chain_max": 1,
+        "chain_mean": 1,
+        "singletons": 2
+      },
+      "programs": [
+        {
+          "variant": "dual_0",
+          "valid": true,
+          "errors": [],
+          "float_ground_states_certified": true,
+          "coefficient_l1_error_exact": [
+            0,
+            1
+          ],
+          "coefficient_l1_error": 0.0,
+          "raw_nonoptimal_gap_lower_bound": 1,
+          "scaled_nonoptimal_gap_lower_bound": 1.0,
+          "exact_ranges_valid": true,
+          "sampled_consistent_states": 16,
+          "max_raw_energy_error": 0.0,
+          "max_scaled_energy_error": 0.0
+        },
+        {
+          "variant": "dual_1",
+          "valid": true,
+          "errors": [],
+          "float_ground_states_certified": true,
+          "coefficient_l1_error_exact": [
+            0,
+            1
+          ],
+          "coefficient_l1_error": 0.0,
+          "raw_nonoptimal_gap_lower_bound": 1,
+          "scaled_nonoptimal_gap_lower_bound": 1.0,
+          "exact_ranges_valid": true,
+          "sampled_consistent_states": 16,
+          "max_raw_energy_error": 0.0,
+          "max_scaled_energy_error": 0.0
+        }
+      ]
+    },
+    {
+      "file": "resource_witness_d2_dual_seed47.json",
+      "embedding": {
+        "valid": true,
+        "errors": [],
+        "physical_qubits": 2,
+        "chain_max": 1,
+        "chain_mean": 1,
+        "singletons": 2
+      },
+      "programs": [
+        {
+          "variant": "dual_0",
+          "valid": true,
+          "errors": [],
+          "float_ground_states_certified": true,
+          "coefficient_l1_error_exact": [
+            0,
+            1
+          ],
+          "coefficient_l1_error": 0.0,
+          "raw_nonoptimal_gap_lower_bound": 1,
+          "scaled_nonoptimal_gap_lower_bound": 1.0,
+          "exact_ranges_valid": true,
+          "sampled_consistent_states": 16,
+          "max_raw_energy_error": 0.0,
+          "max_scaled_energy_error": 0.0
+        },
+        {
+          "variant": "dual_1",
+          "valid": true,
+          "errors": [],
+          "float_ground_states_certified": true,
+          "coefficient_l1_error_exact": [
+            0,
+            1
+          ],
+          "coefficient_l1_error": 0.0,
+          "raw_nonoptimal_gap_lower_bound": 1,
+          "scaled_nonoptimal_gap_lower_bound": 1.0,
+          "exact_ranges_valid": true,
+          "sampled_consistent_states": 16,
+          "max_raw_energy_error": 0.0,
+          "max_scaled_energy_error": 0.0
+        }
+      ]
+    },
+    {
+      "file": "resource_witness_d3_direct_seed11.json",
+      "embedding": {
+        "valid": true,
+        "errors": [],
+        "physical_qubits": 31,
+        "chain_max": 2,
+        "chain_mean": 1.0689655172413792,
+        "singletons": 27
+      },
+      "programs": [
+        {
+          "variant": "direct_global",
+          "valid": true,
+          "errors": [],
+          "float_ground_states_certified": true,
+          "coefficient_l1_error_exact": [
+            55,
+            72057594037927936
+          ],
+          "coefficient_l1_error": 7.632783294297951e-16,
+          "raw_nonoptimal_gap_lower_bound": 1,
+          "scaled_nonoptimal_gap_lower_bound": 0.01418439716311904,
+          "exact_ranges_valid": true,
+          "sampled_consistent_states": 16,
+          "max_raw_energy_error": 0.0,
+          "max_scaled_energy_error": 8.881784197001252e-16
+        },
+        {
+          "variant": "direct_local",
+          "valid": true,
+          "errors": [],
+          "float_ground_states_certified": true,
+          "coefficient_l1_error_exact": [
+            1,
+            18014398509481984
+          ],
+          "coefficient_l1_error": 5.551115123125783e-17,
+          "raw_nonoptimal_gap_lower_bound": 1,
+          "scaled_nonoptimal_gap_lower_bound": 0.09523809523809512,
+          "exact_ranges_valid": true,
+          "sampled_consistent_states": 16,
+          "max_raw_energy_error": 0.0,
+          "max_scaled_energy_error": 8.881784197001252e-16
+        }
+      ]
+    },
+    {
+      "file": "resource_witness_d3_direct_seed29.json",
+      "embedding": {
+        "valid": true,
+        "errors": [],
+        "physical_qubits": 32,
+        "chain_max": 2,
+        "chain_mean": 1.103448275862069,
+        "singletons": 26
+      },
+      "programs": [
+        {
+          "variant": "direct_global",
+          "valid": true,
+          "errors": [],
+          "float_ground_states_certified": true,
+          "coefficient_l1_error_exact": [
+            223,
+            288230376151711744
+          ],
+          "coefficient_l1_error": 7.73686670285656e-16,
+          "raw_nonoptimal_gap_lower_bound": 1,
+          "scaled_nonoptimal_gap_lower_bound": 0.01418439716311902,
+          "exact_ranges_valid": true,
+          "sampled_consistent_states": 16,
+          "max_raw_energy_error": 0.0,
+          "max_scaled_energy_error": 8.881784197001252e-16
+        },
+        {
+          "variant": "direct_local",
+          "valid": true,
+          "errors": [],
+          "float_ground_states_certified": true,
+          "coefficient_l1_error_exact": [
+            1,
+            18014398509481984
+          ],
+          "coefficient_l1_error": 5.551115123125783e-17,
+          "raw_nonoptimal_gap_lower_bound": 1,
+          "scaled_nonoptimal_gap_lower_bound": 0.09523809523809512,
+          "exact_ranges_valid": true,
+          "sampled_consistent_states": 16,
+          "max_raw_energy_error": 0.0,
+          "max_scaled_energy_error": 1.7763568394002505e-15
+        }
+      ]
+    },
+    {
+      "file": "resource_witness_d3_direct_seed47.json",
+      "embedding": {
+        "valid": true,
+        "errors": [],
+        "physical_qubits": 30,
+        "chain_max": 2,
+        "chain_mean": 1.0344827586206897,
+        "singletons": 28
+      },
+      "programs": [
+        {
+          "variant": "direct_global",
+          "valid": true,
+          "errors": [],
+          "float_ground_states_certified": true,
+          "coefficient_l1_error_exact": [
+            1,
+            18014398509481984
+          ],
+          "coefficient_l1_error": 5.551115123125783e-17,
+          "raw_nonoptimal_gap_lower_bound": 1,
+          "scaled_nonoptimal_gap_lower_bound": 0.017543859649122695,
+          "exact_ranges_valid": true,
+          "sampled_consistent_states": 16,
+          "max_raw_energy_error": 0.0,
+          "max_scaled_energy_error": 8.881784197001252e-16
+        },
+        {
+          "variant": "direct_local",
+          "valid": true,
+          "errors": [],
+          "float_ground_states_certified": true,
+          "coefficient_l1_error_exact": [
+            1,
+            18014398509481984
+          ],
+          "coefficient_l1_error": 5.551115123125783e-17,
+          "raw_nonoptimal_gap_lower_bound": 1,
+          "scaled_nonoptimal_gap_lower_bound": 0.111111111111111,
+          "exact_ranges_valid": true,
+          "sampled_consistent_states": 16,
+          "max_raw_energy_error": 0.0,
+          "max_scaled_energy_error": 1.7763568394002505e-15
+        }
+      ]
+    },
+    {
+      "file": "resource_witness_d3_dual_seed11.json",
+      "embedding": {
+        "valid": true,
+        "errors": [],
+        "physical_qubits": 6,
+        "chain_max": 1,
+        "chain_mean": 1,
+        "singletons": 6
+      },
+      "programs": [
+        {
+          "variant": "dual_0",
+          "valid": true,
+          "errors": [],
+          "float_ground_states_certified": true,
+          "coefficient_l1_error_exact": [
+            0,
+            1
+          ],
+          "coefficient_l1_error": 0.0,
+          "raw_nonoptimal_gap_lower_bound": 1,
+          "scaled_nonoptimal_gap_lower_bound": 2.0,
+          "exact_ranges_valid": true,
+          "sampled_consistent_states": 16,
+          "max_raw_energy_error": 0.0,
+          "max_scaled_energy_error": 0.0
+        },
+        {
+          "variant": "dual_1",
+          "valid": true,
+          "errors": [],
+          "float_ground_states_certified": true,
+          "coefficient_l1_error_exact": [
+            0,
+            1
+          ],
+          "coefficient_l1_error": 0.0,
+          "raw_nonoptimal_gap_lower_bound": 1,
+          "scaled_nonoptimal_gap_lower_bound": 2.0,
+          "exact_ranges_valid": true,
+          "sampled_consistent_states": 16,
+          "max_raw_energy_error": 0.0,
+          "max_scaled_energy_error": 0.0
+        }
+      ]
+    },
+    {
+      "file": "resource_witness_d3_dual_seed29.json",
+      "embedding": {
+        "valid": true,
+        "errors": [],
+        "physical_qubits": 6,
+        "chain_max": 1,
+        "chain_mean": 1,
+        "singletons": 6
+      },
+      "programs": [
+        {
+          "variant": "dual_0",
+          "valid": true,
+          "errors": [],
+          "float_ground_states_certified": true,
+          "coefficient_l1_error_exact": [
+            0,
+            1
+          ],
+          "coefficient_l1_error": 0.0,
+          "raw_nonoptimal_gap_lower_bound": 1,
+          "scaled_nonoptimal_gap_lower_bound": 2.0,
+          "exact_ranges_valid": true,
+          "sampled_consistent_states": 16,
+          "max_raw_energy_error": 0.0,
+          "max_scaled_energy_error": 0.0
+        },
+        {
+          "variant": "dual_1",
+          "valid": true,
+          "errors": [],
+          "float_ground_states_certified": true,
+          "coefficient_l1_error_exact": [
+            0,
+            1
+          ],
+          "coefficient_l1_error": 0.0,
+          "raw_nonoptimal_gap_lower_bound": 1,
+          "scaled_nonoptimal_gap_lower_bound": 2.0,
+          "exact_ranges_valid": true,
+          "sampled_consistent_states": 16,
+          "max_raw_energy_error": 0.0,
+          "max_scaled_energy_error": 0.0
+        }
+      ]
+    },
+    {
+      "file": "resource_witness_d3_dual_seed47.json",
+      "embedding": {
+        "valid": true,
+        "errors": [],
+        "physical_qubits": 6,
+        "chain_max": 1,
+        "chain_mean": 1,
+        "singletons": 6
+      },
+      "programs": [
+        {
+          "variant": "dual_0",
+          "valid": true,
+          "errors": [],
+          "float_ground_states_certified": true,
+          "coefficient_l1_error_exact": [
+            0,
+            1
+          ],
+          "coefficient_l1_error": 0.0,
+          "raw_nonoptimal_gap_lower_bound": 1,
+          "scaled_nonoptimal_gap_lower_bound": 2.0,
+          "exact_ranges_valid": true,
+          "sampled_consistent_states": 16,
+          "max_raw_energy_error": 0.0,
+          "max_scaled_energy_error": 0.0
+        },
+        {
+          "variant": "dual_1",
+          "valid": true,
+          "errors": [],
+          "float_ground_states_certified": true,
+          "coefficient_l1_error_exact": [
+            0,
+            1
+          ],
+          "coefficient_l1_error": 0.0,
+          "raw_nonoptimal_gap_lower_bound": 1,
+          "scaled_nonoptimal_gap_lower_bound": 2.0,
+          "exact_ranges_valid": true,
+          "sampled_consistent_states": 16,
+          "max_raw_energy_error": 0.0,
+          "max_scaled_energy_error": 0.0
+        }
+      ]
+    },
+    {
+      "file": "resource_witness_d5_direct_seed11.json",
+      "embedding": {
+        "valid": true,
+        "errors": [],
+        "physical_qubits": 143,
+        "chain_max": 3,
+        "chain_mean": 1.361904761904762,
+        "singletons": 68
+      },
+      "programs": [
+        {
+          "variant": "direct_global",
+          "valid": true,
+          "errors": [],
+          "float_ground_states_certified": true,
+          "coefficient_l1_error_exact": [
+            3817,
+            1152921504606846976
+          ],
+          "coefficient_l1_error": 3.3107197539017363e-15,
+          "raw_nonoptimal_gap_lower_bound": 1,
+          "scaled_nonoptimal_gap_lower_bound": 0.004750593824221407,
+          "exact_ranges_valid": true,
+          "sampled_consistent_states": 16,
+          "max_raw_energy_error": 0.0,
+          "max_scaled_energy_error": 5.329070518200751e-15
+        },
+        {
+          "variant": "direct_local",
+          "valid": true,
+          "errors": [],
+          "float_ground_states_certified": true,
+          "coefficient_l1_error_exact": [
+            185,
+            144115188075855872
+          ],
+          "coefficient_l1_error": 1.2836953722228372e-15,
+          "raw_nonoptimal_gap_lower_bound": 1,
+          "scaled_nonoptimal_gap_lower_bound": 0.0645161290322555,
+          "exact_ranges_valid": true,
+          "sampled_consistent_states": 16,
+          "max_raw_energy_error": 0.0,
+          "max_scaled_energy_error": 3.552713678800501e-15
+        }
+      ]
+    },
+    {
+      "file": "resource_witness_d5_direct_seed29.json",
+      "embedding": {
+        "valid": true,
+        "errors": [],
+        "physical_qubits": 119,
+        "chain_max": 2,
+        "chain_mean": 1.1333333333333333,
+        "singletons": 91
+      },
+      "programs": [
+        {
+          "variant": "direct_global",
+          "valid": true,
+          "errors": [],
+          "float_ground_states_certified": true,
+          "coefficient_l1_error_exact": [
+            3085,
+            1152921504606846976
+          ],
+          "coefficient_l1_error": 2.675810961694225e-15,
+          "raw_nonoptimal_gap_lower_bound": 1,
+          "scaled_nonoptimal_gap_lower_bound": 0.004750593824222677,
+          "exact_ranges_valid": true,
+          "sampled_consistent_states": 16,
+          "max_raw_energy_error": 0.0,
+          "max_scaled_energy_error": 3.552713678800501e-15
+        },
+        {
+          "variant": "direct_local",
+          "valid": true,
+          "errors": [],
+          "float_ground_states_certified": true,
+          "coefficient_l1_error_exact": [
+            1,
+            2251799813685248
+          ],
+          "coefficient_l1_error": 4.440892098500626e-16,
+          "raw_nonoptimal_gap_lower_bound": 1,
+          "scaled_nonoptimal_gap_lower_bound": 0.06451612903225717,
+          "exact_ranges_valid": true,
+          "sampled_consistent_states": 16,
+          "max_raw_energy_error": 0.0,
+          "max_scaled_energy_error": 3.552713678800501e-15
+        }
+      ]
+    },
+    {
+      "file": "resource_witness_d5_direct_seed47.json",
+      "embedding": {
+        "valid": true,
+        "errors": [],
+        "physical_qubits": 121,
+        "chain_max": 2,
+        "chain_mean": 1.1523809523809523,
+        "singletons": 89
+      },
+      "programs": [
+        {
+          "variant": "direct_global",
+          "valid": true,
+          "errors": [],
+          "float_ground_states_certified": true,
+          "coefficient_l1_error_exact": [
+            3139,
+            1152921504606846976
+          ],
+          "coefficient_l1_error": 2.7226484955455987e-15,
+          "raw_nonoptimal_gap_lower_bound": 1,
+          "scaled_nonoptimal_gap_lower_bound": 0.004750593824222583,
+          "exact_ranges_valid": true,
+          "sampled_consistent_states": 16,
+          "max_raw_energy_error": 0.0,
+          "max_scaled_energy_error": 3.552713678800501e-15
+        },
+        {
+          "variant": "direct_local",
+          "valid": true,
+          "errors": [],
+          "float_ground_states_certified": true,
+          "coefficient_l1_error_exact": [
+            5,
+            9007199254740992
+          ],
+          "coefficient_l1_error": 5.551115123125783e-16,
+          "raw_nonoptimal_gap_lower_bound": 1,
+          "scaled_nonoptimal_gap_lower_bound": 0.06451612903225695,
+          "exact_ranges_valid": true,
+          "sampled_consistent_states": 16,
+          "max_raw_energy_error": 0.0,
+          "max_scaled_energy_error": 3.552713678800501e-15
+        }
+      ]
+    },
+    {
+      "file": "resource_witness_d5_dual_seed11.json",
+      "embedding": {
+        "valid": true,
+        "errors": [],
+        "physical_qubits": 20,
+        "chain_max": 1,
+        "chain_mean": 1,
+        "singletons": 20
+      },
+      "programs": [
+        {
+          "variant": "dual_0",
+          "valid": true,
+          "errors": [],
+          "float_ground_states_certified": true,
+          "coefficient_l1_error_exact": [
+            0,
+            1
+          ],
+          "coefficient_l1_error": 0.0,
+          "raw_nonoptimal_gap_lower_bound": 1,
+          "scaled_nonoptimal_gap_lower_bound": 2.0,
+          "exact_ranges_valid": true,
+          "sampled_consistent_states": 16,
+          "max_raw_energy_error": 0.0,
+          "max_scaled_energy_error": 0.0
+        },
+        {
+          "variant": "dual_1",
+          "valid": true,
+          "errors": [],
+          "float_ground_states_certified": true,
+          "coefficient_l1_error_exact": [
+            0,
+            1
+          ],
+          "coefficient_l1_error": 0.0,
+          "raw_nonoptimal_gap_lower_bound": 1,
+          "scaled_nonoptimal_gap_lower_bound": 2.0,
+          "exact_ranges_valid": true,
+          "sampled_consistent_states": 16,
+          "max_raw_energy_error": 0.0,
+          "max_scaled_energy_error": 0.0
+        }
+      ]
+    },
+    {
+      "file": "resource_witness_d5_dual_seed29.json",
+      "embedding": {
+        "valid": true,
+        "errors": [],
+        "physical_qubits": 20,
+        "chain_max": 1,
+        "chain_mean": 1,
+        "singletons": 20
+      },
+      "programs": [
+        {
+          "variant": "dual_0",
+          "valid": true,
+          "errors": [],
+          "float_ground_states_certified": true,
+          "coefficient_l1_error_exact": [
+            0,
+            1
+          ],
+          "coefficient_l1_error": 0.0,
+          "raw_nonoptimal_gap_lower_bound": 1,
+          "scaled_nonoptimal_gap_lower_bound": 2.0,
+          "exact_ranges_valid": true,
+          "sampled_consistent_states": 16,
+          "max_raw_energy_error": 0.0,
+          "max_scaled_energy_error": 0.0
+        },
+        {
+          "variant": "dual_1",
+          "valid": true,
+          "errors": [],
+          "float_ground_states_certified": true,
+          "coefficient_l1_error_exact": [
+            0,
+            1
+          ],
+          "coefficient_l1_error": 0.0,
+          "raw_nonoptimal_gap_lower_bound": 1,
+          "scaled_nonoptimal_gap_lower_bound": 2.0,
+          "exact_ranges_valid": true,
+          "sampled_consistent_states": 16,
+          "max_raw_energy_error": 0.0,
+          "max_scaled_energy_error": 0.0
+        }
+      ]
+    },
+    {
+      "file": "resource_witness_d5_dual_seed47.json",
+      "embedding": {
+        "valid": true,
+        "errors": [],
+        "physical_qubits": 20,
+        "chain_max": 1,
+        "chain_mean": 1,
+        "singletons": 20
+      },
+      "programs": [
+        {
+          "variant": "dual_0",
+          "valid": true,
+          "errors": [],
+          "float_ground_states_certified": true,
+          "coefficient_l1_error_exact": [
+            0,
+            1
+          ],
+          "coefficient_l1_error": 0.0,
+          "raw_nonoptimal_gap_lower_bound": 1,
+          "scaled_nonoptimal_gap_lower_bound": 2.0,
+          "exact_ranges_valid": true,
+          "sampled_consistent_states": 16,
+          "max_raw_energy_error": 0.0,
+          "max_scaled_energy_error": 0.0
+        },
+        {
+          "variant": "dual_1",
+          "valid": true,
+          "errors": [],
+          "float_ground_states_certified": true,
+          "coefficient_l1_error_exact": [
+            0,
+            1
+          ],
+          "coefficient_l1_error": 0.0,
+          "raw_nonoptimal_gap_lower_bound": 1,
+          "scaled_nonoptimal_gap_lower_bound": 2.0,
+          "exact_ranges_valid": true,
+          "sampled_consistent_states": 16,
+          "max_raw_energy_error": 0.0,
+          "max_scaled_energy_error": 0.0
+        }
+      ]
+    },
+    {
+      "file": "resource_witness_d7_direct_seed11.json",
+      "embedding": {
+        "valid": true,
+        "errors": [],
+        "physical_qubits": 316,
+        "chain_max": 4,
+        "chain_mean": 1.3799126637554586,
+        "singletons": 164
+      },
+      "programs": [
+        {
+          "variant": "direct_global",
+          "valid": true,
+          "errors": [],
+          "float_ground_states_certified": true,
+          "coefficient_l1_error_exact": [
+            2429,
+            576460752303423488
+          ],
+          "coefficient_l1_error": 4.2136433231476644e-15,
+          "raw_nonoptimal_gap_lower_bound": 1,
+          "scaled_nonoptimal_gap_lower_bound": 0.002322880371652432,
+          "exact_ranges_valid": true,
+          "sampled_consistent_states": 16,
+          "max_raw_energy_error": 0.0,
+          "max_scaled_energy_error": 1.4210854715202004e-14
+        },
+        {
+          "variant": "direct_local",
+          "valid": true,
+          "errors": [],
+          "float_ground_states_certified": true,
+          "coefficient_l1_error_exact": [
+            503,
+            144115188075855872
+          ],
+          "coefficient_l1_error": 3.490263633665336e-15,
+          "raw_nonoptimal_gap_lower_bound": 1,
+          "scaled_nonoptimal_gap_lower_bound": 0.04878048780487107,
+          "exact_ranges_valid": true,
+          "sampled_consistent_states": 16,
+          "max_raw_energy_error": 0.0,
+          "max_scaled_energy_error": 7.105427357601002e-15
+        }
+      ]
+    },
+    {
+      "file": "resource_witness_d7_direct_seed29.json",
+      "embedding": {
+        "valid": true,
+        "errors": [],
+        "physical_qubits": 319,
+        "chain_max": 4,
+        "chain_mean": 1.3930131004366813,
+        "singletons": 155
+      },
+      "programs": [
+        {
+          "variant": "direct_global",
+          "valid": true,
+          "errors": [],
+          "float_ground_states_certified": true,
+          "coefficient_l1_error_exact": [
+            5551,
+            1152921504606846976
+          ],
+          "coefficient_l1_error": 4.814725007573628e-15,
+          "raw_nonoptimal_gap_lower_bound": 1,
+          "scaled_nonoptimal_gap_lower_bound": 0.00232288037165123,
+          "exact_ranges_valid": true,
+          "sampled_consistent_states": 16,
+          "max_raw_energy_error": 0.0,
+          "max_scaled_energy_error": 1.4210854715202004e-14
+        },
+        {
+          "variant": "direct_local",
+          "valid": true,
+          "errors": [],
+          "float_ground_states_certified": true,
+          "coefficient_l1_error_exact": [
+            123,
+            36028797018963968
+          ],
+          "coefficient_l1_error": 3.4139358007223564e-15,
+          "raw_nonoptimal_gap_lower_bound": 1,
+          "scaled_nonoptimal_gap_lower_bound": 0.04878048780487122,
+          "exact_ranges_valid": true,
+          "sampled_consistent_states": 16,
+          "max_raw_energy_error": 0.0,
+          "max_scaled_energy_error": 1.4210854715202004e-14
+        }
+      ]
+    },
+    {
+      "file": "resource_witness_d7_direct_seed47.json",
+      "embedding": {
+        "valid": true,
+        "errors": [],
+        "physical_qubits": 339,
+        "chain_max": 4,
+        "chain_mean": 1.480349344978166,
+        "singletons": 137
+      },
+      "programs": [
+        {
+          "variant": "direct_global",
+          "valid": true,
+          "errors": [],
+          "float_ground_states_certified": true,
+          "coefficient_l1_error_exact": [
+            3191,
+            576460752303423488
+          ],
+          "coefficient_l1_error": 5.5355026118419914e-15,
+          "raw_nonoptimal_gap_lower_bound": 1,
+          "scaled_nonoptimal_gap_lower_bound": 0.0023228803716497885,
+          "exact_ranges_valid": true,
+          "sampled_consistent_states": 16,
+          "max_raw_energy_error": 0.0,
+          "max_scaled_energy_error": 1.4210854715202004e-14
+        },
+        {
+          "variant": "direct_local",
+          "valid": true,
+          "errors": [],
+          "float_ground_states_certified": true,
+          "coefficient_l1_error_exact": [
+            569,
+            144115188075855872
+          ],
+          "coefficient_l1_error": 3.948230631323213e-15,
+          "raw_nonoptimal_gap_lower_bound": 1,
+          "scaled_nonoptimal_gap_lower_bound": 0.048780487804870154,
+          "exact_ranges_valid": true,
+          "sampled_consistent_states": 16,
+          "max_raw_energy_error": 0.0,
+          "max_scaled_energy_error": 1.4210854715202004e-14
+        }
+      ]
+    },
+    {
+      "file": "resource_witness_d7_dual_seed11.json",
+      "embedding": {
+        "valid": true,
+        "errors": [],
+        "physical_qubits": 44,
+        "chain_max": 2,
+        "chain_mean": 1.0476190476190477,
+        "singletons": 40
+      },
+      "programs": [
+        {
+          "variant": "dual_0",
+          "valid": true,
+          "errors": [],
+          "float_ground_states_certified": true,
+          "coefficient_l1_error_exact": [
+            1,
+            9007199254740992
+          ],
+          "coefficient_l1_error": 1.1102230246251565e-16,
+          "raw_nonoptimal_gap_lower_bound": 1,
+          "scaled_nonoptimal_gap_lower_bound": 0.3333333333333331,
+          "exact_ranges_valid": true,
+          "sampled_consistent_states": 16,
+          "max_raw_energy_error": 0.0,
+          "max_scaled_energy_error": 3.552713678800501e-15
+        },
+        {
+          "variant": "dual_1",
+          "valid": true,
+          "errors": [],
+          "float_ground_states_certified": true,
+          "coefficient_l1_error_exact": [
+            1,
+            9007199254740992
+          ],
+          "coefficient_l1_error": 1.1102230246251565e-16,
+          "raw_nonoptimal_gap_lower_bound": 1,
+          "scaled_nonoptimal_gap_lower_bound": 0.3333333333333331,
+          "exact_ranges_valid": true,
+          "sampled_consistent_states": 16,
+          "max_raw_energy_error": 0.0,
+          "max_scaled_energy_error": 3.552713678800501e-15
+        }
+      ]
+    },
+    {
+      "file": "resource_witness_d7_dual_seed29.json",
+      "embedding": {
+        "valid": true,
+        "errors": [],
+        "physical_qubits": 44,
+        "chain_max": 2,
+        "chain_mean": 1.0476190476190477,
+        "singletons": 40
+      },
+      "programs": [
+        {
+          "variant": "dual_0",
+          "valid": true,
+          "errors": [],
+          "float_ground_states_certified": true,
+          "coefficient_l1_error_exact": [
+            1,
+            9007199254740992
+          ],
+          "coefficient_l1_error": 1.1102230246251565e-16,
+          "raw_nonoptimal_gap_lower_bound": 1,
+          "scaled_nonoptimal_gap_lower_bound": 0.3333333333333331,
+          "exact_ranges_valid": true,
+          "sampled_consistent_states": 16,
+          "max_raw_energy_error": 0.0,
+          "max_scaled_energy_error": 3.552713678800501e-15
+        },
+        {
+          "variant": "dual_1",
+          "valid": true,
+          "errors": [],
+          "float_ground_states_certified": true,
+          "coefficient_l1_error_exact": [
+            1,
+            9007199254740992
+          ],
+          "coefficient_l1_error": 1.1102230246251565e-16,
+          "raw_nonoptimal_gap_lower_bound": 1,
+          "scaled_nonoptimal_gap_lower_bound": 0.3333333333333331,
+          "exact_ranges_valid": true,
+          "sampled_consistent_states": 16,
+          "max_raw_energy_error": 0.0,
+          "max_scaled_energy_error": 3.552713678800501e-15
+        }
+      ]
+    },
+    {
+      "file": "resource_witness_d7_dual_seed47.json",
+      "embedding": {
+        "valid": true,
+        "errors": [],
+        "physical_qubits": 49,
+        "chain_max": 2,
+        "chain_mean": 1.1666666666666667,
+        "singletons": 35
+      },
+      "programs": [
+        {
+          "variant": "dual_0",
+          "valid": true,
+          "errors": [],
+          "float_ground_states_certified": true,
+          "coefficient_l1_error_exact": [
+            13,
+            36028797018963968
+          ],
+          "coefficient_l1_error": 3.608224830031759e-16,
+          "raw_nonoptimal_gap_lower_bound": 1,
+          "scaled_nonoptimal_gap_lower_bound": 0.3333333333333326,
+          "exact_ranges_valid": true,
+          "sampled_consistent_states": 16,
+          "max_raw_energy_error": 0.0,
+          "max_scaled_energy_error": 3.552713678800501e-15
+        },
+        {
+          "variant": "dual_1",
+          "valid": true,
+          "errors": [],
+          "float_ground_states_certified": true,
+          "coefficient_l1_error_exact": [
+            13,
+            36028797018963968
+          ],
+          "coefficient_l1_error": 3.608224830031759e-16,
+          "raw_nonoptimal_gap_lower_bound": 1,
+          "scaled_nonoptimal_gap_lower_bound": 0.3333333333333326,
+          "exact_ranges_valid": true,
+          "sampled_consistent_states": 16,
+          "max_raw_energy_error": 0.0,
+          "max_scaled_energy_error": 3.552713678800501e-15
+        }
+      ]
+    },
+    {
+      "file": "resource_witness_d9_direct_seed11.json",
+      "embedding": {
+        "valid": true,
+        "errors": [],
+        "physical_qubits": 646,
+        "chain_max": 6,
+        "chain_mean": 1.6109725685785536,
+        "singletons": 227
+      },
+      "programs": [
+        {
+          "variant": "direct_global",
+          "valid": true,
+          "errors": [],
+          "float_ground_states_certified": true,
+          "coefficient_l1_error_exact": [
+            60617,
+            9223372036854775808
+          ],
+          "coefficient_l1_error": 6.572108308955382e-15,
+          "raw_nonoptimal_gap_lower_bound": 1,
+          "scaled_nonoptimal_gap_lower_bound": 0.0013689253935529064,
+          "exact_ranges_valid": true,
+          "sampled_consistent_states": 16,
+          "max_raw_energy_error": 0.0,
+          "max_scaled_energy_error": 2.842170943040401e-14
+        },
+        {
+          "variant": "direct_local",
+          "valid": true,
+          "errors": [],
+          "float_ground_states_certified": true,
+          "coefficient_l1_error_exact": [
+            425,
+            72057594037927936
+          ],
+          "coefficient_l1_error": 5.898059818321144e-15,
+          "raw_nonoptimal_gap_lower_bound": 1,
+          "scaled_nonoptimal_gap_lower_bound": 0.03921568627449801,
+          "exact_ranges_valid": true,
+          "sampled_consistent_states": 16,
+          "max_raw_energy_error": 0.0,
+          "max_scaled_energy_error": 4.263256414560601e-14
+        }
+      ]
+    },
+    {
+      "file": "resource_witness_d9_direct_seed29.json",
+      "embedding": {
+        "valid": true,
+        "errors": [],
+        "physical_qubits": 639,
+        "chain_max": 9,
+        "chain_mean": 1.5935162094763091,
+        "singletons": 242
+      },
+      "programs": [
+        {
+          "variant": "direct_global",
+          "valid": true,
+          "errors": [],
+          "float_ground_states_certified": true,
+          "coefficient_l1_error_exact": [
+            60889,
+            9223372036854775808
+          ],
+          "coefficient_l1_error": 6.601598608046988e-15,
+          "raw_nonoptimal_gap_lower_bound": 1,
+          "scaled_nonoptimal_gap_lower_bound": 0.0013689253935528474,
+          "exact_ranges_valid": true,
+          "sampled_consistent_states": 16,
+          "max_raw_energy_error": 0.0,
+          "max_scaled_energy_error": 2.842170943040401e-14
+        },
+        {
+          "variant": "direct_local",
+          "valid": true,
+          "errors": [],
+          "float_ground_states_certified": true,
+          "coefficient_l1_error_exact": [
+            397,
+            72057594037927936
+          ],
+          "coefficient_l1_error": 5.509481759702339e-15,
+          "raw_nonoptimal_gap_lower_bound": 1,
+          "scaled_nonoptimal_gap_lower_bound": 0.039215686274498784,
+          "exact_ranges_valid": true,
+          "sampled_consistent_states": 16,
+          "max_raw_energy_error": 0.0,
+          "max_scaled_energy_error": 2.842170943040401e-14
+        }
+      ]
+    },
+    {
+      "file": "resource_witness_d9_direct_seed47.json",
+      "embedding": {
+        "valid": true,
+        "errors": [],
+        "physical_qubits": 581,
+        "chain_max": 5,
+        "chain_mean": 1.4488778054862843,
+        "singletons": 262
+      },
+      "programs": [
+        {
+          "variant": "direct_global",
+          "valid": true,
+          "errors": [],
+          "float_ground_states_certified": true,
+          "coefficient_l1_error_exact": [
+            56515,
+            9223372036854775808
+          ],
+          "coefficient_l1_error": 6.127368577801828e-15,
+          "raw_nonoptimal_gap_lower_bound": 1,
+          "scaled_nonoptimal_gap_lower_bound": 0.001368925393553796,
+          "exact_ranges_valid": true,
+          "sampled_consistent_states": 16,
+          "max_raw_energy_error": 0.0,
+          "max_scaled_energy_error": 3.552713678800501e-14
+        },
+        {
+          "variant": "direct_local",
+          "valid": true,
+          "errors": [],
+          "float_ground_states_certified": true,
+          "coefficient_l1_error_exact": [
+            583,
+            144115188075855872
+          ],
+          "coefficient_l1_error": 4.045375145977914e-15,
+          "raw_nonoptimal_gap_lower_bound": 1,
+          "scaled_nonoptimal_gap_lower_bound": 0.03921568627450171,
+          "exact_ranges_valid": true,
+          "sampled_consistent_states": 16,
+          "max_raw_energy_error": 0.0,
+          "max_scaled_energy_error": 2.1316282072803006e-14
+        }
+      ]
+    },
+    {
+      "file": "resource_witness_d9_dual_seed11.json",
+      "embedding": {
+        "valid": true,
+        "errors": [],
+        "physical_qubits": 80,
+        "chain_max": 2,
+        "chain_mean": 1.1111111111111112,
+        "singletons": 64
+      },
+      "programs": [
+        {
+          "variant": "dual_0",
+          "valid": true,
+          "errors": [],
+          "float_ground_states_certified": true,
+          "coefficient_l1_error_exact": [
+            1,
+            2251799813685248
+          ],
+          "coefficient_l1_error": 4.440892098500626e-16,
+          "raw_nonoptimal_gap_lower_bound": 1,
+          "scaled_nonoptimal_gap_lower_bound": 0.3333333333333324,
+          "exact_ranges_valid": true,
+          "sampled_consistent_states": 16,
+          "max_raw_energy_error": 0.0,
+          "max_scaled_energy_error": 3.552713678800501e-15
+        },
+        {
+          "variant": "dual_1",
+          "valid": true,
+          "errors": [],
+          "float_ground_states_certified": true,
+          "coefficient_l1_error_exact": [
+            1,
+            2251799813685248
+          ],
+          "coefficient_l1_error": 4.440892098500626e-16,
+          "raw_nonoptimal_gap_lower_bound": 1,
+          "scaled_nonoptimal_gap_lower_bound": 0.3333333333333324,
+          "exact_ranges_valid": true,
+          "sampled_consistent_states": 16,
+          "max_raw_energy_error": 0.0,
+          "max_scaled_energy_error": 3.552713678800501e-15
+        }
+      ]
+    },
+    {
+      "file": "resource_witness_d9_dual_seed29.json",
+      "embedding": {
+        "valid": true,
+        "errors": [],
+        "physical_qubits": 76,
+        "chain_max": 2,
+        "chain_mean": 1.0555555555555556,
+        "singletons": 68
+      },
+      "programs": [
+        {
+          "variant": "dual_0",
+          "valid": true,
+          "errors": [],
+          "float_ground_states_certified": true,
+          "coefficient_l1_error_exact": [
+            7,
+            36028797018963968
+          ],
+          "coefficient_l1_error": 1.942890293094024e-16,
+          "raw_nonoptimal_gap_lower_bound": 1,
+          "scaled_nonoptimal_gap_lower_bound": 0.3333333333333329,
+          "exact_ranges_valid": true,
+          "sampled_consistent_states": 16,
+          "max_raw_energy_error": 0.0,
+          "max_scaled_energy_error": 3.552713678800501e-15
+        },
+        {
+          "variant": "dual_1",
+          "valid": true,
+          "errors": [],
+          "float_ground_states_certified": true,
+          "coefficient_l1_error_exact": [
+            7,
+            36028797018963968
+          ],
+          "coefficient_l1_error": 1.942890293094024e-16,
+          "raw_nonoptimal_gap_lower_bound": 1,
+          "scaled_nonoptimal_gap_lower_bound": 0.3333333333333329,
+          "exact_ranges_valid": true,
+          "sampled_consistent_states": 16,
+          "max_raw_energy_error": 0.0,
+          "max_scaled_energy_error": 3.552713678800501e-15
+        }
+      ]
+    },
+    {
+      "file": "resource_witness_d9_dual_seed47.json",
+      "embedding": {
+        "valid": true,
+        "errors": [],
+        "physical_qubits": 80,
+        "chain_max": 2,
+        "chain_mean": 1.1111111111111112,
+        "singletons": 64
+      },
+      "programs": [
+        {
+          "variant": "dual_0",
+          "valid": true,
+          "errors": [],
+          "float_ground_states_certified": true,
+          "coefficient_l1_error_exact": [
+            15,
+            36028797018963968
+          ],
+          "coefficient_l1_error": 4.163336342344337e-16,
+          "raw_nonoptimal_gap_lower_bound": 1,
+          "scaled_nonoptimal_gap_lower_bound": 0.3333333333333325,
+          "exact_ranges_valid": true,
+          "sampled_consistent_states": 16,
+          "max_raw_energy_error": 0.0,
+          "max_scaled_energy_error": 7.105427357601002e-15
+        },
+        {
+          "variant": "dual_1",
+          "valid": true,
+          "errors": [],
+          "float_ground_states_certified": true,
+          "coefficient_l1_error_exact": [
+            15,
+            36028797018963968
+          ],
+          "coefficient_l1_error": 4.163336342344337e-16,
+          "raw_nonoptimal_gap_lower_bound": 1,
+          "scaled_nonoptimal_gap_lower_bound": 0.3333333333333325,
+          "exact_ranges_valid": true,
+          "sampled_consistent_states": 16,
+          "max_raw_energy_error": 0.0,
+          "max_scaled_energy_error": 3.552713678800501e-15
+        }
+      ]
+    }
+  ]
+}

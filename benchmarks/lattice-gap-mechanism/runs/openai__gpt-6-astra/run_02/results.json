@@ -1,0 +1,971 @@
+{
+  "units": "D for energies and temperatures",
+  "scope": "Empirical fits and explicit non-unique spectral completions; no fitted many-body Hamiltonian.",
+  "NMR_activation_fits": [
+    {
+      "parameters": [
+        1.3743850435046379,
+        5.538281057165676
+      ],
+      "parameter_names": [
+        "log_amplitude",
+        "activation_energy"
+      ],
+      "standard_errors": [
+        0.13081615394385523,
+        0.13462567209044274
+      ],
+      "covariance": [
+        [
+          0.017112866132662434,
+          0.015485752550164612
+        ],
+        [
+          0.015485752550164612,
+          0.018124071585803415
+        ]
+      ],
+      "chi2": 1.6937429081309483,
+      "dof": 16,
+      "n": 18,
+      "temperature_range": [
+        0.4472,
+        4.4318
+      ],
+      "model": "1/T1 = exp(a) * T * exp(-Delta/T)",
+      "uncertainty_assumption": "Diagonal supplied errors; no covariance was supplied.",
+      "filling": 0.5,
+      "free_prefactor_power_sensitivity": {
+        "parameters": [
+          1.4277142267386242,
+          5.586422007432901,
+          0.964056833406791
+        ],
+        "parameter_names": [
+          "log_amplitude",
+          "activation_energy",
+          "rate_prefactor_power"
+        ],
+        "standard_errors": [
+          0.5663173707257845,
+          0.5162334828707588,
+          0.37067351885466193
+        ],
+        "covariance": [
+          [
+            0.32071536438576564,
+            0.2900835507185866,
+            -0.20419531732503562
+          ],
+          [
+            0.2900835507185866,
+            0.26649700883687394,
+            -0.18466372055639318
+          ],
+          [
+            -0.20419531732503562,
+            -0.18466372055639318,
+            0.13739885758009743
+          ]
+        ],
+        "chi2": 1.6844740828215399,
+        "dof": 15,
+        "n": 18,
+        "temperature_range": [
+          0.4472,
+          4.4318
+        ],
+        "model": "1/T1 = exp(a) * T^p * exp(-Delta/T)",
+        "uncertainty_assumption": "Diagonal supplied errors; no covariance was supplied."
+      },
+      "fit_range_sensitivity": {
+        "1.5": {
+          "parameters": [
+            1.5052739292467414,
+            5.637263255005919
+          ],
+          "parameter_names": [
+            "log_amplitude",
+            "activation_energy"
+          ],
+          "standard_errors": [
+            0.3208312952054972,
+            0.2670359305746314
+          ],
+          "covariance": [
+            [
+              0.10293271998323689,
+              0.08296232949824356
+            ],
+            [
+              0.08296232949824356,
+              0.07130818821785934
+            ]
+          ],
+          "chi2": 1.3661601317019403,
+          "dof": 11,
+          "n": 13,
+          "temperature_range": [
+            0.4472,
+            1.3732
+          ],
+          "model": "1/T1 = exp(a) * T * exp(-Delta/T)",
+          "uncertainty_assumption": "Diagonal supplied errors; no covariance was supplied."
+        },
+        "2.0": {
+          "parameters": [
+            1.4121698239341363,
+            5.5672760752416925
+          ],
+          "parameter_names": [
+            "log_amplitude",
+            "activation_energy"
+          ],
+          "standard_errors": [
+            0.25370243222784644,
+            0.22042219241818506
+          ],
+          "covariance": [
+            [
+              0.06436492411832502,
+              0.053398735410249136
+            ],
+            [
+              0.053398735410249136,
+              0.048585942910439404
+            ]
+          ],
+          "chi2": 1.573944845379647,
+          "dof": 12,
+          "n": 14,
+          "temperature_range": [
+            0.4472,
+            1.6596
+          ],
+          "model": "1/T1 = exp(a) * T * exp(-Delta/T)",
+          "uncertainty_assumption": "Diagonal supplied errors; no covariance was supplied."
+        },
+        "4.5": {
+          "parameters": [
+            1.3743850435046379,
+            5.538281057165676
+          ],
+          "parameter_names": [
+            "log_amplitude",
+            "activation_energy"
+          ],
+          "standard_errors": [
+            0.13081615394385523,
+            0.13462567209044274
+          ],
+          "covariance": [
+            [
+              0.017112866132662434,
+              0.015485752550164612
+            ],
+            [
+              0.015485752550164612,
+              0.018124071585803415
+            ]
+          ],
+          "chi2": 1.6937429081309483,
+          "dof": 16,
+          "n": 18,
+          "temperature_range": [
+            0.4472,
+            4.4318
+          ],
+          "model": "1/T1 = exp(a) * T * exp(-Delta/T)",
+          "uncertainty_assumption": "Diagonal supplied errors; no covariance was supplied."
+        }
+      }
+    },
+    {
+      "parameters": [
+        0.711706794255189,
+        2.6285741100216065
+      ],
+      "parameter_names": [
+        "log_amplitude",
+        "activation_energy"
+      ],
+      "standard_errors": [
+        0.13587381135781762,
+        0.06448853883219041
+      ],
+      "covariance": [
+        [
+          0.01846169261289981,
+          0.008156649043619759
+        ],
+        [
+          0.008156649043619759,
+          0.004158771640710931
+        ]
+      ],
+      "chi2": 6.531119116813539,
+      "dof": 31,
+      "n": 33,
+      "temperature_range": [
+        0.2052,
+        1.3732
+      ],
+      "model": "1/T1 = exp(a) * T * exp(-Delta/T)",
+      "uncertainty_assumption": "Diagonal supplied errors; no covariance was supplied.",
+      "filling": 0.3,
+      "free_prefactor_power_sensitivity": {
+        "parameters": [
+          0.7465524499700507,
+          2.6665192345510498,
+          0.9323682883674791
+        ],
+        "parameter_names": [
+          "log_amplitude",
+          "activation_energy",
+          "rate_prefactor_power"
+        ],
+        "standard_errors": [
+          0.3033947135868488,
+          0.30401134574834143,
+          0.531706106102019
+        ],
+        "covariance": [
+          [
+            0.09204835223244599,
+            0.08871756323373571,
+            -0.1440379971902653
+          ],
+          [
+            0.08871756323373581,
+            0.09242289834371761,
+            -0.15791853098963107
+          ],
+          [
+            -0.14403799719026553,
+            -0.15791853098963116,
+            0.2827113832661714
+          ]
+        ],
+        "chi2": 6.514455397775977,
+        "dof": 30,
+        "n": 33,
+        "temperature_range": [
+          0.2052,
+          1.3732
+        ],
+        "model": "1/T1 = exp(a) * T^p * exp(-Delta/T)",
+        "uncertainty_assumption": "Diagonal supplied errors; no covariance was supplied."
+      },
+      "fit_range_sensitivity": {
+        "0.7": {
+          "parameters": [
+            0.5798466593268093,
+            2.580227721856135
+          ],
+          "parameter_names": [
+            "log_amplitude",
+            "activation_energy"
+          ],
+          "standard_errors": [
+            0.24536009061938555,
+            0.10172107743447203
+          ],
+          "covariance": [
+            [
+              0.06020157406875308,
+              0.024226414020799444
+            ],
+            [
+              0.024226414020799444,
+              0.010347177594429855
+            ]
+          ],
+          "chi2": 2.5389316449444284,
+          "dof": 25,
+          "n": 27,
+          "temperature_range": [
+            0.2052,
+            0.6747
+          ],
+          "model": "1/T1 = exp(a) * T * exp(-Delta/T)",
+          "uncertainty_assumption": "Diagonal supplied errors; no covariance was supplied."
+        },
+        "1.0": {
+          "parameters": [
+            0.821958514279525,
+            2.673204310509182
+          ],
+          "parameter_names": [
+            "log_amplitude",
+            "activation_energy"
+          ],
+          "standard_errors": [
+            0.19076593410433293,
+            0.08497783264871217
+          ],
+          "covariance": [
+            [
+              0.0363916416146987,
+              0.01555291612839405
+            ],
+            [
+              0.01555291612839405,
+              0.007221232041672532
+            ]
+          ],
+          "chi2": 5.656572129465026,
+          "dof": 28,
+          "n": 30,
+          "temperature_range": [
+            0.2052,
+            0.9049
+          ],
+          "model": "1/T1 = exp(a) * T * exp(-Delta/T)",
+          "uncertainty_assumption": "Diagonal supplied errors; no covariance was supplied."
+        },
+        "1.5": {
+          "parameters": [
+            0.711706794255189,
+            2.6285741100216065
+          ],
+          "parameter_names": [
+            "log_amplitude",
+            "activation_energy"
+          ],
+          "standard_errors": [
+            0.13587381135781762,
+            0.06448853883219041
+          ],
+          "covariance": [
+            [
+              0.01846169261289981,
+              0.008156649043619759
+            ],
+            [
+              0.008156649043619759,
+              0.004158771640710931
+            ]
+          ],
+          "chi2": 6.531119116813539,
+          "dof": 31,
+          "n": 33,
+          "temperature_range": [
+            0.2052,
+            1.3732
+          ],
+          "model": "1/T1 = exp(a) * T * exp(-Delta/T)",
+          "uncertainty_assumption": "Diagonal supplied errors; no covariance was supplied."
+        },
+        "4.5": {
+          "parameters": [
+            0.7259319581479823,
+            2.6341792909488317
+          ],
+          "parameter_names": [
+            "log_amplitude",
+            "activation_energy"
+          ],
+          "standard_errors": [
+            0.08987253671441535,
+            0.047462676010058436
+          ],
+          "covariance": [
+            [
+              0.008077072855483935,
+              0.0037083568689315334
+            ],
+            [
+              0.003708356868931533,
+              0.0022527056140357765
+            ]
+          ],
+          "chi2": 7.400040427625726,
+          "dof": 36,
+          "n": 38,
+          "temperature_range": [
+            0.2052,
+            4.4318
+          ],
+          "model": "1/T1 = exp(a) * T * exp(-Delta/T)",
+          "uncertainty_assumption": "Diagonal supplied errors; no covariance was supplied."
+        }
+      }
+    },
+    {
+      "parameters": [
+        2.7332313434525215,
+        1.7352735506385797
+      ],
+      "parameter_names": [
+        "log_amplitude",
+        "activation_energy"
+      ],
+      "standard_errors": [
+        0.1327255652702605,
+        0.03895227244850608
+      ],
+      "covariance": [
+        [
+          0.01761607567631018,
+          0.004912817806828493
+        ],
+        [
+          0.004912817806828494,
+          0.0015172795289026461
+        ]
+      ],
+      "chi2": 4.618349266593729,
+      "dof": 27,
+      "n": 29,
+      "temperature_range": [
+        0.2,
+        0.6747
+      ],
+      "model": "1/T1 = exp(a) * T * exp(-Delta/T)",
+      "uncertainty_assumption": "Diagonal supplied errors; no covariance was supplied.",
+      "filling": 0.2,
+      "free_prefactor_power_sensitivity": {
+        "parameters": [
+          2.7243040284004643,
+          1.8154493693191576,
+          0.7592257226515097
+        ],
+        "parameter_names": [
+          "log_amplitude",
+          "activation_energy",
+          "rate_prefactor_power"
+        ],
+        "standard_errors": [
+          0.1373647012953239,
+          0.24033112032323042,
+          0.7136832099104924
+        ],
+        "covariance": [
+          [
+            0.01886906116195356,
+            -0.0018894163694625583,
+            0.020850504510155465
+          ],
+          [
+            -0.001889416369462419,
+            0.057759047395819066,
+            -0.16919464395680828
+          ],
+          [
+            0.02085050451015512,
+            -0.16919464395680833,
+            0.509343724108144
+          ]
+        ],
+        "chi2": 4.49929344902203,
+        "dof": 26,
+        "n": 29,
+        "temperature_range": [
+          0.2,
+          0.6747
+        ],
+        "model": "1/T1 = exp(a) * T^p * exp(-Delta/T)",
+        "uncertainty_assumption": "Diagonal supplied errors; no covariance was supplied."
+      },
+      "fit_range_sensitivity": {
+        "0.6": {
+          "parameters": [
+            2.782345225604384,
+            1.7479391221274296
+          ],
+          "parameter_names": [
+            "log_amplitude",
+            "activation_energy"
+          ],
+          "standard_errors": [
+            0.15402237551330347,
+            0.043992282818472235
+          ],
+          "covariance": [
+            [
+              0.023722892158761062,
+              0.0065084654460591035
+            ],
+            [
+              0.006508465446059103,
+              0.0019353209475804472
+            ]
+          ],
+          "chi2": 4.059767169267534,
+          "dof": 25,
+          "n": 27,
+          "temperature_range": [
+            0.2,
+            0.5769
+          ],
+          "model": "1/T1 = exp(a) * T * exp(-Delta/T)",
+          "uncertainty_assumption": "Diagonal supplied errors; no covariance was supplied."
+        },
+        "0.7": {
+          "parameters": [
+            2.7332313434525215,
+            1.7352735506385797
+          ],
+          "parameter_names": [
+            "log_amplitude",
+            "activation_energy"
+          ],
+          "standard_errors": [
+            0.1327255652702605,
+            0.03895227244850608
+          ],
+          "covariance": [
+            [
+              0.01761607567631018,
+              0.004912817806828493
+            ],
+            [
+              0.004912817806828494,
+              0.0015172795289026461
+            ]
+          ],
+          "chi2": 4.618349266593729,
+          "dof": 27,
+          "n": 29,
+          "temperature_range": [
+            0.2,
+            0.6747
+          ],
+          "model": "1/T1 = exp(a) * T * exp(-Delta/T)",
+          "uncertainty_assumption": "Diagonal supplied errors; no covariance was supplied."
+        },
+        "0.9": {
+          "parameters": [
+            2.7148730686122744,
+            1.7304699543335447
+          ],
+          "parameter_names": [
+            "log_amplitude",
+            "activation_energy"
+          ],
+          "standard_errors": [
+            0.11626875428852171,
+            0.03509212042350157
+          ],
+          "covariance": [
+            [
+              0.013518423223804634,
+              0.003831437526512423
+            ],
+            [
+              0.003831437526512423,
+              0.001231456915817536
+            ]
+          ],
+          "chi2": 4.7057291473368315,
+          "dof": 29,
+          "n": 31,
+          "temperature_range": [
+            0.2,
+            0.8125
+          ],
+          "model": "1/T1 = exp(a) * T * exp(-Delta/T)",
+          "uncertainty_assumption": "Diagonal supplied errors; no covariance was supplied."
+        }
+      }
+    }
+  ],
+  "resistivity_activation_fits": [
+    {
+      "parameters": [
+        -0.871169149004928,
+        3.7217458135919643
+      ],
+      "parameter_names": [
+        "log_amplitude",
+        "activation_energy"
+      ],
+      "standard_errors": [
+        0.03745650654721422,
+        0.04850302411947281
+      ],
+      "covariance": [
+        [
+          0.0014029898827215017,
+          -0.0014792220466989527
+        ],
+        [
+          -0.0014792220466989527,
+          0.0023525433487341617
+        ]
+      ],
+      "chi2": 10.91437136947436,
+      "dof": 46,
+      "n": 48,
+      "temperature_range": [
+        0.45,
+        4.0
+      ],
+      "model": "rho = exp(a) * exp(Ea/T)",
+      "uncertainty_assumption": "Diagonal supplied errors; no covariance was supplied.",
+      "filling": 0.5
+    },
+    {
+      "parameters": [
+        -0.185048729768938,
+        0.8999014315612662
+      ],
+      "parameter_names": [
+        "log_amplitude",
+        "activation_energy"
+      ],
+      "standard_errors": [
+        0.03575697143786286,
+        0.04358003552472732
+      ],
+      "covariance": [
+        [
+          0.0012785610064081406,
+          -0.0012448022790060114
+        ],
+        [
+          -0.0012448022790060114,
+          0.001899219496336495
+        ]
+      ],
+      "chi2": 8.539174048955731,
+      "dof": 47,
+      "n": 49,
+      "temperature_range": [
+        0.4,
+        4.0
+      ],
+      "model": "rho = exp(a) * exp(Ea/T)",
+      "uncertainty_assumption": "Diagonal supplied errors; no covariance was supplied.",
+      "filling": 0.3
+    }
+  ],
+  "resistive_transition_brackets": {
+    "0.3": [
+      0.325,
+      0.4
+    ],
+    "0.2": [
+      1.075,
+      1.15
+    ]
+  },
+  "normal_resistivity_nu_0.2_linear_fit": {
+    "intercept_slope": [
+      0.17593341607940158,
+      0.17512991526231178
+    ],
+    "standard_errors": [
+      0.039579320127465914,
+      0.01716995924487881
+    ],
+    "chi2": 6.170732318538283,
+    "dof": 37,
+    "interpretation": "Empirical increasing rho(T), not a microscopic scattering mechanism."
+  },
+  "STS_empirical_features": [
+    {
+      "panel": "a",
+      "peaks": [
+        -5.2,
+        6.8
+      ],
+      "smoothing_sigma_D": 0.0375,
+      "sample_spacing_D": 0.025,
+      "threshold_edge_sensitivity_not_confidence_intervals": [
+        {
+          "threshold": 0.03,
+          "negative_positive_edge": [
+            -3.65,
+            3.9
+          ]
+        },
+        {
+          "threshold": 0.05,
+          "negative_positive_edge": [
+            -3.775,
+            3.975
+          ]
+        },
+        {
+          "threshold": 0.075,
+          "negative_positive_edge": [
+            -3.875,
+            4.0
+          ]
+        },
+        {
+          "threshold": 0.1,
+          "negative_positive_edge": [
+            -3.925,
+            4.05
+          ]
+        }
+      ]
+    },
+    {
+      "panel": "b",
+      "peaks": [
+        -5.1,
+        5.075
+      ],
+      "smoothing_sigma_D": 0.0375,
+      "sample_spacing_D": 0.025,
+      "threshold_edge_sensitivity_not_confidence_intervals": [
+        {
+          "threshold": 0.03,
+          "negative_positive_edge": [
+            -2.65,
+            2.625
+          ]
+        },
+        {
+          "threshold": 0.05,
+          "negative_positive_edge": [
+            -2.75,
+            2.775
+          ]
+        },
+        {
+          "threshold": 0.075,
+          "negative_positive_edge": [
+            -2.85,
+            2.85
+          ]
+        },
+        {
+          "threshold": 0.1,
+          "negative_positive_edge": [
+            -2.975,
+            2.975
+          ]
+        }
+      ]
+    },
+    {
+      "panel": "c",
+      "peaks": [
+        -2.025,
+        2.05,
+        3.325
+      ],
+      "smoothing_sigma_D": 0.0375,
+      "sample_spacing_D": 0.025,
+      "threshold_edge_sensitivity_not_confidence_intervals": [
+        {
+          "threshold": 0.03,
+          "negative_positive_edge": [
+            -1.4,
+            1.225
+          ]
+        },
+        {
+          "threshold": 0.05,
+          "negative_positive_edge": [
+            -1.625,
+            1.5
+          ]
+        },
+        {
+          "threshold": 0.075,
+          "negative_positive_edge": [
+            -1.7,
+            1.65
+          ]
+        },
+        {
+          "threshold": 0.1,
+          "negative_positive_edge": [
+            -1.75,
+            1.725
+          ]
+        }
+      ]
+    },
+    {
+      "panel": "d",
+      "peaks": [
+        1.625
+      ],
+      "smoothing_sigma_D": 0.0375,
+      "sample_spacing_D": 0.025
+    }
+  ],
+  "conditional_high_T_DOS_fit": {
+    "model": "rho_square(t,tprime,mu,constant_eta) * scale + b0+b1*V+b2*V^2",
+    "parameter_names": [
+      "t",
+      "tprime/t",
+      "mu",
+      "eta",
+      "scale",
+      "b0",
+      "b1",
+      "b2"
+    ],
+    "parameters": [
+      0.9985500938473053,
+      0.19584180323286823,
+      -0.9071594089326562,
+      0.08837478601876934,
+      3.5209003668483567,
+      -0.006836601379109171,
+      -0.0002643478422482097,
+      0.0014536690871920256
+    ],
+    "formal_standard_errors": [
+      0.003939987033024107,
+      0.001921711325518509,
+      0.009185499122677677,
+      0.009501720255846807,
+      0.04738339316974438,
+      0.005095440855796998,
+      0.0002969881362426246,
+      8.549378223565756e-05
+    ],
+    "tprime": 0.19555785099740608,
+    "tprime_formal_standard_error": 0.002236612567397494,
+    "rms_residual": 0.04703056733922586,
+    "kx_quadrature_points": 512,
+    "caution": "A conditional effective band fit. Errors use an iid residual model, since STS errors are absent. Not bare Hamiltonian coefficients or total uncertainties."
+  },
+  "illustrative_preprocessing": [
+    {
+      "nu": 0.5,
+      "gap_mask": 3.5,
+      "smoothing_sigma": 0.05,
+      "negative_positive_integrals_before_branch_normalization": [
+        2.1414401281604496,
+        2.1617857156023152
+      ],
+      "assumption": "Normalize each branch separately; assign total weights nu and 1-nu."
+    },
+    {
+      "nu": 0.3,
+      "gap_mask": 2.1,
+      "smoothing_sigma": 0.05,
+      "negative_positive_integrals_before_branch_normalization": [
+        1.6513100498820537,
+        2.443693050309782
+      ],
+      "assumption": "Normalize each branch separately; assign total weights nu and 1-nu."
+    },
+    {
+      "nu": 0.2,
+      "gap_mask": 1.4,
+      "smoothing_sigma": 0.05,
+      "negative_positive_integrals_before_branch_normalization": [
+        1.233808446124551,
+        2.723644610823989
+      ],
+      "assumption": "Normalize each branch separately; assign total weights nu and 1-nu."
+    }
+  ],
+  "KK_numerical_verification": {
+    "A": {
+      "max_absolute_KK_vs_delta_poles_difference": 7.135723480988787e-06,
+      "max_spectral_sum_rule_error": 1.3322676295501878e-15,
+      "max_filling_sum_rule_error": 4.440892098500626e-16,
+      "integration_points": 9601,
+      "integration_window": [
+        -12,
+        12
+      ],
+      "Gaussian_sigma_for_KK_check": 0.025
+    },
+    "B": {
+      "max_absolute_KK_vs_delta_poles_difference": 7.135723480988787e-06,
+      "max_spectral_sum_rule_error": 1.4432899320127035e-15,
+      "max_filling_sum_rule_error": 4.440892098500626e-16,
+      "integration_points": 9601,
+      "integration_window": [
+        -12,
+        12
+      ],
+      "Gaussian_sigma_for_KK_check": 0.025
+    }
+  },
+  "local_DOS_nonuniqueness_verification": [
+    {
+      "nu": 0.5,
+      "integrated_absolute_difference": 2.8152555479146967e-05,
+      "maximum_absolute_difference": 8.281349209340871e-06,
+      "interpretation": "Only finite BZ-grid/histogram error; the continuum equality follows analytically."
+    },
+    {
+      "nu": 0.3,
+      "integrated_absolute_difference": 3.5842884552994253e-05,
+      "maximum_absolute_difference": 1.198582730915776e-05,
+      "interpretation": "Only finite BZ-grid/histogram error; the continuum equality follows analytically."
+    },
+    {
+      "nu": 0.2,
+      "integrated_absolute_difference": 4.4439917944041883e-05,
+      "maximum_absolute_difference": 1.9920522224232268e-05,
+      "interpretation": "Only finite BZ-grid/histogram error; the continuum equality follows analytically."
+    }
+  ],
+  "illustrative_zero_areas_NOT_inferences": {
+    "A": {
+      "fraction_Gamma_side": 0.36640167236328125,
+      "Gamma_side_sign_ReG0": "negative",
+      "grid": [
+        1024,
+        1024
+      ],
+      "Gamma_region_connected_components": 1,
+      "rank_parameters_negative_positive_branches": [
+        0.4,
+        0.4
+      ],
+      "continuum_rank_fraction": 0.36640323548029574,
+      "fraction_on_1536_by_1536_grid": 0.36640336778428817
+    },
+    "B": {
+      "fraction_Gamma_side": 0.3457145690917969,
+      "Gamma_side_sign_ReG0": "negative",
+      "grid": [
+        1024,
+        1024
+      ],
+      "Gamma_region_connected_components": 1,
+      "rank_parameters_negative_positive_branches": [
+        -0.8,
+        0.8
+      ],
+      "fraction_on_1536_by_1536_grid": 0.3457065158420139
+    },
+    "C": {
+      "fraction_Gamma_side_continuum": 0.5,
+      "fraction_Gamma_side_grid": 0.49999237060546875,
+      "Gamma_side_sign_ReG0": "positive",
+      "grid": [
+        1024,
+        1024
+      ],
+      "Gamma_region_connected_components": 1,
+      "freely_chosen_residue_coefficient_a": 0.15,
+      "residue_b_chosen_to_make_area_one_half": 0.3067669536561352,
+      "inverse_energy_moments_minus_plus": [
+        0.17147113768153072,
+        0.15296666538758533
+      ],
+      "zero_residue_weight": 0.4714822500354508,
+      "spectral_formula": "A_C(k,w)=weight(k)*pminus(w)+(1-weight(k))*pplus(w)",
+      "residue_formula": "weight(k)=0.5+0.15*(cos(2*pi*kx)+cos(2*pi*ky)+b*cos(2*pi*kx)*cos(2*pi*ky))",
+      "interpretation": "A further causal example; area equality is chosen, not measured."
+    }
+  },
+  "spectral_construction": {
+    "formula": "A_nu(k,w) = nu delta(w-Qminus(F_bminus(e_bminus(k)))) + (1-nu) delta(w-Qplus(F_bplus(e_bplus(k))))",
+    "dispersion_rank_function": "e_b(k) = -cos(2 pi kx)-cos(2 pi ky)-b cos(2 pi kx) cos(2 pi ky)",
+    "status": "A mathematical counterexample to uniqueness; no inferred hopping coefficients or pairing Hamiltonian.",
+    "ARPES_matrix_element": "Set to 1 for both illustrative completions.",
+    "energy_reference": "Midgap; assumed chemical potential for doped examples, stipulated by problem for half filling.",
+    "display_Gaussian_sigma": 0.065,
+    "momentum_path_points": 684,
+    "local_DOS": "nu*pminus(w)+(1-nu)*pplus(w), identical in A and B in the continuum",
+    "per_momentum_spectral_sum_rule": 1,
+    "per_spin_filling": "nu, exactly, because all negative poles are occupied at zero temperature"
+  }
+}

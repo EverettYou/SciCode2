@@ -4,13 +4,13 @@ Read this page first. The global wiki connects knowledge about the project itsel
 
 ## Project
 
-- [[project/overview|Project overview]] — what SciCode2 is, what it produces, and where canonical state lives.
-- [[project/problem-design-strategy|Problem-design strategy]] — the qualities required of a research benchmark and the human design gate.
+- [[project/overview|Project overview]] — the scientific-judgment target, research and calibration paths, and canonical state.
+- [[project/problem-design-strategy|Problem-design strategy]] — early textual screening, iterative question testing, and later A/B difficulty calibration.
 - [[project/research-loop|Research loop]] — how ideas, labs, evidence, compiled knowledge, and deliverables compound.
 - [[project/knowledge-layer|Knowledge-layer design]] — the boundary between global knowledge, benchmark knowledge, sources, and deliverables.
 - [[project/agent-workflow|Agent workflow]] — how focused skills, human supervision, and durable artifacts coordinate work.
 - [[project/talk|Research talk]] — the asynchronous project-wide supervision channel.
-- [[project/skills|Reusable skills]] — the procedural layer and where its operational detail lives.
+- [[project/skills|Reusable skills]] — research, preparation, clean testing, calibration, and their operational detail.
 
 ## Collections
 

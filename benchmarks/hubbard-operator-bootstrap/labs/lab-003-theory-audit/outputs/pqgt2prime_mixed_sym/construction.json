@@ -1,0 +1,72 @@
+{
+  "phase": "construction_done",
+  "construction_sec": 4.650585792027414,
+  "reduction": {
+    "original_nvar": 3240,
+    "reduced_nvar": 331,
+    "zero_variables": 60
+  },
+  "projections": [
+    {
+      "name": "T2primemixed_(0, 0)",
+      "original_dim": 257,
+      "new_dims": [
+        101,
+        60,
+        60,
+        36
+      ],
+      "exact_cross_block_zero": true
+    },
+    {
+      "name": "T2primemixed_(0, 1)",
+      "original_dim": 257,
+      "new_dims": [
+        161,
+        96
+      ],
+      "exact_cross_block_zero": true
+    },
+    {
+      "name": "T2primemixed_(0, 2)",
+      "original_dim": 257,
+      "new_dims": [
+        101,
+        60,
+        60,
+        36
+      ],
+      "exact_cross_block_zero": true
+    },
+    {
+      "name": "T2primemixed_(0, 5)",
+      "original_dim": 257,
+      "new_dims": [
+        137,
+        120
+      ],
+      "exact_cross_block_zero": true
+    },
+    {
+      "name": "T2primemixed_(0, 6)",
+      "original_dim": 257,
+      "new_dims": [
+        161,
+        96
+      ],
+      "exact_cross_block_zero": true
+    },
+    {
+      "name": "T2primemixed_(0, 10)",
+      "original_dim": 257,
+      "new_dims": [
+        101,
+        60,
+        60,
+        36
+      ],
+      "exact_cross_block_zero": true
+    }
+  ],
+  "physical_test_min_eig": -9.941439164577576e-17
+}

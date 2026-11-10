@@ -1,0 +1,1019 @@
+{
+  "run_id": "qec-annealing-embedding-lab-002-20261007",
+  "task_version": "0.3-general-H:59db2b1fccb6",
+  "variant": "existing-autonomous-research-prompt",
+  "purpose": "exploratory",
+  "benchmark_id": "qec-annealing-embedding",
+  "lab_id": "lab-002-agent-test-general-h",
+  "problem": {
+    "path": "problem-snapshot.md",
+    "sha256": "59db2b1fccb659727f046a907ead3b01c4878aa97eb142fb5c045fbac9c92164"
+  },
+  "prompt": {
+    "path": "prompt.md",
+    "sha256": "1e89789597cf8f5175efce615604ca2667215f67f5dc0ab29c8284c9048069d3"
+  },
+  "inputs": [],
+  "evaluator_revision": {
+    "label": "exploratory-qualitative-review-20261007",
+    "frozen_before_run": false,
+    "review": "results/reviewer-assessment.md",
+    "independent_checks": [
+      "scripts/reviewer_compiler_check.py",
+      "scripts/reviewer_witness_check.py"
+    ]
+  },
+  "reference_revision": null,
+  "reference_limit": "Exploratory trial: no author reference or evaluator loaded. Preliminary checks will be distinguished from independent grading.",
+  "client": {
+    "name": "Codex Desktop",
+    "version": "26.928.31416",
+    "build": "12553",
+    "embedded_cli_version": "0.159.2",
+    "standalone_cli_version": "0.134.0"
+  },
+  "model": "gpt-6-astra",
+  "effort": "ultra",
+  "internet": {
+    "web_tool_available": true,
+    "verified": true,
+    "verification": "Procedural child successfully retrieved official OpenAI model documentation. Shell networking disabled by session policy.",
+    "shell_network_access": false
+  },
+  "tools": [
+    "functions.exec",
+    "exec_command",
+    "web.run",
+    "collaboration"
+  ],
+  "hardware": {
+    "platform": "macOS-26.5.1-arm64-arm-64bit-Mach-O",
+    "machine": "arm64",
+    "os_release": "Darwin 25.5.0",
+    "cpu_model": null,
+    "memory_bytes": null,
+    "cpu_cores": null,
+    "observation_limit": "Precise sysctl hardware queries denied; no benchmark job resource measurements exist."
+  },
+  "budget": {
+    "elapsed_seconds": 7200,
+    "source": "unchanged benchmark prompt.md",
+    "deadline": "2026-10-07T14:55:30.405000-07:00",
+    "clock_basis": "Root session start; prompt reading and preflight count. No autonomous scientific solve launched. Preserve this deadline if the same attempt resumes."
+  },
+  "session_id": "01a117ef-65f7-7d00-997b-03ac38efb6a9",
+  "solver_workspace": "/Users/home/Library/CloudStorage/Dropbox/Research/[Mercor]SciCode2/benchmarks/qec-annealing-embedding/labs/lab-002-agent-test-general-h",
+  "isolation": {
+    "classification": "autonomous-exploratory-delegated-solve-with-procedural-parent",
+    "basis": "Current visible conversation contains repository workflow instructions and user test request; no author scientific conversation supplied. No independent window-history verification.",
+    "filesystem_isolated": false,
+    "loaded": [
+      "user-supplied AGENTS.md",
+      "AGENTS.md",
+      "docs/scicode2/requirements.md",
+      "skills/README.md",
+      "skills/test-benchmark/SKILL.md",
+      "skills/test-benchmark/references/run-record.md",
+      "skills/test-benchmark/references/prompt-design.md",
+      "problem/README.md",
+      "problem/TASK.md",
+      "prompt.md",
+      "labs/README.md (lab index only; no prior scientific results present)"
+    ],
+    "extra_scientific_context": [],
+    "delegation": [
+      {
+        "task": "trial_provenance",
+        "scope": "procedural environment/transcript only; no scientific material"
+      },
+      {
+        "task": "scientific_trial",
+        "scope": "Exact unchanged prompt, no inherited parent context (fork none); strongest model and highest effort requested; full scientific task delegated.",
+        "model": "gpt-6-astra",
+        "effort": "ultra"
+      }
+    ],
+    "procedural_child_context": [
+      "test-benchmark run-record contract",
+      "OpenAI Docs skill",
+      "exact root/child session metadata",
+      "model catalog selected entries",
+      "official OpenAI model documentation"
+    ],
+    "scientific_context_boundary": "Loaded current TASK and existing prompt only. No author reviews, private proposal, wiki, prior lab report, evaluation, or reference code read.",
+    "formal_limit": "Scientific solver is a delegated agent under a fresh user-opened parent chat, not a separate user-opened trial window. Parent preflight model was Sol/ultra. Do not claim single-model or formal calibration equivalence."
+  },
+  "started_at": "2026-10-07T12:55:30.405000-07:00",
+  "ended_at": "2026-10-07T13:52:21.174756-07:00",
+  "execution_status": "completed",
+  "interventions": [
+    {
+      "type": "procedural-continuation",
+      "message": "continue",
+      "effect": "Authorized resumed work; no scientific guidance."
+    },
+    {
+      "type": "configuration-change-declaration",
+      "message": "now switched to Astra at Ultra",
+      "effect": "User reports parent model switch; actual recorded root/solver settings tracked separately."
+    }
+  ],
+  "transcript": [
+    {
+      "path": "transcripts/root.jsonl",
+      "source_path": "/Users/home/.codex/sessions/2026/10/07/rollout-2026-10-07T12-55-30-01a117ef-65f7-7d00-997b-03ac38efb6a9.jsonl",
+      "format": "original Codex rollout JSONL",
+      "sha256": "35e842e678df3ce633ad8c7fc3e53c58df07ce5a29ae9e97d49215b9a91dceab",
+      "bytes": 2490321,
+      "records": 845,
+      "trailing_incomplete_bytes_excluded": 0,
+      "last_event_timestamp": "2026-10-07T20:55:51.537Z",
+      "exported_at": "2026-10-07T20:55:51.647386+00:00",
+      "event_locator": "one-based JSONL line number; timestamps retained",
+      "latest_turn_complete_at_capture": false,
+      "completeness": "All newline-terminated records present at capture; active turn, later events and final response absent.",
+      "inheritance": null
+    },
+    {
+      "path": "transcripts/procedural-provenance.jsonl",
+      "source_path": "/Users/home/.codex/sessions/2026/10/07/rollout-2026-10-07T12-56-57-01a117f0-c688-7cf0-8cf4-773b06cf9f58.jsonl",
+      "format": "original Codex rollout JSONL",
+      "sha256": "d72040bf7dcbc0aff20cb65339e3b8b31cbb6ca512e4d8d7510deaf7d80bfbfc",
+      "bytes": 453531,
+      "records": 124,
+      "trailing_incomplete_bytes_excluded": 0,
+      "last_event_timestamp": "2026-10-07T20:00:25.453Z",
+      "exported_at": "2026-10-07T20:55:51.647386+00:00",
+      "event_locator": "one-based JSONL line number; timestamps retained",
+      "latest_turn_complete_at_capture": true,
+      "completeness": "Raw records through latest completed turn, including task_complete; future events absent.",
+      "inheritance": "Early root history retained"
+    },
+    {
+      "path": "transcripts/scientific-trial.jsonl",
+      "source_path": "/Users/home/.codex/sessions/2026/10/07/rollout-2026-10-07T13-11-02-01a117fd-a459-7621-b36c-1c49df7bcbbf.jsonl",
+      "format": "original Codex rollout JSONL",
+      "sha256": "34aa8fcc2c616592901cb7664876a6b5fccbb16a34857ffe99910df64fa728d0",
+      "bytes": 1563200,
+      "records": 648,
+      "trailing_incomplete_bytes_excluded": 0,
+      "last_event_timestamp": "2026-10-07T20:52:58.035Z",
+      "exported_at": "2026-10-07T20:55:51.647386+00:00",
+      "event_locator": "one-based JSONL line number; timestamps retained",
+      "latest_turn_complete_at_capture": true,
+      "completeness": "Raw records through latest completed turn, including task_complete; future events absent.",
+      "inheritance": "fork none; task-specific message only"
+    },
+    {
+      "path": "transcripts/theory-certificate.jsonl",
+      "source_path": "/Users/home/.codex/sessions/2026/10/07/rollout-2026-10-07T13-11-27-01a117fe-0bfd-7be3-bceb-77efccafaa8b.jsonl",
+      "format": "original Codex rollout JSONL",
+      "sha256": "43d5145f3440a9333c7de7d1ac4f32fcca4c89591ae1b29b3884aa7f6f632d32",
+      "bytes": 1815698,
+      "records": 503,
+      "trailing_incomplete_bytes_excluded": 0,
+      "last_event_timestamp": "2026-10-07T20:49:27.661Z",
+      "exported_at": "2026-10-07T20:55:51.647386+00:00",
+      "event_locator": "one-based JSONL line number; timestamps retained",
+      "latest_turn_complete_at_capture": true,
+      "completeness": "Raw records through latest completed turn, including task_complete; future events absent.",
+      "inheritance": "fork none; task-specific message only"
+    },
+    {
+      "path": "transcripts/embedding-engine.jsonl",
+      "source_path": "/Users/home/.codex/sessions/2026/10/07/rollout-2026-10-07T13-11-37-01a117fe-343f-7a11-96fa-c440be5b285c.jsonl",
+      "format": "original Codex rollout JSONL",
+      "sha256": "378eff366656beb186a55990d36c78669db769e6996db1fa00820f8e1cc49b71",
+      "bytes": 1783228,
+      "records": 411,
+      "trailing_incomplete_bytes_excluded": 0,
+      "last_event_timestamp": "2026-10-07T20:47:05.275Z",
+      "exported_at": "2026-10-07T20:55:51.647386+00:00",
+      "event_locator": "one-based JSONL line number; timestamps retained",
+      "latest_turn_complete_at_capture": true,
+      "completeness": "Raw records through latest completed turn, including task_complete; future events absent.",
+      "inheritance": "fork none; task-specific message only"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "PLAN.md",
+      "sha256": "48fc250a2116b405b0e2b243a95f91c792c44be11a6f309a3f99c37e45b7af84"
+    },
+    {
+      "path": "REPORT.md",
+      "sha256": "5fd29cebe1c92916bea313290b4c4090d8b8adb12bafd9c84d1e455551e7de09"
+    },
+    {
+      "path": "RESEARCH_REPORT.md",
+      "sha256": "c3e14d160dafd088c1f588e017bfdaa6db660c7207694eb04901f4c021e3ca46"
+    },
+    {
+      "path": "TARGET_NOTES.md",
+      "sha256": "7ca2c9cce747a4e5c7098c86c23436dbcf96453ffbc9e70f6ad7faa57d97918b"
+    },
+    {
+      "path": "THEORY_CERTIFICATE.md",
+      "sha256": "422e7770081ae78fdedd06483933fdcc8581ab110dc6c9b4c8710442ac76875e"
+    },
+    {
+      "path": "problem-snapshot.md",
+      "sha256": "59db2b1fccb659727f046a907ead3b01c4878aa97eb142fb5c045fbac9c92164"
+    },
+    {
+      "path": "prompt.md",
+      "sha256": "1e89789597cf8f5175efce615604ca2667215f67f5dc0ab29c8284c9048069d3"
+    },
+    {
+      "path": "requirements.txt",
+      "sha256": "0df481378f1e0ae570adf7a34c51dbb6e4496f8192f0b2899a20c78301cfce1a"
+    },
+    {
+      "path": "results/cli_example.json",
+      "sha256": "e591a139088aed4411d9c639972bf932c675da57df3809a32aa48811961ebe47"
+    },
+    {
+      "path": "results/cli_overflow_fallback.json",
+      "sha256": "22ca58e1591950ce9ae74ca68f11702d04d78e1296bac90d4fd1f20be0e7490b"
+    },
+    {
+      "path": "results/compiler_coordinate_cancellation.json",
+      "sha256": "b008929d0c3414aefbb19c8f587a0cd03201f0a854173b2d17f48899aca474bb"
+    },
+    {
+      "path": "results/compiler_empty_matrix.json",
+      "sha256": "60d11f8e2ba94d7d5c81a7c87186c13e39b80c61faca50f1180d4de09b2f6e8e"
+    },
+    {
+      "path": "results/compiler_high_degree_row.json",
+      "sha256": "b907c1699e5910c6ba43920ffd6f1bfed8ec7cddffce482e2ec522acf2eff0cb"
+    },
+    {
+      "path": "results/compiler_isolated_and_negative.json",
+      "sha256": "00df2611a7966ea4883ef86d3736a947b210ea08fddd847d890d68870fd4fe94"
+    },
+    {
+      "path": "results/compiler_redundant_hyperchecks.json",
+      "sha256": "a9049add42630327753b8e6303bd87eb26599c79b36625b73242a5bee3a4621c"
+    },
+    {
+      "path": "results/compiler_tied_parity.json",
+      "sha256": "05d1c04a3fda2ca134da25232d7cf3cc531aad75d02abd66f9eb0864b783b228"
+    },
+    {
+      "path": "results/compiler_validation.json",
+      "sha256": "2eef3b2c92a46f450e8a12f5476e1f6e9247c2daec102a44b23c34f79ca7fc78"
+    },
+    {
+      "path": "results/embed_benchmark.json",
+      "sha256": "c08eb62a1a264d1780847be71a18970f20597429b320622f72cad02b0eef57d6"
+    },
+    {
+      "path": "results/embed_checks.json",
+      "sha256": "0bd1fee29d466e937be5a0237de2d82051295cac105eb9f7abb3c85e9d4363dc"
+    },
+    {
+      "path": "results/embed_explicit_tracks_checks.json",
+      "sha256": "5c97df868d92e15bdaf738ec1e4beb94e022985e43ab384a6075323eaee9dea8"
+    },
+    {
+      "path": "results/embed_explicit_tracks_witness.json",
+      "sha256": "31595bd8b956d4c6c9f4176f098942be1567e6e85a334a071396d156af2923e3"
+    },
+    {
+      "path": "results/embed_physical_witness.json",
+      "sha256": "f8bcfdc58cb4aefd8d23dd1a80ed8605a024230fafeacfae39bf89441079a9c0"
+    },
+    {
+      "path": "results/embed_stdout.txt",
+      "sha256": "846b3c5868b778e0ea7ceaf7e6cbacf2435b42d2f6efc89ef48f980d3205f077"
+    },
+    {
+      "path": "results/embed_target_and_witnesses.json",
+      "sha256": "81df1f9e12162b3baaf305b89c23f09b0846e794859371a9d01cb3d8b9ffadef"
+    },
+    {
+      "path": "results/exact_and_pause_validation.json",
+      "sha256": "febcaae12f467d24cd68811320d1201b98bc845065d737cd372b782e442aa9ae"
+    },
+    {
+      "path": "results/exact_extreme_0.json",
+      "sha256": "cf1c3eca152bbde5f4cd94932b82c73f138ebe2402ce30a8d57151d9d265a996"
+    },
+    {
+      "path": "results/exact_extreme_1.json",
+      "sha256": "e8c4ab34667f8616d30c6e7439011a7292b533e96d87f97568a879b684e124ef"
+    },
+    {
+      "path": "results/exact_extreme_2.json",
+      "sha256": "85c3a5e2b1c25b912ed4d4dc378c1792f397c92c2df871b1ae7b1f4753bedc17"
+    },
+    {
+      "path": "results/exact_extreme_3.json",
+      "sha256": "61fa12285b5b882f70d45c4152e14c68acfb9cf258b215636da555d5b563a17e"
+    },
+    {
+      "path": "results/exact_pause_stdout.txt",
+      "sha256": "ad6fcb2234ab760013fe7bfea790cf25b9b57d098358048805aa9021bf85924d"
+    },
+    {
+      "path": "results/experiment_stdout.txt",
+      "sha256": "efeb86c681a933b73e7122b715049ea1d18dd6c444c205525caac37d43c01e3f"
+    },
+    {
+      "path": "results/experiment_summary.json",
+      "sha256": "af13bde69bb8aa0c156642e9563cfe16c1b0376989bafdb29f6452f6b2884563"
+    },
+    {
+      "path": "results/independent_witness_validation.json",
+      "sha256": "358fcccf0d1366721c9c7ef01e8b71781f600c9b5e4335286c9355fca8cf215d"
+    },
+    {
+      "path": "results/input_banded_three_body.json",
+      "sha256": "3dfa859019a1a01f3353d2d653d11eda45c7422603a7302afea7bbf7d314b6c1"
+    },
+    {
+      "path": "results/input_graphlike_incidence.json",
+      "sha256": "ec1ba600e0b0d52452e028a9f8141f09ac92628251a5fc399d058e575108076c"
+    },
+    {
+      "path": "results/input_high_column_degree_redundant_isolate.json",
+      "sha256": "b0587eaca98a0aae59f5725102b5847a41edca9bf391ee1b998b73a5ece4c008"
+    },
+    {
+      "path": "results/input_irregular_hyperchecks.json",
+      "sha256": "c1865fb278405ba5f75c1f7c29e91d5006c1439c4cb8b5fd58f61cab45425bd8"
+    },
+    {
+      "path": "results/input_overflow_fallback.json",
+      "sha256": "00f8608a2b07fd0538655e617f7ac4ddc867042c086656cbb46fcbc9c749a663"
+    },
+    {
+      "path": "results/input_single_large_hypercheck.json",
+      "sha256": "6bfefe03c85edaba934eb4044041efeb03ae86761cabda39be5c5bd1ba37912a"
+    },
+    {
+      "path": "results/matrix_update_witness.json",
+      "sha256": "6d5f94d6dc8e6125321ae1f83817f8294d9573856a89b30d7dcb81a390655ade"
+    },
+    {
+      "path": "results/model_banded_three_body.json",
+      "sha256": "cf484234d1e7c35614c0ec12fcb8b5d7a3ef5ae2ed053a7dd7c78e703f015318"
+    },
+    {
+      "path": "results/model_graphlike_incidence.json",
+      "sha256": "6555a9f8a7d4da96c850f0a77bc3bc8bdda3395c84ef6b2dd8f3bd06b2adf5ad"
+    },
+    {
+      "path": "results/model_high_column_degree_redundant_isolate.json",
+      "sha256": "d73831281d8dd38df20375a14f6ab31ba59caddb58d268993a0dff63d831f146"
+    },
+    {
+      "path": "results/model_irregular_hyperchecks.json",
+      "sha256": "7a299fd3510cc7c5218120f6b43dd44841c678ca35916eb9e7e53c36c8d227a7"
+    },
+    {
+      "path": "results/model_single_large_hypercheck.json",
+      "sha256": "b15b1e30c18546e4c3028a6c2ff20d1b1b311a8eb688fabdc4197ca0ce107313"
+    },
+    {
+      "path": "results/native_template_pilot/experiment_stdout.txt",
+      "sha256": "5b9d8a069da88593d69dec956dccf932da178c97b0bcbf39c3b72bbddf74dbb3"
+    },
+    {
+      "path": "results/native_template_pilot/experiment_summary.json",
+      "sha256": "42dc5b2e43ab45c5c475d73796c1d4d3a197826a40ce121af27c9bcb108c1e59"
+    },
+    {
+      "path": "results/native_template_pilot/template_zephyr_g6.json",
+      "sha256": "c02e93212a5c41cb5b019ad16db1c7f7983ec527790d5122ec93e00692671d57"
+    },
+    {
+      "path": "results/native_template_pilot/witness_banded_three_body_minorminer_11.json",
+      "sha256": "b681cdbaabca5cf39e0cc7f96825d16c8a235046c6097415f20f332eb7eabeaa"
+    },
+    {
+      "path": "results/native_template_pilot/witness_banded_three_body_minorminer_29.json",
+      "sha256": "89714f6b5936408b01b12d1dbf0d664a2e3b0e5840d58f6ca6b5958d96edae99"
+    },
+    {
+      "path": "results/native_template_pilot/witness_banded_three_body_minorminer_47.json",
+      "sha256": "6f49475075e6023c6796b6455c47bde4cd55ae0ffbb981b3cb549d400984f06e"
+    },
+    {
+      "path": "results/native_template_pilot/witness_banded_three_body_template_full.json",
+      "sha256": "e03afe0551e5480f6c14fd321d6516f02322460f35c73d9814f0d3baa5b59909"
+    },
+    {
+      "path": "results/native_template_pilot/witness_banded_three_body_template_pruned.json",
+      "sha256": "287d129f2c70c1232575f7b4db8ae1e096216cf5d313bbf052ed657d0dba394c"
+    },
+    {
+      "path": "results/native_template_pilot/witness_graphlike_incidence_minorminer_11.json",
+      "sha256": "6ddb161052189de7d7dc800480354c98ce79145795816aa50f1d9ee177d4d4d2"
+    },
+    {
+      "path": "results/native_template_pilot/witness_graphlike_incidence_minorminer_29.json",
+      "sha256": "6a99f0e71bd1f5455713020edb59a98832407234ecd1b8940fc6d160207cc9fc"
+    },
+    {
+      "path": "results/native_template_pilot/witness_graphlike_incidence_minorminer_47.json",
+      "sha256": "8239e2d10c2406c303e2f7f5f3dfc893a4d456ee385c7d0896de434d8267da23"
+    },
+    {
+      "path": "results/native_template_pilot/witness_graphlike_incidence_template_full.json",
+      "sha256": "b021b4e76df4ee59121c265b3e9b51a5601dd1c22b71c41584621fa7a8029260"
+    },
+    {
+      "path": "results/native_template_pilot/witness_graphlike_incidence_template_pruned.json",
+      "sha256": "340b1f3ace41e068bd936f163767a0b49b5bf988afa8b91bfa56048c66c640f3"
+    },
+    {
+      "path": "results/native_template_pilot/witness_high_column_degree_redundant_isolate_minorminer_11.json",
+      "sha256": "274de88c27e26c89fc76193b70df2f9af4532d300c6c3d66fcb075725a795cf5"
+    },
+    {
+      "path": "results/native_template_pilot/witness_high_column_degree_redundant_isolate_minorminer_29.json",
+      "sha256": "e098a9e34028f3d6c65f3d3439dc19066bacd7cb10d5a6ff4d589a5ac83fba43"
+    },
+    {
+      "path": "results/native_template_pilot/witness_high_column_degree_redundant_isolate_minorminer_47.json",
+      "sha256": "72b2ab849ea364282e23c395bfc095c6899d5acd44c66a7e165ab476f59fb59c"
+    },
+    {
+      "path": "results/native_template_pilot/witness_high_column_degree_redundant_isolate_template_full.json",
+      "sha256": "6334b117a057867b55bb6c5b981a56e5f3987d1b8761f496ef51bdf6b651dad6"
+    },
+    {
+      "path": "results/native_template_pilot/witness_high_column_degree_redundant_isolate_template_pruned.json",
+      "sha256": "2560ddcf0e487650d374ea715f84d040ca4cdf351cb1e2ebf093684a97f63734"
+    },
+    {
+      "path": "results/native_template_pilot/witness_irregular_hyperchecks_minorminer_11.json",
+      "sha256": "3032e10c92afed4b0dfcbad4635b84819d4a72859c4dbf4e1262d0eaffdaa73e"
+    },
+    {
+      "path": "results/native_template_pilot/witness_irregular_hyperchecks_minorminer_29.json",
+      "sha256": "5ef21e692a19e97e9d012ae78724426e7b8200d15d965ea523821ca6f8753b29"
+    },
+    {
+      "path": "results/native_template_pilot/witness_irregular_hyperchecks_minorminer_47.json",
+      "sha256": "e0a112614c056c1bdd211c1b04a2d9a60587c7146d8667760834270b225a4d13"
+    },
+    {
+      "path": "results/native_template_pilot/witness_irregular_hyperchecks_template_full.json",
+      "sha256": "0eec10bb81d2e4577b3a033ca94899829de19959fbb95f0c5e3c83510ee965bd"
+    },
+    {
+      "path": "results/native_template_pilot/witness_irregular_hyperchecks_template_pruned.json",
+      "sha256": "ccc84e272e92b0199a9ea716c79e4034b6146d7cd6f68a4244cd486e54a96963"
+    },
+    {
+      "path": "results/native_template_pilot/witness_single_large_hypercheck_minorminer_11.json",
+      "sha256": "b72db2faf84986988a1bf2d14a4cc60532c320f1ef093cd1abf71735d4552175"
+    },
+    {
+      "path": "results/native_template_pilot/witness_single_large_hypercheck_minorminer_29.json",
+      "sha256": "55b2ae382ae6f36fe007011f118c06f4e9babde47bf8233c0a27e24b190b21d7"
+    },
+    {
+      "path": "results/native_template_pilot/witness_single_large_hypercheck_minorminer_47.json",
+      "sha256": "2901326013bd1a5a227432d27d72474d34f38fd8e70972f61b779c9549105083"
+    },
+    {
+      "path": "results/native_template_pilot/witness_single_large_hypercheck_template_full.json",
+      "sha256": "73c5f996f78830894aff2a7d9a420b0d2aae3349a31d02c5ba29d92e97fc5467"
+    },
+    {
+      "path": "results/native_template_pilot/witness_single_large_hypercheck_template_pruned.json",
+      "sha256": "5bcba3107dfb6845e4203546623f939606ce32364844078f5cd54958e775583e"
+    },
+    {
+      "path": "results/pause_encoded_witness.json",
+      "sha256": "5054e7568de4a358426a24c102b2e5e8beda57f13a2a43f4d3014b41485b359d"
+    },
+    {
+      "path": "results/pause_native_witness.json",
+      "sha256": "0eb222720f75e0f3e32a8c58969b30a561e32ab4fcc9f24cb73484e897ba42dc"
+    },
+    {
+      "path": "results/preflight-runtime.json",
+      "sha256": "37896efa2024da231e206d72d43f86e3be1727d8fd093e1ed6f5b21f3edca584"
+    },
+    {
+      "path": "results/reviewer-assessment.md",
+      "sha256": "df4cb842eec0e02f066d4e37fbb47cf73c5170dc21f72bbce53bb4f0437a4d01"
+    },
+    {
+      "path": "results/reviewer-compiler-check.json",
+      "sha256": "b050167823b9155c88774fd5cae867eb03176b2b9a17a84a9bf9c61772b95986"
+    },
+    {
+      "path": "results/reviewer-provenance.json",
+      "sha256": "f3f2e27b8fc56bc012b0e176fab71bf5cf54d8e8f72584b432249a4e6c558387"
+    },
+    {
+      "path": "results/reviewer-witness-check.json",
+      "sha256": "a7cc63fc2ea89ba55e90231adbaf1e5f159a10c12c75233ca1b03f8ecc785a55"
+    },
+    {
+      "path": "results/scientific_artifact_manifest.json",
+      "sha256": "bdb0dfa5815c599d5b760aa69aa002bbfba946de1a64424b11eb89db90bb0d64"
+    },
+    {
+      "path": "results/scientific_completion.json",
+      "sha256": "c824f38bbef01516d21d8f1c9d52bbb5d328bfd3bb91960206a59f22b421022d"
+    },
+    {
+      "path": "results/target_zephyr_g6.json",
+      "sha256": "ab589bffb63c961fe92376d5c9bf6935c9da9e385e9b916303276ac46e0c0afe"
+    },
+    {
+      "path": "results/template_zephyr_g6.json",
+      "sha256": "9950218211d323a519a68a511be682a65b3279a4c4cbf5f8a729d617314c6678"
+    },
+    {
+      "path": "results/theory_stdout.txt",
+      "sha256": "53624430e54c3dde271a25095215143970629e6d217ac783dfcc38da4bd3b1e2"
+    },
+    {
+      "path": "results/theory_validation.json",
+      "sha256": "d8f3e10bba4ee82412033080e190c5487aae414f500872ef2717d7f05f34b066"
+    },
+    {
+      "path": "results/witness_banded_three_body_minorminer_11.json",
+      "sha256": "3bcb36e193a47148c74b038a7ec633bfba3ba3c3a82e99d2a7a701f95231e1e6"
+    },
+    {
+      "path": "results/witness_banded_three_body_minorminer_29.json",
+      "sha256": "6583302dce6d198c41de9f1416f0cc9872653c7b16000ceac512bad842d5de25"
+    },
+    {
+      "path": "results/witness_banded_three_body_minorminer_47.json",
+      "sha256": "51536ec151756fc7334fcbeb923bc2f0b38c85ce4d24f43c621420f5a68f4b52"
+    },
+    {
+      "path": "results/witness_banded_three_body_template_full.json",
+      "sha256": "e7a04107a2f45209d0932bcce93543184cf563bfee5fb177c44af79ff186f2b7"
+    },
+    {
+      "path": "results/witness_banded_three_body_template_pruned.json",
+      "sha256": "7ffed2135caa06d88ddffb8043da0ce38a1cc5d74d5cd244a5b8e817e4fcb42b"
+    },
+    {
+      "path": "results/witness_graphlike_incidence_minorminer_11.json",
+      "sha256": "26774c5a750c94ed4a70835649865bc2e51706f4bc3faa443b5e05f1b31ff0a5"
+    },
+    {
+      "path": "results/witness_graphlike_incidence_minorminer_29.json",
+      "sha256": "b4d0fc3ed5f27092abbc7bdd94e681e11f288598f39c232c44314a6fa68ebd29"
+    },
+    {
+      "path": "results/witness_graphlike_incidence_minorminer_47.json",
+      "sha256": "69a508291956ba540cd55f2d7df9a8a1964525b7c19631fd60d67b668e2807e8"
+    },
+    {
+      "path": "results/witness_graphlike_incidence_template_full.json",
+      "sha256": "467af74343c874810b11a4724e4a0576f6511170fffc4ce0af8c845693c56348"
+    },
+    {
+      "path": "results/witness_graphlike_incidence_template_pruned.json",
+      "sha256": "86d6b58c7741a80a3c83df044b781c53976761a50f94d75a753c606c531b5f05"
+    },
+    {
+      "path": "results/witness_high_column_degree_redundant_isolate_minorminer_11.json",
+      "sha256": "35ae5e9ebde340598a85b526555d2f6eccd2c8c39449772537292d4f5c0f3912"
+    },
+    {
+      "path": "results/witness_high_column_degree_redundant_isolate_minorminer_29.json",
+      "sha256": "e53ccb23dd94e7ba1a63f2b04d29e549f1848b031bc96c73eea61afc8cb232e8"
+    },
+    {
+      "path": "results/witness_high_column_degree_redundant_isolate_minorminer_47.json",
+      "sha256": "3552769ed30c029ea88ce971249f8078625b5643b1e591d147e92b6ab26aadd0"
+    },
+    {
+      "path": "results/witness_high_column_degree_redundant_isolate_template_full.json",
+      "sha256": "406be1096e6ae02ef5301a83b24708b803d5ffa07e3b0bfa7e8c9e1448c47f43"
+    },
+    {
+      "path": "results/witness_high_column_degree_redundant_isolate_template_pruned.json",
+      "sha256": "b03206b1899418b673cb083bf18fc3f5df064bcbfadf2dca1ddbe55608685ddf"
+    },
+    {
+      "path": "results/witness_irregular_hyperchecks_minorminer_11.json",
+      "sha256": "80efb1211dc7315c8072abc7fe43cc555c9d2a7834431f5567fe209d308d3e41"
+    },
+    {
+      "path": "results/witness_irregular_hyperchecks_minorminer_29.json",
+      "sha256": "e8fa4ba032f83eb7dfebf3bebdebf6dd1a9c69fe24fac8c78bd95f9c30c17ad8"
+    },
+    {
+      "path": "results/witness_irregular_hyperchecks_minorminer_47.json",
+      "sha256": "34b5d863377cafbe2cd27ced1dd5ed3de93e659297f71a13f9c210ee685dd68d"
+    },
+    {
+      "path": "results/witness_irregular_hyperchecks_template_full.json",
+      "sha256": "2b090ab90b132152679a99a1c03b02b07fb8c72009ecf8a69ab3d77dc922ad3f"
+    },
+    {
+      "path": "results/witness_irregular_hyperchecks_template_pruned.json",
+      "sha256": "b34f3435c6f17b06187759baf8b4ae520c06183e8830c5836ad404ea5581c3f0"
+    },
+    {
+      "path": "results/witness_single_large_hypercheck_minorminer_11.json",
+      "sha256": "e2ff47decaeebc6d4ba5538f9a4dc8595e207fc217f679e83835cbb7c7368719"
+    },
+    {
+      "path": "results/witness_single_large_hypercheck_minorminer_29.json",
+      "sha256": "b4a1aad95b615dd6a97ff572661957d94378c2e5772bb41f6320a575beb4c882"
+    },
+    {
+      "path": "results/witness_single_large_hypercheck_minorminer_47.json",
+      "sha256": "a7b6a42416576d21d6a2b998eff09f16038b6636047562fa98ab6e227baa1ac2"
+    },
+    {
+      "path": "results/witness_single_large_hypercheck_template_full.json",
+      "sha256": "d56aaca5f72a5e8081d676a2386c863db9fd1067bc2c3918e307fb7a2c65732c"
+    },
+    {
+      "path": "results/witness_single_large_hypercheck_template_pruned.json",
+      "sha256": "7a3512bdd3b9d08237b9938588d3bfe211e63502794c2b8b28d7263d93eae50e"
+    },
+    {
+      "path": "score.json",
+      "sha256": "4b8b5998000ae3c9b3a0b2e5130c7ab44a4c17effb15f10d54ff62b0bbc06ae5"
+    },
+    {
+      "path": "scripts/__pycache__/compiler.cpython-313.pyc",
+      "sha256": "bce37e2bd38d82a069b146863e516c57cc9d55372440b3b9ac42537773836f4a"
+    },
+    {
+      "path": "scripts/__pycache__/decode_compile.cpython-313.pyc",
+      "sha256": "286f9cec6a5d99404b9e610e4d549f269f4c106a121662d7b6ed14f2b0401355"
+    },
+    {
+      "path": "scripts/__pycache__/embedding.cpython-313.pyc",
+      "sha256": "527ee6fa2148e4aa6a4ff84ee181f2953640ac15f7a5f87b02a80239f90320a4"
+    },
+    {
+      "path": "scripts/__pycache__/exact_pipeline.cpython-313.pyc",
+      "sha256": "11e3cca217ca191b157c2998fd05a7d6bf3b3b61fa5390096fcea472f62de40f"
+    },
+    {
+      "path": "scripts/__pycache__/run_experiments.cpython-313.pyc",
+      "sha256": "c12ec1c092edf8dc9d0f0b99419d3fbfd192259bc1a4d3a63f9c83a121d07a4c"
+    },
+    {
+      "path": "scripts/__pycache__/theory_checks.cpython-313.pyc",
+      "sha256": "652460e08f16d093ccedb8a3f885e320f743549de8cea8acf9bf6b8453013d9e"
+    },
+    {
+      "path": "scripts/compiler.py",
+      "sha256": "9a30b404ee8362055c1b90aa86d6f3de9c9da2f0eeead39fd2bf032e95548049"
+    },
+    {
+      "path": "scripts/decode_compile.py",
+      "sha256": "f795812ad70f9a6e1009da0fd59ea3603fdea073ac75555ab80496343dddc092"
+    },
+    {
+      "path": "scripts/embedding.py",
+      "sha256": "a1b32a45a809bfc6d239a167984ae8e78aa27a7d44e89361dcff5b6e799725a8"
+    },
+    {
+      "path": "scripts/embedding_checks.py",
+      "sha256": "b52761f662c77bcdf07d894ed1fdc3a363e04d5ecdf90e040e9c19929bd5ca9f"
+    },
+    {
+      "path": "scripts/exact_pipeline.py",
+      "sha256": "b7c40c8f34e2a648468532b34cf6a84f3d539c0ee70fc8caec3d8cc619833d36"
+    },
+    {
+      "path": "scripts/export_transcripts.py",
+      "sha256": "5b8e16a4a246f8990ad8afd6c3c0e1e916ff7d1d4465bb39564b2a31f67a10f6"
+    },
+    {
+      "path": "scripts/reviewer_compiler_check.py",
+      "sha256": "baca6ac8160b25fbbf8caeb6df94373f4e77009423a2808522cb1a1fade639fc"
+    },
+    {
+      "path": "scripts/reviewer_witness_check.py",
+      "sha256": "10691c7a3587b7d90161f1707bc4478b50e9b1c6d3e9f715c5c40b2e953c544d"
+    },
+    {
+      "path": "scripts/run_experiments.py",
+      "sha256": "899c7e55026d521ff8a6abc179c90216ada874ccb18d2e36439118b6dd6a610c"
+    },
+    {
+      "path": "scripts/theory_checks.py",
+      "sha256": "1c9ad3c29d4bbe2da93ce4ed0033f1b83f0a95454102d816c871da1fb7447e58"
+    },
+    {
+      "path": "scripts/verify_compiler.py",
+      "sha256": "71d3ee9f9237e32995f4f7abb1e6254c77f52f31006b8e0daab924be0be3e1f9"
+    },
+    {
+      "path": "scripts/verify_exact_and_pause.py",
+      "sha256": "b40c7540740db9800b664cf0a58e9e86a639a49bcc09e7b67b2796b62725d25b"
+    },
+    {
+      "path": "scripts/verify_witnesses.py",
+      "sha256": "f97d2fc135866df6eb087d7aaf43ae3ab97d907baeb5fc4a988b68c585e91144"
+    },
+    {
+      "path": "transcripts/embedding-engine.jsonl",
+      "sha256": "378eff366656beb186a55990d36c78669db769e6996db1fa00820f8e1cc49b71"
+    },
+    {
+      "path": "transcripts/procedural-provenance.jsonl",
+      "sha256": "d72040bf7dcbc0aff20cb65339e3b8b31cbb6ca512e4d8d7510deaf7d80bfbfc"
+    },
+    {
+      "path": "transcripts/root.jsonl",
+      "sha256": "35e842e678df3ce633ad8c7fc3e53c58df07ce5a29ae9e97d49215b9a91dceab"
+    },
+    {
+      "path": "transcripts/scientific-trial.jsonl",
+      "sha256": "34aa8fcc2c616592901cb7664876a6b5fccbb16a34857ffe99910df64fa728d0"
+    },
+    {
+      "path": "transcripts/session-sources.json",
+      "sha256": "58dad4c1f4b87ff93dcc03b37874d83d922831a3edbf8dd7928118605717d738"
+    },
+    {
+      "path": "transcripts/theory-certificate.jsonl",
+      "sha256": "43d5145f3440a9333c7de7d1ac4f32fcca4c89591ae1b29b3884aa7f6f632d32"
+    }
+  ],
+  "resource_use": {
+    "elapsed_preflight_seconds": 488.746503,
+    "scientific_job_seconds": 0,
+    "token_usage": null,
+    "total_trial_elapsed_to_scientific_completion_seconds": 3410.769756,
+    "scientific_session_elapsed_seconds": 2476.653756,
+    "final_experiment_wall_seconds": 9.149656290886924,
+    "final_experiment_maxrss_bytes_macos": 208158720,
+    "resource_measurement_scope": "Experiment subprocess max RSS/wall time only; not entire desktop/model-service memory.",
+    "reported_session_token_usage": {
+      "root": {
+        "source_line": 842,
+        "timestamp": "2026-10-07T20:55:22.149Z",
+        "reported": {
+          "total_token_usage": {
+            "input_tokens": 9625957,
+            "cached_input_tokens": 9450624,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 63020,
+            "reasoning_output_tokens": 36078,
+            "total_tokens": 9688977
+          },
+          "last_token_usage": {
+            "input_tokens": 179416,
+            "cached_input_tokens": 175744,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 4941,
+            "reasoning_output_tokens": 1741,
+            "total_tokens": 184357
+          },
+          "model_context_window": 258400
+        },
+        "note": "Per-session reported usage; not summed across inherited contexts."
+      },
+      "procedural-provenance": {
+        "source_line": 123,
+        "timestamp": "2026-10-07T20:00:25.432Z",
+        "reported": {
+          "total_token_usage": {
+            "input_tokens": 704797,
+            "cached_input_tokens": 654464,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 3914,
+            "reasoning_output_tokens": 632,
+            "total_tokens": 708711
+          },
+          "last_token_usage": {
+            "input_tokens": 70202,
+            "cached_input_tokens": 69760,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 259,
+            "reasoning_output_tokens": 70,
+            "total_tokens": 70461
+          },
+          "model_context_window": 258400
+        },
+        "note": "Per-session reported usage; not summed across inherited contexts."
+      },
+      "scientific-trial": {
+        "source_line": 647,
+        "timestamp": "2026-10-07T20:52:58.025Z",
+        "reported": {
+          "total_token_usage": {
+            "input_tokens": 6841895,
+            "cached_input_tokens": 6723456,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 57467,
+            "reasoning_output_tokens": 15888,
+            "total_tokens": 6899362
+          },
+          "last_token_usage": {
+            "input_tokens": 156231,
+            "cached_input_tokens": 155264,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 212,
+            "reasoning_output_tokens": 0,
+            "total_tokens": 156443
+          },
+          "model_context_window": 258400
+        },
+        "note": "Per-session reported usage; not summed across inherited contexts."
+      },
+      "theory-certificate": {
+        "source_line": 502,
+        "timestamp": "2026-10-07T20:49:27.649Z",
+        "reported": {
+          "total_token_usage": {
+            "input_tokens": 5570487,
+            "cached_input_tokens": 5422208,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 49442,
+            "reasoning_output_tokens": 20425,
+            "total_tokens": 5619929
+          },
+          "last_token_usage": {
+            "input_tokens": 166822,
+            "cached_input_tokens": 166144,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 314,
+            "reasoning_output_tokens": 212,
+            "total_tokens": 167136
+          },
+          "model_context_window": 258400
+        },
+        "note": "Per-session reported usage; not summed across inherited contexts."
+      },
+      "embedding-engine": {
+        "source_line": 410,
+        "timestamp": "2026-10-07T20:47:04.854Z",
+        "reported": {
+          "total_token_usage": {
+            "input_tokens": 4942494,
+            "cached_input_tokens": 4757504,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 36036,
+            "reasoning_output_tokens": 10339,
+            "total_tokens": 4978530
+          },
+          "last_token_usage": {
+            "input_tokens": 151211,
+            "cached_input_tokens": 150400,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 255,
+            "reasoning_output_tokens": 52,
+            "total_tokens": 151466
+          },
+          "model_context_window": 258400
+        },
+        "note": "Per-session reported usage; not summed across inherited contexts."
+      }
+    }
+  },
+  "errors": [
+    {
+      "category": "configuration-limitation",
+      "message": "Current Sol/ultra selection does not satisfy strongest-available-model requirement. Scientific trial not launched; this is not a scientific failure.",
+      "resolved_for_scientific_solver": true,
+      "resolution": "Astra/ultra scientific solver launched with no inherited parent conversation; user subsequently declared parent switched to Astra/ultra. Actual solver metadata pending."
+    },
+    {
+      "category": "reviewer-launch-limitation",
+      "message": "An additional independent reviewer spawn and restart of procedural agent were rejected by the four-agent thread limit. Root coordinator reviews current outputs directly. Scientific solver and existing children continue unaffected."
+    },
+    {
+      "category": "recovered-library-execution-error",
+      "message": "Two exploratory uncached native g=1 clique calls stalled and exited137; cause undiagnosed. Replaced by explicit verified construction. No scientific jobs remain active.",
+      "resolved": true
+    },
+    {
+      "category": "autonomous-scientific-correction",
+      "message": "Scientific peer checks found floating expansion/cancellation, gap-sign, CLI overflow fallback and complexity-accounting issues. Solver corrected and verified them without human scientific guidance.",
+      "resolved": true
+    }
+  ],
+  "scientific_execution_started_at": "2026-10-07T20:11:04.521Z",
+  "configuration_evidence": {
+    "root_rollout": "/Users/home/.codex/sessions/2026/10/07/rollout-2026-10-07T12-55-30-01a117ef-65f7-7d00-997b-03ac38efb6a9.jsonl",
+    "session_meta_line": 1,
+    "turn_context_line": 8,
+    "available_model_catalog": "/Users/home/.codex/models_cache.json",
+    "catalog_fetched_at": "2026-10-07T19:58:07.794122Z",
+    "required_model": "gpt-6-astra",
+    "required_effort": "ultra",
+    "effort_requirement_met": true,
+    "access_note": "Astra is listed as offered; inference access was not tested. Current active-turn selection is Sol; no model change was made.",
+    "official_docs": [
+      "https://developers.openai.com/api/docs/models/gpt-6-astra",
+      "https://developers.openai.com/api/docs/models/gpt-6.1-sol"
+    ],
+    "root_preflight_model_requirement_met": false,
+    "scientific_model_requirement_met": true,
+    "scientific_turn_context": "Scientific solver exact rollout turn_context line8, gpt-6-astra/ultra; both scientific children also verified."
+  },
+  "configuration_history": [
+    {
+      "phase": "preflight",
+      "model": "gpt-6.1-sol",
+      "effort": "ultra",
+      "evidence": "root turn_context line 8"
+    },
+    {
+      "phase": "continuation-parent",
+      "actual_latest_turn": {
+        "line": 132,
+        "timestamp": "2026-10-07T20:09:29.746Z",
+        "model": "gpt-6.1-sol",
+        "effort": "ultra"
+      }
+    },
+    {
+      "phase": "scientific-solver",
+      "model": "gpt-6-astra",
+      "effort": "ultra",
+      "verification": "Exact scientific-child live rollout turn_context",
+      "session_id": "01a117fd-a459-7621-b36c-1c49df7bcbbf",
+      "rollout_path": "/Users/home/.codex/sessions/2026/10/07/rollout-2026-10-07T13-11-02-01a117fd-a459-7621-b36c-1c49df7bcbbf.jsonl",
+      "session_meta": {
+        "line": 1,
+        "timestamp": "2026-10-07T20:11:04.521Z",
+        "id": "01a117fd-a459-7621-b36c-1c49df7bcbbf",
+        "source": {
+          "subagent": {
+            "thread_spawn": {
+              "parent_thread_id": "01a117ef-65f7-7d00-997b-03ac38efb6a9",
+              "depth": 1,
+              "agent_path": "/root/scientific_trial",
+              "agent_nickname": "Mendel",
+              "agent_role": null
+            }
+          }
+        }
+      },
+      "turn_context": {
+        "line": 8,
+        "timestamp": "2026-10-07T20:11:11.426Z",
+        "model": "gpt-6-astra",
+        "effort": "ultra"
+      }
+    }
+  ],
+  "solver_model": "gpt-6-astra",
+  "solver_effort": "ultra",
+  "scientific_children": [
+    {
+      "task": "theory-certificate",
+      "session_id": "01a117fe-0bfd-7be3-bceb-77efccafaa8b",
+      "rollout_path": "/Users/home/.codex/sessions/2026/10/07/rollout-2026-10-07T13-11-27-01a117fe-0bfd-7be3-bceb-77efccafaa8b.jsonl",
+      "turn_context": {
+        "line": 8,
+        "model": "gpt-6-astra",
+        "effort": "ultra"
+      }
+    },
+    {
+      "task": "embedding-engine",
+      "session_id": "01a117fe-343f-7a11-96fa-c440be5b285c",
+      "rollout_path": "/Users/home/.codex/sessions/2026/10/07/rollout-2026-10-07T13-11-37-01a117fe-343f-7a11-96fa-c440be5b285c.jsonl",
+      "turn_context": {
+        "line": 8,
+        "model": "gpt-6-astra",
+        "effort": "ultra"
+      }
+    }
+  ],
+  "reviewer_context": {
+    "scientific_materials": "Only current attempt prompt and generated code/theory/results; no author reference or prior lab",
+    "checks_so_far": [
+      "50-case independent expanded-QUBO enumeration, results/reviewer-compiler-check.json",
+      "25-witness independent hardware/allocation/range/group/chain checks and 800 consistent-state energy tests, results/reviewer-witness-check.json",
+      "Direct algebraic review of Sylvester/conjugation proof and stated hold-model assumptions"
+    ],
+    "scientific_feedback_to_solver": "No coordinator scientific corrections or hints supplied. Solver was informed of procedural timestamps and existence of independent passing checks."
+  },
+  "model_field_scope": "Autonomous scientific solver; parent/preflight configuration retained separately in configuration_history.",
+  "record_finalized_at": "2026-10-07T20:55:22.087701+00:00",
+  "scientific_result": "provisional-pass-in-declared-conditional-regime",
+  "formal_difficulty_status": "not-assessed; no frozen A/B calibration",
+  "declared_generated_inputs": {
+    "seed": 20261007,
+    "files": [
+      "results/input_banded_three_body.json",
+      "results/input_graphlike_incidence.json",
+      "results/input_high_column_degree_redundant_isolate.json",
+      "results/input_irregular_hyperchecks.json",
+      "results/input_overflow_fallback.json",
+      "results/input_single_large_hypercheck.json"
+    ],
+    "initial_external_dataset_files": []
+  },
+  "completion_evidence": "results/scientific_completion.json",
+  "scientific_artifact_manifest": "results/scientific_artifact_manifest.json"
+}

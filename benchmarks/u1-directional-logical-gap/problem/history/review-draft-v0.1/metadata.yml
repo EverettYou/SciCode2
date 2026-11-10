@@ -1,0 +1,41 @@
+benchmark_id: u1-directional-logical-gap
+title: What Drives the Gain from Directional Noise?
+stage: problem-opened
+paper_ids: []
+summary: Resolve the physical-record mechanism behind directional charge-informed recovery by controlled
+  logical-sector gaps and practical-decoder comparisons.
+idea_sources:
+- source_path: problem/USER_REQUEST.md
+  source_field: user-provided-research-question
+  role: primary-question
+research_question: Determine whether direction-bias improvements in bounded-current charge-informed recovery
+  at p=0.30 arise from typical logical-sector gap growth, changing ambiguous-record tails, or unresolved
+  finite-size crossover.
+scientific_domain:
+- quantum error correction
+- symmetry-informed decoding
+- statistical inference
+expected_outcomes:
+- Typical-gap motion and low-gap risk share may provide distinguishable finite-size signatures.
+- A controlled unresolved crossover is a valid result if it yields testable predictions and informative
+  constraints.
+expected_outputs:
+- Standalone English problem PDF for human review.
+- A later reproducible study of the stated logical-recovery question; not executed in this creation step.
+evidence_requirements:
+- Controlled likelihood and logical-score checks.
+- Unconditional physical-prior comparison with separated approximation and statistical uncertainty.
+estimated_active_hours: null
+workstation_feasible: uncertain
+expert_review: pending
+expert_notes: ''
+source_mode: user-provided-problem
+problem_sources:
+- path: problem/USER_REQUEST.md
+  sha256: 54d562fc56b785910a3b337b587354a129205a7f48bb762d8cb79c2db9d2c1f9
+  origin: Actual user message in this chat on 2026-10-07; direction from the preceding approved research
+    review.
+editorial_screen: pass-to-testing
+scientific_execution: not-started
+model_testing: not-started
+formulation_revision: review-draft-v0.1

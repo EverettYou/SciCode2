@@ -1,0 +1,177 @@
+{
+  "response_fits": {
+    "nmr": [
+      {
+        "filling": "1/2",
+        "temperature_max": 4.0,
+        "activation": 5.530517114261749,
+        "activation_se": 0.14622496866287937,
+        "log_prefactor": 1.3650670743873952,
+        "chi2_per_dof": 0.11162208288322192,
+        "free_power_activation": 5.650648983724214,
+        "free_power_activation_se": 0.585233022280587,
+        "free_power_exponent": -0.09581986098618613
+      },
+      {
+        "filling": "≈0.3",
+        "temperature_max": 4.0,
+        "activation": 2.6414157004020806,
+        "activation_se": 0.050279645014413885,
+        "log_prefactor": 0.7422598433184248,
+        "chi2_per_dof": 0.20634304543772708,
+        "free_power_activation": 2.631928008866726,
+        "free_power_activation_se": 0.15287559343365364,
+        "free_power_exponent": 0.012884192862886243
+      },
+      {
+        "filling": "≈0.2",
+        "temperature_max": 0.8125,
+        "activation": 1.7304699636311751,
+        "activation_se": 0.0350921200230317,
+        "log_prefactor": 2.7148730975991437,
+        "chi2_per_dof": 0.1622665223219704,
+        "free_power_activation": 1.8153390928412731,
+        "free_power_activation_se": 0.19371076363213308,
+        "free_power_exponent": -0.24009327784751427
+      }
+    ],
+    "resistivity": [
+      {
+        "filling": "1/2",
+        "activation": 3.7235137515545182,
+        "activation_se": 0.04810733378971571,
+        "log_prefactor": -0.8645630925003911,
+        "chi2_per_dof": 0.2371255326011149
+      },
+      {
+        "filling": "≈0.3",
+        "activation": 0.8997771652371754,
+        "activation_se": 0.042844466910830034,
+        "log_prefactor": -0.179037501380793,
+        "chi2_per_dof": 0.18403688829824635,
+        "transition_bracket": [
+          0.325,
+          0.4
+        ],
+        "transition_midpoint": 0.36250000000000004,
+        "transition_half_interval": 0.037500000000000006
+      },
+      {
+        "filling": "≈0.2",
+        "normal_linear_intercept": 0.17593341607940158,
+        "normal_linear_slope": 0.17512991526231178,
+        "linear_errors": [
+          0.03957932012746601,
+          0.017169959244878845
+        ],
+        "chi2_per_dof": 0.16677654914968332,
+        "transition_bracket": [
+          1.075,
+          1.15
+        ],
+        "transition_midpoint": 1.1124999999999998,
+        "transition_half_interval": 0.03749999999999998
+      }
+    ]
+  },
+  "spectral_consistency_checks": {
+    "a": {
+      "unscaled_occupied_weight_per_spin": 0.5000000000000001,
+      "occupied_weight_per_spin_after_completion": 0.5000000000000001,
+      "coherent_scale_chosen": 1.0,
+      "unseen_positive_weight_at_20D": 0.0,
+      "min_coherent_residue": 0.34529396369936705,
+      "max_sum_rule_error_including_unseen_peak": 0.0,
+      "negative_edge": -4.008857130846398,
+      "positive_edge": 4.008857130846398,
+      "linewidth_used": 0.07481959086073564
+    },
+    "b": {
+      "description": "Momentum-independent counterexample, not predicted flat bands.",
+      "occupied_weight_per_spin": 0.3,
+      "unseen_positive_weight_at_20D": 0.19496177345755128,
+      "background_constant": 0.028955801767332694,
+      "background_quadratic": 0.0009937593616897145,
+      "support_assumed": [
+        -6.65,
+        -2.6,
+        2.6,
+        6.65
+      ],
+      "sum_rule_with_unseen_peak": 0.9999999999999999
+    },
+    "c": {
+      "unscaled_occupied_weight_per_spin": 0.2558758046286215,
+      "occupied_weight_per_spin_after_completion": 0.2,
+      "coherent_scale_chosen": 0.7816291981583812,
+      "unseen_positive_weight_at_20D": 0.21837080184161883,
+      "min_coherent_residue": 0.025901239441572306,
+      "max_sum_rule_error_including_unseen_peak": 0.0,
+      "negative_edge": -1.9662637627962989,
+      "positive_edge": 1.9662637627962989,
+      "linewidth_used": 0.0783028316366759
+    }
+  },
+  "half_filling_zero_calculation": {
+    "approximation": "Fitted causal two-pole spectral ansatz; exact KK of its delta peaks",
+    "alpha": 0.2233576635767509,
+    "zero_q_threshold": -1.7793304395128673,
+    "fraction_Gamma_side": 0.07540262900469342,
+    "fraction_shifted_Gamma_side": 0.9245973709953066,
+    "filling": 0.5,
+    "conditional_fraction_sd": 0.017189500160948782,
+    "conditional_fraction_95_percentile": [
+      0.037235452821961244,
+      0.10605065631119653
+    ],
+    "area_2d_grid_checks": {
+      "512": 0.07538223266601562,
+      "1024": 0.07536029815673828,
+      "2048": 0.07539200782775879
+    },
+    "one_dimensional_quadrature_points": 16384,
+    "kk_check_gaussian_width": 0.01,
+    "kk_check_energy_step": 0.001,
+    "kk_check_energy_window": [
+      -12,
+      12
+    ],
+    "kk_check_max_abs_error": 4.954226698883346e-07,
+    "warning": "The fraction is model conditional, not identified by the supplied measurements."
+  },
+  "same_STS_same_density_different_high_energy_completions": [
+    {
+      "weight_of_each_unseen_peak": 0.0,
+      "negative_unseen_peak_energy": -12.0,
+      "positive_unseen_peak_energy": 30.0,
+      "fraction_Gamma_side": 0.07540262900469348
+    },
+    {
+      "weight_of_each_unseen_peak": 0.03,
+      "negative_unseen_peak_energy": -12.0,
+      "positive_unseen_peak_energy": 30.0,
+      "fraction_Gamma_side": 0.04459760858217122
+    },
+    {
+      "weight_of_each_unseen_peak": 0.03,
+      "negative_unseen_peak_energy": -30.0,
+      "positive_unseen_peak_energy": 12.0,
+      "fraction_Gamma_side": 0.10971534005243574
+    }
+  ],
+  "calculation_size": {
+    "many_body_cluster": null,
+    "description": "No finite-size many-body phase diagram was solved.",
+    "local_DOS_integral_kx_points": 768,
+    "ARPES_path_points": 752,
+    "ARPES_energy_points": 1801,
+    "spectral_density_check_grid": [
+      900,
+      900
+    ],
+    "largest_2d_zero_area_grid": [
+      2048,
+      2048
+    ]
+  }
+}

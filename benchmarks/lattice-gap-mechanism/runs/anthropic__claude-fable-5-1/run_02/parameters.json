@@ -1,0 +1,26 @@
+{
+  "units": "energies and temperatures in D; momenta in 2*pi/a with a = in-plane metal-metal distance",
+  "dispersion_convention": "eps_k = -2 t (cos kx + cos ky) - 4 t' cos kx cos ky  (Hamiltonian H0 = -t sum_<ij> - t' sum_<<ij>>); ebar_k = eps_k - (eps_min+eps_max)/2 = eps_k - 0.8",
+  "hamiltonian_coefficients": {
+    "t":  {"value": 1.00, "uncertainty": 0.01, "from": "bandwidth 8t of STS panel (d) and of the Hubbard-band widths (4t) in panel (a); BCS fit of panel (c)"},
+    "t_prime": {"value": 0.20, "uncertainty": 0.01, "from": "van Hove singularity 8|t'| = 1.6 D above the band midpoint in panels (a),(c),(d); sign: saddle point lies above band centre, chemical potential at band midpoint corresponds to nu = 0.31"},
+    "U":  {"value": 12.0, "uncertainty": 0.1, "from": "Hubbard-band separation 12.0 D and Mott gap U - 4t = 8.0 D in panel (a)"},
+    "V_pair": {"value": 6.0, "uncertainty": 0.5, "from": "BCS gap Delta = 1.96 D and Tc = 1.11 D at nu = 0.20 (isotropic s-wave channel, 2Delta/Tc = 3.56 reproduced); the extended-s (nearest-neighbour) channel gives 2Delta/Tc = 2.7 and is disfavoured"},
+    "V_pair_effective_near_half_filling": {"value": "pair-breaking energy 2*Delta_pg = 8.2 +/- 0.3 D at nu = 0.3", "note": "effective pairing scale grows toward the Mott insulator (strong-coupling / preformed-pair regime)"}
+  },
+  "derived_scales": {
+    "Mott_gap": {"value": 8.0, "uncertainty": 0.1},
+    "Hubbard_band_centres": "+/- 6.0 D, each band 4.0 D wide, dispersion ebar_k/2",
+    "spectral_weights_half_filling": "Z_pm(k) = 1/2 +/- (ebar_k - 0.53)/(2*15.4)  (best fit); Hubbard-I: 1/2 +/- eps_k/(2U)",
+    "nu_0.2": {"Delta_BCS": [1.96, 0.02], "Tc": [1.11, 0.04], "two_Delta_over_Tc": 3.56, "mu_relative_to_band_midpoint": -1.10, "normal_state_filling_from_mu": 0.202, "rho_normal": "0.18 + 0.175 T (normalised at T=4D)"},
+    "nu_0.3": {"gap_edge_Delta_pg": [2.5, 0.1], "branch_half_splitting": [4.1, 0.1], "branch_compression": [0.6, 0.03], "Tc": [0.36, 0.04], "T_star": [2.7, 0.3], "E_a_transport": [0.90, 0.05], "NMR_prefactor_C": 1.6},
+    "nu_0.5": {"rho_activation_energy_data": [3.72, 0.05], "NMR_activation_energy_data": [5.6, 0.2], "NMR_activation_theory_Q_dominated": "5.2-5.4"}
+  },
+  "luttinger_surface_half_filling": {
+    "fraction_enclosed_side_containing_Gamma": 0.14, "uncertainty": 0.04,
+    "curve": "ebar_k = -1.9 +/- 0.3 (closed curve around (0,0))",
+    "nu": 0.5,
+    "alternatives": {"Hubbard-I weights": "no zero at omega=0 (zero sheet at omega=+0.4 D, Luttinger count = 2)", "constant weights": 0.31, "eps_k=0 contour": 0.42}
+  },
+  "approximations": "two-pole (Hubbard-I-type) strong-coupling spectral function for the Mott insulator; BCS mean field for nu=0.2; two-branch strong-coupling pair state for nu=0.3; one-loop (bubble) spin susceptibility with (pi,pi)-peaked hyperfine form factor for NMR; Boltzmann/Arrhenius transport. k-meshes 400x400 to 1600x1600; no finite-cluster solver needed."
+}

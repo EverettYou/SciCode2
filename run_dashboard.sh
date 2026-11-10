@@ -4,7 +4,7 @@ set -eu
 project_root=$(CDPATH= cd -- "$(dirname "$0")" && pwd)
 cd "$project_root"
 
-dashboard_port="${SCICODE_DASHBOARD_PORT:-8000}"
+dashboard_port="${SCICODE_DASHBOARD_PORT:-8765}"
 runtime_dir="$project_root/.tmp"
 pid_file="$runtime_dir/dashboard-${dashboard_port}.pid"
 state_file="$runtime_dir/dashboard-${dashboard_port}.state"

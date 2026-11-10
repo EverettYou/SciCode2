@@ -1,0 +1,154 @@
+{
+  "all_passed": true,
+  "extreme_weight_cases": [
+    {
+      "case": 0,
+      "weights": [
+        1e-300,
+        0.0
+      ],
+      "physical_states_checked": 16,
+      "logical_optimum_exact": [
+        0,
+        1
+      ],
+      "all_ground_states_faithful": true
+    },
+    {
+      "case": 1,
+      "weights": [
+        1e+308,
+        -1e+308
+      ],
+      "physical_states_checked": 16,
+      "logical_optimum_exact": [
+        -100000000000000001097906362944045541740492309677311846336810682903157585404911491537163328978494688899061249669721172515611590283743140088328307009198146046031271664502933027185697489699588559043338384466165001178426897626212945177628091195786707458122783970171784415105291802893207873272974885715430223118336,
+        1
+      ],
+      "all_ground_states_faithful": true
+    },
+    {
+      "case": 2,
+      "weights": [
+        1e+308,
+        1e-300
+      ],
+      "physical_states_checked": 16,
+      "logical_optimum_exact": [
+        6032057205060441,
+        6032057205060440848842124543157735677050252251748505781796615064961622344493727293370973578138265743708225425014400837164813540499979063179105919597766951022193355091707896034850684039059079180396788349106095584290087446076413771468940477241550670753145517602931224392424029547429993824129889235158145614364972941312
+      ],
+      "all_ground_states_faithful": true
+    },
+    {
+      "case": 3,
+      "weights": [
+        5e-324,
+        0.0
+      ],
+      "physical_states_checked": 16,
+      "logical_optimum_exact": [
+        0,
+        1
+      ],
+      "all_ground_states_faithful": true
+    }
+  ],
+  "unsafe_float_expansion_rejected": true,
+  "target_path": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "A": 0.04,
+  "B": 2.0,
+  "Gamma": 0.02,
+  "duration": 39.269785451984625,
+  "schedule": "constant closed-system hold; hbar=1; no preparation/ramp included",
+  "comparisons": {
+    "native": {
+      "representative_repair_probability": 0.499996875019531,
+      "representative_retention_probability": 0.500003124980469,
+      "certificate": {
+        "physical_qubits": 2,
+        "logical_variables": 2,
+        "singleton_branches": 2,
+        "size_two_branches": 0,
+        "nonsingleton_physical_qubits": 0,
+        "R": 0.0001,
+        "Gamma": 0.02,
+        "duration": 39.269785451984625,
+        "cut_methods": [],
+        "branch_minimum_cuts": [],
+        "branch_cut_lower_bounds": [],
+        "frozen_logical_variables": [],
+        "required_initial_support": "all branches internally consistent",
+        "numeric_certification": "exact-binary64-rational-with-upward-error-bounds",
+        "sqrt_bound_significant_bits": 128,
+        "exp_taylor_degree": 24,
+        "status": "exact",
+        "Delta": null,
+        "g": null,
+        "rational_g_witness": null,
+        "b": 0.0,
+        "state_vector_error_bound": 0.0,
+        "event_probability_change_bound": 0.0,
+        "initially_zero_event_probability_bound": 0.0,
+        "chain_leakage_probability_bound": 0.0,
+        "reason": "P is the full space"
+      },
+      "physical_qubits": 2
+    },
+    "encoded": {
+      "representative_repair_probability": 0.001290978149033163,
+      "representative_retention_probability": 0.9987092786891337,
+      "certificate": {
+        "physical_qubits": 4,
+        "logical_variables": 2,
+        "singleton_branches": 0,
+        "size_two_branches": 2,
+        "nonsingleton_physical_qubits": 4,
+        "R": 0.0001,
+        "Gamma": 0.02,
+        "duration": 39.269785451984625,
+        "cut_methods": [
+          "tree-min-edge-exact",
+          "tree-min-edge-exact"
+        ],
+        "branch_minimum_cuts": [
+          1.0,
+          1.0
+        ],
+        "branch_cut_lower_bounds": [
+          1.0,
+          1.0
+        ],
+        "frozen_logical_variables": [
+          0,
+          1
+        ],
+        "required_initial_support": "all branches internally consistent",
+        "numeric_certification": "exact-binary64-rational-with-upward-error-bounds",
+        "sqrt_bound_significant_bits": 128,
+        "exp_taylor_degree": 24,
+        "Delta": 2.0,
+        "g": 1.9198,
+        "b": 0.05656854249492381,
+        "rational_g_witness": {
+          "numerator": "70828118545415194323",
+          "denominator": "36893488147419103232"
+        },
+        "status": "certified",
+        "s": 0.029465851909013338,
+        "unclipped_epsilon": 0.12836155482686704,
+        "state_vector_error_bound": 0.12836155482686704,
+        "event_probability_change_bound": 0.12836155482686704,
+        "initially_zero_event_probability_bound": 0.016476688757570787,
+        "chain_leakage_probability_bound": 0.016476688757570787
+      },
+      "physical_qubits": 4
+    }
+  },
+  "elapsed_seconds": 3.972353917080909
+}

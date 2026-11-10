@@ -1,0 +1,45 @@
+{
+  "task": "Analyze the supplied layered-oxide measurements and address every requested theoretical output with explicit uncertainty and identifiability checks.",
+  "sources": [
+    "/Users/home/Downloads/prompt.pdf",
+    "/Users/home/Downloads/measurements.json"
+  ],
+  "deliverables": [
+    "verified scientific PDF report",
+    "measurement-fit figures",
+    "phase diagram or explicitly identified phase constraints",
+    "three conditional ARPES maps",
+    "Kramers-Kronig and zero-contour calculation",
+    "machine-readable fit results and reproducible analysis scripts"
+  ],
+  "acceptance": [
+    "Use the supplied data, not parameters from a named compound",
+    "Do not report an assumed coupling as measured",
+    "Verify fitting conventions, uncertainty model, sum rules, causality and numerical convergence",
+    "Distinguish microscopic predictions, phenomenological fits and non-identifiability demonstrations",
+    "Visually inspect final plots and PDF"
+  ],
+  "state": "superseded_as_microscopic_solution",
+  "completed": [
+    "data audit",
+    "STS model comparison and bootstrap",
+    "NMR and resistivity activation fits and bootstrap",
+    "conditional ARPES maps and rejected-model diagnostics",
+    "Kramers-Kronig reconstruction and zero-volume convergence",
+    "phase-constraint map",
+    "model consistency and non-identifiability checks",
+    "16-page report rendering and visual inspection"
+  ],
+  "active": [],
+  "next": "No further computation is claimed to determine a full microscopic Hamiltonian without choosing additional physical assumptions.",
+  "unresolved": [
+    "single validated microscopic Hamiltonian explaining all measurements",
+    "all microscopic couplings with data-derived uncertainties",
+    "complete Hamiltonian phase diagram",
+    "validated material ARPES prediction at nominal filling 0.3"
+  ],
+  "correction": {
+    "report": "../single-orbital-reanalysis/single_orbital_reanalysis.pdf",
+    "note": "The auxiliary-pole Hamiltonian, phase predictions, and about 8.13% zero-area result are withdrawn as a solution to the requested physical single-orbital problem. Conditional empirical fits are preserved."
+  }
+}

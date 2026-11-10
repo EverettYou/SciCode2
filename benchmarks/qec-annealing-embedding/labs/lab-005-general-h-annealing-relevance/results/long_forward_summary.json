@@ -1,0 +1,1784 @@
+{
+  "records": [
+    {
+      "name": "dependent_mixed_n6_s9611",
+      "T": 32.0,
+      "baseline": {
+        "status": "converged",
+        "levels": [
+          {
+            "N": 11,
+            "T": 32,
+            "steps": 2048,
+            "norm": 1.000000000000053,
+            "original_optimal": 0.30487337125585245,
+            "chain_broken": 0.04650247082136477,
+            "full_ground": 0.3034713973301821,
+            "seconds": 0.116740584
+          },
+          {
+            "N": 11,
+            "T": 32,
+            "steps": 4096,
+            "norm": 0.999999999999964,
+            "original_optimal": 0.30487434883989706,
+            "chain_broken": 0.046502776091559776,
+            "full_ground": 0.3034724519886777,
+            "seconds": 0.268193542
+          }
+        ],
+        "final": {
+          "N": 11,
+          "T": 32,
+          "steps": 4096,
+          "norm": 0.999999999999964,
+          "original_optimal": 0.30487434883989706,
+          "chain_broken": 0.046502776091559776,
+          "full_ground": 0.3034724519886777,
+          "seconds": 0.268193542
+        }
+      },
+      "amplified": {
+        "status": "converged",
+        "levels": [
+          {
+            "N": 11,
+            "T": 32,
+            "steps": 2048,
+            "norm": 1.0000000000000564,
+            "original_optimal": 0.6049261510376798,
+            "chain_broken": 0.008559016363997517,
+            "full_ground": 0.6001684902133336,
+            "seconds": 0.132391917
+          },
+          {
+            "N": 11,
+            "T": 32,
+            "steps": 4096,
+            "norm": 0.9999999999999623,
+            "original_optimal": 0.6049287532596779,
+            "chain_broken": 0.008558828238394557,
+            "full_ground": 0.6001712547103748,
+            "seconds": 0.217560875
+          }
+        ],
+        "final": {
+          "N": 11,
+          "T": 32,
+          "steps": 4096,
+          "norm": 0.9999999999999623,
+          "original_optimal": 0.6049287532596779,
+          "chain_broken": 0.008558828238394557,
+          "full_ground": 0.6001712547103748,
+          "seconds": 0.217560875
+        }
+      }
+    },
+    {
+      "name": "dependent_mixed_n6_s9611",
+      "T": 64.0,
+      "baseline": {
+        "status": "converged",
+        "levels": [
+          {
+            "N": 11,
+            "T": 64,
+            "steps": 4096,
+            "norm": 0.9999999999999472,
+            "original_optimal": 0.46290299596141465,
+            "chain_broken": 0.014867308515620143,
+            "full_ground": 0.46286286595444337,
+            "seconds": 0.195851084
+          },
+          {
+            "N": 11,
+            "T": 64,
+            "steps": 8192,
+            "norm": 1.0000000000000622,
+            "original_optimal": 0.4629030116967952,
+            "chain_broken": 0.014867714864244291,
+            "full_ground": 0.46286288093013334,
+            "seconds": 0.390575083
+          }
+        ],
+        "final": {
+          "N": 11,
+          "T": 64,
+          "steps": 8192,
+          "norm": 1.0000000000000622,
+          "original_optimal": 0.4629030116967952,
+          "chain_broken": 0.014867714864244291,
+          "full_ground": 0.46286288093013334,
+          "seconds": 0.390575083
+        }
+      },
+      "amplified": {
+        "status": "converged",
+        "levels": [
+          {
+            "N": 11,
+            "T": 64,
+            "steps": 4096,
+            "norm": 0.9999999999999549,
+            "original_optimal": 0.7891708423043176,
+            "chain_broken": 9.199024929087271e-05,
+            "full_ground": 0.7889920543325246,
+            "seconds": 0.19479325
+          },
+          {
+            "N": 11,
+            "T": 64,
+            "steps": 8192,
+            "norm": 1.0000000000000853,
+            "original_optimal": 0.7891715061536752,
+            "chain_broken": 9.199255499582596e-05,
+            "full_ground": 0.7889927162856863,
+            "seconds": 0.389155791
+          }
+        ],
+        "final": {
+          "N": 11,
+          "T": 64,
+          "steps": 8192,
+          "norm": 1.0000000000000853,
+          "original_optimal": 0.7891715061536752,
+          "chain_broken": 9.199255499582596e-05,
+          "full_ground": 0.7889927162856863,
+          "seconds": 0.389155791
+        }
+      }
+    },
+    {
+      "name": "dependent_mixed_n6_s9611",
+      "T": 128.0,
+      "baseline": {
+        "status": "converged",
+        "levels": [
+          {
+            "N": 11,
+            "T": 128,
+            "steps": 8192,
+            "norm": 0.9999999999999256,
+            "original_optimal": 0.6402230440178813,
+            "chain_broken": 0.002548328103097851,
+            "full_ground": 0.640217055856636,
+            "seconds": 0.389736125
+          },
+          {
+            "N": 11,
+            "T": 128,
+            "steps": 16384,
+            "norm": 0.9999999999999434,
+            "original_optimal": 0.6402225446334261,
+            "chain_broken": 0.0025484803616180967,
+            "full_ground": 0.6402165557864999,
+            "seconds": 0.777890583
+          }
+        ],
+        "final": {
+          "N": 11,
+          "T": 128,
+          "steps": 16384,
+          "norm": 0.9999999999999434,
+          "original_optimal": 0.6402225446334261,
+          "chain_broken": 0.0025484803616180967,
+          "full_ground": 0.6402165557864999,
+          "seconds": 0.777890583
+        }
+      },
+      "amplified": {
+        "status": "converged",
+        "levels": [
+          {
+            "N": 11,
+            "T": 128,
+            "steps": 8192,
+            "norm": 0.999999999999926,
+            "original_optimal": 0.896288218325883,
+            "chain_broken": 4.304292693150475e-06,
+            "full_ground": 0.8962729830220874,
+            "seconds": 0.395288625
+          },
+          {
+            "N": 11,
+            "T": 128,
+            "steps": 16384,
+            "norm": 0.9999999999999554,
+            "original_optimal": 0.8962882303715467,
+            "chain_broken": 4.305692542191491e-06,
+            "full_ground": 0.8962729946474682,
+            "seconds": 0.780930584
+          }
+        ],
+        "final": {
+          "N": 11,
+          "T": 128,
+          "steps": 16384,
+          "norm": 0.9999999999999554,
+          "original_optimal": 0.8962882303715467,
+          "chain_broken": 4.305692542191491e-06,
+          "full_ground": 0.8962729946474682,
+          "seconds": 0.780930584
+        }
+      }
+    },
+    {
+      "name": "dependent_mixed_n6_s9623",
+      "T": 32.0,
+      "baseline": {
+        "status": "converged",
+        "levels": [
+          {
+            "N": 17,
+            "T": 32,
+            "steps": 2048,
+            "norm": 0.9999999999998941,
+            "original_optimal": 0.13119493587916745,
+            "chain_broken": 0.2640694553290262,
+            "full_ground": 0.10638789981451563,
+            "seconds": 8.803044167
+          },
+          {
+            "N": 17,
+            "T": 32,
+            "steps": 4096,
+            "norm": 0.9999999999998113,
+            "original_optimal": 0.13119462912844726,
+            "chain_broken": 0.2640704165838126,
+            "full_ground": 0.1063881046362487,
+            "seconds": 20.947006
+          }
+        ],
+        "final": {
+          "N": 17,
+          "T": 32,
+          "steps": 4096,
+          "norm": 0.9999999999998113,
+          "original_optimal": 0.13119462912844726,
+          "chain_broken": 0.2640704165838126,
+          "full_ground": 0.1063881046362487,
+          "seconds": 20.947006
+        }
+      },
+      "amplified": {
+        "status": "converged",
+        "levels": [
+          {
+            "N": 17,
+            "T": 32,
+            "steps": 2048,
+            "norm": 0.9999999999998672,
+            "original_optimal": 0.2017930318589885,
+            "chain_broken": 0.18513116269117044,
+            "full_ground": 0.17111376724790078,
+            "seconds": 8.815627541
+          },
+          {
+            "N": 17,
+            "T": 32,
+            "steps": 4096,
+            "norm": 0.9999999999997626,
+            "original_optimal": 0.2017955108704758,
+            "chain_broken": 0.1851318626588848,
+            "full_ground": 0.17111650204540524,
+            "seconds": 17.712076584
+          }
+        ],
+        "final": {
+          "N": 17,
+          "T": 32,
+          "steps": 4096,
+          "norm": 0.9999999999997626,
+          "original_optimal": 0.2017955108704758,
+          "chain_broken": 0.1851318626588848,
+          "full_ground": 0.17111650204540524,
+          "seconds": 17.712076584
+        }
+      }
+    },
+    {
+      "name": "dependent_mixed_n6_s9623",
+      "T": 64.0,
+      "baseline": {
+        "status": "converged",
+        "levels": [
+          {
+            "N": 17,
+            "T": 64,
+            "steps": 4096,
+            "norm": 0.9999999999997793,
+            "original_optimal": 0.14288096437864342,
+            "chain_broken": 0.19194139884881112,
+            "full_ground": 0.13489464569258638,
+            "seconds": 17.455415125
+          },
+          {
+            "N": 17,
+            "T": 64,
+            "steps": 8192,
+            "norm": 0.9999999999999485,
+            "original_optimal": 0.1428801554773271,
+            "chain_broken": 0.1919423681689899,
+            "full_ground": 0.13489414974373634,
+            "seconds": 35.519549292
+          }
+        ],
+        "final": {
+          "N": 17,
+          "T": 64,
+          "steps": 8192,
+          "norm": 0.9999999999999485,
+          "original_optimal": 0.1428801554773271,
+          "chain_broken": 0.1919423681689899,
+          "full_ground": 0.13489414974373634,
+          "seconds": 35.519549292
+        }
+      },
+      "amplified": {
+        "status": "converged",
+        "levels": [
+          {
+            "N": 17,
+            "T": 64,
+            "steps": 4096,
+            "norm": 0.9999999999997691,
+            "original_optimal": 0.25400116641490383,
+            "chain_broken": 0.16851678459326458,
+            "full_ground": 0.24083338648046285,
+            "seconds": 23.889213042
+          },
+          {
+            "N": 17,
+            "T": 64,
+            "steps": 8192,
+            "norm": 0.9999999999999423,
+            "original_optimal": 0.25400467341800326,
+            "chain_broken": 0.16851702310302435,
+            "full_ground": 0.24083719826009276,
+            "seconds": 37.298100417
+          }
+        ],
+        "final": {
+          "N": 17,
+          "T": 64,
+          "steps": 8192,
+          "norm": 0.9999999999999423,
+          "original_optimal": 0.25400467341800326,
+          "chain_broken": 0.16851702310302435,
+          "full_ground": 0.24083719826009276,
+          "seconds": 37.298100417
+        }
+      }
+    },
+    {
+      "name": "dependent_mixed_n6_s9623",
+      "T": 128.0,
+      "baseline": {
+        "status": "converged",
+        "levels": [
+          {
+            "N": 17,
+            "T": 128,
+            "steps": 8192,
+            "norm": 0.9999999999997438,
+            "original_optimal": 0.10658835931420489,
+            "chain_broken": 0.0968294847736283,
+            "full_ground": 0.10576649824052055,
+            "seconds": 35.978062709
+          },
+          {
+            "N": 17,
+            "T": 128,
+            "steps": 16384,
+            "norm": 0.9999999999997827,
+            "original_optimal": 0.10658682622097192,
+            "chain_broken": 0.09682960130014792,
+            "full_ground": 0.10576501422174366,
+            "seconds": 70.643374875
+          }
+        ],
+        "final": {
+          "N": 17,
+          "T": 128,
+          "steps": 16384,
+          "norm": 0.9999999999997827,
+          "original_optimal": 0.10658682622097192,
+          "chain_broken": 0.09682960130014792,
+          "full_ground": 0.10576501422174366,
+          "seconds": 70.643374875
+        }
+      },
+      "amplified": {
+        "status": "converged",
+        "levels": [
+          {
+            "N": 17,
+            "T": 128,
+            "steps": 8192,
+            "norm": 0.9999999999997865,
+            "original_optimal": 0.28239014269081364,
+            "chain_broken": 0.07566006129534286,
+            "full_ground": 0.2743994144635764,
+            "seconds": 37.191046667
+          },
+          {
+            "N": 17,
+            "T": 128,
+            "steps": 16384,
+            "norm": 0.9999999999998352,
+            "original_optimal": 0.28239183509589694,
+            "chain_broken": 0.0756591819858655,
+            "full_ground": 0.27440165093860514,
+            "seconds": 76.985027584
+          }
+        ],
+        "final": {
+          "N": 17,
+          "T": 128,
+          "steps": 16384,
+          "norm": 0.9999999999998352,
+          "original_optimal": 0.28239183509589694,
+          "chain_broken": 0.0756591819858655,
+          "full_ground": 0.27440165093860514,
+          "seconds": 76.985027584
+        }
+      }
+    },
+    {
+      "name": "irregular_pairs_triples_n6_s9611",
+      "T": 32.0,
+      "baseline": {
+        "status": "converged",
+        "levels": [
+          {
+            "N": 10,
+            "T": 32,
+            "steps": 2048,
+            "norm": 1.0000000000000435,
+            "original_optimal": 0.20791024468374933,
+            "chain_broken": 0,
+            "full_ground": 0.20788782368815248,
+            "seconds": 0.046722584
+          },
+          {
+            "N": 10,
+            "T": 32,
+            "steps": 4096,
+            "norm": 0.9999999999999644,
+            "original_optimal": 0.20791705857942938,
+            "chain_broken": 0,
+            "full_ground": 0.20789463606832423,
+            "seconds": 0.090907416
+          }
+        ],
+        "final": {
+          "N": 10,
+          "T": 32,
+          "steps": 4096,
+          "norm": 0.9999999999999644,
+          "original_optimal": 0.20791705857942938,
+          "chain_broken": 0,
+          "full_ground": 0.20789463606832423,
+          "seconds": 0.090907416
+        }
+      },
+      "amplified": {
+        "status": "converged",
+        "levels": [
+          {
+            "N": 10,
+            "T": 32,
+            "steps": 2048,
+            "norm": 1.0000000000000386,
+            "original_optimal": 0.4169124076317736,
+            "chain_broken": 0,
+            "full_ground": 0.4166534347085357,
+            "seconds": 0.045891917
+          },
+          {
+            "N": 10,
+            "T": 32,
+            "steps": 4096,
+            "norm": 0.9999999999999714,
+            "original_optimal": 0.4169247287363958,
+            "chain_broken": 0,
+            "full_ground": 0.41666574591324035,
+            "seconds": 0.091275541
+          }
+        ],
+        "final": {
+          "N": 10,
+          "T": 32,
+          "steps": 4096,
+          "norm": 0.9999999999999714,
+          "original_optimal": 0.4169247287363958,
+          "chain_broken": 0,
+          "full_ground": 0.41666574591324035,
+          "seconds": 0.091275541
+        }
+      }
+    },
+    {
+      "name": "irregular_pairs_triples_n6_s9611",
+      "T": 64.0,
+      "baseline": {
+        "status": "converged",
+        "levels": [
+          {
+            "N": 10,
+            "T": 64,
+            "steps": 4096,
+            "norm": 0.9999999999999333,
+            "original_optimal": 0.2699422651411815,
+            "chain_broken": 0,
+            "full_ground": 0.26993486148080287,
+            "seconds": 0.106846958
+          },
+          {
+            "N": 10,
+            "T": 64,
+            "steps": 8192,
+            "norm": 1.000000000000077,
+            "original_optimal": 0.26995321232492125,
+            "chain_broken": 0,
+            "full_ground": 0.2699458079323829,
+            "seconds": 0.224439125
+          }
+        ],
+        "final": {
+          "N": 10,
+          "T": 64,
+          "steps": 8192,
+          "norm": 1.000000000000077,
+          "original_optimal": 0.26995321232492125,
+          "chain_broken": 0,
+          "full_ground": 0.2699458079323829,
+          "seconds": 0.224439125
+        }
+      },
+      "amplified": {
+        "status": "converged",
+        "levels": [
+          {
+            "N": 10,
+            "T": 64,
+            "steps": 4096,
+            "norm": 0.9999999999999392,
+            "original_optimal": 0.5980740002505573,
+            "chain_broken": 0,
+            "full_ground": 0.5980458232671403,
+            "seconds": 0.138761041
+          },
+          {
+            "N": 10,
+            "T": 64,
+            "steps": 8192,
+            "norm": 1.0000000000000455,
+            "original_optimal": 0.5980876552685405,
+            "chain_broken": 0,
+            "full_ground": 0.5980594768175633,
+            "seconds": 0.278251708
+          }
+        ],
+        "final": {
+          "N": 10,
+          "T": 64,
+          "steps": 8192,
+          "norm": 1.0000000000000455,
+          "original_optimal": 0.5980876552685405,
+          "chain_broken": 0,
+          "full_ground": 0.5980594768175633,
+          "seconds": 0.278251708
+        }
+      }
+    },
+    {
+      "name": "irregular_pairs_triples_n6_s9611",
+      "T": 128.0,
+      "baseline": {
+        "status": "converged",
+        "levels": [
+          {
+            "N": 10,
+            "T": 128,
+            "steps": 8192,
+            "norm": 0.9999999999999388,
+            "original_optimal": 0.4044661598896964,
+            "chain_broken": 0,
+            "full_ground": 0.40446278225321197,
+            "seconds": 0.387206375
+          },
+          {
+            "N": 10,
+            "T": 128,
+            "steps": 16384,
+            "norm": 0.9999999999999359,
+            "original_optimal": 0.4044806591659979,
+            "chain_broken": 0,
+            "full_ground": 0.40447728098018626,
+            "seconds": 0.413828291
+          }
+        ],
+        "final": {
+          "N": 10,
+          "T": 128,
+          "steps": 16384,
+          "norm": 0.9999999999999359,
+          "original_optimal": 0.4044806591659979,
+          "chain_broken": 0,
+          "full_ground": 0.40447728098018626,
+          "seconds": 0.413828291
+        }
+      },
+      "amplified": {
+        "status": "converged",
+        "levels": [
+          {
+            "N": 10,
+            "T": 128,
+            "steps": 8192,
+            "norm": 0.9999999999999158,
+            "original_optimal": 0.8332209237752474,
+            "chain_broken": 0,
+            "full_ground": 0.8332155631891011,
+            "seconds": 0.18291425
+          },
+          {
+            "N": 10,
+            "T": 128,
+            "steps": 16384,
+            "norm": 0.9999999999999842,
+            "original_optimal": 0.8332299426987685,
+            "chain_broken": 0,
+            "full_ground": 0.8332245806027698,
+            "seconds": 0.373367209
+          }
+        ],
+        "final": {
+          "N": 10,
+          "T": 128,
+          "steps": 16384,
+          "norm": 0.9999999999999842,
+          "original_optimal": 0.8332299426987685,
+          "chain_broken": 0,
+          "full_ground": 0.8332245806027698,
+          "seconds": 0.373367209
+        }
+      }
+    },
+    {
+      "name": "irregular_pairs_triples_n6_s9623",
+      "T": 32.0,
+      "baseline": {
+        "status": "converged",
+        "levels": [
+          {
+            "N": 9,
+            "T": 32,
+            "steps": 2048,
+            "norm": 1.000000000000034,
+            "original_optimal": 0.5870957960225834,
+            "chain_broken": 0.248169573569616,
+            "full_ground": 0.4194562032351349,
+            "seconds": 0.021484
+          },
+          {
+            "N": 9,
+            "T": 32,
+            "steps": 4096,
+            "norm": 0.9999999999999836,
+            "original_optimal": 0.587097001920596,
+            "chain_broken": 0.2481700892048561,
+            "full_ground": 0.4194568240747919,
+            "seconds": 0.04259425
+          }
+        ],
+        "final": {
+          "N": 9,
+          "T": 32,
+          "steps": 4096,
+          "norm": 0.9999999999999836,
+          "original_optimal": 0.587097001920596,
+          "chain_broken": 0.2481700892048561,
+          "full_ground": 0.4194568240747919,
+          "seconds": 0.04259425
+        }
+      },
+      "amplified": {
+        "status": "converged",
+        "levels": [
+          {
+            "N": 9,
+            "T": 32,
+            "steps": 2048,
+            "norm": 1.000000000000026,
+            "original_optimal": 0.9298944637234648,
+            "chain_broken": 0.26966067084326273,
+            "full_ground": 0.6715148668903677,
+            "seconds": 0.021830208
+          },
+          {
+            "N": 9,
+            "T": 32,
+            "steps": 4096,
+            "norm": 0.9999999999999709,
+            "original_optimal": 0.9298985040867818,
+            "chain_broken": 0.26966106380924304,
+            "full_ground": 0.6715177521429553,
+            "seconds": 0.04356625
+          }
+        ],
+        "final": {
+          "N": 9,
+          "T": 32,
+          "steps": 4096,
+          "norm": 0.9999999999999709,
+          "original_optimal": 0.9298985040867818,
+          "chain_broken": 0.26966106380924304,
+          "full_ground": 0.6715177521429553,
+          "seconds": 0.04356625
+        }
+      }
+    },
+    {
+      "name": "irregular_pairs_triples_n6_s9623",
+      "T": 64.0,
+      "baseline": {
+        "status": "converged",
+        "levels": [
+          {
+            "N": 9,
+            "T": 64,
+            "steps": 4096,
+            "norm": 0.9999999999999568,
+            "original_optimal": 0.851581194899296,
+            "chain_broken": 0.18575153408886216,
+            "full_ground": 0.6894209869237212,
+            "seconds": 0.04306525
+          },
+          {
+            "N": 9,
+            "T": 64,
+            "steps": 8192,
+            "norm": 1.0000000000000635,
+            "original_optimal": 0.851582259190119,
+            "chain_broken": 0.1857511076272832,
+            "full_ground": 0.689422171237843,
+            "seconds": 0.08532
+          }
+        ],
+        "final": {
+          "N": 9,
+          "T": 64,
+          "steps": 8192,
+          "norm": 1.0000000000000635,
+          "original_optimal": 0.851582259190119,
+          "chain_broken": 0.1857511076272832,
+          "full_ground": 0.689422171237843,
+          "seconds": 0.08532
+        }
+      },
+      "amplified": {
+        "status": "converged",
+        "levels": [
+          {
+            "N": 9,
+            "T": 64,
+            "steps": 4096,
+            "norm": 0.9999999999999603,
+            "original_optimal": 0.9949110231818613,
+            "chain_broken": 0.19747220714216027,
+            "full_ground": 0.7979693163309872,
+            "seconds": 0.042786833
+          },
+          {
+            "N": 9,
+            "T": 64,
+            "steps": 8192,
+            "norm": 1.000000000000052,
+            "original_optimal": 0.9949115428676717,
+            "chain_broken": 0.1974722748999244,
+            "full_ground": 0.7979697031266347,
+            "seconds": 0.086223791
+          }
+        ],
+        "final": {
+          "N": 9,
+          "T": 64,
+          "steps": 8192,
+          "norm": 1.000000000000052,
+          "original_optimal": 0.9949115428676717,
+          "chain_broken": 0.1974722748999244,
+          "full_ground": 0.7979697031266347,
+          "seconds": 0.086223791
+        }
+      }
+    },
+    {
+      "name": "irregular_pairs_triples_n6_s9623",
+      "T": 128.0,
+      "baseline": {
+        "status": "converged",
+        "levels": [
+          {
+            "N": 9,
+            "T": 128,
+            "steps": 8192,
+            "norm": 0.9999999999999412,
+            "original_optimal": 0.9735756000431679,
+            "chain_broken": 0.10859423560320654,
+            "full_ground": 0.8676923402550187,
+            "seconds": 0.085121834
+          },
+          {
+            "N": 9,
+            "T": 128,
+            "steps": 16384,
+            "norm": 0.9999999999999367,
+            "original_optimal": 0.9735758521689633,
+            "chain_broken": 0.10859424186769326,
+            "full_ground": 0.8676925624010582,
+            "seconds": 0.171121666
+          }
+        ],
+        "final": {
+          "N": 9,
+          "T": 128,
+          "steps": 16384,
+          "norm": 0.9999999999999367,
+          "original_optimal": 0.9735758521689633,
+          "chain_broken": 0.10859424186769326,
+          "full_ground": 0.8676925624010582,
+          "seconds": 0.171121666
+        }
+      },
+      "amplified": {
+        "status": "converged",
+        "levels": [
+          {
+            "N": 9,
+            "T": 128,
+            "steps": 8192,
+            "norm": 0.9999999999999372,
+            "original_optimal": 0.9996974501273393,
+            "chain_broken": 0.11026943920273014,
+            "full_ground": 0.889459110777811,
+            "seconds": 0.084955209
+          },
+          {
+            "N": 9,
+            "T": 128,
+            "steps": 16384,
+            "norm": 0.999999999999954,
+            "original_optimal": 0.9996974455238361,
+            "chain_broken": 0.11026940879146718,
+            "full_ground": 0.8894591378771267,
+            "seconds": 0.171628875
+          }
+        ],
+        "final": {
+          "N": 9,
+          "T": 128,
+          "steps": 16384,
+          "norm": 0.999999999999954,
+          "original_optimal": 0.9996974455238361,
+          "chain_broken": 0.11026940879146718,
+          "full_ground": 0.8894591378771267,
+          "seconds": 0.171628875
+        }
+      }
+    },
+    {
+      "name": "random_triples_n6_s9611",
+      "T": 32.0,
+      "baseline": {
+        "status": "converged",
+        "levels": [
+          {
+            "N": 13,
+            "T": 32,
+            "steps": 2048,
+            "norm": 1.0000000000000535,
+            "original_optimal": 0.09682499081984022,
+            "chain_broken": 0.11865959101634131,
+            "full_ground": 0.09596454967076287,
+            "seconds": 0.455055542
+          },
+          {
+            "N": 13,
+            "T": 32,
+            "steps": 4096,
+            "norm": 0.9999999999999569,
+            "original_optimal": 0.09682610347174105,
+            "chain_broken": 0.11865929989085972,
+            "full_ground": 0.09596565783574539,
+            "seconds": 0.8929395
+          }
+        ],
+        "final": {
+          "N": 13,
+          "T": 32,
+          "steps": 4096,
+          "norm": 0.9999999999999569,
+          "original_optimal": 0.09682610347174105,
+          "chain_broken": 0.11865929989085972,
+          "full_ground": 0.09596565783574539,
+          "seconds": 0.8929395
+        }
+      },
+      "amplified": {
+        "status": "converged",
+        "levels": [
+          {
+            "N": 13,
+            "T": 32,
+            "steps": 2048,
+            "norm": 1.000000000000049,
+            "original_optimal": 0.15564642153316835,
+            "chain_broken": 0.1289509458510117,
+            "full_ground": 0.15375009739416362,
+            "seconds": 0.441850459
+          },
+          {
+            "N": 13,
+            "T": 32,
+            "steps": 4096,
+            "norm": 0.9999999999999619,
+            "original_optimal": 0.15564833193174565,
+            "chain_broken": 0.12895045325408624,
+            "full_ground": 0.15375200729290303,
+            "seconds": 0.886025083
+          }
+        ],
+        "final": {
+          "N": 13,
+          "T": 32,
+          "steps": 4096,
+          "norm": 0.9999999999999619,
+          "original_optimal": 0.15564833193174565,
+          "chain_broken": 0.12895045325408624,
+          "full_ground": 0.15375200729290303,
+          "seconds": 0.886025083
+        }
+      }
+    },
+    {
+      "name": "random_triples_n6_s9611",
+      "T": 64.0,
+      "baseline": {
+        "status": "converged",
+        "levels": [
+          {
+            "N": 13,
+            "T": 64,
+            "steps": 4096,
+            "norm": 0.9999999999999318,
+            "original_optimal": 0.16944681608375117,
+            "chain_broken": 0.09367498099108686,
+            "full_ground": 0.16937775358558685,
+            "seconds": 0.907307917
+          },
+          {
+            "N": 13,
+            "T": 64,
+            "steps": 8192,
+            "norm": 1.0000000000000675,
+            "original_optimal": 0.16944819578239861,
+            "chain_broken": 0.09367501757110974,
+            "full_ground": 0.16937913114559502,
+            "seconds": 1.76232875
+          }
+        ],
+        "final": {
+          "N": 13,
+          "T": 64,
+          "steps": 8192,
+          "norm": 1.0000000000000675,
+          "original_optimal": 0.16944819578239861,
+          "chain_broken": 0.09367501757110974,
+          "full_ground": 0.16937913114559502,
+          "seconds": 1.76232875
+        }
+      },
+      "amplified": {
+        "status": "converged",
+        "levels": [
+          {
+            "N": 13,
+            "T": 64,
+            "steps": 4096,
+            "norm": 0.9999999999999285,
+            "original_optimal": 0.291256497226318,
+            "chain_broken": 0.09220311716877189,
+            "full_ground": 0.2910839589289844,
+            "seconds": 1.092753291
+          },
+          {
+            "N": 13,
+            "T": 64,
+            "steps": 8192,
+            "norm": 1.0000000000000613,
+            "original_optimal": 0.2912587905972668,
+            "chain_broken": 0.09220314705056418,
+            "full_ground": 0.2910862515204113,
+            "seconds": 2.171125458
+          }
+        ],
+        "final": {
+          "N": 13,
+          "T": 64,
+          "steps": 8192,
+          "norm": 1.0000000000000613,
+          "original_optimal": 0.2912587905972668,
+          "chain_broken": 0.09220314705056418,
+          "full_ground": 0.2910862515204113,
+          "seconds": 2.171125458
+        }
+      }
+    },
+    {
+      "name": "random_triples_n6_s9611",
+      "T": 128.0,
+      "baseline": {
+        "status": "converged",
+        "levels": [
+          {
+            "N": 13,
+            "T": 128,
+            "steps": 8192,
+            "norm": 0.9999999999999026,
+            "original_optimal": 0.2360404500393324,
+            "chain_broken": 0.05454113227873664,
+            "full_ground": 0.23602096631395017,
+            "seconds": 2.096728958
+          },
+          {
+            "N": 13,
+            "T": 128,
+            "steps": 16384,
+            "norm": 0.9999999999999468,
+            "original_optimal": 0.23604111363935562,
+            "chain_broken": 0.054541043140571156,
+            "full_ground": 0.2360216295942291,
+            "seconds": 5.190778208
+          }
+        ],
+        "final": {
+          "N": 13,
+          "T": 128,
+          "steps": 16384,
+          "norm": 0.9999999999999468,
+          "original_optimal": 0.23604111363935562,
+          "chain_broken": 0.054541043140571156,
+          "full_ground": 0.2360216295942291,
+          "seconds": 5.190778208
+        }
+      },
+      "amplified": {
+        "status": "converged",
+        "levels": [
+          {
+            "N": 13,
+            "T": 128,
+            "steps": 8192,
+            "norm": 0.9999999999998944,
+            "original_optimal": 0.40167387021206635,
+            "chain_broken": 0.057250410421904194,
+            "full_ground": 0.40163822921432324,
+            "seconds": 2.942040292
+          },
+          {
+            "N": 13,
+            "T": 128,
+            "steps": 16384,
+            "norm": 0.9999999999999237,
+            "original_optimal": 0.401675113377702,
+            "chain_broken": 0.05725007186873288,
+            "full_ground": 0.4016394707898621,
+            "seconds": 3.621343875
+          }
+        ],
+        "final": {
+          "N": 13,
+          "T": 128,
+          "steps": 16384,
+          "norm": 0.9999999999999237,
+          "original_optimal": 0.401675113377702,
+          "chain_broken": 0.05725007186873288,
+          "full_ground": 0.4016394707898621,
+          "seconds": 3.621343875
+        }
+      }
+    },
+    {
+      "name": "random_triples_n6_s9623",
+      "T": 32.0,
+      "baseline": {
+        "status": "converged",
+        "levels": [
+          {
+            "N": 13,
+            "T": 32,
+            "steps": 2048,
+            "norm": 1.0000000000000429,
+            "original_optimal": 0.42608576244491636,
+            "chain_broken": 0.15605479843913211,
+            "full_ground": 0.31575372005400093,
+            "seconds": 0.44325075
+          },
+          {
+            "N": 13,
+            "T": 32,
+            "steps": 4096,
+            "norm": 0.9999999999999549,
+            "original_optimal": 0.4260879931182586,
+            "chain_broken": 0.15605478076460025,
+            "full_ground": 0.31575564065629,
+            "seconds": 0.886595458
+          }
+        ],
+        "final": {
+          "N": 13,
+          "T": 32,
+          "steps": 4096,
+          "norm": 0.9999999999999549,
+          "original_optimal": 0.4260879931182586,
+          "chain_broken": 0.15605478076460025,
+          "full_ground": 0.31575564065629,
+          "seconds": 0.886595458
+        }
+      },
+      "amplified": {
+        "status": "converged",
+        "levels": [
+          {
+            "N": 13,
+            "T": 32,
+            "steps": 2048,
+            "norm": 1.000000000000053,
+            "original_optimal": 0.713027766340474,
+            "chain_broken": 0.17057538799998156,
+            "full_ground": 0.545992118123132,
+            "seconds": 0.452218833
+          },
+          {
+            "N": 13,
+            "T": 32,
+            "steps": 4096,
+            "norm": 0.9999999999999605,
+            "original_optimal": 0.7130329374963896,
+            "chain_broken": 0.1705752014221392,
+            "full_ground": 0.545997327295239,
+            "seconds": 0.888050375
+          }
+        ],
+        "final": {
+          "N": 13,
+          "T": 32,
+          "steps": 4096,
+          "norm": 0.9999999999999605,
+          "original_optimal": 0.7130329374963896,
+          "chain_broken": 0.1705752014221392,
+          "full_ground": 0.545997327295239,
+          "seconds": 0.888050375
+        }
+      }
+    },
+    {
+      "name": "random_triples_n6_s9623",
+      "T": 64.0,
+      "baseline": {
+        "status": "converged",
+        "levels": [
+          {
+            "N": 13,
+            "T": 64,
+            "steps": 4096,
+            "norm": 0.9999999999999263,
+            "original_optimal": 0.7143206374068134,
+            "chain_broken": 0.15487978517631193,
+            "full_ground": 0.5758449478032783,
+            "seconds": 0.889737041
+          },
+          {
+            "N": 13,
+            "T": 64,
+            "steps": 8192,
+            "norm": 1.0000000000000577,
+            "original_optimal": 0.714322208464029,
+            "chain_broken": 0.15488029627148414,
+            "full_ground": 0.5758458281019547,
+            "seconds": 1.83233675
+          }
+        ],
+        "final": {
+          "N": 13,
+          "T": 64,
+          "steps": 8192,
+          "norm": 1.0000000000000577,
+          "original_optimal": 0.714322208464029,
+          "chain_broken": 0.15488029627148414,
+          "full_ground": 0.5758458281019547,
+          "seconds": 1.83233675
+        }
+      },
+      "amplified": {
+        "status": "converged",
+        "levels": [
+          {
+            "N": 13,
+            "T": 64,
+            "steps": 4096,
+            "norm": 0.9999999999999256,
+            "original_optimal": 0.9011498709337347,
+            "chain_broken": 0.18790632829034437,
+            "full_ground": 0.7133453556643142,
+            "seconds": 1.474351958
+          },
+          {
+            "N": 13,
+            "T": 64,
+            "steps": 8192,
+            "norm": 1.0000000000000708,
+            "original_optimal": 0.9011545255991059,
+            "chain_broken": 0.18790730965004107,
+            "full_ground": 0.7133490235170772,
+            "seconds": 3.935441834
+          }
+        ],
+        "final": {
+          "N": 13,
+          "T": 64,
+          "steps": 8192,
+          "norm": 1.0000000000000708,
+          "original_optimal": 0.9011545255991059,
+          "chain_broken": 0.18790730965004107,
+          "full_ground": 0.7133490235170772,
+          "seconds": 3.935441834
+        }
+      }
+    },
+    {
+      "name": "random_triples_n6_s9623",
+      "T": 128.0,
+      "baseline": {
+        "status": "converged",
+        "levels": [
+          {
+            "N": 13,
+            "T": 128,
+            "steps": 8192,
+            "norm": 0.9999999999999075,
+            "original_optimal": 0.951558054937335,
+            "chain_broken": 0.103033862115496,
+            "full_ground": 0.8496049520267843,
+            "seconds": 3.040600375
+          },
+          {
+            "N": 13,
+            "T": 128,
+            "steps": 16384,
+            "norm": 0.9999999999999394,
+            "original_optimal": 0.9515585405736063,
+            "chain_broken": 0.10303436628501854,
+            "full_ground": 0.8496048982750151,
+            "seconds": 6.299596083
+          }
+        ],
+        "final": {
+          "N": 13,
+          "T": 128,
+          "steps": 16384,
+          "norm": 0.9999999999999394,
+          "original_optimal": 0.9515585405736063,
+          "chain_broken": 0.10303436628501854,
+          "full_ground": 0.8496048982750151,
+          "seconds": 6.299596083
+        }
+      },
+      "amplified": {
+        "status": "converged",
+        "levels": [
+          {
+            "N": 13,
+            "T": 128,
+            "steps": 8192,
+            "norm": 0.999999999999874,
+            "original_optimal": 0.9897420425703969,
+            "chain_broken": 0.11008521862617794,
+            "full_ground": 0.8796591250356777,
+            "seconds": 3.911832292
+          },
+          {
+            "N": 13,
+            "T": 128,
+            "steps": 16384,
+            "norm": 0.9999999999999452,
+            "original_optimal": 0.9897431094853405,
+            "chain_broken": 0.11008503868751938,
+            "full_ground": 0.8796603744592154,
+            "seconds": 6.454634333
+          }
+        ],
+        "final": {
+          "N": 13,
+          "T": 128,
+          "steps": 16384,
+          "norm": 0.9999999999999452,
+          "original_optimal": 0.9897431094853405,
+          "chain_broken": 0.11008503868751938,
+          "full_ground": 0.8796603744592154,
+          "seconds": 6.454634333
+        }
+      }
+    },
+    {
+      "name": "rewired_triple_band_n6_s9611",
+      "T": 32.0,
+      "baseline": {
+        "status": "converged",
+        "levels": [
+          {
+            "N": 15,
+            "T": 32,
+            "steps": 2048,
+            "norm": 1.0000000000000497,
+            "original_optimal": 0.08830770060054773,
+            "chain_broken": 0.13438135484790034,
+            "full_ground": 0.08305699385182021,
+            "seconds": 4.841502584
+          },
+          {
+            "N": 15,
+            "T": 32,
+            "steps": 4096,
+            "norm": 0.9999999999999458,
+            "original_optimal": 0.08830752447673215,
+            "chain_broken": 0.13438164802797598,
+            "full_ground": 0.0830568333072975,
+            "seconds": 6.504156459
+          }
+        ],
+        "final": {
+          "N": 15,
+          "T": 32,
+          "steps": 4096,
+          "norm": 0.9999999999999458,
+          "original_optimal": 0.08830752447673215,
+          "chain_broken": 0.13438164802797598,
+          "full_ground": 0.0830568333072975,
+          "seconds": 6.504156459
+        }
+      },
+      "amplified": {
+        "status": "converged",
+        "levels": [
+          {
+            "N": 15,
+            "T": 32,
+            "steps": 2048,
+            "norm": 1.0000000000000577,
+            "original_optimal": 0.14995299897832418,
+            "chain_broken": 0.13308454390784544,
+            "full_ground": 0.13949027239352105,
+            "seconds": 3.852386333
+          },
+          {
+            "N": 15,
+            "T": 32,
+            "steps": 4096,
+            "norm": 0.9999999999999507,
+            "original_optimal": 0.14995312457662105,
+            "chain_broken": 0.13308478784504116,
+            "full_ground": 0.13949043164314973,
+            "seconds": 10.282615417
+          }
+        ],
+        "final": {
+          "N": 15,
+          "T": 32,
+          "steps": 4096,
+          "norm": 0.9999999999999507,
+          "original_optimal": 0.14995312457662105,
+          "chain_broken": 0.13308478784504116,
+          "full_ground": 0.13949043164314973,
+          "seconds": 10.282615417
+        }
+      }
+    },
+    {
+      "name": "rewired_triple_band_n6_s9611",
+      "T": 64.0,
+      "baseline": {
+        "status": "converged",
+        "levels": [
+          {
+            "N": 15,
+            "T": 64,
+            "steps": 4096,
+            "norm": 0.9999999999998905,
+            "original_optimal": 0.19771399452674834,
+            "chain_broken": 0.06244973319606517,
+            "full_ground": 0.19682633230184013,
+            "seconds": 7.427151083
+          },
+          {
+            "N": 15,
+            "T": 64,
+            "steps": 8192,
+            "norm": 1.0000000000000664,
+            "original_optimal": 0.19771323884443165,
+            "chain_broken": 0.06244998587435762,
+            "full_ground": 0.1968255781431907,
+            "seconds": 14.472862291
+          }
+        ],
+        "final": {
+          "N": 15,
+          "T": 64,
+          "steps": 8192,
+          "norm": 1.0000000000000664,
+          "original_optimal": 0.19771323884443165,
+          "chain_broken": 0.06244998587435762,
+          "full_ground": 0.1968255781431907,
+          "seconds": 14.472862291
+        }
+      },
+      "amplified": {
+        "status": "converged",
+        "levels": [
+          {
+            "N": 15,
+            "T": 64,
+            "steps": 4096,
+            "norm": 0.9999999999999165,
+            "original_optimal": 0.31536340438513366,
+            "chain_broken": 0.060584712735224956,
+            "full_ground": 0.31156026855838076,
+            "seconds": 7.145473958
+          },
+          {
+            "N": 15,
+            "T": 64,
+            "steps": 8192,
+            "norm": 1.0000000000000777,
+            "original_optimal": 0.3153633170184759,
+            "chain_broken": 0.06058487614069651,
+            "full_ground": 0.3115601995134747,
+            "seconds": 11.85227275
+          }
+        ],
+        "final": {
+          "N": 15,
+          "T": 64,
+          "steps": 8192,
+          "norm": 1.0000000000000777,
+          "original_optimal": 0.3153633170184759,
+          "chain_broken": 0.06058487614069651,
+          "full_ground": 0.3115601995134747,
+          "seconds": 11.85227275
+        }
+      }
+    },
+    {
+      "name": "rewired_triple_band_n6_s9611",
+      "T": 128.0,
+      "baseline": {
+        "status": "converged",
+        "levels": [
+          {
+            "N": 15,
+            "T": 128,
+            "steps": 8192,
+            "norm": 0.9999999999998731,
+            "original_optimal": 0.32966827106749097,
+            "chain_broken": 0.019527430552234836,
+            "full_ground": 0.3295110878743938,
+            "seconds": 10.295387625
+          },
+          {
+            "N": 15,
+            "T": 128,
+            "steps": 16384,
+            "norm": 0.9999999999999064,
+            "original_optimal": 0.329666260918783,
+            "chain_broken": 0.019527434629994667,
+            "full_ground": 0.32950907713611655,
+            "seconds": 22.816852375
+          }
+        ],
+        "final": {
+          "N": 15,
+          "T": 128,
+          "steps": 16384,
+          "norm": 0.9999999999999064,
+          "original_optimal": 0.329666260918783,
+          "chain_broken": 0.019527434629994667,
+          "full_ground": 0.32950907713611655,
+          "seconds": 22.816852375
+        }
+      },
+      "amplified": {
+        "status": "converged",
+        "levels": [
+          {
+            "N": 15,
+            "T": 128,
+            "steps": 8192,
+            "norm": 0.999999999999887,
+            "original_optimal": 0.48532708543985786,
+            "chain_broken": 0.013685187733985579,
+            "full_ground": 0.48497405519419245,
+            "seconds": 13.078387917
+          },
+          {
+            "N": 15,
+            "T": 128,
+            "steps": 16384,
+            "norm": 0.999999999999933,
+            "original_optimal": 0.48532643819384746,
+            "chain_broken": 0.013685201071166657,
+            "full_ground": 0.4849734100158689,
+            "seconds": 18.476270084
+          }
+        ],
+        "final": {
+          "N": 15,
+          "T": 128,
+          "steps": 16384,
+          "norm": 0.999999999999933,
+          "original_optimal": 0.48532643819384746,
+          "chain_broken": 0.013685201071166657,
+          "full_ground": 0.4849734100158689,
+          "seconds": 18.476270084
+        }
+      }
+    },
+    {
+      "name": "rewired_triple_band_n6_s9623",
+      "T": 32.0,
+      "baseline": {
+        "status": "converged",
+        "levels": [
+          {
+            "N": 12,
+            "T": 32,
+            "steps": 2048,
+            "norm": 1.000000000000049,
+            "original_optimal": 0.23938384696513088,
+            "chain_broken": 0,
+            "full_ground": 0.23928939644900368,
+            "seconds": 0.207138333
+          },
+          {
+            "N": 12,
+            "T": 32,
+            "steps": 4096,
+            "norm": 0.9999999999999685,
+            "original_optimal": 0.23938413277432996,
+            "chain_broken": 0,
+            "full_ground": 0.23928967701294038,
+            "seconds": 0.413476958
+          }
+        ],
+        "final": {
+          "N": 12,
+          "T": 32,
+          "steps": 4096,
+          "norm": 0.9999999999999685,
+          "original_optimal": 0.23938413277432996,
+          "chain_broken": 0,
+          "full_ground": 0.23928967701294038,
+          "seconds": 0.413476958
+        }
+      },
+      "amplified": {
+        "status": "converged",
+        "levels": [
+          {
+            "N": 12,
+            "T": 32,
+            "steps": 2048,
+            "norm": 1.0000000000000502,
+            "original_optimal": 0.2768170867464882,
+            "chain_broken": 0,
+            "full_ground": 0.27656071188964415,
+            "seconds": 0.227501833
+          },
+          {
+            "N": 12,
+            "T": 32,
+            "steps": 4096,
+            "norm": 0.9999999999999576,
+            "original_optimal": 0.27681806121748787,
+            "chain_broken": 0,
+            "full_ground": 0.2765616696251929,
+            "seconds": 0.41752675
+          }
+        ],
+        "final": {
+          "N": 12,
+          "T": 32,
+          "steps": 4096,
+          "norm": 0.9999999999999576,
+          "original_optimal": 0.27681806121748787,
+          "chain_broken": 0,
+          "full_ground": 0.2765616696251929,
+          "seconds": 0.41752675
+        }
+      }
+    },
+    {
+      "name": "rewired_triple_band_n6_s9623",
+      "T": 64.0,
+      "baseline": {
+        "status": "converged",
+        "levels": [
+          {
+            "N": 12,
+            "T": 64,
+            "steps": 4096,
+            "norm": 0.9999999999999378,
+            "original_optimal": 0.3997493706759191,
+            "chain_broken": 0,
+            "full_ground": 0.39973242087226224,
+            "seconds": 0.416447708
+          },
+          {
+            "N": 12,
+            "T": 64,
+            "steps": 8192,
+            "norm": 1.000000000000072,
+            "original_optimal": 0.39975018821705366,
+            "chain_broken": 0,
+            "full_ground": 0.3997332376921608,
+            "seconds": 0.840816417
+          }
+        ],
+        "final": {
+          "N": 12,
+          "T": 64,
+          "steps": 8192,
+          "norm": 1.000000000000072,
+          "original_optimal": 0.39975018821705366,
+          "chain_broken": 0,
+          "full_ground": 0.3997332376921608,
+          "seconds": 0.840816417
+        }
+      },
+      "amplified": {
+        "status": "converged",
+        "levels": [
+          {
+            "N": 12,
+            "T": 64,
+            "steps": 4096,
+            "norm": 0.999999999999942,
+            "original_optimal": 0.453471044797987,
+            "chain_broken": 0,
+            "full_ground": 0.4534547531531173,
+            "seconds": 0.419318416
+          },
+          {
+            "N": 12,
+            "T": 64,
+            "steps": 8192,
+            "norm": 1.0000000000000673,
+            "original_optimal": 0.45347237222126685,
+            "chain_broken": 0,
+            "full_ground": 0.453456080057702,
+            "seconds": 0.845979875
+          }
+        ],
+        "final": {
+          "N": 12,
+          "T": 64,
+          "steps": 8192,
+          "norm": 1.0000000000000673,
+          "original_optimal": 0.45347237222126685,
+          "chain_broken": 0,
+          "full_ground": 0.453456080057702,
+          "seconds": 0.845979875
+        }
+      }
+    },
+    {
+      "name": "rewired_triple_band_n6_s9623",
+      "T": 128.0,
+      "baseline": {
+        "status": "converged",
+        "levels": [
+          {
+            "N": 12,
+            "T": 128,
+            "steps": 8192,
+            "norm": 0.9999999999999217,
+            "original_optimal": 0.6552624863515526,
+            "chain_broken": 0,
+            "full_ground": 0.6552527068297058,
+            "seconds": 0.827548958
+          },
+          {
+            "N": 12,
+            "T": 128,
+            "steps": 16384,
+            "norm": 0.9999999999999593,
+            "original_optimal": 0.6552642643828972,
+            "chain_broken": 0,
+            "full_ground": 0.6552544842019559,
+            "seconds": 1.690917416
+          }
+        ],
+        "final": {
+          "N": 12,
+          "T": 128,
+          "steps": 16384,
+          "norm": 0.9999999999999593,
+          "original_optimal": 0.6552642643828972,
+          "chain_broken": 0,
+          "full_ground": 0.6552544842019559,
+          "seconds": 1.690917416
+        }
+      },
+      "amplified": {
+        "status": "converged",
+        "levels": [
+          {
+            "N": 12,
+            "T": 128,
+            "steps": 8192,
+            "norm": 0.9999999999999192,
+            "original_optimal": 0.6737626473316708,
+            "chain_broken": 0,
+            "full_ground": 0.6737542971341395,
+            "seconds": 0.832469292
+          },
+          {
+            "N": 12,
+            "T": 128,
+            "steps": 16384,
+            "norm": 0.9999999999999355,
+            "original_optimal": 0.6737639734658772,
+            "chain_broken": 0,
+            "full_ground": 0.6737556222721529,
+            "seconds": 1.746614792
+          }
+        ],
+        "final": {
+          "N": 12,
+          "T": 128,
+          "steps": 16384,
+          "norm": 0.9999999999999355,
+          "original_optimal": 0.6737639734658772,
+          "chain_broken": 0,
+          "full_ground": 0.6737556222721529,
+          "seconds": 1.746614792
+        }
+      }
+    }
+  ],
+  "seconds": 592.465280624805,
+  "converged_pairs": 24,
+  "positive_orders": 24,
+  "negative_orders": 0
+}

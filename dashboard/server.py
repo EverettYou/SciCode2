@@ -11,7 +11,7 @@ if __name__ == "__main__":
 
     from dashboard.backend.server import app
 
-    uvicorn.run(app, host="127.0.0.1", port=int(os.getenv("SCICODE_DASHBOARD_PORT", "8000")))
+    uvicorn.run(app, host="127.0.0.1", port=int(os.getenv("SCICODE_DASHBOARD_PORT", "8765")))
 else:
     # Preserve `from dashboard import server` for callers and tests while the
     # implementation lives with the other backend modules.

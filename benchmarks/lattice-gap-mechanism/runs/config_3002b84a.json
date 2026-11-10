@@ -1,0 +1,55 @@
+{
+  "_comment": "Frozen setup. The filename IS the hash of the canonical fields below, so editing this file in place breaks the registry. To change a setup, change the matrix and let a new file be written.",
+  "canonical": {
+    "arm": "api",
+    "container_runtime": "gvisor",
+    "env_sha8": "7a92dd2c",
+    "harbor_task": {
+      "agent_network_mode": "public",
+      "agent_timeout_sec": 43200,
+      "attachments_dest": "/app",
+      "cpus": 8,
+      "memory_mb": 32768,
+      "storage_mb": 65536
+    },
+    "image": "harbor:claude-code",
+    "max_ctx": null,
+    "max_timeout_seconds": 46800,
+    "model": "anthropic/claude-fable-5-1",
+    "reasoning_effort": "max",
+    "required_resources": "8vcpu+64gib",
+    "tool_timeout_seconds": 3600,
+    "turn_limit": 800,
+    "wallclock_seconds": 43200
+  },
+  "full": {
+    "_comment": "Inherited by every arm; an arm may override any of these. These are the fields that enter the setup hash, so changing one here re-hashes every arm. turn_limit is a runaway guard, now actually applied on the API arm via harbor's --agent-kwarg max_turns (claude-code and terminus-2 declare the flag; codex does not, so gpt arms are uncapped). 200 is ~2x the worst case measured over 30 collected runs (max 106 steps), so it cannot truncate legitimate work. It is NOT a cost control: cost tracks per-step thinking, not step count.",
+    "arm": "api",
+    "container_runtime": "gvisor",
+    "display_name": "Fable 5.1 (Max)",
+    "enable_autocompact": true,
+    "env_file": "/mnt/data/home/yufeng/.config/scicode2/env_fable",
+    "env_sha8": "7a92dd2c",
+    "harbor_task": {
+      "agent_network_mode": "public",
+      "agent_timeout_sec": 43200,
+      "attachments_dest": "/app",
+      "cpus": 8,
+      "memory_mb": 32768,
+      "storage_mb": 65536
+    },
+    "image": "harbor:claude-code",
+    "max_timeout_seconds": 46800,
+    "model": "anthropic/claude-fable-5-1",
+    "name": "fable51",
+    "reasoning_effort": "max",
+    "reps": 3,
+    "required_resources": "8vcpu+64gib",
+    "runner": "api",
+    "scaffold": "claude-code",
+    "tool_timeout_seconds": 3600,
+    "turn_limit": 800,
+    "wallclock_seconds": 43200
+  },
+  "setup_hash": "3002b84a"
+}

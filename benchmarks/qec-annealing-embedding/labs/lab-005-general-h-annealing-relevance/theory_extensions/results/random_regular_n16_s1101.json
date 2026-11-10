@@ -1,0 +1,105 @@
+{
+  "name": "random_regular_n16_s1101",
+  "input_sha256": "f5e9c9807a0bd97481eec2d6998e461bc5250d00ffab4ab6445e4581974dd048",
+  "parameters": {
+    "n": 16,
+    "N": 59,
+    "eta": {
+      "numerator_hex": "0x261aae37bf8bf",
+      "denominator_hex": "0x20000000000000"
+    },
+    "D": {
+      "numerator_hex": "0x4f",
+      "denominator_hex": "0x6c"
+    },
+    "rho": {
+      "numerator_hex": "0x13",
+      "denominator_hex": "0x200000000000000"
+    },
+    "curvature": {
+      "numerator_hex": "0x1784778668383e1",
+      "denominator_hex": "0x14400000000000000"
+    },
+    "g0": {
+      "numerator_hex": "0x13f476347d91117",
+      "denominator_hex": "0x80000000000000"
+    },
+    "g1": {
+      "numerator_hex": "0x13f476347d91117",
+      "denominator_hex": "0x80000000000000"
+    },
+    "lambda0": {
+      "numerator_hex": "0x2dc1e55dbd0e5dd",
+      "denominator_hex": "0x10000000000000"
+    },
+    "lambda1": {
+      "numerator_hex": "0xb70c58ccbb3168c1",
+      "denominator_hex": "0x400000000000000"
+    }
+  },
+  "parent_certificate": {
+    "coefficient_lower_exact": [
+      52956586842374897,
+      11673330234144325632
+    ],
+    "coefficient_lower": 0.0045365449087936905,
+    "cost_advantage_positive": true,
+    "status": "strict_finite_forward_order",
+    "duration_exact": [
+      1,
+      65536
+    ],
+    "duration": 1.52587890625e-05,
+    "relative_probability_advantage_lower_exact": [
+      7340778003153867750389899153496044386247787833124821202601204858936697300691151571427729135039647210316827983566489019911986289768563716303169,
+      9929036918331556198404102903192784320521019176167137871918608638364405246812731023549480865785820126878454189435652330979344178411344924686837623130423296
+    ],
+    "relative_probability_advantage_lower": 7.39324273193194e-13,
+    "remainder_upper_exact": [
+      4119004725836889900016940376940278725082933425718788267330289640455681700749685940481187199050904330711200624209592625,
+      12996887501469489347118077482683312935367900712355578506192630204998825107463711108524154845670995005026385559249301647515208122368
+    ],
+    "rounding_upper_exact": [
+      19,
+      9431542950694291937087
+    ],
+    "interpretation": "Actual rounded amplified program beats baseline at this certified standard-|+> finite-forward duration. This tiny interval is not a moderate-time guarantee."
+  },
+  "actual_curvature_global_control": {
+    "status": "strict_actual_original_optimum_order",
+    "duration": 1.52587890625e-05,
+    "duration_exact": {
+      "numerator_hex": "0x1",
+      "denominator_hex": "0x10000"
+    },
+    "relative_advantage_lower": 7.393242752077054e-13,
+    "relative_advantage_lower_exact": {
+      "numerator_hex": "0xf6eac1ac70fdae0495fa5982013a0472b60f06bf4d40e2bd14db2ca50da13d2a277ca74d399a78dcd14fccebf0f259d5be33",
+      "denominator_hex": "0x12fbffd6975cec4c0432f27f40dbeed0089abab5e414a79bdce14a24601a722b46eebee0570000000000000000000000000000000000000"
+    },
+    "remainder_exact": {
+      "numerator_hex": "0x14e857be117f1255331e0effd4b1b546ad2f712059e6bb65a333d75acf9276bde88839bbb92f6908676171988164abe26bd",
+      "denominator_hex": "0x3bffff7d20c08c000d455d39b08ad97b5d9086fc7eacbc64b3c4ddaf037cab33719094270000000000000000000000000000000000000"
+    },
+    "menu_index": 16
+  },
+  "relative_event_local": {
+    "status": "strict_actual_original_optimum_order",
+    "duration": 6.103515625e-05,
+    "duration_exact": {
+      "numerator_hex": "0x1",
+      "denominator_hex": "0x4000"
+    },
+    "relative_advantage_lower": 8.598165446758594e-13,
+    "relative_advantage_lower_exact": {
+      "numerator_hex": "0x1324d6652db7eafac92e10cdd292a19dd94d3840b734f81b6aafaef759918e805bc73d0489dad23aba55a30faa418117f32abeb95c924b11f4d10a072f3e980037ab53d02a7595fa1dff16ce2d5d9e69ba6dbda1eaa240558bb6ebb0d008c9ae1477b23050d31749e53947776e6c799c460a458c6831aee644c23bb4c6f129dc15bfd64a7e2a54441b27e6efcbd1a3b16c5619794e1d62764241d40ac65e4c164c916f0f98163472f42bdcfb659e8861884e882b0d9fb3ac0fd51bcde7d975b708fa59c53b993d9bad9b7c519f5bfcecc2a547849cae428189e5761a513761d343e3e77b914541b0085463307ab0c86c35abd7ed4e97c3d9952a8a2c88b5911aadea898fc76280d232cf0498fbc0d928049cedb85fa40e16e2cbd40cb4a350d471",
+      "denominator_hex": "0x143fff08bc4cf58e4e120df2c8a563ea3efa555da3f9bde84c6353d9d92bbaf24701348e8c45edac1efbf71f90cbe47dc98675636293dbbddcedf7ed1a7b0304cfc91b612b83d6b4422bc97d5b0458541e6c400d0e2ca81dd3c8e5a7b9e6b46aaa67ad3c6664a64edd287a8094b37e506b596c46cfd02d7b284e28419d999d034bb3caefa8cd9706eb4c3b1360ecf7bdebac1f737d3ba55e6bc06f732ebecbd6acadaff17eb4e6353e37ee89198a3214d6418b7811fd2976c0b4420c423cc46f9369669cb77104161955d4d430e38ba729dd6290fdb8eef58f36286097b440af08e95fcb73f71f34e83fa5b53918f38da5d8f6710f473a8e7bb0dc1e2944415c87d1674eee70711c3d62ab4239629dc037d2dd92544000000000000000000000000000000000"
+    },
+    "remainder_exact": {
+      "numerator_hex": "0x468b9164e3442df476ffb153e4df912a6212e03a66957f786db8e27d480cf0e5bf0b3bf4565acb4997365904147a430e628b9236b0eacdec49018d305bde4b90489d224f465bbc9fb52d29cf124bfba1d1a285a065360b8ec6de572bccd45cbc39b1b45e5f40a29e88053f554d69cd6994c6711319c0fdb3af1ecb9545458223e01be4abd696e192c83404f305c81ca30254c8f2b54e89d534670aab3e509234555824a9d9c3d03c8f6f3ab5bd9e43a8b95a22a4aa29859b69b39984c1df5a4ee8f3b7605e2639986f92ad3723a07bacbca7d762fedc033606feadeb40df305c3dd5be18cf45f755320ab49e2dc6fc985c489fab9ea872ddff6d303789a6367eceaf3f5b3b7682d4c33dd021296ce99a743952a791195e9e46baad398a25455df",
+      "denominator_hex": "0x3ffffcf285b0dbd4b78812ccbfabe6728e26fad5c708aa5fc2043218cdf8d3956b78bf63b502ef29780c884a7a9daf614d83078c475b34e9718e1f5f2448ba874e55abddc594088be0ef8649d0a56fa7e1bb42881383a7dfd964cf80b6ff111e8c5778d82d7d4ffc68cbc8b2d2cefdd5141123a3c03321201a3fb4f54dbf916c6431e9acc02af37185ae8e762287cc9dc61359eb6c3172f1871dd203bcd31bef2b3b0f9f96c6caedce1f63aafb6297f600cf276884b4a8f8e5c7ed3039a39c3dde892b056cda1fe0b5353206ecaf8d201f2d76ba70e681738bbaf7b60562c61c8df161539ac12ce66c3e185c5bf65d672eeceb45b830215d2e6e2c9e88be6fc2778604228c732c9876280a4c8f70909864941e404000000000000000000000000000000000"
+    },
+    "menu_index": 14
+  },
+  "seconds": 0.00838237488642335
+}

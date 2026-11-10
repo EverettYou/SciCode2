@@ -1,0 +1,76 @@
+benchmark_id: hubbard-operator-bootstrap
+title: Affordable Hubbard Quantum Bootstrap Bounds
+stage: solution-drafted
+paper_ids: []
+summary: Discover and certify affordable Hubbard energy lower bounds through operator-space selection
+  on the half-filled periodic 4x4 lattice.
+idea_sources:
+- source_path: problem/references/scicode2-hubbard.pdf
+  source_field: user-provided-research-question
+  item_index: 0
+  role: primary-question
+research_question: Construct and validate an affordable operator subspace that gives a strong ground-state
+  energy lower bound for the periodic 4x4 Hubbard model at t=1, U=8 and N_up=N_down=8, and quantify improvements
+  against computational cost.
+scientific_domain:
+- correlated-quantum-many-body-systems
+- semidefinite-optimization
+- fermionic-quantum-bootstrap
+expected_outcomes:
+- Determine which operator support and correlation choices improve the validated bound during the user-authorized
+  research attempt.
+- Quantify the cost of positivity constraints and distinguish solver estimates from independently justified
+  lower bounds.
+expected_outputs:
+- Reproducible operator-space construction and computational formulation.
+- A numerical energy lower bound with an independently reproducible certificate and numerical error control.
+- Measured construction, solving and validation time and peak resident memory, plus comparisons and a
+  scientific explanation.
+evidence_requirements:
+- Verify the 32 distinct periodic nearest-neighbor bonds, hopping convention and half-filled sector.
+- Validate an SOS or dual certificate, including coefficient residual and matrix positivity errors.
+- Compare nested or complementary operator spaces without treating a feasible primal state as a lower-bound
+  certificate.
+estimated_active_hours: 2
+workstation_feasible: 'yes'
+expert_review: pending
+expert_notes: A certified reference attempt exists. The supplied source leaves target energy and resource
+  ceiling unspecified; expert calibration remains pending. The finite instance and PQGT hierarchy have
+  prior published studies.
+source_mode: user-provided-problem
+problem_sources:
+- path: problem/references/scicode2-hubbard.pdf
+  sha256: eec7fd2052716c96b0c879d2817dbe48b5fb8332b804235096bbb43b568932ea
+  origin: /Users/home/Library/Containers/com.apple.mail/Data/Library/Mail Downloads/CF4CFEFE-2261-4AD8-AD24-25906BB4045B/scicode2-hubbard.pdf
+authorization:
+  origin: User chat request on 2026-10-07
+  scope: Create new benchmark from supplied PDF and attempt solution for two hours; proceed through design
+    and experimentation.
+  started_utc: '2026-10-07T07:36:39Z'
+  initial_checkpoint_utc: '2026-10-07T09:36:39Z'
+  time_extension: User relaxed the two-hour threshold and authorizes up to one day if scientifically necessary;
+    stop when the research deliverable is complete or a genuine blocker requires a decision.
+  extension_recorded_utc: '2026-10-07T07:52:25Z'
+public_target: null
+resource_budget:
+  peak_memory_limit_bytes: null
+  initial_wall_checkpoint_seconds: 7200
+  authorized_wall_seconds_max: 86400
+current_best_verified_bound:
+  total: -8.763353354793
+  per_site: -0.5477095846745625
+  certificate: labs/lab-004-exact-dual-verification/results/portable-reproduction/exact/verification.json
+  physical_map_audit: labs/lab-004-exact-dual-verification/results/portable-reproduction/physical-audit.json
+  operator_space_dimension: 2257
+  operator_definition: labs/lab-004-exact-dual-verification/results/portable-reproduction/operator-space/operators.json
+  dimension_proof: labs/lab-004-exact-dual-verification/results/portable-reproduction/operator-space/operator_space.json
+  sector: Nup=Ndown=8; no singlet assumption
+  complete_reproduction: labs/lab-004-exact-dual-verification/results/portable-reproduction/reproduction.json
+research_attempt:
+  status: completed reference attempt
+  completed_utc: '2026-10-07T08:49:17Z'
+  elapsed_wall_seconds: 4358.4
+  primary_reproduction: labs/lab-004-exact-dual-verification/results/portable-reproduction/reproduction.json
+  discovery_comparison_reproduction: labs/lab-004-exact-dual-verification/results/full-reproduction/reproduction.json
+  remaining_scientific_scope: Outer-search optimality is not proved; public energy target and resource
+    calibration remain unspecified.

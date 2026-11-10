@@ -1,0 +1,109 @@
+{
+  "status": "pass",
+  "physical_program_root_polynomials_checked": 192,
+  "saved_exact_dual_bounds_reconstructed": 960,
+  "nonzero_multipliers_checked": 11368,
+  "ordinary_feasible_witnesses_checked": 48,
+  "exact_gap_updates_checked": 2688,
+  "exact_selections_checked": 336,
+  "seconds": 14.975552041083574,
+  "records": [
+    {
+      "name": "irregular_hubs_n16_s8807_standard",
+      "projections_checked": 8
+    },
+    {
+      "name": "irregular_hubs_n16_s9901_standard",
+      "projections_checked": 8
+    },
+    {
+      "name": "irregular_hubs_n32_s8807_standard",
+      "projections_checked": 8
+    },
+    {
+      "name": "irregular_hubs_n32_s9901_standard",
+      "projections_checked": 8
+    },
+    {
+      "name": "irregular_hubs_n64_s8807_standard",
+      "projections_checked": 8
+    },
+    {
+      "name": "irregular_hubs_n64_s9901_standard",
+      "projections_checked": 8
+    },
+    {
+      "name": "mixed_hypergraph_n16_s8807_standard",
+      "projections_checked": 8
+    },
+    {
+      "name": "mixed_hypergraph_n16_s9901_standard",
+      "projections_checked": 8
+    },
+    {
+      "name": "mixed_hypergraph_n32_s8807_standard",
+      "projections_checked": 8
+    },
+    {
+      "name": "mixed_hypergraph_n32_s9901_standard",
+      "projections_checked": 8
+    },
+    {
+      "name": "mixed_hypergraph_n64_s8807_standard",
+      "projections_checked": 8
+    },
+    {
+      "name": "mixed_hypergraph_n64_s9901_standard",
+      "projections_checked": 8
+    },
+    {
+      "name": "random_regular_n16_s8807_standard",
+      "projections_checked": 8
+    },
+    {
+      "name": "random_regular_n16_s9901_standard",
+      "projections_checked": 8
+    },
+    {
+      "name": "random_regular_n32_s8807_standard",
+      "projections_checked": 8
+    },
+    {
+      "name": "random_regular_n32_s9901_standard",
+      "projections_checked": 8
+    },
+    {
+      "name": "random_regular_n64_s8807_standard",
+      "projections_checked": 8
+    },
+    {
+      "name": "random_regular_n64_s9901_standard",
+      "projections_checked": 8
+    },
+    {
+      "name": "rewired_band_n16_s8807_standard",
+      "projections_checked": 8
+    },
+    {
+      "name": "rewired_band_n16_s9901_standard",
+      "projections_checked": 8
+    },
+    {
+      "name": "rewired_band_n32_s8807_standard",
+      "projections_checked": 8
+    },
+    {
+      "name": "rewired_band_n32_s9901_standard",
+      "projections_checked": 8
+    },
+    {
+      "name": "rewired_band_n64_s8807_standard",
+      "projections_checked": 8
+    },
+    {
+      "name": "rewired_band_n64_s9901_standard",
+      "projections_checked": 8
+    }
+  ],
+  "scope": "Parent reconstructs root coefficients with its independent exact Walsh projection, then rebuilds each nonzero kernel/cost/triangle row directly from mathematical identities. No ordinary optimum oracle or LP run."
+}

@@ -1,0 +1,2204 @@
+{
+  "records": [
+    {
+      "name": "irregular_hubs_n16_s8807_balanced",
+      "status": "ok",
+      "scheme": "balanced",
+      "global_penalty": 10.25,
+      "repair_penalty": 2.75,
+      "curves": [
+        {
+          "beta": 10.0,
+          "scale": 0.12937890003810906,
+          "root_readout_tv_bound": 1.0,
+          "exact_reference": {
+            "original_optimum_probability": 0.0023864478486429115,
+            "feasible_probability": 0.053670258892936126,
+            "conditional_original_optimum_probability": 0.044464996030734755,
+            "intended_conditional_original_optimum_probability": 0.04446499603073476,
+            "conditional_feasible_tv": 2.327934530256884e-16,
+            "full_qubo_ground_probability": 0.00017481021113894155,
+            "ground_degeneracy": 1,
+            "minimum_cost": 0.5,
+            "log_partition": 8.004915180131782,
+            "original_states": 65536,
+            "feasible_errors": 256
+          }
+        },
+        {
+          "beta": 20.0,
+          "scale": 0.15559854092805453,
+          "root_readout_tv_bound": 0.737849319644944,
+          "exact_reference": {
+            "original_optimum_probability": 0.12774825738563558,
+            "feasible_probability": 0.6793200841573576,
+            "conditional_original_optimum_probability": 0.18805311423126422,
+            "intended_conditional_original_optimum_probability": 0.1880531142312643,
+            "conditional_feasible_tv": 1.7544051359173523e-16,
+            "full_qubo_ground_probability": 0.1261815518029395,
+            "ground_degeneracy": 1,
+            "minimum_cost": 0.5,
+            "log_partition": 0.514048112507246,
+            "original_states": 65536,
+            "feasible_errors": 256
+          }
+        },
+        {
+          "beta": 40.0,
+          "scale": 0.16870836137302728,
+          "root_readout_tv_bound": 0.07949627316383648,
+          "exact_reference": {
+            "original_optimum_probability": 0.5188001370866298,
+            "feasible_probability": 0.9934566439125704,
+            "conditional_original_optimum_probability": 0.5222171901165392,
+            "intended_conditional_original_optimum_probability": 0.5222171901165393,
+            "conditional_feasible_tv": 2.326127654908159e-16,
+            "full_qubo_ground_probability": 0.5187998476337513,
+            "ground_degeneracy": 1,
+            "minimum_cost": 0.5,
+            "log_partition": -2.7179301072308917,
+            "original_states": 65536,
+            "feasible_errors": 256
+          }
+        },
+        {
+          "beta": 80.0,
+          "scale": 0.17526327159551364,
+          "root_readout_tv_bound": 0.048716988796049555,
+          "exact_reference": {
+            "original_optimum_probability": 0.8903801609777612,
+            "feasible_probability": 0.9999988973342782,
+            "conditional_original_optimum_probability": 0.8903811427705267,
+            "intended_conditional_original_optimum_probability": 0.8903811427705267,
+            "conditional_feasible_tv": 1.8950654367680732e-19,
+            "full_qubo_ground_probability": 0.8903801609777612,
+            "ground_degeneracy": 1,
+            "minimum_cost": 0.5,
+            "log_partition": -6.894424103529237,
+            "original_states": 65536,
+            "feasible_errors": 256
+          }
+        }
+      ]
+    },
+    {
+      "name": "irregular_hubs_n16_s8807_standard",
+      "status": "ok",
+      "scheme": "standard",
+      "global_penalty": 10.25,
+      "repair_penalty": 2.75,
+      "curves": [
+        {
+          "beta": 10.0,
+          "scale": 0.10854418789467574,
+          "root_readout_tv_bound": 1.0,
+          "exact_reference": {
+            "original_optimum_probability": 0.005440200053421476,
+            "feasible_probability": 0.15805095863943724,
+            "conditional_original_optimum_probability": 0.034420544489276034,
+            "intended_conditional_original_optimum_probability": 0.03397441848117252,
+            "conditional_feasible_tv": 0.011225740310370207,
+            "full_qubo_ground_probability": 0.004351528823745116,
+            "ground_degeneracy": 1,
+            "minimum_cost": 0.5,
+            "log_partition": 4.894507102419054,
+            "original_states": 65536,
+            "feasible_errors": 256
+          }
+        },
+        {
+          "beta": 20.0,
+          "scale": 0.12699936522006516,
+          "root_readout_tv_bound": 0.5568773211841834,
+          "exact_reference": {
+            "original_optimum_probability": 0.10663087770872803,
+            "feasible_probability": 0.7865365671177353,
+            "conditional_original_optimum_probability": 0.13557014659785885,
+            "intended_conditional_original_optimum_probability": 0.13556932341878059,
+            "conditional_feasible_tv": 4.061278609990293e-06,
+            "full_qubo_ground_probability": 0.1066226545105675,
+            "ground_degeneracy": 1,
+            "minimum_cost": 0.5,
+            "log_partition": 0.9684656187678173,
+            "original_states": 65536,
+            "feasible_errors": 256
+          }
+        },
+        {
+          "beta": 40.0,
+          "scale": 0.13622695388275985,
+          "root_readout_tv_bound": 0.04618874578204294,
+          "exact_reference": {
+            "original_optimum_probability": 0.4075238091570395,
+            "feasible_probability": 0.9917940094210469,
+            "conditional_original_optimum_probability": 0.4108956147002025,
+            "intended_conditional_original_optimum_probability": 0.41089561469993174,
+            "conditional_feasible_tv": 4.267333648218666e-13,
+            "full_qubo_ground_probability": 0.40752380915350267,
+            "ground_degeneracy": 1,
+            "minimum_cost": 0.5,
+            "log_partition": -1.8268831570177237,
+            "original_states": 65536,
+            "feasible_errors": 256
+          }
+        },
+        {
+          "beta": 80.0,
+          "scale": 0.1408407482141072,
+          "root_readout_tv_bound": 0.012475627312837268,
+          "exact_reference": {
+            "original_optimum_probability": 0.798732942740233,
+            "feasible_probability": 0.9999911732738029,
+            "conditional_original_optimum_probability": 0.7987399929994539,
+            "intended_conditional_original_optimum_probability": 0.7987399929994535,
+            "conditional_feasible_tv": 1.8157748124340287e-16,
+            "full_qubo_ground_probability": 0.798732942740233,
+            "ground_degeneracy": 1,
+            "minimum_cost": 0.5,
+            "log_partition": -5.40890130010407,
+            "original_states": 65536,
+            "feasible_errors": 256
+          }
+        }
+      ]
+    },
+    {
+      "name": "irregular_hubs_n16_s9901_balanced",
+      "status": "ok",
+      "scheme": "balanced",
+      "global_penalty": 10.5,
+      "repair_penalty": 2.5,
+      "curves": [
+        {
+          "beta": 10.0,
+          "scale": 0.23102908839346062,
+          "root_readout_tv_bound": 0.7853364433292875,
+          "exact_reference": {
+            "original_optimum_probability": 0.27304488712443853,
+            "feasible_probability": 0.532648384446478,
+            "conditional_original_optimum_probability": 0.512617507341515,
+            "intended_conditional_original_optimum_probability": 0.5126175073415149,
+            "conditional_feasible_tv": 1.0171381734505227e-16,
+            "full_qubo_ground_probability": 0.22458820299240453,
+            "ground_degeneracy": 3,
+            "minimum_cost": -0.5,
+            "log_partition": 3.747244493214464,
+            "original_states": 65536,
+            "feasible_errors": 256
+          }
+        },
+        {
+          "beta": 20.0,
+          "scale": 0.27551454099673034,
+          "root_readout_tv_bound": 0.015086137834540582,
+          "exact_reference": {
+            "original_optimum_probability": 0.9393961008339291,
+            "feasible_probability": 0.9968888525685454,
+            "conditional_original_optimum_probability": 0.9423278216157371,
+            "intended_conditional_original_optimum_probability": 0.9423278216157371,
+            "conditional_feasible_tv": 1.0089480593538787e-16,
+            "full_qubo_ground_probability": 0.9393374503458879,
+            "ground_degeneracy": 3,
+            "minimum_cost": -0.5,
+            "log_partition": 3.916338190927603,
+            "original_states": 65536,
+            "feasible_errors": 256
+          }
+        },
+        {
+          "beta": 40.0,
+          "scale": 0.29775726729836516,
+          "root_readout_tv_bound": 0.00383847780696123,
+          "exact_reference": {
+            "original_optimum_probability": 0.9988653157106195,
+            "feasible_probability": 0.9999998793299038,
+            "conditional_original_optimum_probability": 0.9988654362438079,
+            "intended_conditional_original_optimum_probability": 0.9988654362438074,
+            "conditional_feasible_tv": 1.6683006820398211e-16,
+            "full_qubo_ground_probability": 0.9988653157036012,
+            "ground_degeneracy": 3,
+            "minimum_cost": -0.5,
+            "log_partition": 7.054892963173424,
+            "original_states": 65536,
+            "feasible_errors": 256
+          }
+        },
+        {
+          "beta": 80.0,
+          "scale": 0.3088786304491826,
+          "root_readout_tv_bound": 0.0038314115363021466,
+          "exact_reference": {
+            "original_optimum_probability": 0.9999985462589154,
+            "feasible_probability": 1.0000000000000002,
+            "conditional_original_optimum_probability": 0.9999985462589152,
+            "intended_conditional_original_optimum_probability": 0.9999985462589154,
+            "conditional_feasible_tv": 8.326694108910144e-17,
+            "full_qubo_ground_probability": 0.9999985462589154,
+            "ground_degeneracy": 3,
+            "minimum_cost": -0.5,
+            "log_partition": 13.453758960377556,
+            "original_states": 65536,
+            "feasible_errors": 256
+          }
+        }
+      ]
+    },
+    {
+      "name": "irregular_hubs_n16_s9901_standard",
+      "status": "ok",
+      "scheme": "standard",
+      "global_penalty": 10.5,
+      "repair_penalty": 2.5,
+      "curves": [
+        {
+          "beta": 10.0,
+          "scale": 0.15212507905092873,
+          "root_readout_tv_bound": 0.8835166103105583,
+          "exact_reference": {
+            "original_optimum_probability": 0.12749616169102485,
+            "feasible_probability": 0.45736609510067383,
+            "conditional_original_optimum_probability": 0.27876172514047165,
+            "intended_conditional_original_optimum_probability": 0.2790649986887274,
+            "conditional_feasible_tv": 0.0014826851922944435,
+            "full_qubo_ground_probability": 0.12375933223461723,
+            "ground_degeneracy": 3,
+            "minimum_cost": -0.5,
+            "log_partition": 3.9486541523025256,
+            "original_states": 65536,
+            "feasible_errors": 256
+          }
+        },
+        {
+          "beta": 20.0,
+          "scale": 0.17606253752546439,
+          "root_readout_tv_bound": 0.10266226412943291,
+          "exact_reference": {
+            "original_optimum_probability": 0.7561791143040846,
+            "feasible_probability": 0.9762685855088626,
+            "conditional_original_optimum_probability": 0.7745605313213471,
+            "intended_conditional_original_optimum_probability": 0.7745605409700096,
+            "conditional_feasible_tv": 8.070917797725053e-08,
+            "full_qubo_ground_probability": 0.7561780898872164,
+            "ground_degeneracy": 3,
+            "minimum_cost": -0.5,
+            "log_partition": 3.1387160258334075,
+            "original_states": 65536,
+            "feasible_errors": 256
+          }
+        },
+        {
+          "beta": 40.0,
+          "scale": 0.1880312667627322,
+          "root_readout_tv_bound": 0.017095699493385016,
+          "exact_reference": {
+            "original_optimum_probability": 0.9845391952284122,
+            "feasible_probability": 0.9999654829590278,
+            "conditional_original_optimum_probability": 0.9845731797811988,
+            "intended_conditional_original_optimum_probability": 0.984573179781199,
+            "conditional_feasible_tv": 2.793550766601519e-16,
+            "full_qubo_ground_probability": 0.9845391952284094,
+            "ground_degeneracy": 3,
+            "minimum_cost": -0.5,
+            "log_partition": 4.8748191932988405,
+            "original_states": 65536,
+            "feasible_errors": 256
+          }
+        },
+        {
+          "beta": 80.0,
+          "scale": 0.1940156313813661,
+          "root_readout_tv_bound": 0.016460780377451398,
+          "exact_reference": {
+            "original_optimum_probability": 0.9998401732741331,
+            "feasible_probability": 0.9999999998390625,
+            "conditional_original_optimum_probability": 0.9998401734350448,
+            "intended_conditional_original_optimum_probability": 0.9998401734350453,
+            "conditional_feasible_tv": 1.6656568320369879e-16,
+            "full_qubo_ground_probability": 0.9998401732741331,
+            "ground_degeneracy": 3,
+            "minimum_cost": -0.5,
+            "log_partition": 8.859397383422273,
+            "original_states": 65536,
+            "feasible_errors": 256
+          }
+        }
+      ]
+    },
+    {
+      "name": "irregular_hubs_n32_s8807_balanced",
+      "status": "ok",
+      "scheme": "balanced",
+      "global_penalty": 20.0,
+      "repair_penalty": 4.25,
+      "curves": [
+        {
+          "beta": 10.0,
+          "scale": 0.0743224698468609,
+          "root_readout_tv_bound": 1.0
+        },
+        {
+          "beta": 20.0,
+          "scale": 0.09598476433513634,
+          "root_readout_tv_bound": 1.0
+        },
+        {
+          "beta": 40.0,
+          "scale": 0.10681591157927404,
+          "root_readout_tv_bound": 0.4148841044601912
+        },
+        {
+          "beta": 80.0,
+          "scale": 0.1122314852013429,
+          "root_readout_tv_bound": 0.053898674629809566
+        }
+      ]
+    },
+    {
+      "name": "irregular_hubs_n32_s8807_standard",
+      "status": "ok",
+      "scheme": "standard",
+      "global_penalty": 20.0,
+      "repair_penalty": 4.25,
+      "curves": [
+        {
+          "beta": 10.0,
+          "scale": 0.05158478350272451,
+          "root_readout_tv_bound": 1.0
+        },
+        {
+          "beta": 20.0,
+          "scale": 0.06500807724155834,
+          "root_readout_tv_bound": 0.960006471981082
+        },
+        {
+          "beta": 40.0,
+          "scale": 0.07171972411097526,
+          "root_readout_tv_bound": 0.405177906697047
+        },
+        {
+          "beta": 80.0,
+          "scale": 0.07507554754568371,
+          "root_readout_tv_bound": 0.02746601495121949
+        }
+      ]
+    },
+    {
+      "name": "irregular_hubs_n32_s9901_balanced",
+      "status": "ok",
+      "scheme": "balanced",
+      "global_penalty": 23.75,
+      "repair_penalty": 5.0,
+      "curves": [
+        {
+          "beta": 10.0,
+          "scale": 0.03589033277126609,
+          "root_readout_tv_bound": 1.0
+        },
+        {
+          "beta": 20.0,
+          "scale": 0.046516594957033044,
+          "root_readout_tv_bound": 1.0
+        },
+        {
+          "beta": 40.0,
+          "scale": 0.05182972604991653,
+          "root_readout_tv_bound": 0.5356150749014074
+        },
+        {
+          "beta": 80.0,
+          "scale": 0.05448629159635826,
+          "root_readout_tv_bound": 0.06961998771173074
+        }
+      ]
+    },
+    {
+      "name": "irregular_hubs_n32_s9901_standard",
+      "status": "ok",
+      "scheme": "standard",
+      "global_penalty": 23.75,
+      "repair_penalty": 5.0,
+      "curves": [
+        {
+          "beta": 10.0,
+          "scale": 0.029823885452849804,
+          "root_readout_tv_bound": 1.0
+        },
+        {
+          "beta": 20.0,
+          "scale": 0.037134164504202684,
+          "root_readout_tv_bound": 1.0
+        },
+        {
+          "beta": 40.0,
+          "scale": 0.04078930402987912,
+          "root_readout_tv_bound": 0.48086430327684687
+        },
+        {
+          "beta": 80.0,
+          "scale": 0.04261687379271734,
+          "root_readout_tv_bound": 0.047727856715866344
+        }
+      ]
+    },
+    {
+      "name": "irregular_hubs_n64_s8807_balanced",
+      "status": "ok",
+      "scheme": "balanced",
+      "global_penalty": 46.75,
+      "repair_penalty": 7.75,
+      "curves": [
+        {
+          "beta": 10.0,
+          "scale": 0.019707856587594552,
+          "root_readout_tv_bound": 1.0
+        },
+        {
+          "beta": 20.0,
+          "scale": 0.027058229369048892,
+          "root_readout_tv_bound": 1.0
+        },
+        {
+          "beta": 40.0,
+          "scale": 0.030733415759776058,
+          "root_readout_tv_bound": 1.0
+        },
+        {
+          "beta": 80.0,
+          "scale": 0.03257100895513964,
+          "root_readout_tv_bound": 0.697467997682065
+        }
+      ]
+    },
+    {
+      "name": "irregular_hubs_n64_s8807_standard",
+      "status": "ok",
+      "scheme": "standard",
+      "global_penalty": 46.75,
+      "repair_penalty": 7.75,
+      "curves": [
+        {
+          "beta": 10.0,
+          "scale": 0.009534261175749261,
+          "root_readout_tv_bound": 1.0
+        },
+        {
+          "beta": 20.0,
+          "scale": 0.012831646555616569,
+          "root_readout_tv_bound": 1.0
+        },
+        {
+          "beta": 40.0,
+          "scale": 0.014480339245550219,
+          "root_readout_tv_bound": 1.0
+        },
+        {
+          "beta": 80.0,
+          "scale": 0.015304685590517045,
+          "root_readout_tv_bound": 0.9075567505476319
+        }
+      ]
+    },
+    {
+      "name": "irregular_hubs_n64_s9901_balanced",
+      "status": "ok",
+      "scheme": "balanced",
+      "global_penalty": 43.0,
+      "repair_penalty": 8.5,
+      "curves": [
+        {
+          "beta": 10.0,
+          "scale": 0.025039465332274802,
+          "root_readout_tv_bound": 1.0
+        },
+        {
+          "beta": 20.0,
+          "scale": 0.033910106569880714,
+          "root_readout_tv_bound": 1.0
+        },
+        {
+          "beta": 40.0,
+          "scale": 0.038345427188683674,
+          "root_readout_tv_bound": 0.6351489428591061
+        },
+        {
+          "beta": 80.0,
+          "scale": 0.040563087498085154,
+          "root_readout_tv_bound": 0.054143741241468986
+        }
+      ]
+    },
+    {
+      "name": "irregular_hubs_n64_s9901_standard",
+      "status": "ok",
+      "scheme": "standard",
+      "global_penalty": 43.0,
+      "repair_penalty": 8.5,
+      "curves": [
+        {
+          "beta": 10.0,
+          "scale": 0.015895529827956355,
+          "root_readout_tv_bound": 1.0
+        },
+        {
+          "beta": 20.0,
+          "scale": 0.02101966007737687,
+          "root_readout_tv_bound": 1.0
+        },
+        {
+          "beta": 40.0,
+          "scale": 0.02358172520208713,
+          "root_readout_tv_bound": 0.8035688675121149
+        },
+        {
+          "beta": 80.0,
+          "scale": 0.02486275776444226,
+          "root_readout_tv_bound": 0.20214253954255715
+        }
+      ]
+    },
+    {
+      "name": "mixed_hypergraph_n16_s8807_balanced",
+      "status": "ok",
+      "scheme": "balanced",
+      "global_penalty": 13.25,
+      "repair_penalty": 3.25,
+      "curves": [
+        {
+          "beta": 10.0,
+          "scale": 0.10011756676822092,
+          "root_readout_tv_bound": 1.0,
+          "exact_reference": {
+            "original_optimum_probability": 0.0017038346570176415,
+            "feasible_probability": 0.031707904838726486,
+            "conditional_original_optimum_probability": 0.053735327694583626,
+            "intended_conditional_original_optimum_probability": 0.053735327694583605,
+            "conditional_feasible_tv": 2.54794922072382e-16,
+            "full_qubo_ground_probability": 2.067448425553395e-07,
+            "ground_degeneracy": 1,
+            "minimum_cost": -0.25,
+            "log_partition": 15.642074365593096,
+            "original_states": 65536,
+            "feasible_errors": 512
+          }
+        },
+        {
+          "beta": 20.0,
+          "scale": 0.12698186030711045,
+          "root_readout_tv_bound": 0.6811031660919751,
+          "exact_reference": {
+            "original_optimum_probability": 0.32036999668783195,
+            "feasible_probability": 0.8779205246648254,
+            "conditional_original_optimum_probability": 0.3649191329820471,
+            "intended_conditional_original_optimum_probability": 0.36491913298204715,
+            "conditional_feasible_tv": 2.276094787685793e-16,
+            "full_qubo_ground_probability": 0.3094434813163679,
+            "ground_degeneracy": 1,
+            "minimum_cost": -0.25,
+            "log_partition": 1.8078891179399852,
+            "original_states": 65536,
+            "feasible_errors": 512
+          }
+        },
+        {
+          "beta": 40.0,
+          "scale": 0.14041400707655524,
+          "root_readout_tv_bound": 0.054284873421988254,
+          "exact_reference": {
+            "original_optimum_probability": 0.7659982806091775,
+            "feasible_probability": 0.9999305398449267,
+            "conditional_original_optimum_probability": 0.7660514906645132,
+            "intended_conditional_original_optimum_probability": 0.7660514906645132,
+            "conditional_feasible_tv": 3.999886860348871e-18,
+            "full_qubo_ground_probability": 0.7659970858843539,
+            "ground_degeneracy": 1,
+            "minimum_cost": -0.25,
+            "log_partition": 1.6707169843428544,
+            "original_states": 65536,
+            "feasible_errors": 512
+          }
+        },
+        {
+          "beta": 80.0,
+          "scale": 0.1471300804612776,
+          "root_readout_tv_bound": 0.04875630752187608,
+          "exact_reference": {
+            "original_optimum_probability": 0.9494938565638322,
+            "feasible_probability": 0.9999999999841799,
+            "conditional_original_optimum_probability": 0.9494938565788533,
+            "intended_conditional_original_optimum_probability": 0.949493856578853,
+            "conditional_feasible_tv": 1.6657518566761362e-16,
+            "full_qubo_ground_probability": 0.9494938565638288,
+            "ground_degeneracy": 1,
+            "minimum_cost": -0.25,
+            "log_partition": 2.9944278281565553,
+            "original_states": 65536,
+            "feasible_errors": 512
+          }
+        }
+      ]
+    },
+    {
+      "name": "mixed_hypergraph_n16_s8807_standard",
+      "status": "ok",
+      "scheme": "standard",
+      "global_penalty": 13.25,
+      "repair_penalty": 3.25,
+      "curves": [
+        {
+          "beta": 10.0,
+          "scale": 0.07069431744391806,
+          "root_readout_tv_bound": 1.0,
+          "exact_reference": {
+            "original_optimum_probability": 0.001424255183104344,
+            "feasible_probability": 0.05049897227779106,
+            "conditional_original_optimum_probability": 0.0282036469033394,
+            "intended_conditional_original_optimum_probability": 0.0258272549077404,
+            "conditional_feasible_tv": 0.09044764361354068,
+            "full_qubo_ground_probability": 0.0001329058198943686,
+            "ground_degeneracy": 1,
+            "minimum_cost": -0.25,
+            "log_partition": 9.102605595283453,
+            "original_states": 65536,
+            "feasible_errors": 512
+          }
+        },
+        {
+          "beta": 20.0,
+          "scale": 0.08662921000395904,
+          "root_readout_tv_bound": 0.8167920682280596,
+          "exact_reference": {
+            "original_optimum_probability": 0.14529760523118676,
+            "feasible_probability": 0.8010568566449412,
+            "conditional_original_optimum_probability": 0.18138238756202069,
+            "intended_conditional_original_optimum_probability": 0.1813229403819989,
+            "conditional_feasible_tv": 0.00018741605454144827,
+            "full_qubo_ground_probability": 0.1447478713111919,
+            "ground_degeneracy": 1,
+            "minimum_cost": -0.25,
+            "log_partition": 2.3659079186245475,
+            "original_states": 65536,
+            "feasible_errors": 512
+          }
+        },
+        {
+          "beta": 40.0,
+          "scale": 0.09459665628397952,
+          "root_readout_tv_bound": 0.09178695331375399,
+          "exact_reference": {
+            "original_optimum_probability": 0.5878487241885845,
+            "feasible_probability": 0.9985572821179158,
+            "conditional_original_optimum_probability": 0.5886980493915898,
+            "intended_conditional_original_optimum_probability": 0.5886980491773721,
+            "conditional_feasible_tv": 2.5720793440604166e-10,
+            "full_qubo_ground_probability": 0.5878487205781615,
+            "ground_degeneracy": 1,
+            "minimum_cost": -0.25,
+            "log_partition": 1.477252204953246,
+            "original_states": 65536,
+            "feasible_errors": 512
+          }
+        },
+        {
+          "beta": 80.0,
+          "scale": 0.09858037942398977,
+          "root_readout_tv_bound": 0.04910398474816635,
+          "exact_reference": {
+            "original_optimum_probability": 0.8705779667559961,
+            "feasible_probability": 0.9999999433516787,
+            "conditional_original_optimum_probability": 0.8705780160727792,
+            "intended_conditional_original_optimum_probability": 0.8705780160727793,
+            "conditional_feasible_tv": 5.71221997829763e-17,
+            "full_qubo_ground_probability": 0.8705779667559961,
+            "ground_degeneracy": 1,
+            "minimum_cost": -0.25,
+            "log_partition": 2.11020554677794,
+            "original_states": 65536,
+            "feasible_errors": 512
+          }
+        }
+      ]
+    },
+    {
+      "name": "mixed_hypergraph_n16_s9901_balanced",
+      "status": "ok",
+      "scheme": "balanced",
+      "global_penalty": 8.5,
+      "repair_penalty": 2.25,
+      "curves": [
+        {
+          "beta": 10.0,
+          "scale": 0.14325993180288674,
+          "root_readout_tv_bound": 1.0,
+          "exact_reference": {
+            "original_optimum_probability": 0.0013685142219485016,
+            "feasible_probability": 0.02609692835153088,
+            "conditional_original_optimum_probability": 0.05243966659655648,
+            "intended_conditional_original_optimum_probability": 0.05243966659655647,
+            "conditional_feasible_tv": 2.153149281590959e-16,
+            "full_qubo_ground_probability": 4.5392119328128204e-08,
+            "ground_degeneracy": 1,
+            "minimum_cost": -0.5,
+            "log_partition": 17.624226989061707,
+            "original_states": 65536,
+            "feasible_errors": 512
+          }
+        },
+        {
+          "beta": 20.0,
+          "scale": 0.18274107701244335,
+          "root_readout_tv_bound": 0.7752739877231023,
+          "exact_reference": {
+            "original_optimum_probability": 0.39678409127480585,
+            "feasible_probability": 0.9151819999179867,
+            "conditional_original_optimum_probability": 0.4335575779575684,
+            "intended_conditional_original_optimum_probability": 0.43355757795756844,
+            "conditional_feasible_tv": 1.939074110589153e-16,
+            "full_qubo_ground_probability": 0.3815871991610873,
+            "ground_degeneracy": 1,
+            "minimum_cost": -0.5,
+            "log_partition": 2.790826655270439,
+            "original_states": 65536,
+            "feasible_errors": 512
+          }
+        },
+        {
+          "beta": 40.0,
+          "scale": 0.20248164961722168,
+          "root_readout_tv_bound": 0.06179354327683738,
+          "exact_reference": {
+            "original_optimum_probability": 0.9373111219114705,
+            "feasible_probability": 0.9999874703128572,
+            "conditional_original_optimum_probability": 0.9373228662737367,
+            "intended_conditional_original_optimum_probability": 0.9373228662737361,
+            "conditional_feasible_tv": 3.6506722371887953e-16,
+            "full_qubo_ground_probability": 0.9373094777426279,
+            "ground_degeneracy": 1,
+            "minimum_cost": -0.5,
+            "log_partition": 4.114374757875944,
+            "original_states": 65536,
+            "feasible_errors": 512
+          }
+        },
+        {
+          "beta": 80.0,
+          "scale": 0.21235193591961082,
+          "root_readout_tv_bound": 0.048752812344351804,
+          "exact_reference": {
+            "original_optimum_probability": 0.9993713802121393,
+            "feasible_probability": 0.9999999999997818,
+            "conditional_original_optimum_probability": 0.9993713802123574,
+            "intended_conditional_original_optimum_probability": 0.9993713802123577,
+            "conditional_feasible_tv": 1.6754547833506311e-16,
+            "full_qubo_ground_probability": 0.9993713802121393,
+            "ground_degeneracy": 1,
+            "minimum_cost": -0.5,
+            "log_partition": 8.494706254236554,
+            "original_states": 65536,
+            "feasible_errors": 512
+          }
+        }
+      ]
+    },
+    {
+      "name": "mixed_hypergraph_n16_s9901_standard",
+      "status": "ok",
+      "scheme": "standard",
+      "global_penalty": 8.5,
+      "repair_penalty": 2.25,
+      "curves": [
+        {
+          "beta": 10.0,
+          "scale": 0.08727727524420835,
+          "root_readout_tv_bound": 1.0,
+          "exact_reference": {
+            "original_optimum_probability": 0.0003921714381282247,
+            "feasible_probability": 0.025238959626768247,
+            "conditional_original_optimum_probability": 0.015538336125086974,
+            "intended_conditional_original_optimum_probability": 0.01877793658270179,
+            "conditional_feasible_tv": 0.14645301922171683,
+            "full_qubo_ground_probability": 6.060244360836734e-06,
+            "ground_degeneracy": 1,
+            "minimum_cost": -0.5,
+            "log_partition": 12.450146811346649,
+            "original_states": 65536,
+            "feasible_errors": 512
+          }
+        },
+        {
+          "beta": 20.0,
+          "scale": 0.10713069984432641,
+          "root_readout_tv_bound": 0.9105689082650139,
+          "exact_reference": {
+            "original_optimum_probability": 0.09408253551042985,
+            "feasible_probability": 0.6920444085132267,
+            "conditional_original_optimum_probability": 0.13594869686550137,
+            "intended_conditional_original_optimum_probability": 0.13585794521117864,
+            "conditional_feasible_tv": 0.0008873456195113582,
+            "full_qubo_ground_probability": 0.09226996589110094,
+            "ground_degeneracy": 1,
+            "minimum_cost": -0.5,
+            "log_partition": 3.4543435854990245,
+            "original_states": 65536,
+            "feasible_errors": 512
+          }
+        },
+        {
+          "beta": 40.0,
+          "scale": 0.11705741214438542,
+          "root_readout_tv_bound": 0.12999077975476117,
+          "exact_reference": {
+            "original_optimum_probability": 0.6321154822821043,
+            "feasible_probability": 0.997290127933872,
+            "conditional_original_optimum_probability": 0.6338330888642051,
+            "intended_conditional_original_optimum_probability": 0.633833084399175,
+            "conditional_feasible_tv": 6.1810507065022225e-09,
+            "full_qubo_ground_probability": 0.6321153482565046,
+            "ground_degeneracy": 1,
+            "minimum_cost": -0.5,
+            "log_partition": 2.7998316313123817,
+            "original_states": 65536,
+            "feasible_errors": 512
+          }
+        },
+        {
+          "beta": 80.0,
+          "scale": 0.12202076829441494,
+          "root_readout_tv_bound": 0.006397598112791694,
+          "exact_reference": {
+            "original_optimum_probability": 0.9740750979095253,
+            "feasible_probability": 0.9999999009130613,
+            "conditional_original_optimum_probability": 0.9740751944276543,
+            "intended_conditional_original_optimum_probability": 0.9740751944276548,
+            "conditional_feasible_tv": 2.2789606259693837e-16,
+            "full_qubo_ground_probability": 0.9740750979095253,
+            "ground_degeneracy": 1,
+            "minimum_cost": -0.5,
+            "log_partition": 4.907097607511936,
+            "original_states": 65536,
+            "feasible_errors": 512
+          }
+        }
+      ]
+    },
+    {
+      "name": "mixed_hypergraph_n32_s8807_balanced",
+      "status": "ok",
+      "scheme": "balanced",
+      "global_penalty": 16.25,
+      "repair_penalty": 2.0,
+      "curves": [
+        {
+          "beta": 10.0,
+          "scale": 0.1500881931583736,
+          "root_readout_tv_bound": 1.0
+        },
+        {
+          "beta": 20.0,
+          "scale": 0.2000440965790618,
+          "root_readout_tv_bound": 0.8771532662052536
+        },
+        {
+          "beta": 40.0,
+          "scale": 0.2250220482894059,
+          "root_readout_tv_bound": 0.05529584619219688
+        },
+        {
+          "beta": 80.0,
+          "scale": 0.23751102414457795,
+          "root_readout_tv_bound": 0.04876275719333863
+        }
+      ]
+    },
+    {
+      "name": "mixed_hypergraph_n32_s8807_standard",
+      "status": "ok",
+      "scheme": "standard",
+      "global_penalty": 16.25,
+      "repair_penalty": 2.0,
+      "curves": [
+        {
+          "beta": 10.0,
+          "scale": 0.09015886261106941,
+          "root_readout_tv_bound": 1.0
+        },
+        {
+          "beta": 20.0,
+          "scale": 0.11650800130553471,
+          "root_readout_tv_bound": 0.9937917775715441
+        },
+        {
+          "beta": 40.0,
+          "scale": 0.12968257065276734,
+          "root_readout_tv_bound": 0.1359529486297188
+        },
+        {
+          "beta": 80.0,
+          "scale": 0.1362698553263837,
+          "root_readout_tv_bound": 0.0009127184349822274
+        }
+      ]
+    },
+    {
+      "name": "mixed_hypergraph_n32_s9901_balanced",
+      "status": "ok",
+      "scheme": "balanced",
+      "global_penalty": 17.75,
+      "repair_penalty": 3.5,
+      "curves": [
+        {
+          "beta": 10.0,
+          "scale": 0.08538865513703227,
+          "root_readout_tv_bound": 1.0
+        },
+        {
+          "beta": 20.0,
+          "scale": 0.11412289899701614,
+          "root_readout_tv_bound": 1.0
+        },
+        {
+          "beta": 40.0,
+          "scale": 0.12849002092700806,
+          "root_readout_tv_bound": 0.2633702891730056
+        },
+        {
+          "beta": 80.0,
+          "scale": 0.13567358189200404,
+          "root_readout_tv_bound": 0.04957469063028983
+        }
+      ]
+    },
+    {
+      "name": "mixed_hypergraph_n32_s9901_standard",
+      "status": "ok",
+      "scheme": "standard",
+      "global_penalty": 17.75,
+      "repair_penalty": 3.5,
+      "curves": [
+        {
+          "beta": 10.0,
+          "scale": 0.052494419067114884,
+          "root_readout_tv_bound": 1.0
+        },
+        {
+          "beta": 20.0,
+          "scale": 0.06706353524784316,
+          "root_readout_tv_bound": 1.0
+        },
+        {
+          "beta": 40.0,
+          "scale": 0.0743480933382073,
+          "root_readout_tv_bound": 0.5259247387704487
+        },
+        {
+          "beta": 80.0,
+          "scale": 0.07799037238338936,
+          "root_readout_tv_bound": 0.025827830765471783
+        }
+      ]
+    },
+    {
+      "name": "mixed_hypergraph_n64_s8807_balanced",
+      "status": "original_search_failure_retained"
+    },
+    {
+      "name": "mixed_hypergraph_n64_s8807_standard",
+      "status": "ok",
+      "scheme": "standard",
+      "global_penalty": 41.25,
+      "repair_penalty": 5.0,
+      "curves": [
+        {
+          "beta": 10.0,
+          "scale": 0.019098483278959244,
+          "root_readout_tv_bound": 1.0
+        },
+        {
+          "beta": 20.0,
+          "scale": 0.02621590797281296,
+          "root_readout_tv_bound": 1.0
+        },
+        {
+          "beta": 40.0,
+          "scale": 0.029774620319739813,
+          "root_readout_tv_bound": 1.0
+        },
+        {
+          "beta": 80.0,
+          "scale": 0.03155397649320324,
+          "root_readout_tv_bound": 0.7194272269376544
+        }
+      ]
+    },
+    {
+      "name": "mixed_hypergraph_n64_s9901_balanced",
+      "status": "ok",
+      "scheme": "balanced",
+      "global_penalty": 44.75,
+      "repair_penalty": 6.0,
+      "curves": [
+        {
+          "beta": 10.0,
+          "scale": 0.04620027359928119,
+          "root_readout_tv_bound": 1.0
+        },
+        {
+          "beta": 20.0,
+          "scale": 0.0647668034662656,
+          "root_readout_tv_bound": 1.0
+        },
+        {
+          "beta": 40.0,
+          "scale": 0.07405006839975779,
+          "root_readout_tv_bound": 0.11812175271208569
+        },
+        {
+          "beta": 80.0,
+          "scale": 0.0786917008665039,
+          "root_readout_tv_bound": 0.050610616089177204
+        }
+      ]
+    },
+    {
+      "name": "mixed_hypergraph_n64_s9901_standard",
+      "status": "ok",
+      "scheme": "standard",
+      "global_penalty": 44.75,
+      "repair_penalty": 6.0,
+      "curves": [
+        {
+          "beta": 10.0,
+          "scale": 0.02429569407887889,
+          "root_readout_tv_bound": 1.0
+        },
+        {
+          "beta": 20.0,
+          "scale": 0.03298117995610612,
+          "root_readout_tv_bound": 1.0
+        },
+        {
+          "beta": 40.0,
+          "scale": 0.03732392289471973,
+          "root_readout_tv_bound": 0.4978804783110805
+        },
+        {
+          "beta": 80.0,
+          "scale": 0.039495294364026524,
+          "root_readout_tv_bound": 0.044800932044508406
+        }
+      ]
+    },
+    {
+      "name": "random_regular_n16_s8807_balanced",
+      "status": "ok",
+      "scheme": "balanced",
+      "global_penalty": 11.75,
+      "repair_penalty": 2.75,
+      "curves": [
+        {
+          "beta": 10.0,
+          "scale": 0.14723173384286362,
+          "root_readout_tv_bound": 1.0,
+          "exact_reference": {
+            "original_optimum_probability": 0.015547605408187982,
+            "feasible_probability": 0.13919213921761936,
+            "conditional_original_optimum_probability": 0.11169887535013845,
+            "intended_conditional_original_optimum_probability": 0.11169887535013844,
+            "conditional_feasible_tv": 1.5745442516950986e-16,
+            "full_qubo_ground_probability": 0.004336177859544322,
+            "ground_degeneracy": 1,
+            "minimum_cost": -0.25,
+            "log_partition": 5.808841331025616,
+            "original_states": 65536,
+            "feasible_errors": 256
+          }
+        },
+        {
+          "beta": 20.0,
+          "scale": 0.1775119708174318,
+          "root_readout_tv_bound": 0.7427127974931498,
+          "exact_reference": {
+            "original_optimum_probability": 0.39109333452124906,
+            "feasible_probability": 0.9827605332192191,
+            "conditional_original_optimum_probability": 0.39795384664069533,
+            "intended_conditional_original_optimum_probability": 0.3979538466406953,
+            "conditional_feasible_tv": 6.687897067036e-17,
+            "full_qubo_ground_probability": 0.3896551585609981,
+            "ground_degeneracy": 1,
+            "minimum_cost": -0.25,
+            "log_partition": 1.8300529939067596,
+            "original_states": 65536,
+            "feasible_errors": 256
+          }
+        },
+        {
+          "beta": 40.0,
+          "scale": 0.19265208930471592,
+          "root_readout_tv_bound": 0.06602513693441586,
+          "exact_reference": {
+            "original_optimum_probability": 0.7960917487165271,
+            "feasible_probability": 0.9999966456296271,
+            "conditional_original_optimum_probability": 0.7960944191120606,
+            "intended_conditional_original_optimum_probability": 0.7960944191120606,
+            "conditional_feasible_tv": 2.4978992245961564e-17,
+            "full_qubo_ground_probability": 0.7960917168237914,
+            "ground_degeneracy": 1,
+            "minimum_cost": -0.25,
+            "log_partition": 2.1545617706820326,
+            "original_states": 65536,
+            "feasible_errors": 256
+          }
+        },
+        {
+          "beta": 80.0,
+          "scale": 0.20022214854835793,
+          "root_readout_tv_bound": 0.048704593766624824,
+          "exact_reference": {
+            "original_optimum_probability": 0.9804851948025097,
+            "feasible_probability": 0.999999999999792,
+            "conditional_original_optimum_probability": 0.9804851948027136,
+            "intended_conditional_original_optimum_probability": 0.9804851948027135,
+            "conditional_feasible_tv": 5.887790500037243e-17,
+            "full_qubo_ground_probability": 0.9804851948025097,
+            "ground_degeneracy": 1,
+            "minimum_cost": -0.25,
+            "log_partition": 4.024150704067375,
+            "original_states": 65536,
+            "feasible_errors": 256
+          }
+        }
+      ]
+    },
+    {
+      "name": "random_regular_n16_s8807_standard",
+      "status": "ok",
+      "scheme": "standard",
+      "global_penalty": 11.75,
+      "repair_penalty": 2.75,
+      "curves": [
+        {
+          "beta": 10.0,
+          "scale": 0.08973965333963248,
+          "root_readout_tv_bound": 1.0,
+          "exact_reference": {
+            "original_optimum_probability": 0.004436713572635189,
+            "feasible_probability": 0.09065470819791749,
+            "conditional_original_optimum_probability": 0.048940795914856956,
+            "intended_conditional_original_optimum_probability": 0.04793493648621412,
+            "conditional_feasible_tv": 0.01610731241675921,
+            "full_qubo_ground_probability": 0.0030992821713036744,
+            "ground_degeneracy": 1,
+            "minimum_cost": -0.25,
+            "log_partition": 6.000933885297704,
+            "original_states": 65536,
+            "feasible_errors": 256
+          }
+        },
+        {
+          "beta": 20.0,
+          "scale": 0.10547588606375563,
+          "root_readout_tv_bound": 0.8254579324186033,
+          "exact_reference": {
+            "original_optimum_probability": 0.177248702812184,
+            "feasible_probability": 0.8915141012767279,
+            "conditional_original_optimum_probability": 0.1988176099047093,
+            "intended_conditional_original_optimum_probability": 0.19880889876154131,
+            "conditional_feasible_tv": 1.953915269192958e-05,
+            "full_qubo_ground_probability": 0.17716606011863528,
+            "ground_degeneracy": 1,
+            "minimum_cost": -0.25,
+            "log_partition": 2.258047223794189,
+            "original_states": 65536,
+            "feasible_errors": 256
+          }
+        },
+        {
+          "beta": 40.0,
+          "scale": 0.11334400242581723,
+          "root_readout_tv_bound": 0.1359394785960159,
+          "exact_reference": {
+            "original_optimum_probability": 0.5191613220820556,
+            "feasible_probability": 0.9995781471542993,
+            "conditional_original_optimum_probability": 0.5193804241920023,
+            "intended_conditional_original_optimum_probability": 0.5193804241619451,
+            "conditional_feasible_tv": 3.241767108046021e-11,
+            "full_qubo_ground_probability": 0.5191613216899129,
+            "ground_degeneracy": 1,
+            "minimum_cost": -0.25,
+            "log_partition": 1.7889806366001362,
+            "original_states": 65536,
+            "feasible_errors": 256
+          }
+        },
+        {
+          "beta": 80.0,
+          "scale": 0.11727806060684802,
+          "root_readout_tv_bound": 0.006447011381738849,
+          "exact_reference": {
+            "original_optimum_probability": 0.8750671276748444,
+            "feasible_probability": 0.9999999788300832,
+            "conditional_original_optimum_probability": 0.8750671461999431,
+            "intended_conditional_original_optimum_probability": 0.8750671461999426,
+            "conditional_feasible_tv": 2.6315226503201664e-16,
+            "full_qubo_ground_probability": 0.8750671276748444,
+            "ground_degeneracy": 1,
+            "minimum_cost": -0.25,
+            "log_partition": 2.4790158903614286,
+            "original_states": 65536,
+            "feasible_errors": 256
+          }
+        }
+      ]
+    },
+    {
+      "name": "random_regular_n16_s9901_balanced",
+      "status": "ok",
+      "scheme": "balanced",
+      "global_penalty": 11.75,
+      "repair_penalty": 3.75,
+      "curves": [
+        {
+          "beta": 10.0,
+          "scale": 0.19475162810111887,
+          "root_readout_tv_bound": 1.0,
+          "exact_reference": {
+            "original_optimum_probability": 0.41991026907198986,
+            "feasible_probability": 0.9800382723407142,
+            "conditional_original_optimum_probability": 0.42846313345404374,
+            "intended_conditional_original_optimum_probability": 0.4284631334540442,
+            "conditional_feasible_tv": 3.7516379459872665e-16,
+            "full_qubo_ground_probability": 0.4020875260576512,
+            "ground_degeneracy": 1,
+            "minimum_cost": -1.25,
+            "log_partition": 3.345480838814509,
+            "original_states": 65536,
+            "feasible_errors": 256
+          }
+        },
+        {
+          "beta": 20.0,
+          "scale": 0.2307091447172261,
+          "root_readout_tv_bound": 0.34643682613447446,
+          "exact_reference": {
+            "original_optimum_probability": 0.7477310926413197,
+            "feasible_probability": 0.9999998115292628,
+            "conditional_original_optimum_probability": 0.7477312335667765,
+            "intended_conditional_original_optimum_probability": 0.7477312335667768,
+            "conditional_feasible_tv": 2.2615706092382174e-16,
+            "full_qubo_ground_probability": 0.7477296296323804,
+            "ground_degeneracy": 1,
+            "minimum_cost": -1.25,
+            "log_partition": 6.058442441990618,
+            "original_states": 65536,
+            "feasible_errors": 256
+          }
+        },
+        {
+          "beta": 40.0,
+          "scale": 0.24868790302527974,
+          "root_readout_tv_bound": 0.019680655124671372,
+          "exact_reference": {
+            "original_optimum_probability": 0.9231653135677497,
+            "feasible_probability": 1.0000000000000002,
+            "conditional_original_optimum_probability": 0.9231653135677494,
+            "intended_conditional_original_optimum_probability": 0.9231653135677497,
+            "conditional_feasible_tv": 1.180553104000277e-16,
+            "full_qubo_ground_probability": 0.9231653135677497,
+            "ground_degeneracy": 1,
+            "minimum_cost": -1.25,
+            "log_partition": 12.514342107156809,
+            "original_states": 65536,
+            "feasible_errors": 256
+          }
+        },
+        {
+          "beta": 80.0,
+          "scale": 0.2576772821793066,
+          "root_readout_tv_bound": 0.017977079656433814,
+          "exact_reference": {
+            "original_optimum_probability": 0.9942543239204191,
+            "feasible_probability": 0.999999999999999,
+            "conditional_original_optimum_probability": 0.9942543239204201,
+            "intended_conditional_original_optimum_probability": 0.9942543239204191,
+            "conditional_feasible_tv": 5.026361276909992e-16,
+            "full_qubo_ground_probability": 0.9942543239204191,
+            "ground_degeneracy": 1,
+            "minimum_cost": -1.25,
+            "log_partition": 25.773490463907702,
+            "original_states": 65536,
+            "feasible_errors": 256
+          }
+        }
+      ]
+    },
+    {
+      "name": "random_regular_n16_s9901_standard",
+      "status": "ok",
+      "scheme": "standard",
+      "global_penalty": 11.75,
+      "repair_penalty": 3.75,
+      "curves": [
+        {
+          "beta": 10.0,
+          "scale": 0.05736517172333576,
+          "root_readout_tv_bound": 1.0,
+          "exact_reference": {
+            "original_optimum_probability": 0.0023874237379684594,
+            "feasible_probability": 0.0492295787367561,
+            "conditional_original_optimum_probability": 0.048495717396540426,
+            "intended_conditional_original_optimum_probability": 0.04829301219304733,
+            "conditional_feasible_tv": 0.028087827166841974,
+            "full_qubo_ground_probability": 0.0012441990135960174,
+            "ground_degeneracy": 1,
+            "minimum_cost": -1.25,
+            "log_partition": 7.4063279652271525,
+            "original_states": 65536,
+            "feasible_errors": 256
+          }
+        },
+        {
+          "beta": 20.0,
+          "scale": 0.06677782395686788,
+          "root_readout_tv_bound": 1.0,
+          "exact_reference": {
+            "original_optimum_probability": 0.22998333133834464,
+            "feasible_probability": 0.9024541164874446,
+            "conditional_original_optimum_probability": 0.2548421322886661,
+            "intended_conditional_original_optimum_probability": 0.2548178413306788,
+            "conditional_feasible_tv": 7.094923672264382e-05,
+            "full_qubo_ground_probability": 0.22947054145330487,
+            "ground_degeneracy": 1,
+            "minimum_cost": -1.25,
+            "log_partition": 3.141426216322632,
+            "original_states": 65536,
+            "feasible_errors": 256
+          }
+        },
+        {
+          "beta": 40.0,
+          "scale": 0.07148415007363394,
+          "root_readout_tv_bound": 0.5930268708255017,
+          "exact_reference": {
+            "original_optimum_probability": 0.5945760215858469,
+            "feasible_probability": 0.9999356845715667,
+            "conditional_original_optimum_probability": 0.594614264457018,
+            "intended_conditional_original_optimum_probability": 0.594614263881297,
+            "conditional_feasible_tv": 6.408887769752993e-10,
+            "full_qubo_ground_probability": 0.5945760071438974,
+            "ground_degeneracy": 1,
+            "minimum_cost": -1.25,
+            "log_partition": 4.094114224168768,
+            "original_states": 65536,
+            "feasible_errors": 256
+          }
+        },
+        {
+          "beta": 80.0,
+          "scale": 0.07383731313201697,
+          "root_readout_tv_bound": 0.07968593775332596,
+          "exact_reference": {
+            "original_optimum_probability": 0.8108350630456297,
+            "feasible_probability": 0.9999999998170865,
+            "conditional_original_optimum_probability": 0.8108350631939424,
+            "intended_conditional_original_optimum_probability": 0.8108350631939422,
+            "conditional_feasible_tv": 1.2531557208354232e-16,
+            "full_qubo_ground_probability": 0.8108350630456297,
+            "ground_degeneracy": 1,
+            "minimum_cost": -1.25,
+            "log_partition": 7.593421933541483,
+            "original_states": 65536,
+            "feasible_errors": 256
+          }
+        }
+      ]
+    },
+    {
+      "name": "random_regular_n32_s8807_balanced",
+      "status": "ok",
+      "scheme": "balanced",
+      "global_penalty": 21.5,
+      "repair_penalty": 4.25,
+      "curves": [
+        {
+          "beta": 10.0,
+          "scale": 0.07737717720425176,
+          "root_readout_tv_bound": 1.0
+        },
+        {
+          "beta": 20.0,
+          "scale": 0.09751211801383175,
+          "root_readout_tv_bound": 1.0
+        },
+        {
+          "beta": 40.0,
+          "scale": 0.10757958841862175,
+          "root_readout_tv_bound": 0.25653092947551664
+        },
+        {
+          "beta": 80.0,
+          "scale": 0.11261332362101678,
+          "root_readout_tv_bound": 0.050825376543359044
+        }
+      ]
+    },
+    {
+      "name": "random_regular_n32_s8807_standard",
+      "status": "ok",
+      "scheme": "standard",
+      "global_penalty": 21.5,
+      "repair_penalty": 4.25,
+      "curves": [
+        {
+          "beta": 10.0,
+          "scale": 0.04633745063436601,
+          "root_readout_tv_bound": 1.0
+        },
+        {
+          "beta": 20.0,
+          "scale": 0.05678217002306537,
+          "root_readout_tv_bound": 0.988002483057979
+        },
+        {
+          "beta": 40.0,
+          "scale": 0.06200452971741503,
+          "root_readout_tv_bound": 0.44473832096290516
+        },
+        {
+          "beta": 80.0,
+          "scale": 0.06461570956458988,
+          "root_readout_tv_bound": 0.031171572933996018
+        }
+      ]
+    },
+    {
+      "name": "random_regular_n32_s9901_balanced",
+      "status": "ok",
+      "scheme": "balanced",
+      "global_penalty": 24.0,
+      "repair_penalty": 5.75,
+      "curves": [
+        {
+          "beta": 10.0,
+          "scale": 0.07545091988329693,
+          "root_readout_tv_bound": 1.0
+        },
+        {
+          "beta": 20.0,
+          "scale": 0.0956964744343441,
+          "root_readout_tv_bound": 0.9927565668592008
+        },
+        {
+          "beta": 40.0,
+          "scale": 0.10581925170986771,
+          "root_readout_tv_bound": 0.27915909936376193
+        },
+        {
+          "beta": 80.0,
+          "scale": 0.1108806403476295,
+          "root_readout_tv_bound": 0.0511623780867152
+        }
+      ]
+    },
+    {
+      "name": "random_regular_n32_s9901_standard",
+      "status": "ok",
+      "scheme": "standard",
+      "global_penalty": 24.0,
+      "repair_penalty": 5.75,
+      "curves": [
+        {
+          "beta": 10.0,
+          "scale": 0.03973458220413905,
+          "root_readout_tv_bound": 1.0
+        },
+        {
+          "beta": 20.0,
+          "scale": 0.04885279834841735,
+          "root_readout_tv_bound": 1.0
+        },
+        {
+          "beta": 40.0,
+          "scale": 0.0534119064205565,
+          "root_readout_tv_bound": 0.619963232483199
+        },
+        {
+          "beta": 80.0,
+          "scale": 0.055691460456626075,
+          "root_readout_tv_bound": 0.11172832415252562
+        }
+      ]
+    },
+    {
+      "name": "random_regular_n64_s8807_balanced",
+      "status": "ok",
+      "scheme": "balanced",
+      "global_penalty": 46.75,
+      "repair_penalty": 9.0,
+      "curves": [
+        {
+          "beta": 10.0,
+          "scale": 0.033507292510624,
+          "root_readout_tv_bound": 1.0
+        },
+        {
+          "beta": 20.0,
+          "scale": 0.044531424033062,
+          "root_readout_tv_bound": 1.0
+        },
+        {
+          "beta": 40.0,
+          "scale": 0.050043489794281,
+          "root_readout_tv_bound": 0.8147985748560154
+        },
+        {
+          "beta": 80.0,
+          "scale": 0.0527995226748905,
+          "root_readout_tv_bound": 0.24912215016191122
+        }
+      ]
+    },
+    {
+      "name": "random_regular_n64_s8807_standard",
+      "status": "ok",
+      "scheme": "standard",
+      "global_penalty": 46.75,
+      "repair_penalty": 9.0,
+      "curves": [
+        {
+          "beta": 10.0,
+          "scale": 0.017351955409715385,
+          "root_readout_tv_bound": 1.0
+        },
+        {
+          "beta": 20.0,
+          "scale": 0.022564866315968806,
+          "root_readout_tv_bound": 1.0
+        },
+        {
+          "beta": 40.0,
+          "scale": 0.025171321769095513,
+          "root_readout_tv_bound": 0.8874142275033524
+        },
+        {
+          "beta": 80.0,
+          "scale": 0.026474549495658868,
+          "root_readout_tv_bound": 0.4132366497427972
+        }
+      ]
+    },
+    {
+      "name": "random_regular_n64_s9901_balanced",
+      "status": "ok",
+      "scheme": "balanced",
+      "global_penalty": 39.0,
+      "repair_penalty": 7.25,
+      "curves": [
+        {
+          "beta": 10.0,
+          "scale": 0.03226482679195808,
+          "root_readout_tv_bound": 1.0
+        },
+        {
+          "beta": 20.0,
+          "scale": 0.043718619740806625,
+          "root_readout_tv_bound": 1.0
+        },
+        {
+          "beta": 40.0,
+          "scale": 0.0494455162152309,
+          "root_readout_tv_bound": 0.9838027678423418
+        },
+        {
+          "beta": 80.0,
+          "scale": 0.052308964452443034,
+          "root_readout_tv_bound": 0.3122545684474357
+        }
+      ]
+    },
+    {
+      "name": "random_regular_n64_s9901_standard",
+      "status": "ok",
+      "scheme": "standard",
+      "global_penalty": 39.0,
+      "repair_penalty": 7.25,
+      "curves": [
+        {
+          "beta": 10.0,
+          "scale": 0.017310234627163173,
+          "root_readout_tv_bound": 1.0
+        },
+        {
+          "beta": 20.0,
+          "scale": 0.02244822048599538,
+          "root_readout_tv_bound": 1.0
+        },
+        {
+          "beta": 40.0,
+          "scale": 0.025017213415411486,
+          "root_readout_tv_bound": 0.9976660010671671
+        },
+        {
+          "beta": 80.0,
+          "scale": 0.02630170988011954,
+          "root_readout_tv_bound": 0.7345641849292223
+        }
+      ]
+    },
+    {
+      "name": "rewired_band_n16_s8807_balanced",
+      "status": "ok",
+      "scheme": "balanced",
+      "global_penalty": 10.5,
+      "repair_penalty": 2.5,
+      "curves": [
+        {
+          "beta": 10.0,
+          "scale": 0.298496523695025,
+          "root_readout_tv_bound": 0.7065888254641914,
+          "exact_reference": {
+            "original_optimum_probability": 0.3522666690159477,
+            "feasible_probability": 0.9047492865514145,
+            "conditional_original_optimum_probability": 0.38935280110434145,
+            "intended_conditional_original_optimum_probability": 0.3893528011043413,
+            "conditional_feasible_tv": 4.655521866961285e-16,
+            "full_qubo_ground_probability": 0.3394869924127897,
+            "ground_degeneracy": 2,
+            "minimum_cost": 0.5,
+            "log_partition": 0.2809842087556962,
+            "original_states": 65536,
+            "feasible_errors": 256
+          }
+        },
+        {
+          "beta": 20.0,
+          "scale": 0.3492482618473125,
+          "root_readout_tv_bound": 0.06472872318604461,
+          "exact_reference": {
+            "original_optimum_probability": 0.8291710058839866,
+            "feasible_probability": 0.9999855653765006,
+            "conditional_original_optimum_probability": 0.8291829748280404,
+            "intended_conditional_original_optimum_probability": 0.8291829748280398,
+            "conditional_feasible_tv": 5.304416372688065e-16,
+            "full_qubo_ground_probability": 0.8291696223361482,
+            "ground_degeneracy": 2,
+            "minimum_cost": 0.5,
+            "log_partition": -2.612004903915838,
+            "original_states": 65536,
+            "feasible_errors": 256
+          }
+        },
+        {
+          "beta": 40.0,
+          "scale": 0.37462413092345626,
+          "root_readout_tv_bound": 0.048627832893058824,
+          "exact_reference": {
+            "original_optimum_probability": 0.9864126068352872,
+            "feasible_probability": 0.9999999999990898,
+            "conditional_original_optimum_probability": 0.986412606836185,
+            "intended_conditional_original_optimum_probability": 0.9864126068361853,
+            "conditional_feasible_tv": 1.1303898853114954e-16,
+            "full_qubo_ground_probability": 0.9864126068352872,
+            "ground_degeneracy": 2,
+            "minimum_cost": 0.5,
+            "log_partition": -6.785654891347662,
+            "original_states": 65536,
+            "feasible_errors": 256
+          }
+        },
+        {
+          "beta": 80.0,
+          "scale": 0.38731206546152813,
+          "root_readout_tv_bound": 0.04862255078763797,
+          "exact_reference": {
+            "original_optimum_probability": 0.9997832102919704,
+            "feasible_probability": 0.9999999999999998,
+            "conditional_original_optimum_probability": 0.9997832102919706,
+            "intended_conditional_original_optimum_probability": 0.9997832102919704,
+            "conditional_feasible_tv": 1.1104950017076254e-16,
+            "full_qubo_ground_probability": 0.9997832102919704,
+            "ground_degeneracy": 2,
+            "minimum_cost": 0.5,
+            "log_partition": -14.799118624690864,
+            "original_states": 65536,
+            "feasible_errors": 256
+          }
+        }
+      ]
+    },
+    {
+      "name": "rewired_band_n16_s8807_standard",
+      "status": "ok",
+      "scheme": "standard",
+      "global_penalty": 10.5,
+      "repair_penalty": 2.5,
+      "curves": [
+        {
+          "beta": 10.0,
+          "scale": 0.19899767780690553,
+          "root_readout_tv_bound": 0.7410953024536852,
+          "exact_reference": {
+            "original_optimum_probability": 0.17407863792997574,
+            "feasible_probability": 0.7740260898110733,
+            "conditional_original_optimum_probability": 0.224900220059075,
+            "intended_conditional_original_optimum_probability": 0.22491260516103917,
+            "conditional_feasible_tv": 7.880426796692464e-05,
+            "full_qubo_ground_probability": 0.17370101999895,
+            "ground_degeneracy": 2,
+            "minimum_cost": 0.5,
+            "log_partition": 1.4485785250903445,
+            "original_states": 65536,
+            "feasible_errors": 256
+          }
+        },
+        {
+          "beta": 20.0,
+          "scale": 0.23283216957011946,
+          "root_readout_tv_bound": 0.06533525970386242,
+          "exact_reference": {
+            "original_optimum_probability": 0.6261624161248087,
+            "feasible_probability": 0.9994351702509668,
+            "conditional_original_optimum_probability": 0.6265162911643123,
+            "intended_conditional_original_optimum_probability": 0.6265162911792604,
+            "conditional_feasible_tv": 1.0370266085026159e-10,
+            "full_qubo_ground_probability": 0.6261624139222588,
+            "ground_degeneracy": 2,
+            "minimum_cost": 0.5,
+            "log_partition": -1.1670290207687746,
+            "original_states": 65536,
+            "feasible_errors": 256
+          }
+        },
+        {
+          "beta": 40.0,
+          "scale": 0.24974941545172638,
+          "root_readout_tv_bound": 0.012614728488247125,
+          "exact_reference": {
+            "original_optimum_probability": 0.93819284391103,
+            "feasible_probability": 0.9999999946806711,
+            "conditional_original_optimum_probability": 0.9381928489015863,
+            "intended_conditional_original_optimum_probability": 0.9381928489015864,
+            "conditional_feasible_tv": 5.854692621271212e-17,
+            "full_qubo_ground_probability": 0.93819284391103,
+            "ground_degeneracy": 2,
+            "minimum_cost": 0.5,
+            "log_partition": -4.238041367891321,
+            "original_states": 65536,
+            "feasible_errors": 256
+          }
+        },
+        {
+          "beta": 80.0,
+          "scale": 0.2582080383925298,
+          "root_readout_tv_bound": 0.012383767204924139,
+          "exact_reference": {
+            "original_optimum_probability": 0.9970351732072896,
+            "feasible_probability": 0.9999999999999997,
+            "conditional_original_optimum_probability": 0.99703517320729,
+            "intended_conditional_original_optimum_probability": 0.9970351732072896,
+            "conditional_feasible_tv": 1.6699089202080449e-16,
+            "full_qubo_ground_probability": 0.9970351732072896,
+            "ground_degeneracy": 2,
+            "minimum_cost": 0.5,
+            "log_partition": -9.63220512454308,
+            "original_states": 65536,
+            "feasible_errors": 256
+          }
+        }
+      ]
+    },
+    {
+      "name": "rewired_band_n16_s9901_balanced",
+      "status": "ok",
+      "scheme": "balanced",
+      "global_penalty": 12.75,
+      "repair_penalty": 3.0,
+      "curves": [
+        {
+          "beta": 10.0,
+          "scale": 0.25354180428671236,
+          "root_readout_tv_bound": 0.7898632176164456,
+          "exact_reference": {
+            "original_optimum_probability": 0.31507639041792423,
+            "feasible_probability": 0.7281047813804241,
+            "conditional_original_optimum_probability": 0.432734955840513,
+            "intended_conditional_original_optimum_probability": 0.4327349558405132,
+            "conditional_feasible_tv": 4.099759653601453e-16,
+            "full_qubo_ground_probability": 0.30515995976835153,
+            "ground_degeneracy": 1,
+            "minimum_cost": 0.5,
+            "log_partition": -0.08078983983556132,
+            "original_states": 65536,
+            "feasible_errors": 256
+          }
+        },
+        {
+          "beta": 20.0,
+          "scale": 0.2934375688098562,
+          "root_readout_tv_bound": 0.09699057329361241,
+          "exact_reference": {
+            "original_optimum_probability": 0.772589344398473,
+            "feasible_probability": 0.9978037809342115,
+            "conditional_original_optimum_probability": 0.7742898545394592,
+            "intended_conditional_original_optimum_probability": 0.7742898545394594,
+            "conditional_feasible_tv": 1.4648764990228466e-16,
+            "full_qubo_ground_probability": 0.7725882279737332,
+            "ground_degeneracy": 1,
+            "minimum_cost": 0.5,
+            "log_partition": -2.6763666223359834,
+            "original_states": 65536,
+            "feasible_errors": 256
+          }
+        },
+        {
+          "beta": 40.0,
+          "scale": 0.3133854510714281,
+          "root_readout_tv_bound": 0.04863473738895276,
+          "exact_reference": {
+            "original_optimum_probability": 0.9565223970765405,
+            "feasible_probability": 0.9999998886485691,
+            "conditional_original_optimum_probability": 0.9565225035866899,
+            "intended_conditional_original_optimum_probability": 0.9565225035866893,
+            "conditional_feasible_tv": 2.885084007653088e-16,
+            "full_qubo_ground_probability": 0.9565223970765405,
+            "ground_degeneracy": 1,
+            "minimum_cost": 0.5,
+            "log_partition": -6.2232579467102385,
+            "original_states": 65536,
+            "feasible_errors": 256
+          }
+        },
+        {
+          "beta": 80.0,
+          "scale": 0.32335939220221405,
+          "root_readout_tv_bound": 0.048573476508994,
+          "exact_reference": {
+            "original_optimum_probability": 0.9984464152034852,
+            "feasible_probability": 0.9999999999999997,
+            "conditional_original_optimum_probability": 0.9984464152034855,
+            "intended_conditional_original_optimum_probability": 0.9984464152034852,
+            "conditional_feasible_tv": 1.6675071764636295e-16,
+            "full_qubo_ground_probability": 0.9984464152034852,
+            "ground_degeneracy": 1,
+            "minimum_cost": 0.5,
+            "log_partition": -12.932820895227804,
+            "original_states": 65536,
+            "feasible_errors": 256
+          }
+        }
+      ]
+    },
+    {
+      "name": "rewired_band_n16_s9901_standard",
+      "status": "ok",
+      "scheme": "standard",
+      "global_penalty": 12.75,
+      "repair_penalty": 3.0,
+      "curves": [
+        {
+          "beta": 10.0,
+          "scale": 0.1735330373923389,
+          "root_readout_tv_bound": 0.7741025019162127,
+          "exact_reference": {
+            "original_optimum_probability": 0.18463940324484973,
+            "feasible_probability": 0.726813986098769,
+            "conditional_original_optimum_probability": 0.2540394196813908,
+            "intended_conditional_original_optimum_probability": 0.2540636354464205,
+            "conditional_feasible_tv": 5.720167249910241e-05,
+            "full_qubo_ground_probability": 0.1844008342767665,
+            "ground_degeneracy": 1,
+            "minimum_cost": 0.5,
+            "log_partition": 0.8229782566307079,
+            "original_states": 65536,
+            "feasible_errors": 256
+          }
+        },
+        {
+          "beta": 20.0,
+          "scale": 0.19787762980716947,
+          "root_readout_tv_bound": 0.14969116967384546,
+          "exact_reference": {
+            "original_optimum_probability": 0.6274918403514849,
+            "feasible_probability": 0.9929213132766455,
+            "conditional_original_optimum_probability": 0.6319653249065211,
+            "intended_conditional_original_optimum_probability": 0.6319653249708258,
+            "conditional_feasible_tv": 7.261837133923212e-11,
+            "full_qubo_ground_probability": 0.6274918390374195,
+            "ground_degeneracy": 1,
+            "minimum_cost": 0.5,
+            "log_partition": -1.5127516844928675,
+            "original_states": 65536,
+            "feasible_errors": 256
+          }
+        },
+        {
+          "beta": 40.0,
+          "scale": 0.21004992601458472,
+          "root_readout_tv_bound": 0.049613607474684567,
+          "exact_reference": {
+            "original_optimum_probability": 0.8788086190984037,
+            "feasible_probability": 0.999990822039044,
+            "conditional_original_optimum_probability": 0.8788166848436246,
+            "intended_conditional_original_optimum_probability": 0.8788166848436249,
+            "conditional_feasible_tv": 1.3306510111528707e-16,
+            "full_qubo_ground_probability": 0.8788086190984037,
+            "ground_degeneracy": 1,
+            "minimum_cost": 0.5,
+            "log_partition": -4.071810389576199,
+            "original_states": 65536,
+            "feasible_errors": 256
+          }
+        },
+        {
+          "beta": 80.0,
+          "scale": 0.21613607411829236,
+          "root_readout_tv_bound": 0.048475879561121774,
+          "exact_reference": {
+            "original_optimum_probability": 0.9867385040478602,
+            "feasible_probability": 0.9999999999838756,
+            "conditional_original_optimum_probability": 0.9867385040637708,
+            "intended_conditional_original_optimum_probability": 0.9867385040637704,
+            "conditional_feasible_tv": 2.2468738836702483e-16,
+            "full_qubo_ground_probability": 0.9867385040478602,
+            "ground_degeneracy": 1,
+            "minimum_cost": 0.5,
+            "log_partition": -8.632092749905784,
+            "original_states": 65536,
+            "feasible_errors": 256
+          }
+        }
+      ]
+    },
+    {
+      "name": "rewired_band_n32_s8807_balanced",
+      "status": "ok",
+      "scheme": "balanced",
+      "global_penalty": 21.75,
+      "repair_penalty": 2.5,
+      "curves": [
+        {
+          "beta": 10.0,
+          "scale": 0.2782645054614756,
+          "root_readout_tv_bound": 0.9900135328545521
+        },
+        {
+          "beta": 20.0,
+          "scale": 0.3391322527305378,
+          "root_readout_tv_bound": 0.09089778925610396
+        },
+        {
+          "beta": 40.0,
+          "scale": 0.36956612636506897,
+          "root_readout_tv_bound": 0.04872970115107562
+        },
+        {
+          "beta": 80.0,
+          "scale": 0.3847830631823345,
+          "root_readout_tv_bound": 0.04871660859378588
+        }
+      ]
+    },
+    {
+      "name": "rewired_band_n32_s8807_standard",
+      "status": "ok",
+      "scheme": "standard",
+      "global_penalty": 21.75,
+      "repair_penalty": 2.5,
+      "curves": [
+        {
+          "beta": 10.0,
+          "scale": 0.14296217525329502,
+          "root_readout_tv_bound": 1.0
+        },
+        {
+          "beta": 20.0,
+          "scale": 0.1714810876265475,
+          "root_readout_tv_bound": 0.42269858532103166
+        },
+        {
+          "beta": 40.0,
+          "scale": 0.18574054381317376,
+          "root_readout_tv_bound": 0.055212167994868416
+        },
+        {
+          "beta": 80.0,
+          "scale": 0.1928702719064869,
+          "root_readout_tv_bound": 0.04869349124218311
+        }
+      ]
+    },
+    {
+      "name": "rewired_band_n32_s9901_balanced",
+      "status": "ok",
+      "scheme": "balanced",
+      "global_penalty": 24.5,
+      "repair_penalty": 2.75,
+      "curves": [
+        {
+          "beta": 10.0,
+          "scale": 0.25064348911934586,
+          "root_readout_tv_bound": 1.0
+        },
+        {
+          "beta": 20.0,
+          "scale": 0.30713992637767296,
+          "root_readout_tv_bound": 0.12890487308446924
+        },
+        {
+          "beta": 40.0,
+          "scale": 0.33538814500683645,
+          "root_readout_tv_bound": 0.048774744879503354
+        },
+        {
+          "beta": 80.0,
+          "scale": 0.34951225432141825,
+          "root_readout_tv_bound": 0.048723076186947996
+        }
+      ]
+    },
+    {
+      "name": "rewired_band_n32_s9901_standard",
+      "status": "ok",
+      "scheme": "standard",
+      "global_penalty": 24.5,
+      "repair_penalty": 2.75,
+      "curves": [
+        {
+          "beta": 10.0,
+          "scale": 0.12781662497514099,
+          "root_readout_tv_bound": 1.0
+        },
+        {
+          "beta": 20.0,
+          "scale": 0.1548174033965705,
+          "root_readout_tv_bound": 0.5366327968288951
+        },
+        {
+          "beta": 40.0,
+          "scale": 0.16831779260728524,
+          "root_readout_tv_bound": 0.062071230520129646
+        },
+        {
+          "beta": 80.0,
+          "scale": 0.17506798721264263,
+          "root_readout_tv_bound": 0.04871650461124238
+        }
+      ]
+    },
+    {
+      "name": "rewired_band_n64_s8807_balanced",
+      "status": "ok",
+      "scheme": "balanced",
+      "global_penalty": 39.0,
+      "repair_penalty": 6.5,
+      "curves": [
+        {
+          "beta": 10.0,
+          "scale": 0.10102358757082654,
+          "root_readout_tv_bound": 1.0
+        },
+        {
+          "beta": 20.0,
+          "scale": 0.12743486917002866,
+          "root_readout_tv_bound": 0.9563135858455445
+        },
+        {
+          "beta": 40.0,
+          "scale": 0.1406405099696297,
+          "root_readout_tv_bound": 0.1847633459745333
+        },
+        {
+          "beta": 80.0,
+          "scale": 0.14724333036943027,
+          "root_readout_tv_bound": 0.020997756180210443
+        }
+      ]
+    },
+    {
+      "name": "rewired_band_n64_s8807_standard",
+      "status": "ok",
+      "scheme": "standard",
+      "global_penalty": 39.0,
+      "repair_penalty": 6.5,
+      "curves": [
+        {
+          "beta": 10.0,
+          "scale": 0.04165702099579306,
+          "root_readout_tv_bound": 1.0
+        },
+        {
+          "beta": 20.0,
+          "scale": 0.05159774126709653,
+          "root_readout_tv_bound": 1.0
+        },
+        {
+          "beta": 40.0,
+          "scale": 0.05656810140274827,
+          "root_readout_tv_bound": 0.7941847902312772
+        },
+        {
+          "beta": 80.0,
+          "scale": 0.059053281470574134,
+          "root_readout_tv_bound": 0.17202848258479167
+        }
+      ]
+    },
+    {
+      "name": "rewired_band_n64_s9901_balanced",
+      "status": "ok",
+      "scheme": "balanced",
+      "global_penalty": 38.0,
+      "repair_penalty": 4.5,
+      "curves": [
+        {
+          "beta": 10.0,
+          "scale": 0.1150562196967702,
+          "root_readout_tv_bound": 1.0
+        },
+        {
+          "beta": 20.0,
+          "scale": 0.14641699873718508,
+          "root_readout_tv_bound": 0.6052677021680584
+        },
+        {
+          "beta": 40.0,
+          "scale": 0.16209738825739256,
+          "root_readout_tv_bound": 0.07430187090991129
+        },
+        {
+          "beta": 80.0,
+          "scale": 0.16993758301749626,
+          "root_readout_tv_bound": 0.048771280768569014
+        }
+      ]
+    },
+    {
+      "name": "rewired_band_n64_s9901_standard",
+      "status": "ok",
+      "scheme": "standard",
+      "global_penalty": 38.0,
+      "repair_penalty": 4.5,
+      "curves": [
+        {
+          "beta": 10.0,
+          "scale": 0.07370332097498145,
+          "root_readout_tv_bound": 1.0
+        },
+        {
+          "beta": 20.0,
+          "scale": 0.09240721493193517,
+          "root_readout_tv_bound": 0.670650805890253
+        },
+        {
+          "beta": 40.0,
+          "scale": 0.10175916191041202,
+          "root_readout_tv_bound": 0.09927243125019491
+        },
+        {
+          "beta": 80.0,
+          "scale": 0.10643513539965047,
+          "root_readout_tv_bound": 0.01635123413492552
+        }
+      ]
+    }
+  ],
+  "elapsed_seconds": 30.832171417074278
+}

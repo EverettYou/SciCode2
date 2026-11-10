@@ -1,0 +1,48 @@
+{
+  "source": "/Users/home/Library/CloudStorage/Dropbox/Research/[Mercor]SciCode2/benchmarks/hubbard-operator-bootstrap/labs/lab-002-moment-sdp/results/two-site-t2-sym",
+  "threshold_column_norm_squared": 1e-10,
+  "counts": {
+    "P": {
+      "full_factor_columns": 138,
+      "retained_columns": 20,
+      "retained_square_operators": 20,
+      "discarded_trace": 1.4361242504459193e-14
+    },
+    "Q": {
+      "full_factor_columns": 138,
+      "retained_columns": 16,
+      "retained_square_operators": 16,
+      "discarded_trace": 2.1227556635112606e-14
+    },
+    "G": {
+      "full_factor_columns": 288,
+      "retained_columns": 37,
+      "retained_square_operators": 37,
+      "discarded_trace": 7.582746798937271e-14
+    },
+    "n": {
+      "full_factor_columns": 6,
+      "retained_columns": 0,
+      "retained_square_operators": 0,
+      "discarded_trace": 0.0
+    },
+    "hole": {
+      "full_factor_columns": 6,
+      "retained_columns": 0,
+      "retained_square_operators": 0,
+      "discarded_trace": 0.0
+    },
+    "T2prime": {
+      "full_factor_columns": 366,
+      "retained_columns": 10,
+      "retained_square_operators": 20,
+      "discarded_trace": 7.317133272033616e-14
+    }
+  },
+  "floating_constant": -8.8639915846225,
+  "floating_residual_l1": 0.0005672039290680887,
+  "floating_corrected_lower": -8.864558788551568,
+  "compression_seconds": 0.5007439171895385,
+  "initial_search_cost_included_by_reference": "/Users/home/Library/CloudStorage/Dropbox/Research/[Mercor]SciCode2/benchmarks/hubbard-operator-bootstrap/labs/lab-002-moment-sdp/results/two-site-t2-sym/result.json",
+  "note": "The physical moment maps and constraints are unchanged; exact certificate verification is required for the compressed factors."
+}

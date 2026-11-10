@@ -1,0 +1,23 @@
+{
+  "solver": "CLARABEL",
+  "status": "optimal_inaccurate",
+  "energy_primal": -8.763353211029347,
+  "dual_unadjusted": -8.763353237128793,
+  "residual_l1": 1.1777956633574581e-07,
+  "certificate_float_lower": -8.763353354908359,
+  "dual_min_eigenvalue": 5.088206357104129e-12,
+  "equality_max_residual": 1.386932235725169e-12,
+  "nvar": 331,
+  "nblocks": 54,
+  "max_psd_dim": 32,
+  "psd_entries": 11446,
+  "model_construction_sec": 0.8353099159430712,
+  "build_sec": 0.0077355410903692245,
+  "solve_sec": 11.276892333989963,
+  "solver_solve_time": 11.207578957,
+  "iterations": 23,
+  "peak_rss_bytes": 404488192,
+  "eps": 1e-09,
+  "export_sec": 0.23357241600751877,
+  "build_solve_export_sec": 11.518204291118309
+}

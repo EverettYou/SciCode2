@@ -1,0 +1,1656 @@
+{
+  "status": "complete",
+  "models": 24,
+  "candidates": 192,
+  "summary": {
+    "0.015625": {
+      "certified_changes": 1,
+      "strict_qubit_reductions": 1,
+      "mean_qubit_reduction_fraction": 0.004032258064516129
+    },
+    "0.0078125": {
+      "certified_changes": 1,
+      "strict_qubit_reductions": 1,
+      "mean_qubit_reduction_fraction": 0.004032258064516129
+    },
+    "0.00390625": {
+      "certified_changes": 1,
+      "strict_qubit_reductions": 1,
+      "mean_qubit_reduction_fraction": 0.004032258064516129
+    },
+    "0.001953125": {
+      "certified_changes": 1,
+      "strict_qubit_reductions": 1,
+      "mean_qubit_reduction_fraction": 0.004032258064516129
+    },
+    "0.0009765625": {
+      "certified_changes": 1,
+      "strict_qubit_reductions": 1,
+      "mean_qubit_reduction_fraction": 0.004032258064516129
+    },
+    "0.00048828125": {
+      "certified_changes": 1,
+      "strict_qubit_reductions": 1,
+      "mean_qubit_reduction_fraction": 0.004032258064516129
+    },
+    "0.000244140625": {
+      "certified_changes": 1,
+      "strict_qubit_reductions": 1,
+      "mean_qubit_reduction_fraction": 0.004032258064516129
+    }
+  },
+  "witness_median_seconds": 0.00014229211956262589,
+  "witness_total_seconds": 0.005722499685361981,
+  "upper_improved_inputs": 24,
+  "seconds": 2.524753208970651,
+  "records": [
+    {
+      "name": "irregular_hubs_n16_s8807_standard",
+      "n": 16,
+      "witness_seconds": 8.89170914888382e-05,
+      "witness_cost": 0.75,
+      "parent_upper": 2.8986486486486487,
+      "new_upper": 0.75,
+      "seconds": 0.02870150003582239,
+      "selections": [
+        {
+          "T": 0.015625,
+          "selected_seed": 11,
+          "certified_change": false,
+          "baseline_N": 57,
+          "selected_N": 57,
+          "saved_qubits": 0
+        },
+        {
+          "T": 0.0078125,
+          "selected_seed": 11,
+          "certified_change": false,
+          "baseline_N": 57,
+          "selected_N": 57,
+          "saved_qubits": 0
+        },
+        {
+          "T": 0.00390625,
+          "selected_seed": 11,
+          "certified_change": false,
+          "baseline_N": 57,
+          "selected_N": 57,
+          "saved_qubits": 0
+        },
+        {
+          "T": 0.001953125,
+          "selected_seed": 11,
+          "certified_change": false,
+          "baseline_N": 57,
+          "selected_N": 57,
+          "saved_qubits": 0
+        },
+        {
+          "T": 0.0009765625,
+          "selected_seed": 11,
+          "certified_change": false,
+          "baseline_N": 57,
+          "selected_N": 57,
+          "saved_qubits": 0
+        },
+        {
+          "T": 0.00048828125,
+          "selected_seed": 11,
+          "certified_change": false,
+          "baseline_N": 57,
+          "selected_N": 57,
+          "saved_qubits": 0
+        },
+        {
+          "T": 0.000244140625,
+          "selected_seed": 11,
+          "certified_change": false,
+          "baseline_N": 57,
+          "selected_N": 57,
+          "saved_qubits": 0
+        }
+      ]
+    },
+    {
+      "name": "irregular_hubs_n16_s9901_standard",
+      "n": 16,
+      "witness_seconds": 5.2665825933218e-05,
+      "witness_cost": -0.5,
+      "parent_upper": 2.526315789473684,
+      "new_upper": -0.5,
+      "seconds": 0.025632374919950962,
+      "selections": [
+        {
+          "T": 0.015625,
+          "selected_seed": 11,
+          "certified_change": false,
+          "baseline_N": 56,
+          "selected_N": 56,
+          "saved_qubits": 0
+        },
+        {
+          "T": 0.0078125,
+          "selected_seed": 11,
+          "certified_change": false,
+          "baseline_N": 56,
+          "selected_N": 56,
+          "saved_qubits": 0
+        },
+        {
+          "T": 0.00390625,
+          "selected_seed": 11,
+          "certified_change": false,
+          "baseline_N": 56,
+          "selected_N": 56,
+          "saved_qubits": 0
+        },
+        {
+          "T": 0.001953125,
+          "selected_seed": 11,
+          "certified_change": false,
+          "baseline_N": 56,
+          "selected_N": 56,
+          "saved_qubits": 0
+        },
+        {
+          "T": 0.0009765625,
+          "selected_seed": 11,
+          "certified_change": false,
+          "baseline_N": 56,
+          "selected_N": 56,
+          "saved_qubits": 0
+        },
+        {
+          "T": 0.00048828125,
+          "selected_seed": 11,
+          "certified_change": false,
+          "baseline_N": 56,
+          "selected_N": 56,
+          "saved_qubits": 0
+        },
+        {
+          "T": 0.000244140625,
+          "selected_seed": 11,
+          "certified_change": false,
+          "baseline_N": 56,
+          "selected_N": 56,
+          "saved_qubits": 0
+        }
+      ]
+    },
+    {
+      "name": "irregular_hubs_n32_s8807_standard",
+      "n": 32,
+      "witness_seconds": 0.00020466698333621025,
+      "witness_cost": 1.25,
+      "parent_upper": 6.05,
+      "new_upper": 1.25,
+      "seconds": 0.06530520902015269,
+      "selections": [
+        {
+          "T": 0.015625,
+          "selected_seed": 11,
+          "certified_change": false,
+          "baseline_N": 177,
+          "selected_N": 177,
+          "saved_qubits": 0
+        },
+        {
+          "T": 0.0078125,
+          "selected_seed": 11,
+          "certified_change": false,
+          "baseline_N": 177,
+          "selected_N": 177,
+          "saved_qubits": 0
+        },
+        {
+          "T": 0.00390625,
+          "selected_seed": 11,
+          "certified_change": false,
+          "baseline_N": 177,
+          "selected_N": 177,
+          "saved_qubits": 0
+        },
+        {
+          "T": 0.001953125,
+          "selected_seed": 11,
+          "certified_change": false,
+          "baseline_N": 177,
+          "selected_N": 177,
+          "saved_qubits": 0
+        },
+        {
+          "T": 0.0009765625,
+          "selected_seed": 11,
+          "certified_change": false,
+          "baseline_N": 177,
+          "selected_N": 177,
+          "saved_qubits": 0
+        },
+        {
+          "T": 0.00048828125,
+          "selected_seed": 11,
+          "certified_change": false,
+          "baseline_N": 177,
+          "selected_N": 177,
+          "saved_qubits": 0
+        },
+        {
+          "T": 0.000244140625,
+          "selected_seed": 11,
+          "certified_change": false,
+          "baseline_N": 177,
+          "selected_N": 177,
+          "saved_qubits": 0
+        }
+      ]
+    },
+    {
+      "name": "irregular_hubs_n32_s9901_standard",
+      "n": 32,
+      "witness_seconds": 0.000124374870210886,
+      "witness_cost": 1.25,
+      "parent_upper": 8.381868131868131,
+      "new_upper": 1.25,
+      "seconds": 0.08502229093573987,
+      "selections": [
+        {
+          "T": 0.015625,
+          "selected_seed": 11,
+          "certified_change": false,
+          "baseline_N": 176,
+          "selected_N": 176,
+          "saved_qubits": 0
+        },
+        {
+          "T": 0.0078125,
+          "selected_seed": 11,
+          "certified_change": false,
+          "baseline_N": 176,
+          "selected_N": 176,
+          "saved_qubits": 0
+        },
+        {
+          "T": 0.00390625,
+          "selected_seed": 11,
+          "certified_change": false,
+          "baseline_N": 176,
+          "selected_N": 176,
+          "saved_qubits": 0
+        },
+        {
+          "T": 0.001953125,
+          "selected_seed": 11,
+          "certified_change": false,
+          "baseline_N": 176,
+          "selected_N": 176,
+          "saved_qubits": 0
+        },
+        {
+          "T": 0.0009765625,
+          "selected_seed": 11,
+          "certified_change": false,
+          "baseline_N": 176,
+          "selected_N": 176,
+          "saved_qubits": 0
+        },
+        {
+          "T": 0.00048828125,
+          "selected_seed": 11,
+          "certified_change": false,
+          "baseline_N": 176,
+          "selected_N": 176,
+          "saved_qubits": 0
+        },
+        {
+          "T": 0.000244140625,
+          "selected_seed": 11,
+          "certified_change": false,
+          "baseline_N": 176,
+          "selected_N": 176,
+          "saved_qubits": 0
+        }
+      ]
+    },
+    {
+      "name": "irregular_hubs_n64_s8807_standard",
+      "n": 64,
+      "witness_seconds": 0.0024358751252293587,
+      "witness_cost": -1.0,
+      "parent_upper": 14.631147540983607,
+      "new_upper": -1.0,
+      "seconds": 0.3603988748509437,
+      "selections": [
+        {
+          "T": 0.015625,
+          "selected_seed": 11,
+          "certified_change": false,
+          "baseline_N": 476,
+          "selected_N": 476,
+          "saved_qubits": 0
+        },
+        {
+          "T": 0.0078125,
+          "selected_seed": 11,
+          "certified_change": false,
+          "baseline_N": 476,
+          "selected_N": 476,
+          "saved_qubits": 0
+        },
+        {
+          "T": 0.00390625,
+          "selected_seed": 11,
+          "certified_change": false,
+          "baseline_N": 476,
+          "selected_N": 476,
+          "saved_qubits": 0
+        },
+        {
+          "T": 0.001953125,
+          "selected_seed": 11,
+          "certified_change": false,
+          "baseline_N": 476,
+          "selected_N": 476,
+          "saved_qubits": 0
+        },
+        {
+          "T": 0.0009765625,
+          "selected_seed": 11,
+          "certified_change": false,
+          "baseline_N": 476,
+          "selected_N": 476,
+          "saved_qubits": 0
+        },
+        {
+          "T": 0.00048828125,
+          "selected_seed": 11,
+          "certified_change": false,
+          "baseline_N": 476,
+          "selected_N": 476,
+          "saved_qubits": 0
+        },
+        {
+          "T": 0.000244140625,
+          "selected_seed": 11,
+          "certified_change": false,
+          "baseline_N": 476,
+          "selected_N": 476,
+          "saved_qubits": 0
+        }
+      ]
+    },
+    {
+      "name": "irregular_hubs_n64_s9901_standard",
+      "n": 64,
+      "witness_seconds": 0.00025762501172721386,
+      "witness_cost": -1.0,
+      "parent_upper": 14.261904761904763,
+      "new_upper": -1.0,
+      "seconds": 0.20338324992917478,
+      "selections": [
+        {
+          "T": 0.015625,
+          "selected_seed": 11,
+          "certified_change": false,
+          "baseline_N": 404,
+          "selected_N": 404,
+          "saved_qubits": 0
+        },
+        {
+          "T": 0.0078125,
+          "selected_seed": 11,
+          "certified_change": false,
+          "baseline_N": 404,
+          "selected_N": 404,
+          "saved_qubits": 0
+        },
+        {
+          "T": 0.00390625,
+          "selected_seed": 11,
+          "certified_change": false,
+          "baseline_N": 404,
+          "selected_N": 404,
+          "saved_qubits": 0
+        },
+        {
+          "T": 0.001953125,
+          "selected_seed": 11,
+          "certified_change": false,
+          "baseline_N": 404,
+          "selected_N": 404,
+          "saved_qubits": 0
+        },
+        {
+          "T": 0.0009765625,
+          "selected_seed": 11,
+          "certified_change": false,
+          "baseline_N": 404,
+          "selected_N": 404,
+          "saved_qubits": 0
+        },
+        {
+          "T": 0.00048828125,
+          "selected_seed": 11,
+          "certified_change": false,
+          "baseline_N": 404,
+          "selected_N": 404,
+          "saved_qubits": 0
+        },
+        {
+          "T": 0.000244140625,
+          "selected_seed": 11,
+          "certified_change": false,
+          "baseline_N": 404,
+          "selected_N": 404,
+          "saved_qubits": 0
+        }
+      ]
+    },
+    {
+      "name": "mixed_hypergraph_n16_s8807_standard",
+      "n": 16,
+      "witness_seconds": 0.0001007497776299715,
+      "witness_cost": 0.0,
+      "parent_upper": 3.838888888888889,
+      "new_upper": 0.0,
+      "seconds": 0.0400859999936074,
+      "selections": [
+        {
+          "T": 0.015625,
+          "selected_seed": 11,
+          "certified_change": false,
+          "baseline_N": 111,
+          "selected_N": 111,
+          "saved_qubits": 0
+        },
+        {
+          "T": 0.0078125,
+          "selected_seed": 11,
+          "certified_change": false,
+          "baseline_N": 111,
+          "selected_N": 111,
+          "saved_qubits": 0
+        },
+        {
+          "T": 0.00390625,
+          "selected_seed": 11,
+          "certified_change": false,
+          "baseline_N": 111,
+          "selected_N": 111,
+          "saved_qubits": 0
+        },
+        {
+          "T": 0.001953125,
+          "selected_seed": 11,
+          "certified_change": false,
+          "baseline_N": 111,
+          "selected_N": 111,
+          "saved_qubits": 0
+        },
+        {
+          "T": 0.0009765625,
+          "selected_seed": 11,
+          "certified_change": false,
+          "baseline_N": 111,
+          "selected_N": 111,
+          "saved_qubits": 0
+        },
+        {
+          "T": 0.00048828125,
+          "selected_seed": 11,
+          "certified_change": false,
+          "baseline_N": 111,
+          "selected_N": 111,
+          "saved_qubits": 0
+        },
+        {
+          "T": 0.000244140625,
+          "selected_seed": 11,
+          "certified_change": false,
+          "baseline_N": 111,
+          "selected_N": 111,
+          "saved_qubits": 0
+        }
+      ]
+    },
+    {
+      "name": "mixed_hypergraph_n16_s9901_standard",
+      "n": 16,
+      "witness_seconds": 0.00010366691276431084,
+      "witness_cost": 0.25,
+      "parent_upper": 2.2758620689655173,
+      "new_upper": 0.25,
+      "seconds": 0.04076491598971188,
+      "selections": [
+        {
+          "T": 0.015625,
+          "selected_seed": 11,
+          "certified_change": false,
+          "baseline_N": 133,
+          "selected_N": 133,
+          "saved_qubits": 0
+        },
+        {
+          "T": 0.0078125,
+          "selected_seed": 11,
+          "certified_change": false,
+          "baseline_N": 133,
+          "selected_N": 133,
+          "saved_qubits": 0
+        },
+        {
+          "T": 0.00390625,
+          "selected_seed": 11,
+          "certified_change": false,
+          "baseline_N": 133,
+          "selected_N": 133,
+          "saved_qubits": 0
+        },
+        {
+          "T": 0.001953125,
+          "selected_seed": 11,
+          "certified_change": false,
+          "baseline_N": 133,
+          "selected_N": 133,
+          "saved_qubits": 0
+        },
+        {
+          "T": 0.0009765625,
+          "selected_seed": 11,
+          "certified_change": false,
+          "baseline_N": 133,
+          "selected_N": 133,
+          "saved_qubits": 0
+        },
+        {
+          "T": 0.00048828125,
+          "selected_seed": 11,
+          "certified_change": false,
+          "baseline_N": 133,
+          "selected_N": 133,
+          "saved_qubits": 0
+        },
+        {
+          "T": 0.000244140625,
+          "selected_seed": 11,
+          "certified_change": false,
+          "baseline_N": 133,
+          "selected_N": 133,
+          "saved_qubits": 0
+        }
+      ]
+    },
+    {
+      "name": "mixed_hypergraph_n32_s8807_standard",
+      "n": 32,
+      "witness_seconds": 0.0001638750545680523,
+      "witness_cost": 0.5,
+      "parent_upper": 3.940677966101695,
+      "new_upper": 0.5,
+      "seconds": 0.07480745785869658,
+      "selections": [
+        {
+          "T": 0.015625,
+          "selected_seed": 11,
+          "certified_change": false,
+          "baseline_N": 244,
+          "selected_N": 244,
+          "saved_qubits": 0
+        },
+        {
+          "T": 0.0078125,
+          "selected_seed": 11,
+          "certified_change": false,
+          "baseline_N": 244,
+          "selected_N": 244,
+          "saved_qubits": 0
+        },
+        {
+          "T": 0.00390625,
+          "selected_seed": 11,
+          "certified_change": false,
+          "baseline_N": 244,
+          "selected_N": 244,
+          "saved_qubits": 0
+        },
+        {
+          "T": 0.001953125,
+          "selected_seed": 11,
+          "certified_change": false,
+          "baseline_N": 244,
+          "selected_N": 244,
+          "saved_qubits": 0
+        },
+        {
+          "T": 0.0009765625,
+          "selected_seed": 11,
+          "certified_change": false,
+          "baseline_N": 244,
+          "selected_N": 244,
+          "saved_qubits": 0
+        },
+        {
+          "T": 0.00048828125,
+          "selected_seed": 11,
+          "certified_change": false,
+          "baseline_N": 244,
+          "selected_N": 244,
+          "saved_qubits": 0
+        },
+        {
+          "T": 0.000244140625,
+          "selected_seed": 11,
+          "certified_change": false,
+          "baseline_N": 244,
+          "selected_N": 244,
+          "saved_qubits": 0
+        }
+      ]
+    },
+    {
+      "name": "mixed_hypergraph_n32_s9901_standard",
+      "n": 32,
+      "witness_seconds": 0.00014287512749433517,
+      "witness_cost": 1.25,
+      "parent_upper": 4.643939393939394,
+      "new_upper": 1.25,
+      "seconds": 0.0732092501129955,
+      "selections": [
+        {
+          "T": 0.015625,
+          "selected_seed": 11,
+          "certified_change": false,
+          "baseline_N": 255,
+          "selected_N": 255,
+          "saved_qubits": 0
+        },
+        {
+          "T": 0.0078125,
+          "selected_seed": 11,
+          "certified_change": false,
+          "baseline_N": 255,
+          "selected_N": 255,
+          "saved_qubits": 0
+        },
+        {
+          "T": 0.00390625,
+          "selected_seed": 11,
+          "certified_change": false,
+          "baseline_N": 255,
+          "selected_N": 255,
+          "saved_qubits": 0
+        },
+        {
+          "T": 0.001953125,
+          "selected_seed": 11,
+          "certified_change": false,
+          "baseline_N": 255,
+          "selected_N": 255,
+          "saved_qubits": 0
+        },
+        {
+          "T": 0.0009765625,
+          "selected_seed": 11,
+          "certified_change": false,
+          "baseline_N": 255,
+          "selected_N": 255,
+          "saved_qubits": 0
+        },
+        {
+          "T": 0.00048828125,
+          "selected_seed": 11,
+          "certified_change": false,
+          "baseline_N": 255,
+          "selected_N": 255,
+          "saved_qubits": 0
+        },
+        {
+          "T": 0.000244140625,
+          "selected_seed": 11,
+          "certified_change": false,
+          "baseline_N": 255,
+          "selected_N": 255,
+          "saved_qubits": 0
+        }
+      ]
+    },
+    {
+      "name": "mixed_hypergraph_n64_s8807_standard",
+      "n": 64,
+      "witness_seconds": 0.0002478749956935644,
+      "witness_cost": -0.25,
+      "parent_upper": 13.354037267080745,
+      "new_upper": -0.25,
+      "seconds": 0.1769294161349535,
+      "selections": [
+        {
+          "T": 0.015625,
+          "selected_seed": 11,
+          "certified_change": false,
+          "baseline_N": 677,
+          "selected_N": 677,
+          "saved_qubits": 0
+        },
+        {
+          "T": 0.0078125,
+          "selected_seed": 11,
+          "certified_change": false,
+          "baseline_N": 677,
+          "selected_N": 677,
+          "saved_qubits": 0
+        },
+        {
+          "T": 0.00390625,
+          "selected_seed": 11,
+          "certified_change": false,
+          "baseline_N": 677,
+          "selected_N": 677,
+          "saved_qubits": 0
+        },
+        {
+          "T": 0.001953125,
+          "selected_seed": 11,
+          "certified_change": false,
+          "baseline_N": 677,
+          "selected_N": 677,
+          "saved_qubits": 0
+        },
+        {
+          "T": 0.0009765625,
+          "selected_seed": 11,
+          "certified_change": false,
+          "baseline_N": 677,
+          "selected_N": 677,
+          "saved_qubits": 0
+        },
+        {
+          "T": 0.00048828125,
+          "selected_seed": 11,
+          "certified_change": false,
+          "baseline_N": 677,
+          "selected_N": 677,
+          "saved_qubits": 0
+        },
+        {
+          "T": 0.000244140625,
+          "selected_seed": 11,
+          "certified_change": false,
+          "baseline_N": 677,
+          "selected_N": 677,
+          "saved_qubits": 0
+        }
+      ]
+    },
+    {
+      "name": "mixed_hypergraph_n64_s9901_standard",
+      "n": 64,
+      "witness_seconds": 0.00017479201778769493,
+      "witness_cost": -0.75,
+      "parent_upper": 15.579479768786127,
+      "new_upper": -0.75,
+      "seconds": 0.1672722918447107,
+      "selections": [
+        {
+          "T": 0.015625,
+          "selected_seed": 11,
+          "certified_change": false,
+          "baseline_N": 546,
+          "selected_N": 546,
+          "saved_qubits": 0
+        },
+        {
+          "T": 0.0078125,
+          "selected_seed": 11,
+          "certified_change": false,
+          "baseline_N": 546,
+          "selected_N": 546,
+          "saved_qubits": 0
+        },
+        {
+          "T": 0.00390625,
+          "selected_seed": 11,
+          "certified_change": false,
+          "baseline_N": 546,
+          "selected_N": 546,
+          "saved_qubits": 0
+        },
+        {
+          "T": 0.001953125,
+          "selected_seed": 11,
+          "certified_change": false,
+          "baseline_N": 546,
+          "selected_N": 546,
+          "saved_qubits": 0
+        },
+        {
+          "T": 0.0009765625,
+          "selected_seed": 11,
+          "certified_change": false,
+          "baseline_N": 546,
+          "selected_N": 546,
+          "saved_qubits": 0
+        },
+        {
+          "T": 0.00048828125,
+          "selected_seed": 11,
+          "certified_change": false,
+          "baseline_N": 546,
+          "selected_N": 546,
+          "saved_qubits": 0
+        },
+        {
+          "T": 0.000244140625,
+          "selected_seed": 11,
+          "certified_change": false,
+          "baseline_N": 546,
+          "selected_N": 546,
+          "saved_qubits": 0
+        }
+      ]
+    },
+    {
+      "name": "random_regular_n16_s8807_standard",
+      "n": 16,
+      "witness_seconds": 7.066596299409866e-05,
+      "witness_cost": 1.0,
+      "parent_upper": 3.13953488372093,
+      "new_upper": 1.0,
+      "seconds": 0.036935958079993725,
+      "selections": [
+        {
+          "T": 0.015625,
+          "selected_seed": 11,
+          "certified_change": false,
+          "baseline_N": 57,
+          "selected_N": 57,
+          "saved_qubits": 0
+        },
+        {
+          "T": 0.0078125,
+          "selected_seed": 11,
+          "certified_change": false,
+          "baseline_N": 57,
+          "selected_N": 57,
+          "saved_qubits": 0
+        },
+        {
+          "T": 0.00390625,
+          "selected_seed": 11,
+          "certified_change": false,
+          "baseline_N": 57,
+          "selected_N": 57,
+          "saved_qubits": 0
+        },
+        {
+          "T": 0.001953125,
+          "selected_seed": 11,
+          "certified_change": false,
+          "baseline_N": 57,
+          "selected_N": 57,
+          "saved_qubits": 0
+        },
+        {
+          "T": 0.0009765625,
+          "selected_seed": 11,
+          "certified_change": false,
+          "baseline_N": 57,
+          "selected_N": 57,
+          "saved_qubits": 0
+        },
+        {
+          "T": 0.00048828125,
+          "selected_seed": 11,
+          "certified_change": false,
+          "baseline_N": 57,
+          "selected_N": 57,
+          "saved_qubits": 0
+        },
+        {
+          "T": 0.000244140625,
+          "selected_seed": 11,
+          "certified_change": false,
+          "baseline_N": 57,
+          "selected_N": 57,
+          "saved_qubits": 0
+        }
+      ]
+    },
+    {
+      "name": "random_regular_n16_s9901_standard",
+      "n": 16,
+      "witness_seconds": 7.337494753301144e-05,
+      "witness_cost": -1.0,
+      "parent_upper": 3.494186046511628,
+      "new_upper": -1.0,
+      "seconds": 0.0319502919446677,
+      "selections": [
+        {
+          "T": 0.015625,
+          "selected_seed": 11,
+          "certified_change": false,
+          "baseline_N": 55,
+          "selected_N": 55,
+          "saved_qubits": 0
+        },
+        {
+          "T": 0.0078125,
+          "selected_seed": 11,
+          "certified_change": false,
+          "baseline_N": 55,
+          "selected_N": 55,
+          "saved_qubits": 0
+        },
+        {
+          "T": 0.00390625,
+          "selected_seed": 11,
+          "certified_change": false,
+          "baseline_N": 55,
+          "selected_N": 55,
+          "saved_qubits": 0
+        },
+        {
+          "T": 0.001953125,
+          "selected_seed": 11,
+          "certified_change": false,
+          "baseline_N": 55,
+          "selected_N": 55,
+          "saved_qubits": 0
+        },
+        {
+          "T": 0.0009765625,
+          "selected_seed": 11,
+          "certified_change": false,
+          "baseline_N": 55,
+          "selected_N": 55,
+          "saved_qubits": 0
+        },
+        {
+          "T": 0.00048828125,
+          "selected_seed": 11,
+          "certified_change": false,
+          "baseline_N": 55,
+          "selected_N": 55,
+          "saved_qubits": 0
+        },
+        {
+          "T": 0.000244140625,
+          "selected_seed": 11,
+          "certified_change": false,
+          "baseline_N": 55,
+          "selected_N": 55,
+          "saved_qubits": 0
+        }
+      ]
+    },
+    {
+      "name": "random_regular_n32_s8807_standard",
+      "n": 32,
+      "witness_seconds": 0.00012266705743968487,
+      "witness_cost": 1.0,
+      "parent_upper": 7.975609756097561,
+      "new_upper": 1.0,
+      "seconds": 0.05844070902094245,
+      "selections": [
+        {
+          "T": 0.015625,
+          "selected_seed": 11,
+          "certified_change": false,
+          "baseline_N": 123,
+          "selected_N": 123,
+          "saved_qubits": 0
+        },
+        {
+          "T": 0.0078125,
+          "selected_seed": 11,
+          "certified_change": false,
+          "baseline_N": 123,
+          "selected_N": 123,
+          "saved_qubits": 0
+        },
+        {
+          "T": 0.00390625,
+          "selected_seed": 11,
+          "certified_change": false,
+          "baseline_N": 123,
+          "selected_N": 123,
+          "saved_qubits": 0
+        },
+        {
+          "T": 0.001953125,
+          "selected_seed": 11,
+          "certified_change": false,
+          "baseline_N": 123,
+          "selected_N": 123,
+          "saved_qubits": 0
+        },
+        {
+          "T": 0.0009765625,
+          "selected_seed": 11,
+          "certified_change": false,
+          "baseline_N": 123,
+          "selected_N": 123,
+          "saved_qubits": 0
+        },
+        {
+          "T": 0.00048828125,
+          "selected_seed": 11,
+          "certified_change": false,
+          "baseline_N": 123,
+          "selected_N": 123,
+          "saved_qubits": 0
+        },
+        {
+          "T": 0.000244140625,
+          "selected_seed": 11,
+          "certified_change": false,
+          "baseline_N": 123,
+          "selected_N": 123,
+          "saved_qubits": 0
+        }
+      ]
+    },
+    {
+      "name": "random_regular_n32_s9901_standard",
+      "n": 32,
+      "witness_seconds": 8.691591210663319e-05,
+      "witness_cost": 3.5,
+      "parent_upper": 8.247282608695652,
+      "new_upper": 3.5,
+      "seconds": 0.04770016600377858,
+      "selections": [
+        {
+          "T": 0.015625,
+          "selected_seed": 11,
+          "certified_change": false,
+          "baseline_N": 126,
+          "selected_N": 126,
+          "saved_qubits": 0
+        },
+        {
+          "T": 0.0078125,
+          "selected_seed": 11,
+          "certified_change": false,
+          "baseline_N": 126,
+          "selected_N": 126,
+          "saved_qubits": 0
+        },
+        {
+          "T": 0.00390625,
+          "selected_seed": 11,
+          "certified_change": false,
+          "baseline_N": 126,
+          "selected_N": 126,
+          "saved_qubits": 0
+        },
+        {
+          "T": 0.001953125,
+          "selected_seed": 11,
+          "certified_change": false,
+          "baseline_N": 126,
+          "selected_N": 126,
+          "saved_qubits": 0
+        },
+        {
+          "T": 0.0009765625,
+          "selected_seed": 11,
+          "certified_change": false,
+          "baseline_N": 126,
+          "selected_N": 126,
+          "saved_qubits": 0
+        },
+        {
+          "T": 0.00048828125,
+          "selected_seed": 11,
+          "certified_change": false,
+          "baseline_N": 126,
+          "selected_N": 126,
+          "saved_qubits": 0
+        },
+        {
+          "T": 0.000244140625,
+          "selected_seed": 11,
+          "certified_change": false,
+          "baseline_N": 126,
+          "selected_N": 126,
+          "saved_qubits": 0
+        }
+      ]
+    },
+    {
+      "name": "random_regular_n64_s8807_standard",
+      "n": 64,
+      "witness_seconds": 0.00015845801681280136,
+      "witness_cost": 1.0,
+      "parent_upper": 17.12568306010929,
+      "new_upper": 1.0,
+      "seconds": 0.14155516610480845,
+      "selections": [
+        {
+          "T": 0.015625,
+          "selected_seed": 11,
+          "certified_change": false,
+          "baseline_N": 306,
+          "selected_N": 306,
+          "saved_qubits": 0
+        },
+        {
+          "T": 0.0078125,
+          "selected_seed": 11,
+          "certified_change": false,
+          "baseline_N": 306,
+          "selected_N": 306,
+          "saved_qubits": 0
+        },
+        {
+          "T": 0.00390625,
+          "selected_seed": 11,
+          "certified_change": false,
+          "baseline_N": 306,
+          "selected_N": 306,
+          "saved_qubits": 0
+        },
+        {
+          "T": 0.001953125,
+          "selected_seed": 11,
+          "certified_change": false,
+          "baseline_N": 306,
+          "selected_N": 306,
+          "saved_qubits": 0
+        },
+        {
+          "T": 0.0009765625,
+          "selected_seed": 11,
+          "certified_change": false,
+          "baseline_N": 306,
+          "selected_N": 306,
+          "saved_qubits": 0
+        },
+        {
+          "T": 0.00048828125,
+          "selected_seed": 11,
+          "certified_change": false,
+          "baseline_N": 306,
+          "selected_N": 306,
+          "saved_qubits": 0
+        },
+        {
+          "T": 0.000244140625,
+          "selected_seed": 11,
+          "certified_change": false,
+          "baseline_N": 306,
+          "selected_N": 306,
+          "saved_qubits": 0
+        }
+      ]
+    },
+    {
+      "name": "random_regular_n64_s9901_standard",
+      "n": 64,
+      "witness_seconds": 0.00016012508422136307,
+      "witness_cost": -1.5,
+      "parent_upper": 10.018092105263158,
+      "new_upper": -1.5,
+      "seconds": 0.15568833309225738,
+      "selections": [
+        {
+          "T": 0.015625,
+          "selected_seed": 11,
+          "certified_change": false,
+          "baseline_N": 317,
+          "selected_N": 317,
+          "saved_qubits": 0
+        },
+        {
+          "T": 0.0078125,
+          "selected_seed": 11,
+          "certified_change": false,
+          "baseline_N": 317,
+          "selected_N": 317,
+          "saved_qubits": 0
+        },
+        {
+          "T": 0.00390625,
+          "selected_seed": 11,
+          "certified_change": false,
+          "baseline_N": 317,
+          "selected_N": 317,
+          "saved_qubits": 0
+        },
+        {
+          "T": 0.001953125,
+          "selected_seed": 11,
+          "certified_change": false,
+          "baseline_N": 317,
+          "selected_N": 317,
+          "saved_qubits": 0
+        },
+        {
+          "T": 0.0009765625,
+          "selected_seed": 11,
+          "certified_change": false,
+          "baseline_N": 317,
+          "selected_N": 317,
+          "saved_qubits": 0
+        },
+        {
+          "T": 0.00048828125,
+          "selected_seed": 11,
+          "certified_change": false,
+          "baseline_N": 317,
+          "selected_N": 317,
+          "saved_qubits": 0
+        },
+        {
+          "T": 0.000244140625,
+          "selected_seed": 11,
+          "certified_change": false,
+          "baseline_N": 317,
+          "selected_N": 317,
+          "saved_qubits": 0
+        }
+      ]
+    },
+    {
+      "name": "rewired_band_n16_s8807_standard",
+      "n": 16,
+      "witness_seconds": 5.8125006034970284e-05,
+      "witness_cost": 1.0,
+      "parent_upper": 3.3157894736842106,
+      "new_upper": 1.0,
+      "seconds": 0.027980708051472902,
+      "selections": [
+        {
+          "T": 0.015625,
+          "selected_seed": 11,
+          "certified_change": false,
+          "baseline_N": 58,
+          "selected_N": 58,
+          "saved_qubits": 0
+        },
+        {
+          "T": 0.0078125,
+          "selected_seed": 11,
+          "certified_change": false,
+          "baseline_N": 58,
+          "selected_N": 58,
+          "saved_qubits": 0
+        },
+        {
+          "T": 0.00390625,
+          "selected_seed": 11,
+          "certified_change": false,
+          "baseline_N": 58,
+          "selected_N": 58,
+          "saved_qubits": 0
+        },
+        {
+          "T": 0.001953125,
+          "selected_seed": 11,
+          "certified_change": false,
+          "baseline_N": 58,
+          "selected_N": 58,
+          "saved_qubits": 0
+        },
+        {
+          "T": 0.0009765625,
+          "selected_seed": 11,
+          "certified_change": false,
+          "baseline_N": 58,
+          "selected_N": 58,
+          "saved_qubits": 0
+        },
+        {
+          "T": 0.00048828125,
+          "selected_seed": 11,
+          "certified_change": false,
+          "baseline_N": 58,
+          "selected_N": 58,
+          "saved_qubits": 0
+        },
+        {
+          "T": 0.000244140625,
+          "selected_seed": 11,
+          "certified_change": false,
+          "baseline_N": 58,
+          "selected_N": 58,
+          "saved_qubits": 0
+        }
+      ]
+    },
+    {
+      "name": "rewired_band_n16_s9901_standard",
+      "n": 16,
+      "witness_seconds": 7.812492549419403e-05,
+      "witness_cost": 0.5,
+      "parent_upper": 4.425531914893617,
+      "new_upper": 0.5,
+      "seconds": 0.045112457824870944,
+      "selections": [
+        {
+          "T": 0.015625,
+          "selected_seed": 47,
+          "certified_change": true,
+          "baseline_N": 62,
+          "selected_N": 56,
+          "saved_qubits": 6
+        },
+        {
+          "T": 0.0078125,
+          "selected_seed": 47,
+          "certified_change": true,
+          "baseline_N": 62,
+          "selected_N": 56,
+          "saved_qubits": 6
+        },
+        {
+          "T": 0.00390625,
+          "selected_seed": 47,
+          "certified_change": true,
+          "baseline_N": 62,
+          "selected_N": 56,
+          "saved_qubits": 6
+        },
+        {
+          "T": 0.001953125,
+          "selected_seed": 47,
+          "certified_change": true,
+          "baseline_N": 62,
+          "selected_N": 56,
+          "saved_qubits": 6
+        },
+        {
+          "T": 0.0009765625,
+          "selected_seed": 47,
+          "certified_change": true,
+          "baseline_N": 62,
+          "selected_N": 56,
+          "saved_qubits": 6
+        },
+        {
+          "T": 0.00048828125,
+          "selected_seed": 47,
+          "certified_change": true,
+          "baseline_N": 62,
+          "selected_N": 56,
+          "saved_qubits": 6
+        },
+        {
+          "T": 0.000244140625,
+          "selected_seed": 47,
+          "certified_change": true,
+          "baseline_N": 62,
+          "selected_N": 56,
+          "saved_qubits": 6
+        }
+      ]
+    },
+    {
+      "name": "rewired_band_n32_s8807_standard",
+      "n": 32,
+      "witness_seconds": 0.0001417091116309166,
+      "witness_cost": 0.5,
+      "parent_upper": 7.608433734939759,
+      "new_upper": 0.5,
+      "seconds": 0.07467458304017782,
+      "selections": [
+        {
+          "T": 0.015625,
+          "selected_seed": 11,
+          "certified_change": false,
+          "baseline_N": 110,
+          "selected_N": 110,
+          "saved_qubits": 0
+        },
+        {
+          "T": 0.0078125,
+          "selected_seed": 11,
+          "certified_change": false,
+          "baseline_N": 110,
+          "selected_N": 110,
+          "saved_qubits": 0
+        },
+        {
+          "T": 0.00390625,
+          "selected_seed": 11,
+          "certified_change": false,
+          "baseline_N": 110,
+          "selected_N": 110,
+          "saved_qubits": 0
+        },
+        {
+          "T": 0.001953125,
+          "selected_seed": 11,
+          "certified_change": false,
+          "baseline_N": 110,
+          "selected_N": 110,
+          "saved_qubits": 0
+        },
+        {
+          "T": 0.0009765625,
+          "selected_seed": 11,
+          "certified_change": false,
+          "baseline_N": 110,
+          "selected_N": 110,
+          "saved_qubits": 0
+        },
+        {
+          "T": 0.00048828125,
+          "selected_seed": 11,
+          "certified_change": false,
+          "baseline_N": 110,
+          "selected_N": 110,
+          "saved_qubits": 0
+        },
+        {
+          "T": 0.000244140625,
+          "selected_seed": 11,
+          "certified_change": false,
+          "baseline_N": 110,
+          "selected_N": 110,
+          "saved_qubits": 0
+        }
+      ]
+    },
+    {
+      "name": "rewired_band_n32_s9901_standard",
+      "n": 32,
+      "witness_seconds": 0.00015133293345570564,
+      "witness_cost": 1.5,
+      "parent_upper": 8.691489361702128,
+      "new_upper": 1.5,
+      "seconds": 0.1066865420434624,
+      "selections": [
+        {
+          "T": 0.015625,
+          "selected_seed": 11,
+          "certified_change": false,
+          "baseline_N": 118,
+          "selected_N": 118,
+          "saved_qubits": 0
+        },
+        {
+          "T": 0.0078125,
+          "selected_seed": 11,
+          "certified_change": false,
+          "baseline_N": 118,
+          "selected_N": 118,
+          "saved_qubits": 0
+        },
+        {
+          "T": 0.00390625,
+          "selected_seed": 11,
+          "certified_change": false,
+          "baseline_N": 118,
+          "selected_N": 118,
+          "saved_qubits": 0
+        },
+        {
+          "T": 0.001953125,
+          "selected_seed": 11,
+          "certified_change": false,
+          "baseline_N": 118,
+          "selected_N": 118,
+          "saved_qubits": 0
+        },
+        {
+          "T": 0.0009765625,
+          "selected_seed": 11,
+          "certified_change": false,
+          "baseline_N": 118,
+          "selected_N": 118,
+          "saved_qubits": 0
+        },
+        {
+          "T": 0.00048828125,
+          "selected_seed": 11,
+          "certified_change": false,
+          "baseline_N": 118,
+          "selected_N": 118,
+          "saved_qubits": 0
+        },
+        {
+          "T": 0.000244140625,
+          "selected_seed": 11,
+          "certified_change": false,
+          "baseline_N": 118,
+          "selected_N": 118,
+          "saved_qubits": 0
+        }
+      ]
+    },
+    {
+      "name": "rewired_band_n64_s8807_standard",
+      "n": 64,
+      "witness_seconds": 0.0003042919561266899,
+      "witness_cost": 0.5,
+      "parent_upper": 9.78125,
+      "new_upper": 0.5,
+      "seconds": 0.22470904188230634,
+      "selections": [
+        {
+          "T": 0.015625,
+          "selected_seed": 11,
+          "certified_change": false,
+          "baseline_N": 251,
+          "selected_N": 251,
+          "saved_qubits": 0
+        },
+        {
+          "T": 0.0078125,
+          "selected_seed": 11,
+          "certified_change": false,
+          "baseline_N": 251,
+          "selected_N": 251,
+          "saved_qubits": 0
+        },
+        {
+          "T": 0.00390625,
+          "selected_seed": 11,
+          "certified_change": false,
+          "baseline_N": 251,
+          "selected_N": 251,
+          "saved_qubits": 0
+        },
+        {
+          "T": 0.001953125,
+          "selected_seed": 11,
+          "certified_change": false,
+          "baseline_N": 251,
+          "selected_N": 251,
+          "saved_qubits": 0
+        },
+        {
+          "T": 0.0009765625,
+          "selected_seed": 11,
+          "certified_change": false,
+          "baseline_N": 251,
+          "selected_N": 251,
+          "saved_qubits": 0
+        },
+        {
+          "T": 0.00048828125,
+          "selected_seed": 11,
+          "certified_change": false,
+          "baseline_N": 251,
+          "selected_N": 251,
+          "saved_qubits": 0
+        },
+        {
+          "T": 0.000244140625,
+          "selected_seed": 11,
+          "certified_change": false,
+          "baseline_N": 251,
+          "selected_N": 251,
+          "saved_qubits": 0
+        }
+      ]
+    },
+    {
+      "name": "rewired_band_n64_s9901_standard",
+      "n": 64,
+      "witness_seconds": 0.0002187499776482582,
+      "witness_cost": -0.25,
+      "parent_upper": 11.51858108108108,
+      "new_upper": -0.25,
+      "seconds": 0.15813170792534947,
+      "selections": [
+        {
+          "T": 0.015625,
+          "selected_seed": 11,
+          "certified_change": false,
+          "baseline_N": 243,
+          "selected_N": 243,
+          "saved_qubits": 0
+        },
+        {
+          "T": 0.0078125,
+          "selected_seed": 11,
+          "certified_change": false,
+          "baseline_N": 243,
+          "selected_N": 243,
+          "saved_qubits": 0
+        },
+        {
+          "T": 0.00390625,
+          "selected_seed": 11,
+          "certified_change": false,
+          "baseline_N": 243,
+          "selected_N": 243,
+          "saved_qubits": 0
+        },
+        {
+          "T": 0.001953125,
+          "selected_seed": 11,
+          "certified_change": false,
+          "baseline_N": 243,
+          "selected_N": 243,
+          "saved_qubits": 0
+        },
+        {
+          "T": 0.0009765625,
+          "selected_seed": 11,
+          "certified_change": false,
+          "baseline_N": 243,
+          "selected_N": 243,
+          "saved_qubits": 0
+        },
+        {
+          "T": 0.00048828125,
+          "selected_seed": 11,
+          "certified_change": false,
+          "baseline_N": 243,
+          "selected_N": 243,
+          "saved_qubits": 0
+        },
+        {
+          "T": 0.000244140625,
+          "selected_seed": 11,
+          "certified_change": false,
+          "baseline_N": 243,
+          "selected_N": 243,
+          "saved_qubits": 0
+        }
+      ]
+    }
+  ]
+}

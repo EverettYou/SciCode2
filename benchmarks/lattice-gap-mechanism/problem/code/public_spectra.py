@@ -1,12 +1,20 @@
 """Public curves for the problem-1 prompt.
 
-Half-filled tunneling combines two results at t2/t1 = 0.2 and J/t1 = 8.
-The single-particle gap is the strong-coupling value Delta_1 = 7.99, so the
-inner edges sit at about +/-4. Each side disperses as eps(k)/2, which puts
-the saddle 4*t2 above the middle of that side. The side weights are the
-residues of Eq. (19) of arXiv:2307.12223, so the two sides are not copies.
-One tenth of each residue is moved to a Gaussian 3.5 outside that pole,
-with half-width 1.5, so each side band carries an outer shoulder.
+Half-filled tunneling (changed 2026-10-31) is the momentum sum of the
+3x3-cluster-calibrated spectrum at t2/t1 = 0.2 and J/t1 = 8
+(author/ed_dos_calibration.json, written by code/ed_dos_calibration.py from
+reference/data/ed_3x3_path.json). Each side is one coherent band, a
+four-harmonic fit to the dominant addition and removal poles at the ten
+cluster momenta (periodic and twisted boundaries), with the fitted
+residues: the gap is 8.6 between inner edges at +/-4.3, the addition band
+is 2.7 wide and the removal band 3.0 wide, so the two sides are not copies
+and both are narrower than eps(k)/2. The weight that is not on the
+coherent pole, 1 - n(k) - w_p and n(k) - w_h (a few percent at most
+momenta, up to a quarter of the removal weight at (0,0)), is a Gaussian
+about 4 beyond the coherent pole with the cluster's own spread, so each
+side band carries a weak outer shoulder. The earlier curve used eps(k)/2
+dispersions, the strong-coupling gap 7.99 and the Eq. (19) residues of
+arXiv:2307.12223; see public_spectra.py.bak-20261031b.
 
 The lower density, nu = 0.2, is on the BCS side. Its low-temperature trace
 is the Bogoliubov spectrum at the g = 3J/4 gap, a complete gap with sharp
@@ -27,20 +35,24 @@ The published nuclear curve at half filling is 1/(T1 T) from spectra.nmr_rate
 on the two-rung triplon band at J = 8, normalized at T = 4. Points below
 1e-5 are omitted from the public file, and so are points above T = 5, where
 the temperature is no longer below the spin gap. The half-filled
-resistivity keeps the low-temperature activation of the constant-tau Boltzmann
-result of that same strong-coupling model at every temperature in the window,
-normalized at T = 4. The full integral flattens once T is no longer small
-compared with the charge gap; that flattening is not published, because the
-spin relaxation on this crystal stays activated through the same window.
+resistivity is the full constant-tau Boltzmann curve of that same
+strong-coupling model, normalized at T = 4 (changed 2026-10-31; it used to be
+the low-temperature activation held fixed). Its low-temperature slope is about
+3.7 and it flattens above about 2D, while the spin relaxation on this crystal
+(triplons, a different excitation) stays activated through the window.
 
 At nu = 0.2 the pair amplitude of the gap equation closes at the fixed-density
 temperature, 1.00D. That scale exceeds the bilayer stiffness bound, so the
-published transition is 0.40D. Below a Hebel–Slichter peak near 0.34D, 1/(T1 T)
-falls as exp(-1.75/T); above the peak it is the Korringa value. The resistivity
-is the normal-state metal above 0.40D and zero at and below it. At nu = 0.3 the
-resistivity is zero below 0.20D. Above that, the curve is the previous
-activated metal translated down by 0.16D, so the shape that used to start at
-0.36D now reaches 0.20D, and it still rises on cooling. The nuclear rate is
+published transition is 0.40D. 1/(T1 T) is the Korringa value for T >= 1.00D
+and is suppressed below it following the fixed-density gap Delta(T), with no
+Hebel-Slichter peak and no feature at 0.40D (code/nu02_pseudogap_nmr.py,
+changed 2026-10-30). The resistivity is the normal-state metal times a
+Halperin-Nelson tail between 0.40D and 1.00D (b = 0.08) and zero at and below
+0.40D. At nu = 0.3 the resistivity is zero at and below 0.20D. Above that, the
+curve is the previous activated metal translated down by 0.16D, times a
+Halperin-Nelson tail between 0.20D and the amplitude scale 1.17D: it rises on
+cooling to about 4.3 at 0.25D and drops to zero at 0.20D (with b = 0.08 the
+tail no longer produces a maximum above the transition). The nuclear rate is
 activated with 2.5 up to about 2D, crosses over to the Korringa value between
 2D and 4D, and is flat for T at and above 4D. Nothing happens to it at 0.20D.
 Noise is added before the normalization,
@@ -73,7 +85,6 @@ from spectra import bands, nmr_rate, resistivity  # noqa: E402
 T1 = 1.0
 T2 = 0.2
 J = 8.0
-ALPHA = 1.0
 ETA = 0.08
 NK = 241
 SEED = 20261027
@@ -84,6 +95,9 @@ PEAK_SIGMA_SLOPE = 0.012
 # Drawn uncertainties. One standard deviation does not cover the
 # point-to-point fluctuation on the figures.
 ERROR_BAR_SIGMAS = 2.0
+# Halperin-Nelson vortex-core parameter of the doped resistivity tails.
+# 0.15 until 2026-10-31; reduced so the drop at the transition is sharper.
+HN_B = 0.08
 NMR_PUBLIC_FLOOR = 1e-5
 # Above the spin gap the Arrhenius slope is no longer diagnostic. The public
 # half-filled curve stops at the last grid point below 5D (T = 4.43D).
@@ -95,11 +109,6 @@ NMR_ABSOLUTE_ERROR = 1e-4
 # readable while the bar still grows near the cutoff.
 NMR_POINT_SIGMA = 1e-5
 DYNES_GAMMA = 0.04
-# Fraction of each residue moved out of the coherent pole. The Gaussian sits
-# 3.5 beyond that pole, on the side away from the gap, with half-width 1.5.
-INCOHERENT_FRACTION = 0.10
-INCOHERENT_SHIFT = 3.5
-INCOHERENT_SIGMA = 1.5
 
 
 def momentum_mesh(n: int = NK):
@@ -109,12 +118,21 @@ def momentum_mesh(n: int = NK):
     return eps
 
 
-def residues(eps: np.ndarray):
-    """Pole weights of Eq. (19). They sum to 1 at each momentum."""
-    shift = eps / (4.0 * J) + ALPHA * eps / (2.0 * J**3)
-    upper = 0.5 + shift
-    lower = 0.5 - shift
-    return upper, lower
+def ed_calibration() -> dict:
+    """Cluster-calibrated half-filled bands, written by code/ed_dos_calibration.py."""
+    with open(AUTHOR / "ed_dos_calibration.json", encoding="utf-8") as handle:
+        return json.load(handle)
+
+
+def harmonics(coef, kx: np.ndarray, ky: np.ndarray) -> np.ndarray:
+    """Square-lattice harmonic expansion used by the cluster fits."""
+    cols = [
+        np.ones_like(kx),
+        np.cos(kx) + np.cos(ky),
+        np.cos(kx) * np.cos(ky),
+        np.cos(2 * kx) + np.cos(2 * ky),
+    ]
+    return sum(c * col for c, col in zip(coef, cols))
 
 
 def lorentzian(centers: np.ndarray, weights: np.ndarray, omega: np.ndarray, eta: float):
@@ -140,27 +158,33 @@ def gaussian_dos(centers: np.ndarray, weights: np.ndarray, omega: np.ndarray, si
 
 
 def half_filled(omega: np.ndarray):
-    """eps/2 dispersion, gap fixed at the J=8 strong-coupling value.
+    """Momentum sum of the cluster-calibrated two-band spectrum.
 
-    Nine tenths of each residue stays on the coherent pole. One tenth is a
-    Gaussian 3.5 further from the gap, so the side band has an outer shoulder.
+    Coherent addition and removal bands with their fitted residues, measured
+    from the gap midpoint, broadened by ETA. The remaining weight of each
+    branch is a Gaussian at the cluster's incoherent centroid offset with the
+    cluster's spread. The sum over both branches and all momenta is 1.
     """
-    eps = momentum_mesh()
-    # eps runs from -4.8 to 3.2. Poles at eps/2 +/- E0 have gap 2*E0 - 4.
-    # Delta_1(J=8) = 7.99, so E0 = 6 and the centered inner edges are +/-4.
-    e0 = 6.0
-    gap_center = -0.4
-    upper_w, lower_w = residues(eps)
-    coherent = 1.0 - INCOHERENT_FRACTION
-    upper_c = eps / 2.0 + e0 - gap_center
-    lower_c = eps / 2.0 - e0 - gap_center
-    upper = lorentzian(upper_c, coherent * upper_w, omega, ETA)
-    lower = lorentzian(lower_c, coherent * lower_w, omega, ETA)
+    cal = ed_calibration()
+    grid = np.linspace(-np.pi, np.pi, NK, endpoint=False)
+    kx, ky = np.meshgrid(grid, grid, indexing="ij")
+    kx, ky = kx.ravel(), ky.ravel()
+    fits = cal["fits"]
+    mu = cal["mu"]
+    upper_c = harmonics(fits["Ep"], kx, ky) - mu
+    lower_c = harmonics(fits["Eh"], kx, ky) - mu
+    upper_w = np.clip(harmonics(fits["wp"], kx, ky), 0.02, 1.0)
+    lower_w = np.clip(harmonics(fits["wh"], kx, ky), 0.02, 1.0)
+    n_k = np.clip(harmonics(fits["nk"], kx, ky), 0.05, 0.95)
+    upper_inc = np.clip(1.0 - n_k - upper_w, 0.0, None)
+    lower_inc = np.clip(n_k - lower_w, 0.0, None)
+    upper = lorentzian(upper_c, upper_w, omega, ETA)
+    lower = lorentzian(lower_c, lower_w, omega, ETA)
     shoulder = gaussian_dos(
-        upper_c + INCOHERENT_SHIFT, INCOHERENT_FRACTION * upper_w, omega, INCOHERENT_SIGMA
+        upper_c + cal["sat_add"]["offset"], upper_inc, omega, cal["sat_add"]["spread"]
     )
     shoulder += gaussian_dos(
-        lower_c - INCOHERENT_SHIFT, INCOHERENT_FRACTION * lower_w, omega, INCOHERENT_SIGMA
+        lower_c + cal["sat_rem"]["offset"], lower_inc, omega, cal["sat_rem"]["spread"]
     )
     return upper + lower + shoulder
 
@@ -426,6 +450,27 @@ def hebel_slichter_ratio(delta: float, temperature: float, gamma: float = DYNES_
     anomalous = np.real(delta / root)
     weight = (0.5 / temperature) / np.cosh(energy / (2.0 * temperature)) ** 2
     return float(np.trapezoid(weight * (quasiparticle**2 + anomalous**2), energy))
+
+
+def halperin_nelson(temps: np.ndarray, t_bkt: float, t_c0: float, b: float = HN_B) -> np.ndarray:
+    """Resistive tail of a two-dimensional superconductor above T_BKT.
+
+    Between T_BKT and the amplitude scale T_c0 the free-vortex density gives
+    rho/rho_n = exp(-2 b sqrt((T_c0 - T_BKT)/(T - T_BKT))) (Halperin-Nelson).
+    Above T_c0 the remaining suppression (paraconductivity) is faded out
+    quadratically and is gone by 2 T_c0. At and below T_BKT the factor is 0.
+    With b = 0.08 (HN_B) the factor is 0.85 at T_c0 and about 0.6 at
+    1.1 T_BKT, so the drop to zero is read within about 0.05D of T_BKT.
+    """
+    temps = np.asarray(temps, dtype=float)
+    f = np.ones_like(temps)
+    mid = (temps > t_bkt) & (temps < t_c0)
+    f[mid] = np.exp(-2.0 * b * np.sqrt((t_c0 - t_bkt) / (temps[mid] - t_bkt)))
+    f0 = np.exp(-2.0 * b)
+    hot = (temps >= t_c0) & (temps < 2.0 * t_c0)
+    f[hot] = 1.0 - (1.0 - f0) * ((2.0 * t_c0 - temps[hot]) / t_c0) ** 2
+    f[temps <= t_bkt] = 0.0
+    return f
 
 
 def quasiparticle_resistivity(xi: np.ndarray, v2: np.ndarray, delta: float, temperature: float) -> float:
@@ -786,7 +831,11 @@ def main():
     # flattened curve would say the charge gap has filled.
     cold = temps <= 0.8
     activation = float(np.polyfit(1.0 / temps[cold], np.log(boltzmann[cold]), 1)[0])
-    rho = np.exp(activation * (1.0 / temps - 1.0 / 4.0))
+    # 2026-10-31: publish the model's own constant-tau Boltzmann curve. Its
+    # low-T slope is the activation above (about 3.7); above about 2D it
+    # flattens because the thermal window reaches the band edges. The NMR on
+    # the same crystal is a different excitation (triplons) and stays activated.
+    rho = boltzmann.copy()
 
     model = {
         "stm_100_low": (omega, half),
@@ -838,7 +887,7 @@ def main():
     write_trace(AUTHOR / "resistivity_boltzmann.dat", temps, boltzmann, "temperature", "resistivity")
     summary["resistivity_at_T"] = {f"{t:.2f}": float(v) for t, v in zip(temps[::4], rho[::4])}
     summary["resistivity_activation"] = {
-        "published": "low-T Boltzmann slope, held fixed through the window",
+        "published": "full constant-tau Boltzmann curve (low-T slope below; flattens above about 2D)",
         "fit_temperatures": "T <= 0.8",
         "activation_energy": activation,
     }
@@ -906,7 +955,8 @@ def main():
     # the metallic curve and the half-filled activation. Its transition
     # temperature stays suppressed.
     eps_k, v2 = bcs_carriers()
-    temps_doped = np.linspace(0.10, 4.0, 53)
+    # 2026-10-31: 0.05D spacing so the Halperin-Nelson tails are resolved.
+    temps_doped = np.linspace(0.10, 4.0, 79)
     # Normal metal at the nominal filling. Above Tc the gap is gone and the
     # chemical potential is the normal-state one, not the paired one.
     xi_metal = eps_k - mu_normal[0.2]
@@ -931,14 +981,35 @@ def main():
             scaled_d[below] = peak_height * np.exp(
                 -activation_nmr * (1.0 / t_pub[below] - 1.0 / t_peak)
             )
+            # 2026-10-30: the pairing amplitude closes at T_MF = 1.00D while the
+            # published transition is 0.40D (phase-limited). Between them the
+            # single-particle spectrum is gapped, so 1/(T1 T) is suppressed from
+            # T_MF down, with no Hebel-Slichter peak and no feature at Tc. The
+            # curve is the ratio of the DOS^2 relaxation integrals with and
+            # without the fixed-density gap Delta(T), computed by
+            # code/nu02_pseudogap_nmr.py (numpy only) and stored in
+            # author/relaxation_nu02_pseudogap_clean.dat. If that file exists it
+            # replaces the Korringa-plus-Hebel-Slichter form above.
+            pg_file = AUTHOR / "relaxation_nu02_pseudogap_clean.dat"
+            if pg_file.exists():
+                pg = np.loadtxt(pg_file, skiprows=1)
+                scaled_d = np.interp(t_pub, pg[:, 0], pg[:, 1])
+                nmr_note = (
+                    "pseudogap form: Korringa for T >= T_MF = 1.00D, suppressed below "
+                    "it following the fixed-density gap Delta(T), exp(-1.73/T) at low T, "
+                    "no Hebel-Slichter peak, no feature at the 0.40D transition"
+                )
+            else:
+                nmr_note = None
             # The metal is the same normal-state curve. Only the zero interval moves.
             rho_d = rho_metal.copy()
             rho_d[temps_doped <= tc + 1e-8] = 0.0
-            nmr_note = (
-                f"activated with 1.75 below a Hebel–Slichter peak at {t_peak:.3f}D, "
-                "Korringa above the peak; the gap equation closes near "
-                f"{tc_gap:.2f}D and is not the published transition"
-            )
+            if nmr_note is None:
+                nmr_note = (
+                    f"activated with 1.75 below a Hebel–Slichter peak at {t_peak:.3f}D, "
+                    "Korringa above the peak; the gap equation closes near "
+                    f"{tc_gap:.2f}D and is not the published transition"
+                )
             rho_note = "zero at and below 0.40D, normal-state metal above it"
         else:
             delta0, mu = gap_03_edge, mu_03
@@ -989,6 +1060,12 @@ def main():
         write_nmr_public(DATA / f"relaxation_{tag}.dat", t_pub, noisy, err)
         write_trace(AUTHOR / f"relaxation_{tag}_clean.dat", t_pub, scaled_d, "temperature", "rate")
 
+        # 2026-10-31: continuous Halperin-Nelson tail above the published
+        # transition instead of a step. The amplitude scale is the fixed-density
+        # gap-equation temperature of each filling.
+        t_c0 = tc_gap if nu == 0.2 else transition_temperature_fixed_density(eps_k, nu, coupling)
+        rho_d = rho_d * halperin_nelson(temps_doped, tc, t_c0)
+        rho_note = rho_note + f"; Halperin-Nelson tail between {tc:.2f}D and the amplitude scale {t_c0:.2f}D (b = {HN_B}), zero at and below {tc:.2f}D"
         positive = rho_d > 0.0
         factor = np.ones_like(rho_d)
         side = np.random.default_rng(SEED + 17)

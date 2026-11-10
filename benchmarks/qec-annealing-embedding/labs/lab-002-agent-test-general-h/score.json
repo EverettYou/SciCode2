@@ -1,0 +1,62 @@
+{
+  "evaluator_revision": {
+    "label": "exploratory-qualitative-review-20261007",
+    "frozen_before_run": false,
+    "review": "results/reviewer-assessment.md",
+    "independent_checks": [
+      "scripts/reviewer_compiler_check.py",
+      "scripts/reviewer_witness_check.py"
+    ]
+  },
+  "reference_revision": null,
+  "purpose": "exploratory",
+  "evaluation_status": "completed",
+  "criteria": [
+    {
+      "criterion": "Reusable general matrix-to-model-to-embedding algorithm with fidelity, complexity, preprocessing, syndrome and matrix-update accounting",
+      "result": "pass",
+      "observed": "Sparse XOR-chain compiler; exact rational and certified floating paths; explicit ideal-Zephyr sufficient regime; tree allocation and complete scale/group conditions; charged reuse/update costs.",
+      "evidence": [
+        "RESEARCH_REPORT.md",
+        "TARGET_NOTES.md",
+        "results/compiler_validation.json",
+        "results/reviewer-compiler-check.json",
+        "results/independent_witness_validation.json"
+      ]
+    },
+    {
+      "criterion": "Efficient embedding evaluation and substantive theoretical comparison or certified limitation in a stated annealing model",
+      "result": "pass",
+      "observed": "Full finite-time closed-system hold bound, efficient exact/outward-rounded evaluator, strict repair comparison and initial-state reversal; all broad-example dynamics comparisons explicitly inconclusive.",
+      "evidence": [
+        "THEORY_CERTIFICATE.md",
+        "scripts/theory_checks.py",
+        "results/theory_validation.json",
+        "results/exact_and_pause_validation.json"
+      ]
+    },
+    {
+      "criterion": "Reproducible source, English report, independently checkable witnesses, structurally different inputs and automatic reference for improvement claims",
+      "result": "pass",
+      "observed": "Reusable CLI/modules and pinned packages, five matrix examples, 25 final same-target mappings, three seeded minorminer references per example, exact witnesses and independent readers.",
+      "evidence": [
+        "RESEARCH_REPORT.md",
+        "requirements.txt",
+        "results/experiment_summary.json",
+        "results/reviewer-witness-check.json",
+        "results/scientific_artifact_manifest.json"
+      ]
+    }
+  ],
+  "whole_task_result": "provisional-pass-in-declared-conditional-regime",
+  "failure_category": null,
+  "reviewer_uncertainty": "Evidence-based qualitative assessment without a frozen external gold answer. Mathematical arguments and independent witnesses support the declared scope. No formal A/B difficulty calibration or organizer acceptance inferred.",
+  "limitations": [
+    "conditional fixed-Hamiltonian hold with specified initial state; preparation and ramps excluded",
+    "all 25 ordinary-strength broad-example dynamics certificates inconclusive",
+    "template fit guarantee is sufficient and incurs worst-case quadratic hardware overhead",
+    "no device working graph, calibration noise or finite-device-precision measurements",
+    "no causal window integration or observable-class likelihood assessment"
+  ],
+  "configuration_limit": "Delegated Astra/ultra scientific solve under a fresh user-opened procedural parent; parent preflight was Sol/ultra, and a parent model switch was user-declared. No scientific author history or human scientific hints loaded."
+}

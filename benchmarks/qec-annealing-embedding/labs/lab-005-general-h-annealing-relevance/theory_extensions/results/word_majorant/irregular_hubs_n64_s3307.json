@@ -1,0 +1,324 @@
+{
+  "name": "irregular_hubs_n64_s3307",
+  "parameters": {
+    "n": 64,
+    "N": 372,
+    "eta": {
+      "numerator_hex": "0x3f9008e0e3741",
+      "denominator_hex": "0x100000000000000"
+    },
+    "D": {
+      "numerator_hex": "0xdf",
+      "denominator_hex": "0xba"
+    },
+    "rho": {
+      "numerator_hex": "0x77",
+      "denominator_hex": "0x800000000000000"
+    },
+    "curvature": {
+      "numerator_hex": "0xc4de1b7fa402ab",
+      "denominator_hex": "0x1f000000000000000"
+    },
+    "g0": {
+      "numerator_hex": "0x17201d7ecb1c0ed",
+      "denominator_hex": "0x80000000000000"
+    },
+    "g1": {
+      "numerator_hex": "0x17201d7ecb1c0ed",
+      "denominator_hex": "0x80000000000000"
+    },
+    "lambda0": {
+      "numerator_hex": "0x10efc8c6c10fabb23b",
+      "denominator_hex": "0x1000000000000000"
+    },
+    "lambda1": {
+      "numerator_hex": "0x21ddc4b941c0e65b5f",
+      "denominator_hex": "0x2000000000000000"
+    }
+  },
+  "certificate": {
+    "status": "strict_actual_original_optimum_order",
+    "duration": 0.0001220703125,
+    "duration_exact": {
+      "numerator_hex": "0x1",
+      "denominator_hex": "0x2000"
+    },
+    "relative_advantage_lower": 1.6664437019860845e-11,
+    "relative_advantage_lower_exact": {
+      "numerator_hex": "0x38a99ee6381c1e006255f2bed0a0022c1c2e9e70b798013447303ddb9096a079bc13c67c696639677bd55f796a6a5507598865be8438da0db39622b4bdfab717bd2f2e2e694aa13891f2d330e44b1ec16590c8c2554b5abb9de3cc9ef0fdbcd06e7130743600f789a3bda45ecc23da892f96926db8e1bcf3be5cb043291898d7750ee347f9ae0c50f555620ef21b025aa5e4cf926a1e30bf44f6a6b93c9c855f7ed6179c2c7665ab62c4ecb8007f11225eaaf636d74c0559352de5bb93ed67ed64c7de2adfd81ec9f2f54ef9308f6906ccf7ac42625bd5db12e0103009cbe8042c54ea03f3c1441395d6ce02a31bc7a0d5f6b8862f2960bc192f57bfc83bea4d607ce1ede7cc2f46e144787a68cad942567fbec7e5ec5afbd794893bccc024e00447353784df4aa00601ec54fdfbd209f5da12c2e018b7faf686ea12d5d2e4fd7916be54d1b95497e89360a6c9a25088b90f64f50b512445e816251b907ac24ead5bb3437bbb81542888e051630424406ab970deb543dbe1292bb05e8945decb9e30640591b9d82f07cabba2d835d017df836caf40c80a8179880825d165afcd6aac457c218a111b79c6b4afa34749532801a1b3e22e9a4f18675a13c9839168e310a98203f05fff6508ff97e12aa1d72ef3dcb1f55cdfda289e52782d36677143e5a27f4d990810b22edfe93edb4beeda76c485afb70a973661f2c8c978917e88e0134bb0297f8072517f3183f36f13bed9df435255c455b426e752619441dd917c5074ec265c724abe0796dabc9008df2c02a44e941de4a88b0957f9bc173a9d0864344e6eeccd5765da98a41530bbf8e881d717f1d376cc59b818889ebfeb87ee519322a64d81c01b1c9dfc9fbce02489b4c561702d09cd5101d55a16ec75c312f0ffbf9ea1138d44d7fdb730fc3d6d77612c557303f0e7aa73458a7204dafae8b100f42ba6742bc643336f624c73bac9e232d9f268c52d74f2805d7ffbca35d80c4620ec1568d706bd488b2f694ece4c36c46ebc4d5fdcfab08cb04b8c6b76846ca96a30231ad67646d8b570c0bb5c61fc9cbc7a3bf766906f84c99525961c3f4cdea17d96205d4642efa671509b0f04e6db3fca178aa27b623c5bf006ea15a9a74f323d87c7a2b45c7f72677e0e5df2ded2fd9d86aa65e4b235bc1f31e28b1ade4d76f8f10c3793ddce9e1682357822954196672f7e9ae1433d25abb1fdb2e6d72d1c9736737137ea8ffe004b810e0b64652e7605018f18986337f1de83497a979dc01dfd904dfb1963a3ca176d077ebd7979c5d3d52b7052ef18767fac357210af5b5006ed01c5a7167f00abc2df0a387000cedf2c16d37fb9f95443c03e6131018e2407baf660b8e13237990784339c7e8577aa9fe006244abe883681f5c6eaa454f16e45a4da6e02a4b5885d970e9de53a200b921885cc53632c3e797d66484cd4481707011af4c810e60374ffe5b3b070e4a450203ef439211eb97001d06923a677622639c900886168b678c4afb180e5da2f9fd74bcc8456f3fecdaab8326aa2fc526b9887609c25425edc1aeb6d5ceafbe3f3d83a41d6774f507809bf02bbc44e490e0ee964918f62bfa7e9084cebee97fb08090c862c66ee4ee1679bdbaa05fbb3c25817de749af88562c8f133b4d859e4f9ba4441cd9ff0cc270e873a95",
+      "denominator_hex": "0x317ac4b00a5c253140f43599b944e69d37f05a65aae68bdb7405cd8890ab3c7d705d0af028ace77f4911e44ec7b3c41e3f71015f9129c5608871130323620eb246ec5e052c015257af3ab5b812bb149a1416d3d4f7b80516e4e2283f72547f805cc9ff9bccd4df1ab75fbad431fd0e246901e8ab4281a5c38350a59ab8e2f47e46105e712a6e1f48cea6dace8121582e20b30bb781a7eb94422eaa761dd02dff45a331d017b6b1265b41c173b2112e7b1122bab102c79afefcdad2f2437f5520a6745bdf383274dddb0a11b0c22c711e9aeffc087d0776a7ea226021ae0401392ec57c5ad4f84bbfa9cc7aaf95dfa28a3b67c3e58ff7ffc13ad12264e1fc9d912d8d7da444dc7acfb40156421f4ac254a49c06db70e6a0a3288d73af3baac61781ba68e80fe8b5a222fe5b7fc4ccbd988ef42ac1fcd754a92bfdb335cf91e92e732e97a24a755f9c4471099af107bbbd73c68bc54532a25dd81cb3a93308bba02a5a1bf780127a941f1dee5233b8b9fbe0f1ad91c95590900e0fd7b2311388c89284e6dcc5abb3f18870340d98d21b68dbe18cb94dac15f85624dea1ddd3b58ccc9d06fa72535c155c80d15c0e94a21f7a0232b73138a2cca92f1d3ca6192e8b3335af2ba753b24bf18875d09bc1ab06f0d2186b217436020636eb4f482fff9adecb40099891a25f2842b365754d0e5b4dc884311c9475e7d6669c7a0f61cb138dffba1cebfe5af9a8f478732f585c9ad55cadda556ccec67f501e75cb3f71e20fc5e669a2d3430b297485f633922f2199ec999407d0a518eb3116eb9bf20af43bc38c33981f16f3d82377fa07d63fe031a7ccdd5cab771f63f7d2820849261644c2a5c8e9ae058dcb46f02808bfbf8c2b99e9dd25aab5b1089c853b7d262acdda1e4d33df438d9c0d537b76e8507b4f16da1c432d5032936a854860458cbfda482c340a11d158bcf17e9470c61901f403bd5b4fd81e03fde689bf1b8742ddcb7ccad7446f2623a3fd601bab7611fce3bf956d0f1b67cc2d839219aceed01ce9d2f217534cd9e0919f67a438ddb6ed9d34f0806e3ce26fa4788c8762d4019b5f3f0218f99fddeb21462ddcc90e0996e07a596cdd2e0530696f46983da8a20c6ebfacc1a5a871045cf7156a44054b9e1801d8a2d8facc6a25edda746d437a0515cf7b157d8561aa58de16805411385328d16934d93c11ad8c344094d4a795abdaee403375b547028546d1a23dcda3ed24009b37e9689c4c7c1279c7a041c8d1a97228f0b36aa0f58493d5f42d06af0b99d672f57655077a4cb666e52280e0975b55d1b0eb96820d819898df455d9d0e2f2abbd24fc4e9a4222264a6e9f7e9d371670e36b1e0380b24c85179167161af86f5a07dbeb442c2cc5831134ffeea308bbaf0b9fdccd95c4122748c89a67c9061f931712cd590e19b3d76e8d08c0bcfec331999366bdd309ff5078af7b4fc288dcd252abfbe7081034b35d357efba30d9cf4f8a2a68a5cb4aa2738185efd2341d08d736a7fe805fb726e5392d804acaee8a99f380000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+    },
+    "remainder_exact": {
+      "numerator_hex": "0xb4cbbf6e44f15e2a58602a5d381ce20b3c59d3ee596119efe9a23cb07e8bf0d672b4cb0bca3351d1f75fe2100dd90dfaa10d5014950e8e8e6928366d14510e12d64dbdaa6c1b05baee387773daa70c2b7627fd42087d0b2b1bb9b4a57583c1b3783da412c03763d5593d6ea9c6f3df22b9c9270f467d5619a477217441cb4c89ede096d06129dbbcb5d409ab0c0c0b94fab514892450f891ef5f34e56c7ad970911b62bc60db1f2601bf759248916eca4bf1d9386cb4a6d1fe8052fa5e263f5174f5ad704e482fe29f5f5dcc58f48e68856e105551facd71943bf29f98ce01fd11c2c2fc1348032ff357da9c6342be976286057a7e17838957a0c772e00133b92cac7f44307fce9b672dd62b0a3f998abdeeea8d039e1e65801bb62b5087c0e6b35f79d61fdd39b6168c648e78a9c333d7350e3df4d4410394dec81ee3c385f94445d6b1a06b138cf994869cfca764050f25040eb56db3a6497271b5fc8d206520a6d38b765edcfee4e8686c2554824d99065e2372b78f6deb36057456f91345a0eb6d2483a89101ca0a991bd18181911c1eb6a6ba0fa4453786a9fd7e20ce1056e24250e2d81ec115a6e1ddc1ee64b18d9a8ca01bcb31c27be0ce45e213f675980d40738e6314515cd835c6b3b108fa43b6f077bea2dd6af08d13906667b9719a1b1f1080ca3038021d850c13d52ee1429d23d94d06c1fb99a5eeff2898b951d2f276534b08718442fb8cf948d13c1435da644984b3505e03d6830c3ba2a7935a746ae0c93d0133b043cf556780bcff30662bdf94e5e7b8c9bec278fc1c34bcfcf556dbf079529fb28adbf2c44fe1a67e70999b98fb74e6b7435e4530adeca3eb70159a719b3610e1691c8f2891029e7eb1f542e4289178d8b95f3165bc076ce4b6d0d785da596cb93da2d1a67dae0b22d9a692abf151606a3aa907b2eb70160685b6d28e0ff5521d738296def86ef91c3d5226b6beaeb08d6f885781c9ce8cda9d7df23fac41306ef4083e3f23fe046a8fa257f149792a121364d8f300bc5704fc026874d6fa94286aa388cd755d1883a8bf6aaa2463d8c643d8e5fdaf9c019f53f6a870578ba650ffc36b8a7d83d84b01a0d63ca34a5625514033a6aa7454b9b46a8e35c6a846cc07c228a66d29adbd84232a6b5e363e8f88ad3d4dde6ffc8eb1d9156359930de0ab029260e978549f5293d4ee9f7dbcf1d7e6b0fee5d52042d529fc2a74a10f71317f5b519ea8d12b5e1ea706218f8e775b96206810e20dcd0e89636348b561ac48cfdd889043b1cc827796b568babd79dc3c8511655b817c0759db6c6ae05be30556c0d4e72de8338503f57c5c412cd7d6ed8826e8685e0000c3983e5d742a1ee8b9f35c08bad19039f84004b7de271508890a3eef9f7719edde4411b9d09e2b9382aa042971cc449648aeb8a4d1e33ee293ecf1bde78cd8115fd8b9e469708433a55ffc6bac3cd05ae379dee855e7d83c91dc3eff6695b0789547c120cdb2e939c8b4be839771dbb8ad8ee1436afb780f093b4fa63f6a973dc92e707dc25f490d665160f4ae93c6db709d94c7192a92c411db1e7946734c6b4443fd7983acf0368ff31dd8c908ffbb7442a042398c185ec4c2df89d7b255cf9fad39f1f179077cf3fb003dc301c6abc05c1e21e76d9ab38e031943bcacf36135",
+      "denominator_hex": "0x1989afd6bb0644be952334705f9f6ec4c20870b89a45717986348b1d31e4c461c6619208570eeb1867c72b837fd8a7496b1108f784bab873e353229643cf8374c9c4518f0e744b8818605dca5c3f868112a06d55250423a8b832a96b11b7ffbe1f5fffcc48afef0587ef582b74a3a433d319c268e884fab77d94faa26ff10251b08c93d74fb4b54ede459a3908d767519d43a2f35bb181d8e85a266e830017bd8f4bf8ad7798195e1e958d22f08cff3742a691e7bf5ec39c61793311af397642666d9ac5ca6c9f6a3f8111637cfe29de3f739adb173da898bae873ae494c63ba6ab8823f65a9716b2e590583ea41e04758779eea18c21063bb42a6659dedbcae06feb475d0f5ecce4c63c96c733f5c0aa78a561eade2636cfc27f9a4c3f50b66f8a246a952889fcf8deea2d6971f59990ff9e48527a8f1e3b39bb755946c5751c7d5fbae9a0b080e96f004f5219060e5e92cab3c86cfcfac4e826d3e8df3fdbe0557cc5eb5b6f4f19c728b8543fc3ef59d63f67ccb02df4217c61cbf1112571d32d93d592c3796ae35e754ac2dd7cc1516a5f60d0f508f77ea659c328301ea171f48c9cb95d87197698ccf274154f8d67085437753360171e3b538615dfc7b1e8e0b311ec9f9a658beba0b4260e816352174b1c3ae2b76b6b8e289f75f1083ecd616529999115c1014c79665e9f638f5516fc0195912d17fea878a91945381967ad6919b508347baa9c8803b734661582c0ecd57ea069c456b000fb8aaf77495b58f6eaa227d8df53eafc1033364395baa489154a931e1993f95351ec419d41af58e37d890942ce0f3af35aa56a020f7d79069bc92ed24b55ce3014b5f1d7f033c436e572e494d3068eace88469483e53fcb4f69e1e47ecefc2fc0a2d53cfd5178d5d5441022ddbbe5d881c9c23a0e184ddbed8e06df11d8790afc10a8069491b1a333a219b65f5942d5fa08a84ef8c001ee1e9cd2a42317b0cb395887e072798abb45d0bd7f0a23176b691eb08d69bfdec0bc6ae4dabbf67574b269c594b415962a5e9e9b4729957b9054c282f30f48e1846351abcfb57e2db3e2c7a73aa2c5cdf09104f7ac58533cfee5910f80d2003f25e59b729752cb10246f9bb1e0066ab5827476887c655945b878e94d0e4114a61d3b46b2fe26451fec9f3022d39f8720c3a7feb87478f40f877c0a5b77e8db42caf1fc8219a3e544425d54fba816a28b7bf987133d6ca7e27cb6d5936d619ef80e0c576fcc8a929e2e568442fc4b2e2a67b60a057c5dafc82c5cfe771005fcd1c7b87f23a0c3405e24974b9d5b24d44d5374167f3addae3e3e62b8726193b53f58ae9cc8baa74b6c970bd398babfb666bd037494c21644886c1d76f0326b1c5dbe30626d8dcfe556cf01b5acdbf8060de799cd50f450a5bf33e57055edb5dffc7c9d827ebe63ed06f30ccebbe51079e8d367da061f94f7b845f5250292a99382a7d3ffde298ce8ed0301b9c60d84917341d3b2caa826dc32d042d9c619e9594ee2b0dad5efad45c17e911fbe1616288999c80000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+    },
+    "menu_index": 13
+  },
+  "schedule_coefficients": {
+    "2": [
+      [
+        1,
+        {
+          "numerator_hex": "0x20",
+          "denominator_hex": "0x3"
+        }
+      ]
+    ],
+    "4": [
+      [
+        3,
+        {
+          "numerator_hex": "0x8",
+          "denominator_hex": "0x15"
+        }
+      ],
+      [
+        2,
+        {
+          "numerator_hex": "0x8d10",
+          "denominator_hex": "0x13b"
+        }
+      ],
+      [
+        1,
+        {
+          "numerator_hex": "0x8000",
+          "denominator_hex": "0x7"
+        }
+      ]
+    ],
+    "6": [
+      [
+        5,
+        {
+          "numerator_hex": "0x4",
+          "denominator_hex": "0x1ef"
+        }
+      ],
+      [
+        4,
+        {
+          "numerator_hex": "0x691e8",
+          "denominator_hex": "0xcb07"
+        }
+      ],
+      [
+        3,
+        {
+          "numerator_hex": "0x14031bc",
+          "denominator_hex": "0x43ad"
+        }
+      ],
+      [
+        2,
+        {
+          "numerator_hex": "0x20432ab0",
+          "denominator_hex": "0x289b"
+        }
+      ],
+      [
+        1,
+        {
+          "numerator_hex": "0x4000000",
+          "denominator_hex": "0x63"
+        }
+      ]
+    ],
+    "8": [
+      [
+        7,
+        {
+          "numerator_hex": "0x1",
+          "denominator_hex": "0x24ea"
+        }
+      ],
+      [
+        6,
+        {
+          "numerator_hex": "0x46861d",
+          "denominator_hex": "0xd88277"
+        }
+      ],
+      [
+        5,
+        {
+          "numerator_hex": "0x614f539",
+          "denominator_hex": "0xe6f19"
+        }
+      ],
+      [
+        4,
+        {
+          "numerator_hex": "0x1556e4d1f4",
+          "denominator_hex": "0x81e7e1"
+        }
+      ],
+      [
+        3,
+        {
+          "numerator_hex": "0x740237b597",
+          "denominator_hex": "0x11521e"
+        }
+      ],
+      [
+        2,
+        {
+          "numerator_hex": "0x219d81361d05",
+          "denominator_hex": "0x482b7d"
+        }
+      ],
+      [
+        1,
+        {
+          "numerator_hex": "0x800000000",
+          "denominator_hex": "0x2a3"
+        }
+      ]
+    ],
+    "10": [
+      [
+        9,
+        {
+          "numerator_hex": "0x1",
+          "denominator_hex": "0x107034"
+        }
+      ],
+      [
+        8,
+        {
+          "numerator_hex": "0x613f7ef",
+          "denominator_hex": "0x2be72b616"
+        }
+      ],
+      [
+        7,
+        {
+          "numerator_hex": "0x3836201dd",
+          "denominator_hex": "0x9c197dcc"
+        }
+      ],
+      [
+        6,
+        {
+          "numerator_hex": "0xc79227edba79",
+          "denominator_hex": "0x3004d77281"
+        }
+      ],
+      [
+        5,
+        {
+          "numerator_hex": "0x2fed331de1a267",
+          "denominator_hex": "0x266a45f534"
+        }
+      ],
+      [
+        4,
+        {
+          "numerator_hex": "0x7432051b5ca41b",
+          "denominator_hex": "0x27666f22e"
+        }
+      ],
+      [
+        3,
+        {
+          "numerator_hex": "0x6a3da0bf49d9079",
+          "denominator_hex": "0x1d44c7964"
+        }
+      ],
+      [
+        2,
+        {
+          "numerator_hex": "0x3c7040fbb36dd5a",
+          "denominator_hex": "0x1b046977"
+        }
+      ],
+      [
+        1,
+        {
+          "numerator_hex": "0x400000000000",
+          "denominator_hex": "0x74e5"
+        }
+      ]
+    ],
+    "12": [
+      [
+        11,
+        {
+          "numerator_hex": "0x1",
+          "denominator_hex": "0xa42aa90"
+        }
+      ],
+      [
+        10,
+        {
+          "numerator_hex": "0x286407ef",
+          "denominator_hex": "0x39d9f27efa8"
+        }
+      ],
+      [
+        9,
+        {
+          "numerator_hex": "0x80b4a147542",
+          "denominator_hex": "0x24e90e0d03d3"
+        }
+      ],
+      [
+        8,
+        {
+          "numerator_hex": "0x3e07a0fad8978",
+          "denominator_hex": "0xe87040999c3"
+        }
+      ],
+      [
+        7,
+        {
+          "numerator_hex": "0x45dadbd4bdef8c3f",
+          "denominator_hex": "0x2138263ee9d78"
+        }
+      ],
+      [
+        6,
+        {
+          "numerator_hex": "0xd6ba77741b62057fbb",
+          "denominator_hex": "0x19f3dde126b05c"
+        }
+      ],
+      [
+        5,
+        {
+          "numerator_hex": "0x141a7ce193f91610279",
+          "denominator_hex": "0x11cbcb588f8ee"
+        }
+      ],
+      [
+        4,
+        {
+          "numerator_hex": "0x288f26f5ff73f2641964",
+          "denominator_hex": "0x1c4fdac712eef"
+        }
+      ],
+      [
+        3,
+        {
+          "numerator_hex": "0x26b4c9dd8d9eac153a027",
+          "denominator_hex": "0x24e90e0d03d30"
+        }
+      ],
+      [
+        2,
+        {
+          "numerator_hex": "0x832d14aa479cf3ad85",
+          "denominator_hex": "0x13efbc54b8"
+        }
+      ],
+      [
+        1,
+        {
+          "numerator_hex": "0x100000000000000",
+          "denominator_hex": "0xeec9b"
+        }
+      ]
+    ]
+  },
+  "seconds": 0.13710879208520055
+}

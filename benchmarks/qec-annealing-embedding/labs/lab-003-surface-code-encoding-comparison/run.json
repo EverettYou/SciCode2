@@ -1,0 +1,30 @@
+{
+  "status": "complete",
+  "type": "supervised scientific follow-up, not autonomous model test",
+  "completed_utc": "2026-10-08T08:06:18.405141+00:00",
+  "user_request": "那你针对 surface hole 的研究一下两种编码方式，至少跟自己比嘛，在 Quantum anealing 的框架中间，谁优谁劣？",
+  "interpreted_scope": "surface code, ideal measurements, one CSS error sector, compare sequential-XOR and stabilizer encodings within quantum annealing",
+  "python": "3.13.2",
+  "platform": "macOS-26.5.1-arm64-arm-64bit-Mach-O",
+  "versions": {
+    "numpy": "2.2.6",
+    "scipy": "1.15.3",
+    "networkx": "3.5",
+    "numba": "0.61.2",
+    "minorminer": "0.2.21",
+    "dwave-networkx": "0.8.18",
+    "dwave-system": "1.34.0",
+    "matplotlib": "3.10.1"
+  },
+  "qpu_used": false,
+  "live_device_export": false,
+  "prior_code_used": true,
+  "source_dependencies": {
+    "benchmarks/qec-annealing-embedding/labs/lab-002-agent-test-general-h/scripts/compiler.py": {
+      "sha256": "9a30b404ee8362055c1b90aa86d6f3de9c9da2f0eeead39fd2bf032e95548049"
+    },
+    "benchmarks/qec-annealing-embedding/labs/lab-002-agent-test-general-h/scripts/embedding.py": {
+      "sha256": "a1b32a45a809bfc6d239a167984ae8e78aa27a7d44e89361dcff5b6e799725a8"
+    }
+  }
+}

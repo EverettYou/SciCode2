@@ -1,0 +1,75 @@
+benchmark_id: qec-annealing-embedding
+title: 'Quantum Error-Correction Decoding on D-Wave: Formulation and Embedding'
+stage: problem-opened
+paper_ids: []
+summary: Study the joint cost of exact decoding-to-QUBO reductions and Advantage2 embeddings without requiring
+  QPU access.
+idea_sources:
+- source_path: problem/USER_REQUEST.md
+  source_field: user-provided-research-question
+  role: primary-question
+- source_path: problem/references/DWaveProposal.pdf
+  source_field: user-provided-research-question
+  role: proposal-context
+research_question: Construct and validate resource-efficient quadratic encodings and minor embeddings
+  of check-matrix-defined quantum decoding problems on D-Wave Advantage2 connectivity, and determine which
+  formulation and embedding choices remain favorable under hardware constraints.
+scientific_domain:
+- quantum error correction
+- quantum annealing
+- graph minor embedding
+expected_outcomes:
+- A representation with fewer logical variables may require more physical qubits or a worse usable coefficient
+  scale.
+- A reproducible resource frontier or documented capacity limitation can guide later QPU experiments.
+- Periodic boundaries and logical degeneracy may materially alter the correct formulation and embedding
+  cost.
+expected_outputs:
+- A faithful matrix-to-QUBO construction and independently valid Advantage2 embeddings.
+- A matched-budget resource comparison and portable technical-review package.
+- Reusable source code and an evidence-backed English research note.
+evidence_requirements:
+- Exact small-case ground-state projection, syndrome and logical-equivalence checks.
+- Independent embedding and physical-coefficient validation on versioned graphs.
+- Separate controlled formulation, embedding and sample-recovery comparisons.
+estimated_active_hours: null
+workstation_feasible: uncertain
+expert_review: pending
+expert_notes: ''
+source_mode: user-provided-problem
+problem_sources:
+- path: problem/USER_REQUEST.md
+  sha256: 501fe79c846497a654b4c7c4df45684362a61d27a3e6b2bff76d3e1343a9191c
+  origin: User chat request on 2026-10-07, recorded in English
+- path: problem/references/DWaveProposal.pdf
+  sha256: 8396ef12e56f8d0a5b6a402b54535b989c47a4c08419214bf1e48106665100ca
+  origin: /Users/home/Library/Containers/com.apple.mail/Data/Library/Mail Downloads/5A3B490D-B2BB-4144-8A69-C7089AD538C1/DWaveProposal.pdf
+- path: problem/DESIGN_REVISION.md
+  sha256: 1d4dd9be9809be882550381cca3efac8e3b108e6f42602f7209b7af2d409a271
+  origin: User design audit and scope clarification; T-0007 M001 and M003
+authorization:
+  origin: User chat on 2026-10-07
+  scope: Question design, public-source review, create-benchmark design audit and document/PDF repair.
+    The user explicitly defers scientific experiments, reference pilots and model screening; no external
+    submission.
+public_target: null
+resource_budget:
+  classical_search_budget: null
+  peak_memory_limit_bytes: null
+  qpu_access: unavailable; not required
+pilot_status: not started; explicitly deferred beyond question-design phase
+design_preparation:
+  mode:
+  - workspace-revision
+  - proposal-preparation
+  status: standalone-question-draft
+  audit: evaluation/AUDIT.md
+  task_version: 0.2-design
+  frozen: false
+  example_bank_comparison: pending-access
+  reference_solution: not developed; deferred
+  model_trials: not run
+  difficulty: untested
+  active_prompt_variants:
+  - A
+  screening: deferred by user; not run

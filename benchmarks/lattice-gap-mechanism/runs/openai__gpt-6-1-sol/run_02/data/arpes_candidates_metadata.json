@@ -1,0 +1,37 @@
+{
+  "energy_origin": "gap midpoint; equals mu at half filling. Doped mu unknown except as assumed by BCS candidate.",
+  "momentum_path": [
+    [
+      0,
+      0
+    ],
+    [
+      0.5,
+      0
+    ],
+    [
+      0.5,
+      0.5
+    ],
+    [
+      0,
+      0
+    ]
+  ],
+  "points": 661,
+  "energy_range": [
+    -10,
+    10
+  ],
+  "statuses": {
+    "half": "accepted local spectral fit with correct filling; conditional momentum assignment",
+    "nu_0.3": "rejected candidate shown solely to document what was computed; not a prediction",
+    "nu_0.2": "accepted line-shape fit but density tension; conditional illustration"
+  },
+  "intensity": "physical-c spectral function per spin with constant matrix element; measurement backgrounds removed",
+  "widths": [
+    0.07376847469686423,
+    0.23389193315023682,
+    0.07835137825983395
+  ]
+}

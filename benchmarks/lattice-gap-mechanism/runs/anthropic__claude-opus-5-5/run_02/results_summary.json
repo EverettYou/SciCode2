@@ -1,0 +1,134 @@
+{
+ "hamiltonian": "H = -t sum_NN c^dag c - t' sum_NNN c^dag c + U sum_i n_up n_dn - mu N  (square lattice, one site per cell)",
+ "coefficients_D": {
+  "t": [
+   1.0,
+   0.01
+  ],
+  "tprime": [
+   0.197,
+   0.004
+  ],
+  "U_half_filling": [
+   -12.0,
+   0.5
+  ],
+  "U_eff_nu0.3": [
+   -8.0,
+   1.5
+  ],
+  "U_eff_nu0.2": [
+   -6.0,
+   0.2
+  ]
+ },
+ "measured": {
+  "STS_gap_half": [
+   -3.99,
+   4.01
+  ],
+  "replica_splitting": [
+   11.99864678647946,
+   0.006211387162209723
+  ],
+  "Delta_nu0.2": [
+   1.9586829132095782,
+   0.002426555179899259
+  ],
+  "nu0.3_gap_FS": [
+   3.4925789096468804,
+   0.03495630526116731
+  ],
+  "nu0.3_gap_zone": [
+   5.057945771063852,
+   0.009272176304057573
+  ],
+  "NMR_activation_half": [
+   5.538280829114641,
+   0.13462566988854624
+  ],
+  "NMR_pseudogap_nu0.3": {
+   "Delta0": 2.417993479524073,
+   "Tstar": 2.269217833791499
+  },
+  "NMR_HS_nu0.2_Tc": 1.1756679940512025,
+  "rho_activation_half": [
+   3.7217458104276844,
+   0.0485030241329568
+  ],
+  "Tc_nu0.3_bracket": [
+   0.325,
+   0.4
+  ],
+  "Tc_nu0.2_bracket": [
+   1.075,
+   1.15
+  ],
+  "highT_band": {
+   "t": 1.0144467675342066,
+   "tp": 0.20096345497342663,
+   "filling": 0.3029890625
+  }
+ },
+ "phases_low_to_high_T": {
+  "nu=1/2": [
+   "s-wave SC (T<~0.08, predicted)",
+   "insulating liquid of preformed local pairs (0.08<T<~5.5)",
+   "normal metal"
+  ],
+  "nu~0.3": [
+   "s-wave SC (T<0.36)",
+   "pseudogap metal of preformed pairs (0.36<T<~2.3)",
+   "normal metal"
+  ],
+  "nu~0.2": [
+   "BCS s-wave SC (T<1.1)",
+   "Fermi-liquid metal"
+  ]
+ },
+ "zeros_nu_half": {
+  "Gamma_side_fraction": 0.03460648148148148,
+  "bootstrap_median": 0.03797067901234568,
+  "68pc": [
+   0.0005077160493827166,
+   0.069904012345679
+  ],
+  "P_closed_curve": 0.845,
+  "equal_weight_limit": 0.31408179012345677,
+  "compare_nu": 0.5
+ },
+ "arpes_numbers": {
+  "\u22480.3": {
+   "kF_path_positions": [
+    0.30625,
+    1.4088286994470924
+   ],
+   "kF_GX": 0.30665,
+   "vF_GX": 2.655186453128925,
+   "xi_FS": 0.24199083816195371
+  },
+  "\u22480.2": {
+   "kF_path_positions": [
+    0.25416666666666665,
+    1.4547176350993158
+   ],
+   "kF_GX": 0.255,
+   "vF_GX": 2.8065700141400627,
+   "xi0": 0.45610189160422526,
+   "kF_diag": 0.1776,
+   "vF_diag": 2.995429405492616
+  },
+  "1/2": {
+   "direct_gap_min": 11.998646786479458,
+   "direct_gap_max": 11.998646786479462,
+   "lower_band_top": -3.992832221240594,
+   "upper_band_bottom": 4.011067329733908
+  }
+ },
+ "ed_pseudospin": {
+  "J": 0.3333333333333333,
+  "Jp": 0.012936333333333334,
+  "anisotropy": 0.038809,
+  "pair_hopping": 0.16666666666666666
+ }
+}

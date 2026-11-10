@@ -1,0 +1,704 @@
+{
+  "model": "exact finite-temperature H_spin=J1 sum_NN S.S+J2 sum_NNN S.S; Hubbard leading strong-coupling spin projection",
+  "physical_hubbard_parameters": {
+    "t_D": 0.9970683327571924,
+    "tprime_D": 0.19534428112180086,
+    "U_D": 11.493525192155293,
+    "J1_D": 0.34598445422671337,
+    "J2_D": 0.013280307835593625,
+    "U_source": "data/hubbard_gap_fits.json; repulsive 10-site canonical charge-gap match"
+  },
+  "cluster": {
+    "site_count": 10,
+    "dimension": 1024,
+    "sector_dimensions": [
+      1,
+      10,
+      45,
+      120,
+      210,
+      252,
+      210,
+      120,
+      45,
+      10,
+      1
+    ],
+    "nearest_bonds": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        0,
+        7
+      ],
+      [
+        0,
+        9
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        1,
+        8
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        2,
+        5
+      ],
+      [
+        2,
+        9
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        3,
+        6
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        4,
+        7
+      ],
+      [
+        5,
+        6
+      ],
+      [
+        5,
+        8
+      ],
+      [
+        6,
+        7
+      ],
+      [
+        6,
+        9
+      ],
+      [
+        7,
+        8
+      ],
+      [
+        8,
+        9
+      ]
+    ],
+    "next_nearest_bonds": [
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        4
+      ],
+      [
+        0,
+        6
+      ],
+      [
+        0,
+        8
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        1,
+        5
+      ],
+      [
+        1,
+        7
+      ],
+      [
+        1,
+        9
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        2,
+        6
+      ],
+      [
+        2,
+        8
+      ],
+      [
+        3,
+        5
+      ],
+      [
+        3,
+        7
+      ],
+      [
+        3,
+        9
+      ],
+      [
+        4,
+        6
+      ],
+      [
+        4,
+        8
+      ],
+      [
+        5,
+        7
+      ],
+      [
+        5,
+        9
+      ],
+      [
+        6,
+        8
+      ],
+      [
+        7,
+        9
+      ]
+    ],
+    "maximum_eigenvector_residual_in_J1_units": 3.7499942331669445e-14,
+    "finite_cluster_triplet_gap_over_J1": 0.8368001889359782
+  },
+  "observable": "S_loc^+-(omega)=Z^-1/N sum_i,m,n exp(-E_n/T)|<m|S_i+|n>|^2 L_eta(omega-E_m+E_n); 1/T1 proportional to S_loc(omega_N~0)",
+  "frequency_D": 0.0,
+  "widths_D": [
+    0.02,
+    0.05,
+    0.1
+  ],
+  "source": "data/measurements.json, half-filled NMR raw 1/T1 and uncertainty",
+  "fixed_J_raw_rate_fits": [
+    {
+      "J1_D": 0.34598445422671337,
+      "J2_D": 0.013280307835593625,
+      "amplitude": 8.391106034023895e-05,
+      "eta_D": 0.02,
+      "chi_square": 244.014046246689,
+      "degrees_of_freedom": 17,
+      "reduced_chi_square": 14.353767426275823,
+      "temperature_range_D": [
+        0.4472,
+        4.4318
+      ],
+      "n_points": 18,
+      "J1_free": false,
+      "triplet_gap_D": 0.289519856665825,
+      "predicted_raw_rate_at_measurement_temperatures": [
+        8.309033826246213e-05,
+        8.521303796907565e-05,
+        8.719836774752868e-05,
+        8.906059800158436e-05,
+        9.082064352175082e-05,
+        9.24925327205155e-05,
+        9.409450913829898e-05,
+        9.564988662823502e-05,
+        9.717965008107937e-05,
+        9.870364635686685e-05,
+        0.0001002412737963192,
+        0.00010181458207573245,
+        0.00010343819819408833,
+        0.0001051304631557357,
+        0.00010690451244005486,
+        0.0001087737434581587,
+        0.00011035798572254352,
+        0.00011074996660942466
+      ],
+      "normalization_note": "Unknown hyperfine/relaxation scale A profiled in raw 1/T1 likelihood; quoted independent errors, no logarithmic fit."
+    },
+    {
+      "J1_D": 0.34598445422671337,
+      "J2_D": 0.013280307835593625,
+      "amplitude": 0.00015814989806823356,
+      "eta_D": 0.05,
+      "chi_square": 243.89524558835313,
+      "degrees_of_freedom": 17,
+      "reduced_chi_square": 14.346779152256067,
+      "temperature_range_D": [
+        0.4472,
+        4.4318
+      ],
+      "n_points": 18,
+      "J1_free": false,
+      "triplet_gap_D": 0.289519856665825,
+      "predicted_raw_rate_at_measurement_temperatures": [
+        8.299790393081471e-05,
+        8.535683047308146e-05,
+        8.756853866739555e-05,
+        8.963684281565623e-05,
+        9.157251306230683e-05,
+        9.337865375906549e-05,
+        9.506358766979637e-05,
+        9.664181517962943e-05,
+        9.812632704755146e-05,
+        9.953027887162762e-05,
+        0.00010086778197292236,
+        0.00010215617712344414,
+        0.00010340744335440287,
+        0.00010463730437069466,
+        0.00010585802620144608,
+        0.00010708248544532527,
+        0.00010808046537297583,
+        0.00010832264568681287
+      ],
+      "normalization_note": "Unknown hyperfine/relaxation scale A profiled in raw 1/T1 likelihood; quoted independent errors, no logarithmic fit."
+    },
+    {
+      "J1_D": 0.34598445422671337,
+      "J2_D": 0.013280307835593625,
+      "amplitude": 0.00023681350125638408,
+      "eta_D": 0.1,
+      "chi_square": 243.77700188464692,
+      "degrees_of_freedom": 17,
+      "reduced_chi_square": 14.339823640273348,
+      "temperature_range_D": [
+        0.4472,
+        4.4318
+      ],
+      "n_points": 18,
+      "J1_free": false,
+      "triplet_gap_D": 0.289519856665825,
+      "predicted_raw_rate_at_measurement_temperatures": [
+        8.307938056777649e-05,
+        8.553060302307245e-05,
+        8.786903751904308e-05,
+        9.009103770603665e-05,
+        9.219958639065683e-05,
+        9.418855537978766e-05,
+        9.605679111655065e-05,
+        9.780970184154758e-05,
+        9.945103021889242e-05,
+        0.00010098496862025985,
+        0.00010241730259385651,
+        0.00010375785933499132,
+        0.0001050115140971679,
+        0.00010618774490885398,
+        0.00010729330298058778,
+        0.00010833625264460959,
+        0.00010913677128313476,
+        0.00010932441992063326
+      ],
+      "normalization_note": "Unknown hyperfine/relaxation scale A profiled in raw 1/T1 likelihood; quoted independent errors, no logarithmic fit."
+    }
+  ],
+  "free_J_raw_rate_fits_all_T": [
+    {
+      "J1_D": 6.269367419558255,
+      "J2_D": 0.24064413371479876,
+      "amplitude": 2.0440992368465665,
+      "eta_D": 0.02,
+      "chi_square": 140.6049999242209,
+      "degrees_of_freedom": 16,
+      "reduced_chi_square": 8.787812495263806,
+      "temperature_range_D": [
+        0.4472,
+        4.4318
+      ],
+      "n_points": 18,
+      "J1_free": true,
+      "triplet_gap_D": 5.246207841195414,
+      "predicted_raw_rate_at_measurement_temperatures": [
+        0.00012829869310625384,
+        0.00013809500069771684,
+        0.00015699216489820864,
+        0.00019344046337008557,
+        0.0002639914389745592,
+        0.00040034744598572823,
+        0.0006634488416096407,
+        0.0011714229490819251,
+        0.002150755748019858,
+        0.004031518819350608,
+        0.0076191192084097475,
+        0.01440582775260881,
+        0.027006173796392273,
+        0.04997442277164823,
+        0.0921867571335319,
+        0.18245687474453984,
+        0.3790125470461737,
+        0.4671923786422103
+      ],
+      "normalization_note": "Unknown hyperfine/relaxation scale A profiled in raw 1/T1 likelihood; quoted independent errors, no logarithmic fit.",
+      "J1_profile_68_D": [
+        6.019026646107101,
+        6.513577956050022
+      ],
+      "J1_profile_95_D": [
+        5.766274734558823,
+        6.748733339939138
+      ],
+      "profile_interval_note": "Contiguous profile-likelihood interval around the best minimum; conditional on the finite-cluster response and chosen broadening, not a microscopic uncertainty."
+    },
+    {
+      "J1_D": 4.344166212731793,
+      "J2_D": 0.1667469849852252,
+      "amplitude": 0.2741637605617138,
+      "eta_D": 0.05,
+      "chi_square": 204.17866682400205,
+      "degrees_of_freedom": 16,
+      "reduced_chi_square": 12.761166676500128,
+      "temperature_range_D": [
+        0.4472,
+        4.4318
+      ],
+      "n_points": 18,
+      "J1_free": true,
+      "triplet_gap_D": 3.635199107583257,
+      "predicted_raw_rate_at_measurement_temperatures": [
+        0.00010282468536789952,
+        0.00011474114542050161,
+        0.00013348852329620397,
+        0.0001629708980798748,
+        0.0002094467051062108,
+        0.00028247253823329954,
+        0.00039677079974923684,
+        0.0005751971807192879,
+        0.0008521446711170751,
+        0.001278564772004725,
+        0.0019302710733292263,
+        0.0029303199636176573,
+        0.004511969783004649,
+        0.007280888339018264,
+        0.013076444307572984,
+        0.02701799132396,
+        0.049047398171758134,
+        0.055652166934841554
+      ],
+      "normalization_note": "Unknown hyperfine/relaxation scale A profiled in raw 1/T1 likelihood; quoted independent errors, no logarithmic fit.",
+      "J1_profile_68_D": [
+        3.9658941401853025,
+        4.711532612443238
+      ],
+      "J1_profile_95_D": [
+        3.5708957214395043,
+        5.075116843696185
+      ],
+      "profile_interval_note": "Contiguous profile-likelihood interval around the best minimum; conditional on the finite-cluster response and chosen broadening, not a microscopic uncertainty."
+    },
+    {
+      "J1_D": 1.3483027582664975,
+      "J2_D": 0.051753411075590915,
+      "amplitude": 0.005695048260604977,
+      "eta_D": 0.1,
+      "chi_square": 224.9374561807382,
+      "degrees_of_freedom": 16,
+      "reduced_chi_square": 14.058591011296137,
+      "temperature_range_D": [
+        0.4472,
+        4.4318
+      ],
+      "n_points": 18,
+      "J1_free": true,
+      "triplet_gap_D": 1.1282600028603056,
+      "predicted_raw_rate_at_measurement_temperatures": [
+        9.111793250699385e-05,
+        0.00010259525120036651,
+        0.00011763959851690393,
+        0.00013776261235375693,
+        0.00016519961755926663,
+        0.0002029280613966575,
+        0.0002548875021703853,
+        0.0003260404270954383,
+        0.00042154813081585353,
+        0.0005449831450295025,
+        0.0006952204780901849,
+        0.0008633496282710605,
+        0.0010312493319108353,
+        0.001179418782500024,
+        0.0012973492554462617,
+        0.0013897592027372761,
+        0.0014556435183538143,
+        0.0014714294648334523
+      ],
+      "normalization_note": "Unknown hyperfine/relaxation scale A profiled in raw 1/T1 likelihood; quoted independent errors, no logarithmic fit.",
+      "J1_profile_68_D": [
+        1.1531997029236694,
+        1.61621000551599
+      ],
+      "J1_profile_95_D": [
+        0.9819455777483521,
+        3.972653589269209
+      ],
+      "profile_interval_note": "Contiguous profile-likelihood interval around the best minimum; conditional on the finite-cluster response and chosen broadening, not a microscopic uncertainty."
+    }
+  ],
+  "free_J_raw_rate_fits_T_le_2": [
+    {
+      "J1_D": 5.997394573585031,
+      "J2_D": 0.23020469612353592,
+      "amplitude": 1.492839032819972,
+      "eta_D": 0.02,
+      "chi_square": 75.16571269422904,
+      "degrees_of_freedom": 12,
+      "reduced_chi_square": 6.263809391185753,
+      "temperature_range_D": [
+        0.4472,
+        1.6596
+      ],
+      "n_points": 14,
+      "J1_free": true,
+      "triplet_gap_D": 5.018620912299564,
+      "predicted_raw_rate_at_measurement_temperatures": [
+        0.00010674877301811367,
+        0.00011795385533426494,
+        0.00013895789359958063,
+        0.00017832652372119982,
+        0.00025237480812386506,
+        0.00039142733701527785,
+        0.0006520810537039797,
+        0.0011408591206205742,
+        0.0020557041908727818,
+        0.003760299785572841,
+        0.006912179270751322,
+        0.01268565424602003,
+        0.02306189895765007,
+        0.041437265775757605,
+        0.07474497922323005,
+        0.1469211683063419,
+        0.30419256288302027,
+        0.37302772408275586
+      ],
+      "normalization_note": "Unknown hyperfine/relaxation scale A profiled in raw 1/T1 likelihood; quoted independent errors, no logarithmic fit.",
+      "J1_profile_68_D": [
+        5.722273635543252,
+        6.261180370862569
+      ],
+      "J1_profile_95_D": [
+        5.439876958603091,
+        6.510973050609542
+      ],
+      "profile_interval_note": "Contiguous profile-likelihood interval around the best minimum; conditional on the finite-cluster response and chosen broadening, not a microscopic uncertainty."
+    },
+    {
+      "J1_D": 4.263829466917839,
+      "J2_D": 0.1636633299195556,
+      "amplitude": 0.24756391309072645,
+      "eta_D": 0.05,
+      "chi_square": 125.07160486109333,
+      "degrees_of_freedom": 12,
+      "reduced_chi_square": 10.422633738424445,
+      "temperature_range_D": [
+        0.4472,
+        1.6596
+      ],
+      "n_points": 14,
+      "J1_free": true,
+      "triplet_gap_D": 3.567973303507639,
+      "predicted_raw_rate_at_measurement_temperatures": [
+        9.867890453949175e-05,
+        0.0001108926438433778,
+        0.0001299427013733949,
+        0.00015964209653907373,
+        0.00020605025597676704,
+        0.0002783209617190449,
+        0.0003904117956655509,
+        0.0005637736527928175,
+        0.0008303380612006212,
+        0.0012369913654688498,
+        0.0018533618138953463,
+        0.0027940067890081,
+        0.004282192124225913,
+        0.0069067870852693464,
+        0.012431575570219193,
+        0.025552877905186337,
+        0.045660666939609865,
+        0.05157366718865844
+      ],
+      "normalization_note": "Unknown hyperfine/relaxation scale A profiled in raw 1/T1 likelihood; quoted independent errors, no logarithmic fit.",
+      "J1_profile_68_D": [
+        3.8756220990987695,
+        4.638189122901214
+      ],
+      "J1_profile_95_D": [
+        3.466476101459516,
+        5.006484476177483
+      ],
+      "profile_interval_note": "Contiguous profile-likelihood interval around the best minimum; conditional on the finite-cluster response and chosen broadening, not a microscopic uncertainty."
+    },
+    {
+      "J1_D": 1.3418673611133425,
+      "J2_D": 0.05150639403712536,
+      "amplitude": 0.005602182768324995,
+      "eta_D": 0.1,
+      "chi_square": 143.49139985258773,
+      "degrees_of_freedom": 12,
+      "reduced_chi_square": 11.957616654382312,
+      "temperature_range_D": [
+        0.4472,
+        1.6596
+      ],
+      "n_points": 14,
+      "J1_free": true,
+      "triplet_gap_D": 1.1228748613066675,
+      "predicted_raw_rate_at_measurement_temperatures": [
+        9.079292792579228e-05,
+        0.00010227745802943684,
+        0.00011733823353472253,
+        0.0001374841466856771,
+        0.00016493997355635079,
+        0.00020265679708033924,
+        0.0002545195261300629,
+        0.000325388966864261,
+        0.00042025806106154245,
+        0.0005424641375497935,
+        0.0006906427777283367,
+        0.0008558015384350747,
+        0.001020122723826946,
+        0.0011647617070930216,
+        0.0012798192682478985,
+        0.0013701202567788352,
+        0.0014346163864778136,
+        0.0014500768000795675
+      ],
+      "normalization_note": "Unknown hyperfine/relaxation scale A profiled in raw 1/T1 likelihood; quoted independent errors, no logarithmic fit.",
+      "J1_profile_68_D": [
+        1.1485482014930044,
+        1.6029142659474909
+      ],
+      "J1_profile_95_D": [
+        0.9779188821039833,
+        3.791838989657718
+      ],
+      "profile_interval_note": "Contiguous profile-likelihood interval around the best minimum; conditional on the finite-cluster response and chosen broadening, not a microscopic uncertainty."
+    }
+  ],
+  "exact_quasielastic_weight_free_J_all_T": {
+    "J1_D": 8.278337701325386,
+    "J2_D": 0.3177566844334629,
+    "amplitude": 453.17177905757086,
+    "eta_D": null,
+    "chi_square": 8.472959166008163,
+    "degrees_of_freedom": 16,
+    "reduced_chi_square": 0.5295599478755102,
+    "temperature_range_D": [
+      0.4472,
+      4.4318
+    ],
+    "n_points": 18,
+    "J1_free": true,
+    "triplet_gap_D": 6.927314552544914,
+    "predicted_raw_rate_at_measurement_temperatures": [
+      3.3956264695020605e-06,
+      8.127335103602218e-06,
+      1.9404468772218934e-05,
+      4.626821460347581e-05,
+      0.00011050515416553861,
+      0.0002639344162372008,
+      0.0006298932088784717,
+      0.001503973349940635,
+      0.003591718409817675,
+      0.008571095878674667,
+      0.02041516269763169,
+      0.048541853850960694,
+      0.11462919393731907,
+      0.26722561969521474,
+      0.6079644114600317,
+      1.3624722880792461,
+      2.853651591175651,
+      3.546881986234495
+    ],
+    "normalization_note": "Unknown hyperfine/relaxation scale A profiled in raw 1/T1 likelihood; quoted independent errors, no logarithmic fit.",
+    "J1_profile_68_D": [
+      8.07111788380555,
+      8.489657582765936
+    ],
+    "J1_profile_95_D": [
+      7.87323236582292,
+      8.699452526847983
+    ],
+    "profile_interval_note": "Contiguous profile-likelihood interval around the best minimum; conditional on the finite-cluster response and chosen broadening, not a microscopic uncertainty."
+  },
+  "exact_quasielastic_weight_free_J_T_le_2": {
+    "J1_D": 7.839974056554286,
+    "J2_D": 0.30093048292246005,
+    "amplitude": 295.17269633333973,
+    "eta_D": null,
+    "chi_square": 1.6786043709518828,
+    "degrees_of_freedom": 12,
+    "reduced_chi_square": 0.13988369757932356,
+    "temperature_range_D": [
+      0.4472,
+      1.6596
+    ],
+    "n_points": 14,
+    "J1_free": true,
+    "triplet_gap_D": 6.560491771777794,
+    "predicted_raw_rate_at_measurement_temperatures": [
+      5.023076056158425e-06,
+      1.1479603788564847e-05,
+      2.617374227150865e-05,
+      5.960208493780801e-05,
+      0.00013593636063166835,
+      0.00031004025025948705,
+      0.0007065875701815067,
+      0.0016109574314681291,
+      0.0036731717766809724,
+      0.008367473262405223,
+      0.019018856707052948,
+      0.04312143920726912,
+      0.09698858790889775,
+      0.21504090375084445,
+      0.4656103236291751,
+      1.0044318465817335,
+      2.0860661506374303,
+      2.5927507500465157
+    ],
+    "normalization_note": "Unknown hyperfine/relaxation scale A profiled in raw 1/T1 likelihood; quoted independent errors, no logarithmic fit.",
+    "J1_profile_68_D": [
+      7.561616041516642,
+      8.12157747073064
+    ],
+    "J1_profile_95_D": [
+      7.292830046612067,
+      8.399903681706052
+    ],
+    "profile_interval_note": "Contiguous profile-likelihood interval around the best minimum; conditional on the finite-cluster response and chosen broadening, not a microscopic uncertainty."
+  },
+  "spectral_sum_rule_expected": 0.5,
+  "spectral_sum_rule_max_error": 3.3306690738754696e-16,
+  "physical_J_normalized_R_over_T_at_lowest_T": {
+    "0.02": 6.734493815087074,
+    "0.05": 6.868756410341127,
+    "0.1": 6.808953132631282
+  },
+  "observed_normalized_R_over_T_at_lowest_T": 3.400959302325582e-05,
+  "limitations": [
+    "Finite cluster has an artificial triplet gap; this is not a thermodynamic superconducting or magnetic phase calculation.",
+    "Spin projection neglects charge states and higher-order exchange. Most reliable for T well below U and t/U small; the highest T~4D can have charge corrections.",
+    "Lorentzian broadening creates artificial zero-frequency tails from gapped inelastic transitions, even at T=0.",
+    "The eta->0 exact-degenerate transition weight is only a diagnostic of the finite-cluster quasielastic delta peak, not a finite physical relaxation rate.",
+    "Changing J1 freely is a shape diagnostic and is not a fitted Hubbard U or validated microscopic Hamiltonian.",
+    "Local, momentum-independent hyperfine coupling is assumed."
+  ],
+  "seconds": 1.806523084640503
+}

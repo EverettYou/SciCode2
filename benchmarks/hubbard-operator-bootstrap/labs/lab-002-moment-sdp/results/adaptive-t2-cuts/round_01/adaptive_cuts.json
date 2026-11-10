@@ -1,0 +1,103 @@
+{
+  "oracle_directory": "/Users/home/Library/CloudStorage/Dropbox/Research/[Mercor]SciCode2/benchmarks/hubbard-operator-bootstrap/labs/lab-003-theory-audit/outputs/pqgt2prime_sym",
+  "cut_directory": "/Users/home/Library/CloudStorage/Dropbox/Research/[Mercor]SciCode2/benchmarks/hubbard-operator-bootstrap/labs/lab-002-moment-sdp/results/adaptive-t2-cuts",
+  "cuts": [
+    {
+      "index": 0,
+      "file": "cut_000.npz",
+      "source_name": "T2primefull_(0, 10)_char(-1, -1)",
+      "source_prefix": "block_243",
+      "bits": 12,
+      "value_when_selected": -0.2944402756559687
+    },
+    {
+      "index": 1,
+      "file": "cut_001.npz",
+      "source_name": "T2primefull_(0, 0)_char(-1, -1)",
+      "source_prefix": "block_229",
+      "bits": 12,
+      "value_when_selected": -0.294371397508679
+    },
+    {
+      "index": 2,
+      "file": "cut_002.npz",
+      "source_name": "T2primefull_(0, 0)_char(1, 1)",
+      "source_prefix": "block_226",
+      "bits": 12,
+      "value_when_selected": -0.2883312326121829
+    },
+    {
+      "index": 3,
+      "file": "cut_003.npz",
+      "source_name": "T2primefull_(0, 10)_char(1, 1)",
+      "source_prefix": "block_240",
+      "bits": 12,
+      "value_when_selected": -0.28758156190440964
+    },
+    {
+      "index": 4,
+      "file": "cut_004.npz",
+      "source_name": "T2primefull_(0, 2)_char(1, 1)",
+      "source_prefix": "block_232",
+      "bits": 12,
+      "value_when_selected": -0.2813463999592537
+    },
+    {
+      "index": 5,
+      "file": "cut_005.npz",
+      "source_name": "T2primefull_(0, 2)_char(-1, -1)",
+      "source_prefix": "block_235",
+      "bits": 12,
+      "value_when_selected": -0.27198841814532726
+    },
+    {
+      "index": 6,
+      "file": "cut_006.npz",
+      "source_name": "T2primefull_(0, 0)_char(1, 1)",
+      "source_prefix": "block_226",
+      "bits": 12,
+      "value_when_selected": -0.21079182337567615
+    },
+    {
+      "index": 7,
+      "file": "cut_007.npz",
+      "source_name": "T2primefull_(0, 10)_char(1, 1)",
+      "source_prefix": "block_240",
+      "bits": 12,
+      "value_when_selected": -0.2083827527627481
+    },
+    {
+      "index": 8,
+      "file": "cut_008.npz",
+      "source_name": "T2primefull_(0, 2)_char(1, 1)",
+      "source_prefix": "block_232",
+      "bits": 12,
+      "value_when_selected": -0.20069373913880983
+    },
+    {
+      "index": 9,
+      "file": "cut_009.npz",
+      "source_name": "T2primefull_(0, 5)_char(1,)",
+      "source_prefix": "block_236",
+      "bits": 12,
+      "value_when_selected": -0.1891062254073892
+    },
+    {
+      "index": 10,
+      "file": "cut_010.npz",
+      "source_name": "T2primefull_(0, 1)_char(1,)",
+      "source_prefix": "block_230",
+      "bits": 12,
+      "value_when_selected": -0.17537760886578546
+    },
+    {
+      "index": 11,
+      "file": "cut_011.npz",
+      "source_name": "T2primefull_(0, 2)_char(1, 1)",
+      "source_prefix": "block_232",
+      "bits": 12,
+      "value_when_selected": -0.17060292704064906
+    }
+  ],
+  "inactive_constant_constraints": 108
+}

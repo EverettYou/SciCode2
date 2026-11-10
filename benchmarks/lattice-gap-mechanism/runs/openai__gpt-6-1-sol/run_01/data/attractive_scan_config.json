@@ -1,0 +1,39 @@
+{
+  "parameters": [
+    {
+      "name": "attractive_U4",
+      "U": -4
+    },
+    {
+      "name": "attractive_U6",
+      "U": -6
+    },
+    {
+      "name": "attractive_U8",
+      "U": -8
+    },
+    {
+      "name": "attractive_U12",
+      "U": -12
+    },
+    {
+      "name": "PKH_U4_P2",
+      "U": -4,
+      "P": 2,
+      "V1": 1
+    },
+    {
+      "name": "PKH_U8_P2",
+      "U": -8,
+      "P": 2,
+      "V1": 1
+    },
+    {
+      "name": "PKH_U12_P2",
+      "U": -12,
+      "P": 2,
+      "V1": 1
+    }
+  ],
+  "output": "electron_attractive_scan.json"
+}

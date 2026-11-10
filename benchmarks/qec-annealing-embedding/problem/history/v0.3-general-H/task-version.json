@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "benchmark_id": "qec-annealing-embedding",
+  "question_revision": "0.3-general-H",
+  "created_at": "2026-10-07T18:41:59Z",
+  "phase": "autonomous-research-prompt-preparation",
+  "editorial_recommendation": "pass-to-testing",
+  "frozen_for_experiment": false,
+  "canonical_statement": "problem/TASK.md",
+  "convenience_copy": "evaluation/prompt.md",
+  "active_experimental_prompt_variants": [],
+  "required_input_files": [],
+  "input_contract": "General sparse binary H, syndrome and finite mechanism weights; optional observable map for logical evaluation; researcher-selected public or specified instances.",
+  "optional_legacy_examples": [
+    "evaluation/inputs/seed-codes.json",
+    "evaluation/inputs/target-family.json"
+  ],
+  "hash_algorithm": "sha256",
+  "files": {
+    "problem/TASK.md": "59db2b1fccb659727f046a907ead3b01c4878aa97eb142fb5c045fbac9c92164",
+    "problem/main.tex": "84cd2e7b74449ddf3c95cacd9aa629570daaaf2936e5cd8c754e303400d2498e",
+    "problem/scicode2-qec-annealing-embedding.pdf": "a6efb1d82a18b4a1e397d7b87b1adb1688507d6a599b2140b9a52b75e7eefb37",
+    "problem/DESIGN_REVISION.md": "6bcfefa3c8cd02a3cfcc071c38a7b37fdd4e4e0e89aa82e5ef3090776ae68234",
+    "metadata.yml": "49b04aff3ec9296d9d46e0dca97dac51ba66d9b640a9b5bad19429df8bee3aa9",
+    "evaluation/prompt.md": "1e89789597cf8f5175efce615604ca2667215f67f5dc0ab29c8284c9048069d3",
+    "evaluation/proposal.md": "3477b36e70f4681001ee3f420caa001a056f4090fa530e40c8d237a912df99b4",
+    "evaluation/evaluation-plan.md": "8a1ee82d95d421e8f405ec94962380148230fa8c24c48618e9a4ea6305505b6a",
+    "evaluation/AUDIT.md": "ecc7666accfbeee979a03542e979a7556746ff22ab8a44f2c22950fb09baa981",
+    "prompt.md": "1e89789597cf8f5175efce615604ca2667215f67f5dc0ab29c8284c9048069d3",
+    "README.md": "9377780e022613f6c2b6e170a768b68bcb06acf27819466c6a4d22f7dd003f97",
+    "evaluation/README.md": "18a680de4892bf80f81065409e940447e595849fc439920fa51bb5edfb9332c2",
+    "problem/README.md": "a0720d2b504d3de11422e2b7da5098a5972455808072a56daa864b0fc75a8bbf"
+  },
+  "author_requirements": {
+    "skills/create-benchmark/SKILL.md": "9a795e519be62e7dfccba7d6d04ddc74137faa7ef4c961c163621a2bb326206c",
+    "skills/create-benchmark/references/design-guidelines.md": "e2ac696e44930604616796da0b09861502a9df28a955a1c72c42c2bb368f8a72",
+    "docs/scicode2/requirements.md": "2453f9db323c67eff90df5ba78d25ed8b0d51a6f04b734ee6c9fe2ac0cccf320"
+  },
+  "reference_revision": null,
+  "evaluator_revision": null,
+  "model_trials": [],
+  "scientific_experiments": [],
+  "difficulty_status": "likely nontrivial by text-only judgment; empirically untested",
+  "example_bank_comparison": "pending-access",
+  "supersedes": "0.2-design",
+  "history": "evaluation/history/0.2-design/",
+  "checks": {
+    "workspace_validator": "pass",
+    "wiki_lint": "0 errors, 0 warnings",
+    "statement_consistency": "complete scientific statement embedded unchanged after launch instructions; canonical and compatibility prompts identical",
+    "public_only_standalone_references": "pass",
+    "provenance_hashes_and_navigation": "pass",
+    "native_latex_compile": "success",
+    "exported_pdf": "5 pages, all final renders visually inspected",
+    "research_execution": "none",
+    "prompt_execution": "not run"
+  },
+  "prompt_revision": "0.1-autonomous",
+  "canonical_prompt": "prompt.md",
+  "prompt_budget": {
+    "default_wall_clock_hours": 2,
+    "override": "execution-request budget; normally one to 24 hours",
+    "scope": "future run only"
+  },
+  "updated_at": "2026-10-07T19:31:00Z",
+  "prompt_design_requirements": {
+    "skills/test-benchmark/SKILL.md": "bedafe36c7a993762f95342798991cbc10a938d77fb1dbc6296d455699e4ff4a",
+    "skills/test-benchmark/references/prompt-design.md": "d924f61b741cdbf96cfb6673e7ffe3094cabb09f719632f685176231408033a3"
+  }
+}

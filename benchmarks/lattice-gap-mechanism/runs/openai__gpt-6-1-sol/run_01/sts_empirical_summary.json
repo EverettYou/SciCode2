@@ -1,0 +1,330 @@
+{
+  "source": "/Users/home/Library/CloudStorage/Dropbox/AgenticOffice/output/single-orbital-reanalysis/data/measurements.json",
+  "source_sha256": "dab44dfa1d052ed034c4cf632740411eed343c399f4ebb0045e9eea942b4ad7b",
+  "definition": "Empirical constraints, not a computed Hamiltonian phase diagram.",
+  "samples": [
+    {
+      "nu_nominal": 0.5,
+      "nmr_activation_empirical": {
+        "activation_D": 5.538280926390495,
+        "activation_se_D": 0.13462566823104283,
+        "activation_bootstrap_95_D": [
+          5.279074427062977,
+          5.8085706640429
+        ],
+        "temperature_range_D": [
+          0.4472,
+          4.4318
+        ],
+        "n": 18,
+        "chi_square": 1.6937429081302915,
+        "degrees_of_freedom": 16,
+        "power_q": 1.0
+      },
+      "nmr_power_prefactor_sensitivity": {
+        "activation_D": 5.586422624690197,
+        "activation_se_D": 0.5162335045412808,
+        "activation_bootstrap_95_D": [
+          4.617573015446992,
+          6.682536633772121
+        ],
+        "temperature_range_D": [
+          0.4472,
+          4.4318
+        ],
+        "n": 18,
+        "chi_square": 1.6844740828161595,
+        "degrees_of_freedom": 15,
+        "power_q": 0.9640563624721789
+      },
+      "rho_measured_T_range_D": [
+        0.45,
+        4.0
+      ],
+      "zero_resistance_measured_T_range_D": null,
+      "zero_resistance_onset_bracket_D": null,
+      "rho_activation_empirical": {
+        "activation_D": 3.7217458107352788,
+        "activation_se_D": 0.048503023819651395,
+        "activation_bootstrap_95_D": [
+          3.6221885738672306,
+          3.8116560873354843
+        ],
+        "temperature_range_D": [
+          0.45,
+          4.0
+        ],
+        "n": 48,
+        "chi_square": 10.914371369474331,
+        "degrees_of_freedom": 46,
+        "power_q": 0.0
+      },
+      "rho_prefactor_sensitivity": {
+        "activation_D": 3.7607342236953336,
+        "activation_se_D": 0.1611369895044262,
+        "activation_bootstrap_95_D": [
+          3.4270963089575326,
+          4.05888366618839
+        ],
+        "temperature_range_D": [
+          0.45,
+          4.0
+        ],
+        "n": 48,
+        "chi_square": 10.849911123116136,
+        "degrees_of_freedom": 45,
+        "power_q": 0.03155572523887609
+      }
+    },
+    {
+      "nu_nominal": 0.3,
+      "nmr_activation_empirical": {
+        "activation_D": 2.6341792915779574,
+        "activation_se_D": 0.047462675950873646,
+        "activation_bootstrap_95_D": [
+          2.539837753193333,
+          2.7358345022404325
+        ],
+        "temperature_range_D": [
+          0.2052,
+          4.4318
+        ],
+        "n": 38,
+        "chi_square": 7.400040427625724,
+        "degrees_of_freedom": 36,
+        "power_q": 1.0
+      },
+      "nmr_power_prefactor_sensitivity": {
+        "activation_D": 2.6571542955453094,
+        "activation_se_D": 0.13949524296311,
+        "activation_bootstrap_95_D": [
+          2.39425334637777,
+          2.9457954467253304
+        ],
+        "temperature_range_D": [
+          0.2052,
+          4.4318
+        ],
+        "n": 38,
+        "chi_square": 7.369051900219692,
+        "degrees_of_freedom": 35,
+        "power_q": 0.9709749850218894
+      },
+      "rho_measured_T_range_D": [
+        0.1,
+        4.0
+      ],
+      "zero_resistance_measured_T_range_D": [
+        0.1,
+        0.325
+      ],
+      "zero_resistance_onset_bracket_D": [
+        0.325,
+        0.4
+      ],
+      "rho_activation_empirical": {
+        "activation_D": 0.8999013442535589,
+        "activation_se_D": 0.04358003896836145,
+        "activation_bootstrap_95_D": [
+          0.8064680479024016,
+          0.9799112697732316
+        ],
+        "temperature_range_D": [
+          0.4,
+          4.0
+        ],
+        "n": 49,
+        "chi_square": 8.539174048950583,
+        "degrees_of_freedom": 47,
+        "power_q": 0.0
+      },
+      "rho_prefactor_sensitivity": {
+        "activation_D": 0.9448655426473476,
+        "activation_se_D": 0.13989357803307773,
+        "activation_bootstrap_95_D": [
+          0.6449123648864368,
+          1.1979621851974533
+        ],
+        "temperature_range_D": [
+          0.4,
+          4.0
+        ],
+        "n": 49,
+        "chi_square": 8.428666439197013,
+        "degrees_of_freedom": 46,
+        "power_q": 0.038342764492151196
+      }
+    },
+    {
+      "nu_nominal": 0.2,
+      "nmr_activation_empirical": {
+        "activation_D": 1.74657713552306,
+        "activation_se_D": 0.05258207036515983,
+        "activation_bootstrap_95_D": [
+          1.6439408137014417,
+          1.8494790288996252
+        ],
+        "temperature_range_D": [
+          0.2,
+          0.4739
+        ],
+        "n": 24,
+        "chi_square": 3.5823958220032934,
+        "degrees_of_freedom": 22,
+        "power_q": 1.0
+      },
+      "nmr_power_prefactor_sensitivity": {
+        "activation_D": 1.6413420926022089,
+        "activation_se_D": 0.4575393807141046,
+        "activation_bootstrap_95_D": [
+          0.7978187563523764,
+          2.583396055262065
+        ],
+        "temperature_range_D": [
+          0.2,
+          0.4739
+        ],
+        "n": 24,
+        "chi_square": 3.5292419667719015,
+        "degrees_of_freedom": 21,
+        "power_q": 1.3638235688210447
+      },
+      "rho_measured_T_range_D": [
+        0.1,
+        4.0
+      ],
+      "zero_resistance_measured_T_range_D": [
+        0.1,
+        1.075
+      ],
+      "zero_resistance_onset_bracket_D": [
+        1.075,
+        1.15
+      ],
+      "rho_linear_positive_branch": {
+        "intercept": 0.1759334162087565,
+        "slope_per_D": 0.1751299152023572,
+        "standard_errors": [
+          0.0395793200919573,
+          0.017169959232250384
+        ],
+        "covariance": [
+          [
+            0.0015665225789416148,
+            -0.0006370157119169295
+          ],
+          [
+            -0.0006370157119169296,
+            0.00029480750003714023
+          ]
+        ],
+        "chi_square": 6.170732318538283,
+        "degrees_of_freedom": 37,
+        "temperature_range_D": [
+          1.15,
+          4.0
+        ]
+      }
+    }
+  ],
+  "fit_validation": [
+    {
+      "experiment": "NMR",
+      "nu": 0.5,
+      "recomputed_chi2": 1.6937429081302857,
+      "recorded_chi2": 1.6937429081302915,
+      "abs_difference": 5.773159728050814e-15
+    },
+    {
+      "experiment": "rho",
+      "nu": 0.5,
+      "recomputed_chi2": 10.91437136947433,
+      "recorded_chi2": 10.914371369474331,
+      "abs_difference": 1.7763568394002505e-15
+    },
+    {
+      "experiment": "NMR",
+      "nu": 0.3,
+      "recomputed_chi2": 7.400040427625723,
+      "recorded_chi2": 7.400040427625724,
+      "abs_difference": 8.881784197001252e-16
+    },
+    {
+      "experiment": "rho",
+      "nu": 0.3,
+      "recomputed_chi2": 8.539174048950587,
+      "recorded_chi2": 8.539174048950583,
+      "abs_difference": 3.552713678800501e-15
+    },
+    {
+      "experiment": "NMR",
+      "nu": 0.2,
+      "recomputed_chi2": 3.5823958220033023,
+      "recorded_chi2": 3.5823958220032934,
+      "abs_difference": 8.881784197001252e-15
+    },
+    {
+      "experiment": "rho_linear",
+      "nu": 0.2,
+      "recomputed_chi2": 6.170732318538284,
+      "recorded_chi2": 6.170732318538283,
+      "abs_difference": 8.881784197001252e-16
+    }
+  ],
+  "method": "Weighted Gaussian least squares in the supplied observable (1/T1 or rho), not logarithms. Independent quoted sigmas; no rescaling by reduced chi square. Parametric bootstrap, fixed supplied sigmas, seed 20261028.",
+  "empirical_fit_limitations": [
+    "No covariance of normalization errors is supplied; fits are conditional on independent quoted errors.",
+    "NMR activation is not automatically a microscopic singlet-triplet gap.",
+    "Transport activation is not automatically the STS gap or half of it.",
+    "Temperature exponents and fit windows cause model-dependent shifts.",
+    "Zero-resistivity samples carry zero quoted error; they define transition intervals and are excluded from positive-branch least squares."
+  ],
+  "sequences": {
+    "0.5": "Below T=.45D unmeasured; activated positive resistivity from .45D to4D. No zero resistance observed.",
+    "0.3": "Measured zero resistance .1-.325D; onset bracket(.325,.4]D; activated positive resistivity .4-4D.",
+    "0.2": "Measured zero resistance .1-1.075D; onset bracket(1.075,1.15]D; positive resistivity with metallic T trend1.15-4D."
+  },
+  "observable_statements": {
+    "diffraction": "One-site in-plane crystallographic period, equivalent transition-metal sites, and fourfold in-plane axis; no observed structural transition. Does not independently measure time reversal or every electronic order.",
+    "STS": "Low-T spectra have a gap interval by the prompt, centered at plotted zero; only half-filled low-T chemical potential is explicitly fixed to that midpoint. Spatially uniform on the measured surface. Independent trace normalization and unknown matrix elements/background prevent an absolute spectral-weight sum-rule inversion. STS temperatures are only labeled low/high.",
+    "NMR": "One line persists in each sample. Low-T relaxation is strongly suppressed. Empirical activation parameters characterize the measured rate; they are not automatically exact many-body singlet-triplet gaps. \u03bd\u2248.2 has a suggestive coherence-like enhancement near the resistive onset, not a determination of pairing symmetry.",
+    "resistivity": "Zero values define onset intervals, not exact transition temperatures or error-free finite weights in fits. Positive branches at\u03bd=.5,.3 show activated insulating trends;\u03bd=.2 shows a metallic temperature trend. Zero resistance is consistent with superconductivity, but no Meissner or stiffness measurement was supplied.",
+    "inverse_problem": "Local STS integrates over momentum with tunneling weights. Even if calibrated STS were the complete local spectral function, frequency Kramers\u2013Kronig would yield only the local Green function; G(k,\u03c9) and its momentum zero contour require a microscopic model or momentum-resolved information."
+  },
+  "inverse_example": {
+    "status": "Mathematical/physical inverse-problem illustration only; not fit to any measurement and not proposed material Hamiltonian.",
+    "one_physical_orbital_Hamiltonian": "H=\u03a3_k\u03c3(\u03b5_k\u2212\u00b5)n_k\u03c3+U \u03a3_k n_k\u2191n_k\u2193. Interaction is local in momentum and infinite range in real space; all fermions are the physical one-orbital c.",
+    "parameters": {
+      "t_plus": 1.0,
+      "t_minus": -1.0,
+      "tprime": 0.2,
+      "U": 12.0,
+      "mu_gap_midpoint": 5.2
+    },
+    "state": "T=0 spin-symmetric ensemble in singly occupied manifold: n_k\u2191=n_k\u2193=1/2, \u03bd=1/2. Extensive spin degeneracy. NMR and transport have not been fitted; this is not proposed as a model of the samples.",
+    "G_retarded": "G(k,z)=.5/[z\u2212ebar(k)+U/2]+.5/[z\u2212ebar(k)\u2212U/2], ebar=\u03b5+4tprime, Im(z)>0.",
+    "zero_condition": "ebar(k)=0",
+    "momentum_relation": "\u03b5_minus(k)=\u03b5_plus(k+Q), Q=(\u03c0,\u03c0). The local spectra are identical by relabeling momenta.",
+    "Gamma_side_areas": [
+      0.3117077324574779,
+      0.688292267542522
+    ],
+    "numerical_DOS_max_difference": 0.0,
+    "histogram_exact_max_weight_difference": 0.0,
+    "momentum_grid": [
+      768,
+      768
+    ],
+    "line_broadening_for_plot": 0.08,
+    "reference": "https://www.jstage.jst.go.jp/article/jpsj1946/61/6/61_6_2056/_article",
+    "what_it_proves": "A local spectral density and its frequency Kramers\u2013Kronig transform do not identify the momentum assignment of G or the \u0393-side zero area. This does not assert matching of NMR, transport, diffraction, or all other material constraints."
+  },
+  "outputs": [
+    "sts_empirical_phase_map.png",
+    "sts_empirical_phase_map.pdf",
+    "sts_empirical_observables.png",
+    "sts_empirical_observables.pdf",
+    "sts_local_inverse_example.png",
+    "sts_local_inverse_example.pdf"
+  ]
+}

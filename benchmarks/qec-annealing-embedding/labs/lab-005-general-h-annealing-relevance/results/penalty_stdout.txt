@@ -1,0 +1,49 @@
+{"name": "random_regular_n16_s1101", "rank": 8, "repair_scale_ratio": 3.4444444444444446}
+{"name": "random_regular_n16_s2203", "rank": 8, "repair_scale_ratio": 4.555555555555555}
+{"name": "random_regular_n16_s3307", "rank": 8, "repair_scale_ratio": 3.0625}
+{"name": "random_regular_n32_s1101", "rank": 16, "repair_scale_ratio": 5.166666666666667}
+{"name": "random_regular_n32_s2203", "rank": 16, "repair_scale_ratio": 4.947368421052632}
+{"name": "random_regular_n32_s3307", "rank": 16, "repair_scale_ratio": 5.642857142857142}
+{"name": "random_regular_n64_s1101", "rank": 32, "repair_scale_ratio": 5.181818181818182}
+{"name": "random_regular_n64_s2203", "rank": 32, "repair_scale_ratio": 6.814814814814816}
+{"name": "random_regular_n64_s3307", "rank": 32, "repair_scale_ratio": 5.135135135135135}
+{"name": "irregular_hubs_n16_s1101", "rank": 8, "repair_scale_ratio": 2.631578947368421}
+{"name": "irregular_hubs_n16_s2203", "rank": 8, "repair_scale_ratio": 5.111111111111112}
+{"name": "irregular_hubs_n16_s3307", "rank": 8, "repair_scale_ratio": 4.75}
+{"name": "irregular_hubs_n32_s1101", "rank": 16, "repair_scale_ratio": 5.75}
+{"name": "irregular_hubs_n32_s2203", "rank": 16, "repair_scale_ratio": 5.0666666666666655}
+{"name": "irregular_hubs_n32_s3307", "rank": 16, "repair_scale_ratio": 4.363636363636364}
+{"name": "irregular_hubs_n64_s1101", "rank": 32, "repair_scale_ratio": 5.8}
+{"name": "irregular_hubs_n64_s2203", "rank": 32, "repair_scale_ratio": 5.628571428571428}
+{"name": "irregular_hubs_n64_s3307", "rank": 32, "repair_scale_ratio": 5.0}
+{"name": "rewired_band_n16_s1101", "rank": 8, "repair_scale_ratio": 5.666666666666667}
+{"name": "rewired_band_n16_s2203", "rank": 8, "repair_scale_ratio": 2.9230769230769225}
+{"name": "rewired_band_n16_s3307", "rank": 8, "repair_scale_ratio": 3.5000000000000004}
+{"name": "rewired_band_n32_s1101", "rank": 16, "repair_scale_ratio": 7.153846153846152}
+{"name": "rewired_band_n32_s2203", "rank": 16, "repair_scale_ratio": 8.636363636363637}
+{"name": "rewired_band_n32_s3307", "rank": 16, "repair_scale_ratio": 6.071428571428571}
+{"name": "rewired_band_n64_s1101", "rank": 32, "repair_scale_ratio": 6.44}
+{"name": "rewired_band_n64_s2203", "rank": 32, "repair_scale_ratio": 10.692307692307693}
+{"name": "rewired_band_n64_s3307", "rank": 32, "repair_scale_ratio": 11.714285714285714}
+{"name": "mixed_hypergraph_n16_s1101", "rank": 7, "repair_scale_ratio": 5.333333333333333}
+{"name": "mixed_hypergraph_n16_s2203", "rank": 7, "repair_scale_ratio": 5.285714285714286}
+{"name": "mixed_hypergraph_n16_s3307", "rank": 7, "repair_scale_ratio": 5.142857142857142}
+{"name": "mixed_hypergraph_n32_s1101", "rank": 15, "repair_scale_ratio": 9.222222222222221}
+{"name": "mixed_hypergraph_n32_s2203", "rank": 15, "repair_scale_ratio": 7.333333333333334}
+{"name": "mixed_hypergraph_n32_s3307", "rank": 15, "repair_scale_ratio": 7.727272727272727}
+{"name": "mixed_hypergraph_n64_s1101", "rank": 31, "repair_scale_ratio": 8.8}
+{"name": "mixed_hypergraph_n64_s2203", "rank": 30, "repair_scale_ratio": 9.499999999999998}
+{"name": "mixed_hypergraph_n64_s3307", "rank": 31, "repair_scale_ratio": 7.5600000000000005}
+{"fresh": "random_regular_n16_s8809", "status": "ok"}
+{"fresh": "random_regular_n32_s8809", "status": "ok"}
+{"fresh": "random_regular_n64_s8809", "status": "ok"}
+{"fresh": "irregular_hubs_n16_s8809", "status": "ok"}
+{"fresh": "irregular_hubs_n32_s8809", "status": "ok"}
+{"fresh": "irregular_hubs_n64_s8809", "status": "ok"}
+{"fresh": "rewired_band_n16_s8809", "status": "ok"}
+{"fresh": "rewired_band_n32_s8809", "status": "ok"}
+{"fresh": "rewired_band_n64_s8809", "status": "ok"}
+{"fresh": "mixed_hypergraph_n16_s8809", "status": "ok"}
+{"fresh": "mixed_hypergraph_n32_s8809", "status": "ok"}
+{"fresh": "mixed_hypergraph_n64_s8809", "status": "ok"}
+{"status": "pass", "historical": {"instances": 36, "mean_scale_ratio": 6.0209842578446375, "median_scale_ratio": 5.480952380952381, "mean_penalty_ratio": 0.18710219003640144, "basis_median_seconds": 0.0009335834765806794, "small_original_error_orders": 10, "small_original_error_reversals": 0, "small_instances": 12, "small_consistent_ground_orders": 12}, "fresh": {"instances": 12, "mean_scale_ratio": 6.508416763008217, "median_scale_ratio": 5.807471264367816, "mean_penalty_ratio": 0.1789973424173484, "basis_median_seconds": 0.0010080210631713271, "small_original_error_orders": 3, "small_original_error_reversals": 0, "small_instances": 4, "small_consistent_ground_orders": 4}, "elapsed_seconds": 110.95146854198538}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Test SciCode2 Benchmark"
+  short_description: "Design trial prompts, test, and guide question revisions."
+  default_prompt: "Use $test-benchmark to prepare a prompt for this question, run the authorized trial, and record feedback for the next revision."

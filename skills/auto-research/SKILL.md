@@ -7,6 +7,19 @@ description: Run, supervise, pause, resume, or stop an unattended SciCode2 bench
 
 Coordinate existing benchmark skills and artifacts; do not replace their scientific protocols. Keep research execution bounded and resumable, and make the hourly supervisor responsible for both evidence synthesis and research-direction diagnosis.
 
+Early [problem creation](../create-benchmark/SKILL.md) is text-only and does not
+require this research loop. For explicitly requested reference research or detailed
+lab/project design, read [research-workspace.md](references/research-workspace.md)
+and its linked [design guidelines](references/design-guidelines.md) as needed.
+
+This supervised research loop develops reference evidence. It is not a clean
+model trial or a measure of autonomous difficulty. Follow
+[the shared SciCode2 requirements](../../docs/scicode2/requirements.md) and hand
+frozen tasks to [test-benchmark](../test-benchmark/SKILL.md), then
+[calibrate-benchmark](../calibrate-benchmark/SKILL.md), for independent difficulty
+evidence. Do not copy loop memory, wiki, labs, talk, or these skills into the solver
+session.
+
 ## Resolve the operation
 
 Accept a benchmark directory and one operation:

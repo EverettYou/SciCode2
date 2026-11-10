@@ -1,0 +1,389 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=20mm,headheight=14pt]{geometry}
+\usepackage{fontspec,xeCJK}
+\setmainfont{lmroman10-regular.otf}[BoldFont=lmroman10-bold.otf,ItalicFont=lmroman10-italic.otf]
+\setsansfont{lmsans10-regular.otf}
+\setmonofont{lmmono10-regular.otf}[Scale=0.82]
+\setCJKmainfont{FandolSong-Regular.otf}[Script=Default,BoldFont=FandolSong-Bold.otf]
+\setCJKsansfont{FandolHei-Regular.otf}[Script=Default]
+\setCJKmonofont{FandolSong-Regular.otf}[Script=Default]
+\usepackage{amsmath,amssymb,booktabs,longtable,array,xurl,enumitem,graphicx}
+\usepackage[colorlinks=true,linkcolor=blue,urlcolor=blue]{hyperref}
+\usepackage{fancyhdr,lastpage}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt}
+\setlength{\emergencystretch}{3em}
+\setlist[itemize]{nosep,leftmargin=1.5em}
+\renewcommand{\arraystretch}{1.18}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small SciCode2 / Decoder v0.7}
+\fancyhead[R]{\small 事后独立评审 · 2026-10-16}
+\fancyfoot[C]{\small \thepage\ / \pageref{LastPage}}
+\begin{document}
+\section*{Herald / symmetry-informed decoder：标准答案参考版 v1}
+
+日期：2026-10-16。题目版本：Review draft v0.7，12 October 2026。原始 prompt SHA-256：\nolinkurl{d89b765a4af1e50b2824d40d0c2d8590e722202219411bd49f5ea7d63c64d6a9}。
+
+\section*{1. 这份标准答案承诺什么}
+
+本参考综合七份有科学交付的 run、已有独立后验检查和证明证书复核。它提供可核验的正确核心、一个完整而保守的 R1 作答，以及合格答案的证据标准；它不是已经解决所有中心相区的完整物理相图。两份因 API 输出限制没有交付的 Fable run 不构成科学失败。
+
+原题允许 \nolinkurl{unresolved} 并给出有依据的 bounds。因此，未知边界不应被填成猜测，也不应把充分界根误称为真实临界点。有效的其他证明、精确算法和有充分证据的数值相判定均可得分；不要求复现本参考的特定方法或 N0。
+
+R1 要有 O0/O1/O2、N=2,...,8 的 21 个条目和相图；R2 证明作答所依赖的精确结构；R3 给出一个显式、有效的大 N 全 p 充分界；R4 给出规定的 posterior 和 decode 接口。另需 answers.json、报告、源码、数据、环境与复现命令。详细评分见 rubric.md。
+
+\section*{2. 模型与不冲突的记号}
+
+每条边独立抽取 binary 占据 X\_e，概率为 p。对 active 边，再独立公平选择 V 放在哪一端，另一端收到 conjugate V。完整边微观状态是 absent、V-at-A、V-at-B，概率分别为 1-p、p/2、p/2。观测在给定完整微观配置后按题面独立生成。
+
+{\fontsize{9}{12.5}\selectfont
+\setlength{\tabcolsep}{2.2pt}
+
+\begin{longtable}{>{\raggedright\arraybackslash}p{\dimexpr 0.28\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.72\linewidth-2\tabcolsep\relax}}
+\toprule
+\textbf{记号} & \textbf{含义}\tabularnewline
+\midrule
+\endfirsthead
+\toprule
+\textbf{记号} & \textbf{含义}\tabularnewline
+\midrule
+\endhead
+{}e\_i & 固定路径的第 i 条边，是边的名称\tabularnewline
+{}X\_e, C\_e & 真实占据与 correction 占据，都只有 0、1\tabularnewline
+{}sigma\_i & active 路径边的隐藏取向；+ 表示 V 在沿路径前进的端点，- 表示 V 在后方端点\tabularnewline
+{}n\_V(v), n\_barV(v) & 顶点实际收到的 V、conjugate V 数目；不作为取向矩阵的行列索引\tabularnewline
+{}n\_X(v), n\_C(v) & 相邻真实 active 边数、correction 边数\tabularnewline
+{}M\_v & 与该顶点实际观测和 syndrome 奇偶相容的最小 arrival 数，限制在 0,...,degree(v)\tabularnewline
+{}D=X xor C & binary 对称差边集合，不带取向\tabularnewline
+{}P & D 的一个贯穿两条 rough boundary 的分量\tabularnewline
+{}R* & 最优 decoder 的无条件平均逻辑失败概率\tabularnewline
+\bottomrule
+\end{longtable}
+}
+
+Decoder 不收到 X、sigma、实际的 n\_V/n\_barV 或 rough boundary 信号；correction 不要求携带取向，也不要求再现全部 charge/irrep。成功条件是 syndrome 正确且逻辑扇区正确。题目的额外观测由隐藏微观变量生成，与 binary 恢复目标并不冲突。
+
+以下使用数学 sigma 记号；取向矩阵索引统一为 alpha,beta，取值为 +,-，避免和 arrival 数混用。
+
+\section*{3. 几何、差分与逻辑风险}
+
+边数为 3L\textasciicircum{}2-3L+1，detector 数为 2L(L-1)。对于 syndrome-compatible correction，
+
+\[
+H(X\oplus C)=0,\qquad
+\ell(z)=\bigoplus_{e\in\Gamma_T}z_e.
+\]
+
+内部 detector 的差分度数只能为 0 或 2，因为原图至多三价。因此 D 的非空连通分量是简单环或以未测 rough leaves 为端点的简单路径。逻辑失败 ell(D)=1 意味着至少有一条 bottom-to-top 分量，其长度 d 至少为 2L-1。
+
+这里的自回避来自差分分量的图结构，不是额外的物理排斥，也不是说任意逻辑算符的所有 walk 表示都天然自回避。环变形、多个分量和路径外回路都允许存在。偶数约束针对差分边数，不要求真实 n\_X 为偶数。
+
+最优风险为
+
+\[
+R^*_{r,L}(p,N)=\mathbb E_O\frac{\min\{Z_0(O),Z_1(O)\}}{Z_0(O)+Z_1(O)}.
+\]
+
+固定的辅助 decoder 风险 R\_aux 满足 R* <= R\_aux。这是平均风险比较，不是最优 decoder 与辅助 decoder 在每个记录上同时失败的事件包含关系。
+
+\section*{4. R2：必须保持的精确信息关系}
+
+同一 N 下，irrep 的中心特征给出 charge，charge 加 syndrome 可退化为 syndrome-only，因此
+
+\[
+O_2\longrightarrow O_1\longrightarrow O_0,
+\qquad R^*_{2,L}\le R^*_{1,L}\le R^*_{0,L}.
+\]
+
+定义 D\_r(N) 为所有使 R* 随 L 趋零的 p 的集合，包含低噪声和高噪声两侧，可能还有其他分量；它不是专指 p=1 内侧区域。上式推出 D\_0(N) subset D\_1(N) subset D\_2(N)。更多信息意味着集合不缩小，不保证严格扩大。
+
+真实整数 charge q=n\_V-n\_barV 属于 -3,...,3，其奇偶就是 syndrome。偶 N 揭示 q mod N；奇 N 的 syndrome 与 charge 合起来揭示 q mod 2N。由此严格得到：
+
+{\fontsize{9}{12.5}\selectfont
+\setlength{\tabcolsep}{2.2pt}
+
+\begin{longtable}{>{\raggedright\arraybackslash}p{\dimexpr 0.28\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.72\linewidth-2\tabcolsep\relax}}
+\toprule
+\textbf{O1 的 N} & \textbf{精确揭示的信息}\tabularnewline
+\midrule
+\endfirsthead
+\toprule
+\textbf{O1 的 N} & \textbf{精确揭示的信息}\tabularnewline
+\midrule
+\endhead
+{}2 & 等于 O0，仅 syndrome\tabularnewline
+{}3、6 & q mod 6；只有 q=-3 与 +3 的整数值仍混淆\tabularnewline
+{}4 & q mod 4\tabularnewline
+{}5、7、8，以及所有 N>=7 & 完整整数 q\tabularnewline
+\bottomrule
+\end{longtable}
+}
+
+所以
+
+\[
+D_1(2)=D_0,\quad D_1(3)=D_1(6),\quad
+D_1(5)=D_1(7)=D_1(8),
+\]
+
+\[
+D_1(4)\subseteq D_1(5),\qquad
+D_1(3)\subseteq D_1(5).
+\]
+
+q mod 4 和 q mod 6 相互不包含：前者把 -3 与 +1 混淆，后者把 -3 与 +3 混淆。不能要求 O1 的真实边界随每个整数 N 单调。N>=7 饱和严格成立，N=5 已达到同样信息；N=6 是例外而非新的增强。
+
+O0 不依赖 N，具有 p 与 1-p 的精确风险对称性，且 R* 在 [0,1/2] 非递减。p=0、1 的最优风险严格为零；p=1/2 时 O0 的最优风险严格为 1/2。不能自动把 O0 的补集对称性移植到 enriched records。
+
+还可证明 N>=5 的 O2 在 Blackwell 意义下优于 O2(N=3)，但这需要显式随机退化映射和 N=6 特例处理；不是所有不同 rank 的通用单调性定理，也不是 R2 唯一允许的路线。
+
+\section*{5. R1：一个完整、可验证的保守参考答案}
+
+精确中心相区并未被这批 run 一致确立。参考 answers.json 因而采用 unresolved 加严格充分/必要界，并把数值观察另列。评分不能要求提交者给出尚无可靠 gold 的中心临界点。
+
+令
+
+\[
+\mu=\sqrt{2+\sqrt2},\qquad
+p_s=\tfrac12(1-\sqrt{1-\mu^{-2}})=0.07955179237\ldots.
+\]
+
+所有 N、所有记录至少在 [0,p\_s) 和 (1-p\_s,1] 可解码。O0 及 O1(N=2) 在
+
+\[
+\left(\frac{1-2\sin(\pi/18)}2,
+1-\frac{1-2\sin(\pi/18)}2\right)
+=(0.3263518\ldots,0.6736482\ldots)
+\]
+
+严格不可解码，风险趋于 1/2。其余间隙未被这些界决定。已有数值把 O0 低 p 临界点放在约 0.16-0.18 附近，但这不是精确解析临界点；不同 run 的拟合、尺寸与误差需随具体估计一起报告。
+
+对 O1，可使用已经核验的路径充分条件
+
+\[
+\mu\sqrt{p(1-p)}(1+\sqrt{\delta_N(p)})<1,
+\quad\delta_N(p)=\sqrt{(1-p)\alpha_0^2+p\alpha_1^2},
+\]
+
+其中 N=3,5,6,7,8 取 alpha0=1/2、alpha1=phi/2；N=4 取 alpha0=1/2、alpha1=1；phi=(1+sqrt(5))/2。这只是某个辅助 decoder 的统一保守界；不同信息类得到同一公式，不代表信道等价。对完整整数 q 还应继承 q mod 4、q mod 6 的一切已证可解码子集。
+
+对 O2，选择下列已验证充分条件：
+
+\[
+g_N(p)=\mu\sqrt{p(1-p)}(1+\eta_N(p))<1,
+\]
+
+\[
+\eta_N(p)=
+\begin{cases}
+\sqrt{1+p}/2,&N=2,\\
+\sqrt{(1-p)/2+p(3+\sqrt{17})/4}/4,&N=4,\\
+\sqrt{(1-p)/2+p\varphi}/N,&N=3\text{ or }N\ge5.
+\end{cases}
+\]
+
+参考的 21 条目使用上述严格不等式定义边界；另附 reference-bounds.csv 给出向内舍入、经过有理数上界核验的安全端点。所有充分区间的未知外侧保持 unresolved。每个 O2 也继承同 N 的 O1、O0 已证区间。
+
+\begin{center}\includegraphics[width=\linewidth]{\detokenize{/Users/home/Library/CloudStorage/Dropbox/Research/[Mercor]SciCode2/benchmarks/fusion-informed-decoding/evaluation/reviews/2026-10-16-d89b765a/reference-v1/reference-phase-diagram.png}}\end{center}
+
+此图只合并所选严格界，斜线不是不可解码区域；不把不同run尚有分歧的中心相判定合成一条虚假的确定边界。表中同一充分界公式也不表示不同charge信道等价。
+
+数值相图可以比这个保守参考丰富，但应标明：严格充分区、严格不可解码区、有限尺寸数值判定、未解决区。N0=13 与图中只画 N=2,...,8 不冲突。充分界曲线交叉不直接否定信息包含；真实相区的可靠判定若违反包含关系，则必须检查统计误差、外推、近似或标签。
+
+\section*{6. Z4 anomaly 的正确解释边界}
+
+三次同号 arrivals 的 q=+3，在 mod 4 下等同于一次 conjugate arrival 的 q=-1；q=-3 同理。混合三次 arrivals 的 q=+1 或 -1 本来就与一次同号 arrival 相同。故 Z4 比完整整数 q 额外混淆纯三次输入，这种信息损失不会让真实 D\_1(4) 超过 D\_1(5)。
+
+低 p 一侧出现 Z4 的更强单独充分界、或比另一条 unresolved 曲线更显眼，不能解释为“信息更少提高最优解码能力”。不同证明的松紧、数值证据强度、未做信息继承的绘图，都能造成这种表象。完整整数 q 必须继承可靠的 Z4 可解码子集。
+
+高 p 时，活跃图接近连通。O1(N=4) 的取向求和可化为活跃连通分量的 charge mod 4 总和约束；接触未测边界的分量没有该整体约束。这个恒等式解释了 Z4 附加信息可能变弱的机制，但不能单独证明其临界点与 O0 完全相同。GPT01 和 Opus03 给出这一恒等式的独立推导。
+
+O1 的饱和来自已经恢复完整整数 q；完整 q 仍看不到中性的 V/conjugate-V 对，所以增加 N 无法消除这项残留歧义。O2 则通过 irrep 更常区分这些对，隐藏概率随 N 增大减小。这是 O2 大 N 充分界改善的机制；不能据单个充分界宣称所有 rank 的真实边界已严格单调。
+
+\section*{7. R4：精确后验的标准构造}
+
+给 canonical edge 一个三态微观变量 t\_e=0,+,-，权重 w(0)=1-p，w(+)=w(-)=p/2。边两端收到相反表示，不能在两个顶点重新独立抽样取向。令 L\_v 为观测的局部 likelihood，则
+
+\[
+Z_\lambda(o)=\sum_{\{t_e\}}
+\prod_e w(t_e)\prod_v L_v(t_{\partial v};o_v)
+\,\mathbf1\!\left\{\bigoplus_{e\in\Gamma_T}[t_e\ne0]=\lambda\right\}.
+\]
+
+O0 的 L\_v 为 syndrome 指示函数；O1 还要求 charge 相符；O2 再乘题目规定的 multiplicity times dimension / N\textasciicircum{}(arrival count)。posterior 返回 Z0/(Z0+Z1)。这是精确正权重 tensor network / partition sum，不需要假设 free fermion 可解。
+
+一种有效实现按列或行扫过 honeycomb，frontier 保留 L-1 个三态边与一个逻辑奇偶位，状态数至多 2 times 3\textasciicircum{}(L-1)，时间 O(L\textasciicircum{}2 times 3\textasciicircum{}(L-1))，固定尺寸局部门。适用的 binary 特例可降至 2 态。其他精确枚举、消元、junction tree 或 tensor contraction 也可接受。
+
+小尺寸 R4 必须精确到浮点舍入或有认证界；较大 L 的 MPS 截断是另一个数值工具，不能借小尺寸精确 API 为大尺寸近似自动担保。两种 bond dimension 相近是收敛诊断，不是对真值误差的上界。
+
+Decode 先决定较大 posterior 的逻辑扇区，再解 binary 线性方程 Hc=s、ell(c)=chosen sector，即可返回合法 correction。它不需要推断唯一真实 error，也不需要给 correction 分配箭头。
+
+SU(2) 的基本检查是 n=0 给 spin0，n=1 给 spin1/2；n=2 给 spin0 概率1/4、spin1 概率3/4；n=3 给 spin1/2 概率1/2、spin3/2 概率1/2。O1(N=2)=O0，但 O2(N=2) 不是 O0。
+
+\section*{8. R3：一个有效的标准定理与证明链条}
+
+定理：对所有 N>=13、所有固定 p 属于 [0,1]，O2 的最优逻辑风险随 L 趋零。13 是已支持的充分值，不宣称最小。19、15、14 的其他有效充分证明也满足 R3。
+
+先构造受观测粗约束的辅助 decoder，要求 \(n_C(v)\in\{M_v,M_v+2\}\) 且不超过 degree(v)。真实 X 总可行。对其失败差分分量 P，顶点的两条路径边翻转，第三条边在 X、C 中相同。若真实路径模式为 11，correction 为 00，则可行性强迫 \(n_X=M_v+2\)，即隐藏一对。01/10 不改变 arrival 数，00/11 为候选增加一对，不要求真实隐藏。
+
+隐藏是这个辅助 decoder 的必要条件，不是任何 syndrome-compatible correction 的普遍必要条件，更不是充分失败条件。完整记录相容的 correction、辅助粗可行 correction、几何路径不能混为一谈。
+
+固定路径占据和所有路径外微观状态。对连续 active 段的 \(\sigma\) 取向求和，令 F 的行列索引为 \(\alpha,\beta\in\{+,-\}\)。第三条边 inactive 时，\(F=I/N^2\)；第三条边提供 V 时，
+
+\[
+F=\frac2{N^2}\begin{pmatrix}1&0\\1&1\end{pmatrix},
+\]
+
+提供 conjugate V 时转置。矩阵元素为给定取向后的隐藏 readout 概率，非归一化 Markov transition。r 条 active 边的联合隐藏概率是
+
+\[
+2^{-r}\mathbf1^{\mathsf T}F_1\cdots F_{r-1}\mathbf1.
+\]
+
+用 \(T=F/2\) 的欧氏算子范数，分别得到 \(\tau_0=1/(2N^2)\)、\(\tau_1=\varphi/N^2\)。共享路径边取向因此已正确求和，而非把顶点边缘概率独立相乘。
+
+标量版本可取统一联合隐藏上界 \(t=\varphi/N^2\)，并选
+
+\[
+W(y)=p^{|y|}(1-p)^{|E|-|y|}t^{K(y)},\qquad
+K(y)=\sum_v\frac{n_y(v)-M_v}{2}.
+\]
+
+若 P 是选错的分量，局部翻回 X 仍可行，故
+
+\[
+A=\frac{W(C)}{W(C\oplus P)}
+=\left(\frac p{1-p}\right)^{d-2u}t^{h_{00}-h_{11}}\ge1.
+\]
+
+这里 u 为路径真实 active 数，\(h_{00},h_{11}\) 为对应相邻对数。使用联合隐藏界 \(t^{h_{11}}\) 和 \(\mathbf1_{A\ge1}\le\sqrt A\)，得到
+
+\[
+\Pr(E_P)\le[p(1-p)]^{d/2}
+\sum_{z_1,\ldots,z_d}(\sqrt t)^{h_{00}+h_{11}}.
+\]
+
+第二个矩阵的状态是占据位 z=0,1，而非取向：
+
+\[
+K=\begin{pmatrix}\sqrt t&1\\1&\sqrt t\end{pmatrix},
+\quad\mathbf1^{\mathsf T}K^{d-1}\mathbf1=2(1+\sqrt t)^{d-1}.
+\]
+
+因而固定路径概率受 \(C_N\rho_N^d\) 控制。00 的 \(\sqrt t\) 来自 decoder 选择条件，不表示该顶点真实隐藏。仅统计隐藏不足以控制交替占据路径。
+
+最终 N=13 版本的实际辅助评分是
+
+\[
+W_N(y)=p^{|y|}(1-p)^{|E|-|y|}
+\prod_{v:n_y(v)=M_v+2}\tau_{M_v},
+\quad\tau_0=\frac1{2N^2},\quad\tau_1=\frac\varphi{N^2}.
+\]
+
+若第三条边占据为 h，则 00 顶点的 \(M_v=h\)，平方根评分比贡献 \(\sqrt{\tau_h}\)；可行的 11 顶点同样 \(M_v=h\)，逆平方根评分比与取向范数 \(\tau_h\) 相乘也给 \(\sqrt{\tau_h}\)。这说明标量示范如何推广到奇偶依赖惩罚。
+
+路径外某条边可能是一个或两个路径顶点的第三条边，包括 chord；它的共享占据不能独立重抽。出现 k=1 或2次时，
+
+\[
+(1-p)\tau_0^{k/2}+p\tau_1^{k/2}
+\le[(1-p)\tau_0+p\tau_1]^{k/2}.
+\]
+
+k=1 是 Cauchy-Schwarz，k=2 是等式，得到 rho\_N=sqrt(p(1-p))(1+eta\_N(p))。路径计数给任意 epsilon>0 的 C\_epsilon times (mu+epsilon)\textasciicircum{}d，并以 d>=2L-1 求和：
+
+\[
+R^*\le R_{\rm aux}\le
+C_{N,\epsilon}L\frac{r^{2L-1}}{1-r},
+\quad r=(\mu+\epsilon)\rho_N(p)<1.
+\]
+
+固定 p,N 下这是指数衰减上界，不是真实临界指数；r>=1 只表示该证明未决定该参数，不表示不可解码。
+
+\section*{9. N=13 的全 p 算术认证}
+
+用严格有理数上界 mu<1.848、phi<1.619，分成三个 p 区间。在 N=13 时有
+
+{\fontsize{9}{12.5}\selectfont
+\setlength{\tabcolsep}{2.2pt}
+
+\begin{longtable}{>{\raggedright\arraybackslash}p{\dimexpr 0.28\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.72\linewidth-2\tabcolsep\relax}}
+\toprule
+\textbf{p 区间} & \textbf{mu times rho13 的严格上界}\tabularnewline
+\midrule
+\endfirsthead
+\toprule
+\textbf{p 区间} & \textbf{mu times rho13 的严格上界}\tabularnewline
+\midrule
+\endhead
+{}[0,0.55] & 0.924 times (1+1.057/13) < 0.999129\tabularnewline
+{}[0.55,0.65] & 1.848 times 0.498 times (1+1.108/13) < 0.998743\tabularnewline
+{}[0.65,1] & 1.848 times 0.477 times (1+1.273/13) < 0.967815\tabularnewline
+\bottomrule
+\end{longtable}
+}
+
+平方检查可验证各 square-root 包络。N 增大只会降低这个充分因子，故覆盖所有 N>=13。p=0、1 直接选择已知配置。GPT02 另有 N=13 的 positive-cycle / return-walk 证明；Fable、Opus、GPT03 用不同的随机粗粒化或 Cauchy-Schwarz 路线避开直接取向矩阵，也是合法证明。评分不能把“不使用本参考矩阵”算作漏项。
+
+\section*{10. 数值验证和相图判定的最低证据}
+
+应报告增长的二维 L、p 网格、trial 数、seed、停止规则、decoder 和 posterior 方法。Hard logical failure 是 Bernoulli；posterior loss 是 [0,1/2] 的连续量，误差计算需匹配所用统计量。样本风险下降、log-odds 或 flux variance 的变化是证据，不自动证明零极限。
+
+分别报告统计误差、有限尺寸/外推不确定性、近似偏差。若依靠一个 Gaussian/BKT 模型排除所有不可解码行为，必须证明该模型确实约束题目的淬火后验、边界和参数；排除一种启发式模型不等于排除所有正风险极限。
+
+所有实际尝试留在无条件分母。异常或非法 correction 按题面计失败；把 posterior 设成 1/2 不能替代一次失败的保守记账。预留但未执行的 trial slot 与真实物理 trial 数分开。CPU<=8、内存<=32GiB、无GPU，记录实际环境与复现命令。
+
+已有独立审阅对每份有效交付测了210个常规 posterior/correction，其中140个属于R4、70个O0控制；七份均通过，最大差约1.033e-14。另18个严格正概率的极低p压力输入，GPT三份通过，Fable/Opus出现下溢缺口。后者需注明原Linux与复核macOS的longdouble范围差异；不能把所有平台差异误算成原环境失败，也不能忽略在Python float阶段p/2归零的跨平台风险。这些有限测试不是全参数域无bug的形式证明。
+
+\section*{11. 参考证据与未解决项}
+
+主要来源：P=原始prompt.md；G1=GPT01/proofs.md和report.md；G2=GPT02/proofs.md、large\_N\_13.md及report.md；O3=Opus03/report.md与docs/proofs.md。详细定位见同目录 audits/ 和逐项scorecards。
+
+独立证据位于上一层 results/：oracle-check.json、heldout-cases.json、各run-checks.json、proof-certificate-checks.json、saved-data-audit.json。旧REPORT.md和scores.json保留原判定，本版新增细分rubric，不覆盖历史。
+
+仍未确立：中心O1真实相区及精确边界、所有小N的O2全p定理、最小充分N0、真实临界scaling指数。数值猜测、充分界和严格未知范围必须并列保存，不能通过多数投票消除这些未知。
+
+
+\section*{附录：21个条目的可核验安全区间}
+
+均为向内舍入的闭充分区间，不是真实相边界。原题允许其余范围unresolved。reference-answers.json保留全部21条；有理数端点证书见reference-bound-certificates.json。
+
+{\fontsize{9}{12.5}\selectfont
+\setlength{\tabcolsep}{2.2pt}
+
+\begin{longtable}{>{\raggedright\arraybackslash}p{\dimexpr 0.1\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.06\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.19\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.19\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.46\linewidth-2\tabcolsep\relax}}
+\toprule
+\textbf{记录} & \textbf{N} & \textbf{已证低p闭区间} & \textbf{已证高p闭区间} & \textbf{中心}\tabularnewline
+\midrule
+\endfirsthead
+\toprule
+\textbf{记录} & \textbf{N} & \textbf{已证低p闭区间} & \textbf{已证高p闭区间} & \textbf{中心}\tabularnewline
+\midrule
+\endhead
+{}O0 & 2 & [0,0.0795] & [0.9205,1] & unresolved；O0及O1/N2另有严格不可解码中心界\tabularnewline
+{}O0 & 3 & [0,0.0795] & [0.9205,1] & unresolved；O0及O1/N2另有严格不可解码中心界\tabularnewline
+{}O0 & 4 & [0,0.0795] & [0.9205,1] & unresolved；O0及O1/N2另有严格不可解码中心界\tabularnewline
+{}O0 & 5 & [0,0.0795] & [0.9205,1] & unresolved；O0及O1/N2另有严格不可解码中心界\tabularnewline
+{}O0 & 6 & [0,0.0795] & [0.9205,1] & unresolved；O0及O1/N2另有严格不可解码中心界\tabularnewline
+{}O0 & 7 & [0,0.0795] & [0.9205,1] & unresolved；O0及O1/N2另有严格不可解码中心界\tabularnewline
+{}O0 & 8 & [0,0.0795] & [0.9205,1] & unresolved；O0及O1/N2另有严格不可解码中心界\tabularnewline
+{}O1 & 2 & [0,0.0795] & [0.9205,1] & unresolved；O0及O1/N2另有严格不可解码中心界\tabularnewline
+{}O1 & 3 & [0,0.1090] & [0.9096,1] & unresolved；O0及O1/N2另有严格不可解码中心界\tabularnewline
+{}O1 & 4 & [0,0.1060] & [0.9191,1] & unresolved；O0及O1/N2另有严格不可解码中心界\tabularnewline
+{}O1 & 5 & [0,0.1090] & [0.9096,1] & unresolved；O0及O1/N2另有严格不可解码中心界\tabularnewline
+{}O1 & 6 & [0,0.1090] & [0.9096,1] & unresolved；O0及O1/N2另有严格不可解码中心界\tabularnewline
+{}O1 & 7 & [0,0.1090] & [0.9096,1] & unresolved；O0及O1/N2另有严格不可解码中心界\tabularnewline
+{}O1 & 8 & [0,0.1090] & [0.9096,1] & unresolved；O0及O1/N2另有严格不可解码中心界\tabularnewline
+{}O2 & 2 & [0,0.1454] & [0.8834,1] & unresolved；O0及O1/N2另有严格不可解码中心界\tabularnewline
+{}O2 & 3 & [0,0.2281] & [0.8159,1] & unresolved；O0及O1/N2另有严格不可解码中心界\tabularnewline
+{}O2 & 4 & [0,0.2633] & [0.7799,1] & unresolved；O0及O1/N2另有严格不可解码中心界\tabularnewline
+{}O2 & 5 & [0,0.2985] & [0.7377,1] & unresolved；O0及O1/N2另有严格不可解码中心界\tabularnewline
+{}O2 & 6 & [0,0.3256] & [0.7073,1] & unresolved；O0及O1/N2另有严格不可解码中心界\tabularnewline
+{}O2 & 7 & [0,0.3497] & [0.6803,1] & unresolved；O0及O1/N2另有严格不可解码中心界\tabularnewline
+{}O2 & 8 & [0,0.3721] & [0.6554,1] & unresolved；O0及O1/N2另有严格不可解码中心界\tabularnewline
+\bottomrule
+\end{longtable}
+}
+
+完整整数q继承Z4与qmod6的已证子集；O2继承同N的O1/O0。这里选用的O2充分尾部已覆盖表中同N的O1/O0尾部。未宣称这就是各信道能够达到的最强证明界。
+\end{document}

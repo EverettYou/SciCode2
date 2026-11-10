@@ -1,0 +1,56 @@
+{
+  "name": "irregular_hubs_n32_s2203",
+  "input_sha256": "4c9c6ab96ad0f3f33356e549064076473cb3ea3a9c62c901c6ddaca378dc4b3d",
+  "parameters": {
+    "n": 32,
+    "N": 151,
+    "eta": {
+      "numerator_hex": "0x2c7d0d54212f",
+      "denominator_hex": "0x4000000000000"
+    },
+    "D": {
+      "numerator_hex": "-0x17",
+      "denominator_hex": "0x3f"
+    },
+    "rho": {
+      "numerator_hex": "0x0",
+      "denominator_hex": "0x1"
+    },
+    "curvature": {
+      "numerator_hex": "-0x3ff3c328efb39",
+      "denominator_hex": "0xbd0000000000000"
+    },
+    "g0": {
+      "numerator_hex": "0x17d9466690393d",
+      "denominator_hex": "0x8000000000000"
+    },
+    "g1": {
+      "numerator_hex": "0x17d9466690393d",
+      "denominator_hex": "0x8000000000000"
+    },
+    "lambda0": {
+      "numerator_hex": "0x1bf3be5eb52a6a3",
+      "denominator_hex": "0x4000000000000"
+    },
+    "lambda1": {
+      "numerator_hex": "0x6fc11266aa5f4a1",
+      "denominator_hex": "0x10000000000000"
+    }
+  },
+  "parent_certificate": {
+    "coefficient_lower_exact": [
+      -1125058941483833,
+      851180329573023744
+    ],
+    "coefficient_lower": -0.0013217633236992149,
+    "cost_advantage_positive": false,
+    "status": "inconclusive_nonpositive_curvature_bound"
+  },
+  "actual_curvature_global_control": {
+    "status": "inconclusive_nonpositive_actual_curvature"
+  },
+  "relative_event_local": {
+    "status": "inconclusive_nonpositive_actual_curvature"
+  },
+  "seconds": 0.009418916888535023
+}

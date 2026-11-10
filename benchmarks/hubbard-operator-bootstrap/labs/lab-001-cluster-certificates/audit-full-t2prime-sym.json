@@ -1,0 +1,1504 @@
+{
+  "passed": true,
+  "input_directory": "/Users/home/Library/CloudStorage/Dropbox/Research/[Mercor]SciCode2/benchmarks/hubbard-operator-bootstrap/labs/lab-003-theory-audit/outputs/pqgt2prime_sym",
+  "independent_CAR_Fock_action_tests": 4000,
+  "exhaustive_T2_CAR_order_equality_patterns": 46656,
+  "distinct_lattice_bonds": 32,
+  "full_variables": 3240,
+  "variables": 331,
+  "symmetry_expansion_audit": {
+    "group": "D4 spatial rotations/reflections and spin interchange",
+    "signed_nonzero_variable_orbits": 331,
+    "signed_zero_variable_orbits": 11
+  },
+  "singlet_ground_sector_restriction": false,
+  "character_projection_sources_audited": 12,
+  "equalities": 66,
+  "blocks": 244,
+  "affine_nonzero_coefficients_checked": 174132,
+  "all_affine_coefficient_differences": 0,
+  "objective_float_max_difference": 0.0,
+  "objective_handling": "Use independently reconstructed exact half-integer coefficients in final certificate.",
+  "elapsed_seconds": 20.909021999919787,
+  "peak_rss_bytes": 113623040,
+  "block_details": [
+    {
+      "name": "P_(1, 0)",
+      "dim": 8,
+      "nnz": 64,
+      "seconds": 0.008465625112876296
+    },
+    {
+      "name": "Q_(1, 0)",
+      "dim": 8,
+      "nnz": 80,
+      "seconds": 0.007193665951490402
+    },
+    {
+      "name": "P_(2, 0)",
+      "dim": 6,
+      "nnz": 28,
+      "seconds": 0.004363332875072956
+    },
+    {
+      "name": "Q_(2, 0)",
+      "dim": 6,
+      "nnz": 38,
+      "seconds": 0.008464250015094876
+    },
+    {
+      "name": "P_(3, 0)",
+      "dim": 8,
+      "nnz": 64,
+      "seconds": 0.010214166948571801
+    },
+    {
+      "name": "Q_(3, 0)",
+      "dim": 8,
+      "nnz": 80,
+      "seconds": 0.02987550012767315
+    },
+    {
+      "name": "P_(4, 0)",
+      "dim": 8,
+      "nnz": 64,
+      "seconds": 0.014146958012133837
+    },
+    {
+      "name": "Q_(4, 0)",
+      "dim": 8,
+      "nnz": 80,
+      "seconds": 0.013467708136886358
+    },
+    {
+      "name": "P_(5, 0)",
+      "dim": 8,
+      "nnz": 56,
+      "seconds": 0.0577182921115309
+    },
+    {
+      "name": "Q_(5, 0)",
+      "dim": 8,
+      "nnz": 70,
+      "seconds": 0.09566720901057124
+    },
+    {
+      "name": "P_(6, 0)",
+      "dim": 8,
+      "nnz": 64,
+      "seconds": 0.009530791779980063
+    },
+    {
+      "name": "Q_(6, 0)",
+      "dim": 8,
+      "nnz": 80,
+      "seconds": 0.013782999943941832
+    },
+    {
+      "name": "P_(7, 0)",
+      "dim": 8,
+      "nnz": 56,
+      "seconds": 0.004373084055259824
+    },
+    {
+      "name": "Q_(7, 0)",
+      "dim": 8,
+      "nnz": 70,
+      "seconds": 0.0040613338351249695
+    },
+    {
+      "name": "P_(8, 0)",
+      "dim": 6,
+      "nnz": 28,
+      "seconds": 0.007412041071802378
+    },
+    {
+      "name": "Q_(8, 0)",
+      "dim": 6,
+      "nnz": 38,
+      "seconds": 0.004621166968718171
+    },
+    {
+      "name": "P_(9, 0)",
+      "dim": 8,
+      "nnz": 64,
+      "seconds": 0.005435374798253179
+    },
+    {
+      "name": "Q_(9, 0)",
+      "dim": 8,
+      "nnz": 80,
+      "seconds": 0.007936832960695028
+    },
+    {
+      "name": "P_(10, 0)",
+      "dim": 6,
+      "nnz": 34,
+      "seconds": 0.002533750142902136
+    },
+    {
+      "name": "Q_(10, 0)",
+      "dim": 6,
+      "nnz": 45,
+      "seconds": 0.006819833070039749
+    },
+    {
+      "name": "P_(11, 0)",
+      "dim": 8,
+      "nnz": 64,
+      "seconds": 0.009344541002064943
+    },
+    {
+      "name": "Q_(11, 0)",
+      "dim": 8,
+      "nnz": 80,
+      "seconds": 0.009684417163953185
+    },
+    {
+      "name": "P_(12, 0)",
+      "dim": 8,
+      "nnz": 64,
+      "seconds": 0.010381540982052684
+    },
+    {
+      "name": "Q_(12, 0)",
+      "dim": 8,
+      "nnz": 80,
+      "seconds": 0.003836666001006961
+    },
+    {
+      "name": "P_(13, 0)",
+      "dim": 8,
+      "nnz": 56,
+      "seconds": 0.01018674997612834
+    },
+    {
+      "name": "Q_(13, 0)",
+      "dim": 8,
+      "nnz": 70,
+      "seconds": 0.01332541718147695
+    },
+    {
+      "name": "P_(14, 0)",
+      "dim": 8,
+      "nnz": 64,
+      "seconds": 0.01428987504914403
+    },
+    {
+      "name": "Q_(14, 0)",
+      "dim": 8,
+      "nnz": 80,
+      "seconds": 0.013520709006115794
+    },
+    {
+      "name": "P_(15, 0)",
+      "dim": 8,
+      "nnz": 56,
+      "seconds": 0.012541749980300665
+    },
+    {
+      "name": "Q_(15, 0)",
+      "dim": 8,
+      "nnz": 70,
+      "seconds": 0.02136737504042685
+    },
+    {
+      "name": "P_(0, 1)",
+      "dim": 16,
+      "nnz": 256,
+      "seconds": 0.012626625131815672
+    },
+    {
+      "name": "Q_(0, 1)",
+      "dim": 16,
+      "nnz": 272,
+      "seconds": 0.014835250098258257
+    },
+    {
+      "name": "P_(1, 1)",
+      "dim": 16,
+      "nnz": 256,
+      "seconds": 0.012491832952946424
+    },
+    {
+      "name": "Q_(1, 1)",
+      "dim": 16,
+      "nnz": 288,
+      "seconds": 0.027411249931901693
+    },
+    {
+      "name": "P_(2, 1)",
+      "dim": 16,
+      "nnz": 256,
+      "seconds": 0.016967291943728924
+    },
+    {
+      "name": "Q_(2, 1)",
+      "dim": 16,
+      "nnz": 280,
+      "seconds": 0.05770495813339949
+    },
+    {
+      "name": "P_(3, 1)",
+      "dim": 16,
+      "nnz": 256,
+      "seconds": 0.09449166711419821
+    },
+    {
+      "name": "Q_(3, 1)",
+      "dim": 16,
+      "nnz": 288,
+      "seconds": 0.010645333910360932
+    },
+    {
+      "name": "P_(4, 1)",
+      "dim": 16,
+      "nnz": 256,
+      "seconds": 0.010964875109493732
+    },
+    {
+      "name": "Q_(4, 1)",
+      "dim": 16,
+      "nnz": 288,
+      "seconds": 0.011370458174496889
+    },
+    {
+      "name": "P_(5, 1)",
+      "dim": 16,
+      "nnz": 256,
+      "seconds": 0.013956000097095966
+    },
+    {
+      "name": "Q_(5, 1)",
+      "dim": 16,
+      "nnz": 284,
+      "seconds": 0.014603666961193085
+    },
+    {
+      "name": "P_(6, 1)",
+      "dim": 16,
+      "nnz": 256,
+      "seconds": 0.01375550008378923
+    },
+    {
+      "name": "Q_(6, 1)",
+      "dim": 16,
+      "nnz": 288,
+      "seconds": 0.04660795792005956
+    },
+    {
+      "name": "P_(7, 1)",
+      "dim": 16,
+      "nnz": 256,
+      "seconds": 0.060250709066167474
+    },
+    {
+      "name": "Q_(7, 1)",
+      "dim": 16,
+      "nnz": 284,
+      "seconds": 0.12331433291547
+    },
+    {
+      "name": "P_(8, 1)",
+      "dim": 16,
+      "nnz": 256,
+      "seconds": 0.025256624910980463
+    },
+    {
+      "name": "Q_(8, 1)",
+      "dim": 16,
+      "nnz": 280,
+      "seconds": 0.03336408291943371
+    },
+    {
+      "name": "P_(9, 1)",
+      "dim": 16,
+      "nnz": 256,
+      "seconds": 0.08618333307094872
+    },
+    {
+      "name": "Q_(9, 1)",
+      "dim": 16,
+      "nnz": 288,
+      "seconds": 0.01637341594323516
+    },
+    {
+      "name": "P_(10, 1)",
+      "dim": 16,
+      "nnz": 256,
+      "seconds": 0.06884954194538295
+    },
+    {
+      "name": "Q_(10, 1)",
+      "dim": 16,
+      "nnz": 282,
+      "seconds": 0.1669283341616392
+    },
+    {
+      "name": "P_(11, 1)",
+      "dim": 16,
+      "nnz": 256,
+      "seconds": 0.025643207831308246
+    },
+    {
+      "name": "Q_(11, 1)",
+      "dim": 16,
+      "nnz": 288,
+      "seconds": 0.024385167052969337
+    },
+    {
+      "name": "P_(12, 1)",
+      "dim": 16,
+      "nnz": 256,
+      "seconds": 0.03548916708678007
+    },
+    {
+      "name": "Q_(12, 1)",
+      "dim": 16,
+      "nnz": 288,
+      "seconds": 0.14387066685594618
+    },
+    {
+      "name": "P_(13, 1)",
+      "dim": 16,
+      "nnz": 256,
+      "seconds": 0.017863917164504528
+    },
+    {
+      "name": "Q_(13, 1)",
+      "dim": 16,
+      "nnz": 284,
+      "seconds": 0.014486625092104077
+    },
+    {
+      "name": "P_(14, 1)",
+      "dim": 16,
+      "nnz": 256,
+      "seconds": 0.010024667019024491
+    },
+    {
+      "name": "Q_(14, 1)",
+      "dim": 16,
+      "nnz": 288,
+      "seconds": 0.0074241249822080135
+    },
+    {
+      "name": "P_(15, 1)",
+      "dim": 16,
+      "nnz": 256,
+      "seconds": 0.010023250011727214
+    },
+    {
+      "name": "Q_(15, 1)",
+      "dim": 16,
+      "nnz": 284,
+      "seconds": 0.008372542215511203
+    },
+    {
+      "name": "P_(0, 0)",
+      "dim": 6,
+      "nnz": 26,
+      "seconds": 0.0050570000894367695
+    },
+    {
+      "name": "Q_(0, 0)",
+      "dim": 6,
+      "nnz": 32,
+      "seconds": 0.004255416104570031
+    },
+    {
+      "name": "P_(1, 2)",
+      "dim": 8,
+      "nnz": 64,
+      "seconds": 0.0028854578267782927
+    },
+    {
+      "name": "Q_(1, 2)",
+      "dim": 8,
+      "nnz": 80,
+      "seconds": 0.020517416996881366
+    },
+    {
+      "name": "P_(2, 2)",
+      "dim": 6,
+      "nnz": 28,
+      "seconds": 0.02729729190468788
+    },
+    {
+      "name": "Q_(2, 2)",
+      "dim": 6,
+      "nnz": 38,
+      "seconds": 0.014255291083827615
+    },
+    {
+      "name": "P_(3, 2)",
+      "dim": 8,
+      "nnz": 64,
+      "seconds": 0.031066958094015718
+    },
+    {
+      "name": "Q_(3, 2)",
+      "dim": 8,
+      "nnz": 80,
+      "seconds": 0.1494531671050936
+    },
+    {
+      "name": "P_(4, 2)",
+      "dim": 8,
+      "nnz": 64,
+      "seconds": 0.014106207992881536
+    },
+    {
+      "name": "Q_(4, 2)",
+      "dim": 8,
+      "nnz": 80,
+      "seconds": 0.003596292110159993
+    },
+    {
+      "name": "P_(5, 2)",
+      "dim": 8,
+      "nnz": 56,
+      "seconds": 0.0039800419472157955
+    },
+    {
+      "name": "Q_(5, 2)",
+      "dim": 8,
+      "nnz": 70,
+      "seconds": 0.0054330830462276936
+    },
+    {
+      "name": "P_(6, 2)",
+      "dim": 8,
+      "nnz": 64,
+      "seconds": 0.0025759588461369276
+    },
+    {
+      "name": "Q_(6, 2)",
+      "dim": 8,
+      "nnz": 80,
+      "seconds": 0.004458958050236106
+    },
+    {
+      "name": "P_(7, 2)",
+      "dim": 8,
+      "nnz": 56,
+      "seconds": 0.004007833078503609
+    },
+    {
+      "name": "Q_(7, 2)",
+      "dim": 8,
+      "nnz": 70,
+      "seconds": 0.00302966614253819
+    },
+    {
+      "name": "P_(8, 2)",
+      "dim": 6,
+      "nnz": 28,
+      "seconds": 0.002954167081043124
+    },
+    {
+      "name": "Q_(8, 2)",
+      "dim": 6,
+      "nnz": 38,
+      "seconds": 0.0021972497925162315
+    },
+    {
+      "name": "P_(9, 2)",
+      "dim": 8,
+      "nnz": 64,
+      "seconds": 0.0023934589698910713
+    },
+    {
+      "name": "Q_(9, 2)",
+      "dim": 8,
+      "nnz": 80,
+      "seconds": 0.006806625053286552
+    },
+    {
+      "name": "P_(10, 2)",
+      "dim": 6,
+      "nnz": 34,
+      "seconds": 0.007159207947552204
+    },
+    {
+      "name": "Q_(10, 2)",
+      "dim": 6,
+      "nnz": 45,
+      "seconds": 0.007379041984677315
+    },
+    {
+      "name": "P_(11, 2)",
+      "dim": 8,
+      "nnz": 64,
+      "seconds": 0.006890959106385708
+    },
+    {
+      "name": "Q_(11, 2)",
+      "dim": 8,
+      "nnz": 80,
+      "seconds": 0.015047125052660704
+    },
+    {
+      "name": "P_(12, 2)",
+      "dim": 8,
+      "nnz": 64,
+      "seconds": 0.004604749847203493
+    },
+    {
+      "name": "Q_(12, 2)",
+      "dim": 8,
+      "nnz": 80,
+      "seconds": 0.004728124942630529
+    },
+    {
+      "name": "P_(13, 2)",
+      "dim": 8,
+      "nnz": 56,
+      "seconds": 0.002346124965697527
+    },
+    {
+      "name": "Q_(13, 2)",
+      "dim": 8,
+      "nnz": 70,
+      "seconds": 0.00551749998703599
+    },
+    {
+      "name": "P_(14, 2)",
+      "dim": 8,
+      "nnz": 64,
+      "seconds": 0.0028821660671383142
+    },
+    {
+      "name": "Q_(14, 2)",
+      "dim": 8,
+      "nnz": 80,
+      "seconds": 0.003287999890744686
+    },
+    {
+      "name": "P_(15, 2)",
+      "dim": 8,
+      "nnz": 56,
+      "seconds": 0.0976065001450479
+    },
+    {
+      "name": "Q_(15, 2)",
+      "dim": 8,
+      "nnz": 70,
+      "seconds": 0.01593295903876424
+    },
+    {
+      "name": "P_(0, 2)",
+      "dim": 6,
+      "nnz": 26,
+      "seconds": 0.009959334041923285
+    },
+    {
+      "name": "Q_(0, 2)",
+      "dim": 6,
+      "nnz": 32,
+      "seconds": 0.017407082952558994
+    },
+    {
+      "name": "G_(0, 0)",
+      "dim": 32,
+      "nnz": 1024,
+      "seconds": 0.1477376250550151
+    },
+    {
+      "name": "G_(3, 0)",
+      "dim": 32,
+      "nnz": 960,
+      "seconds": 0.04177616583183408
+    },
+    {
+      "name": "G_(2, 0)",
+      "dim": 32,
+      "nnz": 1008,
+      "seconds": 0.047105333069339395
+    },
+    {
+      "name": "G_(1, 0)",
+      "dim": 32,
+      "nnz": 960,
+      "seconds": 0.08595391712151468
+    },
+    {
+      "name": "G_(12, 0)",
+      "dim": 32,
+      "nnz": 960,
+      "seconds": 0.07834525010548532
+    },
+    {
+      "name": "G_(15, 0)",
+      "dim": 32,
+      "nnz": 944,
+      "seconds": 0.06891716690734029
+    },
+    {
+      "name": "G_(14, 0)",
+      "dim": 32,
+      "nnz": 960,
+      "seconds": 0.043460584012791514
+    },
+    {
+      "name": "G_(13, 0)",
+      "dim": 32,
+      "nnz": 944,
+      "seconds": 0.038910500006750226
+    },
+    {
+      "name": "G_(8, 0)",
+      "dim": 32,
+      "nnz": 1008,
+      "seconds": 0.04705550009384751
+    },
+    {
+      "name": "G_(11, 0)",
+      "dim": 32,
+      "nnz": 960,
+      "seconds": 0.057627375004813075
+    },
+    {
+      "name": "G_(10, 0)",
+      "dim": 32,
+      "nnz": 1024,
+      "seconds": 0.1330303750000894
+    },
+    {
+      "name": "G_(9, 0)",
+      "dim": 32,
+      "nnz": 960,
+      "seconds": 0.0879188331309706
+    },
+    {
+      "name": "G_(4, 0)",
+      "dim": 32,
+      "nnz": 960,
+      "seconds": 0.0327910000924021
+    },
+    {
+      "name": "G_(7, 0)",
+      "dim": 32,
+      "nnz": 944,
+      "seconds": 0.0825158751104027
+    },
+    {
+      "name": "G_(6, 0)",
+      "dim": 32,
+      "nnz": 960,
+      "seconds": 0.0416464158333838
+    },
+    {
+      "name": "G_(5, 0)",
+      "dim": 32,
+      "nnz": 944,
+      "seconds": 0.05696533294394612
+    },
+    {
+      "name": "G_(0, -1)",
+      "dim": 16,
+      "nnz": 272,
+      "seconds": 0.018694540951400995
+    },
+    {
+      "name": "G_(3, -1)",
+      "dim": 16,
+      "nnz": 272,
+      "seconds": 0.007173415971919894
+    },
+    {
+      "name": "G_(2, -1)",
+      "dim": 16,
+      "nnz": 272,
+      "seconds": 0.013362374855205417
+    },
+    {
+      "name": "G_(1, -1)",
+      "dim": 16,
+      "nnz": 272,
+      "seconds": 0.01046012481674552
+    },
+    {
+      "name": "G_(12, -1)",
+      "dim": 16,
+      "nnz": 272,
+      "seconds": 0.00788737484253943
+    },
+    {
+      "name": "G_(15, -1)",
+      "dim": 16,
+      "nnz": 272,
+      "seconds": 0.007071959087625146
+    },
+    {
+      "name": "G_(14, -1)",
+      "dim": 16,
+      "nnz": 272,
+      "seconds": 0.006473749876022339
+    },
+    {
+      "name": "G_(13, -1)",
+      "dim": 16,
+      "nnz": 272,
+      "seconds": 0.006497459020465612
+    },
+    {
+      "name": "G_(8, -1)",
+      "dim": 16,
+      "nnz": 272,
+      "seconds": 0.011178042041137815
+    },
+    {
+      "name": "G_(11, -1)",
+      "dim": 16,
+      "nnz": 272,
+      "seconds": 0.011362000135704875
+    },
+    {
+      "name": "G_(10, -1)",
+      "dim": 16,
+      "nnz": 272,
+      "seconds": 0.007617082912474871
+    },
+    {
+      "name": "G_(9, -1)",
+      "dim": 16,
+      "nnz": 272,
+      "seconds": 0.007231499999761581
+    },
+    {
+      "name": "G_(4, -1)",
+      "dim": 16,
+      "nnz": 272,
+      "seconds": 0.006894082995131612
+    },
+    {
+      "name": "G_(7, -1)",
+      "dim": 16,
+      "nnz": 272,
+      "seconds": 0.00847758399322629
+    },
+    {
+      "name": "G_(6, -1)",
+      "dim": 16,
+      "nnz": 272,
+      "seconds": 0.13463958306238055
+    },
+    {
+      "name": "G_(5, -1)",
+      "dim": 16,
+      "nnz": 272,
+      "seconds": 0.01557766692712903
+    },
+    {
+      "name": "G_(0, 1)",
+      "dim": 16,
+      "nnz": 272,
+      "seconds": 0.020951749989762902
+    },
+    {
+      "name": "G_(3, 1)",
+      "dim": 16,
+      "nnz": 272,
+      "seconds": 0.019742167089134455
+    },
+    {
+      "name": "G_(2, 1)",
+      "dim": 16,
+      "nnz": 272,
+      "seconds": 0.02655670908279717
+    },
+    {
+      "name": "G_(1, 1)",
+      "dim": 16,
+      "nnz": 272,
+      "seconds": 0.020409541903063655
+    },
+    {
+      "name": "G_(12, 1)",
+      "dim": 16,
+      "nnz": 272,
+      "seconds": 0.012161917053163052
+    },
+    {
+      "name": "G_(15, 1)",
+      "dim": 16,
+      "nnz": 272,
+      "seconds": 0.046827750047668815
+    },
+    {
+      "name": "G_(14, 1)",
+      "dim": 16,
+      "nnz": 272,
+      "seconds": 0.10392512497492135
+    },
+    {
+      "name": "G_(13, 1)",
+      "dim": 16,
+      "nnz": 272,
+      "seconds": 0.02043729112483561
+    },
+    {
+      "name": "G_(8, 1)",
+      "dim": 16,
+      "nnz": 272,
+      "seconds": 0.050018792040646076
+    },
+    {
+      "name": "G_(11, 1)",
+      "dim": 16,
+      "nnz": 272,
+      "seconds": 0.016220875084400177
+    },
+    {
+      "name": "G_(10, 1)",
+      "dim": 16,
+      "nnz": 272,
+      "seconds": 0.011117167072370648
+    },
+    {
+      "name": "G_(9, 1)",
+      "dim": 16,
+      "nnz": 272,
+      "seconds": 0.008678874932229519
+    },
+    {
+      "name": "G_(4, 1)",
+      "dim": 16,
+      "nnz": 272,
+      "seconds": 0.006472166860476136
+    },
+    {
+      "name": "G_(7, 1)",
+      "dim": 16,
+      "nnz": 272,
+      "seconds": 0.011490083998069167
+    },
+    {
+      "name": "G_(6, 1)",
+      "dim": 16,
+      "nnz": 272,
+      "seconds": 0.016320709139108658
+    },
+    {
+      "name": "G_(5, 1)",
+      "dim": 16,
+      "nnz": 272,
+      "seconds": 0.016620124923065305
+    },
+    {
+      "name": "n_0",
+      "dim": 1,
+      "nnz": 1,
+      "seconds": 0.0022371658124029636
+    },
+    {
+      "name": "hole_0",
+      "dim": 1,
+      "nnz": 1,
+      "seconds": 0.001552083995193243
+    },
+    {
+      "name": "n_1",
+      "dim": 1,
+      "nnz": 1,
+      "seconds": 0.0016097500920295715
+    },
+    {
+      "name": "hole_1",
+      "dim": 1,
+      "nnz": 1,
+      "seconds": 0.003298042109236121
+    },
+    {
+      "name": "n_2",
+      "dim": 1,
+      "nnz": 1,
+      "seconds": 0.009412874933332205
+    },
+    {
+      "name": "hole_2",
+      "dim": 1,
+      "nnz": 1,
+      "seconds": 0.0036069590132683516
+    },
+    {
+      "name": "n_3",
+      "dim": 1,
+      "nnz": 1,
+      "seconds": 0.0028822908643633127
+    },
+    {
+      "name": "hole_3",
+      "dim": 1,
+      "nnz": 1,
+      "seconds": 0.006969416048377752
+    },
+    {
+      "name": "n_4",
+      "dim": 1,
+      "nnz": 1,
+      "seconds": 0.002040750114247203
+    },
+    {
+      "name": "hole_4",
+      "dim": 1,
+      "nnz": 1,
+      "seconds": 0.00217841612175107
+    },
+    {
+      "name": "n_5",
+      "dim": 1,
+      "nnz": 1,
+      "seconds": 0.0021559998858720064
+    },
+    {
+      "name": "hole_5",
+      "dim": 1,
+      "nnz": 1,
+      "seconds": 0.001908040838316083
+    },
+    {
+      "name": "n_6",
+      "dim": 1,
+      "nnz": 1,
+      "seconds": 0.0011031250469386578
+    },
+    {
+      "name": "hole_6",
+      "dim": 1,
+      "nnz": 1,
+      "seconds": 0.006220209179446101
+    },
+    {
+      "name": "n_7",
+      "dim": 1,
+      "nnz": 1,
+      "seconds": 0.0012406250461935997
+    },
+    {
+      "name": "hole_7",
+      "dim": 1,
+      "nnz": 1,
+      "seconds": 0.0011427090503275394
+    },
+    {
+      "name": "n_8",
+      "dim": 1,
+      "nnz": 1,
+      "seconds": 0.0019465838558971882
+    },
+    {
+      "name": "hole_8",
+      "dim": 1,
+      "nnz": 1,
+      "seconds": 0.0017954159993678331
+    },
+    {
+      "name": "n_9",
+      "dim": 1,
+      "nnz": 1,
+      "seconds": 0.0024021249264478683
+    },
+    {
+      "name": "hole_9",
+      "dim": 1,
+      "nnz": 1,
+      "seconds": 0.003021374810487032
+    },
+    {
+      "name": "n_10",
+      "dim": 1,
+      "nnz": 1,
+      "seconds": 0.0026076659560203552
+    },
+    {
+      "name": "hole_10",
+      "dim": 1,
+      "nnz": 1,
+      "seconds": 0.009642499964684248
+    },
+    {
+      "name": "n_11",
+      "dim": 1,
+      "nnz": 1,
+      "seconds": 0.0019252907950431108
+    },
+    {
+      "name": "hole_11",
+      "dim": 1,
+      "nnz": 1,
+      "seconds": 0.002176332985982299
+    },
+    {
+      "name": "n_12",
+      "dim": 1,
+      "nnz": 1,
+      "seconds": 0.001291041960939765
+    },
+    {
+      "name": "hole_12",
+      "dim": 1,
+      "nnz": 1,
+      "seconds": 0.0019352089148014784
+    },
+    {
+      "name": "n_13",
+      "dim": 1,
+      "nnz": 1,
+      "seconds": 0.0015437919646501541
+    },
+    {
+      "name": "hole_13",
+      "dim": 1,
+      "nnz": 1,
+      "seconds": 0.0017155830282717943
+    },
+    {
+      "name": "n_14",
+      "dim": 1,
+      "nnz": 1,
+      "seconds": 0.001290749991312623
+    },
+    {
+      "name": "hole_14",
+      "dim": 1,
+      "nnz": 1,
+      "seconds": 0.004415666917338967
+    },
+    {
+      "name": "n_15",
+      "dim": 1,
+      "nnz": 1,
+      "seconds": 0.003463250119239092
+    },
+    {
+      "name": "hole_15",
+      "dim": 1,
+      "nnz": 1,
+      "seconds": 0.002201374853029847
+    },
+    {
+      "name": "n_16",
+      "dim": 1,
+      "nnz": 1,
+      "seconds": 0.004007125040516257
+    },
+    {
+      "name": "hole_16",
+      "dim": 1,
+      "nnz": 1,
+      "seconds": 0.0011775000020861626
+    },
+    {
+      "name": "n_17",
+      "dim": 1,
+      "nnz": 1,
+      "seconds": 0.0021975829731673002
+    },
+    {
+      "name": "hole_17",
+      "dim": 1,
+      "nnz": 1,
+      "seconds": 0.001798250013962388
+    },
+    {
+      "name": "n_18",
+      "dim": 1,
+      "nnz": 1,
+      "seconds": 0.004193374887108803
+    },
+    {
+      "name": "hole_18",
+      "dim": 1,
+      "nnz": 1,
+      "seconds": 0.0018410838674753904
+    },
+    {
+      "name": "n_19",
+      "dim": 1,
+      "nnz": 1,
+      "seconds": 0.0014130838681012392
+    },
+    {
+      "name": "hole_19",
+      "dim": 1,
+      "nnz": 1,
+      "seconds": 0.004667125176638365
+    },
+    {
+      "name": "n_20",
+      "dim": 1,
+      "nnz": 1,
+      "seconds": 0.002313333097845316
+    },
+    {
+      "name": "hole_20",
+      "dim": 1,
+      "nnz": 1,
+      "seconds": 0.0011206658091396093
+    },
+    {
+      "name": "n_21",
+      "dim": 1,
+      "nnz": 1,
+      "seconds": 0.004481208045035601
+    },
+    {
+      "name": "hole_21",
+      "dim": 1,
+      "nnz": 1,
+      "seconds": 0.003030667081475258
+    },
+    {
+      "name": "n_22",
+      "dim": 1,
+      "nnz": 1,
+      "seconds": 0.0025305841118097305
+    },
+    {
+      "name": "hole_22",
+      "dim": 1,
+      "nnz": 1,
+      "seconds": 0.0011207920033484697
+    },
+    {
+      "name": "n_23",
+      "dim": 1,
+      "nnz": 1,
+      "seconds": 0.0018190830014646053
+    },
+    {
+      "name": "hole_23",
+      "dim": 1,
+      "nnz": 1,
+      "seconds": 0.0024581660982221365
+    },
+    {
+      "name": "n_24",
+      "dim": 1,
+      "nnz": 1,
+      "seconds": 0.0018129171803593636
+    },
+    {
+      "name": "hole_24",
+      "dim": 1,
+      "nnz": 1,
+      "seconds": 0.004436291987076402
+    },
+    {
+      "name": "n_25",
+      "dim": 1,
+      "nnz": 1,
+      "seconds": 0.001633083913475275
+    },
+    {
+      "name": "hole_25",
+      "dim": 1,
+      "nnz": 1,
+      "seconds": 0.0014407499693334103
+    },
+    {
+      "name": "n_26",
+      "dim": 1,
+      "nnz": 1,
+      "seconds": 0.0014155828393995762
+    },
+    {
+      "name": "hole_26",
+      "dim": 1,
+      "nnz": 1,
+      "seconds": 0.0016264589503407478
+    },
+    {
+      "name": "n_27",
+      "dim": 1,
+      "nnz": 1,
+      "seconds": 0.0017287079244852066
+    },
+    {
+      "name": "hole_27",
+      "dim": 1,
+      "nnz": 1,
+      "seconds": 0.002760165836662054
+    },
+    {
+      "name": "n_28",
+      "dim": 1,
+      "nnz": 1,
+      "seconds": 0.002817082917317748
+    },
+    {
+      "name": "hole_28",
+      "dim": 1,
+      "nnz": 1,
+      "seconds": 0.0012106660287827253
+    },
+    {
+      "name": "n_29",
+      "dim": 1,
+      "nnz": 1,
+      "seconds": 0.003189791925251484
+    },
+    {
+      "name": "hole_29",
+      "dim": 1,
+      "nnz": 1,
+      "seconds": 0.0042885830625891685
+    },
+    {
+      "name": "n_30",
+      "dim": 1,
+      "nnz": 1,
+      "seconds": 0.003417583182454109
+    },
+    {
+      "name": "hole_30",
+      "dim": 1,
+      "nnz": 1,
+      "seconds": 0.002232958097010851
+    },
+    {
+      "name": "n_31",
+      "dim": 1,
+      "nnz": 1,
+      "seconds": 0.0019609578885138035
+    },
+    {
+      "name": "hole_31",
+      "dim": 1,
+      "nnz": 1,
+      "seconds": 0.0021286660339683294
+    },
+    {
+      "name": "T2primefull_(-1, 0)_char(1, 1)",
+      "dim": 42,
+      "nnz": 1227,
+      "seconds": 0.46826829202473164
+    },
+    {
+      "name": "T2primefull_(-1, 0)_char(1, -1)",
+      "dim": 30,
+      "nnz": 803,
+      "seconds": 0.0035000410862267017
+    },
+    {
+      "name": "T2primefull_(-1, 0)_char(-1, 1)",
+      "dim": 30,
+      "nnz": 803,
+      "seconds": 0.005215999903157353
+    },
+    {
+      "name": "T2primefull_(-1, 0)_char(-1, -1)",
+      "dim": 18,
+      "nnz": 444,
+      "seconds": 0.003208292182534933
+    },
+    {
+      "name": "T2primefull_(-1, 1)_char(1,)",
+      "dim": 72,
+      "nnz": 2417,
+      "seconds": 0.3195999169256538
+    },
+    {
+      "name": "T2primefull_(-1, 1)_char(-1,)",
+      "dim": 48,
+      "nnz": 1499,
+      "seconds": 0.00685716699808836
+    },
+    {
+      "name": "T2primefull_(-1, 2)_char(1, 1)",
+      "dim": 42,
+      "nnz": 1232,
+      "seconds": 0.4605473750270903
+    },
+    {
+      "name": "T2primefull_(-1, 2)_char(1, -1)",
+      "dim": 30,
+      "nnz": 809,
+      "seconds": 0.012609291821718216
+    },
+    {
+      "name": "T2primefull_(-1, 2)_char(-1, 1)",
+      "dim": 30,
+      "nnz": 809,
+      "seconds": 0.0032278751023113728
+    },
+    {
+      "name": "T2primefull_(-1, 2)_char(-1, -1)",
+      "dim": 18,
+      "nnz": 448,
+      "seconds": 0.005483959103003144
+    },
+    {
+      "name": "T2primefull_(-1, 5)_char(1,)",
+      "dim": 60,
+      "nnz": 2102,
+      "seconds": 0.25869566621258855
+    },
+    {
+      "name": "T2primefull_(-1, 5)_char(-1,)",
+      "dim": 60,
+      "nnz": 2092,
+      "seconds": 0.007556833093985915
+    },
+    {
+      "name": "T2primefull_(-1, 6)_char(1,)",
+      "dim": 72,
+      "nnz": 2417,
+      "seconds": 0.24656470795162022
+    },
+    {
+      "name": "T2primefull_(-1, 6)_char(-1,)",
+      "dim": 48,
+      "nnz": 1499,
+      "seconds": 0.004072291078045964
+    },
+    {
+      "name": "T2primefull_(-1, 10)_char(1, 1)",
+      "dim": 42,
+      "nnz": 1227,
+      "seconds": 0.3646356661338359
+    },
+    {
+      "name": "T2primefull_(-1, 10)_char(1, -1)",
+      "dim": 30,
+      "nnz": 803,
+      "seconds": 0.005948332836851478
+    },
+    {
+      "name": "T2primefull_(-1, 10)_char(-1, 1)",
+      "dim": 30,
+      "nnz": 803,
+      "seconds": 0.00832820893265307
+    },
+    {
+      "name": "T2primefull_(-1, 10)_char(-1, -1)",
+      "dim": 18,
+      "nnz": 444,
+      "seconds": 0.0030202078633010387
+    },
+    {
+      "name": "T2primefull_(0, 0)_char(1, 1)",
+      "dim": 143,
+      "nnz": 7175,
+      "seconds": 2.0269478750415146
+    },
+    {
+      "name": "T2primefull_(0, 0)_char(1, -1)",
+      "dim": 90,
+      "nnz": 3975,
+      "seconds": 0.018657667096704245
+    },
+    {
+      "name": "T2primefull_(0, 0)_char(-1, 1)",
+      "dim": 90,
+      "nnz": 3975,
+      "seconds": 0.019512291997671127
+    },
+    {
+      "name": "T2primefull_(0, 0)_char(-1, -1)",
+      "dim": 54,
+      "nnz": 2170,
+      "seconds": 0.00761983310803771
+    },
+    {
+      "name": "T2primefull_(0, 1)_char(1,)",
+      "dim": 233,
+      "nnz": 13339,
+      "seconds": 1.7328514580149204
+    },
+    {
+      "name": "T2primefull_(0, 1)_char(-1,)",
+      "dim": 144,
+      "nnz": 7323,
+      "seconds": 0.011217833030968904
+    },
+    {
+      "name": "T2primefull_(0, 2)_char(1, 1)",
+      "dim": 143,
+      "nnz": 7192,
+      "seconds": 1.3860732498578727
+    },
+    {
+      "name": "T2primefull_(0, 2)_char(1, -1)",
+      "dim": 90,
+      "nnz": 3977,
+      "seconds": 0.03302562492899597
+    },
+    {
+      "name": "T2primefull_(0, 2)_char(-1, 1)",
+      "dim": 90,
+      "nnz": 3977,
+      "seconds": 0.02232200000435114
+    },
+    {
+      "name": "T2primefull_(0, 2)_char(-1, -1)",
+      "dim": 54,
+      "nnz": 2174,
+      "seconds": 0.02165683382190764
+    },
+    {
+      "name": "T2primefull_(0, 5)_char(1,)",
+      "dim": 197,
+      "nnz": 11816,
+      "seconds": 2.368034041021019
+    },
+    {
+      "name": "T2primefull_(0, 5)_char(-1,)",
+      "dim": 180,
+      "nnz": 10416,
+      "seconds": 0.014419334009289742
+    },
+    {
+      "name": "T2primefull_(0, 6)_char(1,)",
+      "dim": 233,
+      "nnz": 13339,
+      "seconds": 1.2623224160633981
+    },
+    {
+      "name": "T2primefull_(0, 6)_char(-1,)",
+      "dim": 144,
+      "nnz": 7323,
+      "seconds": 0.012426333036273718
+    },
+    {
+      "name": "T2primefull_(0, 10)_char(1, 1)",
+      "dim": 143,
+      "nnz": 7175,
+      "seconds": 1.388038125121966
+    },
+    {
+      "name": "T2primefull_(0, 10)_char(1, -1)",
+      "dim": 90,
+      "nnz": 3975,
+      "seconds": 0.013069333042949438
+    },
+    {
+      "name": "T2primefull_(0, 10)_char(-1, 1)",
+      "dim": 90,
+      "nnz": 3975,
+      "seconds": 0.016595666063949466
+    },
+    {
+      "name": "T2primefull_(0, 10)_char(-1, -1)",
+      "dim": 54,
+      "nnz": 2170,
+      "seconds": 0.014123416971415281
+    }
+  ],
+  "physical_sector": {
+    "L": 4,
+    "t": 1,
+    "U": 8,
+    "Nup": 8,
+    "Ndown": 8
+  },
+  "notes": [
+    "All sparse coefficients and constants compared exactly.",
+    "Real Hermitian moments and momentum/spin block selection are rebuilt from variable names.",
+    "T1 degree-six cancellation uses independent exterior multiplication; the T2 contraction table is exhaustively verified against it for all 46,656 relative-order/equality patterns.",
+    "Symmetry expansion is independently checked by signed orbit traversal; character projections are checked for the declared reflection action, complete orthogonal span, and exact vanishing cross-character maps.",
+    "Fermionic real moment symmetrization is valid because the Fourier Hamiltonian and operator spaces are closed under complex conjugation."
+  ]
+}

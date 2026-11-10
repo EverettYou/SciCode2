@@ -1,0 +1,87 @@
+version: 1
+sources:
+- source_id: design-revision-20261007
+  title: User-directed question revisions and candidate history
+  kind: other
+  path: problem/DESIGN_REVISION.md
+  revision: sha256:3bcfd0fc82cbb472ff8269882b938d382352bfc9c0b5aedaad1c56d11667cd75
+  ingested_at: '2026-10-16T08:54:08Z'
+  updated_pages:
+  - wiki/index.md
+  - wiki/thesis.md
+  - wiki/ideas/research-frontier.md
+  - wiki/implementations/general-h-embedding-loop.md
+- source_id: dwave-proposal
+  title: You and Hu research proposal
+  kind: other
+  path: problem/references/DWaveProposal.pdf
+  revision: sha256:8396ef12e56f8d0a5b6a402b54535b989c47a4c08419214bf1e48106665100ca
+  ingested_at: '2026-10-07T16:47:32Z'
+  updated_pages:
+  - wiki/index.md
+  - wiki/thesis.md
+  - wiki/ideas/research-frontier.md
+- source_id: initial-review
+  title: Architecture and literature review with primary-source links
+  kind: other
+  path: problem/LITERATURE_REVIEW.md
+  revision: sha256:29a2ab15017137fd58a9677426dba061b95594d32c8ee754a8d7ab9ca440cc60
+  ingested_at: '2026-10-07T16:47:32Z'
+  updated_pages:
+  - wiki/index.md
+  - wiki/thesis.md
+  - wiki/ideas/research-frontier.md
+- source_id: lab:lab-002-agent-test-general-h
+  title: lab 002 agent test general h
+  kind: lab
+  path: labs/lab-002-agent-test-general-h/REPORT.md
+  revision: sha256:5fd29cebe1c92916bea313290b4c4090d8b8adb12bafd9c84d1e455551e7de09
+  ingested_at: '2026-10-16T08:52:24Z'
+  updated_pages:
+  - wiki/index.md
+  - wiki/thesis.md
+  - wiki/ideas/research-frontier.md
+  - wiki/implementations/general-h-embedding-loop.md
+- source_id: lab:lab-003-surface-code-encoding-comparison
+  title: lab 003 surface code encoding comparison
+  kind: lab
+  path: labs/lab-003-surface-code-encoding-comparison/REPORT.md
+  revision: sha256:50d32d52889e40bd22a8a65af233faa32434b981036eab8e71575178851a1f6e
+  ingested_at: '2026-10-16T08:52:25Z'
+  updated_pages:
+  - wiki/index.md
+  - wiki/thesis.md
+  - wiki/ideas/research-frontier.md
+  - wiki/implementations/general-h-embedding-loop.md
+- source_id: lab:lab-004-general-h-evaluation-embedding-loop
+  title: General-H evaluation-guided compact embedding
+  kind: lab
+  path: labs/lab-004-general-h-evaluation-embedding-loop/REPORT.md
+  revision: sha256:32bf6c38e5c96f786b99b99fd8f96ec5ffa3b2607320b8520c901b348638d947
+  ingested_at: '2026-10-16T08:54:08Z'
+  updated_pages:
+  - wiki/index.md
+  - wiki/thesis.md
+  - wiki/ideas/research-frontier.md
+  - wiki/implementations/general-h-embedding-loop.md
+- source_id: lab:lab-005-general-h-annealing-relevance
+  title: General-H readout, finite quantum criteria and a SciCode2 issue
+  kind: lab
+  path: labs/lab-005-general-h-annealing-relevance/REPORT.md
+  revision: sha256:01280983eb1fcf449cefe4f49190dce41ca5a759478c9d8e46eb5a494e3506ea
+  ingested_at: '2026-10-16T11:31:24Z'
+  updated_pages:
+  - wiki/index.md
+  - wiki/thesis.md
+  - wiki/ideas/research-frontier.md
+  - wiki/implementations/general-h-embedding-loop.md
+- source_id: user-qec-direction
+  title: User-supplied research direction
+  kind: other
+  path: problem/USER_REQUEST.md
+  revision: sha256:501fe79c846497a654b4c7c4df45684362a61d27a3e6b2bff76d3e1343a9191c
+  ingested_at: '2026-10-07T16:47:32Z'
+  updated_pages:
+  - wiki/index.md
+  - wiki/thesis.md
+  - wiki/ideas/research-frontier.md

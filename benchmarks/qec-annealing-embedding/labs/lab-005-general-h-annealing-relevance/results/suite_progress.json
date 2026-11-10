@@ -1,0 +1,3392 @@
+[
+  {
+    "name": "random_regular_n16_s8807_standard",
+    "status": "ok",
+    "scheme": "standard",
+    "total_seconds": 1.2602972500026226,
+    "logical_variables": 48,
+    "logical_edges": 104,
+    "qubits": 57,
+    "scale": 0.024685845674496,
+    "readout_curves": [
+      {
+        "beta": 10.0,
+        "scale": 0.02100289759012675,
+        "root_readout_tv_bound": 1.0,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 0.03145990182148704,
+          "syndrome_defect_bound": 0.9685400981785129,
+          "conditional_feasible_tv_bound": 0.05505228833648542,
+          "row_log_factor_range": 0.22043202539269743,
+          "repair_log_product": 3.2463380238637596,
+          "repair_correction": 0.22043202539269743,
+          "minimum_repair_margin": 0.5410503057212753
+        }
+      },
+      {
+        "beta": 20.0,
+        "scale": 0.024685845674496,
+        "root_readout_tv_bound": 0.19158869087679606,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 0.8140261296684428,
+          "syndrome_defect_bound": 0.18597387033155724,
+          "conditional_feasible_tv_bound": 7.31527532200879e-05,
+          "row_log_factor_range": 0.0002926110134023038,
+          "repair_log_product": 0.20570840164295193,
+          "repair_correction": 0.0002926110134023038,
+          "minimum_repair_margin": 3.3277970609732828
+        }
+      },
+      {
+        "beta": 40.0,
+        "scale": 0.026527319716680625,
+        "root_readout_tv_bound": 0.006079863698402609,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 0.9994450151653637,
+          "syndrome_defect_bound": 0.0005549848346363825,
+          "conditional_feasible_tv_bound": 1.1848449686106115e-10,
+          "row_log_factor_range": 4.739379874442446e-10,
+          "repair_log_product": 0.0005551388954603738,
+          "repair_correction": 4.739379874442446e-10,
+          "minimum_repair_margin": 9.001489974344786
+        }
+      },
+      {
+        "beta": 80.0,
+        "scale": 0.027448056737772942,
+        "root_readout_tv_bound": 0.005524858015116109,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 0.999999995072438,
+          "syndrome_defect_bound": 4.927562005833213e-09,
+          "conditional_feasible_tv_bound": 3.1079611130414755e-22,
+          "row_log_factor_range": 1.2431844452165902e-21,
+          "repair_log_product": 4.9275620179736525e-09,
+          "repair_correction": 1.2431844452165902e-21,
+          "minimum_repair_margin": 20.349007477784255
+        }
+      }
+    ]
+  },
+  {
+    "name": "random_regular_n16_s8807_balanced",
+    "status": "ok",
+    "scheme": "balanced",
+    "total_seconds": 1.8522945418953896,
+    "logical_variables": 96,
+    "logical_edges": 200,
+    "qubits": 113,
+    "scale": 0.04154535487216489,
+    "readout_curves": [
+      {
+        "beta": 10.0,
+        "scale": 0.03445849089939361,
+        "root_readout_tv_bound": 0.9776036192846891,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 0.07109714715509419,
+          "syndrome_defect_bound": 0.9289028528449058,
+          "conditional_feasible_tv_bound": 0.0,
+          "row_log_factor_range": 0.0,
+          "repair_log_product": 2.643708067378873,
+          "repair_correction": 0.0,
+          "minimum_repair_margin": 0.6975303331006231
+        }
+      },
+      {
+        "beta": 20.0,
+        "scale": 0.04154535487216489,
+        "root_readout_tv_bound": 0.06911566947922412,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 0.9795850969605591,
+          "syndrome_defect_bound": 0.02041490303944092,
+          "conditional_feasible_tv_bound": 0.0,
+          "row_log_factor_range": 0.0,
+          "repair_log_product": 0.02062616741250021,
+          "repair_correction": 0.0,
+          "minimum_repair_margin": 5.476074465205967
+        }
+      },
+      {
+        "beta": 40.0,
+        "scale": 0.045088786858550535,
+        "root_readout_tv_bound": 0.04870167928716406,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 0.9999990871526193,
+          "syndrome_defect_bound": 9.128473807399429e-07,
+          "conditional_feasible_tv_bound": 0.0,
+          "row_log_factor_range": 0.0,
+          "repair_log_product": 9.128477973853667e-07,
+          "repair_correction": 0.0,
+          "minimum_repair_margin": 15.202301401720565
+        }
+      },
+      {
+        "beta": 80.0,
+        "scale": 0.04686050285174335,
+        "root_readout_tv_bound": 0.04870076643978553,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 0.9999999999999974,
+          "syndrome_defect_bound": 2.511203243191056e-15,
+          "conditional_feasible_tv_bound": 0.0,
+          "row_log_factor_range": 0.0,
+          "repair_log_product": 2.511203243191058e-15,
+          "repair_correction": 0.0,
+          "minimum_repair_margin": 34.655188937338465
+        }
+      }
+    ]
+  },
+  {
+    "name": "random_regular_n16_s9901_standard",
+    "status": "ok",
+    "scheme": "standard",
+    "total_seconds": 1.0322807079646736,
+    "logical_variables": 48,
+    "logical_edges": 102,
+    "qubits": 55,
+    "scale": 0.02131207147559613,
+    "readout_curves": [
+      {
+        "beta": 10.0,
+        "scale": 0.018308033528724177,
+        "root_readout_tv_bound": 1.0,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 0.0072564007630916945,
+          "syndrome_defect_bound": 0.9927435992369084,
+          "conditional_feasible_tv_bound": 0.09981721354711826,
+          "row_log_factor_range": 0.40060287342861,
+          "repair_log_product": 4.528837491091594,
+          "repair_correction": 0.40060287342861,
+          "minimum_repair_margin": 0.1304543424480954
+        }
+      },
+      {
+        "beta": 20.0,
+        "scale": 0.02131207147559613,
+        "root_readout_tv_bound": 0.5107717199592802,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 0.5381868808038214,
+          "syndrome_defect_bound": 0.4618131191961786,
+          "conditional_feasible_tv_bound": 0.0003570981249435128,
+          "row_log_factor_range": 0.0014283925604898174,
+          "repair_log_product": 0.6188900201652089,
+          "repair_correction": 0.0014283925604898174,
+          "minimum_repair_margin": 2.2270563660511216
+        }
+      },
+      {
+        "beta": 40.0,
+        "scale": 0.02281409044903211,
+        "root_readout_tv_bound": 0.055041957983233365,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 0.9935595485412433,
+          "syndrome_defect_bound": 0.006440451458756672,
+          "conditional_feasible_tv_bound": 3.886318675426296e-09,
+          "row_log_factor_range": 1.5545274701705184e-08,
+          "repair_log_product": 0.006461280547217628,
+          "repair_correction": 1.5545274701705184e-08,
+          "minimum_repair_margin": 6.6036346527151455
+        }
+      },
+      {
+        "beta": 80.0,
+        "scale": 0.023565099935750098,
+        "root_readout_tv_bound": 0.04860227316290994,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 0.9999992294752479,
+          "syndrome_defect_bound": 7.705247520947026e-07,
+          "conditional_feasible_tv_bound": 4.600525008920756e-19,
+          "row_log_factor_range": 1.8402100035683023e-18,
+          "repair_log_product": 7.705250489490518e-07,
+          "repair_correction": 1.8402100035683023e-18,
+          "minimum_repair_margin": 15.357434041305972
+        }
+      }
+    ]
+  },
+  {
+    "name": "random_regular_n16_s9901_balanced",
+    "status": "ok",
+    "scheme": "balanced",
+    "total_seconds": 1.2621255840640515,
+    "logical_variables": 96,
+    "logical_edges": 200,
+    "qubits": 107,
+    "scale": 0.07363057810124236,
+    "readout_curves": [
+      {
+        "beta": 10.0,
+        "scale": 0.06215477492588901,
+        "root_readout_tv_bound": 0.30152765159075823,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 0.7168088508470865,
+          "syndrome_defect_bound": 0.28319114915291355,
+          "conditional_feasible_tv_bound": 0.0,
+          "row_log_factor_range": 0.0,
+          "repair_log_product": 0.332946069675709,
+          "repair_correction": 0.0,
+          "minimum_repair_margin": 2.7632844314877483
+        }
+      },
+      {
+        "beta": 20.0,
+        "scale": 0.07363057810124236,
+        "root_readout_tv_bound": 0.018098093220785778,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 0.9998813117061055,
+          "syndrome_defect_bound": 0.00011868829389452742,
+          "conditional_feasible_tv_bound": 0.0,
+          "row_log_factor_range": 0.0,
+          "repair_log_product": 0.0001186953379074479,
+          "repair_correction": 0.0,
+          "minimum_repair_margin": 10.420290829261539
+        }
+      },
+      {
+        "beta": 40.0,
+        "scale": 0.07936847968891905,
+        "root_readout_tv_bound": 0.01797705597182167,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 0.9999999999807262,
+          "syndrome_defect_bound": 1.9273816928866065e-11,
+          "conditional_feasible_tv_bound": 0.0,
+          "row_log_factor_range": 0.0,
+          "repair_log_product": 1.927381692905179e-11,
+          "repair_correction": 0.0,
+          "minimum_repair_margin": 25.739439343954647
+        }
+      },
+      {
+        "beta": 80.0,
+        "scale": 0.0822374304827574,
+        "root_readout_tv_bound": 0.017977041626927544,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 1.0,
+          "syndrome_defect_bound": 7.435251335401248e-25,
+          "conditional_feasible_tv_bound": 0.0,
+          "row_log_factor_range": 0.0,
+          "repair_log_product": 7.4352513354012255e-25,
+          "repair_correction": 0.0,
+          "minimum_repair_margin": 56.377736603529115
+        }
+      }
+    ]
+  },
+  {
+    "name": "random_regular_n32_s8807_standard",
+    "status": "ok",
+    "scheme": "standard",
+    "total_seconds": 1.802462332881987,
+    "logical_variables": 96,
+    "logical_edges": 208,
+    "qubits": 121,
+    "scale": 0.011224382446419899,
+    "readout_curves": [
+      {
+        "beta": 10.0,
+        "scale": 0.009159728613770027,
+        "root_readout_tv_bound": 1.0,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 6.996846036786983e-05,
+          "syndrome_defect_bound": 0.9999300315396321,
+          "conditional_feasible_tv_bound": 0.2719376400078305,
+          "row_log_factor_range": 1.1158200273783612,
+          "repair_log_product": 8.451789526112496,
+          "repair_correction": 1.1158200273783612,
+          "minimum_repair_margin": 0.19177195894337667
+        }
+      },
+      {
+        "beta": 20.0,
+        "scale": 0.011224382446419899,
+        "root_readout_tv_bound": 0.5836712837709529,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 0.4193523481108756,
+          "syndrome_defect_bound": 0.5806476518891244,
+          "conditional_feasible_tv_bound": 0.0010273569246157083,
+          "row_log_factor_range": 0.004109429144245684,
+          "repair_log_product": 0.8666597122389492,
+          "repair_correction": 0.004109429144245684,
+          "minimum_repair_margin": 2.487924042095101
+        }
+      },
+      {
+        "beta": 40.0,
+        "scale": 0.012256709362744832,
+        "root_readout_tv_bound": 0.0066272587529480065,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 0.9953687588223576,
+          "syndrome_defect_bound": 0.0046312411776424055,
+          "conditional_feasible_tv_bound": 1.1182101851345691e-08,
+          "row_log_factor_range": 4.4728407405382765e-08,
+          "repair_log_product": 0.004641998394249746,
+          "repair_correction": 4.4728407405382765e-08,
+          "minimum_repair_margin": 7.337959927401572
+        }
+      },
+      {
+        "beta": 80.0,
+        "scale": 0.012772872820907302,
+        "root_readout_tv_bound": 0.0019961568210272404,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 0.9999998479757689,
+          "syndrome_defect_bound": 1.5202423107283152e-07,
+          "conditional_feasible_tv_bound": 1.3237093274503537e-18,
+          "row_log_factor_range": 5.294837309801415e-18,
+          "repair_log_product": 1.5202424262851622e-07,
+          "repair_correction": 5.294837309801415e-18,
+          "minimum_repair_margin": 17.038956406090566
+        }
+      }
+    ]
+  },
+  {
+    "name": "random_regular_n32_s8807_balanced",
+    "status": "ok",
+    "scheme": "balanced",
+    "total_seconds": 3.81680616713129,
+    "logical_variables": 192,
+    "logical_edges": 400,
+    "qubits": 239,
+    "scale": 0.01927565123529232,
+    "readout_curves": [
+      {
+        "beta": 10.0,
+        "scale": 0.01529548851711953,
+        "root_readout_tv_bound": 1.0,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 0.0003836244594203192,
+          "syndrome_defect_bound": 0.9996163755405797,
+          "conditional_feasible_tv_bound": 0.0,
+          "row_log_factor_range": 0.0,
+          "repair_log_product": 7.865846454161061,
+          "repair_correction": 0.0,
+          "minimum_repair_margin": 0.17212646847088037
+        }
+      },
+      {
+        "beta": 20.0,
+        "scale": 0.01927565123529232,
+        "root_readout_tv_bound": 0.16511580220983973,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 0.8836294922265996,
+          "syndrome_defect_bound": 0.1163705077734004,
+          "conditional_feasible_tv_bound": 0.0,
+          "row_log_factor_range": 0.0,
+          "repair_log_product": 0.1237174306430283,
+          "repair_correction": 0.0,
+          "minimum_repair_margin": 4.20335034488576
+        }
+      },
+      {
+        "beta": 40.0,
+        "scale": 0.021265732594378722,
+        "root_readout_tv_bound": 0.04875932425849808,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 0.9999859701779413,
+          "syndrome_defect_bound": 1.4029822058700834e-05,
+          "conditional_feasible_tv_bound": 0.0,
+          "row_log_factor_range": 0.0,
+          "repair_log_product": 1.402992047757488e-05,
+          "repair_correction": 0.0,
+          "minimum_repair_margin": 12.690771492806109
+        }
+      },
+      {
+        "beta": 80.0,
+        "scale": 0.02226077327392192,
+        "root_readout_tv_bound": 0.04874529443672103,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 0.9999999999997184,
+          "syndrome_defect_bound": 2.8155368830176395e-13,
+          "conditional_feasible_tv_bound": 0.0,
+          "row_log_factor_range": 0.0,
+          "repair_log_product": 2.8155368830180353e-13,
+          "repair_correction": 0.0,
+          "minimum_repair_margin": 29.667515635869794
+        }
+      }
+    ]
+  },
+  {
+    "name": "random_regular_n32_s9901_standard",
+    "status": "ok",
+    "scheme": "standard",
+    "total_seconds": 1.907821875065565,
+    "logical_variables": 96,
+    "logical_edges": 207,
+    "qubits": 123,
+    "scale": 0.01170431627097499,
+    "readout_curves": [
+      {
+        "beta": 10.0,
+        "scale": 0.00951974365307498,
+        "root_readout_tv_bound": 1.0,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 0.00035326050972333026,
+          "syndrome_defect_bound": 0.9996467394902767,
+          "conditional_feasible_tv_bound": 0.1548476514735388,
+          "row_log_factor_range": 0.6244136110989037,
+          "repair_log_product": 7.324197457436392,
+          "repair_correction": 0.6244136110989037,
+          "minimum_repair_margin": 0.2945799785879091
+        }
+      },
+      {
+        "beta": 20.0,
+        "scale": 0.01170431627097499,
+        "root_readout_tv_bound": 0.43854303245796633,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 0.6103945617967866,
+          "syndrome_defect_bound": 0.3896054382032133,
+          "conditional_feasible_tv_bound": 0.00021100387866629706,
+          "row_log_factor_range": 0.0008440155271911207,
+          "repair_log_product": 0.4933209599566107,
+          "repair_correction": 0.0008440155271911207,
+          "minimum_repair_margin": 2.8968188057808444
+        }
+      },
+      {
+        "beta": 40.0,
+        "scale": 0.012796602579924994,
+        "root_readout_tv_bound": 0.05016306061991666,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 0.9985635300979383,
+          "syndrome_defect_bound": 0.0014364699020616655,
+          "conditional_feasible_tv_bound": 3.4176825300638996e-10,
+          "row_log_factor_range": 1.3670730120255599e-09,
+          "repair_log_product": 0.0014375026120792666,
+          "repair_correction": 1.3670730120255599e-09,
+          "minimum_repair_margin": 8.243946074261938
+        }
+      },
+      {
+        "beta": 80.0,
+        "scale": 0.013342745734399999,
+        "root_readout_tv_bound": 0.04872660781423938,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 0.9999999825618469,
+          "syndrome_defect_bound": 1.7438153109239695e-08,
+          "conditional_feasible_tv_bound": 8.96490175270602e-22,
+          "row_log_factor_range": 3.585960701082408e-21,
+          "repair_log_product": 1.7438153261284296e-08,
+          "repair_correction": 3.585960701082408e-21,
+          "minimum_repair_margin": 18.938390518541905
+        }
+      }
+    ]
+  },
+  {
+    "name": "random_regular_n32_s9901_balanced",
+    "status": "ok",
+    "scheme": "balanced",
+    "total_seconds": 3.573480499908328,
+    "logical_variables": 192,
+    "logical_edges": 400,
+    "qubits": 246,
+    "scale": 0.02292728033322828,
+    "readout_curves": [
+      {
+        "beta": 10.0,
+        "scale": 0.018076782888706556,
+        "root_readout_tv_bound": 1.0,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 0.012928396062089459,
+          "syndrome_defect_bound": 0.9870716039379105,
+          "conditional_feasible_tv_bound": 0.0,
+          "row_log_factor_range": 0.0,
+          "repair_log_product": 4.348329141681839,
+          "repair_correction": 0.0,
+          "minimum_repair_margin": 0.7069146720137082
+        }
+      },
+      {
+        "beta": 20.0,
+        "scale": 0.02292728033322828,
+        "root_readout_tv_bound": 0.06348073550119912,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 0.9852678341265728,
+          "syndrome_defect_bound": 0.014732165873427223,
+          "conditional_feasible_tv_bound": 0.0,
+          "row_log_factor_range": 0.0,
+          "repair_log_product": 0.014841761952783021,
+          "repair_correction": 0.0,
+          "minimum_repair_margin": 5.9938521618573954
+        }
+      },
+      {
+        "beta": 40.0,
+        "scale": 0.02535252905548914,
+        "root_readout_tv_bound": 0.04874874257376242,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 0.9999998270540095,
+          "syndrome_defect_bound": 1.7294599054783286e-07,
+          "conditional_feasible_tv_bound": 0.0,
+          "row_log_factor_range": 0.0,
+          "repair_log_product": 1.7294600550299258e-07,
+          "repair_correction": 0.0,
+          "minimum_repair_margin": 16.68823402877174
+        }
+      },
+      {
+        "beta": 80.0,
+        "scale": 0.026565153416619566,
+        "root_readout_tv_bound": 0.048748569627771625,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 1.0,
+          "syndrome_defect_bound": 4.936646781507475e-17,
+          "conditional_feasible_tv_bound": 0.0,
+          "row_log_factor_range": 0.0,
+          "repair_log_product": 4.9366467815074894e-17,
+          "repair_correction": 0.0,
+          "minimum_repair_margin": 38.07712291753792
+        }
+      }
+    ]
+  },
+  {
+    "name": "random_regular_n64_s8807_standard",
+    "status": "ok",
+    "scheme": "standard",
+    "total_seconds": 4.684463083045557,
+    "logical_variables": 192,
+    "logical_edges": 416,
+    "qubits": 283,
+    "scale": 0.00434403843515977,
+    "readout_curves": [
+      {
+        "beta": 10.0,
+        "scale": 0.00334048339438371,
+        "root_readout_tv_bound": 1.0,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 2.5621232122187257e-11,
+          "syndrome_defect_bound": 0.9999999999743787,
+          "conditional_feasible_tv_bound": 0.8052418940269868,
+          "row_log_factor_range": 4.453383137520371,
+          "repair_log_product": 19.934216593070754,
+          "repair_correction": 4.453383137520371,
+          "minimum_repair_margin": -0.04709019024973771
+        }
+      },
+      {
+        "beta": 20.0,
+        "scale": 0.00434403843515977,
+        "root_readout_tv_bound": 0.9723686073702192,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 0.038787810359375424,
+          "syndrome_defect_bound": 0.9612121896406246,
+          "conditional_feasible_tv_bound": 0.009471921294798333,
+          "row_log_factor_range": 0.03788881830037459,
+          "repair_log_product": 3.2132571292362675,
+          "repair_correction": 0.03788881830037459,
+          "minimum_repair_margin": 1.7593242016001764
+        }
+      },
+      {
+        "beta": 40.0,
+        "scale": 0.0048458159555478,
+        "root_readout_tv_bound": 0.032494490697177934,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 0.9691527353146214,
+          "syndrome_defect_bound": 0.03084726468537855,
+          "conditional_feasible_tv_bound": 4.3080260201382806e-07,
+          "row_log_factor_range": 1.7232104080554188e-06,
+          "repair_log_product": 0.0313330047723476,
+          "repair_correction": 1.7232104080554188e-06,
+          "minimum_repair_margin": 5.9015769155955775
+        }
+      },
+      {
+        "beta": 80.0,
+        "scale": 0.0050967047157418136,
+        "root_readout_tv_bound": 0.0016499158317886658,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 0.9999966234785149,
+          "syndrome_defect_bound": 3.3765214850898415e-06,
+          "conditional_feasible_tv_bound": 8.879507706016762e-16,
+          "row_log_factor_range": 3.5518030824067047e-15,
+          "repair_log_product": 3.3765271855513304e-06,
+          "repair_correction": 3.5518030824067047e-15,
+          "minimum_repair_margin": 14.190346706365528
+        }
+      }
+    ]
+  },
+  {
+    "name": "random_regular_n64_s8807_balanced",
+    "status": "ok",
+    "scheme": "balanced",
+    "total_seconds": 8.44201120804064,
+    "logical_variables": 384,
+    "logical_edges": 800,
+    "qubits": 524,
+    "scale": 0.008572894466257926,
+    "readout_curves": [
+      {
+        "beta": 10.0,
+        "scale": 0.0064506017667511455,
+        "root_readout_tv_bound": 1.0,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 3.1170492700132134e-08,
+          "syndrome_defect_bound": 0.9999999688295073,
+          "conditional_feasible_tv_bound": 0.0,
+          "row_log_factor_range": 0.0,
+          "repair_log_product": 17.283793936422278,
+          "repair_correction": 0.0,
+          "minimum_repair_margin": -0.03559162298902929
+        }
+      },
+      {
+        "beta": 20.0,
+        "scale": 0.008572894466257926,
+        "root_readout_tv_bound": 0.29336330451521064,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 0.7553987798479458,
+          "syndrome_defect_bound": 0.24460122015205418,
+          "conditional_feasible_tv_bound": 0.0,
+          "row_log_factor_range": 0.0,
+          "repair_log_product": 0.2805094839447649,
+          "repair_correction": 0.0,
+          "minimum_repair_margin": 3.81203110503495
+        }
+      },
+      {
+        "beta": 40.0,
+        "scale": 0.009634040816011314,
+        "root_readout_tv_bound": 0.04879148876397281,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 0.9999705955991837,
+          "syndrome_defect_bound": 2.940440081635913e-05,
+          "conditional_feasible_tv_bound": 0.0,
+          "row_log_factor_range": 0.0,
+          "repair_log_product": 2.9404833134227526e-05,
+          "repair_correction": 0.0,
+          "minimum_repair_margin": 12.099549977207042
+        }
+      },
+      {
+        "beta": 80.0,
+        "scale": 0.010164613990888012,
+        "root_readout_tv_bound": 0.048762084363892344,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 0.9999999999992641,
+          "syndrome_defect_bound": 7.358380430117314e-13,
+          "conditional_feasible_tv_bound": 0.0,
+          "row_log_factor_range": 0.0,
+          "repair_log_product": 7.358380430120021e-13,
+          "repair_correction": 0.0,
+          "minimum_repair_margin": 28.677090027696625
+        }
+      }
+    ]
+  },
+  {
+    "name": "random_regular_n64_s9901_standard",
+    "status": "ok",
+    "scheme": "standard",
+    "total_seconds": 5.806995457969606,
+    "logical_variables": 192,
+    "logical_edges": 416,
+    "qubits": 278,
+    "scale": 0.0041730666288068334,
+    "readout_curves": [
+      {
+        "beta": 10.0,
+        "scale": 0.003217928231972641,
+        "root_readout_tv_bound": 1.0,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 2.545232446049258e-13,
+          "syndrome_defect_bound": 0.9999999999997454,
+          "conditional_feasible_tv_bound": 0.940618157908875,
+          "row_log_factor_range": 6.97354669693142,
+          "repair_log_product": 22.025837532030504,
+          "repair_correction": 6.97354669693142,
+          "minimum_repair_margin": -0.11581904221083855
+        }
+      },
+      {
+        "beta": 20.0,
+        "scale": 0.0041730666288068334,
+        "root_readout_tv_bound": 1.0,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 0.0009770748187301035,
+          "syndrome_defect_bound": 0.9990229251812699,
+          "conditional_feasible_tv_bound": 0.04717541633171814,
+          "row_log_factor_range": 0.1888418389875952,
+          "repair_log_product": 6.742308554081216,
+          "repair_correction": 0.1888418389875952,
+          "minimum_repair_margin": 1.1345700578557825
+        }
+      },
+      {
+        "beta": 40.0,
+        "scale": 0.00465063582722393,
+        "root_readout_tv_bound": 0.1721520094619656,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 0.8284458487020594,
+          "syndrome_defect_bound": 0.17155415129794066,
+          "conditional_feasible_tv_bound": 1.597874950817528e-05,
+          "row_log_factor_range": 6.391499803814072e-05,
+          "repair_log_product": 0.18819284030796268,
+          "repair_correction": 6.391499803814072e-05,
+          "minimum_repair_margin": 4.482898616450959
+        }
+      },
+      {
+        "beta": 80.0,
+        "scale": 0.004889420426432478,
+        "root_readout_tv_bound": 0.0007163795399584984,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 0.9998646773328634,
+          "syndrome_defect_bound": 0.0001353226671365804,
+          "conditional_feasible_tv_bound": 1.7981773306324269e-12,
+          "row_log_factor_range": 7.1927093225297075e-12,
+          "repair_log_product": 0.00013533182407383113,
+          "repair_correction": 7.1927093225297075e-12,
+          "minimum_repair_margin": 11.200843604819397
+        }
+      }
+    ]
+  },
+  {
+    "name": "random_regular_n64_s9901_balanced",
+    "status": "ok",
+    "scheme": "balanced",
+    "total_seconds": 9.049866042099893,
+    "logical_variables": 384,
+    "logical_edges": 800,
+    "qubits": 586,
+    "scale": 0.008127179310790975,
+    "readout_curves": [
+      {
+        "beta": 10.0,
+        "scale": 0.0059979485702999,
+        "root_readout_tv_bound": 1.0,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 2.5477539839708786e-10,
+          "syndrome_defect_bound": 0.9999999997452246,
+          "conditional_feasible_tv_bound": 0.0,
+          "row_log_factor_range": 0.0,
+          "repair_log_product": 22.09063874949374,
+          "repair_correction": 0.0,
+          "minimum_repair_margin": -0.2264276096537206
+        }
+      },
+      {
+        "beta": 20.0,
+        "scale": 0.008127179310790975,
+        "root_readout_tv_bound": 0.7643152967343076,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 0.23642829517952976,
+          "syndrome_defect_bound": 0.7635717048204702,
+          "conditional_feasible_tv_bound": 0.0,
+          "row_log_factor_range": 0.0,
+          "repair_log_product": 1.4421103086519194,
+          "repair_correction": 0.0,
+          "minimum_repair_margin": 2.496960917787802
+        }
+      },
+      {
+        "beta": 40.0,
+        "scale": 0.009191794681036513,
+        "root_readout_tv_bound": 0.0017857462875288158,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 0.9989564603569798,
+          "syndrome_defect_bound": 0.0010435396430201562,
+          "conditional_feasible_tv_bound": 0.0,
+          "row_log_factor_range": 0.0,
+          "repair_log_product": 0.0010440845096063372,
+          "repair_correction": 0.0,
+          "minimum_repair_margin": 9.208039918080408
+        }
+      },
+      {
+        "beta": 80.0,
+        "scale": 0.009724102366159284,
+        "root_readout_tv_bound": 0.0007422064233894081,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 0.999999999187674,
+          "syndrome_defect_bound": 8.123259616882685e-10,
+          "conditional_feasible_tv_bound": 0.0,
+          "row_log_factor_range": 0.0,
+          "repair_log_product": 8.123259620182041e-10,
+          "repair_correction": 0.0,
+          "minimum_repair_margin": 22.64393485528136
+        }
+      }
+    ]
+  },
+  {
+    "name": "irregular_hubs_n16_s8807_standard",
+    "status": "ok",
+    "scheme": "standard",
+    "total_seconds": 1.0656437911093235,
+    "logical_variables": 48,
+    "logical_edges": 104,
+    "qubits": 56,
+    "scale": 0.034073000424895535,
+    "readout_curves": [
+      {
+        "beta": 10.0,
+        "scale": 0.02912161138637642,
+        "root_readout_tv_bound": 0.9435731791828033,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 0.10410516322498795,
+          "syndrome_defect_bound": 0.895894836775012,
+          "conditional_feasible_tv_bound": 0.034341896798956544,
+          "row_log_factor_range": 0.13742162765599253,
+          "repair_log_product": 2.1401515890917846,
+          "repair_correction": 0.13742162765599253,
+          "minimum_repair_margin": 0.559610647231799
+        }
+      },
+      {
+        "beta": 20.0,
+        "scale": 0.034073000424895535,
+        "root_readout_tv_bound": 0.08455782960564047,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 0.9278553046746112,
+          "syndrome_defect_bound": 0.07214469532538885,
+          "conditional_feasible_tv_bound": 1.2210753744977213e-05,
+          "row_log_factor_range": 4.884301498233639e-05,
+          "repair_log_product": 0.07487595635523923,
+          "repair_correction": 4.884301498233639e-05,
+          "minimum_repair_margin": 3.8465128991690936
+        }
+      },
+      {
+        "beta": 40.0,
+        "scale": 0.03654869494415508,
+        "root_readout_tv_bound": 0.012449936969597772,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 0.9999338404573193,
+          "syndrome_defect_bound": 6.615954268069048e-05,
+          "conditional_feasible_tv_bound": 1.3741676033680398e-12,
+          "row_log_factor_range": 5.496670413472159e-12,
+          "repair_log_product": 6.616173131940412e-05,
+          "repair_correction": 5.496670413472159e-12,
+          "minimum_repair_margin": 10.480646131958874
+        }
+      },
+      {
+        "beta": 80.0,
+        "scale": 0.03778654220378486,
+        "root_readout_tv_bound": 0.012383761932713724,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 0.9999999999275749,
+          "syndrome_defect_bound": 7.242501324975918e-11,
+          "conditional_feasible_tv_bound": 1.740269715901693e-26,
+          "row_log_factor_range": 6.961078863606772e-26,
+          "repair_log_product": 7.24250132523818e-11,
+          "repair_correction": 6.961078863606772e-26,
+          "minimum_repair_margin": 23.7489385495184
+        }
+      }
+    ]
+  },
+  {
+    "name": "irregular_hubs_n16_s8807_balanced",
+    "status": "ok",
+    "scheme": "balanced",
+    "total_seconds": 1.5601582911331207,
+    "logical_variables": 96,
+    "logical_edges": 200,
+    "qubits": 112,
+    "scale": 0.0417459500050878,
+    "readout_curves": [
+      {
+        "beta": 10.0,
+        "scale": 0.034711412205346334,
+        "root_readout_tv_bound": 1.0,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 0.04258761684150816,
+          "syndrome_defect_bound": 0.9574123831584919,
+          "conditional_feasible_tv_bound": 0.0,
+          "row_log_factor_range": 0.0,
+          "repair_log_product": 3.156191752435372,
+          "repair_correction": 0.0,
+          "minimum_repair_margin": -0.04700636228530253
+        }
+      },
+      {
+        "beta": 20.0,
+        "scale": 0.0417459500050878,
+        "root_readout_tv_bound": 0.10912006611604935,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 0.9395763461540423,
+          "syndrome_defect_bound": 0.06042365384595773,
+          "conditional_feasible_tv_bound": 0.0,
+          "row_log_factor_range": 0.0,
+          "repair_log_product": 0.062326200892673246,
+          "repair_correction": 0.0,
+          "minimum_repair_margin": 3.878679824545798
+        }
+      },
+      {
+        "beta": 40.0,
+        "scale": 0.04526321890495853,
+        "root_readout_tv_bound": 0.048706447693359675,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 0.999989964576732,
+          "syndrome_defect_bound": 1.0035423268029365e-05,
+          "conditional_feasible_tv_bound": 0.0,
+          "row_log_factor_range": 0.0,
+          "repair_log_product": 1.0035473623226333e-05,
+          "repair_correction": 0.0,
+          "minimum_repair_margin": 12.170618636293375
+        }
+      },
+      {
+        "beta": 80.0,
+        "scale": 0.04702185335489391,
+        "root_readout_tv_bound": 0.048696412270507645,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 0.9999999999995837,
+          "syndrome_defect_bound": 4.163101670119705e-13,
+          "conditional_feasible_tv_bound": 0.0,
+          "row_log_factor_range": 0.0,
+          "repair_log_product": 4.1631016701205685e-13,
+          "repair_correction": 0.0,
+          "minimum_repair_margin": 28.755984456459657
+        }
+      }
+    ]
+  },
+  {
+    "name": "irregular_hubs_n16_s9901_standard",
+    "status": "ok",
+    "scheme": "standard",
+    "total_seconds": 0.9678370000328869,
+    "logical_variables": 46,
+    "logical_edges": 98,
+    "qubits": 52,
+    "scale": 0.04191965179177723,
+    "readout_curves": [
+      {
+        "beta": 10.0,
+        "scale": 0.036220256916887794,
+        "root_readout_tv_bound": 0.6464406828865108,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 0.37587990668831234,
+          "syndrome_defect_bound": 0.6241200933116876,
+          "conditional_feasible_tv_bound": 0.005307752461965904,
+          "row_log_factor_range": 0.021231209226241835,
+          "repair_log_product": 0.9652877248471281,
+          "repair_correction": 0.021231209226241835,
+          "minimum_repair_margin": 1.437512143425991
+        }
+      },
+      {
+        "beta": 20.0,
+        "scale": 0.04191965179177723,
+        "root_readout_tv_bound": 0.026030448057875414,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 0.9904341073370494,
+          "syndrome_defect_bound": 0.009565892662950626,
+          "conditional_feasible_tv_bound": 2.4272218287699575e-07,
+          "row_log_factor_range": 9.70888731508002e-07,
+          "repair_log_product": 0.009611930416079046,
+          "repair_correction": 9.70888731508002e-07,
+          "minimum_repair_margin": 6.1867063630506784
+        }
+      },
+      {
+        "beta": 40.0,
+        "scale": 0.04476934922922195,
+        "root_readout_tv_bound": 0.016461480899010405,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 0.9999991305375542,
+          "syndrome_defect_bound": 8.694624458440523e-07,
+          "conditional_feasible_tv_bound": 5.002880717023758e-16,
+          "row_log_factor_range": 2.001152286809503e-15,
+          "repair_log_product": 8.694628238267429e-07,
+          "repair_correction": 2.001152286809503e-15,
+          "minimum_repair_margin": 15.402914794670242
+        }
+      },
+      {
+        "beta": 80.0,
+        "scale": 0.04619419794794431,
+        "root_readout_tv_bound": 0.01646059826337013,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 0.9999999999999898,
+          "syndrome_defect_bound": 1.0210318690295319e-14,
+          "conditional_feasible_tv_bound": 2.1254026586098576e-33,
+          "row_log_factor_range": 8.50161063443943e-33,
+          "repair_log_product": 1.0210318690295382e-14,
+          "repair_correction": 8.50161063443943e-33,
+          "minimum_repair_margin": 33.25982252251991
+        }
+      }
+    ]
+  },
+  {
+    "name": "irregular_hubs_n16_s9901_balanced",
+    "status": "ok",
+    "scheme": "balanced",
+    "total_seconds": 1.0461935410276055,
+    "logical_variables": 91,
+    "logical_edges": 188,
+    "qubits": 104,
+    "scale": 0.06559870023731675,
+    "readout_curves": [
+      {
+        "beta": 10.0,
+        "scale": 0.05500692580796682,
+        "root_readout_tv_bound": 0.40646419404138157,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 0.5980448126681265,
+          "syndrome_defect_bound": 0.4019551873318735,
+          "conditional_feasible_tv_bound": 0.0,
+          "row_log_factor_range": 0.0,
+          "repair_log_product": 0.514089590267067,
+          "repair_correction": 0.0,
+          "minimum_repair_margin": 2.019395481928464
+        }
+      },
+      {
+        "beta": 20.0,
+        "scale": 0.06559870023731675,
+        "root_readout_tv_bound": 0.004139920006516846,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 0.9997032331503604,
+          "syndrome_defect_bound": 0.00029676684963959757,
+          "conditional_feasible_tv_bound": 0.0,
+          "row_log_factor_range": 0.0,
+          "repair_log_product": 0.0002968108936352006,
+          "repair_correction": 0.0,
+          "minimum_repair_margin": 9.572874717456717
+        }
+      },
+      {
+        "beta": 40.0,
+        "scale": 0.0708945874519917,
+        "root_readout_tv_bound": 0.0038314186063528165,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 0.9999999998981387,
+          "syndrome_defect_bound": 1.0186132441557153e-10,
+          "conditional_feasible_tv_bound": 0.0,
+          "row_log_factor_range": 0.0,
+          "repair_log_product": 1.0186132442075948e-10,
+          "repair_correction": 0.0,
+          "minimum_repair_margin": 24.106729887701075
+        }
+      },
+      {
+        "beta": 80.0,
+        "scale": 0.0735425310593292,
+        "root_readout_tv_bound": 0.003831411517745931,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 1.0,
+          "syndrome_defect_bound": 2.4483536160941633e-23,
+          "conditional_feasible_tv_bound": 0.0,
+          "row_log_factor_range": 0.0,
+          "repair_log_product": 2.4483536160941575e-23,
+          "repair_correction": 0.0,
+          "minimum_repair_margin": 52.95062236271702
+        }
+      }
+    ]
+  },
+  {
+    "name": "irregular_hubs_n32_s8807_standard",
+    "status": "ok",
+    "scheme": "standard",
+    "total_seconds": 2.838059375062585,
+    "logical_variables": 120,
+    "logical_edges": 279,
+    "qubits": 167,
+    "scale": 0.013814216413831147,
+    "readout_curves": [
+      {
+        "beta": 10.0,
+        "scale": 0.010961766494328957,
+        "root_readout_tv_bound": 1.0,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 7.341202142625345e-05,
+          "syndrome_defect_bound": 0.9999265879785737,
+          "conditional_feasible_tv_bound": 0.38559804165907374,
+          "row_log_factor_range": 1.6264755104453057,
+          "repair_log_product": 7.893247256169204,
+          "repair_correction": 1.6264755104453057,
+          "minimum_repair_margin": -0.19092535753599615
+        }
+      },
+      {
+        "beta": 20.0,
+        "scale": 0.013814216413831147,
+        "root_readout_tv_bound": 0.45276473202938045,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 0.54898142890486,
+          "syndrome_defect_bound": 0.45101857109514,
+          "conditional_feasible_tv_bound": 0.0006621286790873177,
+          "row_log_factor_range": 0.0026485151033983586,
+          "repair_log_product": 0.5984970040176966,
+          "repair_correction": 0.0026485151033983586,
+          "minimum_repair_margin": 2.230487155166504
+        }
+      },
+      {
+        "beta": 40.0,
+        "scale": 0.01524044137358224,
+        "root_readout_tv_bound": 0.0024430709604875344,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 0.9986196554538916,
+          "syndrome_defect_bound": 0.0013803445461084,
+          "conditional_feasible_tv_bound": 1.0727860932935153e-09,
+          "row_log_factor_range": 4.291144373174061e-09,
+          "repair_log_product": 0.0013812980933070394,
+          "repair_correction": 4.291144373174061e-09,
+          "minimum_repair_margin": 7.813200448506188
+        }
+      },
+      {
+        "beta": 80.0,
+        "scale": 0.01595355385345779,
+        "root_readout_tv_bound": 0.0010627072727637514,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 0.9999999902848798,
+          "syndrome_defect_bound": 9.715120097824541e-09,
+          "conditional_feasible_tv_bound": 2.814020020034158e-21,
+          "row_log_factor_range": 1.1256080080136632e-20,
+          "repair_log_product": 9.715120145016329e-09,
+          "repair_correction": 1.1256080080136632e-20,
+          "minimum_repair_margin": 18.979866890835073
+        }
+      }
+    ]
+  },
+  {
+    "name": "irregular_hubs_n32_s8807_balanced",
+    "status": "ok",
+    "scheme": "balanced",
+    "total_seconds": 9.799178999848664,
+    "logical_variables": 252,
+    "logical_edges": 544,
+    "qubits": 331,
+    "scale": 0.02039676242121647,
+    "readout_curves": [
+      {
+        "beta": 10.0,
+        "scale": 0.01579352484245794,
+        "root_readout_tv_bound": 1.0,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 0.00018200201853174223,
+          "syndrome_defect_bound": 0.9998179979814683,
+          "conditional_feasible_tv_bound": 0.0,
+          "row_log_factor_range": 0.0,
+          "repair_log_product": 8.611492780115233,
+          "repair_correction": 0.0,
+          "minimum_repair_margin": -0.41866664471395576
+        }
+      },
+      {
+        "beta": 20.0,
+        "scale": 0.02039676242121647,
+        "root_readout_tv_bound": 0.22409221877714403,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 0.8246633118523391,
+          "syndrome_defect_bound": 0.17533668814766096,
+          "conditional_feasible_tv_bound": 0.0,
+          "row_log_factor_range": 0.0,
+          "repair_log_product": 0.19278008279136827,
+          "repair_correction": 0.0,
+          "minimum_repair_margin": 3.1205041972636414
+        }
+      },
+      {
+        "beta": 40.0,
+        "scale": 0.02269838121059574,
+        "root_readout_tv_bound": 0.048778943674421295,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 0.9999765869550618,
+          "syndrome_defect_bound": 2.3413044938193626e-05,
+          "conditional_feasible_tv_bound": 0.0,
+          "row_log_factor_range": 0.0,
+          "repair_log_product": 2.341331902780846e-05,
+          "repair_correction": 0.0,
+          "minimum_repair_margin": 11.494343395106934
+        }
+      },
+      {
+        "beta": 80.0,
+        "scale": 0.02384919060528537,
+        "root_readout_tv_bound": 0.04875553063014798,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 0.9999999999993352,
+          "syndrome_defect_bound": 6.64784519656878e-13,
+          "conditional_feasible_tv_bound": 0.0,
+          "row_log_factor_range": 0.0,
+          "repair_log_product": 6.647845196570995e-13,
+          "repair_correction": 0.0,
+          "minimum_repair_margin": 28.244343344378084
+        }
+      }
+    ]
+  },
+  {
+    "name": "irregular_hubs_n32_s9901_standard",
+    "status": "ok",
+    "scheme": "standard",
+    "total_seconds": 6.205643041990697,
+    "logical_variables": 114,
+    "logical_edges": 259,
+    "qubits": 150,
+    "scale": 0.007817718842990038,
+    "readout_curves": [
+      {
+        "beta": 10.0,
+        "scale": 0.006278712726915749,
+        "root_readout_tv_bound": 1.0,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 1.4140155684955476e-06,
+          "syndrome_defect_bound": 0.9999985859844315,
+          "conditional_feasible_tv_bound": 0.7366644126702365,
+          "row_log_factor_range": 3.7725846639108016,
+          "repair_log_product": 9.696552399403284,
+          "repair_correction": 3.7725846639108016,
+          "minimum_repair_margin": -0.09913662414281535
+        }
+      },
+      {
+        "beta": 20.0,
+        "scale": 0.007817718842990038,
+        "root_readout_tv_bound": 0.9527266604996454,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 0.07133680262342558,
+          "syndrome_defect_bound": 0.9286631973765744,
+          "conditional_feasible_tv_bound": 0.021288949402975623,
+          "row_log_factor_range": 0.08516866586358932,
+          "repair_log_product": 2.561496120375445,
+          "repair_correction": 0.08516866586358932,
+          "minimum_repair_margin": 1.1429786864465288
+        }
+      },
+      {
+        "beta": 40.0,
+        "scale": 0.008587221901027182,
+        "root_readout_tv_bound": 0.04478275941750858,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 0.9579922150973316,
+          "syndrome_defect_bound": 0.04200778490266842,
+          "conditional_feasible_tv_bound": 2.97494786076666e-06,
+          "row_log_factor_range": 1.1899791443101747e-05,
+          "repair_log_product": 0.04291512736646721,
+          "repair_correction": 1.1899791443101747e-05,
+          "minimum_repair_margin": 5.273660592076745
+        }
+      },
+      {
+        "beta": 80.0,
+        "scale": 0.008971973430045757,
+        "root_readout_tv_bound": 0.002782811942859134,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 0.9999891850701252,
+          "syndrome_defect_bound": 1.0814929874792495e-05,
+          "conditional_feasible_tv_bound": 5.658346145323927e-14,
+          "row_log_factor_range": 2.2633384581295707e-13,
+          "repair_log_product": 1.0814988356565805e-05,
+          "repair_correction": 2.2633384581295707e-13,
+          "minimum_repair_margin": 13.104598512840953
+        }
+      }
+    ]
+  },
+  {
+    "name": "irregular_hubs_n32_s9901_balanced",
+    "status": "ok",
+    "scheme": "balanced",
+    "total_seconds": 9.85103700007312,
+    "logical_variables": 237,
+    "logical_edges": 508,
+    "qubits": 322,
+    "scale": 0.009792967359375378,
+    "readout_curves": [
+      {
+        "beta": 10.0,
+        "scale": 0.007555859530792861,
+        "root_readout_tv_bound": 1.0,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 3.126403808252547e-05,
+          "syndrome_defect_bound": 0.9999687359619175,
+          "conditional_feasible_tv_bound": 0.0,
+          "row_log_factor_range": 0.0,
+          "repair_log_product": 10.373042064009535,
+          "repair_correction": 0.0,
+          "minimum_repair_margin": -0.21326918422041008
+        }
+      },
+      {
+        "beta": 20.0,
+        "scale": 0.009792967359375378,
+        "root_readout_tv_bound": 1.0,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 0.034655606026001054,
+          "syndrome_defect_bound": 0.965344393973999,
+          "conditional_feasible_tv_bound": 0.0,
+          "row_log_factor_range": 0.0,
+          "repair_log_product": 3.3622957763606465,
+          "repair_correction": 0.0,
+          "minimum_repair_margin": 0.7745332655269032
+        }
+      },
+      {
+        "beta": 40.0,
+        "scale": 0.010911521273666637,
+        "root_readout_tv_bound": 0.0671482314112137,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 0.9816083608006203,
+          "syndrome_defect_bound": 0.018391639199379653,
+          "conditional_feasible_tv_bound": 0.0,
+          "row_log_factor_range": 0.0,
+          "repair_log_product": 0.0185628680986649,
+          "repair_correction": 0.0,
+          "minimum_repair_margin": 5.996638413031314
+        }
+      },
+      {
+        "beta": 80.0,
+        "scale": 0.011470798230812266,
+        "root_readout_tv_bound": 0.048757042806080064,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 0.999999549405754,
+          "syndrome_defect_bound": 4.5059424604409543e-07,
+          "conditional_feasible_tv_bound": 0.0,
+          "row_log_factor_range": 0.0,
+          "repair_log_product": 4.5059434756171287e-07,
+          "repair_correction": 0.0,
+          "minimum_repair_margin": 15.97889575576561
+        }
+      }
+    ]
+  },
+  {
+    "name": "irregular_hubs_n64_s8807_standard",
+    "status": "ok",
+    "scheme": "standard",
+    "total_seconds": 16.292654416989535,
+    "logical_variables": 234,
+    "logical_edges": 537,
+    "qubits": 412,
+    "scale": 0.002127171354139645,
+    "readout_curves": [
+      {
+        "beta": 10.0,
+        "scale": 0.001580545970311375,
+        "root_readout_tv_bound": 1.0,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 1.2649177211761522e-16,
+          "syndrome_defect_bound": 0.9999999999999999,
+          "conditional_feasible_tv_bound": 0.9989395587031422,
+          "row_log_factor_range": 15.08337391799775,
+          "repair_log_product": 21.522980492840805,
+          "repair_correction": 15.08337391799775,
+          "minimum_repair_margin": -0.10504356669671326
+        }
+      },
+      {
+        "beta": 20.0,
+        "scale": 0.002127171354139645,
+        "root_readout_tv_bound": 1.0,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 7.474792674488437e-10,
+          "syndrome_defect_bound": 0.9999999992525207,
+          "conditional_feasible_tv_bound": 0.7734541678326412,
+          "row_log_factor_range": 4.115474314246947,
+          "repair_log_product": 16.898840277714793,
+          "repair_correction": 4.115474314246947,
+          "minimum_repair_margin": -0.025274848602284447
+        }
+      },
+      {
+        "beta": 40.0,
+        "scale": 0.00240048404605378,
+        "root_readout_tv_bound": 0.9439465795885905,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 0.066208218671271,
+          "syndrome_defect_bound": 0.933791781328729,
+          "conditional_feasible_tv_bound": 0.009593237571031758,
+          "row_log_factor_range": 0.03837412750598552,
+          "repair_log_product": 2.6791632591502506,
+          "repair_correction": 0.03837412750598552,
+          "minimum_repair_margin": 1.831872605978259
+        }
+      },
+      {
+        "beta": 80.0,
+        "scale": 0.002537140392010847,
+        "root_readout_tv_bound": 0.02556441069356949,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 0.9749975863361462,
+          "syndrome_defect_bound": 0.025002413663853768,
+          "conditional_feasible_tv_bound": 4.367989363981533e-07,
+          "row_log_factor_range": 1.7471957455927243e-06,
+          "repair_log_product": 0.025320239855951027,
+          "repair_correction": 1.7471957455927243e-06,
+          "minimum_repair_margin": 6.509411383245892
+        }
+      }
+    ]
+  },
+  {
+    "name": "irregular_hubs_n64_s8807_balanced",
+    "status": "ok",
+    "scheme": "balanced",
+    "total_seconds": 30.684642374981195,
+    "logical_variables": 489,
+    "logical_edges": 1052,
+    "qubits": 746,
+    "scale": 0.004485588825885111,
+    "readout_curves": [
+      {
+        "beta": 10.0,
+        "scale": 0.0032670778300290435,
+        "root_readout_tv_bound": 1.0,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 6.062542573275848e-10,
+          "syndrome_defect_bound": 0.9999999993937457,
+          "conditional_feasible_tv_bound": 0.0,
+          "row_log_factor_range": 0.0,
+          "repair_log_product": 21.223721651305496,
+          "repair_correction": 0.0,
+          "minimum_repair_margin": -0.20925444006717023
+        }
+      },
+      {
+        "beta": 20.0,
+        "scale": 0.004485588825885111,
+        "root_readout_tv_bound": 1.0,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 5.9303426107287e-05,
+          "syndrome_defect_bound": 0.9999406965738927,
+          "conditional_feasible_tv_bound": 0.0,
+          "row_log_factor_range": 0.0,
+          "repair_log_product": 9.732843477789975,
+          "repair_correction": 0.0,
+          "minimum_repair_margin": 0.3937911415487533
+        }
+      },
+      {
+        "beta": 40.0,
+        "scale": 0.005094844323813143,
+        "root_readout_tv_bound": 0.1303341608257193,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 0.9184317886600494,
+          "syndrome_defect_bound": 0.0815682113399506,
+          "conditional_feasible_tv_bound": 0.0,
+          "row_log_factor_range": 0.0,
+          "repair_log_product": 0.0850876409278213,
+          "repair_correction": 0.0,
+          "minimum_repair_margin": 5.253641008238139
+        }
+      },
+      {
+        "beta": 80.0,
+        "scale": 0.00539947207277716,
+        "root_readout_tv_bound": 0.048770205768496964,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 0.9999957437172716,
+          "syndrome_defect_bound": 4.256282728320898e-06,
+          "conditional_feasible_tv_bound": 0.0,
+          "row_log_factor_range": 0.0,
+          "repair_log_product": 4.256291786317935e-06,
+          "repair_correction": 0.0,
+          "minimum_repair_margin": 14.44509729522182
+        }
+      }
+    ]
+  },
+  {
+    "name": "irregular_hubs_n64_s9901_standard",
+    "status": "ok",
+    "scheme": "standard",
+    "total_seconds": 14.446812833892182,
+    "logical_variables": 226,
+    "logical_edges": 517,
+    "qubits": 353,
+    "scale": 0.00415504908506287,
+    "readout_curves": [
+      {
+        "beta": 10.0,
+        "scale": 0.0031421396171541632,
+        "root_readout_tv_bound": 1.0,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 8.283294864556088e-13,
+          "syndrome_defect_bound": 0.9999999999991717,
+          "conditional_feasible_tv_bound": 0.9753288820341496,
+          "row_log_factor_range": 8.76571387938068,
+          "repair_log_product": 19.05365151510544,
+          "repair_correction": 8.76571387938068,
+          "minimum_repair_margin": -0.07938474500608819
+        }
+      },
+      {
+        "beta": 20.0,
+        "scale": 0.00415504908506287,
+        "root_readout_tv_bound": 1.0,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 0.003290055981069101,
+          "syndrome_defect_bound": 0.9967099440189309,
+          "conditional_feasible_tv_bound": 0.059237137567940044,
+          "row_log_factor_range": 0.2372262891236984,
+          "repair_log_product": 5.480504861962258,
+          "repair_correction": 0.2372262891236984,
+          "minimum_repair_margin": 0.9978484863355463
+        }
+      },
+      {
+        "beta": 40.0,
+        "scale": 0.004661503819017223,
+        "root_readout_tv_bound": 0.08668495193689374,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 0.9148971545346178,
+          "syndrome_defect_bound": 0.0851028454653822,
+          "conditional_feasible_tv_bound": 8.335205432454274e-06,
+          "row_log_factor_range": 3.334082173058922e-05,
+          "repair_log_product": 0.08894078208409704,
+          "repair_correction": 3.334082173058922e-05,
+          "minimum_repair_margin": 5.153745159360387
+        }
+      },
+      {
+        "beta": 80.0,
+        "scale": 0.0049147311859944,
+        "root_readout_tv_bound": 0.0015942482875451283,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 0.9999790036354859,
+          "syndrome_defect_bound": 2.0996364514118363e-05,
+          "conditional_feasible_tv_bound": 1.5853560760352326e-13,
+          "row_log_factor_range": 6.34142430414093e-13,
+          "repair_log_product": 2.0996584940851893e-05,
+          "repair_correction": 6.34142430414093e-13,
+          "minimum_repair_margin": 12.83987177438945
+        }
+      }
+    ]
+  },
+  {
+    "name": "irregular_hubs_n64_s9901_balanced",
+    "status": "ok",
+    "scheme": "balanced",
+    "total_seconds": 29.119803625158966,
+    "logical_variables": 469,
+    "logical_edges": 1004,
+    "qubits": 669,
+    "scale": 0.0067031606010229325,
+    "readout_curves": [
+      {
+        "beta": 10.0,
+        "scale": 0.004949661751728739,
+        "root_readout_tv_bound": 1.0,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 6.3444701059854745e-09,
+          "syndrome_defect_bound": 0.9999999936555299,
+          "conditional_feasible_tv_bound": 0.0,
+          "row_log_factor_range": 0.0,
+          "repair_log_product": 18.87568225290259,
+          "repair_correction": 0.0,
+          "minimum_repair_margin": -0.22032120351670054
+        }
+      },
+      {
+        "beta": 20.0,
+        "scale": 0.0067031606010229325,
+        "root_readout_tv_bound": 0.915805100878883,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 0.08499003311557361,
+          "syndrome_defect_bound": 0.9150099668844264,
+          "conditional_feasible_tv_bound": 0.0,
+          "row_log_factor_range": 0.0,
+          "repair_log_product": 2.4652212868308543,
+          "repair_correction": 0.0,
+          "minimum_repair_margin": 1.7333574089917971
+        }
+      },
+      {
+        "beta": 40.0,
+        "scale": 0.007579910025670029,
+        "root_readout_tv_bound": 0.0033597361952499467,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 0.9973909963776585,
+          "syndrome_defect_bound": 0.0026090036223415467,
+          "conditional_feasible_tv_bound": 0.0,
+          "row_log_factor_range": 0.0,
+          "repair_log_product": 0.002612413003642111,
+          "repair_correction": 0.0,
+          "minimum_repair_margin": 8.309262590752649
+        }
+      },
+      {
+        "beta": 80.0,
+        "scale": 0.008018284737993576,
+        "root_readout_tv_bound": 0.0007496285954355954,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 0.9999999961296444,
+          "syndrome_defect_bound": 3.870355607927102e-09,
+          "conditional_feasible_tv_bound": 0.0,
+          "row_log_factor_range": 0.0,
+          "repair_log_product": 3.870355615416927e-09,
+          "repair_correction": 0.0,
+          "minimum_repair_margin": 20.740543785648853
+        }
+      }
+    ]
+  },
+  {
+    "name": "rewired_band_n16_s8807_standard",
+    "status": "ok",
+    "scheme": "standard",
+    "total_seconds": 2.018645083066076,
+    "logical_variables": 48,
+    "logical_edges": 103,
+    "qubits": 56,
+    "scale": 0.05543623085002844,
+    "readout_curves": [
+      {
+        "beta": 10.0,
+        "scale": 0.047380399477834644,
+        "root_readout_tv_bound": 0.32908646808842007,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 0.6838925639600687,
+          "syndrome_defect_bound": 0.31610743603993124,
+          "conditional_feasible_tv_bound": 0.00038175605391178814,
+          "row_log_factor_range": 0.0015270242898288169,
+          "repair_log_product": 0.3794719921987129,
+          "repair_correction": 0.0015270242898288169,
+          "minimum_repair_margin": 2.655141649096094
+        }
+      },
+      {
+        "beta": 20.0,
+        "scale": 0.05543623085002844,
+        "root_readout_tv_bound": 0.01321391267539342,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 0.9991701358897028,
+          "syndrome_defect_bound": 0.0008298641102971644,
+          "conditional_feasible_tv_bound": 6.184681532035068e-10,
+          "row_log_factor_range": 2.473872612814027e-09,
+          "repair_log_product": 0.0008302086360856805,
+          "repair_correction": 2.473872612814027e-09,
+          "minimum_repair_margin": 8.369083641127643
+        }
+      },
+      {
+        "beta": 40.0,
+        "scale": 0.05946414653612533,
+        "root_readout_tv_bound": 0.012383776455604236,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 0.9999999952199311,
+          "syndrome_defect_bound": 4.7800689472431916e-09,
+          "conditional_feasible_tv_bound": 1.6223008253863846e-21,
+          "row_log_factor_range": 6.489203301545538e-21,
+          "repair_log_product": 4.7800689586677155e-09,
+          "repair_correction": 6.489203301545538e-21,
+          "minimum_repair_margin": 19.79765484057102
+        }
+      },
+      {
+        "beta": 80.0,
+        "scale": 0.061478104379173774,
+        "root_readout_tv_bound": 0.012383761860287954,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 1.0,
+          "syndrome_defect_bound": 3.4110273222599445e-19,
+          "conditional_feasible_tv_bound": 1.1162448911557215e-44,
+          "row_log_factor_range": 4.464979564622886e-44,
+          "repair_log_product": 3.4110273222599416e-19,
+          "repair_correction": 4.464979564622886e-44,
+          "minimum_repair_margin": 42.654797240571014
+        }
+      }
+    ]
+  },
+  {
+    "name": "rewired_band_n16_s8807_balanced",
+    "status": "ok",
+    "scheme": "balanced",
+    "total_seconds": 1.9155312080401927,
+    "logical_variables": 96,
+    "logical_edges": 200,
+    "qubits": 104,
+    "scale": 0.08315434805888393,
+    "readout_curves": [
+      {
+        "beta": 10.0,
+        "scale": 0.07107060087976785,
+        "root_readout_tv_bound": 0.17120165850331773,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 0.877420892283726,
+          "syndrome_defect_bound": 0.12257910771627403,
+          "conditional_feasible_tv_bound": 0.0,
+          "row_log_factor_range": 0.0,
+          "repair_log_product": 0.13076847894960092,
+          "repair_correction": 0.0,
+          "minimum_repair_margin": 3.5653266461430793
+        }
+      },
+      {
+        "beta": 20.0,
+        "scale": 0.08315434805888393,
+        "root_readout_tv_bound": 0.048636546131832555,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 0.999986004655211,
+          "syndrome_defect_bound": 1.39953447889364e-05,
+          "conditional_feasible_tv_bound": 0.0,
+          "row_log_factor_range": 0.0,
+          "repair_log_product": 1.3995442724688033e-05,
+          "repair_correction": 0.0,
+          "minimum_repair_margin": 12.134569404695451
+        }
+      },
+      {
+        "beta": 40.0,
+        "scale": 0.08919622164844197,
+        "root_readout_tv_bound": 0.04862255078730604,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 0.9999999999997377,
+          "syndrome_defect_bound": 2.6237012437644445e-13,
+          "conditional_feasible_tv_bound": 0.0,
+          "row_log_factor_range": 0.0,
+          "repair_log_product": 2.6237012437647903e-13,
+          "repair_correction": 0.0,
+          "minimum_repair_margin": 29.277426449382897
+        }
+      },
+      {
+        "beta": 80.0,
+        "scale": 0.09221715844322098,
+        "root_readout_tv_bound": 0.04862255078704388,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 1.0,
+          "syndrome_defect_bound": 2.5607822668109577e-28,
+          "conditional_feasible_tv_bound": 0.0,
+          "row_log_factor_range": 0.0,
+          "repair_log_product": 2.560782266810961e-28,
+          "repair_correction": 0.0,
+          "minimum_repair_margin": 63.56314073506289
+        }
+      }
+    ]
+  },
+  {
+    "name": "rewired_band_n16_s9901_standard",
+    "status": "ok",
+    "scheme": "standard",
+    "total_seconds": 2.1753798329737037,
+    "logical_variables": 48,
+    "logical_edges": 103,
+    "qubits": 52,
+    "scale": 0.04655944230756928,
+    "readout_curves": [
+      {
+        "beta": 10.0,
+        "scale": 0.04083130291584445,
+        "root_readout_tv_bound": 0.3057773767605468,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 0.7429388646999519,
+          "syndrome_defect_bound": 0.25706113530004815,
+          "conditional_feasible_tv_bound": 0.00024051667765169395,
+          "row_log_factor_range": 0.0009620667291580754,
+          "repair_log_product": 0.2968942977494259,
+          "repair_correction": 0.0009620667291580754,
+          "minimum_repair_margin": 2.7801436271703706
+        }
+      },
+      {
+        "beta": 20.0,
+        "scale": 0.04655944230756928,
+        "root_readout_tv_bound": 0.04914317188538053,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 0.9993325532870768,
+          "syndrome_defect_bound": 0.0006674467129231894,
+          "conditional_feasible_tv_bound": 3.8961032792152294e-10,
+          "row_log_factor_range": 1.5584413116860918e-09,
+          "repair_log_product": 0.0006676695536024746,
+          "repair_correction": 1.5584413116860918e-09,
+          "minimum_repair_margin": 8.400842184043944
+        }
+      },
+      {
+        "beta": 40.0,
+        "scale": 0.049423512003431695,
+        "root_readout_tv_bound": 0.04847572968399205,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 0.9999999950988552,
+          "syndrome_defect_bound": 4.901144840622651e-09,
+          "conditional_feasible_tv_bound": 1.0219844240956403e-21,
+          "row_log_factor_range": 4.0879376963825614e-21,
+          "repair_log_product": 4.9011448526332635e-09,
+          "repair_correction": 4.0879376963825614e-21,
+          "minimum_repair_margin": 19.642672249041535
+        }
+      },
+      {
+        "beta": 80.0,
+        "scale": 0.05085554685136291,
+        "root_readout_tv_bound": 0.04847572478284743,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 1.0,
+          "syndrome_defect_bound": 5.839043292611052e-19,
+          "conditional_feasible_tv_bound": 7.031887413298014e-45,
+          "row_log_factor_range": 2.8127549653192054e-44,
+          "repair_log_product": 5.839043292611048e-19,
+          "repair_correction": 2.8127549653192054e-44,
+          "minimum_repair_margin": 42.126332379738
+        }
+      }
+    ]
+  },
+  {
+    "name": "rewired_band_n16_s9901_balanced",
+    "status": "ok",
+    "scheme": "balanced",
+    "total_seconds": 2.3519369170535356,
+    "logical_variables": 96,
+    "logical_edges": 200,
+    "qubits": 102,
+    "scale": 0.06904413383761322,
+    "readout_curves": [
+      {
+        "beta": 10.0,
+        "scale": 0.05965689512628526,
+        "root_readout_tv_bound": 0.15336824709804942,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 0.8952052293119085,
+          "syndrome_defect_bound": 0.10479477068809152,
+          "conditional_feasible_tv_bound": 0.0,
+          "row_log_factor_range": 0.0,
+          "repair_log_product": 0.11070228050024482,
+          "repair_correction": 0.0,
+          "minimum_repair_margin": 3.5817931673840864
+        }
+      },
+      {
+        "beta": 20.0,
+        "scale": 0.06904413383761322,
+        "root_readout_tv_bound": 0.04858674206233431,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 0.9999867343476238,
+          "syndrome_defect_bound": 1.3265652376272375e-05,
+          "conditional_feasible_tv_bound": 0.0,
+          "row_log_factor_range": 0.0,
+          "repair_log_product": 1.3265740365817026e-05,
+          "repair_correction": 0.0,
+          "minimum_repair_margin": 12.011275516033228
+        }
+      },
+      {
+        "beta": 40.0,
+        "scale": 0.0737377531932772,
+        "root_readout_tv_bound": 0.04857347641033586,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 0.999999999999622,
+          "syndrome_defect_bound": 3.779960403910726e-13,
+          "conditional_feasible_tv_bound": 0.0,
+          "row_log_factor_range": 0.0,
+          "repair_log_product": 3.779960403911439e-13,
+          "repair_correction": 0.0,
+          "minimum_repair_margin": 28.874020529052984
+        }
+      },
+      {
+        "beta": 80.0,
+        "scale": 0.0760845628711092,
+        "root_readout_tv_bound": 0.048573476409957794,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 1.0,
+          "syndrome_defect_bound": 6.833034082947706e-28,
+          "conditional_feasible_tv_bound": 0.0,
+          "row_log_factor_range": 0.0,
+          "repair_log_product": 6.833034082947728e-28,
+          "repair_correction": 0.0,
+          "minimum_repair_margin": 62.59951072509769
+        }
+      }
+    ]
+  },
+  {
+    "name": "rewired_band_n32_s8807_standard",
+    "status": "ok",
+    "scheme": "standard",
+    "total_seconds": 2.852251707809046,
+    "logical_variables": 94,
+    "logical_edges": 202,
+    "qubits": 109,
+    "scale": 0.019710469842131897,
+    "readout_curves": [
+      {
+        "beta": 10.0,
+        "scale": 0.01643243393716035,
+        "root_readout_tv_bound": 0.9593857445232639,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 0.101241379885834,
+          "syndrome_defect_bound": 0.898758620114166,
+          "conditional_feasible_tv_bound": 0.011935645602480541,
+          "row_log_factor_range": 0.04774484973402973,
+          "repair_log_product": 2.247441654409585,
+          "repair_correction": 0.04774484973402973,
+          "minimum_repair_margin": 1.7237726614141557
+        }
+      },
+      {
+        "beta": 20.0,
+        "scale": 0.019710469842131897,
+        "root_readout_tv_bound": 0.06767321631722782,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 0.9810188069177509,
+          "syndrome_defect_bound": 0.018981193082249142,
+          "conditional_feasible_tv_bound": 5.444283612567064e-07,
+          "row_log_factor_range": 2.1777134450270406e-06,
+          "repair_log_product": 0.019163607095002786,
+          "repair_correction": 2.1777134450270406e-06,
+          "minimum_repair_margin": 6.373302630670921
+        }
+      },
+      {
+        "beta": 40.0,
+        "scale": 0.021349487794617674,
+        "root_readout_tv_bound": 0.04869272692286859,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 0.99999875188375,
+          "syndrome_defect_bound": 1.248116250054676e-06,
+          "conditional_feasible_tv_bound": 1.1221507263959404e-15,
+          "row_log_factor_range": 4.488602905583762e-15,
+          "repair_log_product": 1.2481170289524037e-06,
+          "repair_correction": 4.488602905583762e-15,
+          "minimum_repair_margin": 15.683647201206222
+        }
+      },
+      {
+        "beta": 80.0,
+        "scale": 0.022168996770860563,
+        "root_readout_tv_bound": 0.04869147880662377,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 0.9999999999999938,
+          "syndrome_defect_bound": 6.2343293289093065e-15,
+          "conditional_feasible_tv_bound": 4.7672938137534516e-33,
+          "row_log_factor_range": 1.9069175255013806e-32,
+          "repair_log_product": 6.234329328909332e-15,
+          "repair_correction": 1.9069175255013806e-32,
+          "minimum_repair_margin": 34.30433685636001
+        }
+      }
+    ]
+  },
+  {
+    "name": "rewired_band_n32_s8807_balanced",
+    "status": "ok",
+    "scheme": "balanced",
+    "total_seconds": 4.037683333037421,
+    "logical_variables": 187,
+    "logical_edges": 388,
+    "qubits": 209,
+    "scale": 0.038980718704659516,
+    "readout_curves": [
+      {
+        "beta": 10.0,
+        "scale": 0.03198442591511214,
+        "root_readout_tv_bound": 0.312279063734169,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 0.7364375448581618,
+          "syndrome_defect_bound": 0.2635624551418381,
+          "conditional_feasible_tv_bound": 0.0,
+          "row_log_factor_range": 0.0,
+          "repair_log_product": 0.30593084659619807,
+          "repair_correction": 0.0,
+          "minimum_repair_margin": 3.6472837900494164
+        }
+      },
+      {
+        "beta": 20.0,
+        "scale": 0.038980718704659516,
+        "root_readout_tv_bound": 0.04873659472932563,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 0.9999800138630052,
+          "syndrome_defect_bound": 1.9986136994794606e-05,
+          "conditional_feasible_tv_bound": 0.0,
+          "row_log_factor_range": 0.0,
+          "repair_log_product": 1.998633672029177e-05,
+          "repair_correction": 0.0,
+          "minimum_repair_margin": 12.953977894098548
+        }
+      },
+      {
+        "beta": 40.0,
+        "scale": 0.04247886509943321,
+        "root_readout_tv_bound": 0.04871660859242907,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 0.9999999999999019,
+          "syndrome_defect_bound": 9.81315684747314e-14,
+          "conditional_feasible_tv_bound": 0.0,
+          "row_log_factor_range": 0.0,
+          "repair_log_product": 9.81315684747363e-14,
+          "repair_correction": 0.0,
+          "minimum_repair_margin": 31.57466738648469
+        }
+      },
+      {
+        "beta": 80.0,
+        "scale": 0.04422793829682005,
+        "root_readout_tv_bound": 0.048716608592330984,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 1.0,
+          "syndrome_defect_bound": 3.8794599737029604e-30,
+          "conditional_feasible_tv_bound": 0.0,
+          "row_log_factor_range": 0.0,
+          "repair_log_product": 3.879459973702969e-30,
+          "repair_correction": 0.0,
+          "minimum_repair_margin": 68.81604669679226
+        }
+      }
+    ]
+  },
+  {
+    "name": "rewired_band_n32_s9901_standard",
+    "status": "ok",
+    "scheme": "standard",
+    "total_seconds": 3.1897247917950153,
+    "logical_variables": 96,
+    "logical_edges": 208,
+    "qubits": 115,
+    "scale": 0.017377463646553827,
+    "readout_curves": [
+      {
+        "beta": 10.0,
+        "scale": 0.014346764027821948,
+        "root_readout_tv_bound": 0.98158630450275,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 0.08120619150305103,
+          "syndrome_defect_bound": 0.9187938084969489,
+          "conditional_feasible_tv_bound": 0.014084393866344504,
+          "row_log_factor_range": 0.05634130113993514,
+          "repair_log_product": 2.4591180477749837,
+          "repair_correction": 0.05634130113993514,
+          "minimum_repair_margin": 1.6607988818706787
+        }
+      },
+      {
+        "beta": 20.0,
+        "scale": 0.017377463646553827,
+        "root_readout_tv_bound": 0.07000127806509628,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 0.9787074669427005,
+          "syndrome_defect_bound": 0.02129253305729951,
+          "conditional_feasible_tv_bound": 6.4286834010187e-07,
+          "row_log_factor_range": 2.571473360407834e-06,
+          "repair_log_product": 0.021522434376369526,
+          "repair_correction": 2.571473360407834e-06,
+          "minimum_repair_margin": 6.297308336038663
+        }
+      },
+      {
+        "beta": 40.0,
+        "scale": 0.018892813455919772,
+        "root_readout_tv_bound": 0.048709552311473205,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 0.9999985498279848,
+          "syndrome_defect_bound": 1.450172015240227e-06,
+          "conditional_feasible_tv_bound": 1.3250507274161374e-15,
+          "row_log_factor_range": 5.3002029096645494e-15,
+          "repair_log_product": 1.4501730667406715e-06,
+          "repair_correction": 5.3002029096645494e-15,
+          "minimum_repair_margin": 15.583022332452895
+        }
+      },
+      {
+        "beta": 80.0,
+        "scale": 0.019650488360602743,
+        "root_readout_tv_bound": 0.04870810213946459,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 0.9999999999999923,
+          "syndrome_defect_bound": 7.662423296014163e-15,
+          "conditional_feasible_tv_bound": 5.629284896520835e-33,
+          "row_log_factor_range": 2.251713958608334e-32,
+          "repair_log_product": 7.662423296014179e-15,
+          "repair_correction": 2.251713958608334e-32,
+          "minimum_repair_margin": 34.15445090386289
+        }
+      }
+    ]
+  },
+  {
+    "name": "rewired_band_n32_s9901_balanced",
+    "status": "ok",
+    "scheme": "balanced",
+    "total_seconds": 4.592589166015387,
+    "logical_variables": 192,
+    "logical_edges": 400,
+    "qubits": 217,
+    "scale": 0.03447488969545309,
+    "readout_curves": [
+      {
+        "beta": 10.0,
+        "scale": 0.02813345286033474,
+        "root_readout_tv_bound": 0.3400924333150257,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 0.7086306428474667,
+          "syndrome_defect_bound": 0.29136935715253337,
+          "conditional_feasible_tv_bound": 0.0,
+          "row_log_factor_range": 0.0,
+          "repair_log_product": 0.3444208432754015,
+          "repair_correction": 0.0,
+          "minimum_repair_margin": 3.571043625440658
+        }
+      },
+      {
+        "beta": 20.0,
+        "scale": 0.03447488969545309,
+        "root_readout_tv_bound": 0.04874641702791671,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 0.9999766591345757,
+          "syndrome_defect_bound": 2.3340865424335974e-05,
+          "conditional_feasible_tv_bound": 0.0,
+          "row_log_factor_range": 0.0,
+          "repair_log_product": 2.334113782657411e-05,
+          "repair_correction": 0.0,
+          "minimum_repair_margin": 12.852861640885859
+        }
+      },
+      {
+        "beta": 40.0,
+        "scale": 0.037645608113012256,
+        "root_readout_tv_bound": 0.04872307616261378,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 0.9999999999998787,
+          "syndrome_defect_bound": 1.2137714135179876e-13,
+          "conditional_feasible_tv_bound": 0.0,
+          "row_log_factor_range": 0.0,
+          "repair_log_product": 1.213771413518061e-13,
+          "repair_correction": 0.0,
+          "minimum_repair_margin": 31.424290038784946
+        }
+      },
+      {
+        "beta": 80.0,
+        "scale": 0.03923096732179184,
+        "root_readout_tv_bound": 0.048723076162492315,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 1.0,
+          "syndrome_defect_bound": 5.272307346367783e-30,
+          "conditional_feasible_tv_bound": 0.0,
+          "row_log_factor_range": 0.0,
+          "repair_log_product": 5.272307346367772e-30,
+          "repair_correction": 0.0,
+          "minimum_repair_margin": 68.56714718160494
+        }
+      }
+    ]
+  },
+  {
+    "name": "rewired_band_n64_s8807_standard",
+    "status": "ok",
+    "scheme": "standard",
+    "total_seconds": 5.057713125133887,
+    "logical_variables": 192,
+    "logical_edges": 415,
+    "qubits": 224,
+    "scale": 0.00859962354451609,
+    "readout_curves": [
+      {
+        "beta": 10.0,
+        "scale": 0.006942836832632177,
+        "root_readout_tv_bound": 1.0,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 2.6227842938784665e-05,
+          "syndrome_defect_bound": 0.9999737721570612,
+          "conditional_feasible_tv_bound": 0.13773929814287406,
+          "row_log_factor_range": 0.5544816748119745,
+          "repair_log_product": 9.994226764719993,
+          "repair_correction": 0.5544816748119745,
+          "minimum_repair_margin": 0.7478372988458782
+        }
+      },
+      {
+        "beta": 20.0,
+        "scale": 0.00859962354451609,
+        "root_readout_tv_bound": 0.2893734966256128,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 0.7594077020436801,
+          "syndrome_defect_bound": 0.2405922979563199,
+          "conditional_feasible_tv_bound": 4.7742633309062105e-05,
+          "row_log_factor_range": 0.00019097053338134522,
+          "repair_log_product": 0.2751705462528806,
+          "repair_correction": 0.00019097053338134522,
+          "minimum_repair_margin": 4.152320604511606
+        }
+      },
+      {
+        "beta": 40.0,
+        "scale": 0.009428016900458044,
+        "root_readout_tv_bound": 0.04889533520370308,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 0.9998381208376533,
+          "syndrome_defect_bound": 0.00016187916234667845,
+          "conditional_feasible_tv_bound": 5.372773680850706e-12,
+          "row_log_factor_range": 2.1491094723402823e-11,
+          "repair_log_product": 0.0001618922661889796,
+          "repair_correction": 2.1491094723402823e-11,
+          "minimum_repair_margin": 11.024104734180888
+        }
+      },
+      {
+        "beta": 80.0,
+        "scale": 0.00984221357842902,
+        "root_readout_tv_bound": 0.04873345612501413,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 0.9999999999109701,
+          "syndrome_defect_bound": 8.902985161161482e-11,
+          "conditional_feasible_tv_bound": 6.804169535435543e-26,
+          "row_log_factor_range": 2.721667814174217e-25,
+          "repair_log_product": 8.902985161557812e-11,
+          "repair_correction": 2.721667814174217e-25,
+          "minimum_repair_margin": 24.76769447775568
+        }
+      }
+    ]
+  },
+  {
+    "name": "rewired_band_n64_s8807_balanced",
+    "status": "ok",
+    "scheme": "balanced",
+    "total_seconds": 9.344434916041791,
+    "logical_variables": 384,
+    "logical_edges": 800,
+    "qubits": 432,
+    "scale": 0.021239144861671444,
+    "readout_curves": [
+      {
+        "beta": 10.0,
+        "scale": 0.016837264595137756,
+        "root_readout_tv_bound": 0.6705277388830521,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 0.35044411024962197,
+          "syndrome_defect_bound": 0.649555889750378,
+          "conditional_feasible_tv_bound": 0.0,
+          "row_log_factor_range": 0.0,
+          "repair_log_product": 1.0485540424272168,
+          "repair_correction": 0.0,
+          "minimum_repair_margin": 2.8127088044609385
+        }
+      },
+      {
+        "beta": 20.0,
+        "scale": 0.021239144861671444,
+        "root_readout_tv_bound": 0.02070952992342458,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 0.9998999821781913,
+          "syndrome_defect_bound": 0.0001000178218086818,
+          "conditional_feasible_tv_bound": 0.0,
+          "row_log_factor_range": 0.0,
+          "repair_log_product": 0.00010002282392455816,
+          "repair_correction": 0.0,
+          "minimum_repair_margin": 11.397013953687603
+        }
+      },
+      {
+        "beta": 40.0,
+        "scale": 0.023440084994938288,
+        "root_readout_tv_bound": 0.020607182809332807,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 0.9999999999982639,
+          "syndrome_defect_bound": 1.736050413678588e-12,
+          "conditional_feasible_tv_bound": 0.0,
+          "row_log_factor_range": 0.0,
+          "repair_log_product": 1.7360504136800932e-12,
+          "repair_correction": 0.0,
+          "minimum_repair_margin": 28.576500549161093
+        }
+      },
+      {
+        "beta": 80.0,
+        "scale": 0.024540555061571708,
+        "root_readout_tv_bound": 0.020607166396045,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 1.0,
+          "syndrome_defect_bound": 1.5369531070010275e-27,
+          "conditional_feasible_tv_bound": 0.0,
+          "row_log_factor_range": 0.0,
+          "repair_log_product": 1.5369531070010261e-27,
+          "repair_correction": 0.0,
+          "minimum_repair_margin": 62.93547422095596
+        }
+      }
+    ]
+  },
+  {
+    "name": "rewired_band_n64_s9901_standard",
+    "status": "ok",
+    "scheme": "standard",
+    "total_seconds": 5.021054708166048,
+    "logical_variables": 192,
+    "logical_edges": 415,
+    "qubits": 234,
+    "scale": 0.010942959662992321,
+    "readout_curves": [
+      {
+        "beta": 10.0,
+        "scale": 0.008728024852300436,
+        "root_readout_tv_bound": 1.0,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 0.0029015303792730798,
+          "syndrome_defect_bound": 0.9970984696207269,
+          "conditional_feasible_tv_bound": 0.041751967887061,
+          "row_log_factor_range": 0.16710501737724792,
+          "repair_log_product": 5.675939533252102,
+          "repair_correction": 0.16710501737724792,
+          "minimum_repair_margin": 1.4111514268003695
+        }
+      },
+      {
+        "beta": 20.0,
+        "scale": 0.010942959662992321,
+        "root_readout_tv_bound": 0.06219886957534873,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 0.9531538879197688,
+          "syndrome_defect_bound": 0.04684611208023112,
+          "conditional_feasible_tv_bound": 1.9116130502798243e-06,
+          "row_log_factor_range": 7.646452201128611e-06,
+          "repair_log_product": 0.04797855280327202,
+          "repair_correction": 7.646452201128611e-06,
+          "minimum_repair_margin": 5.941204685143582
+        }
+      },
+      {
+        "beta": 40.0,
+        "scale": 0.012050427068338266,
+        "root_readout_tv_bound": 0.015350925237112088,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 0.9999970489661161,
+          "syndrome_defect_bound": 2.951033883938213e-06,
+          "conditional_feasible_tv_bound": 3.940131151592568e-15,
+          "row_log_factor_range": 1.5760524606370273e-14,
+          "repair_log_product": 2.9510382382472254e-06,
+          "repair_correction": 1.5760524606370273e-14,
+          "minimum_repair_margin": 15.020151441872713
+        }
+      },
+      {
+        "beta": 80.0,
+        "scale": 0.012604160771011239,
+        "root_readout_tv_bound": 0.015347961896747194,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 0.9999999999999856,
+          "syndrome_defect_bound": 1.4386696653597293e-14,
+          "conditional_feasible_tv_bound": 1.673908633553911e-32,
+          "row_log_factor_range": 6.695634534215644e-32,
+          "repair_log_product": 1.438669665359739e-14,
+          "repair_correction": 6.695634534215644e-32,
+          "minimum_repair_margin": 33.17804581555692
+        }
+      }
+    ]
+  },
+  {
+    "name": "rewired_band_n64_s9901_balanced",
+    "status": "ok",
+    "scheme": "balanced",
+    "total_seconds": 9.293638832867146,
+    "logical_variables": 384,
+    "logical_edges": 800,
+    "qubits": 442,
+    "scale": 0.017338855113614025,
+    "readout_curves": [
+      {
+        "beta": 10.0,
+        "scale": 0.013625078648301734,
+        "root_readout_tv_bound": 1.0,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 0.03987557613727081,
+          "syndrome_defect_bound": 0.9601244238627292,
+          "conditional_feasible_tv_bound": 0.0,
+          "row_log_factor_range": 0.0,
+          "repair_log_product": 3.2219912693979142,
+          "repair_correction": 0.0,
+          "minimum_repair_margin": 1.8909009136084505
+        }
+      },
+      {
+        "beta": 20.0,
+        "scale": 0.017338855113614025,
+        "root_readout_tv_bound": 0.05020094539779138,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 0.9985491410210473,
+          "syndrome_defect_bound": 0.001450858978952684,
+          "conditional_feasible_tv_bound": 0.0,
+          "row_log_factor_range": 0.0,
+          "repair_log_product": 0.0014519124939655298,
+          "repair_correction": 0.0,
+          "minimum_repair_margin": 9.130603809888726
+        }
+      },
+      {
+        "beta": 40.0,
+        "scale": 0.01919574334627017,
+        "root_readout_tv_bound": 0.04875008671194157,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 0.999999999706897,
+          "syndrome_defect_bound": 2.931029442748035e-10,
+          "conditional_feasible_tv_bound": 0.0,
+          "row_log_factor_range": 0.0,
+          "repair_log_product": 2.931029443177578e-10,
+          "repair_correction": 0.0,
+          "minimum_repair_margin": 23.65691247379742
+        }
+      },
+      {
+        "beta": 80.0,
+        "scale": 0.020124187462598243,
+        "root_readout_tv_bound": 0.048750086418838504,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 1.0,
+          "syndrome_defect_bound": 2.4613624021018197e-23,
+          "conditional_feasible_tv_bound": 0.0,
+          "row_log_factor_range": 0.0,
+          "repair_log_product": 2.4613624021018218e-23,
+          "repair_correction": 0.0,
+          "minimum_repair_margin": 52.70954405271494
+        }
+      }
+    ]
+  },
+  {
+    "name": "mixed_hypergraph_n16_s8807_standard",
+    "status": "ok",
+    "scheme": "standard",
+    "total_seconds": 2.7913595838472247,
+    "logical_variables": 82,
+    "logical_edges": 203,
+    "qubits": 107,
+    "scale": 0.021248674151914483,
+    "readout_curves": [
+      {
+        "beta": 10.0,
+        "scale": 0.0173401155994516,
+        "root_readout_tv_bound": 1.0,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 0.005937672280189693,
+          "syndrome_defect_bound": 0.9940623277198103,
+          "conditional_feasible_tv_bound": 0.33056326881677617,
+          "row_log_factor_range": 1.3738419657537255,
+          "repair_log_product": 3.7699635360413533,
+          "repair_correction": 1.3738419657537255,
+          "minimum_repair_margin": -0.15398716382853603
+        }
+      },
+      {
+        "beta": 20.0,
+        "scale": 0.021248674151914483,
+        "root_readout_tv_bound": 0.3330704918160365,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 0.7162980961353191,
+          "syndrome_defect_bound": 0.28370190386468086,
+          "conditional_feasible_tv_bound": 0.0006455117888633417,
+          "row_log_factor_range": 0.0025820475140873,
+          "repair_log_product": 0.33292700864711267,
+          "repair_correction": 0.0025820475140873,
+          "minimum_repair_margin": 2.2676893776259046
+        }
+      },
+      {
+        "beta": 40.0,
+        "scale": 0.02320295342814592,
+        "root_readout_tv_bound": 0.049513008964462264,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 0.9992100682442105,
+          "syndrome_defect_bound": 0.0007899317557894319,
+          "conditional_feasible_tv_bound": 1.0461803284803847e-09,
+          "row_log_factor_range": 4.184721313921539e-09,
+          "repair_log_product": 0.0007902439129743394,
+          "repair_correction": 4.184721313921539e-09,
+          "minimum_repair_margin": 8.304204303432904
+        }
+      },
+      {
+        "beta": 80.0,
+        "scale": 0.02418009306626164,
+        "root_readout_tv_bound": 0.048723080639082435,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 0.99999999552341,
+          "syndrome_defect_bound": 4.476590016462599e-09,
+          "conditional_feasible_tv_bound": 2.744229104685412e-21,
+          "row_log_factor_range": 1.0976916418741649e-20,
+          "repair_log_product": 4.4765900264825274e-09,
+          "repair_correction": 1.0976916418741649e-20,
+          "minimum_repair_margin": 20.37967599955497
+        }
+      }
+    ]
+  },
+  {
+    "name": "mixed_hypergraph_n16_s8807_balanced",
+    "status": "ok",
+    "scheme": "balanced",
+    "total_seconds": 5.432222249917686,
+    "logical_variables": 181,
+    "logical_edges": 403,
+    "qubits": 235,
+    "scale": 0.031146494037593134,
+    "readout_curves": [
+      {
+        "beta": 10.0,
+        "scale": 0.024557139018620226,
+        "root_readout_tv_bound": 1.0,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 0.01562804723285972,
+          "syndrome_defect_bound": 0.9843719527671403,
+          "conditional_feasible_tv_bound": 0.0,
+          "row_log_factor_range": 0.0,
+          "repair_log_product": 4.158688079471144,
+          "repair_correction": 0.0,
+          "minimum_repair_margin": -0.2833033737584092
+        }
+      },
+      {
+        "beta": 20.0,
+        "scale": 0.031146494037593134,
+        "root_readout_tv_bound": 0.15459261910303262,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 0.8941559505247393,
+          "syndrome_defect_bound": 0.10584404947526077,
+          "conditional_feasible_tv_bound": 0.0,
+          "row_log_factor_range": 0.0,
+          "repair_log_product": 0.11187507771889749,
+          "repair_correction": 0.0,
+          "minimum_repair_margin": 3.3018898974552657
+        }
+      },
+      {
+        "beta": 40.0,
+        "scale": 0.03444117154707959,
+        "root_readout_tv_bound": 0.04876093231696593,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 0.9999876373108059,
+          "syndrome_defect_bound": 1.2362689194177374e-05,
+          "conditional_feasible_tv_bound": 0.0,
+          "row_log_factor_range": 0.0,
+          "repair_log_product": 1.2362765612849265e-05,
+          "repair_correction": 0.0,
+          "minimum_repair_margin": 12.357375119239176
+        }
+      },
+      {
+        "beta": 80.0,
+        "scale": 0.03608851030182281,
+        "root_readout_tv_bound": 0.04874856962793452,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 0.9999999999998372,
+          "syndrome_defect_bound": 1.627881158579976e-13,
+          "conditional_feasible_tv_bound": 0.0,
+          "row_log_factor_range": 0.0,
+          "repair_log_product": 1.6278811585801076e-13,
+          "repair_correction": 0.0,
+          "minimum_repair_margin": 30.470582619854255
+        }
+      }
+    ]
+  },
+  {
+    "name": "mixed_hypergraph_n16_s9901_standard",
+    "status": "ok",
+    "scheme": "standard",
+    "total_seconds": 3.084744666935876,
+    "logical_variables": 88,
+    "logical_edges": 220,
+    "qubits": 114,
+    "scale": 0.028358126429380518,
+    "readout_curves": [
+      {
+        "beta": 10.0,
+        "scale": 0.02310280815287868,
+        "root_readout_tv_bound": 1.0,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 0.0011987544734226425,
+          "syndrome_defect_bound": 0.9988012455265773,
+          "conditional_feasible_tv_bound": 0.5322386743360544,
+          "row_log_factor_range": 2.373053905763283,
+          "repair_log_product": 4.3650148081774045,
+          "repair_correction": 2.373053905763283,
+          "minimum_repair_margin": -0.2043398377618183
+        }
+      },
+      {
+        "beta": 20.0,
+        "scale": 0.028358126429380518,
+        "root_readout_tv_bound": 0.5312842376468075,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 0.478199428195875,
+          "syndrome_defect_bound": 0.521800571804125,
+          "conditional_feasible_tv_bound": 0.0036901970704449932,
+          "row_log_factor_range": 0.014760855284273317,
+          "repair_log_product": 0.7300523861398507,
+          "repair_correction": 0.014760855284273317,
+          "minimum_repair_margin": 1.7165679653611066
+        }
+      },
+      {
+        "beta": 40.0,
+        "scale": 0.030985785567631433,
+        "root_readout_tv_bound": 0.010209959394345441,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 0.9955373411401681,
+          "syndrome_defect_bound": 0.00446265885983188,
+          "conditional_feasible_tv_bound": 4.0285148689093385e-08,
+          "row_log_factor_range": 1.6114059475637362e-07,
+          "repair_log_product": 0.004472645527375581,
+          "repair_correction": 1.6114059475637362e-07,
+          "minimum_repair_margin": 6.58798256944252
+        }
+      },
+      {
+        "beta": 80.0,
+        "scale": 0.032299615136756894,
+        "root_readout_tv_bound": 0.0057472691211862695,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 0.9999998340556014,
+          "syndrome_defect_bound": 1.659443985443617e-07,
+          "conditional_feasible_tv_bound": 4.768855579802843e-18,
+          "row_log_factor_range": 1.907542231921137e-17,
+          "repair_log_product": 1.6594441231313488e-07,
+          "repair_correction": 1.907542231921137e-17,
+          "minimum_repair_margin": 16.335881506520632
+        }
+      }
+    ]
+  },
+  {
+    "name": "mixed_hypergraph_n16_s9901_balanced",
+    "status": "ok",
+    "scheme": "balanced",
+    "total_seconds": 4.2553718748968095,
+    "logical_variables": 196,
+    "logical_edges": 439,
+    "qubits": 257,
+    "scale": 0.0483726380327056,
+    "readout_curves": [
+      {
+        "beta": 10.0,
+        "scale": 0.037921746653705304,
+        "root_readout_tv_bound": 1.0,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 0.011450357362018099,
+          "syndrome_defect_bound": 0.988549642637982,
+          "conditional_feasible_tv_bound": 0.0,
+          "row_log_factor_range": 0.0,
+          "repair_log_product": 4.469734338812328,
+          "repair_correction": 0.0,
+          "minimum_repair_margin": -0.3616360842815346
+        }
+      },
+      {
+        "beta": 20.0,
+        "scale": 0.0483726380327056,
+        "root_readout_tv_bound": 0.17062561723010963,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 0.8781254763084803,
+          "syndrome_defect_bound": 0.1218745236915197,
+          "conditional_feasible_tv_bound": 0.0,
+          "row_log_factor_range": 0.0,
+          "repair_log_product": 0.12996578404482234,
+          "repair_correction": 0.0,
+          "minimum_repair_margin": 3.301546065987421
+        }
+      },
+      {
+        "beta": 40.0,
+        "scale": 0.05359808372220574,
+        "root_readout_tv_bound": 0.0487679723327396,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 0.9999831212058503,
+          "syndrome_defect_bound": 1.6878794149660217e-05,
+          "conditional_feasible_tv_bound": 0.0,
+          "row_log_factor_range": 0.0,
+          "repair_log_product": 1.6878936598109094e-05,
+          "repair_correction": 0.0,
+          "minimum_repair_margin": 11.82987226027295
+        }
+      },
+      {
+        "beta": 80.0,
+        "scale": 0.056210806566955804,
+        "root_readout_tv_bound": 0.048751093538981015,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 0.9999999999996086,
+          "syndrome_defect_bound": 3.9131825296603627e-13,
+          "conditional_feasible_tv_bound": 0.0,
+          "row_log_factor_range": 0.0,
+          "repair_log_product": 3.913182529661129e-13,
+          "repair_correction": 0.0,
+          "minimum_repair_margin": 28.88869574213006
+        }
+      }
+    ]
+  },
+  {
+    "name": "mixed_hypergraph_n32_s8807_standard",
+    "status": "ok",
+    "scheme": "standard",
+    "total_seconds": 6.976887415861711,
+    "logical_variables": 164,
+    "logical_edges": 411,
+    "qubits": 244,
+    "scale": 0.014339446314527349,
+    "readout_curves": [
+      {
+        "beta": 10.0,
+        "scale": 0.011096475398285465,
+        "root_readout_tv_bound": 1.0,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 2.370103850295227e-06,
+          "syndrome_defect_bound": 0.9999976298961497,
+          "conditional_feasible_tv_bound": 0.8579881556472655,
+          "row_log_factor_range": 5.142678159019532,
+          "repair_log_product": 7.810301873821645,
+          "repair_correction": 5.142678159019532,
+          "minimum_repair_margin": -0.08018488755995273
+        }
+      },
+      {
+        "beta": 20.0,
+        "scale": 0.014339446314527349,
+        "root_readout_tv_bound": 0.7271614667158809,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 0.2874299259910458,
+          "syndrome_defect_bound": 0.7125700740089542,
+          "conditional_feasible_tv_bound": 0.013330183161373334,
+          "row_log_factor_range": 0.05332389123649146,
+          "repair_log_product": 1.209072547023905,
+          "repair_correction": 0.05332389123649146,
+          "minimum_repair_margin": 1.5113731853525543
+        }
+      },
+      {
+        "beta": 40.0,
+        "scale": 0.01596093177264829,
+        "root_readout_tv_bound": 0.006451114382555689,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 0.9947978995854343,
+          "syndrome_defect_bound": 0.005202100414565743,
+          "conditional_feasible_tv_bound": 1.4688900426375767e-07,
+          "row_log_factor_range": 5.875560170550349e-07,
+          "repair_log_product": 0.005215675392405514,
+          "repair_correction": 5.875560170550349e-07,
+          "minimum_repair_margin": 6.951338835878971
+        }
+      },
+      {
+        "beta": 80.0,
+        "scale": 0.01677167450170876,
+        "root_readout_tv_bound": 0.0012489145938521624,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 0.9999999125111189,
+          "syndrome_defect_bound": 8.748888108691004e-08,
+          "conditional_feasible_tv_bound": 1.7388356317343223e-17,
+          "row_log_factor_range": 6.955342526937289e-17,
+          "repair_log_product": 8.748888491406249e-08,
+          "repair_correction": 6.955342526937289e-17,
+          "minimum_repair_margin": 17.85243740295243
+        }
+      }
+    ]
+  },
+  {
+    "name": "mixed_hypergraph_n32_s8807_balanced",
+    "status": "ok",
+    "scheme": "balanced",
+    "total_seconds": 7.914959624875337,
+    "logical_variables": 362,
+    "logical_edges": 807,
+    "qubits": 510,
+    "scale": 0.02462081188665376,
+    "readout_curves": [
+      {
+        "beta": 10.0,
+        "scale": 0.01847239300410752,
+        "root_readout_tv_bound": 1.0,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 0.0006300095761844606,
+          "syndrome_defect_bound": 0.9993699904238156,
+          "conditional_feasible_tv_bound": 0.0,
+          "row_log_factor_range": 0.0,
+          "repair_log_product": 7.3697755384014245,
+          "repair_correction": 0.0,
+          "minimum_repair_margin": -0.13462676583364527
+        }
+      },
+      {
+        "beta": 20.0,
+        "scale": 0.02462081188665376,
+        "root_readout_tv_bound": 0.21546225803854757,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 0.8333002852035329,
+          "syndrome_defect_bound": 0.16669971479646703,
+          "conditional_feasible_tv_bound": 0.0,
+          "row_log_factor_range": 0.0,
+          "repair_log_product": 0.18236121533610464,
+          "repair_correction": 0.0,
+          "minimum_repair_margin": 3.343509326625439
+        }
+      },
+      {
+        "beta": 40.0,
+        "scale": 0.02769502132792688,
+        "root_readout_tv_bound": 0.048774536820661823,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 0.9999880064214187,
+          "syndrome_defect_bound": 1.1993578581294869e-05,
+          "conditional_feasible_tv_bound": 0.0,
+          "row_log_factor_range": 0.0,
+          "repair_log_product": 1.1993650504833542e-05,
+          "repair_correction": 0.0,
+          "minimum_repair_margin": 12.880453842146192
+        }
+      },
+      {
+        "beta": 80.0,
+        "scale": 0.029232126048563442,
+        "root_readout_tv_bound": 0.04876254324213555,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 0.9999999999999449,
+          "syndrome_defect_bound": 5.507196146486567e-14,
+          "conditional_feasible_tv_bound": 0.0,
+          "row_log_factor_range": 0.0,
+          "repair_log_product": 5.507196146486726e-14,
+          "repair_correction": 0.0,
+          "minimum_repair_margin": 31.957376859070283
+        }
+      }
+    ]
+  },
+  {
+    "name": "mixed_hypergraph_n32_s9901_standard",
+    "status": "ok",
+    "scheme": "standard",
+    "total_seconds": 4.4415065839421,
+    "logical_variables": 154,
+    "logical_edges": 380,
+    "qubits": 217,
+    "scale": 0.0132237956826733,
+    "readout_curves": [
+      {
+        "beta": 10.0,
+        "scale": 0.010351012210417019,
+        "root_readout_tv_bound": 1.0,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 1.9077076716841163e-06,
+          "syndrome_defect_bound": 0.9999980922923283,
+          "conditional_feasible_tv_bound": 0.807854586017689,
+          "row_log_factor_range": 4.483287319533647,
+          "repair_log_product": 8.686487847615943,
+          "repair_correction": 4.483287319533647,
+          "minimum_repair_margin": -0.1737252635291526
+        }
+      },
+      {
+        "beta": 20.0,
+        "scale": 0.0132237956826733,
+        "root_readout_tv_bound": 0.7877895606856865,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 0.2228768312622325,
+          "syndrome_defect_bound": 0.7771231687377675,
+          "conditional_feasible_tv_bound": 0.008259906998631189,
+          "row_log_factor_range": 0.033040379413205374,
+          "repair_log_product": 1.4755546584929746,
+          "repair_correction": 0.033040379413205374,
+          "minimum_repair_margin": 1.406309284064713
+        }
+      },
+      {
+        "beta": 40.0,
+        "scale": 0.01466018741880144,
+        "root_readout_tv_bound": 0.010867751029631376,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 0.9915096110305579,
+          "syndrome_defect_bound": 0.008490388969442078,
+          "conditional_feasible_tv_bound": 9.032746495199633e-08,
+          "row_log_factor_range": 3.6130985980798633e-07,
+          "repair_log_product": 0.008526634576939028,
+          "repair_correction": 3.6130985980798633e-07,
+          "minimum_repair_margin": 6.549306690489777
+        }
+      },
+      {
+        "beta": 80.0,
+        "scale": 0.01537838328686551,
+        "root_readout_tv_bound": 0.0023774439348561017,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 0.9999997303533067,
+          "syndrome_defect_bound": 2.696466932551056e-07,
+          "conditional_feasible_tv_bound": 1.0692740558755204e-17,
+          "row_log_factor_range": 4.2770962235020817e-17,
+          "repair_log_product": 2.6964672960978154e-07,
+          "repair_correction": 4.2770962235020817e-17,
+          "minimum_repair_margin": 16.56440303263971
+        }
+      }
+    ]
+  },
+  {
+    "name": "mixed_hypergraph_n32_s9901_balanced",
+    "status": "ok",
+    "scheme": "balanced",
+    "total_seconds": 9.570343500003219,
+    "logical_variables": 337,
+    "logical_edges": 747,
+    "qubits": 493,
+    "scale": 0.022503106844482056,
+    "readout_curves": [
+      {
+        "beta": 10.0,
+        "scale": 0.016837199604485237,
+        "root_readout_tv_bound": 1.0,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 0.00015369564503668913,
+          "syndrome_defect_bound": 0.9998463043549634,
+          "conditional_feasible_tv_bound": 0.0,
+          "row_log_factor_range": 0.0,
+          "repair_log_product": 8.780536242000135,
+          "repair_correction": 0.0,
+          "minimum_repair_margin": -0.3062450606115493
+        }
+      },
+      {
+        "beta": 20.0,
+        "scale": 0.022503106844482056,
+        "root_readout_tv_bound": 0.2906343229609781,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 0.7581286321053865,
+          "syndrome_defect_bound": 0.2418713678946135,
+          "conditional_feasible_tv_bound": 0.0,
+          "row_log_factor_range": 0.0,
+          "repair_log_product": 0.2769022083895953,
+          "repair_correction": 0.0,
+          "minimum_repair_margin": 3.0281021956474934
+        }
+      },
+      {
+        "beta": 40.0,
+        "scale": 0.025336060464480465,
+        "root_readout_tv_bound": 0.04879433964008823,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 0.9999686154262762,
+          "syndrome_defect_bound": 3.138457372380214e-05,
+          "conditional_feasible_tv_bound": 0.0,
+          "row_log_factor_range": 0.0,
+          "repair_log_product": 3.1385066229840824e-05,
+          "repair_correction": 0.0,
+          "minimum_repair_margin": 11.958489381617666
+        }
+      },
+      {
+        "beta": 80.0,
+        "scale": 0.026752537274479668,
+        "root_readout_tv_bound": 0.04876295506688956,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 0.9999999999994751,
+          "syndrome_defect_bound": 5.249448784309196e-13,
+          "conditional_feasible_tv_bound": 0.0,
+          "row_log_factor_range": 0.0,
+          "repair_log_product": 5.249448784310566e-13,
+          "repair_correction": 0.0,
+          "minimum_repair_margin": 29.141587913398723
+        }
+      }
+    ]
+  },
+  {
+    "name": "mixed_hypergraph_n64_s8807_standard",
+    "status": "ok",
+    "scheme": "standard",
+    "total_seconds": 11.78129554213956,
+    "logical_variables": 302,
+    "logical_edges": 744,
+    "qubits": 558,
+    "scale": 0.003177685814886419,
+    "readout_curves": [
+      {
+        "beta": 10.0,
+        "scale": 0.002314967670176878,
+        "root_readout_tv_bound": 1.0,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 5.571066525497766e-17,
+          "syndrome_defect_bound": 0.9999999999999999,
+          "conditional_feasible_tv_bound": 0.9996884397445113,
+          "row_log_factor_range": 17.5338183803592,
+          "repair_log_product": 19.892541690474644,
+          "repair_correction": 17.5338183803592,
+          "minimum_repair_margin": -0.09259178608299909
+        }
+      },
+      {
+        "beta": 20.0,
+        "scale": 0.003177685814886419,
+        "root_readout_tv_bound": 1.0,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 1.5839002328588906e-07,
+          "syndrome_defect_bound": 0.9999998416099767,
+          "conditional_feasible_tv_bound": 0.6453478624752568,
+          "row_log_factor_range": 3.0691393852504785,
+          "repair_log_product": 12.589069209297444,
+          "repair_correction": 3.0691393852504785,
+          "minimum_repair_margin": 0.032907975542710466
+        }
+      },
+      {
+        "beta": 40.0,
+        "scale": 0.0036090448872411894,
+        "root_readout_tv_bound": 0.5613880834176145,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 0.4403179043598179,
+          "syndrome_defect_bound": 0.5596820956401821,
+          "conditional_feasible_tv_bound": 0.0013154761881054827,
+          "row_log_factor_range": 0.005261907787627854,
+          "repair_log_product": 0.8173167198267418,
+          "repair_correction": 0.005261907787627854,
+          "minimum_repair_margin": 2.8128977600021203
+        }
+      },
+      {
+        "beta": 80.0,
+        "scale": 0.0038247244234185743,
+        "root_readout_tv_bound": 0.001891052966725128,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 0.9984994591292274,
+          "syndrome_defect_bound": 0.001500540870772566,
+          "conditional_feasible_tv_bound": 2.131706806342386e-09,
+          "row_log_factor_range": 8.526827225369544e-09,
+          "repair_log_product": 0.0015016677969165151,
+          "repair_correction": 8.526827225369544e-09,
+          "minimum_repair_margin": 8.832729424925597
+        }
+      }
+    ]
+  },
+  {
+    "name": "mixed_hypergraph_n64_s8807_balanced",
+    "status": "no_certified_mapping",
+    "scheme": "balanced",
+    "total_seconds": 42.54956016689539
+  },
+  {
+    "name": "mixed_hypergraph_n64_s9901_standard",
+    "status": "ok",
+    "scheme": "standard",
+    "total_seconds": 13.780063583049923,
+    "logical_variables": 288,
+    "logical_edges": 699,
+    "qubits": 497,
+    "scale": 0.004422057647746071,
+    "readout_curves": [
+      {
+        "beta": 10.0,
+        "scale": 0.003257523228453035,
+        "root_readout_tv_bound": 1.0,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 1.6065107466394976e-13,
+          "syndrome_defect_bound": 0.9999999999998394,
+          "conditional_feasible_tv_bound": 0.9939914758739377,
+          "row_log_factor_range": 11.609429053883542,
+          "repair_log_product": 17.85011258370651,
+          "repair_correction": 11.609429053883542,
+          "minimum_repair_margin": -0.10287889594780271
+        }
+      },
+      {
+        "beta": 20.0,
+        "scale": 0.004422057647746071,
+        "root_readout_tv_bound": 1.0,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 0.009098525825041294,
+          "syndrome_defect_bound": 0.9909014741749587,
+          "conditional_feasible_tv_bound": 0.058010736449909506,
+          "row_log_factor_range": 0.23230376646763312,
+          "repair_log_product": 4.469715573975082,
+          "repair_correction": 0.23230376646763312,
+          "minimum_repair_margin": 1.1251913777414566
+        }
+      },
+      {
+        "beta": 40.0,
+        "scale": 0.005004324857392589,
+        "root_readout_tv_bound": 0.03904318269323449,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 0.9619159594431016,
+          "syndrome_defect_bound": 0.038084040556898416,
+          "conditional_feasible_tv_bound": 2.6848451906642046e-06,
+          "row_log_factor_range": 1.0739380762682623e-05,
+          "repair_log_product": 0.0388277833819153,
+          "repair_correction": 1.0739380762682623e-05,
+          "minimum_repair_margin": 5.742230818606723
+        }
+      },
+      {
+        "beta": 80.0,
+        "scale": 0.0052954584622158475,
+        "root_readout_tv_bound": 0.0009587957523449572,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 0.9999975684641338,
+          "syndrome_defect_bound": 2.431535866219005e-06,
+          "conditional_feasible_tv_bound": 5.533885222227635e-15,
+          "row_log_factor_range": 2.213554088891054e-14,
+          "repair_log_product": 2.4315388224070797e-06,
+          "repair_correction": 2.213554088891054e-14,
+          "minimum_repair_margin": 15.015972737095085
+        }
+      }
+    ]
+  },
+  {
+    "name": "mixed_hypergraph_n64_s9901_balanced",
+    "status": "ok",
+    "scheme": "balanced",
+    "total_seconds": 26.734864374855533,
+    "logical_variables": 624,
+    "logical_edges": 1373,
+    "qubits": 995,
+    "scale": 0.00868381722452723,
+    "readout_curves": [
+      {
+        "beta": 10.0,
+        "scale": 0.0061944500915237346,
+        "root_readout_tv_bound": 1.0,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 6.362239122683714e-08,
+          "syndrome_defect_bound": 0.9999999363776088,
+          "conditional_feasible_tv_bound": 0.0,
+          "row_log_factor_range": 0.0,
+          "repair_log_product": 16.570300365245032,
+          "repair_correction": 0.0,
+          "minimum_repair_margin": -0.18941642830599853
+        }
+      },
+      {
+        "beta": 20.0,
+        "scale": 0.00868381722452723,
+        "root_readout_tv_bound": 0.40356486966026595,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 0.6452025011706576,
+          "syndrome_defect_bound": 0.3547974988293424,
+          "conditional_feasible_tv_bound": 0.0,
+          "row_log_factor_range": 0.0,
+          "repair_log_product": 0.4381910561566728,
+          "repair_correction": 0.0,
+          "minimum_repair_margin": 3.3175364184772684
+        }
+      },
+      {
+        "beta": 40.0,
+        "scale": 0.00992850079102898,
+        "root_readout_tv_bound": 0.04879471988863902,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 0.9999726509422846,
+          "syndrome_defect_bound": 2.7349057715412102e-05,
+          "conditional_feasible_tv_bound": 0.0,
+          "row_log_factor_range": 0.0,
+          "repair_log_product": 2.7349431707709974e-05,
+          "repair_correction": 0.0,
+          "minimum_repair_margin": 12.589491089955503
+        }
+      },
+      {
+        "beta": 80.0,
+        "scale": 0.010550842574279852,
+        "root_readout_tv_bound": 0.048767370831049185,
+        "syndrome_certificate": {
+          "status": "ok",
+          "feasible_probability_lower": 0.9999999999998742,
+          "syndrome_defect_bound": 1.2580304482079923e-13,
+          "conditional_feasible_tv_bound": 0.0,
+          "row_log_factor_range": 0.0,
+          "repair_log_product": 1.2580304482080703e-13,
+          "repair_correction": 0.0,
+          "minimum_repair_margin": 31.136977048498476
+        }
+      }
+    ]
+  }
+]

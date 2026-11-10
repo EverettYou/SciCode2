@@ -1,0 +1,37 @@
+{
+  "revision": "review-draft-v0.2",
+  "purpose": "human question review; editable and not frozen for model trials",
+  "canonical_question": "problem/TASK.md",
+  "canonical_pdf": "problem/problem.pdf",
+  "builder": "scripts/build_problem_sheets.py",
+  "built_utc": "2026-10-16T20:19:01.118638+00:00",
+  "source_sha256": "f37009cdd228a20501ee6a399155fe52cc9e2f1e0fe080638ce6a0c4bac6163c",
+  "files": {
+    "problem/TASK.md": "f37009cdd228a20501ee6a399155fe52cc9e2f1e0fe080638ce6a0c4bac6163c",
+    "problem/main.tex": "f0e08d6060131b97a63845b38233db7807a7cdc385144a426f2047ac0a63a91a",
+    "problem/problem.pdf": "676d804b4d99006e1a1cba7d281b5ccdff524208ca8bd54bd8a9942a2b7d1d3c",
+    "output/pdf/problem.pdf": "676d804b4d99006e1a1cba7d281b5ccdff524208ca8bd54bd8a9942a2b7d1d3c",
+    "metadata.yml": "fc5d200a944bbd35a4bfe5535c47b6b44f89b145f05a84430fb34e476f22c4a4",
+    "problem/EDITORIAL_AUDIT.md": "89c4a001c1da3b77ede5ddc624f6c5fdd71b3ec63b20f641553dcde09a88ce6c",
+    "problem/REVISION-v0.2.md": "c1814da0f270d870eb6ae73f40be4a6d7fae7c5abb1664bccc757c1c294c8041",
+    "README.md": "3926c2b22e80921e0736ff9f60a5b57f0d84b29e19e4e4a39eacf5519d36aacd",
+    "problem/SOURCE_REVIEW.md": "65780518893f5ee09f166f1d24b43d75cd991ac1c503f0a410ecf6ff7946f786"
+  },
+  "pdf_pages": 3,
+  "overfull_boxes": [],
+  "qa": "All final pages rendered and visually inspected; source coverage, version labels, current/history differences, identical PDF copies and source hashes checked. Fusion geometry retained; D4 input embedded byte-for-byte and unchanged from its previous version.",
+  "scientific_execution": "not-started",
+  "model_trials": "not-started",
+  "builder_sha256": "bbc0d8d8a842b7f14d76286adf212ba1851270f62f78530e3766d4c01d320515",
+  "superseded": "problem/history/review-draft-v0.1/",
+  "checks": {
+    "prose_word_coverage": "all canonical prose words present in PDF extraction",
+    "task_source_hash": "matches generated main.tex",
+    "pdf_copy": "byte-identical to output/pdf/problem.pdf",
+    "content_revision": "TASK and PDF differ from archived version",
+    "layout": "all final page renders visually inspected; no overfull boxes",
+    "input_attachment": "not applicable",
+    "scientific_experiments": "none",
+    "model_trials": "none"
+  }
+}

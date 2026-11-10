@@ -1,0 +1,462 @@
+{
+  "status": "pass",
+  "ode_checks": [
+    {
+      "variant": "direct_local",
+      "T": 16.0,
+      "alpha": 0.5,
+      "n": 9,
+      "method": "DOP853",
+      "rtol": 2e-11,
+      "atol": 2e-12,
+      "nfev": 3761,
+      "norm_error": 9.669809397649942e-11,
+      "strang_steps": 768,
+      "overlap_abs": 0.9999999994627566,
+      "max_score_difference": 4.19815564911552e-06,
+      "scores_ode": [
+        0.2817612826552959,
+        0.6566746392046618,
+        0.2813949292517102,
+        0.285207807400916
+      ],
+      "scores_strang": [
+        0.28176289083283906,
+        0.6566704410490127,
+        0.28139656696514753,
+        0.2852094349043894
+      ],
+      "elapsed_seconds": 1.1410146669950336
+    },
+    {
+      "variant": "dual_0",
+      "T": 16.0,
+      "alpha": 1.0,
+      "n": 2,
+      "method": "DOP853",
+      "rtol": 2e-11,
+      "atol": 2e-12,
+      "nfev": 1085,
+      "norm_error": 3.5603742176704145e-12,
+      "strang_steps": 768,
+      "overlap_abs": 0.9999999999677128,
+      "max_score_difference": 1.851197567681595e-06,
+      "scores_ode": [
+        0.9840611404877273,
+        0.9999999999964397,
+        0.9840611404877273,
+        0.9840611404877273
+      ],
+      "scores_strang": [
+        0.984062991685295,
+        0.9999999999999934,
+        0.984062991685295,
+        0.984062991685295
+      ],
+      "elapsed_seconds": 0.025347082875669003
+    }
+  ],
+  "zero_time_baselines": [
+    {
+      "source": "dynamics_square2.json",
+      "cases": [
+        {
+          "width": 2,
+          "height": 2,
+          "weights": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "syndrome": [
+            0,
+            0
+          ],
+          "raw_direct_one_sample": 0.03125,
+          "raw_direct_two_samples": 0.0615234375,
+          "repaired_direct_one_sample": 0.125,
+          "repaired_direct_two_samples": 0.234375,
+          "dual_one_sample_per_sector": 0.25,
+          "dual_sector_stratification_advantage": 0.015625
+        },
+        {
+          "width": 2,
+          "height": 2,
+          "weights": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "syndrome": [
+            1,
+            0
+          ],
+          "raw_direct_one_sample": 0.0625,
+          "raw_direct_two_samples": 0.12109375,
+          "repaired_direct_one_sample": 0.25,
+          "repaired_direct_two_samples": 0.4375,
+          "dual_one_sample_per_sector": 0.4375,
+          "dual_sector_stratification_advantage": 0.0
+        },
+        {
+          "width": 2,
+          "height": 2,
+          "weights": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "syndrome": [
+            0,
+            1
+          ],
+          "raw_direct_one_sample": 0.0625,
+          "raw_direct_two_samples": 0.12109375,
+          "repaired_direct_one_sample": 0.25,
+          "repaired_direct_two_samples": 0.4375,
+          "dual_one_sample_per_sector": 0.4375,
+          "dual_sector_stratification_advantage": 0.0
+        },
+        {
+          "width": 2,
+          "height": 2,
+          "weights": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "syndrome": [
+            1,
+            1
+          ],
+          "raw_direct_one_sample": 0.03125,
+          "raw_direct_two_samples": 0.0615234375,
+          "repaired_direct_one_sample": 0.125,
+          "repaired_direct_two_samples": 0.234375,
+          "dual_one_sample_per_sector": 0.25,
+          "dual_sector_stratification_advantage": 0.015625
+        },
+        {
+          "width": 2,
+          "height": 2,
+          "weights": [
+            1.0,
+            1.25,
+            1.5,
+            0.75,
+            1.75
+          ],
+          "syndrome": [
+            0,
+            0
+          ],
+          "raw_direct_one_sample": 0.03125,
+          "raw_direct_two_samples": 0.0615234375,
+          "repaired_direct_one_sample": 0.125,
+          "repaired_direct_two_samples": 0.234375,
+          "dual_one_sample_per_sector": 0.25,
+          "dual_sector_stratification_advantage": 0.015625
+        },
+        {
+          "width": 2,
+          "height": 2,
+          "weights": [
+            1.0,
+            1.25,
+            1.5,
+            0.75,
+            1.75
+          ],
+          "syndrome": [
+            1,
+            0
+          ],
+          "raw_direct_one_sample": 0.03125,
+          "raw_direct_two_samples": 0.0615234375,
+          "repaired_direct_one_sample": 0.125,
+          "repaired_direct_two_samples": 0.234375,
+          "dual_one_sample_per_sector": 0.25,
+          "dual_sector_stratification_advantage": 0.015625
+        },
+        {
+          "width": 2,
+          "height": 2,
+          "weights": [
+            1.0,
+            1.25,
+            1.5,
+            0.75,
+            1.75
+          ],
+          "syndrome": [
+            0,
+            1
+          ],
+          "raw_direct_one_sample": 0.03125,
+          "raw_direct_two_samples": 0.0615234375,
+          "repaired_direct_one_sample": 0.125,
+          "repaired_direct_two_samples": 0.234375,
+          "dual_one_sample_per_sector": 0.25,
+          "dual_sector_stratification_advantage": 0.015625
+        },
+        {
+          "width": 2,
+          "height": 2,
+          "weights": [
+            1.0,
+            1.25,
+            1.5,
+            0.75,
+            1.75
+          ],
+          "syndrome": [
+            1,
+            1
+          ],
+          "raw_direct_one_sample": 0.0625,
+          "raw_direct_two_samples": 0.12109375,
+          "repaired_direct_one_sample": 0.25,
+          "repaired_direct_two_samples": 0.4375,
+          "dual_one_sample_per_sector": 0.4375,
+          "dual_sector_stratification_advantage": 0.0
+        }
+      ],
+      "means": {
+        "raw_direct_one_sample": 0.04296875,
+        "raw_direct_two_samples": 0.0838623046875,
+        "repaired_direct_one_sample": 0.171875,
+        "repaired_direct_two_samples": 0.310546875,
+        "dual_one_sample_per_sector": 0.3203125,
+        "dual_sector_stratification_advantage": 0.009765625
+      }
+    },
+    {
+      "source": "dynamics_rectangle23.json",
+      "cases": [
+        {
+          "width": 2,
+          "height": 3,
+          "weights": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "syndrome": [
+            0,
+            0,
+            0
+          ],
+          "raw_direct_one_sample": 0.00390625,
+          "raw_direct_two_samples": 0.0077972412109375,
+          "repaired_direct_one_sample": 0.03125,
+          "repaired_direct_two_samples": 0.0615234375,
+          "dual_one_sample_per_sector": 0.0625,
+          "dual_sector_stratification_advantage": 0.0009765625
+        },
+        {
+          "width": 2,
+          "height": 3,
+          "weights": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "syndrome": [
+            1,
+            0,
+            0
+          ],
+          "raw_direct_one_sample": 0.0078125,
+          "raw_direct_two_samples": 0.01556396484375,
+          "repaired_direct_one_sample": 0.0625,
+          "repaired_direct_two_samples": 0.12109375,
+          "dual_one_sample_per_sector": 0.12109375,
+          "dual_sector_stratification_advantage": 0.0
+        },
+        {
+          "width": 2,
+          "height": 3,
+          "weights": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "syndrome": [
+            0,
+            1,
+            0
+          ],
+          "raw_direct_one_sample": 0.0078125,
+          "raw_direct_two_samples": 0.01556396484375,
+          "repaired_direct_one_sample": 0.0625,
+          "repaired_direct_two_samples": 0.12109375,
+          "dual_one_sample_per_sector": 0.12109375,
+          "dual_sector_stratification_advantage": 0.0
+        },
+        {
+          "width": 2,
+          "height": 3,
+          "weights": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "syndrome": [
+            1,
+            1,
+            0
+          ],
+          "raw_direct_one_sample": 0.00390625,
+          "raw_direct_two_samples": 0.0077972412109375,
+          "repaired_direct_one_sample": 0.03125,
+          "repaired_direct_two_samples": 0.0615234375,
+          "dual_one_sample_per_sector": 0.0625,
+          "dual_sector_stratification_advantage": 0.0009765625
+        },
+        {
+          "width": 2,
+          "height": 3,
+          "weights": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "syndrome": [
+            0,
+            0,
+            1
+          ],
+          "raw_direct_one_sample": 0.0078125,
+          "raw_direct_two_samples": 0.01556396484375,
+          "repaired_direct_one_sample": 0.0625,
+          "repaired_direct_two_samples": 0.12109375,
+          "dual_one_sample_per_sector": 0.12109375,
+          "dual_sector_stratification_advantage": 0.0
+        },
+        {
+          "width": 2,
+          "height": 3,
+          "weights": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "syndrome": [
+            1,
+            0,
+            1
+          ],
+          "raw_direct_one_sample": 0.01953125,
+          "raw_direct_two_samples": 0.0386810302734375,
+          "repaired_direct_one_sample": 0.15625,
+          "repaired_direct_two_samples": 0.2880859375,
+          "dual_one_sample_per_sector": 0.2890625,
+          "dual_sector_stratification_advantage": 0.0009765625
+        },
+        {
+          "width": 2,
+          "height": 3,
+          "weights": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "syndrome": [
+            0,
+            1,
+            1
+          ],
+          "raw_direct_one_sample": 0.00390625,
+          "raw_direct_two_samples": 0.0077972412109375,
+          "repaired_direct_one_sample": 0.03125,
+          "repaired_direct_two_samples": 0.0615234375,
+          "dual_one_sample_per_sector": 0.0625,
+          "dual_sector_stratification_advantage": 0.0009765625
+        },
+        {
+          "width": 2,
+          "height": 3,
+          "weights": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "syndrome": [
+            1,
+            1,
+            1
+          ],
+          "raw_direct_one_sample": 0.015625,
+          "raw_direct_two_samples": 0.031005859375,
+          "repaired_direct_one_sample": 0.125,
+          "repaired_direct_two_samples": 0.234375,
+          "dual_one_sample_per_sector": 0.234375,
+          "dual_sector_stratification_advantage": 0.0
+        }
+      ],
+      "means": {
+        "raw_direct_one_sample": 0.0087890625,
+        "raw_direct_two_samples": 0.0174713134765625,
+        "repaired_direct_one_sample": 0.0703125,
+        "repaired_direct_two_samples": 0.1337890625,
+        "dual_one_sample_per_sector": 0.13427734375,
+        "dual_sector_stratification_advantage": 0.00048828125
+      }
+    }
+  ],
+  "score_order": [
+    "raw_decoded_optimum",
+    "syndrome_feasible",
+    "programmed_ground",
+    "fixed_repair_optimum"
+  ],
+  "interpretation": "Dual stratifies sectors and samples feasible states already at T=0; baseline gain is not quantum speedup."
+}

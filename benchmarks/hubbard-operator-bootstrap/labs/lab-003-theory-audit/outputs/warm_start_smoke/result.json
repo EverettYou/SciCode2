@@ -1,0 +1,23 @@
+{
+  "solver": "SCS",
+  "status": "optimal_inaccurate",
+  "energy_primal": -8.762933876480105,
+  "dual_unadjusted": -8.763083892886506,
+  "residual_l1": 0.002665216729836512,
+  "certificate_float_lower": -8.765749109616342,
+  "dual_min_eigenvalue": -7.190756110544837e-14,
+  "equality_max_residual": 1.5642249717728873e-07,
+  "nvar": 331,
+  "nblocks": 244,
+  "max_psd_dim": 233,
+  "psd_entries": 410274,
+  "model_construction_sec": null,
+  "build_sec": 0.000563708133995533,
+  "solve_sec": 0.19283420802094042,
+  "solver_solve_time": 0.067165166,
+  "iterations": 1,
+  "peak_rss_bytes": 272220160,
+  "eps": 1e-05,
+  "warm_start_source": "/Users/home/Library/CloudStorage/Dropbox/Research/[Mercor]SciCode2/benchmarks/hubbard-operator-bootstrap/labs/lab-003-theory-audit/outputs/pqgt2prime_sym",
+  "warm_start_dual_mapping_max_error": 2.5007003253216123e-14
+}

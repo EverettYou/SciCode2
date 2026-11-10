@@ -1,0 +1,23 @@
+{
+  "parameters": {
+    "t1_D": 0.99864185424081,
+    "t2_D": 0.19566575279628456,
+    "mu_D": -0.9060121817780602,
+    "Lorentz_width_D": 0.0876132614555502,
+    "amplitude": 3.51408334024405,
+    "background_constant": -0.00619812043985325,
+    "background_quadratic": 0.001444420807211585
+  },
+  "conditional_1sigma": {
+    "t1_D": 0.0039276951675570205,
+    "t2_D": 0.0022271070504820967,
+    "mu_D": 0.009094014487849543,
+    "Lorentz_width_D": 0.00941242803680172,
+    "amplitude": 0.04657983752891985,
+    "background_constant": 0.005032364674357906,
+    "background_quadratic": 8.47203455480682e-05
+  },
+  "residual_rms": 0.04726097603270783,
+  "kx_quadrature_points": 420,
+  "assumptions": "High-temperature STS is the DOS of a noninteracting square lattice with only NN and both NNN hoppings, a constant tunneling matrix element, Lorentz broadening, and a quadratic background. The uncertainty omits all model error. The high STS temperature is unspecified, so no thermal number equation was imposed."
+}

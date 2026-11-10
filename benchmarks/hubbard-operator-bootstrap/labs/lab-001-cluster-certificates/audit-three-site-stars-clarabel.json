@@ -1,0 +1,437 @@
+{
+  "passed": true,
+  "input_directory": "/Users/home/Library/CloudStorage/Dropbox/Research/[Mercor]SciCode2/benchmarks/hubbard-operator-bootstrap/labs/lab-002-moment-sdp/results/three-site-stars-clarabel",
+  "independent_CAR_Fock_action_tests": 4000,
+  "exhaustive_T2_CAR_order_equality_patterns": 46656,
+  "distinct_lattice_bonds": 32,
+  "full_variables": 3240,
+  "variables": 331,
+  "symmetry_expansion_audit": {
+    "group": "D4 spatial rotations/reflections and spin interchange",
+    "signed_nonzero_variable_orbits": 331,
+    "signed_zero_variable_orbits": 11
+  },
+  "singlet_ground_sector_restriction": false,
+  "character_projection_sources_audited": 6,
+  "star_selected_subspace_rank_per_source": 85,
+  "equalities": 66,
+  "blocks": 66,
+  "affine_nonzero_coefficients_checked": 856739,
+  "all_affine_coefficient_differences": 0,
+  "objective_float_max_difference": 0.0,
+  "objective_handling": "Use independently reconstructed exact half-integer coefficients in final certificate.",
+  "elapsed_seconds": 11.952382582938299,
+  "peak_rss_bytes": 572784640,
+  "block_details": [
+    {
+      "name": "P_(1, 0)",
+      "dim": 8,
+      "nnz": 64,
+      "seconds": 0.006990583147853613
+    },
+    {
+      "name": "Q_(1, 0)",
+      "dim": 8,
+      "nnz": 80,
+      "seconds": 0.0027830000035464764
+    },
+    {
+      "name": "P_(2, 0)",
+      "dim": 6,
+      "nnz": 28,
+      "seconds": 0.008152374997735023
+    },
+    {
+      "name": "Q_(2, 0)",
+      "dim": 6,
+      "nnz": 38,
+      "seconds": 0.0036137080751359463
+    },
+    {
+      "name": "P_(5, 0)",
+      "dim": 8,
+      "nnz": 56,
+      "seconds": 0.002242041053250432
+    },
+    {
+      "name": "Q_(5, 0)",
+      "dim": 8,
+      "nnz": 70,
+      "seconds": 0.0022730000782757998
+    },
+    {
+      "name": "P_(6, 0)",
+      "dim": 8,
+      "nnz": 64,
+      "seconds": 0.010601334040984511
+    },
+    {
+      "name": "Q_(6, 0)",
+      "dim": 8,
+      "nnz": 80,
+      "seconds": 0.005369000136852264
+    },
+    {
+      "name": "P_(10, 0)",
+      "dim": 6,
+      "nnz": 34,
+      "seconds": 0.007782582892104983
+    },
+    {
+      "name": "Q_(10, 0)",
+      "dim": 6,
+      "nnz": 45,
+      "seconds": 0.02650141599588096
+    },
+    {
+      "name": "P_(0, 1)",
+      "dim": 16,
+      "nnz": 256,
+      "seconds": 0.01945658284239471
+    },
+    {
+      "name": "Q_(0, 1)",
+      "dim": 16,
+      "nnz": 272,
+      "seconds": 0.012669541174545884
+    },
+    {
+      "name": "P_(1, 1)",
+      "dim": 16,
+      "nnz": 256,
+      "seconds": 0.03382741706445813
+    },
+    {
+      "name": "Q_(1, 1)",
+      "dim": 16,
+      "nnz": 288,
+      "seconds": 0.020057708956301212
+    },
+    {
+      "name": "P_(2, 1)",
+      "dim": 16,
+      "nnz": 256,
+      "seconds": 0.007255834061652422
+    },
+    {
+      "name": "Q_(2, 1)",
+      "dim": 16,
+      "nnz": 280,
+      "seconds": 0.011878709075972438
+    },
+    {
+      "name": "P_(5, 1)",
+      "dim": 16,
+      "nnz": 256,
+      "seconds": 0.006243624957278371
+    },
+    {
+      "name": "Q_(5, 1)",
+      "dim": 16,
+      "nnz": 284,
+      "seconds": 0.011843792162835598
+    },
+    {
+      "name": "P_(6, 1)",
+      "dim": 16,
+      "nnz": 256,
+      "seconds": 0.013092708075419068
+    },
+    {
+      "name": "Q_(6, 1)",
+      "dim": 16,
+      "nnz": 288,
+      "seconds": 0.009698791895061731
+    },
+    {
+      "name": "P_(10, 1)",
+      "dim": 16,
+      "nnz": 256,
+      "seconds": 0.07902720803394914
+    },
+    {
+      "name": "Q_(10, 1)",
+      "dim": 16,
+      "nnz": 282,
+      "seconds": 0.013662208802998066
+    },
+    {
+      "name": "P_(0, 0)",
+      "dim": 6,
+      "nnz": 26,
+      "seconds": 0.008454708848148584
+    },
+    {
+      "name": "Q_(0, 0)",
+      "dim": 6,
+      "nnz": 32,
+      "seconds": 0.009428249904885888
+    },
+    {
+      "name": "G_(0, 0)",
+      "dim": 32,
+      "nnz": 1024,
+      "seconds": 0.028470458928495646
+    },
+    {
+      "name": "G_(2, 0)",
+      "dim": 32,
+      "nnz": 1008,
+      "seconds": 0.0438144588842988
+    },
+    {
+      "name": "G_(1, 0)",
+      "dim": 32,
+      "nnz": 960,
+      "seconds": 0.040736667113378644
+    },
+    {
+      "name": "G_(10, 0)",
+      "dim": 32,
+      "nnz": 1024,
+      "seconds": 0.038877374958246946
+    },
+    {
+      "name": "G_(6, 0)",
+      "dim": 32,
+      "nnz": 960,
+      "seconds": 0.04098900011740625
+    },
+    {
+      "name": "G_(5, 0)",
+      "dim": 32,
+      "nnz": 944,
+      "seconds": 0.05625820881687105
+    },
+    {
+      "name": "G_(0, 1)",
+      "dim": 16,
+      "nnz": 272,
+      "seconds": 0.011039458913728595
+    },
+    {
+      "name": "G_(2, 1)",
+      "dim": 16,
+      "nnz": 272,
+      "seconds": 0.008382583037018776
+    },
+    {
+      "name": "G_(1, 1)",
+      "dim": 16,
+      "nnz": 272,
+      "seconds": 0.00899645802564919
+    },
+    {
+      "name": "G_(10, 1)",
+      "dim": 16,
+      "nnz": 272,
+      "seconds": 0.02109566703438759
+    },
+    {
+      "name": "G_(6, 1)",
+      "dim": 16,
+      "nnz": 272,
+      "seconds": 0.01428312505595386
+    },
+    {
+      "name": "G_(5, 1)",
+      "dim": 16,
+      "nnz": 272,
+      "seconds": 0.00567524996586144
+    },
+    {
+      "name": "n_0",
+      "dim": 1,
+      "nnz": 1,
+      "seconds": 0.004490291001275182
+    },
+    {
+      "name": "hole_0",
+      "dim": 1,
+      "nnz": 1,
+      "seconds": 0.0035867500118911266
+    },
+    {
+      "name": "n_1",
+      "dim": 1,
+      "nnz": 1,
+      "seconds": 0.0017989999614655972
+    },
+    {
+      "name": "hole_1",
+      "dim": 1,
+      "nnz": 1,
+      "seconds": 0.010201250202953815
+    },
+    {
+      "name": "n_2",
+      "dim": 1,
+      "nnz": 1,
+      "seconds": 0.0055027911439538
+    },
+    {
+      "name": "hole_2",
+      "dim": 1,
+      "nnz": 1,
+      "seconds": 0.0015247920528054237
+    },
+    {
+      "name": "n_5",
+      "dim": 1,
+      "nnz": 1,
+      "seconds": 0.0013982499949634075
+    },
+    {
+      "name": "hole_5",
+      "dim": 1,
+      "nnz": 1,
+      "seconds": 0.006768666906282306
+    },
+    {
+      "name": "n_6",
+      "dim": 1,
+      "nnz": 1,
+      "seconds": 0.001606083009392023
+    },
+    {
+      "name": "hole_6",
+      "dim": 1,
+      "nnz": 1,
+      "seconds": 0.0017039170488715172
+    },
+    {
+      "name": "n_10",
+      "dim": 1,
+      "nnz": 1,
+      "seconds": 0.010374916950240731
+    },
+    {
+      "name": "hole_10",
+      "dim": 1,
+      "nnz": 1,
+      "seconds": 0.0014575838577002287
+    },
+    {
+      "name": "T2prime_three_site_stars_spin0_k0_char(1, 1)",
+      "dim": 41,
+      "nnz": 66141,
+      "seconds": 1.8838891671039164
+    },
+    {
+      "name": "T2prime_three_site_stars_spin0_k0_char(1, -1)",
+      "dim": 18,
+      "nnz": 19942,
+      "seconds": 0.030281207989901304
+    },
+    {
+      "name": "T2prime_three_site_stars_spin0_k0_char(-1, 1)",
+      "dim": 18,
+      "nnz": 19942,
+      "seconds": 0.04372620792128146
+    },
+    {
+      "name": "T2prime_three_site_stars_spin0_k0_char(-1, -1)",
+      "dim": 8,
+      "nnz": 3530,
+      "seconds": 0.013256459031254053
+    },
+    {
+      "name": "T2prime_three_site_stars_spin0_k1_char(1,)",
+      "dim": 59,
+      "nnz": 129490,
+      "seconds": 1.531069542048499
+    },
+    {
+      "name": "T2prime_three_site_stars_spin0_k1_char(-1,)",
+      "dim": 26,
+      "nnz": 35047,
+      "seconds": 0.0511462080758065
+    },
+    {
+      "name": "T2prime_three_site_stars_spin0_k2_char(1, 1)",
+      "dim": 41,
+      "nnz": 66564,
+      "seconds": 1.5038655002135783
+    },
+    {
+      "name": "T2prime_three_site_stars_spin0_k2_char(1, -1)",
+      "dim": 18,
+      "nnz": 19814,
+      "seconds": 0.026825082954019308
+    },
+    {
+      "name": "T2prime_three_site_stars_spin0_k2_char(-1, 1)",
+      "dim": 18,
+      "nnz": 19814,
+      "seconds": 0.025216333102434874
+    },
+    {
+      "name": "T2prime_three_site_stars_spin0_k2_char(-1, -1)",
+      "dim": 8,
+      "nnz": 3532,
+      "seconds": 0.009314207825809717
+    },
+    {
+      "name": "T2prime_three_site_stars_spin0_k5_char(1,)",
+      "dim": 49,
+      "nnz": 110824,
+      "seconds": 1.0705872080288827
+    },
+    {
+      "name": "T2prime_three_site_stars_spin0_k5_char(-1,)",
+      "dim": 36,
+      "nnz": 76026,
+      "seconds": 0.12319708312861621
+    },
+    {
+      "name": "T2prime_three_site_stars_spin0_k6_char(1,)",
+      "dim": 59,
+      "nnz": 129658,
+      "seconds": 1.0568801669869572
+    },
+    {
+      "name": "T2prime_three_site_stars_spin0_k6_char(-1,)",
+      "dim": 26,
+      "nnz": 35047,
+      "seconds": 0.03819537488743663
+    },
+    {
+      "name": "T2prime_three_site_stars_spin0_k10_char(1, 1)",
+      "dim": 41,
+      "nnz": 66543,
+      "seconds": 0.9848155411891639
+    },
+    {
+      "name": "T2prime_three_site_stars_spin0_k10_char(1, -1)",
+      "dim": 18,
+      "nnz": 19942,
+      "seconds": 0.02373716700822115
+    },
+    {
+      "name": "T2prime_three_site_stars_spin0_k10_char(-1, 1)",
+      "dim": 18,
+      "nnz": 19942,
+      "seconds": 0.021903584012761712
+    },
+    {
+      "name": "T2prime_three_site_stars_spin0_k10_char(-1, -1)",
+      "dim": 8,
+      "nnz": 3530,
+      "seconds": 0.008687749970704317
+    }
+  ],
+  "physical_sector": {
+    "L": 4,
+    "t": 1,
+    "U": 8,
+    "Nup": 8,
+    "Ndown": 8
+  },
+  "notes": [
+    "All sparse coefficients and constants compared exactly.",
+    "Real Hermitian moments and momentum/spin block selection are rebuilt from variable names.",
+    "T1 degree-six cancellation uses independent exterior multiplication; the T2 contraction table is exhaustively verified against it for all 46,656 relative-order/equality patterns.",
+    "Symmetry expansion is independently checked by signed orbit traversal; character projections are checked for the declared reflection action, complete source span or explicitly selected85-dimensional star span, and exact vanishing cross-character maps.",
+    "Fermionic real moment symmetrization is valid because the Fourier Hamiltonian and operator spaces are closed under complex conjugation."
+  ]
+}

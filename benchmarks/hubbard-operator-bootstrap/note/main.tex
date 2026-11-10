@@ -1,0 +1,156 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,booktabs,array,hyperref}
+\hypersetup{colorlinks=true,linkcolor=blue,urlcolor=blue,citecolor=blue}
+\newcommand{\Tr}{\operatorname{Tr}}
+\newcommand{\Span}{\operatorname{span}}
+\newcommand{\PSD}{\succeq 0}
+\title{Affordable Hubbard Quantum Bootstrap Bounds\\\large A reproducible benchmark and certified research attempt}
+\author{SciCode2 research workspace}
+\date{7 October 2026}
+\begin{document}
+\maketitle
+\begin{abstract}
+We study operator selection for certified energy lower bounds on the half-filled periodic $4\times4$ repulsive Hubbard model at $t=1$, $U=8$. We compare translation-averaged cluster certificates, global two-particle moment constraints, and selected or complete cubic anticommutator constraints. Exact dyadic Gram certificates control numerical solver error independently of solver status. Dual-guided selection produces a symmetry-closed space of dimension 2257 and the exact bound $E_0\ge -8.763353354793$. Its reduced formulation has 54 cones, maximum dimension 32, and 11446 matrix entries; fixed-space solving took 13.82 seconds and 362 MB peak process memory. Discovering the space required the complete cubic relaxation and is charged separately. A compact two-site space gives $E_0\ge -8.864118703137$. These results establish an affordable reproducible construction; they do not establish a globally optimal operator space or passage of an unspecified benchmark threshold. Selection, negative refinements, and all resource records are preserved in the laboratory reports.
+\end{abstract}
+
+\section{Question, conventions, and provenance}
+The primary source is the user-supplied problem specification, \emph{SciCode 2: Finding Affordable Quantum Bootstrap Bounds}. The execution request initially allowed two hours; the user subsequently authorized up to one day if necessary. Text in the source document is treated as scientific problem data, separately from that execution authorization.
+
+There are $V=16$ sites, $32$ distinct unordered periodic nearest-neighbor bonds, and $N_\uparrow=N_\downarrow=8$. We use total energy and
+\begin{equation}
+ H=-\sum_{\langle i,j\rangle,\sigma}(c^\dagger_{i\sigma}c_{j\sigma}+c^\dagger_{j\sigma}c_{i\sigma})
+       +8\sum_i n_{i\uparrow}n_{i\downarrow}.
+\end{equation}
+The fixed-spin Hilbert space has dimension $\binom{16}{8}^2=165636900$. The Fourier convention is $c_{k\sigma}=\frac14\sum_r e^{-ik\cdot r}c_{r\sigma}$, with momentum coordinates in $\mathbb Z_4^2$. The one-particle dispersion takes exact values $-4,-2,0,2,4$ with multiplicities $1,4,6,4,1$. Independent checks recover $E_0(U=0)=-24$ and the atomic-limit energy zero.
+
+For a selected operator space $\mathcal O$, the source minimizes $\Tr(\rho H)$ over Hermitian trace-one $\rho$ on the fixed-spin sector, subject to $\Tr(\rho A^\dagger A)\ge0$ for every $A\in\mathcal O$. Global positivity of $\rho$ is not imposed. Every physical state is feasible, so a justified relaxation lower bound is also a ground-energy lower bound. A feasible primal moment vector alone does not certify the required inequality.
+
+The source gives neither a public energy target nor a numerical resource ceiling. We therefore report a measured bound--cost frontier rather than invent a pass/fail threshold. This finite instance and standard reduced-density-matrix conditions have prior literature \cite{anderson}; novelty of the physical instance is not claimed. Han's many-body bootstrap provides relevant background \cite{han}.
+
+\section{Global moments and operator spaces}
+Label the 32 spin orbitals by $a=0,\ldots,31$, with up orbitals first. Use real moments
+\begin{equation}
+ n_a=\langle c_a^\dagger c_a\rangle,\qquad
+ \Gamma_{ab,cd}=\langle c_a^\dagger c_b^\dagger c_d c_c\rangle\quad(a<b,\ c<d).
+\end{equation}
+Only momentum- and spin-conserving pairs occur. Complex conjugation in the momentum occupation basis preserves this Hamiltonian and the chosen spaces, so a real moment functional can be selected by averaging. The initial representation has 3240 real coordinates. Fixed-spin contractions include
+\begin{equation}
+ \sum_{a\in\sigma}n_a=8,\qquad
+ \sum_{b\in\tau}\Gamma_{ab,ab}=(8-\delta_{\sigma(a),\tau})n_a.
+\end{equation}
+Signed $D_4$ and spin-interchange orbits reduce the coordinate count to 331: 342 signed orbits, of which 11 vanish. Independent graph traversal checks the complete invariant subspace. Symmetry reductions apply to the sector, Hamiltonian, and selected operator space together.
+
+The degree-two core is
+\begin{equation}
+\mathcal O_2=\Span\{I,c_a,c_a^\dagger,c_ac_b,c_a^\dagger c_b^\dagger,c_a^\dagger c_b\},
+\qquad \dim\mathcal O_2=1+64+992+1024=2081.
+\end{equation}
+Its particle-particle ($P$), hole-hole ($Q$), and particle-hole ($G$) Gram conditions, with explicit particle/hole scalar positivity, give 208 charge/momentum cones of maximum dimension 32 before point-group reduction. The two-particle interaction in momentum space has coefficient $U/V=1/2$; the verifier reconstructs it independently with exact coefficients.
+
+For odd cubic operators $A_i$, the matrix
+\begin{equation}
+T_{ij}=\langle A_i^\dagger A_j+A_jA_i^\dagger\rangle
+\end{equation}
+is PSD. Canonical anticommutation cancels sextic terms. The augmented $T_2'$ condition uses a linear operator $B$ and
+\begin{equation}
+\begin{pmatrix}
+\langle A_i^\dagger A_j+A_jA_i^\dagger\rangle&\langle A_i^\dagger B\rangle\\
+\langle B^\dagger A_j\rangle&\langle B^\dagger B\rangle
+\end{pmatrix}\PSD.
+\end{equation}
+It is the sum of the Gram of $(A_i,B)$ and the transpose Gram of $(A_i^\dagger,0)$. The one-sided cross term is essential. We do not identify this eliminated degree-four relaxation with the entire literal cubic Gram optimization in the source: its dual is a valid SOS certificate using actual cubic operators and their adjoints.
+
+The first selected family is $c^\dagger_{i\sigma}n_{j\bar\sigma}$ with arbitrary separation. Four two-site families further include same-spin density, onsite pair transfer, and spin exchange. They provide 60 independent cubic vectors per spin/momentum, giving total ambient test-space dimension 5921 after adding adjoints and the core. Exact modular rank proves independence. Symmetry leaves 66 cones, maximum dimension 45, and 22050 matrix entries. The full normal cubic family $c_a^\dagger c_b^\dagger c_c$ and adjoints gives dimension 33825, 244 reduced cones, maximum dimension 233, and 410274 matrix entries. The full $T_1$ addition uses all triple creation/annihilation operators and adds 9920 operators.
+
+\section{Exact certificates and the declared operator space}
+Write $M_j(x)=A_jx+b_j\PSD$, $Ex=e$, and energy $c^Tx$. Given equality multipliers $\lambda$ and PSD matrices $Z_j$, define
+\begin{equation}
+ r=c+E^T\lambda-\sum_j A_j^T\operatorname{vec}(Z_j),\qquad
+ d=-e^T\lambda-\sum_j b_j^T\operatorname{vec}(Z_j).
+\end{equation}
+Then $c^Tx=d+\sum_j\Tr(Z_jM_j(x))+r^Tx$. Occupation/hole positivity implies $0\le n_a\le1$. The $P$ and $G$ diagonals imply $0\le\Gamma_{ab,ab}\le1$, and $P$ Cauchy--Schwarz gives $|\Gamma_{ab,cd}|\le1$. Hence
+\begin{equation}\boxed{E_0\ \ge\ d-\|r\|_1.}\end{equation}
+This proof uses the selected positivity conditions, not global positivity of the relaxed density matrix.
+
+We quantize floating dual factors to integer matrices $K_j/2^{40}$ and set $Z_j=K_jK_j^T/2^{80}$. Positivity is exact by construction. The affine maps are integer or exact dyadic; equality multipliers are also quantized. Python integers evaluate every coefficient residual and constant exactly. Split integer matrix products carry explicit bounds preventing overflow. The final decimal is rounded downward. The solver can return \texttt{optimal\_inaccurate} without compromising this subsequently verified certificate.
+
+The residual correction also has an operator interpretation within the degree-two core. For pair annihilators $P,Q$,
+\begin{align}
+ 1\mp\operatorname{Re}(P^\dagger Q)
+ &=\tfrac12\big[(P\mp Q)^\dagger(P\mp Q)+(1-P^\dagger P)+(1-Q^\dagger Q)\big],\\
+ 1-n_an_b&=(1-n_a)+n_a(1-n_b).
+\end{align}
+The last two terms are squares of a linear hole operator and a particle-hole operator. Thus the residual requires no extra high-degree space. Group averaging lifts a reduced certificate into a symmetry-closed physical operator space. Compressed dual factor rank is reported separately from the dimension of that complete space.
+
+An independent physical-map auditor imports neither the optimization builder nor its normal-ordering routines. It rebuilds the geometry, Fourier Hamiltonian, moment variables, sector equalities, every affine PSD coefficient, and character projections. Its exterior-product CAR implementation is checked on direct Fock actions; the optimized $T_2$ contraction table is checked on all $6^6=46656$ relative-order/equality patterns. Exact certificate arithmetic and physical-map validation are separate obligations and separately measured costs.
+
+\section{Dual-guided operator selection}
+The complete cubic solver output contains only sixteen active $T_2'$ dual directions across six character cones. We select eigenvectors with dual eigenvalue above $10^{-7}$, quantize their coordinates to a dyadic grid with at most twenty fractional bits, and reconstruct the induced maps using integer quadratic forms. Selection thresholds propose a space; exact subsequent validation establishes its certificate.
+
+We project onto these directions and retain the existing linear augmentation. The six added PSD blocks have dimensions $4,4,4,4,3,3$; the reduced degree-two core contributes 48 cones. All mixed terms within a selected block can be reoptimized. The resulting program has 331 variables, 54 cones, largest dimension 32, and 11446 full matrix entries. Clarabel took 23 iterations and 13.82 seconds, after 0.589 seconds of measured selection/construction; peak process RSS was 361.9 MB. Exact verification took 0.278 seconds and gives
+\begin{equation}
+ E_0\ge -8.763353354793,\qquad \|r\|_1=1.17667\times10^{-7}.
+\end{equation}
+The earlier scalar-only replay gave $-8.763365270237$, with 64 cones and 27.60 seconds of solving.
+
+Sixteen reduced directions are not the original operator-space dimension. We map them through the exact character congruences to canonical cubic words, remove linear pieces already present in $\mathcal O_2$, close under all sixteen $D_4$/spin actions, and include adjoints. Exact span relations and matching rank modulo the prime 1000003 prove that the closed net-$+1$ cubic span has dimension 88; its adjoint net-$-1$ span contributes another 88 dimensions. Thus the declared ambient polynomial space is
+\begin{equation}
+ \mathcal O_{\rm selected}=\mathcal O_2+\Span\{C_1,\ldots,C_{88},C_1^\dagger,\ldots,C_{88}^\dagger\},
+ \qquad\dim\mathcal O_{\rm selected}=2257.
+\end{equation}
+Polynomial coefficients and rank certificates are exported. This dimension precedes further identities upon restriction to the input sector. The exact dual squares, their symmetry translates, and all residual SOS terms belong to this declared space. Consequently the certificate applies to the literal selected-space relaxation in the supplied question, even though the solved anticommutator program may be weaker than its full Gram formulation.
+
+The full discovery run required 50.88 seconds of construction and 511.52 seconds of solving, with 265.6 MB peak process RSS. These costs are not removed when reporting the selected-space replay. The matrix-entry reduction is about $410274/11446=35.84$; the operator-dimension reduction is about $33825/2257=14.99$. Complete physical-map auditing is an additional measured stage.
+
+\section{Completed comparisons}
+Table~\ref{tab:bounds} reports downward-rounded exact lower bounds. Larger values are stronger. Solver times measure the solve call; factor construction and export, model construction, and independent physical auditing are additional unless included in an end-to-end reproduction record. Memory is process peak RSS in decimal MB, not aggregate simultaneous memory. Concurrent pilot work affects timings, so these are workstation observations rather than isolated speed claims.
+
+\begin{table}[ht]
+\centering\small
+\begin{tabular}{lrrrr}
+\toprule
+Construction & Lower bound & Max cone & Solve (s) & Peak MB\\
+\midrule
+$2\times4$ cluster & $-14.25342470$ & 4900 & 105.4 & 978\\
+$P/Q/G$ & $-10.566825373980$ & 32 & 40.3 & 138\\
+$P/Q/G+$ opposite density $T_2'$ & $-10.268038996818$ & 32 & 46.8 & 190\\
+Initial $P/Q/G+T_1$ & $-9.847999995266$ & 120 & 473.0 & 391\\
+Two-site $T_2'$, SCS & $-8.864558789088$ & 45 & 278.2 & 188\\
+Two-site $T_2'$, Clarabel & $-8.864118703137$ & 45 & 64.1 & 600\\
+Two-site $+T_1$ & $-8.856092835155$ & 72 & 569.2 & 256\\
+Two-site $+$ three-site stars & $-8.859051476423$ & 59 & 43.2 & 1475\\
+Full $T_2'$, SCS & $-8.764969112905$ & 233 & 511.5 & 266\\
+Same factors, LP-refitted $\lambda$ & $-8.764879966348$ & 233 & $+2.7$ & see JSON\\
+Dual-selected scalar tests & $-8.763365270237$ & 32 & 27.6 & 263\\
+Dual-selected six blocks & $-8.763353354793$ & 32 & 13.8 & 362\\
+\bottomrule
+\end{tabular}
+\caption{Certified total energies. The cluster maximum is a spectral block, not an SDP cone. Canonical JSON artifacts retain the complete resource decomposition and additional variants.}\label{tab:bounds}
+\end{table}
+
+The compact two-site space captures most of the gain of the full cubic family, missing about 0.10 total energy while using about nineteen times fewer matrix entries. Adding spin-$3/2$ two-site sectors produced no resolved improvement. Adding nearest-neighbor three-site stars or all $T_1$ conditions gave small gains with higher cost. Tightening the baseline SCS tolerance improved the certificate only slightly while increasing solve time from 40 to 314 seconds.
+
+Local four-site density extension tests provide a useful negative result. Exact Fourier maps passed maximally mixed fixed-number and Slater checks. Plaquette, row, star, and zigzag extensions of the full-$T_2'$ candidate, and a plaquette extension of the compact candidate, had numerical moment mismatches below $5\times10^{-10}$. These are numerical compatibility observations, not exact feasibility proofs; no lower bound follows from them. We pruned the larger joint local-density SDP branch.
+
+The shared-sextic pilot added 200 semantic moments and twelve realified $32\times32$ cubic Gram blocks. Its fixed-global-moment compatibility diagnostic had mismatch $2.36\times10^{-9}$ and positive Gram margin $2.15\times10^{-5}$. The joint 5000-iteration SCS solve took 628 seconds and 458 MB, but its large residual correction erased the apparent primal improvement. This branch was pruned without a stronger certificate. A full-$T_2\prime$ Clarabel precision attempt terminated with exit137 and no solution; its cause and peak memory are unknown, so no energy bound or OOM diagnosis is inferred.
+
+A separate ground-singlet experiment is theorem-backed by Lieb's result for this connected half-filled bipartite lattice \cite{lieb}. It is explicitly distinguished from the source's original fixed-$N_\uparrow,N_\downarrow$ relaxation because the added $S^2=0$ equality is not valid for every state in that sector. It is contextual and does not enter the bound stated in the abstract.
+
+\section{Reproducibility and limitations}
+A fresh sequential run of the promoted portable code reproduced the identical exact bound in 22.953 seconds, including Python startup, construction, solving, factor/map export, independent physical auditing, exact certificate arithmetic, and the exact operator-rank proof. Construction was 0.835 seconds, the solver call 11.277 seconds, and export 0.234 seconds. The largest stage process peak was 404.5 MB. These are fixed-space reproduction costs; full-model discovery remains a separate charge.
+
+The full-$T_2'$ comparison was also reconstructed and solved from the promoted code: 5.666 seconds construction, 183.911 seconds solve, and 0.763 seconds export. Successful stages including startup, independent physical audit, and exact certificate totaled 198.865 seconds, with 388.2 MB largest process peak. The first audit detected a missing operator-kind metadata field; that descriptor was corrected and the successful solve reused. Its 2.858-second failed audit and the manual restart gap are recorded separately. SCS and Clarabel differ in algorithm and tolerance, so runtime and memory comparisons are solver-dependent; matrix and operator counts give a direct structural comparison.
+
+The benchmark root contains the immutable hashed source, matching research-question metadata, six laboratory histories, an evolving evidence wiki, stable code under \texttt{src/}, and this self-contained note. The locked Python environment contains NumPy, SciPy, CVXPY, SCS, and Clarabel. The code exports primal coordinates, all affine maps, equality multipliers, Gram factors, symmetry maps, and exact certificate numerators. The stable README gives commands for construction, solution, physical audit, and exact validation.
+
+Cluster certificates independently check complete spectral bases with orthogonality and residual corrections rather than interpreting one approximate eigenpair as a lower bound. The promoted moment certificates instead use exact integer arithmetic and avoid floating spectral-positivity assumptions. Literature numerical energies are context only, never certificate inputs.
+
+The present outcome is a reproducible certified lower-bound construction and empirical selection evidence. It does not compute the exact ground energy, prove outer-search optimality, or establish universal irrelevance of a pruned branch. Expert review remains pending to choose a public target, resource budget, and intended role of previously published methods.
+
+\begin{thebibliography}{9}
+\bibitem{han} X. Han, \emph{Quantum Many-body Bootstrap}, arXiv:2006.06002 (2020). \url{https://arxiv.org/abs/2006.06002}.
+\bibitem{anderson} J. S. M. Anderson, M. Nakata, R. Igarashi, K. Fujisawa, and M. Yamashita, \emph{The second-order reduced density matrix method and the two-dimensional Hubbard model}, arXiv:1207.4847 (2012). \url{https://arxiv.org/abs/1207.4847}.
+\bibitem{lieb} E. H. Lieb, \emph{Two theorems on the Hubbard model}, Phys. Rev. Lett. \textbf{62}, 1201 (1989). \url{https://doi.org/10.1103/PhysRevLett.62.1201}.
+\end{thebibliography}
+\end{document}

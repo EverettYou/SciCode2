@@ -1,0 +1,30 @@
+Source: user-pasted organizer email, recorded 2026-10-07. Message date not supplied.
+The canonical Google Docs URL below is decoded from the email's URL-defense link;
+the prose is preserved, with Markdown link labels represented as plain text.
+
+Hi all,
+
+Following up on last night's email: the Project Sycamore Instructions doc now matches it. If you last read it before Sep 28, here is what changed.
+
+Project Sycamore Instructions:
+https://docs.google.com/document/d/14mhMhFhP9tm0IISegobR6Higr9f-SSnU3dI7fTe_L20/edit?usp=sharing
+
+Overview
+
+- Submit two files: a proposal write-up, and a prompt.md that is the prompt exactly as the agent should see it, plus any data it needs. prompt.md goes straight into our test pipeline. (Phase 1, Step 2)
+- Run your prompt for real, not as a dry run. In an empty folder holding only your prompt and input data, start a fresh session with the strongest model at its highest effort (Fable 5.1 Max/Ultra in Claude Code, or GPT 6 Astra Ultra in Codex), turn internet on, and let it run to the end. (Phase 1, Step 3)
+- The bar for acceptance is now written down: the agent has to fail on prompt.md alone, and still fail when you add an expert brief. (Phase 1, Step 5, the A/B/C prompt ladder)
+- Check your idea against the Example bank: three strong proposals, each with its prompt and case report, and seven rejected ones with the reason for each.
+
+Strong proposals:
+https://docs.google.com/document/d/14mhMhFhP9tm0IISegobR6Higr9f-SSnU3dI7fTe_L20/edit?tab=t.a57pdorv6l9n
+
+Rejected proposals:
+https://docs.google.com/document/d/14mhMhFhP9tm0IISegobR6Higr9f-SSnU3dI7fTe_L20/edit?tab=t.ivgu49rbbd9k
+
+*
+
+One thing to do now: export and save your Claude Code / Codex transcripts. The case report's record of your interventions comes from them, and they disappear when sessions age out.
+
+Best,
+The SciCode 2 team

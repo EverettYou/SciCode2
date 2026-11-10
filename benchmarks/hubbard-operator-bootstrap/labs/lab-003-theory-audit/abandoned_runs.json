@@ -1,0 +1,39 @@
+[
+  {
+    "pid": 98502,
+    "command": [
+      "benchmarks/hubbard-operator-bootstrap/.venv/bin/python",
+      "benchmarks/hubbard-operator-bootstrap/labs/lab-003-theory-audit/run_t2.py",
+      "--out",
+      "benchmarks/hubbard-operator-bootstrap/labs/lab-003-theory-audit/outputs/pqgt2mixed",
+      "--eps",
+      "1e-4",
+      "--max-iters",
+      "2000",
+      "--verbose"
+    ],
+    "wall_seconds": 777.0975697040558,
+    "rss_bytes_before_stop": 343490560,
+    "cpu_seconds": 331.61994752000004,
+    "outcome": "Stopped unreduced comparison after successful exact symmetry reduction; no bound claimed."
+  },
+  {
+    "pid": 98933,
+    "command": [
+      "benchmarks/hubbard-operator-bootstrap/.venv/bin/python",
+      "benchmarks/hubbard-operator-bootstrap/labs/lab-003-theory-audit/run_t2.py",
+      "--out",
+      "benchmarks/hubbard-operator-bootstrap/labs/lab-003-theory-audit/outputs/pqgt2primefull",
+      "--full",
+      "--eps",
+      "1e-4",
+      "--max-iters",
+      "1000",
+      "--verbose"
+    ],
+    "wall_seconds": 671.0189168453217,
+    "rss_bytes_before_stop": 414744576,
+    "cpu_seconds": 273.934283776,
+    "outcome": "Stopped unreduced comparison after successful exact symmetry reduction; no bound claimed."
+  }
+]

@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "benchmark_id": "qec-annealing-embedding",
+  "question_revision": "0.3-general-H",
+  "created_at": "2026-10-07T18:41:59Z",
+  "phase": "early-question-formulation",
+  "editorial_recommendation": "pass-to-testing",
+  "frozen_for_experiment": false,
+  "canonical_statement": "problem/TASK.md",
+  "convenience_copy": "evaluation/prompt.md",
+  "active_experimental_prompt_variants": [],
+  "required_input_files": [],
+  "input_contract": "General sparse binary H, syndrome and finite mechanism weights; optional observable map for logical evaluation; researcher-selected public or specified instances.",
+  "optional_legacy_examples": [
+    "evaluation/inputs/seed-codes.json",
+    "evaluation/inputs/target-family.json"
+  ],
+  "hash_algorithm": "sha256",
+  "files": {
+    "problem/TASK.md": "59db2b1fccb659727f046a907ead3b01c4878aa97eb142fb5c045fbac9c92164",
+    "problem/main.tex": "84cd2e7b74449ddf3c95cacd9aa629570daaaf2936e5cd8c754e303400d2498e",
+    "problem/scicode2-qec-annealing-embedding.pdf": "a6efb1d82a18b4a1e397d7b87b1adb1688507d6a599b2140b9a52b75e7eefb37",
+    "problem/DESIGN_REVISION.md": "6bcfefa3c8cd02a3cfcc071c38a7b37fdd4e4e0e89aa82e5ef3090776ae68234",
+    "metadata.yml": "b7668d06bd23fbe9d887da5588259cd4b857f56f3fd9d4f5dd37e3d2053d5250",
+    "evaluation/prompt.md": "59db2b1fccb659727f046a907ead3b01c4878aa97eb142fb5c045fbac9c92164",
+    "evaluation/proposal.md": "03fee89e8e2b1678690a9f1d40c3ac802f81f47698cf77aac87929e970c32c06",
+    "evaluation/evaluation-plan.md": "8a1ee82d95d421e8f405ec94962380148230fa8c24c48618e9a4ea6305505b6a",
+    "evaluation/AUDIT.md": "ecc7666accfbeee979a03542e979a7556746ff22ab8a44f2c22950fb09baa981"
+  },
+  "author_requirements": {
+    "skills/create-benchmark/SKILL.md": "9a795e519be62e7dfccba7d6d04ddc74137faa7ef4c961c163621a2bb326206c",
+    "skills/create-benchmark/references/design-guidelines.md": "e2ac696e44930604616796da0b09861502a9df28a955a1c72c42c2bb368f8a72",
+    "docs/scicode2/requirements.md": "2453f9db323c67eff90df5ba78d25ed8b0d51a6f04b734ee6c9fe2ac0cccf320"
+  },
+  "reference_revision": null,
+  "evaluator_revision": null,
+  "model_trials": [],
+  "scientific_experiments": [],
+  "difficulty_status": "likely nontrivial by text-only judgment; empirically untested",
+  "example_bank_comparison": "pending-access",
+  "supersedes": "0.2-design",
+  "history": "evaluation/history/0.2-design/",
+  "checks": {
+    "workspace_validator": "pass",
+    "wiki_lint": "0 errors, 0 warnings",
+    "statement_consistency": "pass",
+    "public_only_standalone_references": "pass",
+    "provenance_hashes_and_navigation": "pass",
+    "native_latex_compile": "success",
+    "exported_pdf": "5 pages, all final renders visually inspected",
+    "research_execution": "none"
+  }
+}

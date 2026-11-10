@@ -1,0 +1,1160 @@
+{
+  "passed": true,
+  "input_directory": "/Users/home/Library/CloudStorage/Dropbox/Research/[Mercor]SciCode2/benchmarks/hubbard-operator-bootstrap/labs/lab-002-moment-sdp/results/adaptive-t2-cuts/round_10",
+  "portable_operator_input_directory": null,
+  "portable_selected_maps_checked": 0,
+  "independent_CAR_Fock_action_tests": 4000,
+  "exhaustive_T2_CAR_order_equality_patterns": 46656,
+  "distinct_lattice_bonds": 32,
+  "full_variables": 3240,
+  "variables": 331,
+  "symmetry_expansion_audit": {
+    "group": "D4 spatial rotations/reflections and spin interchange",
+    "signed_nonzero_variable_orbits": 331,
+    "signed_zero_variable_orbits": 11
+  },
+  "singlet_ground_sector_restriction": false,
+  "character_projection_sources_audited": 6,
+  "star_selected_subspace_rank_per_source": null,
+  "adaptive_cut_maps_checked": 120,
+  "equalities": 66,
+  "blocks": 186,
+  "affine_nonzero_coefficients_checked": 372326,
+  "all_affine_coefficient_differences": 0,
+  "objective_float_max_difference": 0.0,
+  "objective_handling": "Use independently reconstructed exact half-integer coefficients in final certificate.",
+  "elapsed_seconds": 23.737341957865283,
+  "peak_rss_bytes": 137723904,
+  "block_details": [
+    {
+      "name": "P_(1, 0)",
+      "dim": 8,
+      "nnz": 64,
+      "seconds": 0.003679709043353796
+    },
+    {
+      "name": "Q_(1, 0)",
+      "dim": 8,
+      "nnz": 80,
+      "seconds": 0.0024389170575886965
+    },
+    {
+      "name": "P_(2, 0)",
+      "dim": 6,
+      "nnz": 28,
+      "seconds": 0.002187292091548443
+    },
+    {
+      "name": "Q_(2, 0)",
+      "dim": 6,
+      "nnz": 38,
+      "seconds": 0.002854374935850501
+    },
+    {
+      "name": "P_(5, 0)",
+      "dim": 8,
+      "nnz": 56,
+      "seconds": 0.002625333145260811
+    },
+    {
+      "name": "Q_(5, 0)",
+      "dim": 8,
+      "nnz": 70,
+      "seconds": 0.0020913751795887947
+    },
+    {
+      "name": "P_(6, 0)",
+      "dim": 8,
+      "nnz": 64,
+      "seconds": 0.003488041926175356
+    },
+    {
+      "name": "Q_(6, 0)",
+      "dim": 8,
+      "nnz": 80,
+      "seconds": 0.002227584132924676
+    },
+    {
+      "name": "P_(10, 0)",
+      "dim": 6,
+      "nnz": 34,
+      "seconds": 0.001665750052779913
+    },
+    {
+      "name": "Q_(10, 0)",
+      "dim": 6,
+      "nnz": 45,
+      "seconds": 0.00214262492954731
+    },
+    {
+      "name": "P_(0, 1)",
+      "dim": 16,
+      "nnz": 256,
+      "seconds": 0.005560124991461635
+    },
+    {
+      "name": "Q_(0, 1)",
+      "dim": 16,
+      "nnz": 272,
+      "seconds": 0.0058923340402543545
+    },
+    {
+      "name": "P_(1, 1)",
+      "dim": 16,
+      "nnz": 256,
+      "seconds": 0.009679000126197934
+    },
+    {
+      "name": "Q_(1, 1)",
+      "dim": 16,
+      "nnz": 288,
+      "seconds": 0.005483374930918217
+    },
+    {
+      "name": "P_(2, 1)",
+      "dim": 16,
+      "nnz": 256,
+      "seconds": 0.008341541048139334
+    },
+    {
+      "name": "Q_(2, 1)",
+      "dim": 16,
+      "nnz": 280,
+      "seconds": 0.010727207874879241
+    },
+    {
+      "name": "P_(5, 1)",
+      "dim": 16,
+      "nnz": 256,
+      "seconds": 0.006011125165969133
+    },
+    {
+      "name": "Q_(5, 1)",
+      "dim": 16,
+      "nnz": 284,
+      "seconds": 0.005803625099360943
+    },
+    {
+      "name": "P_(6, 1)",
+      "dim": 16,
+      "nnz": 256,
+      "seconds": 0.006230457918718457
+    },
+    {
+      "name": "Q_(6, 1)",
+      "dim": 16,
+      "nnz": 288,
+      "seconds": 0.006217125104740262
+    },
+    {
+      "name": "P_(10, 1)",
+      "dim": 16,
+      "nnz": 256,
+      "seconds": 0.0069869160652160645
+    },
+    {
+      "name": "Q_(10, 1)",
+      "dim": 16,
+      "nnz": 282,
+      "seconds": 0.005724959075450897
+    },
+    {
+      "name": "P_(0, 0)",
+      "dim": 6,
+      "nnz": 26,
+      "seconds": 0.0018426249735057354
+    },
+    {
+      "name": "Q_(0, 0)",
+      "dim": 6,
+      "nnz": 32,
+      "seconds": 0.0017840410582721233
+    },
+    {
+      "name": "G_(0, 0)",
+      "dim": 32,
+      "nnz": 1024,
+      "seconds": 0.017906582914292812
+    },
+    {
+      "name": "G_(2, 0)",
+      "dim": 32,
+      "nnz": 1008,
+      "seconds": 0.0854033341165632
+    },
+    {
+      "name": "G_(1, 0)",
+      "dim": 32,
+      "nnz": 960,
+      "seconds": 0.02795466687530279
+    },
+    {
+      "name": "G_(10, 0)",
+      "dim": 32,
+      "nnz": 1024,
+      "seconds": 0.019602457992732525
+    },
+    {
+      "name": "G_(6, 0)",
+      "dim": 32,
+      "nnz": 960,
+      "seconds": 0.02165804198011756
+    },
+    {
+      "name": "G_(5, 0)",
+      "dim": 32,
+      "nnz": 944,
+      "seconds": 0.01995075005106628
+    },
+    {
+      "name": "G_(0, 1)",
+      "dim": 16,
+      "nnz": 272,
+      "seconds": 0.005658166017383337
+    },
+    {
+      "name": "G_(2, 1)",
+      "dim": 16,
+      "nnz": 272,
+      "seconds": 0.006218249909579754
+    },
+    {
+      "name": "G_(1, 1)",
+      "dim": 16,
+      "nnz": 272,
+      "seconds": 0.005711458157747984
+    },
+    {
+      "name": "G_(10, 1)",
+      "dim": 16,
+      "nnz": 272,
+      "seconds": 0.0043588748667389154
+    },
+    {
+      "name": "G_(6, 1)",
+      "dim": 16,
+      "nnz": 272,
+      "seconds": 0.005223874934017658
+    },
+    {
+      "name": "G_(5, 1)",
+      "dim": 16,
+      "nnz": 272,
+      "seconds": 0.0057007919531315565
+    },
+    {
+      "name": "n_0",
+      "dim": 1,
+      "nnz": 1,
+      "seconds": 0.0014147500041872263
+    },
+    {
+      "name": "hole_0",
+      "dim": 1,
+      "nnz": 1,
+      "seconds": 0.0013436668086797
+    },
+    {
+      "name": "n_1",
+      "dim": 1,
+      "nnz": 1,
+      "seconds": 0.0011157500557601452
+    },
+    {
+      "name": "hole_1",
+      "dim": 1,
+      "nnz": 1,
+      "seconds": 0.0013476668391376734
+    },
+    {
+      "name": "n_2",
+      "dim": 1,
+      "nnz": 1,
+      "seconds": 0.002545667113736272
+    },
+    {
+      "name": "hole_2",
+      "dim": 1,
+      "nnz": 1,
+      "seconds": 0.0015397081151604652
+    },
+    {
+      "name": "n_5",
+      "dim": 1,
+      "nnz": 1,
+      "seconds": 0.00145633309148252
+    },
+    {
+      "name": "hole_5",
+      "dim": 1,
+      "nnz": 1,
+      "seconds": 0.0013535001780837774
+    },
+    {
+      "name": "n_6",
+      "dim": 1,
+      "nnz": 1,
+      "seconds": 0.0026225000619888306
+    },
+    {
+      "name": "hole_6",
+      "dim": 1,
+      "nnz": 1,
+      "seconds": 0.0011758329346776009
+    },
+    {
+      "name": "n_10",
+      "dim": 1,
+      "nnz": 1,
+      "seconds": 0.001108708092942834
+    },
+    {
+      "name": "hole_10",
+      "dim": 1,
+      "nnz": 1,
+      "seconds": 0.001050874823704362
+    },
+    {
+      "name": "T2prime_two_site_spin0_k0_char(1, 1)",
+      "dim": 33,
+      "nnz": 28927,
+      "seconds": 2.3770480840466917
+    },
+    {
+      "name": "T2prime_two_site_spin0_k0_char(1, -1)",
+      "dim": 12,
+      "nnz": 6443,
+      "seconds": 0.003100374946370721
+    },
+    {
+      "name": "T2prime_two_site_spin0_k0_char(-1, 1)",
+      "dim": 12,
+      "nnz": 6443,
+      "seconds": 0.0034659169614315033
+    },
+    {
+      "name": "T2prime_two_site_spin0_k0_char(-1, -1)",
+      "dim": 4,
+      "nnz": 918,
+      "seconds": 0.001939165871590376
+    },
+    {
+      "name": "T2prime_two_site_spin0_k1_char(1,)",
+      "dim": 45,
+      "nnz": 52631,
+      "seconds": 2.3996963331010193
+    },
+    {
+      "name": "T2prime_two_site_spin0_k1_char(-1,)",
+      "dim": 16,
+      "nnz": 11875,
+      "seconds": 0.006625749869272113
+    },
+    {
+      "name": "T2prime_two_site_spin0_k2_char(1, 1)",
+      "dim": 33,
+      "nnz": 29088,
+      "seconds": 2.0667667910456657
+    },
+    {
+      "name": "T2prime_two_site_spin0_k2_char(1, -1)",
+      "dim": 12,
+      "nnz": 6345,
+      "seconds": 0.003936749882996082
+    },
+    {
+      "name": "T2prime_two_site_spin0_k2_char(-1, 1)",
+      "dim": 12,
+      "nnz": 6345,
+      "seconds": 0.0026149170007556677
+    },
+    {
+      "name": "T2prime_two_site_spin0_k2_char(-1, -1)",
+      "dim": 4,
+      "nnz": 924,
+      "seconds": 0.0018659168854355812
+    },
+    {
+      "name": "T2prime_two_site_spin0_k5_char(1,)",
+      "dim": 37,
+      "nnz": 42308,
+      "seconds": 3.761827749898657
+    },
+    {
+      "name": "T2prime_two_site_spin0_k5_char(-1,)",
+      "dim": 24,
+      "nnz": 24804,
+      "seconds": 0.008058374980464578
+    },
+    {
+      "name": "T2prime_two_site_spin0_k6_char(1,)",
+      "dim": 45,
+      "nnz": 52631,
+      "seconds": 1.8555875418242067
+    },
+    {
+      "name": "T2prime_two_site_spin0_k6_char(-1,)",
+      "dim": 16,
+      "nnz": 11875,
+      "seconds": 0.0041525831911712885
+    },
+    {
+      "name": "T2prime_two_site_spin0_k10_char(1, 1)",
+      "dim": 33,
+      "nnz": 29009,
+      "seconds": 1.5101828339975327
+    },
+    {
+      "name": "T2prime_two_site_spin0_k10_char(1, -1)",
+      "dim": 12,
+      "nnz": 6443,
+      "seconds": 0.0023607080802321434
+    },
+    {
+      "name": "T2prime_two_site_spin0_k10_char(-1, 1)",
+      "dim": 12,
+      "nnz": 6443,
+      "seconds": 0.0017395419999957085
+    },
+    {
+      "name": "T2prime_two_site_spin0_k10_char(-1, -1)",
+      "dim": 4,
+      "nnz": 918,
+      "seconds": 0.0019394168630242348
+    },
+    {
+      "name": "ADAPTIVE_CUT_000",
+      "dim": 1,
+      "nnz": 195,
+      "seconds": 0.4570217919535935
+    },
+    {
+      "name": "ADAPTIVE_CUT_001",
+      "dim": 1,
+      "nnz": 195,
+      "seconds": 0.43306299997493625
+    },
+    {
+      "name": "ADAPTIVE_CUT_002",
+      "dim": 1,
+      "nnz": 331,
+      "seconds": 0.7267488341312855
+    },
+    {
+      "name": "ADAPTIVE_CUT_003",
+      "dim": 1,
+      "nnz": 331,
+      "seconds": 0.37479316582903266
+    },
+    {
+      "name": "ADAPTIVE_CUT_004",
+      "dim": 1,
+      "nnz": 331,
+      "seconds": 0.5276698749512434
+    },
+    {
+      "name": "ADAPTIVE_CUT_005",
+      "dim": 1,
+      "nnz": 193,
+      "seconds": 0.5100300828926265
+    },
+    {
+      "name": "ADAPTIVE_CUT_006",
+      "dim": 1,
+      "nnz": 331,
+      "seconds": 0.01094537484459579
+    },
+    {
+      "name": "ADAPTIVE_CUT_007",
+      "dim": 1,
+      "nnz": 331,
+      "seconds": 0.008380250073969364
+    },
+    {
+      "name": "ADAPTIVE_CUT_008",
+      "dim": 1,
+      "nnz": 331,
+      "seconds": 0.009120875038206577
+    },
+    {
+      "name": "ADAPTIVE_CUT_009",
+      "dim": 1,
+      "nnz": 331,
+      "seconds": 0.4049979590345174
+    },
+    {
+      "name": "ADAPTIVE_CUT_010",
+      "dim": 1,
+      "nnz": 331,
+      "seconds": 0.3992373750079423
+    },
+    {
+      "name": "ADAPTIVE_CUT_011",
+      "dim": 1,
+      "nnz": 331,
+      "seconds": 0.006833583116531372
+    },
+    {
+      "name": "ADAPTIVE_CUT_012",
+      "dim": 1,
+      "nnz": 197,
+      "seconds": 0.003220000071451068
+    },
+    {
+      "name": "ADAPTIVE_CUT_013",
+      "dim": 1,
+      "nnz": 331,
+      "seconds": 0.006582333939149976
+    },
+    {
+      "name": "ADAPTIVE_CUT_014",
+      "dim": 1,
+      "nnz": 308,
+      "seconds": 0.3918607081286609
+    },
+    {
+      "name": "ADAPTIVE_CUT_015",
+      "dim": 1,
+      "nnz": 308,
+      "seconds": 0.3619035000447184
+    },
+    {
+      "name": "ADAPTIVE_CUT_016",
+      "dim": 1,
+      "nnz": 308,
+      "seconds": 0.3712553749792278
+    },
+    {
+      "name": "ADAPTIVE_CUT_017",
+      "dim": 1,
+      "nnz": 308,
+      "seconds": 0.5006741660181433
+    },
+    {
+      "name": "ADAPTIVE_CUT_018",
+      "dim": 1,
+      "nnz": 308,
+      "seconds": 0.41930812504142523
+    },
+    {
+      "name": "ADAPTIVE_CUT_019",
+      "dim": 1,
+      "nnz": 308,
+      "seconds": 0.43599458294920623
+    },
+    {
+      "name": "ADAPTIVE_CUT_020",
+      "dim": 1,
+      "nnz": 331,
+      "seconds": 0.005332292057573795
+    },
+    {
+      "name": "ADAPTIVE_CUT_021",
+      "dim": 1,
+      "nnz": 331,
+      "seconds": 0.008077958133071661
+    },
+    {
+      "name": "ADAPTIVE_CUT_022",
+      "dim": 1,
+      "nnz": 195,
+      "seconds": 0.0020378748886287212
+    },
+    {
+      "name": "ADAPTIVE_CUT_023",
+      "dim": 1,
+      "nnz": 195,
+      "seconds": 0.002093625022098422
+    },
+    {
+      "name": "ADAPTIVE_CUT_024",
+      "dim": 1,
+      "nnz": 197,
+      "seconds": 0.002382375067099929
+    },
+    {
+      "name": "ADAPTIVE_CUT_025",
+      "dim": 1,
+      "nnz": 331,
+      "seconds": 0.005057999864220619
+    },
+    {
+      "name": "ADAPTIVE_CUT_026",
+      "dim": 1,
+      "nnz": 308,
+      "seconds": 0.0026792921125888824
+    },
+    {
+      "name": "ADAPTIVE_CUT_027",
+      "dim": 1,
+      "nnz": 306,
+      "seconds": 0.0026193750090897083
+    },
+    {
+      "name": "ADAPTIVE_CUT_028",
+      "dim": 1,
+      "nnz": 136,
+      "seconds": 0.0017604581080377102
+    },
+    {
+      "name": "ADAPTIVE_CUT_029",
+      "dim": 1,
+      "nnz": 134,
+      "seconds": 0.001798250013962388
+    },
+    {
+      "name": "ADAPTIVE_CUT_030",
+      "dim": 1,
+      "nnz": 308,
+      "seconds": 0.004820500034838915
+    },
+    {
+      "name": "ADAPTIVE_CUT_031",
+      "dim": 1,
+      "nnz": 308,
+      "seconds": 0.002834583865478635
+    },
+    {
+      "name": "ADAPTIVE_CUT_032",
+      "dim": 1,
+      "nnz": 308,
+      "seconds": 0.0026084170676767826
+    },
+    {
+      "name": "ADAPTIVE_CUT_033",
+      "dim": 1,
+      "nnz": 308,
+      "seconds": 0.0044183749705553055
+    },
+    {
+      "name": "ADAPTIVE_CUT_034",
+      "dim": 1,
+      "nnz": 308,
+      "seconds": 0.0027409580070525408
+    },
+    {
+      "name": "ADAPTIVE_CUT_035",
+      "dim": 1,
+      "nnz": 308,
+      "seconds": 0.0026747090741991997
+    },
+    {
+      "name": "ADAPTIVE_CUT_036",
+      "dim": 1,
+      "nnz": 331,
+      "seconds": 0.004788625054061413
+    },
+    {
+      "name": "ADAPTIVE_CUT_037",
+      "dim": 1,
+      "nnz": 331,
+      "seconds": 0.004792833933606744
+    },
+    {
+      "name": "ADAPTIVE_CUT_038",
+      "dim": 1,
+      "nnz": 331,
+      "seconds": 0.0051213339902460575
+    },
+    {
+      "name": "ADAPTIVE_CUT_039",
+      "dim": 1,
+      "nnz": 331,
+      "seconds": 0.007933666929602623
+    },
+    {
+      "name": "ADAPTIVE_CUT_040",
+      "dim": 1,
+      "nnz": 331,
+      "seconds": 0.004570875084027648
+    },
+    {
+      "name": "ADAPTIVE_CUT_041",
+      "dim": 1,
+      "nnz": 308,
+      "seconds": 0.0032252499368041754
+    },
+    {
+      "name": "ADAPTIVE_CUT_042",
+      "dim": 1,
+      "nnz": 195,
+      "seconds": 0.0017869581934064627
+    },
+    {
+      "name": "ADAPTIVE_CUT_043",
+      "dim": 1,
+      "nnz": 195,
+      "seconds": 0.0017563330475240946
+    },
+    {
+      "name": "ADAPTIVE_CUT_044",
+      "dim": 1,
+      "nnz": 331,
+      "seconds": 0.004702958045527339
+    },
+    {
+      "name": "ADAPTIVE_CUT_045",
+      "dim": 1,
+      "nnz": 308,
+      "seconds": 0.004452583147212863
+    },
+    {
+      "name": "ADAPTIVE_CUT_046",
+      "dim": 1,
+      "nnz": 308,
+      "seconds": 0.002704208018258214
+    },
+    {
+      "name": "ADAPTIVE_CUT_047",
+      "dim": 1,
+      "nnz": 308,
+      "seconds": 0.0026670407969504595
+    },
+    {
+      "name": "ADAPTIVE_CUT_048",
+      "dim": 1,
+      "nnz": 331,
+      "seconds": 0.0045362908858805895
+    },
+    {
+      "name": "ADAPTIVE_CUT_049",
+      "dim": 1,
+      "nnz": 331,
+      "seconds": 0.005027958191931248
+    },
+    {
+      "name": "ADAPTIVE_CUT_050",
+      "dim": 1,
+      "nnz": 308,
+      "seconds": 0.0027752090245485306
+    },
+    {
+      "name": "ADAPTIVE_CUT_051",
+      "dim": 1,
+      "nnz": 330,
+      "seconds": 0.005356250097975135
+    },
+    {
+      "name": "ADAPTIVE_CUT_052",
+      "dim": 1,
+      "nnz": 308,
+      "seconds": 0.0026809999253600836
+    },
+    {
+      "name": "ADAPTIVE_CUT_053",
+      "dim": 1,
+      "nnz": 308,
+      "seconds": 0.0026968340389430523
+    },
+    {
+      "name": "ADAPTIVE_CUT_054",
+      "dim": 1,
+      "nnz": 308,
+      "seconds": 0.0025821670424193144
+    },
+    {
+      "name": "ADAPTIVE_CUT_055",
+      "dim": 1,
+      "nnz": 308,
+      "seconds": 0.0025570830330252647
+    },
+    {
+      "name": "ADAPTIVE_CUT_056",
+      "dim": 1,
+      "nnz": 195,
+      "seconds": 0.0018589170649647713
+    },
+    {
+      "name": "ADAPTIVE_CUT_057",
+      "dim": 1,
+      "nnz": 331,
+      "seconds": 0.0076735420152544975
+    },
+    {
+      "name": "ADAPTIVE_CUT_058",
+      "dim": 1,
+      "nnz": 195,
+      "seconds": 0.002168916864320636
+    },
+    {
+      "name": "ADAPTIVE_CUT_059",
+      "dim": 1,
+      "nnz": 308,
+      "seconds": 0.0026476250495761633
+    },
+    {
+      "name": "ADAPTIVE_CUT_060",
+      "dim": 1,
+      "nnz": 331,
+      "seconds": 0.004737582989037037
+    },
+    {
+      "name": "ADAPTIVE_CUT_061",
+      "dim": 1,
+      "nnz": 331,
+      "seconds": 0.004659374943003058
+    },
+    {
+      "name": "ADAPTIVE_CUT_062",
+      "dim": 1,
+      "nnz": 331,
+      "seconds": 0.0047098330687731504
+    },
+    {
+      "name": "ADAPTIVE_CUT_063",
+      "dim": 1,
+      "nnz": 197,
+      "seconds": 0.0024552498944103718
+    },
+    {
+      "name": "ADAPTIVE_CUT_064",
+      "dim": 1,
+      "nnz": 331,
+      "seconds": 0.004950500093400478
+    },
+    {
+      "name": "ADAPTIVE_CUT_065",
+      "dim": 1,
+      "nnz": 331,
+      "seconds": 0.004779374925419688
+    },
+    {
+      "name": "ADAPTIVE_CUT_066",
+      "dim": 1,
+      "nnz": 308,
+      "seconds": 0.004627417074516416
+    },
+    {
+      "name": "ADAPTIVE_CUT_067",
+      "dim": 1,
+      "nnz": 331,
+      "seconds": 0.008356708101928234
+    },
+    {
+      "name": "ADAPTIVE_CUT_068",
+      "dim": 1,
+      "nnz": 307,
+      "seconds": 0.0026706671342253685
+    },
+    {
+      "name": "ADAPTIVE_CUT_069",
+      "dim": 1,
+      "nnz": 308,
+      "seconds": 0.002577708102762699
+    },
+    {
+      "name": "ADAPTIVE_CUT_070",
+      "dim": 1,
+      "nnz": 308,
+      "seconds": 0.004875665996223688
+    },
+    {
+      "name": "ADAPTIVE_CUT_071",
+      "dim": 1,
+      "nnz": 308,
+      "seconds": 0.002821790985763073
+    },
+    {
+      "name": "ADAPTIVE_CUT_072",
+      "dim": 1,
+      "nnz": 331,
+      "seconds": 0.005137583008036017
+    },
+    {
+      "name": "ADAPTIVE_CUT_073",
+      "dim": 1,
+      "nnz": 331,
+      "seconds": 0.004761042073369026
+    },
+    {
+      "name": "ADAPTIVE_CUT_074",
+      "dim": 1,
+      "nnz": 331,
+      "seconds": 0.00754579110071063
+    },
+    {
+      "name": "ADAPTIVE_CUT_075",
+      "dim": 1,
+      "nnz": 308,
+      "seconds": 0.0028216249775141478
+    },
+    {
+      "name": "ADAPTIVE_CUT_076",
+      "dim": 1,
+      "nnz": 308,
+      "seconds": 0.0029842499643564224
+    },
+    {
+      "name": "ADAPTIVE_CUT_077",
+      "dim": 1,
+      "nnz": 331,
+      "seconds": 0.0050779159646481276
+    },
+    {
+      "name": "ADAPTIVE_CUT_078",
+      "dim": 1,
+      "nnz": 308,
+      "seconds": 0.0028134160675108433
+    },
+    {
+      "name": "ADAPTIVE_CUT_079",
+      "dim": 1,
+      "nnz": 308,
+      "seconds": 0.0027174169663339853
+    },
+    {
+      "name": "ADAPTIVE_CUT_080",
+      "dim": 1,
+      "nnz": 308,
+      "seconds": 0.004763707984238863
+    },
+    {
+      "name": "ADAPTIVE_CUT_081",
+      "dim": 1,
+      "nnz": 331,
+      "seconds": 0.007718958193436265
+    },
+    {
+      "name": "ADAPTIVE_CUT_082",
+      "dim": 1,
+      "nnz": 331,
+      "seconds": 0.004657000070437789
+    },
+    {
+      "name": "ADAPTIVE_CUT_083",
+      "dim": 1,
+      "nnz": 331,
+      "seconds": 0.004738457966595888
+    },
+    {
+      "name": "ADAPTIVE_CUT_084",
+      "dim": 1,
+      "nnz": 331,
+      "seconds": 0.0047217910178005695
+    },
+    {
+      "name": "ADAPTIVE_CUT_085",
+      "dim": 1,
+      "nnz": 307,
+      "seconds": 0.004849541932344437
+    },
+    {
+      "name": "ADAPTIVE_CUT_086",
+      "dim": 1,
+      "nnz": 308,
+      "seconds": 0.0029851249419152737
+    },
+    {
+      "name": "ADAPTIVE_CUT_087",
+      "dim": 1,
+      "nnz": 308,
+      "seconds": 0.002642833860591054
+    },
+    {
+      "name": "ADAPTIVE_CUT_088",
+      "dim": 1,
+      "nnz": 331,
+      "seconds": 0.007336292183026671
+    },
+    {
+      "name": "ADAPTIVE_CUT_089",
+      "dim": 1,
+      "nnz": 308,
+      "seconds": 0.004530125064775348
+    },
+    {
+      "name": "ADAPTIVE_CUT_090",
+      "dim": 1,
+      "nnz": 331,
+      "seconds": 0.004787040874361992
+    },
+    {
+      "name": "ADAPTIVE_CUT_091",
+      "dim": 1,
+      "nnz": 331,
+      "seconds": 0.004761207848787308
+    },
+    {
+      "name": "ADAPTIVE_CUT_092",
+      "dim": 1,
+      "nnz": 331,
+      "seconds": 0.004533333936706185
+    },
+    {
+      "name": "ADAPTIVE_CUT_093",
+      "dim": 1,
+      "nnz": 331,
+      "seconds": 0.004598249914124608
+    },
+    {
+      "name": "ADAPTIVE_CUT_094",
+      "dim": 1,
+      "nnz": 308,
+      "seconds": 0.0046504170168191195
+    },
+    {
+      "name": "ADAPTIVE_CUT_095",
+      "dim": 1,
+      "nnz": 308,
+      "seconds": 0.002927458146587014
+    },
+    {
+      "name": "ADAPTIVE_CUT_096",
+      "dim": 1,
+      "nnz": 331,
+      "seconds": 0.0048857079818844795
+    },
+    {
+      "name": "ADAPTIVE_CUT_097",
+      "dim": 1,
+      "nnz": 331,
+      "seconds": 0.0046549171674996614
+    },
+    {
+      "name": "ADAPTIVE_CUT_098",
+      "dim": 1,
+      "nnz": 331,
+      "seconds": 0.009651040891185403
+    },
+    {
+      "name": "ADAPTIVE_CUT_099",
+      "dim": 1,
+      "nnz": 331,
+      "seconds": 0.005105291958898306
+    },
+    {
+      "name": "ADAPTIVE_CUT_100",
+      "dim": 1,
+      "nnz": 308,
+      "seconds": 0.004834332969039679
+    },
+    {
+      "name": "ADAPTIVE_CUT_101",
+      "dim": 1,
+      "nnz": 331,
+      "seconds": 0.004597374936565757
+    },
+    {
+      "name": "ADAPTIVE_CUT_102",
+      "dim": 1,
+      "nnz": 308,
+      "seconds": 0.004378624958917499
+    },
+    {
+      "name": "ADAPTIVE_CUT_103",
+      "dim": 1,
+      "nnz": 308,
+      "seconds": 0.0030199161265045404
+    },
+    {
+      "name": "ADAPTIVE_CUT_104",
+      "dim": 1,
+      "nnz": 308,
+      "seconds": 0.002766708843410015
+    },
+    {
+      "name": "ADAPTIVE_CUT_105",
+      "dim": 1,
+      "nnz": 331,
+      "seconds": 0.0046565840020775795
+    },
+    {
+      "name": "ADAPTIVE_CUT_106",
+      "dim": 1,
+      "nnz": 331,
+      "seconds": 0.010353292105719447
+    },
+    {
+      "name": "ADAPTIVE_CUT_107",
+      "dim": 1,
+      "nnz": 308,
+      "seconds": 0.003049457911401987
+    },
+    {
+      "name": "ADAPTIVE_CUT_108",
+      "dim": 1,
+      "nnz": 331,
+      "seconds": 0.005023833131417632
+    },
+    {
+      "name": "ADAPTIVE_CUT_109",
+      "dim": 1,
+      "nnz": 331,
+      "seconds": 0.004960667109116912
+    },
+    {
+      "name": "ADAPTIVE_CUT_110",
+      "dim": 1,
+      "nnz": 331,
+      "seconds": 0.004804207943379879
+    },
+    {
+      "name": "ADAPTIVE_CUT_111",
+      "dim": 1,
+      "nnz": 331,
+      "seconds": 0.00471137510612607
+    },
+    {
+      "name": "ADAPTIVE_CUT_112",
+      "dim": 1,
+      "nnz": 331,
+      "seconds": 0.007376000052317977
+    },
+    {
+      "name": "ADAPTIVE_CUT_113",
+      "dim": 1,
+      "nnz": 308,
+      "seconds": 0.002796582877635956
+    },
+    {
+      "name": "ADAPTIVE_CUT_114",
+      "dim": 1,
+      "nnz": 308,
+      "seconds": 0.0026751249097287655
+    },
+    {
+      "name": "ADAPTIVE_CUT_115",
+      "dim": 1,
+      "nnz": 308,
+      "seconds": 0.0049561248160898685
+    },
+    {
+      "name": "ADAPTIVE_CUT_116",
+      "dim": 1,
+      "nnz": 308,
+      "seconds": 0.0028431250248104334
+    },
+    {
+      "name": "ADAPTIVE_CUT_117",
+      "dim": 1,
+      "nnz": 308,
+      "seconds": 0.005507542053237557
+    },
+    {
+      "name": "ADAPTIVE_CUT_118",
+      "dim": 1,
+      "nnz": 331,
+      "seconds": 0.004944624844938517
+    },
+    {
+      "name": "ADAPTIVE_CUT_119",
+      "dim": 1,
+      "nnz": 331,
+      "seconds": 0.5242109170649201
+    }
+  ],
+  "physical_sector": {
+    "L": 4,
+    "t": 1,
+    "U": 8,
+    "Nup": 8,
+    "Ndown": 8
+  },
+  "notes": [
+    "All sparse coefficients and constants compared exactly.",
+    "Real Hermitian moments and momentum/spin block selection are rebuilt from variable names.",
+    "T1 degree-six cancellation uses independent exterior multiplication; the T2 contraction table is exhaustively verified against it for all 46,656 relative-order/equality patterns.",
+    "Symmetry expansion is independently checked by signed orbit traversal; character projections are checked for the declared reflection action, complete source span or explicitly selected85-dimensional star span, and exact vanishing cross-character maps.",
+    "Fermionic real moment symmetrization is valid because the Fourier Hamiltonian and operator spaces are closed under complex conjugation."
+  ]
+}

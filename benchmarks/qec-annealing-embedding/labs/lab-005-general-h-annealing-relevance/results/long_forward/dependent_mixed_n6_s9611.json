@@ -1,0 +1,221 @@
+{
+  "name": "dependent_mixed_n6_s9611",
+  "dynamics": {
+    "32.0": {
+      "baseline": {
+        "status": "converged",
+        "levels": [
+          {
+            "N": 11,
+            "T": 32,
+            "steps": 2048,
+            "norm": 1.000000000000053,
+            "original_optimal": 0.30487337125585245,
+            "chain_broken": 0.04650247082136477,
+            "full_ground": 0.3034713973301821,
+            "seconds": 0.116740584
+          },
+          {
+            "N": 11,
+            "T": 32,
+            "steps": 4096,
+            "norm": 0.999999999999964,
+            "original_optimal": 0.30487434883989706,
+            "chain_broken": 0.046502776091559776,
+            "full_ground": 0.3034724519886777,
+            "seconds": 0.268193542
+          }
+        ],
+        "final": {
+          "N": 11,
+          "T": 32,
+          "steps": 4096,
+          "norm": 0.999999999999964,
+          "original_optimal": 0.30487434883989706,
+          "chain_broken": 0.046502776091559776,
+          "full_ground": 0.3034724519886777,
+          "seconds": 0.268193542
+        }
+      },
+      "amplified": {
+        "status": "converged",
+        "levels": [
+          {
+            "N": 11,
+            "T": 32,
+            "steps": 2048,
+            "norm": 1.0000000000000564,
+            "original_optimal": 0.6049261510376798,
+            "chain_broken": 0.008559016363997517,
+            "full_ground": 0.6001684902133336,
+            "seconds": 0.132391917
+          },
+          {
+            "N": 11,
+            "T": 32,
+            "steps": 4096,
+            "norm": 0.9999999999999623,
+            "original_optimal": 0.6049287532596779,
+            "chain_broken": 0.008558828238394557,
+            "full_ground": 0.6001712547103748,
+            "seconds": 0.217560875
+          }
+        ],
+        "final": {
+          "N": 11,
+          "T": 32,
+          "steps": 4096,
+          "norm": 0.9999999999999623,
+          "original_optimal": 0.6049287532596779,
+          "chain_broken": 0.008558828238394557,
+          "full_ground": 0.6001712547103748,
+          "seconds": 0.217560875
+        }
+      }
+    },
+    "64.0": {
+      "baseline": {
+        "status": "converged",
+        "levels": [
+          {
+            "N": 11,
+            "T": 64,
+            "steps": 4096,
+            "norm": 0.9999999999999472,
+            "original_optimal": 0.46290299596141465,
+            "chain_broken": 0.014867308515620143,
+            "full_ground": 0.46286286595444337,
+            "seconds": 0.195851084
+          },
+          {
+            "N": 11,
+            "T": 64,
+            "steps": 8192,
+            "norm": 1.0000000000000622,
+            "original_optimal": 0.4629030116967952,
+            "chain_broken": 0.014867714864244291,
+            "full_ground": 0.46286288093013334,
+            "seconds": 0.390575083
+          }
+        ],
+        "final": {
+          "N": 11,
+          "T": 64,
+          "steps": 8192,
+          "norm": 1.0000000000000622,
+          "original_optimal": 0.4629030116967952,
+          "chain_broken": 0.014867714864244291,
+          "full_ground": 0.46286288093013334,
+          "seconds": 0.390575083
+        }
+      },
+      "amplified": {
+        "status": "converged",
+        "levels": [
+          {
+            "N": 11,
+            "T": 64,
+            "steps": 4096,
+            "norm": 0.9999999999999549,
+            "original_optimal": 0.7891708423043176,
+            "chain_broken": 9.199024929087271e-05,
+            "full_ground": 0.7889920543325246,
+            "seconds": 0.19479325
+          },
+          {
+            "N": 11,
+            "T": 64,
+            "steps": 8192,
+            "norm": 1.0000000000000853,
+            "original_optimal": 0.7891715061536752,
+            "chain_broken": 9.199255499582596e-05,
+            "full_ground": 0.7889927162856863,
+            "seconds": 0.389155791
+          }
+        ],
+        "final": {
+          "N": 11,
+          "T": 64,
+          "steps": 8192,
+          "norm": 1.0000000000000853,
+          "original_optimal": 0.7891715061536752,
+          "chain_broken": 9.199255499582596e-05,
+          "full_ground": 0.7889927162856863,
+          "seconds": 0.389155791
+        }
+      }
+    },
+    "128.0": {
+      "baseline": {
+        "status": "converged",
+        "levels": [
+          {
+            "N": 11,
+            "T": 128,
+            "steps": 8192,
+            "norm": 0.9999999999999256,
+            "original_optimal": 0.6402230440178813,
+            "chain_broken": 0.002548328103097851,
+            "full_ground": 0.640217055856636,
+            "seconds": 0.389736125
+          },
+          {
+            "N": 11,
+            "T": 128,
+            "steps": 16384,
+            "norm": 0.9999999999999434,
+            "original_optimal": 0.6402225446334261,
+            "chain_broken": 0.0025484803616180967,
+            "full_ground": 0.6402165557864999,
+            "seconds": 0.777890583
+          }
+        ],
+        "final": {
+          "N": 11,
+          "T": 128,
+          "steps": 16384,
+          "norm": 0.9999999999999434,
+          "original_optimal": 0.6402225446334261,
+          "chain_broken": 0.0025484803616180967,
+          "full_ground": 0.6402165557864999,
+          "seconds": 0.777890583
+        }
+      },
+      "amplified": {
+        "status": "converged",
+        "levels": [
+          {
+            "N": 11,
+            "T": 128,
+            "steps": 8192,
+            "norm": 0.999999999999926,
+            "original_optimal": 0.896288218325883,
+            "chain_broken": 4.304292693150475e-06,
+            "full_ground": 0.8962729830220874,
+            "seconds": 0.395288625
+          },
+          {
+            "N": 11,
+            "T": 128,
+            "steps": 16384,
+            "norm": 0.9999999999999554,
+            "original_optimal": 0.8962882303715467,
+            "chain_broken": 4.305692542191491e-06,
+            "full_ground": 0.8962729946474682,
+            "seconds": 0.780930584
+          }
+        ],
+        "final": {
+          "N": 11,
+          "T": 128,
+          "steps": 16384,
+          "norm": 0.9999999999999554,
+          "original_optimal": 0.8962882303715467,
+          "chain_broken": 4.305692542191491e-06,
+          "full_ground": 0.8962729946474682,
+          "seconds": 0.780930584
+        }
+      }
+    }
+  }
+}

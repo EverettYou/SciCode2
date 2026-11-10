@@ -2649,5 +2649,408 @@ window.SCICODE_BENCHMARKS = [
     "open_thread_count": 1,
     "waiting_user_count": 1,
     "waiting_agent_count": 0
+  },
+  {
+    "benchmark_id": "hubbard-operator-bootstrap",
+    "title": "Affordable Hubbard Quantum Bootstrap Bounds",
+    "stage": "solution-drafted",
+    "summary": "Discover and certify affordable Hubbard energy lower bounds through operator-space selection on the half-filled periodic 4x4 lattice.",
+    "paper_ids": [],
+    "idea_sources": [
+      {
+        "source_path": "problem/references/scicode2-hubbard.pdf",
+        "source_field": "user-provided-research-question",
+        "item_index": 0,
+        "role": "primary-question"
+      }
+    ],
+    "research_question": "Construct and validate an affordable operator subspace that gives a strong ground-state energy lower bound for the periodic 4x4 Hubbard model at t=1, U=8 and N_up=N_down=8, and quantify improvements against computational cost.",
+    "scientific_domain": [
+      "correlated-quantum-many-body-systems",
+      "semidefinite-optimization",
+      "fermionic-quantum-bootstrap"
+    ],
+    "expected_outcomes": [
+      "Determine which operator support and correlation choices improve the validated bound during the user-authorized research attempt.",
+      "Quantify the cost of positivity constraints and distinguish solver estimates from independently justified lower bounds."
+    ],
+    "expected_outputs": [
+      "Reproducible operator-space construction and computational formulation.",
+      "A numerical energy lower bound with an independently reproducible certificate and numerical error control.",
+      "Measured construction, solving and validation time and peak resident memory, plus comparisons and a scientific explanation."
+    ],
+    "evidence_requirements": [
+      "Verify the 32 distinct periodic nearest-neighbor bonds, hopping convention and half-filled sector.",
+      "Validate an SOS or dual certificate, including coefficient residual and matrix positivity errors.",
+      "Compare nested or complementary operator spaces without treating a feasible primal state as a lower-bound certificate."
+    ],
+    "estimated_active_hours": 2,
+    "workstation_feasible": "yes",
+    "expert_review": "pending",
+    "expert_notes": "A certified reference attempt exists. The supplied source leaves target energy and resource ceiling unspecified; expert calibration remains pending. The finite instance and PQGT hierarchy have prior published studies.",
+    "source_mode": "user-provided-problem",
+    "problem_sources": [
+      {
+        "path": "problem/references/scicode2-hubbard.pdf",
+        "sha256": "eec7fd2052716c96b0c879d2817dbe48b5fb8332b804235096bbb43b568932ea",
+        "origin": "/Users/home/Library/Containers/com.apple.mail/Data/Library/Mail Downloads/CF4CFEFE-2261-4AD8-AD24-25906BB4045B/scicode2-hubbard.pdf"
+      }
+    ],
+    "authorization": {
+      "origin": "User chat request on 2026-10-07",
+      "scope": "Create new benchmark from supplied PDF and attempt solution for two hours; proceed through design and experimentation.",
+      "started_utc": "2026-10-07T07:36:39Z",
+      "initial_checkpoint_utc": "2026-10-07T09:36:39Z",
+      "time_extension": "User relaxed the two-hour threshold and authorizes up to one day if scientifically necessary; stop when the research deliverable is complete or a genuine blocker requires a decision.",
+      "extension_recorded_utc": "2026-10-07T07:52:25Z"
+    },
+    "public_target": null,
+    "resource_budget": {
+      "peak_memory_limit_bytes": null,
+      "initial_wall_checkpoint_seconds": 7200,
+      "authorized_wall_seconds_max": 86400
+    },
+    "current_best_verified_bound": {
+      "total": -8.763353354793,
+      "per_site": -0.5477095846745625,
+      "certificate": "labs/lab-004-exact-dual-verification/results/portable-reproduction/exact/verification.json",
+      "physical_map_audit": "labs/lab-004-exact-dual-verification/results/portable-reproduction/physical-audit.json",
+      "operator_space_dimension": 2257,
+      "operator_definition": "labs/lab-004-exact-dual-verification/results/portable-reproduction/operator-space/operators.json",
+      "dimension_proof": "labs/lab-004-exact-dual-verification/results/portable-reproduction/operator-space/operator_space.json",
+      "sector": "Nup=Ndown=8; no singlet assumption",
+      "complete_reproduction": "labs/lab-004-exact-dual-verification/results/portable-reproduction/reproduction.json"
+    },
+    "research_attempt": {
+      "status": "completed reference attempt",
+      "completed_utc": "2026-10-07T08:49:17Z",
+      "elapsed_wall_seconds": 4358.4,
+      "primary_reproduction": "labs/lab-004-exact-dual-verification/results/portable-reproduction/reproduction.json",
+      "discovery_comparison_reproduction": "labs/lab-004-exact-dual-verification/results/full-reproduction/reproduction.json",
+      "remaining_scientific_scope": "Outer-search optimality is not proved; public energy target and resource calibration remain unspecified."
+    },
+    "open_thread_count": 0,
+    "waiting_user_count": 0,
+    "waiting_agent_count": 0
+  },
+  {
+    "benchmark_id": "qec-annealing-embedding",
+    "title": "Fast Embedding Decisions for General Sparse-H Decoding",
+    "stage": "researching",
+    "summary": "Theory-guided compact mappings evaluated by original-error decoding under a common finite anneal.",
+    "paper_ids": [],
+    "idea_sources": [
+      {
+        "source_path": "problem/USER_REQUEST.md",
+        "source_field": "user-provided-research-question",
+        "role": "primary-question"
+      },
+      {
+        "source_path": "problem/references/DWaveProposal.pdf",
+        "source_field": "user-provided-research-question",
+        "role": "proposal-context"
+      }
+    ],
+    "research_question": "Can a computationally inexpensive, theoretically justified criterion guide the construction or selection of compact annealer embeddings for general sparse parity-decoding instances, and identify when its choices improve original-error decoding under a common finite forward anneal?",
+    "scientific_domain": [
+      "quantum error correction",
+      "quantum annealing",
+      "graph minor embedding"
+    ],
+    "expected_outcomes": [
+      "A reusable general sparse-H mapping and embedding decision procedure with explicit useful and inconclusive regimes.",
+      "A theoretically justified comparison or limitation linked to original-error success under a declared finite forward anneal.",
+      "Independent checks of reduction fidelity, physical programs, finite-time probabilities, costs, and uncertainty."
+    ],
+    "expected_outputs": [
+      "Reusable source code and public or fully specified sparse-H instances.",
+      "Mathematical argument for the decision rule, its assumptions, and where it does not apply.",
+      "English report with matched baselines, finite-time evidence, resource costs, and independently checkable witnesses."
+    ],
+    "evidence_requirements": [
+      "Faithful reduction and independently valid physical embeddings with all coefficients and readout conventions specified.",
+      "A common finite-forward quantum model, with rigorous theory and tractable full-model anchors.",
+      "Matched baseline comparisons on structurally diverse ordinary sparse matrices, with reserved inputs and declared budgets.",
+      "Clear separation of proved guarantees, numerical evidence, heuristics, and inconclusive cases."
+    ],
+    "estimated_active_hours": null,
+    "workstation_feasible": "uncertain",
+    "expert_review": "pending",
+    "expert_notes": "",
+    "source_mode": "user-provided-problem",
+    "problem_sources": [
+      {
+        "path": "problem/USER_REQUEST.md",
+        "sha256": "501fe79c846497a654b4c7c4df45684362a61d27a3e6b2bff76d3e1343a9191c",
+        "origin": "User chat request on 2026-10-07, recorded in English"
+      },
+      {
+        "path": "problem/references/DWaveProposal.pdf",
+        "sha256": "8396ef12e56f8d0a5b6a402b54535b989c47a4c08419214bf1e48106665100ca",
+        "origin": "/Users/home/Library/Containers/com.apple.mail/Data/Library/Mail Downloads/5A3B490D-B2BB-4144-8A69-C7089AD538C1/DWaveProposal.pdf"
+      },
+      {
+        "path": "problem/DESIGN_REVISION.md",
+        "sha256": "3bcfd0fc82cbb472ff8269882b938d382352bfc9c0b5aedaad1c56d11667cd75",
+        "origin": "User-directed design audit, self-contained scope clarification and general-H/theory refinement; T-0007 M001, M003 and M005"
+      }
+    ],
+    "authorization": {
+      "origin": "User chat on 2026-10-07",
+      "scope": "Question design and revision following T-0007 M005: general sparse-H algorithm, efficient evaluation and theory-supported embedding comparison. Document/public-source checks only; no research, simulation, reference pilot or model trial. The later request authorizes preparing an English autonomous-research prompt only; it does not launch execution. User on 2026-10-16 authorizes Lab 004 scientific execution: general-H useful evaluation and evaluation-guided compact embeddings, with autonomous methods and the existing default two-hour budget. Completed Labs 002/003 already record earlier authorized execution; their original scopes and actual conditions remain in their own reports. User on2026-10-16 then authorizes a further three-hour continuing research round and English issue formulation (Lab005), ending2026-10-16T11:57:05Z. User on 2026-10-16 clarified the requested Cycle 2 revision means the documented SciCode2 standards and authorized revising the canonical problem, prompt, PDF, and linked author records."
+    },
+    "public_target": null,
+    "resource_budget": {
+      "classical_search_budget": null,
+      "peak_memory_limit_bytes": null,
+      "qpu_access": "unavailable; not required"
+    },
+    "pilot_status": "Continuing scientific research completed in Labs002–005; no fresh calibration of the new issue.",
+    "design_preparation": {
+      "mode": [
+        "question-revision"
+      ],
+      "status": "pass-to-testing",
+      "audit": "evaluation/AUDIT.md",
+      "task_version": "0.4-finite-forward-general-H",
+      "frozen": false,
+      "example_bank_comparison": "pending-access",
+      "reference_solution": "not developed; deferred",
+      "model_trials": "Labs 002–005 concern revision 0.3 and are not fresh blind tests of revision 0.4.",
+      "difficulty": "Text-only pass-to-testing; useful-regime feasibility and empirical difficulty remain untested.",
+      "active_prompt_variants": [],
+      "screening": "text-only editorial pass; no empirical screening"
+    },
+    "prompt_preparation": {
+      "canonical_path": "prompt.md",
+      "compatibility_copy": "evaluation/prompt.md",
+      "revision": "0.1-autonomous",
+      "question_revision": "0.4-finite-forward-general-H",
+      "status": "Current revision prepared; no revision 0.4 trial has run.",
+      "default_wall_clock_hours": 2,
+      "normal_user_selected_range_hours": [
+        1,
+        24
+      ],
+      "self_contained": true,
+      "research_runs": 4
+    },
+    "active_research": {
+      "lab": "lab-005-general-h-annealing-relevance",
+      "status": "completed",
+      "deadline_utc": "2026-10-16T11:57:05Z",
+      "type": "continuing scientific research and issue formulation; not blind test",
+      "scientific_completed_utc": "2026-10-16T11:14:40Z",
+      "budget_seconds": 10800
+    },
+    "scientific_evidence": {
+      "latest_report": "labs/lab-005-general-h-annealing-relevance/REPORT.md",
+      "ordinary_input_matrices": 24,
+      "successful_main_compiler_models": 47,
+      "matched_programming_inputs": 48,
+      "certified_programming_orders_with_particular_upper": 48,
+      "balanced_compact_reductions": 15,
+      "balanced_inputs": 23,
+      "balanced_mean_qubit_reduction_fraction": 0.04075060063412055,
+      "standard_compact_reductions_with_particular_lp": 1,
+      "standard_compact_reductions_with_charged_search_lp": 3,
+      "standard_inputs": 24,
+      "independent_audits": {
+        "actual_candidate_program_records": 375,
+        "additional_curve_program_records": 373,
+        "n16_readout_programs": 64,
+        "parent_standard_dual_witnesses": 960
+      },
+      "guarantee_scope": "Static/endpoint and actual original-optimum ideal finite-forward early-time certificates; practical later-time/QPU/window latency remain open.",
+      "calibration": "not assessed"
+    },
+    "candidate_issue": {
+      "path": "problem/ISSUE-general-h-finite-annealing.md",
+      "pdf": "problem/issue-general-h-finite-annealing.pdf",
+      "assessment": "evaluation/ISSUE-ASSESSMENT-general-h-finite-annealing.md",
+      "status": "pass-to-testing; not frozen/calibrated/organizer-approved",
+      "scope": "Useful original-error finite-forward quantum comparison and compact general-H mapping; methods open.",
+      "canonical_question_unchanged": true
+    },
+    "open_thread_count": 2,
+    "waiting_user_count": 2,
+    "waiting_agent_count": 0
+  },
+  {
+    "benchmark_id": "fusion-informed-decoding",
+    "title": "How Much Symmetry Knowledge Does Decoding Need?",
+    "stage": "problem-opened",
+    "summary": "Resolve intrinsic and practical logical value of charge versus irrep information for hidden-orientation SU(N) pair errors, focusing on N=3,4 with N=2 as a control.",
+    "paper_ids": [],
+    "idea_sources": [
+      {
+        "source_path": "problem/USER_REQUEST.md",
+        "source_field": "user-provided-research-question",
+        "role": "primary-question"
+      }
+    ],
+    "research_question": "When does a full local SU(N) irrep record improve logical recovery beyond the Z(N) charge record, and how much of that advantage can a practical decoder retain as a two-dimensional patch grows?",
+    "scientific_domain": [
+      "quantum error correction",
+      "symmetry-informed decoding",
+      "statistical inference"
+    ],
+    "expected_outcomes": [
+      "A supported gain, informative small-gain bound, or controlled unresolved/null comparison is acceptable.",
+      "Intrinsic information and physical risk changes are distinguished from algorithmic losses."
+    ],
+    "expected_outputs": [
+      "Revised standalone English TASK.md and freshly generated problem/problem.pdf for human review.",
+      "A reproducible scientific investigation of the stated comparison, with controlled references, executable decisions and an independently checked prediction."
+    ],
+    "evidence_requirements": [
+      "Independent checks of the supplied likelihood and logical target.",
+      "Physical-prior risks or informative bounds, separating sampling, inference and interpretation uncertainty.",
+      "An executable public-input decision routine and reserved evaluation of the proposed mechanism."
+    ],
+    "estimated_active_hours": null,
+    "workstation_feasible": "uncertain",
+    "expert_review": "pending",
+    "expert_notes": "v0.2 (2026-10-12): expert review replaced the herald-availability parameter eta and binary compression with an SU(N) / large-N decoding-transition and statistical-mechanics focus; p range is [0,1]. v0.3 (2026-10-12): open boundaries moved to top and bottom; edges oriented like field lines from one open boundary to the other; directory renamed from su2-fusion-information-compression. v0.4 (2026-10-12): hidden (random) pair orientation; task restructured around verifiable results R1-R5 with answers.json; reference answers for R2 tests and R5 still to be computed. v0.5 (2026-10-12): three nested records (syndrome, Z(N) charge, SU(N) irrep); principal result is the (p, N) phase diagram for N=2..8; statement shortened and hints removed. v0.6 (2026-10-12): clarity fixes before first exploratory test (fixed callable and record encoding, answers.json example, no stated precision target, wording). v0.7 (2026-10-12): geometry section rewritten with explicit edge rules and counts, plus Figure 1 (problem/figures/geometry-L3.png, generated by .tmp/herald-review/geometry_figure.py); v0.6 differs from v0.7 only in Section 2 and was not archived separately. Superseded versions kept in problem/history/. v0.8 (2026-10-16): actual SciCode2-directed question revision; detailed changes and prior version are preserved in problem/REVISION-v0.8.md and problem/history/review-draft-v0.7/.",
+    "source_mode": "user-provided-problem",
+    "problem_sources": [
+      {
+        "path": "problem/USER_REQUEST.md",
+        "sha256": "ac35cb6a67c537fb0d5cca051180d82fa24dcd5f28eb9b045ef811e1e66c6aca",
+        "origin": "Actual user message in this chat on 2026-10-07; direction from the preceding approved research review."
+      },
+      {
+        "path": "problem/REVISION-v0.8.md",
+        "sha256": "97fc41b9ef676926791b902bf9179cd091fb32f123f3d80001f2faab965da791",
+        "origin": "Actual user request on 2026-10-16 and implemented editorial revision."
+      }
+    ],
+    "editorial_screen": "pass-to-testing",
+    "scientific_execution": "not-started",
+    "model_testing": "not-started",
+    "formulation_revision": "review-draft-v0.8",
+    "reference_status": "Reference support and trial-specific budgets are to be developed during separately authorized exploratory testing; no formal calibration or model trial has been performed for this revision.",
+    "formulation_updated": "2026-10-16",
+    "open_thread_count": 0,
+    "waiting_user_count": 0,
+    "waiting_agent_count": 0
+  },
+  {
+    "benchmark_id": "u1-directional-logical-gap",
+    "title": "What Drives the Gain from Directional Noise?",
+    "stage": "problem-opened",
+    "summary": "Quantify typical-gap and ambiguous-record contributions to directional logical recovery, with controlled inference and a reserved mechanism prediction.",
+    "paper_ids": [],
+    "idea_sources": [
+      {
+        "source_path": "problem/USER_REQUEST.md",
+        "source_field": "user-provided-research-question",
+        "role": "primary-question"
+      }
+    ],
+    "research_question": "Which physical record populations account for direction-bias changes in logical risk, and how can their contribution be distinguished from reference-inference error and practical decoder loss?",
+    "scientific_domain": [
+      "quantum error correction",
+      "symmetry-informed decoding",
+      "statistical inference"
+    ],
+    "expected_outcomes": [
+      "A supported gain, informative small-gain bound, or controlled unresolved/null comparison is acceptable.",
+      "Intrinsic information and physical risk changes are distinguished from algorithmic losses."
+    ],
+    "expected_outputs": [
+      "Revised standalone English TASK.md and freshly generated problem/problem.pdf for human review.",
+      "A reproducible scientific investigation of the stated comparison, with controlled references, executable decisions and an independently checked prediction."
+    ],
+    "evidence_requirements": [
+      "Independent checks of the supplied likelihood and logical target.",
+      "Physical-prior risks or informative bounds, separating sampling, inference and interpretation uncertainty.",
+      "An executable public-input decision routine and reserved evaluation of the proposed mechanism."
+    ],
+    "estimated_active_hours": null,
+    "workstation_feasible": "uncertain",
+    "expert_review": "pending",
+    "expert_notes": " v0.2 (2026-10-16): actual SciCode2-directed question revision; detailed changes and prior version are preserved in problem/REVISION-v0.2.md and problem/history/review-draft-v0.1/.",
+    "source_mode": "user-provided-problem",
+    "problem_sources": [
+      {
+        "path": "problem/USER_REQUEST.md",
+        "sha256": "54d562fc56b785910a3b337b587354a129205a7f48bb762d8cb79c2db9d2c1f9",
+        "origin": "Actual user message in this chat on 2026-10-07; direction from the preceding approved research review."
+      },
+      {
+        "path": "problem/REVISION-v0.2.md",
+        "sha256": "c1814da0f270d870eb6ae73f40be4a6d7fae7c5abb1664bccc757c1c294c8041",
+        "origin": "Actual user request on 2026-10-16 and implemented editorial revision."
+      }
+    ],
+    "editorial_screen": "pass-to-testing",
+    "scientific_execution": "not-started",
+    "model_testing": "not-started",
+    "formulation_revision": "review-draft-v0.2",
+    "reference_status": "Reference support and trial-specific budgets are to be developed during separately authorized exploratory testing; no formal calibration or model trial has been performed for this revision.",
+    "formulation_updated": "2026-10-16",
+    "open_thread_count": 0,
+    "waiting_user_count": 0,
+    "waiting_agent_count": 0
+  },
+  {
+    "benchmark_id": "d4-adaptive-readout-value",
+    "title": "Can an Extra Measurement Improve Logical Recovery?",
+    "stage": "problem-opened",
+    "summary": "Resolve full-prior adaptive measurement value, policy regret and decoder loss in a fixed D4 instrument with noisy second readout.",
+    "paper_ids": [],
+    "idea_sources": [
+      {
+        "source_path": "problem/USER_REQUEST.md",
+        "source_field": "user-provided-research-question",
+        "role": "primary-question"
+      }
+    ],
+    "research_question": "What logical advantage can adaptation of an intervening action achieve over the best fixed action under noisy second readout, and how much of that advantage does an executable public-input policy retain?",
+    "scientific_domain": [
+      "quantum error correction",
+      "symmetry-informed decoding",
+      "statistical inference"
+    ],
+    "expected_outcomes": [
+      "A supported gain, informative small-gain bound, or controlled unresolved/null comparison is acceptable.",
+      "Intrinsic information and physical risk changes are distinguished from algorithmic losses."
+    ],
+    "expected_outputs": [
+      "Revised standalone English TASK.md and freshly generated problem/problem.pdf for human review.",
+      "A reproducible scientific investigation of the stated comparison, with controlled references, executable decisions and an independently checked prediction."
+    ],
+    "evidence_requirements": [
+      "Independent checks of the supplied likelihood and logical target.",
+      "Physical-prior risks or informative bounds, separating sampling, inference and interpretation uncertainty.",
+      "An executable public-input decision routine and reserved evaluation of the proposed mechanism."
+    ],
+    "estimated_active_hours": null,
+    "workstation_feasible": "uncertain",
+    "expert_review": "pending",
+    "expert_notes": " v0.2 (2026-10-16): actual SciCode2-directed question revision; detailed changes and prior version are preserved in problem/REVISION-v0.2.md and problem/history/review-draft-v0.1/.",
+    "source_mode": "user-provided-problem",
+    "problem_sources": [
+      {
+        "path": "problem/USER_REQUEST.md",
+        "sha256": "59ed4040d3fd2d088fe3d7908354acc92fc4c8d9721da03384422c675bf4a610",
+        "origin": "Actual user message in this chat on 2026-10-07; direction from the preceding approved research review."
+      },
+      {
+        "path": "problem/REVISION-v0.2.md",
+        "sha256": "45b49624c21613fb3af11af56241016548da648cf5b0b1e5f843fd06ce616cc6",
+        "origin": "Actual user request on 2026-10-16 and implemented editorial revision."
+      }
+    ],
+    "editorial_screen": "pass-to-testing",
+    "scientific_execution": "not-started",
+    "model_testing": "not-started",
+    "formulation_revision": "review-draft-v0.2",
+    "reference_status": "Reference support and trial-specific budgets are to be developed during separately authorized exploratory testing; no formal calibration or model trial has been performed for this revision.",
+    "formulation_updated": "2026-10-16",
+    "open_thread_count": 0,
+    "waiting_user_count": 0,
+    "waiting_agent_count": 0
   }
 ];

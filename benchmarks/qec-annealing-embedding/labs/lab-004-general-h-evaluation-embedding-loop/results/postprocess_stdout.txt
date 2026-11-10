@@ -1,0 +1,142 @@
+{
+  "all": {
+    "instances": 36,
+    "compactness_improved": 33,
+    "mean_qubit_reduction": 0.06573825090263738,
+    "median_qubit_reduction": 0.04785962624945672,
+    "size_only_scale_losses": 13,
+    "mean_cut_total_scale_ratio": 2.9830520050387173,
+    "median_evaluator_seconds": 0.018570541520603,
+    "embedding_seconds_pool": 179.3471403021831,
+    "evaluation_seconds_pool": 6.703638043021783,
+    "total_seconds": 197.6681106700562,
+    "quantum_bound_max": {
+      "0.0": 0.049983267895114106,
+      "1e-05": 0.05001218789700758,
+      "0.0001": 0.05287528683518085,
+      "0.001": 0.3393727447315821
+    }
+  },
+  "development": {
+    "instances": 12,
+    "compactness_improved": 11,
+    "mean_qubit_reduction": 0.06060221076641812,
+    "median_qubit_reduction": 0.04875168690958165,
+    "size_only_scale_losses": 4,
+    "mean_cut_total_scale_ratio": 2.9532233772170957,
+    "median_evaluator_seconds": 0.020792812458239496,
+    "embedding_seconds_pool": 63.83205541665666,
+    "evaluation_seconds_pool": 2.240810919785872,
+    "total_seconds": 69.81732975202613,
+    "quantum_bound_max": {
+      "0.0": 0.049979508919310675,
+      "1e-05": 0.05000366892096951,
+      "0.0001": 0.05239552550871339,
+      "0.001": 0.29174547844301535
+    }
+  },
+  "held_out": {
+    "instances": 24,
+    "compactness_improved": 22,
+    "mean_qubit_reduction": 0.06830627097074701,
+    "median_qubit_reduction": 0.04591553209224786,
+    "size_only_scale_losses": 9,
+    "mean_cut_total_scale_ratio": 2.997966318949528,
+    "median_evaluator_seconds": 0.01743447908665985,
+    "embedding_seconds_pool": 115.51508488552645,
+    "evaluation_seconds_pool": 4.462827123235911,
+    "total_seconds": 127.85078091803007,
+    "quantum_bound_max": {
+      "0.0": 0.049983267895114106,
+      "1e-05": 0.05001218789700758,
+      "0.0001": 0.05287528683518085,
+      "0.001": 0.3393727447315821
+    }
+  },
+  "by_family": {
+    "irregular_hubs": {
+      "instances": 9,
+      "compactness_improved": 8,
+      "mean_qubit_reduction": 0.06994615271625718,
+      "median_qubit_reduction": 0.06862745098039214,
+      "size_only_scale_losses": 2,
+      "mean_cut_total_scale_ratio": 2.8997910348868374,
+      "median_evaluator_seconds": 0.019786166958510876,
+      "embedding_seconds_pool": 43.505734919570386,
+      "evaluation_seconds_pool": 1.5186025849543512,
+      "total_seconds": 47.545245751040056,
+      "quantum_bound_max": {
+        "0.0": 0.049970960549470235,
+        "1e-05": 0.04998626055033115,
+        "0.0001": 0.05151498371608252,
+        "0.001": 0.2046660040144229
+      }
+    },
+    "mixed_hypergraph": {
+      "instances": 9,
+      "compactness_improved": 9,
+      "mean_qubit_reduction": 0.0738458678564551,
+      "median_qubit_reduction": 0.05084745762711862,
+      "size_only_scale_losses": 4,
+      "mean_cut_total_scale_ratio": 2.9866741443830502,
+      "median_evaluator_seconds": 0.02142712497152388,
+      "embedding_seconds_pool": 80.14813704346307,
+      "evaluation_seconds_pool": 2.2850531653966755,
+      "total_seconds": 88.17668687645346,
+      "quantum_bound_max": {
+        "0.0": 0.049983267895114106,
+        "1e-05": 0.05001218789700758,
+        "0.0001": 0.05287528683518085,
+        "0.001": 0.3393727447315821
+      }
+    },
+    "random_regular": {
+      "instances": 9,
+      "compactness_improved": 7,
+      "mean_qubit_reduction": 0.06131813579994913,
+      "median_qubit_reduction": 0.040983606557377095,
+      "size_only_scale_losses": 5,
+      "mean_cut_total_scale_ratio": 3.007737104524551,
+      "median_evaluator_seconds": 0.02015849994495511,
+      "embedding_seconds_pool": 36.36482675583102,
+      "evaluation_seconds_pool": 1.7605565001722425,
+      "total_seconds": 40.12101779249497,
+      "quantum_bound_max": {
+        "0.0": 0.04996353489874778,
+        "1e-05": 0.04997343489910839,
+        "0.0001": 0.05095353850875079,
+        "0.001": 0.14899964151417794
+      }
+    },
+    "rewired_band": {
+      "instances": 9,
+      "compactness_improved": 9,
+      "mean_qubit_reduction": 0.057842847237888115,
+      "median_qubit_reduction": 0.04184100418410042,
+      "size_only_scale_losses": 2,
+      "mean_cut_total_scale_ratio": 3.03800573636043,
+      "median_evaluator_seconds": 0.012825625017285347,
+      "embedding_seconds_pool": 19.328441583318636,
+      "evaluation_seconds_pool": 1.139425792498514,
+      "total_seconds": 21.82516025006771,
+      "quantum_bound_max": {
+        "0.0": 0.04993923010409798,
+        "1e-05": 0.04994271010415033,
+        "0.0001": 0.05028723062809484,
+        "0.001": 0.08474447045558067
+      }
+    }
+  },
+  "numeric_audits": {
+    "count": 180,
+    "passed": 180,
+    "maximum_rho": 1.1178558079194545e-14,
+    "max_thermal_rounding_correction": 4.4714232316788176e-13
+  },
+  "common_deletion_control": {
+    "instances_with_proposals": 15,
+    "total_candidates": 109,
+    "guided_accepts": 15,
+    "size_only_accepts": 15
+  }
+}

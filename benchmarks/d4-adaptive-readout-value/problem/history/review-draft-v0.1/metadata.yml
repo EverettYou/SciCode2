@@ -1,0 +1,41 @@
+benchmark_id: d4-adaptive-readout-value
+title: Can an Extra Measurement Improve Logical Recovery?
+stage: problem-opened
+paper_ids: []
+summary: Quantify the logical value of action-conditioned second measurements in a fully specified finite
+  D4 instrument with noisy second readout.
+idea_sources:
+- source_path: problem/USER_REQUEST.md
+  source_field: user-provided-research-question
+  role: primary-question
+research_question: Determine the full-prior logical value of a second D4 projector readout and whether
+  adapting the intervening flux-clearing action to the first public record improves red-chain homology
+  inference.
+scientific_domain:
+- quantum error correction
+- symmetry-informed decoding
+- statistical inference
+expected_outcomes:
+- Extra private-error information may have zero, small, or positive logical value.
+- Action adaptation and higher-order charge correlations may change the value and noise robustness of
+  the second record.
+expected_outputs:
+- Standalone English problem PDF for human review.
+- A later reproducible study of the stated logical-recovery question; not executed in this creation step.
+evidence_requirements:
+- Controlled likelihood and logical-score checks.
+- Unconditional physical-prior comparison with separated approximation and statistical uncertainty.
+estimated_active_hours: null
+workstation_feasible: uncertain
+expert_review: pending
+expert_notes: ''
+source_mode: user-provided-problem
+problem_sources:
+- path: problem/USER_REQUEST.md
+  sha256: 59ed4040d3fd2d088fe3d7908354acc92fc4c8d9721da03384422c675bf4a610
+  origin: Actual user message in this chat on 2026-10-07; direction from the preceding approved research
+    review.
+editorial_screen: pass-to-testing
+scientific_execution: not-started
+model_testing: not-started
+formulation_revision: review-draft-v0.1

@@ -1,0 +1,155 @@
+{
+  "physical_degrees_of_freedom": "one spinful electron orbital per site, four local states",
+  "conditional_hopping_input": {
+    "t_D": 0.9970683327571924,
+    "tprime_D": 0.19534428112180086,
+    "source": "data/sts_prior_spectral_fit_results.json",
+    "warning": "Hoppings inferred from a noninteracting high-T DOS fit; not an interaction-independent experimental determination."
+  },
+  "strict_2D_bound_assumptions": [
+    "BKT transition",
+    "one isolated band with this hopping dispersion",
+    "interactions carry no uniform charge current (e.g. onsite U, density interactions, spin exchange)",
+    "density n=2nu and canonical fermionic Pauli bound"
+  ],
+  "curvature_bound_convergence": [
+    {
+      "nu": 0.2,
+      "grid_L": 256,
+      "Tc_bound_D": 0.2848094875003556,
+      "conditional_standard_error_D": 0.0013707090523681878,
+      "gradient_wrt_t_tprime": [
+        0.22519406309448906,
+        0.30856095769874325
+      ]
+    },
+    {
+      "nu": 0.2,
+      "grid_L": 512,
+      "Tc_bound_D": 0.2848091002941558,
+      "conditional_standard_error_D": 0.0013707184856965697,
+      "gradient_wrt_t_tprime": [
+        0.22519187258942755,
+        0.3085701562123596
+      ]
+    },
+    {
+      "nu": 0.2,
+      "grid_L": 1024,
+      "Tc_bound_D": 0.2848090733283253,
+      "conditional_standard_error_D": 0.0013707158918942531,
+      "gradient_wrt_t_tprime": [
+        0.22519226227240668,
+        0.30856802916576037
+      ]
+    }
+  ],
+  "max_curvature_looser_bound_D": 0.4359766866303077,
+  "pair_hopping_escape": {
+    "Hamiltonian_term": "-J sum_<ij> (P_i^dagger P_j + h.c.), P_i=c_i,down c_i,up",
+    "additional_Tc_bound_D": "pi*abs(J)*min(nu,1-nu)",
+    "necessary_J_D_for_Tc_above_1p075_at_nu_0p2": 1.2576279196616242,
+    "warning": "Necessary loose bound, not a sufficient prediction of superconductivity."
+  },
+  "conditional_repulsive_hubbard": {
+    "U_D": 11.493525192155293,
+    "J1_superexchange_D": 0.34598445422671337,
+    "J2_superexchange_D": 0.013280307835593625,
+    "J2_over_J1": 0.038384117186061294,
+    "source": "data/hubbard_gap_fits.json; repulsive 10-site canonical charge-gap match",
+    "warning": "Conditional on hopping and finite-cluster gap extraction; not a thermodynamic many-body fit."
+  },
+  "dimer_checks": [
+    {
+      "U_D": 11.493525192155293,
+      "J_pair_D": 0,
+      "V_D": 0,
+      "two_electron_levels_D": [
+        -0.33615293649601563,
+        -2.655048533774313e-34,
+        0.0,
+        0.0,
+        11.493525192155293,
+        11.829678128651308
+      ],
+      "lowest_singlet_to_zero_energy_triplet_D": 0.33615293649601563,
+      "formula_singlet_triplet_D": 0.3361529364960161,
+      "formula_difference": -4.440892098500626e-16,
+      "note": "If another pair eigenstate becomes the ground state, this singlet-branch formula is not the physical spin gap; chosen validation points avoid that crossing."
+    },
+    {
+      "U_D": 11.493525192155293,
+      "J_pair_D": 1.3,
+      "V_D": 0,
+      "two_electron_levels_D": [
+        -0.37622287818820294,
+        0.0,
+        1.6543839662616122e-16,
+        7.288993469004484e-16,
+        10.569748070343497,
+        12.793525192155293
+      ],
+      "lowest_singlet_to_zero_energy_triplet_D": 0.37622287818820294,
+      "formula_singlet_triplet_D": 0.37622287818820244,
+      "formula_difference": 4.996003610813204e-16,
+      "note": "If another pair eigenstate becomes the ground state, this singlet-branch formula is not the physical spin gap; chosen validation points avoid that crossing."
+    },
+    {
+      "U_D": 11.493525192155293,
+      "J_pair_D": 1.3,
+      "V_D": 0.65,
+      "two_electron_levels_D": [
+        -0.39991984913053935,
+        -4.3988938567491847e-16,
+        -1.8067156836121597e-16,
+        0.0,
+        9.94344504128583,
+        12.143525192155291
+      ],
+      "lowest_singlet_to_zero_energy_triplet_D": 0.39991984913053935,
+      "formula_singlet_triplet_D": 0.399919849130538,
+      "formula_difference": 1.3322676295501878e-15,
+      "note": "If another pair eigenstate becomes the ground state, this singlet-branch formula is not the physical spin gap; chosen validation points avoid that crossing."
+    },
+    {
+      "U_D": 11.493525192155293,
+      "J_pair_D": 6,
+      "V_D": 2,
+      "two_electron_levels_D": [
+        -0.904229785617319,
+        0.0,
+        1.0440688353409789e-16,
+        1.303868624381819e-15,
+        4.397754977772611,
+        15.493525192155293
+      ],
+      "lowest_singlet_to_zero_energy_triplet_D": 0.904229785617319,
+      "formula_singlet_triplet_D": 0.9042297856173196,
+      "formula_difference": -5.551115123125783e-16,
+      "note": "If another pair eigenstate becomes the ground state, this singlet-branch formula is not the physical spin gap; chosen validation points avoid that crossing."
+    }
+  ],
+  "atomic_uniform_susceptibility": "chi_s(U,T)=1/[4*T*(1+exp(-U/(2*T)))] at mu=U/2, g*mu_B=1",
+  "atomic_NMR_warning": "Atomic spins do not relax because local spin commutes with the atomic Hamiltonian. Static susceptibility cannot be substituted for 1/T1. Weak dynamics may inherit occupation activation but must be calculated.",
+  "attractive_strong_coupling_projection": {
+    "pair_density": "nu=n/2",
+    "pair_hopping_tB": "J+2*t^2/abs(U)",
+    "nearest_pair_repulsion_VB": "4*V+4*t^2/abs(U)",
+    "half_filling_pseudospin_isotropy": "VB=2*tB, equivalently V=J/2 for positive J and NN terms",
+    "scope": "Leading order in t/|U|; pair hopping and density interactions must not close the eliminated singly-occupied-state gap. tprime generates smaller NNN pair terms."
+  },
+  "references": [
+    {
+      "title": "Bounds on the Superconducting Transition Temperature",
+      "url": "https://doi.org/10.1103/PhysRevX.9.031049"
+    },
+    {
+      "title": "Superconductivity in the Hubbard model with pair hopping",
+      "url": "https://arxiv.org/abs/cond-mat/9806088"
+    },
+    {
+      "title": "Nature of the quantum phase transitions in the two-dimensional hardcore boson model",
+      "url": "https://arxiv.org/abs/cond-mat/0105450"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+benchmark_id: d4-adaptive-readout-value
+title: Can an Extra Measurement Improve Logical Recovery?
+stage: problem-opened
+paper_ids: []
+summary: Resolve full-prior adaptive measurement value, policy regret and decoder loss in a fixed D4 instrument
+  with noisy second readout.
+idea_sources:
+- source_path: problem/USER_REQUEST.md
+  source_field: user-provided-research-question
+  role: primary-question
+research_question: What logical advantage can adaptation of an intervening action achieve over the best
+  fixed action under noisy second readout, and how much of that advantage does an executable public-input
+  policy retain?
+scientific_domain:
+- quantum error correction
+- symmetry-informed decoding
+- statistical inference
+expected_outcomes:
+- A supported gain, informative small-gain bound, or controlled unresolved/null comparison is acceptable.
+- Intrinsic information and physical risk changes are distinguished from algorithmic losses.
+expected_outputs:
+- Revised standalone English TASK.md and freshly generated problem/problem.pdf for human review.
+- A reproducible scientific investigation of the stated comparison, with controlled references, executable
+  decisions and an independently checked prediction.
+evidence_requirements:
+- Independent checks of the supplied likelihood and logical target.
+- Physical-prior risks or informative bounds, separating sampling, inference and interpretation uncertainty.
+- An executable public-input decision routine and reserved evaluation of the proposed mechanism.
+estimated_active_hours: null
+workstation_feasible: uncertain
+expert_review: pending
+expert_notes: ' v0.2 (2026-10-16): actual SciCode2-directed question revision; detailed changes and prior
+  version are preserved in problem/REVISION-v0.2.md and problem/history/review-draft-v0.1/.'
+source_mode: user-provided-problem
+problem_sources:
+- path: problem/USER_REQUEST.md
+  sha256: 59ed4040d3fd2d088fe3d7908354acc92fc4c8d9721da03384422c675bf4a610
+  origin: Actual user message in this chat on 2026-10-07; direction from the preceding approved research
+    review.
+- path: problem/REVISION-v0.2.md
+  sha256: 45b49624c21613fb3af11af56241016548da648cf5b0b1e5f843fd06ce616cc6
+  origin: Actual user request on 2026-10-16 and implemented editorial revision.
+editorial_screen: pass-to-testing
+scientific_execution: not-started
+model_testing: not-started
+formulation_revision: review-draft-v0.2
+reference_status: Reference support and trial-specific budgets are to be developed during separately authorized
+  exploratory testing; no formal calibration or model trial has been performed for this revision.
+formulation_updated: '2026-10-16'

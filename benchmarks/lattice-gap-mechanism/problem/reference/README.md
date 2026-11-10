@@ -20,8 +20,8 @@ The ED runs need an NVIDIA GPU with >= 100 GB (3x3 bilayer, 2.4e9 states); the 4
 
 * Model: bilayer square-lattice t1-t2-J model, t1 = 1.02(3), t2 = 0.20(1), J = 8.0(4); |t_perp| < 0.15, |U| < 0.5.
 * nu = 1/2: symmetric rung-singlet (SMG / pair-Mott) insulator; charge gap 8.04 (ED 3x3: 8.66), spin gap 5.5 (ED: 5.43 / 5.66).
-* nu ~ 0.3: inter-layer singlet superconductor, Tc = 0.36 (stiffness limited), gap 2.49 (ED 2.4-2.55), pseudogap up to T ~ 4.
-* nu ~ 0.2: superconductor with sharp Bogoliubov quasiparticles, Tc = 0.59, gap 1.73 (mean field 1.73, ED 1.8-2.2), mu = -2.46.
+* nu ~ 0.3: inter-layer singlet superconductor, Tc = 0.20 (stiffness limited; data regenerated 2026-10-30), gap 2.49 (ED 2.4-2.55), pseudogap up to T ~ 4.
+* nu ~ 0.2: superconductor with sharp Bogoliubov quasiparticles, Tc = 0.40 (phase-limited; pairing amplitude closes at T_MF = 1.00), gap 1.73 (mean field 1.73, ED 1.8-2.2), mu = -2.46.
 * ARPES (figures/arpes.png): two parallel bands separated by 3J/2 at nu = 1/2 (coherent width 2.7-3.0, residues 0.3-0.55,
   satellites), Bogoliubov bands with a minimum-gap locus inside the normal-state Fermi surface at nu ~ 0.3 (0.23 of the zone,
   smeared) and nu ~ 0.2 (0.16 of the zone, sharp).
@@ -31,3 +31,20 @@ The ED runs need an NVIDIA GPU with >= 100 GB (3x3 bilayer, 2.4e9 states); the 4
 
 Note: `../measurements.json` was regenerated on 2026-10-28 23:11 (after the first fits); all fits and figures were redone on
 the current file (`data/fit_results_before_regeneration.json` keeps the earlier fit for reference).
+
+
+NOTE (2026-10-30): the public transitions are now Tc(0.2) = 0.40 and Tc(0.3) = 0.20, and the nu = 0.2 nuclear curve is the
+pseudogap form (no Hebel-Slichter peak; suppression sets in at T_MF = 1.00). The report has not been regenerated for these values.
+
+NOTE (2026-10-31): the half-filled public resistivity is now the full Boltzmann curve (flattens above ~2D; low-T slope 3.7),
+and both doped resistivities carry Halperin-Nelson tails (b = 0.15) above their transitions (0.40D, 0.20D) up to the
+amplitude scales 1.00D and 1.17D; the doped temperature grid is 0.05D. The reference report still predates these changes.
+
+NOTE (2026-10-31, b): panel (a) of the prompt is now the momentum sum of the 3x3-cluster-calibrated spectrum
+(problem/code/ed_dos_calibration.py -> author/ed_dos_calibration.json): gap 8.6, inner edges +-4.3, removal band
+-7.3..-4.3 (peak -4.8), addition band +4.3..+7.0 (peak +6.1). The calibration in data/ed_calibration.json double-counts
+duplicated poles at the interior cluster momenta (every pole is listed twice there), which is why its "satellites" carry
+20-40 % of the weight 1.4D out and why luttinger.json's "ed_calibrated" fraction is 0.74; with the duplicates merged the
+coherent residues are 0.28-0.55, the incoherent weight is a few percent about 4D out, and the item-5 fraction is 0.87
+(exact cluster contour: 0.82). The report's item-4 panel (a) and item-5 figure should be re-derived from the merged
+calibration; the Halperin-Nelson parameter of the doped resistivities is b = 0.08.

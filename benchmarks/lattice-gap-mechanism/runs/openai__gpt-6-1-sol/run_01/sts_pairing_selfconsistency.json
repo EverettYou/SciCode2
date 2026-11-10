@@ -1,0 +1,377 @@
+{
+  "Hamiltonian": "H=sum_k\u03c3 (epsilon_k-mu)c\u2020k\u03c3 ck\u03c3 - sum_\u03b1(g\u03b1/N) B\u2020\u03b1 B\u03b1; B\u03b1=sum_k \u03c6\u03b1(k)c_-k,down c_k,up. Only physical one-orbital c fermions. Pair interactions are infinite-range reduced-BCS interactions.",
+  "approximation": "Uniform BCS saddle, zero-T number and gap equations on240x240 grid; compare pure and mixed relative-phase pi/2 states, no claim of global minimum over all orders. Tc is normal-state linearized mean-field instability, not 2D BKT Tc.",
+  "important_limitation": "Couplings inferred from poor \u03bd\u2248.3 unconstrained spectral fits at density\u2248.42. These checks test consequences; they do not constitute fitted common microscopic Hamiltonian. Hopping scale inherited from each fit differs from high-T reference band.",
+  "results": {
+    "d+id": {
+      "hopping_t": 1.3044191238336469,
+      "hopping_tprime": 0.25556003300414215,
+      "couplings_g": [
+        10.813057235843129,
+        44.66976122151616
+      ],
+      "basis": "[coskx-cosky,sinkx*sinky]",
+      "fillings": {
+        "0.3": {
+          "stationary_states": [
+            {
+              "active_channels": [
+                0
+              ],
+              "c_minus_mu": 2.489909108332235,
+              "Delta": [
+                3.383618661211484,
+                0.0
+              ],
+              "density": 0.30000000000000027,
+              "free_energy_per_site": -2.5784750541449393,
+              "minimum_excitation": 0.017780079005816685,
+              "maximum_excitation": 7.623753440107134,
+              "gap_equation_residual_norm": 1.0370338861126152e-15,
+              "inactive_channel_susceptibility_gK": [
+                0.999999999999999,
+                2.2956217493358353
+              ]
+            },
+            {
+              "active_channels": [
+                1
+              ],
+              "c_minus_mu": 2.174752248408418,
+              "Delta": [
+                0.0,
+                7.188239496903778
+              ],
+              "density": 0.29999999999997784,
+              "free_energy_per_site": -2.6638961512381614,
+              "minimum_excitation": 0.09370719732966158,
+              "maximum_excitation": 7.615038759098016,
+              "gap_equation_residual_norm": 3.0433934872614344e-14,
+              "inactive_channel_susceptibility_gK": [
+                1.7481263607678084,
+                1.0000000000000209
+              ]
+            },
+            {
+              "active_channels": [
+                0,
+                1
+              ],
+              "c_minus_mu": 2.8155679086677625,
+              "Delta": [
+                2.6123743135720505,
+                6.0383149889178105
+              ],
+              "density": 0.30000000000000054,
+              "free_energy_per_site": -2.8034906198321146,
+              "minimum_excitation": 2.001193052615375,
+              "maximum_excitation": 7.010732485401891,
+              "gap_equation_residual_norm": 3.657001166779273e-15,
+              "inactive_channel_susceptibility_gK": [
+                0.9999999999999993,
+                0.9999999999999964
+              ]
+            }
+          ],
+          "minimum_free_energy_within_trial_family": {
+            "active_channels": [
+              0,
+              1
+            ],
+            "c_minus_mu": 2.8155679086677625,
+            "Delta": [
+              2.6123743135720505,
+              6.0383149889178105
+            ],
+            "density": 0.30000000000000054,
+            "free_energy_per_site": -2.8034906198321146,
+            "minimum_excitation": 2.001193052615375,
+            "maximum_excitation": 7.010732485401891,
+            "gap_equation_residual_norm": 3.657001166779273e-15,
+            "inactive_channel_susceptibility_gK": [
+              0.9999999999999993,
+              0.9999999999999964
+            ]
+          },
+          "normal_state_mean_field_Tc_by_channel": [
+            2.3605988910089106,
+            2.499729726081101
+          ],
+          "leading_mean_field_Tc": 2.499729726081101
+        },
+        "0.2": {
+          "stationary_states": [
+            {
+              "active_channels": [
+                0
+              ],
+              "c_minus_mu": 3.7538734522381687,
+              "Delta": [
+                2.804988675158757,
+                0.0
+              ],
+              "density": 0.20000000000000034,
+              "free_energy_per_site": -1.9523688933954806,
+              "minimum_excitation": 0.0004882307858187218,
+              "maximum_excitation": 7.949037952633898,
+              "gap_equation_residual_norm": 9.485749680535094e-16,
+              "inactive_channel_susceptibility_gK": [
+                0.9999999999999991,
+                3.0100980922246885
+              ]
+            },
+            {
+              "active_channels": [
+                1
+              ],
+              "c_minus_mu": 3.7723765483675478,
+              "Delta": [
+                0.0,
+                6.1847580769432255
+              ],
+              "density": 0.19999999999999996,
+              "free_energy_per_site": -2.069119392823197,
+              "minimum_excitation": 0.07673422133262345,
+              "maximum_excitation": 7.9675411192319405,
+              "gap_equation_residual_norm": 4.47545209131181e-16,
+              "inactive_channel_susceptibility_gK": [
+                1.2818454054386106,
+                0.9999999999999996
+              ]
+            },
+            {
+              "active_channels": [
+                0,
+                1
+              ],
+              "c_minus_mu": 4.139211576317087,
+              "Delta": [
+                1.886965552498536,
+                5.451680158311612
+              ],
+              "density": 0.20000000000000004,
+              "free_energy_per_site": -2.104640940273268,
+              "minimum_excitation": 0.9712827619803129,
+              "maximum_excitation": 8.334376129056293,
+              "gap_equation_residual_norm": 1.1443916996305594e-16,
+              "inactive_channel_susceptibility_gK": [
+                1.0,
+                0.9999999999999999
+              ]
+            }
+          ],
+          "minimum_free_energy_within_trial_family": {
+            "active_channels": [
+              0,
+              1
+            ],
+            "c_minus_mu": 4.139211576317087,
+            "Delta": [
+              1.886965552498536,
+              5.451680158311612
+            ],
+            "density": 0.20000000000000004,
+            "free_energy_per_site": -2.104640940273268,
+            "minimum_excitation": 0.9712827619803129,
+            "maximum_excitation": 8.334376129056293,
+            "gap_equation_residual_norm": 1.1443916996305594e-16,
+            "inactive_channel_susceptibility_gK": [
+              1.0,
+              0.9999999999999999
+            ]
+          },
+          "normal_state_mean_field_Tc_by_channel": [
+            2.010008023237867,
+            2.2130794001634477
+          ],
+          "leading_mean_field_Tc": 2.2130794001634477
+        }
+      }
+    },
+    "s+id": {
+      "hopping_t": 1.3291079540302018,
+      "hopping_tprime": 0.26039703527172764,
+      "couplings_g": [
+        10.158821864583965,
+        10.928616645754843
+      ],
+      "basis": "[1,coskx-cosky]",
+      "fillings": {
+        "0.3": {
+          "stationary_states": [
+            {
+              "active_channels": [
+                0
+              ],
+              "c_minus_mu": 2.4110011090125414,
+              "Delta": [
+                3.9666753314922976,
+                0.0
+              ],
+              "density": 0.3000000000003323,
+              "free_energy_per_site": -2.7576430246024892,
+              "minimum_excitation": 3.9666753435706346,
+              "maximum_excitation": 7.773759043540135,
+              "gap_equation_residual_norm": 8.664955571257169e-13,
+              "inactive_channel_susceptibility_gK": [
+                1.0000000000008002,
+                1.0933642946044468
+              ]
+            },
+            {
+              "active_channels": [
+                1
+              ],
+              "c_minus_mu": 2.525397770805187,
+              "Delta": [
+                0.0,
+                3.4124094349589007
+              ],
+              "density": 0.3000000000000004,
+              "free_energy_per_site": -2.618572200485625,
+              "minimum_excitation": 0.029754621725662123,
+              "maximum_excitation": 7.700148530970331,
+              "gap_equation_residual_norm": 2.0358293740687926e-15,
+              "inactive_channel_susceptibility_gK": [
+                1.4671594846694278,
+                0.999999999999998
+              ]
+            },
+            {
+              "active_channels": [
+                0,
+                1
+              ],
+              "c_minus_mu": 2.5168913011391463,
+              "Delta": [
+                3.4829722415098505,
+                1.9542370765395853
+              ],
+              "density": 0.30000000000000054,
+              "free_energy_per_site": -2.7733294930880437,
+              "minimum_excitation": 3.483182387737202,
+              "maximum_excitation": 7.632496116076797,
+              "gap_equation_residual_norm": 7.447602459741819e-16,
+              "inactive_channel_susceptibility_gK": [
+                1.0000000000000004,
+                0.9999999999999998
+              ]
+            }
+          ],
+          "minimum_free_energy_within_trial_family": {
+            "active_channels": [
+              0,
+              1
+            ],
+            "c_minus_mu": 2.5168913011391463,
+            "Delta": [
+              3.4829722415098505,
+              1.9542370765395853
+            ],
+            "density": 0.30000000000000054,
+            "free_energy_per_site": -2.7733294930880437,
+            "minimum_excitation": 3.483182387737202,
+            "maximum_excitation": 7.632496116076797,
+            "gap_equation_residual_norm": 7.447602459741819e-16,
+            "inactive_channel_susceptibility_gK": [
+              1.0000000000000004,
+              0.9999999999999998
+            ]
+          },
+          "normal_state_mean_field_Tc_by_channel": [
+            2.1359470777725154,
+            2.3832161665244986
+          ],
+          "leading_mean_field_Tc": 2.3832161665244986
+        },
+        "0.2": {
+          "stationary_states": [
+            {
+              "active_channels": [
+                0
+              ],
+              "c_minus_mu": 3.7971048621241383,
+              "Delta": [
+                3.357882260396465,
+                0.0
+              ],
+              "density": 0.2,
+              "free_energy_per_site": -2.138456704583526,
+              "minimum_excitation": 3.357882684532742,
+              "maximum_excitation": 8.742268272101242,
+              "gap_equation_residual_norm": 1.1102230246251565e-16,
+              "inactive_channel_susceptibility_gK": [
+                0.9999999999999999,
+                1.0159566608400903
+              ]
+            },
+            {
+              "active_channels": [
+                1
+              ],
+              "c_minus_mu": 3.809159934930095,
+              "Delta": [
+                0.0,
+                2.823623471045228
+              ],
+              "density": 0.19999999999999996,
+              "free_energy_per_site": -1.9833496550441043,
+              "minimum_excitation": 0.016260809092795814,
+              "maximum_excitation": 8.083726601473531,
+              "gap_equation_residual_norm": 2.2887833992611187e-16,
+              "inactive_channel_susceptibility_gK": [
+                1.5986424702251145,
+                1.0000000000000002
+              ]
+            },
+            {
+              "active_channels": [
+                0,
+                1
+              ],
+              "c_minus_mu": 3.8233931104633094,
+              "Delta": [
+                3.2760421703160123,
+                0.7873231476636833
+              ],
+              "density": 0.2,
+              "free_energy_per_site": -2.1389063127746546,
+              "minimum_excitation": 3.2760427977953372,
+              "maximum_excitation": 8.735525447945761,
+              "gap_equation_residual_norm": 2.220446049250313e-16,
+              "inactive_channel_susceptibility_gK": [
+                1.0000000000000002,
+                1.0
+              ]
+            }
+          ],
+          "minimum_free_energy_within_trial_family": {
+            "active_channels": [
+              0,
+              1
+            ],
+            "c_minus_mu": 3.8233931104633094,
+            "Delta": [
+              3.2760421703160123,
+              0.7873231476636833
+            ],
+            "density": 0.2,
+            "free_energy_per_site": -2.1389063127746546,
+            "minimum_excitation": 3.2760427977953372,
+            "maximum_excitation": 8.735525447945761,
+            "gap_equation_residual_norm": 2.220446049250313e-16,
+            "inactive_channel_susceptibility_gK": [
+              1.0000000000000002,
+              1.0
+            ]
+          },
+          "normal_state_mean_field_Tc_by_channel": [
+            1.8940787408572985,
+            2.026453215196271
+          ],
+          "leading_mean_field_Tc": 2.026453215196271
+        }
+      }
+    }
+  }
+}

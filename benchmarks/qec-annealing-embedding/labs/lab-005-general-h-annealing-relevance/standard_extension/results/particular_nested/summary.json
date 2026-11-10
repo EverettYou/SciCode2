@@ -1,0 +1,4462 @@
+{
+  "status": "complete",
+  "models": 24,
+  "candidates": 192,
+  "summary": {
+    "basis": {
+      "0.015625": {
+        "models": 24,
+        "certified_changes": 0,
+        "strict_qubit_reductions": 0,
+        "mean_qubit_reduction_fraction": 0.0
+      },
+      "0.0078125": {
+        "models": 24,
+        "certified_changes": 0,
+        "strict_qubit_reductions": 0,
+        "mean_qubit_reduction_fraction": 0.0
+      },
+      "0.00390625": {
+        "models": 24,
+        "certified_changes": 0,
+        "strict_qubit_reductions": 0,
+        "mean_qubit_reduction_fraction": 0.0
+      },
+      "0.001953125": {
+        "models": 24,
+        "certified_changes": 0,
+        "strict_qubit_reductions": 0,
+        "mean_qubit_reduction_fraction": 0.0
+      },
+      "0.0009765625": {
+        "models": 24,
+        "certified_changes": 0,
+        "strict_qubit_reductions": 0,
+        "mean_qubit_reduction_fraction": 0.0
+      },
+      "0.00048828125": {
+        "models": 24,
+        "certified_changes": 0,
+        "strict_qubit_reductions": 0,
+        "mean_qubit_reduction_fraction": 0.0
+      },
+      "0.000244140625": {
+        "models": 24,
+        "certified_changes": 0,
+        "strict_qubit_reductions": 0,
+        "mean_qubit_reduction_fraction": 0.0
+      }
+    },
+    "pairs": {
+      "0.015625": {
+        "models": 24,
+        "certified_changes": 0,
+        "strict_qubit_reductions": 0,
+        "mean_qubit_reduction_fraction": 0.0
+      },
+      "0.0078125": {
+        "models": 24,
+        "certified_changes": 0,
+        "strict_qubit_reductions": 0,
+        "mean_qubit_reduction_fraction": 0.0
+      },
+      "0.00390625": {
+        "models": 24,
+        "certified_changes": 0,
+        "strict_qubit_reductions": 0,
+        "mean_qubit_reduction_fraction": 0.0
+      },
+      "0.001953125": {
+        "models": 24,
+        "certified_changes": 0,
+        "strict_qubit_reductions": 0,
+        "mean_qubit_reduction_fraction": 0.0
+      },
+      "0.0009765625": {
+        "models": 24,
+        "certified_changes": 0,
+        "strict_qubit_reductions": 0,
+        "mean_qubit_reduction_fraction": 0.0
+      },
+      "0.00048828125": {
+        "models": 24,
+        "certified_changes": 0,
+        "strict_qubit_reductions": 0,
+        "mean_qubit_reduction_fraction": 0.0
+      },
+      "0.000244140625": {
+        "models": 24,
+        "certified_changes": 0,
+        "strict_qubit_reductions": 0,
+        "mean_qubit_reduction_fraction": 0.0
+      }
+    },
+    "triangles": {
+      "0.015625": {
+        "models": 24,
+        "certified_changes": 1,
+        "strict_qubit_reductions": 1,
+        "mean_qubit_reduction_fraction": 0.004032258064516129
+      },
+      "0.0078125": {
+        "models": 24,
+        "certified_changes": 1,
+        "strict_qubit_reductions": 1,
+        "mean_qubit_reduction_fraction": 0.004032258064516129
+      },
+      "0.00390625": {
+        "models": 24,
+        "certified_changes": 1,
+        "strict_qubit_reductions": 1,
+        "mean_qubit_reduction_fraction": 0.004032258064516129
+      },
+      "0.001953125": {
+        "models": 24,
+        "certified_changes": 1,
+        "strict_qubit_reductions": 1,
+        "mean_qubit_reduction_fraction": 0.004032258064516129
+      },
+      "0.0009765625": {
+        "models": 24,
+        "certified_changes": 1,
+        "strict_qubit_reductions": 1,
+        "mean_qubit_reduction_fraction": 0.004032258064516129
+      },
+      "0.00048828125": {
+        "models": 24,
+        "certified_changes": 1,
+        "strict_qubit_reductions": 1,
+        "mean_qubit_reduction_fraction": 0.004032258064516129
+      },
+      "0.000244140625": {
+        "models": 24,
+        "certified_changes": 1,
+        "strict_qubit_reductions": 1,
+        "mean_qubit_reduction_fraction": 0.004032258064516129
+      }
+    }
+  },
+  "seconds": 4.197284207912162,
+  "records": [
+    {
+      "name": "irregular_hubs_n16_s8807_standard",
+      "seconds": 0.05722595797851682,
+      "selections": {
+        "basis": [
+          {
+            "T": 0.015625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 57,
+            "selected_qubits": 57,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.0078125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 57,
+            "selected_qubits": 57,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.00390625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 57,
+            "selected_qubits": 57,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.001953125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 57,
+            "selected_qubits": 57,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.0009765625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 57,
+            "selected_qubits": 57,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.00048828125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 57,
+            "selected_qubits": 57,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.000244140625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 57,
+            "selected_qubits": 57,
+            "saved_qubits": 0
+          }
+        ],
+        "pairs": [
+          {
+            "T": 0.015625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 57,
+            "selected_qubits": 57,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.0078125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 57,
+            "selected_qubits": 57,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.00390625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 57,
+            "selected_qubits": 57,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.001953125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 57,
+            "selected_qubits": 57,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.0009765625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 57,
+            "selected_qubits": 57,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.00048828125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 57,
+            "selected_qubits": 57,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.000244140625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 57,
+            "selected_qubits": 57,
+            "saved_qubits": 0
+          }
+        ],
+        "triangles": [
+          {
+            "T": 0.015625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 57,
+            "selected_qubits": 57,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.0078125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 57,
+            "selected_qubits": 57,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.00390625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 57,
+            "selected_qubits": 57,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.001953125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 57,
+            "selected_qubits": 57,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.0009765625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 57,
+            "selected_qubits": 57,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.00048828125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 57,
+            "selected_qubits": 57,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.000244140625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 57,
+            "selected_qubits": 57,
+            "saved_qubits": 0
+          }
+        ]
+      }
+    },
+    {
+      "name": "irregular_hubs_n16_s9901_standard",
+      "seconds": 0.051771000027656555,
+      "selections": {
+        "basis": [
+          {
+            "T": 0.015625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 56,
+            "selected_qubits": 56,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.0078125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 56,
+            "selected_qubits": 56,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.00390625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 56,
+            "selected_qubits": 56,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.001953125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 56,
+            "selected_qubits": 56,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.0009765625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 56,
+            "selected_qubits": 56,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.00048828125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 56,
+            "selected_qubits": 56,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.000244140625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 56,
+            "selected_qubits": 56,
+            "saved_qubits": 0
+          }
+        ],
+        "pairs": [
+          {
+            "T": 0.015625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 56,
+            "selected_qubits": 56,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.0078125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 56,
+            "selected_qubits": 56,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.00390625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 56,
+            "selected_qubits": 56,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.001953125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 56,
+            "selected_qubits": 56,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.0009765625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 56,
+            "selected_qubits": 56,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.00048828125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 56,
+            "selected_qubits": 56,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.000244140625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 56,
+            "selected_qubits": 56,
+            "saved_qubits": 0
+          }
+        ],
+        "triangles": [
+          {
+            "T": 0.015625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 56,
+            "selected_qubits": 56,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.0078125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 56,
+            "selected_qubits": 56,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.00390625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 56,
+            "selected_qubits": 56,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.001953125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 56,
+            "selected_qubits": 56,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.0009765625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 56,
+            "selected_qubits": 56,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.00048828125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 56,
+            "selected_qubits": 56,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.000244140625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 56,
+            "selected_qubits": 56,
+            "saved_qubits": 0
+          }
+        ]
+      }
+    },
+    {
+      "name": "irregular_hubs_n32_s8807_standard",
+      "seconds": 0.09439133293926716,
+      "selections": {
+        "basis": [
+          {
+            "T": 0.015625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 177,
+            "selected_qubits": 177,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.0078125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 177,
+            "selected_qubits": 177,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.00390625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 177,
+            "selected_qubits": 177,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.001953125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 177,
+            "selected_qubits": 177,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.0009765625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 177,
+            "selected_qubits": 177,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.00048828125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 177,
+            "selected_qubits": 177,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.000244140625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 177,
+            "selected_qubits": 177,
+            "saved_qubits": 0
+          }
+        ],
+        "pairs": [
+          {
+            "T": 0.015625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 177,
+            "selected_qubits": 177,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.0078125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 177,
+            "selected_qubits": 177,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.00390625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 177,
+            "selected_qubits": 177,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.001953125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 177,
+            "selected_qubits": 177,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.0009765625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 177,
+            "selected_qubits": 177,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.00048828125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 177,
+            "selected_qubits": 177,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.000244140625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 177,
+            "selected_qubits": 177,
+            "saved_qubits": 0
+          }
+        ],
+        "triangles": [
+          {
+            "T": 0.015625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 177,
+            "selected_qubits": 177,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.0078125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 177,
+            "selected_qubits": 177,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.00390625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 177,
+            "selected_qubits": 177,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.001953125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 177,
+            "selected_qubits": 177,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.0009765625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 177,
+            "selected_qubits": 177,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.00048828125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 177,
+            "selected_qubits": 177,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.000244140625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 177,
+            "selected_qubits": 177,
+            "saved_qubits": 0
+          }
+        ]
+      }
+    },
+    {
+      "name": "irregular_hubs_n32_s9901_standard",
+      "seconds": 0.09337266604416072,
+      "selections": {
+        "basis": [
+          {
+            "T": 0.015625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 176,
+            "selected_qubits": 176,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.0078125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 176,
+            "selected_qubits": 176,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.00390625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 176,
+            "selected_qubits": 176,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.001953125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 176,
+            "selected_qubits": 176,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.0009765625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 176,
+            "selected_qubits": 176,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.00048828125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 176,
+            "selected_qubits": 176,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.000244140625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 176,
+            "selected_qubits": 176,
+            "saved_qubits": 0
+          }
+        ],
+        "pairs": [
+          {
+            "T": 0.015625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 176,
+            "selected_qubits": 176,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.0078125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 176,
+            "selected_qubits": 176,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.00390625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 176,
+            "selected_qubits": 176,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.001953125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 176,
+            "selected_qubits": 176,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.0009765625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 176,
+            "selected_qubits": 176,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.00048828125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 176,
+            "selected_qubits": 176,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.000244140625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 176,
+            "selected_qubits": 176,
+            "saved_qubits": 0
+          }
+        ],
+        "triangles": [
+          {
+            "T": 0.015625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 176,
+            "selected_qubits": 176,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.0078125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 176,
+            "selected_qubits": 176,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.00390625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 176,
+            "selected_qubits": 176,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.001953125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 176,
+            "selected_qubits": 176,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.0009765625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 176,
+            "selected_qubits": 176,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.00048828125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 176,
+            "selected_qubits": 176,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.000244140625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 176,
+            "selected_qubits": 176,
+            "saved_qubits": 0
+          }
+        ]
+      }
+    },
+    {
+      "name": "irregular_hubs_n64_s8807_standard",
+      "seconds": 0.49647095799446106,
+      "selections": {
+        "basis": [
+          {
+            "T": 0.015625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 476,
+            "selected_qubits": 476,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.0078125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 476,
+            "selected_qubits": 476,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.00390625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 476,
+            "selected_qubits": 476,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.001953125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 476,
+            "selected_qubits": 476,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.0009765625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 476,
+            "selected_qubits": 476,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.00048828125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 476,
+            "selected_qubits": 476,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.000244140625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 476,
+            "selected_qubits": 476,
+            "saved_qubits": 0
+          }
+        ],
+        "pairs": [
+          {
+            "T": 0.015625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 476,
+            "selected_qubits": 476,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.0078125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 476,
+            "selected_qubits": 476,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.00390625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 476,
+            "selected_qubits": 476,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.001953125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 476,
+            "selected_qubits": 476,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.0009765625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 476,
+            "selected_qubits": 476,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.00048828125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 476,
+            "selected_qubits": 476,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.000244140625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 476,
+            "selected_qubits": 476,
+            "saved_qubits": 0
+          }
+        ],
+        "triangles": [
+          {
+            "T": 0.015625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 476,
+            "selected_qubits": 476,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.0078125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 476,
+            "selected_qubits": 476,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.00390625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 476,
+            "selected_qubits": 476,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.001953125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 476,
+            "selected_qubits": 476,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.0009765625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 476,
+            "selected_qubits": 476,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.00048828125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 476,
+            "selected_qubits": 476,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.000244140625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 476,
+            "selected_qubits": 476,
+            "saved_qubits": 0
+          }
+        ]
+      }
+    },
+    {
+      "name": "irregular_hubs_n64_s9901_standard",
+      "seconds": 0.30778750008903444,
+      "selections": {
+        "basis": [
+          {
+            "T": 0.015625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 404,
+            "selected_qubits": 404,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.0078125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 404,
+            "selected_qubits": 404,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.00390625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 404,
+            "selected_qubits": 404,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.001953125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 404,
+            "selected_qubits": 404,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.0009765625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 404,
+            "selected_qubits": 404,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.00048828125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 404,
+            "selected_qubits": 404,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.000244140625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 404,
+            "selected_qubits": 404,
+            "saved_qubits": 0
+          }
+        ],
+        "pairs": [
+          {
+            "T": 0.015625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 404,
+            "selected_qubits": 404,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.0078125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 404,
+            "selected_qubits": 404,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.00390625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 404,
+            "selected_qubits": 404,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.001953125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 404,
+            "selected_qubits": 404,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.0009765625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 404,
+            "selected_qubits": 404,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.00048828125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 404,
+            "selected_qubits": 404,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.000244140625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 404,
+            "selected_qubits": 404,
+            "saved_qubits": 0
+          }
+        ],
+        "triangles": [
+          {
+            "T": 0.015625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 404,
+            "selected_qubits": 404,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.0078125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 404,
+            "selected_qubits": 404,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.00390625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 404,
+            "selected_qubits": 404,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.001953125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 404,
+            "selected_qubits": 404,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.0009765625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 404,
+            "selected_qubits": 404,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.00048828125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 404,
+            "selected_qubits": 404,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.000244140625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 404,
+            "selected_qubits": 404,
+            "saved_qubits": 0
+          }
+        ]
+      }
+    },
+    {
+      "name": "mixed_hypergraph_n16_s8807_standard",
+      "seconds": 0.051251875003799796,
+      "selections": {
+        "basis": [
+          {
+            "T": 0.015625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 111,
+            "selected_qubits": 111,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.0078125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 111,
+            "selected_qubits": 111,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.00390625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 111,
+            "selected_qubits": 111,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.001953125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 111,
+            "selected_qubits": 111,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.0009765625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 111,
+            "selected_qubits": 111,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.00048828125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 111,
+            "selected_qubits": 111,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.000244140625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 111,
+            "selected_qubits": 111,
+            "saved_qubits": 0
+          }
+        ],
+        "pairs": [
+          {
+            "T": 0.015625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 111,
+            "selected_qubits": 111,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.0078125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 111,
+            "selected_qubits": 111,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.00390625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 111,
+            "selected_qubits": 111,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.001953125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 111,
+            "selected_qubits": 111,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.0009765625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 111,
+            "selected_qubits": 111,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.00048828125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 111,
+            "selected_qubits": 111,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.000244140625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 111,
+            "selected_qubits": 111,
+            "saved_qubits": 0
+          }
+        ],
+        "triangles": [
+          {
+            "T": 0.015625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 111,
+            "selected_qubits": 111,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.0078125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 111,
+            "selected_qubits": 111,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.00390625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 111,
+            "selected_qubits": 111,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.001953125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 111,
+            "selected_qubits": 111,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.0009765625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 111,
+            "selected_qubits": 111,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.00048828125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 111,
+            "selected_qubits": 111,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.000244140625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 111,
+            "selected_qubits": 111,
+            "saved_qubits": 0
+          }
+        ]
+      }
+    },
+    {
+      "name": "mixed_hypergraph_n16_s9901_standard",
+      "seconds": 0.05006125010550022,
+      "selections": {
+        "basis": [
+          {
+            "T": 0.015625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 133,
+            "selected_qubits": 133,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.0078125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 133,
+            "selected_qubits": 133,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.00390625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 133,
+            "selected_qubits": 133,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.001953125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 133,
+            "selected_qubits": 133,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.0009765625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 133,
+            "selected_qubits": 133,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.00048828125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 133,
+            "selected_qubits": 133,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.000244140625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 133,
+            "selected_qubits": 133,
+            "saved_qubits": 0
+          }
+        ],
+        "pairs": [
+          {
+            "T": 0.015625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 133,
+            "selected_qubits": 133,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.0078125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 133,
+            "selected_qubits": 133,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.00390625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 133,
+            "selected_qubits": 133,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.001953125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 133,
+            "selected_qubits": 133,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.0009765625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 133,
+            "selected_qubits": 133,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.00048828125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 133,
+            "selected_qubits": 133,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.000244140625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 133,
+            "selected_qubits": 133,
+            "saved_qubits": 0
+          }
+        ],
+        "triangles": [
+          {
+            "T": 0.015625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 133,
+            "selected_qubits": 133,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.0078125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 133,
+            "selected_qubits": 133,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.00390625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 133,
+            "selected_qubits": 133,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.001953125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 133,
+            "selected_qubits": 133,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.0009765625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 133,
+            "selected_qubits": 133,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.00048828125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 133,
+            "selected_qubits": 133,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.000244140625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 133,
+            "selected_qubits": 133,
+            "saved_qubits": 0
+          }
+        ]
+      }
+    },
+    {
+      "name": "mixed_hypergraph_n32_s8807_standard",
+      "seconds": 0.11090866685844958,
+      "selections": {
+        "basis": [
+          {
+            "T": 0.015625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 244,
+            "selected_qubits": 244,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.0078125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 244,
+            "selected_qubits": 244,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.00390625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 244,
+            "selected_qubits": 244,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.001953125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 244,
+            "selected_qubits": 244,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.0009765625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 244,
+            "selected_qubits": 244,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.00048828125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 244,
+            "selected_qubits": 244,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.000244140625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 244,
+            "selected_qubits": 244,
+            "saved_qubits": 0
+          }
+        ],
+        "pairs": [
+          {
+            "T": 0.015625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 244,
+            "selected_qubits": 244,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.0078125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 244,
+            "selected_qubits": 244,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.00390625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 244,
+            "selected_qubits": 244,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.001953125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 244,
+            "selected_qubits": 244,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.0009765625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 244,
+            "selected_qubits": 244,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.00048828125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 244,
+            "selected_qubits": 244,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.000244140625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 244,
+            "selected_qubits": 244,
+            "saved_qubits": 0
+          }
+        ],
+        "triangles": [
+          {
+            "T": 0.015625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 244,
+            "selected_qubits": 244,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.0078125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 244,
+            "selected_qubits": 244,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.00390625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 244,
+            "selected_qubits": 244,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.001953125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 244,
+            "selected_qubits": 244,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.0009765625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 244,
+            "selected_qubits": 244,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.00048828125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 244,
+            "selected_qubits": 244,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.000244140625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 244,
+            "selected_qubits": 244,
+            "saved_qubits": 0
+          }
+        ]
+      }
+    },
+    {
+      "name": "mixed_hypergraph_n32_s9901_standard",
+      "seconds": 0.10706183291040361,
+      "selections": {
+        "basis": [
+          {
+            "T": 0.015625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 255,
+            "selected_qubits": 255,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.0078125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 255,
+            "selected_qubits": 255,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.00390625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 255,
+            "selected_qubits": 255,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.001953125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 255,
+            "selected_qubits": 255,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.0009765625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 255,
+            "selected_qubits": 255,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.00048828125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 255,
+            "selected_qubits": 255,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.000244140625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 255,
+            "selected_qubits": 255,
+            "saved_qubits": 0
+          }
+        ],
+        "pairs": [
+          {
+            "T": 0.015625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 255,
+            "selected_qubits": 255,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.0078125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 255,
+            "selected_qubits": 255,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.00390625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 255,
+            "selected_qubits": 255,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.001953125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 255,
+            "selected_qubits": 255,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.0009765625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 255,
+            "selected_qubits": 255,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.00048828125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 255,
+            "selected_qubits": 255,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.000244140625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 255,
+            "selected_qubits": 255,
+            "saved_qubits": 0
+          }
+        ],
+        "triangles": [
+          {
+            "T": 0.015625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 255,
+            "selected_qubits": 255,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.0078125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 255,
+            "selected_qubits": 255,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.00390625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 255,
+            "selected_qubits": 255,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.001953125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 255,
+            "selected_qubits": 255,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.0009765625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 255,
+            "selected_qubits": 255,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.00048828125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 255,
+            "selected_qubits": 255,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.000244140625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 255,
+            "selected_qubits": 255,
+            "saved_qubits": 0
+          }
+        ]
+      }
+    },
+    {
+      "name": "mixed_hypergraph_n64_s8807_standard",
+      "seconds": 0.28857820900157094,
+      "selections": {
+        "basis": [
+          {
+            "T": 0.015625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 677,
+            "selected_qubits": 677,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.0078125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 677,
+            "selected_qubits": 677,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.00390625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 677,
+            "selected_qubits": 677,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.001953125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 677,
+            "selected_qubits": 677,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.0009765625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 677,
+            "selected_qubits": 677,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.00048828125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 677,
+            "selected_qubits": 677,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.000244140625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 677,
+            "selected_qubits": 677,
+            "saved_qubits": 0
+          }
+        ],
+        "pairs": [
+          {
+            "T": 0.015625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 677,
+            "selected_qubits": 677,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.0078125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 677,
+            "selected_qubits": 677,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.00390625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 677,
+            "selected_qubits": 677,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.001953125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 677,
+            "selected_qubits": 677,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.0009765625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 677,
+            "selected_qubits": 677,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.00048828125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 677,
+            "selected_qubits": 677,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.000244140625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 677,
+            "selected_qubits": 677,
+            "saved_qubits": 0
+          }
+        ],
+        "triangles": [
+          {
+            "T": 0.015625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 677,
+            "selected_qubits": 677,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.0078125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 677,
+            "selected_qubits": 677,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.00390625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 677,
+            "selected_qubits": 677,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.001953125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 677,
+            "selected_qubits": 677,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.0009765625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 677,
+            "selected_qubits": 677,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.00048828125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 677,
+            "selected_qubits": 677,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.000244140625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 677,
+            "selected_qubits": 677,
+            "saved_qubits": 0
+          }
+        ]
+      }
+    },
+    {
+      "name": "mixed_hypergraph_n64_s9901_standard",
+      "seconds": 0.29071254190057516,
+      "selections": {
+        "basis": [
+          {
+            "T": 0.015625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 546,
+            "selected_qubits": 546,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.0078125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 546,
+            "selected_qubits": 546,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.00390625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 546,
+            "selected_qubits": 546,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.001953125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 546,
+            "selected_qubits": 546,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.0009765625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 546,
+            "selected_qubits": 546,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.00048828125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 546,
+            "selected_qubits": 546,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.000244140625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 546,
+            "selected_qubits": 546,
+            "saved_qubits": 0
+          }
+        ],
+        "pairs": [
+          {
+            "T": 0.015625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 546,
+            "selected_qubits": 546,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.0078125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 546,
+            "selected_qubits": 546,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.00390625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 546,
+            "selected_qubits": 546,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.001953125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 546,
+            "selected_qubits": 546,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.0009765625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 546,
+            "selected_qubits": 546,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.00048828125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 546,
+            "selected_qubits": 546,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.000244140625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 546,
+            "selected_qubits": 546,
+            "saved_qubits": 0
+          }
+        ],
+        "triangles": [
+          {
+            "T": 0.015625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 546,
+            "selected_qubits": 546,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.0078125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 546,
+            "selected_qubits": 546,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.00390625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 546,
+            "selected_qubits": 546,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.001953125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 546,
+            "selected_qubits": 546,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.0009765625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 546,
+            "selected_qubits": 546,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.00048828125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 546,
+            "selected_qubits": 546,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.000244140625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 546,
+            "selected_qubits": 546,
+            "saved_qubits": 0
+          }
+        ]
+      }
+    },
+    {
+      "name": "random_regular_n16_s8807_standard",
+      "seconds": 0.05754370801150799,
+      "selections": {
+        "basis": [
+          {
+            "T": 0.015625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 57,
+            "selected_qubits": 57,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.0078125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 57,
+            "selected_qubits": 57,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.00390625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 57,
+            "selected_qubits": 57,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.001953125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 57,
+            "selected_qubits": 57,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.0009765625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 57,
+            "selected_qubits": 57,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.00048828125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 57,
+            "selected_qubits": 57,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.000244140625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 57,
+            "selected_qubits": 57,
+            "saved_qubits": 0
+          }
+        ],
+        "pairs": [
+          {
+            "T": 0.015625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 57,
+            "selected_qubits": 57,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.0078125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 57,
+            "selected_qubits": 57,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.00390625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 57,
+            "selected_qubits": 57,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.001953125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 57,
+            "selected_qubits": 57,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.0009765625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 57,
+            "selected_qubits": 57,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.00048828125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 57,
+            "selected_qubits": 57,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.000244140625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 57,
+            "selected_qubits": 57,
+            "saved_qubits": 0
+          }
+        ],
+        "triangles": [
+          {
+            "T": 0.015625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 57,
+            "selected_qubits": 57,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.0078125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 57,
+            "selected_qubits": 57,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.00390625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 57,
+            "selected_qubits": 57,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.001953125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 57,
+            "selected_qubits": 57,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.0009765625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 57,
+            "selected_qubits": 57,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.00048828125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 57,
+            "selected_qubits": 57,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.000244140625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 57,
+            "selected_qubits": 57,
+            "saved_qubits": 0
+          }
+        ]
+      }
+    },
+    {
+      "name": "random_regular_n16_s9901_standard",
+      "seconds": 0.0496884579770267,
+      "selections": {
+        "basis": [
+          {
+            "T": 0.015625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 55,
+            "selected_qubits": 55,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.0078125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 55,
+            "selected_qubits": 55,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.00390625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 55,
+            "selected_qubits": 55,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.001953125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 55,
+            "selected_qubits": 55,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.0009765625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 55,
+            "selected_qubits": 55,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.00048828125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 55,
+            "selected_qubits": 55,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.000244140625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 55,
+            "selected_qubits": 55,
+            "saved_qubits": 0
+          }
+        ],
+        "pairs": [
+          {
+            "T": 0.015625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 55,
+            "selected_qubits": 55,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.0078125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 55,
+            "selected_qubits": 55,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.00390625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 55,
+            "selected_qubits": 55,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.001953125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 55,
+            "selected_qubits": 55,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.0009765625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 55,
+            "selected_qubits": 55,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.00048828125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 55,
+            "selected_qubits": 55,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.000244140625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 55,
+            "selected_qubits": 55,
+            "saved_qubits": 0
+          }
+        ],
+        "triangles": [
+          {
+            "T": 0.015625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 55,
+            "selected_qubits": 55,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.0078125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 55,
+            "selected_qubits": 55,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.00390625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 55,
+            "selected_qubits": 55,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.001953125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 55,
+            "selected_qubits": 55,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.0009765625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 55,
+            "selected_qubits": 55,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.00048828125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 55,
+            "selected_qubits": 55,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.000244140625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 55,
+            "selected_qubits": 55,
+            "saved_qubits": 0
+          }
+        ]
+      }
+    },
+    {
+      "name": "random_regular_n32_s8807_standard",
+      "seconds": 0.09991720807738602,
+      "selections": {
+        "basis": [
+          {
+            "T": 0.015625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 123,
+            "selected_qubits": 123,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.0078125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 123,
+            "selected_qubits": 123,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.00390625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 123,
+            "selected_qubits": 123,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.001953125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 123,
+            "selected_qubits": 123,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.0009765625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 123,
+            "selected_qubits": 123,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.00048828125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 123,
+            "selected_qubits": 123,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.000244140625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 123,
+            "selected_qubits": 123,
+            "saved_qubits": 0
+          }
+        ],
+        "pairs": [
+          {
+            "T": 0.015625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 123,
+            "selected_qubits": 123,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.0078125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 123,
+            "selected_qubits": 123,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.00390625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 123,
+            "selected_qubits": 123,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.001953125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 123,
+            "selected_qubits": 123,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.0009765625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 123,
+            "selected_qubits": 123,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.00048828125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 123,
+            "selected_qubits": 123,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.000244140625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 123,
+            "selected_qubits": 123,
+            "saved_qubits": 0
+          }
+        ],
+        "triangles": [
+          {
+            "T": 0.015625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 123,
+            "selected_qubits": 123,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.0078125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 123,
+            "selected_qubits": 123,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.00390625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 123,
+            "selected_qubits": 123,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.001953125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 123,
+            "selected_qubits": 123,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.0009765625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 123,
+            "selected_qubits": 123,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.00048828125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 123,
+            "selected_qubits": 123,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.000244140625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 123,
+            "selected_qubits": 123,
+            "saved_qubits": 0
+          }
+        ]
+      }
+    },
+    {
+      "name": "random_regular_n32_s9901_standard",
+      "seconds": 0.122434375109151,
+      "selections": {
+        "basis": [
+          {
+            "T": 0.015625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 126,
+            "selected_qubits": 126,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.0078125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 126,
+            "selected_qubits": 126,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.00390625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 126,
+            "selected_qubits": 126,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.001953125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 126,
+            "selected_qubits": 126,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.0009765625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 126,
+            "selected_qubits": 126,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.00048828125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 126,
+            "selected_qubits": 126,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.000244140625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 126,
+            "selected_qubits": 126,
+            "saved_qubits": 0
+          }
+        ],
+        "pairs": [
+          {
+            "T": 0.015625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 126,
+            "selected_qubits": 126,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.0078125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 126,
+            "selected_qubits": 126,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.00390625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 126,
+            "selected_qubits": 126,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.001953125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 126,
+            "selected_qubits": 126,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.0009765625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 126,
+            "selected_qubits": 126,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.00048828125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 126,
+            "selected_qubits": 126,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.000244140625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 126,
+            "selected_qubits": 126,
+            "saved_qubits": 0
+          }
+        ],
+        "triangles": [
+          {
+            "T": 0.015625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 126,
+            "selected_qubits": 126,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.0078125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 126,
+            "selected_qubits": 126,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.00390625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 126,
+            "selected_qubits": 126,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.001953125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 126,
+            "selected_qubits": 126,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.0009765625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 126,
+            "selected_qubits": 126,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.00048828125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 126,
+            "selected_qubits": 126,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.000244140625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 126,
+            "selected_qubits": 126,
+            "saved_qubits": 0
+          }
+        ]
+      }
+    },
+    {
+      "name": "random_regular_n64_s8807_standard",
+      "seconds": 0.34100141702219844,
+      "selections": {
+        "basis": [
+          {
+            "T": 0.015625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 306,
+            "selected_qubits": 306,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.0078125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 306,
+            "selected_qubits": 306,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.00390625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 306,
+            "selected_qubits": 306,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.001953125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 306,
+            "selected_qubits": 306,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.0009765625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 306,
+            "selected_qubits": 306,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.00048828125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 306,
+            "selected_qubits": 306,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.000244140625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 306,
+            "selected_qubits": 306,
+            "saved_qubits": 0
+          }
+        ],
+        "pairs": [
+          {
+            "T": 0.015625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 306,
+            "selected_qubits": 306,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.0078125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 306,
+            "selected_qubits": 306,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.00390625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 306,
+            "selected_qubits": 306,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.001953125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 306,
+            "selected_qubits": 306,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.0009765625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 306,
+            "selected_qubits": 306,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.00048828125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 306,
+            "selected_qubits": 306,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.000244140625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 306,
+            "selected_qubits": 306,
+            "saved_qubits": 0
+          }
+        ],
+        "triangles": [
+          {
+            "T": 0.015625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 306,
+            "selected_qubits": 306,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.0078125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 306,
+            "selected_qubits": 306,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.00390625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 306,
+            "selected_qubits": 306,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.001953125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 306,
+            "selected_qubits": 306,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.0009765625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 306,
+            "selected_qubits": 306,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.00048828125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 306,
+            "selected_qubits": 306,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.000244140625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 306,
+            "selected_qubits": 306,
+            "saved_qubits": 0
+          }
+        ]
+      }
+    },
+    {
+      "name": "random_regular_n64_s9901_standard",
+      "seconds": 0.3561080419458449,
+      "selections": {
+        "basis": [
+          {
+            "T": 0.015625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 317,
+            "selected_qubits": 317,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.0078125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 317,
+            "selected_qubits": 317,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.00390625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 317,
+            "selected_qubits": 317,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.001953125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 317,
+            "selected_qubits": 317,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.0009765625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 317,
+            "selected_qubits": 317,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.00048828125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 317,
+            "selected_qubits": 317,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.000244140625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 317,
+            "selected_qubits": 317,
+            "saved_qubits": 0
+          }
+        ],
+        "pairs": [
+          {
+            "T": 0.015625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 317,
+            "selected_qubits": 317,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.0078125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 317,
+            "selected_qubits": 317,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.00390625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 317,
+            "selected_qubits": 317,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.001953125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 317,
+            "selected_qubits": 317,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.0009765625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 317,
+            "selected_qubits": 317,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.00048828125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 317,
+            "selected_qubits": 317,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.000244140625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 317,
+            "selected_qubits": 317,
+            "saved_qubits": 0
+          }
+        ],
+        "triangles": [
+          {
+            "T": 0.015625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 317,
+            "selected_qubits": 317,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.0078125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 317,
+            "selected_qubits": 317,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.00390625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 317,
+            "selected_qubits": 317,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.001953125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 317,
+            "selected_qubits": 317,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.0009765625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 317,
+            "selected_qubits": 317,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.00048828125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 317,
+            "selected_qubits": 317,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.000244140625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 317,
+            "selected_qubits": 317,
+            "saved_qubits": 0
+          }
+        ]
+      }
+    },
+    {
+      "name": "rewired_band_n16_s8807_standard",
+      "seconds": 0.059165208134800196,
+      "selections": {
+        "basis": [
+          {
+            "T": 0.015625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 58,
+            "selected_qubits": 58,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.0078125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 58,
+            "selected_qubits": 58,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.00390625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 58,
+            "selected_qubits": 58,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.001953125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 58,
+            "selected_qubits": 58,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.0009765625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 58,
+            "selected_qubits": 58,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.00048828125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 58,
+            "selected_qubits": 58,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.000244140625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 58,
+            "selected_qubits": 58,
+            "saved_qubits": 0
+          }
+        ],
+        "pairs": [
+          {
+            "T": 0.015625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 58,
+            "selected_qubits": 58,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.0078125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 58,
+            "selected_qubits": 58,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.00390625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 58,
+            "selected_qubits": 58,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.001953125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 58,
+            "selected_qubits": 58,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.0009765625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 58,
+            "selected_qubits": 58,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.00048828125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 58,
+            "selected_qubits": 58,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.000244140625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 58,
+            "selected_qubits": 58,
+            "saved_qubits": 0
+          }
+        ],
+        "triangles": [
+          {
+            "T": 0.015625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 58,
+            "selected_qubits": 58,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.0078125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 58,
+            "selected_qubits": 58,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.00390625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 58,
+            "selected_qubits": 58,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.001953125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 58,
+            "selected_qubits": 58,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.0009765625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 58,
+            "selected_qubits": 58,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.00048828125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 58,
+            "selected_qubits": 58,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.000244140625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 58,
+            "selected_qubits": 58,
+            "saved_qubits": 0
+          }
+        ]
+      }
+    },
+    {
+      "name": "rewired_band_n16_s9901_standard",
+      "seconds": 0.06220387504436076,
+      "selections": {
+        "basis": [
+          {
+            "T": 0.015625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 62,
+            "selected_qubits": 62,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.0078125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 62,
+            "selected_qubits": 62,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.00390625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 62,
+            "selected_qubits": 62,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.001953125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 62,
+            "selected_qubits": 62,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.0009765625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 62,
+            "selected_qubits": 62,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.00048828125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 62,
+            "selected_qubits": 62,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.000244140625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 62,
+            "selected_qubits": 62,
+            "saved_qubits": 0
+          }
+        ],
+        "pairs": [
+          {
+            "T": 0.015625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 62,
+            "selected_qubits": 62,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.0078125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 62,
+            "selected_qubits": 62,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.00390625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 62,
+            "selected_qubits": 62,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.001953125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 62,
+            "selected_qubits": 62,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.0009765625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 62,
+            "selected_qubits": 62,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.00048828125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 62,
+            "selected_qubits": 62,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.000244140625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 62,
+            "selected_qubits": 62,
+            "saved_qubits": 0
+          }
+        ],
+        "triangles": [
+          {
+            "T": 0.015625,
+            "selected_seed": 47,
+            "certified_change": true,
+            "baseline_qubits": 62,
+            "selected_qubits": 56,
+            "saved_qubits": 6
+          },
+          {
+            "T": 0.0078125,
+            "selected_seed": 47,
+            "certified_change": true,
+            "baseline_qubits": 62,
+            "selected_qubits": 56,
+            "saved_qubits": 6
+          },
+          {
+            "T": 0.00390625,
+            "selected_seed": 47,
+            "certified_change": true,
+            "baseline_qubits": 62,
+            "selected_qubits": 56,
+            "saved_qubits": 6
+          },
+          {
+            "T": 0.001953125,
+            "selected_seed": 47,
+            "certified_change": true,
+            "baseline_qubits": 62,
+            "selected_qubits": 56,
+            "saved_qubits": 6
+          },
+          {
+            "T": 0.0009765625,
+            "selected_seed": 47,
+            "certified_change": true,
+            "baseline_qubits": 62,
+            "selected_qubits": 56,
+            "saved_qubits": 6
+          },
+          {
+            "T": 0.00048828125,
+            "selected_seed": 47,
+            "certified_change": true,
+            "baseline_qubits": 62,
+            "selected_qubits": 56,
+            "saved_qubits": 6
+          },
+          {
+            "T": 0.000244140625,
+            "selected_seed": 47,
+            "certified_change": true,
+            "baseline_qubits": 62,
+            "selected_qubits": 56,
+            "saved_qubits": 6
+          }
+        ]
+      }
+    },
+    {
+      "name": "rewired_band_n32_s8807_standard",
+      "seconds": 0.11785966693423688,
+      "selections": {
+        "basis": [
+          {
+            "T": 0.015625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 110,
+            "selected_qubits": 110,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.0078125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 110,
+            "selected_qubits": 110,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.00390625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 110,
+            "selected_qubits": 110,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.001953125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 110,
+            "selected_qubits": 110,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.0009765625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 110,
+            "selected_qubits": 110,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.00048828125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 110,
+            "selected_qubits": 110,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.000244140625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 110,
+            "selected_qubits": 110,
+            "saved_qubits": 0
+          }
+        ],
+        "pairs": [
+          {
+            "T": 0.015625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 110,
+            "selected_qubits": 110,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.0078125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 110,
+            "selected_qubits": 110,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.00390625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 110,
+            "selected_qubits": 110,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.001953125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 110,
+            "selected_qubits": 110,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.0009765625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 110,
+            "selected_qubits": 110,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.00048828125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 110,
+            "selected_qubits": 110,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.000244140625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 110,
+            "selected_qubits": 110,
+            "saved_qubits": 0
+          }
+        ],
+        "triangles": [
+          {
+            "T": 0.015625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 110,
+            "selected_qubits": 110,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.0078125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 110,
+            "selected_qubits": 110,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.00390625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 110,
+            "selected_qubits": 110,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.001953125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 110,
+            "selected_qubits": 110,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.0009765625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 110,
+            "selected_qubits": 110,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.00048828125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 110,
+            "selected_qubits": 110,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.000244140625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 110,
+            "selected_qubits": 110,
+            "saved_qubits": 0
+          }
+        ]
+      }
+    },
+    {
+      "name": "rewired_band_n32_s9901_standard",
+      "seconds": 0.14173225010745227,
+      "selections": {
+        "basis": [
+          {
+            "T": 0.015625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 118,
+            "selected_qubits": 118,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.0078125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 118,
+            "selected_qubits": 118,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.00390625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 118,
+            "selected_qubits": 118,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.001953125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 118,
+            "selected_qubits": 118,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.0009765625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 118,
+            "selected_qubits": 118,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.00048828125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 118,
+            "selected_qubits": 118,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.000244140625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 118,
+            "selected_qubits": 118,
+            "saved_qubits": 0
+          }
+        ],
+        "pairs": [
+          {
+            "T": 0.015625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 118,
+            "selected_qubits": 118,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.0078125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 118,
+            "selected_qubits": 118,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.00390625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 118,
+            "selected_qubits": 118,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.001953125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 118,
+            "selected_qubits": 118,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.0009765625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 118,
+            "selected_qubits": 118,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.00048828125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 118,
+            "selected_qubits": 118,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.000244140625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 118,
+            "selected_qubits": 118,
+            "saved_qubits": 0
+          }
+        ],
+        "triangles": [
+          {
+            "T": 0.015625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 118,
+            "selected_qubits": 118,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.0078125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 118,
+            "selected_qubits": 118,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.00390625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 118,
+            "selected_qubits": 118,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.001953125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 118,
+            "selected_qubits": 118,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.0009765625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 118,
+            "selected_qubits": 118,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.00048828125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 118,
+            "selected_qubits": 118,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.000244140625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 118,
+            "selected_qubits": 118,
+            "saved_qubits": 0
+          }
+        ]
+      }
+    },
+    {
+      "name": "rewired_band_n64_s8807_standard",
+      "seconds": 0.3718267499934882,
+      "selections": {
+        "basis": [
+          {
+            "T": 0.015625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 251,
+            "selected_qubits": 251,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.0078125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 251,
+            "selected_qubits": 251,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.00390625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 251,
+            "selected_qubits": 251,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.001953125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 251,
+            "selected_qubits": 251,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.0009765625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 251,
+            "selected_qubits": 251,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.00048828125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 251,
+            "selected_qubits": 251,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.000244140625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 251,
+            "selected_qubits": 251,
+            "saved_qubits": 0
+          }
+        ],
+        "pairs": [
+          {
+            "T": 0.015625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 251,
+            "selected_qubits": 251,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.0078125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 251,
+            "selected_qubits": 251,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.00390625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 251,
+            "selected_qubits": 251,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.001953125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 251,
+            "selected_qubits": 251,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.0009765625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 251,
+            "selected_qubits": 251,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.00048828125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 251,
+            "selected_qubits": 251,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.000244140625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 251,
+            "selected_qubits": 251,
+            "saved_qubits": 0
+          }
+        ],
+        "triangles": [
+          {
+            "T": 0.015625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 251,
+            "selected_qubits": 251,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.0078125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 251,
+            "selected_qubits": 251,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.00390625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 251,
+            "selected_qubits": 251,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.001953125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 251,
+            "selected_qubits": 251,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.0009765625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 251,
+            "selected_qubits": 251,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.00048828125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 251,
+            "selected_qubits": 251,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.000244140625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 251,
+            "selected_qubits": 251,
+            "saved_qubits": 0
+          }
+        ]
+      }
+    },
+    {
+      "name": "rewired_band_n64_s9901_standard",
+      "seconds": 0.2614785418845713,
+      "selections": {
+        "basis": [
+          {
+            "T": 0.015625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 243,
+            "selected_qubits": 243,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.0078125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 243,
+            "selected_qubits": 243,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.00390625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 243,
+            "selected_qubits": 243,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.001953125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 243,
+            "selected_qubits": 243,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.0009765625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 243,
+            "selected_qubits": 243,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.00048828125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 243,
+            "selected_qubits": 243,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.000244140625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 243,
+            "selected_qubits": 243,
+            "saved_qubits": 0
+          }
+        ],
+        "pairs": [
+          {
+            "T": 0.015625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 243,
+            "selected_qubits": 243,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.0078125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 243,
+            "selected_qubits": 243,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.00390625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 243,
+            "selected_qubits": 243,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.001953125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 243,
+            "selected_qubits": 243,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.0009765625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 243,
+            "selected_qubits": 243,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.00048828125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 243,
+            "selected_qubits": 243,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.000244140625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 243,
+            "selected_qubits": 243,
+            "saved_qubits": 0
+          }
+        ],
+        "triangles": [
+          {
+            "T": 0.015625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 243,
+            "selected_qubits": 243,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.0078125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 243,
+            "selected_qubits": 243,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.00390625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 243,
+            "selected_qubits": 243,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.001953125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 243,
+            "selected_qubits": 243,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.0009765625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 243,
+            "selected_qubits": 243,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.00048828125,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 243,
+            "selected_qubits": 243,
+            "saved_qubits": 0
+          },
+          {
+            "T": 0.000244140625,
+            "selected_seed": 11,
+            "certified_change": false,
+            "baseline_qubits": 243,
+            "selected_qubits": 243,
+            "saved_qubits": 0
+          }
+        ]
+      }
+    }
+  ]
+}

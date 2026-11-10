@@ -1,0 +1,776 @@
+[
+  {
+    "name": "T1_(0, 0, 0)_char(1, 1)",
+    "source_name": "T1_(0, 0, 0)",
+    "source_dim": 35,
+    "dim": 9,
+    "characters": [
+      1,
+      1
+    ],
+    "reflections": [
+      "rx",
+      "ry"
+    ],
+    "projection": "projection_000.npz"
+  },
+  {
+    "name": "T1_(0, 0, 0)_char(1, -1)",
+    "source_name": "T1_(0, 0, 0)",
+    "source_dim": 35,
+    "dim": 10,
+    "characters": [
+      1,
+      -1
+    ],
+    "reflections": [
+      "rx",
+      "ry"
+    ],
+    "projection": "projection_001.npz"
+  },
+  {
+    "name": "T1_(0, 0, 0)_char(-1, 1)",
+    "source_name": "T1_(0, 0, 0)",
+    "source_dim": 35,
+    "dim": 10,
+    "characters": [
+      -1,
+      1
+    ],
+    "reflections": [
+      "rx",
+      "ry"
+    ],
+    "projection": "projection_002.npz"
+  },
+  {
+    "name": "T1_(0, 0, 0)_char(-1, -1)",
+    "source_name": "T1_(0, 0, 0)",
+    "source_dim": 35,
+    "dim": 6,
+    "characters": [
+      -1,
+      -1
+    ],
+    "reflections": [
+      "rx",
+      "ry"
+    ],
+    "projection": "projection_003.npz"
+  },
+  {
+    "name": "T1_(0, 1, 0)_char(1,)",
+    "source_name": "T1_(0, 1, 0)",
+    "source_dim": 35,
+    "dim": 19,
+    "characters": [
+      1
+    ],
+    "reflections": [
+      "ry"
+    ],
+    "projection": "projection_004.npz"
+  },
+  {
+    "name": "T1_(0, 1, 0)_char(-1,)",
+    "source_name": "T1_(0, 1, 0)",
+    "source_dim": 35,
+    "dim": 16,
+    "characters": [
+      -1
+    ],
+    "reflections": [
+      "ry"
+    ],
+    "projection": "projection_005.npz"
+  },
+  {
+    "name": "T1_(0, 1, 1)_char(1,)",
+    "source_name": "T1_(0, 1, 1)",
+    "source_dim": 35,
+    "dim": 15,
+    "characters": [
+      1
+    ],
+    "reflections": [
+      "swap"
+    ],
+    "projection": "projection_006.npz"
+  },
+  {
+    "name": "T1_(0, 1, 1)_char(-1,)",
+    "source_name": "T1_(0, 1, 1)",
+    "source_dim": 35,
+    "dim": 20,
+    "characters": [
+      -1
+    ],
+    "reflections": [
+      "swap"
+    ],
+    "projection": "projection_007.npz"
+  },
+  {
+    "name": "T1_(0, 2, 0)_char(1, 1)",
+    "source_name": "T1_(0, 2, 0)",
+    "source_dim": 35,
+    "dim": 9,
+    "characters": [
+      1,
+      1
+    ],
+    "reflections": [
+      "rx",
+      "ry"
+    ],
+    "projection": "projection_008.npz"
+  },
+  {
+    "name": "T1_(0, 2, 0)_char(1, -1)",
+    "source_name": "T1_(0, 2, 0)",
+    "source_dim": 35,
+    "dim": 10,
+    "characters": [
+      1,
+      -1
+    ],
+    "reflections": [
+      "rx",
+      "ry"
+    ],
+    "projection": "projection_009.npz"
+  },
+  {
+    "name": "T1_(0, 2, 0)_char(-1, 1)",
+    "source_name": "T1_(0, 2, 0)",
+    "source_dim": 35,
+    "dim": 10,
+    "characters": [
+      -1,
+      1
+    ],
+    "reflections": [
+      "rx",
+      "ry"
+    ],
+    "projection": "projection_010.npz"
+  },
+  {
+    "name": "T1_(0, 2, 0)_char(-1, -1)",
+    "source_name": "T1_(0, 2, 0)",
+    "source_dim": 35,
+    "dim": 6,
+    "characters": [
+      -1,
+      -1
+    ],
+    "reflections": [
+      "rx",
+      "ry"
+    ],
+    "projection": "projection_011.npz"
+  },
+  {
+    "name": "T1_(0, 2, 1)_char(1,)",
+    "source_name": "T1_(0, 2, 1)",
+    "source_dim": 35,
+    "dim": 19,
+    "characters": [
+      1
+    ],
+    "reflections": [
+      "rx"
+    ],
+    "projection": "projection_012.npz"
+  },
+  {
+    "name": "T1_(0, 2, 1)_char(-1,)",
+    "source_name": "T1_(0, 2, 1)",
+    "source_dim": 35,
+    "dim": 16,
+    "characters": [
+      -1
+    ],
+    "reflections": [
+      "rx"
+    ],
+    "projection": "projection_013.npz"
+  },
+  {
+    "name": "T1_(0, 2, 2)_char(1, 1)",
+    "source_name": "T1_(0, 2, 2)",
+    "source_dim": 35,
+    "dim": 9,
+    "characters": [
+      1,
+      1
+    ],
+    "reflections": [
+      "rx",
+      "ry"
+    ],
+    "projection": "projection_014.npz"
+  },
+  {
+    "name": "T1_(0, 2, 2)_char(1, -1)",
+    "source_name": "T1_(0, 2, 2)",
+    "source_dim": 35,
+    "dim": 10,
+    "characters": [
+      1,
+      -1
+    ],
+    "reflections": [
+      "rx",
+      "ry"
+    ],
+    "projection": "projection_015.npz"
+  },
+  {
+    "name": "T1_(0, 2, 2)_char(-1, 1)",
+    "source_name": "T1_(0, 2, 2)",
+    "source_dim": 35,
+    "dim": 10,
+    "characters": [
+      -1,
+      1
+    ],
+    "reflections": [
+      "rx",
+      "ry"
+    ],
+    "projection": "projection_016.npz"
+  },
+  {
+    "name": "T1_(0, 2, 2)_char(-1, -1)",
+    "source_name": "T1_(0, 2, 2)",
+    "source_dim": 35,
+    "dim": 6,
+    "characters": [
+      -1,
+      -1
+    ],
+    "reflections": [
+      "rx",
+      "ry"
+    ],
+    "projection": "projection_017.npz"
+  },
+  {
+    "name": "T1_(1, 0, 0)_char(1, 1)",
+    "source_name": "T1_(1, 0, 0)",
+    "source_dim": 120,
+    "dim": 42,
+    "characters": [
+      1,
+      1
+    ],
+    "reflections": [
+      "rx",
+      "ry"
+    ],
+    "projection": "projection_018.npz"
+  },
+  {
+    "name": "T1_(1, 0, 0)_char(1, -1)",
+    "source_name": "T1_(1, 0, 0)",
+    "source_dim": 120,
+    "dim": 30,
+    "characters": [
+      1,
+      -1
+    ],
+    "reflections": [
+      "rx",
+      "ry"
+    ],
+    "projection": "projection_019.npz"
+  },
+  {
+    "name": "T1_(1, 0, 0)_char(-1, 1)",
+    "source_name": "T1_(1, 0, 0)",
+    "source_dim": 120,
+    "dim": 30,
+    "characters": [
+      -1,
+      1
+    ],
+    "reflections": [
+      "rx",
+      "ry"
+    ],
+    "projection": "projection_020.npz"
+  },
+  {
+    "name": "T1_(1, 0, 0)_char(-1, -1)",
+    "source_name": "T1_(1, 0, 0)",
+    "source_dim": 120,
+    "dim": 18,
+    "characters": [
+      -1,
+      -1
+    ],
+    "reflections": [
+      "rx",
+      "ry"
+    ],
+    "projection": "projection_021.npz"
+  },
+  {
+    "name": "T1_(1, 1, 0)_char(1,)",
+    "source_name": "T1_(1, 1, 0)",
+    "source_dim": 120,
+    "dim": 72,
+    "characters": [
+      1
+    ],
+    "reflections": [
+      "ry"
+    ],
+    "projection": "projection_022.npz"
+  },
+  {
+    "name": "T1_(1, 1, 0)_char(-1,)",
+    "source_name": "T1_(1, 1, 0)",
+    "source_dim": 120,
+    "dim": 48,
+    "characters": [
+      -1
+    ],
+    "reflections": [
+      "ry"
+    ],
+    "projection": "projection_023.npz"
+  },
+  {
+    "name": "T1_(1, 1, 1)_char(1,)",
+    "source_name": "T1_(1, 1, 1)",
+    "source_dim": 120,
+    "dim": 60,
+    "characters": [
+      1
+    ],
+    "reflections": [
+      "swap"
+    ],
+    "projection": "projection_024.npz"
+  },
+  {
+    "name": "T1_(1, 1, 1)_char(-1,)",
+    "source_name": "T1_(1, 1, 1)",
+    "source_dim": 120,
+    "dim": 60,
+    "characters": [
+      -1
+    ],
+    "reflections": [
+      "swap"
+    ],
+    "projection": "projection_025.npz"
+  },
+  {
+    "name": "T1_(1, 2, 0)_char(1, 1)",
+    "source_name": "T1_(1, 2, 0)",
+    "source_dim": 120,
+    "dim": 42,
+    "characters": [
+      1,
+      1
+    ],
+    "reflections": [
+      "rx",
+      "ry"
+    ],
+    "projection": "projection_026.npz"
+  },
+  {
+    "name": "T1_(1, 2, 0)_char(1, -1)",
+    "source_name": "T1_(1, 2, 0)",
+    "source_dim": 120,
+    "dim": 30,
+    "characters": [
+      1,
+      -1
+    ],
+    "reflections": [
+      "rx",
+      "ry"
+    ],
+    "projection": "projection_027.npz"
+  },
+  {
+    "name": "T1_(1, 2, 0)_char(-1, 1)",
+    "source_name": "T1_(1, 2, 0)",
+    "source_dim": 120,
+    "dim": 30,
+    "characters": [
+      -1,
+      1
+    ],
+    "reflections": [
+      "rx",
+      "ry"
+    ],
+    "projection": "projection_028.npz"
+  },
+  {
+    "name": "T1_(1, 2, 0)_char(-1, -1)",
+    "source_name": "T1_(1, 2, 0)",
+    "source_dim": 120,
+    "dim": 18,
+    "characters": [
+      -1,
+      -1
+    ],
+    "reflections": [
+      "rx",
+      "ry"
+    ],
+    "projection": "projection_029.npz"
+  },
+  {
+    "name": "T1_(1, 2, 1)_char(1,)",
+    "source_name": "T1_(1, 2, 1)",
+    "source_dim": 120,
+    "dim": 72,
+    "characters": [
+      1
+    ],
+    "reflections": [
+      "rx"
+    ],
+    "projection": "projection_030.npz"
+  },
+  {
+    "name": "T1_(1, 2, 1)_char(-1,)",
+    "source_name": "T1_(1, 2, 1)",
+    "source_dim": 120,
+    "dim": 48,
+    "characters": [
+      -1
+    ],
+    "reflections": [
+      "rx"
+    ],
+    "projection": "projection_031.npz"
+  },
+  {
+    "name": "T1_(1, 2, 2)_char(1, 1)",
+    "source_name": "T1_(1, 2, 2)",
+    "source_dim": 120,
+    "dim": 42,
+    "characters": [
+      1,
+      1
+    ],
+    "reflections": [
+      "rx",
+      "ry"
+    ],
+    "projection": "projection_032.npz"
+  },
+  {
+    "name": "T1_(1, 2, 2)_char(1, -1)",
+    "source_name": "T1_(1, 2, 2)",
+    "source_dim": 120,
+    "dim": 30,
+    "characters": [
+      1,
+      -1
+    ],
+    "reflections": [
+      "rx",
+      "ry"
+    ],
+    "projection": "projection_033.npz"
+  },
+  {
+    "name": "T1_(1, 2, 2)_char(-1, 1)",
+    "source_name": "T1_(1, 2, 2)",
+    "source_dim": 120,
+    "dim": 30,
+    "characters": [
+      -1,
+      1
+    ],
+    "reflections": [
+      "rx",
+      "ry"
+    ],
+    "projection": "projection_034.npz"
+  },
+  {
+    "name": "T1_(1, 2, 2)_char(-1, -1)",
+    "source_name": "T1_(1, 2, 2)",
+    "source_dim": 120,
+    "dim": 18,
+    "characters": [
+      -1,
+      -1
+    ],
+    "reflections": [
+      "rx",
+      "ry"
+    ],
+    "projection": "projection_035.npz"
+  },
+  {
+    "name": "T2prime_two_site_spin0_k0_char(1, 1)",
+    "source_name": "T2prime_two_site_spin0_k0",
+    "source_dim": 61,
+    "dim": 33,
+    "characters": [
+      1,
+      1
+    ],
+    "reflections": [
+      "rx",
+      "ry"
+    ],
+    "projection": "projection_036.npz"
+  },
+  {
+    "name": "T2prime_two_site_spin0_k0_char(1, -1)",
+    "source_name": "T2prime_two_site_spin0_k0",
+    "source_dim": 61,
+    "dim": 12,
+    "characters": [
+      1,
+      -1
+    ],
+    "reflections": [
+      "rx",
+      "ry"
+    ],
+    "projection": "projection_037.npz"
+  },
+  {
+    "name": "T2prime_two_site_spin0_k0_char(-1, 1)",
+    "source_name": "T2prime_two_site_spin0_k0",
+    "source_dim": 61,
+    "dim": 12,
+    "characters": [
+      -1,
+      1
+    ],
+    "reflections": [
+      "rx",
+      "ry"
+    ],
+    "projection": "projection_038.npz"
+  },
+  {
+    "name": "T2prime_two_site_spin0_k0_char(-1, -1)",
+    "source_name": "T2prime_two_site_spin0_k0",
+    "source_dim": 61,
+    "dim": 4,
+    "characters": [
+      -1,
+      -1
+    ],
+    "reflections": [
+      "rx",
+      "ry"
+    ],
+    "projection": "projection_039.npz"
+  },
+  {
+    "name": "T2prime_two_site_spin0_k1_char(1,)",
+    "source_name": "T2prime_two_site_spin0_k1",
+    "source_dim": 61,
+    "dim": 45,
+    "characters": [
+      1
+    ],
+    "reflections": [
+      "ry"
+    ],
+    "projection": "projection_040.npz"
+  },
+  {
+    "name": "T2prime_two_site_spin0_k1_char(-1,)",
+    "source_name": "T2prime_two_site_spin0_k1",
+    "source_dim": 61,
+    "dim": 16,
+    "characters": [
+      -1
+    ],
+    "reflections": [
+      "ry"
+    ],
+    "projection": "projection_041.npz"
+  },
+  {
+    "name": "T2prime_two_site_spin0_k2_char(1, 1)",
+    "source_name": "T2prime_two_site_spin0_k2",
+    "source_dim": 61,
+    "dim": 33,
+    "characters": [
+      1,
+      1
+    ],
+    "reflections": [
+      "rx",
+      "ry"
+    ],
+    "projection": "projection_042.npz"
+  },
+  {
+    "name": "T2prime_two_site_spin0_k2_char(1, -1)",
+    "source_name": "T2prime_two_site_spin0_k2",
+    "source_dim": 61,
+    "dim": 12,
+    "characters": [
+      1,
+      -1
+    ],
+    "reflections": [
+      "rx",
+      "ry"
+    ],
+    "projection": "projection_043.npz"
+  },
+  {
+    "name": "T2prime_two_site_spin0_k2_char(-1, 1)",
+    "source_name": "T2prime_two_site_spin0_k2",
+    "source_dim": 61,
+    "dim": 12,
+    "characters": [
+      -1,
+      1
+    ],
+    "reflections": [
+      "rx",
+      "ry"
+    ],
+    "projection": "projection_044.npz"
+  },
+  {
+    "name": "T2prime_two_site_spin0_k2_char(-1, -1)",
+    "source_name": "T2prime_two_site_spin0_k2",
+    "source_dim": 61,
+    "dim": 4,
+    "characters": [
+      -1,
+      -1
+    ],
+    "reflections": [
+      "rx",
+      "ry"
+    ],
+    "projection": "projection_045.npz"
+  },
+  {
+    "name": "T2prime_two_site_spin0_k5_char(1,)",
+    "source_name": "T2prime_two_site_spin0_k5",
+    "source_dim": 61,
+    "dim": 37,
+    "characters": [
+      1
+    ],
+    "reflections": [
+      "swap"
+    ],
+    "projection": "projection_046.npz"
+  },
+  {
+    "name": "T2prime_two_site_spin0_k5_char(-1,)",
+    "source_name": "T2prime_two_site_spin0_k5",
+    "source_dim": 61,
+    "dim": 24,
+    "characters": [
+      -1
+    ],
+    "reflections": [
+      "swap"
+    ],
+    "projection": "projection_047.npz"
+  },
+  {
+    "name": "T2prime_two_site_spin0_k6_char(1,)",
+    "source_name": "T2prime_two_site_spin0_k6",
+    "source_dim": 61,
+    "dim": 45,
+    "characters": [
+      1
+    ],
+    "reflections": [
+      "rx"
+    ],
+    "projection": "projection_048.npz"
+  },
+  {
+    "name": "T2prime_two_site_spin0_k6_char(-1,)",
+    "source_name": "T2prime_two_site_spin0_k6",
+    "source_dim": 61,
+    "dim": 16,
+    "characters": [
+      -1
+    ],
+    "reflections": [
+      "rx"
+    ],
+    "projection": "projection_049.npz"
+  },
+  {
+    "name": "T2prime_two_site_spin0_k10_char(1, 1)",
+    "source_name": "T2prime_two_site_spin0_k10",
+    "source_dim": 61,
+    "dim": 33,
+    "characters": [
+      1,
+      1
+    ],
+    "reflections": [
+      "rx",
+      "ry"
+    ],
+    "projection": "projection_050.npz"
+  },
+  {
+    "name": "T2prime_two_site_spin0_k10_char(1, -1)",
+    "source_name": "T2prime_two_site_spin0_k10",
+    "source_dim": 61,
+    "dim": 12,
+    "characters": [
+      1,
+      -1
+    ],
+    "reflections": [
+      "rx",
+      "ry"
+    ],
+    "projection": "projection_051.npz"
+  },
+  {
+    "name": "T2prime_two_site_spin0_k10_char(-1, 1)",
+    "source_name": "T2prime_two_site_spin0_k10",
+    "source_dim": 61,
+    "dim": 12,
+    "characters": [
+      -1,
+      1
+    ],
+    "reflections": [
+      "rx",
+      "ry"
+    ],
+    "projection": "projection_052.npz"
+  },
+  {
+    "name": "T2prime_two_site_spin0_k10_char(-1, -1)",
+    "source_name": "T2prime_two_site_spin0_k10",
+    "source_dim": 61,
+    "dim": 4,
+    "characters": [
+      -1,
+      -1
+    ],
+    "reflections": [
+      "rx",
+      "ry"
+    ],
+    "projection": "projection_053.npz"
+  }
+]

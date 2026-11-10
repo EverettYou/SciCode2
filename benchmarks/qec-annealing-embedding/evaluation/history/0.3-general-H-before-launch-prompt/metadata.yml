@@ -1,0 +1,75 @@
+benchmark_id: qec-annealing-embedding
+title: General Decoding-to-Annealer Embedding from Sparse Check Matrices
+stage: problem-opened
+paper_ids: []
+summary: Develop efficient general sparse-H compilation and embedding algorithms with efficient, theoretically
+  justified annealing-quality evaluation.
+idea_sources:
+- source_path: problem/USER_REQUEST.md
+  source_field: user-provided-research-question
+  role: primary-question
+- source_path: problem/references/DWaveProposal.pdf
+  source_field: user-provided-research-question
+  role: proposal-context
+research_question: Develop an efficient algorithm that maps a general sparse binary decoding check matrix
+  to a faithful quadratic model and a hardware-valid annealing embedding, together with an efficient evaluation
+  method and theoretically justified comparisons of embedding quality within a stated quantum-annealing
+  model.
+scientific_domain:
+- quantum error correction
+- quantum annealing
+- graph minor embedding
+expected_outcomes:
+- Sparsity-aware construction and reuse may reduce compilation cost across unrelated decoding models.
+- Efficiently certified quality criteria may support conditional embedding comparisons beyond raw chain
+  length.
+- Theoretical limits may identify when no universal embedding ordering is justified.
+expected_outputs:
+- A general sparse-H matrix-to-model-to-embedding algorithm with fidelity and complexity analysis.
+- An efficient evaluation method with theoretical comparison or certified limitation in a stated annealing
+  model.
+- Reusable source code, independent witnesses and an English technical report.
+evidence_requirements:
+- Faithful quadratic reduction and independently valid physical embeddings.
+- Complexity accounting for preprocessing, per-syndrome work, updates and evaluation.
+- An analytical comparison, justified bound or certificate with explicit annealing assumptions and limits.
+estimated_active_hours: null
+workstation_feasible: uncertain
+expert_review: pending
+expert_notes: ''
+source_mode: user-provided-problem
+problem_sources:
+- path: problem/USER_REQUEST.md
+  sha256: 501fe79c846497a654b4c7c4df45684362a61d27a3e6b2bff76d3e1343a9191c
+  origin: User chat request on 2026-10-07, recorded in English
+- path: problem/references/DWaveProposal.pdf
+  sha256: 8396ef12e56f8d0a5b6a402b54535b989c47a4c08419214bf1e48106665100ca
+  origin: /Users/home/Library/Containers/com.apple.mail/Data/Library/Mail Downloads/5A3B490D-B2BB-4144-8A69-C7089AD538C1/DWaveProposal.pdf
+- path: problem/DESIGN_REVISION.md
+  sha256: 6bcfefa3c8cd02a3cfcc071c38a7b37fdd4e4e0e89aa82e5ef3090776ae68234
+  origin: User-directed design audit, self-contained scope clarification and general-H/theory refinement;
+    T-0007 M001, M003 and M005
+authorization:
+  origin: User chat on 2026-10-07
+  scope: 'Question design and revision following T-0007 M005: general sparse-H algorithm, efficient evaluation
+    and theory-supported embedding comparison. Document/public-source checks only; no research, simulation,
+    reference pilot or model trial.'
+public_target: null
+resource_budget:
+  classical_search_budget: null
+  peak_memory_limit_bytes: null
+  qpu_access: unavailable; not required
+pilot_status: not started; explicitly deferred beyond question-design phase
+design_preparation:
+  mode:
+  - question-revision
+  status: pass-to-testing
+  audit: evaluation/AUDIT.md
+  task_version: 0.3-general-H
+  frozen: false
+  example_bank_comparison: pending-access
+  reference_solution: not developed; deferred
+  model_trials: not run
+  difficulty: plausibly nontrivial by textual judgment; empirically untested
+  active_prompt_variants: []
+  screening: text-only editorial pass; no empirical screening

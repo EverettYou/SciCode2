@@ -1,0 +1,447 @@
+{
+  "status": "completed",
+  "instances": 48,
+  "certified": 48,
+  "upper_improved": 47,
+  "newly_certified": 3,
+  "median_duration": 0.015625,
+  "min_duration": 0.00390625,
+  "max_duration": 0.03125,
+  "median_additional_upper_seconds": 0.00015343795530498028,
+  "seconds": 1.2291337500791997,
+  "records": [
+    {
+      "name": "irregular_hubs_n16_s1101",
+      "n": 16,
+      "upper_improved": true,
+      "previous_duration": null,
+      "duration": 0.03125,
+      "bound_seconds": 0.0001539168879389763,
+      "seconds": 0.02581424987874925
+    },
+    {
+      "name": "irregular_hubs_n16_s2203",
+      "n": 16,
+      "upper_improved": true,
+      "previous_duration": 0.03125,
+      "duration": 0.03125,
+      "bound_seconds": 0.00010666693560779095,
+      "seconds": 0.007084167096763849
+    },
+    {
+      "name": "irregular_hubs_n16_s3307",
+      "n": 16,
+      "upper_improved": true,
+      "previous_duration": 0.015625,
+      "duration": 0.03125,
+      "bound_seconds": 0.00010062498040497303,
+      "seconds": 0.00784441689029336
+    },
+    {
+      "name": "irregular_hubs_n16_s8809",
+      "n": 16,
+      "upper_improved": true,
+      "previous_duration": 0.015625,
+      "duration": 0.03125,
+      "bound_seconds": 9.63748898357153e-05,
+      "seconds": 0.008004915900528431
+    },
+    {
+      "name": "irregular_hubs_n32_s1101",
+      "n": 32,
+      "upper_improved": true,
+      "previous_duration": 0.0078125,
+      "duration": 0.015625,
+      "bound_seconds": 0.0001634999644011259,
+      "seconds": 0.03271783282980323
+    },
+    {
+      "name": "irregular_hubs_n32_s2203",
+      "n": 32,
+      "upper_improved": true,
+      "previous_duration": null,
+      "duration": 0.0078125,
+      "bound_seconds": 0.00016925018280744553,
+      "seconds": 0.014755041105672717
+    },
+    {
+      "name": "irregular_hubs_n32_s3307",
+      "n": 32,
+      "upper_improved": true,
+      "previous_duration": 0.0078125,
+      "duration": 0.015625,
+      "bound_seconds": 0.0001466250978410244,
+      "seconds": 0.01450112508609891
+    },
+    {
+      "name": "irregular_hubs_n32_s8809",
+      "n": 32,
+      "upper_improved": true,
+      "previous_duration": 0.0078125,
+      "duration": 0.015625,
+      "bound_seconds": 0.00014787493273615837,
+      "seconds": 0.011264249915257096
+    },
+    {
+      "name": "irregular_hubs_n64_s1101",
+      "n": 64,
+      "upper_improved": true,
+      "previous_duration": 0.00390625,
+      "duration": 0.0078125,
+      "bound_seconds": 0.0002547500189393759,
+      "seconds": 0.040290124947205186
+    },
+    {
+      "name": "irregular_hubs_n64_s2203",
+      "n": 64,
+      "upper_improved": true,
+      "previous_duration": 0.00390625,
+      "duration": 0.0078125,
+      "bound_seconds": 0.0002357501070946455,
+      "seconds": 0.023179583018645644
+    },
+    {
+      "name": "irregular_hubs_n64_s3307",
+      "n": 64,
+      "upper_improved": true,
+      "previous_duration": 0.00390625,
+      "duration": 0.0078125,
+      "bound_seconds": 0.00022837496362626553,
+      "seconds": 0.022520208032801747
+    },
+    {
+      "name": "irregular_hubs_n64_s8809",
+      "n": 64,
+      "upper_improved": true,
+      "previous_duration": 0.00390625,
+      "duration": 0.0078125,
+      "bound_seconds": 0.00022095907479524612,
+      "seconds": 0.026972500141710043
+    },
+    {
+      "name": "mixed_hypergraph_n16_s1101",
+      "n": 16,
+      "upper_improved": true,
+      "previous_duration": 0.015625,
+      "duration": 0.03125,
+      "bound_seconds": 7.966696284711361e-05,
+      "seconds": 0.008446667110547423
+    },
+    {
+      "name": "mixed_hypergraph_n16_s2203",
+      "n": 16,
+      "upper_improved": true,
+      "previous_duration": 0.015625,
+      "duration": 0.03125,
+      "bound_seconds": 7.237493991851807e-05,
+      "seconds": 0.007262625033035874
+    },
+    {
+      "name": "mixed_hypergraph_n16_s3307",
+      "n": 16,
+      "upper_improved": true,
+      "previous_duration": 0.015625,
+      "duration": 0.015625,
+      "bound_seconds": 7.224990986287594e-05,
+      "seconds": 0.008694999851286411
+    },
+    {
+      "name": "mixed_hypergraph_n16_s8809",
+      "n": 16,
+      "upper_improved": true,
+      "previous_duration": 0.015625,
+      "duration": 0.03125,
+      "bound_seconds": 7.129204459488392e-05,
+      "seconds": 0.00790537497960031
+    },
+    {
+      "name": "mixed_hypergraph_n32_s1101",
+      "n": 32,
+      "upper_improved": true,
+      "previous_duration": 0.0078125,
+      "duration": 0.015625,
+      "bound_seconds": 0.00012370804324746132,
+      "seconds": 0.013217917177826166
+    },
+    {
+      "name": "mixed_hypergraph_n32_s2203",
+      "n": 32,
+      "upper_improved": true,
+      "previous_duration": 0.0078125,
+      "duration": 0.015625,
+      "bound_seconds": 0.00012687500566244125,
+      "seconds": 0.01377987489104271
+    },
+    {
+      "name": "mixed_hypergraph_n32_s3307",
+      "n": 32,
+      "upper_improved": true,
+      "previous_duration": 0.0078125,
+      "duration": 0.015625,
+      "bound_seconds": 0.00012029195204377174,
+      "seconds": 0.012987874913960695
+    },
+    {
+      "name": "mixed_hypergraph_n32_s8809",
+      "n": 32,
+      "upper_improved": true,
+      "previous_duration": 0.0078125,
+      "duration": 0.015625,
+      "bound_seconds": 0.00013216701336205006,
+      "seconds": 0.01418408309109509
+    },
+    {
+      "name": "mixed_hypergraph_n64_s1101",
+      "n": 64,
+      "upper_improved": true,
+      "previous_duration": 0.00390625,
+      "duration": 0.0078125,
+      "bound_seconds": 0.0002291251439601183,
+      "seconds": 0.029211583081632853
+    },
+    {
+      "name": "mixed_hypergraph_n64_s2203",
+      "n": 64,
+      "upper_improved": true,
+      "previous_duration": null,
+      "duration": 0.0078125,
+      "bound_seconds": 0.00023395800963044167,
+      "seconds": 0.030319207813590765
+    },
+    {
+      "name": "mixed_hypergraph_n64_s3307",
+      "n": 64,
+      "upper_improved": true,
+      "previous_duration": 0.00390625,
+      "duration": 0.0078125,
+      "bound_seconds": 0.00023854197934269905,
+      "seconds": 0.02885766699910164
+    },
+    {
+      "name": "mixed_hypergraph_n64_s8809",
+      "n": 64,
+      "upper_improved": true,
+      "previous_duration": 0.00390625,
+      "duration": 0.0078125,
+      "bound_seconds": 0.00023774988949298859,
+      "seconds": 0.03268495900556445
+    },
+    {
+      "name": "random_regular_n16_s1101",
+      "n": 16,
+      "upper_improved": true,
+      "previous_duration": 0.015625,
+      "duration": 0.03125,
+      "bound_seconds": 8.312496356666088e-05,
+      "seconds": 0.0054111669305711985
+    },
+    {
+      "name": "random_regular_n16_s2203",
+      "n": 16,
+      "upper_improved": true,
+      "previous_duration": 0.015625,
+      "duration": 0.015625,
+      "bound_seconds": 7.241708226501942e-05,
+      "seconds": 0.005095750093460083
+    },
+    {
+      "name": "random_regular_n16_s3307",
+      "n": 16,
+      "upper_improved": true,
+      "previous_duration": 0.015625,
+      "duration": 0.03125,
+      "bound_seconds": 7.737497799098492e-05,
+      "seconds": 0.005560874938964844
+    },
+    {
+      "name": "random_regular_n16_s8809",
+      "n": 16,
+      "upper_improved": true,
+      "previous_duration": 0.015625,
+      "duration": 0.03125,
+      "bound_seconds": 7.795891724526882e-05,
+      "seconds": 0.0075109589379280806
+    },
+    {
+      "name": "random_regular_n32_s1101",
+      "n": 32,
+      "upper_improved": true,
+      "previous_duration": 0.0078125,
+      "duration": 0.015625,
+      "bound_seconds": 0.00014016591012477875,
+      "seconds": 0.02191054099239409
+    },
+    {
+      "name": "random_regular_n32_s2203",
+      "n": 32,
+      "upper_improved": true,
+      "previous_duration": 0.0078125,
+      "duration": 0.015625,
+      "bound_seconds": 0.00015295902267098427,
+      "seconds": 0.01091758394613862
+    },
+    {
+      "name": "random_regular_n32_s3307",
+      "n": 32,
+      "upper_improved": true,
+      "previous_duration": 0.0078125,
+      "duration": 0.0078125,
+      "bound_seconds": 0.0001224998850375414,
+      "seconds": 0.012638167012482882
+    },
+    {
+      "name": "random_regular_n32_s8809",
+      "n": 32,
+      "upper_improved": true,
+      "previous_duration": 0.0078125,
+      "duration": 0.015625,
+      "bound_seconds": 0.00022170785814523697,
+      "seconds": 0.01553374994546175
+    },
+    {
+      "name": "random_regular_n64_s1101",
+      "n": 64,
+      "upper_improved": true,
+      "previous_duration": 0.00390625,
+      "duration": 0.00390625,
+      "bound_seconds": 0.00030566705390810966,
+      "seconds": 0.03757279203273356
+    },
+    {
+      "name": "random_regular_n64_s2203",
+      "n": 64,
+      "upper_improved": true,
+      "previous_duration": 0.00390625,
+      "duration": 0.0078125,
+      "bound_seconds": 0.000814707949757576,
+      "seconds": 0.053165082819759846
+    },
+    {
+      "name": "random_regular_n64_s3307",
+      "n": 64,
+      "upper_improved": true,
+      "previous_duration": 0.00390625,
+      "duration": 0.0078125,
+      "bound_seconds": 0.0004887080285698175,
+      "seconds": 0.14764937502332032
+    },
+    {
+      "name": "random_regular_n64_s8809",
+      "n": 64,
+      "upper_improved": true,
+      "previous_duration": 0.00390625,
+      "duration": 0.0078125,
+      "bound_seconds": 0.0010689999908208847,
+      "seconds": 0.0471284999512136
+    },
+    {
+      "name": "rewired_band_n16_s1101",
+      "n": 16,
+      "upper_improved": true,
+      "previous_duration": 0.03125,
+      "duration": 0.03125,
+      "bound_seconds": 0.00014466699212789536,
+      "seconds": 0.010404207976534963
+    },
+    {
+      "name": "rewired_band_n16_s2203",
+      "n": 16,
+      "upper_improved": true,
+      "previous_duration": 0.015625,
+      "duration": 0.015625,
+      "bound_seconds": 0.00013583293184638023,
+      "seconds": 0.010051333112642169
+    },
+    {
+      "name": "rewired_band_n16_s3307",
+      "n": 16,
+      "upper_improved": false,
+      "previous_duration": 0.015625,
+      "duration": 0.015625,
+      "bound_seconds": 0.00012316694483160973,
+      "seconds": 0.01115199993364513
+    },
+    {
+      "name": "rewired_band_n16_s8809",
+      "n": 16,
+      "upper_improved": true,
+      "previous_duration": 0.015625,
+      "duration": 0.03125,
+      "bound_seconds": 0.0001288331113755703,
+      "seconds": 0.008663792163133621
+    },
+    {
+      "name": "rewired_band_n32_s1101",
+      "n": 32,
+      "upper_improved": true,
+      "previous_duration": 0.0078125,
+      "duration": 0.015625,
+      "bound_seconds": 0.00019791699014604092,
+      "seconds": 0.01460016705095768
+    },
+    {
+      "name": "rewired_band_n32_s2203",
+      "n": 32,
+      "upper_improved": true,
+      "previous_duration": 0.0078125,
+      "duration": 0.015625,
+      "bound_seconds": 0.0003351669292896986,
+      "seconds": 0.017305458895862103
+    },
+    {
+      "name": "rewired_band_n32_s3307",
+      "n": 32,
+      "upper_improved": true,
+      "previous_duration": 0.0078125,
+      "duration": 0.015625,
+      "bound_seconds": 0.00020308303646743298,
+      "seconds": 0.016335707856342196
+    },
+    {
+      "name": "rewired_band_n32_s8809",
+      "n": 32,
+      "upper_improved": true,
+      "previous_duration": 0.0078125,
+      "duration": 0.015625,
+      "bound_seconds": 0.0002019170206040144,
+      "seconds": 0.018060792004689574
+    },
+    {
+      "name": "rewired_band_n64_s1101",
+      "n": 64,
+      "upper_improved": true,
+      "previous_duration": 0.00390625,
+      "duration": 0.0078125,
+      "bound_seconds": 0.0003659999929368496,
+      "seconds": 0.03277362487278879
+    },
+    {
+      "name": "rewired_band_n64_s2203",
+      "n": 64,
+      "upper_improved": true,
+      "previous_duration": 0.00390625,
+      "duration": 0.0078125,
+      "bound_seconds": 0.0003514590207487345,
+      "seconds": 0.03200433403253555
+    },
+    {
+      "name": "rewired_band_n64_s3307",
+      "n": 64,
+      "upper_improved": true,
+      "previous_duration": 0.00390625,
+      "duration": 0.0078125,
+      "bound_seconds": 0.0003542918711900711,
+      "seconds": 0.034419416915625334
+    },
+    {
+      "name": "rewired_band_n64_s8809",
+      "n": 64,
+      "upper_improved": true,
+      "previous_duration": 0.00390625,
+      "duration": 0.0078125,
+      "bound_seconds": 0.0003660419024527073,
+      "seconds": 0.029916292056441307
+    }
+  ],
+  "cost_scope": "Incremental upper-bound/certificate control reuses previously charged exact q4 polynomials and physical programs."
+}

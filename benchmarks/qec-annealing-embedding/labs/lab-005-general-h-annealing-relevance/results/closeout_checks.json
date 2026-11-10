@@ -1,0 +1,99 @@
+{
+  "status": "pass_with_unchanged_legacy_structure_findings",
+  "checked_utc": "2026-10-16T11:33:23Z",
+  "original_dependencies": [
+    {
+      "path": "benchmarks/qec-annealing-embedding/problem/TASK.md",
+      "sha256": "59db2b1fccb659727f046a907ead3b01c4878aa97eb142fb5c045fbac9c92164",
+      "unchanged": true
+    },
+    {
+      "path": "benchmarks/qec-annealing-embedding/prompt.md",
+      "sha256": "1e89789597cf8f5175efce615604ca2667215f67f5dc0ab29c8284c9048069d3",
+      "unchanged": true
+    },
+    {
+      "path": "benchmarks/qec-annealing-embedding/labs/lab-004-general-h-evaluation-embedding-loop/REPORT.md",
+      "sha256": "32bf6c38e5c96f786b99b99fd8f96ec5ffa3b2607320b8520c901b348638d947",
+      "unchanged": true
+    },
+    {
+      "path": "benchmarks/qec-annealing-embedding/labs/lab-004-general-h-evaluation-embedding-loop/THEORY.md",
+      "sha256": "ae04ec7c8b9f0eb6c018488c13b6dd0e2412e9cc7885a96ed9a672f55a27e735",
+      "unchanged": true
+    }
+  ],
+  "frozen_scientific_snapshots": [
+    {
+      "manifest": "results/research_artifact_manifest.json",
+      "files_checked": 479,
+      "hash_mismatches": []
+    },
+    {
+      "manifest": "theory_extensions/manifest.json",
+      "files_checked": 109,
+      "hash_mismatches": []
+    },
+    {
+      "manifest": "standard_extension/manifest.json",
+      "files_checked": 221,
+      "hash_mismatches": []
+    }
+  ],
+  "python_files_syntax_checked": 61,
+  "wiki_lint": "Wiki lint: 0 error(s), 0 warning(s)",
+  "wiki_report_revision_current": true,
+  "repository_validator": {
+    "legacy_findings": 36,
+    "current_findings": [],
+    "legacy_sources_unchanged": true
+  },
+  "issue_pdf_qa": {
+    "status": "pass",
+    "pages": 3,
+    "source_hashes_current": true
+  },
+  "scientific_independent_audits": {
+    "independent_certified_mapping_audit.json": {
+      "status": "pass",
+      "actual_programs_checked": 375,
+      "exact_rational_selections_checked": 329,
+      "sorting_mismatches": 0,
+      "seconds": 35.00361870904453,
+      "scope": "Every saved successful actual program in the47model candidate pools, including all baselines. Independent graph/range/repair/rounding reader plus authoritative exact reduction audit."
+    },
+    "independent_standard_extension_audit.json": {
+      "status": "pass",
+      "physical_program_root_polynomials_checked": 192,
+      "saved_exact_dual_bounds_reconstructed": 960,
+      "nonzero_multipliers_checked": 11368,
+      "ordinary_feasible_witnesses_checked": 48,
+      "exact_gap_updates_checked": 2688,
+      "exact_selections_checked": 336,
+      "seconds": 14.975552041083574,
+      "scope": "Parent reconstructs root coefficients with its independent exact Walsh projection, then rebuilds each nonzero kernel/cost/triangle row directly from mathematical identities. No ordinary optimum oracle or LP run."
+    },
+    "independent_child_program_audit.json": {
+      "status": "pass",
+      "saved_program_records_checked": 373,
+      "distinct_core_witnesses": 309,
+      "maximum_classical_chain_bound": 0.0487673708309236,
+      "maximum_rounding_tv": 1.84519066692701e-12,
+      "seconds": 35.413343167165294
+    },
+    "event_projection_checks.json": {
+      "status": "pass",
+      "cases": 24,
+      "exact_physical_basis_states": 2688,
+      "exact_projected_coefficients_checked": 352,
+      "independent_ode_event_pair_checks": 24,
+      "seconds": 1.127337499987334
+    }
+  },
+  "active_work": {
+    "scientific_child": "completed; confirmed by collaboration inventory",
+    "parent_scientific_jobs": "all known submitted jobs completed",
+    "os_process_inventory": "unavailable in sandbox; no global process claim"
+  },
+  "scope": "Continuing scientific research and local issue formulation, not a blind trial or organizer acceptance."
+}

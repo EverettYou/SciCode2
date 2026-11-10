@@ -1,0 +1,492 @@
+{
+  "status": "pass",
+  "matrices": 60,
+  "original_optimal_patterns": 75,
+  "necessary_constraint_checks": 2084,
+  "exact_dual_bound_checks": 480,
+  "feasible_search_witnesses_checked": 60,
+  "seconds": 0.4825482501182705,
+  "scope": "Reference optimum enumeration only on small arbitrary matrices to validate constraints and bounds; never used in ordinary selection",
+  "records": [
+    {
+      "case": 0,
+      "n": 4,
+      "rank": 2,
+      "kernel_dimension": 2,
+      "optimum_patterns": 1,
+      "delta_terms": 3
+    },
+    {
+      "case": 1,
+      "n": 6,
+      "rank": 3,
+      "kernel_dimension": 3,
+      "optimum_patterns": 1,
+      "delta_terms": 4
+    },
+    {
+      "case": 2,
+      "n": 8,
+      "rank": 3,
+      "kernel_dimension": 5,
+      "optimum_patterns": 1,
+      "delta_terms": 10
+    },
+    {
+      "case": 3,
+      "n": 4,
+      "rank": 2,
+      "kernel_dimension": 2,
+      "optimum_patterns": 1,
+      "delta_terms": 4
+    },
+    {
+      "case": 4,
+      "n": 6,
+      "rank": 3,
+      "kernel_dimension": 3,
+      "optimum_patterns": 1,
+      "delta_terms": 7
+    },
+    {
+      "case": 5,
+      "n": 8,
+      "rank": 4,
+      "kernel_dimension": 4,
+      "optimum_patterns": 1,
+      "delta_terms": 7
+    },
+    {
+      "case": 6,
+      "n": 4,
+      "rank": 2,
+      "kernel_dimension": 2,
+      "optimum_patterns": 1,
+      "delta_terms": 4
+    },
+    {
+      "case": 7,
+      "n": 6,
+      "rank": 3,
+      "kernel_dimension": 3,
+      "optimum_patterns": 1,
+      "delta_terms": 7
+    },
+    {
+      "case": 8,
+      "n": 8,
+      "rank": 4,
+      "kernel_dimension": 4,
+      "optimum_patterns": 1,
+      "delta_terms": 10
+    },
+    {
+      "case": 9,
+      "n": 4,
+      "rank": 2,
+      "kernel_dimension": 2,
+      "optimum_patterns": 2,
+      "delta_terms": 3
+    },
+    {
+      "case": 10,
+      "n": 6,
+      "rank": 3,
+      "kernel_dimension": 3,
+      "optimum_patterns": 1,
+      "delta_terms": 7
+    },
+    {
+      "case": 11,
+      "n": 8,
+      "rank": 4,
+      "kernel_dimension": 4,
+      "optimum_patterns": 1,
+      "delta_terms": 9
+    },
+    {
+      "case": 12,
+      "n": 4,
+      "rank": 2,
+      "kernel_dimension": 2,
+      "optimum_patterns": 1,
+      "delta_terms": 4
+    },
+    {
+      "case": 13,
+      "n": 6,
+      "rank": 3,
+      "kernel_dimension": 3,
+      "optimum_patterns": 1,
+      "delta_terms": 7
+    },
+    {
+      "case": 14,
+      "n": 8,
+      "rank": 4,
+      "kernel_dimension": 4,
+      "optimum_patterns": 2,
+      "delta_terms": 7
+    },
+    {
+      "case": 15,
+      "n": 4,
+      "rank": 2,
+      "kernel_dimension": 2,
+      "optimum_patterns": 1,
+      "delta_terms": 3
+    },
+    {
+      "case": 16,
+      "n": 6,
+      "rank": 3,
+      "kernel_dimension": 3,
+      "optimum_patterns": 1,
+      "delta_terms": 7
+    },
+    {
+      "case": 17,
+      "n": 8,
+      "rank": 4,
+      "kernel_dimension": 4,
+      "optimum_patterns": 2,
+      "delta_terms": 6
+    },
+    {
+      "case": 18,
+      "n": 4,
+      "rank": 2,
+      "kernel_dimension": 2,
+      "optimum_patterns": 1,
+      "delta_terms": 4
+    },
+    {
+      "case": 19,
+      "n": 6,
+      "rank": 3,
+      "kernel_dimension": 3,
+      "optimum_patterns": 1,
+      "delta_terms": 7
+    },
+    {
+      "case": 20,
+      "n": 8,
+      "rank": 4,
+      "kernel_dimension": 4,
+      "optimum_patterns": 2,
+      "delta_terms": 11
+    },
+    {
+      "case": 21,
+      "n": 4,
+      "rank": 2,
+      "kernel_dimension": 2,
+      "optimum_patterns": 2,
+      "delta_terms": 3
+    },
+    {
+      "case": 22,
+      "n": 6,
+      "rank": 3,
+      "kernel_dimension": 3,
+      "optimum_patterns": 2,
+      "delta_terms": 7
+    },
+    {
+      "case": 23,
+      "n": 8,
+      "rank": 4,
+      "kernel_dimension": 4,
+      "optimum_patterns": 1,
+      "delta_terms": 9
+    },
+    {
+      "case": 24,
+      "n": 4,
+      "rank": 2,
+      "kernel_dimension": 2,
+      "optimum_patterns": 1,
+      "delta_terms": 4
+    },
+    {
+      "case": 25,
+      "n": 6,
+      "rank": 2,
+      "kernel_dimension": 4,
+      "optimum_patterns": 1,
+      "delta_terms": 9
+    },
+    {
+      "case": 26,
+      "n": 8,
+      "rank": 4,
+      "kernel_dimension": 4,
+      "optimum_patterns": 1,
+      "delta_terms": 7
+    },
+    {
+      "case": 27,
+      "n": 4,
+      "rank": 2,
+      "kernel_dimension": 2,
+      "optimum_patterns": 2,
+      "delta_terms": 3
+    },
+    {
+      "case": 28,
+      "n": 6,
+      "rank": 3,
+      "kernel_dimension": 3,
+      "optimum_patterns": 1,
+      "delta_terms": 7
+    },
+    {
+      "case": 29,
+      "n": 8,
+      "rank": 4,
+      "kernel_dimension": 4,
+      "optimum_patterns": 2,
+      "delta_terms": 6
+    },
+    {
+      "case": 30,
+      "n": 4,
+      "rank": 2,
+      "kernel_dimension": 2,
+      "optimum_patterns": 1,
+      "delta_terms": 4
+    },
+    {
+      "case": 31,
+      "n": 6,
+      "rank": 3,
+      "kernel_dimension": 3,
+      "optimum_patterns": 1,
+      "delta_terms": 7
+    },
+    {
+      "case": 32,
+      "n": 8,
+      "rank": 4,
+      "kernel_dimension": 4,
+      "optimum_patterns": 1,
+      "delta_terms": 8
+    },
+    {
+      "case": 33,
+      "n": 4,
+      "rank": 2,
+      "kernel_dimension": 2,
+      "optimum_patterns": 1,
+      "delta_terms": 4
+    },
+    {
+      "case": 34,
+      "n": 6,
+      "rank": 3,
+      "kernel_dimension": 3,
+      "optimum_patterns": 1,
+      "delta_terms": 8
+    },
+    {
+      "case": 35,
+      "n": 8,
+      "rank": 4,
+      "kernel_dimension": 4,
+      "optimum_patterns": 1,
+      "delta_terms": 9
+    },
+    {
+      "case": 36,
+      "n": 4,
+      "rank": 1,
+      "kernel_dimension": 3,
+      "optimum_patterns": 1,
+      "delta_terms": 4
+    },
+    {
+      "case": 37,
+      "n": 6,
+      "rank": 3,
+      "kernel_dimension": 3,
+      "optimum_patterns": 1,
+      "delta_terms": 4
+    },
+    {
+      "case": 38,
+      "n": 8,
+      "rank": 4,
+      "kernel_dimension": 4,
+      "optimum_patterns": 1,
+      "delta_terms": 8
+    },
+    {
+      "case": 39,
+      "n": 4,
+      "rank": 2,
+      "kernel_dimension": 2,
+      "optimum_patterns": 1,
+      "delta_terms": 3
+    },
+    {
+      "case": 40,
+      "n": 6,
+      "rank": 3,
+      "kernel_dimension": 3,
+      "optimum_patterns": 1,
+      "delta_terms": 5
+    },
+    {
+      "case": 41,
+      "n": 8,
+      "rank": 4,
+      "kernel_dimension": 4,
+      "optimum_patterns": 1,
+      "delta_terms": 12
+    },
+    {
+      "case": 42,
+      "n": 4,
+      "rank": 2,
+      "kernel_dimension": 2,
+      "optimum_patterns": 1,
+      "delta_terms": 3
+    },
+    {
+      "case": 43,
+      "n": 6,
+      "rank": 3,
+      "kernel_dimension": 3,
+      "optimum_patterns": 1,
+      "delta_terms": 7
+    },
+    {
+      "case": 44,
+      "n": 8,
+      "rank": 4,
+      "kernel_dimension": 4,
+      "optimum_patterns": 2,
+      "delta_terms": 8
+    },
+    {
+      "case": 45,
+      "n": 4,
+      "rank": 1,
+      "kernel_dimension": 3,
+      "optimum_patterns": 1,
+      "delta_terms": 6
+    },
+    {
+      "case": 46,
+      "n": 6,
+      "rank": 3,
+      "kernel_dimension": 3,
+      "optimum_patterns": 1,
+      "delta_terms": 6
+    },
+    {
+      "case": 47,
+      "n": 8,
+      "rank": 4,
+      "kernel_dimension": 4,
+      "optimum_patterns": 2,
+      "delta_terms": 8
+    },
+    {
+      "case": 48,
+      "n": 4,
+      "rank": 2,
+      "kernel_dimension": 2,
+      "optimum_patterns": 1,
+      "delta_terms": 4
+    },
+    {
+      "case": 49,
+      "n": 6,
+      "rank": 3,
+      "kernel_dimension": 3,
+      "optimum_patterns": 1,
+      "delta_terms": 5
+    },
+    {
+      "case": 50,
+      "n": 8,
+      "rank": 4,
+      "kernel_dimension": 4,
+      "optimum_patterns": 2,
+      "delta_terms": 8
+    },
+    {
+      "case": 51,
+      "n": 4,
+      "rank": 2,
+      "kernel_dimension": 2,
+      "optimum_patterns": 1,
+      "delta_terms": 3
+    },
+    {
+      "case": 52,
+      "n": 6,
+      "rank": 3,
+      "kernel_dimension": 3,
+      "optimum_patterns": 2,
+      "delta_terms": 6
+    },
+    {
+      "case": 53,
+      "n": 8,
+      "rank": 4,
+      "kernel_dimension": 4,
+      "optimum_patterns": 1,
+      "delta_terms": 13
+    },
+    {
+      "case": 54,
+      "n": 4,
+      "rank": 2,
+      "kernel_dimension": 2,
+      "optimum_patterns": 2,
+      "delta_terms": 3
+    },
+    {
+      "case": 55,
+      "n": 6,
+      "rank": 3,
+      "kernel_dimension": 3,
+      "optimum_patterns": 2,
+      "delta_terms": 5
+    },
+    {
+      "case": 56,
+      "n": 8,
+      "rank": 4,
+      "kernel_dimension": 4,
+      "optimum_patterns": 1,
+      "delta_terms": 11
+    },
+    {
+      "case": 57,
+      "n": 4,
+      "rank": 1,
+      "kernel_dimension": 3,
+      "optimum_patterns": 1,
+      "delta_terms": 6
+    },
+    {
+      "case": 58,
+      "n": 6,
+      "rank": 3,
+      "kernel_dimension": 3,
+      "optimum_patterns": 2,
+      "delta_terms": 5
+    },
+    {
+      "case": 59,
+      "n": 8,
+      "rank": 4,
+      "kernel_dimension": 4,
+      "optimum_patterns": 1,
+      "delta_terms": 6
+    }
+  ]
+}

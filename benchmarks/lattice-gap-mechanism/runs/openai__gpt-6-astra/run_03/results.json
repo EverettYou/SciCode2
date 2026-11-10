@@ -1,0 +1,537 @@
+{
+  "source": "measurements.json",
+  "energy_unit": "D",
+  "important": "Statistical observable fits and deliberately arbitrary spectral counterexamples; no uniquely fitted Hamiltonian.",
+  "uncertainty_convention": "Supplied errors used as independent 1-sigma marginal errors; normalization covariance not supplied.",
+  "NMR_activation": [
+    {
+      "filling": "1/2",
+      "constant_prefactor": {
+        "log_amplitude_at_T4": -0.010185285199287493,
+        "activation_energy_D": 5.538280950809721,
+        "activation_energy_1sigma_D": 0.13462566869435588,
+        "power": 0.0,
+        "power_fitted": false,
+        "power_1sigma": null,
+        "chi2": 1.6937429081302706,
+        "dof": 16,
+        "T_range_D": [
+          0.4472,
+          4.4318
+        ],
+        "n_points": 18,
+        "covariance": [
+          [
+            0.01050274582900508,
+            0.010954735498496817
+          ],
+          [
+            0.010954735498496817,
+            0.018124070671402474
+          ]
+        ]
+      },
+      "free_power_prefactor": {
+        "log_amplitude_at_T4": -0.018719218077346732,
+        "activation_energy_D": 5.586422626410057,
+        "activation_energy_1sigma_D": 0.516233483877698,
+        "power": -0.035943650933351015,
+        "power_fitted": true,
+        "power_1sigma": 0.37067352931928305,
+        "chi2": 1.684474082815892,
+        "dof": 15,
+        "T_range_D": [
+          0.4472,
+          4.4318
+        ],
+        "n_points": 18,
+        "covariance": [
+          [
+            0.01823394068841666,
+            -0.0325389813245804,
+            0.032445880652180806
+          ],
+          [
+            -0.032538981324580475,
+            0.2664970098765055,
+            -0.1846637254788161
+          ],
+          [
+            0.032445880652180854,
+            -0.18466372547881604,
+            0.13739886533801338
+          ]
+        ]
+      }
+    },
+    {
+      "filling": "≈0.3",
+      "constant_prefactor": {
+        "log_amplitude_at_T4": 0.06459940405734398,
+        "activation_energy_D": 2.6310693270889356,
+        "activation_energy_1sigma_D": 0.050416696488757705,
+        "power": 0.0,
+        "power_fitted": false,
+        "power_1sigma": null,
+        "chi2": 7.094441396725492,
+        "dof": 24,
+        "T_range_D": [
+          0.3085,
+          4.4318
+        ],
+        "n_points": 26,
+        "covariance": [
+          [
+            0.006636818084422522,
+            0.003424289803813975
+          ],
+          [
+            0.0034242898038139746,
+            0.0025418432848395133
+          ]
+        ]
+      },
+      "free_power_prefactor": {
+        "log_amplitude_at_T4": 0.05314512376809414,
+        "activation_energy_D": 2.6496556785871066,
+        "activation_energy_1sigma_D": 0.1527785385301681,
+        "power": -0.022509939913888367,
+        "power_fitted": true,
+        "power_1sigma": 0.17603746412766005,
+        "chi2": 7.0778086544842544,
+        "dof": 23,
+        "T_range_D": [
+          0.3085,
+          4.4318
+        ],
+        "n_points": 26,
+        "covariance": [
+          [
+            0.015071311642059557,
+            -0.009747706746488664,
+            0.01612650234603795
+          ],
+          [
+            -0.009747706746488685,
+            0.023341281835414056,
+            -0.025373356684652647
+          ],
+          [
+            0.016126502346037977,
+            -0.02537335668465263,
+            0.030989188776497197
+          ]
+        ]
+      }
+    },
+    {
+      "filling": "≈0.2",
+      "constant_prefactor": {
+        "log_amplitude_at_T4": 2.340009040479241,
+        "activation_energy_D": 1.746474062055287,
+        "activation_energy_1sigma_D": 0.041553332897871914,
+        "power": 0.0,
+        "power_fitted": false,
+        "power_1sigma": null,
+        "chi2": 4.069860173089447,
+        "dof": 26,
+        "T_range_D": [
+          0.2,
+          0.622
+        ],
+        "n_points": 28,
+        "covariance": [
+          [
+            0.017827995008371754,
+            0.0052658401528928
+          ],
+          [
+            0.005265840152892799,
+            0.0017266794749213642
+          ]
+        ]
+      },
+      "free_power_prefactor": {
+        "log_amplitude_at_T4": 2.42888605045882,
+        "activation_energy_D": 1.728008394639817,
+        "activation_energy_1sigma_D": 0.2725048623630263,
+        "power": 0.057421122390027717,
+        "power_fitted": true,
+        "power_1sigma": 0.836597370016774,
+        "chi2": 4.065053007426243,
+        "dof": 25,
+        "T_range_D": [
+          0.2,
+          0.622
+        ],
+        "n_points": 28,
+        "covariance": [
+          [
+            1.6916605181239535,
+            -0.34322637486297997,
+            1.0823888858923119
+          ],
+          [
+            -0.343226374862977,
+            0.0742589000114919,
+            -0.2253246581057138
+          ],
+          [
+            1.0823888858923083,
+            -0.22532465810571495,
+            0.6998951595189832
+          ]
+        ]
+      }
+    }
+  ],
+  "resistivity_activation": [
+    {
+      "filling": "1/2",
+      "constant_prefactor": {
+        "log_amplitude_at_T4": 0.05926730572120909,
+        "activation_energy_D": 3.721745810190856,
+        "activation_energy_1sigma_D": 0.04850302456933289,
+        "power": 0.0,
+        "power_fitted": false,
+        "power_1sigma": null,
+        "chi2": 10.914371369474335,
+        "dof": 46,
+        "T_range_D": [
+          0.45,
+          4.0
+        ],
+        "n_points": 48,
+        "covariance": [
+          [
+            0.0008104127855704361,
+            -0.0008910861920883098
+          ],
+          [
+            -0.0008910861920883097,
+            0.00235254339237331
+          ]
+        ]
+      },
+      "free_power_prefactor": {
+        "log_amplitude_at_T4": 0.0675951745689119,
+        "activation_energy_D": 3.7607342032881794,
+        "activation_energy_1sigma_D": 0.1611369887339398,
+        "power": 0.03155570942873417,
+        "power_fitted": true,
+        "power_1sigma": 0.12460136332601497,
+        "chi2": 10.849911123116112,
+        "dof": 45,
+        "T_range_D": [
+          0.45,
+          4.0
+        ],
+        "n_points": 48,
+        "covariance": [
+          [
+            0.0018802565848527835,
+            0.0041599427842256105,
+            0.004083809971578745
+          ],
+          [
+            0.00415994278422561,
+            0.02596512913824184,
+            0.019159000634903816
+          ],
+          [
+            0.004083809971578744,
+            0.019159000634903823,
+            0.015525499742701588
+          ]
+        ]
+      }
+    },
+    {
+      "filling": "≈0.3",
+      "constant_prefactor": {
+        "log_amplitude_at_T4": 0.03992665851674948,
+        "activation_energy_D": 0.899901356369542,
+        "activation_energy_1sigma_D": 0.04358003866745483,
+        "power": 0.0,
+        "power_fitted": false,
+        "power_1sigma": null,
+        "chi2": 8.539174048950828,
+        "dof": 47,
+        "T_range_D": [
+          0.4,
+          4.0
+        ],
+        "n_points": 49,
+        "covariance": [
+          [
+            0.0007748610423700262,
+            -0.0007699974242638233
+          ],
+          [
+            -0.0007699974242638233,
+            0.0018992197702568582
+          ]
+        ]
+      },
+      "free_power_prefactor": {
+        "log_amplitude_at_T4": 0.05064311850887504,
+        "activation_energy_D": 0.9448667337308232,
+        "activation_energy_1sigma_D": 0.13989353336114116,
+        "power": 0.0383435782478529,
+        "power_fitted": true,
+        "power_1sigma": 0.11430804217776214,
+        "chi2": 8.428666439207344,
+        "dof": 46,
+        "T_range_D": [
+          0.4,
+          4.0
+        ],
+        "n_points": 49,
+        "covariance": [
+          [
+            0.0018012209367512242,
+            0.003516757659207189,
+            0.0036714374037059147
+          ],
+          [
+            0.0035167576592071907,
+            0.019570200676264714,
+            0.015209407932671913
+          ],
+          [
+            0.0036714374037059155,
+            0.015209407932671911,
+            0.013066328506513049
+          ]
+        ]
+      }
+    }
+  ],
+  "transition_brackets": [
+    {
+      "filling": "≈0.3",
+      "last_zero_resistance_T_D": 0.325,
+      "first_nonzero_resistance_T_D": 0.4,
+      "bracket_midpoint_D": 0.36250000000000004,
+      "bracket_halfwidth_D": 0.037500000000000006,
+      "meaning": "sampling bracket, not a statistical confidence interval"
+    },
+    {
+      "filling": "≈0.2",
+      "last_zero_resistance_T_D": 1.075,
+      "first_nonzero_resistance_T_D": 1.15,
+      "bracket_midpoint_D": 1.1124999999999998,
+      "bracket_halfwidth_D": 0.03749999999999998,
+      "meaning": "sampling bracket, not a statistical confidence interval"
+    }
+  ],
+  "half_filling_lowest_resistivity_temperature_D": 0.45,
+  "STS_features": [
+    {
+      "panel": "a",
+      "filling": "1/2",
+      "smoothed_peak_bias_D": [
+        -5.2,
+        6.825
+      ],
+      "rough_high_frequency_noise_scale": 0.009790266605994528,
+      "bias_step_D": 0.025000000000000355,
+      "note": "Noise estimate is descriptive; no STS uncertainty array is supplied."
+    },
+    {
+      "panel": "b",
+      "filling": "≈0.3",
+      "smoothed_peak_bias_D": [
+        -5.1,
+        5.075
+      ],
+      "rough_high_frequency_noise_scale": 0.011083885288488422,
+      "bias_step_D": 0.025000000000000355,
+      "note": "Noise estimate is descriptive; no STS uncertainty array is supplied."
+    },
+    {
+      "panel": "c",
+      "filling": "≈0.2",
+      "smoothed_peak_bias_D": [
+        -2.05,
+        2.05,
+        3.325
+      ],
+      "rough_high_frequency_noise_scale": 0.01125136907530382,
+      "bias_step_D": 0.025000000000000355,
+      "note": "Noise estimate is descriptive; no STS uncertainty array is supplied."
+    },
+    {
+      "panel": "d",
+      "filling": "≈0.3",
+      "smoothed_peak_bias_D": [
+        1.65
+      ],
+      "rough_high_frequency_noise_scale": 0.04038947935121378,
+      "bias_step_D": 0.025000000000000355,
+      "note": "Noise estimate is descriptive; no STS uncertainty array is supplied."
+    }
+  ],
+  "conditional_band_fit": {
+    "parameters": {
+      "t1_D": 0.99864185424081,
+      "t2_D": 0.19566575279628456,
+      "mu_D": -0.9060121817780602,
+      "Lorentz_width_D": 0.0876132614555502,
+      "amplitude": 3.51408334024405,
+      "background_constant": -0.00619812043985325,
+      "background_quadratic": 0.001444420807211585
+    },
+    "conditional_1sigma": {
+      "t1_D": 0.0039276951675570205,
+      "t2_D": 0.0022271070504820967,
+      "mu_D": 0.009094014487849543,
+      "Lorentz_width_D": 0.00941242803680172,
+      "amplitude": 0.04657983752891985,
+      "background_constant": 0.005032364674357906,
+      "background_quadratic": 8.47203455480682e-05
+    },
+    "residual_rms": 0.04726097603270783,
+    "kx_quadrature_points": 420,
+    "assumptions": "High-temperature STS is the DOS of a noninteracting square lattice with only NN and both NNN hoppings, a constant tunneling matrix element, Lorentz broadening, and a quadratic background. The uncertainty omits all model error. The high STS temperature is unspecified, so no thermal number equation was imposed."
+  },
+  "illustrative_spectral_completions": [
+    {
+      "filling": 0.5,
+      "chosen_window_weight": 0.5,
+      "chosen_gap_halfwidth_D": 3.7,
+      "unobserved_negative_satellite_weight": 0.25136859010204304,
+      "unobserved_positive_satellite_weight": 0.248631409897957,
+      "satellite_support_D": [
+        [
+          -16.0,
+          -14.0
+        ],
+        [
+          14.0,
+          16.0
+        ]
+      ],
+      "normalization": 0.9999999999999999,
+      "occupation_per_spin": 0.4999999999999999
+    },
+    {
+      "filling": 0.3,
+      "chosen_window_weight": 0.5,
+      "chosen_gap_halfwidth_D": 2.4,
+      "unobserved_negative_satellite_weight": 0.09844888844464694,
+      "unobserved_positive_satellite_weight": 0.40155111155535306,
+      "satellite_support_D": [
+        [
+          -16.0,
+          -14.0
+        ],
+        [
+          14.0,
+          16.0
+        ]
+      ],
+      "normalization": 0.9999999999999999,
+      "occupation_per_spin": 0.29999999999999993
+    },
+    {
+      "filling": 0.2,
+      "chosen_window_weight": 0.5,
+      "chosen_gap_halfwidth_D": 1.25,
+      "unobserved_negative_satellite_weight": 0.044003763715450284,
+      "unobserved_positive_satellite_weight": 0.45599623628454977,
+      "satellite_support_D": [
+        [
+          -16.0,
+          -14.0
+        ],
+        [
+          14.0,
+          16.0
+        ]
+      ],
+      "normalization": 1.0,
+      "occupation_per_spin": 0.2
+    }
+  ],
+  "KK_counterexamples": {
+    "C_minus_inverse_D": 0.11866771124505192,
+    "C_plus_inverse_D": 0.11000521393468649,
+    "gamma": 0.03788160449496438,
+    "examples": [
+      {
+        "target_fraction": 0.5,
+        "beta": 0.2,
+        "alpha": 0.3179104314268017,
+        "h_threshold": -0.11915810476853306,
+        "min_removal_weight": 0.37283615426802774,
+        "max_removal_weight": 0.6907454962335791
+      },
+      {
+        "target_fraction": 0.6,
+        "beta": 0.0,
+        "alpha": 0.3552122854734891,
+        "h_threshold": -0.1066449727223515,
+        "min_removal_weight": 0.32239446590956333,
+        "max_removal_weight": 0.6776055340904367
+      },
+      {
+        "target_fraction": 0.8,
+        "beta": 0.0,
+        "alpha": 0.0813567580218527,
+        "h_threshold": -0.465623328854737,
+        "min_removal_weight": 0.45932176039160116,
+        "max_removal_weight": 0.5406782396083989
+      }
+    ],
+    "area_grid_check": [
+      {
+        "grid": [
+          400,
+          400
+        ],
+        "fractions_on_Gamma_side": [
+          0.5001,
+          0.599975,
+          0.799975
+        ]
+      },
+      {
+        "grid": [
+          800,
+          800
+        ],
+        "fractions_on_Gamma_side": [
+          0.499975,
+          0.6000625,
+          0.7999625
+        ]
+      },
+      {
+        "grid": [
+          1600,
+          1600
+        ],
+        "fractions_on_Gamma_side": [
+          0.5000234375,
+          0.5999890625,
+          0.7999734375
+        ]
+      }
+    ],
+    "max_direct_KK_error_inverse_D": [
+      2.5673907444456745e-16,
+      2.42861286636753e-16,
+      1.8561541192951836e-16
+    ],
+    "frequency_grid": {
+      "points": 2881,
+      "range_D": [
+        -18.0,
+        18.0
+      ],
+      "step_D": 0.01249999999999929
+    },
+    "meaning": "Constructive ambiguity, not an inferred Luttinger volume."
+  }
+}

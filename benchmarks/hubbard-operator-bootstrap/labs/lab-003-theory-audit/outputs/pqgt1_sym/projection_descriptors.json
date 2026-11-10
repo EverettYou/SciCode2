@@ -1,0 +1,554 @@
+[
+  {
+    "block_name": "T1_(0, 0, 0)_char(1, 1)",
+    "source_name": "T1_(0, 0, 0)",
+    "source_kind": "T1",
+    "W_file": "projection_000_0.npz",
+    "source_dim": 35,
+    "projected_dim": 9,
+    "reflection_generators": [
+      "rx",
+      "ry"
+    ],
+    "characters": [
+      1,
+      1
+    ]
+  },
+  {
+    "block_name": "T1_(0, 0, 0)_char(1, -1)",
+    "source_name": "T1_(0, 0, 0)",
+    "source_kind": "T1",
+    "W_file": "projection_000_1.npz",
+    "source_dim": 35,
+    "projected_dim": 10,
+    "reflection_generators": [
+      "rx",
+      "ry"
+    ],
+    "characters": [
+      1,
+      -1
+    ]
+  },
+  {
+    "block_name": "T1_(0, 0, 0)_char(-1, 1)",
+    "source_name": "T1_(0, 0, 0)",
+    "source_kind": "T1",
+    "W_file": "projection_000_2.npz",
+    "source_dim": 35,
+    "projected_dim": 10,
+    "reflection_generators": [
+      "rx",
+      "ry"
+    ],
+    "characters": [
+      -1,
+      1
+    ]
+  },
+  {
+    "block_name": "T1_(0, 0, 0)_char(-1, -1)",
+    "source_name": "T1_(0, 0, 0)",
+    "source_kind": "T1",
+    "W_file": "projection_000_3.npz",
+    "source_dim": 35,
+    "projected_dim": 6,
+    "reflection_generators": [
+      "rx",
+      "ry"
+    ],
+    "characters": [
+      -1,
+      -1
+    ]
+  },
+  {
+    "block_name": "T1_(0, 1, 0)_char(1,)",
+    "source_name": "T1_(0, 1, 0)",
+    "source_kind": "T1",
+    "W_file": "projection_001_0.npz",
+    "source_dim": 35,
+    "projected_dim": 19,
+    "reflection_generators": [
+      "ry"
+    ],
+    "characters": [
+      1
+    ]
+  },
+  {
+    "block_name": "T1_(0, 1, 0)_char(-1,)",
+    "source_name": "T1_(0, 1, 0)",
+    "source_kind": "T1",
+    "W_file": "projection_001_1.npz",
+    "source_dim": 35,
+    "projected_dim": 16,
+    "reflection_generators": [
+      "ry"
+    ],
+    "characters": [
+      -1
+    ]
+  },
+  {
+    "block_name": "T1_(0, 1, 1)_char(1,)",
+    "source_name": "T1_(0, 1, 1)",
+    "source_kind": "T1",
+    "W_file": "projection_002_0.npz",
+    "source_dim": 35,
+    "projected_dim": 15,
+    "reflection_generators": [
+      "swap"
+    ],
+    "characters": [
+      1
+    ]
+  },
+  {
+    "block_name": "T1_(0, 1, 1)_char(-1,)",
+    "source_name": "T1_(0, 1, 1)",
+    "source_kind": "T1",
+    "W_file": "projection_002_1.npz",
+    "source_dim": 35,
+    "projected_dim": 20,
+    "reflection_generators": [
+      "swap"
+    ],
+    "characters": [
+      -1
+    ]
+  },
+  {
+    "block_name": "T1_(0, 2, 0)_char(1, 1)",
+    "source_name": "T1_(0, 2, 0)",
+    "source_kind": "T1",
+    "W_file": "projection_003_0.npz",
+    "source_dim": 35,
+    "projected_dim": 9,
+    "reflection_generators": [
+      "rx",
+      "ry"
+    ],
+    "characters": [
+      1,
+      1
+    ]
+  },
+  {
+    "block_name": "T1_(0, 2, 0)_char(1, -1)",
+    "source_name": "T1_(0, 2, 0)",
+    "source_kind": "T1",
+    "W_file": "projection_003_1.npz",
+    "source_dim": 35,
+    "projected_dim": 10,
+    "reflection_generators": [
+      "rx",
+      "ry"
+    ],
+    "characters": [
+      1,
+      -1
+    ]
+  },
+  {
+    "block_name": "T1_(0, 2, 0)_char(-1, 1)",
+    "source_name": "T1_(0, 2, 0)",
+    "source_kind": "T1",
+    "W_file": "projection_003_2.npz",
+    "source_dim": 35,
+    "projected_dim": 10,
+    "reflection_generators": [
+      "rx",
+      "ry"
+    ],
+    "characters": [
+      -1,
+      1
+    ]
+  },
+  {
+    "block_name": "T1_(0, 2, 0)_char(-1, -1)",
+    "source_name": "T1_(0, 2, 0)",
+    "source_kind": "T1",
+    "W_file": "projection_003_3.npz",
+    "source_dim": 35,
+    "projected_dim": 6,
+    "reflection_generators": [
+      "rx",
+      "ry"
+    ],
+    "characters": [
+      -1,
+      -1
+    ]
+  },
+  {
+    "block_name": "T1_(0, 2, 1)_char(1,)",
+    "source_name": "T1_(0, 2, 1)",
+    "source_kind": "T1",
+    "W_file": "projection_004_0.npz",
+    "source_dim": 35,
+    "projected_dim": 19,
+    "reflection_generators": [
+      "rx"
+    ],
+    "characters": [
+      1
+    ]
+  },
+  {
+    "block_name": "T1_(0, 2, 1)_char(-1,)",
+    "source_name": "T1_(0, 2, 1)",
+    "source_kind": "T1",
+    "W_file": "projection_004_1.npz",
+    "source_dim": 35,
+    "projected_dim": 16,
+    "reflection_generators": [
+      "rx"
+    ],
+    "characters": [
+      -1
+    ]
+  },
+  {
+    "block_name": "T1_(0, 2, 2)_char(1, 1)",
+    "source_name": "T1_(0, 2, 2)",
+    "source_kind": "T1",
+    "W_file": "projection_005_0.npz",
+    "source_dim": 35,
+    "projected_dim": 9,
+    "reflection_generators": [
+      "rx",
+      "ry"
+    ],
+    "characters": [
+      1,
+      1
+    ]
+  },
+  {
+    "block_name": "T1_(0, 2, 2)_char(1, -1)",
+    "source_name": "T1_(0, 2, 2)",
+    "source_kind": "T1",
+    "W_file": "projection_005_1.npz",
+    "source_dim": 35,
+    "projected_dim": 10,
+    "reflection_generators": [
+      "rx",
+      "ry"
+    ],
+    "characters": [
+      1,
+      -1
+    ]
+  },
+  {
+    "block_name": "T1_(0, 2, 2)_char(-1, 1)",
+    "source_name": "T1_(0, 2, 2)",
+    "source_kind": "T1",
+    "W_file": "projection_005_2.npz",
+    "source_dim": 35,
+    "projected_dim": 10,
+    "reflection_generators": [
+      "rx",
+      "ry"
+    ],
+    "characters": [
+      -1,
+      1
+    ]
+  },
+  {
+    "block_name": "T1_(0, 2, 2)_char(-1, -1)",
+    "source_name": "T1_(0, 2, 2)",
+    "source_kind": "T1",
+    "W_file": "projection_005_3.npz",
+    "source_dim": 35,
+    "projected_dim": 6,
+    "reflection_generators": [
+      "rx",
+      "ry"
+    ],
+    "characters": [
+      -1,
+      -1
+    ]
+  },
+  {
+    "block_name": "T1_(1, 0, 0)_char(1, 1)",
+    "source_name": "T1_(1, 0, 0)",
+    "source_kind": "T1",
+    "W_file": "projection_006_0.npz",
+    "source_dim": 120,
+    "projected_dim": 42,
+    "reflection_generators": [
+      "rx",
+      "ry"
+    ],
+    "characters": [
+      1,
+      1
+    ]
+  },
+  {
+    "block_name": "T1_(1, 0, 0)_char(1, -1)",
+    "source_name": "T1_(1, 0, 0)",
+    "source_kind": "T1",
+    "W_file": "projection_006_1.npz",
+    "source_dim": 120,
+    "projected_dim": 30,
+    "reflection_generators": [
+      "rx",
+      "ry"
+    ],
+    "characters": [
+      1,
+      -1
+    ]
+  },
+  {
+    "block_name": "T1_(1, 0, 0)_char(-1, 1)",
+    "source_name": "T1_(1, 0, 0)",
+    "source_kind": "T1",
+    "W_file": "projection_006_2.npz",
+    "source_dim": 120,
+    "projected_dim": 30,
+    "reflection_generators": [
+      "rx",
+      "ry"
+    ],
+    "characters": [
+      -1,
+      1
+    ]
+  },
+  {
+    "block_name": "T1_(1, 0, 0)_char(-1, -1)",
+    "source_name": "T1_(1, 0, 0)",
+    "source_kind": "T1",
+    "W_file": "projection_006_3.npz",
+    "source_dim": 120,
+    "projected_dim": 18,
+    "reflection_generators": [
+      "rx",
+      "ry"
+    ],
+    "characters": [
+      -1,
+      -1
+    ]
+  },
+  {
+    "block_name": "T1_(1, 1, 0)_char(1,)",
+    "source_name": "T1_(1, 1, 0)",
+    "source_kind": "T1",
+    "W_file": "projection_007_0.npz",
+    "source_dim": 120,
+    "projected_dim": 72,
+    "reflection_generators": [
+      "ry"
+    ],
+    "characters": [
+      1
+    ]
+  },
+  {
+    "block_name": "T1_(1, 1, 0)_char(-1,)",
+    "source_name": "T1_(1, 1, 0)",
+    "source_kind": "T1",
+    "W_file": "projection_007_1.npz",
+    "source_dim": 120,
+    "projected_dim": 48,
+    "reflection_generators": [
+      "ry"
+    ],
+    "characters": [
+      -1
+    ]
+  },
+  {
+    "block_name": "T1_(1, 1, 1)_char(1,)",
+    "source_name": "T1_(1, 1, 1)",
+    "source_kind": "T1",
+    "W_file": "projection_008_0.npz",
+    "source_dim": 120,
+    "projected_dim": 60,
+    "reflection_generators": [
+      "swap"
+    ],
+    "characters": [
+      1
+    ]
+  },
+  {
+    "block_name": "T1_(1, 1, 1)_char(-1,)",
+    "source_name": "T1_(1, 1, 1)",
+    "source_kind": "T1",
+    "W_file": "projection_008_1.npz",
+    "source_dim": 120,
+    "projected_dim": 60,
+    "reflection_generators": [
+      "swap"
+    ],
+    "characters": [
+      -1
+    ]
+  },
+  {
+    "block_name": "T1_(1, 2, 0)_char(1, 1)",
+    "source_name": "T1_(1, 2, 0)",
+    "source_kind": "T1",
+    "W_file": "projection_009_0.npz",
+    "source_dim": 120,
+    "projected_dim": 42,
+    "reflection_generators": [
+      "rx",
+      "ry"
+    ],
+    "characters": [
+      1,
+      1
+    ]
+  },
+  {
+    "block_name": "T1_(1, 2, 0)_char(1, -1)",
+    "source_name": "T1_(1, 2, 0)",
+    "source_kind": "T1",
+    "W_file": "projection_009_1.npz",
+    "source_dim": 120,
+    "projected_dim": 30,
+    "reflection_generators": [
+      "rx",
+      "ry"
+    ],
+    "characters": [
+      1,
+      -1
+    ]
+  },
+  {
+    "block_name": "T1_(1, 2, 0)_char(-1, 1)",
+    "source_name": "T1_(1, 2, 0)",
+    "source_kind": "T1",
+    "W_file": "projection_009_2.npz",
+    "source_dim": 120,
+    "projected_dim": 30,
+    "reflection_generators": [
+      "rx",
+      "ry"
+    ],
+    "characters": [
+      -1,
+      1
+    ]
+  },
+  {
+    "block_name": "T1_(1, 2, 0)_char(-1, -1)",
+    "source_name": "T1_(1, 2, 0)",
+    "source_kind": "T1",
+    "W_file": "projection_009_3.npz",
+    "source_dim": 120,
+    "projected_dim": 18,
+    "reflection_generators": [
+      "rx",
+      "ry"
+    ],
+    "characters": [
+      -1,
+      -1
+    ]
+  },
+  {
+    "block_name": "T1_(1, 2, 1)_char(1,)",
+    "source_name": "T1_(1, 2, 1)",
+    "source_kind": "T1",
+    "W_file": "projection_010_0.npz",
+    "source_dim": 120,
+    "projected_dim": 72,
+    "reflection_generators": [
+      "rx"
+    ],
+    "characters": [
+      1
+    ]
+  },
+  {
+    "block_name": "T1_(1, 2, 1)_char(-1,)",
+    "source_name": "T1_(1, 2, 1)",
+    "source_kind": "T1",
+    "W_file": "projection_010_1.npz",
+    "source_dim": 120,
+    "projected_dim": 48,
+    "reflection_generators": [
+      "rx"
+    ],
+    "characters": [
+      -1
+    ]
+  },
+  {
+    "block_name": "T1_(1, 2, 2)_char(1, 1)",
+    "source_name": "T1_(1, 2, 2)",
+    "source_kind": "T1",
+    "W_file": "projection_011_0.npz",
+    "source_dim": 120,
+    "projected_dim": 42,
+    "reflection_generators": [
+      "rx",
+      "ry"
+    ],
+    "characters": [
+      1,
+      1
+    ]
+  },
+  {
+    "block_name": "T1_(1, 2, 2)_char(1, -1)",
+    "source_name": "T1_(1, 2, 2)",
+    "source_kind": "T1",
+    "W_file": "projection_011_1.npz",
+    "source_dim": 120,
+    "projected_dim": 30,
+    "reflection_generators": [
+      "rx",
+      "ry"
+    ],
+    "characters": [
+      1,
+      -1
+    ]
+  },
+  {
+    "block_name": "T1_(1, 2, 2)_char(-1, 1)",
+    "source_name": "T1_(1, 2, 2)",
+    "source_kind": "T1",
+    "W_file": "projection_011_2.npz",
+    "source_dim": 120,
+    "projected_dim": 30,
+    "reflection_generators": [
+      "rx",
+      "ry"
+    ],
+    "characters": [
+      -1,
+      1
+    ]
+  },
+  {
+    "block_name": "T1_(1, 2, 2)_char(-1, -1)",
+    "source_name": "T1_(1, 2, 2)",
+    "source_kind": "T1",
+    "W_file": "projection_011_3.npz",
+    "source_dim": 120,
+    "projected_dim": 18,
+    "reflection_generators": [
+      "rx",
+      "ry"
+    ],
+    "characters": [
+      -1,
+      -1
+    ]
+  }
+]

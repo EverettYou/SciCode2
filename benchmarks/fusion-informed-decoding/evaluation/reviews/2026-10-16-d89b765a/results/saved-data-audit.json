@@ -1,0 +1,18 @@
+{
+  "GPT1": {
+    "files": 677,
+    "trials": 1319100,
+    "inconsistencies": []
+  },
+  "GPT2": {
+    "decoder_evaluation_rows": 305024,
+    "matching_archived_data_hashes": 4,
+    "inconsistencies": []
+  },
+  "GPT3": {
+    "files": 423,
+    "archived_trial_slots": 340600,
+    "inconsistencies": [],
+    "note": "Includes the 200 conservatively failed reserved slots in the externally terminated batch; these are not evidence that 200 physical trials actually ran."
+  }
+}

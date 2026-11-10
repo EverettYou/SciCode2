@@ -1,0 +1,56 @@
+{
+  "name": "mixed_hypergraph_n64_s2203",
+  "input_sha256": "8efe08f3ba242f2299d36265b18a12066727f9af71ac8ae88cee02f1c7705ba4",
+  "parameters": {
+    "n": 64,
+    "N": 610,
+    "eta": {
+      "numerator_hex": "0x1ebd4b1fb44d345",
+      "denominator_hex": "0x4000000000000000"
+    },
+    "D": {
+      "numerator_hex": "-0xd",
+      "denominator_hex": "0x20"
+    },
+    "rho": {
+      "numerator_hex": "0x337",
+      "denominator_hex": "0x2000000000000000"
+    },
+    "curvature": {
+      "numerator_hex": "-0x18f9cd09c2805601",
+      "denominator_hex": "0x600000000000000000"
+    },
+    "g0": {
+      "numerator_hex": "0x5a9a88b1ba2485",
+      "denominator_hex": "0x20000000000000"
+    },
+    "g1": {
+      "numerator_hex": "0xb4ba1c36f577d5",
+      "denominator_hex": "0x40000000000000"
+    },
+    "lambda0": {
+      "numerator_hex": "0x3775b069aa7fa223ec5",
+      "denominator_hex": "0x20000000000000000"
+    },
+    "lambda1": {
+      "numerator_hex": "0x376de2599772da8a0d",
+      "denominator_hex": "0x2000000000000000"
+    }
+  },
+  "parent_certificate": {
+    "coefficient_lower_exact": [
+      -599898322637569579,
+      590295810358705651712
+    ],
+    "coefficient_lower": -0.0010162672885532234,
+    "cost_advantage_positive": false,
+    "status": "inconclusive_nonpositive_curvature_bound"
+  },
+  "actual_curvature_global_control": {
+    "status": "inconclusive_nonpositive_actual_curvature"
+  },
+  "relative_event_local": {
+    "status": "inconclusive_nonpositive_actual_curvature"
+  },
+  "seconds": 0.034137082984671
+}

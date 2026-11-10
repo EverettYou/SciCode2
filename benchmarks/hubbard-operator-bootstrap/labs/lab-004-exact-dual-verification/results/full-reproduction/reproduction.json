@@ -1,0 +1,48 @@
+{
+  "completed": true,
+  "total_wall_seconds": 198.86504200077616,
+  "stages": [
+    {
+      "stage": "solve",
+      "wall_seconds_including_python_startup": 192.1257920837961,
+      "exit_code": 0,
+      "log": "solve.log"
+    },
+    {
+      "stage": "physical-audit",
+      "wall_seconds_including_python_startup": 4.44704629201442,
+      "exit_code": 0,
+      "log": "physical-audit.log"
+    },
+    {
+      "stage": "exact-certificate",
+      "wall_seconds_including_python_startup": 2.2834349169861525,
+      "exit_code": 0,
+      "log": "exact-certificate.log"
+    }
+  ],
+  "certified_total_energy_lower_bound": "-8.764969112905",
+  "operator_space_dimension": 33825,
+  "nvar": 331,
+  "nblocks": 244,
+  "max_psd_dim": 233,
+  "psd_entries": 410274,
+  "construction_seconds": 5.666435499908403,
+  "solve_seconds": 183.91089579183608,
+  "export_seconds": 0.7625926251057535,
+  "largest_stage_process_peak_rss_bytes": 388218880,
+  "resource_scope": "Sequential full T2-prime model construction, solve, export, independent physical audit and exact certificate.",
+  "input_sha256": {},
+  "resumed_successful_stage_seconds": 192.1257920837961,
+  "prior_failed_stages": [
+    {
+      "stage": "physical-audit",
+      "wall_seconds_including_python_startup": 2.857834459049627,
+      "exit_code": 1,
+      "log": "physical-audit.log",
+      "diagnostic": "KeyError: kind during descriptor physical-basis check; original failure log was overwritten on resume, traceback retained in task tool history."
+    }
+  ],
+  "total_wall_seconds_scope": "Successful prior stage walls plus current elapsed; manual restart gap and prior failed stages are excluded and recorded separately.",
+  "validation_repair": "Initial audit failed because source_operator_blocks.json lacked kind metadata. Added kind=T2prime to source descriptors and fixed the exporter; reused completed solve and resumed the independent audit. Matrix coefficients were unchanged."
+}

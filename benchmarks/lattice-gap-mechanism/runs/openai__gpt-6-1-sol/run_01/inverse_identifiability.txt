@@ -1,0 +1,107 @@
+INVERSE IDENTIFIABILITY: DISPLACEMENT DILATION
+
+Purpose
+-------
+This is a mathematical illustration of information missing from local spectra
+and normalized response curves. It is not a fitted alternative material model,
+not a proof that the requested physical Hamiltonian cannot exist, and not a
+replacement for the physical-model calculations.
+
+Construction
+------------
+Let H_1 be a translationally invariant, charge-conserving Hamiltonian on the
+square lattice with one physical spinful orbital c_(r,sigma) per site. Write
+each translated term using displacements R from a reference site r. Construct
+H_m, for integer m>1, by replacing every displacement R by mR, keeping all
+coefficients, onsite terms, the chemical potential and the atomic lattice
+constant unchanged. Apply this to interaction terms as well as hopping terms.
+
+Every term of H_m involves sites in one residue class r modulo m. On an L x L
+periodic lattice with L divisible by m, H_m is the sum of m^2 independent,
+interpenetrating copies of H_1 on (L/m) x (L/m) lattices. There is still one
+physical orbital per original lattice site. Translation by one original site
+permutes the copies; C4 is preserved if H_1 has C4.
+
+Exact consequences, subject to the qualifications below
+-------------------------------------------------------
+1. Grand partition function:
+   Z_m(L,mu,T) = Z_1(L/m,mu,T)^(m^2).
+   Thus grand potential, density, entropy and other thermodynamic densities
+   are identical in the thermodynamic limit at the same mu and T. The same
+   statement at fixed density uses the usual ensemble-equivalence conditions.
+
+2. Local normal electron Green function and local spectral density are
+   identical. In momentum space, on the original physical Brillouin torus,
+   G_m(k,z) = G_1(mk,z), A_m(k,w) = A_1(mk,w), with momenta reduced modulo
+   reciprocal vectors. The multiplication map preserves normalized Brillouin
+   zone measure, so the integrated spectral density and the filling coincide.
+   Momentum-resolved spectra generally differ.
+
+3. A strictly onsite/contact hyperfine coupling probes the same local spin
+   autocorrelation function, so its NMR relaxation is identical. This need
+   not hold for a fixed nonlocal physical hyperfine form factor: neighboring
+   spins in the original lattice need not belong to the same copy.
+
+4. For a gauge-consistent Peierls coupling of every charge-transfer term,
+   H_m(A) is the sum over copies of H_1(m A). Consequently
+   J_m = m sum_a J_1,a and K_m = m^2 sum_a K_1,a.
+   Dividing the Kubo response by the original physical area gives
+   sigma_m(w,T) = m^2 sigma_1(w,T).
+   This includes regular and Drude contributions. If the dc resistivity exists
+   and the conductivity tensor is invertible, rho_m(T)=rho_1(T)/m^2, hence
+   rho_m(T)/rho_m(T_ref) = rho_1(T)/rho_1(T_ref).
+   This statement presumes all terms responsible for current relaxation are
+   transformed consistently. An unchanged external bath or additional
+   inter-copy scattering mechanism can spoil the mapping.
+
+5. Atomic positions and the one-site structural lattice have not changed.
+   Uniform onsite charge and equivalent local responses can be retained.
+   However, the construction does not automatically preserve all diffraction
+   observations if H_1 has translation-breaking charge/spin order, or if
+   magnetoelastic and other couplings omitted from the Hamiltonian are relevant.
+
+Zero curves: important restriction
+---------------------------------
+The zero set is the inverse image of the original zero set under k -> mk on
+the Brillouin torus. A contractible zero loop normally has m^2 preimage loops.
+If the original region containing Gamma is a contractible pocket, its individual
+Gamma-containing preimage component has 1/m^2 of the original area. This is NOT
+a general statement about an arbitrary Gamma-containing connected region.
+For example, if Gamma belongs to the complement of an M-centered pocket, the
+preimage complement may remain connected and retains the original area.
+
+In particular, the TOTAL Brillouin-zone measure on which Re G(k,0)>0 (or <0)
+is invariant under this measure-preserving covering map. The construction
+does not change the total Green-function sign volume.
+
+Because m>1 generally generates multiple zero loops, it does not demonstrate
+nonuniqueness of the requested single-loop area while also retaining a literal
+requirement that the zero set contain exactly one closed curve. It does
+demonstrate ambiguity of momentum-resolved spectra unless additional hopping
+range/connectivity assumptions are imposed. If the single-curve statement is
+treated as an exact restriction on allowed Hamiltonians, this particular
+counterexample is usually excluded for that part of the problem.
+
+Physical-prior limitations
+-------------------------
+H_m has longer-range couplings and an extra conservation law for the charge in
+each copy. Exact decoupling of interpenetrating electronic lattices is an
+artificial feature for an oxide. Ordinary Coulomb, lattice and impurity
+couplings can connect the copies. A minimal finite-range model prior, known
+nearest-neighbor hopping, absolute conductivity/optical weight, nonlocal spin
+response or actual ARPES can discriminate the models. Therefore this is an
+insufficient-data illustration, not evidence favoring H_m for the material.
+
+Suggested honest result framing
+------------------------------
+The restarted calculations act in the physical one-orbital electron Hilbert
+space and evaluate actual electron, spin and current operators. The ordinary
+Hubbard model and the exchange/pairing extensions tested so far do not yield
+a validated common parameter set for all supplied measurements. A fit to
+finite-cluster gap proxies is not a fit to the NMR and resistivity responses.
+No full material phase diagram, momentum-resolved ARPES prediction or unique
+Green-function zero area has therefore been established. This is a report of
+what the tested calculations achieve and where they fail, not a claim of
+mathematical impossibility or of completion of the requested microscopic
+solution. A more successful physical Hamiltonian may exist and would require
+further modeling and validation.

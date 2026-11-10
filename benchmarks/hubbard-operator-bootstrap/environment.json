@@ -1,0 +1,18 @@
+{
+  "python": "3.13.2 (main, Mar 17 2025, 21:26:38) [Clang 20.1.0 ]",
+  "platform": "macOS-26.5.1-arm64-arm-64bit-Mach-O",
+  "machine": "arm64",
+  "processor": "arm",
+  "logical_cpus": 8,
+  "package_versions": {
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "cvxpy": "1.9.3",
+    "scs": "3.3.1",
+    "clarabel": "0.11.1",
+    "matplotlib": "3.11.2",
+    "psutil": "7.2.2"
+  },
+  "resource_convention": "resource.getrusage(RUSAGE_SELF).ru_maxrss; Darwin returns bytes; peaks are per process, not aggregate simultaneous memory.",
+  "runtime_caveat": "Independent research pilots ran concurrently; compare recorded stage observations, not isolated performance guarantees."
+}

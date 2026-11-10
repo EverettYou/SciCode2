@@ -1,0 +1,82 @@
+{
+  "schema": "xor-chain-qubo-v1",
+  "n_original": 3,
+  "rows": [],
+  "syndrome": [],
+  "weights": [
+    0.0,
+    -1.0,
+    2.0
+  ],
+  "penalty": 4.0,
+  "weight_l1": 3.0,
+  "linear": [
+    0.0,
+    -1.0,
+    2.0
+  ],
+  "quadratic": [],
+  "offset": 0.0,
+  "variables": [
+    {
+      "kind": "error",
+      "column": 0
+    },
+    {
+      "kind": "error",
+      "column": 1
+    },
+    {
+      "kind": "error",
+      "column": 2
+    }
+  ],
+  "constraints": [],
+  "structural_edges": [],
+  "exact_coefficients": {
+    "linear": [
+      [
+        0,
+        1
+      ],
+      [
+        -1,
+        1
+      ],
+      [
+        2,
+        1
+      ]
+    ],
+    "quadratic": [],
+    "offset": [
+      0,
+      1
+    ],
+    "interpretation": "authoritative exact rational model for the binary64 input weights and penalty"
+  },
+  "numeric_certificate": {
+    "float_ground_states_certified": true,
+    "coefficient_error_l1_exact": [
+      0,
+      1
+    ],
+    "nonoptimal_gap_lower_bound_exact": [
+      1,
+      1
+    ],
+    "weight_lattice_step_exact": [
+      1,
+      1
+    ],
+    "exact_penalty_margin": [
+      1,
+      1
+    ],
+    "offset_error_exact": [
+      0,
+      1
+    ],
+    "condition": "2 * coefficient_error_l1 < nonoptimal_gap_lower_bound"
+  }
+}

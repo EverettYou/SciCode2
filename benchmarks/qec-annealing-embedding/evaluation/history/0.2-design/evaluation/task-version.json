@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "benchmark_id": "qec-annealing-embedding",
+  "task_version": "0.2-design",
+  "created_at": "2026-10-07T18:17:52Z",
+  "phase": "question-design",
+  "status": "standalone-question-draft",
+  "frozen_for_experiment": false,
+  "solver_statement": "evaluation/prompt.md",
+  "active_prompt_variants": {
+    "A": "evaluation/prompt.md"
+  },
+  "required_input_files": [],
+  "optional_input_files": [
+    "evaluation/inputs/seed-codes.json",
+    "evaluation/inputs/target-family.json"
+  ],
+  "allowed_resources": "Public literature, public software and internet; no private source or QPU credentials required.",
+  "hash_algorithm": "sha256",
+  "files": {
+    "problem/TASK.md": "64bbd3c22b3cc4f0737b429074501d5c2a8107a36dbb6bb32d5258d096dca819",
+    "problem/main.tex": "c7bec20bf5cadce087fec95062f975c212cb868dd5dcb10c6a77c2f2ac803b4b",
+    "problem/scicode2-qec-annealing-embedding.pdf": "7575a433e83d534b563a0b51c20eaef2c8af2766fa286c85b528cafe5dbb137b",
+    "evaluation/prompt.md": "64bbd3c22b3cc4f0737b429074501d5c2a8107a36dbb6bb32d5258d096dca819",
+    "evaluation/proposal.md": "82d564429c88e280660f0bbb60555516293cc9f30541e4560ba5fc30d7b55caa",
+    "evaluation/evaluation-plan.md": "8182882baf034dd42cedac99fa77b50dec4a89106bc3d871758b9fb6d1c13720",
+    "evaluation/AUDIT.md": "4509cbbcc166b66e050b85f637c9064cfc691007d0e5731b583f68b62906f3ab",
+    "evaluation/inputs/seed-codes.json": "4bf0ca1c4fbd6290698ec94c973f08ca3911202b3756a55f2776447f68a34e11",
+    "evaluation/inputs/target-family.json": "6072573be8cfa50bf66edf3f896eebfac972c0cd32e579e507997a8d068e0629"
+  },
+  "author_requirements": {
+    "skills/create-benchmark/SKILL.md": "9a795e519be62e7dfccba7d6d04ddc74137faa7ef4c961c163621a2bb326206c",
+    "skills/create-benchmark/references/research-workspace.md": "149e36476429ffd92af9f209be2956ad83f9452a39b3854c303c7683f974436a",
+    "skills/create-benchmark/references/submission-package.md": "3d8d545b6c9f43a66e6493c46ecd1db9b8af1e0e5fb60917c9a2b9a11c150c14",
+    "docs/scicode2/requirements.md": "a010ee664350646192ea58ffd463ae9c3750d2094b4a2c3d6cc7ce86cfc93884"
+  },
+  "reference_revision": null,
+  "evaluator_revision": null,
+  "evaluation_criteria_revision": "8182882baf034dd42cedac99fa77b50dec4a89106bc3d871758b9fb6d1c13720",
+  "reference_status": "not developed; deferred beyond design phase",
+  "model_trials": [],
+  "screening_status": "deferred by user; not run",
+  "difficulty_status": "untested",
+  "example_bank_comparison": "pending-access",
+  "history": [
+    "evaluation/history/initial-design/",
+    "evaluation/history/audit-working-drafts/"
+  ],
+  "checks": {
+    "workspace_validator": {
+      "command": ".venv/bin/python skills/create-benchmark/scripts/validate_benchmark.py benchmarks/qec-annealing-embedding",
+      "result": "pass"
+    },
+    "wiki_lint": {
+      "command": ".venv/bin/python skills/wiki-lint/scripts/lint_wiki.py benchmarks/qec-annealing-embedding",
+      "result": "0 errors, 0 warnings"
+    },
+    "standalone_integrity": "pass: statement/prompt byte equality; all ten links public and accessible; no private citation or required local attachment",
+    "input_integrity": "pass: binary dimensions, CSS commutation, toric indexing and Steane matrix match the statement; no decoding or embedding performed",
+    "provenance": "pass: original source and wiki-ledger hashes checked",
+    "native_latex_compile": "success",
+    "exported_pdf": "5 pages; pdflatex success; all five page renders visually inspected; no clipped or overlapping content",
+    "scientific_experiments": "none"
+  }
+}

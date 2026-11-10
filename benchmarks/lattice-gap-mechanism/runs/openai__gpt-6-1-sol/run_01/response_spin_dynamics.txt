@@ -1,0 +1,110 @@
+FINITE-TEMPERATURE DYNAMICAL SPIN RESPONSE BENCHMARK
+
+System and approximation
+H_spin=J1 sum_NN S_i.S_j+J2 sum_NNN S_i.S_j, on the same 10-site
+tilted square torus as electron_ed.py. Cyclic NN shifts are 1,-3;
+NNN shifts are -2,4. There are 20 bonds of each type. This is the
+leading strong-coupling spin-sector projection of the repulsive
+single-orbital Hubbard Hamiltonian, with no additional physical orbital.
+It is NOT a full finite-T Hubbard calculation: empty/doubly occupied
+charge states and higher-order exchange are omitted.
+
+Parameters: t=0.99706833 D, t'=0.19534428 D, U=11.4935251922 D,
+J1=4t^2/U=0.3459844542 D, J2=4t'^2/U=0.01328030784 D.
+U is the repulsive 10-site canonical charge-gap match in data/hubbard_gap_fits.json.
+Both this finite-cluster extraction and the high-T inference of t,t' remain conditional.
+
+Actual Lehmann calculation
+All 1024 spin states were diagonalized in all eleven Sz sectors,
+whose dimensions are 1,10,45,120,210,252,210,120,45,10,1.
+The response includes every local S_i^+ matrix element and averages
+over all ten physical sites:
+
+S_loc(omega) = (1/(N Z)) sum_(i,m,n) exp(-E_n/T)
+              |<m|S_i^+|n>|^2 L_eta[omega-(E_m-E_n)],
+L_eta(x)=eta/[pi*(x^2+eta^2)].
+
+At negligible nuclear frequency, 1/T1 is proportional to S_loc(0),
+with an unknown overall hyperfine scale. Therefore the comparison
+with the plotted NMR quantity uses S_loc(0)/T. This is a dynamical
+Lehmann response, not a static susceptibility or occupation surrogate.
+The overall prefactor and convention-dependent factors are absorbed
+in a positive fitted amplitude.
+
+Numerical checks
+Maximum eigenvector residual: 3.75e-14 in J1 units.
+The exact integrated spectral sum rule is
+integral S_loc(omega) d omega=<S_i^-S_i^+>=1/2 at zero field.
+Using all Lehmann weights, the maximum thermal sum-rule error is
+3.33e-16 over the measured temperature grid.
+Finite-cluster triplet gap: 0.83680019 J1 = 0.28951986 D.
+This finite-cluster gap is not a thermodynamic spin gap.
+
+Fixed physical Hubbard exchange: direct contradiction with the NMR shape
+Normalize S_loc(0)/T to its value at T=4D, exactly as for the data.
+At the lowest measured half-filled temperature T=0.4472D:
+
+ eta/D       predicted normalized 1/(T1 T)
+  0.02                 6.734494
+  0.05                 6.868756
+  0.10                 6.808953
+ measured              0.0000340096
+
+The model increases on cooling over this temperature range while
+the data are exponentially suppressed. The discrepancy at this
+temperature is about 200,000-fold after common normalization.
+Even allowing an arbitrary overall amplitude and fitting the raw
+1/T1 data gives chi-square 243.78-244.02 for 17 degrees of freedom.
+The high-temperature end T~4D can have appreciable charge corrections
+to a spin-only theory, but the enormous low-temperature mismatch is
+not caused by omitted thermally excited charge states at T=0.4472D.
+
+Free exchange scale: diagnostic, not a Hubbard fit
+Keeping J2/J1 fixed and profiling the amplitude in the raw rate
+likelihood gives the following all-temperature fits:
+
+ eta/D     best J1/D       chi-square / degrees of freedom
+  0.02       6.2694                   8.7878
+  0.05       4.3442                  12.7612
+  0.10       1.3483                  14.0586
+
+These finite-width fits still fail. Lorentzian tails from gapped
+inelastic transitions produce an artificial nonactivated zero-frequency
+floor even at T=0, making extraction of a large gap unreliable.
+
+To separate that broadening artifact from the thermal multiplet scale,
+an additional diagnostic keeps only exactly degenerate E_m=E_n
+transitions. This is the coefficient of a zero-frequency delta peak,
+not a finite physical relaxation rate. It matches the shape only at
+J1=8.27834 D, with conditional 68% profile interval [8.07112,8.48966]
+and 95% interval [7.87323,8.69945] D; chi-square/dof=0.52956.
+The implied finite-cluster triplet gap is 6.92731 D.
+Restricting the fit to T<=2D (actual highest retained T=1.6596D)
+gives J1=7.83997 D, 68% interval [7.56162,8.12158], and
+95% interval [7.29283,8.39990] D; chi-square/dof=0.13988.
+
+Thus even the delta-weight diagnostic needs roughly 23-24 times the
+Hubbard exchange inferred from t~D,U=11.4935D. Reinterpreting it via
+J1=4t^2/U would give U~0.48D, where the strong-coupling projection is
+invalid and which is inconsistent with using a large-U Mott description.
+Do not report these profile intervals as microscopic parameter errors.
+
+Interpretation and limits
+This is a concrete response-level failure of the simplest repulsive
+Hubbard strong-coupling spin sector at the proposed parameters.
+It does not rule out direct physical spin exchange, frustration,
+symmetry breaking, momentum-dependent hyperfine form factors, or other
+single-orbital interactions. No thermodynamic phase diagram is inferred.
+No result here turns a phenomenological spectral fit into a many-body
+Hamiltonian fit. The finite-T spin response approximation, the full
+state count, the hyperfine assumption, and the broadening dependence
+must accompany any use of the plot.
+
+Reproduction
+Run: python3 response_spin_dynamics.py
+Inputs: data/measurements.json and the previous conditional hopping
+fit at data/sts_prior_spectral_fit_results.json, plus the conditional
+10-site U from data/hubbard_gap_fits.json.
+Outputs: response_spin_dynamics.json, .npz, and .png.
+The NPZ retains all dimensionless energies, transition energies,
+local matrix-element weights, and initial-state indices.

@@ -1,0 +1,72 @@
+{
+  "problem": {
+    "L": 4,
+    "V": 16,
+    "t": 1,
+    "U": 8,
+    "N_up": 8,
+    "N_down": 8,
+    "bonds": "distinct periodic nearest-neighbor"
+  },
+  "full_operator_dimension": 2257,
+  "quadratic_operator_dimension": 2081,
+  "closed_cubic_directions": 88,
+  "closed_cubic_adjoint_directions": 88,
+  "selected_source_directions": 16,
+  "operator_max_degree": 3,
+  "selected_block_dimensions": [
+    4,
+    4,
+    4,
+    4,
+    3,
+    3
+  ],
+  "source_discovery": {
+    "solver": "SCS",
+    "status": "optimal_inaccurate",
+    "energy_primal": -8.762902853699883,
+    "dual_unadjusted": -8.76298265321515,
+    "residual_l1": 0.0019864597456928723,
+    "certificate_float_lower": -8.764969112960843,
+    "dual_min_eigenvalue": -8.617733355857607e-14,
+    "equality_max_residual": 5.283336976802389e-07,
+    "nvar": 331,
+    "nblocks": 244,
+    "max_psd_dim": 233,
+    "psd_entries": 410274,
+    "model_construction_sec": 50.87699945806526,
+    "build_sec": 0.2650065829511732,
+    "solve_sec": 511.5246743329335,
+    "solver_solve_time": 510.01780425,
+    "iterations": 3000,
+    "peak_rss_bytes": 265568256,
+    "eps": 1e-05,
+    "reduction": {
+      "original_nvar": 3240,
+      "reduced_nvar": 331,
+      "zero_variables": 60
+    }
+  },
+  "portable_replay_reference": {
+    "solver": "CLARABEL",
+    "status": "optimal_inaccurate",
+    "energy_primal": -8.763353211029347,
+    "dual_unadjusted": -8.763353237128793,
+    "residual_l1": 1.1777956633574581e-07,
+    "certificate_float_lower": -8.763353354908359,
+    "dual_min_eigenvalue": 5.088206357104129e-12,
+    "equality_max_residual": 1.386932235725169e-12,
+    "nvar": 331,
+    "nblocks": 54,
+    "max_psd_dim": 32,
+    "psd_entries": 11446,
+    "model_construction_sec": 0.5892979160416871,
+    "build_sec": 0.01798966689966619,
+    "solve_sec": 13.81980475015007,
+    "solver_solve_time": 13.687143542,
+    "iterations": 23,
+    "peak_rss_bytes": 361857024,
+    "eps": 1e-09
+  }
+}

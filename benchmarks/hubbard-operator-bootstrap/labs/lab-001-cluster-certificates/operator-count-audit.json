@@ -1,0 +1,56 @@
+{
+  "passed": true,
+  "dimension_convention": "Original full Fock polynomial span, before further fixed-sector identities. This is not the sum of reduced cone dimensions.",
+  "core_formula": "1+2*32+2*C(32,2)+32^2=2081",
+  "T1_increment": "2*C(32,3)=9920; net particle charge +/-3 separates it from selected mixed cubics of charge +/-1.",
+  "selected_family_ranks": {
+    "selected-t2-eps6": {
+      "source_blocks": 32,
+      "rank_per_source": [
+        15
+      ],
+      "total_cubic_dimension_before_adjoints": 480
+    },
+    "two-site-t2-eps5": {
+      "source_blocks": 32,
+      "rank_per_source": [
+        60
+      ],
+      "total_cubic_dimension_before_adjoints": 1920
+    },
+    "two-site-spin-complete": {
+      "source_blocks": 32,
+      "rank_per_source": [
+        15
+      ],
+      "total_cubic_dimension_before_adjoints": 480
+    }
+  },
+  "star_representative_cubic_ranks": [
+    84,
+    84,
+    84,
+    84,
+    84,
+    84
+  ],
+  "star_full_spin_momentum_sources": 32,
+  "star_onebody_augmentation_already_in_core": true,
+  "operator_dimensions": {
+    "PQG": 2081,
+    "density_selected_T2": 3041,
+    "two_site_selected_T2": 5921,
+    "two_site_spin_complete": 6881,
+    "three_site_stars": 7457,
+    "T1_only": 12001,
+    "T1_plus_two_site": 15841,
+    "full_T2prime": 33825,
+    "T1_plus_full_T2prime": 43745,
+    "mixed_spin_T2prime": 18465,
+    "distilled_six_blocks": 2257
+  },
+  "rank_argument": "Canonical CAR monomials give an upper bound from advertised columns. A full modular column rank over proven prime1000003 proves exact rational independence. Symmetry copies preserve ranks. Different charge/momentum sectors and adjoints have disjoint canonical supports.",
+  "reported_count_discrepancies": [],
+  "elapsed_seconds": 1.0969105830881745,
+  "peak_rss_bytes": 142819328
+}

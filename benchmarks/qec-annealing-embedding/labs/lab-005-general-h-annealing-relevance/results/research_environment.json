@@ -1,0 +1,23 @@
+{
+  "python": "3.13.2 (v3.13.2:4f8bb3947cf, Feb  4 2025, 11:51:10) [Clang 15.0.0 (clang-1500.3.9.4)]",
+  "platform": "macOS-26.5.1-arm64-arm-64bit-Mach-O",
+  "machine": "arm64",
+  "packages": {
+    "numpy": "2.2.6",
+    "scipy": "1.15.3",
+    "networkx": "3.5",
+    "dimod": "0.12.21",
+    "minorminer": "0.2.21",
+    "dwave-networkx": "0.8.18",
+    "dwave-system": "1.34.0",
+    "matplotlib": "3.10.1"
+  },
+  "native_compiler": "Apple clang version 21.0.0 (clang-2100.1.1.101)",
+  "native_target": "arm64-apple-darwin25.5.0",
+  "native_flags": [
+    "-O3",
+    "-std=c++17"
+  ],
+  "child_thread_id": "01a143c1-f9c3-7f63-8331-18388c82ffd4",
+  "inherited_session_id": "01a11739-9407-7a50-88e5-3951d9c7a4a4"
+}

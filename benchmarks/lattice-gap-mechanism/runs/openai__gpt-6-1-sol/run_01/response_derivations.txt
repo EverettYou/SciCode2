@@ -1,0 +1,198 @@
+STRICT ONE-PHYSICAL-ORBITAL RESPONSE AUDIT
+
+Scope and conclusion
+--------------------
+The physical local Hilbert space is {|0>, |up>, |down>, |up down>}.
+All operators below act in that space. P_i=c_(i,down)c_(i,up) is a
+composite physical electron-pair operator, not another orbital or an
+independent field. The calculations do not establish any one Hamiltonian
+as a quantitative fit to all measurements. They do establish why the
+ordinary Hubbard model and its simplest pair-hopping limits face strong
+constraints, and why a bare-band stiffness bound must be amended when
+pair hopping is added.
+
+1. Response functions that a many-body calculation must actually compute
+---------------------------------------------------------------------
+NMR: R(T)=1/(T1*T) is proportional to
+sum_q |A(q)|^2 lim_(omega->omega_N) Im chi_+-(q,omega)/omega.
+The supplied measurements.json stores 1/T1, not R(T). The fitted empirical
+activation scales are conditional on R=A exp(-E/T): 5.538+/-0.135 D at
+half filling, 2.634+/-0.047 D at nu~0.3, and 1.747+/-0.053 D for T<=0.5 D
+at nu~0.2. Allowing temperature powers increases their uncertainty.
+These are not automatically equal to triplet gaps, U/2, or STS gaps.
+
+For a finite exact-diagonalization cluster, nuclear-frequency response
+is a set of delta functions. Inserting a broadening is an additional
+approximation; its value and size dependence must be reported. A thermal
+occupation curve or static susceptibility is not itself an NMR calculation.
+
+Transport: rho_dc=1/sigma_dc must follow the physical charge-current
+operator and current-current Kubo response (including any pair-current
+term). Spectral gaps and thermal occupations alone are not conductivity.
+The empirical positive-branch rho activation energies are 3.722+/-0.049 D
+at half filling and 0.900+/-0.044 D at nu~0.3. The nu~0.2 normal branch
+is approximately linear in T. Do not equate all these energies.
+
+2. Strict two-dimensional stiffness obstruction for charge-neutral interactions
+-----------------------------------------------------------------------------
+Use radian momenta and lattice constant 1. Let
+epsilon(k)=-2t(cos kx+cos ky)-4t' cos kx cos ky.
+For a physical Cooper-pair phase twist q, an electron hop acquires q/2.
+Writing free-energy density F(q)=F(0)+(rho_ab q_a q_b)/2 gives
+rho_ab <= (1/(4N)) sum_(k,sigma) n_(k,sigma) d_a d_b epsilon(k).
+The paramagnetic response subtracts a positive semidefinite matrix.
+For a BKT transition, Tc=(pi/2) sqrt(det rho(Tc^-)). By the trace bound,
+
+ Tc <= (pi/(16N)) sum_(k,sigma) n_(k,sigma)
+                          [d_x^2+d_y^2] epsilon(k).
+
+This does not require the state itself to preserve C4: sqrt(det rho)
+is at most Tr(rho)/2. Optimize the right side over all Pauli-allowed
+occupations 0<=n_(k,sigma)<=1 with mean total electron density n=2nu.
+Fill the highest values of C(k)=t(cos kx+cos ky)+4t' cos kx cos ky,
+not the lowest epsilon(k). For nu=0.2 and the conditional high-T DOS fit
+t=0.9970683 D, t'=0.1953443 D, this yields Tc<=0.2848091 D.
+The 256^2, 512^2 and 1024^2 momentum-grid values are 0.28480949,
+0.28480910 and 0.28480907 D. The looser maximum-curvature bound is
+Tc <= pi*n*(2t+4|t'|)/8 = 0.4359767 D.
+Both are below the observed zero-resistance bracket (1.075,1.15] D.
+
+Assumptions matter: the high-T tunneling DOS estimate of t,t' is
+conditional on its spectral model; the transition must be strictly 2D
+BKT; and the microscopic interactions must carry no uniform charge
+current. Onsite U, density interactions and physical spin exchange meet
+the last condition. Pair hopping and correlated single-electron hopping
+do not. A layered 3D transition also evades this particular 2D bound.
+
+Primary reference: Hazra, Verma and Randeria, Phys. Rev. X 9, 031049 (2019),
+https://doi.org/10.1103/PhysRevX.9.031049 .
+
+3. Pair hopping is a physical one-orbital escape from that bound
+---------------------------------------------------------------
+For H_J=-J sum_<ij>(P_i^dagger P_j+h.c.), a pair hop acquires the full
+phase twist. Its diamagnetic stiffness contribution along x is
+J/N sum_x-bonds <P_i^dagger P_j+h.c.>. Cauchy-Schwarz bounds each
+coherence by twice the lesser of the double-occupancy and empty-site
+probabilities, hence by 2 min(nu,1-nu). For NN square-lattice hopping,
+the extra upper bound on Tc is pi*|J|*min(nu,1-nu).
+At nu=0.2 it is 0.628319 |J|. Therefore, using the sharper bare bound,
+J>1.25765 D is a necessary loose condition to reach Tc>1.075 D.
+It is not sufficient and does not predict Tc. Applying the unmodified
+bare-band bound to a Penson-Kolb-Hubbard Hamiltonian is incorrect.
+
+4. Repulsive Hubbard/PKH Mott limit and the spin scale
+----------------------------------------------------
+For the repulsive 10-site charge-gap match U=11.4935251922 D, with
+t=0.99706833 D and t'=0.19534428 D, the leading strong-coupling estimates
+are J1=4t^2/U=0.34598445 D and J2=4t'^2/U=0.01328031 D; J2/J1=0.03838.
+This U is conditional on the finite-cluster canonical gap and prior STS
+extraction; it is not a thermodynamic many-body parameter fit.
+This is a weakly frustrated square-lattice antiferromagnet, not an
+established spin-gapped Mott phase. Over the measured half-filled NMR
+range T>=0.4472 D, T already exceeds J1. The spin sector is then dominated
+by local moments and exchange-scale dynamics rather than activated
+depletion on a 5.5 D scale. A Hubbard charge gap alone does not suppress
+the singly occupied local moments. This is a scale/phase mismatch for
+the simple Hubbard interpretation, not a theorem about every one-band
+interaction.
+
+Take the physical two-site Hamiltonian
+H=-t sum_sigma(c_1sigma^dagger c_2sigma+h.c.)
+  +U sum_i n_iup n_idown
+  +V(n_1-1)(n_2-1)
+  -J(P_1^dagger P_2+h.c.).
+In its two-electron singlet sector the singly occupied singlet couples
+with amplitude -2t to the symmetric doublon-hole state of energy
+delta=U-V-J. The relevant block is [[0,-2t],[-2t,delta]]. The triplet
+energy is zero, hence the singlet-branch splitting is
+Delta_ST=(sqrt(delta^2+16t^2)-delta)/2, reducing to 4t^2/delta for
+delta>>t. The script verifies this in the exact physical 16-state Fock
+space. This two-site splitting is not a rigorous many-site spin-gap bound.
+Pair hopping ~1.3 D in this U=11.4935 D Mott regime modestly changes exchange;
+it does not produce a 5.5 D spin scale. When J or V closes delta, the
+spin-only expansion is invalid because charge states enter the low-energy
+space. Extrapolating 4t^2/delta through that point is unjustified.
+
+5. Exact atomic spin thermodynamics: attraction can suppress moments
+-------------------------------------------------------------------
+At t=J=V=0 and mu=U/2 the empty and double states have energy zero;
+the two single states have energy -U/2. With g*mu_B=1,
+chi_s(T)=1/[4T(1+exp(-U/(2T)))].
+For U>0 and T<<U, this is Curie 1/(4T). For U<0 it is
+exp(-|U|/(2T))/(4T). This establishes the different occupation physics.
+It does NOT compute 1/T1: an isolated atomic spin has no relaxation
+dynamics. In a weakly mobile paired state, low-energy spin response can
+inherit thermal single-fermion activation, but prefactors, coherence
+factors, and relaxation mechanisms must be computed. At fixed even total
+particle number, breaking a local pair creates two singly occupied sites
+and costs |U|; the grand-canonical quasiparticle activation is |U|/2.
+
+6. Attractive PKH strong-coupling projection and the half-filled obstacle
+-----------------------------------------------------------------------
+For U<0 with singly occupied states well separated, project onto the
+physical |0>,|up down> states. b_i=P_i is now a hard-core pair operator;
+this projection neither introduces an auxiliary orbital nor enlarges
+the physical Hilbert space. The leading NN effective model is
+
+ H_pair=-t_B sum_<ij>(b_i^dagger b_j+h.c.)
+        +V_B sum_<ij>(n_Bi-1/2)(n_Bj-1/2)-mu_B sum_i n_Bi,
+ t_B=J+2t^2/|U|, V_B=4V+4t^2/|U|, mean n_B=nu.
+
+It is a square-lattice spin-1/2 XXZ model at nu=1/2. For positive t_B,
+V_B>2t_B favors checkerboard charge order; |V_B|<2t_B favors pair
+superfluidity; V_B<-2t_B favors phase separation. At V_B=2t_B the
+NN model has pseudospin SU(2) after a sublattice rotation. Thus the
+simple, unfrustrated strong-coupling model has no ordinary uniform,
+fully charge-gapped pair-Mott phase at half a pair per primitive cell.
+Checkerboard pairing order creates distinct empty-rich and double-rich
+sites; uniform measured STS and a single site-resolved NMR environment
+strongly disfavor this explanation. Doping the simplest checkerboard
+solid also tends to phase separate instead of producing a uniform
+supersolid. These are statements about this controlled limit; they are
+not a proof covering every intermediate-coupling PKH parameter set.
+
+Primary references:
+Robaszkiewicz and Bulka, Phys. Rev. B 59, 6430 (1999),
+https://arxiv.org/abs/cond-mat/9806088 .
+Hebert et al., Phys. Rev. B 65, 014513 (2002),
+https://arxiv.org/abs/cond-mat/0105450 .
+The former includes mean-field/one-dimensional results; do not present
+its full phase diagrams as numerically exact two-dimensional results.
+
+7. A genuine possible route, and what it does not yet explain
+------------------------------------------------------------
+The half-filled isotropic line occurs at V=J/2 for NN terms. In fact,
+this is an exact charge-pseudospin SU(2) line of the full NN fermion
+Hamiltonian at mu=U/2, not just of the projected pair model. Define
+eta_i^+=(-1)^i P_i^dagger and eta_i^z=(n_i-1)/2. Then each NN bond obeys
+-J(P_i^dagger P_j+h.c.)+V(n_i-1)(n_j-1)=2J eta_i dot eta_j
+when V=J/2. NN electron hopping and the centered onsite Hubbard term
+also preserve the global eta SU(2). These eta operators are composite
+physical operators, not additional degrees of freedom.
+Consequently large physical pair hopping can coexist with a
+strongly suppressed half-filled finite-temperature ordering scale:
+continuous pseudospin symmetry forbids finite-T order in strictly 2D,
+while doping acts as a pseudospin field and permits a BKT transition.
+This is a plausible family for a Tc dome displaced from half filling.
+However, the isotropic half-filled ground state has gapless collective
+pair/charge modes. It is not a charge-gapped Mott insulator, and the
+measured activated dc resistivity E_rho~3.7 D has not been derived from
+it. Next-neighbor hopping t' also breaks the simple bipartite
+pseudospin symmetry and produces further pair couplings.
+
+The half-filled transport measurements stop at 0.45 D. They do not
+exclude superconductivity or electronic ordering below that temperature.
+Neither diffraction nor one NMR line alone proves every electronic
+symmetry is preserved: some bond or time-reversal order could evade
+those probes. Conversely, simply naming such an order does not fit
+the four measured observables. A fully symmetric, gapped state with
+one odd electron per actual primitive cell faces filling constraints
+and would require topological order rather than a trivial product state.
+
+Recommended honest conclusion: the simplest repulsive Hubbard and
+unfrustrated attractive-PKH limits fail specific response/phase tests.
+Pair hopping is an allowed one-orbital interaction that removes the
+strict bare-band Tc obstruction, but no numerical fit to U,J,V and no
+thermodynamic phase diagram has been established here. The V~J/2
+attractive-PKH family merits an actual many-body charge/spin/current
+calculation; it must not be declared a completed quantitative solution.

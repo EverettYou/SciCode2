@@ -346,3 +346,41 @@ Append one dated entry for each ingest, saved query, or lint operation. Do not r
 - Recorded the boundary that the paper sets extra band-structure details aside, so Fermi-surface-shape stability is not a result of that paper.
 - Updated the paper page and paper index from inventory stage fetched to reviewed.
 - Project thesis unchanged because this records assessment status, not a new scientific claim.
+
+## [2026-10-07] ingest | scicode2-organizer-email-requirements
+
+- Sources: `docs/scicode2/requirements.md`, its two archived organizer emails, and `skills/README.md`.
+- Updated project overview, problem-design strategy, skills navigation, root index, and project thesis to distinguish reference research from independent difficulty calibration.
+- Incorporated the scientific-intervention target, exact prompt/proposal separation, full clean A/B tests, optional C interpretation, and transcript-backed case evidence.
+- Narrowed the thesis success criterion: research verification alone does not establish autonomous-model difficulty or organizer acceptance.
+- Preserved uncertainty: the complete official instructions and Example bank are inaccessible; the three new skills are protocols, with no model trials or cross-client launch/export implementation claimed.
+
+
+## [2026-10-07] ingest | unified-benchmark-design-skill
+
+- Sources: `skills/create-benchmark/SKILL.md`, its workspace/submission references, `skills/README.md`, and the local workflow section of `docs/scicode2/requirements.md`.
+- Audited overlapping candidate selection, proposal design, feasibility, and evaluation planning in create-benchmark and prepare-benchmark; merged them under create-benchmark with screening, proposal, and workspace modes.
+- Removed the independent prepare-benchmark entry and updated current routing; historical records remain unchanged.
+- Preserved scaffold assets, scripts, validators, provenance, and research history. Moved detailed workspace and solver-package contracts into mode-specific references.
+- Corrected unsupported stage: idea, prevented existing-stage resets, and placed workspace initialization before writing scaffold files.
+- Updated project skills and design-strategy navigation. Project thesis unchanged: this consolidation changes workflow ownership, not the scientific target or measured difficulty.
+
+
+## [2026-10-07] ingest | early-formulation-and-iterative-testing
+
+- Source: user's workflow clarification recorded in `docs/scicode2/requirements.md`; updated creation, testing, and calibration skills and catalog.
+- Narrowed create-benchmark to clear formulation and text-only coherence/likely-nontriviality review. A plausible nontrivial question passes to testing without implementation, reference research, finalized prompts, or empirical hardness evidence.
+- Moved experimental prompt design to test-benchmark and preserved an explicit test → question revision → test loop. Per-attempt snapshots preserve evidence while allowing the question to evolve.
+- Reserved frozen A/B/(C), supported reference/rubric evidence, and formal difficulty decisions for requested later calibration after stabilization.
+- Moved detailed research/lab guidelines to auto-research references; retained optional repository scaffolding without making it an early scientific gate.
+- Updated project overview, design strategy, skills navigation, and index. Project thesis unchanged: the scientific target is the same; this clarification assigns requirements to their appropriate development stages.
+
+
+## [2026-10-07] ingest | benchmark-local-test-labs
+
+- Source: user's lab-storage/fresh-window clarification recorded in `docs/scicode2/requirements.md`, plus updated test-benchmark and workspace contracts.
+- Changed the default test location to benchmark-local `labs/lab-NNN-agent-test-<label>/`, with prompts, problem snapshots, PLAN/REPORT, scripts, results, transcripts, and run records together.
+- The user starts a fresh agent window and invokes the test skill directly. Removed the requirements for an external repo/workspace, another solver session, or a session-launch API.
+- Distinguished loaded scientific context from filesystem location. Procedural testing instructions are allowed; author-session scientific corrections and prior answers are not preloaded into a clean attempt.
+- Kept calibration summaries/package assembly separate from the original lab records; no relocation is required.
+- Updated project skills and design-strategy pages. Project thesis unchanged: storage and session-entry conventions change, while the scientific target and later calibration remain the same.

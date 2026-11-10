@@ -1,0 +1,376 @@
+{
+  "resource_rows": [
+    {
+      "d": 2,
+      "n_error": 5,
+      "direct": {
+        "successes": 3,
+        "attempts": 3,
+        "logical_variables": 9,
+        "logical_edges": 14,
+        "median_search_seconds_all_attempts": 0.0160691668279469,
+        "physical_qubits_range": [
+          9,
+          10
+        ],
+        "physical_qubits_median": 9,
+        "max_chain_range": [
+          1,
+          2
+        ],
+        "scales": {
+          "direct_global": [
+            0.05263157894736842,
+            0.16666666666666666
+          ],
+          "direct_local": [
+            0.14285714285714285,
+            0.5
+          ]
+        }
+      },
+      "dual": {
+        "successes": 3,
+        "attempts": 3,
+        "logical_variables": 2,
+        "logical_edges": 1,
+        "median_search_seconds_all_attempts": 0.01452995790168643,
+        "physical_qubits_range": [
+          2,
+          2
+        ],
+        "physical_qubits_median": 2,
+        "max_chain_range": [
+          1,
+          1
+        ],
+        "scales": {
+          "dual_0": [
+            1.0,
+            1.0
+          ],
+          "dual_1": [
+            1.0,
+            1.0
+          ]
+        }
+      },
+      "median_qubit_ratio_direct_to_one_dual_class": 4.5,
+      "dual_two_parallel_nominal_qubits": 4
+    },
+    {
+      "d": 3,
+      "n_error": 13,
+      "direct": {
+        "successes": 3,
+        "attempts": 3,
+        "logical_variables": 29,
+        "logical_edges": 54,
+        "median_search_seconds_all_attempts": 0.12084912485443056,
+        "physical_qubits_range": [
+          30,
+          32
+        ],
+        "physical_qubits_median": 31,
+        "max_chain_range": [
+          2,
+          2
+        ],
+        "scales": {
+          "direct_global": [
+            0.014184397163120567,
+            0.017543859649122806
+          ],
+          "direct_local": [
+            0.09523809523809523,
+            0.1111111111111111
+          ]
+        }
+      },
+      "dual": {
+        "successes": 3,
+        "attempts": 3,
+        "logical_variables": 6,
+        "logical_edges": 7,
+        "median_search_seconds_all_attempts": 0.01840920909307897,
+        "physical_qubits_range": [
+          6,
+          6
+        ],
+        "physical_qubits_median": 6,
+        "max_chain_range": [
+          1,
+          1
+        ],
+        "scales": {
+          "dual_0": [
+            2.0,
+            2.0
+          ],
+          "dual_1": [
+            2.0,
+            2.0
+          ]
+        }
+      },
+      "median_qubit_ratio_direct_to_one_dual_class": 5.166666666666667,
+      "dual_two_parallel_nominal_qubits": 12
+    },
+    {
+      "d": 5,
+      "n_error": 41,
+      "direct": {
+        "successes": 3,
+        "attempts": 3,
+        "logical_variables": 105,
+        "logical_edges": 212,
+        "median_search_seconds_all_attempts": 0.24102908303029835,
+        "physical_qubits_range": [
+          119,
+          143
+        ],
+        "physical_qubits_median": 121,
+        "max_chain_range": [
+          2,
+          3
+        ],
+        "scales": {
+          "direct_global": [
+            0.004750593824228029,
+            0.004750593824228029
+          ],
+          "direct_local": [
+            0.06451612903225806,
+            0.06451612903225806
+          ]
+        }
+      },
+      "dual": {
+        "successes": 3,
+        "attempts": 3,
+        "logical_variables": 20,
+        "logical_edges": 31,
+        "median_search_seconds_all_attempts": 0.03333212505094707,
+        "physical_qubits_range": [
+          20,
+          20
+        ],
+        "physical_qubits_median": 20,
+        "max_chain_range": [
+          1,
+          1
+        ],
+        "scales": {
+          "dual_0": [
+            2.0,
+            2.0
+          ],
+          "dual_1": [
+            2.0,
+            2.0
+          ]
+        }
+      },
+      "median_qubit_ratio_direct_to_one_dual_class": 6.05,
+      "dual_two_parallel_nominal_qubits": 40
+    },
+    {
+      "d": 7,
+      "n_error": 85,
+      "direct": {
+        "successes": 3,
+        "attempts": 3,
+        "logical_variables": 229,
+        "logical_edges": 474,
+        "median_search_seconds_all_attempts": 0.8792640829924494,
+        "physical_qubits_range": [
+          316,
+          339
+        ],
+        "physical_qubits_median": 319,
+        "max_chain_range": [
+          4,
+          4
+        ],
+        "scales": {
+          "direct_global": [
+            0.0023228803716608595,
+            0.0023228803716608595
+          ],
+          "direct_local": [
+            0.04878048780487805,
+            0.04878048780487805
+          ]
+        }
+      },
+      "dual": {
+        "successes": 3,
+        "attempts": 3,
+        "logical_variables": 42,
+        "logical_edges": 71,
+        "median_search_seconds_all_attempts": 0.06206791615113616,
+        "physical_qubits_range": [
+          44,
+          49
+        ],
+        "physical_qubits_median": 44,
+        "max_chain_range": [
+          2,
+          2
+        ],
+        "scales": {
+          "dual_0": [
+            0.3333333333333333,
+            0.3333333333333333
+          ],
+          "dual_1": [
+            0.3333333333333333,
+            0.3333333333333333
+          ]
+        }
+      },
+      "median_qubit_ratio_direct_to_one_dual_class": 7.25,
+      "dual_two_parallel_nominal_qubits": 88
+    },
+    {
+      "d": 9,
+      "n_error": 145,
+      "direct": {
+        "successes": 3,
+        "attempts": 3,
+        "logical_variables": 401,
+        "logical_edges": 840,
+        "median_search_seconds_all_attempts": 2.727841041982174,
+        "physical_qubits_range": [
+          581,
+          646
+        ],
+        "physical_qubits_median": 639,
+        "max_chain_range": [
+          5,
+          9
+        ],
+        "scales": {
+          "direct_global": [
+            0.0013689253935660506,
+            0.0013689253935660506
+          ],
+          "direct_local": [
+            0.0392156862745098,
+            0.0392156862745098
+          ]
+        }
+      },
+      "dual": {
+        "successes": 3,
+        "attempts": 3,
+        "logical_variables": 72,
+        "logical_edges": 127,
+        "median_search_seconds_all_attempts": 0.10670054191723466,
+        "physical_qubits_range": [
+          76,
+          80
+        ],
+        "physical_qubits_median": 80,
+        "max_chain_range": [
+          2,
+          2
+        ],
+        "scales": {
+          "dual_0": [
+            0.3333333333333333,
+            0.3333333333333333
+          ],
+          "dual_1": [
+            0.3333333333333333,
+            0.3333333333333333
+          ]
+        }
+      },
+      "median_qubit_ratio_direct_to_one_dual_class": 7.9875,
+      "dual_two_parallel_nominal_qubits": 160
+    }
+  ],
+  "dynamics_square2_rows": [
+    {
+      "total_anneal_time": 0.5,
+      "dual_two_sectors": 0.32672642263819507,
+      "direct_local_best_raw": 0.0831314332025378,
+      "direct_local_best_repaired": 0.3103291249379956,
+      "direct_global_best_repaired": 0.309213404610493,
+      "physical_local_best_repaired_seed_range": [
+        0.3103291249379953,
+        0.3104774128666829
+      ]
+    },
+    {
+      "total_anneal_time": 2.0,
+      "dual_two_sectors": 0.41261201200481107,
+      "direct_local_best_raw": 0.0786821532480169,
+      "direct_local_best_repaired": 0.31270152123689887,
+      "direct_global_best_repaired": 0.2971346416814908,
+      "physical_local_best_repaired_seed_range": [
+        0.30995378015019515,
+        0.31270152123689887
+      ]
+    },
+    {
+      "total_anneal_time": 8.0,
+      "dual_two_sectors": 0.8758684885351928,
+      "direct_local_best_raw": 0.2918972635888204,
+      "direct_local_best_repaired": 0.5172256999155387,
+      "direct_global_best_repaired": 0.3732529916216037,
+      "physical_local_best_repaired_seed_range": [
+        0.3370599934534611,
+        0.5172256999155389
+      ]
+    },
+    {
+      "total_anneal_time": 32.0,
+      "dual_two_sectors": 0.9961119895801587,
+      "direct_local_best_raw": 0.7627356443745718,
+      "direct_local_best_repaired": 0.8465993309078457,
+      "direct_global_best_repaired": 0.5963107230513207,
+      "physical_local_best_repaired_seed_range": [
+        0.48549234902480687,
+        0.8465993309078478
+      ]
+    },
+    {
+      "total_anneal_time": 128.0,
+      "dual_two_sectors": 0.999930854257084,
+      "direct_local_best_raw": 0.9270918090220563,
+      "direct_local_best_repaired": 0.9296688933852961,
+      "direct_global_best_repaired": 0.7966536888351547,
+      "physical_local_best_repaired_seed_range": [
+        0.7594440496347709,
+        0.9296688933852963
+      ]
+    }
+  ],
+  "rectangle23_rows": [
+    {
+      "total_anneal_time": 1.0,
+      "dual_two_sectors": 0.1760478943807933,
+      "direct_local_best_repaired": 0.1315403350535137,
+      "direct_global_best_repaired": 0.12851189920590367
+    },
+    {
+      "total_anneal_time": 4.0,
+      "dual_two_sectors": 0.5162760283513284,
+      "direct_local_best_repaired": 0.15600014104285365,
+      "direct_global_best_repaired": 0.1051357464303124
+    },
+    {
+      "total_anneal_time": 16.0,
+      "dual_two_sectors": 0.9842826381633183,
+      "direct_local_best_repaired": 0.5226580764892947,
+      "direct_global_best_repaired": 0.23338985137369267
+    }
+  ],
+  "validation": {
+    "largest_steps_doubling_score_difference": 4.775848362936763e-05,
+    "largest_norm_error": 5.5067062021407764e-14
+  },
+  "interpretation": "Direct best is the post-hoc better of one C run or two C/2 runs, chosen per instance; generous to direct, not a deployable oracle policy."
+}

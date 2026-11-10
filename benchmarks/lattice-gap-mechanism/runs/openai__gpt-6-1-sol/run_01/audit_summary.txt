@@ -1,0 +1,108 @@
+INDEPENDENT AUDIT OF PHYSICAL ONE-ORBITAL ELECTRON SPECTRA
+
+Scope
+The audited Hamiltonian uses four physical electron states per site and
+canonical particle-number sectors. Its spectral operators add or remove
+the physical electron. No auxiliary orbital is used. These tests audit
+the finite-cluster computation; they do not establish a thermodynamic fit.
+Inputs are the local bundled files under data/ and the current scripts
+code/electron_ed.py, code/hubbard_spectra.py and code/hubbard_kspace.py.
+
+Fermion algebra, geometry and references
+1. The two-site, two-electron spectrum agrees with the analytic singlet
+   block and triplet/doublon levels when hopping, repulsive U, singlet
+   exchange, pair hopping and centered density interaction are all present.
+   This directly checks fermion signs for all these operators.
+2. The 8- and 10-site one-electron hopping eigenvalues agree with the
+   declared square-lattice dispersion at their exact allowed momenta.
+   The 8-site graph intentionally includes two periodic image bonds for
+   each distinct next-neighbor pair; deleting them changes the dispersion.
+3. The canonical chemical potential is mu=(E(N+1)-E(N-1))/2. Addition
+   frequencies E(N+1)-E0-mu and removal frequencies E0-E(N-1)-mu have
+   the correct signs and zero of energy.
+4. A U=0 doped ten-site spectrum reproduces the exact discrete one-body
+   density of states: maximum error 7.1e-14 at eta=0.08D. The integrated
+   sum rule is unity. A pole exactly at omega=0 in a partially filled
+   degenerate shell cannot be assigned occupation using omega<0 alone.
+5. Warm-start ground states at U=+12, -12 and 0 agree with independent
+   cold two-eigenstate solves to 4.3e-14D. The U=0 many-body ground energy
+   also agrees with the sum of occupied one-electron energies. No missed
+   ground-state crossing was found in this targeted check.
+
+Clean-pole moments
+The six stored local spectral trials satisfy M0=1, M1=U*nu-mu, and
+M2-M1^2=4t^2+4tprime^2+U^2*nu*(1-nu). Maximum variance error is below
+7.1e-9 D^2. These are clean-pole moments; Lorentzian broadening has
+long tails and cannot be tested by naively integrating finite windows.
+
+Independent momentum-resolved convergence at half filling
+t=0.9970683327571924D; tprime=0.19534428112180086D;
+U=11.493525192155293D; mu=5.793606522515816D.
+Use physical electron plane waves, splitting their complex vectors into
+real cosine and sine channels. At the four inequivalent allowed momenta:
+
+ K/(2pi)                 G(K,0), in 1/D
+ (0,0)                   +0.0884886369316
+ (0.1,-0.3)              +0.0577208890639
+ (0.2,0.4)               -0.0485027479102
+ (0.5,0.5)               -0.1242394691242
+
+Maximum 200-to-400 Lanczos-step change is 9.72e-17/D.
+An independent conjugate-gradient inverse of the particle and hole
+resolvents agrees within 1.31e-15/D; all linear-system residuals are below
+9.3e-13. The direct moment checks give M0 error below 6.3e-15,
+M1=epsilon(K)+U/2-mu error below 1.79e-11D, and
+M2-M1^2=U^2/4=33.0252803356771D^2 error below 9.12e-11D^2.
+These nonzero discrete G values and their signs are numerically robust.
+
+Finite-size and broadening limits
+The free ten-site cluster is already a closed shell at half filling:
+its U=0 canonical charge gap is 2t=1.9941366655D. The eight-site cluster
+has zero corresponding free gap. This is a concrete finite-size warning:
+matching a finite-cluster addition/removal gap alone does not prove a
+bulk Mott gap or accurately infer U. A single-particle gap can also occur
+in a paired phase and need not imply vanishing charge compressibility.
+
+For a single physical addition channel at nu=0.3, 160-to-240 Lanczos
+steps change its Lorentzian spectrum by RMS 0.0103 at eta=0.05D,
+0.00230 at eta=0.1D, and 0.0000395 at eta=0.3D. Sum rules alone do not
+guarantee convergence of narrow peaks. The main continuous-k diagnostic
+now uses eta=0.3D and 240 steps. Its STS fit linewidths were much larger
+(0.525 to 1.5D); the reported RMS mismatch 0.15-0.195 is therefore not
+explained by this narrow-linewidth convergence issue.
+
+Only the ten allowed crystal momenta belong to the exact torus problem.
+A positive continuous-k projection of these spectra is a declared
+finite-window construction. Alternative real-space embeddings can agree
+at all allowed momenta while giving different closed zero contours and
+areas between them. It is not a thermodynamic Green-function calculation.
+
+Meaning of normal Green-function zeros
+G11(k,0)=-P integral A11(k,omega)/omega d omega is an inverse-energy
+weighted cancellation between positive- and negative-frequency weight.
+For a charge-conserving scalar normal Dyson equation with finite bare
+inverse, its zero corresponds to a pole of that scalar self-energy.
+The additional premises matter. In an ordinary fully gapped one-orbital
+BCS state, G11=(z+xi)/(z^2-xi^2-|Delta|^2) vanishes at z=0, xi=0,
+whereas det G_Nambu(0)=-1/(xi^2+|Delta|^2) is nonzero. Eliminating the
+anomalous channel gives a scalar Delta^2/(z+xi) self-energy pole even in
+this paired state. Nambu doubling is particle-hole redundancy, not an
+additional physical orbital. A normal-component zero is not sufficient
+evidence for Mottness. At fixed finite particle number the anomalous
+expectation vanishes, which does not exclude a thermodynamic paired phase.
+Likewise a zero-contour area in a superconductor is not generally a
+particle-density count. See audit_green_zeros.txt for algebra and the
+primary reference Phys. Rev. Lett. 98, 027004 (2007).
+
+Conclusion
+No fermion-sign, hole-reference or spectral sum-rule error was found.
+The finite-cluster Hubbard spectral mismatch appears to be a real result
+of this declared finite-cluster calculation and model comparison. It is
+not a controlled rejection of every bulk single-orbital Hamiltonian.
+The allowed-momentum zero-frequency Green function is converged, while
+its continuation and inferred enclosed zero area remain nonunique.
+
+Reproduce
+OPENBLAS_NUM_THREADS=1 python3 audit_electron_spectra.py
+OPENBLAS_NUM_THREADS=1 python3 audit_kspace_green.py
+Numerical records: audit_electron_spectra.json, audit_kspace_green.json.

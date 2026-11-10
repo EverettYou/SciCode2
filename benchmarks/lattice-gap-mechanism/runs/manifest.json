@@ -1,0 +1,65 @@
+{
+  "arms": {
+    "fable51": {
+      "model": "anthropic/claude-fable-5-1",
+      "ok_runs": 3,
+      "runs": 3,
+      "setup_hash": "3002b84a",
+      "usable_runs": 3
+    },
+    "gpt6-astra": {
+      "model": "openai/gpt-6-astra",
+      "ok_runs": 3,
+      "runs": 3,
+      "setup_hash": "e352e051",
+      "usable_runs": 3
+    },
+    "opus55": {
+      "model": "anthropic/claude-opus-5-5",
+      "ok_runs": 3,
+      "runs": 3,
+      "setup_hash": "888dd29d",
+      "usable_runs": 3
+    }
+  },
+  "attachments": [
+    {
+      "bytes": 276490,
+      "path": "figure_1.png",
+      "sha256": "a6540e2daf2e72d3846a80745f614882588606f8d646d8fdb5a6892350e3b63b"
+    },
+    {
+      "bytes": 203505,
+      "path": "figure_2_3.png",
+      "sha256": "248b8691ae3c092fdd0ad4ddb80e3ca0d8bd1c009b5a2952eb36d156b36e1097"
+    },
+    {
+      "bytes": 75536,
+      "path": "measurements.json",
+      "sha256": "dab44dfa1d052ed034c4cf632740411eed343c399f4ebb0045e9eea942b4ad7b"
+    }
+  ],
+  "attachments_bytes": 555531,
+  "attachments_copied": false,
+  "collected_at": "2026-10-30T00:37:44+00:00",
+  "config": "/mnt/data/home/yufeng/scicode2_pipeline/proposal_run/configs/yizhuang-you_layered-oxide-half-filling.json",
+  "graded": false,
+  "harbor_task": {
+    "agent_network_mode": "public",
+    "agent_timeout_sec": 43200,
+    "attachments_dest": "/app",
+    "cpus": 8,
+    "memory_mb": 32768,
+    "storage_mb": 65536
+  },
+  "inputs_sha8": "b6c69f67",
+  "note": "Ungraded proposal trials. reward/subscores record only whether the agent produced files, never correctness.",
+  "ok_runs": 9,
+  "project": "yizhuang-you_layered-oxide-half-filling",
+  "prompt": "prompt.md",
+  "prompt_from_snapshot": true,
+  "prompt_sha8": "340ee820",
+  "prompt_source": "/mnt/data/home/yufeng/scicode2_pipeline/proposal_run/proposal_problems/yizhuang-you_layered-oxide-half-filling/prompt.md",
+  "runs": 9,
+  "usable_runs": 9
+}

@@ -1,0 +1,21 @@
+{
+  "solver": "SCS",
+  "status": "optimal",
+  "energy_primal": -9.839851740215877,
+  "dual_unadjusted": -9.839895354740019,
+  "residual_l1": 0.008104640447515772,
+  "certificate_float_lower": -9.847999995187534,
+  "dual_min_eigenvalue": -2.926861087039106e-14,
+  "equality_max_residual": 1.998378420076108e-05,
+  "nvar": 3240,
+  "nblocks": 272,
+  "max_psd_dim": 120,
+  "psd_entries": 536480,
+  "build_sec": 0.2466059159487486,
+  "solve_sec": 472.9772689170204,
+  "solver_solve_time": 470.589611916,
+  "iterations": 2625,
+  "peak_rss_bytes": 390496256,
+  "eps": 1e-05,
+  "model_construction_sec": 35.60486799990758
+}

@@ -1,0 +1,951 @@
+{
+  "status": "pass",
+  "models": 16,
+  "even_coefficients_checked": 64,
+  "odd_coefficients_zero": 64,
+  "method": "Independent exact displacement-matrix Heisenberg Dyson integration, through order8; does not use majorant recurrence to obtain coefficients. Checks second-order schedule orientation against neighbor-energy formula.",
+  "seconds": 1.173508666921407,
+  "records": [
+    {
+      "case": 0,
+      "N": 2,
+      "n": 1,
+      "uniform_event_mass_exact": [
+        1,
+        2
+      ],
+      "event_patterns": [
+        1
+      ],
+      "orders": [
+        {
+          "order": 2,
+          "coefficient_exact": [
+            1,
+            24
+          ],
+          "majorant_exact": [
+            1,
+            6
+          ]
+        },
+        {
+          "order": 4,
+          "coefficient_exact": [
+            -101,
+            23040
+          ],
+          "majorant_exact": [
+            41,
+            630
+          ]
+        },
+        {
+          "order": 6,
+          "coefficient_exact": [
+            742691,
+            2554675200
+          ],
+          "majorant_exact": [
+            263,
+            7700
+          ]
+        },
+        {
+          "order": 8,
+          "coefficient_exact": [
+            -1513651829,
+            89270570188800
+          ],
+          "majorant_exact": [
+            69395,
+            3405402
+          ]
+        }
+      ]
+    },
+    {
+      "case": 1,
+      "N": 3,
+      "n": 2,
+      "uniform_event_mass_exact": [
+        1,
+        2
+      ],
+      "event_patterns": [
+        0,
+        2
+      ],
+      "orders": [
+        {
+          "order": 2,
+          "coefficient_exact": [
+            1,
+            24
+          ],
+          "majorant_exact": [
+            5,
+            12
+          ]
+        },
+        {
+          "order": 4,
+          "coefficient_exact": [
+            -91,
+            23040
+          ],
+          "majorant_exact": [
+            2245,
+            5376
+          ]
+        },
+        {
+          "order": 6,
+          "coefficient_exact": [
+            1104167,
+            2554675200
+          ],
+          "majorant_exact": [
+            6244109,
+            17031168
+          ]
+        },
+        {
+          "order": 8,
+          "coefficient_exact": [
+            -3047650999,
+            89270570188800
+          ],
+          "majorant_exact": [
+            2912033491457,
+            8927057018880
+          ]
+        }
+      ]
+    },
+    {
+      "case": 2,
+      "N": 4,
+      "n": 3,
+      "uniform_event_mass_exact": [
+        3,
+        4
+      ],
+      "event_patterns": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        6
+      ],
+      "orders": [
+        {
+          "order": 2,
+          "coefficient_exact": [
+            -1,
+            36
+          ],
+          "majorant_exact": [
+            1,
+            2
+          ]
+        },
+        {
+          "order": 4,
+          "coefficient_exact": [
+            3359,
+            483840
+          ],
+          "majorant_exact": [
+            83,
+            105
+          ]
+        },
+        {
+          "order": 6,
+          "coefficient_exact": [
+            -5215943,
+            7664025600
+          ],
+          "majorant_exact": [
+            6087,
+            7700
+          ]
+        },
+        {
+          "order": 8,
+          "coefficient_exact": [
+            236746661,
+            5951371345920
+          ],
+          "majorant_exact": [
+            6681901,
+            9459450
+          ]
+        }
+      ]
+    },
+    {
+      "case": 3,
+      "N": 2,
+      "n": 2,
+      "uniform_event_mass_exact": [
+        1,
+        4
+      ],
+      "event_patterns": [
+        0
+      ],
+      "orders": [
+        {
+          "order": 2,
+          "coefficient_exact": [
+            -1,
+            8
+          ],
+          "majorant_exact": [
+            1,
+            6
+          ]
+        },
+        {
+          "order": 4,
+          "coefficient_exact": [
+            283,
+            32256
+          ],
+          "majorant_exact": [
+            361,
+            3360
+          ]
+        },
+        {
+          "order": 6,
+          "coefficient_exact": [
+            -1543,
+            3686400
+          ],
+          "majorant_exact": [
+            606457,
+            13305600
+          ]
+        },
+        {
+          "order": 8,
+          "coefficient_exact": [
+            1333353793,
+            89270570188800
+          ],
+          "majorant_exact": [
+            1310799097,
+            69742632960
+          ]
+        }
+      ]
+    },
+    {
+      "case": 4,
+      "N": 3,
+      "n": 2,
+      "uniform_event_mass_exact": [
+        1,
+        4
+      ],
+      "event_patterns": [
+        1
+      ],
+      "orders": [
+        {
+          "order": 2,
+          "coefficient_exact": [
+            7,
+            24
+          ],
+          "majorant_exact": [
+            7,
+            12
+          ]
+        },
+        {
+          "order": 4,
+          "coefficient_exact": [
+            -1591,
+            23040
+          ],
+          "majorant_exact": [
+            943,
+            1280
+          ]
+        },
+        {
+          "order": 6,
+          "coefficient_exact": [
+            2124131,
+            232243200
+          ],
+          "majorant_exact": [
+            53955937,
+            60825600
+          ]
+        },
+        {
+          "order": 8,
+          "coefficient_exact": [
+            -74659581751,
+            89270570188800
+          ],
+          "majorant_exact": [
+            198257607059,
+            182184837120
+          ]
+        }
+      ]
+    },
+    {
+      "case": 5,
+      "N": 4,
+      "n": 2,
+      "uniform_event_mass_exact": [
+        1,
+        2
+      ],
+      "event_patterns": [
+        1,
+        2
+      ],
+      "orders": [
+        {
+          "order": 2,
+          "coefficient_exact": [
+            1,
+            12
+          ],
+          "majorant_exact": [
+            2,
+            3
+          ]
+        },
+        {
+          "order": 4,
+          "coefficient_exact": [
+            -1469,
+            26880
+          ],
+          "majorant_exact": [
+            14,
+            15
+          ]
+        },
+        {
+          "order": 6,
+          "coefficient_exact": [
+            16578271,
+            1277337600
+          ],
+          "majorant_exact": [
+            66667,
+            51975
+          ]
+        },
+        {
+          "order": 8,
+          "coefficient_exact": [
+            -128580779,
+            66126348288
+          ],
+          "majorant_exact": [
+            76543471,
+            42567525
+          ]
+        }
+      ]
+    },
+    {
+      "case": 6,
+      "N": 2,
+      "n": 1,
+      "uniform_event_mass_exact": [
+        1,
+        1
+      ],
+      "event_patterns": [
+        0,
+        1
+      ],
+      "orders": [
+        {
+          "order": 2,
+          "coefficient_exact": [
+            0,
+            1
+          ],
+          "majorant_exact": [
+            1,
+            8
+          ]
+        },
+        {
+          "order": 4,
+          "coefficient_exact": [
+            0,
+            1
+          ],
+          "majorant_exact": [
+            701,
+            17920
+          ]
+        },
+        {
+          "order": 6,
+          "coefficient_exact": [
+            0,
+            1
+          ],
+          "majorant_exact": [
+            1488419,
+            94617600
+          ]
+        },
+        {
+          "order": 8,
+          "coefficient_exact": [
+            0,
+            1
+          ],
+          "majorant_exact": [
+            24009788177,
+            3306317414400
+          ]
+        }
+      ]
+    },
+    {
+      "case": 7,
+      "N": 3,
+      "n": 2,
+      "uniform_event_mass_exact": [
+        1,
+        4
+      ],
+      "event_patterns": [
+        1
+      ],
+      "orders": [
+        {
+          "order": 2,
+          "coefficient_exact": [
+            -5,
+            24
+          ],
+          "majorant_exact": [
+            1,
+            2
+          ]
+        },
+        {
+          "order": 4,
+          "coefficient_exact": [
+            419,
+            13440
+          ],
+          "majorant_exact": [
+            633,
+            1120
+          ]
+        },
+        {
+          "order": 6,
+          "coefficient_exact": [
+            -1282363,
+            319334400
+          ],
+          "majorant_exact": [
+            289273,
+            492800
+          ]
+        },
+        {
+          "order": 8,
+          "coefficient_exact": [
+            1585709689,
+            3719607091200
+          ],
+          "majorant_exact": [
+            1601295313,
+            2583060480
+          ]
+        }
+      ]
+    },
+    {
+      "case": 8,
+      "N": 4,
+      "n": 1,
+      "uniform_event_mass_exact": [
+        1,
+        2
+      ],
+      "event_patterns": [
+        1
+      ],
+      "orders": [
+        {
+          "order": 2,
+          "coefficient_exact": [
+            -1,
+            8
+          ],
+          "majorant_exact": [
+            7,
+            24
+          ]
+        },
+        {
+          "order": 4,
+          "coefficient_exact": [
+            1727,
+            161280
+          ],
+          "majorant_exact": [
+            4367,
+            23040
+          ]
+        },
+        {
+          "order": 6,
+          "coefficient_exact": [
+            -894899,
+            851558400
+          ],
+          "majorant_exact": [
+            7047187,
+            40550400
+          ]
+        },
+        {
+          "order": 8,
+          "coefficient_exact": [
+            603077681,
+            6866966937600
+          ],
+          "majorant_exact": [
+            324268950119,
+            1821848371200
+          ]
+        }
+      ]
+    },
+    {
+      "case": 9,
+      "N": 2,
+      "n": 2,
+      "uniform_event_mass_exact": [
+        1,
+        4
+      ],
+      "event_patterns": [
+        2
+      ],
+      "orders": [
+        {
+          "order": 2,
+          "coefficient_exact": [
+            -5,
+            24
+          ],
+          "majorant_exact": [
+            1,
+            4
+          ]
+        },
+        {
+          "order": 4,
+          "coefficient_exact": [
+            4741,
+            161280
+          ],
+          "majorant_exact": [
+            243,
+            1280
+          ]
+        },
+        {
+          "order": 6,
+          "coefficient_exact": [
+            -6598409,
+            2554675200
+          ],
+          "majorant_exact": [
+            5127611,
+            47308800
+          ]
+        },
+        {
+          "order": 8,
+          "coefficient_exact": [
+            1014577999,
+            6866966937600
+          ],
+          "majorant_exact": [
+            101921919353,
+            1653158707200
+          ]
+        }
+      ]
+    },
+    {
+      "case": 10,
+      "N": 3,
+      "n": 2,
+      "uniform_event_mass_exact": [
+        1,
+        4
+      ],
+      "event_patterns": [
+        0
+      ],
+      "orders": [
+        {
+          "order": 2,
+          "coefficient_exact": [
+            -1,
+            6
+          ],
+          "majorant_exact": [
+            1,
+            4
+          ]
+        },
+        {
+          "order": 4,
+          "coefficient_exact": [
+            199,
+            8064
+          ],
+          "majorant_exact": [
+            243,
+            1280
+          ]
+        },
+        {
+          "order": 6,
+          "coefficient_exact": [
+            -1457969,
+            638668800
+          ],
+          "majorant_exact": [
+            5127611,
+            47308800
+          ]
+        },
+        {
+          "order": 8,
+          "coefficient_exact": [
+            230115269,
+            1716741734400
+          ],
+          "majorant_exact": [
+            101921919353,
+            1653158707200
+          ]
+        }
+      ]
+    },
+    {
+      "case": 11,
+      "N": 4,
+      "n": 4,
+      "uniform_event_mass_exact": [
+        3,
+        8
+      ],
+      "event_patterns": [
+        0,
+        2,
+        4,
+        7,
+        11,
+        14
+      ],
+      "orders": [
+        {
+          "order": 2,
+          "coefficient_exact": [
+            -1,
+            36
+          ],
+          "majorant_exact": [
+            1,
+            2
+          ]
+        },
+        {
+          "order": 4,
+          "coefficient_exact": [
+            25,
+            6048
+          ],
+          "majorant_exact": [
+            5141,
+            4480
+          ]
+        },
+        {
+          "order": 6,
+          "coefficient_exact": [
+            -25021,
+            958003200
+          ],
+          "majorant_exact": [
+            4449437,
+            3379200
+          ]
+        },
+        {
+          "order": 8,
+          "coefficient_exact": [
+            -377049511,
+            33476463820800
+          ],
+          "majorant_exact": [
+            972084130793,
+            826579353600
+          ]
+        }
+      ]
+    },
+    {
+      "case": 12,
+      "N": 2,
+      "n": 1,
+      "uniform_event_mass_exact": [
+        1,
+        2
+      ],
+      "event_patterns": [
+        1
+      ],
+      "orders": [
+        {
+          "order": 2,
+          "coefficient_exact": [
+            -1,
+            12
+          ],
+          "majorant_exact": [
+            1,
+            6
+          ]
+        },
+        {
+          "order": 4,
+          "coefficient_exact": [
+            149,
+            26880
+          ],
+          "majorant_exact": [
+            41,
+            630
+          ]
+        },
+        {
+          "order": 6,
+          "coefficient_exact": [
+            -2117,
+            7299072
+          ],
+          "majorant_exact": [
+            263,
+            7700
+          ]
+        },
+        {
+          "order": 8,
+          "coefficient_exact": [
+            73268761,
+            4959476121600
+          ],
+          "majorant_exact": [
+            69395,
+            3405402
+          ]
+        }
+      ]
+    },
+    {
+      "case": 13,
+      "N": 3,
+      "n": 2,
+      "uniform_event_mass_exact": [
+        1,
+        4
+      ],
+      "event_patterns": [
+        1
+      ],
+      "orders": [
+        {
+          "order": 2,
+          "coefficient_exact": [
+            -1,
+            24
+          ],
+          "majorant_exact": [
+            2,
+            3
+          ]
+        },
+        {
+          "order": 4,
+          "coefficient_exact": [
+            3,
+            80
+          ],
+          "majorant_exact": [
+            14,
+            15
+          ]
+        },
+        {
+          "order": 6,
+          "coefficient_exact": [
+            -1667249,
+            319334400
+          ],
+          "majorant_exact": [
+            66667,
+            51975
+          ]
+        },
+        {
+          "order": 8,
+          "coefficient_exact": [
+            1645852409,
+            3719607091200
+          ],
+          "majorant_exact": [
+            76543471,
+            42567525
+          ]
+        }
+      ]
+    },
+    {
+      "case": 14,
+      "N": 4,
+      "n": 3,
+      "uniform_event_mass_exact": [
+        1,
+        8
+      ],
+      "event_patterns": [
+        4
+      ],
+      "orders": [
+        {
+          "order": 2,
+          "coefficient_exact": [
+            1,
+            6
+          ],
+          "majorant_exact": [
+            3,
+            4
+          ]
+        },
+        {
+          "order": 4,
+          "coefficient_exact": [
+            -277,
+            10080
+          ],
+          "majorant_exact": [
+            3219,
+            2240
+          ]
+        },
+        {
+          "order": 6,
+          "coefficient_exact": [
+            559481,
+            212889600
+          ],
+          "majorant_exact": [
+            389167,
+            197120
+          ]
+        },
+        {
+          "order": 8,
+          "coefficient_exact": [
+            -416049437,
+            2231764254720
+          ],
+          "majorant_exact": [
+            1438174163,
+            574013440
+          ]
+        }
+      ]
+    },
+    {
+      "case": 15,
+      "N": 2,
+      "n": 2,
+      "uniform_event_mass_exact": [
+        1,
+        4
+      ],
+      "event_patterns": [
+        3
+      ],
+      "orders": [
+        {
+          "order": 2,
+          "coefficient_exact": [
+            -1,
+            8
+          ],
+          "majorant_exact": [
+            1,
+            4
+          ]
+        },
+        {
+          "order": 4,
+          "coefficient_exact": [
+            25,
+            3584
+          ],
+          "majorant_exact": [
+            243,
+            1280
+          ]
+        },
+        {
+          "order": 6,
+          "coefficient_exact": [
+            -7057,
+            31539200
+          ],
+          "majorant_exact": [
+            5127611,
+            47308800
+          ]
+        },
+        {
+          "order": 8,
+          "coefficient_exact": [
+            87839,
+            18893242368
+          ],
+          "majorant_exact": [
+            101921919353,
+            1653158707200
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,559 @@
+{
+  "records": [
+    {
+      "name": "irregular_hubs_n16_s1101",
+      "split": "development",
+      "scores": {
+        "first": {
+          "ground_probability": 0.007832572904375059,
+          "projected_optimum_probability": 0.007918177286860386,
+          "ground_degeneracy": 1,
+          "optimum": 1.75,
+          "feasible_errors": 256,
+          "log_partition": 4.2092681667770995,
+          "scale": 0.018291316013498402,
+          "qubits": 69
+        },
+        "guided_pool": {
+          "ground_probability": 0.014811318248266809,
+          "projected_optimum_probability": 0.014825138665817226,
+          "ground_degeneracy": 1,
+          "optimum": 1.75,
+          "feasible_errors": 256,
+          "log_partition": 3.40019930383208,
+          "scale": 0.023204695432716655,
+          "qubits": 63
+        },
+        "guided_pruned": {
+          "ground_probability": 0.014811318248266809,
+          "projected_optimum_probability": 0.014825138665817226,
+          "ground_degeneracy": 1,
+          "optimum": 1.75,
+          "feasible_errors": 256,
+          "log_partition": 3.40019930383208,
+          "scale": 0.023204695432716655,
+          "qubits": 63
+        },
+        "size_only_pool": {
+          "ground_probability": 0.014811318248266809,
+          "projected_optimum_probability": 0.014825138665817226,
+          "ground_degeneracy": 1,
+          "optimum": 1.75,
+          "feasible_errors": 256,
+          "log_partition": 3.40019930383208,
+          "scale": 0.023204695432716655,
+          "qubits": 63
+        }
+      }
+    },
+    {
+      "name": "irregular_hubs_n16_s2203",
+      "split": "held_out",
+      "scores": {
+        "first": {
+          "ground_probability": 0.02057523917012591,
+          "projected_optimum_probability": 0.020589273805318744,
+          "ground_degeneracy": 1,
+          "optimum": 0.0,
+          "feasible_errors": 256,
+          "log_partition": 3.8836669081791095,
+          "scale": 0.02514614683580961,
+          "qubits": 58
+        },
+        "guided_pool": {
+          "ground_probability": 0.02057523917012591,
+          "projected_optimum_probability": 0.020589273805318744,
+          "ground_degeneracy": 1,
+          "optimum": 0.0,
+          "feasible_errors": 256,
+          "log_partition": 3.8836669081791095,
+          "scale": 0.02514614683580961,
+          "qubits": 58
+        },
+        "guided_pruned": {
+          "ground_probability": 0.02057523917012591,
+          "projected_optimum_probability": 0.020589273805318744,
+          "ground_degeneracy": 1,
+          "optimum": 0.0,
+          "feasible_errors": 256,
+          "log_partition": 3.8836669081791095,
+          "scale": 0.02514614683580961,
+          "qubits": 58
+        },
+        "size_only_pool": {
+          "ground_probability": 0.02057523917012591,
+          "projected_optimum_probability": 0.020589273805318744,
+          "ground_degeneracy": 1,
+          "optimum": 0.0,
+          "feasible_errors": 256,
+          "log_partition": 3.8836669081791095,
+          "scale": 0.02514614683580961,
+          "qubits": 58
+        }
+      }
+    },
+    {
+      "name": "irregular_hubs_n16_s3307",
+      "split": "held_out",
+      "scores": {
+        "first": {
+          "ground_probability": 0.017046640121239607,
+          "projected_optimum_probability": 0.017092898246386108,
+          "ground_degeneracy": 1,
+          "optimum": -1.0,
+          "feasible_errors": 256,
+          "log_partition": 4.628323780868454,
+          "scale": 0.02782608129295254,
+          "qubits": 68
+        },
+        "guided_pool": {
+          "ground_probability": 0.020662966675897895,
+          "projected_optimum_probability": 0.020685616884054594,
+          "ground_degeneracy": 1,
+          "optimum": -1.0,
+          "feasible_errors": 256,
+          "log_partition": 4.483610798320972,
+          "scale": 0.03020992839381582,
+          "qubits": 67
+        },
+        "guided_pruned": {
+          "ground_probability": 0.020662966675897895,
+          "projected_optimum_probability": 0.020685616884054594,
+          "ground_degeneracy": 1,
+          "optimum": -1.0,
+          "feasible_errors": 256,
+          "log_partition": 4.483610798320972,
+          "scale": 0.03020992839381582,
+          "qubits": 67
+        },
+        "size_only_pool": {
+          "ground_probability": 0.020662966675897895,
+          "projected_optimum_probability": 0.020685616884054594,
+          "ground_degeneracy": 1,
+          "optimum": -1.0,
+          "feasible_errors": 256,
+          "log_partition": 4.483610798320972,
+          "scale": 0.03020992839381582,
+          "qubits": 67
+        }
+      }
+    },
+    {
+      "name": "mixed_hypergraph_n16_s1101",
+      "split": "development",
+      "scores": {
+        "first": {
+          "ground_probability": 0.012972133183400394,
+          "projected_optimum_probability": 0.013261535144862379,
+          "ground_degeneracy": 2,
+          "optimum": -0.25,
+          "feasible_errors": 512,
+          "log_partition": 5.130641749360074,
+          "scale": 0.018508549040165977,
+          "qubits": 118
+        },
+        "guided_pool": {
+          "ground_probability": 0.01685708278053096,
+          "projected_optimum_probability": 0.01703808542248691,
+          "ground_degeneracy": 2,
+          "optimum": -0.25,
+          "feasible_errors": 512,
+          "log_partition": 4.876241583410918,
+          "scale": 0.02002200708120589,
+          "qubits": 107
+        },
+        "guided_pruned": {
+          "ground_probability": 0.01685708278053096,
+          "projected_optimum_probability": 0.01703808542248691,
+          "ground_degeneracy": 2,
+          "optimum": -0.25,
+          "feasible_errors": 512,
+          "log_partition": 4.876241583410918,
+          "scale": 0.02002200708120589,
+          "qubits": 107
+        },
+        "size_only_pool": {
+          "ground_probability": 0.01685708278053096,
+          "projected_optimum_probability": 0.01703808542248691,
+          "ground_degeneracy": 2,
+          "optimum": -0.25,
+          "feasible_errors": 512,
+          "log_partition": 4.876241583410918,
+          "scale": 0.02002200708120589,
+          "qubits": 107
+        }
+      }
+    },
+    {
+      "name": "mixed_hypergraph_n16_s2203",
+      "split": "held_out",
+      "scores": {
+        "first": {
+          "ground_probability": 0.005231845553563142,
+          "projected_optimum_probability": 0.005493569100588857,
+          "ground_degeneracy": 1,
+          "optimum": -1.75,
+          "feasible_errors": 512,
+          "log_partition": 6.035578053243528,
+          "scale": 0.022359624811476197,
+          "qubits": 120
+        },
+        "guided_pool": {
+          "ground_probability": 0.005791095755945425,
+          "projected_optimum_probability": 0.006023389811024492,
+          "ground_degeneracy": 1,
+          "optimum": -1.75,
+          "feasible_errors": 512,
+          "log_partition": 5.954535840100996,
+          "scale": 0.02294577384370853,
+          "qubits": 91
+        },
+        "guided_pruned": {
+          "ground_probability": 0.005791095755945425,
+          "projected_optimum_probability": 0.006023389811024492,
+          "ground_degeneracy": 1,
+          "optimum": -1.75,
+          "feasible_errors": 512,
+          "log_partition": 5.954535840100996,
+          "scale": 0.02294577384370853,
+          "qubits": 91
+        },
+        "size_only_pool": {
+          "ground_probability": 0.005791095755945425,
+          "projected_optimum_probability": 0.006023389811024492,
+          "ground_degeneracy": 1,
+          "optimum": -1.75,
+          "feasible_errors": 512,
+          "log_partition": 5.954535840100996,
+          "scale": 0.02294577384370853,
+          "qubits": 91
+        }
+      }
+    },
+    {
+      "name": "mixed_hypergraph_n16_s3307",
+      "split": "held_out",
+      "scores": {
+        "first": {
+          "ground_probability": 0.004326078050892255,
+          "projected_optimum_probability": 0.00454273054184074,
+          "ground_degeneracy": 1,
+          "optimum": -0.5,
+          "feasible_errors": 512,
+          "log_partition": 5.688353302756332,
+          "scale": 0.024525939341975365,
+          "qubits": 122
+        },
+        "guided_pool": {
+          "ground_probability": 0.004669873981733426,
+          "projected_optimum_probability": 0.004862477056202947,
+          "ground_degeneracy": 1,
+          "optimum": -0.5,
+          "feasible_errors": 512,
+          "log_partition": 5.6171877396832,
+          "scale": 0.02505645473782536,
+          "qubits": 112
+        },
+        "guided_pruned": {
+          "ground_probability": 0.004669873981733426,
+          "projected_optimum_probability": 0.004862477056202947,
+          "ground_degeneracy": 1,
+          "optimum": -0.5,
+          "feasible_errors": 512,
+          "log_partition": 5.6171877396832,
+          "scale": 0.02505645473782536,
+          "qubits": 112
+        },
+        "size_only_pool": {
+          "ground_probability": 0.004669873981733426,
+          "projected_optimum_probability": 0.004862477056202947,
+          "ground_degeneracy": 1,
+          "optimum": -0.5,
+          "feasible_errors": 512,
+          "log_partition": 5.6171877396832,
+          "scale": 0.02505645473782536,
+          "qubits": 112
+        }
+      }
+    },
+    {
+      "name": "random_regular_n16_s1101",
+      "split": "development",
+      "scores": {
+        "first": {
+          "ground_probability": 0.04435329779268274,
+          "projected_optimum_probability": 0.04449831581561405,
+          "ground_degeneracy": 4,
+          "optimum": -1.5,
+          "feasible_errors": 256,
+          "log_partition": 5.415227244627722,
+          "scale": 0.030445488962122902,
+          "qubits": 59
+        },
+        "guided_pool": {
+          "ground_probability": 0.04435329779268274,
+          "projected_optimum_probability": 0.04449831581561405,
+          "ground_degeneracy": 4,
+          "optimum": -1.5,
+          "feasible_errors": 256,
+          "log_partition": 5.415227244627722,
+          "scale": 0.030445488962122902,
+          "qubits": 59
+        },
+        "guided_pruned": {
+          "ground_probability": 0.04435329779268274,
+          "projected_optimum_probability": 0.04449831581561405,
+          "ground_degeneracy": 4,
+          "optimum": -1.5,
+          "feasible_errors": 256,
+          "log_partition": 5.415227244627722,
+          "scale": 0.030445488962122902,
+          "qubits": 59
+        },
+        "size_only_pool": {
+          "ground_probability": 0.04204665652253191,
+          "projected_optimum_probability": 0.042212006273343365,
+          "ground_degeneracy": 4,
+          "optimum": -1.5,
+          "feasible_errors": 256,
+          "log_partition": 5.450797062559221,
+          "scale": 0.029850909792186894,
+          "qubits": 58
+        }
+      }
+    },
+    {
+      "name": "random_regular_n16_s2203",
+      "split": "held_out",
+      "scores": {
+        "first": {
+          "ground_probability": 0.046276536659677556,
+          "projected_optimum_probability": 0.04629984330443887,
+          "ground_degeneracy": 2,
+          "optimum": -0.75,
+          "feasible_errors": 256,
+          "log_partition": 4.188296326870688,
+          "scale": 0.02813526215740897,
+          "qubits": 59
+        },
+        "guided_pool": {
+          "ground_probability": 0.05539225327702339,
+          "projected_optimum_probability": 0.05540169424875628,
+          "ground_degeneracy": 2,
+          "optimum": -0.75,
+          "feasible_errors": 256,
+          "log_partition": 4.0481258917041645,
+          "scale": 0.030777545572875622,
+          "qubits": 58
+        },
+        "guided_pruned": {
+          "ground_probability": 0.05539225327702339,
+          "projected_optimum_probability": 0.05540169424875628,
+          "ground_degeneracy": 2,
+          "optimum": -0.75,
+          "feasible_errors": 256,
+          "log_partition": 4.0481258917041645,
+          "scale": 0.030777545572875622,
+          "qubits": 58
+        },
+        "size_only_pool": {
+          "ground_probability": 0.022686183977306477,
+          "projected_optimum_probability": 0.022875531544992993,
+          "ground_degeneracy": 2,
+          "optimum": -0.75,
+          "feasible_errors": 256,
+          "log_partition": 4.79858074154532,
+          "scale": 0.021295625722397103,
+          "qubits": 56
+        }
+      }
+    },
+    {
+      "name": "random_regular_n16_s3307",
+      "split": "held_out",
+      "scores": {
+        "first": {
+          "ground_probability": 0.021287744749120843,
+          "projected_optimum_probability": 0.021421092092460636,
+          "ground_degeneracy": 2,
+          "optimum": -0.5,
+          "feasible_errors": 256,
+          "log_partition": 4.7216400876161035,
+          "scale": 0.017886917131303897,
+          "qubits": 55
+        },
+        "guided_pool": {
+          "ground_probability": 0.04485319167811224,
+          "projected_optimum_probability": 0.044866680842037605,
+          "ground_degeneracy": 2,
+          "optimum": -0.5,
+          "feasible_errors": 256,
+          "log_partition": 4.038288865374813,
+          "scale": 0.024078115519711916,
+          "qubits": 53
+        },
+        "guided_pruned": {
+          "ground_probability": 0.04485319167811224,
+          "projected_optimum_probability": 0.044866680842037605,
+          "ground_degeneracy": 2,
+          "optimum": -0.5,
+          "feasible_errors": 256,
+          "log_partition": 4.038288865374813,
+          "scale": 0.024078115519711916,
+          "qubits": 53
+        },
+        "size_only_pool": {
+          "ground_probability": 0.04485319167811224,
+          "projected_optimum_probability": 0.044866680842037605,
+          "ground_degeneracy": 2,
+          "optimum": -0.5,
+          "feasible_errors": 256,
+          "log_partition": 4.038288865374813,
+          "scale": 0.024078115519711916,
+          "qubits": 53
+        }
+      }
+    },
+    {
+      "name": "rewired_band_n16_s1101",
+      "split": "development",
+      "scores": {
+        "first": {
+          "ground_probability": 0.10010301641702853,
+          "projected_optimum_probability": 0.10010316814867123,
+          "ground_degeneracy": 4,
+          "optimum": -1.5,
+          "feasible_errors": 256,
+          "log_partition": 5.218806406967033,
+          "scale": 0.051031886225613624,
+          "qubits": 58
+        },
+        "guided_pool": {
+          "ground_probability": 0.10096066010584528,
+          "projected_optimum_probability": 0.10096079698147772,
+          "ground_degeneracy": 4,
+          "optimum": -1.5,
+          "feasible_errors": 256,
+          "log_partition": 5.2201198582483705,
+          "scale": 0.051360038506957716,
+          "qubits": 56
+        },
+        "guided_pruned": {
+          "ground_probability": 0.10096066010584528,
+          "projected_optimum_probability": 0.10096079698147772,
+          "ground_degeneracy": 4,
+          "optimum": -1.5,
+          "feasible_errors": 256,
+          "log_partition": 5.2201198582483705,
+          "scale": 0.051360038506957716,
+          "qubits": 56
+        },
+        "size_only_pool": {
+          "ground_probability": 0.09666842942627099,
+          "projected_optimum_probability": 0.09666865895730256,
+          "ground_degeneracy": 4,
+          "optimum": -1.5,
+          "feasible_errors": 256,
+          "log_partition": 5.214116061404145,
+          "scale": 0.04971177636308152,
+          "qubits": 54
+        }
+      }
+    },
+    {
+      "name": "rewired_band_n16_s2203",
+      "split": "held_out",
+      "scores": {
+        "first": {
+          "ground_probability": 0.050079119166959736,
+          "projected_optimum_probability": 0.050079175309971066,
+          "ground_degeneracy": 1,
+          "optimum": -0.5,
+          "feasible_errors": 256,
+          "log_partition": 3.453688327505349,
+          "scale": 0.04595371866412007,
+          "qubits": 54
+        },
+        "guided_pool": {
+          "ground_probability": 0.05089758339102205,
+          "projected_optimum_probability": 0.05089763280693092,
+          "ground_degeneracy": 1,
+          "optimum": -0.5,
+          "feasible_errors": 256,
+          "log_partition": 3.4412623112040137,
+          "scale": 0.0463322477068194,
+          "qubits": 52
+        },
+        "guided_pruned": {
+          "ground_probability": 0.05089758339102205,
+          "projected_optimum_probability": 0.05089763280693092,
+          "ground_degeneracy": 1,
+          "optimum": -0.5,
+          "feasible_errors": 256,
+          "log_partition": 3.4412623112040137,
+          "scale": 0.0463322477068194,
+          "qubits": 52
+        },
+        "size_only_pool": {
+          "ground_probability": 0.03327776298230936,
+          "projected_optimum_probability": 0.033278779036031166,
+          "ground_degeneracy": 1,
+          "optimum": -0.5,
+          "feasible_errors": 256,
+          "log_partition": 3.7754430393046072,
+          "scale": 0.03725771559365949,
+          "qubits": 51
+        }
+      }
+    },
+    {
+      "name": "rewired_band_n16_s3307",
+      "split": "held_out",
+      "scores": {
+        "first": {
+          "ground_probability": 0.13110536838220174,
+          "projected_optimum_probability": 0.13110558816620765,
+          "ground_degeneracy": 4,
+          "optimum": -2.25,
+          "feasible_errors": 256,
+          "log_partition": 5.637150084909761,
+          "scale": 0.04931337296660498,
+          "qubits": 60
+        },
+        "guided_pool": {
+          "ground_probability": 0.16564441052719503,
+          "projected_optimum_probability": 0.16564442640200977,
+          "ground_degeneracy": 4,
+          "optimum": -2.25,
+          "feasible_errors": 256,
+          "log_partition": 5.77124767756921,
+          "scale": 0.057489809399482034,
+          "qubits": 54
+        },
+        "guided_pruned": {
+          "ground_probability": 0.16564441052719503,
+          "projected_optimum_probability": 0.16564442640200977,
+          "ground_degeneracy": 4,
+          "optimum": -2.25,
+          "feasible_errors": 256,
+          "log_partition": 5.77124767756921,
+          "scale": 0.057489809399482034,
+          "qubits": 54
+        },
+        "size_only_pool": {
+          "ground_probability": 0.16564441052719503,
+          "projected_optimum_probability": 0.16564442640200977,
+          "ground_degeneracy": 4,
+          "optimum": -2.25,
+          "feasible_errors": 256,
+          "log_partition": 5.77124767756921,
+          "scale": 0.057489809399482034,
+          "qubits": 54
+        }
+      }
+    }
+  ],
+  "elapsed_seconds": 3.884745500050485,
+  "reference_only": true,
+  "construction_used_reference_solution": false
+}

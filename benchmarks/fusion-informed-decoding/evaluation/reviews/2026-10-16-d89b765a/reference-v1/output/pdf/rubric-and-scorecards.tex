@@ -1,0 +1,332 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=20mm,headheight=14pt]{geometry}
+\usepackage{fontspec,xeCJK}
+\setmainfont{lmroman10-regular.otf}[BoldFont=lmroman10-bold.otf,ItalicFont=lmroman10-italic.otf]
+\setsansfont{lmsans10-regular.otf}
+\setmonofont{lmmono10-regular.otf}[Scale=0.82]
+\setCJKmainfont{FandolSong-Regular.otf}[Script=Default,BoldFont=FandolSong-Bold.otf]
+\setCJKsansfont{FandolHei-Regular.otf}[Script=Default]
+\setCJKmonofont{FandolSong-Regular.otf}[Script=Default]
+\usepackage{amsmath,amssymb,booktabs,longtable,array,xurl,enumitem,graphicx}
+\usepackage[colorlinks=true,linkcolor=blue,urlcolor=blue]{hyperref}
+\usepackage{fancyhdr,lastpage}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt}
+\setlength{\emergencystretch}{3em}
+\setlist[itemize]{nosep,leftmargin=1.5em}
+\renewcommand{\arraystretch}{1.18}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small SciCode2 / Decoder v0.7}
+\fancyhead[R]{\small 事后独立评审 · 2026-10-16}
+\fancyfoot[C]{\small \thepage\ / \pageref{LastPage}}
+\begin{document}
+\section*{v0.7 Decoder：按原题交付物评分的 rubric v1}
+
+日期：2026-10-16。范围：已有九次尝试，七份科学交付；原题prompt哈希见standard-answer.md。
+
+\section*{1. 评分性质与边界}
+
+这是用户本轮要求建立的事后本地百分制，不是SciCode官方权重，也不是原运行前冻结的评分器。保留既有pass/fail/unknown判断与原score文件。本版量化便于比较完成程度，不把总分阈值冒充科学正确性或正式难度校准。A/B难度条件仍未完成。
+
+主要分数按原题R1-R4和明确deliverables组成，总计100分。原题允许unresolved加有效bounds，不因诚实保留未知直接扣分；原题未指定算法，正确替代方法同等接受。R3较小的有效N0单独作为成果强度比较，不把有效但较大的N0判为证明失败。
+
+通用比例锚点：0=缺失或核心错误；约25\%=只有片段；约50\%=实质完成但明显缺口；约75\%=多数完成、有具体保留；100\%=该项要求有充分证据。允许半分或四分之一分，必须写理由和证据定位。不重复扣同一缺陷：例如近似偏差宣称主要扣A3，D项只评价规定小尺寸API。
+
+基础设施失败记unknown/NA，不填科学零分。不完整交付与无参考答案也要区别。每条评分同时记录：提交中实际写出什么、独立检查支持什么、仍未知什么。评审补出的新证明不能冒充AI原提交已完成。
+
+\section*{2. 主评分表：100分}
+
+{\fontsize{9}{12.5}\selectfont
+\setlength{\tabcolsep}{2.2pt}
+
+\begin{longtable}{>{\raggedright\arraybackslash}p{\dimexpr 0.07\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.08\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.17\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.68\linewidth-2\tabcolsep\relax}}
+\toprule
+\textbf{ID} & \textbf{满分} & \textbf{对应要求} & \textbf{满分证据及主要扣分点}\tabularnewline
+\midrule
+\endfirsthead
+\toprule
+\textbf{ID} & \textbf{满分} & \textbf{对应要求} & \textbf{满分证据及主要扣分点}\tabularnewline
+\midrule
+\endhead
+{}A1 & 5 & R1覆盖 & O0/O1/O2各N=2,...,8共21条，区间/不确定性或有依据unresolved；缺项扣对应覆盖\tabularnewline
+{}A2 & 8 & R1相判定依据 & 增长二维尺寸、概率覆盖、统计和外推足以支持所下判定；慢下降/似平台不单独决定零/正极限；定理可直接支持相区，不强制为定理重做MC\tabularnewline
+{}A3 & 8 & R1误差控制 & 分开报告统计、有限尺寸和近似误差，数值误差估计有依据；chi差不冒充真偏差上界。A2已扣的中心极限推断缺口不在这里重复扣\tabularnewline
+{}A4 & 5 & R1图与判定语义 & 区分严格充分界、严格不可解码、数值边界和未知；不把界根当真实相变；图表与answers一致\tabularnewline
+{}A5 & 4 & R1结构一致性 & 相区判定与信息包含/等价类相容，必要时继承子集；合理处理N4异常与不对称；不要求每条单独充分界都严格嵌套\tabularnewline
+{}B1 & 4 & R2模型/几何 & 正确噪声、观测条件独立、边界、binary成功条件；无偷看隐藏信息或替换噪声信道\tabularnewline
+{}B2 & 4 & R2信息顺序 & O2到O1到O0退化、风险/可解码集合包含；如使用跨N顺序需真正证明\tabularnewline
+{}B3 & 5 & R2 charge等价 & O1(N2)=O0，N3=N6，N5=N7=N8完整整数q，N4独立类；只要求证明作答依赖的关系，不奖励错误的全N单调性\tabularnewline
+{}B4 & 2 & R2特殊rank & 使用的irrep概率与小N例外正确，尤其SU2及N4 determinant coincidences；避免O2(N2)=O0误判\tabularnewline
+{}C1 & 3 & R3 statement & 明确整数N0、所有N>=N0和所有p、L趋无穷的风险结论；计算域和端点完整\tabularnewline
+{}C2 & 5 & R3见证/decoder & 合法辅助规则及可行见证，或等价有效的直接Bayes/posterior论证；失败到贯穿分量及所需条件有效，避免把隐藏误当充分条件\tabularnewline
+{}C3 & 6 & R3相关性 & 合法处理共享边取向、侧边/chord及readout条件独立；矩阵、随机粗粒化、分部Cauchy-Schwarz等有效替代同等接受\tabularnewline
+{}C4 & 4 & R3指数界与认证 & 固定路径概率、路径数、长度下界、全p严格因子<1和有限前因子；仅数值优化未认证全局最大需保留\tabularnewline
+{}C5 & 2 & R3结论范围 & 清楚充分N0不是最小/相界，r>=1不是不可解码；证据可复核；更小N0另列成果强度\tabularnewline
+{}D1 & 6 & R4联合partition sum & 保留同一边两端共享取向，正确局部概率和逻辑sector；不是把顶点取向独立化或求MAP代替sector posterior\tabularnewline
+{}D2 & 3 & R4精确算法 & L<=4,N<=8按要求精确或认证，解释收缩/枚举及复杂度；较大L近似不污染小尺寸承诺\tabularnewline
+{}D3 & 5 & R4独立核验 & 与不复用同一核心错误的独立枚举/参考比较，规定精度和coverage有证据；保留已有外部heldout检查的限定\tabularnewline
+{}D4 & 3 & R4数值范围 & 正概率记录不因下溢被误判零，规范化/log/高精度与端点可用；平台差异与原环境缺口分开\tabularnewline
+{}D5 & 3 & decode接口 & 返回合法边集合，syndrome正确，逻辑决定与所用posterior规则相容；异常和非法输出可定位\tabularnewline
+{}E1 & 4 & answers.json & 结构、21条目、端点误差/未解形式、R3\_N0与报告一致\tabularnewline
+{}E2 & 3 & 报告/图 & 有相图、R2/R3证明、证据与局限，文件可找到；不按图的个人审美扣科学分\tabularnewline
+{}E3 & 3 & 源码/复现/资源 & API、依赖环境、命令、seed/资源说明支持复现；8CPU/32GiB/无GPU要求有记录\tabularnewline
+{}E4 & 5 & 数据/无条件记账 & 原始数据、seed、停止规则、trial分母、异常/非法输出计失败；预留slots与实际执行区分\tabularnewline
+\bottomrule
+\end{longtable}
+}
+
+小计：R1=30，R2=15，R3=20，R4=20，交付/可复现=15。
+
+\section*{3. 科学通过条件不由总分代替}
+
+R1：确切未知可以保留；但关键确定相判定没有足够证据、或把近似差当真误差界，不能靠其他项高分变成通过。
+
+R3：核心见证、相关性或全p严格界有致命缺口，则本要求未满足；有效更大N0仍通过。原提交算术证据与评审后独立修补分别列明。
+
+R4：必须满足题面小尺寸精度与接口。常规heldout通过不等于整个正概率输入域已证明稳健；压力缺口注明工程性质和平台。不可把这类易修复问题单独当SciCode所追求的科学判断失败。
+
+整题：主要求逐项审阅，允许有保留/部分完成/unknown；不设事后80分自动及格线。没有guided B，不形成正式A/B难度结论。
+
+\section*{4. 讨论细节诊断：不额外计入100分}
+
+以下用于回答“每个细节AI有没有做到位”。每run逐项标记E=明确正确论述，I=隐含或只部分展开，M=未见讨论，X=明确错误/证据不足的推论，NA=有效替代方法不需要，U=没有科学交付。M不自动等于原题失败，X需要给出具体命题和定位。
+
+{\fontsize{9}{12.5}\selectfont
+\setlength{\tabcolsep}{2.2pt}
+
+\begin{longtable}{>{\raggedright\arraybackslash}p{\dimexpr 0.12\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.53\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.35\linewidth-2\tabcolsep\relax}}
+\toprule
+\textbf{ID} & \textbf{诊断问题} & \textbf{与原题关系}\tabularnewline
+\midrule
+\endfirsthead
+\toprule
+\textbf{ID} & \textbf{诊断问题} & \textbf{与原题关系}\tabularnewline
+\midrule
+\endhead
+{}Q01 & D\_r(N)定义为全p集合，信息更多则不缩小但不必严格扩大 & R2核心含义\tabularnewline
+{}Q02 & N5已恢复完整整数q，N>=7严格饱和，N6例外 & R2核心\tabularnewline
+{}Q03 & mod4和mod6不互相包含，不能全N排序 & 使用跨N比较时必要\tabularnewline
+{}Q04 & 单独充分界不嵌套不等于真实相区违反信息顺序 & R1解释\tabularnewline
+{}Q05 & 把可靠Z4可解码子集转移给完整整数q & R1/R2一致性\tabularnewline
+{}Q06 & Z4纯三次与单次混淆、混合三次与单次混淆的区别 & 特征机制\tabularnewline
+{}Q07 & 高p活跃连通分量取向恒等式及其证明范围 & 可选增强分析\tabularnewline
+{}Q08 & O1中性对不可见与O2隐藏随N变稀少 & R3/相图机制\tabularnewline
+{}Q09 & X,C binary与sigma潜取向分开，sigma不提供给decoder & 模型核心\tabularnewline
+{}Q10 & 差分分量自回避由度数0/2而来，非物理排斥 & 采用路径证明时必要\tabularnewline
+{}Q11 & M最小相容计数，11才强迫真实隐藏，01/10不改数量 & 采用该粗约束时必要\tabularnewline
+{}Q12 & 隐藏必要非充分，且对指定辅助decoder成立 & 采用隐藏证明时必要\tabularnewline
+{}Q13 & decoder评分/最少最多边数/Chernoff条件参与概率界 & 相应证明路线必要\tabularnewline
+{}Q14 & 取向矩阵状态和每个元素解释正确 & 直接矩阵路线适用；替代路线NA\tabularnewline
+{}Q15 & 占据矩阵与取向矩阵是不同状态空间 & 两矩阵路线适用；替代路线NA\tabularnewline
+{}Q16 & 路径外边/chord共享不能逐顶点独立重抽 & 相关性核心；合法避开可E\tabularnewline
+{}Q17 & R*<=R\_aux为平均风险比较，指数界不是临界指数 & 证明结论核心\tabularnewline
+{}Q18 & partition function保留全局取向，小尺寸exact与大尺寸MPS分开 & R4核心\tabularnewline
+{}Q19 & 相图估计/充分界/未知、统计/有限尺寸/近似不确定性分开 & R1核心\tabularnewline
+{}Q20 & 所有异常计失败，预留slots不充作已完成trial & 明确交付要求\tabularnewline
+{}Q21 & 用图逐格解释sigma、F、首尾求和 & 本次讨论新增教学请求；原题非必答\tabularnewline
+\bottomrule
+\end{longtable}
+}
+
+本聊天中把矩阵索引a,b与arrival数a,b混用，是评审解释的符号失误；不能记成七份AI原提交的共同错误。参考答案改用alpha,beta与n\_V,n\_barV。
+
+\section*{5. 保存和复核}
+
+scores-v1.json保存权重、每项得分、理由、证据和诊断；scores-v1.csv便于排序；scorecards.md面向人工审阅。所有原始run目录只读。审阅新增结论与既有评审差异均单列，不覆盖旧scores.json。这里的细分权重可供下一批新测试事先冻结，当前批次只能称事后细分评审。
+\clearpage
+\section*{九次尝试的逐项评分与讨论细节审计 v1}
+
+本表是事后本地完成度评分，不是官方SciCode权重或事先冻结评分器。总分不替代R1-R4科学通过条件。七份科学交付与两份API失败均保留。
+
+\section*{1. 总览}
+
+{\fontsize{8.1}{11}\selectfont
+\setlength{\tabcolsep}{2.2pt}
+\renewcommand{\arraystretch}{1.05}
+\begin{longtable}{>{\raggedright\arraybackslash}p{\dimexpr 0.12\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.07\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.07\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.07\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.07\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.07\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.07\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.07\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.39\linewidth-2\tabcolsep\relax}}
+\toprule
+\textbf{Run} & \textbf{R1 /30} & \textbf{R2 /15} & \textbf{R3 /20} & \textbf{R4 /20} & \textbf{交付 /15} & \textbf{总分 /100} & \textbf{N0} & \textbf{科学判断}\tabularnewline
+\midrule
+\endfirsthead
+\toprule
+\textbf{Run} & \textbf{R1 /30} & \textbf{R2 /15} & \textbf{R3 /20} & \textbf{R4 /20} & \textbf{交付 /15} & \textbf{总分 /100} & \textbf{N0} & \textbf{科学判断}\tabularnewline
+\midrule
+\endhead
+{}Fable03 & 26 & 15 & 19.5 & 18 & 14 & 92.5 & 19 & 部分完成：中心相区证据与数值范围有缺口\tabularnewline
+{}Opus01 & 22 & 15 & 20 & 18 & 14.5 & 89.5 & 15 & 部分完成：中心外推、近似保证与数值范围有缺口\tabularnewline
+{}Opus02 & 22 & 15 & 20 & 18 & 14.5 & 89.5 & 15 & 部分完成：中心外推、近似保证与数值范围有缺口\tabularnewline
+{}Opus03 & 22 & 15 & 19 & 18 & 14.5 & 88.5 & 15 & 部分完成：同上；原全p算术认证另有保留\tabularnewline
+{}GPT01 & 30 & 15 & 20 & 20 & 15 & 100 & 13 & 按原题允许的保守作答暂定通过\tabularnewline
+{}GPT02 & 30 & 15 & 20 & 20 & 15 & 100 & 13 & 按原题允许的保守作答暂定通过\tabularnewline
+{}GPT03 & 29 & 15 & 20 & 20 & 15 & 99 & 14 & 有保留暂定通过：小N全p数值外推\tabularnewline
+{}Fable01 & NA & NA & NA & NA & NA & NA & NA & API输出限制，无法科学评审\tabularnewline
+{}Fable02 & NA & NA & NA & NA & NA & NA & NA & API输出限制，无法科学评审\tabularnewline
+\bottomrule
+\end{longtable}
+}
+
+GPT01/02的100表示本rubric下满足原题允许的有限结论，并不表示真实全相图已解决。七份均完成高质量核心理论和常规后验，故部分完成者也可得较高完成度分；关键科学缺口不被总分掩盖。更小有效N0作为成果强度另列。
+
+R3按原提交计分：Fable03与Opus03分别在全p算术认证完整性上保留0.5和1分；已有独立有理数复核支持其定理，不能说它们的N0结论已被推翻。
+
+\section*{2. 23项分数矩阵}
+
+{\fontsize{8.1}{11}\selectfont
+\setlength{\tabcolsep}{2.2pt}
+\renewcommand{\arraystretch}{1.05}
+\begin{longtable}{>{\raggedright\arraybackslash}p{\dimexpr 0.3\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.06\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.09143\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.09143\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.09143\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.09143\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.09143\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.09143\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.09143\linewidth-2\tabcolsep\relax}}
+\toprule
+\textbf{项目} & \textbf{满分} & \textbf{Fable03} & \textbf{Opus01} & \textbf{Opus02} & \textbf{Opus03} & \textbf{GPT01} & \textbf{GPT02} & \textbf{GPT03}\tabularnewline
+\midrule
+\endfirsthead
+\toprule
+\textbf{项目} & \textbf{满分} & \textbf{Fable03} & \textbf{Opus01} & \textbf{Opus02} & \textbf{Opus03} & \textbf{GPT01} & \textbf{GPT02} & \textbf{GPT03}\tabularnewline
+\midrule
+\endhead
+{}A1 R1覆盖 & 5.0 & 5 & 5 & 5 & 5 & 5 & 5 & 5\tabularnewline
+{}A2 R1相判定依据 & 8.0 & 4 & 5 & 5 & 5 & 8 & 8 & 7\tabularnewline
+{}A3 R1误差控制 & 8.0 & 8 & 3 & 3 & 3 & 8 & 8 & 8\tabularnewline
+{}A4 R1图与判定语义 & 5.0 & 5 & 5 & 5 & 5 & 5 & 5 & 5\tabularnewline
+{}A5 R1结构一致性 & 4.0 & 4 & 4 & 4 & 4 & 4 & 4 & 4\tabularnewline
+{}B1 R2模型/几何 & 4.0 & 4 & 4 & 4 & 4 & 4 & 4 & 4\tabularnewline
+{}B2 R2信息顺序 & 4.0 & 4 & 4 & 4 & 4 & 4 & 4 & 4\tabularnewline
+{}B3 R2 charge等价 & 5.0 & 5 & 5 & 5 & 5 & 5 & 5 & 5\tabularnewline
+{}B4 R2特殊rank & 2.0 & 2 & 2 & 2 & 2 & 2 & 2 & 2\tabularnewline
+{}C1 R3 statement & 3.0 & 3 & 3 & 3 & 3 & 3 & 3 & 3\tabularnewline
+{}C2 R3见证/decoder & 5.0 & 5 & 5 & 5 & 5 & 5 & 5 & 5\tabularnewline
+{}C3 R3相关性 & 6.0 & 6 & 6 & 6 & 6 & 6 & 6 & 6\tabularnewline
+{}C4 R3指数界与认证 & 4.0 & 3.5 & 4 & 4 & 3 & 4 & 4 & 4\tabularnewline
+{}C5 R3结论范围 & 2.0 & 2 & 2 & 2 & 2 & 2 & 2 & 2\tabularnewline
+{}D1 R4联合partition sum & 6.0 & 6 & 6 & 6 & 6 & 6 & 6 & 6\tabularnewline
+{}D2 R4精确算法 & 3.0 & 3 & 3 & 3 & 3 & 3 & 3 & 3\tabularnewline
+{}D3 R4独立核验 & 5.0 & 5 & 5 & 5 & 5 & 5 & 5 & 5\tabularnewline
+{}D4 R4数值范围 & 3.0 & 1 & 1 & 1 & 1 & 3 & 3 & 3\tabularnewline
+{}D5 decode接口 & 3.0 & 3 & 3 & 3 & 3 & 3 & 3 & 3\tabularnewline
+{}E1 answers.json & 4.0 & 4 & 4 & 4 & 4 & 4 & 4 & 4\tabularnewline
+{}E2 报告/图 & 3.0 & 3 & 3 & 3 & 3 & 3 & 3 & 3\tabularnewline
+{}E3 源码/复现/资源 & 3.0 & 3 & 3 & 3 & 3 & 3 & 3 & 3\tabularnewline
+{}E4 数据/无条件记账 & 5.0 & 4 & 4.5 & 4.5 & 4.5 & 5 & 5 & 5\tabularnewline
+\bottomrule
+\end{longtable}
+}
+
+\section*{3. 我们讨论的21项细节}
+
+E=明确正确；I=隐含/部分展开；M=未见；X=具体错误或证据不足推论；NA=合法替代路线无需此项；U=无科学交付。教学图是后来新增要求，不追扣原任务分。
+
+{\fontsize{8.1}{11}\selectfont
+\setlength{\tabcolsep}{2.2pt}
+\renewcommand{\arraystretch}{1.05}
+\begin{longtable}{>{\raggedright\arraybackslash}p{\dimexpr 0.37\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.09\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.09\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.09\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.09\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.09\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.09\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.09\linewidth-2\tabcolsep\relax}}
+\toprule
+\textbf{细节} & \textbf{Fable03} & \textbf{Opus01} & \textbf{Opus02} & \textbf{Opus03} & \textbf{GPT01} & \textbf{GPT02} & \textbf{GPT03}\tabularnewline
+\midrule
+\endfirsthead
+\toprule
+\textbf{细节} & \textbf{Fable03} & \textbf{Opus01} & \textbf{Opus02} & \textbf{Opus03} & \textbf{GPT01} & \textbf{GPT02} & \textbf{GPT03}\tabularnewline
+\midrule
+\endhead
+{}D\_r(N)定义为全p集合，信息更多则不缩小但不必严格扩大 & E & E & E & E & E & E & E\tabularnewline
+{}N5已恢复完整整数q，N>=7严格饱和，N6例外 & E & E & E & E & E & E & E\tabularnewline
+{}mod4和mod6不互相包含，不能全N排序 & E & E & E & E & E & E & E\tabularnewline
+{}单独充分界不嵌套不等于真实相区违反信息顺序 & I & I & I & I & E & E & I\tabularnewline
+{}把可靠Z4可解码子集转移给完整整数q & I & I & I & I & E & E & I\tabularnewline
+{}Z4纯三次与单次混淆、混合三次与单次混淆的区别 & I & I & I & E & E & I & I\tabularnewline
+{}高p活跃连通分量取向恒等式及其证明范围 & M & M & M & E & E & M & M\tabularnewline
+{}O1中性对不可见与O2隐藏随N变稀少 & E & E & E & E & E & E & E\tabularnewline
+{}X,C binary与sigma潜取向分开，sigma不提供给decoder & E & E & E & E & E & E & E\tabularnewline
+{}差分分量自回避由度数0/2而来，非物理排斥 & E & E & E & E & E & E & E\tabularnewline
+{}M最小相容计数，11才强迫真实隐藏，01/10不改数量 & I & I & I & I & E & E & E\tabularnewline
+{}隐藏必要非充分，且对指定辅助decoder成立 & E & E & E & E & E & E & E\tabularnewline
+{}decoder评分/最少最多边数/Chernoff条件参与概率界 & E & E & E & E & E & E & E\tabularnewline
+{}取向矩阵状态和每个元素解释正确 & NA & NA & NA & NA & E & E & NA\tabularnewline
+{}占据矩阵与取向矩阵是不同状态空间 & NA & NA & NA & NA & I & E & NA\tabularnewline
+{}路径外边/chord共享不能逐顶点独立重抽 & E & E & E & E & E & E & E\tabularnewline
+{}R*<=R\_aux为平均风险比较，指数界不是临界指数 & E & E & E & E & E & E & E\tabularnewline
+{}partition function保留全局取向，小尺寸exact与大尺寸MPS分开 & E & E & I & E & E & E & E\tabularnewline
+{}相图估计/充分界/未知、统计/有限尺寸/近似不确定性分开 & I & X & X & X & E & E & E\tabularnewline
+{}所有异常计失败，预留slots不充作已完成trial & X & X & X & X & E & E & E\tabularnewline
+{}用图逐格解释sigma、F、首尾求和 & M & M & M & M & M & M & M\tabularnewline
+\bottomrule
+\end{longtable}
+}
+
+NA不表示没有处理相关性：Fable/Opus/GPT03采用合法替代证明。I/M也不自动表示题面失败；比如高pZ4恒等式和逐格教学图是增强解释。Q20的X需按潜在实现缺陷与已发生异常分别阅读逐run证据。
+
+\section*{4. 对先前评语的修正}
+
+七份均正确分析了N5完整整数q和N>=7饱和，不能把此事说成普遍遗漏。GPT01与Opus03给出了Z4活跃连通分量恒等式。单独充分界不嵌套，不说明真实最优相区违背信息包含。
+
+旧REPORT把三份Opus的中心解释概括得过宽：Gaussian/BKT风险下界排除论证明确属于Opus02/03；Opus01应描述为典型charge钉扎clean-loop临界相的物理解释和慢漂移外推。此处修正归因，不改写历史原文件。
+
+七份每份210个常规posterior/correction全部通过，其中140个是题面R4、70个O0控制。18个极低p压力输入，GPT通过，其他四份本机失败；Opus02的Linux/macOS longdouble范围差异需保留。
+
+Fable03异常回退到posterior=.5会少计失败，但归档异常数为0，是潜在缺陷；Opus把hard failure记1，但posterior风险仍用.5。GPT03的340600是归档slots，含200个预留保守失败slots，不能称全部已完成物理trial。
+
+\section*{附录：扣分与保留项的证据定位}
+
+全部161项科学交付评分、21项讨论诊断及完整绝对路径保存在scorecards.md、scores-v1.json和score-details-v1.csv。下列集中列出改变得分或结论的项目。
+
+\section*{Fable03}
+
+\begin{itemize}
+\item A2：4/8.0。有增长二维尺寸的精确后验数据，但中心charge正风险相判定来自L<=12的慢漂移/正极限拟合，且未排除很长crossover。 原文：\nolinkurl{anthropic__claude-fable-5-1/run_03/report.md:213}。
+\item C4：3.5/4。原交付的全p严格算术认证有保留；已有独立有理数复核支持定理。 原文：\nolinkurl{anthropic__claude-fable-5-1/run_03/docs/theory.md:224}。
+\item D4：1/3。210/210 常规通过；18 个极低 p 正概率压力案例未通过。具有普通逐步归一化，但局部乘积/边权仍可下溢。 原文：\nolinkurl{anthropic__claude-fable-5-1/run_03/src/model.py:198}。
+\item E4：4/5。种子、固定 job 数、资源、原始数组和分母均保存；但异常变 P0=.5，聚合按风险及 hard tie 均记.5，而题面要求异常为失败。data/summary.csv 总 nfail\_exc=0，因此这是潜在缺陷，未见影响归档估计。 原文：\nolinkurl{anthropic__claude-fable-5-1/run_03/src/run_mc.py:56}。
+\item 异常记账缺陷是潜在问题；归档summary的异常计数总和为零，未发现它改变归档相图数值。
+\end{itemize}
+
+\section*{Opus01}
+
+\begin{itemize}
+\item A2：5/8.0。二维尺寸到约L48，诊断有价值；中心charge零极限与clean-loop相被charge钉扎的解释仍未排除其他正极限。 原文：\nolinkurl{anthropic__claude-opus-5-5/run_01/report.md:326}。
+\item A3：3/8.0。chi对比和误差分类有工作量，但两个近似接近不能充当真posterior偏差的上界。 原文：\nolinkurl{anthropic__claude-opus-5-5/run_01/report.md:82}。
+\item D4：1/3。210/210 常规通过；18 个极低 p 正概率压力案例未通过。具有普通逐步归一化，但局部乘积/边权仍可下溢。 原文：\nolinkurl{anthropic__claude-opus-5-5/run_01/solution.py:71}。
+\item E4：4.5/5。原始数据、种子、固定块停止规则、资源和所有尝试分母有记录，bad hard failure 为1；但报告的 posterior-min 风险遇异常仍设.5而不是1。 原文：\nolinkurl{anthropic__claude-opus-5-5/run_01/src/mc.py:146}。
+\end{itemize}
+
+\section*{Opus02}
+
+\begin{itemize}
+\item A2：5/8.0。二维尺寸到约L96；Gaussian/BKT启发式未被证明足以排除题目后验模型的所有不可解码相。 原文：\nolinkurl{anthropic__claude-opus-5-5/run_02/REPORT.md:184}。
+\item A3：3/8.0。将chi与更大chi之差提升为induced bias上界，缺少对后者误差的控制。 原文：\nolinkurl{anthropic__claude-opus-5-5/run_02/REPORT.md:301}。
+\item D4：1/3。210/210 常规通过；18 个极低 p 正概率压力案例未通过。具有普通逐步归一化，但局部乘积/边权仍可下溢。 macOS longdouble 范围与原 Linux 不同，不能把全部 macOS 失败直接归因于原环境；但 pri 中 p/2 在 Python float 转 dtype 前归零，在最小正 float 处跨平台存在。 原文：\nolinkurl{anthropic__claude-opus-5-5/run_02/hexsym/api.py:45}。
+\item E4：4.5/5。原始数据、种子、固定块停止规则、资源和所有尝试分母有记录，bad hard failure 为1；但报告的 posterior-min 风险遇异常仍设.5而不是1。 原文：\nolinkurl{anthropic__claude-opus-5-5/run_02/hexsym/sim.py:49}。
+\item 极低p数值缺口包含原Linux与复核macOS的longdouble范围差异；Python float先算p/2的最小subnormal问题不依赖此差异。
+\end{itemize}
+
+\section*{Opus03}
+
+\begin{itemize}
+\item A2：5/8.0。二维尺寸到约L64；慢下降和Gaussian/BKT排除不足以确定中心charge零极限。 原文：\nolinkurl{anthropic__claude-opus-5-5/run_03/report.md:239}。
+\item A3：3/8.0。较大chi也可能有共同偏差，经验收敛差不能提供所声称的真偏差保证。 原文：\nolinkurl{anthropic__claude-opus-5-5/run_03/report.md:355}。
+\item C4：3/4。原交付的全p严格算术认证有保留；已有独立有理数复核支持定理。 原文：\nolinkurl{anthropic__claude-opus-5-5/run_03/docs/proofs.md:199}。
+\item D4：1/3。210/210 常规通过；18 个极低 p 正概率压力案例未通过。具有普通逐步归一化，但局部乘积/边权仍可下溢。 原文：\nolinkurl{anthropic__claude-opus-5-5/run_03/symdec/api.py:43}。
+\item E4：4.5/5。原始数据、种子、固定块停止规则、资源和所有尝试分母有记录，bad hard failure 为1；但报告的 posterior-min 风险遇异常仍设.5而不是1。 原文：\nolinkurl{anthropic__claude-opus-5-5/run_03/symdec/mc.py:121}。
+\end{itemize}
+
+\section*{GPT01}
+
+本rubric主项均满足。仍按参考答案保留中心相区未知，不等于已求出全相图。
+
+
+\section*{GPT02}
+
+本rubric主项均满足。仍按参考答案保留中心相区未知，不等于已求出全相图。
+
+
+\section*{GPT03}
+
+\begin{itemize}
+\item A2：7/8.0。增长二维精确后验支持小N O2的数值全p判定；有限网格与较晚crossover仍有保留，不是全p定理。 原文：\nolinkurl{openai__gpt-6-astra/run_03/report.md:3}。
+\item 归档340600 slots含200个未证实执行的预留失败slots，报告中按此限定解读。
+\end{itemize}
+
+\section*{附录：版本和复核范围}
+
+原prompt SHA-256：\nolinkurl{d89b765a4af1e50b2824d40d0c2d8590e722202219411bd49f5ea7d63c64d6a9}。不改题、不启动新模型或生产相图实验。复用已有独立oracle、210例常规检查、18例压力检查和大N有理数证书；本轮新增rubric、交付物细分审计及参考安全端点认证。
+
+评分不是正式SciCode A/B难度结论。完整官方模板仍未获验证，本地权重不冒充官方规定。总分是完成程度，关键科学通过条件逐项保留。
+\end{document}

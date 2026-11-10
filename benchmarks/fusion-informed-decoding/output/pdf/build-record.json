@@ -1,0 +1,38 @@
+{
+  "revision": "review-draft-v0.8",
+  "purpose": "human question review; editable and not frozen for model trials",
+  "canonical_question": "problem/TASK.md",
+  "canonical_pdf": "problem/problem.pdf",
+  "builder": "scripts/build_problem_sheets.py",
+  "built_utc": "2026-10-16T20:18:59.246916+00:00",
+  "source_sha256": "d6de32fcf71690fed137a9761c22a5be4a81f31766d3ea9ddf61ed1c7c8909c6",
+  "files": {
+    "problem/TASK.md": "d6de32fcf71690fed137a9761c22a5be4a81f31766d3ea9ddf61ed1c7c8909c6",
+    "problem/main.tex": "8466b556087b8da87689cf438fd0ffadb857fbf59eef196a1ea10be0d46867da",
+    "problem/problem.pdf": "4d29096efecc64a2b822536183b08a4045edea5c57cf7eb2c91f63aaa8a37d78",
+    "output/pdf/problem.pdf": "4d29096efecc64a2b822536183b08a4045edea5c57cf7eb2c91f63aaa8a37d78",
+    "metadata.yml": "a613adecdbd567248f3010c31b635cd84b9575bd217b143031ad861fd7e9199a",
+    "problem/figures/geometry-L3.png": "a953edd041babb2bff66c4de6cbda22151fb6b76444144c831360cbe9e6eea01",
+    "problem/EDITORIAL_AUDIT.md": "8158376013e4eab45e9882c823141e3c89f7f90c28623405f8ef6731e4249de8",
+    "problem/REVISION-v0.8.md": "97fc41b9ef676926791b902bf9179cd091fb32f123f3d80001f2faab965da791",
+    "README.md": "31619eca43a09454edcdb05654f5021c210d8830ef7652038a30505d3f7055df",
+    "problem/SOURCE_REVIEW.md": "425d4fcd726dc9b1089c2802c06f6013dbb463a530b2d60a10789c51169fc96b"
+  },
+  "pdf_pages": 4,
+  "overfull_boxes": [],
+  "qa": "All final pages rendered and visually inspected; source coverage, version labels, current/history differences, identical PDF copies and source hashes checked. Fusion geometry retained; D4 input embedded byte-for-byte and unchanged from its previous version.",
+  "scientific_execution": "not-started",
+  "model_trials": "not-started",
+  "builder_sha256": "bbc0d8d8a842b7f14d76286adf212ba1851270f62f78530e3766d4c01d320515",
+  "superseded": "problem/history/review-draft-v0.7/",
+  "checks": {
+    "prose_word_coverage": "all canonical prose words present in PDF extraction",
+    "task_source_hash": "matches generated main.tex",
+    "pdf_copy": "byte-identical to output/pdf/problem.pdf",
+    "content_revision": "TASK and PDF differ from archived version",
+    "layout": "all final page renders visually inspected; no overfull boxes",
+    "input_attachment": "not applicable",
+    "scientific_experiments": "none",
+    "model_trials": "none"
+  }
+}

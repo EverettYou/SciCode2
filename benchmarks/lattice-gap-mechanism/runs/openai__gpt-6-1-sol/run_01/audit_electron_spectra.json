@@ -1,0 +1,328 @@
+{
+  "scope": "Code/finite-cluster audit, not a bulk Hubbard-model rejection",
+  "geometry": [
+    {
+      "N": 8,
+      "NN_entries": 16,
+      "NN_unique": 16,
+      "NNN_entries": 16,
+      "NNN_unique": 8,
+      "NNN_multiplicities": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "one_particle_energies_D": [
+        -4.769650455515971,
+        -5.670210272982922e-16,
+        2.3082710097996795e-18,
+        6.896415859751724e-17,
+        3.078226313727559e-16,
+        0.7813771244872034,
+        0.7813771244872036,
+        3.206896206541565
+      ],
+      "dispersion_eigenvalue_max_error": 1.7763568394002505e-15,
+      "noninteracting_half_charge_gap_D": 2.388584727752387e-16,
+      "local_band_second_moment_D2": 4.281856146084775,
+      "note": "8-site repeated NNN image bonds must be retained for the periodic dispersion; they are not an accidental duplication."
+    },
+    {
+      "N": 10,
+      "NN_entries": 20,
+      "NN_unique": 20,
+      "NNN_entries": 20,
+      "NNN_unique": 20,
+      "NNN_multiplicities": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "one_particle_energies_D": [
+        -4.769650455515974,
+        -0.8017240516353917,
+        -0.8017240516353916,
+        -0.8017240516353916,
+        -0.8017240516353901,
+        1.1924126138789926,
+        1.1924126138789926,
+        1.192412613878993,
+        1.1924126138789932,
+        3.2068962065415665
+      ],
+      "dispersion_eigenvalue_max_error": 8.881784197001252e-16,
+      "noninteracting_half_charge_gap_D": 1.9941366655143826,
+      "local_band_second_moment_D2": 4.129218593416803,
+      "note": "8-site repeated NNN image bonds must be retained for the periodic dispersion; they are not an accidental duplication."
+    }
+  ],
+  "bond_signs": {
+    "parameters": {
+      "t": 0.71,
+      "tp": 0,
+      "U": 5.0,
+      "J1": 1.3,
+      "P": 0.8,
+      "V1": 0.4
+    },
+    "actual_eigenvalues": [
+      -1.6687154708878345,
+      5.289266183090383e-17,
+      4.168715470887836,
+      5.3999999999999995
+    ],
+    "analytic_eigenvalues": [
+      -1.6687154708878356,
+      0.0,
+      4.168715470887836,
+      5.3999999999999995
+    ],
+    "maximum_error": 1.1102230246251565e-15,
+    "terms_checked": "hopping fermion signs, onsite U, physical singlet exchange, pair hopping, centered NN density interaction"
+  },
+  "stored_spectral_moments": [
+    {
+      "file": "hubbard_spectrum_1_5.npz",
+      "U_D": 11.493525192155293,
+      "nu": 0.5,
+      "M0": 1.0000000000000016,
+      "M1_D": -0.04684392643816576,
+      "M1_exact_D": -0.0468439264381697,
+      "M1_error_D": 3.941291737419306e-15,
+      "M2_D2": 37.15669328254572,
+      "variance_D2": 37.15449892910157,
+      "variance_exact_D2": 37.15449892909389,
+      "variance_error_D2": 7.680966973566683e-12,
+      "occupied_weight": 0.5000000000000004,
+      "occupied_weight_exact": 0.5,
+      "pole_weight_min": 1.2268071352876702e-31,
+      "note": "Moments of clean Lanczos poles; a finite-window Lorentzian DOS has different/truncated moments."
+    },
+    {
+      "file": "hubbard_spectrum_1_3.npz",
+      "U_D": 11.493525192155293,
+      "nu": 0.3,
+      "M0": 1.000000000000001,
+      "M1_D": 2.950791054626902,
+      "M1_exact_D": 2.950791054626903,
+      "M1_error_D": -1.3322676295501878e-15,
+      "M2_D2": 40.57762192344319,
+      "variance_D2": 31.870454075377047,
+      "variance_exact_D2": 31.870454075385553,
+      "variance_error_D2": -8.5051965470484e-12,
+      "occupied_weight": 0.3000000000000004,
+      "occupied_weight_exact": 0.3,
+      "pole_weight_min": 0.0,
+      "note": "Moments of clean Lanczos poles; a finite-window Lorentzian DOS has different/truncated moments."
+    },
+    {
+      "file": "hubbard_spectrum_1_2.npz",
+      "U_D": 11.493525192155293,
+      "nu": 0.2,
+      "M0": 1.0000000000000064,
+      "M1_D": 2.6217248725299696,
+      "M1_exact_D": 2.6217248725299407,
+      "M1_error_D": 2.886579864025407e-14,
+      "M2_D2": 32.13883931545237,
+      "variance_D2": 25.265398008210088,
+      "variance_exact_D2": 25.26539800825014,
+      "variance_error_D2": -4.005329401479685e-11,
+      "occupied_weight": 0.20000000000000034,
+      "occupied_weight_exact": 0.2,
+      "pole_weight_min": 0.0,
+      "note": "Moments of clean Lanczos poles; a finite-window Lorentzian DOS has different/truncated moments."
+    },
+    {
+      "file": "hubbard_spectrum_-1_5.npz",
+      "U_D": -11.452301392461218,
+      "nu": 0.5,
+      "M0": 0.9999999999999989,
+      "M1_D": -0.11611784149353305,
+      "M1_exact_D": -0.11611784149353443,
+      "M1_error_D": 1.3877787807814457e-15,
+      "M2_D2": 36.93150374245217,
+      "variance_D2": 36.918020389339055,
+      "variance_exact_D2": 36.918020389359086,
+      "variance_error_D2": -2.0030199721077224e-11,
+      "occupied_weight": 0.49999999999999956,
+      "occupied_weight_exact": 0.5,
+      "pole_weight_min": 9.84592262623738e-29,
+      "note": "Moments of clean Lanczos poles; a finite-window Lorentzian DOS has different/truncated moments."
+    },
+    {
+      "file": "hubbard_spectrum_-1_3.npz",
+      "U_D": -11.452301392461218,
+      "nu": 0.3,
+      "M0": 0.9999999999999996,
+      "M1_D": 2.3679494923149558,
+      "M1_exact_D": 2.3679494923149496,
+      "M1_error_D": 6.217248937900877e-15,
+      "M2_D2": 37.27899689319257,
+      "variance_D2": 31.671812095037915,
+      "variance_exact_D2": 31.671812102008317,
+      "variance_error_D2": -6.97040292152451e-09,
+      "occupied_weight": 0.29999999999999943,
+      "occupied_weight_exact": 0.3,
+      "pole_weight_min": 0.0,
+      "note": "Moments of clean Lanczos poles; a finite-window Lorentzian DOS has different/truncated moments."
+    },
+    {
+      "file": "hubbard_spectrum_-1_2.npz",
+      "U_D": -11.452301392461218,
+      "nu": 0.2,
+      "M0": 1.0000000000000009,
+      "M1_D": 3.5098733644589695,
+      "M1_exact_D": 3.5098733644589637,
+      "M1_error_D": 5.773159728050814e-15,
+      "M2_D2": 37.433262777265405,
+      "variance_D2": 25.11405174272688,
+      "variance_exact_D2": 25.114051742819864,
+      "variance_error_D2": -9.298517511524551e-11,
+      "occupied_weight": 0.2000000000000001,
+      "occupied_weight_exact": 0.2,
+      "pole_weight_min": 0.0,
+      "note": "Moments of clean Lanczos poles; a finite-window Lorentzian DOS has different/truncated moments."
+    }
+  ],
+  "warm_start_crossing_checks": [
+    {
+      "U_D": 12.0,
+      "warm_energy": -3.66907847419869,
+      "independent_cold_k2_energies": [
+        -3.669078474198706,
+        -3.4820888148498588
+      ],
+      "ground_energy_difference": 1.5987211554602254e-14,
+      "warm_residual": 1.6485499070257928e-09,
+      "cold_residual": 5.356769449750524e-14
+    },
+    {
+      "U_D": -12.0,
+      "warm_energy": -63.71300343535096,
+      "independent_cold_k2_energies": [
+        -63.71300343535092,
+        -63.49866816135601
+      ],
+      "ground_energy_difference": -4.263256414560601e-14,
+      "warm_residual": 5.324352507054654e-08,
+      "cold_residual": 1.1969572873343054e-13
+    },
+    {
+      "U_D": 0.0,
+      "warm_energy": -15.95309332411509,
+      "independent_cold_k2_energies": [
+        -15.953093324115079,
+        -13.958956658600696
+      ],
+      "ground_energy_difference": -1.0658141036401503e-14,
+      "warm_residual": 1.4942566851025931e-12,
+      "cold_residual": 2.1741890174266617e-14,
+      "noninteracting_ground_energy_exact": -15.953093324115079,
+      "exact_energy_error": 0.0
+    }
+  ],
+  "noninteracting_spectrum": {
+    "N": 10,
+    "nu": 0.3,
+    "U_D": 0.0,
+    "mu_D": -0.8017240516353921,
+    "eta_D": 0.08,
+    "DOS_max_abs_difference": 7.083222897108499e-14,
+    "DOS_rms_difference": 9.05181003844401e-15,
+    "M0": 0.9999999999999993,
+    "occupied_weight": 0.099999999999999,
+    "note": "Canonical U=0 doped shell is degenerate: some poles lie at zero, so strict E<0 occupied-weight counting need not equal nu. Addition/removal sum still exactly reproduces the complete noninteracting DOS."
+  },
+  "lanczos_convergence": {
+    "N": 10,
+    "nu": 0.3,
+    "U_D": 11.493525192155293,
+    "channel": "site0 spin-up addition",
+    "steps": [
+      {
+        "steps": 80,
+        "audit": {
+          "norm": 0.6999999998922108,
+          "sum_rule_error": 1.1102230246251565e-15,
+          "first_moment_error": 1.199040866595169e-14,
+          "iterations": 80
+        },
+        "M2_error": 4.263256414560601e-14
+      },
+      {
+        "steps": 160,
+        "audit": {
+          "norm": 0.6999999998922108,
+          "sum_rule_error": 5.551115123125783e-16,
+          "first_moment_error": 8.881784197001252e-15,
+          "iterations": 160
+        },
+        "M2_error": 4.263256414560601e-14
+      },
+      {
+        "steps": 240,
+        "audit": {
+          "norm": 0.6999999998922108,
+          "sum_rule_error": 2.220446049250313e-16,
+          "first_moment_error": 8.881784197001252e-15,
+          "iterations": 240
+        },
+        "M2_error": 1.4210854715202004e-14
+      }
+    ],
+    "differences": {
+      "80_to_160": {
+        "0.05": {
+          "max_abs": 0.24251015702320722,
+          "rms": 0.02188890615927266
+        },
+        "0.1": {
+          "max_abs": 0.0694425570061062,
+          "rms": 0.008545236627609414
+        },
+        "0.3": {
+          "max_abs": 0.0054775380599516865,
+          "rms": 0.0007349227068441247
+        }
+      },
+      "160_to_240": {
+        "0.05": {
+          "max_abs": 0.12887829853325714,
+          "rms": 0.010315735463493243
+        },
+        "0.1": {
+          "max_abs": 0.020286936329704075,
+          "rms": 0.0022957439956658877
+        },
+        "0.3": {
+          "max_abs": 0.00023722234362498484,
+          "rms": 3.9530299770209736e-05
+        }
+      }
+    },
+    "ground_energy_reproduction_error": 0.0
+  },
+  "seconds": 8.016837120056152
+}

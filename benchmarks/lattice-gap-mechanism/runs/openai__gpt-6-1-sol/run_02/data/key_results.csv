@@ -1,0 +1,14 @@
+quantity,estimate,conditional_standard_deviation,conditional_95_low,conditional_95_high,assumptions
+t,0.9970683327571924,0.003465930537522691,0.9910687788106408,1.0035763322381877,conditional half/normal spectral family; iid residual bootstrap
+tprime,0.19534428112180086,0.0021572075504693844,0.19212695070514632,0.1997021250468282,conditional half/normal spectral family; iid residual bootstrap
+mu_high,-0.9082253001252087,0.008122251478975563,-0.9237609893348061,-0.8902329871958038,conditional half/normal spectral family; iid residual bootstrap
+s,0.5019866383028175,0.0023096540486289606,0.49722131926995894,0.5060119101761823,conditional half/normal spectral family; iid residual bootstrap
+V,6.0029920635555865,0.0016573507876286738,5.999555809620738,6.006083755606346,conditional half/normal spectral family; iid residual bootstrap
+r,0.03237678841126051,0.000697667855279323,0.031024035698943426,0.03373416286654091,conditional half/normal spectral family; iid residual bootstrap
+full_STS_gap,8.00186428295935,0.01109912284569511,7.980919766768194,8.026216209197518,conditional half/normal spectral family; iid residual bootstrap
+zero_area_fraction,0.08132961239966915,0.016709795691038493,0.044196691510728706,0.10796541911814687,conditional half/normal spectral family; iid residual bootstrap
+NMR_activation_nu_0.5,5.538,0.135,5.279,5.809,raw quoted-error fit R=A*T*exp(-E/T)
+NMR_activation_nu_0.3,2.634,0.047,2.54,2.736,T<=4.4318; same fixed prefactor
+NMR_activation_nu_0.2,1.747,0.053,1.644,1.849,T<=0.5; same fixed prefactor
+rho_activation_nu_0.5,3.722,0.049,3.622,3.812,rho=B*exp(E/T)
+rho_activation_nu_0.3,0.9,0.044,0.806,0.98,positive branch; rho=B*exp(E/T)

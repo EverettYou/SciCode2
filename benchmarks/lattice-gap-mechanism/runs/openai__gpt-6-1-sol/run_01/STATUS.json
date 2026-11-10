@@ -1,0 +1,23 @@
+{
+  "state": "physical_reanalysis_finished_joint_solution_not_obtained",
+  "sources": [
+    {
+      "file": "measurements.json",
+      "sha256": "dab44dfa1d052ed034c4cf632740411eed343c399f4ebb0045e9eea942b4ad7b",
+      "unchanged": true
+    },
+    {
+      "file": "prompt.pdf",
+      "sha256": "46874a6ff02cdc6545fd1b92d22c5ea5988b242f0fb78ca5f6ad2c49db4ce2ba",
+      "unchanged": true
+    }
+  ],
+  "main_report": "single_orbital_reanalysis.pdf",
+  "unresolved": [
+    "validated common single-orbital Hamiltonian fitting STS NMR and transport",
+    "data-derived uncertainties of all microscopic coefficients",
+    "full thermodynamic phase diagram",
+    "validated material ARPES and zero-surface area"
+  ],
+  "prior_auxiliary_model_solution_withdrawn": true
+}

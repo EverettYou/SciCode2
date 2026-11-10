@@ -1,0 +1,38 @@
+[
+  {
+    "model": "PQG",
+    "lower": -10.56682537398,
+    "entries": 36480,
+    "solve_seconds": 41.254630708135664,
+    "peak_mb": 138.002432,
+    "solve_source": "labs/lab-002-moment-sdp/results/pqg-eps6/result.json",
+    "certificate_source": "labs/lab-004-exact-dual-verification/results/pqg-eps6/verification.json"
+  },
+  {
+    "model": "Two-site T2prime",
+    "lower": -8.864118703137,
+    "entries": 22050,
+    "solve_seconds": 64.05785745801404,
+    "peak_mb": 600.539136,
+    "solve_source": "labs/lab-002-moment-sdp/results/two-site-t2-sym-clarabel/result.json",
+    "certificate_source": "labs/lab-004-exact-dual-verification/results/two-site-t2-sym-clarabel/verification.json"
+  },
+  {
+    "model": "Full T2prime",
+    "lower": -8.764969112905,
+    "entries": 410274,
+    "solve_seconds": 183.91089579183608,
+    "peak_mb": 388.21888,
+    "solve_source": "labs/lab-004-exact-dual-verification/results/full-reproduction/model/result.json",
+    "certificate_source": "labs/lab-004-exact-dual-verification/results/full-reproduction/exact/verification.json"
+  },
+  {
+    "model": "Selected T2prime",
+    "lower": -8.763353354793,
+    "entries": 11446,
+    "solve_seconds": 11.276892333989963,
+    "peak_mb": 404.488192,
+    "solve_source": "labs/lab-004-exact-dual-verification/results/portable-reproduction/model/result.json",
+    "certificate_source": "labs/lab-004-exact-dual-verification/results/portable-reproduction/exact/verification.json"
+  }
+]

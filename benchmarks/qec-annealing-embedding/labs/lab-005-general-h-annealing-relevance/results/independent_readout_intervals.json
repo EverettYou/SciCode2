@@ -1,0 +1,4046 @@
+{
+  "status": "pass",
+  "self_check": {
+    "status": "pass",
+    "full_physical_assignments": 256,
+    "decoded_probability": "0.4951924789802654800945660369903486143431292161261089771118463215934511",
+    "interval": {
+      "decoded_error_lower": 0.4951924789802615,
+      "decoded_error_upper": 0.4951924789802695,
+      "feasible_lower": 0.8151700725644517,
+      "feasible_upper": 0.8151700725644649,
+      "ground_cost": -0.5,
+      "ground_degeneracy": 1,
+      "original_patterns": 8,
+      "auxiliary_partition_summed": true
+    }
+  },
+  "summary": {
+    "10.0": {
+      "comparisons": 8,
+      "balanced_strict_orders": 3,
+      "standard_strict_orders": 0
+    },
+    "20.0": {
+      "comparisons": 8,
+      "balanced_strict_orders": 6,
+      "standard_strict_orders": 0
+    },
+    "40.0": {
+      "comparisons": 8,
+      "balanced_strict_orders": 8,
+      "standard_strict_orders": 0
+    },
+    "80.0": {
+      "comparisons": 8,
+      "balanced_strict_orders": 8,
+      "standard_strict_orders": 0
+    }
+  },
+  "records": [
+    {
+      "name": "irregular_hubs_n16_s8807_balanced",
+      "scheme": "balanced",
+      "beta": 10.0,
+      "mass": {
+        "decoded_error_lower": 0.0008493274488870227,
+        "decoded_error_upper": 0.0008493274489365553,
+        "feasible_lower": 0.0904586054658981,
+        "feasible_upper": 0.09045860547117363,
+        "ground_cost": 0.5,
+        "ground_degeneracy": 1,
+        "original_patterns": 65536,
+        "auxiliary_partition_summed": true
+      },
+      "chain_defect_upper": 0.048696412270091645,
+      "rounding_tv_upper": 2.3765711620882257e-15,
+      "actual_root_error_lower": 0.000807968249281454,
+      "actual_root_error_upper": 0.04954573971903058,
+      "independent_actual_audit": {
+        "instance": "irregular_hubs_n16_s8807_balanced",
+        "split": "development",
+        "selection": "outward_readout",
+        "physical_qubits": 112,
+        "scale": 0.034711412205346334,
+        "exact_scale_difference_from_first": "0",
+        "scale_at_least_first_exact": true,
+        "static_ground_fidelity": true,
+        "minimum_exact_margin": "20782566629768189/72057594037927936",
+        "consistent_nonconstant_coefficient_error": "137/576460752303423488",
+        "consistent_offset_error": "485/576460752303423488",
+        "thermal_rounding_tv_upper": 2.3765711620882257e-15,
+        "classical_defect_upper": 0.048696412270091645,
+        "quantum_defect_upper": {
+          "0.0": 0.04976665822856526,
+          "1e-05": 0.04976702822856847,
+          "0.0001": 0.04980365826064861,
+          "0.001": 0.053466979075835065
+        }
+      },
+      "exact_static_audit": {
+        "float_projected_ground_states_certified": true,
+        "ideal_repair_margins_positive": true,
+        "actual_repair_margins_positive": true,
+        "coefficient_error_l1_exact": [
+          137,
+          576460752303423488
+        ],
+        "coefficient_error_l1": 2.3765711620882257e-16,
+        "physical_nonoptimal_gap_lower_bound_exact": [
+          2501220849176023,
+          288230376151711744
+        ],
+        "physical_nonoptimal_gap_lower_bound": 0.008677853051336584,
+        "actual_margin_min": 0.28841604978968854,
+        "range_violations": [],
+        "logical_gibbs_tv_rounding_correction": 4.7531423241764625e-15,
+        "interpretation": "exact logical rational model, actual binary64 alpha and chain couplings as exact parameters; interbranch and field rounding bounded in L1"
+      }
+    },
+    {
+      "name": "irregular_hubs_n16_s8807_balanced",
+      "scheme": "balanced",
+      "beta": 20.0,
+      "mass": {
+        "decoded_error_lower": 0.02273235422371327,
+        "decoded_error_upper": 0.022732354225039553,
+        "feasible_lower": 0.9688288914016027,
+        "feasible_upper": 0.9688288914581278,
+        "ground_cost": 0.5,
+        "ground_degeneracy": 1,
+        "original_patterns": 65536,
+        "auxiliary_partition_summed": true
+      },
+      "chain_defect_upper": 0.048696412270091666,
+      "rounding_tv_upper": 2.463307335887066e-15,
+      "actual_root_error_lower": 0.02162537013056322,
+      "actual_root_error_upper": 0.0714287664951337,
+      "independent_actual_audit": {
+        "instance": "irregular_hubs_n16_s8807_balanced",
+        "split": "development",
+        "selection": "outward_readout",
+        "physical_qubits": 112,
+        "scale": 0.0417459500050878,
+        "exact_scale_difference_from_first": "0",
+        "scale_at_least_first_exact": true,
+        "static_ground_fidelity": true,
+        "minimum_exact_margin": "20295475224383/140737488355328",
+        "consistent_nonconstant_coefficient_error": "71/576460752303423488",
+        "consistent_offset_error": "1301/1152921504606846976",
+        "thermal_rounding_tv_upper": 2.463307335887066e-15,
+        "classical_defect_upper": 0.048696412270091666,
+        "quantum_defect_upper": {
+          "0.0": 0.04976665822856528,
+          "1e-05": 0.049768138228616615,
+          "0.0001": 0.04991465874189951,
+          "0.001": 0.06457179245390227
+        }
+      },
+      "exact_static_audit": {
+        "float_projected_ground_states_certified": true,
+        "ideal_repair_margins_positive": true,
+        "actual_repair_margins_positive": true,
+        "coefficient_error_l1_exact": [
+          71,
+          576460752303423488
+        ],
+        "coefficient_error_l1": 1.231653667943533e-16,
+        "physical_nonoptimal_gap_lower_bound_exact": [
+          6016225436388505,
+          576460752303423488
+        ],
+        "physical_nonoptimal_gap_lower_bound": 0.01043648750127195,
+        "actual_margin_min": 0.1442080248948443,
+        "range_violations": [],
+        "logical_gibbs_tv_rounding_correction": 4.926614671774144e-15,
+        "interpretation": "exact logical rational model, actual binary64 alpha and chain couplings as exact parameters; interbranch and field rounding bounded in L1"
+      }
+    },
+    {
+      "name": "irregular_hubs_n16_s8807_balanced",
+      "scheme": "balanced",
+      "beta": 40.0,
+      "mass": {
+        "decoded_error_lower": 0.07697248057858551,
+        "decoded_error_upper": 0.07697248058307642,
+        "feasible_lower": 0.9999964965743731,
+        "feasible_upper": 0.9999964966327167,
+        "ground_cost": 0.5,
+        "ground_degeneracy": 1,
+        "original_patterns": 65536,
+        "auxiliary_partition_summed": true
+      },
+      "chain_defect_upper": 0.04869641227009169,
+      "rounding_tv_upper": 9.853229343548264e-15,
+      "actual_root_error_lower": 0.07322419693086969,
+      "actual_root_error_upper": 0.12566889285317798,
+      "independent_actual_audit": {
+        "instance": "irregular_hubs_n16_s8807_balanced",
+        "split": "development",
+        "selection": "outward_readout",
+        "physical_qubits": 112,
+        "scale": 0.04526321890495853,
+        "exact_scale_difference_from_first": "0",
+        "scale_at_least_first_exact": true,
+        "static_ground_fidelity": true,
+        "minimum_exact_margin": "1298910414360511/18014398509481984",
+        "consistent_nonconstant_coefficient_error": "71/288230376151711744",
+        "consistent_offset_error": "1195/576460752303423488",
+        "thermal_rounding_tv_upper": 9.853229343548264e-15,
+        "classical_defect_upper": 0.04869641227009169,
+        "quantum_defect_upper": {
+          "0.0": 0.04976665822856531,
+          "1e-05": 0.04977257822938664,
+          "0.0001": 0.050358666441955725,
+          "0.001": 0.10904884866790308
+        }
+      },
+      "exact_static_audit": {
+        "float_projected_ground_states_certified": true,
+        "ideal_repair_margins_positive": true,
+        "actual_repair_margins_positive": true,
+        "coefficient_error_l1_exact": [
+          71,
+          288230376151711744
+        ],
+        "coefficient_error_l1": 2.463307335887066e-16,
+        "physical_nonoptimal_gap_lower_bound_exact": [
+          3261558652703367,
+          288230376151711744
+        ],
+        "physical_nonoptimal_gap_lower_bound": 0.011315804726239633,
+        "actual_margin_min": 0.0721040124474221,
+        "range_violations": [],
+        "logical_gibbs_tv_rounding_correction": 1.9706458687096724e-14,
+        "interpretation": "exact logical rational model, actual binary64 alpha and chain couplings as exact parameters; interbranch and field rounding bounded in L1"
+      }
+    },
+    {
+      "name": "irregular_hubs_n16_s8807_balanced",
+      "scheme": "balanced",
+      "beta": 80.0,
+      "mass": {
+        "decoded_error_lower": 0.25068901402922716,
+        "decoded_error_upper": 0.250689014043845,
+        "feasible_lower": 0.9999999999707269,
+        "feasible_upper": 1.0,
+        "ground_cost": 0.5,
+        "ground_degeneracy": 1,
+        "original_patterns": 65536,
+        "auxiliary_partition_summed": true
+      },
+      "chain_defect_upper": 0.048696412270091416,
+      "rounding_tv_upper": 5.745404152435185e-14,
+      "actual_root_error_lower": 0.23848135845042248,
+      "actual_root_error_upper": 0.29938542631399395,
+      "independent_actual_audit": {
+        "instance": "irregular_hubs_n16_s8807_balanced",
+        "split": "development",
+        "selection": "outward_readout",
+        "physical_qubits": 112,
+        "scale": 0.04702185335489391,
+        "exact_scale_difference_from_first": "0",
+        "scale_at_least_first_exact": true,
+        "static_ground_fidelity": true,
+        "minimum_exact_margin": "2597820828721021/72057594037927936",
+        "consistent_nonconstant_coefficient_error": "207/288230376151711744",
+        "consistent_offset_error": "271/576460752303423488",
+        "thermal_rounding_tv_upper": 5.745404152435185e-14,
+        "classical_defect_upper": 0.048696412270091416,
+        "quantum_defect_upper": {
+          "0.0": 0.04976665822856502,
+          "1e-05": 0.04979033824170636,
+          "0.0001": 0.05213478964555168,
+          "0.001": 0.2878844509002359
+        }
+      },
+      "exact_static_audit": {
+        "float_projected_ground_states_certified": true,
+        "ideal_repair_margins_positive": true,
+        "actual_repair_margins_positive": true,
+        "coefficient_error_l1_exact": [
+          207,
+          288230376151711744
+        ],
+        "coefficient_error_l1": 7.181755190543981e-16,
+        "physical_nonoptimal_gap_lower_bound_exact": [
+          3388281619957925,
+          288230376151711744
+        ],
+        "physical_nonoptimal_gap_lower_bound": 0.011755463338723477,
+        "actual_margin_min": 0.03605200622371103,
+        "range_violations": [],
+        "logical_gibbs_tv_rounding_correction": 1.1490808304871032e-13,
+        "interpretation": "exact logical rational model, actual binary64 alpha and chain couplings as exact parameters; interbranch and field rounding bounded in L1"
+      }
+    },
+    {
+      "name": "irregular_hubs_n16_s8807_standard",
+      "scheme": "standard",
+      "beta": 10.0,
+      "mass": {
+        "lower": 0.0014286026502512966,
+        "upper": 0.0014286026502929217,
+        "decoded_error_lower": 0.0017860123485090747,
+        "decoded_error_upper": 0.0017860123486131527,
+        "ground_cost": 0.5,
+        "ground_degeneracy": 1,
+        "auxiliary_partition_summed": true,
+        "original_patterns": 65536,
+        "relative_interval_width": 2.913694964684381e-11
+      },
+      "chain_defect_upper": 0.013336445608834785,
+      "rounding_tv_upper": 3.109491830688427e-14,
+      "actual_root_error_lower": 0.0017621932919357959,
+      "actual_root_error_upper": 0.015122457957479034,
+      "independent_actual_audit": {
+        "instance": "irregular_hubs_n16_s8807_standard",
+        "split": "development",
+        "selection": "outward_readout",
+        "physical_qubits": 56,
+        "scale": 0.02912161138637642,
+        "exact_scale_difference_from_first": "0",
+        "scale_at_least_first_exact": true,
+        "static_ground_fidelity": true,
+        "minimum_exact_margin": "4571310360769499/18014398509481984",
+        "consistent_nonconstant_coefficient_error": "3585/1152921504606846976",
+        "consistent_offset_error": "4941/2305843009213693952",
+        "thermal_rounding_tv_upper": 3.109491830688427e-14,
+        "classical_defect_upper": 0.013336445608834785,
+        "quantum_defect_upper": {
+          "0.0": 0.013387285694976225,
+          "1e-05": 0.013387445694976758,
+          "0.0001": 0.01340328570030956,
+          "0.001": 0.014987339029020674
+        }
+      },
+      "exact_static_audit": {
+        "float_projected_ground_states_certified": true,
+        "ideal_repair_margins_positive": true,
+        "actual_repair_margins_positive": true,
+        "coefficient_error_l1_exact": [
+          3585,
+          1152921504606846976
+        ],
+        "coefficient_error_l1": 3.1094918306884267e-15,
+        "physical_nonoptimal_gap_lower_bound_exact": [
+          8393733004039247,
+          1152921504606846976
+        ],
+        "physical_nonoptimal_gap_lower_bound": 0.007280402846594105,
+        "actual_margin_min": 0.25375870076169144,
+        "range_violations": [],
+        "logical_gibbs_tv_rounding_correction": 6.218983661377047e-14,
+        "interpretation": "exact logical rational model, actual binary64 alpha and chain couplings as exact parameters; interbranch and field rounding bounded in L1"
+      }
+    },
+    {
+      "name": "irregular_hubs_n16_s8807_standard",
+      "scheme": "standard",
+      "beta": 20.0,
+      "mass": {
+        "lower": 0.017485836942591097,
+        "upper": 0.017485836943100616,
+        "decoded_error_lower": 0.01748718552536348,
+        "decoded_error_upper": 0.017487185526382558,
+        "ground_cost": 0.5,
+        "ground_degeneracy": 1,
+        "auxiliary_partition_summed": true,
+        "original_patterns": 65536,
+        "relative_interval_width": 2.913898325684644e-11
+      },
+      "chain_defect_upper": 0.012400923526506659,
+      "rounding_tv_upper": 5.863365348801608e-14,
+      "actual_root_error_lower": 0.017270328274911702,
+      "actual_root_error_upper": 0.029888109052947854,
+      "independent_actual_audit": {
+        "instance": "irregular_hubs_n16_s8807_standard",
+        "split": "development",
+        "selection": "outward_readout",
+        "physical_qubits": 56,
+        "scale": 0.034073000424895535,
+        "exact_scale_difference_from_first": "0",
+        "scale_at_least_first_exact": true,
+        "static_ground_fidelity": true,
+        "minimum_exact_margin": "4571310540913479/36028797018963968",
+        "consistent_nonconstant_coefficient_error": "845/288230376151711744",
+        "consistent_offset_error": "2437/1152921504606846976",
+        "thermal_rounding_tv_upper": 5.863365348801608e-14,
+        "classical_defect_upper": 0.012400923526506659,
+        "quantum_defect_upper": {
+          "0.0": 0.0124397173613983,
+          "1e-05": 0.012440357361406832,
+          "0.0001": 0.012503717446731677,
+          "0.001": 0.018840570740244044
+        }
+      },
+      "exact_static_audit": {
+        "float_projected_ground_states_certified": true,
+        "ideal_repair_margins_positive": true,
+        "actual_repair_margins_positive": true,
+        "coefficient_error_l1_exact": [
+          845,
+          288230376151711744
+        ],
+        "coefficient_error_l1": 2.931682674400804e-15,
+        "physical_nonoptimal_gap_lower_bound_exact": [
+          4910436864542537,
+          576460752303423488
+        ],
+        "physical_nonoptimal_gap_lower_bound": 0.008518250106223884,
+        "actual_margin_min": 0.12687935538084558,
+        "range_violations": [],
+        "logical_gibbs_tv_rounding_correction": 1.1726730697603903e-13,
+        "interpretation": "exact logical rational model, actual binary64 alpha and chain couplings as exact parameters; interbranch and field rounding bounded in L1"
+      }
+    },
+    {
+      "name": "irregular_hubs_n16_s8807_standard",
+      "scheme": "standard",
+      "beta": 40.0,
+      "mass": {
+        "lower": 0.0540631070640648,
+        "upper": 0.05406310706563996,
+        "decoded_error_lower": 0.05406310706374659,
+        "decoded_error_upper": 0.05406310706689677,
+        "ground_cost": 0.5,
+        "ground_degeneracy": 1,
+        "auxiliary_partition_summed": true,
+        "original_patterns": 65536,
+        "relative_interval_width": 2.913551879010768e-11
+      },
+      "chain_defect_upper": 0.012383777425542941,
+      "rounding_tv_upper": 5.88418203051333e-14,
+      "actual_root_error_lower": 0.05339360157887773,
+      "actual_root_error_upper": 0.06644688449249857,
+      "independent_actual_audit": {
+        "instance": "irregular_hubs_n16_s8807_standard",
+        "split": "development",
+        "selection": "outward_readout",
+        "physical_qubits": 56,
+        "scale": 0.03654869494415508,
+        "exact_scale_difference_from_first": "0",
+        "scale_at_least_first_exact": true,
+        "static_ground_fidelity": true,
+        "minimum_exact_margin": "2285655450600727/36028797018963968",
+        "consistent_nonconstant_coefficient_error": "53/36028797018963968",
+        "consistent_offset_error": "273/144115188075855872",
+        "thermal_rounding_tv_upper": 5.88418203051333e-14,
+        "classical_defect_upper": 0.012383777425542941,
+        "quantum_defect_upper": {
+          "0.0": 0.012422356194841085,
+          "1e-05": 0.012424916194977619,
+          "0.0001": 0.012678357560177331,
+          "0.001": 0.03803601244121844
+        }
+      },
+      "exact_static_audit": {
+        "float_projected_ground_states_certified": true,
+        "ideal_repair_margins_positive": true,
+        "actual_repair_margins_positive": true,
+        "coefficient_error_l1_exact": [
+          53,
+          36028797018963968
+        ],
+        "coefficient_error_l1": 1.4710455076283324e-15,
+        "physical_nonoptimal_gap_lower_bound_exact": [
+          658402755725499,
+          72057594037927936
+        ],
+        "physical_nonoptimal_gap_lower_bound": 0.00913717373603877,
+        "actual_margin_min": 0.06343968269042286,
+        "range_violations": [],
+        "logical_gibbs_tv_rounding_correction": 1.176836406102735e-13,
+        "interpretation": "exact logical rational model, actual binary64 alpha and chain couplings as exact parameters; interbranch and field rounding bounded in L1"
+      }
+    },
+    {
+      "name": "irregular_hubs_n16_s8807_standard",
+      "scheme": "standard",
+      "beta": 80.0,
+      "mass": {
+        "lower": 0.1796485657831463,
+        "upper": 0.17964856578837962,
+        "decoded_error_lower": 0.17964856578053057,
+        "decoded_error_upper": 0.17964856579099686,
+        "ground_cost": 0.5,
+        "ground_degeneracy": 1,
+        "auxiliary_partition_summed": true,
+        "original_patterns": 65536,
+        "relative_interval_width": 2.913084086900817e-11
+      },
+      "chain_defect_upper": 0.012383761860288656,
+      "rounding_tv_upper": 1.3711254354120683e-13,
+      "actual_root_error_lower": 0.17742384072322662,
+      "actual_root_error_upper": 0.19203232765142267,
+      "independent_actual_audit": {
+        "instance": "irregular_hubs_n16_s8807_standard",
+        "split": "development",
+        "selection": "outward_readout",
+        "physical_qubits": 56,
+        "scale": 0.03778654220378486,
+        "exact_scale_difference_from_first": "0",
+        "scale_at_least_first_exact": true,
+        "static_ground_fidelity": true,
+        "minimum_exact_margin": "571413952722173/18014398509481984",
+        "consistent_nonconstant_coefficient_error": "247/144115188075855872",
+        "consistent_offset_error": "771/1152921504606846976",
+        "thermal_rounding_tv_upper": 1.3711254354120683e-13,
+        "classical_defect_upper": 0.012383761860288656,
+        "quantum_defect_upper": {
+          "0.0": 0.012422340496139165,
+          "1e-05": 0.012432580498323699,
+          "0.0001": 0.013446362341658913,
+          "0.001": 0.11504098032822548
+        }
+      },
+      "exact_static_audit": {
+        "float_projected_ground_states_certified": true,
+        "ideal_repair_margins_positive": true,
+        "actual_repair_margins_positive": true,
+        "coefficient_error_l1_exact": [
+          247,
+          144115188075855872
+        ],
+        "coefficient_error_l1": 1.7139067942650854e-15,
+        "physical_nonoptimal_gap_lower_bound_exact": [
+          5445614636434721,
+          576460752303423488
+        ],
+        "physical_nonoptimal_gap_lower_bound": 0.009446635550946216,
+        "actual_margin_min": 0.031719846345211355,
+        "range_violations": [],
+        "logical_gibbs_tv_rounding_correction": 2.742250870824513e-13,
+        "interpretation": "exact logical rational model, actual binary64 alpha and chain couplings as exact parameters; interbranch and field rounding bounded in L1"
+      }
+    },
+    {
+      "name": "irregular_hubs_n16_s9901_balanced",
+      "scheme": "balanced",
+      "beta": 10.0,
+      "mass": {
+        "decoded_error_lower": 0.03955156539352678,
+        "decoded_error_upper": 0.03955156539583384,
+        "feasible_lower": 0.6831680410683284,
+        "feasible_upper": 0.6831680411081779,
+        "ground_cost": -0.5,
+        "ground_degeneracy": 3,
+        "original_patterns": 65536,
+        "auxiliary_partition_summed": true
+      },
+      "chain_defect_upper": 0.004509006709508024,
+      "rounding_tv_upper": 2.6749435999562365e-14,
+      "actual_root_error_lower": 0.039373227119769184,
+      "actual_root_error_upper": 0.04406057210536862,
+      "independent_actual_audit": {
+        "instance": "irregular_hubs_n16_s9901_balanced",
+        "split": "held_out",
+        "selection": "outward_readout",
+        "physical_qubits": 104,
+        "scale": 0.05500692580796682,
+        "exact_scale_difference_from_first": "0",
+        "scale_at_least_first_exact": true,
+        "static_ground_fidelity": true,
+        "minimum_exact_margin": "10017233848834971/36028797018963968",
+        "consistent_nonconstant_coefficient_error": "771/288230376151711744",
+        "consistent_offset_error": "21/4503599627370496",
+        "thermal_rounding_tv_upper": 2.6749435999562365e-14,
+        "classical_defect_upper": 0.004509006709508024,
+        "quantum_defect_upper": {
+          "0.0": 0.004510954678650105,
+          "1e-05": 0.004511219678651176,
+          "0.0001": 0.004537454689358441,
+          "0.001": 0.00716106176397374
+        }
+      },
+      "exact_static_audit": {
+        "float_projected_ground_states_certified": true,
+        "ideal_repair_margins_positive": true,
+        "actual_repair_margins_positive": true,
+        "coefficient_error_l1_exact": [
+          771,
+          288230376151711744
+        ],
+        "coefficient_error_l1": 2.6749435999562365e-15,
+        "physical_nonoptimal_gap_lower_bound_exact": [
+          1981833364572447,
+          144115188075855872
+        ],
+        "physical_nonoptimal_gap_lower_bound": 0.013751731451991704,
+        "actual_margin_min": 0.2780340915507765,
+        "range_violations": [],
+        "logical_gibbs_tv_rounding_correction": 5.3498871999126163e-14,
+        "interpretation": "exact logical rational model, actual binary64 alpha and chain couplings as exact parameters; interbranch and field rounding bounded in L1"
+      }
+    },
+    {
+      "name": "irregular_hubs_n16_s9901_balanced",
+      "scheme": "balanced",
+      "beta": 20.0,
+      "mass": {
+        "decoded_error_lower": 0.21927961642535523,
+        "decoded_error_upper": 0.21927961643814725,
+        "feasible_lower": 0.9998449438933275,
+        "feasible_upper": 0.9998449439516549,
+        "ground_cost": -0.5,
+        "ground_degeneracy": 3,
+        "original_patterns": 65536,
+        "auxiliary_partition_summed": true
+      },
+      "chain_defect_upper": 0.003843153156877249,
+      "rounding_tv_upper": 2.6818824938601438e-14,
+      "actual_root_error_lower": 0.21843689127522456,
+      "actual_root_error_upper": 0.22312276959505134,
+      "independent_actual_audit": {
+        "instance": "irregular_hubs_n16_s9901_balanced",
+        "split": "held_out",
+        "selection": "outward_readout",
+        "physical_qubits": 104,
+        "scale": 0.06559870023731675,
+        "exact_scale_difference_from_first": "0",
+        "scale_at_least_first_exact": true,
+        "static_ground_fidelity": true,
+        "minimum_exact_margin": "1252154276140367/9007199254740992",
+        "consistent_nonconstant_coefficient_error": "773/576460752303423488",
+        "consistent_offset_error": "11/9007199254740992",
+        "thermal_rounding_tv_upper": 2.6818824938601438e-14,
+        "classical_defect_upper": 0.003843153156877249,
+        "quantum_defect_upper": {
+          "0.0": 0.0038431833135000822,
+          "1e-05": 0.003844243313517216,
+          "0.0001": 0.003949183484833543,
+          "0.001": 0.01444489677421715
+        }
+      },
+      "exact_static_audit": {
+        "float_projected_ground_states_certified": true,
+        "ideal_repair_margins_positive": true,
+        "actual_repair_margins_positive": true,
+        "coefficient_error_l1_exact": [
+          773,
+          576460752303423488
+        ],
+        "coefficient_error_l1": 1.3409412469300719e-15,
+        "physical_nonoptimal_gap_lower_bound_exact": [
+          4726884511116297,
+          288230376151711744
+        ],
+        "physical_nonoptimal_gap_lower_bound": 0.016399675059329186,
+        "actual_margin_min": 0.13901705077538817,
+        "range_violations": [],
+        "logical_gibbs_tv_rounding_correction": 5.3637649877204314e-14,
+        "interpretation": "exact logical rational model, actual binary64 alpha and chain couplings as exact parameters; interbranch and field rounding bounded in L1"
+      }
+    },
+    {
+      "name": "irregular_hubs_n16_s9901_balanced",
+      "scheme": "balanced",
+      "beta": 40.0,
+      "mass": {
+        "decoded_error_lower": 0.6455818073675004,
+        "decoded_error_upper": 0.6455818074051611,
+        "feasible_lower": 0.9999999999281123,
+        "feasible_upper": 0.9999999999864483,
+        "ground_cost": -0.5,
+        "ground_degeneracy": 3,
+        "original_patterns": 65536,
+        "auxiliary_partition_summed": true
+      },
+      "chain_defect_upper": 0.0038314185044915007,
+      "rounding_tv_upper": 1.6139867220488213e-13,
+      "actual_root_error_lower": 0.6431083132844285,
+      "actual_root_error_upper": 0.6494132259098142,
+      "independent_actual_audit": {
+        "instance": "irregular_hubs_n16_s9901_balanced",
+        "split": "held_out",
+        "selection": "outward_readout",
+        "physical_qubits": 104,
+        "scale": 0.0708945874519917,
+        "exact_scale_difference_from_first": "0",
+        "scale_at_least_first_exact": true,
+        "static_ground_fidelity": true,
+        "minimum_exact_margin": "2504308732424719/36028797018963968",
+        "consistent_nonconstant_coefficient_error": "1163/288230376151711744",
+        "consistent_offset_error": "5/9007199254740992",
+        "thermal_rounding_tv_upper": 1.6139867220488213e-13,
+        "classical_defect_upper": 0.0038314185044915007,
+        "quantum_defect_upper": {
+          "0.0": 0.003831418514577037,
+          "1e-05": 0.00383565851485117,
+          "0.0001": 0.004255421255918522,
+          "0.001": 0.04625884000161249
+        }
+      },
+      "exact_static_audit": {
+        "float_projected_ground_states_certified": true,
+        "ideal_repair_margins_positive": true,
+        "actual_repair_margins_positive": true,
+        "coefficient_error_l1_exact": [
+          1163,
+          288230376151711744
+        ],
+        "coefficient_error_l1": 4.034966805122053e-15,
+        "physical_nonoptimal_gap_lower_bound_exact": [
+          2554246701050999,
+          144115188075855872
+        ],
+        "physical_nonoptimal_gap_lower_bound": 0.017723646862997926,
+        "actual_margin_min": 0.06950853038769408,
+        "range_violations": [],
+        "logical_gibbs_tv_rounding_correction": 3.2279734440981637e-13,
+        "interpretation": "exact logical rational model, actual binary64 alpha and chain couplings as exact parameters; interbranch and field rounding bounded in L1"
+      }
+    },
+    {
+      "name": "irregular_hubs_n16_s9901_balanced",
+      "scheme": "balanced",
+      "beta": 80.0,
+      "mass": {
+        "decoded_error_lower": 0.9551303454451122,
+        "decoded_error_upper": 0.9551303455008012,
+        "feasible_lower": 0.9999999999708474,
+        "feasible_upper": 1.0,
+        "ground_cost": -0.5,
+        "ground_degeneracy": 3,
+        "original_patterns": 65536,
+        "auxiliary_partition_summed": true
+      },
+      "chain_defect_upper": 0.0038314115177459315,
+      "rounding_tv_upper": 2.145505995088115e-13,
+      "actual_root_error_lower": 0.9514708480384113,
+      "actual_root_error_upper": 0.9589617570187619,
+      "independent_actual_audit": {
+        "instance": "irregular_hubs_n16_s9901_balanced",
+        "split": "held_out",
+        "selection": "outward_readout",
+        "physical_qubits": 104,
+        "scale": 0.0735425310593292,
+        "exact_scale_difference_from_first": "0",
+        "scale_at_least_first_exact": true,
+        "static_ground_fidelity": true,
+        "minimum_exact_margin": "78259659147271/2251799813685248",
+        "consistent_nonconstant_coefficient_error": "773/288230376151711744",
+        "consistent_offset_error": "1/9007199254740992",
+        "thermal_rounding_tv_upper": 2.145505995088115e-13,
+        "classical_defect_upper": 0.0038314115177459315,
+        "quantum_defect_upper": {
+          "0.0": 0.0038314115177459328,
+          "1e-05": 0.0038483715221320665,
+          "0.0001": 0.00552745537960101,
+          "0.001": 0.17387054698084367
+        }
+      },
+      "exact_static_audit": {
+        "float_projected_ground_states_certified": true,
+        "ideal_repair_margins_positive": true,
+        "actual_repair_margins_positive": true,
+        "coefficient_error_l1_exact": [
+          773,
+          288230376151711744
+        ],
+        "coefficient_error_l1": 2.6818824938601438e-15,
+        "physical_nonoptimal_gap_lower_bound_exact": [
+          2649648923797425,
+          144115188075855872
+        ],
+        "physical_nonoptimal_gap_lower_bound": 0.0183856327648323,
+        "actual_margin_min": 0.034754270193846803,
+        "range_violations": [],
+        "logical_gibbs_tv_rounding_correction": 4.291011990177151e-13,
+        "interpretation": "exact logical rational model, actual binary64 alpha and chain couplings as exact parameters; interbranch and field rounding bounded in L1"
+      }
+    },
+    {
+      "name": "irregular_hubs_n16_s9901_standard",
+      "scheme": "standard",
+      "beta": 10.0,
+      "mass": {
+        "lower": 0.017375753241137812,
+        "upper": 0.01737575324164408,
+        "decoded_error_lower": 0.017900402375341233,
+        "decoded_error_upper": 0.01790040237638433,
+        "ground_cost": -0.5,
+        "ground_degeneracy": 3,
+        "auxiliary_partition_summed": true,
+        "original_patterns": 65536,
+        "relative_interval_width": 2.9136500218569667e-11
+      },
+      "chain_defect_upper": 0.01701283711285732,
+      "rounding_tv_upper": 1.6653345369377348e-15,
+      "actual_root_error_lower": 0.01759586574547331,
+      "actual_root_error_upper": 0.03491323948924332,
+      "independent_actual_audit": {
+        "instance": "irregular_hubs_n16_s9901_standard",
+        "split": "held_out",
+        "selection": "outward_readout",
+        "physical_qubits": 52,
+        "scale": 0.036220256916887794,
+        "exact_scale_difference_from_first": "0",
+        "scale_at_least_first_exact": true,
+        "static_ground_fidelity": true,
+        "minimum_exact_margin": "2156094692955247/9007199254740992",
+        "consistent_nonconstant_coefficient_error": "3/18014398509481984",
+        "consistent_offset_error": "3/2251799813685248",
+        "thermal_rounding_tv_upper": 1.6653345369377348e-15,
+        "classical_defect_upper": 0.01701283711285732,
+        "quantum_defect_upper": {
+          "0.0": 0.01709048625478002,
+          "1e-05": 0.017090606254780417,
+          "0.0001": 0.01710248625878002,
+          "0.001": 0.018290526255313355
+        }
+      },
+      "exact_static_audit": {
+        "float_projected_ground_states_certified": true,
+        "ideal_repair_margins_positive": true,
+        "actual_repair_margins_positive": true,
+        "coefficient_error_l1_exact": [
+          3,
+          18014398509481984
+        ],
+        "coefficient_error_l1": 1.6653345369377348e-16,
+        "physical_nonoptimal_gap_lower_bound_exact": [
+          326243071108319,
+          36028797018963968
+        ],
+        "physical_nonoptimal_gap_lower_bound": 0.009055064229221949,
+        "actual_margin_min": 0.23937459713910225,
+        "range_violations": [],
+        "logical_gibbs_tv_rounding_correction": 3.330669073875475e-15,
+        "interpretation": "exact logical rational model, actual binary64 alpha and chain couplings as exact parameters; interbranch and field rounding bounded in L1"
+      }
+    },
+    {
+      "name": "irregular_hubs_n16_s9901_standard",
+      "scheme": "standard",
+      "beta": 20.0,
+      "mass": {
+        "lower": 0.10534741716739562,
+        "upper": 0.10534741717046497,
+        "decoded_error_lower": 0.10534755988312905,
+        "decoded_error_upper": 0.10534755988926763,
+        "ground_cost": -0.5,
+        "ground_degeneracy": 3,
+        "auxiliary_partition_summed": true,
+        "original_patterns": 65536,
+        "relative_interval_width": 2.9135506231612115e-11
+      },
+      "chain_defect_upper": 0.016464312672741916,
+      "rounding_tv_upper": 2.886579864025407e-14,
+      "actual_root_error_lower": 0.1036130847178744,
+      "actual_root_error_upper": 0.12181187256203842,
+      "independent_actual_audit": {
+        "instance": "irregular_hubs_n16_s9901_standard",
+        "split": "held_out",
+        "selection": "outward_readout",
+        "physical_qubits": 52,
+        "scale": 0.04191965179177723,
+        "exact_scale_difference_from_first": "0",
+        "scale_at_least_first_exact": true,
+        "static_ground_fidelity": true,
+        "minimum_exact_margin": "269511847878405/2251799813685248",
+        "consistent_nonconstant_coefficient_error": "13/9007199254740992",
+        "consistent_offset_error": "1/2251799813685248",
+        "thermal_rounding_tv_upper": 2.886579864025407e-14,
+        "classical_defect_upper": 0.016464312672741916,
+        "quantum_defect_upper": {
+          "0.0": 0.016532675807045445,
+          "1e-05": 0.016533155807051846,
+          "0.0001": 0.016580675871045482,
+          "0.001": 0.021333315841179756
+        }
+      },
+      "exact_static_audit": {
+        "float_projected_ground_states_certified": true,
+        "ideal_repair_margins_positive": true,
+        "actual_repair_margins_positive": true,
+        "coefficient_error_l1_exact": [
+          13,
+          9007199254740992
+        ],
+        "coefficient_error_l1": 1.4432899320127035e-15,
+        "physical_nonoptimal_gap_lower_bound_exact": [
+          1510314625511591,
+          144115188075855872
+        ],
+        "physical_nonoptimal_gap_lower_bound": 0.010479912947944307,
+        "actual_margin_min": 0.11968730356955115,
+        "range_violations": [],
+        "logical_gibbs_tv_rounding_correction": 5.77315972805098e-14,
+        "interpretation": "exact logical rational model, actual binary64 alpha and chain couplings as exact parameters; interbranch and field rounding bounded in L1"
+      }
+    },
+    {
+      "name": "irregular_hubs_n16_s9901_standard",
+      "scheme": "standard",
+      "beta": 40.0,
+      "mass": {
+        "lower": 0.35983565127244715,
+        "upper": 0.35983565128292866,
+        "decoded_error_lower": 0.35983565126720896,
+        "decoded_error_upper": 0.3598356512881717,
+        "ground_cost": -0.5,
+        "ground_degeneracy": 3,
+        "auxiliary_partition_summed": true,
+        "original_patterns": 65536,
+        "relative_interval_width": 2.912858833140557e-11
+      },
+      "chain_defect_upper": 0.016460611436564083,
+      "rounding_tv_upper": 1.189326415129699e-13,
+      "actual_root_error_lower": 0.3539125364305595,
+      "actual_root_error_upper": 0.3762962627248548,
+      "independent_actual_audit": {
+        "instance": "irregular_hubs_n16_s9901_standard",
+        "split": "held_out",
+        "selection": "outward_readout",
+        "physical_qubits": 52,
+        "scale": 0.04476934922922195,
+        "exact_scale_difference_from_first": "0",
+        "scale_at_least_first_exact": true,
+        "static_ground_fidelity": true,
+        "minimum_exact_margin": "2156094963171227/36028797018963968",
+        "consistent_nonconstant_coefficient_error": "857/288230376151711744",
+        "consistent_offset_error": "3/9007199254740992",
+        "thermal_rounding_tv_upper": 1.189326415129699e-13,
+        "classical_defect_upper": 0.016460611436564083,
+        "quantum_defect_upper": {
+          "0.0": 0.016528912676528996,
+          "1e-05": 0.0165308326766314,
+          "0.0001": 0.016720913700531182,
+          "0.001": 0.03573915486131201
+        }
+      },
+      "exact_static_audit": {
+        "float_projected_ground_states_certified": true,
+        "ideal_repair_margins_positive": true,
+        "actual_repair_margins_positive": true,
+        "coefficient_error_l1_exact": [
+          857,
+          288230376151711744
+        ],
+        "coefficient_error_l1": 2.9733160378242474e-15,
+        "physical_nonoptimal_gap_lower_bound_exact": [
+          3225971592101497,
+          288230376151711744
+        ],
+        "physical_nonoptimal_gap_lower_bound": 0.011192337307305487,
+        "actual_margin_min": 0.05984365678477563,
+        "range_violations": [],
+        "logical_gibbs_tv_rounding_correction": 2.3786528302596806e-13,
+        "interpretation": "exact logical rational model, actual binary64 alpha and chain couplings as exact parameters; interbranch and field rounding bounded in L1"
+      }
+    },
+    {
+      "name": "irregular_hubs_n16_s9901_standard",
+      "scheme": "standard",
+      "beta": 80.0,
+      "mass": {
+        "lower": 0.7997742658164696,
+        "upper": 0.7997742658397661,
+        "decoded_error_lower": 0.7997742658048248,
+        "decoded_error_upper": 0.7997742658514173,
+        "ground_cost": -0.5,
+        "ground_degeneracy": 3,
+        "auxiliary_partition_summed": true,
+        "original_patterns": 65536,
+        "relative_interval_width": 2.9128814034874007e-11
+      },
+      "chain_defect_upper": 0.01646059826335992,
+      "rounding_tv_upper": 1.6514567491299204e-13,
+      "actual_root_error_lower": 0.7866095029138754,
+      "actual_root_error_upper": 0.8162348641149425,
+      "independent_actual_audit": {
+        "instance": "irregular_hubs_n16_s9901_standard",
+        "split": "held_out",
+        "selection": "outward_readout",
+        "physical_qubits": 52,
+        "scale": 0.04619419794794431,
+        "exact_scale_difference_from_first": "0",
+        "scale_at_least_first_exact": true,
+        "static_ground_fidelity": true,
+        "minimum_exact_margin": "269511915432399/9007199254740992",
+        "consistent_nonconstant_coefficient_error": "595/288230376151711744",
+        "consistent_offset_error": "7/9007199254740992",
+        "thermal_rounding_tv_upper": 1.6514567491299204e-13,
+        "classical_defect_upper": 0.01646059826335992,
+        "quantum_defect_upper": {
+          "0.0": 0.01652889939213878,
+          "1e-05": 0.01653657939377718,
+          "0.0001": 0.017296915776278593,
+          "0.001": 0.0934928792662035
+        }
+      },
+      "exact_static_audit": {
+        "float_projected_ground_states_certified": true,
+        "ideal_repair_margins_positive": true,
+        "actual_repair_margins_positive": true,
+        "coefficient_error_l1_exact": [
+          595,
+          288230376151711744
+        ],
+        "coefficient_error_l1": 2.0643209364124004e-15,
+        "physical_nonoptimal_gap_lower_bound_exact": [
+          3328642762640655,
+          288230376151711744
+        ],
+        "physical_nonoptimal_gap_lower_bound": 0.011548549486986078,
+        "actual_margin_min": 0.029921833392387742,
+        "range_violations": [],
+        "logical_gibbs_tv_rounding_correction": 3.302913498260386e-13,
+        "interpretation": "exact logical rational model, actual binary64 alpha and chain couplings as exact parameters; interbranch and field rounding bounded in L1"
+      }
+    },
+    {
+      "name": "mixed_hypergraph_n16_s8807_balanced",
+      "scheme": "balanced",
+      "beta": 10.0,
+      "mass": {
+        "decoded_error_lower": 0.0001909265080379935,
+        "decoded_error_upper": 0.00019092650804914866,
+        "feasible_lower": 0.03430172466977786,
+        "feasible_upper": 0.034301724671782004,
+        "ground_cost": -0.25,
+        "ground_degeneracy": 1,
+        "original_patterns": 65536,
+        "auxiliary_partition_summed": true
+      },
+      "chain_defect_upper": 0.04874856962777179,
+      "rounding_tv_upper": 2.486726102812753e-14,
+      "actual_root_error_lower": 0.000181619113843461,
+      "actual_root_error_upper": 0.04893949613584581,
+      "independent_actual_audit": {
+        "instance": "mixed_hypergraph_n16_s8807_balanced",
+        "split": "development",
+        "selection": "outward_readout",
+        "physical_qubits": 235,
+        "scale": 0.024557139018620226,
+        "exact_scale_difference_from_first": "0",
+        "scale_at_least_first_exact": true,
+        "static_ground_fidelity": true,
+        "minimum_exact_margin": "786409145414331/2251799813685248",
+        "consistent_nonconstant_coefficient_error": "2867/1152921504606846976",
+        "consistent_offset_error": "2365/2305843009213693952",
+        "thermal_rounding_tv_upper": 2.486726102812753e-14,
+        "classical_defect_upper": 0.04874856962777179,
+        "quantum_defect_upper": {
+          "0.0": 0.049933213991079486,
+          "1e-05": 0.04993444399108986,
+          "0.0001": 0.050056214094829535,
+          "0.001": 0.062234251541006105
+        }
+      },
+      "exact_static_audit": {
+        "float_projected_ground_states_certified": true,
+        "ideal_repair_margins_positive": true,
+        "actual_repair_margins_positive": true,
+        "coefficient_error_l1_exact": [
+          2867,
+          1152921504606846976
+        ],
+        "coefficient_error_l1": 2.486726102812753e-15,
+        "physical_nonoptimal_gap_lower_bound_exact": [
+          7078113416546785,
+          1152921504606846976
+        ],
+        "physical_nonoptimal_gap_lower_bound": 0.006139284754655056,
+        "actual_margin_min": 0.34923581600591325,
+        "range_violations": [],
+        "logical_gibbs_tv_rounding_correction": 4.9734522056256296e-14,
+        "interpretation": "exact logical rational model, actual binary64 alpha and chain couplings as exact parameters; interbranch and field rounding bounded in L1"
+      }
+    },
+    {
+      "name": "mixed_hypergraph_n16_s8807_balanced",
+      "scheme": "balanced",
+      "beta": 20.0,
+      "mass": {
+        "decoded_error_lower": 0.019360224154835234,
+        "decoded_error_upper": 0.019360224155967432,
+        "feasible_lower": 0.9545611245309817,
+        "feasible_upper": 0.9545611245868044,
+        "ground_cost": -0.25,
+        "ground_degeneracy": 1,
+        "original_patterns": 65536,
+        "auxiliary_partition_summed": true
+      },
+      "chain_defect_upper": 0.04874856962777187,
+      "rounding_tv_upper": 9.8879238130678e-15,
+      "actual_root_error_lower": 0.01841644091960457,
+      "actual_root_error_upper": 0.0681087937837492,
+      "independent_actual_audit": {
+        "instance": "mixed_hypergraph_n16_s8807_balanced",
+        "split": "development",
+        "selection": "outward_readout",
+        "physical_qubits": 235,
+        "scale": 0.031146494037593134,
+        "exact_scale_difference_from_first": "0",
+        "scale_at_least_first_exact": true,
+        "static_ground_fidelity": true,
+        "minimum_exact_margin": "786409145414331/4503599627370496",
+        "consistent_nonconstant_coefficient_error": "285/576460752303423488",
+        "consistent_offset_error": "55/576460752303423488",
+        "thermal_rounding_tv_upper": 9.8879238130678e-15,
+        "classical_defect_upper": 0.04874856962777187,
+        "quantum_defect_upper": {
+          "0.0": 0.04993321399107957,
+          "1e-05": 0.04993813399124557,
+          "0.0001": 0.050425215651082766,
+          "0.001": 0.09914981718669369
+        }
+      },
+      "exact_static_audit": {
+        "float_projected_ground_states_certified": true,
+        "ideal_repair_margins_positive": true,
+        "actual_repair_margins_positive": true,
+        "coefficient_error_l1_exact": [
+          285,
+          576460752303423488
+        ],
+        "coefficient_error_l1": 4.9439619065339e-16,
+        "physical_nonoptimal_gap_lower_bound_exact": [
+          2244341423065629,
+          288230376151711744
+        ],
+        "physical_nonoptimal_gap_lower_bound": 0.007786623509398283,
+        "actual_margin_min": 0.17461790800295662,
+        "range_violations": [],
+        "logical_gibbs_tv_rounding_correction": 1.9775847626135797e-14,
+        "interpretation": "exact logical rational model, actual binary64 alpha and chain couplings as exact parameters; interbranch and field rounding bounded in L1"
+      }
+    },
+    {
+      "name": "mixed_hypergraph_n16_s8807_balanced",
+      "scheme": "balanced",
+      "beta": 40.0,
+      "mass": {
+        "decoded_error_lower": 0.110142499910237,
+        "decoded_error_upper": 0.11014249991667818,
+        "feasible_lower": 0.9999972075441889,
+        "feasible_upper": 0.999997207602669,
+        "ground_cost": -0.25,
+        "ground_degeneracy": 1,
+        "original_patterns": 65536,
+        "auxiliary_partition_summed": true
+      },
+      "chain_defect_upper": 0.04874856962777174,
+      "rounding_tv_upper": 1.0408340855860843e-13,
+      "actual_root_error_lower": 0.10477321058428694,
+      "actual_root_error_upper": 0.15889106954455404,
+      "independent_actual_audit": {
+        "instance": "mixed_hypergraph_n16_s8807_balanced",
+        "split": "development",
+        "selection": "outward_readout",
+        "physical_qubits": 235,
+        "scale": 0.03444117154707959,
+        "exact_scale_difference_from_first": "0",
+        "scale_at_least_first_exact": true,
+        "static_ground_fidelity": true,
+        "minimum_exact_margin": "12582546326629295/144115188075855872",
+        "consistent_nonconstant_coefficient_error": "375/144115188075855872",
+        "consistent_offset_error": "771/1152921504606846976",
+        "thermal_rounding_tv_upper": 1.0408340855860843e-13,
+        "classical_defect_upper": 0.04874856962777174,
+        "quantum_defect_upper": {
+          "0.0": 0.04993321399107943,
+          "1e-05": 0.04995289399373543,
+          "0.0001": 0.05190124055128393,
+          "0.001": 0.24699901858992188
+        }
+      },
+      "exact_static_audit": {
+        "float_projected_ground_states_certified": true,
+        "ideal_repair_margins_positive": true,
+        "actual_repair_margins_positive": true,
+        "coefficient_error_l1_exact": [
+          375,
+          144115188075855872
+        ],
+        "coefficient_error_l1": 2.6020852139652106e-15,
+        "physical_nonoptimal_gap_lower_bound_exact": [
+          4963495915060191,
+          576460752303423488
+        ],
+        "physical_nonoptimal_gap_lower_bound": 0.008610292886769897,
+        "actual_margin_min": 0.08730895400147831,
+        "range_violations": [],
+        "logical_gibbs_tv_rounding_correction": 2.081668171172385e-13,
+        "interpretation": "exact logical rational model, actual binary64 alpha and chain couplings as exact parameters; interbranch and field rounding bounded in L1"
+      }
+    },
+    {
+      "name": "mixed_hypergraph_n16_s8807_balanced",
+      "scheme": "balanced",
+      "beta": 80.0,
+      "mass": {
+        "decoded_error_lower": 0.43783153437878847,
+        "decoded_error_upper": 0.43783153440436334,
+        "feasible_lower": 0.9999999999707768,
+        "feasible_upper": 1.0,
+        "ground_cost": -0.25,
+        "ground_degeneracy": 1,
+        "original_patterns": 65536,
+        "auxiliary_partition_summed": true
+      },
+      "chain_defect_upper": 0.04874856962777165,
+      "rounding_tv_upper": 3.0142555118573e-13,
+      "actual_root_error_lower": 0.41648787333960324,
+      "actual_root_error_upper": 0.48658010403243646,
+      "independent_actual_audit": {
+        "instance": "mixed_hypergraph_n16_s8807_balanced",
+        "split": "development",
+        "selection": "outward_readout",
+        "physical_qubits": 235,
+        "scale": 0.03608851030182281,
+        "exact_scale_difference_from_first": "0",
+        "scale_at_least_first_exact": true,
+        "static_ground_fidelity": true,
+        "minimum_exact_margin": "1572818290828661/36028797018963968",
+        "consistent_nonconstant_coefficient_error": "543/144115188075855872",
+        "consistent_offset_error": "137/72057594037927936",
+        "thermal_rounding_tv_upper": 3.0142555118573e-13,
+        "classical_defect_upper": 0.04874856962777165,
+        "quantum_defect_upper": {
+          "0.0": 0.04993321399107934,
+          "1e-05": 0.05001193403357535,
+          "0.0001": 0.05780563896416715,
+          "0.001": 0.8413959287070658
+        }
+      },
+      "exact_static_audit": {
+        "float_projected_ground_states_certified": true,
+        "ideal_repair_margins_positive": true,
+        "actual_repair_margins_positive": true,
+        "coefficient_error_l1_exact": [
+          543,
+          144115188075855872
+        ],
+        "coefficient_error_l1": 3.767819389821625e-15,
+        "physical_nonoptimal_gap_lower_bound_exact": [
+          325056403095291,
+          36028797018963968
+        ],
+        "physical_nonoptimal_gap_lower_bound": 0.009022127575455702,
+        "actual_margin_min": 0.04365447700073913,
+        "range_violations": [],
+        "logical_gibbs_tv_rounding_correction": 6.028511023716418e-13,
+        "interpretation": "exact logical rational model, actual binary64 alpha and chain couplings as exact parameters; interbranch and field rounding bounded in L1"
+      }
+    },
+    {
+      "name": "mixed_hypergraph_n16_s8807_standard",
+      "scheme": "standard",
+      "beta": 10.0,
+      "mass": {
+        "lower": 1.9237306182016866e-05,
+        "upper": 1.9237306182577795e-05,
+        "decoded_error_lower": 0.00020615224419878348,
+        "decoded_error_upper": 0.00020615224421080544,
+        "ground_cost": -0.25,
+        "ground_degeneracy": 1,
+        "auxiliary_partition_summed": true,
+        "original_patterns": 65536,
+        "relative_interval_width": 2.915839303438047e-11
+      },
+      "chain_defect_upper": 0.048723076162492315,
+      "rounding_tv_upper": 3.222248856626919e-15,
+      "actual_root_error_lower": 0.00019610787270055218,
+      "actual_root_error_upper": 0.04892922840670635,
+      "independent_actual_audit": {
+        "instance": "mixed_hypergraph_n16_s8807_standard",
+        "split": "development",
+        "selection": "outward_readout",
+        "physical_qubits": 107,
+        "scale": 0.0173401155994516,
+        "exact_scale_difference_from_first": "0",
+        "scale_at_least_first_exact": true,
+        "static_ground_fidelity": true,
+        "minimum_exact_margin": "5597621343261569/18014398509481984",
+        "consistent_nonconstant_coefficient_error": "743/2305843009213693952",
+        "consistent_offset_error": "1655/2305843009213693952",
+        "thermal_rounding_tv_upper": 3.222248856626919e-15,
+        "classical_defect_upper": 0.048723076162492315,
+        "quantum_defect_upper": {
+          "0.0": 0.049892231505053765,
+          "1e-05": 0.04989274150505584,
+          "0.0001": 0.04994323152580377,
+          "0.001": 0.05499243900894548
+        }
+      },
+      "exact_static_audit": {
+        "float_projected_ground_states_certified": true,
+        "ideal_repair_margins_positive": true,
+        "actual_repair_margins_positive": true,
+        "coefficient_error_l1_exact": [
+          743,
+          2305843009213693952
+        ],
+        "coefficient_error_l1": 3.222248856626919e-16,
+        "physical_nonoptimal_gap_lower_bound_exact": [
+          4997948041744099,
+          1152921504606846976
+        ],
+        "physical_nonoptimal_gap_lower_bound": 0.0043350288998629,
+        "actual_margin_min": 0.31073040492110954,
+        "range_violations": [],
+        "logical_gibbs_tv_rounding_correction": 6.444497713253859e-15,
+        "interpretation": "exact logical rational model, actual binary64 alpha and chain couplings as exact parameters; interbranch and field rounding bounded in L1"
+      }
+    },
+    {
+      "name": "mixed_hypergraph_n16_s8807_standard",
+      "scheme": "standard",
+      "beta": 20.0,
+      "mass": {
+        "lower": 0.00926627991345785,
+        "upper": 0.009266279913728115,
+        "decoded_error_lower": 0.009301472060429085,
+        "decoded_error_upper": 0.009301472060971651,
+        "ground_cost": -0.25,
+        "ground_degeneracy": 1,
+        "auxiliary_partition_summed": true,
+        "original_patterns": 65536,
+        "relative_interval_width": 2.916647413018011e-11
+      },
+      "chain_defect_upper": 0.04872307616249225,
+      "rounding_tv_upper": 6.201636426617085e-14,
+      "actual_root_error_lower": 0.008848275728746509,
+      "actual_root_error_upper": 0.05802454822352593,
+      "independent_actual_audit": {
+        "instance": "mixed_hypergraph_n16_s8807_standard",
+        "split": "development",
+        "selection": "outward_readout",
+        "physical_qubits": 107,
+        "scale": 0.021248674151914483,
+        "exact_scale_difference_from_first": "0",
+        "scale_at_least_first_exact": true,
+        "static_ground_fidelity": true,
+        "minimum_exact_margin": "43731416744231/281474976710656",
+        "consistent_nonconstant_coefficient_error": "3575/1152921504606846976",
+        "consistent_offset_error": "719/1152921504606846976",
+        "thermal_rounding_tv_upper": 6.201636426617085e-14,
+        "classical_defect_upper": 0.04872307616249225,
+        "quantum_defect_upper": {
+          "0.0": 0.0498922315050537,
+          "1e-05": 0.04989427150508691,
+          "0.0001": 0.05009623183705395,
+          "0.001": 0.07029555175413212
+        }
+      },
+      "exact_static_audit": {
+        "float_projected_ground_states_certified": true,
+        "ideal_repair_margins_positive": true,
+        "actual_repair_margins_positive": true,
+        "coefficient_error_l1_exact": [
+          3575,
+          1152921504606846976
+        ],
+        "coefficient_error_l1": 3.1008182133085427e-15,
+        "physical_nonoptimal_gap_lower_bound_exact": [
+          3062256671765733,
+          576460752303423488
+        ],
+        "physical_nonoptimal_gap_lower_bound": 0.005312168537978621,
+        "actual_margin_min": 0.15536520246055474,
+        "range_violations": [],
+        "logical_gibbs_tv_rounding_correction": 1.240327285323494e-13,
+        "interpretation": "exact logical rational model, actual binary64 alpha and chain couplings as exact parameters; interbranch and field rounding bounded in L1"
+      }
+    },
+    {
+      "name": "mixed_hypergraph_n16_s8807_standard",
+      "scheme": "standard",
+      "beta": 40.0,
+      "mass": {
+        "lower": 0.04548755771855778,
+        "upper": 0.04548755771988426,
+        "decoded_error_lower": 0.04548755799726813,
+        "decoded_error_upper": 0.04548755799992101,
+        "ground_cost": -0.25,
+        "ground_degeneracy": 1,
+        "auxiliary_partition_summed": true,
+        "original_patterns": 65536,
+        "relative_interval_width": 2.916139398388664e-11
+      },
+      "chain_defect_upper": 0.04872307616249245,
+      "rounding_tv_upper": 1.409289351883558e-13,
+      "actual_root_error_lower": 0.04327126424438737,
+      "actual_root_error_upper": 0.0942106341625544,
+      "independent_actual_audit": {
+        "instance": "mixed_hypergraph_n16_s8807_standard",
+        "split": "development",
+        "selection": "outward_readout",
+        "physical_qubits": 107,
+        "scale": 0.02320295342814592,
+        "exact_scale_difference_from_first": "0",
+        "scale_at_least_first_exact": true,
+        "static_ground_fidelity": true,
+        "minimum_exact_margin": "2798810671630781/36028797018963968",
+        "consistent_nonconstant_coefficient_error": "2031/576460752303423488",
+        "consistent_offset_error": "93/576460752303423488",
+        "thermal_rounding_tv_upper": 1.409289351883558e-13,
+        "classical_defect_upper": 0.04872307616249245,
+        "quantum_defect_upper": {
+          "0.0": 0.04989223150505391,
+          "1e-05": 0.04990039150558511,
+          "0.0001": 0.050708236817069846,
+          "0.001": 0.13154536744832765
+        }
+      },
+      "exact_static_audit": {
+        "float_projected_ground_states_certified": true,
+        "ideal_repair_margins_positive": true,
+        "actual_repair_margins_positive": true,
+        "coefficient_error_l1_exact": [
+          2031,
+          576460752303423488
+        ],
+        "coefficient_error_l1": 3.5232233797088952e-15,
+        "physical_nonoptimal_gap_lower_bound_exact": [
+          1671948998606287,
+          288230376151711744
+        ],
+        "physical_nonoptimal_gap_lower_bound": 0.00580073835703648,
+        "actual_margin_min": 0.07768260123027729,
+        "range_violations": [],
+        "logical_gibbs_tv_rounding_correction": 2.8185787037675135e-13,
+        "interpretation": "exact logical rational model, actual binary64 alpha and chain couplings as exact parameters; interbranch and field rounding bounded in L1"
+      }
+    },
+    {
+      "name": "mixed_hypergraph_n16_s8807_standard",
+      "scheme": "standard",
+      "beta": 80.0,
+      "mass": {
+        "lower": 0.22655726178908608,
+        "upper": 0.22655726179569044,
+        "decoded_error_lower": 0.22655726178578575,
+        "decoded_error_upper": 0.2265572617989942,
+        "ground_cost": -0.25,
+        "ground_degeneracy": 1,
+        "auxiliary_partition_summed": true,
+        "original_patterns": 65536,
+        "relative_interval_width": 2.9150934729109976e-11
+      },
+      "chain_defect_upper": 0.04872307616249241,
+      "rounding_tv_upper": 2.4903690221123043e-13,
+      "actual_root_error_lower": 0.21551869506439425,
+      "actual_root_error_upper": 0.27528033796173573,
+      "independent_actual_audit": {
+        "instance": "mixed_hypergraph_n16_s8807_standard",
+        "split": "development",
+        "selection": "outward_readout",
+        "physical_qubits": 107,
+        "scale": 0.02418009306626164,
+        "exact_scale_difference_from_first": "0",
+        "scale_at_least_first_exact": true,
+        "static_ground_fidelity": true,
+        "minimum_exact_margin": "43731416744231/1125899906842624",
+        "consistent_nonconstant_coefficient_error": "3589/1152921504606846976",
+        "consistent_offset_error": "2641/1152921504606846976",
+        "thermal_rounding_tv_upper": 2.4903690221123043e-13,
+        "classical_defect_upper": 0.04872307616249241,
+        "quantum_defect_upper": {
+          "0.0": 0.049892231505053876,
+          "1e-05": 0.04992487151355307,
+          "0.0001": 0.053156316498074056,
+          "0.001": 0.37714317245223855
+        }
+      },
+      "exact_static_audit": {
+        "float_projected_ground_states_certified": true,
+        "ideal_repair_margins_positive": true,
+        "actual_repair_margins_positive": true,
+        "coefficient_error_l1_exact": [
+          3589,
+          1152921504606846976
+        ],
+        "coefficient_error_l1": 3.1129612776403803e-15,
+        "physical_nonoptimal_gap_lower_bound_exact": [
+          3484718659935995,
+          576460752303423488
+        ],
+        "physical_nonoptimal_gap_lower_bound": 0.00604502326656541,
+        "actual_margin_min": 0.038841300615138685,
+        "range_violations": [],
+        "logical_gibbs_tv_rounding_correction": 4.980738044225848e-13,
+        "interpretation": "exact logical rational model, actual binary64 alpha and chain couplings as exact parameters; interbranch and field rounding bounded in L1"
+      }
+    },
+    {
+      "name": "mixed_hypergraph_n16_s9901_balanced",
+      "scheme": "balanced",
+      "beta": 10.0,
+      "mass": {
+        "decoded_error_lower": 0.0001574095747582344,
+        "decoded_error_upper": 0.00015740957476743458,
+        "feasible_lower": 0.02696859341640065,
+        "feasible_upper": 0.0269685934179769,
+        "ground_cost": -0.5,
+        "ground_degeneracy": 1,
+        "original_patterns": 65536,
+        "auxiliary_partition_summed": true
+      },
+      "chain_defect_upper": 0.04875109353858996,
+      "rounding_tv_upper": 1.0321604682062002e-14,
+      "actual_root_error_lower": 0.0001497356858455076,
+      "actual_root_error_upper": 0.048908503113367724,
+      "independent_actual_audit": {
+        "instance": "mixed_hypergraph_n16_s9901_balanced",
+        "split": "held_out",
+        "selection": "outward_readout",
+        "physical_qubits": 257,
+        "scale": 0.037921746653705304,
+        "exact_scale_difference_from_first": "0",
+        "scale_at_least_first_exact": true,
+        "static_ground_fidelity": true,
+        "minimum_exact_margin": "51208494005980087/144115188075855872",
+        "consistent_nonconstant_coefficient_error": "595/576460752303423488",
+        "consistent_offset_error": "885/288230376151711744",
+        "thermal_rounding_tv_upper": 1.0321604682062002e-14,
+        "classical_defect_upper": 0.04875109353858996,
+        "quantum_defect_upper": {
+          "0.0": 0.04993089057271973,
+          "1e-05": 0.0499324055727389,
+          "0.0001": 0.050082390764344877,
+          "0.001": 0.06508280696648092
+        }
+      },
+      "exact_static_audit": {
+        "float_projected_ground_states_certified": true,
+        "ideal_repair_margins_positive": true,
+        "actual_repair_margins_positive": true,
+        "coefficient_error_l1_exact": [
+          595,
+          576460752303423488
+        ],
+        "coefficient_error_l1": 1.0321604682062002e-15,
+        "physical_nonoptimal_gap_lower_bound_exact": [
+          2732549825581849,
+          288230376151711744
+        ],
+        "physical_nonoptimal_gap_lower_bound": 0.009480436663426326,
+        "actual_margin_min": 0.3553303068863651,
+        "range_violations": [],
+        "logical_gibbs_tv_rounding_correction": 2.064320936412422e-14,
+        "interpretation": "exact logical rational model, actual binary64 alpha and chain couplings as exact parameters; interbranch and field rounding bounded in L1"
+      }
+    },
+    {
+      "name": "mixed_hypergraph_n16_s9901_balanced",
+      "scheme": "balanced",
+      "beta": 20.0,
+      "mass": {
+        "decoded_error_lower": 0.021795949996698278,
+        "decoded_error_upper": 0.02179594999797347,
+        "feasible_lower": 0.9558996140056742,
+        "feasible_upper": 0.9558996140615997,
+        "ground_cost": -0.5,
+        "ground_degeneracy": 1,
+        "original_patterns": 65536,
+        "auxiliary_partition_summed": true
+      },
+      "chain_defect_upper": 0.048751093538589946,
+      "rounding_tv_upper": 6.238065619612598e-14,
+      "actual_root_error_lower": 0.020733373599587466,
+      "actual_root_error_upper": 0.07054704353662582,
+      "independent_actual_audit": {
+        "instance": "mixed_hypergraph_n16_s9901_balanced",
+        "split": "held_out",
+        "selection": "outward_readout",
+        "physical_qubits": 257,
+        "scale": 0.0483726380327056,
+        "exact_scale_difference_from_first": "0",
+        "scale_at_least_first_exact": true,
+        "static_ground_fidelity": true,
+        "minimum_exact_margin": "6401061750747509/36028797018963968",
+        "consistent_nonconstant_coefficient_error": "899/288230376151711744",
+        "consistent_offset_error": "375/288230376151711744",
+        "thermal_rounding_tv_upper": 6.238065619612598e-14,
+        "classical_defect_upper": 0.048751093538589946,
+        "quantum_defect_upper": {
+          "0.0": 0.049930890572719724,
+          "1e-05": 0.04993695057302632,
+          "0.0001": 0.05053689363872892,
+          "0.001": 0.11056155977478171
+        }
+      },
+      "exact_static_audit": {
+        "float_projected_ground_states_certified": true,
+        "ideal_repair_margins_positive": true,
+        "actual_repair_margins_positive": true,
+        "coefficient_error_l1_exact": [
+          899,
+          288230376151711744
+        ],
+        "coefficient_error_l1": 3.119032809806299e-15,
+        "physical_nonoptimal_gap_lower_bound_exact": [
+          3485615913904333,
+          288230376151711744
+        ],
+        "physical_nonoptimal_gap_lower_bound": 0.0120931595081764,
+        "actual_margin_min": 0.17766515344318248,
+        "range_violations": [],
+        "logical_gibbs_tv_rounding_correction": 1.2476131239225974e-13,
+        "interpretation": "exact logical rational model, actual binary64 alpha and chain couplings as exact parameters; interbranch and field rounding bounded in L1"
+      }
+    },
+    {
+      "name": "mixed_hypergraph_n16_s9901_balanced",
+      "scheme": "balanced",
+      "beta": 40.0,
+      "mass": {
+        "decoded_error_lower": 0.1360560363150875,
+        "decoded_error_upper": 0.13605603632304739,
+        "feasible_lower": 0.9999974554501196,
+        "feasible_upper": 0.9999974555086237,
+        "ground_cost": -0.5,
+        "ground_degeneracy": 1,
+        "original_patterns": 65536,
+        "auxiliary_partition_summed": true
+      },
+      "chain_defect_upper": 0.048751093538589946,
+      "rounding_tv_upper": 6.203371150093062e-14,
+      "actual_root_error_lower": 0.12942315576214183,
+      "actual_root_error_upper": 0.1848071298616994,
+      "independent_actual_audit": {
+        "instance": "mixed_hypergraph_n16_s9901_balanced",
+        "split": "held_out",
+        "selection": "outward_readout",
+        "physical_qubits": 257,
+        "scale": 0.05359808372220574,
+        "exact_scale_difference_from_first": "0",
+        "scale_at_least_first_exact": true,
+        "static_ground_fidelity": true,
+        "minimum_exact_margin": "6401061750747507/72057594037927936",
+        "consistent_nonconstant_coefficient_error": "447/288230376151711744",
+        "consistent_offset_error": "663/576460752303423488",
+        "thermal_rounding_tv_upper": 6.203371150093062e-14,
+        "classical_defect_upper": 0.048751093538589946,
+        "quantum_defect_upper": {
+          "0.0": 0.04993089057271972,
+          "1e-05": 0.04995513057762532,
+          "0.0001": 0.05235493962930854,
+          "0.001": 0.2928220398495723
+        }
+      },
+      "exact_static_audit": {
+        "float_projected_ground_states_certified": true,
+        "ideal_repair_margins_positive": true,
+        "actual_repair_margins_positive": true,
+        "coefficient_error_l1_exact": [
+          447,
+          288230376151711744
+        ],
+        "coefficient_error_l1": 1.5508427875232655e-15,
+        "physical_nonoptimal_gap_lower_bound_exact": [
+          7724297916131149,
+          576460752303423488
+        ],
+        "physical_nonoptimal_gap_lower_bound": 0.013399520930551434,
+        "actual_margin_min": 0.08883257672159121,
+        "range_violations": [],
+        "logical_gibbs_tv_rounding_correction": 1.2406742300186894e-13,
+        "interpretation": "exact logical rational model, actual binary64 alpha and chain couplings as exact parameters; interbranch and field rounding bounded in L1"
+      }
+    },
+    {
+      "name": "mixed_hypergraph_n16_s9901_balanced",
+      "scheme": "balanced",
+      "beta": 80.0,
+      "mass": {
+        "decoded_error_lower": 0.6013136789393763,
+        "decoded_error_upper": 0.6013136789745112,
+        "feasible_lower": 0.9999999999707743,
+        "feasible_upper": 1.0,
+        "ground_cost": -0.5,
+        "ground_degeneracy": 1,
+        "original_patterns": 65536,
+        "auxiliary_partition_summed": true
+      },
+      "chain_defect_upper": 0.04875109353858971,
+      "rounding_tv_upper": 2.509104035652854e-13,
+      "actual_root_error_lower": 0.5719989795311304,
+      "actual_root_error_upper": 0.6500647725133519,
+      "independent_actual_audit": {
+        "instance": "mixed_hypergraph_n16_s9901_balanced",
+        "split": "held_out",
+        "selection": "outward_readout",
+        "physical_qubits": 257,
+        "scale": 0.056210806566955804,
+        "exact_scale_difference_from_first": "0",
+        "scale_at_least_first_exact": true,
+        "static_ground_fidelity": true,
+        "minimum_exact_margin": "400066359421719/9007199254740992",
+        "consistent_nonconstant_coefficient_error": "113/36028797018963968",
+        "consistent_offset_error": "3457/288230376151711744",
+        "thermal_rounding_tv_upper": 2.509104035652854e-13,
+        "classical_defect_upper": 0.04875109353858971,
+        "quantum_defect_upper": {
+          "0.0": 0.04993089057271947,
+          "1e-05": 0.050027850651209106,
+          "0.0001": 0.05962767550640494,
+          "0.001": 1.0
+        }
+      },
+      "exact_static_audit": {
+        "float_projected_ground_states_certified": true,
+        "ideal_repair_margins_positive": true,
+        "actual_repair_margins_positive": true,
+        "coefficient_error_l1_exact": [
+          113,
+          36028797018963968
+        ],
+        "coefficient_error_l1": 3.1363800445660672e-15,
+        "physical_nonoptimal_gap_lower_bound_exact": [
+          4050415480146195,
+          288230376151711744
+        ],
+        "physical_nonoptimal_gap_lower_bound": 0.014052701641738951,
+        "actual_margin_min": 0.044416288360795586,
+        "range_violations": [],
+        "logical_gibbs_tv_rounding_correction": 5.018208071306967e-13,
+        "interpretation": "exact logical rational model, actual binary64 alpha and chain couplings as exact parameters; interbranch and field rounding bounded in L1"
+      }
+    },
+    {
+      "name": "mixed_hypergraph_n16_s9901_standard",
+      "scheme": "standard",
+      "beta": 10.0,
+      "mass": {
+        "lower": 1.0472717355362142e-06,
+        "upper": 1.0472717355667563e-06,
+        "decoded_error_lower": 6.777120495081546e-05,
+        "decoded_error_upper": 6.777120495476826e-05,
+        "ground_cost": -0.5,
+        "ground_degeneracy": 1,
+        "auxiliary_partition_summed": true,
+        "original_patterns": 65536,
+        "relative_interval_width": 2.916349330990983e-11
+      },
+      "chain_defect_upper": 0.006621212289286304,
+      "rounding_tv_upper": 4.831204880595408e-15,
+      "actual_root_error_lower": 6.732247741093616e-05,
+      "actual_root_error_upper": 0.006688983494245904,
+      "independent_actual_audit": {
+        "instance": "mixed_hypergraph_n16_s9901_standard",
+        "split": "held_out",
+        "selection": "outward_readout",
+        "physical_qubits": 114,
+        "scale": 0.02310280815287868,
+        "exact_scale_difference_from_first": "0",
+        "scale_at_least_first_exact": true,
+        "static_ground_fidelity": true,
+        "minimum_exact_margin": "22531793604936073/72057594037927936",
+        "consistent_nonconstant_coefficient_error": "557/1152921504606846976",
+        "consistent_offset_error": "317/1152921504606846976",
+        "thermal_rounding_tv_upper": 4.831204880595408e-15,
+        "classical_defect_upper": 0.006621212289286304,
+        "quantum_defect_upper": {
+          "0.0": 0.006637068773849724,
+          "1e-05": 0.006637593773851661,
+          "0.0001": 0.006689568793224727,
+          "0.001": 0.011887262526995589
+        }
+      },
+      "exact_static_audit": {
+        "float_projected_ground_states_certified": true,
+        "ideal_repair_margins_positive": true,
+        "actual_repair_margins_positive": true,
+        "coefficient_error_l1_exact": [
+          557,
+          1152921504606846976
+        ],
+        "coefficient_error_l1": 4.831204880595408e-16,
+        "physical_nonoptimal_gap_lower_bound_exact": [
+          6658931084065055,
+          1152921504606846976
+        ],
+        "physical_nonoptimal_gap_lower_bound": 0.00577570203821967,
+        "actual_margin_min": 0.31269145057877357,
+        "range_violations": [],
+        "logical_gibbs_tv_rounding_correction": 9.662409761190863e-15,
+        "interpretation": "exact logical rational model, actual binary64 alpha and chain couplings as exact parameters; interbranch and field rounding bounded in L1"
+      }
+    },
+    {
+      "name": "mixed_hypergraph_n16_s9901_standard",
+      "scheme": "standard",
+      "beta": 20.0,
+      "mass": {
+        "lower": 0.0066983349067577325,
+        "upper": 0.0066983349069531265,
+        "decoded_error_lower": 0.006829918333993612,
+        "decoded_error_upper": 0.006829918334392064,
+        "ground_cost": -0.5,
+        "ground_degeneracy": 1,
+        "auxiliary_partition_summed": true,
+        "original_patterns": 65536,
+        "relative_interval_width": 2.917054027274348e-11
+      },
+      "chain_defect_upper": 0.005793468772237577,
+      "rounding_tv_upper": 1.1258355359089478e-14,
+      "actual_root_error_lower": 0.006790349415397493,
+      "actual_root_error_upper": 0.012623387106640903,
+      "independent_actual_audit": {
+        "instance": "mixed_hypergraph_n16_s9901_standard",
+        "split": "held_out",
+        "selection": "outward_readout",
+        "physical_qubits": 114,
+        "scale": 0.028358126429380518,
+        "exact_scale_difference_from_first": "0",
+        "scale_at_least_first_exact": true,
+        "static_ground_fidelity": true,
+        "minimum_exact_margin": "11265897162756015/72057594037927936",
+        "consistent_nonconstant_coefficient_error": "649/1152921504606846976",
+        "consistent_offset_error": "451/1152921504606846976",
+        "thermal_rounding_tv_upper": 1.1258355359089478e-14,
+        "classical_defect_upper": 0.005793468772237577,
+        "quantum_defect_upper": {
+          "0.0": 0.005804752764483383,
+          "1e-05": 0.005806852764514383,
+          "0.0001": 0.006014753074483584,
+          "0.001": 0.026807852965824785
+        }
+      },
+      "exact_static_audit": {
+        "float_projected_ground_states_certified": true,
+        "ideal_repair_margins_positive": true,
+        "actual_repair_margins_positive": true,
+        "coefficient_error_l1_exact": [
+          649,
+          1152921504606846976
+        ],
+        "coefficient_error_l1": 5.629177679544739e-16,
+        "physical_nonoptimal_gap_lower_bound_exact": [
+          8173673447698145,
+          1152921504606846976
+        ],
+        "physical_nonoptimal_gap_lower_bound": 0.0070895316073451295,
+        "actual_margin_min": 0.15634573028938692,
+        "range_violations": [],
+        "logical_gibbs_tv_rounding_correction": 2.251671071817921e-14,
+        "interpretation": "exact logical rational model, actual binary64 alpha and chain couplings as exact parameters; interbranch and field rounding bounded in L1"
+      }
+    },
+    {
+      "name": "mixed_hypergraph_n16_s9901_standard",
+      "scheme": "standard",
+      "beta": 40.0,
+      "mass": {
+        "lower": 0.03793197815677559,
+        "upper": 0.03793197815788193,
+        "decoded_error_lower": 0.03793198619883084,
+        "decoded_error_upper": 0.03793198620104343,
+        "ground_cost": -0.5,
+        "ground_degeneracy": 1,
+        "auxiliary_partition_summed": true,
+        "original_patterns": 65536,
+        "relative_interval_width": 2.9166347176362105e-11
+      },
+      "chain_defect_upper": 0.005747260249364885,
+      "rounding_tv_upper": 2.264508025540124e-13,
+      "actual_root_error_lower": 0.03771398120214569,
+      "actual_root_error_upper": 0.04367924645063478,
+      "independent_actual_audit": {
+        "instance": "mixed_hypergraph_n16_s9901_standard",
+        "split": "held_out",
+        "selection": "outward_readout",
+        "physical_qubits": 114,
+        "scale": 0.030985785567631433,
+        "exact_scale_difference_from_first": "0",
+        "scale_at_least_first_exact": true,
+        "static_ground_fidelity": true,
+        "minimum_exact_margin": "2816474470832987/36028797018963968",
+        "consistent_nonconstant_coefficient_error": "6527/1152921504606846976",
+        "consistent_offset_error": "2973/1152921504606846976",
+        "thermal_rounding_tv_upper": 2.264508025540124e-13,
+        "classical_defect_upper": 0.005747260249364885,
+        "quantum_defect_upper": {
+          "0.0": 0.005758306069488931,
+          "1e-05": 0.005766706069984931,
+          "0.0001": 0.006598311029501816,
+          "0.001": 0.08980791895688758
+        }
+      },
+      "exact_static_audit": {
+        "float_projected_ground_states_certified": true,
+        "ideal_repair_margins_positive": true,
+        "actual_repair_margins_positive": true,
+        "coefficient_error_l1_exact": [
+          6527,
+          1152921504606846976
+        ],
+        "coefficient_error_l1": 5.66127006385031e-15,
+        "physical_nonoptimal_gap_lower_bound_exact": [
+          8931044629514689,
+          1152921504606846976
+        ],
+        "physical_nonoptimal_gap_lower_bound": 0.007746446391907858,
+        "actual_margin_min": 0.0781728701446934,
+        "range_violations": [],
+        "logical_gibbs_tv_rounding_correction": 4.5290160510812734e-13,
+        "interpretation": "exact logical rational model, actual binary64 alpha and chain couplings as exact parameters; interbranch and field rounding bounded in L1"
+      }
+    },
+    {
+      "name": "mixed_hypergraph_n16_s9901_standard",
+      "scheme": "standard",
+      "beta": 80.0,
+      "mass": {
+        "lower": 0.2109819863290129,
+        "upper": 0.21098198633516405,
+        "decoded_error_lower": 0.21098198632593923,
+        "decoded_error_upper": 0.21098198633824108,
+        "ground_cost": -0.5,
+        "ground_degeneracy": 1,
+        "auxiliary_partition_summed": true,
+        "original_patterns": 65536,
+        "relative_interval_width": 2.9154788347725626e-11
+      },
+      "chain_defect_upper": 0.005747103176787806,
+      "rounding_tv_upper": 5.054290319606025e-13,
+      "actual_root_error_lower": 0.20976945108157785,
+      "actual_root_error_upper": 0.21672908951553435,
+      "independent_actual_audit": {
+        "instance": "mixed_hypergraph_n16_s9901_standard",
+        "split": "held_out",
+        "selection": "outward_readout",
+        "physical_qubits": 114,
+        "scale": 0.032299615136756894,
+        "exact_scale_difference_from_first": "0",
+        "scale_at_least_first_exact": true,
+        "static_ground_fidelity": true,
+        "minimum_exact_margin": "704118707780243/18014398509481984",
+        "consistent_nonconstant_coefficient_error": "1821/288230376151711744",
+        "consistent_offset_error": "619/576460752303423488",
+        "thermal_rounding_tv_upper": 5.054290319606025e-13,
+        "classical_defect_upper": 0.005747103176787806,
+        "quantum_defect_upper": {
+          "0.0": 0.005758148195941704,
+          "1e-05": 0.005791748203877705,
+          "0.0001": 0.009118227556766372,
+          "0.001": 0.34255257338617967
+        }
+      },
+      "exact_static_audit": {
+        "float_projected_ground_states_certified": true,
+        "ideal_repair_margins_positive": true,
+        "actual_repair_margins_positive": true,
+        "coefficient_error_l1_exact": [
+          1821,
+          288230376151711744
+        ],
+        "coefficient_error_l1": 6.3178628995075314e-15,
+        "physical_nonoptimal_gap_lower_bound_exact": [
+          4654865110211481,
+          576460752303423488
+        ],
+        "physical_nonoptimal_gap_lower_bound": 0.008074903784189224,
+        "actual_margin_min": 0.039086440072346906,
+        "range_violations": [],
+        "logical_gibbs_tv_rounding_correction": 1.010858063921716e-12,
+        "interpretation": "exact logical rational model, actual binary64 alpha and chain couplings as exact parameters; interbranch and field rounding bounded in L1"
+      }
+    },
+    {
+      "name": "random_regular_n16_s8807_balanced",
+      "scheme": "balanced",
+      "beta": 10.0,
+      "mass": {
+        "decoded_error_lower": 0.001862863323845355,
+        "decoded_error_upper": 0.0018628633239540131,
+        "feasible_lower": 0.14619612455467848,
+        "feasible_upper": 0.14619612456320585,
+        "ground_cost": -0.25,
+        "ground_degeneracy": 1,
+        "original_patterns": 65536,
+        "auxiliary_partition_summed": true
+      },
+      "chain_defect_upper": 0.04870076643978326,
+      "rounding_tv_upper": 1.1830814106161824e-14,
+      "actual_root_error_lower": 0.0017721404521902691,
+      "actual_root_error_upper": 0.05056362976374911,
+      "independent_actual_audit": {
+        "instance": "random_regular_n16_s8807_balanced",
+        "split": "development",
+        "selection": "outward_readout",
+        "physical_qubits": 113,
+        "scale": 0.03445849089939361,
+        "exact_scale_difference_from_first": "0",
+        "scale_at_least_first_exact": true,
+        "static_ground_fidelity": true,
+        "minimum_exact_margin": "2625123731143221/9007199254740992",
+        "consistent_nonconstant_coefficient_error": "341/288230376151711744",
+        "consistent_offset_error": "967/576460752303423488",
+        "thermal_rounding_tv_upper": 1.1830814106161824e-14,
+        "classical_defect_upper": 0.04870076643978326,
+        "quantum_defect_upper": {
+          "0.0": 0.049818973005048145,
+          "1e-05": 0.04981933300505009,
+          "0.0001": 0.049854973024548145,
+          "0.001": 0.05341916800989822
+        }
+      },
+      "exact_static_audit": {
+        "float_projected_ground_states_certified": true,
+        "ideal_repair_margins_positive": true,
+        "actual_repair_margins_positive": true,
+        "coefficient_error_l1_exact": [
+          341,
+          288230376151711744
+        ],
+        "coefficient_error_l1": 1.1830814106161824e-15,
+        "physical_nonoptimal_gap_lower_bound_exact": [
+          2482995948388139,
+          288230376151711744
+        ],
+        "physical_nonoptimal_gap_lower_bound": 0.008614622724848402,
+        "actual_margin_min": 0.2914472808805103,
+        "range_violations": [],
+        "logical_gibbs_tv_rounding_correction": 2.366162821232393e-14,
+        "interpretation": "exact logical rational model, actual binary64 alpha and chain couplings as exact parameters; interbranch and field rounding bounded in L1"
+      }
+    },
+    {
+      "name": "random_regular_n16_s8807_balanced",
+      "scheme": "balanced",
+      "beta": 20.0,
+      "mass": {
+        "decoded_error_lower": 0.04185446817792838,
+        "decoded_error_upper": 0.041854468180370384,
+        "feasible_lower": 0.9922488042496722,
+        "feasible_upper": 0.9922488043075643,
+        "ground_cost": -0.25,
+        "ground_degeneracy": 1,
+        "original_patterns": 65536,
+        "auxiliary_partition_summed": true
+      },
+      "chain_defect_upper": 0.04870076643978321,
+      "rounding_tv_upper": 1.4224732503009818e-14,
+      "actual_root_error_lower": 0.03981612349872021,
+      "actual_root_error_upper": 0.09055523462016783,
+      "independent_actual_audit": {
+        "instance": "random_regular_n16_s8807_balanced",
+        "split": "development",
+        "selection": "outward_readout",
+        "physical_qubits": 113,
+        "scale": 0.04154535487216489,
+        "exact_scale_difference_from_first": "0",
+        "scale_at_least_first_exact": true,
+        "static_ground_fidelity": true,
+        "minimum_exact_margin": "2625123731143221/18014398509481984",
+        "consistent_nonconstant_coefficient_error": "205/288230376151711744",
+        "consistent_offset_error": "751/576460752303423488",
+        "thermal_rounding_tv_upper": 1.4224732503009818e-14,
+        "classical_defect_upper": 0.04870076643978321,
+        "quantum_defect_upper": {
+          "0.0": 0.04981897300504809,
+          "1e-05": 0.049820413005079285,
+          "0.0001": 0.049962973317048395,
+          "0.001": 0.06422209331546622
+        }
+      },
+      "exact_static_audit": {
+        "float_projected_ground_states_certified": true,
+        "ideal_repair_margins_positive": true,
+        "actual_repair_margins_positive": true,
+        "coefficient_error_l1_exact": [
+          205,
+          288230376151711744
+        ],
+        "coefficient_error_l1": 7.112366251504909e-16,
+        "physical_nonoptimal_gap_lower_bound_exact": [
+          2993658315540109,
+          288230376151711744
+        ],
+        "physical_nonoptimal_gap_lower_bound": 0.010386338718041222,
+        "actual_margin_min": 0.14572364044025515,
+        "range_violations": [],
+        "logical_gibbs_tv_rounding_correction": 2.844946500602004e-14,
+        "interpretation": "exact logical rational model, actual binary64 alpha and chain couplings as exact parameters; interbranch and field rounding bounded in L1"
+      }
+    },
+    {
+      "name": "random_regular_n16_s8807_balanced",
+      "scheme": "balanced",
+      "beta": 40.0,
+      "mass": {
+        "decoded_error_lower": 0.15591990421721622,
+        "decoded_error_upper": 0.15591990422631338,
+        "feasible_lower": 0.9999999048825744,
+        "feasible_upper": 0.9999999049409192,
+        "ground_cost": -0.25,
+        "ground_degeneracy": 1,
+        "original_patterns": 65536,
+        "auxiliary_partition_summed": true
+      },
+      "chain_defect_upper": 0.04870076643978333,
+      "rounding_tv_upper": 6.154798892765712e-14,
+      "actual_root_error_lower": 0.1483264853785616,
+      "actual_root_error_upper": 0.20462067066615827,
+      "independent_actual_audit": {
+        "instance": "random_regular_n16_s8807_balanced",
+        "split": "development",
+        "selection": "outward_readout",
+        "physical_qubits": 113,
+        "scale": 0.045088786858550535,
+        "exact_scale_difference_from_first": "0",
+        "scale_at_least_first_exact": true,
+        "static_ground_fidelity": true,
+        "minimum_exact_margin": "656280932785805/9007199254740992",
+        "consistent_nonconstant_coefficient_error": "887/576460752303423488",
+        "consistent_offset_error": "1025/1152921504606846976",
+        "thermal_rounding_tv_upper": 6.154798892765712e-14,
+        "classical_defect_upper": 0.04870076643978333,
+        "quantum_defect_upper": {
+          "0.0": 0.049818973005048214,
+          "1e-05": 0.04982473300554741,
+          "0.0001": 0.050394977997068074,
+          "0.001": 0.1074689128752891
+        }
+      },
+      "exact_static_audit": {
+        "float_projected_ground_states_certified": true,
+        "ideal_repair_margins_positive": true,
+        "actual_repair_margins_positive": true,
+        "coefficient_error_l1_exact": [
+          887,
+          576460752303423488
+        ],
+        "coefficient_error_l1": 1.5386997231914279e-15,
+        "physical_nonoptimal_gap_lower_bound_exact": [
+          6497978998232189,
+          576460752303423488
+        ],
+        "physical_nonoptimal_gap_lower_bound": 0.011272196714637634,
+        "actual_margin_min": 0.07286182022012755,
+        "range_violations": [],
+        "logical_gibbs_tv_rounding_correction": 1.230959778553218e-13,
+        "interpretation": "exact logical rational model, actual binary64 alpha and chain couplings as exact parameters; interbranch and field rounding bounded in L1"
+      }
+    },
+    {
+      "name": "random_regular_n16_s8807_balanced",
+      "scheme": "balanced",
+      "beta": 80.0,
+      "mass": {
+        "decoded_error_lower": 0.42362996214173354,
+        "decoded_error_upper": 0.42362996216643584,
+        "feasible_lower": 0.9999999999708442,
+        "feasible_upper": 1.0,
+        "ground_cost": -0.25,
+        "ground_degeneracy": 1,
+        "original_patterns": 65536,
+        "auxiliary_partition_summed": true
+      },
+      "chain_defect_upper": 0.04870076643978305,
+      "rounding_tv_upper": 2.8727020762175925e-14,
+      "actual_root_error_lower": 0.4029988582985474,
+      "actual_root_error_upper": 0.47233072860624764,
+      "independent_actual_audit": {
+        "instance": "random_regular_n16_s8807_balanced",
+        "split": "development",
+        "selection": "outward_readout",
+        "physical_qubits": 113,
+        "scale": 0.04686050285174335,
+        "exact_scale_difference_from_first": "0",
+        "scale_at_least_first_exact": true,
+        "static_ground_fidelity": true,
+        "minimum_exact_margin": "656280932785805/18014398509481984",
+        "consistent_nonconstant_coefficient_error": "207/576460752303423488",
+        "consistent_offset_error": "399/1152921504606846976",
+        "thermal_rounding_tv_upper": 2.8727020762175925e-14,
+        "classical_defect_upper": 0.04870076643978305,
+        "quantum_defect_upper": {
+          "0.0": 0.04981897300504792,
+          "1e-05": 0.04984201301303512,
+          "0.0001": 0.05212305287831933,
+          "0.001": 0.28101896559206124
+        }
+      },
+      "exact_static_audit": {
+        "float_projected_ground_states_certified": true,
+        "ideal_repair_margins_positive": true,
+        "actual_repair_margins_positive": true,
+        "coefficient_error_l1_exact": [
+          207,
+          576460752303423488
+        ],
+        "coefficient_error_l1": 3.5908775952719907e-16,
+        "physical_nonoptimal_gap_lower_bound_exact": [
+          6753310181808173,
+          576460752303423488
+        ],
+        "physical_nonoptimal_gap_lower_bound": 0.011715125712935837,
+        "actual_margin_min": 0.036430910110063774,
+        "range_violations": [],
+        "logical_gibbs_tv_rounding_correction": 5.74540415243535e-14,
+        "interpretation": "exact logical rational model, actual binary64 alpha and chain couplings as exact parameters; interbranch and field rounding bounded in L1"
+      }
+    },
+    {
+      "name": "random_regular_n16_s8807_standard",
+      "scheme": "standard",
+      "beta": 10.0,
+      "mass": {
+        "lower": 0.0004862169085546161,
+        "upper": 0.0004862169085687836,
+        "decoded_error_lower": 0.0006960338033662036,
+        "decoded_error_upper": 0.000696033803406765,
+        "ground_cost": -0.25,
+        "ground_degeneracy": 1,
+        "auxiliary_partition_summed": true,
+        "original_patterns": 65536,
+        "relative_interval_width": 2.913820226862463e-11
+      },
+      "chain_defect_upper": 0.006076830331883295,
+      "rounding_tv_upper": 1.3526506303929153e-14,
+      "actual_root_error_lower": 0.0006918041240244474,
+      "actual_root_error_upper": 0.006772864135303588,
+      "independent_actual_audit": {
+        "instance": "random_regular_n16_s8807_standard",
+        "split": "development",
+        "selection": "outward_readout",
+        "physical_qubits": 57,
+        "scale": 0.02100289759012675,
+        "exact_scale_difference_from_first": "0",
+        "scale_at_least_first_exact": true,
+        "static_ground_fidelity": true,
+        "minimum_exact_margin": "4677399887868029/18014398509481984",
+        "consistent_nonconstant_coefficient_error": "3119/2305843009213693952",
+        "consistent_offset_error": "2485/2305843009213693952",
+        "thermal_rounding_tv_upper": 1.3526506303929153e-14,
+        "classical_defect_upper": 0.006076830331883295,
+        "quantum_defect_upper": {
+          "0.0": 0.006079938365100077,
+          "1e-05": 0.006080123365100881,
+          "0.0001": 0.006098438373141745,
+          "0.001": 0.007930018783401487
+        }
+      },
+      "exact_static_audit": {
+        "float_projected_ground_states_certified": true,
+        "ideal_repair_margins_positive": true,
+        "actual_repair_margins_positive": true,
+        "coefficient_error_l1_exact": [
+          3119,
+          2305843009213693952
+        ],
+        "coefficient_error_l1": 1.3526506303929153e-15,
+        "physical_nonoptimal_gap_lower_bound_exact": [
+          6053673072678113,
+          1152921504606846976
+        ],
+        "physical_nonoptimal_gap_lower_bound": 0.005250724397531687,
+        "actual_margin_min": 0.25964785254451056,
+        "range_violations": [],
+        "logical_gibbs_tv_rounding_correction": 2.7053012607858673e-14,
+        "interpretation": "exact logical rational model, actual binary64 alpha and chain couplings as exact parameters; interbranch and field rounding bounded in L1"
+      }
+    },
+    {
+      "name": "random_regular_n16_s8807_standard",
+      "scheme": "standard",
+      "beta": 20.0,
+      "mass": {
+        "lower": 0.01747450197269388,
+        "upper": 0.017474501973203105,
+        "decoded_error_lower": 0.017482653307466175,
+        "decoded_error_upper": 0.017482653308485047,
+        "ground_cost": -0.25,
+        "ground_degeneracy": 1,
+        "auxiliary_partition_summed": true,
+        "original_patterns": 65536,
+        "relative_interval_width": 2.914100829350835e-11
+      },
+      "chain_defect_upper": 0.0055416677920187675,
+      "rounding_tv_upper": 2.955968803064479e-14,
+      "actual_root_error_lower": 0.01738577025068376,
+      "actual_root_error_upper": 0.023024321100533377,
+      "independent_actual_audit": {
+        "instance": "random_regular_n16_s8807_standard",
+        "split": "development",
+        "selection": "outward_readout",
+        "physical_qubits": 57,
+        "scale": 0.024685845674496,
+        "exact_scale_difference_from_first": "0",
+        "scale_at_least_first_exact": true,
+        "static_ground_fidelity": true,
+        "minimum_exact_margin": "292337504250751/2251799813685248",
+        "consistent_nonconstant_coefficient_error": "213/144115188075855872",
+        "consistent_offset_error": "413/144115188075855872",
+        "thermal_rounding_tv_upper": 2.955968803064479e-14,
+        "classical_defect_upper": 0.0055416677920187675,
+        "quantum_defect_upper": {
+          "0.0": 0.005541761172089693,
+          "1e-05": 0.0055425011721025605,
+          "0.0001": 0.005615761300756465,
+          "0.001": 0.012943047943383888
+        }
+      },
+      "exact_static_audit": {
+        "float_projected_ground_states_certified": true,
+        "ideal_repair_margins_positive": true,
+        "actual_repair_margins_positive": true,
+        "coefficient_error_l1_exact": [
+          213,
+          144115188075855872
+        ],
+        "coefficient_error_l1": 1.4779844015322396e-15,
+        "physical_nonoptimal_gap_lower_bound_exact": [
+          444700661523943,
+          72057594037927936
+        ],
+        "physical_nonoptimal_gap_lower_bound": 0.006171461418624,
+        "actual_margin_min": 0.12982393127225533,
+        "range_violations": [],
+        "logical_gibbs_tv_rounding_correction": 5.911937606129133e-14,
+        "interpretation": "exact logical rational model, actual binary64 alpha and chain couplings as exact parameters; interbranch and field rounding bounded in L1"
+      }
+    },
+    {
+      "name": "random_regular_n16_s8807_standard",
+      "scheme": "standard",
+      "beta": 40.0,
+      "mass": {
+        "lower": 0.06371941023901809,
+        "upper": 0.06371941024087464,
+        "decoded_error_lower": 0.06371941028621979,
+        "decoded_error_upper": 0.06371941028993271,
+        "ground_cost": -0.25,
+        "ground_degeneracy": 1,
+        "auxiliary_partition_summed": true,
+        "original_patterns": 65536,
+        "relative_interval_width": 2.91364368898485e-11
+      },
+      "chain_defect_upper": 0.005524878745281754,
+      "rounding_tv_upper": 3.2057689836051395e-14,
+      "actual_root_error_lower": 0.06336736827063567,
+      "actual_root_error_upper": 0.06924428903524653,
+      "independent_actual_audit": {
+        "instance": "random_regular_n16_s8807_standard",
+        "split": "development",
+        "selection": "outward_readout",
+        "physical_qubits": 57,
+        "scale": 0.026527319716680625,
+        "exact_scale_difference_from_first": "0",
+        "scale_at_least_first_exact": true,
+        "static_ground_fidelity": true,
+        "minimum_exact_margin": "1169350107074995/18014398509481984",
+        "consistent_nonconstant_coefficient_error": "231/288230376151711744",
+        "consistent_offset_error": "301/288230376151711744",
+        "thermal_rounding_tv_upper": 3.2057689836051395e-14,
+        "classical_defect_upper": 0.005524878745281754,
+        "quantum_defect_upper": {
+          "0.0": 0.005524878863405533,
+          "1e-05": 0.0055278388636114,
+          "0.0001": 0.0058208809220788955,
+          "0.001": 0.03514547222725231
+        }
+      },
+      "exact_static_audit": {
+        "float_projected_ground_states_certified": true,
+        "ideal_repair_margins_positive": true,
+        "actual_repair_margins_positive": true,
+        "coefficient_error_l1_exact": [
+          231,
+          288230376151711744
+        ],
+        "coefficient_error_l1": 8.014422459012849e-16,
+        "physical_nonoptimal_gap_lower_bound_exact": [
+          955747417529447,
+          144115188075855872
+        ],
+        "physical_nonoptimal_gap_lower_bound": 0.006631829929170156,
+        "actual_margin_min": 0.06491197063612758,
+        "range_violations": [],
+        "logical_gibbs_tv_rounding_correction": 6.411537967210485e-14,
+        "interpretation": "exact logical rational model, actual binary64 alpha and chain couplings as exact parameters; interbranch and field rounding bounded in L1"
+      }
+    },
+    {
+      "name": "random_regular_n16_s8807_standard",
+      "scheme": "standard",
+      "beta": 80.0,
+      "mass": {
+        "lower": 0.211056313161566,
+        "upper": 0.2110563131677146,
+        "decoded_error_lower": 0.21105631315849288,
+        "decoded_error_upper": 0.2110563131707895,
+        "ground_cost": -0.25,
+        "ground_degeneracy": 1,
+        "auxiliary_partition_summed": true,
+        "original_patterns": 65536,
+        "relative_interval_width": 2.9132422297843695e-11
+      },
+      "chain_defect_upper": 0.005524853087554056,
+      "rounding_tv_upper": 1.3846562785246874e-13,
+      "actual_root_error_lower": 0.20989025803495368,
+      "actual_root_error_upper": 0.21658116625848203,
+      "independent_actual_audit": {
+        "instance": "random_regular_n16_s8807_standard",
+        "split": "development",
+        "selection": "outward_readout",
+        "physical_qubits": 57,
+        "scale": 0.027448056737772942,
+        "exact_scale_difference_from_first": "0",
+        "scale_at_least_first_exact": true,
+        "static_ground_fidelity": true,
+        "minimum_exact_margin": "584675143609489/18014398509481984",
+        "consistent_nonconstant_coefficient_error": "3991/2305843009213693952",
+        "consistent_offset_error": "1313/2305843009213693952",
+        "thermal_rounding_tv_upper": 1.3846562785246874e-13,
+        "classical_defect_upper": 0.005524853087554056,
+        "quantum_defect_upper": {
+          "0.0": 0.0055248530875542465,
+          "1e-05": 0.005536693090848114,
+          "0.0001": 0.00670888602664945,
+          "0.001": 0.12425466863460882
+        }
+      },
+      "exact_static_audit": {
+        "float_projected_ground_states_certified": true,
+        "ideal_repair_margins_positive": true,
+        "actual_repair_margins_positive": true,
+        "coefficient_error_l1_exact": [
+          3991,
+          2305843009213693952
+        ],
+        "coefficient_error_l1": 1.7308203481558593e-15,
+        "physical_nonoptimal_gap_lower_bound_exact": [
+          7911363718161821,
+          1152921504606846976
+        ],
+        "physical_nonoptimal_gap_lower_bound": 0.0068620141844432355,
+        "actual_margin_min": 0.03245599031806373,
+        "range_violations": [],
+        "logical_gibbs_tv_rounding_correction": 2.7693125570497585e-13,
+        "interpretation": "exact logical rational model, actual binary64 alpha and chain couplings as exact parameters; interbranch and field rounding bounded in L1"
+      }
+    },
+    {
+      "name": "random_regular_n16_s9901_balanced",
+      "scheme": "balanced",
+      "beta": 10.0,
+      "mass": {
+        "decoded_error_lower": 0.052311307359998185,
+        "decoded_error_upper": 0.052311307363050216,
+        "feasible_lower": 0.9255166987321438,
+        "feasible_upper": 0.9255166987861421,
+        "ground_cost": -1.25,
+        "ground_degeneracy": 1,
+        "original_patterns": 65536,
+        "auxiliary_partition_summed": true
+      },
+      "chain_defect_upper": 0.018336502437844668,
+      "rounding_tv_upper": 2.7269853042355408e-14,
+      "actual_root_error_lower": 0.05135210094503796,
+      "actual_root_error_upper": 0.07064780980092217,
+      "independent_actual_audit": {
+        "instance": "random_regular_n16_s9901_balanced",
+        "split": "held_out",
+        "selection": "outward_readout",
+        "physical_qubits": 107,
+        "scale": 0.06215477492588901,
+        "exact_scale_difference_from_first": "0",
+        "scale_at_least_first_exact": true,
+        "static_ground_fidelity": true,
+        "minimum_exact_margin": "2429073990864767/9007199254740992",
+        "consistent_nonconstant_coefficient_error": "393/144115188075855872",
+        "consistent_offset_error": "1777/1152921504606846976",
+        "thermal_rounding_tv_upper": 2.7269853042355408e-14,
+        "classical_defect_upper": 0.018336502437844668,
+        "quantum_defect_upper": {
+          "0.0": 0.018465605840752963,
+          "1e-05": 0.018465825840753694,
+          "0.0001": 0.018487605848086296,
+          "0.001": 0.02066567917506408
+        }
+      },
+      "exact_static_audit": {
+        "float_projected_ground_states_certified": true,
+        "ideal_repair_margins_positive": true,
+        "actual_repair_margins_positive": true,
+        "coefficient_error_l1_exact": [
+          393,
+          144115188075855872
+        ],
+        "coefficient_error_l1": 2.7269853042355408e-15,
+        "physical_nonoptimal_gap_lower_bound_exact": [
+          8957447078256985,
+          576460752303423488
+        ],
+        "physical_nonoptimal_gap_lower_bound": 0.015538693731472252,
+        "actual_margin_min": 0.26968138731761815,
+        "range_violations": [],
+        "logical_gibbs_tv_rounding_correction": 5.4539706084712304e-14,
+        "interpretation": "exact logical rational model, actual binary64 alpha and chain couplings as exact parameters; interbranch and field rounding bounded in L1"
+      }
+    },
+    {
+      "name": "random_regular_n16_s9901_balanced",
+      "scheme": "balanced",
+      "beta": 20.0,
+      "mass": {
+        "decoded_error_lower": 0.2976430531870717,
+        "decoded_error_upper": 0.2976430532044376,
+        "feasible_lower": 0.9999985196307171,
+        "feasible_upper": 0.9999985196890616,
+        "ground_cost": -1.25,
+        "ground_degeneracy": 1,
+        "original_patterns": 65536,
+        "auxiliary_partition_summed": true
+      },
+      "chain_defect_upper": 0.017979404926891245,
+      "rounding_tv_upper": 2.3869795029440866e-14,
+      "actual_root_error_lower": 0.2922916082101216,
+      "actual_root_error_upper": 0.3156224581313528,
+      "independent_actual_audit": {
+        "instance": "random_regular_n16_s9901_balanced",
+        "split": "held_out",
+        "selection": "outward_readout",
+        "physical_qubits": 107,
+        "scale": 0.07363057810124236,
+        "exact_scale_difference_from_first": "0",
+        "scale_at_least_first_exact": true,
+        "static_ground_fidelity": true,
+        "minimum_exact_margin": "1214537040468379/9007199254740992",
+        "consistent_nonconstant_coefficient_error": "43/36028797018963968",
+        "consistent_offset_error": "627/576460752303423488",
+        "thermal_rounding_tv_upper": 2.3869795029440866e-14,
+        "classical_defect_upper": 0.017979404926891245,
+        "quantum_defect_upper": {
+          "0.0": 0.01810192514961113,
+          "1e-05": 0.018102805149622862,
+          "0.0001": 0.018189925266944525,
+          "0.001": 0.02690309854552403
+        }
+      },
+      "exact_static_audit": {
+        "float_projected_ground_states_certified": true,
+        "ideal_repair_margins_positive": true,
+        "actual_repair_margins_positive": true,
+        "coefficient_error_l1_exact": [
+          43,
+          36028797018963968
+        ],
+        "coefficient_error_l1": 1.1934897514720433e-15,
+        "physical_nonoptimal_gap_lower_bound_exact": [
+          5305642305597269,
+          288230376151711744
+        ],
+        "physical_nonoptimal_gap_lower_bound": 0.01840764452531059,
+        "actual_margin_min": 0.134840698658809,
+        "range_violations": [],
+        "logical_gibbs_tv_rounding_correction": 4.7739590058882874e-14,
+        "interpretation": "exact logical rational model, actual binary64 alpha and chain couplings as exact parameters; interbranch and field rounding bounded in L1"
+      }
+    },
+    {
+      "name": "random_regular_n16_s9901_balanced",
+      "scheme": "balanced",
+      "beta": 40.0,
+      "mass": {
+        "decoded_error_lower": 0.6330805983159948,
+        "decoded_error_upper": 0.63308059835291,
+        "feasible_lower": 0.9999999999708444,
+        "feasible_upper": 1.0,
+        "ground_cost": -1.25,
+        "ground_degeneracy": 1,
+        "original_patterns": 65536,
+        "auxiliary_partition_summed": true
+      },
+      "chain_defect_upper": 0.017977055952547862,
+      "rounding_tv_upper": 9.603429163007604e-14,
+      "actual_root_error_lower": 0.6216996729775013,
+      "actual_root_error_upper": 0.651057654305554,
+      "independent_actual_audit": {
+        "instance": "random_regular_n16_s9901_balanced",
+        "split": "held_out",
+        "selection": "outward_readout",
+        "physical_qubits": 107,
+        "scale": 0.07936847968891905,
+        "exact_scale_difference_from_first": "0",
+        "scale_at_least_first_exact": true,
+        "static_ground_fidelity": true,
+        "minimum_exact_margin": "2429074261080747/36028797018963968",
+        "consistent_nonconstant_coefficient_error": "173/72057594037927936",
+        "consistent_offset_error": "403/288230376151711744",
+        "thermal_rounding_tv_upper": 9.603429163007604e-14,
+        "classical_defect_upper": 0.017977055952547862,
+        "quantum_defect_upper": {
+          "0.0": 0.018099533205445138,
+          "1e-05": 0.018103053205632873,
+          "0.0001": 0.018451535082782477,
+          "0.001": 0.053318310544213994
+        }
+      },
+      "exact_static_audit": {
+        "float_projected_ground_states_certified": true,
+        "ideal_repair_margins_positive": true,
+        "actual_repair_margins_positive": true,
+        "coefficient_error_l1_exact": [
+          173,
+          72057594037927936
+        ],
+        "coefficient_error_l1": 2.400857290751901e-15,
+        "physical_nonoptimal_gap_lower_bound_exact": [
+          2859550844415829,
+          144115188075855872
+        ],
+        "physical_nonoptimal_gap_lower_bound": 0.019842119922229763,
+        "actual_margin_min": 0.0674203543294046,
+        "range_violations": [],
+        "logical_gibbs_tv_rounding_correction": 1.9206858326017053e-13,
+        "interpretation": "exact logical rational model, actual binary64 alpha and chain couplings as exact parameters; interbranch and field rounding bounded in L1"
+      }
+    },
+    {
+      "name": "random_regular_n16_s9901_balanced",
+      "scheme": "balanced",
+      "beta": 80.0,
+      "mass": {
+        "decoded_error_lower": 0.8365594128431921,
+        "decoded_error_upper": 0.8365594128919726,
+        "feasible_lower": 0.9999999999708445,
+        "feasible_upper": 1.0,
+        "ground_cost": -1.25,
+        "ground_degeneracy": 1,
+        "original_patterns": 65536,
+        "auxiliary_partition_summed": true
+      },
+      "chain_defect_upper": 0.017977041626927547,
+      "rounding_tv_upper": 9.547918011776346e-14,
+      "actual_root_error_lower": 0.8215205494550181,
+      "actual_root_error_upper": 0.8545364545189957,
+      "independent_actual_audit": {
+        "instance": "random_regular_n16_s9901_balanced",
+        "split": "held_out",
+        "selection": "outward_readout",
+        "physical_qubits": 107,
+        "scale": 0.0822374304827574,
+        "exact_scale_difference_from_first": "0",
+        "scale_at_least_first_exact": true,
+        "static_ground_fidelity": true,
+        "minimum_exact_margin": "303634327671089/9007199254740992",
+        "consistent_nonconstant_coefficient_error": "43/36028797018963968",
+        "consistent_offset_error": "243/576460752303423488",
+        "thermal_rounding_tv_upper": 9.547918011776346e-14,
+        "classical_defect_upper": 0.017977041626927547,
+        "quantum_defect_upper": {
+          "0.0": 0.01809951868309659,
+          "1e-05": 0.018113598686100324,
+          "0.0001": 0.019507548720686243,
+          "0.001": 0.15920014845221525
+        }
+      },
+      "exact_static_audit": {
+        "float_projected_ground_states_certified": true,
+        "ideal_repair_margins_positive": true,
+        "actual_repair_margins_positive": true,
+        "coefficient_error_l1_exact": [
+          43,
+          36028797018963968
+        ],
+        "coefficient_error_l1": 1.1934897514720433e-15,
+        "physical_nonoptimal_gap_lower_bound_exact": [
+          5925831380448853,
+          288230376151711744
+        ],
+        "physical_nonoptimal_gap_lower_bound": 0.02055935762068935,
+        "actual_margin_min": 0.03371018216470223,
+        "range_violations": [],
+        "logical_gibbs_tv_rounding_correction": 1.9095836023554515e-13,
+        "interpretation": "exact logical rational model, actual binary64 alpha and chain couplings as exact parameters; interbranch and field rounding bounded in L1"
+      }
+    },
+    {
+      "name": "random_regular_n16_s9901_standard",
+      "scheme": "standard",
+      "beta": 10.0,
+      "mass": {
+        "lower": 0.0002167428695706119,
+        "upper": 0.0002167428695769271,
+        "decoded_error_lower": 0.00041589574190802037,
+        "decoded_error_upper": 0.00041589574193225576,
+        "ground_cost": -1.25,
+        "ground_degeneracy": 1,
+        "auxiliary_partition_summed": true,
+        "original_patterns": 65536,
+        "relative_interval_width": 2.913685980310198e-11
+      },
+      "chain_defect_upper": 0.04860150263815805,
+      "rounding_tv_upper": 1.4085954624931674e-14,
+      "actual_root_error_lower": 0.00039568258389707756,
+      "actual_root_error_upper": 0.0490173983801044,
+      "independent_actual_audit": {
+        "instance": "random_regular_n16_s9901_standard",
+        "split": "held_out",
+        "selection": "outward_readout",
+        "physical_qubits": 55,
+        "scale": 0.018308033528724177,
+        "exact_scale_difference_from_first": "0",
+        "scale_at_least_first_exact": true,
+        "static_ground_fidelity": true,
+        "minimum_exact_margin": "17804143178449191/72057594037927936",
+        "consistent_nonconstant_coefficient_error": "203/144115188075855872",
+        "consistent_offset_error": "51/144115188075855872",
+        "thermal_rounding_tv_upper": 1.4085954624931674e-14,
+        "classical_defect_upper": 0.04860150263815805,
+        "quantum_defect_upper": {
+          "0.0": 0.04964539007092203,
+          "1e-05": 0.0496455300709225,
+          "0.0001": 0.0496593900755887,
+          "0.001": 0.05104543673821092
+        }
+      },
+      "exact_static_audit": {
+        "float_projected_ground_states_certified": true,
+        "ideal_repair_margins_positive": true,
+        "actual_repair_margins_positive": true,
+        "coefficient_error_l1_exact": [
+          203,
+          144115188075855872
+        ],
+        "coefficient_error_l1": 1.4085954624931674e-15,
+        "physical_nonoptimal_gap_lower_bound_exact": [
+          329808211911395,
+          72057594037927936
+        ],
+        "physical_nonoptimal_gap_lower_bound": 0.004577008382181044,
+        "actual_margin_min": 0.24708212113046513,
+        "range_violations": [],
+        "logical_gibbs_tv_rounding_correction": 2.8171909249863745e-14,
+        "interpretation": "exact logical rational model, actual binary64 alpha and chain couplings as exact parameters; interbranch and field rounding bounded in L1"
+      }
+    },
+    {
+      "name": "random_regular_n16_s9901_standard",
+      "scheme": "standard",
+      "beta": 20.0,
+      "mass": {
+        "lower": 0.022686985608805665,
+        "upper": 0.022686985609466775,
+        "decoded_error_lower": 0.02273768343081167,
+        "decoded_error_upper": 0.022737683432136786,
+        "ground_cost": -1.25,
+        "ground_degeneracy": 1,
+        "auxiliary_partition_summed": true,
+        "original_patterns": 65536,
+        "relative_interval_width": 2.9140497859389415e-11
+      },
+      "chain_defect_upper": 0.048601502638158,
+      "rounding_tv_upper": 1.7165088794790506e-14,
+      "actual_root_error_lower": 0.02163259784954714,
+      "actual_root_error_upper": 0.07133918607031196,
+      "independent_actual_audit": {
+        "instance": "random_regular_n16_s9901_standard",
+        "split": "held_out",
+        "selection": "outward_readout",
+        "physical_qubits": 55,
+        "scale": 0.02131207147559613,
+        "exact_scale_difference_from_first": "0",
+        "scale_at_least_first_exact": true,
+        "static_ground_fidelity": true,
+        "minimum_exact_margin": "8902071589224595/72057594037927936",
+        "consistent_nonconstant_coefficient_error": "1979/2305843009213693952",
+        "consistent_offset_error": "2065/2305843009213693952",
+        "thermal_rounding_tv_upper": 1.7165088794790506e-14,
+        "classical_defect_upper": 0.048601502638158,
+        "quantum_defect_upper": {
+          "0.0": 0.04964539007092198,
+          "1e-05": 0.049645950070929444,
+          "0.0001": 0.049701390145588685,
+          "0.001": 0.055246136777412004
+        }
+      },
+      "exact_static_audit": {
+        "float_projected_ground_states_certified": true,
+        "ideal_repair_margins_positive": true,
+        "actual_repair_margins_positive": true,
+        "coefficient_error_l1_exact": [
+          1979,
+          2305843009213693952
+        ],
+        "coefficient_error_l1": 8.582544397395253e-16,
+        "physical_nonoptimal_gap_lower_bound_exact": [
+          6142786377983239,
+          1152921504606846976
+        ],
+        "physical_nonoptimal_gap_lower_bound": 0.005328017868899033,
+        "actual_margin_min": 0.12354106056523255,
+        "range_violations": [],
+        "logical_gibbs_tv_rounding_correction": 3.43301775895816e-14,
+        "interpretation": "exact logical rational model, actual binary64 alpha and chain couplings as exact parameters; interbranch and field rounding bounded in L1"
+      }
+    },
+    {
+      "name": "random_regular_n16_s9901_standard",
+      "scheme": "standard",
+      "beta": 40.0,
+      "mass": {
+        "lower": 0.12419112908385613,
+        "upper": 0.12419112908747454,
+        "decoded_error_lower": 0.12419113209858682,
+        "decoded_error_upper": 0.12419113210582339,
+        "ground_cost": -1.25,
+        "ground_degeneracy": 1,
+        "auxiliary_partition_summed": true,
+        "original_patterns": 65536,
+        "relative_interval_width": 2.9135825987491035e-11
+      },
+      "chain_defect_upper": 0.048601502638157996,
+      "rounding_tv_upper": 1.0305992170778211e-13,
+      "actual_root_error_lower": 0.11815525646416346,
+      "actual_root_error_upper": 0.17279263474408446,
+      "independent_actual_audit": {
+        "instance": "random_regular_n16_s9901_standard",
+        "split": "held_out",
+        "selection": "outward_readout",
+        "physical_qubits": 55,
+        "scale": 0.02281409044903211,
+        "exact_scale_difference_from_first": "0",
+        "scale_at_least_first_exact": true,
+        "static_ground_fidelity": true,
+        "minimum_exact_margin": "556379474326537/9007199254740992",
+        "consistent_nonconstant_coefficient_error": "5941/2305843009213693952",
+        "consistent_offset_error": "1915/2305843009213693952",
+        "thermal_rounding_tv_upper": 1.0305992170778211e-13,
+        "classical_defect_upper": 0.048601502638157996,
+        "quantum_defect_upper": {
+          "0.0": 0.04964539007092197,
+          "1e-05": 0.049647630071041435,
+          "0.0001": 0.04986939126559118,
+          "0.001": 0.07205733928650215
+        }
+      },
+      "exact_static_audit": {
+        "float_projected_ground_states_certified": true,
+        "ideal_repair_margins_positive": true,
+        "actual_repair_margins_positive": true,
+        "coefficient_error_l1_exact": [
+          5941,
+          2305843009213693952
+        ],
+        "coefficient_error_l1": 2.5764980426945527e-15,
+        "physical_nonoptimal_gap_lower_bound_exact": [
+          6575713871683699,
+          1152921504606846976
+        ],
+        "physical_nonoptimal_gap_lower_bound": 0.005703522612258027,
+        "actual_margin_min": 0.061770530282616254,
+        "range_violations": [],
+        "logical_gibbs_tv_rounding_correction": 2.0611984341558547e-13,
+        "interpretation": "exact logical rational model, actual binary64 alpha and chain couplings as exact parameters; interbranch and field rounding bounded in L1"
+      }
+    },
+    {
+      "name": "random_regular_n16_s9901_standard",
+      "scheme": "standard",
+      "beta": 80.0,
+      "mass": {
+        "lower": 0.4131585899581622,
+        "upper": 0.41315858997019805,
+        "decoded_error_lower": 0.4131585899521464,
+        "decoded_error_upper": 0.4131585899762174,
+        "ground_cost": -1.25,
+        "ground_degeneracy": 1,
+        "auxiliary_partition_summed": true,
+        "original_patterns": 65536,
+        "relative_interval_width": 2.913136163931207e-11
+      },
+      "chain_defect_upper": 0.04860150263815795,
+      "rounding_tv_upper": 6.456640777585676e-14,
+      "actual_root_error_lower": 0.393078461652548,
+      "actual_root_error_upper": 0.46176009261443995,
+      "independent_actual_audit": {
+        "instance": "random_regular_n16_s9901_standard",
+        "split": "held_out",
+        "selection": "outward_readout",
+        "physical_qubits": 55,
+        "scale": 0.023565099935750098,
+        "exact_scale_difference_from_first": "0",
+        "scale_at_least_first_exact": true,
+        "static_ground_fidelity": true,
+        "minimum_exact_margin": "4451035794612291/144115188075855872",
+        "consistent_nonconstant_coefficient_error": "1861/2305843009213693952",
+        "consistent_offset_error": "641/2305843009213693952",
+        "thermal_rounding_tv_upper": 6.456640777585676e-14,
+        "classical_defect_upper": 0.04860150263815795,
+        "quantum_defect_upper": {
+          "0.0": 0.04964539007092192,
+          "1e-05": 0.049654350072833385,
+          "0.0001": 0.0505414091857517,
+          "0.001": 0.13943669992399743
+        }
+      },
+      "exact_static_audit": {
+        "float_projected_ground_states_certified": true,
+        "ideal_repair_margins_positive": true,
+        "actual_repair_margins_positive": true,
+        "coefficient_error_l1_exact": [
+          1861,
+          2305843009213693952
+        ],
+        "coefficient_error_l1": 8.070800971982095e-16,
+        "physical_nonoptimal_gap_lower_bound_exact": [
+          6792177618533929,
+          1152921504606846976
+        ],
+        "physical_nonoptimal_gap_lower_bound": 0.0058912749839375245,
+        "actual_margin_min": 0.030885265141308092,
+        "range_violations": [],
+        "logical_gibbs_tv_rounding_correction": 1.2913281555172185e-13,
+        "interpretation": "exact logical rational model, actual binary64 alpha and chain couplings as exact parameters; interbranch and field rounding bounded in L1"
+      }
+    },
+    {
+      "name": "rewired_band_n16_s8807_balanced",
+      "scheme": "balanced",
+      "beta": 10.0,
+      "mass": {
+        "decoded_error_lower": 0.044325862733621095,
+        "decoded_error_upper": 0.044325862736207214,
+        "feasible_lower": 0.9252144496106119,
+        "feasible_upper": 0.9252144496645917,
+        "ground_cost": 0.5,
+        "ground_degeneracy": 2,
+        "original_patterns": 65536,
+        "auxiliary_partition_summed": true
+      },
+      "chain_defect_upper": 0.048622550787043695,
+      "rounding_tv_upper": 1.887379141862766e-14,
+      "actual_root_error_lower": 0.04217062622165811,
+      "actual_root_error_upper": 0.0929484135232698,
+      "independent_actual_audit": {
+        "instance": "rewired_band_n16_s8807_balanced",
+        "split": "development",
+        "selection": "outward_readout",
+        "physical_qubits": 104,
+        "scale": 0.07107060087976785,
+        "exact_scale_difference_from_first": "0",
+        "scale_at_least_first_exact": true,
+        "static_ground_fidelity": true,
+        "minimum_exact_margin": "18285240722502041/72057594037927936",
+        "consistent_nonconstant_coefficient_error": "17/9007199254740992",
+        "consistent_offset_error": "199/72057594037927936",
+        "thermal_rounding_tv_upper": 1.887379141862766e-14,
+        "classical_defect_upper": 0.048622550787043695,
+        "quantum_defect_upper": {
+          "0.0": 0.049650862235253314,
+          "1e-05": 0.04965102723525405,
+          "0.0001": 0.04966736224262831,
+          "0.001": 0.05130093598679917
+        }
+      },
+      "exact_static_audit": {
+        "float_projected_ground_states_certified": true,
+        "ideal_repair_margins_positive": true,
+        "actual_repair_margins_positive": true,
+        "coefficient_error_l1_exact": [
+          17,
+          9007199254740992
+        ],
+        "coefficient_error_l1": 1.887379141862766e-15,
+        "physical_nonoptimal_gap_lower_bound_exact": [
+          1280294126556479,
+          72057594037927936
+        ],
+        "physical_nonoptimal_gap_lower_bound": 0.017767650219941963,
+        "actual_margin_min": 0.2537586907616912,
+        "range_violations": [],
+        "logical_gibbs_tv_rounding_correction": 3.7747582837256036e-14,
+        "interpretation": "exact logical rational model, actual binary64 alpha and chain couplings as exact parameters; interbranch and field rounding bounded in L1"
+      }
+    },
+    {
+      "name": "rewired_band_n16_s8807_balanced",
+      "scheme": "balanced",
+      "beta": 20.0,
+      "mass": {
+        "decoded_error_lower": 0.17212580396307278,
+        "decoded_error_upper": 0.17212580397311542,
+        "feasible_lower": 0.999996291084331,
+        "feasible_upper": 0.9999962911426754,
+        "ground_cost": 0.5,
+        "ground_degeneracy": 2,
+        "original_patterns": 65536,
+        "auxiliary_partition_summed": true
+      },
+      "chain_defect_upper": 0.04862255078704366,
+      "rounding_tv_upper": 9.679756995950584e-15,
+      "actual_root_error_lower": 0.16375660831810832,
+      "actual_root_error_upper": 0.2207483547601688,
+      "independent_actual_audit": {
+        "instance": "rewired_band_n16_s8807_balanced",
+        "split": "development",
+        "selection": "outward_readout",
+        "physical_qubits": 104,
+        "scale": 0.08315434805888393,
+        "exact_scale_difference_from_first": "0",
+        "scale_at_least_first_exact": true,
+        "static_ground_fidelity": true,
+        "minimum_exact_margin": "571413772578189/4503599627370496",
+        "consistent_nonconstant_coefficient_error": "279/576460752303423488",
+        "consistent_offset_error": "1157/288230376151711744",
+        "thermal_rounding_tv_upper": 9.679756995950584e-15,
+        "classical_defect_upper": 0.04862255078704366,
+        "quantum_defect_upper": {
+          "0.0": 0.04965086223525327,
+          "1e-05": 0.049651522235265075,
+          "0.0001": 0.04971686235325337,
+          "0.001": 0.05625204233419175
+        }
+      },
+      "exact_static_audit": {
+        "float_projected_ground_states_certified": true,
+        "ideal_repair_margins_positive": true,
+        "actual_repair_margins_positive": true,
+        "coefficient_error_l1_exact": [
+          279,
+          576460752303423488
+        ],
+        "coefficient_error_l1": 4.839878497975292e-16,
+        "physical_nonoptimal_gap_lower_bound_exact": [
+          5991902254915619,
+          288230376151711744
+        ],
+        "physical_nonoptimal_gap_lower_bound": 0.020788587014720982,
+        "actual_margin_min": 0.12687934538084567,
+        "range_violations": [],
+        "logical_gibbs_tv_rounding_correction": 1.9359513991901353e-14,
+        "interpretation": "exact logical rational model, actual binary64 alpha and chain couplings as exact parameters; interbranch and field rounding bounded in L1"
+      }
+    },
+    {
+      "name": "rewired_band_n16_s8807_balanced",
+      "scheme": "balanced",
+      "beta": 40.0,
+      "mass": {
+        "decoded_error_lower": 0.4799747996503,
+        "decoded_error_upper": 0.4799747996782876,
+        "feasible_lower": 0.9999999999708343,
+        "feasible_upper": 1.0,
+        "ground_cost": 0.5,
+        "ground_degeneracy": 2,
+        "original_patterns": 65536,
+        "auxiliary_partition_summed": true
+      },
+      "chain_defect_upper": 0.048622550787043674,
+      "rounding_tv_upper": 5.710709682915649e-14,
+      "actual_root_error_lower": 0.45663720057774776,
+      "actual_root_error_upper": 0.5285973504653885,
+      "independent_actual_audit": {
+        "instance": "rewired_band_n16_s8807_balanced",
+        "split": "development",
+        "selection": "outward_readout",
+        "physical_qubits": 104,
+        "scale": 0.08919622164844197,
+        "exact_scale_difference_from_first": "0",
+        "scale_at_least_first_exact": true,
+        "static_ground_fidelity": true,
+        "minimum_exact_margin": "571413772578189/9007199254740992",
+        "consistent_nonconstant_coefficient_error": "823/576460752303423488",
+        "consistent_offset_error": "111/288230376151711744",
+        "thermal_rounding_tv_upper": 5.710709682915649e-14,
+        "classical_defect_upper": 0.048622550787043674,
+        "quantum_defect_upper": {
+          "0.0": 0.049650862235253286,
+          "1e-05": 0.04965350223544209,
+          "0.0001": 0.04991486412325962,
+          "0.001": 0.0760697485683029
+        }
+      },
+      "exact_static_audit": {
+        "float_projected_ground_states_certified": true,
+        "ideal_repair_margins_positive": true,
+        "actual_repair_margins_positive": true,
+        "coefficient_error_l1_exact": [
+          823,
+          576460752303423488
+        ],
+        "coefficient_error_l1": 1.4276774207289122e-15,
+        "physical_nonoptimal_gap_lower_bound_exact": [
+          6427265129260471,
+          288230376151711744
+        ],
+        "physical_nonoptimal_gap_lower_bound": 0.022299055412110493,
+        "actual_margin_min": 0.06343967269042283,
+        "range_violations": [],
+        "logical_gibbs_tv_rounding_correction": 1.142141936583195e-13,
+        "interpretation": "exact logical rational model, actual binary64 alpha and chain couplings as exact parameters; interbranch and field rounding bounded in L1"
+      }
+    },
+    {
+      "name": "rewired_band_n16_s8807_balanced",
+      "scheme": "balanced",
+      "beta": 80.0,
+      "mass": {
+        "decoded_error_lower": 0.8507779722015709,
+        "decoded_error_upper": 0.8507779722511811,
+        "feasible_lower": 0.9999999999708447,
+        "feasible_upper": 1.0,
+        "ground_cost": 0.5,
+        "ground_degeneracy": 2,
+        "original_patterns": 65536,
+        "auxiliary_partition_summed": true
+      },
+      "chain_defect_upper": 0.04862255078704388,
+      "rounding_tv_upper": 0.0,
+      "actual_root_error_lower": 0.8094109770397017,
+      "actual_root_error_upper": 0.8994005230382252,
+      "independent_actual_audit": {
+        "instance": "rewired_band_n16_s8807_balanced",
+        "split": "development",
+        "selection": "outward_readout",
+        "physical_qubits": 104,
+        "scale": 0.09221715844322098,
+        "exact_scale_difference_from_first": "0",
+        "scale_at_least_first_exact": true,
+        "static_ground_fidelity": true,
+        "minimum_exact_margin": "142853443144547/4503599627370496",
+        "consistent_nonconstant_coefficient_error": "0",
+        "consistent_offset_error": "3/562949953421312",
+        "thermal_rounding_tv_upper": 0.0,
+        "classical_defect_upper": 0.04862255078704388,
+        "quantum_defect_upper": {
+          "0.0": 0.04965086223525351,
+          "1e-05": 0.04966142223827431,
+          "0.0001": 0.050706892443658745,
+          "0.001": 0.1555533478032973
+        }
+      },
+      "exact_static_audit": {
+        "float_projected_ground_states_certified": true,
+        "ideal_repair_margins_positive": true,
+        "actual_repair_margins_positive": true,
+        "coefficient_error_l1_exact": [
+          0,
+          1
+        ],
+        "coefficient_error_l1": 0.0,
+        "physical_nonoptimal_gap_lower_bound_exact": [
+          51913645050257,
+          2251799813685248
+        ],
+        "physical_nonoptimal_gap_lower_bound": 0.023054289610805245,
+        "actual_margin_min": 0.03171983634521136,
+        "range_violations": [],
+        "logical_gibbs_tv_rounding_correction": 0.0,
+        "interpretation": "exact logical rational model, actual binary64 alpha and chain couplings as exact parameters; interbranch and field rounding bounded in L1"
+      }
+    },
+    {
+      "name": "rewired_band_n16_s8807_standard",
+      "scheme": "standard",
+      "beta": 10.0,
+      "mass": {
+        "lower": 0.02275968404440705,
+        "upper": 0.022759684045070283,
+        "decoded_error_lower": 0.02280916253763625,
+        "decoded_error_upper": 0.0228091625389656,
+        "ground_cost": 0.5,
+        "ground_degeneracy": 2,
+        "auxiliary_partition_summed": true,
+        "original_patterns": 65536,
+        "relative_interval_width": 2.9140710205373706e-11
+      },
+      "chain_defect_upper": 0.012597275994577042,
+      "rounding_tv_upper": 3.054848041195157e-14,
+      "actual_root_error_lower": 0.02252182922191431,
+      "actual_root_error_upper": 0.0354064385335732,
+      "independent_actual_audit": {
+        "instance": "rewired_band_n16_s8807_standard",
+        "split": "development",
+        "selection": "outward_readout",
+        "physical_qubits": 56,
+        "scale": 0.047380399477834644,
+        "exact_scale_difference_from_first": "0",
+        "scale_at_least_first_exact": true,
+        "static_ground_fidelity": true,
+        "minimum_exact_margin": "9142620721538997/36028797018963968",
+        "consistent_nonconstant_coefficient_error": "1761/576460752303423488",
+        "consistent_offset_error": "387/576460752303423488",
+        "thermal_rounding_tv_upper": 3.054848041195157e-14,
+        "classical_defect_upper": 0.012597275994577042,
+        "quantum_defect_upper": {
+          "0.0": 0.012638550496696297,
+          "1e-05": 0.01263871049669683,
+          "0.0001": 0.012654550502029632,
+          "0.001": 0.014238603830740748
+        }
+      },
+      "exact_static_audit": {
+        "float_projected_ground_states_certified": true,
+        "ideal_repair_margins_positive": true,
+        "actual_repair_margins_positive": true,
+        "coefficient_error_l1_exact": [
+          1761,
+          576460752303423488
+        ],
+        "coefficient_error_l1": 3.0548480411951573e-15,
+        "physical_nonoptimal_gap_lower_bound_exact": [
+          6828235181857323,
+          576460752303423488
+        ],
+        "physical_nonoptimal_gap_lower_bound": 0.011845099869458661,
+        "actual_margin_min": 0.2537587007616914,
+        "range_violations": [],
+        "logical_gibbs_tv_rounding_correction": 6.109696082390501e-14,
+        "interpretation": "exact logical rational model, actual binary64 alpha and chain couplings as exact parameters; interbranch and field rounding bounded in L1"
+      }
+    },
+    {
+      "name": "rewired_band_n16_s8807_standard",
+      "scheme": "standard",
+      "beta": 20.0,
+      "mass": {
+        "lower": 0.09194157789293969,
+        "upper": 0.09194157789561848,
+        "decoded_error_lower": 0.09194157821500853,
+        "decoded_error_upper": 0.09194157822036599,
+        "ground_cost": 0.5,
+        "ground_degeneracy": 2,
+        "auxiliary_partition_summed": true,
+        "original_patterns": 65536,
+        "relative_interval_width": 2.9135759995551045e-11
+      },
+      "chain_defect_upper": 0.012384047946628103,
+      "rounding_tv_upper": 8.701372955499664e-14,
+      "actual_root_error_lower": 0.09080296930201927,
+      "actual_root_error_upper": 0.10432562616708112,
+      "independent_actual_audit": {
+        "instance": "rewired_band_n16_s8807_standard",
+        "split": "development",
+        "selection": "outward_readout",
+        "physical_qubits": 56,
+        "scale": 0.05543623085002844,
+        "exact_scale_difference_from_first": "0",
+        "scale_at_least_first_exact": true,
+        "static_ground_fidelity": true,
+        "minimum_exact_margin": "1142827635228371/9007199254740992",
+        "consistent_nonconstant_coefficient_error": "627/144115188075855872",
+        "consistent_offset_error": "95/144115188075855872",
+        "thermal_rounding_tv_upper": 8.701372955499664e-14,
+        "classical_defect_upper": 0.012384047946628103,
+        "quantum_defect_upper": {
+          "0.0": 0.012422630077172914,
+          "1e-05": 0.012423270077181449,
+          "0.0001": 0.012486630162506293,
+          "0.001": 0.018823483456018662
+        }
+      },
+      "exact_static_audit": {
+        "float_projected_ground_states_certified": true,
+        "ideal_repair_margins_positive": true,
+        "actual_repair_margins_positive": true,
+        "coefficient_error_l1_exact": [
+          627,
+          144115188075855872
+        ],
+        "coefficient_error_l1": 4.350686477749832e-15,
+        "physical_nonoptimal_gap_lower_bound_exact": [
+          1997300708792103,
+          144115188075855872
+        ],
+        "physical_nonoptimal_gap_lower_bound": 0.01385905771250711,
+        "actual_margin_min": 0.12687935538084572,
+        "range_violations": [],
+        "logical_gibbs_tv_rounding_correction": 1.7402745911000843e-13,
+        "interpretation": "exact logical rational model, actual binary64 alpha and chain couplings as exact parameters; interbranch and field rounding bounded in L1"
+      }
+    },
+    {
+      "name": "rewired_band_n16_s8807_standard",
+      "scheme": "standard",
+      "beta": 40.0,
+      "mass": {
+        "lower": 0.289504962112721,
+        "upper": 0.28950496212115495,
+        "decoded_error_lower": 0.2895049621085054,
+        "decoded_error_upper": 0.28950496212537313,
+        "ground_cost": 0.5,
+        "ground_degeneracy": 2,
+        "auxiliary_partition_summed": true,
+        "original_patterns": 65536,
+        "relative_interval_width": 2.913240477200926e-11
+      },
+      "chain_defect_upper": 0.012383771675535291,
+      "rounding_tv_upper": 2.1642410086286645e-13,
+      "actual_root_error_lower": 0.28591979875860535,
+      "actual_root_error_upper": 0.3018887338011249,
+      "independent_actual_audit": {
+        "instance": "rewired_band_n16_s8807_standard",
+        "split": "development",
+        "selection": "outward_readout",
+        "physical_qubits": 56,
+        "scale": 0.05946414653612533,
+        "exact_scale_difference_from_first": "0",
+        "scale_at_least_first_exact": true,
+        "static_ground_fidelity": true,
+        "minimum_exact_margin": "571413862650183/9007199254740992",
+        "consistent_nonconstant_coefficient_error": "3119/576460752303423488",
+        "consistent_offset_error": "1643/576460752303423488",
+        "thermal_rounding_tv_upper": 2.1642410086286645e-13,
+        "classical_defect_upper": 0.012383771675535291,
+        "quantum_defect_upper": {
+          "0.0": 0.012422350372733778,
+          "1e-05": 0.01242491037287031,
+          "0.0001": 0.012678351738070023,
+          "0.001": 0.03803600661911113
+        }
+      },
+      "exact_static_audit": {
+        "float_projected_ground_states_certified": true,
+        "ideal_repair_margins_positive": true,
+        "actual_repair_margins_positive": true,
+        "coefficient_error_l1_exact": [
+          3119,
+          576460752303423488
+        ],
+        "coefficient_error_l1": 5.410602521571661e-15,
+        "physical_nonoptimal_gap_lower_bound_exact": [
+          8569686661823955,
+          576460752303423488
+        ],
+        "physical_nonoptimal_gap_lower_bound": 0.014866036634031332,
+        "actual_margin_min": 0.063439682690423,
+        "range_violations": [],
+        "logical_gibbs_tv_rounding_correction": 4.3284820172582656e-13,
+        "interpretation": "exact logical rational model, actual binary64 alpha and chain couplings as exact parameters; interbranch and field rounding bounded in L1"
+      }
+    },
+    {
+      "name": "rewired_band_n16_s8807_standard",
+      "scheme": "standard",
+      "beta": 80.0,
+      "mass": {
+        "lower": 0.6566684099865818,
+        "upper": 0.6566684100057124,
+        "decoded_error_lower": 0.65666840997702,
+        "decoded_error_upper": 0.6566684100152803,
+        "ground_cost": 0.5,
+        "ground_degeneracy": 2,
+        "auxiliary_partition_summed": true,
+        "original_patterns": 65536,
+        "relative_interval_width": 2.9132794745002336e-11
+      },
+      "chain_defect_upper": 0.012383761860287846,
+      "rounding_tv_upper": 1.6334156249797616e-13,
+      "actual_root_error_lower": 0.6485363847665293,
+      "actual_root_error_upper": 0.6690521718757316,
+      "independent_actual_audit": {
+        "instance": "rewired_band_n16_s8807_standard",
+        "split": "development",
+        "selection": "outward_readout",
+        "physical_qubits": 56,
+        "scale": 0.061478104379173774,
+        "exact_scale_difference_from_first": "0",
+        "scale_at_least_first_exact": true,
+        "static_ground_fidelity": true,
+        "minimum_exact_margin": "571413952722175/18014398509481984",
+        "consistent_nonconstant_coefficient_error": "1177/576460752303423488",
+        "consistent_offset_error": "537/576460752303423488",
+        "thermal_rounding_tv_upper": 1.6334156249797616e-13,
+        "classical_defect_upper": 0.012383761860287846,
+        "quantum_defect_upper": {
+          "0.0": 0.012422340496138346,
+          "1e-05": 0.01243258049832288,
+          "0.0001": 0.013446362341658094,
+          "0.001": 0.11504098032822466
+        }
+      },
+      "exact_static_audit": {
+        "float_projected_ground_states_certified": true,
+        "ideal_repair_margins_positive": true,
+        "actual_repair_margins_positive": true,
+        "coefficient_error_l1_exact": [
+          1177,
+          576460752303423488
+        ],
+        "coefficient_error_l1": 2.041769531224702e-15,
+        "physical_nonoptimal_gap_lower_bound_exact": [
+          8859928575151727,
+          576460752303423488
+        ],
+        "physical_nonoptimal_gap_lower_bound": 0.015369526094793444,
+        "actual_margin_min": 0.031719846345211467,
+        "range_violations": [],
+        "logical_gibbs_tv_rounding_correction": 3.266831249960057e-13,
+        "interpretation": "exact logical rational model, actual binary64 alpha and chain couplings as exact parameters; interbranch and field rounding bounded in L1"
+      }
+    },
+    {
+      "name": "rewired_band_n16_s9901_balanced",
+      "scheme": "balanced",
+      "beta": 10.0,
+      "mass": {
+        "decoded_error_lower": 0.031185654319676556,
+        "decoded_error_upper": 0.031185654321496028,
+        "feasible_lower": 0.9307009018592277,
+        "feasible_upper": 0.930700901913528,
+        "ground_cost": 0.5,
+        "ground_degeneracy": 1,
+        "original_patterns": 65536,
+        "auxiliary_partition_summed": true
+      },
+      "chain_defect_upper": 0.0485734764099579,
+      "rounding_tv_upper": 7.216449660063518e-15,
+      "actual_root_error_lower": 0.029670858675243775,
+      "actual_root_error_upper": 0.07975913073146115,
+      "independent_actual_audit": {
+        "instance": "rewired_band_n16_s9901_balanced",
+        "split": "held_out",
+        "selection": "outward_readout",
+        "physical_qubits": 102,
+        "scale": 0.05965689512628526,
+        "exact_scale_difference_from_first": "0",
+        "scale_at_least_first_exact": true,
+        "static_ground_fidelity": true,
+        "minimum_exact_margin": "2156094602883255/9007199254740992",
+        "consistent_nonconstant_coefficient_error": "13/18014398509481984",
+        "consistent_offset_error": "1265/576460752303423488",
+        "thermal_rounding_tv_upper": 7.216449660063518e-15,
+        "classical_defect_upper": 0.0485734764099579,
+        "quantum_defect_upper": {
+          "0.0": 0.04958677685950411,
+          "1e-05": 0.049586896859504515,
+          "0.0001": 0.04959877686350411,
+          "0.001": 0.05078681686003745
+        }
+      },
+      "exact_static_audit": {
+        "float_projected_ground_states_certified": true,
+        "ideal_repair_margins_positive": true,
+        "actual_repair_margins_positive": true,
+        "coefficient_error_l1_exact": [
+          13,
+          18014398509481984
+        ],
+        "coefficient_error_l1": 7.216449660063518e-16,
+        "physical_nonoptimal_gap_lower_bound_exact": [
+          4298732330573105,
+          288230376151711744
+        ],
+        "physical_nonoptimal_gap_lower_bound": 0.014914223781571315,
+        "actual_margin_min": 0.2393745871391023,
+        "range_violations": [],
+        "logical_gibbs_tv_rounding_correction": 1.443289932012714e-14,
+        "interpretation": "exact logical rational model, actual binary64 alpha and chain couplings as exact parameters; interbranch and field rounding bounded in L1"
+      }
+    },
+    {
+      "name": "rewired_band_n16_s9901_balanced",
+      "scheme": "balanced",
+      "beta": 20.0,
+      "mass": {
+        "decoded_error_lower": 0.16830182371384184,
+        "decoded_error_upper": 0.16830182372366145,
+        "feasible_lower": 0.9999952105819355,
+        "feasible_upper": 0.9999952106402801,
+        "ground_cost": 0.5,
+        "ground_degeneracy": 1,
+        "original_patterns": 65536,
+        "auxiliary_partition_summed": true
+      },
+      "chain_defect_upper": 0.04857347640995801,
+      "rounding_tv_upper": 2.3869795029440866e-14,
+      "actual_root_error_lower": 0.1601268190499019,
+      "actual_root_error_upper": 0.21687530013364337,
+      "independent_actual_audit": {
+        "instance": "rewired_band_n16_s9901_balanced",
+        "split": "held_out",
+        "selection": "outward_readout",
+        "physical_qubits": 102,
+        "scale": 0.06904413383761322,
+        "exact_scale_difference_from_first": "0",
+        "scale_at_least_first_exact": true,
+        "static_ground_fidelity": true,
+        "minimum_exact_margin": "1078047301441627/9007199254740992",
+        "consistent_nonconstant_coefficient_error": "43/36028797018963968",
+        "consistent_offset_error": "423/576460752303423488",
+        "thermal_rounding_tv_upper": 2.3869795029440866e-14,
+        "classical_defect_upper": 0.04857347640995801,
+        "quantum_defect_upper": {
+          "0.0": 0.04958677685950423,
+          "1e-05": 0.04958725685951063,
+          "0.0001": 0.049634776923504265,
+          "0.001": 0.05438741689363854
+        }
+      },
+      "exact_static_audit": {
+        "float_projected_ground_states_certified": true,
+        "ideal_repair_margins_positive": true,
+        "actual_repair_margins_positive": true,
+        "coefficient_error_l1_exact": [
+          43,
+          36028797018963968
+        ],
+        "coefficient_error_l1": 1.1934897514720433e-15,
+        "physical_nonoptimal_gap_lower_bound_exact": [
+          4975154166771097,
+          288230376151711744
+        ],
+        "physical_nonoptimal_gap_lower_bound": 0.017261033459403306,
+        "actual_margin_min": 0.1196872935695511,
+        "range_violations": [],
+        "logical_gibbs_tv_rounding_correction": 4.7739590058882874e-14,
+        "interpretation": "exact logical rational model, actual binary64 alpha and chain couplings as exact parameters; interbranch and field rounding bounded in L1"
+      }
+    },
+    {
+      "name": "rewired_band_n16_s9901_balanced",
+      "scheme": "balanced",
+      "beta": 40.0,
+      "mass": {
+        "decoded_error_lower": 0.5049154404456686,
+        "decoded_error_upper": 0.5049154404751107,
+        "feasible_lower": 0.999999999970785,
+        "feasible_upper": 1.0,
+        "ground_cost": 0.5,
+        "ground_degeneracy": 1,
+        "original_patterns": 65536,
+        "auxiliary_partition_summed": true
+      },
+      "chain_defect_upper": 0.048573476409957884,
+      "rounding_tv_upper": 8.548717289613705e-14,
+      "actual_root_error_lower": 0.480389942210076,
+      "actual_root_error_upper": 0.5534889168851542,
+      "independent_actual_audit": {
+        "instance": "rewired_band_n16_s9901_balanced",
+        "split": "held_out",
+        "selection": "outward_readout",
+        "physical_qubits": 102,
+        "scale": 0.0737377531932772,
+        "exact_scale_difference_from_first": "0",
+        "scale_at_least_first_exact": true,
+        "static_ground_fidelity": true,
+        "minimum_exact_margin": "1078047301441627/18014398509481984",
+        "consistent_nonconstant_coefficient_error": "77/36028797018963968",
+        "consistent_offset_error": "3635/576460752303423488",
+        "thermal_rounding_tv_upper": 8.548717289613705e-14,
+        "classical_defect_upper": 0.048573476409957884,
+        "quantum_defect_upper": {
+          "0.0": 0.049586776859504106,
+          "1e-05": 0.049588696859606506,
+          "0.0001": 0.04977877788350629,
+          "0.001": 0.06879701904428712
+        }
+      },
+      "exact_static_audit": {
+        "float_projected_ground_states_certified": true,
+        "ideal_repair_margins_positive": true,
+        "actual_repair_margins_positive": true,
+        "coefficient_error_l1_exact": [
+          77,
+          36028797018963968
+        ],
+        "coefficient_error_l1": 2.1371793224034263e-15,
+        "physical_nonoptimal_gap_lower_bound_exact": [
+          5313365084870093,
+          288230376151711744
+        ],
+        "physical_nonoptimal_gap_lower_bound": 0.0184344382983193,
+        "actual_margin_min": 0.05984364678477555,
+        "range_violations": [],
+        "logical_gibbs_tv_rounding_correction": 1.7097434579228872e-13,
+        "interpretation": "exact logical rational model, actual binary64 alpha and chain couplings as exact parameters; interbranch and field rounding bounded in L1"
+      }
+    },
+    {
+      "name": "rewired_band_n16_s9901_balanced",
+      "scheme": "balanced",
+      "beta": 80.0,
+      "mass": {
+        "decoded_error_lower": 0.786087290515064,
+        "decoded_error_upper": 0.7860872905609011,
+        "feasible_lower": 0.9999999999708445,
+        "feasible_upper": 1.0,
+        "ground_cost": 0.5,
+        "ground_degeneracy": 1,
+        "original_patterns": 65536,
+        "auxiliary_partition_summed": true
+      },
+      "chain_defect_upper": 0.0485734764099578,
+      "rounding_tv_upper": 9.547918011776346e-14,
+      "actual_root_error_lower": 0.747904298052972,
+      "actual_root_error_upper": 0.8346607669709545,
+      "independent_actual_audit": {
+        "instance": "rewired_band_n16_s9901_balanced",
+        "split": "held_out",
+        "selection": "outward_readout",
+        "physical_qubits": 102,
+        "scale": 0.0760845628711092,
+        "exact_scale_difference_from_first": "0",
+        "scale_at_least_first_exact": true,
+        "static_ground_fidelity": true,
+        "minimum_exact_margin": "269511825360407/9007199254740992",
+        "consistent_nonconstant_coefficient_error": "43/36028797018963968",
+        "consistent_offset_error": "1127/576460752303423488",
+        "thermal_rounding_tv_upper": 9.547918011776346e-14,
+        "classical_defect_upper": 0.0485734764099578,
+        "quantum_defect_upper": {
+          "0.0": 0.049586776859504016,
+          "1e-05": 0.049594456861142416,
+          "0.0001": 0.05035479324364382,
+          "0.001": 0.12655075673356875
+        }
+      },
+      "exact_static_audit": {
+        "float_projected_ground_states_certified": true,
+        "ideal_repair_margins_positive": true,
+        "actual_repair_margins_positive": true,
+        "coefficient_error_l1_exact": [
+          43,
+          36028797018963968
+        ],
+        "coefficient_error_l1": 1.1934897514720433e-15,
+        "physical_nonoptimal_gap_lower_bound_exact": [
+          5482470543919591,
+          288230376151711744
+        ],
+        "physical_nonoptimal_gap_lower_bound": 0.0190211407177773,
+        "actual_margin_min": 0.029921823392387803,
+        "range_violations": [],
+        "logical_gibbs_tv_rounding_correction": 1.9095836023554515e-13,
+        "interpretation": "exact logical rational model, actual binary64 alpha and chain couplings as exact parameters; interbranch and field rounding bounded in L1"
+      }
+    },
+    {
+      "name": "rewired_band_n16_s9901_standard",
+      "scheme": "standard",
+      "beta": 10.0,
+      "mass": {
+        "lower": 0.015401693136857639,
+        "upper": 0.015401693137306454,
+        "decoded_error_lower": 0.015421619109597226,
+        "decoded_error_upper": 0.015421619110496013,
+        "ground_cost": 0.5,
+        "ground_degeneracy": 1,
+        "auxiliary_partition_summed": true,
+        "original_patterns": 65536,
+        "relative_interval_width": 2.9140601140240285e-11
+      },
+      "chain_defect_upper": 0.048475724782846986,
+      "rounding_tv_upper": 1.3782378016635732e-14,
+      "actual_root_error_lower": 0.014674044945921382,
+      "actual_root_error_upper": 0.0638973438933568,
+      "independent_actual_audit": {
+        "instance": "rewired_band_n16_s9901_standard",
+        "split": "held_out",
+        "selection": "outward_readout",
+        "physical_qubits": 52,
+        "scale": 0.04083130291584445,
+        "exact_scale_difference_from_first": "0",
+        "scale_at_least_first_exact": true,
+        "static_ground_fidelity": true,
+        "minimum_exact_margin": "246686168988061/1125899906842624",
+        "consistent_nonconstant_coefficient_error": "1589/1152921504606846976",
+        "consistent_offset_error": "1123/1152921504606846976",
+        "thermal_rounding_tv_upper": 1.3782378016635732e-14,
+        "classical_defect_upper": 0.048475724782846986,
+        "quantum_defect_upper": {
+          "0.0": 0.04938271604938271,
+          "1e-05": 0.049382796049382977,
+          "0.0001": 0.04939071605204938,
+          "0.001": 0.05018274271640494
+        }
+      },
+      "exact_static_audit": {
+        "float_projected_ground_states_certified": true,
+        "ideal_repair_margins_positive": true,
+        "actual_repair_margins_positive": true,
+        "coefficient_error_l1_exact": [
+          1589,
+          1152921504606846976
+        ],
+        "coefficient_error_l1": 1.3782378016635732e-15,
+        "physical_nonoptimal_gap_lower_bound_exact": [
+          5884410899099165,
+          576460752303423488
+        ],
+        "physical_nonoptimal_gap_lower_bound": 0.010207825728961112,
+        "actual_margin_min": 0.21910133173369406,
+        "range_violations": [],
+        "logical_gibbs_tv_rounding_correction": 2.7564756033271843e-14,
+        "interpretation": "exact logical rational model, actual binary64 alpha and chain couplings as exact parameters; interbranch and field rounding bounded in L1"
+      }
+    },
+    {
+      "name": "rewired_band_n16_s9901_standard",
+      "scheme": "standard",
+      "beta": 20.0,
+      "mass": {
+        "lower": 0.07701421282277224,
+        "upper": 0.07701421282501605,
+        "decoded_error_lower": 0.07701421298293024,
+        "decoded_error_upper": 0.07701421298741783,
+        "ground_cost": 0.5,
+        "ground_degeneracy": 1,
+        "auxiliary_partition_summed": true,
+        "original_patterns": 65536,
+        "relative_interval_width": 2.913509288235986e-11
+      },
+      "chain_defect_upper": 0.048475724782847014,
+      "rounding_tv_upper": 7.167877402736167e-14,
+      "actual_root_error_lower": 0.07328089318993393,
+      "actual_root_error_upper": 0.12548993777033654,
+      "independent_actual_audit": {
+        "instance": "rewired_band_n16_s9901_standard",
+        "split": "held_out",
+        "selection": "outward_readout",
+        "physical_qubits": 52,
+        "scale": 0.04655944230756928,
+        "exact_scale_difference_from_first": "0",
+        "scale_at_least_first_exact": true,
+        "static_ground_fidelity": true,
+        "minimum_exact_margin": "246686168988061/2251799813685248",
+        "consistent_nonconstant_coefficient_error": "1033/288230376151711744",
+        "consistent_offset_error": "409/288230376151711744",
+        "thermal_rounding_tv_upper": 7.167877402736167e-14,
+        "classical_defect_upper": 0.048475724782847014,
+        "quantum_defect_upper": {
+          "0.0": 0.04938271604938274,
+          "1e-05": 0.04938303604938701,
+          "0.0001": 0.04941471609204943,
+          "0.001": 0.05258314273880561
+        }
+      },
+      "exact_static_audit": {
+        "float_projected_ground_states_certified": true,
+        "ideal_repair_margins_positive": true,
+        "actual_repair_margins_positive": true,
+        "coefficient_error_l1_exact": [
+          1033,
+          288230376151711744
+        ],
+        "coefficient_error_l1": 3.5839387013680835e-15,
+        "physical_nonoptimal_gap_lower_bound_exact": [
+          1677480696215577,
+          144115188075855872
+        ],
+        "physical_nonoptimal_gap_lower_bound": 0.01163986057689232,
+        "actual_margin_min": 0.10955066586684703,
+        "range_violations": [],
+        "logical_gibbs_tv_rounding_correction": 1.433575480547336e-13,
+        "interpretation": "exact logical rational model, actual binary64 alpha and chain couplings as exact parameters; interbranch and field rounding bounded in L1"
+      }
+    },
+    {
+      "name": "rewired_band_n16_s9901_standard",
+      "scheme": "standard",
+      "beta": 40.0,
+      "mass": {
+        "lower": 0.31244393247146024,
+        "upper": 0.31244393248056246,
+        "decoded_error_lower": 0.31244393246691066,
+        "decoded_error_upper": 0.3124439324851149,
+        "ground_cost": 0.5,
+        "ground_degeneracy": 1,
+        "auxiliary_partition_summed": true,
+        "original_patterns": 65536,
+        "relative_interval_width": 2.913232753881959e-11
+      },
+      "chain_defect_upper": 0.04847572478284722,
+      "rounding_tv_upper": 1.9661355876721132e-13,
+      "actual_root_error_lower": 0.29729798638638705,
+      "actual_root_error_upper": 0.3609196572681588,
+      "independent_actual_audit": {
+        "instance": "rewired_band_n16_s9901_standard",
+        "split": "held_out",
+        "selection": "outward_readout",
+        "physical_qubits": 52,
+        "scale": 0.049423512003431695,
+        "exact_scale_difference_from_first": "0",
+        "scale_at_least_first_exact": true,
+        "static_ground_fidelity": true,
+        "minimum_exact_margin": "493372337976121/9007199254740992",
+        "consistent_nonconstant_coefficient_error": "5667/1152921504606846976",
+        "consistent_offset_error": "1287/1152921504606846976",
+        "thermal_rounding_tv_upper": 1.9661355876721132e-13,
+        "classical_defect_upper": 0.04847572478284722,
+        "quantum_defect_upper": {
+          "0.0": 0.049382716049382956,
+          "1e-05": 0.04938399604945122,
+          "0.0001": 0.049510716732051076,
+          "0.001": 0.06218954417257163
+        }
+      },
+      "exact_static_audit": {
+        "float_projected_ground_states_certified": true,
+        "ideal_repair_margins_positive": true,
+        "actual_repair_margins_positive": true,
+        "coefficient_error_l1_exact": [
+          5667,
+          1152921504606846976
+        ],
+        "coefficient_error_l1": 4.915338969180283e-15,
+        "physical_nonoptimal_gap_lower_bound_exact": [
+          7122678727743879,
+          576460752303423488
+        ],
+        "physical_nonoptimal_gap_lower_bound": 0.012355878000857924,
+        "actual_margin_min": 0.054775332933423404,
+        "range_violations": [],
+        "logical_gibbs_tv_rounding_correction": 3.9322711753449993e-13,
+        "interpretation": "exact logical rational model, actual binary64 alpha and chain couplings as exact parameters; interbranch and field rounding bounded in L1"
+      }
+    },
+    {
+      "name": "rewired_band_n16_s9901_standard",
+      "scheme": "standard",
+      "beta": 80.0,
+      "mass": {
+        "lower": 0.6429060202548907,
+        "upper": 0.6429060202736203,
+        "decoded_error_lower": 0.6429060202455292,
+        "decoded_error_upper": 0.6429060202829877,
+        "ground_cost": 0.5,
+        "ground_degeneracy": 1,
+        "auxiliary_partition_summed": true,
+        "original_patterns": 65536,
+        "relative_interval_width": 2.91326770275966e-11
+      },
+      "chain_defect_upper": 0.04847572478284722,
+      "rounding_tv_upper": 2.726985304235541e-13,
+      "actual_root_error_lower": 0.6117406849466118,
+      "actual_root_error_upper": 0.6913817450661077,
+      "independent_actual_audit": {
+        "instance": "rewired_band_n16_s9901_standard",
+        "split": "held_out",
+        "selection": "outward_readout",
+        "physical_qubits": 52,
+        "scale": 0.05085554685136291,
+        "exact_scale_difference_from_first": "0",
+        "scale_at_least_first_exact": true,
+        "static_ground_fidelity": true,
+        "minimum_exact_margin": "493372337976121/18014398509481984",
+        "consistent_nonconstant_coefficient_error": "1965/576460752303423488",
+        "consistent_offset_error": "627/576460752303423488",
+        "thermal_rounding_tv_upper": 2.726985304235541e-13,
+        "classical_defect_upper": 0.04847572478284722,
+        "quantum_defect_upper": {
+          "0.0": 0.049382716049382956,
+          "1e-05": 0.049387836050475226,
+          "0.0001": 0.04989472697214283,
+          "0.001": 0.10069203596542611
+        }
+      },
+      "exact_static_audit": {
+        "float_projected_ground_states_certified": true,
+        "ideal_repair_margins_positive": true,
+        "actual_repair_margins_positive": true,
+        "coefficient_error_l1_exact": [
+          1965,
+          576460752303423488
+        ],
+        "coefficient_error_l1": 3.408731630294426e-15,
+        "physical_nonoptimal_gap_lower_bound_exact": [
+          3664528349592333,
+          288230376151711744
+        ],
+        "physical_nonoptimal_gap_lower_bound": 0.012713886712840728,
+        "actual_margin_min": 0.027387666466711702,
+        "range_violations": [],
+        "logical_gibbs_tv_rounding_correction": 5.453970608472569e-13,
+        "interpretation": "exact logical rational model, actual binary64 alpha and chain couplings as exact parameters; interbranch and field rounding bounded in L1"
+      }
+    }
+  ],
+  "comparisons": [
+    {
+      "name": "irregular_hubs_n16_s8807",
+      "beta": 10.0,
+      "strict_balanced_actual_error_order": false,
+      "strict_standard_actual_error_order": false
+    },
+    {
+      "name": "irregular_hubs_n16_s8807",
+      "beta": 20.0,
+      "strict_balanced_actual_error_order": false,
+      "strict_standard_actual_error_order": false
+    },
+    {
+      "name": "irregular_hubs_n16_s8807",
+      "beta": 40.0,
+      "strict_balanced_actual_error_order": true,
+      "strict_standard_actual_error_order": false
+    },
+    {
+      "name": "irregular_hubs_n16_s8807",
+      "beta": 80.0,
+      "strict_balanced_actual_error_order": true,
+      "strict_standard_actual_error_order": false
+    },
+    {
+      "name": "irregular_hubs_n16_s9901",
+      "beta": 10.0,
+      "strict_balanced_actual_error_order": true,
+      "strict_standard_actual_error_order": false
+    },
+    {
+      "name": "irregular_hubs_n16_s9901",
+      "beta": 20.0,
+      "strict_balanced_actual_error_order": true,
+      "strict_standard_actual_error_order": false
+    },
+    {
+      "name": "irregular_hubs_n16_s9901",
+      "beta": 40.0,
+      "strict_balanced_actual_error_order": true,
+      "strict_standard_actual_error_order": false
+    },
+    {
+      "name": "irregular_hubs_n16_s9901",
+      "beta": 80.0,
+      "strict_balanced_actual_error_order": true,
+      "strict_standard_actual_error_order": false
+    },
+    {
+      "name": "mixed_hypergraph_n16_s8807",
+      "beta": 10.0,
+      "strict_balanced_actual_error_order": false,
+      "strict_standard_actual_error_order": false
+    },
+    {
+      "name": "mixed_hypergraph_n16_s8807",
+      "beta": 20.0,
+      "strict_balanced_actual_error_order": false,
+      "strict_standard_actual_error_order": false
+    },
+    {
+      "name": "mixed_hypergraph_n16_s8807",
+      "beta": 40.0,
+      "strict_balanced_actual_error_order": true,
+      "strict_standard_actual_error_order": false
+    },
+    {
+      "name": "mixed_hypergraph_n16_s8807",
+      "beta": 80.0,
+      "strict_balanced_actual_error_order": true,
+      "strict_standard_actual_error_order": false
+    },
+    {
+      "name": "mixed_hypergraph_n16_s9901",
+      "beta": 10.0,
+      "strict_balanced_actual_error_order": false,
+      "strict_standard_actual_error_order": false
+    },
+    {
+      "name": "mixed_hypergraph_n16_s9901",
+      "beta": 20.0,
+      "strict_balanced_actual_error_order": true,
+      "strict_standard_actual_error_order": false
+    },
+    {
+      "name": "mixed_hypergraph_n16_s9901",
+      "beta": 40.0,
+      "strict_balanced_actual_error_order": true,
+      "strict_standard_actual_error_order": false
+    },
+    {
+      "name": "mixed_hypergraph_n16_s9901",
+      "beta": 80.0,
+      "strict_balanced_actual_error_order": true,
+      "strict_standard_actual_error_order": false
+    },
+    {
+      "name": "random_regular_n16_s8807",
+      "beta": 10.0,
+      "strict_balanced_actual_error_order": false,
+      "strict_standard_actual_error_order": false
+    },
+    {
+      "name": "random_regular_n16_s8807",
+      "beta": 20.0,
+      "strict_balanced_actual_error_order": true,
+      "strict_standard_actual_error_order": false
+    },
+    {
+      "name": "random_regular_n16_s8807",
+      "beta": 40.0,
+      "strict_balanced_actual_error_order": true,
+      "strict_standard_actual_error_order": false
+    },
+    {
+      "name": "random_regular_n16_s8807",
+      "beta": 80.0,
+      "strict_balanced_actual_error_order": true,
+      "strict_standard_actual_error_order": false
+    },
+    {
+      "name": "random_regular_n16_s9901",
+      "beta": 10.0,
+      "strict_balanced_actual_error_order": true,
+      "strict_standard_actual_error_order": false
+    },
+    {
+      "name": "random_regular_n16_s9901",
+      "beta": 20.0,
+      "strict_balanced_actual_error_order": true,
+      "strict_standard_actual_error_order": false
+    },
+    {
+      "name": "random_regular_n16_s9901",
+      "beta": 40.0,
+      "strict_balanced_actual_error_order": true,
+      "strict_standard_actual_error_order": false
+    },
+    {
+      "name": "random_regular_n16_s9901",
+      "beta": 80.0,
+      "strict_balanced_actual_error_order": true,
+      "strict_standard_actual_error_order": false
+    },
+    {
+      "name": "rewired_band_n16_s8807",
+      "beta": 10.0,
+      "strict_balanced_actual_error_order": true,
+      "strict_standard_actual_error_order": false
+    },
+    {
+      "name": "rewired_band_n16_s8807",
+      "beta": 20.0,
+      "strict_balanced_actual_error_order": true,
+      "strict_standard_actual_error_order": false
+    },
+    {
+      "name": "rewired_band_n16_s8807",
+      "beta": 40.0,
+      "strict_balanced_actual_error_order": true,
+      "strict_standard_actual_error_order": false
+    },
+    {
+      "name": "rewired_band_n16_s8807",
+      "beta": 80.0,
+      "strict_balanced_actual_error_order": true,
+      "strict_standard_actual_error_order": false
+    },
+    {
+      "name": "rewired_band_n16_s9901",
+      "beta": 10.0,
+      "strict_balanced_actual_error_order": false,
+      "strict_standard_actual_error_order": false
+    },
+    {
+      "name": "rewired_band_n16_s9901",
+      "beta": 20.0,
+      "strict_balanced_actual_error_order": true,
+      "strict_standard_actual_error_order": false
+    },
+    {
+      "name": "rewired_band_n16_s9901",
+      "beta": 40.0,
+      "strict_balanced_actual_error_order": true,
+      "strict_standard_actual_error_order": false
+    },
+    {
+      "name": "rewired_band_n16_s9901",
+      "beta": 80.0,
+      "strict_balanced_actual_error_order": true,
+      "strict_standard_actual_error_order": false
+    }
+  ],
+  "seconds": 12.809600207954645,
+  "interpretation": "Outward interval terminal Gibbs original-error comparisons for actual binary64 programs; all auxiliary and chain excitations allowed in the event. No finite-time equilibration or quantum dynamical claim."
+}

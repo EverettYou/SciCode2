@@ -1,0 +1,86 @@
+{
+  "Opus1_and_Opus2_N15": {
+    "N0": 15,
+    "form": "degree",
+    "intervals": 4096,
+    "uniform_squared_path_factor_upper": 0.9987983641909155,
+    "exact_upper": "104731599352985343789466561222712994723050163322787181411377042673326165135082623/104857600000000000000000000000000000000000000000000000000000000000000000000000000",
+    "passed": true
+  },
+  "Opus3_N15": {
+    "N0": 15,
+    "form": "branch",
+    "intervals": 4096,
+    "uniform_squared_path_factor_upper": 0.9967961575574339,
+    "exact_upper": "17124827589950566968204848882386004744810345077189739340893745381969252455524157621/17179869184000000000000000000000000000000000000000000000000000000000000000000000000",
+    "passed": true
+  },
+  "Fable3_N19": {
+    "N0": 19,
+    "form": "degree",
+    "intervals": 4096,
+    "uniform_squared_path_factor_upper": 0.9978532029240675,
+    "exact_upper": "377723296159459828597520301189020425695005822676233124399978188813847/378535936000000000000000000000000000000000000000000000000000000000000",
+    "passed": true
+  },
+  "GPT1_N13": {
+    "ranges": [
+      "[0,.55]",
+      "[.55,.65]",
+      "[.65,1]"
+    ],
+    "upper_factors": [
+      0.9991283076923076,
+      0.9987422178461538,
+      0.9678148006153846
+    ],
+    "passed": true
+  },
+  "GPT2_N13": {
+    "N0": 13,
+    "cycle_K_upper_float": 0.0170729639146594,
+    "uniform_path_factor_upper_float": 0.9998879761451236,
+    "hexagon_enumeration_checks": [
+      {
+        "p": "1/4",
+        "direct_scaled_probability": "247/1024",
+        "loop_formula_scaled_probability": "247/1024",
+        "microscopic_assignments": 31104
+      },
+      {
+        "p": "1/2",
+        "direct_scaled_probability": "161/128",
+        "loop_formula_scaled_probability": "161/128",
+        "microscopic_assignments": 31104
+      },
+      {
+        "p": "3/4",
+        "direct_scaled_probability": "4387/1024",
+        "loop_formula_scaled_probability": "4387/1024",
+        "microscopic_assignments": 31104
+      }
+    ],
+    "passed": true
+  },
+  "GPT3_N14": {
+    "N0": 14,
+    "A": "15151/14000",
+    "C": "411/14000",
+    "rho_upper": "1836591329/3393824000",
+    "mu_rho_rational_upper": "16968267288631/16969120000000",
+    "mu_rho_decimal": 0.9999497492286578,
+    "uniform_gap_lower": 5.0250771342297063e-05,
+    "syndrome_decodable_lower": 0.07955179237314275,
+    "safely_rounded_syndrome_decodable_subset": [
+      [
+        0,
+        0.0795517923731427
+      ],
+      [
+        0.9204482076268573,
+        1
+      ]
+    ],
+    "all_assertions_exact_rational": true
+  }
+}

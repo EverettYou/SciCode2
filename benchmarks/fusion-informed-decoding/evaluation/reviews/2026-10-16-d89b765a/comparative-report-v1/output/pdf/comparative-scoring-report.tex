@@ -1,0 +1,1971 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=19mm,headheight=14pt]{geometry}
+\usepackage{fontspec,xeCJK}
+\setmainfont{lmroman10-regular.otf}[BoldFont=lmroman10-bold.otf,ItalicFont=lmroman10-italic.otf]
+\setmonofont{lmmono10-regular.otf}[Scale=0.82]
+\setCJKmainfont{FandolSong-Regular.otf}[Script=Default,BoldFont=FandolSong-Bold.otf]
+\setCJKmonofont{FandolSong-Regular.otf}[Script=Default]
+\usepackage{amsmath,amssymb,array,booktabs,longtable,xurl,enumitem,xcolor}
+\usepackage[colorlinks=true,linkcolor=blue,urlcolor=blue,bookmarksnumbered=true]{hyperref}
+\usepackage{bookmark,fancyhdr,lastpage}
+\hypersetup{pdftitle={七份有效AI交付的逐项比较研究报告},pdfauthor={SciCode2 independent review}}
+\setlength{\parindent}{0pt}\setlength{\parskip}{5pt}
+\setlength{\emergencystretch}{2em}
+\setlist[itemize]{nosep,leftmargin=1.4em}
+\renewcommand{\arraystretch}{1.13}
+\setcounter{tocdepth}{2}
+\pagestyle{fancy}\fancyhf{}
+\fancyhead[L]{\small Decoder v0.7 / 七次有效交付比较}
+\fancyhead[R]{\small rubric v1 · 2026-10-16}
+\fancyfoot[C]{\small \thepage\ / \pageref{LastPage}}
+\begin{document}
+\fontsize{10.5}{15.2}\selectfont
+
+\begin{center}\vspace*{12mm}{\LARGE\bfseries 七份有效 AI 交付\\[4mm]逐项比较研究报告}\\[6mm]{\large Herald / symmetry-informed decoding benchmark}\\[3mm]{\large 按已建立的 rubric v1 评分}\\[5mm]2026年10月16日\end{center}
+评审对象：9次尝试，其中7份科学交付参加比较，2次Fable API失败作为作废结果单列。比较单位是具体run，不把单次运行直接推广为模型总体能力。
+
+报告包含23个原题计分aspect和21个讨论细节。每个问题各有一张七行对照表，分别列出完成情况、实际问题或证据限制、得分/覆盖状态和原文定位；后附横向总表及问题分类。
+
+沿用上一轮rubric的权重、分数和科学判断，不修改原始run，不以本轮追加的教学要求追溯扣分。评分是事后本地比较，不是预先冻结的官方SciCode难度测试。
+
+主要发现：23个主项中有18项七份均得满分，分歧集中在相判定依据、近似误差保证、全p证明认证、极端数值范围和失败记账。高完成度分数不能抹去关键科学缺口。
+
+GPT01/02按原题允许的有依据unresolved作答满足全部主项；这不等于中心真实相图已全部解决。Fable/Opus在核心结构和算法上表现强，但若干相区结论的证据不够。
+
+\clearpage
+\tableofcontents
+\clearpage
+\section{评审对象、评分口径与证据}
+九次结果来自同一题面v0.7。原prompt SHA-256为 \nolinkurl{d89b765a4af1e50b2824d40d0c2d8590e722202219411bd49f5ea7d63c64d6a9}。本报告固定使用scores-v1.json，其SHA-256为 \nolinkurl{3864e0c08bbd58126fa64ae44530d2fc3a92a7f11e734531512e488a2b7a0d8a}。
+
+{\fontsize{9.0}{12.6}\selectfont
+\setlength{\tabcolsep}{2.5pt}
+\begin{longtable}{>{\raggedright\arraybackslash}p{\dimexpr 0.13\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.2\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.33\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.17\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.17\linewidth-2\tabcolsep\relax}}
+\caption{九次尝试的纳入与排除}\\
+\toprule
+\textbf{Run} & \textbf{归档模型标签} & \textbf{本报告处理} & \textbf{总分} & \textbf{unresolved}\tabularnewline
+\midrule
+\endfirsthead
+\toprule
+\textbf{Run} & \textbf{归档模型标签} & \textbf{本报告处理} & \textbf{总分} & \textbf{unresolved}\tabularnewline
+\midrule
+\endhead
+{}Fable03 & Fable 5.1 & 有效，参与评分 & 92.5/100 & 0/21\tabularnewline
+{}Opus01 & Opus 5.5 & 有效，参与评分 & 89.5/100 & 0/21\tabularnewline
+{}Opus02 & Opus 5.5 & 有效，参与评分 & 89.5/100 & 0/21\tabularnewline
+{}Opus03 & Opus 5.5 & 有效，参与评分 & 88.5/100 & 0/21\tabularnewline
+{}GPT01 & GPT 6 Astra & 有效，参与评分 & 100/100 & 11/21\tabularnewline
+{}GPT02 & GPT 6 Astra & 有效，参与评分 & 100/100 & 12/21\tabularnewline
+{}GPT03 & GPT 6 Astra & 有效，参与评分 & 99/100 & 5/21\tabularnewline
+{}Fable01 & Fable 5.1 & API输出限制，作废 & NA & NA\tabularnewline
+{}Fable02 & Fable 5.1 & API输出限制，作废 & NA & NA\tabularnewline
+\bottomrule
+\end{longtable}
+}
+作废结果不计科学零分，不进入七份排名或模型组平均。23个主项合计100分：R1相图30、R2精确结构15、R3大N证明20、R4后验20、交付与复现15。关键科学通过条件仍逐项判断，不设置事后总分自动及格线。
+
+讨论细节不额外计分：E=明确正确；I=隐含或部分展开；M=未见说明；X=具体错误或证据不足推论；NA=合法替代方法不需要该步骤。教学图是后来提出的要求。矩阵索引a,b与arrival数量a,b混用来自本聊天讲解，不归责于原run。
+
+证据列采用“文件ID:行号”，可点击到附录文件索引。原提交与后续独立核验分开：210个常规检查中140个属于原题R4，70个是O0控制；18个极低p压力输入是后验数值范围诊断。独立证书支持定理，不追记为AI原提交已完成的认证。
+
+“可能的错误”是检查清单；表中“实际问题/限制”才是此次审阅的观察。未见错误表示在审阅和测试范围内未发现，不能读作全参数域形式化证明。
+
+\clearpage
+\section{R1：相图、判定依据与异常解释}
+\subsection{A1 R1覆盖（5分）}
+\label{aspect:A1}
+评审问题：是否交齐所有 record/rank 相图条目？
+
+判分要求：O0/O1/O2各N=2,...,8共21条，区间/不确定性或有依据unresolved；缺项扣对应覆盖
+
+科学意义：R1 要求 O0、O1、O2 各 N=2,…,8，共21个条目；有依据的 unresolved 也是合法回答。
+
+可能的错误（检查项，不代表七份都犯）：漏掉等价行、只给单一噪声点，或用 unresolved 掩盖没有开展分析。
+
+{\fontsize{9.0}{12.6}\selectfont
+\setlength{\tabcolsep}{2.5pt}
+\begin{longtable}{>{\raggedright\arraybackslash}p{\dimexpr 0.11\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.08\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.3\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.4\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.11\linewidth-2\tabcolsep\relax}}
+\caption{A1：七份有效交付逐项比较}\\
+\toprule
+\textbf{Run} & \textbf{得分} & \textbf{完成情况} & \textbf{实际问题 / 证据限制} & \textbf{证据}\tabularnewline
+\midrule
+\endfirsthead
+\toprule
+\textbf{Run} & \textbf{得分} & \textbf{完成情况} & \textbf{实际问题 / 证据限制} & \textbf{证据}\tabularnewline
+\midrule
+\endhead
+{}Fable03 & 5/5 & 21条相区与合并相图齐全，复用四类 charge 的精确等价。 & 覆盖合格；中央 charge 被定为非解码的依据问题另计 A2。 & \hyperref[src:F03-01]{F03-01:213}\newline \hyperref[src:F03-01]{F03-01:219}\tabularnewline
+{}Opus01 & 5/5 & 21条及联合相图齐全，以等价类合并重复行。 & 覆盖合格；全 p charge 结论的可信度另计 A2。 & \hyperref[src:O01-01]{O01-01:326}\newline \hyperref[src:O01-01]{O01-01:329}\tabularnewline
+{}Opus02 & 5/5 & 21条及统一表齐全，给出各类证据标签。 & 覆盖合格；无 unresolved 不等于完成了全部真实相界证明。 & \hyperref[src:O02-01]{O02-01:184}\newline \hyperref[src:O02-01]{O02-01:247}\tabularnewline
+{}Opus03 & 5/5 & 21条齐全，区分 syndrome、Z4、其余 charge 与 full-irrep。 & 覆盖合格；细致报告不能替代各结论的充分证据。 & \hyperref[src:O03-01]{O03-01:239}\newline \hyperref[src:O03-01]{O03-01:297}\tabularnewline
+{}GPT01 & 5/5 & 21条齐全，11条保留未知，并附已证和继承子集。 & 未知是有证据的合法交付，不因数量多扣覆盖分。 & \hyperref[src:G01-01]{G01-01:55}\newline \hyperref[src:G01-01]{G01-01:86}\tabularnewline
+{}GPT02 & 5/5 & 21条齐全，12条未知分别配定理尾区与尺寸诊断。 & 未知未被画成伪造相界；覆盖得分不表示真实相图已解。 & \hyperref[src:G02-01]{G02-01:51}\newline \hyperref[src:G02-01]{G02-01:70}\tabularnewline
+{}GPT03 & 5/5 & 21条齐全，5条 charge 未知，O2 全 p 标明数值性质。 & 覆盖合格；小 N 全 p 的连续参数风险另计 A2。 & \hyperref[src:G03-01]{G03-01:3}\newline \hyperref[src:G03-01]{G03-01:15}\tabularnewline
+\bottomrule
+\end{longtable}
+}
+本项比较：七份有效交付均覆盖21项；覆盖得满不代表21项真实相界均已解决。
+
+得分分布：7/7满分；其余0/7有明确扣分或保留。本项不重复扣其他aspect已记的同一问题。
+
+\clearpage
+\subsection{A2 R1相判定依据（8分）}
+\label{aspect:A2}
+评审问题：有限尺寸数据是否足以支持所作相判定？
+
+判分要求：增长二维尺寸、概率覆盖、统计和外推足以支持所下判定；慢下降/似平台不单独决定零/正极限；定理可直接支持相区，不强制为定理重做MC
+
+科学意义：风险随二维尺寸的变化，必须支持零极限、正极限或保留未知的具体选择。
+
+可能的错误（检查项，不代表七份都犯）：把慢下降直接叫作零极限；或把似平台与正截距拟合直接叫作正极限；有限网格冒充全连续参数证明。
+
+{\fontsize{9.0}{12.6}\selectfont
+\setlength{\tabcolsep}{2.5pt}
+\begin{longtable}{>{\raggedright\arraybackslash}p{\dimexpr 0.11\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.08\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.3\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.4\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.11\linewidth-2\tabcolsep\relax}}
+\caption{A2：七份有效交付逐项比较}\\
+\toprule
+\textbf{Run} & \textbf{得分} & \textbf{完成情况} & \textbf{实际问题 / 证据限制} & \textbf{证据}\tabularnewline
+\midrule
+\endfirsthead
+\toprule
+\textbf{Run} & \textbf{得分} & \textbf{完成情况} & \textbf{实际问题 / 证据限制} & \textbf{证据}\tabularnewline
+\midrule
+\endhead
+{}Fable03 & 4/8 & 精确后验随二维 L 增长，提供 crossings、拟合与风险分布。 & L\ensuremath{\leq}12 的慢漂移支持不了确定正极限；原文也未排除相关长度\ensuremath{\geq}50的衰减。 & \hyperref[src:F03-01]{F03-01:213}\newline \hyperref[src:F03-01]{F03-01:219}\tabularnewline
+{}Opus01 & 5/8 & 大尺寸约至 L48，分析 log-odds 与中央 charge 漂移。 & 无平台不能排除正极限；charge 钉扎 clean-loop 相的图景尚非证明。 & \hyperref[src:O01-01]{O01-01:326}\newline \hyperref[src:O01-01]{O01-01:329}\tabularnewline
+{}Opus02 & 5/8 & 中央整数 charge 至约 L96，比较不同尺寸与 Gaussian/BKT 图景。 & 风险仍约0.2；启发式下界未证明能排除该后验模型的一切不可解码相。 & \hyperref[src:O02-01]{O02-01:184}\newline \hyperref[src:O02-01]{O02-01:247}\tabularnewline
+{}Opus03 & 5/8 & 中央 charge 至约 L64，研究慢漂移和后验分布。 & Gaussian/BKT 排除仍是启发；原文允许更晚 rough/glassy crossover。 & \hyperref[src:O03-01]{O03-01:239}\newline \hyperref[src:O03-01]{O03-01:297}\tabularnewline
+{}GPT01 & 8/8 & 对已解析交叉给外推敏感性，对慢 charge 与小 N O2 保留未知。 & 未解决未知真实相区；但没有用不足数据强行下判定，符合 rubric。 & \hyperref[src:G01-01]{G01-01:55}\newline \hyperref[src:G01-01]{G01-01:86}\tabularnewline
+{}GPT02 & 8/8 & 保留不稳定 Z4 拟合与中央 charge 未知，附全套 fits 和 bootstrap。 & 仍未知而非已求出中央相界；此保留与题目允许范围一致。 & \hyperref[src:G02-01]{G02-01:51}\newline \hyperref[src:G02-01]{G02-01:70}\tabularnewline
+{}GPT03 & 7/8 & 用增长二维精确后验与跨 N 映射支持小 N O2 数值全 p。 & 有限 p 网格及晚 crossover 仍可能遗漏；已披露，但全 p 赋值仍扣1分。 & \hyperref[src:G03-01]{G03-01:3}\newline \hyperref[src:G03-01]{G03-01:15}\tabularnewline
+\bottomrule
+\end{longtable}
+}
+本项比较：主要分歧在中心 charge 相：Fable 判正极限、Opus 判零极限，但两类证据均未排除竞争解释。GPT01/02 的保留未知更可靠。
+
+得分分布：2/7满分；其余5/7有明确扣分或保留。本项不重复扣其他aspect已记的同一问题。
+
+\clearpage
+\subsection{A3 R1误差控制（8分）}
+\label{aspect:A3}
+评审问题：统计、有限尺寸、数值近似误差是否分开且有依据？
+
+判分要求：分开报告统计、有限尺寸和近似误差，数值误差估计有依据；chi差不冒充真偏差上界。A2已扣的中心极限推断缺口不在这里重复扣
+
+科学意义：每个样本后验算得准，与有限样本和有限尺寸能否推到热力学极限，是三种不同问题。
+
+可能的错误（检查项，不代表七份都犯）：两个 bond dimension 的结果接近，就宣布相对精确后验的偏差有上界。
+
+{\fontsize{9.0}{12.6}\selectfont
+\setlength{\tabcolsep}{2.5pt}
+\begin{longtable}{>{\raggedright\arraybackslash}p{\dimexpr 0.11\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.08\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.3\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.4\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.11\linewidth-2\tabcolsep\relax}}
+\caption{A3：七份有效交付逐项比较}\\
+\toprule
+\textbf{Run} & \textbf{得分} & \textbf{完成情况} & \textbf{实际问题 / 证据限制} & \textbf{证据}\tabularnewline
+\midrule
+\endfirsthead
+\toprule
+\textbf{Run} & \textbf{得分} & \textbf{完成情况} & \textbf{实际问题 / 证据限制} & \textbf{证据}\tabularnewline
+\midrule
+\endhead
+{}Fable03 & 8/8 & 精确收缩无 bond 截断，给统计量和 finite-size fit 变化。 & 中央正极限推断不足已在 A2 扣分，本项不重复处罚。 & \hyperref[src:F03-01]{F03-01:213}\newline \hyperref[src:F03-01]{F03-01:219}\tabularnewline
+{}Opus01 & 3/8 & 分列误差，比较 \ensuremath{\chi}64/128 并研究大尺寸收敛。 & 两个近似接近不能控制二者共有的真偏差；声称 R* 误差上界过强。 & \hyperref[src:O01-01]{O01-01:82}\newline \hyperref[src:O01-01]{O01-01:164}\tabularnewline
+{}Opus02 & 3/8 & 保存 \ensuremath{\chi}研究与经验收敛诊断，承认并非先验误差界。 & 仍把更大 \ensuremath{\chi}之差提升为 induced bias 上界，缺少真值参照保证。 & \hyperref[src:O02-01]{O02-01:301}\newline \hyperref[src:O02-01]{O02-01:319}\tabularnewline
+{}Opus03 & 3/8 & 对一部分记录进行 \ensuremath{\chi}64/128 对照，报告统计与尺寸误差。 & 子集经验最大变化无法保证所有相判断不变；大 \ensuremath{\chi}也可能共同偏离真值。 & \hyperref[src:O03-01]{O03-01:355}\newline \hyperref[src:O03-01]{O03-01:391}\tabularnewline
+{}GPT01 & 8/8 & 无 MPS 截断；舍入扰动重拟合与统计/尺寸 allowance 分开。 & 报告的是外推敏感性，未宣称严格热力学置信区间；未见本项错误。 & \hyperref[src:G01-01]{G01-01:123}\tabularnewline
+{}GPT02 & 8/8 & 精确收缩、数值范围检查及非线性扰动重拟合分开报告。 & 未知区未因数值微小而被升级；原环境浮点条件仍需按记录理解。 & \hyperref[src:G02-01]{G02-01:99}\tabularnewline
+{}GPT03 & 8/8 & 无 bond 截断，给 bootstrap、fit 变体与 round/log 检查。 & 尺寸 allowance 明言非严格极限置信界；未见本项应扣分问题。 & \hyperref[src:G03-01]{G03-01:185}\tabularnewline
+\bottomrule
+\end{longtable}
+}
+本项比较：Fable 与 GPT 使用无 bond 截断的收缩。三份 Opus 做了有价值的 \ensuremath{\chi} 收敛研究，但共同偏差没有上界，不能支持其最强误差保证。
+
+得分分布：4/7满分；其余3/7有明确扣分或保留。本项不重复扣其他aspect已记的同一问题。
+
+\clearpage
+\subsection{A4 R1图与判定语义（5分）}
+\label{aspect:A4}
+评审问题：相图颜色和边界表达的是哪一种结论？
+
+判分要求：区分严格充分界、严格不可解码、数值边界和未知；不把界根当真实相变；图表与answers一致
+
+科学意义：严格充分子集、严格不可解码区、数值相界、未知区需使用不同语义。
+
+可能的错误（检查项，不代表七份都犯）：把 \ensuremath{\mu}\ensuremath{\rho}=1 的根叫真实阈值；把充分条件失效区叫不可解码；闭区间画法暗示临界点已判定。
+
+{\fontsize{9.0}{12.6}\selectfont
+\setlength{\tabcolsep}{2.5pt}
+\begin{longtable}{>{\raggedright\arraybackslash}p{\dimexpr 0.11\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.08\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.3\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.4\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.11\linewidth-2\tabcolsep\relax}}
+\caption{A4：七份有效交付逐项比较}\\
+\toprule
+\textbf{Run} & \textbf{得分} & \textbf{完成情况} & \textbf{实际问题 / 证据限制} & \textbf{证据}\tabularnewline
+\midrule
+\endfirsthead
+\toprule
+\textbf{Run} & \textbf{得分} & \textbf{完成情况} & \textbf{实际问题 / 证据限制} & \textbf{证据}\tabularnewline
+\midrule
+\endhead
+{}Fable03 & 5/5 & N19 充分定理与 N3 起数值推断分开，图示不同来源。 & 中央相支持不足在 A2，不是混称大 N 定理所致。 & \hyperref[src:F03-01]{F03-01:36}\tabularnewline
+{}Opus01 & 5/5 & N15 定理另列，有限 N 相图使用数值标签。 & N15 是该证明可证范围，不是最小物理 N0。 & \hyperref[src:O01-01]{O01-01:503}\tabularnewline
+{}Opus02 & 5/5 & 给 \ensuremath{\mu}\ensuremath{\rho}<1 的充分域，N15 认证与 N14 失效分开。 & N14 不过证书不表示 N14 不可解码；低 rank 全 p 仍为数值推断。 & \hyperref[src:O02-01]{O02-01:142}\tabularnewline
+{}Opus03 & 5/5 & N15 theorem 与低 rank numerical 图分开叙述。 & N15 结论不能直接验证 N3 全 p；原文没有如此使用。 & \hyperref[src:O03-01]{O03-01:654}\tabularnewline
+{}GPT01 & 5/5 & 图用严格尾区、继承数值子集和阴影未知分开编码。 & 充分界端点不是估计 threshold；闭区间 JSON 不决定临界点归属。 & \hyperref[src:G01-01]{G01-01:53}\newline \hyperref[src:G01-01]{G01-01:5}\tabularnewline
+{}GPT02 & 5/5 & 提供 rigorous-only 图，另画统计估计与未定区域。 & \ensuremath{\mu}\ensuremath{\rho}=1 不作为真实相界，未知阴影也可能完全没有内部相变。 & \hyperref[src:G02-02]{G02-02:219}\newline \hyperref[src:G02-01]{G02-01:83}\tabularnewline
+{}GPT03 & 5/5 & N14 theorem、数值全 p 与 charge 充分尾区分开。 & 小 N 数值赋值有 A2 保留，但未冒充 N14 定理。 & \hyperref[src:G03-01]{G03-01:3}\newline \hyperref[src:G03-01]{G03-01:29}\tabularnewline
+\bottomrule
+\end{longtable}
+}
+本项比较：七份都区分大 N 定理与有限 N 数值推断；较大 N0 不是科学错误，小 N 相推断仍需另审 A2。
+
+得分分布：7/7满分；其余0/7有明确扣分或保留。本项不重复扣其他aspect已记的同一问题。
+
+\clearpage
+\subsection{A5 R1结构一致性（4分）}
+\label{aspect:A5}
+评审问题：相图与信息包含和等价关系是否自洽？
+
+判分要求：相区判定与信息包含/等价类相容，必要时继承子集；合理处理N4异常与不对称；不要求每条单独充分界都严格嵌套
+
+科学意义：更丰富记录可以先降为粗记录，因此真实可解码集合不能缩小；等价信道必须相同。
+
+可能的错误（检查项，不代表七份都犯）：把名义交叉当信息论失效；强制 O1/O2 关于 p=1/2 对称；把每条独立充分界都当真实相界。
+
+{\fontsize{9.0}{12.6}\selectfont
+\setlength{\tabcolsep}{2.5pt}
+\begin{longtable}{>{\raggedright\arraybackslash}p{\dimexpr 0.11\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.08\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.3\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.4\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.11\linewidth-2\tabcolsep\relax}}
+\caption{A5：七份有效交付逐项比较}\\
+\toprule
+\textbf{Run} & \textbf{得分} & \textbf{完成情况} & \textbf{实际问题 / 证据限制} & \textbf{证据}\tabularnewline
+\midrule
+\endfirsthead
+\toprule
+\textbf{Run} & \textbf{得分} & \textbf{完成情况} & \textbf{实际问题 / 证据限制} & \textbf{证据}\tabularnewline
+\midrule
+\endhead
+{}Fable03 & 4/4 & 按 charge 等价复用行，并检查 Z4 两端与信息层级。 & Z4 高 p 增益小；其局部解释尚未达到精确 active-component 定理。 & \hyperref[src:F03-01]{F03-01:190}\newline \hyperref[src:F03-01]{F03-01:201}\tabularnewline
+{}Opus01 & 4/4 & 在误差内约束 Z4 高端服从 O0 包含，等价行一致。 & 调整名义中心不能证明真实阈值恰好相等。 & \hyperref[src:O01-01]{O01-01:268}\newline \hyperref[src:O01-01]{O01-01:275}\tabularnewline
+{}Opus02 & 4/4 & 用 paired 同样本比较验证风险包含，讨论 Z4 高低 p 不对称。 & 高 p 微小差值不是信道等价或阈值等价证明。 & \hyperref[src:O02-01]{O02-01:212}\newline \hyperref[src:O02-01]{O02-01:214}\tabularnewline
+{}Opus03 & 4/4 & 检查高 p nesting，并给 Z4 连通分量取向恒等式。 & 恒等式保留闭分量信息，不能据此宣称高 p 完全退化为 O0。 & \hyperref[src:O03-01]{O03-01:229}\newline \hyperref[src:O03-01]{O03-01:668}\tabularnewline
+{}GPT01 & 4/4 & 解释 Z4 名义反转落在 allowance 内，并向整数 q 转移可靠子集。 & 弱 O1 通用尾界不随 N 变，说明证明丢信息，不是所有真边界相同。 & \hyperref[src:G01-01]{G01-01:33}\newline \hyperref[src:G01-02]{G01-02:256}\tabularnewline
+{}GPT02 & 4/4 & 不稳定 Z4 保留未知；同 N 与跨 N 的映射用于保守包含。 & 中央未知无独立真值；不能把共同充分尾区当相区饱和的数值证明。 & \hyperref[src:G02-01]{G02-01:51}\newline \hyperref[src:G02-02]{G02-02:173}\tabularnewline
+{}GPT03 & 4/4 & Z4 高端中心投影到 O0，并扩大 uncertainty 保留原区间。 & 这是落实精确信息顺序的报告处理，不是阈值相等定理。 & \hyperref[src:G03-01]{G03-01:40}\tabularnewline
+\bottomrule
+\end{longtable}
+}
+本项比较：七份均有等价类及包含检查；Z4 高噪声差异应在误差和界的语义下解读，不能据图断言 Z4 胜过整数 charge。
+
+得分分布：7/7满分；其余0/7有明确扣分或保留。本项不重复扣其他aspect已记的同一问题。
+
+\clearpage
+\section{R2：模型与精确信息结构}
+\subsection{B1 R2模型/几何（4分）}
+\label{aspect:B1}
+评审问题：是否使用题目规定的噪声、几何与成功条件？
+
+判分要求：正确噪声、观测条件独立、边界、binary成功条件；无偷看隐藏信息或替换噪声信道
+
+科学意义：完整微观边状态含占据与取向；恢复目标是 binary syndrome 和逻辑 sector。
+
+可能的错误（检查项，不代表七份都犯）：让 decoder 偷看真实取向；把两个端点重新独立取向；只修正 syndrome 就宣布逻辑成功。
+
+{\fontsize{9.0}{12.6}\selectfont
+\setlength{\tabcolsep}{2.5pt}
+\begin{longtable}{>{\raggedright\arraybackslash}p{\dimexpr 0.11\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.08\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.3\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.4\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.11\linewidth-2\tabcolsep\relax}}
+\caption{B1：七份有效交付逐项比较}\\
+\toprule
+\textbf{Run} & \textbf{得分} & \textbf{完成情况} & \textbf{实际问题 / 证据限制} & \textbf{证据}\tabularnewline
+\midrule
+\endfirsthead
+\toprule
+\textbf{Run} & \textbf{得分} & \textbf{完成情况} & \textbf{实际问题 / 证据限制} & \textbf{证据}\tabularnewline
+\midrule
+\endhead
+{}Fable03 & 4/4 & 以0/\ensuremath{\pm}微观边权1\ensuremath{-}p,p/2建模，sector partition sums 定义 Bayes risk。 & 未见偷看真实取向；原文 c 兼指微观态，需与 correction 记号区分。 & \hyperref[src:F03-02]{F03-02:3}\tabularnewline
+{}Opus01 & 4/4 & 按真实占据和共享取向建 joint likelihood，恢复逻辑 sector。 & 微观态也写 c，读者需防止误认其为二元 correction。 & \hyperref[src:O01-01]{O01-01:105}\tabularnewline
+{}Opus02 & 4/4 & 三态边 \ensuremath{\psi} 保留两端相反表示；风险与二元 correction 接口分开。 & 观察条件独立仅对固定完整微观状态成立，非顶点观测无条件独立。 & \hyperref[src:O02-01]{O02-01:40}\tabularnewline
+{}Opus03 & 4/4 & 用0/\ensuremath{\pm} flow 边、binary占据、syndrome 和 top flux parity 建模。 & flow 语言中的有向变量不是给 binary correction 新增可见信息。 & \hyperref[src:O03-01]{O03-01:502}\tabularnewline
+{}GPT01 & 4/4 & geometry 与0/\ensuremath{\pm}边张量保留共享取向；sector 决定后构造合法 correction。 & 隐藏取向用于求概率，不提供给 decoder；未见模型替换。 & \hyperref[src:G01-02]{G01-02:70}\tabularnewline
+{}GPT02 & 4/4 & 证明 H 的秩、最短路径及每 sector correction 存在，再按 sector 后验恢复。 & 粗约束辅助 decoder 与实际 exact posterior decoder 的用途需分清。 & \hyperref[src:G02-02]{G02-02:3}\tabularnewline
+{}GPT03 & 4/4 & 三态边在另端取反，按 H 和逻辑行 Gaussian elimination 找代表。 & 同 sector 的代表可有不同边数，不影响题目定义的逻辑成功。 & \hyperref[src:G03-02]{G03-02:3}\tabularnewline
+\bottomrule
+\end{longtable}
+}
+本项比较：七份有效作答均正确保留共享微观边状态与 binary 恢复目标；结构差异主要在后续证明和推断。
+
+得分分布：7/7满分；其余0/7有明确扣分或保留。本项不重复扣其他aspect已记的同一问题。
+
+\clearpage
+\subsection{B2 R2信息顺序（4分）}
+\label{aspect:B2}
+评审问题：信息顺序是否通过合法退化映射证明？
+
+判分要求：O2到O1到O0退化、风险/可解码集合包含；如使用跨N顺序需真正证明
+
+科学意义：退化映射只能使用可见记录与独立随机数，不能依赖真实微观输入；比较的是平均风险。
+
+可能的错误（检查项，不代表七份都犯）：单顶点看起来更丰富就宣称全空间信道更强；声称每个细记录的条件错误都更小；所有相邻 N 都单调。
+
+{\fontsize{9.0}{12.6}\selectfont
+\setlength{\tabcolsep}{2.5pt}
+\begin{longtable}{>{\raggedright\arraybackslash}p{\dimexpr 0.11\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.08\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.3\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.4\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.11\linewidth-2\tabcolsep\relax}}
+\caption{B2：七份有效交付逐项比较}\\
+\toprule
+\textbf{Run} & \textbf{得分} & \textbf{完成情况} & \textbf{实际问题 / 证据限制} & \textbf{证据}\tabularnewline
+\midrule
+\endfirsthead
+\toprule
+\textbf{Run} & \textbf{得分} & \textbf{完成情况} & \textbf{实际问题 / 证据限制} & \textbf{证据}\tabularnewline
+\midrule
+\endhead
+{}Fable03 & 4/4 & 用 min 的超可加性证明退化增风险，再由中心字符推出层级。 & 比较平均风险；未以单记录条件概率构造错误全序。 & \hyperref[src:F03-02]{F03-02:18}\newline \hyperref[src:F03-01]{F03-01:128}\tabularnewline
+{}Opus01 & 4/4 & Jensen 数据处理证明，中心 N-ality 把 irrep 降为 charge。 & 跨 N 的真顺序以可构造 garbling 为限，整数 q 两分支不能合成全序。 & \hyperref[src:O01-01]{O01-01:109}\newline \hyperref[src:O01-01]{O01-01:114}\tabularnewline
+{}Opus02 & 4/4 & Jensen 加中心 map；LP 披露小 rank 顺序例外，N\ensuremath{\geq}7 给解析 map。 & LP 通过的局部有限表与解析 N\ensuremath{\geq}7 范围需分开，不能推广所有相邻 N。 & \hyperref[src:O02-01]{O02-01:45}\newline \hyperref[src:O02-01]{O02-01:86}\tabularnewline
+{}Opus03 & 4/4 & 证明同 N hierarchy，按 likelihood vector 构造 N\ensuremath{\geq}7 的退化。 & 小 rank determinant 重合阻止一概按 N 排序。 & \hyperref[src:O03-01]{O03-01:17}\newline \hyperref[src:O03-01]{O03-01:540}\tabularnewline
+{}GPT01 & 4/4 & 同 N 中心 map，另构造 N\ensuremath{\geq}5\ensuremath{\rightarrow}SU3，并单独处理 N6。 & 未假设 SU4 比 SU3 更强；平均风险的顺序不逐记录成立。 & \hyperref[src:G01-01]{G01-01:53}\newline \hyperref[src:G01-02]{G01-02:225}\tabularnewline
+{}GPT02 & 4/4 & 中心退化保留全相关信道；另列精确跨 N 随机核和 N6 例外。 & 随机核只能读 outcome，不能借助真实(a,b)；原文对核逐输入检查。 & \hyperref[src:G02-01]{G02-01:75}\newline \hyperref[src:G02-02]{G02-02:89}\tabularnewline
+{}GPT03 & 4/4 & 中心 map 及平均 Bayes ordering，另实现 N\ensuremath{\geq}5\ensuremath{\rightarrow}SU3 的核。 & 明确单个细记录的条件错误未必比某粗记录更小。 & \hyperref[src:G03-02]{G03-02:36}\newline \hyperref[src:G03-01]{G03-01:121}\tabularnewline
+\bottomrule
+\end{longtable}
+}
+本项比较：七份都证明同 N 的 O2\ensuremath{\rightarrow}O1\ensuremath{\rightarrow}O0；跨 N 只接受有映射的关系。GPT 还构造了 N\ensuremath{\geq}5 到 SU3 的特定比较。
+
+得分分布：7/7满分；其余0/7有明确扣分或保留。本项不重复扣其他aspect已记的同一问题。
+
+\clearpage
+\subsection{B3 R2 charge等价（5分）}
+\label{aspect:B3}
+评审问题：是否得到完整的 charge 等价类与饱和？
+
+判分要求：O1(N2)=O0，N3=N6，N5=N7=N8完整整数q，N4独立类；只要求证明作答依赖的关系，不奖励错误的全N单调性
+
+科学意义：顶点度数\ensuremath{\leq}3，q\ensuremath{\in}[-3,3]，syndrome 给 q 的奇偶；模数必须连同奇偶共同分析。
+
+可能的错误（检查项，不代表七份都犯）：遗漏奇偶信息而错判 N5 仍有 alias；遗漏 N6 例外；认为 N 持续增加总能提供新 charge 信息。
+
+{\fontsize{9.0}{12.6}\selectfont
+\setlength{\tabcolsep}{2.5pt}
+\begin{longtable}{>{\raggedright\arraybackslash}p{\dimexpr 0.11\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.08\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.3\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.4\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.11\linewidth-2\tabcolsep\relax}}
+\caption{B3：七份有效交付逐项比较}\\
+\toprule
+\textbf{Run} & \textbf{得分} & \textbf{完成情况} & \textbf{实际问题 / 证据限制} & \textbf{证据}\tabularnewline
+\midrule
+\endfirsthead
+\toprule
+\textbf{Run} & \textbf{得分} & \textbf{完成情况} & \textbf{实际问题 / 证据限制} & \textbf{证据}\tabularnewline
+\midrule
+\endhead
+{}Fable03 & 5/5 & CRT 表给 lcm(2,N)，显式列 N5 与所有 N\ensuremath{\geq}7 的整数 q 类。 & N3/6 与整数 q 数据接近不代表两个信道精确等价。 & \hyperref[src:F03-02]{F03-02:69}\newline \hyperref[src:F03-02]{F03-02:82}\tabularnewline
+{}Opus01 & 5/5 & 推导 M=lcm(2,N)，列四类并仅模拟不同 charge 类。 & 只 N5/7/8 完全等价，N3 和 N5 数值相近不能合并。 & \hyperref[src:O01-01]{O01-01:119}\newline \hyperref[src:O01-01]{O01-01:127}\tabularnewline
+{}Opus02 & 5/5 & 逐配置 likelihood 相同证明等价，并列整数 q 对两个模记录的退化。 & M\ensuremath{\geq}7 的判断使用有限 q 支持，不能推广到更高价顶点。 & \hyperref[src:O02-01]{O02-01:54}\tabularnewline
+{}Opus03 & 5/5 & 由 CRT 与 degree\ensuremath{\leq}3 推四类，以 divergence 解释整数 charge。 & 知道 divergence 仍不知道 n；中性对信息继续缺失。 & \hyperref[src:O03-01]{O03-01:489}\newline \hyperref[src:O03-01]{O03-01:498}\tabularnewline
+{}GPT01 & 5/5 & 证明等价是每个微观态条件下的重标记，保留全部空间后验。 & 有限尺寸风险在等价类中严格相同；不同证明界偶然相同另当别论。 & \hyperref[src:G01-02]{G01-02:46}\newline \hyperref[src:G01-02]{G01-02:51}\tabularnewline
+{}GPT02 & 5/5 & 明确 N5 同奇偶 q 不可差非零5倍，N6 保留\ensuremath{\pm}3 alias。 & 不据连续 N 宣称单调；已避开最常见 N5/N6 混淆。 & \hyperref[src:G02-02]{G02-02:25}\tabularnewline
+{}GPT03 & 5/5 & CRT 四类表并说明联合空间 law 也精确等价。 & 这是信道等价，不只是边界拟合误差内相近。 & \hyperref[src:G03-02]{G03-02:57}\newline \hyperref[src:G03-02]{G03-02:72}\tabularnewline
+\bottomrule
+\end{longtable}
+}
+本项比较：七份均准确给出四类：N2；N3/6；N4；N5/7/8。先前讨论的 N5 精确性与 N\ensuremath{\geq}7 饱和，并非这些 run 的共同遗漏。
+
+得分分布：7/7满分；其余0/7有明确扣分或保留。本项不重复扣其他aspect已记的同一问题。
+
+\clearpage
+\subsection{B4 R2特殊rank（2分）}
+\label{aspect:B4}
+评审问题：低 rank 的表示重合和局部概率是否正确？
+
+判分要求：使用的irrep概率与小N例外正确，尤其SU2及N4 determinant coincidences；避免O2(N2)=O0误判
+
+科学意义：SU2 自共轭和 determinant-column 重合会改变可观测信息，不能套泛 N 表。
+
+可能的错误（检查项，不代表七份都犯）：把 SU2 的 O2 当 O0；漏掉 N4 纯三次返回共轭基本表示；把 N3 奇数 singlet 当零次 arrivals。
+
+{\fontsize{9.0}{12.6}\selectfont
+\setlength{\tabcolsep}{2.5pt}
+\begin{longtable}{>{\raggedright\arraybackslash}p{\dimexpr 0.11\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.08\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.3\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.4\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.11\linewidth-2\tabcolsep\relax}}
+\caption{B4：七份有效交付逐项比较}\\
+\toprule
+\textbf{Run} & \textbf{得分} & \textbf{完成情况} & \textbf{实际问题 / 证据限制} & \textbf{证据}\tabularnewline
+\midrule
+\endfirsthead
+\toprule
+\textbf{Run} & \textbf{得分} & \textbf{完成情况} & \textbf{实际问题 / 证据限制} & \textbf{证据}\tabularnewline
+\midrule
+\endhead
+{}Fable03 & 2/2 & 列 SU2 spin law 及 N4纯三次额外重合，独立 coarsening 检查。 & SU2 取向可积分，不意味丢掉 n=0/2、1/3 额外区分。 & \hyperref[src:F03-02]{F03-02:94}\tabularnewline
+{}Opus01 & 2/2 & 给 SU2全部四种 degree 定律，等价 noisy degree record。 & 泛 N garbling 需同时处理小 rank 重合；使用表与核已有检查。 & \hyperref[src:O01-01]{O01-01:140}\tabularnewline
+{}Opus02 & 2/2 & SU2 degree law、低 rank LP和一般 irreps 表联合验证。 & 不能把泛 N 的唯一标签结构直接套到 N3/4/6。 & \hyperref[src:O02-01]{O02-01:26}\tabularnewline
+{}Opus03 & 2/2 & 最高权向量独立核验，并列 N2至6 的 determinant coincidences。 & 精确低 rank 表是 posterior 和跨 N 比较的前提，不可只用大 N 近似。 & \hyperref[src:O03-01]{O03-01:506}\tabularnewline
+{}GPT01 & 2/2 & SU2 spin table、Pieri/Weyl规则及独立 character 检查。 & 明确 O2(2)\ensuremath{\ne}O0，并保留奇 syndrome 下的 N3 singlet。 & \hyperref[src:G01-02]{G01-02:64}\tabularnewline
+{}GPT02 & 2/2 & Pieri/Weyl与独立 tensor公式检查低 rank，N4路径常数另列。 & N4纯三次返回共轭基本表示影响 O2常数；不能用普通 mixed-only 常数。 & \hyperref[src:G02-02]{G02-02:173}\tabularnewline
+{}GPT03 & 2/2 & determinant列重合与 SU2概率精算，odd syndrome 不丢弃。 & N3三次 singlet 与零次 singlet 不是同一个(s,R)记录。 & \hyperref[src:G03-02]{G03-02:142}\tabularnewline
+\bottomrule
+\end{longtable}
+}
+本项比较：七份的所用低 rank 定律均获支持；SU2 是有额外次数信息的 orientation-blind 记录，绝非 syndrome-only。
+
+得分分布：7/7满分；其余0/7有明确扣分或保留。本项不重复扣其他aspect已记的同一问题。
+
+\clearpage
+\section{R3：大N定理与证明链条}
+\subsection{C1 R3 statement（3分）}
+\label{aspect:C1}
+评审问题：是否给出了覆盖所有 N\ensuremath{\geq}N0、所有噪声率 p 的明确大 N 可解码定理？
+
+判分要求：明确整数N0、所有N>=N0和所有p、L趋无穷的风险结论；计算域和端点完整
+
+科学意义：R3 要求的是一个充分整数及完整量词，不是某几个 N、p 或有限尺寸上的成功记录。较小 N0 衡量成果强度，不是满足要求与否的唯一标准。
+
+可能的错误（检查项，不代表七份都犯）：只在 p=1/2 或稀疏噪声区证明，却声称覆盖全 p。；把数值测试最小 N 当成定理 N0，或漏掉 p=0,1。；将 N0 误称最小临界 rank。
+
+{\fontsize{9.0}{12.6}\selectfont
+\setlength{\tabcolsep}{2.5pt}
+\begin{longtable}{>{\raggedright\arraybackslash}p{\dimexpr 0.11\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.08\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.3\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.4\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.11\linewidth-2\tabcolsep\relax}}
+\caption{C1：七份有效交付逐项比较}\\
+\toprule
+\textbf{Run} & \textbf{得分} & \textbf{完成情况} & \textbf{实际问题 / 证据限制} & \textbf{证据}\tabularnewline
+\midrule
+\endfirsthead
+\toprule
+\textbf{Run} & \textbf{得分} & \textbf{完成情况} & \textbf{实际问题 / 证据限制} & \textbf{证据}\tabularnewline
+\midrule
+\endhead
+{}Fable03 & 3/3 & 最终定理为 N0=19，覆盖所有更大 N 与全部 p；端点按确定的 binary error 处理。 & 正文保留先前 memory-20\ensuremath{\rightarrow}20 的过程；最终 memory-22\ensuremath{\rightarrow}19 已明确，不应将过程值当最终冲突。 & \hyperref[src:F03-02]{F03-02:171}\newline \hyperref[src:F03-02]{F03-02:237}\tabularnewline
+{}Opus01 & 3/3 & 明确给出 N0=15、所有 N\ensuremath{\geq}15 和 p\ensuremath{\in}[0,1]，并处理确定性端点。 & 本项无量词缺口；15 不表示14或更小 N 不可解码。 & \hyperref[src:O01-02]{O01-02:95}\tabularnewline
+{}Opus02 & 3/3 & 开篇陈述 N0=15 的全 p 指数可解码定理，说明误报参数随 N 单调减小。 & 本项完整；原文说15是本方法的最小值，并未声称真实最小值。 & \hyperref[src:O02-02]{O02-02:1}\tabularnewline
+{}Opus03 & 3/3 & 最终采用 N0=15，目标量词与尺寸极限齐全。 & 本项 statement 完整；全 p 算术认证的原交付缺口单列 C4。 & \hyperref[src:O03-02]{O03-02:134}\tabularnewline
+{}GPT01 & 3/3 & 明确证明 N0=13；N 更大时路径因子减小，p=0,1 另行精确处理。 & 本项无缺口；13 是显式充分值。 & \hyperref[src:G01-02]{G01-02:194}\tabularnewline
+{}GPT02 & 3/3 & 基础证明得到14，补充 large\_N\_13.md 将最终充分整数改进为13，全 p 量词保持完整。 & 阅读时须纳入最终 N13 补充文件，不能只按基础 proofs.md 的14记录。 & \hyperref[src:G02-02]{G02-02:130}\newline \hyperref[src:G02-03]{G02-03:132}\tabularnewline
+{}GPT03 & 3/3 & 明确给出 N0=14，低高噪声分别控制，端点单列。 & 本项无缺口；14 是方法给出的充分值。 & \hyperref[src:G03-02]{G03-02:189}\tabularnewline
+\bottomrule
+\end{longtable}
+}
+本项比较：七份均满足 R3 的 statement 要求。最终充分整数依次为19、15、15、15、13、13、14；不同数值反映证明松紧，并不互相矛盾。
+
+得分分布：7/7满分；其余0/7有明确扣分或保留。本项不重复扣其他aspect已记的同一问题。
+
+\clearpage
+\subsection{C2 R3见证/decoder（5分）}
+\label{aspect:C2}
+评审问题：失败见证是否成立，所构造 decoder 或直接 Bayes 论证是否只使用可见观测？
+
+判分要求：合法辅助规则及可行见证，或等价有效的直接Bayes/posterior论证；失败到贯穿分量及所需条件有效，避免把隐藏误当充分条件
+
+科学意义：必须先建立一个合法可执行规则或有效后验不等式，再将逻辑错误转成贯穿差分分量。只有局部歧义而没有选择条件，不能证明 decoder 会选错。
+
+可能的错误（检查项，不代表七份都犯）：让 decoder 使用真实箭头或真实 arrival 数。；把一次 singlet/隐藏事件直接等同逻辑失败。；翻转任意几何子路径就假定仍可行，而不是翻转完整差分分量。；以 MAP 单配置代替最优逻辑扇区而不说明它只是辅助规则。
+
+{\fontsize{9.0}{12.6}\selectfont
+\setlength{\tabcolsep}{2.5pt}
+\begin{longtable}{>{\raggedright\arraybackslash}p{\dimexpr 0.11\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.08\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.3\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.4\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.11\linewidth-2\tabcolsep\relax}}
+\caption{C2：七份有效交付逐项比较}\\
+\toprule
+\textbf{Run} & \textbf{得分} & \textbf{完成情况} & \textbf{实际问题 / 证据限制} & \textbf{证据}\tabularnewline
+\midrule
+\endfirsthead
+\toprule
+\textbf{Run} & \textbf{得分} & \textbf{完成情况} & \textbf{实际问题 / 证据限制} & \textbf{证据}\tabularnewline
+\midrule
+\endhead
+{}Fable03 & 5/5 & 在合法随机降级后的 degree record 上构造 MAP-support 辅助 decoder；完整分量翻转可行，失败产生贯穿分量及 likelihood ratio\ensuremath{\geq}1。 & 未发现本项科学错误；应按其实际证明路线评价。 & \hyperref[src:F03-02]{F03-02:183}\tabularnewline
+{}Opus01 & 5/5 & 用可见 irrep 随机降级为 degree channel；MAP-configuration 的分量翻转与评分不等式给出失败见证。 & 未发现本项科学错误；应按其实际证明路线评价。 & \hyperref[src:O01-02]{O01-02:103}\tabularnewline
+{}Opus02 & 5/5 & 直接对错误逻辑扇区 posterior 作 injective polymer 映射及 fractional-moment 上界；不必另造 GPT 式辅助 decoder。 & 未发现本项科学错误；应按其实际证明路线评价。 & \hyperref[src:O02-02]{O02-02:8}\tabularnewline
+{}Opus03 & 5/5 & 明确给出随机降级核和 MAP-configuration；差分度数0/2、分量可行性及比值条件形成完整链条。 & 未发现本项科学错误；应按其实际证明路线评价。 & \hyperref[src:O03-02]{O03-02:163}\tabularnewline
+{}GPT01 & 5/5 & 按观测给出的最小相容计数 m 构造加权可行 decoder；真实配置可行，完整贯穿分量翻转及 W 比值\ensuremath{\geq}1。 & 未发现本项科学错误；应按其实际证明路线评价。 & \hyperref[src:G01-02]{G01-02:104}\tabularnewline
+{}GPT02 & 5/5 & 按同一可见计数约束构造 min/max-cardinality decoder；失败见证同时满足局部隐藏与半路径占据条件。 & 未发现本项科学错误；应按其实际证明路线评价。 & \hyperref[src:G02-02]{G02-02:138}\tabularnewline
+{}GPT03 & 5/5 & minimum-cardinality 粗计数 decoder；贯穿差分分量至少半数边真实 active，11 顶点须隐藏。 & 未发现本项科学错误；应按其实际证明路线评价。 & \hyperref[src:G03-02]{G03-02:213}\tabularnewline
+\bottomrule
+\end{longtable}
+}
+本项比较：七份见证/decoder 论证均有实质内容。Opus02 的直接 posterior 方法是有效替代，不能因未复现 GPT01 的加权 decoder 扣分。
+
+得分分布：7/7满分；其余0/7有明确扣分或保留。本项不重复扣其他aspect已记的同一问题。
+
+\clearpage
+\subsection{C3 R3相关性（6分）}
+\label{aspect:C3}
+评审问题：单条路径概率是否有效处理共享箭头、侧边和 chord 相关性？
+
+判分要求：合法处理共享边取向、侧边/chord及readout条件独立；矩阵、随机粗粒化、分部Cauchy-Schwarz等有效替代同等接受
+
+科学意义：readout 只在完整微观边状态给定后才逐顶点独立。若只固定 binary support，邻点仍共享箭头；路径外 chord 还可能触碰两个路径顶点。错误独立化会改变指数增长因子。
+
+可能的错误（检查项，不代表七份都犯）：将共享边两端取向独立重抽。；无条件把各顶点隐藏概率相乘。；只处理侧边出现一次，漏掉 chord 出现两次。；声称用 transfer matrix 就自动处理了所有外部相关性。
+
+{\fontsize{9.0}{12.6}\selectfont
+\setlength{\tabcolsep}{2.5pt}
+\begin{longtable}{>{\raggedright\arraybackslash}p{\dimexpr 0.11\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.08\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.3\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.4\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.11\linewidth-2\tabcolsep\relax}}
+\caption{C3：七份有效交付逐项比较}\\
+\toprule
+\textbf{Run} & \textbf{得分} & \textbf{完成情况} & \textbf{实际问题 / 证据限制} & \textbf{证据}\tabularnewline
+\midrule
+\endfirsthead
+\toprule
+\textbf{Run} & \textbf{得分} & \textbf{完成情况} & \textbf{实际问题 / 证据限制} & \textbf{证据}\tabularnewline
+\midrule
+\endhead
+{}Fable03 & 6/6 & 先以可见随机降级消除取向依赖；Bhattacharyya overlap 及按实际侧边分组平均处理一次/两次出现，再用占据矩阵求和。 & 未发现独立化错误；替代方法不是遗漏箭头矩阵。 & \hyperref[src:F03-02]{F03-02:204}\tabularnewline
+{}Opus01 & 6/6 & 同样用合法 orientation-blind channel；平方根 likelihood overlap、chord Cauchy-Schwarz 和占据矩阵给出路径界。 & 未发现独立化错误；替代方法不是遗漏箭头矩阵。 & \hyperref[src:O01-02]{O01-02:111}\tabularnewline
+{}Opus02 & 6/6 & 一般\ensuremath{\theta}后验分数矩与readout overlap；chord用Cauchy-Schwarz、单端用Jensen，Perron根控制模式和。 & 未发现独立化错误；替代方法不是遗漏箭头矩阵。 & \hyperref[src:O02-02]{O02-02:19}\tabularnewline
+{}Opus03 & 6/6 & 随机降级后 likelihood 只依赖 degree；先精确求占据模式，再对同一第三边的共享因子分组平均。 & 未发现独立化错误；替代方法不是遗漏箭头矩阵。 & \hyperref[src:O03-02]{O03-02:181}\tabularnewline
+{}GPT01 & 6/6 & 固定路径外微观状态后用 \ensuremath{\pm} 取向矩阵及算子范数；再按第三边出现1/2次处理 chord，得到较紧 \ensuremath{\eta}N(p)。 & 未发现独立化错误；替代方法不是遗漏箭头矩阵。 & \hyperref[src:G01-02]{G01-02:142}\tabularnewline
+{}GPT02 & 6/6 & 基础取向范数和 chord 界已完整；N13 改进用正 cycle expansion、Ihara-Bass 及解析 tail 控制残余取向/环相关性。 & 未发现独立化错误；替代方法不是遗漏箭头矩阵。 & \hyperref[src:G02-02]{G02-02:149}\tabularnewline
+{}GPT03 & 6/6 & 不使用箭头矩阵；蜂窝二分图分组及二阶矩 Cauchy-Schwarz 控制共享微观边，再用占据 Chernoff 矩阵。 & 未发现独立化错误；替代方法不是遗漏箭头矩阵。 & \hyperref[src:G03-02]{G03-02:227}\tabularnewline
+\bottomrule
+\end{longtable}
+}
+本项比较：七份都真正处理了相关性，方法各异。GPT01/02 保留取向得到更强充分值；garbling 和二分图二阶矩路线更保守，但科学上有效。
+
+得分分布：7/7满分；其余0/7有明确扣分或保留。本项不重复扣其他aspect已记的同一问题。
+
+\clearpage
+\subsection{C4 R3指数界与认证（4分）}
+\label{aspect:C4}
+评审问题：路径界如何变成 L\ensuremath{\rightarrow}\ensuremath{\infty} 的严格结论，全 p 的增长因子<1 是否有证书？
+
+判分要求：固定路径概率、路径数、长度下界、全p严格因子<1和有限前因子；仅数值优化未认证全局最大需保留
+
+科学意义：必须同时控制路径数量、最小贯穿长度、有限前因子与严格余量。浮点最大值低于1或扫描很多 p 点，只是证据，不自动覆盖所有连续 p。
+
+可能的错误（检查项，不代表七份都犯）：将有限网格/浮点 optimizer 的最大值直接视为全区间严格上界。；用精确 \ensuremath{\mu} 的渐近定义就假设对所有长度有同一有限前因子，未留 \ensuremath{\epsilon} 余量。；只报告增长因子<1，未完成几何级数或长度下界。；把审阅者后来补的证书算作原 agent 已提交。
+
+{\fontsize{9.0}{12.6}\selectfont
+\setlength{\tabcolsep}{2.5pt}
+\begin{longtable}{>{\raggedright\arraybackslash}p{\dimexpr 0.11\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.08\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.3\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.4\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.11\linewidth-2\tabcolsep\relax}}
+\caption{C4：七份有效交付逐项比较}\\
+\toprule
+\textbf{Run} & \textbf{得分} & \textbf{完成情况} & \textbf{实际问题 / 证据限制} & \textbf{证据}\tabularnewline
+\midrule
+\endfirsthead
+\toprule
+\textbf{Run} & \textbf{得分} & \textbf{完成情况} & \textbf{实际问题 / 证据限制} & \textbf{证据}\tabularnewline
+\midrule
+\endhead
+{}Fable03 & 3.5/4 & 有长度\ensuremath{\geq}2L\ensuremath{-}1、L 个起点及几何级数；最终 \ensuremath{\lambda}=1.876764、N19。后来有理数覆盖支持 squared growth\ensuremath{\leq}0.997854。 & 原提交 h19 为浮点打印；memory-22 大型证明本轮未重建，原证据留半分认证/可复核性保留。后来可用 \ensuremath{\lambda}>已知精确 \ensuremath{\mu} 独立替代大型计数。 & \hyperref[src:F03-02]{F03-02:224}\tabularnewline
+{}Opus01 & 4/4 & \ensuremath{\mu}+\ensuremath{\delta} 的计数前因子、几何级数及原附有理数区间 cover 齐全；既有复核 squared growth\ensuremath{\leq}0.998799。 & 原交付具严格认证；数值余量接近1意味着界保守，不构成证明缺口。 & \hyperref[src:O01-02]{O01-02:122}\tabularnewline
+{}Opus02 & 4/4 & 路径计数与指数衰减完整；原提供120-bit interval arithmetic 的全 p cover，N15 单调覆盖更大 N。 & 原交付具区间认证；不能用“网格点多”替代其 interval cover。 & \hyperref[src:O02-02]{O02-02:26}\tabularnewline
+{}Opus03 & 3/4 & 计数与几何级数成立；后来有理数区间覆盖支持 squared growth\ensuremath{\leq}0.996797。 & 原 r3\_bound.py 使用200001点网格加浮点优化，没有全 p 严格认证；这是原交付认证缺口，扣1分，不是已发现反例。 & \hyperref[src:O03-02]{O03-02:199}\newline \hyperref[src:O03-03]{O03-03:31}\tabularnewline
+{}GPT01 & 4/4 & 三段有理数证书覆盖全 p，最坏段 growth<0.999129；端点与 \ensuremath{\mu}+\ensuremath{\epsilon} 余量齐全。 & 原认证完整；指数上界可能在实用尺寸上很松。 & \hyperref[src:G01-02]{G01-02:132}\tabularnewline
+{}GPT02 & 4/4 & N13 补充的 cycle 因子有精确 return-walk 项及解析 tail；有理数全 p 证书 growth<0.999888。 & 原认证完整但技术较繁；小 hexagon 枚举是验证例，不能替代一般 tail 证明。 & \hyperref[src:G02-02]{G02-02:208}\newline \hyperref[src:G02-03]{G02-03:62}\tabularnewline
+{}GPT03 & 4/4 & 给出有理数全 p 证书、高 p 单独分析和 \ensuremath{\mu}+\ensuremath{\epsilon}；既有核验 growth<0.999950。 & 原认证完整；接近1的统一因子允许很长 crossover。 & \hyperref[src:G03-02]{G03-02:278}\tabularnewline
+\bottomrule
+\end{longtable}
+}
+本项比较：冻结原提交分数为 Fable03 3.5/4、Opus03 3/4，其余4/4。已有独立核验支持七个定理，但不能追溯补成原交付完整证书；平方与未平方因子不直接排名。
+
+得分分布：5/7满分；其余2/7有明确扣分或保留。本项不重复扣其他aspect已记的同一问题。
+
+\clearpage
+\subsection{C5 R3结论范围（2分）}
+\label{aspect:C5}
+评审问题：是否正确限定充分 N0、概率上界与实际相图/临界指数的关系？
+
+判分要求：清楚充分N0不是最小/相界，r>=1不是不可解码；证据可复核；更小N0另列成果强度
+
+科学意义：严格可解码子集的边界、充分 rank 和指数上界都可能保守。证明失败不等于物理不可解码，较大的充分 N0 也不是错误。
+
+可能的错误（检查项，不代表七份都犯）：r\ensuremath{\geq}1 就宣布不可解码。；将充分界根当作真实相变边界。；把指数上界中的衰减率称为真实临界指数。；将平均 Bayes 风险比较误读成逐记录失败事件包含。
+
+{\fontsize{9.0}{12.6}\selectfont
+\setlength{\tabcolsep}{2.5pt}
+\begin{longtable}{>{\raggedright\arraybackslash}p{\dimexpr 0.11\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.08\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.3\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.4\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.11\linewidth-2\tabcolsep\relax}}
+\caption{C5：七份有效交付逐项比较}\\
+\toprule
+\textbf{Run} & \textbf{得分} & \textbf{完成情况} & \textbf{实际问题 / 证据限制} & \textbf{证据}\tabularnewline
+\midrule
+\endfirsthead
+\toprule
+\textbf{Run} & \textbf{得分} & \textbf{完成情况} & \textbf{实际问题 / 证据限制} & \textbf{证据}\tabularnewline
+\midrule
+\endhead
+{}Fable03 & 2/2 & 区分 N19 定理与 N\ensuremath{\geq}3 的数值现象，风险排序以平均 Bayes 风险表述。 & 本项未发现越界宣称；其他相图外推问题在 A2/A3 评价，避免重复扣分。 & \hyperref[src:F03-02]{F03-02:229}\tabularnewline
+{}Opus01 & 2/2 & 明确15是本方法上界，主动丢掉取向信息；较小 N 全 p 只是数值建议。 & 本项未发现越界宣称；其他相图外推问题在 A2/A3 评价，避免重复扣分。 & \hyperref[src:O01-02]{O01-02:132}\tabularnewline
+{}Opus02 & 2/2 & 明确15是当前证明方法给出的充分值；N\ensuremath{\geq}3全 p 的数值结论未冒充定理。 & 本项未发现越界宣称；其他相图外推问题在 A2/A3 评价，避免重复扣分。 & \hyperref[src:O02-02]{O02-02:39}\tabularnewline
+{}Opus03 & 2/2 & 将丢弃的信息、已证 N15 与较小 N 数值外推分开。 & 本项未发现越界宣称；其他相图外推问题在 A2/A3 评价，避免重复扣分。 & \hyperref[src:O03-02]{O03-02:218}\tabularnewline
+{}GPT01 & 2/2 & 明确13不声称最小，充分界根不等于实际相边界，辅助风险控制最优平均风险。 & 本项未发现越界宣称；其他相图外推问题在 A2/A3 评价，避免重复扣分。 & \hyperref[src:G01-02]{G01-02:208}\tabularnewline
+{}GPT02 & 2/2 & 明确增长因子条件仅充分，不将等号解释成相边界。 & 本项未发现越界宣称；其他相图外推问题在 A2/A3 评价，避免重复扣分。 & \hyperref[src:G02-02]{G02-02:219}\tabularnewline
+{}GPT03 & 2/2 & 明确14非最小，并指出证明上界在模拟尺寸可能不实用。 & 本项未发现越界宣称；其他相图外推问题在 A2/A3 评价，避免重复扣分。 & \hyperref[src:G03-02]{G03-02:313}\tabularnewline
+\bottomrule
+\end{longtable}
+}
+本项比较：七份对 R3 结论范围总体克制。这里的满分不等于相图已完整解决，更不等于正式难度校准通过。
+
+得分分布：7/7满分；其余0/7有明确扣分或保留。本项不重复扣其他aspect已记的同一问题。
+
+\clearpage
+\section{R4：精确后验、数值范围与解码}
+\subsection{D1 R4联合partition sum（6分）}
+\label{aspect:D1}
+评审问题：是否计算了正确的联合 partition sum，并按逻辑扇区求和？
+
+判分要求：保留同一边两端共享取向，正确局部概率和逻辑sector；不是把顶点取向独立化或求MAP代替sector posterior
+
+科学意义：最优逻辑解码比较的是两个逻辑扇区的总后验质量。共享边取向若被拆开，或只寻找单个最可能 error，都会改变题目指定的概率模型。
+
+可能的错误（检查项，不代表七份都犯）：把同一条边在两个端点的取向独立抽样。；用逐顶点局部似然代替全局联合求和。；把最可能微观配置的 MAP 当作逻辑扇区后验。；漏掉 top-boundary 逻辑 parity。
+
+{\fontsize{9.0}{12.6}\selectfont
+\setlength{\tabcolsep}{2.5pt}
+\begin{longtable}{>{\raggedright\arraybackslash}p{\dimexpr 0.11\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.08\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.3\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.4\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.11\linewidth-2\tabcolsep\relax}}
+\caption{D1：七份有效交付逐项比较}\\
+\toprule
+\textbf{Run} & \textbf{得分} & \textbf{完成情况} & \textbf{实际问题 / 证据限制} & \textbf{证据}\tabularnewline
+\midrule
+\endfirsthead
+\toprule
+\textbf{Run} & \textbf{得分} & \textbf{完成情况} & \textbf{实际问题 / 证据限制} & \textbf{证据}\tabularnewline
+\midrule
+\endhead
+{}Fable03 & 6/6 & 三态联合求和，保留共享取向并按逻辑 parity 分出 Z0、Z1。 & 本项未发现具体错误；结论限于已审阅材料和检查范围。 & \hyperref[src:F03-03]{F03-03:1}\newline \hyperref[src:REV-01]{REV-01:1}\tabularnewline
+{}Opus01 & 6/6 & 三态联合求和，保留共享取向并按逻辑 parity 分出 Z0、Z1。 & 本项未发现具体错误；结论限于已审阅材料和检查范围。 & \hyperref[src:O01-03]{O01-03:1}\newline \hyperref[src:REV-02]{REV-02:1}\tabularnewline
+{}Opus02 & 6/6 & 三态联合求和，保留共享取向并按逻辑 parity 分出 Z0、Z1。 & 本项未发现具体错误；结论限于已审阅材料和检查范围。 & \hyperref[src:O02-04]{O02-04:43}\newline \hyperref[src:REV-03]{REV-03:1}\tabularnewline
+{}Opus03 & 6/6 & 三态联合求和，保留共享取向并按逻辑 parity 分出 Z0、Z1。 & 本项未发现具体错误；结论限于已审阅材料和检查范围。 & \hyperref[src:O03-05]{O03-05:1}\newline \hyperref[src:REV-04]{REV-04:1}\tabularnewline
+{}GPT01 & 6/6 & 三态联合求和，保留共享取向并按逻辑 parity 分出 Z0、Z1。 & 本项未发现具体错误；结论限于已审阅材料和检查范围。 & \hyperref[src:G01-03]{G01-03:232}\newline \hyperref[src:REV-05]{REV-05:1}\tabularnewline
+{}GPT02 & 6/6 & 三态联合求和，保留共享取向并按逻辑 parity 分出 Z0、Z1。 & 本项未发现具体错误；结论限于已审阅材料和检查范围。 & \hyperref[src:G02-04]{G02-04:175}\newline \hyperref[src:REV-06]{REV-06:1}\tabularnewline
+{}GPT03 & 6/6 & 三态联合求和，保留共享取向并按逻辑 parity 分出 Z0、Z1。 & 本项未发现具体错误；结论限于已审阅材料和检查范围。 & \hyperref[src:G03-03]{G03-03:182}\newline \hyperref[src:REV-07]{REV-07:1}\tabularnewline
+\bottomrule
+\end{longtable}
+}
+本项比较：本项七份同分；主要差异不在 partition sum 的定义，而在极端数值范围和较大尺寸近似的证据。
+
+得分分布：7/7满分；其余0/7有明确扣分或保留。本项不重复扣其他aspect已记的同一问题。
+
+\clearpage
+\subsection{D2 R4精确算法（3分）}
+\label{aspect:D2}
+评审问题：规定小尺寸 L\ensuremath{\leq}4、N\ensuremath{\leq}8 是否采用精确或认证算法？
+
+判分要求：L<=4,N<=8按要求精确或认证，解释收缩/枚举及复杂度；较大L近似不污染小尺寸承诺
+
+科学意义：小尺寸 exact API 是可自动核验的交付物。算法应保留全部配置，复杂度虽可随宽度指数增长，却不需要先证明模型是自由费米子。
+
+可能的错误（检查项，不代表七份都犯）：把截断 MPS 的结果称为无截断精确结果。；把大尺寸近似与规定小尺寸 API 混为一谈。；以未实现的 Pfaffian/free-fermion 理论代替可运行算法。
+
+{\fontsize{9.0}{12.6}\selectfont
+\setlength{\tabcolsep}{2.5pt}
+\begin{longtable}{>{\raggedright\arraybackslash}p{\dimexpr 0.11\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.08\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.3\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.4\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.11\linewidth-2\tabcolsep\relax}}
+\caption{D2：七份有效交付逐项比较}\\
+\toprule
+\textbf{Run} & \textbf{得分} & \textbf{完成情况} & \textbf{实际问题 / 证据限制} & \textbf{证据}\tabularnewline
+\midrule
+\endfirsthead
+\toprule
+\textbf{Run} & \textbf{得分} & \textbf{完成情况} & \textbf{实际问题 / 证据限制} & \textbf{证据}\tabularnewline
+\midrule
+\endhead
+{}Fable03 & 3/3 & 规定 L\ensuremath{\leq}4 的 API 无截断精确收缩；复杂度随宽度指数增长。 & 本项未发现具体错误；结论限于已审阅材料和检查范围。 & \hyperref[src:F03-04]{F03-04:25}\tabularnewline
+{}Opus01 & 3/3 & 规定 L\ensuremath{\leq}4 的 API 无截断精确收缩；复杂度随宽度指数增长。 & 本项未发现具体错误；结论限于已审阅材料和检查范围。 & \hyperref[src:O01-01]{O01-01:67}\tabularnewline
+{}Opus02 & 3/3 & 规定 L\ensuremath{\leq}4 的 API 无截断精确收缩；复杂度随宽度指数增长。 & L>9公开API切至MPS；小尺寸仍exact，no-truncation措辞须限定。 & \hyperref[src:O02-05]{O02-05:18}\tabularnewline
+{}Opus03 & 3/3 & 规定 L\ensuremath{\leq}4 的 API 无截断精确收缩；复杂度随宽度指数增长。 & 本项未发现具体错误；结论限于已审阅材料和检查范围。 & \hyperref[src:O03-06]{O03-06:12}\tabularnewline
+{}GPT01 & 3/3 & 规定 L\ensuremath{\leq}4 的 API 无截断精确收缩；复杂度随宽度指数增长。 & 本项未发现具体错误；结论限于已审阅材料和检查范围。 & \hyperref[src:G01-03]{G01-03:279}\tabularnewline
+{}GPT02 & 3/3 & 规定 L\ensuremath{\leq}4 的 API 无截断精确收缩；复杂度随宽度指数增长。 & 本项未发现具体错误；结论限于已审阅材料和检查范围。 & \hyperref[src:G02-04]{G02-04:314}\tabularnewline
+{}GPT03 & 3/3 & 规定 L\ensuremath{\leq}4 的 API 无截断精确收缩；复杂度随宽度指数增长。 & 本项未发现具体错误；结论限于已审阅材料和检查范围。 & \hyperref[src:G03-03]{G03-03:267}\tabularnewline
+\bottomrule
+\end{longtable}
+}
+本项比较：全部满足原题小尺寸算法要求。Opus02 的公开 API 在 L>9 切至 MPS，精确措辞需要限定到具体尺寸。
+
+得分分布：7/7满分；其余0/7有明确扣分或保留。本项不重复扣其他aspect已记的同一问题。
+
+\clearpage
+\subsection{D3 R4独立核验（5分）}
+\label{aspect:D3}
+评审问题：独立核验能否发现共同的模型或实现错误？
+
+判分要求：与不复用同一核心错误的独立枚举/参考比较，规定精度和coverage有证据；保留已有外部heldout检查的限定
+
+科学意义：两个函数若共用同一错误核心，相互吻合并不能证明正确。枚举、不同消元顺序、独立 irrep 与几何实现可降低这种风险。
+
+可能的错误（检查项，不代表七份都犯）：只比较同一代码的两个包装接口。；把后验归一化检验当作完整正确性检验。；把有限测试通过表述为所有记录均正确。
+
+{\fontsize{9.0}{12.6}\selectfont
+\setlength{\tabcolsep}{2.5pt}
+\begin{longtable}{>{\raggedright\arraybackslash}p{\dimexpr 0.11\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.08\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.3\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.4\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.11\linewidth-2\tabcolsep\relax}}
+\caption{D3：七份有效交付逐项比较}\\
+\toprule
+\textbf{Run} & \textbf{得分} & \textbf{完成情况} & \textbf{实际问题 / 证据限制} & \textbf{证据}\tabularnewline
+\midrule
+\endfirsthead
+\toprule
+\textbf{Run} & \textbf{得分} & \textbf{完成情况} & \textbf{实际问题 / 证据限制} & \textbf{证据}\tabularnewline
+\midrule
+\endhead
+{}Fable03 & 5/5 & 提交独立小格检查；外部常规后验检查210/210通过。 & 210例中140例属O1/O2、70例为额外O0；不代表全部记录。 & \hyperref[src:F03-05]{F03-05:18}\newline \hyperref[src:REV-01]{REV-01:1}\tabularnewline
+{}Opus01 & 5/5 & 提交独立小格检查；外部常规后验检查210/210通过。 & 210例中140例属O1/O2、70例为额外O0；不代表全部记录。 & \hyperref[src:O01-04]{O01-04:8}\newline \hyperref[src:REV-02]{REV-02:1}\tabularnewline
+{}Opus02 & 5/5 & 提交独立小格检查；外部常规后验检查210/210通过。 & 210例中140例属O1/O2、70例为额外O0；不代表全部记录。 & \hyperref[src:O02-06]{O02-06:21}\newline \hyperref[src:REV-03]{REV-03:1}\tabularnewline
+{}Opus03 & 5/5 & 提交独立小格检查；外部常规后验检查210/210通过。 & 210例中140例属O1/O2、70例为额外O0；不代表全部记录。 & \hyperref[src:O03-07]{O03-07:7}\newline \hyperref[src:REV-04]{REV-04:1}\tabularnewline
+{}GPT01 & 5/5 & 提交独立小格检查；外部常规后验检查210/210通过。 & 210例中140例属O1/O2、70例为额外O0；不代表全部记录。 & \hyperref[src:G01-04]{G01-04:1}\newline \hyperref[src:REV-05]{REV-05:1}\tabularnewline
+{}GPT02 & 5/5 & 提交独立小格检查；外部常规后验检查210/210通过。 & 210例中140例属O1/O2、70例为额外O0；不代表全部记录。 & \hyperref[src:G02-05]{G02-05:1}\newline \hyperref[src:REV-06]{REV-06:1}\tabularnewline
+{}GPT03 & 5/5 & 提交独立小格检查；外部常规后验检查210/210通过。 & 210例中140例属O1/O2、70例为额外O0；不代表全部记录。 & \hyperref[src:G03-04]{G03-04:1}\newline \hyperref[src:REV-07]{REV-07:1}\tabularnewline
+\bottomrule
+\end{longtable}
+}
+本项比较：全部常规检查通过，支持已测试范围内的正确性；不等于对所有合法记录的穷尽证明。
+
+得分分布：7/7满分；其余0/7有明确扣分或保留。本项不重复扣其他aspect已记的同一问题。
+
+\clearpage
+\subsection{D4 R4数值范围（3分）}
+\label{aspect:D4}
+评审问题：极低但正的概率下，是否仍能计算合法记录的后验？
+
+判分要求：正概率记录不因下溢被误判零，规范化/log/高精度与端点可用；平台差异与原环境缺口分开
+
+科学意义：Z0 和 Z1 都很小，但比值仍有定义。逐步归一化不能挽回此前已经下溢成零的边权或局部乘积。
+
+可能的错误（检查项，不代表七份都犯）：把数值下溢误报成零概率记录。；只在每一列结束时归一化，却先用普通 float 形成极小乘积。；以 dtype 名称代替跨平台浮点范围检查。
+
+{\fontsize{9.0}{12.6}\selectfont
+\setlength{\tabcolsep}{2.5pt}
+\begin{longtable}{>{\raggedright\arraybackslash}p{\dimexpr 0.11\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.08\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.3\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.4\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.11\linewidth-2\tabcolsep\relax}}
+\caption{D4：七份有效交付逐项比较}\\
+\toprule
+\textbf{Run} & \textbf{得分} & \textbf{完成情况} & \textbf{实际问题 / 证据限制} & \textbf{证据}\tabularnewline
+\midrule
+\endfirsthead
+\toprule
+\textbf{Run} & \textbf{得分} & \textbf{完成情况} & \textbf{实际问题 / 证据限制} & \textbf{证据}\tabularnewline
+\midrule
+\endhead
+{}Fable03 & 1/3 & 普通归一化；常规后验检查210/210通过。 & 18/18极低p压力案例未通过；正概率记录可因局部下溢报零。 & \hyperref[src:F03-03]{F03-03:198}\newline \hyperref[src:REV-01]{REV-01:1}\tabularnewline
+{}Opus01 & 1/3 & 普通归一化；常规后验检查210/210通过。 & 18/18极低p压力案例未通过；正概率记录可因局部下溢报零。 & \hyperref[src:O01-05]{O01-05:71}\newline \hyperref[src:REV-02]{REV-02:1}\tabularnewline
+{}Opus02 & 1/3 & 普通归一化；常规后验检查210/210通过。 & 18/18未通过；部分失败依平台范围，p/2先用float归零则跨平台存在。 & \hyperref[src:O02-04]{O02-04:45}\newline \hyperref[src:REV-03]{REV-03:1}\tabularnewline
+{}Opus03 & 1/3 & 普通归一化；常规后验检查210/210通过。 & 18/18极低p压力案例未通过；正概率记录可因局部下溢报零。 & \hyperref[src:O03-08]{O03-08:43}\newline \hyperref[src:REV-04]{REV-04:1}\tabularnewline
+{}GPT01 & 3/3 & 使用高精度或log后备；常规210/210、压力18/18通过。 & 18/18压力案例通过；测试有限，不能代替对所有输入的证明。 & \hyperref[src:G01-03]{G01-03:271}\newline \hyperref[src:REV-05]{REV-05:1}\tabularnewline
+{}GPT02 & 3/3 & 使用高精度或log后备；常规210/210、压力18/18通过。 & 18/18压力案例通过；测试有限，不能代替对所有输入的证明。 & \hyperref[src:G02-04]{G02-04:224}\newline \hyperref[src:REV-06]{REV-06:1}\tabularnewline
+{}GPT03 & 3/3 & 使用高精度或log后备；常规210/210、压力18/18通过。 & 18/18压力案例通过；测试有限，不能代替对所有输入的证明。 & \hyperref[src:G03-03]{G03-03:187}\newline \hyperref[src:REV-07]{REV-07:1}\tabularnewline
+\bottomrule
+\end{longtable}
+}
+本项比较：本项是后验 API 的实质差异：GPT 的高精度或 log-domain 后备覆盖了检查范围；其他四份有数值下溢缺口。
+
+得分分布：3/7满分；其余4/7有明确扣分或保留。本项不重复扣其他aspect已记的同一问题。
+
+\clearpage
+\subsection{D5 decode接口（3分）}
+\label{aspect:D5}
+评审问题：decode 是否输出合法 correction，并选择最大后验逻辑扇区？
+
+判分要求：返回合法边集合，syndrome正确，逻辑决定与所用posterior规则相容；异常和非法输出可定位
+
+科学意义：后验数值正确还不够：输出必须是题目边集合，满足 Hc=s，且逻辑 parity 与后验决策一致。合法 tie 可以选择任一扇区。
+
+可能的错误（检查项，不代表七份都犯）：输出不在几何中的边。；只返回逻辑 bit 而未构造 correction。；构造 syndrome 正确但逻辑 parity 错的 correction。；把 correction 当成需要恢复真实箭头的微观配置。
+
+{\fontsize{9.0}{12.6}\selectfont
+\setlength{\tabcolsep}{2.5pt}
+\begin{longtable}{>{\raggedright\arraybackslash}p{\dimexpr 0.11\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.08\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.3\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.4\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.11\linewidth-2\tabcolsep\relax}}
+\caption{D5：七份有效交付逐项比较}\\
+\toprule
+\textbf{Run} & \textbf{得分} & \textbf{完成情况} & \textbf{实际问题 / 证据限制} & \textbf{证据}\tabularnewline
+\midrule
+\endfirsthead
+\toprule
+\textbf{Run} & \textbf{得分} & \textbf{完成情况} & \textbf{实际问题 / 证据限制} & \textbf{证据}\tabularnewline
+\midrule
+\endhead
+{}Fable03 & 3/3 & 常规210/210 correction合法，syndrome及逻辑扇区均正确。 & 本项未发现具体错误；结论限于已审阅材料和检查范围。 & \hyperref[src:F03-03]{F03-03:280}\newline \hyperref[src:REV-01]{REV-01:1}\tabularnewline
+{}Opus01 & 3/3 & 常规210/210 correction合法，syndrome及逻辑扇区均正确。 & 本项未发现具体错误；结论限于已审阅材料和检查范围。 & \hyperref[src:O01-05]{O01-05:102}\newline \hyperref[src:REV-02]{REV-02:1}\tabularnewline
+{}Opus02 & 3/3 & 常规210/210 correction合法，syndrome及逻辑扇区均正确。 & 本项未发现具体错误；结论限于已审阅材料和检查范围。 & \hyperref[src:O02-04]{O02-04:143}\newline \hyperref[src:REV-03]{REV-03:1}\tabularnewline
+{}Opus03 & 3/3 & 常规210/210 correction合法，syndrome及逻辑扇区均正确。 & 本项未发现具体错误；结论限于已审阅材料和检查范围。 & \hyperref[src:O03-08]{O03-08:74}\newline \hyperref[src:REV-04]{REV-04:1}\tabularnewline
+{}GPT01 & 3/3 & 常规210/210 correction合法，syndrome及逻辑扇区均正确。 & 本项未发现具体错误；结论限于已审阅材料和检查范围。 & \hyperref[src:G01-03]{G01-03:403}\newline \hyperref[src:REV-05]{REV-05:1}\tabularnewline
+{}GPT02 & 3/3 & 常规210/210 correction合法，syndrome及逻辑扇区均正确。 & 本项未发现具体错误；结论限于已审阅材料和检查范围。 & \hyperref[src:G02-04]{G02-04:391}\newline \hyperref[src:REV-06]{REV-06:1}\tabularnewline
+{}GPT03 & 3/3 & 常规210/210 correction合法，syndrome及逻辑扇区均正确。 & 本项未发现具体错误；结论限于已审阅材料和检查范围。 & \hyperref[src:G03-03]{G03-03:312}\newline \hyperref[src:REV-07]{REV-07:1}\tabularnewline
+\bottomrule
+\end{longtable}
+}
+本项比较：常规 decode 接口没有区分七份表现；这些检查并不是大尺寸相图极限的验证。
+
+得分分布：7/7满分；其余0/7有明确扣分或保留。本项不重复扣其他aspect已记的同一问题。
+
+\clearpage
+\section{交付物、复现与无条件记账}
+\subsection{E1 answers.json（4分）}
+\label{aspect:E1}
+评审问题：answers.json 是否完整、可读，并与报告所列要求对应？
+
+判分要求：结构、21条目、端点误差/未解形式、R3\_N0与报告一致
+
+科学意义：机器可读结果是后续自动评价和比较的入口。文件完整与科学判定可靠是两个不同评价层次。
+
+可能的错误（检查项，不代表七份都犯）：缺少 record/rank 条目。；JSON 不能解析或 N0 类型不符。；报告与机器文件给出不同结果。；把 unresolved 当作文件缺失。
+
+{\fontsize{9.0}{12.6}\selectfont
+\setlength{\tabcolsep}{2.5pt}
+\begin{longtable}{>{\raggedright\arraybackslash}p{\dimexpr 0.11\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.08\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.3\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.4\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.11\linewidth-2\tabcolsep\relax}}
+\caption{E1：七份有效交付逐项比较}\\
+\toprule
+\textbf{Run} & \textbf{得分} & \textbf{完成情况} & \textbf{实际问题 / 证据限制} & \textbf{证据}\tabularnewline
+\midrule
+\endfirsthead
+\toprule
+\textbf{Run} & \textbf{得分} & \textbf{完成情况} & \textbf{实际问题 / 证据限制} & \textbf{证据}\tabularnewline
+\midrule
+\endhead
+{}Fable03 & 4/4 & JSON可解析，21个 record/rank条目完整，N0为整数。 & 完整性满分不表示21条相图判定都已解决；科学依据另评分。 & \hyperref[src:F03-06]{F03-06:1}\tabularnewline
+{}Opus01 & 4/4 & JSON可解析，21个 record/rank条目完整，N0为整数。 & 完整性满分不表示21条相图判定都已解决；科学依据另评分。 & \hyperref[src:O01-06]{O01-06:1}\tabularnewline
+{}Opus02 & 4/4 & JSON可解析，21个 record/rank条目完整，N0为整数。 & 完整性满分不表示21条相图判定都已解决；科学依据另评分。 & \hyperref[src:O02-07]{O02-07:1}\tabularnewline
+{}Opus03 & 4/4 & JSON可解析，21个 record/rank条目完整，N0为整数。 & 完整性满分不表示21条相图判定都已解决；科学依据另评分。 & \hyperref[src:O03-09]{O03-09:1}\tabularnewline
+{}GPT01 & 4/4 & JSON可解析，21个 record/rank条目完整，N0为整数。 & 完整性满分不表示21条相图判定都已解决；科学依据另评分。 & \hyperref[src:G01-05]{G01-05:1}\tabularnewline
+{}GPT02 & 4/4 & JSON可解析，21个 record/rank条目完整，N0为整数。 & 完整性满分不表示21条相图判定都已解决；科学依据另评分。 & \hyperref[src:G02-06]{G02-06:1}\tabularnewline
+{}GPT03 & 4/4 & JSON可解析，21个 record/rank条目完整，N0为整数。 & 完整性满分不表示21条相图判定都已解决；科学依据另评分。 & \hyperref[src:G03-05]{G03-05:1}\tabularnewline
+\bottomrule
+\end{longtable}
+}
+本项比较：结构完整七份同分；相图判断是否被证据支持另看 A2-A5。
+
+得分分布：7/7满分；其余0/7有明确扣分或保留。本项不重复扣其他aspect已记的同一问题。
+
+\clearpage
+\subsection{E2 报告/图（3分）}
+\label{aspect:E2}
+评审问题：报告、证明、合并相图是否齐全并可定位？
+
+判分要求：有相图、R2/R3证明、证据与局限，文件可找到；不按图的个人审美扣科学分
+
+科学意义：研究结论必须能连到证明、数据和局限，而不是只提交一张图或一个数字。交付齐全并不自动消除科学缺口。
+
+可能的错误（检查项，不代表七份都犯）：只有图没有判定依据。；有 N0 数字但无证明。；图表与文字结果分散且无法定位。；因个人美学偏好扣科学分。
+
+{\fontsize{9.0}{12.6}\selectfont
+\setlength{\tabcolsep}{2.5pt}
+\begin{longtable}{>{\raggedright\arraybackslash}p{\dimexpr 0.11\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.08\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.3\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.4\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.11\linewidth-2\tabcolsep\relax}}
+\caption{E2：七份有效交付逐项比较}\\
+\toprule
+\textbf{Run} & \textbf{得分} & \textbf{完成情况} & \textbf{实际问题 / 证据限制} & \textbf{证据}\tabularnewline
+\midrule
+\endfirsthead
+\toprule
+\textbf{Run} & \textbf{得分} & \textbf{完成情况} & \textbf{实际问题 / 证据限制} & \textbf{证据}\tabularnewline
+\midrule
+\endhead
+{}Fable03 & 3/3 & 报告、R2/R3证明与合并相图齐全。 & 完整性与科学正确性分开；不能据本项满分消除相图外推意见。 & \hyperref[src:F03-04]{F03-04:6}\tabularnewline
+{}Opus01 & 3/3 & 报告、R2/R3证明与合并相图齐全。 & 完整性与科学正确性分开；不能据本项满分消除相图外推意见。 & \hyperref[src:O01-01]{O01-01:5}\tabularnewline
+{}Opus02 & 3/3 & 报告、R2/R3证明与合并相图齐全。 & 完整性与科学正确性分开；不能据本项满分消除相图外推意见。 & \hyperref[src:O02-05]{O02-05:4}\tabularnewline
+{}Opus03 & 3/3 & 报告、R2/R3证明与合并相图齐全。 & 完整性与科学正确性分开；不能据本项满分消除相图外推意见。 & \hyperref[src:O03-10]{O03-10:3}\tabularnewline
+{}GPT01 & 3/3 & 报告、R2/R3证明与合并相图齐全。 & 完整性与科学正确性分开；不能据本项满分消除相图外推意见。 & \hyperref[src:G01-06]{G01-06:3}\tabularnewline
+{}GPT02 & 3/3 & 报告、R2/R3证明与合并相图齐全。 & 完整性与科学正确性分开；不能据本项满分消除相图外推意见。 & \hyperref[src:G02-07]{G02-07:3}\tabularnewline
+{}GPT03 & 3/3 & 报告、R2/R3证明与合并相图齐全。 & 完整性与科学正确性分开；不能据本项满分消除相图外推意见。 & \hyperref[src:G03-06]{G03-06:3}\tabularnewline
+\bottomrule
+\end{longtable}
+}
+本项比较：全部完成报告交付；相图外推和近似误差的质量差异在各科学项目单独评分。
+
+得分分布：7/7满分；其余0/7有明确扣分或保留。本项不重复扣其他aspect已记的同一问题。
+
+\clearpage
+\subsection{E3 源码/复现/资源（3分）}
+\label{aspect:E3}
+评审问题：源码、环境、命令与资源记录是否支持复现？
+
+判分要求：API、依赖环境、命令、seed/资源说明支持复现；8CPU/32GiB/无GPU要求有记录
+
+科学意义：可复现需要知道运行的是哪个 API、依赖版本、随机种子与命令，也要有证据说明使用的 CPU/内存/GPU 条件。
+
+可能的错误（检查项，不代表七份都犯）：只有结果没有源码或运行入口。；遗漏依赖版本与种子。；把资源监视片段当作完整运行审计。；把本次小规模复核宣称成生产实验全量重跑。
+
+{\fontsize{9.0}{12.6}\selectfont
+\setlength{\tabcolsep}{2.5pt}
+\begin{longtable}{>{\raggedright\arraybackslash}p{\dimexpr 0.11\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.08\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.3\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.4\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.11\linewidth-2\tabcolsep\relax}}
+\caption{E3：七份有效交付逐项比较}\\
+\toprule
+\textbf{Run} & \textbf{得分} & \textbf{完成情况} & \textbf{实际问题 / 证据限制} & \textbf{证据}\tabularnewline
+\midrule
+\endfirsthead
+\toprule
+\textbf{Run} & \textbf{得分} & \textbf{完成情况} & \textbf{实际问题 / 证据限制} & \textbf{证据}\tabularnewline
+\midrule
+\endhead
+{}Fable03 & 3/3 & 提供源码、依赖环境、复现命令和资源说明。 & 未全量重跑生产研究或独立监视原运行全过程。 & \hyperref[src:F03-04]{F03-04:30}\tabularnewline
+{}Opus01 & 3/3 & 提供源码、依赖环境、复现命令和资源说明。 & 未全量重跑生产研究或独立监视原运行全过程。 & \hyperref[src:O01-07]{O01-07:1}\tabularnewline
+{}Opus02 & 3/3 & 提供源码、依赖环境、复现命令和资源说明。 & 未全量重跑生产研究或独立监视原运行全过程。 & \hyperref[src:O02-05]{O02-05:24}\tabularnewline
+{}Opus03 & 3/3 & 提供源码、依赖环境、复现命令和资源说明。 & 未全量重跑生产研究或独立监视原运行全过程。 & \hyperref[src:O03-10]{O03-10:29}\tabularnewline
+{}GPT01 & 3/3 & 提供源码、依赖环境、复现命令和资源说明。 & 资源监视始于 refinement，CPU累计不含全部开发与pilot。 & \hyperref[src:G01-06]{G01-06:17}\tabularnewline
+{}GPT02 & 3/3 & 提供源码、依赖环境、复现命令和资源说明。 & 未全量重跑生产研究或独立监视原运行全过程。 & \hyperref[src:G02-07]{G02-07:32}\tabularnewline
+{}GPT03 & 3/3 & 提供源码、依赖环境、复现命令和资源说明。 & 未全量重跑生产研究或独立监视原运行全过程。 & \hyperref[src:G03-06]{G03-06:24}\tabularnewline
+\bottomrule
+\end{longtable}
+}
+本项比较：按照已冻结 rubric 均给满分；这是复现材料可用性的判断，不是对全部历史资源用量的认证。
+
+得分分布：7/7满分；其余0/7有明确扣分或保留。本项不重复扣其他aspect已记的同一问题。
+
+\clearpage
+\subsection{E4 数据/无条件记账（5分）}
+\label{aspect:E4}
+评审问题：所有尝试、异常、停止规则和原始数据是否无条件记账？
+
+判分要求：原始数据、seed、停止规则、trial分母、异常/非法输出计失败；预留slots与实际执行区分
+
+科学意义：丢弃困难记录会使风险偏低。异常作为失败的规则必须同时进入所报告指标；预留 slots 不能冒充实际完成的物理 trials。
+
+可能的错误（检查项，不代表七份都犯）：异常样本从分母删除。；hard failure 记1，但 posterior-min 风险只记0.5。；只保存成功后验，导致无法审计选择偏差。；把外部终止 batch 的预留 slots 写成已完成 trials。
+
+{\fontsize{9.0}{12.6}\selectfont
+\setlength{\tabcolsep}{2.5pt}
+\begin{longtable}{>{\raggedright\arraybackslash}p{\dimexpr 0.11\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.08\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.3\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.4\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.11\linewidth-2\tabcolsep\relax}}
+\caption{E4：七份有效交付逐项比较}\\
+\toprule
+\textbf{Run} & \textbf{得分} & \textbf{完成情况} & \textbf{实际问题 / 证据限制} & \textbf{证据}\tabularnewline
+\midrule
+\endfirsthead
+\toprule
+\textbf{Run} & \textbf{得分} & \textbf{完成情况} & \textbf{实际问题 / 证据限制} & \textbf{证据}\tabularnewline
+\midrule
+\endhead
+{}Fable03 & 4/5 & 保留原始数据、种子、停止规则及全部尝试分母。 & 异常设P0=0.5，风险/hard tie记0.5；归档异常总数0，属潜在缺陷。 & \hyperref[src:F03-07]{F03-07:56}\tabularnewline
+{}Opus01 & 4.5/5 & 保留原始数据、种子、停止规则及全部尝试分母。 & 报告有2次实际异常；hard failure记1，但报告风险仍记0.5。 & \hyperref[src:O01-08]{O01-08:146}\tabularnewline
+{}Opus02 & 4.5/5 & 保留原始数据、种子、停止规则及全部尝试分母。 & 异常hard failure记1、风险记0.5；本行不推定其实际异常次数。 & \hyperref[src:O02-08]{O02-08:49}\tabularnewline
+{}Opus03 & 4.5/5 & 保留原始数据、种子、停止规则及全部尝试分母。 & 异常hard failure记1、风险记0.5；本行不推定其实际异常次数。 & \hyperref[src:O03-11]{O03-11:121}\tabularnewline
+{}GPT01 & 5/5 & 保留原始数据、种子、停止规则及全部尝试分母。 & 异常及非法输出风险与失败均记1；保存数组审计未见不一致。 & \hyperref[src:G01-06]{G01-06:50}\tabularnewline
+{}GPT02 & 5/5 & 保留原始数据、种子、停止规则及全部尝试分母。 & 异常及非法输出均记1；305024评价行及4份归档哈希检查一致。 & \hyperref[src:G02-07]{G02-07:61}\tabularnewline
+{}GPT03 & 5/5 & 保留原始数据、种子、停止规则及全部尝试分母。 & 340600归档slots含200个终止batch预留；实际物理trial总数未知。 & \hyperref[src:G03-06]{G03-06:62}\tabularnewline
+\bottomrule
+\end{longtable}
+}
+本项比较：必须区分风险估计与 hard failure：题目要求异常计失败，二者都应记1。Fable 的问题尚未影响已保存估计，Opus01则有实际触发记录。
+
+得分分布：3/7满分；其余4/7有明确扣分或保留。本项不重复扣其他aspect已记的同一问题。
+
+\clearpage
+\section{讨论细节：每个问题的七run对照}
+\subsection{Q01 D\_r(N)定义为全p集合，信息更多则不缩小但不必严格扩大}
+\label{aspect:Q01}
+问题：D\_r(N) 究竟是什么集合？
+
+与原题关系：R2核心含义。本节覆盖状态不另加减100分主项。
+
+为什么检查：D\_r(N)=\{p\ensuremath{\in}[0,1]:R*\_\{r,L\}(p,N)\ensuremath{\rightarrow}0\}，包括低噪声端、高噪声端及可能的中间区。
+
+可能的混淆：把 D1 仅理解为靠近 p=1 的区间；把集合包含说成必然严格扩大。
+
+{\fontsize{9.0}{12.6}\selectfont
+\setlength{\tabcolsep}{2.5pt}
+\begin{longtable}{>{\raggedright\arraybackslash}p{\dimexpr 0.11\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.07\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.31\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.4\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.11\linewidth-2\tabcolsep\relax}}
+\caption{Q01：讨论细节覆盖比较}\\
+\toprule
+\textbf{Run} & \textbf{状态} & \textbf{原文做到的内容} & \textbf{说明不足 / 限定 / 替代路线} & \textbf{证据}\tabularnewline
+\midrule
+\endfirsthead
+\toprule
+\textbf{Run} & \textbf{状态} & \textbf{原文做到的内容} & \textbf{说明不足 / 限定 / 替代路线} & \textbf{证据}\tabularnewline
+\midrule
+\endhead
+{}Fable03 & E & 从有限 L 平均 Bayes 风险定义可解码集合，证明同 N 包含。 & 没有把 D1 限定为高 p 尾区；包含不要求严格扩大。 & \hyperref[src:F03-02]{F03-02:18}\newline \hyperref[src:F03-01]{F03-01:128}\tabularnewline
+{}Opus01 & E & Jensen 证明信息 garbling 不改善风险，推出 D 的包含。 & 全 p 与端点尾区均属于同一 D；不能由包含推出严格增益。 & \hyperref[src:O01-01]{O01-01:109}\newline \hyperref[src:O01-01]{O01-01:114}\tabularnewline
+{}Opus02 & E & 明确 D0\ensuremath{\subseteq}D1(N)\ensuremath{\subseteq}D2(N)，逐参数有效。 & 定义并不声称 D 必须只有两段；拓扑仍取决于证据。 & \hyperref[src:O02-01]{O02-01:45}\newline \hyperref[src:O02-01]{O02-01:86}\tabularnewline
+{}Opus03 & E & 同 N nesting 定义覆盖整个 p\ensuremath{\in}[0,1]。 & central 全 p charge 判定有 A2 缺口，但不影响 D 的定义。 & \hyperref[src:O03-01]{O03-01:17}\newline \hyperref[src:O03-01]{O03-01:540}\tabularnewline
+{}GPT01 & E & 层级 theorem 与继承子集均用于整个噪声轴。 & 图中的可靠子集不是 D 的完整求解；未知区可能可解码。 & \hyperref[src:G01-01]{G01-01:53}\newline \hyperref[src:G01-02]{G01-02:225}\tabularnewline
+{}GPT02 & E & 有限 patch 风险顺序推全 p 集合包含，未知条目保留。 & 充分尾区表示已知子集，不是 D 的定义只含尾区。 & \hyperref[src:G02-01]{G02-01:75}\newline \hyperref[src:G02-02]{G02-02:89}\tabularnewline
+{}GPT03 & E & 明言 average Bayes 风险顺序并推层级。 & 单个细记录风险不单调，仍不妨碍平均风险及 D 包含。 & \hyperref[src:G03-02]{G03-02:36}\newline \hyperref[src:G03-01]{G03-01:121}\tabularnewline
+\bottomrule
+\end{longtable}
+}
+比较结论：七份都用全参数可解码集合及数据处理；更多信息保证不缩小，不保证严格扩大。
+
+\clearpage
+\subsection{Q02 N5已恢复完整整数q，N>=7严格饱和，N6例外}
+\label{aspect:Q02}
+问题：为什么 N5 已精确，N\ensuremath{\geq}7 饱和，而 N6 例外？
+
+与原题关系：R2核心。本节覆盖状态不另加减100分主项。
+
+为什么检查：可区分的是相同 syndrome 奇偶的 q 值；N5 的模5碰撞跨奇偶，已被 syndrome 分开。
+
+可能的混淆：只数 q 的七个整数就宣布必须 N\ensuremath{\geq}7；从 N5 精确错误推断所有 N\ensuremath{\geq}5 精确。
+
+{\fontsize{9.0}{12.6}\selectfont
+\setlength{\tabcolsep}{2.5pt}
+\begin{longtable}{>{\raggedright\arraybackslash}p{\dimexpr 0.11\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.07\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.31\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.4\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.11\linewidth-2\tabcolsep\relax}}
+\caption{Q02：讨论细节覆盖比较}\\
+\toprule
+\textbf{Run} & \textbf{状态} & \textbf{原文做到的内容} & \textbf{说明不足 / 限定 / 替代路线} & \textbf{证据}\tabularnewline
+\midrule
+\endfirsthead
+\toprule
+\textbf{Run} & \textbf{状态} & \textbf{原文做到的内容} & \textbf{说明不足 / 限定 / 替代路线} & \textbf{证据}\tabularnewline
+\midrule
+\endhead
+{}Fable03 & E & 表中明确 N5及N\ensuremath{\geq}7无 q alias，N3/6只混\ensuremath{\pm}3。 & N5精确并非数值观察，而由 parity/CRT严格证明。 & \hyperref[src:F03-02]{F03-02:69}\newline \hyperref[src:F03-02]{F03-02:82}\tabularnewline
+{}Opus01 & E & 由 lcm(2,N)列 N5/7/8等价，N3/6另成类。 & N6不能并入完整整数类；已正确区分。 & \hyperref[src:O01-01]{O01-01:119}\newline \hyperref[src:O01-01]{O01-01:127}\tabularnewline
+{}Opus02 & E & 等价配置表与程序 bit-for-bit 核验 N5/7/8。 & 数值核验补强解析等价，不替代有限支持证明。 & \hyperref[src:O02-01]{O02-01:54}\tabularnewline
+{}Opus03 & E & CRT表将 N5/7/8写成精确整数 divergence。 & N的增长不按整数单调提供新 charge信息；N6为例外。 & \hyperref[src:O03-01]{O03-01:489}\newline \hyperref[src:O03-01]{O03-01:498}\tabularnewline
+{}GPT01 & E & 明确奇 N用 syndrome还原模2N，N5已足够。 & N3/6和整数类不能因弱证明尾界相同而说信道相同。 & \hyperref[src:G01-02]{G01-02:46}\newline \hyperref[src:G01-02]{G01-02:51}\tabularnewline
+{}GPT02 & E & 逐奇偶集合证明 N5的模5 alias已被 syndrome排除。 & N6的\ensuremath{\pm}3同奇偶且同模6，因此仍混淆。 & \hyperref[src:G02-02]{G02-02:25}\tabularnewline
+{}GPT03 & E & 精确四类表说明包含联合空间分布的同构。 & 饱和是有限 L、所有 p 的严格事实，不只热力学边界相同。 & \hyperref[src:G03-02]{G03-02:57}\newline \hyperref[src:G03-02]{G03-02:72}\tabularnewline
+\bottomrule
+\end{longtable}
+}
+比较结论：七份明确分析了奇偶/CRT；N5 与 N7/8 等价，而 N6 仍混合 q=\ensuremath{\pm}3。
+
+\clearpage
+\subsection{Q03 mod4和mod6不互相包含，不能全N排序}
+\label{aspect:Q03}
+问题：mod4 与 mod6 能否互相排序？
+
+与原题关系：使用跨N比较时必要。本节覆盖状态不另加减100分主项。
+
+为什么检查：两个模记录丢失的信息不同；只有整数 q 同时细化二者。
+
+可能的混淆：认为 N4>N3 就必然更好；把 Z4 的\ensuremath{\pm}2混淆与 Z6 的\ensuremath{\pm}3混淆当成同一退化。
+
+{\fontsize{9.0}{12.6}\selectfont
+\setlength{\tabcolsep}{2.5pt}
+\begin{longtable}{>{\raggedright\arraybackslash}p{\dimexpr 0.11\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.07\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.31\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.4\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.11\linewidth-2\tabcolsep\relax}}
+\caption{Q03：讨论细节覆盖比较}\\
+\toprule
+\textbf{Run} & \textbf{状态} & \textbf{原文做到的内容} & \textbf{说明不足 / 限定 / 替代路线} & \textbf{证据}\tabularnewline
+\midrule
+\endfirsthead
+\toprule
+\textbf{Run} & \textbf{状态} & \textbf{原文做到的内容} & \textbf{说明不足 / 限定 / 替代路线} & \textbf{证据}\tabularnewline
+\midrule
+\endhead
+{}Fable03 & E & 显式写 mod4与mod6不可比，并画整数 q上方的两分支。 & 没有把数值近似或 N大小当信息全序。 & \hyperref[src:F03-02]{F03-02:69}\newline \hyperref[src:F03-02]{F03-02:82}\tabularnewline
+{}Opus01 & E & 整数 q可各自降为 mod4/mod6，列两条独立风险链。 & 表中未把两个分支强行排序；数值全 p推断另审。 & \hyperref[src:O01-01]{O01-01:119}\newline \hyperref[src:O01-01]{O01-01:127}\tabularnewline
+{}Opus02 & E & 两条整数到模记录的风险链，跨 N LP另披露例外。 & 同一大 N记录可细化两个分支，不使两个分支互相细化。 & \hyperref[src:O02-01]{O02-01:54}\tabularnewline
+{}Opus03 & E & 整数 divergence对每个模记录可降，未断言全 N单调。 & Z4的特殊边界不能直接解释为 N4优于或劣于 N3全域。 & \hyperref[src:O03-01]{O03-01:489}\newline \hyperref[src:O03-01]{O03-01:498}\tabularnewline
+{}GPT01 & E & 明确 no general N monotonicity，整数 q细化两模记录。 & 原文把独立曲线差异与信息顺序分开，未见错误排序。 & \hyperref[src:G01-02]{G01-02:46}\newline \hyperref[src:G01-02]{G01-02:51}\tabularnewline
+{}GPT02 & E & 列 N4不同 alias，并明确不假设每个连续 N提升。 & 这是有限支持全信道关系，不能靠只看单一 p图判定。 & \hyperref[src:G02-02]{G02-02:25}\tabularnewline
+{}GPT03 & E & 明确 mod-four与mod-six无先验排序，整数 q同时细化。 & 等价类与偏序均为精确结论，不由拟合决定。 & \hyperref[src:G03-02]{G03-02:57}\newline \hyperref[src:G03-02]{G03-02:72}\tabularnewline
+\bottomrule
+\end{longtable}
+}
+比较结论：七份均使用正确的分支包含关系，没有用连续 N 的全序支撑结果。
+
+\clearpage
+\subsection{Q04 单独充分界不嵌套不等于真实相区违反信息顺序}
+\label{aspect:Q04}
+问题：充分界曲线不嵌套是否等于真实相区违反信息顺序？
+
+与原题关系：R1解释。本节覆盖状态不另加减100分主项。
+
+为什么检查：每个不等式可能丢弃不同信息，独立证明出的子集无需先天按最强可用关系闭合。
+
+可能的混淆：从弱界的名义反转推断物理反常；或把不同证明的界根拿来排名真实 threshold。
+
+{\fontsize{9.0}{12.6}\selectfont
+\setlength{\tabcolsep}{2.5pt}
+\begin{longtable}{>{\raggedright\arraybackslash}p{\dimexpr 0.11\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.07\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.31\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.4\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.11\linewidth-2\tabcolsep\relax}}
+\caption{Q04：讨论细节覆盖比较}\\
+\toprule
+\textbf{Run} & \textbf{状态} & \textbf{原文做到的内容} & \textbf{说明不足 / 限定 / 替代路线} & \textbf{证据}\tabularnewline
+\midrule
+\endfirsthead
+\toprule
+\textbf{Run} & \textbf{状态} & \textbf{原文做到的内容} & \textbf{说明不足 / 限定 / 替代路线} & \textbf{证据}\tabularnewline
+\midrule
+\endhead
+{}Fable03 & I & 区分 N19充分定理与有限 N相图，处理 Z4名义差值。 & 未专门展开“独立弱界可不嵌套”的原则，解释为隐含覆盖。 & \hyperref[src:F03-01]{F03-01:190}\newline \hyperref[src:F03-01]{F03-01:201}\tabularnewline
+{}Opus01 & I & 相图交叉按 O0 nesting调整，定理另表。 & 没有单列充分界 envelope闭合规则；这是解释覆盖保留。 & \hyperref[src:O01-01]{O01-01:268}\newline \hyperref[src:O01-01]{O01-01:275}\tabularnewline
+{}Opus02 & I & paired risk nesting检查，数值图与 polymer充分域分列。 & 未单独讨论不同充分证明丢信息造成的非嵌套。 & \hyperref[src:O02-01]{O02-01:212}\newline \hyperref[src:O02-01]{O02-01:214}\tabularnewline
+{}Opus03 & I & 验证高 p nesting，另给充分界和精确取向结构。 & 连通分量解释不等于完整充分界 envelope分析。 & \hyperref[src:O03-01]{O03-01:229}\newline \hyperref[src:O03-01]{O03-01:668}\tabularnewline
+{}GPT01 & E & 明确 sufficient roots非threshold，表观反转在 allowance内。 & 未把统一弱 O1界当不同 N真实相边界相同。 & \hyperref[src:G01-01]{G01-01:33}\newline \hyperref[src:G01-02]{G01-02:256}\tabularnewline
+{}GPT02 & E & 写明 \ensuremath{\mu}\ensuremath{\rho}<1仅充分，Z4拟合不稳则保留未知。 & 界根取等不判定，已避免“证明失败=不可解码”。 & \hyperref[src:G02-01]{G02-01:51}\newline \hyperref[src:G02-02]{G02-02:173}\tabularnewline
+{}GPT03 & I & 充分尾区与数值边界分开，Z4名义中心按顺序投影。 & 尚未完整展开所有独立界的嵌套闭包，记隐含覆盖。 & \hyperref[src:G03-01]{G03-01:40}\tabularnewline
+\bottomrule
+\end{longtable}
+}
+比较结论：GPT01/02 对语义处理最明确；其余多通过包含约束或数值处理落实，未都单独解释充分界与真相区之别。
+
+\clearpage
+\subsection{Q05 把可靠Z4可解码子集转移给完整整数q}
+\label{aspect:Q05}
+问题：可靠 Z4 可解码子集是否转移给整数 q？
+
+与原题关系：R1/R2一致性。本节覆盖状态不另加减100分主项。
+
+为什么检查：整数 q 可直接模4，因此 D1(4)\ensuremath{\subseteq}D1(5)=D1(7)=D1(8)。
+
+可能的混淆：让整数 q 的已知可解码区比可靠 Z4 子集更小；用未经验证的名义拟合点直接作严格结论。
+
+{\fontsize{9.0}{12.6}\selectfont
+\setlength{\tabcolsep}{2.5pt}
+\begin{longtable}{>{\raggedright\arraybackslash}p{\dimexpr 0.11\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.07\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.31\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.4\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.11\linewidth-2\tabcolsep\relax}}
+\caption{Q05：讨论细节覆盖比较}\\
+\toprule
+\textbf{Run} & \textbf{状态} & \textbf{原文做到的内容} & \textbf{说明不足 / 限定 / 替代路线} & \textbf{证据}\tabularnewline
+\midrule
+\endfirsthead
+\toprule
+\textbf{Run} & \textbf{状态} & \textbf{原文做到的内容} & \textbf{说明不足 / 限定 / 替代路线} & \textbf{证据}\tabularnewline
+\midrule
+\endhead
+{}Fable03 & I & 整数 q细化 Z4定理与数值 nesting均有。 & 未把“可移交的可靠 Z4子集”单独制表；隐含于层级。 & \hyperref[src:F03-01]{F03-01:190}\newline \hyperref[src:F03-01]{F03-01:201}\tabularnewline
+{}Opus01 & I & 两条精确风险链保证整数 q不弱于 Z4。 & 未单列 donor endpoint allowance之外的移交规则。 & \hyperref[src:O01-01]{O01-01:268}\newline \hyperref[src:O01-01]{O01-01:275}\tabularnewline
+{}Opus02 & I & 明确整数 q\ensuremath{\leq}Z4风险，并做 paired check。 & 子集移交由定理隐含，未系统作可靠区间闭合。 & \hyperref[src:O02-01]{O02-01:212}\newline \hyperref[src:O02-01]{O02-01:214}\tabularnewline
+{}Opus03 & I & 整数 charge退化关系与高 p nesting均成立。 & 全 p charge赋值已覆盖但有 A2缺口，不等于可靠证明全 p。 & \hyperref[src:O03-01]{O03-01:229}\newline \hyperref[src:O03-01]{O03-01:668}\tabularnewline
+{}GPT01 & E & 明确只转移捐赠区间 endpoint allowance外的可靠部分。 & 数值移交仍有数值来源标签，不升级为严格定理。 & \hyperref[src:G01-01]{G01-01:33}\newline \hyperref[src:G01-02]{G01-02:256}\tabularnewline
+{}GPT02 & E & 精确信息层级组织保守区间，Z4拟合未知不强移交中心。 & 保留已证尾区；未把不稳定名义交叉作为 donor。 & \hyperref[src:G02-01]{G02-01:51}\newline \hyperref[src:G02-02]{G02-02:173}\tabularnewline
+{}GPT03 & I & 整数记录细化 Z4，声明包含整个 O0可解码区。 & 没有像 GPT01那样逐项列可靠 Z4移交数值子集。 & \hyperref[src:G03-01]{G03-01:40}\tabularnewline
+\bottomrule
+\end{longtable}
+}
+比较结论：GPT01 明确转移扣除端点 allowance 的数值子集；GPT02 利用精确信息关系组织保守界。其余多隐含于包含定理。
+
+\clearpage
+\subsection{Q06 Z4纯三次与单次混淆、混合三次与单次混淆的区别}
+\label{aspect:Q06}
+问题：Z4 的纯三次与混合三次 arrivals 如何混淆？
+
+与原题关系：特征机制。本节覆盖状态不另加减100分主项。
+
+为什么检查：q=\ensuremath{\pm}3 在模4下与\ensuremath{\mp}1混淆；整数 charge 中纯三次可辨，混合三次本来就只有 q=\ensuremath{\pm}1。
+
+可能的混淆：认为所有三次 alias 都是 Z4 新增；从局部 alias 直接推出两端真实边界如何变化。
+
+{\fontsize{9.0}{12.6}\selectfont
+\setlength{\tabcolsep}{2.5pt}
+\begin{longtable}{>{\raggedright\arraybackslash}p{\dimexpr 0.11\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.07\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.31\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.4\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.11\linewidth-2\tabcolsep\relax}}
+\caption{Q06：讨论细节覆盖比较}\\
+\toprule
+\textbf{Run} & \textbf{状态} & \textbf{原文做到的内容} & \textbf{说明不足 / 限定 / 替代路线} & \textbf{证据}\tabularnewline
+\midrule
+\endfirsthead
+\toprule
+\textbf{Run} & \textbf{状态} & \textbf{原文做到的内容} & \textbf{说明不足 / 限定 / 替代路线} & \textbf{证据}\tabularnewline
+\midrule
+\endhead
+{}Fable03 & I & charge表列 q=3\textasciitilde{}\ensuremath{-}1、\ensuremath{-}3\textasciitilde{}1，讨论 Z4高低 p不对称。 & 未完整把 pure/mixed三次对照到每种局部隐藏及两端现象。 & \hyperref[src:F03-01]{F03-01:190}\newline \hyperref[src:F03-01]{F03-01:201}\tabularnewline
+{}Opus01 & I & 表有 Z4 triple aliases，提出 charge4 defect图景。 & 物理解释为局部/有效模型图景，未证明两端threshold变化。 & \hyperref[src:O01-01]{O01-01:268}\newline \hyperref[src:O01-01]{O01-01:275}\tabularnewline
+{}Opus02 & I & CRT表列 triple aliases，讨论低/高 p增益差异。 & 未逐一解释 pure triple与本来已混的 mixed triple有何不同。 & \hyperref[src:O02-01]{O02-01:212}\newline \hyperref[src:O02-01]{O02-01:214}\tabularnewline
+{}Opus03 & E & N4低 rank表和高 p仿射 incidence分析给出区分。 & 局部损失仍不能单独推出真实相界位置；原文保留机制范围。 & \hyperref[src:O03-01]{O03-01:229}\newline \hyperref[src:O03-01]{O03-01:668}\tabularnewline
+{}GPT01 & E & charge类与精确取向求和共同解释 Z4三次混淆。 & 高 p恒等式保留闭分量，不能推导阈值必与 O0相同。 & \hyperref[src:G01-01]{G01-01:33}\newline \hyperref[src:G01-02]{G01-02:256}\tabularnewline
+{}GPT02 & I & N4所有三次均 M=1，路径常数显式变为特殊值。 & 局部计数机制到高/低 p阈值尚未全展开，记隐含覆盖。 & \hyperref[src:G02-01]{G02-01:51}\newline \hyperref[src:G02-02]{G02-02:173}\tabularnewline
+{}GPT03 & I & charge alias表正确，Z4上端按信息序处理。 & 未用 pure/mixed局部机制完整解释非对称端点。 & \hyperref[src:G03-01]{G03-01:40}\tabularnewline
+\bottomrule
+\end{longtable}
+}
+比较结论：Opus03/GPT01 给出较完整机制；其他多有等价表或粗约束，但没有把全部局部模式与两端行为逐项联系。
+
+\clearpage
+\subsection{Q07 高p活跃连通分量取向恒等式及其证明范围}
+\label{aspect:Q07}
+问题：高 p 的 Z4 弱增益是否有精确连通分量解释？
+
+与原题关系：可选增强分析。本节覆盖状态不另加减100分主项。
+
+为什么检查：固定 active graph 后，随机取向的 mod4 charge 是二元 incidence 的仿射像；闭分量保留约束。
+
+可能的混淆：把高 p 增益很小升级为 O1(4)=O0 的信道或阈值等价；忽略闭 active 分量和零次顶点。
+
+{\fontsize{9.0}{12.6}\selectfont
+\setlength{\tabcolsep}{2.5pt}
+\begin{longtable}{>{\raggedright\arraybackslash}p{\dimexpr 0.11\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.07\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.31\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.4\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.11\linewidth-2\tabcolsep\relax}}
+\caption{Q07：讨论细节覆盖比较}\\
+\toprule
+\textbf{Run} & \textbf{状态} & \textbf{原文做到的内容} & \textbf{说明不足 / 限定 / 替代路线} & \textbf{证据}\tabularnewline
+\midrule
+\endfirsthead
+\toprule
+\textbf{Run} & \textbf{状态} & \textbf{原文做到的内容} & \textbf{说明不足 / 限定 / 替代路线} & \textbf{证据}\tabularnewline
+\midrule
+\endhead
+{}Fable03 & M & 注意 Z4高 p几乎不改善，给 finite-size端点。 & 未见 active-component仿射 incidence恒等式；属可选增强缺失。 & \hyperref[src:F03-01]{F03-01:190}\newline \hyperref[src:F03-01]{F03-01:201}\tabularnewline
+{}Opus01 & M & 注意高 p增益小并修正 nesting，讨论 defect图景。 & 未给精确连通分量取向求和；不能把图景当该恒等式。 & \hyperref[src:O01-01]{O01-01:268}\newline \hyperref[src:O01-01]{O01-01:275}\tabularnewline
+{}Opus02 & M & paired posterior对照显示高 p增益很小。 & 未给 active graph精确均匀像证明；经验检查不能替代。 & \hyperref[src:O02-01]{O02-01:212}\newline \hyperref[src:O02-01]{O02-01:214}\tabularnewline
+{}Opus03 & E & 证明边界相接 active分量上的 charge在奇偶允许标签间均匀。 & 闭 active分量和零 arrival顶点仍保留额外信息；不推出阈值等价。 & \hyperref[src:O03-01]{O03-01:229}\newline \hyperref[src:O03-01]{O03-01:668}\tabularnewline
+{}GPT01 & E & 推 Pr(k|x)=2\textasciicircum{}(c0\ensuremath{-}D)乘闭分量charge和约束，并独立验证。 & 原文明确该恒等式是 posterior核验，不是高噪声信道等价假设。 & \hyperref[src:G01-01]{G01-01:33}\newline \hyperref[src:G01-02]{G01-02:256}\tabularnewline
+{}GPT02 & M & 给 Z4特殊 M和保守相图处理。 & 未见与 Opus03/GPT01相同的精确连通分量恒等式。 & \hyperref[src:G02-01]{G02-01:51}\newline \hyperref[src:G02-02]{G02-02:173}\tabularnewline
+{}GPT03 & M & 解释名义高端误差与信息投影。 & 未给 active-component取向恒等式；原题未强制该增强分析。 & \hyperref[src:G03-01]{G03-01:40}\tabularnewline
+\bottomrule
+\end{longtable}
+}
+比较结论：Opus03 与 GPT01 独立给出精确恒等式。其余未见相同连通分量分析；这是增强解释，不是原题额外扣分项。
+
+\clearpage
+\subsection{Q08 O1中性对不可见与O2隐藏随N变稀少}
+\label{aspect:Q08}
+问题：为何 O1 饱和而 O2 可继续随 N 改善？
+
+与原题关系：R3/相图机制。本节覆盖状态不另加减100分主项。
+
+为什么检查：中性 V,Vbar 对的整数 charge 始终为零；O2 将多次 arrivals 测成低次数标签的概率随 N\textasciicircum{}-2 减小。
+
+可能的混淆：把知道整数 q 当知道全部 arrival 数；把 N\textasciicircum{}-2 当各顶点独立失败概率；由 O1 饱和直接证明其中心不可解码。
+
+{\fontsize{9.0}{12.6}\selectfont
+\setlength{\tabcolsep}{2.5pt}
+\begin{longtable}{>{\raggedright\arraybackslash}p{\dimexpr 0.11\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.07\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.31\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.4\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.11\linewidth-2\tabcolsep\relax}}
+\caption{Q08：讨论细节覆盖比较}\\
+\toprule
+\textbf{Run} & \textbf{状态} & \textbf{原文做到的内容} & \textbf{说明不足 / 限定 / 替代路线} & \textbf{证据}\tabularnewline
+\midrule
+\endfirsthead
+\toprule
+\textbf{Run} & \textbf{状态} & \textbf{原文做到的内容} & \textbf{说明不足 / 限定 / 替代路线} & \textbf{证据}\tabularnewline
+\midrule
+\endhead
+{}Fable03 & E & 列 irrep歧义概率1/N²、2/N²，再随机降为 noisy degree。 & neutral pair在完整 q中仍不可见；不能从饱和推出中心不可解码。 & \hyperref[src:F03-02]{F03-02:113}\tabularnewline
+{}Opus01 & E & 构造取向盲 degree garbling，以1/N²、2/N²刻画 count ambiguity。 & 其大 N定理通过主动退化处理相关性，不是逐顶点原始取向独立。 & \hyperref[src:O01-01]{O01-01:140}\tabularnewline
+{}Opus02 & E & degree-record随机核后作 polymer/Chernoff路径界。 & 原始 O2顶点观测相关；独立只在合法退化的次数信道中使用。 & \hyperref[src:O02-01]{O02-01:76}\tabularnewline
+{}Opus03 & E & 用额外随机 coins实现相同 n的统一掉数率，再控 path overlap。 & 1/N²不是单个 logical failure概率，也不能直接全顶点相乘。 & \hyperref[src:O03-01]{O03-01:574}\tabularnewline
+{}GPT01 & E & 用共享箭头矩阵范数控 pair隐藏，O1常数不随大 N下降。 & 仍需 decoder评分和路径模式求和；隐藏本身不是充分失败条件。 & \hyperref[src:G01-02]{G01-02:104}\tabularnewline
+{}GPT02 & E & 同表列 O1与O2的 \ensuremath{\alpha}0/\ensuremath{\alpha}1，直接显示 O1饱和与 O2下降。 & 侧边/chord共享另用二次矩；不是用边际隐藏率相乘。 & \hyperref[src:G02-02]{G02-02:158}\tabularnewline
+{}GPT03 & E & O1整数类与 O2可降 noisy degree并行推导。 & N\textasciicircum{}-2使证明渐强，但有限小 N真实相仍需独立证据。 & \hyperref[src:G03-02]{G03-02:157}\tabularnewline
+\bottomrule
+\end{longtable}
+}
+比较结论：七份识别该机制，并用有效相关性或随机粗粒化处理；O1 饱和是精确信息事实，中心热力学相仍未由此决定。
+
+\clearpage
+\subsection{Q09 X,C binary与sigma潜取向分开，sigma不提供给decoder}
+\label{aspect:Q09}
+问题：binary 的 X、C 与潜在箭头 \ensuremath{\sigma} 是否分清，\ensuremath{\sigma} 是否被错误交给 decoder？
+
+与原题关系：模型核心。本节覆盖状态不另加减100分主项。
+
+为什么检查：X 只记录边是否占据，\ensuremath{\sigma} 决定占据边哪端收到 V。二者共同决定 readout 概率，但 correction 仍为 binary；条件于隐藏变量作分析不等于 decoder 能看见它。
+
+可能的混淆：认为 binary operator 自带方向，或认为题目根本没有额外取向。；让 decoder 访问真实 \ensuremath{\sigma}。；将边编号 ei、占据位 Xi 与符号 \ensuremath{\sigma}i 混用。
+
+{\fontsize{9.0}{12.6}\selectfont
+\setlength{\tabcolsep}{2.5pt}
+\begin{longtable}{>{\raggedright\arraybackslash}p{\dimexpr 0.11\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.07\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.31\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.4\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.11\linewidth-2\tabcolsep\relax}}
+\caption{Q09：讨论细节覆盖比较}\\
+\toprule
+\textbf{Run} & \textbf{状态} & \textbf{原文做到的内容} & \textbf{说明不足 / 限定 / 替代路线} & \textbf{证据}\tabularnewline
+\midrule
+\endfirsthead
+\toprule
+\textbf{Run} & \textbf{状态} & \textbf{原文做到的内容} & \textbf{说明不足 / 限定 / 替代路线} & \textbf{证据}\tabularnewline
+\midrule
+\endhead
+{}Fable03 & E & 开篇分开 support x 与 \ensuremath{\epsilon}，先验为1\ensuremath{-}p、p/2、p/2；后续 degree garbling 可见且不保留取向。 & “潜取向不提供给 decoder”的教学性说明较分散，但合法降级构造足以确认未偷看。 & \hyperref[src:F03-02]{F03-02:3}\tabularnewline
+{}Opus01 & E & 明确 x binary、\ensuremath{\sigma} 为额外取向，私有随机降级核只使用可见 irrep。 & 科学建模完整；未额外提供当前讨论所需的局部箭头图。 & \hyperref[src:O01-02]{O01-02:3}\tabularnewline
+{}Opus02 & E & exact\_structure 建模 x 与取向，证明先降级为仅 degree 相关的观测。 & 科学建模完整；无须在降级后的证明中保留 \ensuremath{\sigma} 状态。 & \hyperref[src:O02-03]{O02-03:3}\tabularnewline
+{}Opus03 & E & 三态微观 y 指明 V 所在端点，correction/成功条件仍是 binary。 & 科学建模完整；图解缺失另列 Q21。 & \hyperref[src:O03-04]{O03-04:10}\tabularnewline
+{}GPT01 & E & 三态微观变量与 binary occupation 分开；路径外微观条件化只用于概率界。 & 建模正确；相同 binary support 可有不同 \ensuremath{\sigma} 的图解原文未展开。 & \hyperref[src:G01-02]{G01-02:70}\tabularnewline
+{}GPT02 & E & 明确 latent arrow、路径参考方向及共享边两端符号关系；辅助 decoder 只使用 m。 & 建模与参考方向最明确；仍未提供四格教学图。 & \hyperref[src:G02-02]{G02-02:108}\tabularnewline
+{}GPT03 & E & 开篇写额外取向与条件独立 readout；二阶矩分析中平均隐藏取向。 & 建模正确；采用二阶矩方法无需箭头 transfer matrix。 & \hyperref[src:G03-02]{G03-02:3}\tabularnewline
+\bottomrule
+\end{longtable}
+}
+比较结论：冻结诊断七份均 E。读者对箭头的困惑主要是展示深度问题，未发现这些 run 将 binary correction 错改成有向 operator。
+
+\clearpage
+\subsection{Q10 差分分量自回避由度数0/2而来，非物理排斥}
+\label{aspect:Q10}
+问题：为什么失败见证可以是自回避路径，而不是任意带环 walk？
+
+与原题关系：采用路径证明时必要。本节覆盖状态不另加减100分主项。
+
+为什么检查：蜂窝测量顶点的差分有偶数度且最大度3，因此非零度只能是2；完整分量是简单环或简单路径。自回避是差分图结构，不是物理排斥假设。
+
+可能的混淆：从“逻辑 operator 可 deformation”直接推出所有代表均自回避。；遗漏差分有多个分量或附加环。；把路径的偶数差分度误说成真实 arrival 数必为偶数。
+
+{\fontsize{9.0}{12.6}\selectfont
+\setlength{\tabcolsep}{2.5pt}
+\begin{longtable}{>{\raggedright\arraybackslash}p{\dimexpr 0.11\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.07\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.31\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.4\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.11\linewidth-2\tabcolsep\relax}}
+\caption{Q10：讨论细节覆盖比较}\\
+\toprule
+\textbf{Run} & \textbf{状态} & \textbf{原文做到的内容} & \textbf{说明不足 / 限定 / 替代路线} & \textbf{证据}\tabularnewline
+\midrule
+\endfirsthead
+\toprule
+\textbf{Run} & \textbf{状态} & \textbf{原文做到的内容} & \textbf{说明不足 / 限定 / 替代路线} & \textbf{证据}\tabularnewline
+\midrule
+\endhead
+{}Fable03 & E & 从同 syndrome 与最大度3推 degree0/2；差分为互不交的简单环/路径，逻辑错误选出 bottom-top 分量。 & 本项无错误；没有逐步画出 loop deformation 属表达补充，不影响结构论证。 & \hyperref[src:F03-02]{F03-02:190}\tabularnewline
+{}Opus01 & E & 明确 degree0/2 与贯穿分量；可翻转完整分量而不破坏局部可行性。 & 本项无错误；没有逐步画出 loop deformation 属表达补充，不影响结构论证。 & \hyperref[src:O01-02]{O01-02:103}\tabularnewline
+{}Opus02 & E & 直接 posterior 分量分解，逐项区分环、同侧路径和贯穿路径；奇数个贯穿分量改变逻辑扇区。 & 本项无错误；没有逐步画出 loop deformation 属表达补充，不影响结构论证。 & \hyperref[src:O02-02]{O02-02:8}\tabularnewline
+{}Opus03 & E & MAP-support 差分按 degree0/2 分解，贯穿分量成为失败见证。 & 本项无错误；没有逐步画出 loop deformation 属表达补充，不影响结构论证。 & \hyperref[src:O03-02]{O03-02:166}\tabularnewline
+{}GPT01 & E & 单独的几何段给出简单分量与最短长度，不假设实际 error 自回避。 & 本项无错误；没有逐步画出 loop deformation 属表达补充，不影响结构论证。 & \hyperref[src:G01-02]{G01-02:7}\tabularnewline
+{}GPT02 & E & 差分同 syndrome，trivalent 检测点迫使 degree0/2，失败含贯穿分量。 & 本项无错误；没有逐步画出 loop deformation 属表达补充，不影响结构论证。 & \hyperref[src:G02-02]{G02-02:145}\tabularnewline
+{}GPT03 & E & 几何证明较详细，涵盖逻辑代表、边界和最短贯穿长度。 & 本项无错误；没有逐步画出 loop deformation 属表达补充，不影响结构论证。 & \hyperref[src:G03-02]{G03-02:8}\tabularnewline
+\bottomrule
+\end{longtable}
+}
+比较结论：七份均 E。证明计数的是可选出的简单差分分量，并未限制所有真实 error 或所有逻辑 operator 代表都自回避。
+
+\clearpage
+\subsection{Q11 M最小相容计数，11才强迫真实隐藏，01/10不改数量}
+\label{aspect:Q11}
+问题：M、真实/候选 arrival 数及 00/01/10/11 的局部变化是否解释正确？
+
+与原题关系：采用该粗约束时必要。本节覆盖状态不另加减100分主项。
+
+为什么检查：直接粗约束路线的 M 是当前 readout 允许的最小同奇偶 arrival 数，degree\ensuremath{\leq}3 使 n\ensuremath{\in}\{M,M+2\}。只有真实11被删成00强迫真实记录隐藏pair。
+
+可能的混淆：把 M 当真实计数或与观测无关的阈值。；说路径每个顶点都必须隐藏。；忽略degree上限，将 M+2、M+4 等都允许。；对不使用 M 的有效 proof 强制套用同一符号。
+
+{\fontsize{9.0}{12.6}\selectfont
+\setlength{\tabcolsep}{2.5pt}
+\begin{longtable}{>{\raggedright\arraybackslash}p{\dimexpr 0.11\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.07\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.31\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.4\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.11\linewidth-2\tabcolsep\relax}}
+\caption{Q11：讨论细节覆盖比较}\\
+\toprule
+\textbf{Run} & \textbf{状态} & \textbf{原文做到的内容} & \textbf{说明不足 / 限定 / 替代路线} & \textbf{证据}\tabularnewline
+\midrule
+\endfirsthead
+\toprule
+\textbf{Run} & \textbf{状态} & \textbf{原文做到的内容} & \textbf{说明不足 / 限定 / 替代路线} & \textbf{证据}\tabularnewline
+\midrule
+\endhead
+{}Fable03 & I & 使用 noisy degree channel 的可行性；双边翻转改变计数\ensuremath{\pm}2，alternating不变。M形式的等价内容可推出。 & 冻结 I：等价内容分散；这不是科学错误，也不要求补用 GPT 式 M decoder。 & \hyperref[src:F03-02]{F03-02:130}\newline \hyperref[src:F03-02]{F03-02:201}\tabularnewline
+{}Opus01 & I & degree garbling 与双边/交替 overlap 覆盖相同局部机制，未以 M 单列该表。 & 冻结 I：未专门给出 M 表；采用合法降级路线，不扣方法选择分。 & \hyperref[src:O01-02]{O01-02:62}\newline \hyperref[src:O01-02]{O01-02:114}\tabularnewline
+{}Opus02 & I & readout overlap 按同度/增加2/减少2分类；直接 posterior 路线不需要定义 M。 & 冻结 I：应理解为与讨论的对应说明未展开，直接 posterior 方法本身无需 M。 & \hyperref[src:O02-02]{O02-02:19}\newline \hyperref[src:O02-02]{O02-02:19}\tabularnewline
+{}Opus03 & I & 降级核及 overlap 区分不同degree；M形式隐含于可行性而非主要记号。 & 冻结 I：局部可行性正确，M解释不是原文主线。 & \hyperref[src:O03-02]{O03-02:138}\newline \hyperref[src:O03-02]{O03-02:184}\tabularnewline
+{}GPT01 & E & 明确定义 m，真实 n\ensuremath{\in}\{m,m+2\}；明确只有11要求 B=1，00增加pair，混合模式不变。 & 冻结 E；记号 m 可在教学稿统一为 M，避免与路径长度混淆。 & \hyperref[src:G01-02]{G01-02:106}\newline \hyperref[src:G01-02]{G01-02:119}\tabularnewline
+{}GPT02 & E & M最小同奇偶计数定义、min/max decoder 和11隐藏均明确。 & 冻结 E；不应误读为每个顶点 arrival 总数都是偶数。 & \hyperref[src:G02-02]{G02-02:130}\newline \hyperref[src:G02-02]{G02-02:147}\tabularnewline
+{}GPT03 & E & h为最小相容计数，n\ensuremath{\in}\{h,h+2\}；min-card及只有11隐藏说明明确。 & 冻结 E；原文 h 与侧边占据 h 的聊天用法须区分。 & \hyperref[src:G03-02]{G03-02:194}\newline \hyperref[src:G03-02]{G03-02:219}\tabularnewline
+\bottomrule
+\end{longtable}
+}
+比较结论：G01/02/03 在直接 M 路线上明确做到；F03、Opus三份通过等价degree-channel论证完成科学任务，冻结 I 只表示对应教学解释较分散。
+
+\clearpage
+\subsection{Q12 隐藏必要非充分，且对指定辅助decoder成立}
+\label{aspect:Q12}
+问题：为什么只算隐藏能帮助控制 mismatch，是否误把必要条件当充分条件？
+
+与原题关系：采用隐藏证明时必要。本节覆盖状态不另加减100分主项。
+
+为什么检查：C是全局观测的函数，直接逐点算 mismatch 很难。证明利用失败事件包含于“必要局部歧义+全局选择条件”，允许上界多算，而非声称每次隐藏都会失败。
+
+可能的混淆：隐藏一次就宣布 logical failure。；将必要条件用于任意只满足 syndrome 的 correction，遗漏专门辅助规则的可行约束。；把上界计入的几何路径全部说成完整信号可行解。
+
+{\fontsize{9.0}{12.6}\selectfont
+\setlength{\tabcolsep}{2.5pt}
+\begin{longtable}{>{\raggedright\arraybackslash}p{\dimexpr 0.11\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.07\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.31\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.4\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.11\linewidth-2\tabcolsep\relax}}
+\caption{Q12：讨论细节覆盖比较}\\
+\toprule
+\textbf{Run} & \textbf{状态} & \textbf{原文做到的内容} & \textbf{说明不足 / 限定 / 替代路线} & \textbf{证据}\tabularnewline
+\midrule
+\endfirsthead
+\toprule
+\textbf{Run} & \textbf{状态} & \textbf{原文做到的内容} & \textbf{说明不足 / 限定 / 替代路线} & \textbf{证据}\tabularnewline
+\midrule
+\endhead
+{}Fable03 & E & 失败见证需要降级后完整分量可行且 rD\ensuremath{\geq}1；隐藏/overlap只是概率计算的一部分。 & 冻结 E；未发现“隐藏即失败”的错误。当前讨论需更直观展开事件包含关系。 & \hyperref[src:F03-02]{F03-02:188}\tabularnewline
+{}Opus01 & E & MAP选择与分量可行先于 Bhattacharyya 求和，未把局部低计数等同失败。 & 冻结 E；未发现“隐藏即失败”的错误。当前讨论需更直观展开事件包含关系。 & \hyperref[src:O01-02]{O01-02:100}\tabularnewline
+{}Opus02 & E & 直接 posterior/polymer inequality 控制错误扇区总权重，包含可行性和 fractional ratio，并非逐点隐藏计数。 & 冻结 E；未发现“隐藏即失败”的错误。当前讨论需更直观展开事件包含关系。 & \hyperref[src:O02-02]{O02-02:15}\tabularnewline
+{}Opus03 & E & 完整见证包含 likelihood ratio；局部混淆只贡献 overlap。 & 冻结 E；未发现“隐藏即失败”的错误。当前讨论需更直观展开事件包含关系。 & \hyperref[src:O03-02]{O03-02:163}\tabularnewline
+{}GPT01 & E & B=1 仅作为11删除的必要条件，随后保留 A\ensuremath{\geq}1 与辅助风险比较。 & 冻结 E；未发现“隐藏即失败”的错误。当前讨论需更直观展开事件包含关系。 & \hyperref[src:G01-02]{G01-02:112}\tabularnewline
+{}GPT02 & E & 局部隐藏、至少/至多半路径active与 Chernoff 联合使用。 & 冻结 E；未发现“隐藏即失败”的错误。当前讨论需更直观展开事件包含关系。 & \hyperref[src:G02-02]{G02-02:138}\tabularnewline
+{}GPT03 & E & 仅对受 h 约束的辅助 decoder 建立必要条件，另有至少半路径active要求。 & 冻结 E；未发现“隐藏即失败”的错误。当前讨论需更直观展开事件包含关系。 & \hyperref[src:G03-02]{G03-02:213}\tabularnewline
+\bottomrule
+\end{longtable}
+}
+比较结论：七份都没有把隐藏当充分条件。它们控制的是 mismatch/错误扇区概率的上界；局部事件是否稀有必须和全局候选选择同时使用。
+
+\clearpage
+\subsection{Q13 decoder评分/最少最多边数/Chernoff条件参与概率界}
+\label{aspect:Q13}
+问题：decoder 选择条件如何进入整条路径的概率上界？
+
+与原题关系：相应证明路线必要。本节覆盖状态不另加减100分主项。
+
+为什么检查：交替路径可完全没有11隐藏顶点。只有把评分、likelihood ratio或直接posterior权重也纳入，才能抑制所有占据模式，得到有效\ensuremath{\rho}\textasciicircum{}d。
+
+可能的混淆：只乘11隐藏因子就认为任何路径概率指数变小。；遗漏评分比中的 prior p/(1\ensuremath{-}p)。；把 min-card 的“至少半路径active”错误用于 max-card。
+
+{\fontsize{9.0}{12.6}\selectfont
+\setlength{\tabcolsep}{2.5pt}
+\begin{longtable}{>{\raggedright\arraybackslash}p{\dimexpr 0.11\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.07\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.31\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.4\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.11\linewidth-2\tabcolsep\relax}}
+\caption{Q13：讨论细节覆盖比较}\\
+\toprule
+\textbf{Run} & \textbf{状态} & \textbf{原文做到的内容} & \textbf{说明不足 / 限定 / 替代路线} & \textbf{证据}\tabularnewline
+\midrule
+\endfirsthead
+\toprule
+\textbf{Run} & \textbf{状态} & \textbf{原文做到的内容} & \textbf{说明不足 / 限定 / 替代路线} & \textbf{证据}\tabularnewline
+\midrule
+\endhead
+{}Fable03 & E & 由 MAP-support 得 rD\ensuremath{\geq}1，以指示函数\ensuremath{\leq}\ensuremath{\surd}rD 引出 Bhattacharyya overlap及边prior平方根。 & 冻结 E；科学步骤完整。直接posterior路线无需伪造MAP评分阈值。 & \hyperref[src:F03-02]{F03-02:196}\tabularnewline
+{}Opus01 & E & 分量 likelihood ratio\ensuremath{\geq}1 后用平方根矩，边贡献\ensuremath{\surd}p(1\ensuremath{-}p)，局部贡献overlap。 & 冻结 E；科学步骤完整。直接posterior路线无需伪造MAP评分阈值。 & \hyperref[src:O01-02]{O01-02:107}\tabularnewline
+{}Opus02 & E & 无需硬阈值选择事件；错误posterior\ensuremath{\leq}路径ratio和，再取 r\textasciicircum{}\ensuremath{\theta} fractional moment，作用等价。 & 冻结 E；科学步骤完整。直接posterior路线无需伪造MAP评分阈值。 & \hyperref[src:O02-02]{O02-02:15}\tabularnewline
+{}Opus03 & E & MAP比值\ensuremath{\geq}1与 Bhattacharyya 结合，包含所有占据模式。 & 冻结 E；科学步骤完整。直接posterior路线无需伪造MAP评分阈值。 & \hyperref[src:O03-02]{O03-02:173}\tabularnewline
+{}GPT01 & E & 评分比A\ensuremath{\geq}1；平方根评分权重与隐藏率合并，使00、11都出现\ensuremath{\surd}t。 & 冻结 E；科学步骤完整。直接posterior路线无需伪造MAP评分阈值。 & \hyperref[src:G01-02]{G01-02:119}\tabularnewline
+{}GPT02 & E & 按p选择最少/最多边数规则，限制真实active数不少于/不多于d/2，再优化Chernoff参数。 & 冻结 E；科学步骤完整。直接posterior路线无需伪造MAP评分阈值。 & \hyperref[src:G02-02]{G02-02:190}\tabularnewline
+{}GPT03 & E & min-card迫使u\ensuremath{\geq}d/2；后用Chernoff参数及占据矩阵平均Bernoulli模式，高p另控。 & 冻结 E；科学步骤完整。直接posterior路线无需伪造MAP评分阈值。 & \hyperref[src:G03-02]{G03-02:253}\tabularnewline
+\bottomrule
+\end{longtable}
+}
+比较结论：七份均保留了选择/后验权重这一关键环节。单纯“所有11都隐藏”不够；正确证明没有止步于局部概率。
+
+\clearpage
+\subsection{Q14 取向矩阵状态和每个元素解释正确}
+\label{aspect:Q14}
+问题：若使用取向矩阵，\ensuremath{\pm}状态、元素与首尾归一化是否正确？
+
+与原题关系：直接矩阵路线适用；替代路线NA。本节覆盖状态不另加减100分主项。
+
+为什么检查：取向矩阵在固定active段上传播共享箭头，元素是给定相邻取向的readout权重，不是binary correction的转移，也不是行和为1的Markov核。
+
+可能的混淆：将\ensuremath{\pm}取向当成占据0/1。；把共同顶点左右arrival的相对符号弄反。；漏掉每条active箭头1/2先验或首尾求和。；要求所有有效证明都必须使用箭头矩阵。
+
+{\fontsize{9.0}{12.6}\selectfont
+\setlength{\tabcolsep}{2.5pt}
+\begin{longtable}{>{\raggedright\arraybackslash}p{\dimexpr 0.11\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.07\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.31\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.4\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.11\linewidth-2\tabcolsep\relax}}
+\caption{Q14：讨论细节覆盖比较}\\
+\toprule
+\textbf{Run} & \textbf{状态} & \textbf{原文做到的内容} & \textbf{说明不足 / 限定 / 替代路线} & \textbf{证据}\tabularnewline
+\midrule
+\endfirsthead
+\toprule
+\textbf{Run} & \textbf{状态} & \textbf{原文做到的内容} & \textbf{说明不足 / 限定 / 替代路线} & \textbf{证据}\tabularnewline
+\midrule
+\endhead
+{}Fable03 & NA & 合法随机降级后观测只依赖degree，取向已求和；不使用箭头矩阵。 & 冻结 NA：合法替代方法，不是遗漏。 & \hyperref[src:F03-02]{F03-02:183}\tabularnewline
+{}Opus01 & NA & 先用可见irrep降级为orientation-blind channel，无须保留\ensuremath{\pm}状态。 & 冻结 NA：合法替代方法，不是遗漏。 & \hyperref[src:O01-02]{O01-02:97}\tabularnewline
+{}Opus02 & NA & 直接degree-channel posterior证明；箭头矩阵不适用。 & 冻结 NA：合法替代方法，不是遗漏。 & \hyperref[src:O02-02]{O02-02:8}\tabularnewline
+{}Opus03 & NA & 明确降级likelihood不含取向；箭头已合法消去。 & 冻结 NA：合法替代方法，不是遗漏。 & \hyperref[src:O03-02]{O03-02:158}\tabularnewline
+{}GPT01 & E & 沿active段用\ensuremath{\pm}状态，矩阵含下一条箭头1/2；端向量(1,1)/\ensuremath{\surd}2范数1，取算子范数。 & 冻结 E：公式正确；四个元素逐格教学图缺失见Q21。 & \hyperref[src:G01-02]{G01-02:155}\tabularnewline
+{}GPT02 & E & 明确路径参考方向、arrival为ui和\ensuremath{-}ui+1，F/2及首尾向量，列出不同N的矩阵范数。 & 冻结 E：状态/端点说明充分；四格图仍缺失。 & \hyperref[src:G02-02]{G02-02:149}\tabularnewline
+{}GPT03 & NA & 采用二分图Cauchy-Schwarz二阶矩，平均真实取向；无需箭头矩阵。 & 冻结 NA：二阶矩处理同一相关性，不是遗漏。 & \hyperref[src:G03-02]{G03-02:227}\tabularnewline
+\bottomrule
+\end{longtable}
+}
+比较结论：仅G01/02直接适用且均E，其余NA。不能把是否画箭头矩阵变成评价R3正确性的必选项。
+
+\clearpage
+\subsection{Q15 占据矩阵与取向矩阵是不同状态空间}
+\label{aspect:Q15}
+问题：占据模式求和与箭头求和是否分清，\ensuremath{\rho}从何而来？
+
+与原题关系：两矩阵路线适用；替代路线NA。本节覆盖状态不另加减100分主项。
+
+为什么检查：\ensuremath{\pm}矩阵平均latent取向，0/1矩阵求和真实Bernoulli占据模式。后者连同评分/Chernoff产生\ensuremath{\rho}；\ensuremath{\rho}不是单顶点隐藏概率。只用一种矩阵的证明也可有效。
+
+可能的混淆：把\ensuremath{\rho}等同1/N²。；把同一条边在两个顶点重新抽样。；把所有transfer matrix都解释成物理时间转移。；因替代证明只用占据矩阵而扣分。
+
+{\fontsize{9.0}{12.6}\selectfont
+\setlength{\tabcolsep}{2.5pt}
+\begin{longtable}{>{\raggedright\arraybackslash}p{\dimexpr 0.11\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.07\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.31\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.4\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.11\linewidth-2\tabcolsep\relax}}
+\caption{Q15：讨论细节覆盖比较}\\
+\toprule
+\textbf{Run} & \textbf{状态} & \textbf{原文做到的内容} & \textbf{说明不足 / 限定 / 替代路线} & \textbf{证据}\tabularnewline
+\midrule
+\endfirsthead
+\toprule
+\textbf{Run} & \textbf{状态} & \textbf{原文做到的内容} & \textbf{说明不足 / 限定 / 替代路线} & \textbf{证据}\tabularnewline
+\midrule
+\endhead
+{}Fable03 & NA & 明确占据/候选模式矩阵[[\ensuremath{\beta},1],[1,\ensuremath{\beta}]]及二进制序列求和；没有第二个箭头矩阵可混淆。 & 冻结 NA 针对“两种矩阵区分”；占据求和本身明确，不是缺失。 & \hyperref[src:F03-02]{F03-02:220}\tabularnewline
+{}Opus01 & NA & 占据矩阵明确，\ensuremath{\beta}来自readout overlap和侧边平均；无需两矩阵区分。 & 冻结 NA 针对两矩阵路线；其占据矩阵是有效核心步骤。 & \hyperref[src:O01-02]{O01-02:118}\tabularnewline
+{}Opus02 & NA & 一般\ensuremath{\theta}的边占据权重w与T明确，Perron根控制所有模式；取向先降级消除。 & 冻结 NA 针对两矩阵路线；不能解释成没有求模式和。 & \hyperref[src:O02-02]{O02-02:19}\tabularnewline
+{}Opus03 & NA & 使用共享特征向量的占据矩阵，真实箭头早已求和。 & 冻结 NA 针对两矩阵路线；占据矩阵内容完整。 & \hyperref[src:O03-02]{O03-02:186}\tabularnewline
+{}GPT01 & I & 125-129行等占据pair的序列和正确；取向矩阵另列，未单独命名占据K矩阵。 & 冻结 I：等价序列公式完整，单独画K并解释其0/1状态会更清楚；不构成概率界错误。 & \hyperref[src:G01-02]{G01-02:125}\tabularnewline
+{}GPT02 & E & 明确0/1占据矩阵及Chernoff权重，与此前\ensuremath{\pm}取向矩阵分开。 & 冻结 E：两种状态空间最明确。 & \hyperref[src:G02-02]{G02-02:190}\tabularnewline
+{}GPT03 & NA & 占据A\_z矩阵及Chernoff明确，相关性用二阶矩而非另一个\ensuremath{\pm}矩阵。 & 冻结 NA 针对两矩阵路线；0/1矩阵已明确。 & \hyperref[src:G03-02]{G03-02:253}\tabularnewline
+\bottomrule
+\end{longtable}
+}
+比较结论：G02明确区分两种矩阵；G01公式可推出但教学说明较简。其余不是没有模式求和，而是合法避开了两矩阵路线。
+
+\clearpage
+\subsection{Q16 路径外边/chord共享不能逐顶点独立重抽}
+\label{aspect:Q16}
+问题：路径外第三边若成为 chord，是否正确处理被使用两次的同一变量？
+
+与原题关系：相关性核心；合法避开可E。本节覆盖状态不另加减100分主项。
+
+为什么检查：几何上自回避不代表没有chord。一条非路径边可同时接到两个路径顶点，侧边状态必须共享，不能将两个局部平均相乘。
+
+可能的混淆：认为自回避路径自动没有chord。；对同一侧边在两端独立抽active或箭头。；只在active连续段内用矩阵，随后又独立平均全部侧边。
+
+{\fontsize{9.0}{12.6}\selectfont
+\setlength{\tabcolsep}{2.5pt}
+\begin{longtable}{>{\raggedright\arraybackslash}p{\dimexpr 0.11\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.07\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.31\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.4\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.11\linewidth-2\tabcolsep\relax}}
+\caption{Q16：讨论细节覆盖比较}\\
+\toprule
+\textbf{Run} & \textbf{状态} & \textbf{原文做到的内容} & \textbf{说明不足 / 限定 / 替代路线} & \textbf{证据}\tabularnewline
+\midrule
+\endfirsthead
+\toprule
+\textbf{Run} & \textbf{状态} & \textbf{原文做到的内容} & \textbf{说明不足 / 限定 / 替代路线} & \textbf{证据}\tabularnewline
+\midrule
+\endhead
+{}Fable03 & E & 按侧边出现一次/两次分别求和；chord pair给(1+p)/N²，统一由\ensuremath{\beta}²控制。 & 冻结 E；没有发现漏算chord。 & \hyperref[src:F03-02]{F03-02:212}\tabularnewline
+{}Opus01 & E & 明确chord共享，Cauchy-Schwarz控制双端平均，非chord单端控制。 & 冻结 E；没有发现漏算chord。 & \hyperref[src:O01-02]{O01-02:116}\tabularnewline
+{}Opus02 & E & chord用Cauchy-Schwarz、单端用Jensen，并说明一条侧边最多涉及两个路径顶点。 & 冻结 E；没有发现漏算chord。 & \hyperref[src:O02-02]{O02-02:22}\tabularnewline
+{}Opus03 & E & 按实际物理第三边分组平均，而非逐顶点独立化。 & 冻结 E；没有发现漏算chord。 & \hyperref[src:O03-02]{O03-02:190}\tabularnewline
+{}GPT01 & E & 条件化后按同一第三边出现j=1,2分组，以((1\ensuremath{-}p)\ensuremath{\tau}0+p\ensuremath{\tau}1)\textasciicircum{}(j/2)控制。 & 冻结 E；没有发现漏算chord。 & \hyperref[src:G01-02]{G01-02:179}\tabularnewline
+{}GPT02 & E & 基础证明显式处理chord；N13改进再用正cycle expansion保留相关环因子。 & 冻结 E；没有发现漏算chord。 & \hyperref[src:G02-02]{G02-02:175}\tabularnewline
+{}GPT03 & E & 二分图同色顶点依赖互不相交微观边，跨色Cauchy-Schwarz覆盖chord。 & 冻结 E；没有发现漏算chord。 & \hyperref[src:G03-02]{G03-02:227}\tabularnewline
+\bottomrule
+\end{longtable}
+}
+比较结论：这是七份证明共同做到的关键细节。GPT02更精细地保留cycle修正，其他路线以有效不等式放松相关性。
+
+\clearpage
+\subsection{Q17 R*<=R\_aux为平均风险比较，指数界不是临界指数}
+\label{aspect:Q17}
+问题：R*\ensuremath{\leq}Raux及指数scaling的含义是否正确？
+
+与原题关系：证明结论核心。本节覆盖状态不另加减100分主项。
+
+为什么检查：R是平均逻辑失败概率。只需一个合法规则的平均风险趋零，最优平均风险就趋零；无需逐记录比较，也不要求辅助规则达到最优。指数上界不提供真实临界指数。
+
+可能的混淆：声称最优decoder每个样本都不比辅助decoder差。；把辅助失败事件包含关系当作最优风险比较的理由。；将指数上界宣称为精确logical error rate或临界scaling。
+
+{\fontsize{9.0}{12.6}\selectfont
+\setlength{\tabcolsep}{2.5pt}
+\begin{longtable}{>{\raggedright\arraybackslash}p{\dimexpr 0.11\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.07\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.31\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.4\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.11\linewidth-2\tabcolsep\relax}}
+\caption{Q17：讨论细节覆盖比较}\\
+\toprule
+\textbf{Run} & \textbf{状态} & \textbf{原文做到的内容} & \textbf{说明不足 / 限定 / 替代路线} & \textbf{证据}\tabularnewline
+\midrule
+\endfirsthead
+\toprule
+\textbf{Run} & \textbf{状态} & \textbf{原文做到的内容} & \textbf{说明不足 / 限定 / 替代路线} & \textbf{证据}\tabularnewline
+\midrule
+\endhead
+{}Fable03 & E & Bayes/data processing风险比较明确；MAP-support为辅助，不冒充sector-optimal。 & 冻结 E；这一步科学含义正确。给读者解释R为何是平均概率属于教学补充。 & \hyperref[src:F03-02]{F03-02:13}\tabularnewline
+{}Opus01 & E & 平均风险的观测退化顺序与辅助规则界明确；充分定理和数值相区分开。 & 冻结 E；这一步科学含义正确。给读者解释R为何是平均概率属于教学补充。 & \hyperref[src:O01-02]{O01-02:9}\tabularnewline
+{}Opus02 & E & 直接对Bayes错误扇区风险取平均，路径fractional moment上界；不存在逐记录最优比较假设。 & 冻结 E；这一步科学含义正确。给读者解释R为何是平均概率属于教学补充。 & \hyperref[src:O02-02]{O02-02:15}\tabularnewline
+{}Opus03 & E & 以MAP-configuration风险上界最优逻辑风险，指数定理只作充分结论。 & 冻结 E；这一步科学含义正确。给读者解释R为何是平均概率属于教学补充。 & \hyperref[src:O03-02]{O03-02:163}\tabularnewline
+{}GPT01 & E & 明确辅助风险上界最优风险；risk\ensuremath{\leq}常数·Lr\textasciicircum{}(2L\ensuremath{-}1)/(1\ensuremath{-}r)，未当作真实相界。 & 冻结 E；这一步科学含义正确。给读者解释R为何是平均概率属于教学补充。 & \hyperref[src:G01-02]{G01-02:138}\newline \hyperref[src:G01-02]{G01-02:130}\tabularnewline
+{}GPT02 & E & 完整几何级数界及最优平均风险比较；等号不是相边界。 & 冻结 E；这一步科学含义正确。给读者解释R为何是平均概率属于教学补充。 & \hyperref[src:G02-02]{G02-02:145}\newline \hyperref[src:G02-02]{G02-02:208}\tabularnewline
+{}GPT03 & E & 明确平均Bayes风险排序，指出有限模拟尺度可能看不到松上界的下降。 & 冻结 E；这一步科学含义正确。给读者解释R为何是平均概率属于教学补充。 & \hyperref[src:G03-02]{G03-02:189}\newline \hyperref[src:G03-02]{G03-02:313}\tabularnewline
+\bottomrule
+\end{longtable}
+}
+比较结论：七份对风险与结论范围均正确。证明上界趋零是充分可解码证据；无法反向用上界不收敛证明不可解码。
+
+\clearpage
+\subsection{Q18 partition function保留全局取向，小尺寸exact与大尺寸MPS分开}
+\label{aspect:Q18}
+问题：规定小尺寸 L\ensuremath{\leq}4、N\ensuremath{\leq}8 是否采用精确或认证算法？
+
+与原题关系：R4核心。本节覆盖状态不另加减100分主项。
+
+为什么检查：小尺寸 exact API 是可自动核验的交付物。算法应保留全部配置，复杂度虽可随宽度指数增长，却不需要先证明模型是自由费米子。
+
+可能的混淆：把截断 MPS 的结果称为无截断精确结果。；把大尺寸近似与规定小尺寸 API 混为一谈。；以未实现的 Pfaffian/free-fermion 理论代替可运行算法。
+
+{\fontsize{9.0}{12.6}\selectfont
+\setlength{\tabcolsep}{2.5pt}
+\begin{longtable}{>{\raggedright\arraybackslash}p{\dimexpr 0.11\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.07\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.31\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.4\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.11\linewidth-2\tabcolsep\relax}}
+\caption{Q18：讨论细节覆盖比较}\\
+\toprule
+\textbf{Run} & \textbf{状态} & \textbf{原文做到的内容} & \textbf{说明不足 / 限定 / 替代路线} & \textbf{证据}\tabularnewline
+\midrule
+\endfirsthead
+\toprule
+\textbf{Run} & \textbf{状态} & \textbf{原文做到的内容} & \textbf{说明不足 / 限定 / 替代路线} & \textbf{证据}\tabularnewline
+\midrule
+\endhead
+{}Fable03 & E & 规定小尺寸精确收缩；大尺寸方法须另核对。 & 小尺寸精确构造得到原文与独立检查支持。 & \hyperref[src:F03-04]{F03-04:25}\tabularnewline
+{}Opus01 & E & 规定小尺寸精确收缩；大尺寸方法须另核对。 & 小尺寸精确构造得到原文与独立检查支持。 & \hyperref[src:O01-01]{O01-01:67}\tabularnewline
+{}Opus02 & I & 规定小尺寸精确收缩；大尺寸方法须另核对。 & L>9公开API切至MPS；小尺寸仍exact，no-truncation措辞须限定。 & \hyperref[src:O02-05]{O02-05:18}\tabularnewline
+{}Opus03 & E & 规定小尺寸精确收缩；大尺寸方法须另核对。 & 小尺寸精确构造得到原文与独立检查支持。 & \hyperref[src:O03-06]{O03-06:12}\tabularnewline
+{}GPT01 & E & 规定小尺寸精确收缩；大尺寸方法须另核对。 & 小尺寸精确构造得到原文与独立检查支持。 & \hyperref[src:G01-03]{G01-03:279}\tabularnewline
+{}GPT02 & E & 规定小尺寸精确收缩；大尺寸方法须另核对。 & 小尺寸精确构造得到原文与独立检查支持。 & \hyperref[src:G02-04]{G02-04:314}\tabularnewline
+{}GPT03 & E & 规定小尺寸精确收缩；大尺寸方法须另核对。 & 小尺寸精确构造得到原文与独立检查支持。 & \hyperref[src:G03-03]{G03-03:267}\tabularnewline
+\bottomrule
+\end{longtable}
+}
+比较结论：小尺寸exact七份均支持；Opus大尺寸MPS不能据此称为精确。Opus02措辞不充分，记I而非R4失败。
+
+\clearpage
+\subsection{Q19 相图估计/充分界/未知、统计/有限尺寸/近似不确定性分开}
+\label{aspect:Q19}
+问题：估计、充分界、未知及三种不确定性是否各自标清？
+
+与原题关系：R1核心。本节覆盖状态不另加减100分主项。
+
+为什么检查：读者应分清数据支持的判断、认证定理和仍然可能存在的长尺度 crossover。
+
+可能的混淆：漂亮相图遮住未知；\ensuremath{\chi}差冒充上界；小样本零失败或小风险冒充全 p 热力学证明。
+
+{\fontsize{9.0}{12.6}\selectfont
+\setlength{\tabcolsep}{2.5pt}
+\begin{longtable}{>{\raggedright\arraybackslash}p{\dimexpr 0.11\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.07\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.31\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.4\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.11\linewidth-2\tabcolsep\relax}}
+\caption{Q19：讨论细节覆盖比较}\\
+\toprule
+\textbf{Run} & \textbf{状态} & \textbf{原文做到的内容} & \textbf{说明不足 / 限定 / 替代路线} & \textbf{证据}\tabularnewline
+\midrule
+\endfirsthead
+\toprule
+\textbf{Run} & \textbf{状态} & \textbf{原文做到的内容} & \textbf{说明不足 / 限定 / 替代路线} & \textbf{证据}\tabularnewline
+\midrule
+\endhead
+{}Fable03 & I & 精确收缩与统计/尺寸误差分开，并披露长衰减未排除。 & 最终仍将中心正截距解释成非解码相；限制披露未消除推断缺口。 & \hyperref[src:F03-01]{F03-01:213}\newline \hyperref[src:F03-01]{F03-01:219}\tabularnewline
+{}Opus01 & X & 数值图、大 N定理、统计及 \ensuremath{\chi}诊断有区分。 & \ensuremath{\chi}差被提升为对真 R*的误差界；中央零极限也超出现有证据。 & \hyperref[src:O01-01]{O01-01:82}\newline \hyperref[src:O01-01]{O01-01:164}\tabularnewline
+{}Opus02 & X & 保存 large-\ensuremath{\chi}、log-odds与不同尺寸报告，注明 empirical控制。 & 仍声称 induced bias受 \ensuremath{\chi}差控制，且 BKT排除未被严格建立。 & \hyperref[src:O02-01]{O02-01:301}\newline \hyperref[src:O02-01]{O02-01:319}\tabularnewline
+{}Opus03 & X & 误差源分类完整，保存 subset \ensuremath{\chi}研究和晚 crossover保留。 & 称最大 \ensuremath{\chi}变化保证所有 R1回答不变，缺少真实后验误差上界。 & \hyperref[src:O03-01]{O03-01:355}\newline \hyperref[src:O03-01]{O03-01:391}\tabularnewline
+{}GPT01 & E & 严格子集、继承数值区、未知分层，统计/尺寸/舍入分别评估。 & 未解决热力学中央相，报告准确保持未知而非掩盖。 & \hyperref[src:G01-01]{G01-01:123}\tabularnewline
+{}GPT02 & E & rigorous-only图、所有拟合含失败者、扰动与 rare-event限制齐全。 & 12条未知有依据；不等同于完成所有 true phase boundary。 & \hyperref[src:G02-01]{G02-01:99}\tabularnewline
+{}GPT03 & E & 区分 N14定理与小 N numerical，bootstrap/尺寸/round分列。 & 小 N全 p仍有网格和晚 crossover保留；A2已扣1分。 & \hyperref[src:G03-01]{G03-01:185}\tabularnewline
+\bottomrule
+\end{longtable}
+}
+比较结论：GPT01/02 最保守；GPT03 对小 N O2 作带保留的数值判定。Fable 的极限解释及 Opus 的近似保证是主要风险点。
+
+\clearpage
+\subsection{Q20 所有异常计失败，预留slots不充作已完成trial}
+\label{aspect:Q20}
+问题：所有尝试、异常、停止规则和原始数据是否无条件记账？
+
+与原题关系：明确交付要求。本节覆盖状态不另加减100分主项。
+
+为什么检查：丢弃困难记录会使风险偏低。异常作为失败的规则必须同时进入所报告指标；预留 slots 不能冒充实际完成的物理 trials。
+
+可能的混淆：异常样本从分母删除。；hard failure 记1，但 posterior-min 风险只记0.5。；只保存成功后验，导致无法审计选择偏差。；把外部终止 batch 的预留 slots 写成已完成 trials。
+
+{\fontsize{9.0}{12.6}\selectfont
+\setlength{\tabcolsep}{2.5pt}
+\begin{longtable}{>{\raggedright\arraybackslash}p{\dimexpr 0.11\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.07\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.31\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.4\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.11\linewidth-2\tabcolsep\relax}}
+\caption{Q20：讨论细节覆盖比较}\\
+\toprule
+\textbf{Run} & \textbf{状态} & \textbf{原文做到的内容} & \textbf{说明不足 / 限定 / 替代路线} & \textbf{证据}\tabularnewline
+\midrule
+\endfirsthead
+\toprule
+\textbf{Run} & \textbf{状态} & \textbf{原文做到的内容} & \textbf{说明不足 / 限定 / 替代路线} & \textbf{证据}\tabularnewline
+\midrule
+\endhead
+{}Fable03 & X & 保留原始数据、种子、停止规则及全部尝试分母。 & 异常设P0=0.5，风险/hard tie记0.5；归档异常总数0，属潜在缺陷。 & \hyperref[src:F03-07]{F03-07:56}\tabularnewline
+{}Opus01 & X & 保留原始数据、种子、停止规则及全部尝试分母。 & 报告有2次实际异常；hard failure记1，但报告风险仍记0.5。 & \hyperref[src:O01-08]{O01-08:146}\tabularnewline
+{}Opus02 & X & 保留原始数据、种子、停止规则及全部尝试分母。 & 异常hard failure记1、风险记0.5；本行不推定其实际异常次数。 & \hyperref[src:O02-08]{O02-08:49}\tabularnewline
+{}Opus03 & X & 保留原始数据、种子、停止规则及全部尝试分母。 & 异常hard failure记1、风险记0.5；本行不推定其实际异常次数。 & \hyperref[src:O03-11]{O03-11:121}\tabularnewline
+{}GPT01 & E & 保留原始数据、种子、停止规则及全部尝试分母。 & 异常及非法输出风险与失败均记1；保存数组审计未见不一致。 & \hyperref[src:G01-06]{G01-06:50}\tabularnewline
+{}GPT02 & E & 保留原始数据、种子、停止规则及全部尝试分母。 & 异常及非法输出均记1；305024评价行及4份归档哈希检查一致。 & \hyperref[src:G02-07]{G02-07:61}\tabularnewline
+{}GPT03 & E & 保留原始数据、种子、停止规则及全部尝试分母。 & 340600归档slots含200个终止batch预留；实际物理trial总数未知。 & \hyperref[src:G03-06]{G03-06:62}\tabularnewline
+\bottomrule
+\end{longtable}
+}
+比较结论：X表示该细节有缺陷，并不自动认定总任务失败；GPT03预留slots披露合格，不能据此虚报完成trial数。
+
+\clearpage
+\subsection{Q21 用图逐格解释sigma、F、首尾求和}
+\label{aspect:Q21}
+问题：原交付是否用图逐格解释\ensuremath{\sigma}、矩阵元素、首尾求和，并避免符号冲突？
+
+与原题关系：本次讨论新增教学请求；原题非必答。本节覆盖状态不另加减100分主项。
+
+为什么检查：这是用户在本轮讨论新增的教学需求，可衡量可读性与解释深度，但不能追溯加入原题100分。尤其聊天图的a/b冲突由本次讲解造成，不能归责原run。
+
+可能的混淆：把后加教学要求当作原题必答并追溯扣分。；将聊天中a,b既作\ensuremath{\pm}索引又作arrival数的错误归到原提交。；强迫未用箭头矩阵的有效证明画并不存在的矩阵。
+
+{\fontsize{9.0}{12.6}\selectfont
+\setlength{\tabcolsep}{2.5pt}
+\begin{longtable}{>{\raggedright\arraybackslash}p{\dimexpr 0.11\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.07\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.31\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.4\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.11\linewidth-2\tabcolsep\relax}}
+\caption{Q21：讨论细节覆盖比较}\\
+\toprule
+\textbf{Run} & \textbf{状态} & \textbf{原文做到的内容} & \textbf{说明不足 / 限定 / 替代路线} & \textbf{证据}\tabularnewline
+\midrule
+\endfirsthead
+\toprule
+\textbf{Run} & \textbf{状态} & \textbf{原文做到的内容} & \textbf{说明不足 / 限定 / 替代路线} & \textbf{证据}\tabularnewline
+\midrule
+\endhead
+{}Fable03 & M & 原文没有四格箭头教学图；其科学证明先消除取向，适合另画degree-channel示意。 & 冻结 M：仅记录新增教学交付未提供，不扣原题分；聊天符号冲突不归责本run。 & 审阅范围见正文\tabularnewline
+{}Opus01 & M & 原文没有四格箭头教学图；可补随机降级核和占据矩阵的图。 & 冻结 M：仅记录新增教学交付未提供，不扣原题分；聊天符号冲突不归责本run。 & 审阅范围见正文\tabularnewline
+{}Opus02 & M & 原文没有四格箭头教学图；更适合画posterior分量映射与fractional moment。 & 冻结 M：仅记录新增教学交付未提供，不扣原题分；聊天符号冲突不归责本run。 & 审阅范围见正文\tabularnewline
+{}Opus03 & M & 原文没有四格箭头教学图；可补degree核及chord分组示意。 & 冻结 M：仅记录新增教学交付未提供，不扣原题分；聊天符号冲突不归责本run。 & 审阅范围见正文\tabularnewline
+{}GPT01 & M & 原文有取向矩阵公式，无\ensuremath{\pm}与每个元素的逐格图及首尾求和图。 & 冻结 M：仅记录新增教学交付未提供，不扣原题分；聊天符号冲突不归责本run。 & 审阅范围见正文\tabularnewline
+{}GPT02 & M & 原文状态和参考方向说明较充分，仍没有每个矩阵元素的四格教学图。 & 冻结 M：仅记录新增教学交付未提供，不扣原题分；聊天符号冲突不归责本run。 & 审阅范围见正文\tabularnewline
+{}GPT03 & M & 原文没有四格箭头教学图；本方法不使用该矩阵，可补二分图二阶矩示意。 & 冻结 M：仅记录新增教学交付未提供，不扣原题分；聊天符号冲突不归责本run。 & 审阅范围见正文\tabularnewline
+\bottomrule
+\end{longtable}
+}
+比较结论：七份均未达到本轮新增的逐格图解要求。这是标准答案教学版应补的共同展示层，而不是七份R3证明均有错误。
+
+\clearpage
+\section{横向总表：分数、方法、错误与共同能力}
+\subsection{总分、分项与关键科学判断}
+{\fontsize{8.3}{11.620000000000001}\selectfont
+\setlength{\tabcolsep}{2.5pt}
+\begin{longtable}{>{\raggedright\arraybackslash}p{\dimexpr 0.05\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.1\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.065\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.065\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.065\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.065\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.075\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.065\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.45\linewidth-2\tabcolsep\relax}}
+\caption{七次有效交付的分项总表}\\
+\toprule
+\textbf{名次} & \textbf{Run} & \textbf{R1/30} & \textbf{R2/15} & \textbf{R3/20} & \textbf{R4/20} & \textbf{交付/15} & \textbf{总分} & \textbf{科学判断}\tabularnewline
+\midrule
+\endfirsthead
+\toprule
+\textbf{名次} & \textbf{Run} & \textbf{R1/30} & \textbf{R2/15} & \textbf{R3/20} & \textbf{R4/20} & \textbf{交付/15} & \textbf{总分} & \textbf{科学判断}\tabularnewline
+\midrule
+\endhead
+{}1 & GPT01 & 30 & 15 & 20 & 20 & 15 & 100 & 原题允许的保守答案暂定通过\tabularnewline
+{}1 & GPT02 & 30 & 15 & 20 & 20 & 15 & 100 & 原题允许的保守答案暂定通过\tabularnewline
+{}3 & GPT03 & 29 & 15 & 20 & 20 & 15 & 99 & 有保留通过：小N全p数值外推\tabularnewline
+{}4 & Fable03 & 26 & 15 & 19.5 & 18 & 14 & 92.5 & 部分完成：中心相区证据/数值范围\tabularnewline
+{}5 & Opus01 & 22 & 15 & 20 & 18 & 14.5 & 89.5 & 部分完成：中心外推/近似保证/数值范围\tabularnewline
+{}5 & Opus02 & 22 & 15 & 20 & 18 & 14.5 & 89.5 & 部分完成：中心外推/近似保证/数值范围\tabularnewline
+{}7 & Opus03 & 22 & 15 & 19 & 18 & 14.5 & 88.5 & 部分完成；原全p认证另有保留\tabularnewline
+\bottomrule
+\end{longtable}
+}
+并列名次按相同总分处理。Fable01/02为作废，不占名次。分数沿用已建立rubric，科学判断不被总分替代：例如中心相区确定结论依据不足，仍是关键缺口，即使结构、算法、代码与数据获得较多完成度分。
+
+\clearpage
+\subsection{23个主项的完整矩阵与区分度}
+{\fontsize{8.2}{11.479999999999999}\selectfont
+\setlength{\tabcolsep}{2.5pt}
+\begin{longtable}{>{\raggedright\arraybackslash}p{\dimexpr 0.3\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.06\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.091429\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.091429\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.091429\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.091429\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.091429\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.091429\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.091429\linewidth-2\tabcolsep\relax}}
+\caption{全部主评分项目矩阵}\\
+\toprule
+\textbf{主项} & \textbf{满分} & \textbf{Fable03} & \textbf{Opus01} & \textbf{Opus02} & \textbf{Opus03} & \textbf{GPT01} & \textbf{GPT02} & \textbf{GPT03}\tabularnewline
+\midrule
+\endfirsthead
+\toprule
+\textbf{主项} & \textbf{满分} & \textbf{Fable03} & \textbf{Opus01} & \textbf{Opus02} & \textbf{Opus03} & \textbf{GPT01} & \textbf{GPT02} & \textbf{GPT03}\tabularnewline
+\midrule
+\endhead
+{}A1 R1覆盖 & 5 & 5 & 5 & 5 & 5 & 5 & 5 & 5\tabularnewline
+{}A2 R1相判定依据 & 8 & 4 & 5 & 5 & 5 & 8 & 8 & 7\tabularnewline
+{}A3 R1误差控制 & 8 & 8 & 3 & 3 & 3 & 8 & 8 & 8\tabularnewline
+{}A4 R1图与判定语义 & 5 & 5 & 5 & 5 & 5 & 5 & 5 & 5\tabularnewline
+{}A5 R1结构一致性 & 4 & 4 & 4 & 4 & 4 & 4 & 4 & 4\tabularnewline
+{}B1 R2模型/几何 & 4 & 4 & 4 & 4 & 4 & 4 & 4 & 4\tabularnewline
+{}B2 R2信息顺序 & 4 & 4 & 4 & 4 & 4 & 4 & 4 & 4\tabularnewline
+{}B3 R2 charge等价 & 5 & 5 & 5 & 5 & 5 & 5 & 5 & 5\tabularnewline
+{}B4 R2特殊rank & 2 & 2 & 2 & 2 & 2 & 2 & 2 & 2\tabularnewline
+{}C1 R3 statement & 3 & 3 & 3 & 3 & 3 & 3 & 3 & 3\tabularnewline
+{}C2 R3见证/decoder & 5 & 5 & 5 & 5 & 5 & 5 & 5 & 5\tabularnewline
+{}C3 R3相关性 & 6 & 6 & 6 & 6 & 6 & 6 & 6 & 6\tabularnewline
+{}C4 R3指数界与认证 & 4 & 3.5 & 4 & 4 & 3 & 4 & 4 & 4\tabularnewline
+{}C5 R3结论范围 & 2 & 2 & 2 & 2 & 2 & 2 & 2 & 2\tabularnewline
+{}D1 R4联合partition sum & 6 & 6 & 6 & 6 & 6 & 6 & 6 & 6\tabularnewline
+{}D2 R4精确算法 & 3 & 3 & 3 & 3 & 3 & 3 & 3 & 3\tabularnewline
+{}D3 R4独立核验 & 5 & 5 & 5 & 5 & 5 & 5 & 5 & 5\tabularnewline
+{}D4 R4数值范围 & 3 & 1 & 1 & 1 & 1 & 3 & 3 & 3\tabularnewline
+{}D5 decode接口 & 3 & 3 & 3 & 3 & 3 & 3 & 3 & 3\tabularnewline
+{}E1 answers.json & 4 & 4 & 4 & 4 & 4 & 4 & 4 & 4\tabularnewline
+{}E2 报告/图 & 3 & 3 & 3 & 3 & 3 & 3 & 3 & 3\tabularnewline
+{}E3 源码/复现/资源 & 3 & 3 & 3 & 3 & 3 & 3 & 3 & 3\tabularnewline
+{}E4 数据/无条件记账 & 5 & 4 & 4.5 & 4.5 & 4.5 & 5 & 5 & 5\tabularnewline
+\bottomrule
+\end{longtable}
+}
+18/23项七份均满分，五项具有分数区分度：A2相判定依据、A3误差控制、C4指数界与全p认证、D4数值范围、E4无条件记账。共同高分来自已支持的精确结构和有限尺寸算法能力，不应被掩盖；关键差异主要是科学证据的使用和数值承诺的边界。
+
+\clearpage
+\subsection{潜在错误、实际问题与出现范围}
+{\fontsize{9.0}{12.6}\selectfont
+\setlength{\tabcolsep}{2.5pt}
+\begin{longtable}{>{\raggedright\arraybackslash}p{\dimexpr 0.24\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.25\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.39\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.12\linewidth-2\tabcolsep\relax}}
+\caption{实际问题与未观察到的常见错误}\\
+\toprule
+\textbf{检查的错误类型} & \textbf{此次涉及的run} & \textbf{证据性质与限定} & \textbf{对应项}\tabularnewline
+\midrule
+\endfirsthead
+\toprule
+\textbf{检查的错误类型} & \textbf{此次涉及的run} & \textbf{证据性质与限定} & \textbf{对应项}\tabularnewline
+\midrule
+\endhead
+{}有限尺寸趋势过度外推 & Fable03、Opus01/02/03；GPT03另有较轻外推保留 & 前四份关键证据不足；GPT03为合格数值判定的保留 & A2、Q19\tabularnewline
+{}两种近似接近当作真误差上界 & Opus01、Opus02、Opus03 & 近似误差保证不足，不能保证所有相判定稳健 & A3、Q18/19\tabularnewline
+{}数值最大值当作严格全p认证 & Opus03；Fable03原算术呈现另有较轻保留 & 原提交认证完整性；独立补证后定理获支持 & C4\tabularnewline
+{}正概率记录下溢或误判零支持 & Fable03、Opus01/02/03本机压力检查 & 实现范围缺口；保留Linux/macOS差异限定 & D4\tabularnewline
+{}异常按0.5而非失败1记posterior风险 & Fable03潜在代码路径；Opus三份代码路径 & Fable归档异常0；Opus01明确报告2例，其他次数不推定 & E4、Q20\tabularnewline
+{}将预留slots称为完成物理trial & 本报告特别核对GPT03 & 计数限定，未认定其科学失败；200预留slots单列 & E4、Q20\tabularnewline
+{}漏N5完整q或误称所有N单调 & 七份均正确处理charge类 & 本批未发现该类核心错误，不编造区别 & B3、Q02/03\tabularnewline
+{}忽略共享取向/强制所有证明用箭头矩阵 & 七份处理相关性路线不同且有效 & 未发现需以同一种矩阵为准的科学理由 & C3、Q14/16\tabularnewline
+\bottomrule
+\end{longtable}
+}
+这张表区分错误结论、证据不足、数值实现、交付记账和评审注意事项。未证明中心相区的真正物理结论，不把“证据不足”写成“已证明物理上错误”。
+
+\clearpage
+\subsection{大N证明路线与成果强度}
+{\fontsize{9.0}{12.6}\selectfont
+\setlength{\tabcolsep}{2.5pt}
+\begin{longtable}{>{\raggedright\arraybackslash}p{\dimexpr 0.12\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.07\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.47\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.12\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.22\linewidth-2\tabcolsep\relax}}
+\caption{R3充分界与方法比较}\\
+\toprule
+\textbf{Run} & \textbf{N0} & \textbf{实际证明路线} & \textbf{原提交分} & \textbf{复核后定理}\tabularnewline
+\midrule
+\endfirsthead
+\toprule
+\textbf{Run} & \textbf{N0} & \textbf{实际证明路线} & \textbf{原提交分} & \textbf{复核后定理}\tabularnewline
+\midrule
+\endhead
+{}Fable03 & 19 & 随机degree粗粒化；MAP配置、Bhattacharyya与占据矩阵；有限memory路径界。 & 19.5/20 & 已获支持；充分非最小\tabularnewline
+{}Opus01 & 15 & 随机degree粗粒化、MAP/Bhattacharyya；按侧边共享处理chord；有理数证书。 & 20/20 & 已获支持；充分非最小\tabularnewline
+{}Opus02 & 15 & 随机degree粗粒化；直接posterior/polymer注入与fractional moment；区间证书。 & 20/20 & 已获支持；充分非最小\tabularnewline
+{}Opus03 & 15 & 随机degree粗粒化、MAP/Bhattacharyya；先求占据再处理侧边；原最大值用浮点优化。 & 19/20 & 已获支持；充分非最小\tabularnewline
+{}GPT01 & 13 & 直接M粗约束与奇偶惩罚；取向范数、chord分组、占据求和；三段有理数证书。 & 20/20 & 已获支持；充分非最小\tabularnewline
+{}GPT02 & 13 & 最少/最多边数、取向矩阵与Chernoff；positive-cycle/Ihara-Bass强化到N13。 & 20/20 & 已获支持；充分非最小\tabularnewline
+{}GPT03 & 14 & 最少边数辅助decoder；二分图Cauchy-Schwarz控制相关性；Chernoff和有理数界。 & 20/20 & 已获支持；充分非最小\tabularnewline
+\bottomrule
+\end{longtable}
+}
+13、14、15、19互不矛盾，都是充分N0。更小有效N0更强，故单列成果强度；按原rubric，有效较大N0不被判为R3失败。没有直接取向矩阵的证明可通过合法退化或Cauchy-Schwarz避免它，不能按教学路线扣分。
+
+\clearpage
+\subsection{后验算法、近似范围与独立核验}
+{\fontsize{9.0}{12.6}\selectfont
+\setlength{\tabcolsep}{2.5pt}
+\begin{longtable}{>{\raggedright\arraybackslash}p{\dimexpr 0.12\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.26\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.3\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.32\linewidth-2\tabcolsep\relax}}
+\caption{计算partition function的路线比较}\\
+\toprule
+\textbf{Run} & \textbf{小尺寸exact方法} & \textbf{较大尺寸研究方法} & \textbf{比较时的限定}\tabularnewline
+\midrule
+\endfirsthead
+\toprule
+\textbf{Run} & \textbf{小尺寸exact方法} & \textbf{较大尺寸研究方法} & \textbf{比较时的限定}\tabularnewline
+\midrule
+\endhead
+{}Fable03 & 三态frontier精确transfer matrix，必要时用二态特例。 & 调查用精确收缩；三态L\ensuremath{\leq}12，二态L\ensuremath{\leq}16，无MPS截断。 & 精确到舍入；小尺寸外部核验通过，不能由此验证无限尺寸外推。\tabularnewline
+{}Opus01 & 列transfer matrix无截断，显式逻辑parity。 & 报告称ternary L\ensuremath{\leq}14、binary L\ensuremath{\leq}18 exact；更大至L48用\ensuremath{\chi}64 MPS。 & \ensuremath{\chi}64/128差是实测稳定性检查，不是严格真偏差上界；另见A3。\tabularnewline
+{}Opus02 & L\ensuremath{\leq}9公开API精确frontier；L\ensuremath{\leq}4满足R4。 & L>9公开API用\ensuremath{\chi}64 MPS；生产扫描还使用\ensuremath{\chi}32/48等设置。 & API与研究扫描参数不同；README宽泛exact措辞不能覆盖L>9。\tabularnewline
+{}Opus03 & 公开小尺寸API精确frontier，二态特例合法消元。 & 探索L\ensuremath{\leq}12用exact；生产Q2-Q9各L用\ensuremath{\chi}64 MPS，部分\ensuremath{\chi}128核对。 & 有截断权重与\ensuremath{\chi}比较；这些不能自动认证所有生产后验的误差。\tabularnewline
+{}GPT01 & 无截断三态列frontier；Decimal后备。 & dense与exact sparse支持存储；稀疏化不设权重阈值。 & 精确存储变体的支持删零不等于近似截断；大尺寸极限仍需外推/定理。\tabularnewline
+{}GPT02 & 非负精确列求和；端点附近log-domain。 & compressed.py精确支持剪枝，不删除正权重配置。 & 宽度指数内存；无需MPS或free-fermion才能满足小尺寸要求。\tabularnewline
+{}GPT03 & 列frontier精确求和，极小概率log arithmetic。 & 研究使用同类精确frontier；未依赖MPS截断。 & 归档研究有外部终止预留slots；精确求和不表示全部计划trial已执行。\tabularnewline
+\bottomrule
+\end{longtable}
+}
+{\fontsize{9.0}{12.6}\selectfont
+\setlength{\tabcolsep}{2.5pt}
+\begin{longtable}{>{\raggedright\arraybackslash}p{\dimexpr 0.14\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.2\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.28\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.18\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.2\linewidth-2\tabcolsep\relax}}
+\caption{已有独立核验结果}\\
+\toprule
+\textbf{Run} & \textbf{常规posterior} & \textbf{常规样本构成} & \textbf{极低p压力} & \textbf{常规correction}\tabularnewline
+\midrule
+\endfirsthead
+\toprule
+\textbf{Run} & \textbf{常规posterior} & \textbf{常规样本构成} & \textbf{极低p压力} & \textbf{常规correction}\tabularnewline
+\midrule
+\endhead
+{}Fable03 & 210/210 & 140原R4 + 70 O0 & 0/18 & 210/210\tabularnewline
+{}Opus01 & 210/210 & 140原R4 + 70 O0 & 0/18 & 210/210\tabularnewline
+{}Opus02 & 210/210 & 140原R4 + 70 O0 & 0/18 & 210/210\tabularnewline
+{}Opus03 & 210/210 & 140原R4 + 70 O0 & 0/18 & 210/210\tabularnewline
+{}GPT01 & 210/210 & 140原R4 + 70 O0 & 18/18 & 210/210\tabularnewline
+{}GPT02 & 210/210 & 140原R4 + 70 O0 & 18/18 & 210/210\tabularnewline
+{}GPT03 & 210/210 & 140原R4 + 70 O0 & 18/18 & 210/210\tabularnewline
+\bottomrule
+\end{longtable}
+}
+最大常规posterior偏差约1.033e-14，小于原题1e-9要求。压力输入严格正概率，但本机macOS的longdouble范围与原Linux不同，尤其Opus02需要限定；Python float先算p/2的最小subnormal损失另有跨平台风险。
+
+\clearpage
+\subsection{各run的比较特征与结论范围}
+{\fontsize{9.0}{12.6}\selectfont
+\setlength{\tabcolsep}{2.5pt}
+\begin{longtable}{>{\raggedright\arraybackslash}p{\dimexpr 0.12\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.28\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.36\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.24\linewidth-2\tabcolsep\relax}}
+\caption{七份有效交付的比较画像}\\
+\toprule
+\textbf{Run} & \textbf{明确强项} & \textbf{主要问题或未知} & \textbf{科学判断}\tabularnewline
+\midrule
+\endfirsthead
+\toprule
+\textbf{Run} & \textbf{明确强项} & \textbf{主要问题或未知} & \textbf{科学判断}\tabularnewline
+\midrule
+\endhead
+{}Fable03 & 精确后验、结构分析完整；N19有效充分证明。 & 中心charge正风险结论未排除长crossover；极端范围和潜在异常回退缺口。 & 部分完成；92.5分不使中心判定成立。\tabularnewline
+{}Opus01 & 较大二维尺寸和丰富诊断；N15证明。 & charge钉扎clean-loop相是物理解释；chi差不足以认证真偏差。 & 部分完成；避免误归因成Opus02/03的同一BKT公式。\tabularnewline
+{}Opus02 & 大尺寸MPS研究、跨rank信息分析；直接posterior证明。 & BKT排除与近似保证未确立；API exact范围和平台需限定。 & 部分完成；小尺寸R4常规检查仍通过。\tabularnewline
+{}Opus03 & 独立Z4活跃分量恒等式；较大尺寸研究。 & 中心外推、chi偏差保证不足；原全p算术认证需补证。 & 部分完成；补证支持N15定理。\tabularnewline
+{}GPT01 & N13直接矩阵证明、Z4恒等式、完整数值保护。 & 11/21相图条目保留unresolved；没有完成真实全相图。 & 按原题允许的保守答案暂定通过。\tabularnewline
+{}GPT02 & N13强化证明、精确支持剪枝、细致证书。 & 12/21条目unresolved，正确保留未决定范围。 & 按原题允许的保守答案暂定通过。\tabularnewline
+{}GPT03 & N14二分图证明；精确后验与端点保护。 & 小N O2全p为数值判定，有限网格/晚crossover仍有保留。 & 有保留暂定通过；slots与实际trial分开。\tabularnewline
+\bottomrule
+\end{longtable}
+}
+{\fontsize{9.0}{12.6}\selectfont
+\setlength{\tabcolsep}{2.5pt}
+\begin{longtable}{>{\raggedright\arraybackslash}p{\dimexpr 0.15\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.08\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.08\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.13\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.15\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.41\linewidth-2\tabcolsep\relax}}
+\caption{模型标签层面的描述性汇总}\\
+\toprule
+\textbf{归档模型组} & \textbf{尝试} & \textbf{有效} & \textbf{有效均分} & \textbf{有效范围} & \textbf{解释}\tabularnewline
+\midrule
+\endfirsthead
+\toprule
+\textbf{归档模型组} & \textbf{尝试} & \textbf{有效} & \textbf{有效均分} & \textbf{有效范围} & \textbf{解释}\tabularnewline
+\midrule
+\endhead
+{}Fable & 3 & 1 & 92.50 & 92.5-92.5 & 同题少量run的描述，不能推断总体成功率\tabularnewline
+{}Opus & 3 & 3 & 89.17 & 88.5-89.5 & 同题少量run的描述，不能推断总体成功率\tabularnewline
+{}GPT & 3 & 3 & 99.67 & 99-100 & 同题少量run的描述，不能推断总体成功率\tabularnewline
+\bottomrule
+\end{longtable}
+}
+\clearpage
+\section{结论与公平性边界}
+本批结果的共同能力很强：精确结构、charge等价类、小尺寸联合后验和合法correction被七份重复完成。N5已经恢复整数q与N>=7饱和并不是普遍漏项；自回避分量和相关性也有不同的有效处理路线。
+
+真正需要专家判断的是证据能否支撑最终相区与误差承诺：慢下降和似平台不足以决定无限尺寸极限；两种截断结果相近不构成对精确值的偏差上界；浮点全局优化不是严格全p认证。数值范围与失败记账另属可修复的实现/交付问题，不能自动当成深层科学能力失败。
+
+GPT01/02的100分表示其输出满足当前题面允许的有依据unresolved、有效充分界和接口承诺。这个评分制度不以完整解决真实全相图为唯一合格答案。因此，满分和仍有开放相区可以同时成立。
+
+评分针对最终交付及已保存证据；后续评审补充的有理数证明不能算成AI原提交已有，也不能冒称已经发生专家干预后再运行。原题未要求的四格教学图不追扣；本聊天的a/b符号混用归属于讲解。
+
+没有guided B对照和完整正式冻结协议，不据此宣称SciCode难度校准完成。不以七份run的小样本差异推断模型总体优劣，也不把两次API作废计成科学失败。中心O1真相仍需独立研究，不通过多数投票选择gold。
+
+\clearpage
+\appendix
+\section{证据索引与可追溯记录}
+主提交根目录：\nolinkurl{/Users/home/Downloads/20261014-102308_d89b765a}。文件ID的F03、O01、O02、O03、G01、G02、G03对应本报告run名及其归档目录；REV为已保存的独立评审证据。引用中的冒号后为原文件行号。完整绝对路径、SHA-256与所有引用行号保存在 \nolinkurl{comparative-report.json}。
+
+{\fontsize{8.5}{11.899999999999999}\selectfont
+\setlength{\tabcolsep}{2.5pt}
+\begin{longtable}{>{\raggedright\arraybackslash}p{\dimexpr 0.13\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.64\linewidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.23\linewidth-2\tabcolsep\relax}}
+\caption{证据文件索引}\\
+\toprule
+\textbf{文件ID} & \textbf{归档相对文件} & \textbf{本报告引用行号}\tabularnewline
+\midrule
+\endfirsthead
+\toprule
+\textbf{文件ID} & \textbf{归档相对文件} & \textbf{本报告引用行号}\tabularnewline
+\midrule
+\endhead
+{}\phantomsection\label{src:F03-01}F03-01 & \nolinkurl{report.md} & 36, 128, 190, 201, 213, 219, 311\tabularnewline
+{}\phantomsection\label{src:O01-01}O01-01 & \nolinkurl{report.md} & 5, 67, 82, 105, 109, 114, 119, 127, 140, 164, 268, 275, 326, 329, 337, 503\tabularnewline
+{}\phantomsection\label{src:O02-01}O02-01 & \nolinkurl{REPORT.md} & 26, 40, 45, 54, 76, 86, 142, 184, 212, 214, 247, 301, 310, 319\tabularnewline
+{}\phantomsection\label{src:O03-01}O03-01 & \nolinkurl{report.md} & 17, 229, 239, 297, 355, 373, 391, 489, 498, 502, 506, 540, 574, 654, 668, 681\tabularnewline
+{}\phantomsection\label{src:G01-01}G01-01 & \nolinkurl{report.md} & 5, 33, 53, 55, 86, 123\tabularnewline
+{}\phantomsection\label{src:G02-01}G02-01 & \nolinkurl{report.md} & 51, 70, 75, 83, 99\tabularnewline
+{}\phantomsection\label{src:G03-01}G03-01 & \nolinkurl{report.md} & 3, 15, 29, 40, 92, 121, 185\tabularnewline
+{}\phantomsection\label{src:G02-02}G02-02 & \nolinkurl{proofs.md} & 3, 25, 89, 108, 130, 138, 145, 147, 149, 158, 173, 175, 190, 208, 219\tabularnewline
+{}\phantomsection\label{src:G01-02}G01-02 & \nolinkurl{proofs.md} & 7, 46, 51, 64, 70, 104, 106, 112, 119, 125, 130, 132, 138, 142, 155, 179, 194, 208, 225, 256\tabularnewline
+{}\phantomsection\label{src:F03-02}F03-02 & \nolinkurl{docs/theory.md} & 3, 13, 18, 69, 82, 94, 113, 130, 171, 183, 188, 190, 196, 201, 204, 212, 220, 224, 229, 237\tabularnewline
+{}\phantomsection\label{src:G03-02}G03-02 & \nolinkurl{proofs.md} & 3, 8, 36, 57, 72, 142, 157, 189, 194, 213, 219, 227, 253, 278, 313\tabularnewline
+{}\phantomsection\label{src:O01-02}O01-02 & \nolinkurl{proofs/R2_R3_proofs.md} & 3, 9, 62, 95, 97, 100, 103, 107, 111, 114, 116, 118, 122, 132\tabularnewline
+{}\phantomsection\label{src:O02-02}O02-02 & \nolinkurl{report/03_large_N.md} & 1, 8, 15, 19, 22, 26, 39\tabularnewline
+{}\phantomsection\label{src:O03-02}O03-02 & \nolinkurl{docs/proofs.md} & 134, 138, 158, 163, 166, 173, 181, 184, 186, 190, 199, 218\tabularnewline
+{}\phantomsection\label{src:G02-03}G02-03 & \nolinkurl{large_N_13.md} & 62, 132\tabularnewline
+{}\phantomsection\label{src:O03-03}O03-03 & \nolinkurl{scripts/r3_bound.py} & 31\tabularnewline
+{}\phantomsection\label{src:O02-03}O02-03 & \nolinkurl{report/02_exact_structure.md} & 3\tabularnewline
+{}\phantomsection\label{src:O03-04}O03-04 & \nolinkurl{docs/sec_model.md} & 10\tabularnewline
+{}\phantomsection\label{src:F03-03}F03-03 & \nolinkurl{src/model.py} & 1, 198, 280\tabularnewline
+{}\phantomsection\label{src:REV-01}REV-01 & \nolinkurl{review/results/anthropic__claude-fable-5-1-run_03-checks.json} & 1\tabularnewline
+{}\phantomsection\label{src:O01-03}O01-03 & \nolinkurl{src/tm.py} & 1\tabularnewline
+{}\phantomsection\label{src:REV-02}REV-02 & \nolinkurl{review/results/anthropic__claude-opus-5-5-run_01-checks.json} & 1\tabularnewline
+{}\phantomsection\label{src:O02-04}O02-04 & \nolinkurl{hexsym/api.py} & 43, 45, 143\tabularnewline
+{}\phantomsection\label{src:REV-03}REV-03 & \nolinkurl{review/results/anthropic__claude-opus-5-5-run_02-checks.json} & 1\tabularnewline
+{}\phantomsection\label{src:O03-05}O03-05 & \nolinkurl{symdec/tm.py} & 1\tabularnewline
+{}\phantomsection\label{src:REV-04}REV-04 & \nolinkurl{review/results/anthropic__claude-opus-5-5-run_03-checks.json} & 1\tabularnewline
+{}\phantomsection\label{src:G01-03}G01-03 & \nolinkurl{decoder.py} & 232, 271, 279, 403\tabularnewline
+{}\phantomsection\label{src:REV-05}REV-05 & \nolinkurl{review/results/openai__gpt-6-astra-run_01-checks.json} & 1\tabularnewline
+{}\phantomsection\label{src:G02-04}G02-04 & \nolinkurl{decoder.py} & 175, 224, 314, 391\tabularnewline
+{}\phantomsection\label{src:REV-06}REV-06 & \nolinkurl{review/results/openai__gpt-6-astra-run_02-checks.json} & 1\tabularnewline
+{}\phantomsection\label{src:G03-03}G03-03 & \nolinkurl{decoder.py} & 182, 187, 267, 312\tabularnewline
+{}\phantomsection\label{src:REV-07}REV-07 & \nolinkurl{review/results/openai__gpt-6-astra-run_03-checks.json} & 1\tabularnewline
+{}\phantomsection\label{src:F03-04}F03-04 & \nolinkurl{README.md} & 6, 25, 30\tabularnewline
+{}\phantomsection\label{src:O02-05}O02-05 & \nolinkurl{README.md} & 4, 18, 24\tabularnewline
+{}\phantomsection\label{src:O03-06}O03-06 & \nolinkurl{solution.py} & 12\tabularnewline
+{}\phantomsection\label{src:F03-05}F03-05 & \nolinkurl{tests_validate.py} & 18\tabularnewline
+{}\phantomsection\label{src:O01-04}O01-04 & \nolinkurl{tests/test_small.py} & 8\tabularnewline
+{}\phantomsection\label{src:O02-06}O02-06 & \nolinkurl{tests/validate.py} & 21\tabularnewline
+{}\phantomsection\label{src:O03-07}O03-07 & \nolinkurl{tests/test_validate_small.py} & 7\tabularnewline
+{}\phantomsection\label{src:G01-04}G01-04 & \nolinkurl{validate.py} & 1\tabularnewline
+{}\phantomsection\label{src:G02-05}G02-05 & \nolinkurl{validate.py} & 1\tabularnewline
+{}\phantomsection\label{src:G03-04}G03-04 & \nolinkurl{validate.py} & 1\tabularnewline
+{}\phantomsection\label{src:O01-05}O01-05 & \nolinkurl{solution.py} & 71, 102\tabularnewline
+{}\phantomsection\label{src:O03-08}O03-08 & \nolinkurl{symdec/api.py} & 43, 74\tabularnewline
+{}\phantomsection\label{src:F03-06}F03-06 & \nolinkurl{answers.json} & 1\tabularnewline
+{}\phantomsection\label{src:O01-06}O01-06 & \nolinkurl{answers.json} & 1\tabularnewline
+{}\phantomsection\label{src:O02-07}O02-07 & \nolinkurl{answers.json} & 1\tabularnewline
+{}\phantomsection\label{src:O03-09}O03-09 & \nolinkurl{answers.json} & 1\tabularnewline
+{}\phantomsection\label{src:G01-05}G01-05 & \nolinkurl{answers.json} & 1\tabularnewline
+{}\phantomsection\label{src:G02-06}G02-06 & \nolinkurl{answers.json} & 1\tabularnewline
+{}\phantomsection\label{src:G03-05}G03-05 & \nolinkurl{answers.json} & 1\tabularnewline
+{}\phantomsection\label{src:O03-10}O03-10 & \nolinkurl{README.md} & 3, 29\tabularnewline
+{}\phantomsection\label{src:G01-06}G01-06 & \nolinkurl{README.md} & 3, 17, 50\tabularnewline
+{}\phantomsection\label{src:G02-07}G02-07 & \nolinkurl{README.md} & 3, 32, 61\tabularnewline
+{}\phantomsection\label{src:G03-06}G03-06 & \nolinkurl{README.md} & 3, 24, 62\tabularnewline
+{}\phantomsection\label{src:O01-07}O01-07 & \nolinkurl{reproduce.sh} & 1\tabularnewline
+{}\phantomsection\label{src:F03-07}F03-07 & \nolinkurl{src/run_mc.py} & 56\tabularnewline
+{}\phantomsection\label{src:O01-08}O01-08 & \nolinkurl{src/mc.py} & 146\tabularnewline
+{}\phantomsection\label{src:O02-08}O02-08 & \nolinkurl{hexsym/sim.py} & 49\tabularnewline
+{}\phantomsection\label{src:O03-11}O03-11 & \nolinkurl{symdec/mc.py} & 121\tabularnewline
+\bottomrule
+\end{longtable}
+}
+原始run及上一轮reference-v1文件均保持不变。本轮只展开比较报告、核对引用并检查PDF显示，没有新模型试跑或生产相图模拟。
+
+\end{document}

@@ -1,0 +1,55 @@
+{
+  "name": "rewired_band_n16_s8809",
+  "particular_error": [
+    0,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1
+  ],
+  "particular_cost_exact": {
+    "numerator_hex": "0x1",
+    "denominator_hex": "0x1"
+  },
+  "prior_upper_exact": {
+    "numerator_hex": "0x53",
+    "denominator_hex": "0x1a"
+  },
+  "new_upper_exact": {
+    "numerator_hex": "0x1",
+    "denominator_hex": "0x1"
+  },
+  "curvature_lower_exact": {
+    "numerator_hex": "0x5811e5df665502f",
+    "denominator_hex": "0x4800000000000000"
+  },
+  "fourth_lower_exact": {
+    "numerator_hex": "-0xb3965310dcf905d2186e82c9a53559e52a75f1d20e45",
+    "denominator_hex": "0x600000000000000000000000000000000000000000000"
+  },
+  "certificate": {
+    "duration": 0.03125,
+    "duration_exact": {
+      "numerator_hex": "0x1",
+      "denominator_hex": "0x20"
+    },
+    "relative_advantage_lower": 5.870572874788312e-05,
+    "relative_advantage_lower_exact": {
+      "numerator_hex": "0x10a5f6c590e285831c74879b1cee8f3644bf644c9bcfda36e3e773695dbc66f8601260e46f98342cc9979f7078e0bf0dbcede9ebe65c38e8dd229cff97b5c42935e0b370f8bb29dffa4118934f81067f1a83e8a70d6e95a535a2440f8a5b1e7ffe9197cfbb22371a3e29a31a4d042dd4e219a06ce2db804a493073702d592fb1fdb58fd5c94a1271b0c2f359a3cdf5724e133f639571d7913b93cba429fa2425060ad108cb65bbcd0486c75aa5c5bfb7885f3cf0d86a8b706d0f97140432462b1b5f93ce49d7b791e37afd3e4aacaffc23fc9e13db9ef116b8d7f4f3db33f993ce895fe1c93aa0071167023ccb83ea5d4acc192ba96ae643f0819d4077464490b2bb6e87215ae30f67b7090b70b23312baf2d6bd879bd0ea5ba8c2c74ff9c1e80963e8334cc70072b9366a0bcd33117faf83380ea2e8cb45372e96feb48a882463f144eae2a25f05e956cd1fdfb",
+      "denominator_hex": "0x453c4f64f8f1399c0fc18f0c4d7377fd722d1dfd415f8c0bfb73f03f9747137212249e157df52cf7912795f24ae19fd54549eafd3fc4c0b2b8f3b5c8a5f064dfca440643ba3036a3c5e4c4584158417d2174d38d823a5cd1ae8d8f780e678a613d238d2159db9ae52c16fd82a29e1af96cc87f6a0c5af62148adcbc36424fef3fee170d8b17f8deb455e49f40fd0c6e162ca900119ef4e5486bc3e5570160e1aa82039e0bcfb979bf312967485d0be3e5eb28702eeb97b8555a16cf4217d192948eb0676f1f2a6342c65c21006bfa76257dc3e611a30c97b88a1cf1a675f30b9ce69571e2f18acebdabf62df11079caf38d152bd60e00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+    }
+  },
+  "additional_upper_bound_seconds": 0.0001288331113755703,
+  "seconds": 0.008663792163133621
+}

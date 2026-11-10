@@ -1,0 +1,9 @@
+{
+  "attempt": "Fix original full-T2-prime primal and impose shared-X contractions as exact equalities",
+  "solver": "CLARABEL",
+  "requested_tolerance": 1e-10,
+  "outcome": "SolverError",
+  "exception_message": "Solver 'CLARABEL' failed. Try another solver, or solve with verbose=True for more information.",
+  "bound_claimed": false,
+  "followup": "Common nonnegative cone/equality slack diagnostic, saved in result.json"
+}

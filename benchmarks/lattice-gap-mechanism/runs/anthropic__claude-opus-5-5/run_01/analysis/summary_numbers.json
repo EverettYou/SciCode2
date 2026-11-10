@@ -1,0 +1,247 @@
+{
+ "band_fit_d": {
+  "t": [
+   1.0,
+   0.004,
+   0.02
+  ],
+  "tp": [
+   0.195,
+   0.002,
+   0.02
+  ],
+  "nu": [
+   0.3,
+   0.001
+  ],
+  "note": "value, stat, syst"
+ },
+ "half_filled_STS": {
+  "translation_between_bands": [
+   12.1,
+   0.1
+  ],
+  "band_width_each": [
+   4.0,
+   0.1
+  ],
+  "gap_edges": [
+   3.95,
+   0.05
+  ],
+  "gap_full": [
+   7.9,
+   0.1
+  ],
+  "occupied_weight": 0.5,
+  "translation_overlap": 0.976,
+  "mirror_overlap": 0.698
+ },
+ "nu02_STS_BCS": {
+  "Delta": [
+   1.964,
+   0.002
+  ],
+  "mu_minus_mu0": [
+   0.003,
+   0.004
+  ],
+  "occupied_weight_sum_v2": 0.255
+ },
+ "nu03_STS": {
+  "Delta0_at_FS": [
+   2.85,
+   0.02
+  ],
+  "Delta_inf_away": [
+   5.23,
+   0.01
+  ],
+  "crossover_width_xi": [
+   1.08,
+   0.01
+  ],
+  "hard_gap_edge": 2.6,
+  "occupied_weight": 0.366
+ },
+ "NMR": {
+  "nu05_Delta_s_p0": [
+   5.54,
+   0.14
+  ],
+  "nu05_Delta_s_freep": [
+   5.6,
+   0.5
+  ],
+  "nu05_free_p": [
+   -0.04,
+   0.38
+  ],
+  "nu03_Delta_above_Tc": [
+   2.7,
+   0.11
+  ],
+  "nu03_Delta_below_Tc": [
+   2.58,
+   0.7
+  ],
+  "nu02_BCS": {
+   "Delta0": 1.98,
+   "Tc": 1.11,
+   "Gamma": 0.044,
+   "HS_peak_ratio": 1.7
+  }
+ },
+ "rho": {
+  "nu05_activation": [
+   3.72,
+   0.05
+  ],
+  "nu03_Tc": [
+   0.36,
+   0.04
+  ],
+  "nu03_normal_activation": [
+   0.9,
+   0.04
+  ],
+  "nu02_Tc": [
+   1.11,
+   0.04
+  ]
+ },
+ "ED_attractive_single_layer_U-12": {
+  "gap_nu0.19_16site": 3.44,
+  "gap_nu0.2_10site": 3.62,
+  "gap_nu0.3_10site": 3.98,
+  "gap_nu0.31_16site": 3.69,
+  "gap_nu0.5_10site": 4.24,
+  "two_body_Eb_over_2_infinite": 2.06
+ },
+ "ED_bilayer_16site": {
+  "U3.85_J5.5": {
+   "half_gap": 4.33,
+   "half_spin": 4.13,
+   "gap_0.19": 2.11,
+   "gap_0.31": 2.31
+  },
+  "U3.0_J5.5": {
+   "half_gap": 3.96,
+   "half_spin": 3.97,
+   "gap_0.19": 2.1,
+   "gap_0.31": 2.3
+  },
+  "U2.2_J6.2": {
+   "gap_0.19": 2.34,
+   "gap_0.31": 2.58
+  },
+  "U1.4_J6.9": {
+   "gap_0.19": 2.58,
+   "gap_0.31": 2.86,
+   "half_gap": 4.18,
+   "half_spin": 5.02
+  },
+  "U1.8_J6.5": {
+   "half_gap": 4.095,
+   "half_spin": 4.715,
+   "gap_0.19": 2.446,
+   "gap_0.31": 2.701,
+   "stiffness_per_rung": {
+    "0.1875": 1.06,
+    "0.3125": 0.74,
+    "0.5": 0.022
+   }
+  }
+ },
+ "BCS_MF_bilayer": {
+  "J6.5": {
+   "Delta0.2": 1.98,
+   "Tmf0.2": 1.13,
+   "Delta0.3": 2.39,
+   "Tmf0.3": 1.3
+  },
+  "J7.0": {
+   "Delta0.2": 2.22,
+   "Tmf0.2": 1.26,
+   "Delta0.3": 2.65
+  }
+ },
+ "CPT_zero_fraction_gamma_side": {
+  "2x2x2_8site": 0.914,
+  "3x2x2_12site": 0.871,
+  "4x2x2_16site": 0.855,
+  "tp0_control_2x2x2": 0.504,
+  "sens_12site_U1.0_J7.1": 0.87,
+  "sens_12site_U2.2_J6.1": 0.861,
+  "sens_12site_tp0.18": 0.848,
+  "sens_12site_tp0.22": 0.895,
+  "final": [
+   0.85,
+   0.03
+  ]
+ },
+ "ED_exact_cluster_GK_midgap_U1.8_J6.5": {
+  "midgap": -0.9249520000000011,
+  "points": [
+   {
+    "K_over_2pi": [
+     0.0,
+     0.0
+    ],
+    "G_mid": 0.02716760867604595,
+    "hole_weight": 0.7248892150344473,
+    "particle_weight": 0.27511078496535807
+   },
+   {
+    "K_over_2pi": [
+     0.5,
+     0.0
+    ],
+    "G_mid": 0.008970169330501418,
+    "hole_weight": 0.46498295218367436,
+    "particle_weight": 0.535017047816153
+   },
+   {
+    "K_over_2pi": [
+     0.5,
+     0.5
+    ],
+    "G_mid": -0.012797207739583136,
+    "hole_weight": 0.3365748954002604,
+    "particle_weight": 0.6634251045995393
+   },
+   {
+    "K_over_2pi": [
+     0.25,
+     0.25
+    ],
+    "G_mid": 0.008795422662868146,
+    "hole_weight": 0.5021424896256217,
+    "particle_weight": 0.49785751037417353
+   }
+  ]
+ },
+ "final_parameters": {
+  "t": [
+   1.0,
+   0.02
+  ],
+  "tp": [
+   0.2,
+   0.02
+  ],
+  "tperp_abs_max": 0.2,
+  "U": [
+   1.4,
+   0.8
+  ],
+  "Jperp": [
+   6.6,
+   0.5
+  ],
+  "representative_calculations_at": {
+   "U": 1.8,
+   "Jperp": 6.5
+  }
+ }
+}

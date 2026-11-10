@@ -1,0 +1,28 @@
+{
+  "status": "Mathematical/physical inverse-problem illustration only; not fit to any measurement and not proposed material Hamiltonian.",
+  "one_physical_orbital_Hamiltonian": "H=\u03a3_k\u03c3(\u03b5_k\u2212\u00b5)n_k\u03c3+U \u03a3_k n_k\u2191n_k\u2193. Interaction is local in momentum and infinite range in real space; all fermions are the physical one-orbital c.",
+  "parameters": {
+    "t_plus": 1.0,
+    "t_minus": -1.0,
+    "tprime": 0.2,
+    "U": 12.0,
+    "mu_gap_midpoint": 5.2
+  },
+  "state": "T=0 spin-symmetric ensemble in singly occupied manifold: n_k\u2191=n_k\u2193=1/2, \u03bd=1/2. Extensive spin degeneracy. NMR and transport have not been fitted; this is not proposed as a model of the samples.",
+  "G_retarded": "G(k,z)=.5/[z\u2212ebar(k)+U/2]+.5/[z\u2212ebar(k)\u2212U/2], ebar=\u03b5+4tprime, Im(z)>0.",
+  "zero_condition": "ebar(k)=0",
+  "momentum_relation": "\u03b5_minus(k)=\u03b5_plus(k+Q), Q=(\u03c0,\u03c0). The local spectra are identical by relabeling momenta.",
+  "Gamma_side_areas": [
+    0.3117077324574779,
+    0.688292267542522
+  ],
+  "numerical_DOS_max_difference": 0.0,
+  "histogram_exact_max_weight_difference": 0.0,
+  "momentum_grid": [
+    768,
+    768
+  ],
+  "line_broadening_for_plot": 0.08,
+  "reference": "https://www.jstage.jst.go.jp/article/jpsj1946/61/6/61_6_2056/_article",
+  "what_it_proves": "A local spectral density and its frequency Kramers\u2013Kronig transform do not identify the momentum assignment of G or the \u0393-side zero area. This does not assert matching of NMR, transport, diffraction, or all other material constraints."
+}

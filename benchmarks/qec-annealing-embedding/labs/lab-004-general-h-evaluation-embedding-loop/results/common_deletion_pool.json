@@ -1,0 +1,6185 @@
+[
+  {
+    "name": "irregular_hubs_n16_s1101",
+    "common_graph_valid_candidates": 0,
+    "size_only_accepts": false,
+    "guided_accepts": false,
+    "size_only_selected": null,
+    "guided_selected": null,
+    "candidates": [],
+    "elapsed_seconds": 0.00011220807209610939
+  },
+  {
+    "name": "irregular_hubs_n16_s2203",
+    "common_graph_valid_candidates": 0,
+    "size_only_accepts": false,
+    "guided_accepts": false,
+    "size_only_selected": null,
+    "guided_selected": null,
+    "candidates": [],
+    "elapsed_seconds": 8.879206143319607e-05
+  },
+  {
+    "name": "irregular_hubs_n16_s3307",
+    "common_graph_valid_candidates": 0,
+    "size_only_accepts": false,
+    "guided_accepts": false,
+    "size_only_selected": null,
+    "guided_selected": null,
+    "candidates": [],
+    "elapsed_seconds": 0.00015604193322360516
+  },
+  {
+    "name": "irregular_hubs_n32_s1101",
+    "common_graph_valid_candidates": 0,
+    "size_only_accepts": false,
+    "guided_accepts": false,
+    "size_only_selected": null,
+    "guided_selected": null,
+    "candidates": [],
+    "elapsed_seconds": 0.0010435839649289846
+  },
+  {
+    "name": "irregular_hubs_n32_s2203",
+    "common_graph_valid_candidates": 0,
+    "size_only_accepts": false,
+    "guided_accepts": false,
+    "size_only_selected": null,
+    "guided_selected": null,
+    "candidates": [],
+    "elapsed_seconds": 0.00043466687202453613
+  },
+  {
+    "name": "irregular_hubs_n32_s3307",
+    "common_graph_valid_candidates": 1,
+    "size_only_accepts": true,
+    "guided_accepts": true,
+    "size_only_selected": {
+      "variable": 97,
+      "qubit": 555,
+      "evaluation": {
+        "feasible": true,
+        "scale": 0.009775412096146872,
+        "physical_qubits": 190,
+        "logical_variables": 126,
+        "chain_edges_count": 64,
+        "chain_max": 4,
+        "beta": 20.0,
+        "epsilon_requested": 0.05,
+        "margin_requested": 0.17886538392284157,
+        "margin_min": 0.17886538392284146,
+        "classical_break_bound": 0.04875200628908361,
+        "classical_union_bound": 0.04994573444580362,
+        "quantum_bounds": {
+          "0.0": 0.04994573444580362,
+          "1e-05": 0.04995141444596576,
+          "0.0001": 0.05051373606713922,
+          "0.001": 0.1067619500392433
+        },
+        "logical_offset": 2456.0,
+        "chain_offset": 37.782344758081535,
+        "allocation": "cut",
+        "ranges": {
+          "h": [
+            -4.0,
+            4.0
+          ],
+          "J": [
+            -1.0,
+            1.0
+          ],
+          "group": [
+            -13.0,
+            10.0
+          ]
+        },
+        "elapsed_seconds": 0.007560084108263254
+      }
+    },
+    "guided_selected": {
+      "variable": 97,
+      "qubit": 555,
+      "evaluation": {
+        "feasible": true,
+        "scale": 0.009775412096146872,
+        "physical_qubits": 190,
+        "logical_variables": 126,
+        "chain_edges_count": 64,
+        "chain_max": 4,
+        "beta": 20.0,
+        "epsilon_requested": 0.05,
+        "margin_requested": 0.17886538392284157,
+        "margin_min": 0.17886538392284146,
+        "classical_break_bound": 0.04875200628908361,
+        "classical_union_bound": 0.04994573444580362,
+        "quantum_bounds": {
+          "0.0": 0.04994573444580362,
+          "1e-05": 0.04995141444596576,
+          "0.0001": 0.05051373606713922,
+          "0.001": 0.1067619500392433
+        },
+        "logical_offset": 2456.0,
+        "chain_offset": 37.782344758081535,
+        "allocation": "cut",
+        "ranges": {
+          "h": [
+            -4.0,
+            4.0
+          ],
+          "J": [
+            -1.0,
+            1.0
+          ],
+          "group": [
+            -13.0,
+            10.0
+          ]
+        },
+        "elapsed_seconds": 0.007560084108263254
+      }
+    },
+    "candidates": [
+      {
+        "variable": 97,
+        "qubit": 555,
+        "evaluation": {
+          "feasible": true,
+          "scale": 0.009775412096146872,
+          "physical_qubits": 190,
+          "logical_variables": 126,
+          "chain_edges_count": 64,
+          "chain_max": 4,
+          "beta": 20.0,
+          "epsilon_requested": 0.05,
+          "margin_requested": 0.17886538392284157,
+          "margin_min": 0.17886538392284146,
+          "classical_break_bound": 0.04875200628908361,
+          "classical_union_bound": 0.04994573444580362,
+          "quantum_bounds": {
+            "0.0": 0.04994573444580362,
+            "1e-05": 0.04995141444596576,
+            "0.0001": 0.05051373606713922,
+            "0.001": 0.1067619500392433
+          },
+          "logical_offset": 2456.0,
+          "chain_offset": 37.782344758081535,
+          "allocation": "cut",
+          "ranges": {
+            "h": [
+              -4.0,
+              4.0
+            ],
+            "J": [
+              -1.0,
+              1.0
+            ],
+            "group": [
+              -13.0,
+              10.0
+            ]
+          },
+          "elapsed_seconds": 0.007560084108263254
+        }
+      }
+    ],
+    "elapsed_seconds": 0.00909395795315504
+  },
+  {
+    "name": "irregular_hubs_n64_s1101",
+    "common_graph_valid_candidates": 5,
+    "size_only_accepts": true,
+    "guided_accepts": true,
+    "size_only_selected": {
+      "variable": 24,
+      "qubit": 451,
+      "evaluation": {
+        "feasible": true,
+        "scale": 0.0034556815902367297,
+        "physical_qubits": 344,
+        "logical_variables": 216,
+        "chain_edges_count": 128,
+        "chain_max": 7,
+        "beta": 20.0,
+        "epsilon_requested": 0.05,
+        "margin_requested": 0.1961940634368402,
+        "margin_min": 0.19619406343684015,
+        "classical_break_bound": 0.04876128852249567,
+        "classical_union_bound": 0.0499684344997942,
+        "quantum_bounds": {
+          "0.0": 0.0499684344997942,
+          "1e-05": 0.04998091450044619,
+          "0.0001": 0.05121644101981896,
+          "0.001": 0.17483365927117228
+        },
+        "logical_offset": 6102.875,
+        "chain_offset": 52.96419386989432,
+        "allocation": "cut",
+        "ranges": {
+          "h": [
+            -4.0,
+            4.0
+          ],
+          "J": [
+            -1.0,
+            1.0
+          ],
+          "group": [
+            -13.0,
+            10.0
+          ]
+        },
+        "elapsed_seconds": 0.02153200004249811
+      }
+    },
+    "guided_selected": {
+      "variable": 24,
+      "qubit": 451,
+      "evaluation": {
+        "feasible": true,
+        "scale": 0.0034556815902367297,
+        "physical_qubits": 344,
+        "logical_variables": 216,
+        "chain_edges_count": 128,
+        "chain_max": 7,
+        "beta": 20.0,
+        "epsilon_requested": 0.05,
+        "margin_requested": 0.1961940634368402,
+        "margin_min": 0.19619406343684015,
+        "classical_break_bound": 0.04876128852249567,
+        "classical_union_bound": 0.0499684344997942,
+        "quantum_bounds": {
+          "0.0": 0.0499684344997942,
+          "1e-05": 0.04998091450044619,
+          "0.0001": 0.05121644101981896,
+          "0.001": 0.17483365927117228
+        },
+        "logical_offset": 6102.875,
+        "chain_offset": 52.96419386989432,
+        "allocation": "cut",
+        "ranges": {
+          "h": [
+            -4.0,
+            4.0
+          ],
+          "J": [
+            -1.0,
+            1.0
+          ],
+          "group": [
+            -13.0,
+            10.0
+          ]
+        },
+        "elapsed_seconds": 0.02153200004249811
+      }
+    },
+    "candidates": [
+      {
+        "variable": 24,
+        "qubit": 451,
+        "evaluation": {
+          "feasible": true,
+          "scale": 0.0034556815902367297,
+          "physical_qubits": 344,
+          "logical_variables": 216,
+          "chain_edges_count": 128,
+          "chain_max": 7,
+          "beta": 20.0,
+          "epsilon_requested": 0.05,
+          "margin_requested": 0.1961940634368402,
+          "margin_min": 0.19619406343684015,
+          "classical_break_bound": 0.04876128852249567,
+          "classical_union_bound": 0.0499684344997942,
+          "quantum_bounds": {
+            "0.0": 0.0499684344997942,
+            "1e-05": 0.04998091450044619,
+            "0.0001": 0.05121644101981896,
+            "0.001": 0.17483365927117228
+          },
+          "logical_offset": 6102.875,
+          "chain_offset": 52.96419386989432,
+          "allocation": "cut",
+          "ranges": {
+            "h": [
+              -4.0,
+              4.0
+            ],
+            "J": [
+              -1.0,
+              1.0
+            ],
+            "group": [
+              -13.0,
+              10.0
+            ]
+          },
+          "elapsed_seconds": 0.02153200004249811
+        }
+      },
+      {
+        "variable": 211,
+        "qubit": 420,
+        "evaluation": {
+          "feasible": true,
+          "scale": 0.0034556815902367297,
+          "physical_qubits": 344,
+          "logical_variables": 216,
+          "chain_edges_count": 128,
+          "chain_max": 7,
+          "beta": 20.0,
+          "epsilon_requested": 0.05,
+          "margin_requested": 0.1961940634368402,
+          "margin_min": 0.19619406343684015,
+          "classical_break_bound": 0.04876128852249567,
+          "classical_union_bound": 0.049968282090577895,
+          "quantum_bounds": {
+            "0.0": 0.049968282090577895,
+            "1e-05": 0.04998080209123723,
+            "0.0001": 0.05122028868393624,
+            "0.001": 0.17523424043550054
+          },
+          "logical_offset": 6102.875,
+          "chain_offset": 52.849364450385416,
+          "allocation": "cut",
+          "ranges": {
+            "h": [
+              -4.0,
+              4.0
+            ],
+            "J": [
+              -1.0,
+              1.0
+            ],
+            "group": [
+              -13.0,
+              10.0
+            ]
+          },
+          "elapsed_seconds": 0.01764687499962747
+        }
+      },
+      {
+        "variable": 34,
+        "qubit": 937,
+        "evaluation": {
+          "feasible": true,
+          "scale": 0.0034556815902367297,
+          "physical_qubits": 344,
+          "logical_variables": 216,
+          "chain_edges_count": 128,
+          "chain_max": 7,
+          "beta": 20.0,
+          "epsilon_requested": 0.05,
+          "margin_requested": 0.1961940634368402,
+          "margin_min": 0.19619406343684015,
+          "classical_break_bound": 0.048761288522495665,
+          "classical_union_bound": 0.04996812962182675,
+          "quantum_bounds": {
+            "0.0": 0.04996812962182675,
+            "1e-05": 0.04998066962248935,
+            "0.0001": 0.0512221362478518,
+            "0.001": 0.17543441468684212
+          },
+          "logical_offset": 6102.875,
+          "chain_offset": 53.05814521312888,
+          "allocation": "cut",
+          "ranges": {
+            "h": [
+              -4.0,
+              4.0
+            ],
+            "J": [
+              -1.0,
+              1.0
+            ],
+            "group": [
+              -13.0,
+              10.0
+            ]
+          },
+          "elapsed_seconds": 0.03395254211500287
+        }
+      },
+      {
+        "variable": 126,
+        "qubit": 327,
+        "evaluation": {
+          "feasible": true,
+          "scale": 0.0034556815902367297,
+          "physical_qubits": 344,
+          "logical_variables": 216,
+          "chain_edges_count": 128,
+          "chain_max": 7,
+          "beta": 20.0,
+          "epsilon_requested": 0.05,
+          "margin_requested": 0.1961940634368402,
+          "margin_min": 0.19619406343684015,
+          "classical_break_bound": 0.048761288522495665,
+          "classical_union_bound": 0.04996812962182675,
+          "quantum_bounds": {
+            "0.0": 0.04996812962182675,
+            "1e-05": 0.04998066962248934,
+            "0.0001": 0.0512221362478518,
+            "0.001": 0.17543441468684212
+          },
+          "logical_offset": 6102.875,
+          "chain_offset": 52.99551098430584,
+          "allocation": "cut",
+          "ranges": {
+            "h": [
+              -4.0,
+              4.0
+            ],
+            "J": [
+              -1.0,
+              1.0
+            ],
+            "group": [
+              -13.0,
+              10.0
+            ]
+          },
+          "elapsed_seconds": 0.016640207963064313
+        }
+      },
+      {
+        "variable": 144,
+        "qubit": 360,
+        "evaluation": {
+          "feasible": true,
+          "scale": 0.0034556815902367297,
+          "physical_qubits": 344,
+          "logical_variables": 216,
+          "chain_edges_count": 128,
+          "chain_max": 7,
+          "beta": 20.0,
+          "epsilon_requested": 0.05,
+          "margin_requested": 0.1961940634368402,
+          "margin_min": 0.19619406343684015,
+          "classical_break_bound": 0.048761288522495665,
+          "classical_union_bound": 0.04996812962182675,
+          "quantum_bounds": {
+            "0.0": 0.04996812962182675,
+            "1e-05": 0.04998066962248935,
+            "0.0001": 0.0512221362478518,
+            "0.001": 0.17543441468684212
+          },
+          "logical_offset": 6102.875,
+          "chain_offset": 53.05814521312888,
+          "allocation": "cut",
+          "ranges": {
+            "h": [
+              -4.0,
+              4.0
+            ],
+            "J": [
+              -1.0,
+              1.0
+            ],
+            "group": [
+              -13.0,
+              10.0
+            ]
+          },
+          "elapsed_seconds": 0.014039082918316126
+        }
+      }
+    ],
+    "elapsed_seconds": 0.11109804199077189
+  },
+  {
+    "name": "irregular_hubs_n64_s2203",
+    "common_graph_valid_candidates": 5,
+    "size_only_accepts": true,
+    "guided_accepts": true,
+    "size_only_selected": {
+      "variable": 83,
+      "qubit": 1210,
+      "evaluation": {
+        "feasible": true,
+        "scale": 0.0033017693062618344,
+        "physical_qubits": 384,
+        "logical_variables": 232,
+        "chain_edges_count": 152,
+        "chain_max": 7,
+        "beta": 20.0,
+        "epsilon_requested": 0.05,
+        "margin_requested": 0.20049031986000668,
+        "margin_min": 0.20049031986000643,
+        "classical_break_bound": 0.04876275457179744,
+        "classical_union_bound": 0.04996993606031289,
+        "quantum_bounds": {
+          "0.0": 0.04996993606031289,
+          "1e-05": 0.04998575606129362,
+          "0.0001": 0.05155194586768301,
+          "0.001": 0.20826804618762446
+        },
+        "logical_offset": 9081.625,
+        "chain_offset": 72.34715423957032,
+        "allocation": "cut",
+        "ranges": {
+          "h": [
+            -4.0,
+            4.0
+          ],
+          "J": [
+            -1.0,
+            1.0
+          ],
+          "group": [
+            -13.0,
+            10.0
+          ]
+        },
+        "elapsed_seconds": 0.01324450015090406
+      }
+    },
+    "guided_selected": {
+      "variable": 83,
+      "qubit": 1210,
+      "evaluation": {
+        "feasible": true,
+        "scale": 0.0033017693062618344,
+        "physical_qubits": 384,
+        "logical_variables": 232,
+        "chain_edges_count": 152,
+        "chain_max": 7,
+        "beta": 20.0,
+        "epsilon_requested": 0.05,
+        "margin_requested": 0.20049031986000668,
+        "margin_min": 0.20049031986000643,
+        "classical_break_bound": 0.04876275457179744,
+        "classical_union_bound": 0.04996993606031289,
+        "quantum_bounds": {
+          "0.0": 0.04996993606031289,
+          "1e-05": 0.04998575606129362,
+          "0.0001": 0.05155194586768301,
+          "0.001": 0.20826804618762446
+        },
+        "logical_offset": 9081.625,
+        "chain_offset": 72.34715423957032,
+        "allocation": "cut",
+        "ranges": {
+          "h": [
+            -4.0,
+            4.0
+          ],
+          "J": [
+            -1.0,
+            1.0
+          ],
+          "group": [
+            -13.0,
+            10.0
+          ]
+        },
+        "elapsed_seconds": 0.01324450015090406
+      }
+    },
+    "candidates": [
+      {
+        "variable": 83,
+        "qubit": 1210,
+        "evaluation": {
+          "feasible": true,
+          "scale": 0.0033017693062618344,
+          "physical_qubits": 384,
+          "logical_variables": 232,
+          "chain_edges_count": 152,
+          "chain_max": 7,
+          "beta": 20.0,
+          "epsilon_requested": 0.05,
+          "margin_requested": 0.20049031986000668,
+          "margin_min": 0.20049031986000643,
+          "classical_break_bound": 0.04876275457179744,
+          "classical_union_bound": 0.04996993606031289,
+          "quantum_bounds": {
+            "0.0": 0.04996993606031289,
+            "1e-05": 0.04998575606129362,
+            "0.0001": 0.05155194586768301,
+            "0.001": 0.20826804618762446
+          },
+          "logical_offset": 9081.625,
+          "chain_offset": 72.34715423957032,
+          "allocation": "cut",
+          "ranges": {
+            "h": [
+              -4.0,
+              4.0
+            ],
+            "J": [
+              -1.0,
+              1.0
+            ],
+            "group": [
+              -13.0,
+              10.0
+            ]
+          },
+          "elapsed_seconds": 0.01324450015090406
+        }
+      },
+      {
+        "variable": 144,
+        "qubit": 1010,
+        "evaluation": {
+          "feasible": true,
+          "scale": 0.003142006275313681,
+          "physical_qubits": 384,
+          "logical_variables": 232,
+          "chain_edges_count": 152,
+          "chain_max": 7,
+          "beta": 20.0,
+          "epsilon_requested": 0.05,
+          "margin_requested": 0.20049031986000668,
+          "margin_min": 0.20049031986000643,
+          "classical_break_bound": 0.04876275457179744,
+          "classical_union_bound": 0.04996993606031289,
+          "quantum_bounds": {
+            "0.0": 0.04996993606031289,
+            "1e-05": 0.04998575606129362,
+            "0.0001": 0.05155194586768301,
+            "0.001": 0.20826804618762446
+          },
+          "logical_offset": 9081.625,
+          "chain_offset": 70.16631564240551,
+          "allocation": "cut",
+          "ranges": {
+            "h": [
+              -4.0,
+              4.0
+            ],
+            "J": [
+              -1.0,
+              1.0
+            ],
+            "group": [
+              -13.0,
+              10.0
+            ]
+          },
+          "elapsed_seconds": 0.012739417143166065
+        }
+      },
+      {
+        "variable": 201,
+        "qubit": 1234,
+        "evaluation": {
+          "feasible": true,
+          "scale": 0.0033017693062618344,
+          "physical_qubits": 384,
+          "logical_variables": 232,
+          "chain_edges_count": 152,
+          "chain_max": 7,
+          "beta": 20.0,
+          "epsilon_requested": 0.05,
+          "margin_requested": 0.20049031986000668,
+          "margin_min": 0.20049031986000643,
+          "classical_break_bound": 0.04876275457179744,
+          "classical_union_bound": 0.04996993606031289,
+          "quantum_bounds": {
+            "0.0": 0.04996993606031289,
+            "1e-05": 0.04998575606129362,
+            "0.0001": 0.05155194586768301,
+            "0.001": 0.20826804618762446
+          },
+          "logical_offset": 9081.625,
+          "chain_offset": 72.30650120498697,
+          "allocation": "cut",
+          "ranges": {
+            "h": [
+              -4.0,
+              4.0
+            ],
+            "J": [
+              -1.0,
+              1.0
+            ],
+            "group": [
+              -13.0,
+              10.0
+            ]
+          },
+          "elapsed_seconds": 0.012643124908208847
+        }
+      },
+      {
+        "variable": 66,
+        "qubit": 207,
+        "evaluation": {
+          "feasible": true,
+          "scale": 0.003142006275313681,
+          "physical_qubits": 384,
+          "logical_variables": 232,
+          "chain_edges_count": 152,
+          "chain_max": 7,
+          "beta": 20.0,
+          "epsilon_requested": 0.05,
+          "margin_requested": 0.20049031986000668,
+          "margin_min": 0.20049031986000643,
+          "classical_break_bound": 0.04876275457179744,
+          "classical_union_bound": 0.049969827925094995,
+          "quantum_bounds": {
+            "0.0": 0.049969827925094995,
+            "1e-05": 0.04998566792607899,
+            "0.0001": 0.05155383776513183,
+            "0.001": 0.20846826477249927
+          },
+          "logical_offset": 9081.625,
+          "chain_offset": 70.34685008630791,
+          "allocation": "cut",
+          "ranges": {
+            "h": [
+              -4.0,
+              4.0
+            ],
+            "J": [
+              -1.0,
+              1.0
+            ],
+            "group": [
+              -13.0,
+              10.0
+            ]
+          },
+          "elapsed_seconds": 0.01255562505684793
+        }
+      },
+      {
+        "variable": 125,
+        "qubit": 284,
+        "evaluation": {
+          "feasible": true,
+          "scale": 0.003142006275313681,
+          "physical_qubits": 384,
+          "logical_variables": 232,
+          "chain_edges_count": 152,
+          "chain_max": 7,
+          "beta": 20.0,
+          "epsilon_requested": 0.05,
+          "margin_requested": 0.20049031986000668,
+          "margin_min": 0.20049031986000654,
+          "classical_break_bound": 0.048762754571797434,
+          "classical_union_bound": 0.04996982792509499,
+          "quantum_bounds": {
+            "0.0": 0.04996982792509499,
+            "1e-05": 0.04998566792607898,
+            "0.0001": 0.051553837765131824,
+            "0.001": 0.20846826477249927
+          },
+          "logical_offset": 9081.625,
+          "chain_offset": 70.38553603857271,
+          "allocation": "cut",
+          "ranges": {
+            "h": [
+              -4.0,
+              4.0
+            ],
+            "J": [
+              -1.0,
+              1.0
+            ],
+            "group": [
+              -13.0,
+              10.0
+            ]
+          },
+          "elapsed_seconds": 0.012451499933376908
+        }
+      }
+    ],
+    "elapsed_seconds": 0.07013250002637506
+  },
+  {
+    "name": "irregular_hubs_n64_s3307",
+    "common_graph_valid_candidates": 7,
+    "size_only_accepts": true,
+    "guided_accepts": true,
+    "size_only_selected": {
+      "variable": 85,
+      "qubit": 1053,
+      "evaluation": {
+        "feasible": true,
+        "scale": 0.003880326549117298,
+        "physical_qubits": 371,
+        "logical_variables": 214,
+        "chain_edges_count": 157,
+        "chain_max": 6,
+        "beta": 20.0,
+        "epsilon_requested": 0.05,
+        "margin_requested": 0.2012994519725575,
+        "margin_min": 0.2012994519725575,
+        "classical_break_bound": 0.04876300359404444,
+        "classical_union_bound": 0.04997212334945635,
+        "quantum_bounds": {
+          "0.0": 0.04997212334945635,
+          "1e-05": 0.04998798335033722,
+          "0.0001": 0.051558132158152775,
+          "0.001": 0.20866023977313738
+        },
+        "logical_offset": 7902.25,
+        "chain_offset": 79.11901675431504,
+        "allocation": "cut",
+        "ranges": {
+          "h": [
+            -4.0,
+            4.0
+          ],
+          "J": [
+            -1.0,
+            1.0
+          ],
+          "group": [
+            -13.0,
+            10.0
+          ]
+        },
+        "elapsed_seconds": 0.015175124863162637
+      }
+    },
+    "guided_selected": {
+      "variable": 85,
+      "qubit": 1053,
+      "evaluation": {
+        "feasible": true,
+        "scale": 0.003880326549117298,
+        "physical_qubits": 371,
+        "logical_variables": 214,
+        "chain_edges_count": 157,
+        "chain_max": 6,
+        "beta": 20.0,
+        "epsilon_requested": 0.05,
+        "margin_requested": 0.2012994519725575,
+        "margin_min": 0.2012994519725575,
+        "classical_break_bound": 0.04876300359404444,
+        "classical_union_bound": 0.04997212334945635,
+        "quantum_bounds": {
+          "0.0": 0.04997212334945635,
+          "1e-05": 0.04998798335033722,
+          "0.0001": 0.051558132158152775,
+          "0.001": 0.20866023977313738
+        },
+        "logical_offset": 7902.25,
+        "chain_offset": 79.11901675431504,
+        "allocation": "cut",
+        "ranges": {
+          "h": [
+            -4.0,
+            4.0
+          ],
+          "J": [
+            -1.0,
+            1.0
+          ],
+          "group": [
+            -13.0,
+            10.0
+          ]
+        },
+        "elapsed_seconds": 0.015175124863162637
+      }
+    },
+    "candidates": [
+      {
+        "variable": 85,
+        "qubit": 1053,
+        "evaluation": {
+          "feasible": true,
+          "scale": 0.003880326549117298,
+          "physical_qubits": 371,
+          "logical_variables": 214,
+          "chain_edges_count": 157,
+          "chain_max": 6,
+          "beta": 20.0,
+          "epsilon_requested": 0.05,
+          "margin_requested": 0.2012994519725575,
+          "margin_min": 0.2012994519725575,
+          "classical_break_bound": 0.04876300359404444,
+          "classical_union_bound": 0.04997212334945635,
+          "quantum_bounds": {
+            "0.0": 0.04997212334945635,
+            "1e-05": 0.04998798335033722,
+            "0.0001": 0.051558132158152775,
+            "0.001": 0.20866023977313738
+          },
+          "logical_offset": 7902.25,
+          "chain_offset": 79.11901675431504,
+          "allocation": "cut",
+          "ranges": {
+            "h": [
+              -4.0,
+              4.0
+            ],
+            "J": [
+              -1.0,
+              1.0
+            ],
+            "group": [
+              -13.0,
+              10.0
+            ]
+          },
+          "elapsed_seconds": 0.015175124863162637
+        }
+      },
+      {
+        "variable": 34,
+        "qubit": 925,
+        "evaluation": {
+          "feasible": true,
+          "scale": 0.003880326549117298,
+          "physical_qubits": 371,
+          "logical_variables": 214,
+          "chain_edges_count": 157,
+          "chain_max": 6,
+          "beta": 20.0,
+          "epsilon_requested": 0.05,
+          "margin_requested": 0.2012994519725575,
+          "margin_min": 0.2012994519725575,
+          "classical_break_bound": 0.04876300359404444,
+          "classical_union_bound": 0.049972022022303705,
+          "quantum_bounds": {
+            "0.0": 0.049972022022303705,
+            "1e-05": 0.049987922023191904,
+            "0.0001": 0.0515620309043337,
+            "0.001": 0.20906087201952928
+          },
+          "logical_offset": 7902.25,
+          "chain_offset": 78.70430685437813,
+          "allocation": "cut",
+          "ranges": {
+            "h": [
+              -4.0,
+              4.0
+            ],
+            "J": [
+              -1.0,
+              1.0
+            ],
+            "group": [
+              -13.0,
+              10.0
+            ]
+          },
+          "elapsed_seconds": 0.014863540884107351
+        }
+      },
+      {
+        "variable": 77,
+        "qubit": 1232,
+        "evaluation": {
+          "feasible": true,
+          "scale": 0.003880326549117298,
+          "physical_qubits": 371,
+          "logical_variables": 214,
+          "chain_edges_count": 157,
+          "chain_max": 6,
+          "beta": 20.0,
+          "epsilon_requested": 0.05,
+          "margin_requested": 0.2012994519725575,
+          "margin_min": 0.2012994519725575,
+          "classical_break_bound": 0.04876300359404444,
+          "classical_union_bound": 0.049972022022303705,
+          "quantum_bounds": {
+            "0.0": 0.049972022022303705,
+            "1e-05": 0.049987922023191904,
+            "0.0001": 0.0515620309043337,
+            "0.001": 0.20906087201952928
+          },
+          "logical_offset": 7902.25,
+          "chain_offset": 79.11901675431504,
+          "allocation": "cut",
+          "ranges": {
+            "h": [
+              -4.0,
+              4.0
+            ],
+            "J": [
+              -1.0,
+              1.0
+            ],
+            "group": [
+              -13.0,
+              10.0
+            ]
+          },
+          "elapsed_seconds": 0.014700083993375301
+        }
+      },
+      {
+        "variable": 107,
+        "qubit": 328,
+        "evaluation": {
+          "feasible": true,
+          "scale": 0.003880326549117298,
+          "physical_qubits": 371,
+          "logical_variables": 214,
+          "chain_edges_count": 157,
+          "chain_max": 6,
+          "beta": 20.0,
+          "epsilon_requested": 0.05,
+          "margin_requested": 0.2012994519725575,
+          "margin_min": 0.2012994519725575,
+          "classical_break_bound": 0.04876300359404444,
+          "classical_union_bound": 0.049972022022303705,
+          "quantum_bounds": {
+            "0.0": 0.049972022022303705,
+            "1e-05": 0.049987922023191904,
+            "0.0001": 0.0515620309043337,
+            "0.001": 0.20906087201952928
+          },
+          "logical_offset": 7902.25,
+          "chain_offset": 78.93470124323197,
+          "allocation": "cut",
+          "ranges": {
+            "h": [
+              -4.0,
+              4.0
+            ],
+            "J": [
+              -1.0,
+              1.0
+            ],
+            "group": [
+              -13.0,
+              10.0
+            ]
+          },
+          "elapsed_seconds": 0.014710583025589585
+        }
+      },
+      {
+        "variable": 149,
+        "qubit": 47,
+        "evaluation": {
+          "feasible": true,
+          "scale": 0.003880326549117298,
+          "physical_qubits": 371,
+          "logical_variables": 214,
+          "chain_edges_count": 157,
+          "chain_max": 6,
+          "beta": 20.0,
+          "epsilon_requested": 0.05,
+          "margin_requested": 0.2012994519725575,
+          "margin_min": 0.2012994519725575,
+          "classical_break_bound": 0.04876300359404444,
+          "classical_union_bound": 0.049972022022303705,
+          "quantum_bounds": {
+            "0.0": 0.049972022022303705,
+            "1e-05": 0.049987922023191904,
+            "0.0001": 0.0515620309043337,
+            "0.001": 0.20906087201952928
+          },
+          "logical_offset": 7902.25,
+          "chain_offset": 78.98078012100274,
+          "allocation": "cut",
+          "ranges": {
+            "h": [
+              -4.0,
+              4.0
+            ],
+            "J": [
+              -1.0,
+              1.0
+            ],
+            "group": [
+              -13.0,
+              10.0
+            ]
+          },
+          "elapsed_seconds": 0.014640874927863479
+        }
+      },
+      {
+        "variable": 146,
+        "qubit": 1200,
+        "evaluation": {
+          "feasible": true,
+          "scale": 0.003880326549117298,
+          "physical_qubits": 371,
+          "logical_variables": 214,
+          "chain_edges_count": 157,
+          "chain_max": 6,
+          "beta": 20.0,
+          "epsilon_requested": 0.05,
+          "margin_requested": 0.2012994519725575,
+          "margin_min": 0.2012994519725575,
+          "classical_break_bound": 0.04876300359404444,
+          "classical_union_bound": 0.049971920662881274,
+          "quantum_bounds": {
+            "0.0": 0.049971920662881274,
+            "1e-05": 0.04998784066377274,
+            "0.0001": 0.05156392957757798,
+            "0.001": 0.20926109738019957
+          },
+          "logical_offset": 7902.25,
+          "chain_offset": 79.11901675431504,
+          "allocation": "cut",
+          "ranges": {
+            "h": [
+              -4.0,
+              4.0
+            ],
+            "J": [
+              -1.0,
+              1.0
+            ],
+            "group": [
+              -13.0,
+              10.0
+            ]
+          },
+          "elapsed_seconds": 0.014606624841690063
+        }
+      },
+      {
+        "variable": 190,
+        "qubit": 865,
+        "evaluation": {
+          "feasible": true,
+          "scale": 0.003880326549117298,
+          "physical_qubits": 371,
+          "logical_variables": 214,
+          "chain_edges_count": 157,
+          "chain_max": 6,
+          "beta": 20.0,
+          "epsilon_requested": 0.05,
+          "margin_requested": 0.2012994519725575,
+          "margin_min": 0.2012994519725575,
+          "classical_break_bound": 0.04876300359404444,
+          "classical_union_bound": 0.049971920662881274,
+          "quantum_bounds": {
+            "0.0": 0.049971920662881274,
+            "1e-05": 0.04998784066377274,
+            "0.0001": 0.05156392957757798,
+            "0.001": 0.20926109738019957
+          },
+          "logical_offset": 7902.25,
+          "chain_offset": 78.93470124323197,
+          "allocation": "cut",
+          "ranges": {
+            "h": [
+              -4.0,
+              4.0
+            ],
+            "J": [
+              -1.0,
+              1.0
+            ],
+            "group": [
+              -13.0,
+              10.0
+            ]
+          },
+          "elapsed_seconds": 0.014655249891802669
+        }
+      }
+    ],
+    "elapsed_seconds": 0.11177204200066626
+  },
+  {
+    "name": "mixed_hypergraph_n16_s1101",
+    "common_graph_valid_candidates": 0,
+    "size_only_accepts": false,
+    "guided_accepts": false,
+    "size_only_selected": null,
+    "guided_selected": null,
+    "candidates": [],
+    "elapsed_seconds": 0.0006597922183573246
+  },
+  {
+    "name": "mixed_hypergraph_n16_s2203",
+    "common_graph_valid_candidates": 0,
+    "size_only_accepts": false,
+    "guided_accepts": false,
+    "size_only_selected": null,
+    "guided_selected": null,
+    "candidates": [],
+    "elapsed_seconds": 0.0004486660473048687
+  },
+  {
+    "name": "mixed_hypergraph_n16_s3307",
+    "common_graph_valid_candidates": 0,
+    "size_only_accepts": false,
+    "guided_accepts": false,
+    "size_only_selected": null,
+    "guided_selected": null,
+    "candidates": [],
+    "elapsed_seconds": 0.00048562511801719666
+  },
+  {
+    "name": "mixed_hypergraph_n32_s1101",
+    "common_graph_valid_candidates": 5,
+    "size_only_accepts": true,
+    "guided_accepts": true,
+    "size_only_selected": {
+      "variable": 35,
+      "qubit": 850,
+      "evaluation": {
+        "feasible": true,
+        "scale": 0.011163358605132599,
+        "physical_qubits": 253,
+        "logical_variables": 156,
+        "chain_edges_count": 97,
+        "chain_max": 5,
+        "beta": 20.0,
+        "epsilon_requested": 0.05,
+        "margin_requested": 0.18926108130143435,
+        "margin_min": 0.18926108130143426,
+        "classical_break_bound": 0.04875832151999822,
+        "classical_union_bound": 0.04996415513488136,
+        "quantum_bounds": {
+          "0.0": 0.04996415513488136,
+          "1e-05": 0.049972855135151165,
+          "0.0001": 0.05083415783288611,
+          "0.001": 0.13699113988344505
+        },
+        "logical_offset": 2747.875,
+        "chain_offset": 54.47481338346531,
+        "allocation": "cut",
+        "ranges": {
+          "h": [
+            -4.0,
+            4.0
+          ],
+          "J": [
+            -1.0,
+            1.0
+          ],
+          "group": [
+            -13.0,
+            10.0
+          ]
+        },
+        "elapsed_seconds": 0.01157158287242055
+      }
+    },
+    "guided_selected": {
+      "variable": 35,
+      "qubit": 850,
+      "evaluation": {
+        "feasible": true,
+        "scale": 0.011163358605132599,
+        "physical_qubits": 253,
+        "logical_variables": 156,
+        "chain_edges_count": 97,
+        "chain_max": 5,
+        "beta": 20.0,
+        "epsilon_requested": 0.05,
+        "margin_requested": 0.18926108130143435,
+        "margin_min": 0.18926108130143426,
+        "classical_break_bound": 0.04875832151999822,
+        "classical_union_bound": 0.04996415513488136,
+        "quantum_bounds": {
+          "0.0": 0.04996415513488136,
+          "1e-05": 0.049972855135151165,
+          "0.0001": 0.05083415783288611,
+          "0.001": 0.13699113988344505
+        },
+        "logical_offset": 2747.875,
+        "chain_offset": 54.47481338346531,
+        "allocation": "cut",
+        "ranges": {
+          "h": [
+            -4.0,
+            4.0
+          ],
+          "J": [
+            -1.0,
+            1.0
+          ],
+          "group": [
+            -13.0,
+            10.0
+          ]
+        },
+        "elapsed_seconds": 0.01157158287242055
+      }
+    },
+    "candidates": [
+      {
+        "variable": 35,
+        "qubit": 850,
+        "evaluation": {
+          "feasible": true,
+          "scale": 0.011163358605132599,
+          "physical_qubits": 253,
+          "logical_variables": 156,
+          "chain_edges_count": 97,
+          "chain_max": 5,
+          "beta": 20.0,
+          "epsilon_requested": 0.05,
+          "margin_requested": 0.18926108130143435,
+          "margin_min": 0.18926108130143426,
+          "classical_break_bound": 0.04875832151999822,
+          "classical_union_bound": 0.04996415513488136,
+          "quantum_bounds": {
+            "0.0": 0.04996415513488136,
+            "1e-05": 0.049972855135151165,
+            "0.0001": 0.05083415783288611,
+            "0.001": 0.13699113988344505
+          },
+          "logical_offset": 2747.875,
+          "chain_offset": 54.47481338346531,
+          "allocation": "cut",
+          "ranges": {
+            "h": [
+              -4.0,
+              4.0
+            ],
+            "J": [
+              -1.0,
+              1.0
+            ],
+            "group": [
+              -13.0,
+              10.0
+            ]
+          },
+          "elapsed_seconds": 0.01157158287242055
+        }
+      },
+      {
+        "variable": 32,
+        "qubit": 778,
+        "evaluation": {
+          "feasible": true,
+          "scale": 0.011163358605132599,
+          "physical_qubits": 253,
+          "logical_variables": 156,
+          "chain_edges_count": 97,
+          "chain_max": 5,
+          "beta": 20.0,
+          "epsilon_requested": 0.05,
+          "margin_requested": 0.18926108130143435,
+          "margin_min": 0.18926108130143426,
+          "classical_break_bound": 0.04875832151999822,
+          "classical_union_bound": 0.04996388970554011,
+          "quantum_bounds": {
+            "0.0": 0.04996388970554011,
+            "1e-05": 0.04997260970581318,
+            "0.0001": 0.05083589243621158,
+            "0.001": 0.13719120117419653
+          },
+          "logical_offset": 2747.875,
+          "chain_offset": 54.301083615172935,
+          "allocation": "cut",
+          "ranges": {
+            "h": [
+              -4.0,
+              4.0
+            ],
+            "J": [
+              -1.0,
+              1.0
+            ],
+            "group": [
+              -13.0,
+              10.0
+            ]
+          },
+          "elapsed_seconds": 0.011367040919139981
+        }
+      },
+      {
+        "variable": 58,
+        "qubit": 658,
+        "evaluation": {
+          "feasible": true,
+          "scale": 0.011163358605132599,
+          "physical_qubits": 253,
+          "logical_variables": 156,
+          "chain_edges_count": 97,
+          "chain_max": 5,
+          "beta": 20.0,
+          "epsilon_requested": 0.05,
+          "margin_requested": 0.18926108130143435,
+          "margin_min": 0.18926108130143426,
+          "classical_break_bound": 0.04875832151999822,
+          "classical_union_bound": 0.04996388970554012,
+          "quantum_bounds": {
+            "0.0": 0.04996388970554012,
+            "1e-05": 0.04997260970581318,
+            "0.0001": 0.05083589243621158,
+            "0.001": 0.13719120117419653
+          },
+          "logical_offset": 2747.875,
+          "chain_offset": 54.301083615172935,
+          "allocation": "cut",
+          "ranges": {
+            "h": [
+              -4.0,
+              4.0
+            ],
+            "J": [
+              -1.0,
+              1.0
+            ],
+            "group": [
+              -13.0,
+              10.0
+            ]
+          },
+          "elapsed_seconds": 0.011227041948586702
+        }
+      },
+      {
+        "variable": 61,
+        "qubit": 653,
+        "evaluation": {
+          "feasible": true,
+          "scale": 0.011163358605132599,
+          "physical_qubits": 253,
+          "logical_variables": 156,
+          "chain_edges_count": 97,
+          "chain_max": 5,
+          "beta": 20.0,
+          "epsilon_requested": 0.05,
+          "margin_requested": 0.18926108130143435,
+          "margin_min": 0.18926108130143426,
+          "classical_break_bound": 0.04875832151999822,
+          "classical_union_bound": 0.04996388970554011,
+          "quantum_bounds": {
+            "0.0": 0.04996388970554011,
+            "1e-05": 0.04997260970581318,
+            "0.0001": 0.05083589243621158,
+            "0.001": 0.13719120117419653
+          },
+          "logical_offset": 2747.875,
+          "chain_offset": 54.416903460701185,
+          "allocation": "cut",
+          "ranges": {
+            "h": [
+              -4.0,
+              4.0
+            ],
+            "J": [
+              -1.0,
+              1.0
+            ],
+            "group": [
+              -13.0,
+              10.0
+            ]
+          },
+          "elapsed_seconds": 0.011167542077600956
+        }
+      },
+      {
+        "variable": 77,
+        "qubit": 265,
+        "evaluation": {
+          "feasible": true,
+          "scale": 0.011163358605132599,
+          "physical_qubits": 253,
+          "logical_variables": 156,
+          "chain_edges_count": 97,
+          "chain_max": 5,
+          "beta": 20.0,
+          "epsilon_requested": 0.05,
+          "margin_requested": 0.18926108130143435,
+          "margin_min": 0.18926108130143426,
+          "classical_break_bound": 0.04875832151999822,
+          "classical_union_bound": 0.04996388970554011,
+          "quantum_bounds": {
+            "0.0": 0.04996388970554011,
+            "1e-05": 0.04997260970581318,
+            "0.0001": 0.05083589243621158,
+            "0.001": 0.13719120117419653
+          },
+          "logical_offset": 2747.875,
+          "chain_offset": 54.49411669105336,
+          "allocation": "cut",
+          "ranges": {
+            "h": [
+              -4.0,
+              4.0
+            ],
+            "J": [
+              -1.0,
+              1.0
+            ],
+            "group": [
+              -13.0,
+              10.0
+            ]
+          },
+          "elapsed_seconds": 0.011054875096306205
+        }
+      }
+    ],
+    "elapsed_seconds": 0.0599657918792218
+  },
+  {
+    "name": "mixed_hypergraph_n32_s2203",
+    "common_graph_valid_candidates": 13,
+    "size_only_accepts": true,
+    "guided_accepts": true,
+    "size_only_selected": {
+      "variable": 81,
+      "qubit": 91,
+      "evaluation": {
+        "feasible": true,
+        "scale": 0.008137662685177337,
+        "physical_qubits": 273,
+        "logical_variables": 154,
+        "chain_edges_count": 119,
+        "chain_max": 6,
+        "beta": 20.0,
+        "epsilon_requested": 0.05,
+        "margin_requested": 0.194371394166638,
+        "margin_min": 0.19437139416663796,
+        "classical_break_bound": 0.04876058633908858,
+        "classical_union_bound": 0.04996806583523798,
+        "quantum_bounds": {
+          "0.0": 0.04996806583523798,
+          "1e-05": 0.04997918583567585,
+          "0.0001": 0.05108007021391544,
+          "0.001": 0.16121186328923803
+        },
+        "logical_offset": 2867.0,
+        "chain_offset": 57.22320498080322,
+        "allocation": "cut",
+        "ranges": {
+          "h": [
+            -4.0,
+            4.0
+          ],
+          "J": [
+            -1.0,
+            1.0
+          ],
+          "group": [
+            -13.0,
+            10.0
+          ]
+        },
+        "elapsed_seconds": 0.00891095888800919
+      }
+    },
+    "guided_selected": {
+      "variable": 81,
+      "qubit": 91,
+      "evaluation": {
+        "feasible": true,
+        "scale": 0.008137662685177337,
+        "physical_qubits": 273,
+        "logical_variables": 154,
+        "chain_edges_count": 119,
+        "chain_max": 6,
+        "beta": 20.0,
+        "epsilon_requested": 0.05,
+        "margin_requested": 0.194371394166638,
+        "margin_min": 0.19437139416663796,
+        "classical_break_bound": 0.04876058633908858,
+        "classical_union_bound": 0.04996806583523798,
+        "quantum_bounds": {
+          "0.0": 0.04996806583523798,
+          "1e-05": 0.04997918583567585,
+          "0.0001": 0.05108007021391544,
+          "0.001": 0.16121186328923803
+        },
+        "logical_offset": 2867.0,
+        "chain_offset": 57.22320498080322,
+        "allocation": "cut",
+        "ranges": {
+          "h": [
+            -4.0,
+            4.0
+          ],
+          "J": [
+            -1.0,
+            1.0
+          ],
+          "group": [
+            -13.0,
+            10.0
+          ]
+        },
+        "elapsed_seconds": 0.00891095888800919
+      }
+    },
+    "candidates": [
+      {
+        "variable": 81,
+        "qubit": 91,
+        "evaluation": {
+          "feasible": true,
+          "scale": 0.008137662685177337,
+          "physical_qubits": 273,
+          "logical_variables": 154,
+          "chain_edges_count": 119,
+          "chain_max": 6,
+          "beta": 20.0,
+          "epsilon_requested": 0.05,
+          "margin_requested": 0.194371394166638,
+          "margin_min": 0.19437139416663796,
+          "classical_break_bound": 0.04876058633908858,
+          "classical_union_bound": 0.04996806583523798,
+          "quantum_bounds": {
+            "0.0": 0.04996806583523798,
+            "1e-05": 0.04997918583567585,
+            "0.0001": 0.05108007021391544,
+            "0.001": 0.16121186328923803
+          },
+          "logical_offset": 2867.0,
+          "chain_offset": 57.22320498080322,
+          "allocation": "cut",
+          "ranges": {
+            "h": [
+              -4.0,
+              4.0
+            ],
+            "J": [
+              -1.0,
+              1.0
+            ],
+            "group": [
+              -13.0,
+              10.0
+            ]
+          },
+          "elapsed_seconds": 0.00891095888800919
+        }
+      },
+      {
+        "variable": 81,
+        "qubit": 74,
+        "evaluation": {
+          "feasible": true,
+          "scale": 0.008137662685177337,
+          "physical_qubits": 273,
+          "logical_variables": 154,
+          "chain_edges_count": 119,
+          "chain_max": 6,
+          "beta": 20.0,
+          "epsilon_requested": 0.05,
+          "margin_requested": 0.194371394166638,
+          "margin_min": 0.19437139416663796,
+          "classical_break_bound": 0.04876058633908858,
+          "classical_union_bound": 0.04996806583523798,
+          "quantum_bounds": {
+            "0.0": 0.04996806583523798,
+            "1e-05": 0.04997918583567585,
+            "0.0001": 0.05108007021391544,
+            "0.001": 0.16121186328923803
+          },
+          "logical_offset": 2867.0,
+          "chain_offset": 57.22320498080322,
+          "allocation": "cut",
+          "ranges": {
+            "h": [
+              -4.0,
+              4.0
+            ],
+            "J": [
+              -1.0,
+              1.0
+            ],
+            "group": [
+              -13.0,
+              10.0
+            ]
+          },
+          "elapsed_seconds": 0.008713250048458576
+        }
+      },
+      {
+        "variable": 7,
+        "qubit": 949,
+        "evaluation": {
+          "feasible": true,
+          "scale": 0.008137662685177337,
+          "physical_qubits": 273,
+          "logical_variables": 154,
+          "chain_edges_count": 119,
+          "chain_max": 6,
+          "beta": 20.0,
+          "epsilon_requested": 0.05,
+          "margin_requested": 0.194371394166638,
+          "margin_min": 0.19437139416663796,
+          "classical_break_bound": 0.04876058633908858,
+          "classical_union_bound": 0.049967889516377324,
+          "quantum_bounds": {
+            "0.0": 0.049967889516377324,
+            "1e-05": 0.04997904951682253,
+            "0.0001": 0.051083893968388354,
+            "0.001": 0.16161242054392194
+          },
+          "logical_offset": 2867.0,
+          "chain_offset": 57.25304307731553,
+          "allocation": "cut",
+          "ranges": {
+            "h": [
+              -4.0,
+              4.0
+            ],
+            "J": [
+              -1.0,
+              1.0
+            ],
+            "group": [
+              -13.0,
+              10.0
+            ]
+          },
+          "elapsed_seconds": 0.008620749926194549
+        }
+      },
+      {
+        "variable": 23,
+        "qubit": 237,
+        "evaluation": {
+          "feasible": true,
+          "scale": 0.008137662685177337,
+          "physical_qubits": 273,
+          "logical_variables": 154,
+          "chain_edges_count": 119,
+          "chain_max": 6,
+          "beta": 20.0,
+          "epsilon_requested": 0.05,
+          "margin_requested": 0.194371394166638,
+          "margin_min": 0.19437139416663796,
+          "classical_break_bound": 0.04876058633908858,
+          "classical_union_bound": 0.049967889516377324,
+          "quantum_bounds": {
+            "0.0": 0.049967889516377324,
+            "1e-05": 0.04997904951682253,
+            "0.0001": 0.051083893968388354,
+            "0.001": 0.16161242054392194
+          },
+          "logical_offset": 2867.0,
+          "chain_offset": 56.835309726143095,
+          "allocation": "cut",
+          "ranges": {
+            "h": [
+              -4.0,
+              4.0
+            ],
+            "J": [
+              -1.0,
+              1.0
+            ],
+            "group": [
+              -13.0,
+              10.0
+            ]
+          },
+          "elapsed_seconds": 0.008602333022281528
+        }
+      },
+      {
+        "variable": 43,
+        "qubit": 223,
+        "evaluation": {
+          "feasible": true,
+          "scale": 0.008137662685177337,
+          "physical_qubits": 273,
+          "logical_variables": 154,
+          "chain_edges_count": 119,
+          "chain_max": 6,
+          "beta": 20.0,
+          "epsilon_requested": 0.05,
+          "margin_requested": 0.194371394166638,
+          "margin_min": 0.19437139416663796,
+          "classical_break_bound": 0.04876058633908858,
+          "classical_union_bound": 0.049967889516377324,
+          "quantum_bounds": {
+            "0.0": 0.049967889516377324,
+            "1e-05": 0.04997904951682253,
+            "0.0001": 0.051083893968388354,
+            "0.001": 0.16161242054392194
+          },
+          "logical_offset": 2867.0,
+          "chain_offset": 57.22320498080322,
+          "allocation": "cut",
+          "ranges": {
+            "h": [
+              -4.0,
+              4.0
+            ],
+            "J": [
+              -1.0,
+              1.0
+            ],
+            "group": [
+              -13.0,
+              10.0
+            ]
+          },
+          "elapsed_seconds": 0.008571499958634377
+        }
+      },
+      {
+        "variable": 68,
+        "qubit": 175,
+        "evaluation": {
+          "feasible": true,
+          "scale": 0.008137662685177337,
+          "physical_qubits": 273,
+          "logical_variables": 154,
+          "chain_edges_count": 119,
+          "chain_max": 6,
+          "beta": 20.0,
+          "epsilon_requested": 0.05,
+          "margin_requested": 0.194371394166638,
+          "margin_min": 0.19437139416663796,
+          "classical_break_bound": 0.04876058633908858,
+          "classical_union_bound": 0.049967889516377324,
+          "quantum_bounds": {
+            "0.0": 0.049967889516377324,
+            "1e-05": 0.04997904951682253,
+            "0.0001": 0.051083893968388354,
+            "0.001": 0.16161242054392194
+          },
+          "logical_offset": 2867.0,
+          "chain_offset": 57.28884879313031,
+          "allocation": "cut",
+          "ranges": {
+            "h": [
+              -4.0,
+              4.0
+            ],
+            "J": [
+              -1.0,
+              1.0
+            ],
+            "group": [
+              -13.0,
+              10.0
+            ]
+          },
+          "elapsed_seconds": 0.008537249872460961
+        }
+      },
+      {
+        "variable": 94,
+        "qubit": 780,
+        "evaluation": {
+          "feasible": true,
+          "scale": 0.008137662685177337,
+          "physical_qubits": 273,
+          "logical_variables": 154,
+          "chain_edges_count": 119,
+          "chain_max": 6,
+          "beta": 20.0,
+          "epsilon_requested": 0.05,
+          "margin_requested": 0.194371394166638,
+          "margin_min": 0.19437139416663796,
+          "classical_break_bound": 0.04876058633908858,
+          "classical_union_bound": 0.049967889516377324,
+          "quantum_bounds": {
+            "0.0": 0.049967889516377324,
+            "1e-05": 0.04997904951682252,
+            "0.0001": 0.05108389396838835,
+            "0.001": 0.16161242054392194
+          },
+          "logical_offset": 2867.0,
+          "chain_offset": 57.16352878777858,
+          "allocation": "cut",
+          "ranges": {
+            "h": [
+              -4.0,
+              4.0
+            ],
+            "J": [
+              -1.0,
+              1.0
+            ],
+            "group": [
+              -13.0,
+              10.0
+            ]
+          },
+          "elapsed_seconds": 0.00899141700938344
+        }
+      },
+      {
+        "variable": 94,
+        "qubit": 732,
+        "evaluation": {
+          "feasible": true,
+          "scale": 0.008137662685177337,
+          "physical_qubits": 273,
+          "logical_variables": 154,
+          "chain_edges_count": 119,
+          "chain_max": 6,
+          "beta": 20.0,
+          "epsilon_requested": 0.05,
+          "margin_requested": 0.194371394166638,
+          "margin_min": 0.19437139416663796,
+          "classical_break_bound": 0.04876058633908858,
+          "classical_union_bound": 0.049967889516377324,
+          "quantum_bounds": {
+            "0.0": 0.049967889516377324,
+            "1e-05": 0.04997904951682252,
+            "0.0001": 0.05108389396838835,
+            "0.001": 0.16161242054392194
+          },
+          "logical_offset": 2867.0,
+          "chain_offset": 56.98450020870468,
+          "allocation": "cut",
+          "ranges": {
+            "h": [
+              -4.0,
+              4.0
+            ],
+            "J": [
+              -1.0,
+              1.0
+            ],
+            "group": [
+              -13.0,
+              10.0
+            ]
+          },
+          "elapsed_seconds": 0.009844582993537188
+        }
+      },
+      {
+        "variable": 147,
+        "qubit": 158,
+        "evaluation": {
+          "feasible": true,
+          "scale": 0.008137662685177337,
+          "physical_qubits": 273,
+          "logical_variables": 154,
+          "chain_edges_count": 119,
+          "chain_max": 6,
+          "beta": 20.0,
+          "epsilon_requested": 0.05,
+          "margin_requested": 0.194371394166638,
+          "margin_min": 0.19437139416663796,
+          "classical_break_bound": 0.04876058633908858,
+          "classical_union_bound": 0.049967889516377324,
+          "quantum_bounds": {
+            "0.0": 0.049967889516377324,
+            "1e-05": 0.04997904951682253,
+            "0.0001": 0.051083893968388354,
+            "0.001": 0.16161242054392194
+          },
+          "logical_offset": 2867.0,
+          "chain_offset": 56.77563353311846,
+          "allocation": "cut",
+          "ranges": {
+            "h": [
+              -4.0,
+              4.0
+            ],
+            "J": [
+              -1.0,
+              1.0
+            ],
+            "group": [
+              -13.0,
+              10.0
+            ]
+          },
+          "elapsed_seconds": 0.009778625098988414
+        }
+      },
+      {
+        "variable": 5,
+        "qubit": 302,
+        "evaluation": {
+          "feasible": true,
+          "scale": 0.008137662685177337,
+          "physical_qubits": 273,
+          "logical_variables": 154,
+          "chain_edges_count": 119,
+          "chain_max": 6,
+          "beta": 20.0,
+          "epsilon_requested": 0.05,
+          "margin_requested": 0.194371394166638,
+          "margin_min": 0.19437139416663796,
+          "classical_break_bound": 0.04876058633908858,
+          "classical_union_bound": 0.04996771312343311,
+          "quantum_bounds": {
+            "0.0": 0.04996771312343311,
+            "1e-05": 0.049978893123881575,
+            "0.0001": 0.051085717608110856,
+            "0.001": 0.16181257087107045
+          },
+          "logical_offset": 2867.0,
+          "chain_offset": 57.07401449824163,
+          "allocation": "cut",
+          "ranges": {
+            "h": [
+              -4.0,
+              4.0
+            ],
+            "J": [
+              -1.0,
+              1.0
+            ],
+            "group": [
+              -13.0,
+              10.0
+            ]
+          },
+          "elapsed_seconds": 0.00986591586843133
+        }
+      },
+      {
+        "variable": 82,
+        "qubit": 19,
+        "evaluation": {
+          "feasible": true,
+          "scale": 0.008137662685177337,
+          "physical_qubits": 273,
+          "logical_variables": 154,
+          "chain_edges_count": 119,
+          "chain_max": 6,
+          "beta": 20.0,
+          "epsilon_requested": 0.05,
+          "margin_requested": 0.194371394166638,
+          "margin_min": 0.19437139416663796,
+          "classical_break_bound": 0.04876058633908858,
+          "classical_union_bound": 0.049967713123433115,
+          "quantum_bounds": {
+            "0.0": 0.049967713123433115,
+            "1e-05": 0.049978893123881575,
+            "0.0001": 0.051085717608110856,
+            "0.001": 0.16181257087107045
+          },
+          "logical_offset": 2867.0,
+          "chain_offset": 57.25304307731553,
+          "allocation": "cut",
+          "ranges": {
+            "h": [
+              -4.0,
+              4.0
+            ],
+            "J": [
+              -1.0,
+              1.0
+            ],
+            "group": [
+              -13.0,
+              10.0
+            ]
+          },
+          "elapsed_seconds": 0.010723375016823411
+        }
+      },
+      {
+        "variable": 130,
+        "qubit": 280,
+        "evaluation": {
+          "feasible": true,
+          "scale": 0.008137662685177337,
+          "physical_qubits": 273,
+          "logical_variables": 154,
+          "chain_edges_count": 119,
+          "chain_max": 6,
+          "beta": 20.0,
+          "epsilon_requested": 0.05,
+          "margin_requested": 0.194371394166638,
+          "margin_min": 0.19437139416663796,
+          "classical_break_bound": 0.04876058633908858,
+          "classical_union_bound": 0.04996771312343311,
+          "quantum_bounds": {
+            "0.0": 0.04996771312343311,
+            "1e-05": 0.049978893123881575,
+            "0.0001": 0.051085717608110856,
+            "0.001": 0.16181257087107045
+          },
+          "logical_offset": 2867.0,
+          "chain_offset": 57.05909544998547,
+          "allocation": "cut",
+          "ranges": {
+            "h": [
+              -4.0,
+              4.0
+            ],
+            "J": [
+              -1.0,
+              1.0
+            ],
+            "group": [
+              -13.0,
+              10.0
+            ]
+          },
+          "elapsed_seconds": 0.011630750028416514
+        }
+      },
+      {
+        "variable": 134,
+        "qubit": 44,
+        "evaluation": {
+          "feasible": true,
+          "scale": 0.008137662685177337,
+          "physical_qubits": 273,
+          "logical_variables": 154,
+          "chain_edges_count": 119,
+          "chain_max": 6,
+          "beta": 20.0,
+          "epsilon_requested": 0.05,
+          "margin_requested": 0.194371394166638,
+          "margin_min": 0.19437139416663796,
+          "classical_break_bound": 0.04876058633908858,
+          "classical_union_bound": 0.04996771312343311,
+          "quantum_bounds": {
+            "0.0": 0.04996771312343311,
+            "1e-05": 0.049978893123881575,
+            "0.0001": 0.051085717608110856,
+            "0.001": 0.16181257087107045
+          },
+          "logical_offset": 2867.0,
+          "chain_offset": 57.25304307731553,
+          "allocation": "cut",
+          "ranges": {
+            "h": [
+              -4.0,
+              4.0
+            ],
+            "J": [
+              -1.0,
+              1.0
+            ],
+            "group": [
+              -13.0,
+              10.0
+            ]
+          },
+          "elapsed_seconds": 0.011573166120797396
+        }
+      }
+    ],
+    "elapsed_seconds": 0.12967154197394848
+  },
+  {
+    "name": "mixed_hypergraph_n32_s3307",
+    "common_graph_valid_candidates": 6,
+    "size_only_accepts": true,
+    "guided_accepts": true,
+    "size_only_selected": {
+      "variable": 41,
+      "qubit": 448,
+      "evaluation": {
+        "feasible": true,
+        "scale": 0.00955367033804838,
+        "physical_qubits": 240,
+        "logical_variables": 148,
+        "chain_edges_count": 92,
+        "chain_max": 4,
+        "beta": 20.0,
+        "epsilon_requested": 0.05,
+        "margin_requested": 0.18793802126507578,
+        "margin_min": 0.18793802126507575,
+        "classical_break_bound": 0.04875765577952939,
+        "classical_union_bound": 0.04996339995790616,
+        "quantum_bounds": {
+          "0.0": 0.04996339995790616,
+          "1e-05": 0.0499714799581251,
+          "0.0001": 0.05077140214724248,
+          "0.001": 0.1307852962714069
+        },
+        "logical_offset": 2643.375,
+        "chain_offset": 45.00191298068855,
+        "allocation": "cut",
+        "ranges": {
+          "h": [
+            -4.0,
+            4.0
+          ],
+          "J": [
+            -1.0,
+            1.0
+          ],
+          "group": [
+            -13.0,
+            10.0
+          ]
+        },
+        "elapsed_seconds": 0.013038832927122712
+      }
+    },
+    "guided_selected": {
+      "variable": 41,
+      "qubit": 448,
+      "evaluation": {
+        "feasible": true,
+        "scale": 0.00955367033804838,
+        "physical_qubits": 240,
+        "logical_variables": 148,
+        "chain_edges_count": 92,
+        "chain_max": 4,
+        "beta": 20.0,
+        "epsilon_requested": 0.05,
+        "margin_requested": 0.18793802126507578,
+        "margin_min": 0.18793802126507575,
+        "classical_break_bound": 0.04875765577952939,
+        "classical_union_bound": 0.04996339995790616,
+        "quantum_bounds": {
+          "0.0": 0.04996339995790616,
+          "1e-05": 0.0499714799581251,
+          "0.0001": 0.05077140214724248,
+          "0.001": 0.1307852962714069
+        },
+        "logical_offset": 2643.375,
+        "chain_offset": 45.00191298068855,
+        "allocation": "cut",
+        "ranges": {
+          "h": [
+            -4.0,
+            4.0
+          ],
+          "J": [
+            -1.0,
+            1.0
+          ],
+          "group": [
+            -13.0,
+            10.0
+          ]
+        },
+        "elapsed_seconds": 0.013038832927122712
+      }
+    },
+    "candidates": [
+      {
+        "variable": 41,
+        "qubit": 448,
+        "evaluation": {
+          "feasible": true,
+          "scale": 0.00955367033804838,
+          "physical_qubits": 240,
+          "logical_variables": 148,
+          "chain_edges_count": 92,
+          "chain_max": 4,
+          "beta": 20.0,
+          "epsilon_requested": 0.05,
+          "margin_requested": 0.18793802126507578,
+          "margin_min": 0.18793802126507575,
+          "classical_break_bound": 0.04875765577952939,
+          "classical_union_bound": 0.04996339995790616,
+          "quantum_bounds": {
+            "0.0": 0.04996339995790616,
+            "1e-05": 0.0499714799581251,
+            "0.0001": 0.05077140214724248,
+            "0.001": 0.1307852962714069
+          },
+          "logical_offset": 2643.375,
+          "chain_offset": 45.00191298068855,
+          "allocation": "cut",
+          "ranges": {
+            "h": [
+              -4.0,
+              4.0
+            ],
+            "J": [
+              -1.0,
+              1.0
+            ],
+            "group": [
+              -13.0,
+              10.0
+            ]
+          },
+          "elapsed_seconds": 0.013038832927122712
+        }
+      },
+      {
+        "variable": 59,
+        "qubit": 899,
+        "evaluation": {
+          "feasible": true,
+          "scale": 0.00955367033804838,
+          "physical_qubits": 240,
+          "logical_variables": 148,
+          "chain_edges_count": 92,
+          "chain_max": 4,
+          "beta": 20.0,
+          "epsilon_requested": 0.05,
+          "margin_requested": 0.18793802126507578,
+          "margin_min": 0.18793802126507575,
+          "classical_break_bound": 0.04875765577952939,
+          "classical_union_bound": 0.04996339995790616,
+          "quantum_bounds": {
+            "0.0": 0.04996339995790616,
+            "1e-05": 0.0499714799581251,
+            "0.0001": 0.05077140214724248,
+            "0.001": 0.1307852962714069
+          },
+          "logical_offset": 2643.375,
+          "chain_offset": 44.951159107017666,
+          "allocation": "cut",
+          "ranges": {
+            "h": [
+              -4.0,
+              4.0
+            ],
+            "J": [
+              -1.0,
+              1.0
+            ],
+            "group": [
+              -13.0,
+              10.0
+            ]
+          },
+          "elapsed_seconds": 0.012821082957088947
+        }
+      },
+      {
+        "variable": 141,
+        "qubit": 910,
+        "evaluation": {
+          "feasible": true,
+          "scale": 0.00955367033804838,
+          "physical_qubits": 240,
+          "logical_variables": 148,
+          "chain_edges_count": 92,
+          "chain_max": 4,
+          "beta": 20.0,
+          "epsilon_requested": 0.05,
+          "margin_requested": 0.18793802126507578,
+          "margin_min": 0.18793802126507575,
+          "classical_break_bound": 0.04875765577952939,
+          "classical_union_bound": 0.04996339995790617,
+          "quantum_bounds": {
+            "0.0": 0.04996339995790617,
+            "1e-05": 0.049971479958125106,
+            "0.0001": 0.05077140214724248,
+            "0.001": 0.1307852962714069
+          },
+          "logical_offset": 2643.375,
+          "chain_offset": 45.188010517481786,
+          "allocation": "cut",
+          "ranges": {
+            "h": [
+              -4.0,
+              4.0
+            ],
+            "J": [
+              -1.0,
+              1.0
+            ],
+            "group": [
+              -13.0,
+              10.0
+            ]
+          },
+          "elapsed_seconds": 0.013858708087354898
+        }
+      },
+      {
+        "variable": 91,
+        "qubit": 514,
+        "evaluation": {
+          "feasible": true,
+          "scale": 0.00955367033804838,
+          "physical_qubits": 240,
+          "logical_variables": 148,
+          "chain_edges_count": 92,
+          "chain_max": 4,
+          "beta": 20.0,
+          "epsilon_requested": 0.05,
+          "margin_requested": 0.18793802126507578,
+          "margin_min": 0.18793802126507575,
+          "classical_break_bound": 0.04875765577952939,
+          "classical_union_bound": 0.04996310491007744,
+          "quantum_bounds": {
+            "0.0": 0.04996310491007744,
+            "1e-05": 0.04997120491029964,
+            "0.0001": 0.050773107132080476,
+            "0.001": 0.13098532794367088
+          },
+          "logical_offset": 2643.375,
+          "chain_offset": 45.1372566438109,
+          "allocation": "cut",
+          "ranges": {
+            "h": [
+              -4.0,
+              4.0
+            ],
+            "J": [
+              -1.0,
+              1.0
+            ],
+            "group": [
+              -13.0,
+              10.0
+            ]
+          },
+          "elapsed_seconds": 0.01269600004889071
+        }
+      },
+      {
+        "variable": 93,
+        "qubit": 496,
+        "evaluation": {
+          "feasible": true,
+          "scale": 0.00955367033804838,
+          "physical_qubits": 240,
+          "logical_variables": 148,
+          "chain_edges_count": 92,
+          "chain_max": 4,
+          "beta": 20.0,
+          "epsilon_requested": 0.05,
+          "margin_requested": 0.18793802126507578,
+          "margin_min": 0.18793802126507575,
+          "classical_break_bound": 0.04875765577952939,
+          "classical_union_bound": 0.04996310491007744,
+          "quantum_bounds": {
+            "0.0": 0.04996310491007744,
+            "1e-05": 0.04997120491029964,
+            "0.0001": 0.050773107132080476,
+            "0.001": 0.13098532794367088
+          },
+          "logical_offset": 2643.375,
+          "chain_offset": 45.28951826482355,
+          "allocation": "cut",
+          "ranges": {
+            "h": [
+              -4.0,
+              4.0
+            ],
+            "J": [
+              -1.0,
+              1.0
+            ],
+            "group": [
+              -13.0,
+              10.0
+            ]
+          },
+          "elapsed_seconds": 0.01271199993789196
+        }
+      },
+      {
+        "variable": 94,
+        "qubit": 460,
+        "evaluation": {
+          "feasible": true,
+          "scale": 0.00955367033804838,
+          "physical_qubits": 240,
+          "logical_variables": 148,
+          "chain_edges_count": 92,
+          "chain_max": 4,
+          "beta": 20.0,
+          "epsilon_requested": 0.05,
+          "margin_requested": 0.18793802126507578,
+          "margin_min": 0.18793802126507575,
+          "classical_break_bound": 0.04875765577952939,
+          "classical_union_bound": 0.04996310491007744,
+          "quantum_bounds": {
+            "0.0": 0.04996310491007744,
+            "1e-05": 0.04997120491029964,
+            "0.0001": 0.050773107132080476,
+            "0.001": 0.13098532794367088
+          },
+          "logical_offset": 2643.375,
+          "chain_offset": 45.188010517481786,
+          "allocation": "cut",
+          "ranges": {
+            "h": [
+              -4.0,
+              4.0
+            ],
+            "J": [
+              -1.0,
+              1.0
+            ],
+            "group": [
+              -13.0,
+              10.0
+            ]
+          },
+          "elapsed_seconds": 0.012683625100180507
+        }
+      }
+    ],
+    "elapsed_seconds": 0.08212270797230303
+  },
+  {
+    "name": "mixed_hypergraph_n64_s1101",
+    "common_graph_valid_candidates": 16,
+    "size_only_accepts": true,
+    "guided_accepts": true,
+    "size_only_selected": {
+      "variable": 47,
+      "qubit": 871,
+      "evaluation": {
+        "feasible": true,
+        "scale": 0.003979208333365884,
+        "physical_qubits": 534,
+        "logical_variables": 292,
+        "chain_edges_count": 242,
+        "chain_max": 8,
+        "beta": 20.0,
+        "epsilon_requested": 0.05,
+        "margin_requested": 0.21211674999276692,
+        "margin_min": 0.2121167499927668,
+        "classical_break_bound": 0.04876566278814201,
+        "classical_union_bound": 0.04998037079563316,
+        "quantum_bounds": {
+          "0.0": 0.04998037079563316,
+          "1e-05": 0.0500060907974205,
+          "0.0001": 0.05255238866904727,
+          "0.001": 0.30735918492447556
+        },
+        "logical_offset": 10752.25,
+        "chain_offset": 118.56495749879957,
+        "allocation": "cut",
+        "ranges": {
+          "h": [
+            -4.0,
+            4.0
+          ],
+          "J": [
+            -1.0,
+            1.0
+          ],
+          "group": [
+            -13.0,
+            10.0
+          ]
+        },
+        "elapsed_seconds": 0.025695541873574257
+      }
+    },
+    "guided_selected": {
+      "variable": 47,
+      "qubit": 871,
+      "evaluation": {
+        "feasible": true,
+        "scale": 0.003979208333365884,
+        "physical_qubits": 534,
+        "logical_variables": 292,
+        "chain_edges_count": 242,
+        "chain_max": 8,
+        "beta": 20.0,
+        "epsilon_requested": 0.05,
+        "margin_requested": 0.21211674999276692,
+        "margin_min": 0.2121167499927668,
+        "classical_break_bound": 0.04876566278814201,
+        "classical_union_bound": 0.04998037079563316,
+        "quantum_bounds": {
+          "0.0": 0.04998037079563316,
+          "1e-05": 0.0500060907974205,
+          "0.0001": 0.05255238866904727,
+          "0.001": 0.30735918492447556
+        },
+        "logical_offset": 10752.25,
+        "chain_offset": 118.56495749879957,
+        "allocation": "cut",
+        "ranges": {
+          "h": [
+            -4.0,
+            4.0
+          ],
+          "J": [
+            -1.0,
+            1.0
+          ],
+          "group": [
+            -13.0,
+            10.0
+          ]
+        },
+        "elapsed_seconds": 0.025695541873574257
+      }
+    },
+    "candidates": [
+      {
+        "variable": 47,
+        "qubit": 871,
+        "evaluation": {
+          "feasible": true,
+          "scale": 0.003979208333365884,
+          "physical_qubits": 534,
+          "logical_variables": 292,
+          "chain_edges_count": 242,
+          "chain_max": 8,
+          "beta": 20.0,
+          "epsilon_requested": 0.05,
+          "margin_requested": 0.21211674999276692,
+          "margin_min": 0.2121167499927668,
+          "classical_break_bound": 0.04876566278814201,
+          "classical_union_bound": 0.04998037079563316,
+          "quantum_bounds": {
+            "0.0": 0.04998037079563316,
+            "1e-05": 0.0500060907974205,
+            "0.0001": 0.05255238866904727,
+            "0.001": 0.30735918492447556
+          },
+          "logical_offset": 10752.25,
+          "chain_offset": 118.56495749879957,
+          "allocation": "cut",
+          "ranges": {
+            "h": [
+              -4.0,
+              4.0
+            ],
+            "J": [
+              -1.0,
+              1.0
+            ],
+            "group": [
+              -13.0,
+              10.0
+            ]
+          },
+          "elapsed_seconds": 0.025695541873574257
+        }
+      },
+      {
+        "variable": 29,
+        "qubit": 129,
+        "evaluation": {
+          "feasible": true,
+          "scale": 0.003979208333365884,
+          "physical_qubits": 534,
+          "logical_variables": 292,
+          "chain_edges_count": 242,
+          "chain_max": 8,
+          "beta": 20.0,
+          "epsilon_requested": 0.05,
+          "margin_requested": 0.21211674999276692,
+          "margin_min": 0.2121167499927668,
+          "classical_break_bound": 0.04876566278814201,
+          "classical_union_bound": 0.049980328151364405,
+          "quantum_bounds": {
+            "0.0": 0.049980328151364405,
+            "1e-05": 0.050006088153171875,
+            "0.0001": 0.052556346226113576,
+            "0.001": 0.30776115734766335
+          },
+          "logical_offset": 10752.25,
+          "chain_offset": 118.33151060990878,
+          "allocation": "cut",
+          "ranges": {
+            "h": [
+              -4.0,
+              4.0
+            ],
+            "J": [
+              -1.0,
+              1.0
+            ],
+            "group": [
+              -13.0,
+              10.0
+            ]
+          },
+          "elapsed_seconds": 0.02582699991762638
+        }
+      },
+      {
+        "variable": 44,
+        "qubit": 1118,
+        "evaluation": {
+          "feasible": true,
+          "scale": 0.003979208333365884,
+          "physical_qubits": 534,
+          "logical_variables": 292,
+          "chain_edges_count": 242,
+          "chain_max": 8,
+          "beta": 20.0,
+          "epsilon_requested": 0.05,
+          "margin_requested": 0.21211674999276692,
+          "margin_min": 0.2121167499927668,
+          "classical_break_bound": 0.04876566278814201,
+          "classical_union_bound": 0.04998032815136441,
+          "quantum_bounds": {
+            "0.0": 0.04998032815136441,
+            "1e-05": 0.050006088153171875,
+            "0.0001": 0.052556346226113576,
+            "0.001": 0.30776115734766335
+          },
+          "logical_offset": 10752.25,
+          "chain_offset": 118.30232974879742,
+          "allocation": "cut",
+          "ranges": {
+            "h": [
+              -4.0,
+              4.0
+            ],
+            "J": [
+              -1.0,
+              1.0
+            ],
+            "group": [
+              -13.0,
+              10.0
+            ]
+          },
+          "elapsed_seconds": 0.0191750000230968
+        }
+      },
+      {
+        "variable": 157,
+        "qubit": 1047,
+        "evaluation": {
+          "feasible": true,
+          "scale": 0.003979208333365884,
+          "physical_qubits": 534,
+          "logical_variables": 292,
+          "chain_edges_count": 242,
+          "chain_max": 8,
+          "beta": 20.0,
+          "epsilon_requested": 0.05,
+          "margin_requested": 0.21211674999276692,
+          "margin_min": 0.2121167499927668,
+          "classical_break_bound": 0.04876566278814201,
+          "classical_union_bound": 0.04998032815136441,
+          "quantum_bounds": {
+            "0.0": 0.04998032815136441,
+            "1e-05": 0.050006088153171875,
+            "0.0001": 0.052556346226113576,
+            "0.001": 0.30776115734766335
+          },
+          "logical_offset": 10752.25,
+          "chain_offset": 118.56495749879957,
+          "allocation": "cut",
+          "ranges": {
+            "h": [
+              -4.0,
+              4.0
+            ],
+            "J": [
+              -1.0,
+              1.0
+            ],
+            "group": [
+              -13.0,
+              10.0
+            ]
+          },
+          "elapsed_seconds": 0.018819999881088734
+        }
+      },
+      {
+        "variable": 269,
+        "qubit": 322,
+        "evaluation": {
+          "feasible": true,
+          "scale": 0.003979208333365884,
+          "physical_qubits": 534,
+          "logical_variables": 292,
+          "chain_edges_count": 242,
+          "chain_max": 8,
+          "beta": 20.0,
+          "epsilon_requested": 0.05,
+          "margin_requested": 0.21211674999276692,
+          "margin_min": 0.2121167499927668,
+          "classical_break_bound": 0.04876566278814201,
+          "classical_union_bound": 0.04998032815136441,
+          "quantum_bounds": {
+            "0.0": 0.04998032815136441,
+            "1e-05": 0.050006088153171875,
+            "0.0001": 0.052556346226113576,
+            "0.001": 0.30776115734766335
+          },
+          "logical_offset": 10752.25,
+          "chain_offset": 118.56495749879957,
+          "allocation": "cut",
+          "ranges": {
+            "h": [
+              -4.0,
+              4.0
+            ],
+            "J": [
+              -1.0,
+              1.0
+            ],
+            "group": [
+              -13.0,
+              10.0
+            ]
+          },
+          "elapsed_seconds": 0.018742542015388608
+        }
+      },
+      {
+        "variable": 139,
+        "qubit": 859,
+        "evaluation": {
+          "feasible": true,
+          "scale": 0.003979208333365884,
+          "physical_qubits": 534,
+          "logical_variables": 292,
+          "chain_edges_count": 242,
+          "chain_max": 8,
+          "beta": 20.0,
+          "epsilon_requested": 0.05,
+          "margin_requested": 0.21211674999276692,
+          "margin_min": 0.2121167499927668,
+          "classical_break_bound": 0.04876566278814201,
+          "classical_union_bound": 0.04998028549828485,
+          "quantum_bounds": {
+            "0.0": 0.04998028549828485,
+            "1e-05": 0.050006085500105255,
+            "0.0001": 0.05256030370236808,
+            "0.001": 0.30816240875359724
+          },
+          "logical_offset": 10752.25,
+          "chain_offset": 118.38987233213147,
+          "allocation": "cut",
+          "ranges": {
+            "h": [
+              -4.0,
+              4.0
+            ],
+            "J": [
+              -1.0,
+              1.0
+            ],
+            "group": [
+              -13.0,
+              10.0
+            ]
+          },
+          "elapsed_seconds": 0.018629292026162148
+        }
+      },
+      {
+        "variable": 139,
+        "qubit": 854,
+        "evaluation": {
+          "feasible": true,
+          "scale": 0.003979208333365884,
+          "physical_qubits": 534,
+          "logical_variables": 292,
+          "chain_edges_count": 242,
+          "chain_max": 8,
+          "beta": 20.0,
+          "epsilon_requested": 0.05,
+          "margin_requested": 0.21211674999276692,
+          "margin_min": 0.2121167499927668,
+          "classical_break_bound": 0.04876566278814201,
+          "classical_union_bound": 0.04998028549828485,
+          "quantum_bounds": {
+            "0.0": 0.04998028549828485,
+            "1e-05": 0.050006085500105255,
+            "0.0001": 0.05256030370236808,
+            "0.001": 0.30816240875359724
+          },
+          "logical_offset": 10752.25,
+          "chain_offset": 118.40446276268715,
+          "allocation": "cut",
+          "ranges": {
+            "h": [
+              -4.0,
+              4.0
+            ],
+            "J": [
+              -1.0,
+              1.0
+            ],
+            "group": [
+              -13.0,
+              10.0
+            ]
+          },
+          "elapsed_seconds": 0.018569208914414048
+        }
+      },
+      {
+        "variable": 9,
+        "qubit": 963,
+        "evaluation": {
+          "feasible": true,
+          "scale": 0.003979208333365884,
+          "physical_qubits": 534,
+          "logical_variables": 292,
+          "chain_edges_count": 242,
+          "chain_max": 8,
+          "beta": 20.0,
+          "epsilon_requested": 0.05,
+          "margin_requested": 0.21211674999276692,
+          "margin_min": 0.2121167499927668,
+          "classical_break_bound": 0.04876566278814201,
+          "classical_union_bound": 0.04998024283639268,
+          "quantum_bounds": {
+            "0.0": 0.04998024283639268,
+            "1e-05": 0.05000608283822041,
+            "0.0001": 0.052564261113809484,
+            "0.001": 0.30856309966524964
+          },
+          "logical_offset": 10752.25,
+          "chain_offset": 118.30232974879742,
+          "allocation": "cut",
+          "ranges": {
+            "h": [
+              -4.0,
+              4.0
+            ],
+            "J": [
+              -1.0,
+              1.0
+            ],
+            "group": [
+              -13.0,
+              10.0
+            ]
+          },
+          "elapsed_seconds": 0.018920958042144775
+        }
+      },
+      {
+        "variable": 57,
+        "qubit": 205,
+        "evaluation": {
+          "feasible": true,
+          "scale": 0.003979208333365884,
+          "physical_qubits": 534,
+          "logical_variables": 292,
+          "chain_edges_count": 242,
+          "chain_max": 8,
+          "beta": 20.0,
+          "epsilon_requested": 0.05,
+          "margin_requested": 0.21211674999276692,
+          "margin_min": 0.2121167499927668,
+          "classical_break_bound": 0.04876566278814201,
+          "classical_union_bound": 0.04998024283639268,
+          "quantum_bounds": {
+            "0.0": 0.04998024283639268,
+            "1e-05": 0.05000608283822042,
+            "0.0001": 0.052564261113809484,
+            "0.001": 0.30856309966524964
+          },
+          "logical_offset": 10752.25,
+          "chain_offset": 118.36069147102012,
+          "allocation": "cut",
+          "ranges": {
+            "h": [
+              -4.0,
+              4.0
+            ],
+            "J": [
+              -1.0,
+              1.0
+            ],
+            "group": [
+              -13.0,
+              10.0
+            ]
+          },
+          "elapsed_seconds": 0.01874408288858831
+        }
+      },
+      {
+        "variable": 138,
+        "qubit": 855,
+        "evaluation": {
+          "feasible": true,
+          "scale": 0.003979208333365884,
+          "physical_qubits": 534,
+          "logical_variables": 292,
+          "chain_edges_count": 242,
+          "chain_max": 8,
+          "beta": 20.0,
+          "epsilon_requested": 0.05,
+          "margin_requested": 0.21211674999276692,
+          "margin_min": 0.2121167499927668,
+          "classical_break_bound": 0.04876566278814201,
+          "classical_union_bound": 0.04998024283639268,
+          "quantum_bounds": {
+            "0.0": 0.04998024283639268,
+            "1e-05": 0.05000608283822041,
+            "0.0001": 0.052564261113809484,
+            "0.001": 0.30856309966524964
+          },
+          "logical_offset": 10752.25,
+          "chain_offset": 118.50659577657687,
+          "allocation": "cut",
+          "ranges": {
+            "h": [
+              -4.0,
+              4.0
+            ],
+            "J": [
+              -1.0,
+              1.0
+            ],
+            "group": [
+              -13.0,
+              10.0
+            ]
+          },
+          "elapsed_seconds": 0.018809125060215592
+        }
+      },
+      {
+        "variable": 138,
+        "qubit": 812,
+        "evaluation": {
+          "feasible": true,
+          "scale": 0.003979208333365884,
+          "physical_qubits": 534,
+          "logical_variables": 292,
+          "chain_edges_count": 242,
+          "chain_max": 8,
+          "beta": 20.0,
+          "epsilon_requested": 0.05,
+          "margin_requested": 0.21211674999276692,
+          "margin_min": 0.2121167499927668,
+          "classical_break_bound": 0.04876566278814201,
+          "classical_union_bound": 0.04998024283639268,
+          "quantum_bounds": {
+            "0.0": 0.04998024283639268,
+            "1e-05": 0.05000608283822041,
+            "0.0001": 0.052564261113809484,
+            "0.001": 0.30856309966524964
+          },
+          "logical_offset": 10752.25,
+          "chain_offset": 118.33151060990878,
+          "allocation": "cut",
+          "ranges": {
+            "h": [
+              -4.0,
+              4.0
+            ],
+            "J": [
+              -1.0,
+              1.0
+            ],
+            "group": [
+              -13.0,
+              10.0
+            ]
+          },
+          "elapsed_seconds": 0.01885137497447431
+        }
+      },
+      {
+        "variable": 36,
+        "qubit": 149,
+        "evaluation": {
+          "feasible": true,
+          "scale": 0.003979208333365884,
+          "physical_qubits": 534,
+          "logical_variables": 292,
+          "chain_edges_count": 242,
+          "chain_max": 8,
+          "beta": 20.0,
+          "epsilon_requested": 0.05,
+          "margin_requested": 0.21211674999276692,
+          "margin_min": 0.2121167499927668,
+          "classical_break_bound": 0.04876566278814201,
+          "classical_union_bound": 0.049980200165686064,
+          "quantum_bounds": {
+            "0.0": 0.049980200165686064,
+            "1e-05": 0.05000606016751707,
+            "0.0001": 0.05256621847576959,
+            "0.001": 0.30876338371463574
+          },
+          "logical_offset": 10752.25,
+          "chain_offset": 118.53577663768822,
+          "allocation": "cut",
+          "ranges": {
+            "h": [
+              -4.0,
+              4.0
+            ],
+            "J": [
+              -1.0,
+              1.0
+            ],
+            "group": [
+              -13.0,
+              10.0
+            ]
+          },
+          "elapsed_seconds": 0.018828167114406824
+        }
+      },
+      {
+        "variable": 71,
+        "qubit": 774,
+        "evaluation": {
+          "feasible": true,
+          "scale": 0.003979208333365884,
+          "physical_qubits": 534,
+          "logical_variables": 292,
+          "chain_edges_count": 242,
+          "chain_max": 8,
+          "beta": 20.0,
+          "epsilon_requested": 0.05,
+          "margin_requested": 0.21211674999276692,
+          "margin_min": 0.2121167499927668,
+          "classical_break_bound": 0.04876566278814201,
+          "classical_union_bound": 0.049980200165686064,
+          "quantum_bounds": {
+            "0.0": 0.049980200165686064,
+            "1e-05": 0.05000606016751706,
+            "0.0001": 0.05256621847576959,
+            "0.001": 0.30876338371463574
+          },
+          "logical_offset": 10752.25,
+          "chain_offset": 118.56495749879957,
+          "allocation": "cut",
+          "ranges": {
+            "h": [
+              -4.0,
+              4.0
+            ],
+            "J": [
+              -1.0,
+              1.0
+            ],
+            "group": [
+              -13.0,
+              10.0
+            ]
+          },
+          "elapsed_seconds": 0.01746779098175466
+        }
+      },
+      {
+        "variable": 200,
+        "qubit": 1185,
+        "evaluation": {
+          "feasible": true,
+          "scale": 0.003979208333365884,
+          "physical_qubits": 534,
+          "logical_variables": 292,
+          "chain_edges_count": 242,
+          "chain_max": 8,
+          "beta": 20.0,
+          "epsilon_requested": 0.05,
+          "margin_requested": 0.21211674999276692,
+          "margin_min": 0.2121167499927668,
+          "classical_break_bound": 0.04876566278814201,
+          "classical_union_bound": 0.049980200165686064,
+          "quantum_bounds": {
+            "0.0": 0.049980200165686064,
+            "1e-05": 0.05000606016751706,
+            "0.0001": 0.05256621847576959,
+            "0.001": 0.30876338371463574
+          },
+          "logical_offset": 10752.25,
+          "chain_offset": 118.38987233213147,
+          "allocation": "cut",
+          "ranges": {
+            "h": [
+              -4.0,
+              4.0
+            ],
+            "J": [
+              -1.0,
+              1.0
+            ],
+            "group": [
+              -13.0,
+              10.0
+            ]
+          },
+          "elapsed_seconds": 0.016277875052765012
+        }
+      },
+      {
+        "variable": 210,
+        "qubit": 167,
+        "evaluation": {
+          "feasible": true,
+          "scale": 0.003979208333365884,
+          "physical_qubits": 534,
+          "logical_variables": 292,
+          "chain_edges_count": 242,
+          "chain_max": 8,
+          "beta": 20.0,
+          "epsilon_requested": 0.05,
+          "margin_requested": 0.21211674999276692,
+          "margin_min": 0.2121167499927668,
+          "classical_break_bound": 0.04876566278814201,
+          "classical_union_bound": 0.04998020016568606,
+          "quantum_bounds": {
+            "0.0": 0.04998020016568606,
+            "1e-05": 0.05000606016751706,
+            "0.0001": 0.05256621847576958,
+            "0.001": 0.30876338371463574
+          },
+          "logical_offset": 10752.25,
+          "chain_offset": 118.53577663768822,
+          "allocation": "cut",
+          "ranges": {
+            "h": [
+              -4.0,
+              4.0
+            ],
+            "J": [
+              -1.0,
+              1.0
+            ],
+            "group": [
+              -13.0,
+              10.0
+            ]
+          },
+          "elapsed_seconds": 0.016057834029197693
+        }
+      },
+      {
+        "variable": 276,
+        "qubit": 381,
+        "evaluation": {
+          "feasible": true,
+          "scale": 0.003979208333365884,
+          "physical_qubits": 534,
+          "logical_variables": 292,
+          "chain_edges_count": 242,
+          "chain_max": 8,
+          "beta": 20.0,
+          "epsilon_requested": 0.05,
+          "margin_requested": 0.21211674999276692,
+          "margin_min": 0.2121167499927668,
+          "classical_break_bound": 0.04876566278814201,
+          "classical_union_bound": 0.04998020016568606,
+          "quantum_bounds": {
+            "0.0": 0.04998020016568606,
+            "1e-05": 0.05000606016751706,
+            "0.0001": 0.05256621847576958,
+            "0.001": 0.30876338371463574
+          },
+          "logical_offset": 10752.25,
+          "chain_offset": 118.52118620713254,
+          "allocation": "cut",
+          "ranges": {
+            "h": [
+              -4.0,
+              4.0
+            ],
+            "J": [
+              -1.0,
+              1.0
+            ],
+            "group": [
+              -13.0,
+              10.0
+            ]
+          },
+          "elapsed_seconds": 0.015956500079482794
+        }
+      }
+    ],
+    "elapsed_seconds": 0.3245530421845615
+  },
+  {
+    "name": "mixed_hypergraph_n64_s2203",
+    "common_graph_valid_candidates": 20,
+    "size_only_accepts": true,
+    "guided_accepts": true,
+    "size_only_selected": {
+      "variable": 22,
+      "qubit": 398,
+      "evaluation": {
+        "feasible": true,
+        "scale": 0.0037323560626505666,
+        "physical_qubits": 608,
+        "logical_variables": 314,
+        "chain_edges_count": 294,
+        "chain_max": 7,
+        "beta": 20.0,
+        "epsilon_requested": 0.05,
+        "margin_requested": 0.2169828010223168,
+        "margin_min": 0.2169828010223167,
+        "classical_break_bound": 0.04876653160638286,
+        "classical_union_bound": 0.04998403932297436,
+        "quantum_bounds": {
+          "0.0": 0.04998403932297436,
+          "1e-05": 0.05001507932501782,
+          "0.0001": 0.053088059757722066,
+          "0.001": 0.36058846704952086
+        },
+        "logical_offset": 12630.0,
+        "chain_offset": 143.49079783793638,
+        "allocation": "cut",
+        "ranges": {
+          "h": [
+            -4.0,
+            4.0
+          ],
+          "J": [
+            -1.0,
+            1.0
+          ],
+          "group": [
+            -13.0,
+            10.0
+          ]
+        },
+        "elapsed_seconds": 0.014752333983778954
+      }
+    },
+    "guided_selected": {
+      "variable": 22,
+      "qubit": 398,
+      "evaluation": {
+        "feasible": true,
+        "scale": 0.0037323560626505666,
+        "physical_qubits": 608,
+        "logical_variables": 314,
+        "chain_edges_count": 294,
+        "chain_max": 7,
+        "beta": 20.0,
+        "epsilon_requested": 0.05,
+        "margin_requested": 0.2169828010223168,
+        "margin_min": 0.2169828010223167,
+        "classical_break_bound": 0.04876653160638286,
+        "classical_union_bound": 0.04998403932297436,
+        "quantum_bounds": {
+          "0.0": 0.04998403932297436,
+          "1e-05": 0.05001507932501782,
+          "0.0001": 0.053088059757722066,
+          "0.001": 0.36058846704952086
+        },
+        "logical_offset": 12630.0,
+        "chain_offset": 143.49079783793638,
+        "allocation": "cut",
+        "ranges": {
+          "h": [
+            -4.0,
+            4.0
+          ],
+          "J": [
+            -1.0,
+            1.0
+          ],
+          "group": [
+            -13.0,
+            10.0
+          ]
+        },
+        "elapsed_seconds": 0.014752333983778954
+      }
+    },
+    "candidates": [
+      {
+        "variable": 22,
+        "qubit": 398,
+        "evaluation": {
+          "feasible": true,
+          "scale": 0.0037323560626505666,
+          "physical_qubits": 608,
+          "logical_variables": 314,
+          "chain_edges_count": 294,
+          "chain_max": 7,
+          "beta": 20.0,
+          "epsilon_requested": 0.05,
+          "margin_requested": 0.2169828010223168,
+          "margin_min": 0.2169828010223167,
+          "classical_break_bound": 0.04876653160638286,
+          "classical_union_bound": 0.04998403932297436,
+          "quantum_bounds": {
+            "0.0": 0.04998403932297436,
+            "1e-05": 0.05001507932501782,
+            "0.0001": 0.053088059757722066,
+            "0.001": 0.36058846704952086
+          },
+          "logical_offset": 12630.0,
+          "chain_offset": 143.49079783793638,
+          "allocation": "cut",
+          "ranges": {
+            "h": [
+              -4.0,
+              4.0
+            ],
+            "J": [
+              -1.0,
+              1.0
+            ],
+            "group": [
+              -13.0,
+              10.0
+            ]
+          },
+          "elapsed_seconds": 0.014752333983778954
+        }
+      },
+      {
+        "variable": 139,
+        "qubit": 977,
+        "evaluation": {
+          "feasible": true,
+          "scale": 0.0037323560626505666,
+          "physical_qubits": 608,
+          "logical_variables": 314,
+          "chain_edges_count": 294,
+          "chain_max": 7,
+          "beta": 20.0,
+          "epsilon_requested": 0.05,
+          "margin_requested": 0.2169828010223168,
+          "margin_min": 0.2169828010223167,
+          "classical_break_bound": 0.04876653160638286,
+          "classical_union_bound": 0.04998403932297436,
+          "quantum_bounds": {
+            "0.0": 0.04998403932297436,
+            "1e-05": 0.05001507932501782,
+            "0.0001": 0.053088059757722066,
+            "0.001": 0.36058846704952086
+          },
+          "logical_offset": 12630.0,
+          "chain_offset": 143.49079783793638,
+          "allocation": "cut",
+          "ranges": {
+            "h": [
+              -4.0,
+              4.0
+            ],
+            "J": [
+              -1.0,
+              1.0
+            ],
+            "group": [
+              -13.0,
+              10.0
+            ]
+          },
+          "elapsed_seconds": 0.014575040899217129
+        }
+      },
+      {
+        "variable": 139,
+        "qubit": 923,
+        "evaluation": {
+          "feasible": true,
+          "scale": 0.0037323560626505666,
+          "physical_qubits": 608,
+          "logical_variables": 314,
+          "chain_edges_count": 294,
+          "chain_max": 7,
+          "beta": 20.0,
+          "epsilon_requested": 0.05,
+          "margin_requested": 0.2169828010223168,
+          "margin_min": 0.2169828010223167,
+          "classical_break_bound": 0.04876653160638286,
+          "classical_union_bound": 0.04998403932297436,
+          "quantum_bounds": {
+            "0.0": 0.04998403932297436,
+            "1e-05": 0.05001507932501782,
+            "0.0001": 0.053088059757722066,
+            "0.001": 0.36058846704952086
+          },
+          "logical_offset": 12630.0,
+          "chain_offset": 143.4021543814484,
+          "allocation": "cut",
+          "ranges": {
+            "h": [
+              -4.0,
+              4.0
+            ],
+            "J": [
+              -1.0,
+              1.0
+            ],
+            "group": [
+              -13.0,
+              10.0
+            ]
+          },
+          "elapsed_seconds": 0.014521291945129633
+        }
+      },
+      {
+        "variable": 275,
+        "qubit": 686,
+        "evaluation": {
+          "feasible": true,
+          "scale": 0.0037323560626505666,
+          "physical_qubits": 608,
+          "logical_variables": 314,
+          "chain_edges_count": 294,
+          "chain_max": 7,
+          "beta": 20.0,
+          "epsilon_requested": 0.05,
+          "margin_requested": 0.2169828010223168,
+          "margin_min": 0.2169828010223167,
+          "classical_break_bound": 0.04876653160638286,
+          "classical_union_bound": 0.04998403932297436,
+          "quantum_bounds": {
+            "0.0": 0.04998403932297436,
+            "1e-05": 0.05001507932501782,
+            "0.0001": 0.053088059757722066,
+            "0.001": 0.36058846704952086
+          },
+          "logical_offset": 12630.0,
+          "chain_offset": 143.5203456567657,
+          "allocation": "cut",
+          "ranges": {
+            "h": [
+              -4.0,
+              4.0
+            ],
+            "J": [
+              -1.0,
+              1.0
+            ],
+            "group": [
+              -13.0,
+              10.0
+            ]
+          },
+          "elapsed_seconds": 0.015848458046093583
+        }
+      },
+      {
+        "variable": 14,
+        "qubit": 138,
+        "evaluation": {
+          "feasible": true,
+          "scale": 0.0037323560626505666,
+          "physical_qubits": 608,
+          "logical_variables": 314,
+          "chain_edges_count": 294,
+          "chain_max": 7,
+          "beta": 20.0,
+          "epsilon_requested": 0.05,
+          "margin_requested": 0.2169828010223168,
+          "margin_min": 0.2169828010223167,
+          "classical_break_bound": 0.04876653160638286,
+          "classical_union_bound": 0.049984010419507716,
+          "quantum_bounds": {
+            "0.0": 0.049984010419507716,
+            "1e-05": 0.050015090421564115,
+            "0.0001": 0.05309203098358948,
+            "0.001": 0.36098973220506764
+          },
+          "logical_offset": 12630.0,
+          "chain_offset": 143.2691891967165,
+          "allocation": "cut",
+          "ranges": {
+            "h": [
+              -4.0,
+              4.0
+            ],
+            "J": [
+              -1.0,
+              1.0
+            ],
+            "group": [
+              -13.0,
+              10.0
+            ]
+          },
+          "elapsed_seconds": 0.017064749961718917
+        }
+      },
+      {
+        "variable": 14,
+        "qubit": 121,
+        "evaluation": {
+          "feasible": true,
+          "scale": 0.0037323560626505666,
+          "physical_qubits": 608,
+          "logical_variables": 314,
+          "chain_edges_count": 294,
+          "chain_max": 7,
+          "beta": 20.0,
+          "epsilon_requested": 0.05,
+          "margin_requested": 0.2169828010223168,
+          "margin_min": 0.2169828010223167,
+          "classical_break_bound": 0.04876653160638286,
+          "classical_union_bound": 0.049984010419507716,
+          "quantum_bounds": {
+            "0.0": 0.049984010419507716,
+            "1e-05": 0.050015090421564115,
+            "0.0001": 0.05309203098358948,
+            "0.001": 0.36098973220506764
+          },
+          "logical_offset": 12630.0,
+          "chain_offset": 143.48341088322906,
+          "allocation": "cut",
+          "ranges": {
+            "h": [
+              -4.0,
+              4.0
+            ],
+            "J": [
+              -1.0,
+              1.0
+            ],
+            "group": [
+              -13.0,
+              10.0
+            ]
+          },
+          "elapsed_seconds": 0.01713229203596711
+        }
+      },
+      {
+        "variable": 56,
+        "qubit": 989,
+        "evaluation": {
+          "feasible": true,
+          "scale": 0.0037323560626505666,
+          "physical_qubits": 608,
+          "logical_variables": 314,
+          "chain_edges_count": 294,
+          "chain_max": 7,
+          "beta": 20.0,
+          "epsilon_requested": 0.05,
+          "margin_requested": 0.2169828010223168,
+          "margin_min": 0.2169828010223167,
+          "classical_break_bound": 0.04876653160638286,
+          "classical_union_bound": 0.049984010419507716,
+          "quantum_bounds": {
+            "0.0": 0.049984010419507716,
+            "1e-05": 0.050015090421564115,
+            "0.0001": 0.05309203098358948,
+            "0.001": 0.36098973220506764
+          },
+          "logical_offset": 12630.0,
+          "chain_offset": 143.4464761096924,
+          "allocation": "cut",
+          "ranges": {
+            "h": [
+              -4.0,
+              4.0
+            ],
+            "J": [
+              -1.0,
+              1.0
+            ],
+            "group": [
+              -13.0,
+              10.0
+            ]
+          },
+          "elapsed_seconds": 0.01713112508878112
+        }
+      },
+      {
+        "variable": 111,
+        "qubit": 898,
+        "evaluation": {
+          "feasible": true,
+          "scale": 0.0037323560626505666,
+          "physical_qubits": 608,
+          "logical_variables": 314,
+          "chain_edges_count": 294,
+          "chain_max": 7,
+          "beta": 20.0,
+          "epsilon_requested": 0.05,
+          "margin_requested": 0.2169828010223168,
+          "margin_min": 0.2169828010223167,
+          "classical_break_bound": 0.04876653160638287,
+          "classical_union_bound": 0.049984010419507716,
+          "quantum_bounds": {
+            "0.0": 0.049984010419507716,
+            "1e-05": 0.050015090421564115,
+            "0.0001": 0.05309203098358948,
+            "0.001": 0.36098973220506764
+          },
+          "logical_offset": 12630.0,
+          "chain_offset": 143.49079783793638,
+          "allocation": "cut",
+          "ranges": {
+            "h": [
+              -4.0,
+              4.0
+            ],
+            "J": [
+              -1.0,
+              1.0
+            ],
+            "group": [
+              -13.0,
+              10.0
+            ]
+          },
+          "elapsed_seconds": 0.017238042084500194
+        }
+      },
+      {
+        "variable": 113,
+        "qubit": 526,
+        "evaluation": {
+          "feasible": true,
+          "scale": 0.0037323560626505666,
+          "physical_qubits": 608,
+          "logical_variables": 314,
+          "chain_edges_count": 294,
+          "chain_max": 7,
+          "beta": 20.0,
+          "epsilon_requested": 0.05,
+          "margin_requested": 0.2169828010223168,
+          "margin_min": 0.2169828010223167,
+          "classical_break_bound": 0.04876653160638287,
+          "classical_union_bound": 0.049984010419507716,
+          "quantum_bounds": {
+            "0.0": 0.049984010419507716,
+            "1e-05": 0.05001509042156412,
+            "0.0001": 0.05309203098358948,
+            "0.001": 0.36098973220506764
+          },
+          "logical_offset": 12630.0,
+          "chain_offset": 143.4464761096924,
+          "allocation": "cut",
+          "ranges": {
+            "h": [
+              -4.0,
+              4.0
+            ],
+            "J": [
+              -1.0,
+              1.0
+            ],
+            "group": [
+              -13.0,
+              10.0
+            ]
+          },
+          "elapsed_seconds": 0.0172429580707103
+        }
+      },
+      {
+        "variable": 183,
+        "qubit": 432,
+        "evaluation": {
+          "feasible": true,
+          "scale": 0.0037323560626505666,
+          "physical_qubits": 608,
+          "logical_variables": 314,
+          "chain_edges_count": 294,
+          "chain_max": 7,
+          "beta": 20.0,
+          "epsilon_requested": 0.05,
+          "margin_requested": 0.2169828010223168,
+          "margin_min": 0.2169828010223167,
+          "classical_break_bound": 0.04876653160638287,
+          "classical_union_bound": 0.049984010419507716,
+          "quantum_bounds": {
+            "0.0": 0.049984010419507716,
+            "1e-05": 0.05001509042156412,
+            "0.0001": 0.05309203098358948,
+            "0.001": 0.36098973220506764
+          },
+          "logical_offset": 12630.0,
+          "chain_offset": 143.21009355905787,
+          "allocation": "cut",
+          "ranges": {
+            "h": [
+              -4.0,
+              4.0
+            ],
+            "J": [
+              -1.0,
+              1.0
+            ],
+            "group": [
+              -13.0,
+              10.0
+            ]
+          },
+          "elapsed_seconds": 0.019147083163261414
+        }
+      },
+      {
+        "variable": 213,
+        "qubit": 379,
+        "evaluation": {
+          "feasible": true,
+          "scale": 0.0037323560626505666,
+          "physical_qubits": 608,
+          "logical_variables": 314,
+          "chain_edges_count": 294,
+          "chain_max": 7,
+          "beta": 20.0,
+          "epsilon_requested": 0.05,
+          "margin_requested": 0.2169828010223168,
+          "margin_min": 0.2169828010223167,
+          "classical_break_bound": 0.04876653160638286,
+          "classical_union_bound": 0.049984010419507716,
+          "quantum_bounds": {
+            "0.0": 0.049984010419507716,
+            "1e-05": 0.050015090421564115,
+            "0.0001": 0.05309203098358948,
+            "0.001": 0.36098973220506764
+          },
+          "logical_offset": 12630.0,
+          "chain_offset": 143.35783265320444,
+          "allocation": "cut",
+          "ranges": {
+            "h": [
+              -4.0,
+              4.0
+            ],
+            "J": [
+              -1.0,
+              1.0
+            ],
+            "group": [
+              -13.0,
+              10.0
+            ]
+          },
+          "elapsed_seconds": 0.020129957934841514
+        }
+      },
+      {
+        "variable": 23,
+        "qubit": 471,
+        "evaluation": {
+          "feasible": true,
+          "scale": 0.0037323560626505666,
+          "physical_qubits": 608,
+          "logical_variables": 314,
+          "chain_edges_count": 294,
+          "chain_max": 7,
+          "beta": 20.0,
+          "epsilon_requested": 0.05,
+          "margin_requested": 0.2169828010223168,
+          "margin_min": 0.2169828010223167,
+          "classical_break_bound": 0.04876653160638286,
+          "classical_union_bound": 0.04998398151112552,
+          "quantum_bounds": {
+            "0.0": 0.04998398151112552,
+            "1e-05": 0.050015101513189254,
+            "0.0001": 0.053096002148540856,
+            "0.001": 0.36139043687023
+          },
+          "logical_offset": 12630.0,
+          "chain_offset": 143.39476742674108,
+          "allocation": "cut",
+          "ranges": {
+            "h": [
+              -4.0,
+              4.0
+            ],
+            "J": [
+              -1.0,
+              1.0
+            ],
+            "group": [
+              -13.0,
+              10.0
+            ]
+          },
+          "elapsed_seconds": 0.04522879212163389
+        }
+      },
+      {
+        "variable": 35,
+        "qubit": 243,
+        "evaluation": {
+          "feasible": true,
+          "scale": 0.0037323560626505666,
+          "physical_qubits": 608,
+          "logical_variables": 314,
+          "chain_edges_count": 294,
+          "chain_max": 7,
+          "beta": 20.0,
+          "epsilon_requested": 0.05,
+          "margin_requested": 0.2169828010223168,
+          "margin_min": 0.2169828010223167,
+          "classical_break_bound": 0.04876653160638287,
+          "classical_union_bound": 0.04998398151112552,
+          "quantum_bounds": {
+            "0.0": 0.04998398151112552,
+            "1e-05": 0.050015101513189254,
+            "0.0001": 0.053096002148540856,
+            "0.001": 0.36139043687023
+          },
+          "logical_offset": 12630.0,
+          "chain_offset": 143.3726065626191,
+          "allocation": "cut",
+          "ranges": {
+            "h": [
+              -4.0,
+              4.0
+            ],
+            "J": [
+              -1.0,
+              1.0
+            ],
+            "group": [
+              -13.0,
+              10.0
+            ]
+          },
+          "elapsed_seconds": 0.02070279186591506
+        }
+      },
+      {
+        "variable": 165,
+        "qubit": 925,
+        "evaluation": {
+          "feasible": true,
+          "scale": 0.0037323560626505666,
+          "physical_qubits": 608,
+          "logical_variables": 314,
+          "chain_edges_count": 294,
+          "chain_max": 7,
+          "beta": 20.0,
+          "epsilon_requested": 0.05,
+          "margin_requested": 0.2169828010223168,
+          "margin_min": 0.2169828010223167,
+          "classical_break_bound": 0.04876653160638286,
+          "classical_union_bound": 0.04998398151112552,
+          "quantum_bounds": {
+            "0.0": 0.04998398151112552,
+            "1e-05": 0.050015101513189254,
+            "0.0001": 0.053096002148540856,
+            "0.001": 0.36139043687023
+          },
+          "logical_offset": 12630.0,
+          "chain_offset": 143.57944129442433,
+          "allocation": "cut",
+          "ranges": {
+            "h": [
+              -4.0,
+              4.0
+            ],
+            "J": [
+              -1.0,
+              1.0
+            ],
+            "group": [
+              -13.0,
+              10.0
+            ]
+          },
+          "elapsed_seconds": 0.020401959074661136
+        }
+      },
+      {
+        "variable": 195,
+        "qubit": 758,
+        "evaluation": {
+          "feasible": true,
+          "scale": 0.0037323560626505666,
+          "physical_qubits": 608,
+          "logical_variables": 314,
+          "chain_edges_count": 294,
+          "chain_max": 7,
+          "beta": 20.0,
+          "epsilon_requested": 0.05,
+          "margin_requested": 0.2169828010223168,
+          "margin_min": 0.2169828010223167,
+          "classical_break_bound": 0.04876653160638286,
+          "classical_union_bound": 0.04998398151112552,
+          "quantum_bounds": {
+            "0.0": 0.04998398151112552,
+            "1e-05": 0.050015101513189254,
+            "0.0001": 0.053096002148540856,
+            "0.001": 0.36139043687023
+          },
+          "logical_offset": 12630.0,
+          "chain_offset": 143.4464761096924,
+          "allocation": "cut",
+          "ranges": {
+            "h": [
+              -4.0,
+              4.0
+            ],
+            "J": [
+              -1.0,
+              1.0
+            ],
+            "group": [
+              -13.0,
+              10.0
+            ]
+          },
+          "elapsed_seconds": 0.02037595910951495
+        }
+      },
+      {
+        "variable": 203,
+        "qubit": 166,
+        "evaluation": {
+          "feasible": true,
+          "scale": 0.0037323560626505666,
+          "physical_qubits": 608,
+          "logical_variables": 314,
+          "chain_edges_count": 294,
+          "chain_max": 7,
+          "beta": 20.0,
+          "epsilon_requested": 0.05,
+          "margin_requested": 0.2169828010223168,
+          "margin_min": 0.2169828010223167,
+          "classical_break_bound": 0.04876653160638287,
+          "classical_union_bound": 0.04998398151112552,
+          "quantum_bounds": {
+            "0.0": 0.04998398151112552,
+            "1e-05": 0.050015101513189254,
+            "0.0001": 0.053096002148540856,
+            "0.001": 0.36139043687023
+          },
+          "logical_offset": 12630.0,
+          "chain_offset": 143.2691891967165,
+          "allocation": "cut",
+          "ranges": {
+            "h": [
+              -4.0,
+              4.0
+            ],
+            "J": [
+              -1.0,
+              1.0
+            ],
+            "group": [
+              -13.0,
+              10.0
+            ]
+          },
+          "elapsed_seconds": 0.020261708879843354
+        }
+      },
+      {
+        "variable": 154,
+        "qubit": 279,
+        "evaluation": {
+          "feasible": true,
+          "scale": 0.0037323560626505666,
+          "physical_qubits": 608,
+          "logical_variables": 314,
+          "chain_edges_count": 294,
+          "chain_max": 7,
+          "beta": 20.0,
+          "epsilon_requested": 0.05,
+          "margin_requested": 0.2169828010223168,
+          "margin_min": 0.2169828010223167,
+          "classical_break_bound": 0.04876653160638287,
+          "classical_union_bound": 0.04998395259782693,
+          "quantum_bounds": {
+            "0.0": 0.04998395259782693,
+            "1e-05": 0.05001509259989394,
+            "0.0001": 0.05309797326790899,
+            "0.001": 0.36159073467702413
+          },
+          "logical_offset": 12630.0,
+          "chain_offset": 143.53511956618036,
+          "allocation": "cut",
+          "ranges": {
+            "h": [
+              -4.0,
+              4.0
+            ],
+            "J": [
+              -1.0,
+              1.0
+            ],
+            "group": [
+              -13.0,
+              10.0
+            ]
+          },
+          "elapsed_seconds": 0.020223750034347177
+        }
+      },
+      {
+        "variable": 162,
+        "qubit": 206,
+        "evaluation": {
+          "feasible": true,
+          "scale": 0.0037323560626505666,
+          "physical_qubits": 608,
+          "logical_variables": 314,
+          "chain_edges_count": 294,
+          "chain_max": 7,
+          "beta": 20.0,
+          "epsilon_requested": 0.05,
+          "margin_requested": 0.2169828010223168,
+          "margin_min": 0.2169828010223167,
+          "classical_break_bound": 0.04876653160638286,
+          "classical_union_bound": 0.04998395259782693,
+          "quantum_bounds": {
+            "0.0": 0.04998395259782693,
+            "1e-05": 0.05001509259989394,
+            "0.0001": 0.05309797326790899,
+            "0.001": 0.36159073467702413
+          },
+          "logical_offset": 12630.0,
+          "chain_offset": 143.35783265320444,
+          "allocation": "cut",
+          "ranges": {
+            "h": [
+              -4.0,
+              4.0
+            ],
+            "J": [
+              -1.0,
+              1.0
+            ],
+            "group": [
+              -13.0,
+              10.0
+            ]
+          },
+          "elapsed_seconds": 0.020566292107105255
+        }
+      },
+      {
+        "variable": 170,
+        "qubit": 422,
+        "evaluation": {
+          "feasible": true,
+          "scale": 0.0037323560626505666,
+          "physical_qubits": 608,
+          "logical_variables": 314,
+          "chain_edges_count": 294,
+          "chain_max": 7,
+          "beta": 20.0,
+          "epsilon_requested": 0.05,
+          "margin_requested": 0.2169828010223168,
+          "margin_min": 0.2169828010223167,
+          "classical_break_bound": 0.04876653160638287,
+          "classical_union_bound": 0.04998395259782693,
+          "quantum_bounds": {
+            "0.0": 0.04998395259782693,
+            "1e-05": 0.05001509259989394,
+            "0.0001": 0.05309797326790899,
+            "0.001": 0.36159073467702413
+          },
+          "logical_offset": 12630.0,
+          "chain_offset": 143.53511956618036,
+          "allocation": "cut",
+          "ranges": {
+            "h": [
+              -4.0,
+              4.0
+            ],
+            "J": [
+              -1.0,
+              1.0
+            ],
+            "group": [
+              -13.0,
+              10.0
+            ]
+          },
+          "elapsed_seconds": 0.020266917068511248
+        }
+      },
+      {
+        "variable": 222,
+        "qubit": 878,
+        "evaluation": {
+          "feasible": true,
+          "scale": 0.0037323560626505666,
+          "physical_qubits": 608,
+          "logical_variables": 314,
+          "chain_edges_count": 294,
+          "chain_max": 7,
+          "beta": 20.0,
+          "epsilon_requested": 0.05,
+          "margin_requested": 0.2169828010223168,
+          "margin_min": 0.2169828010223167,
+          "classical_break_bound": 0.04876653160638286,
+          "classical_union_bound": 0.04998395259782693,
+          "quantum_bounds": {
+            "0.0": 0.04998395259782693,
+            "1e-05": 0.05001509259989394,
+            "0.0001": 0.05309797326790899,
+            "0.001": 0.36159073467702413
+          },
+          "logical_offset": 12630.0,
+          "chain_offset": 143.4464761096924,
+          "allocation": "cut",
+          "ranges": {
+            "h": [
+              -4.0,
+              4.0
+            ],
+            "J": [
+              -1.0,
+              1.0
+            ],
+            "group": [
+              -13.0,
+              10.0
+            ]
+          },
+          "elapsed_seconds": 0.020208042114973068
+        }
+      }
+    ],
+    "elapsed_seconds": 0.41011762502603233
+  },
+  {
+    "name": "mixed_hypergraph_n64_s3307",
+    "common_graph_valid_candidates": 19,
+    "size_only_accepts": true,
+    "guided_accepts": true,
+    "size_only_selected": {
+      "variable": 231,
+      "qubit": 904,
+      "evaluation": {
+        "feasible": true,
+        "scale": 0.003708458074237373,
+        "physical_qubits": 520,
+        "logical_variables": 284,
+        "chain_edges_count": 236,
+        "chain_max": 6,
+        "beta": 20.0,
+        "epsilon_requested": 0.05,
+        "margin_requested": 0.21148910196449006,
+        "margin_min": 0.2114891019644899,
+        "classical_break_bound": 0.04876553790601349,
+        "classical_union_bound": 0.0499821411230949,
+        "quantum_bounds": {
+          "0.0": 0.0499821411230949,
+          "1e-05": 0.0500053011241761,
+          "0.0001": 0.05229815193512346,
+          "0.001": 0.28169028968451737
+        },
+        "logical_offset": 11168.875,
+        "chain_offset": 114.87596482948031,
+        "allocation": "cut",
+        "ranges": {
+          "h": [
+            -4.0,
+            4.0
+          ],
+          "J": [
+            -1.0,
+            1.0
+          ],
+          "group": [
+            -13.0,
+            10.0
+          ]
+        },
+        "elapsed_seconds": 0.01589137502014637
+      }
+    },
+    "guided_selected": {
+      "variable": 231,
+      "qubit": 904,
+      "evaluation": {
+        "feasible": true,
+        "scale": 0.003708458074237373,
+        "physical_qubits": 520,
+        "logical_variables": 284,
+        "chain_edges_count": 236,
+        "chain_max": 6,
+        "beta": 20.0,
+        "epsilon_requested": 0.05,
+        "margin_requested": 0.21148910196449006,
+        "margin_min": 0.2114891019644899,
+        "classical_break_bound": 0.04876553790601349,
+        "classical_union_bound": 0.0499821411230949,
+        "quantum_bounds": {
+          "0.0": 0.0499821411230949,
+          "1e-05": 0.0500053011241761,
+          "0.0001": 0.05229815193512346,
+          "0.001": 0.28169028968451737
+        },
+        "logical_offset": 11168.875,
+        "chain_offset": 114.87596482948031,
+        "allocation": "cut",
+        "ranges": {
+          "h": [
+            -4.0,
+            4.0
+          ],
+          "J": [
+            -1.0,
+            1.0
+          ],
+          "group": [
+            -13.0,
+            10.0
+          ]
+        },
+        "elapsed_seconds": 0.01589137502014637
+      }
+    },
+    "candidates": [
+      {
+        "variable": 231,
+        "qubit": 904,
+        "evaluation": {
+          "feasible": true,
+          "scale": 0.003708458074237373,
+          "physical_qubits": 520,
+          "logical_variables": 284,
+          "chain_edges_count": 236,
+          "chain_max": 6,
+          "beta": 20.0,
+          "epsilon_requested": 0.05,
+          "margin_requested": 0.21148910196449006,
+          "margin_min": 0.2114891019644899,
+          "classical_break_bound": 0.04876553790601349,
+          "classical_union_bound": 0.0499821411230949,
+          "quantum_bounds": {
+            "0.0": 0.0499821411230949,
+            "1e-05": 0.0500053011241761,
+            "0.0001": 0.05229815193512346,
+            "0.001": 0.28169028968451737
+          },
+          "logical_offset": 11168.875,
+          "chain_offset": 114.87596482948031,
+          "allocation": "cut",
+          "ranges": {
+            "h": [
+              -4.0,
+              4.0
+            ],
+            "J": [
+              -1.0,
+              1.0
+            ],
+            "group": [
+              -13.0,
+              10.0
+            ]
+          },
+          "elapsed_seconds": 0.01589137502014637
+        }
+      },
+      {
+        "variable": 1,
+        "qubit": 316,
+        "evaluation": {
+          "feasible": true,
+          "scale": 0.003708458074237373,
+          "physical_qubits": 520,
+          "logical_variables": 284,
+          "chain_edges_count": 236,
+          "chain_max": 6,
+          "beta": 20.0,
+          "epsilon_requested": 0.05,
+          "margin_requested": 0.21148910196449006,
+          "margin_min": 0.2114891019644899,
+          "classical_break_bound": 0.04876553790601349,
+          "classical_union_bound": 0.049982096274587336,
+          "quantum_bounds": {
+            "0.0": 0.049982096274587336,
+            "1e-05": 0.05000529627568147,
+            "0.0001": 0.052302107215949946,
+            "0.001": 0.28209153889502325
+          },
+          "logical_offset": 11168.875,
+          "chain_offset": 114.87596482948031,
+          "allocation": "cut",
+          "ranges": {
+            "h": [
+              -4.0,
+              4.0
+            ],
+            "J": [
+              -1.0,
+              1.0
+            ],
+            "group": [
+              -13.0,
+              10.0
+            ]
+          },
+          "elapsed_seconds": 0.016467540990561247
+        }
+      },
+      {
+        "variable": 5,
+        "qubit": 1203,
+        "evaluation": {
+          "feasible": true,
+          "scale": 0.003708458074237373,
+          "physical_qubits": 520,
+          "logical_variables": 284,
+          "chain_edges_count": 236,
+          "chain_max": 6,
+          "beta": 20.0,
+          "epsilon_requested": 0.05,
+          "margin_requested": 0.21148910196449006,
+          "margin_min": 0.2114891019644899,
+          "classical_break_bound": 0.04876553790601349,
+          "classical_union_bound": 0.04998209627458733,
+          "quantum_bounds": {
+            "0.0": 0.04998209627458733,
+            "1e-05": 0.05000529627568147,
+            "0.0001": 0.052302107215949946,
+            "0.001": 0.28209153889502325
+          },
+          "logical_offset": 11168.875,
+          "chain_offset": 114.87596482948032,
+          "allocation": "cut",
+          "ranges": {
+            "h": [
+              -4.0,
+              4.0
+            ],
+            "J": [
+              -1.0,
+              1.0
+            ],
+            "group": [
+              -13.0,
+              10.0
+            ]
+          },
+          "elapsed_seconds": 0.016012415988370776
+        }
+      },
+      {
+        "variable": 9,
+        "qubit": 915,
+        "evaluation": {
+          "feasible": true,
+          "scale": 0.003708458074237373,
+          "physical_qubits": 520,
+          "logical_variables": 284,
+          "chain_edges_count": 236,
+          "chain_max": 6,
+          "beta": 20.0,
+          "epsilon_requested": 0.05,
+          "margin_requested": 0.21148910196449006,
+          "margin_min": 0.2114891019644899,
+          "classical_break_bound": 0.04876553790601349,
+          "classical_union_bound": 0.049982096274587336,
+          "quantum_bounds": {
+            "0.0": 0.049982096274587336,
+            "1e-05": 0.05000529627568147,
+            "0.0001": 0.052302107215949946,
+            "0.001": 0.28209153889502325
+          },
+          "logical_offset": 11168.875,
+          "chain_offset": 114.78835250747646,
+          "allocation": "cut",
+          "ranges": {
+            "h": [
+              -4.0,
+              4.0
+            ],
+            "J": [
+              -1.0,
+              1.0
+            ],
+            "group": [
+              -13.0,
+              10.0
+            ]
+          },
+          "elapsed_seconds": 0.015753082931041718
+        }
+      },
+      {
+        "variable": 13,
+        "qubit": 197,
+        "evaluation": {
+          "feasible": true,
+          "scale": 0.003708458074237373,
+          "physical_qubits": 520,
+          "logical_variables": 284,
+          "chain_edges_count": 236,
+          "chain_max": 6,
+          "beta": 20.0,
+          "epsilon_requested": 0.05,
+          "margin_requested": 0.21148910196449006,
+          "margin_min": 0.2114891019644899,
+          "classical_break_bound": 0.04876553790601349,
+          "classical_union_bound": 0.049982096274587336,
+          "quantum_bounds": {
+            "0.0": 0.049982096274587336,
+            "1e-05": 0.05000529627568147,
+            "0.0001": 0.052302107215949946,
+            "0.001": 0.28209153889502325
+          },
+          "logical_offset": 11168.875,
+          "chain_offset": 114.87596482948032,
+          "allocation": "cut",
+          "ranges": {
+            "h": [
+              -4.0,
+              4.0
+            ],
+            "J": [
+              -1.0,
+              1.0
+            ],
+            "group": [
+              -13.0,
+              10.0
+            ]
+          },
+          "elapsed_seconds": 0.015506750205531716
+        }
+      },
+      {
+        "variable": 21,
+        "qubit": 443,
+        "evaluation": {
+          "feasible": true,
+          "scale": 0.003708458074237373,
+          "physical_qubits": 520,
+          "logical_variables": 284,
+          "chain_edges_count": 236,
+          "chain_max": 6,
+          "beta": 20.0,
+          "epsilon_requested": 0.05,
+          "margin_requested": 0.21148910196449006,
+          "margin_min": 0.2114891019644899,
+          "classical_break_bound": 0.04876553790601349,
+          "classical_union_bound": 0.049982096274587336,
+          "quantum_bounds": {
+            "0.0": 0.049982096274587336,
+            "1e-05": 0.05000529627568147,
+            "0.0001": 0.052302107215949946,
+            "0.001": 0.28209153889502325
+          },
+          "logical_offset": 11168.875,
+          "chain_offset": 114.78835250747646,
+          "allocation": "cut",
+          "ranges": {
+            "h": [
+              -4.0,
+              4.0
+            ],
+            "J": [
+              -1.0,
+              1.0
+            ],
+            "group": [
+              -13.0,
+              10.0
+            ]
+          },
+          "elapsed_seconds": 0.015576083213090897
+        }
+      },
+      {
+        "variable": 179,
+        "qubit": 519,
+        "evaluation": {
+          "feasible": true,
+          "scale": 0.003708458074237373,
+          "physical_qubits": 520,
+          "logical_variables": 284,
+          "chain_edges_count": 236,
+          "chain_max": 6,
+          "beta": 20.0,
+          "epsilon_requested": 0.05,
+          "margin_requested": 0.21148910196449006,
+          "margin_min": 0.2114891019644899,
+          "classical_break_bound": 0.04876553790601349,
+          "classical_union_bound": 0.049982096274587336,
+          "quantum_bounds": {
+            "0.0": 0.049982096274587336,
+            "1e-05": 0.05000529627568147,
+            "0.0001": 0.052302107215949946,
+            "0.001": 0.28209153889502325
+          },
+          "logical_offset": 11168.875,
+          "chain_offset": 114.56932170246681,
+          "allocation": "cut",
+          "ranges": {
+            "h": [
+              -4.0,
+              4.0
+            ],
+            "J": [
+              -1.0,
+              1.0
+            ],
+            "group": [
+              -13.0,
+              10.0
+            ]
+          },
+          "elapsed_seconds": 0.015427208039909601
+        }
+      },
+      {
+        "variable": 277,
+        "qubit": 181,
+        "evaluation": {
+          "feasible": true,
+          "scale": 0.003708458074237373,
+          "physical_qubits": 520,
+          "logical_variables": 284,
+          "chain_edges_count": 236,
+          "chain_max": 6,
+          "beta": 20.0,
+          "epsilon_requested": 0.05,
+          "margin_requested": 0.21148910196449006,
+          "margin_min": 0.2114891019644899,
+          "classical_break_bound": 0.04876553790601349,
+          "classical_union_bound": 0.049982096274587336,
+          "quantum_bounds": {
+            "0.0": 0.049982096274587336,
+            "1e-05": 0.05000529627568147,
+            "0.0001": 0.052302107215949946,
+            "0.001": 0.28209153889502325
+          },
+          "logical_offset": 11168.875,
+          "chain_offset": 114.7007401854726,
+          "allocation": "cut",
+          "ranges": {
+            "h": [
+              -4.0,
+              4.0
+            ],
+            "J": [
+              -1.0,
+              1.0
+            ],
+            "group": [
+              -13.0,
+              10.0
+            ]
+          },
+          "elapsed_seconds": 0.015607333043590188
+        }
+      },
+      {
+        "variable": 20,
+        "qubit": 490,
+        "evaluation": {
+          "feasible": true,
+          "scale": 0.003708458074237373,
+          "physical_qubits": 520,
+          "logical_variables": 284,
+          "chain_edges_count": 236,
+          "chain_max": 6,
+          "beta": 20.0,
+          "epsilon_requested": 0.05,
+          "margin_requested": 0.21148910196449006,
+          "margin_min": 0.2114891019644899,
+          "classical_break_bound": 0.04876553790601349,
+          "classical_union_bound": 0.04998205141657796,
+          "quantum_bounds": {
+            "0.0": 0.04998205141657796,
+            "1e-05": 0.050005291417679426,
+            "0.0001": 0.05230606243127415,
+            "0.001": 0.2824922276105584
+          },
+          "logical_offset": 11168.875,
+          "chain_offset": 114.87596482948031,
+          "allocation": "cut",
+          "ranges": {
+            "h": [
+              -4.0,
+              4.0
+            ],
+            "J": [
+              -1.0,
+              1.0
+            ],
+            "group": [
+              -13.0,
+              10.0
+            ]
+          },
+          "elapsed_seconds": 0.015706165926530957
+        }
+      },
+      {
+        "variable": 35,
+        "qubit": 978,
+        "evaluation": {
+          "feasible": true,
+          "scale": 0.003708458074237373,
+          "physical_qubits": 520,
+          "logical_variables": 284,
+          "chain_edges_count": 236,
+          "chain_max": 6,
+          "beta": 20.0,
+          "epsilon_requested": 0.05,
+          "margin_requested": 0.21148910196449006,
+          "margin_min": 0.2114891019644899,
+          "classical_break_bound": 0.04876553790601349,
+          "classical_union_bound": 0.04998205141657796,
+          "quantum_bounds": {
+            "0.0": 0.04998205141657796,
+            "1e-05": 0.050005291417679426,
+            "0.0001": 0.05230606243127415,
+            "0.001": 0.2824922276105584
+          },
+          "logical_offset": 11168.875,
+          "chain_offset": 114.83215866847839,
+          "allocation": "cut",
+          "ranges": {
+            "h": [
+              -4.0,
+              4.0
+            ],
+            "J": [
+              -1.0,
+              1.0
+            ],
+            "group": [
+              -13.0,
+              10.0
+            ]
+          },
+          "elapsed_seconds": 0.0154576669447124
+        }
+      },
+      {
+        "variable": 65,
+        "qubit": 184,
+        "evaluation": {
+          "feasible": true,
+          "scale": 0.003708458074237373,
+          "physical_qubits": 520,
+          "logical_variables": 284,
+          "chain_edges_count": 236,
+          "chain_max": 6,
+          "beta": 20.0,
+          "epsilon_requested": 0.05,
+          "margin_requested": 0.21148910196449006,
+          "margin_min": 0.2114891019644899,
+          "classical_break_bound": 0.04876553790601349,
+          "classical_union_bound": 0.04998205141657796,
+          "quantum_bounds": {
+            "0.0": 0.04998205141657796,
+            "1e-05": 0.050005291417679426,
+            "0.0001": 0.05230606243127415,
+            "0.001": 0.2824922276105584
+          },
+          "logical_offset": 11168.875,
+          "chain_offset": 114.87596482948031,
+          "allocation": "cut",
+          "ranges": {
+            "h": [
+              -4.0,
+              4.0
+            ],
+            "J": [
+              -1.0,
+              1.0
+            ],
+            "group": [
+              -13.0,
+              10.0
+            ]
+          },
+          "elapsed_seconds": 0.015353666851297021
+        }
+      },
+      {
+        "variable": 159,
+        "qubit": 1125,
+        "evaluation": {
+          "feasible": true,
+          "scale": 0.003708458074237373,
+          "physical_qubits": 520,
+          "logical_variables": 284,
+          "chain_edges_count": 236,
+          "chain_max": 6,
+          "beta": 20.0,
+          "epsilon_requested": 0.05,
+          "margin_requested": 0.21148910196449006,
+          "margin_min": 0.2114891019644899,
+          "classical_break_bound": 0.04876553790601349,
+          "classical_union_bound": 0.04998205141657796,
+          "quantum_bounds": {
+            "0.0": 0.04998205141657796,
+            "1e-05": 0.050005291417679426,
+            "0.0001": 0.05230606243127415,
+            "0.001": 0.2824922276105584
+          },
+          "logical_offset": 11168.875,
+          "chain_offset": 114.7007401854726,
+          "allocation": "cut",
+          "ranges": {
+            "h": [
+              -4.0,
+              4.0
+            ],
+            "J": [
+              -1.0,
+              1.0
+            ],
+            "group": [
+              -13.0,
+              10.0
+            ]
+          },
+          "elapsed_seconds": 0.015363707905635238
+        }
+      },
+      {
+        "variable": 159,
+        "qubit": 1101,
+        "evaluation": {
+          "feasible": true,
+          "scale": 0.003708458074237373,
+          "physical_qubits": 520,
+          "logical_variables": 284,
+          "chain_edges_count": 236,
+          "chain_max": 6,
+          "beta": 20.0,
+          "epsilon_requested": 0.05,
+          "margin_requested": 0.21148910196449006,
+          "margin_min": 0.2114891019644899,
+          "classical_break_bound": 0.04876553790601349,
+          "classical_union_bound": 0.04998205141657796,
+          "quantum_bounds": {
+            "0.0": 0.04998205141657796,
+            "1e-05": 0.050005291417679426,
+            "0.0001": 0.05230606243127415,
+            "0.001": 0.2824922276105584
+          },
+          "logical_offset": 11168.875,
+          "chain_offset": 114.87596482948031,
+          "allocation": "cut",
+          "ranges": {
+            "h": [
+              -4.0,
+              4.0
+            ],
+            "J": [
+              -1.0,
+              1.0
+            ],
+            "group": [
+              -13.0,
+              10.0
+            ]
+          },
+          "elapsed_seconds": 0.015268875053152442
+        }
+      },
+      {
+        "variable": 181,
+        "qubit": 536,
+        "evaluation": {
+          "feasible": true,
+          "scale": 0.003708458074237373,
+          "physical_qubits": 520,
+          "logical_variables": 284,
+          "chain_edges_count": 236,
+          "chain_max": 6,
+          "beta": 20.0,
+          "epsilon_requested": 0.05,
+          "margin_requested": 0.21148910196449006,
+          "margin_min": 0.2114891019644899,
+          "classical_break_bound": 0.04876553790601349,
+          "classical_union_bound": 0.04998205141657796,
+          "quantum_bounds": {
+            "0.0": 0.04998205141657796,
+            "1e-05": 0.050005291417679426,
+            "0.0001": 0.05230606243127415,
+            "0.001": 0.2824922276105584
+          },
+          "logical_offset": 11168.875,
+          "chain_offset": 114.78835250747646,
+          "allocation": "cut",
+          "ranges": {
+            "h": [
+              -4.0,
+              4.0
+            ],
+            "J": [
+              -1.0,
+              1.0
+            ],
+            "group": [
+              -13.0,
+              10.0
+            ]
+          },
+          "elapsed_seconds": 0.015436708927154541
+        }
+      },
+      {
+        "variable": 225,
+        "qubit": 496,
+        "evaluation": {
+          "feasible": true,
+          "scale": 0.003708458074237373,
+          "physical_qubits": 520,
+          "logical_variables": 284,
+          "chain_edges_count": 236,
+          "chain_max": 6,
+          "beta": 20.0,
+          "epsilon_requested": 0.05,
+          "margin_requested": 0.21148910196449006,
+          "margin_min": 0.2114891019644899,
+          "classical_break_bound": 0.04876553790601349,
+          "classical_union_bound": 0.04998205141657796,
+          "quantum_bounds": {
+            "0.0": 0.04998205141657796,
+            "1e-05": 0.050005291417679426,
+            "0.0001": 0.05230606243127415,
+            "0.001": 0.2824922276105584
+          },
+          "logical_offset": 11168.875,
+          "chain_offset": 114.40869911212641,
+          "allocation": "cut",
+          "ranges": {
+            "h": [
+              -4.0,
+              4.0
+            ],
+            "J": [
+              -1.0,
+              1.0
+            ],
+            "group": [
+              -13.0,
+              10.0
+            ]
+          },
+          "elapsed_seconds": 0.015464124968275428
+        }
+      },
+      {
+        "variable": 257,
+        "qubit": 280,
+        "evaluation": {
+          "feasible": true,
+          "scale": 0.003708458074237373,
+          "physical_qubits": 520,
+          "logical_variables": 284,
+          "chain_edges_count": 236,
+          "chain_max": 6,
+          "beta": 20.0,
+          "epsilon_requested": 0.05,
+          "margin_requested": 0.21148910196449006,
+          "margin_min": 0.2114891019644899,
+          "classical_break_bound": 0.04876553790601349,
+          "classical_union_bound": 0.04998205141657796,
+          "quantum_bounds": {
+            "0.0": 0.04998205141657796,
+            "1e-05": 0.050005291417679426,
+            "0.0001": 0.05230606243127415,
+            "0.001": 0.2824922276105584
+          },
+          "logical_offset": 11168.875,
+          "chain_offset": 114.83215866847839,
+          "allocation": "cut",
+          "ranges": {
+            "h": [
+              -4.0,
+              4.0
+            ],
+            "J": [
+              -1.0,
+              1.0
+            ],
+            "group": [
+              -13.0,
+              10.0
+            ]
+          },
+          "elapsed_seconds": 0.01533858384937048
+        }
+      },
+      {
+        "variable": 257,
+        "qubit": 196,
+        "evaluation": {
+          "feasible": true,
+          "scale": 0.003708458074237373,
+          "physical_qubits": 520,
+          "logical_variables": 284,
+          "chain_edges_count": 236,
+          "chain_max": 6,
+          "beta": 20.0,
+          "epsilon_requested": 0.05,
+          "margin_requested": 0.21148910196449006,
+          "margin_min": 0.2114891019644899,
+          "classical_break_bound": 0.04876553790601349,
+          "classical_union_bound": 0.04998205141657796,
+          "quantum_bounds": {
+            "0.0": 0.04998205141657796,
+            "1e-05": 0.050005291417679426,
+            "0.0001": 0.05230606243127415,
+            "0.001": 0.2824922276105584
+          },
+          "logical_offset": 11168.875,
+          "chain_offset": 114.91977099048225,
+          "allocation": "cut",
+          "ranges": {
+            "h": [
+              -4.0,
+              4.0
+            ],
+            "J": [
+              -1.0,
+              1.0
+            ],
+            "group": [
+              -13.0,
+              10.0
+            ]
+          },
+          "elapsed_seconds": 0.015271625015884638
+        }
+      },
+      {
+        "variable": 271,
+        "qubit": 212,
+        "evaluation": {
+          "feasible": true,
+          "scale": 0.003708458074237373,
+          "physical_qubits": 520,
+          "logical_variables": 284,
+          "chain_edges_count": 236,
+          "chain_max": 6,
+          "beta": 20.0,
+          "epsilon_requested": 0.05,
+          "margin_requested": 0.21148910196449006,
+          "margin_min": 0.2114891019644899,
+          "classical_break_bound": 0.04876553790601349,
+          "classical_union_bound": 0.04998205141657796,
+          "quantum_bounds": {
+            "0.0": 0.04998205141657796,
+            "1e-05": 0.050005291417679426,
+            "0.0001": 0.05230606243127415,
+            "0.001": 0.2824922276105584
+          },
+          "logical_offset": 11168.875,
+          "chain_offset": 114.74454634647454,
+          "allocation": "cut",
+          "ranges": {
+            "h": [
+              -4.0,
+              4.0
+            ],
+            "J": [
+              -1.0,
+              1.0
+            ],
+            "group": [
+              -13.0,
+              10.0
+            ]
+          },
+          "elapsed_seconds": 0.01518933312036097
+        }
+      },
+      {
+        "variable": 78,
+        "qubit": 1106,
+        "evaluation": {
+          "feasible": true,
+          "scale": 0.003708458074237373,
+          "physical_qubits": 520,
+          "logical_variables": 284,
+          "chain_edges_count": 236,
+          "chain_max": 6,
+          "beta": 20.0,
+          "epsilon_requested": 0.05,
+          "margin_requested": 0.21148910196449006,
+          "margin_min": 0.2114891019644899,
+          "classical_break_bound": 0.04876553790601349,
+          "classical_union_bound": 0.049982006549064775,
+          "quantum_bounds": {
+            "0.0": 0.049982006549064775,
+            "1e-05": 0.05000526655016951,
+            "0.0001": 0.05230801759642768,
+            "0.001": 0.28269250946313795
+          },
+          "logical_offset": 11168.875,
+          "chain_offset": 114.52551554146488,
+          "allocation": "cut",
+          "ranges": {
+            "h": [
+              -4.0,
+              4.0
+            ],
+            "J": [
+              -1.0,
+              1.0
+            ],
+            "group": [
+              -13.0,
+              10.0
+            ]
+          },
+          "elapsed_seconds": 0.015264583984389901
+        }
+      }
+    ],
+    "elapsed_seconds": 0.3096187920309603
+  },
+  {
+    "name": "random_regular_n16_s1101",
+    "common_graph_valid_candidates": 0,
+    "size_only_accepts": false,
+    "guided_accepts": false,
+    "size_only_selected": null,
+    "guided_selected": null,
+    "candidates": [],
+    "elapsed_seconds": 0.000306334113702178
+  },
+  {
+    "name": "random_regular_n16_s2203",
+    "common_graph_valid_candidates": 0,
+    "size_only_accepts": false,
+    "guided_accepts": false,
+    "size_only_selected": null,
+    "guided_selected": null,
+    "candidates": [],
+    "elapsed_seconds": 0.0002846249844878912
+  },
+  {
+    "name": "random_regular_n16_s3307",
+    "common_graph_valid_candidates": 0,
+    "size_only_accepts": false,
+    "guided_accepts": false,
+    "size_only_selected": null,
+    "guided_selected": null,
+    "candidates": [],
+    "elapsed_seconds": 0.0001104581169784069
+  },
+  {
+    "name": "random_regular_n32_s1101",
+    "common_graph_valid_candidates": 0,
+    "size_only_accepts": false,
+    "guided_accepts": false,
+    "size_only_selected": null,
+    "guided_selected": null,
+    "candidates": [],
+    "elapsed_seconds": 0.000565042020753026
+  },
+  {
+    "name": "random_regular_n32_s2203",
+    "common_graph_valid_candidates": 0,
+    "size_only_accepts": false,
+    "guided_accepts": false,
+    "size_only_selected": null,
+    "guided_selected": null,
+    "candidates": [],
+    "elapsed_seconds": 0.0003593750298023224
+  },
+  {
+    "name": "random_regular_n32_s3307",
+    "common_graph_valid_candidates": 0,
+    "size_only_accepts": false,
+    "guided_accepts": false,
+    "size_only_selected": null,
+    "guided_selected": null,
+    "candidates": [],
+    "elapsed_seconds": 0.0003752501215785742
+  },
+  {
+    "name": "random_regular_n64_s1101",
+    "common_graph_valid_candidates": 3,
+    "size_only_accepts": true,
+    "guided_accepts": true,
+    "size_only_selected": {
+      "variable": 56,
+      "qubit": 170,
+      "evaluation": {
+        "feasible": true,
+        "scale": 0.0043619617407948,
+        "physical_qubits": 300,
+        "logical_variables": 192,
+        "chain_edges_count": 108,
+        "chain_max": 5,
+        "beta": 20.0,
+        "epsilon_requested": 0.05,
+        "margin_requested": 0.19194658751695526,
+        "margin_min": 0.19194658751695515,
+        "classical_break_bound": 0.04875956923263669,
+        "classical_union_bound": 0.049964229904160704,
+        "quantum_bounds": {
+          "0.0": 0.049964229904160704,
+          "1e-05": 0.04997430990452711,
+          "0.0001": 0.05097223356816739,
+          "0.001": 0.15080087658439192
+        },
+        "logical_offset": 6172.375,
+        "chain_offset": 51.599425757522766,
+        "allocation": "cut",
+        "ranges": {
+          "h": [
+            -4.0,
+            4.0
+          ],
+          "J": [
+            -1.0,
+            1.0
+          ],
+          "group": [
+            -13.0,
+            10.0
+          ]
+        },
+        "elapsed_seconds": 0.030355167109519243
+      }
+    },
+    "guided_selected": {
+      "variable": 56,
+      "qubit": 170,
+      "evaluation": {
+        "feasible": true,
+        "scale": 0.0043619617407948,
+        "physical_qubits": 300,
+        "logical_variables": 192,
+        "chain_edges_count": 108,
+        "chain_max": 5,
+        "beta": 20.0,
+        "epsilon_requested": 0.05,
+        "margin_requested": 0.19194658751695526,
+        "margin_min": 0.19194658751695515,
+        "classical_break_bound": 0.04875956923263669,
+        "classical_union_bound": 0.049964229904160704,
+        "quantum_bounds": {
+          "0.0": 0.049964229904160704,
+          "1e-05": 0.04997430990452711,
+          "0.0001": 0.05097223356816739,
+          "0.001": 0.15080087658439192
+        },
+        "logical_offset": 6172.375,
+        "chain_offset": 51.599425757522766,
+        "allocation": "cut",
+        "ranges": {
+          "h": [
+            -4.0,
+            4.0
+          ],
+          "J": [
+            -1.0,
+            1.0
+          ],
+          "group": [
+            -13.0,
+            10.0
+          ]
+        },
+        "elapsed_seconds": 0.030355167109519243
+      }
+    },
+    "candidates": [
+      {
+        "variable": 56,
+        "qubit": 170,
+        "evaluation": {
+          "feasible": true,
+          "scale": 0.0043619617407948,
+          "physical_qubits": 300,
+          "logical_variables": 192,
+          "chain_edges_count": 108,
+          "chain_max": 5,
+          "beta": 20.0,
+          "epsilon_requested": 0.05,
+          "margin_requested": 0.19194658751695526,
+          "margin_min": 0.19194658751695515,
+          "classical_break_bound": 0.04875956923263669,
+          "classical_union_bound": 0.049964229904160704,
+          "quantum_bounds": {
+            "0.0": 0.049964229904160704,
+            "1e-05": 0.04997430990452711,
+            "0.0001": 0.05097223356816739,
+            "0.001": 0.15080087658439192
+          },
+          "logical_offset": 6172.375,
+          "chain_offset": 51.599425757522766,
+          "allocation": "cut",
+          "ranges": {
+            "h": [
+              -4.0,
+              4.0
+            ],
+            "J": [
+              -1.0,
+              1.0
+            ],
+            "group": [
+              -13.0,
+              10.0
+            ]
+          },
+          "elapsed_seconds": 0.030355167109519243
+        }
+      },
+      {
+        "variable": 121,
+        "qubit": 129,
+        "evaluation": {
+          "feasible": true,
+          "scale": 0.0043619617407948,
+          "physical_qubits": 300,
+          "logical_variables": 192,
+          "chain_edges_count": 108,
+          "chain_max": 5,
+          "beta": 20.0,
+          "epsilon_requested": 0.05,
+          "margin_requested": 0.19194658751695526,
+          "margin_min": 0.19194658751695515,
+          "classical_break_bound": 0.04875956923263669,
+          "classical_union_bound": 0.0499640158668673,
+          "quantum_bounds": {
+            "0.0": 0.0499640158668673,
+            "1e-05": 0.04997413586724103,
+            "0.0001": 0.050976019604207556,
+            "0.001": 0.15120139612064307
+          },
+          "logical_offset": 6172.375,
+          "chain_offset": 51.599425757522766,
+          "allocation": "cut",
+          "ranges": {
+            "h": [
+              -4.0,
+              4.0
+            ],
+            "J": [
+              -1.0,
+              1.0
+            ],
+            "group": [
+              -13.0,
+              10.0
+            ]
+          },
+          "elapsed_seconds": 0.02354662516154349
+        }
+      },
+      {
+        "variable": 98,
+        "qubit": 63,
+        "evaluation": {
+          "feasible": true,
+          "scale": 0.0043619617407948,
+          "physical_qubits": 300,
+          "logical_variables": 192,
+          "chain_edges_count": 108,
+          "chain_max": 5,
+          "beta": 20.0,
+          "epsilon_requested": 0.05,
+          "margin_requested": 0.19194658751695526,
+          "margin_min": 0.19194658751695515,
+          "classical_break_bound": 0.04875956923263669,
+          "classical_union_bound": 0.04996380173048255,
+          "quantum_bounds": {
+            "0.0": 0.04996380173048255,
+            "1e-05": 0.04997394173085955,
+            "0.0001": 0.050977805500489526,
+            "0.001": 0.15140150870435104
+          },
+          "logical_offset": 6172.375,
+          "chain_offset": 51.55280729141803,
+          "allocation": "cut",
+          "ranges": {
+            "h": [
+              -4.0,
+              4.0
+            ],
+            "J": [
+              -1.0,
+              1.0
+            ],
+            "group": [
+              -13.0,
+              10.0
+            ]
+          },
+          "elapsed_seconds": 0.023732207948341966
+        }
+      }
+    ],
+    "elapsed_seconds": 0.08971887500956655
+  },
+  {
+    "name": "random_regular_n64_s2203",
+    "common_graph_valid_candidates": 4,
+    "size_only_accepts": true,
+    "guided_accepts": true,
+    "size_only_selected": {
+      "variable": 41,
+      "qubit": 298,
+      "evaluation": {
+        "feasible": true,
+        "scale": 0.0037242471888054864,
+        "physical_qubits": 278,
+        "logical_variables": 192,
+        "chain_edges_count": 86,
+        "chain_max": 4,
+        "beta": 20.0,
+        "epsilon_requested": 0.05,
+        "margin_requested": 0.18625198924518746,
+        "margin_min": 0.18625198924518743,
+        "classical_break_bound": 0.048756754746389165,
+        "classical_union_bound": 0.04996216958446791,
+        "quantum_bounds": {
+          "0.0": 0.04996216958446791,
+          "1e-05": 0.04996964958466085,
+          "0.0001": 0.05071017151380387,
+          "0.001": 0.12478146554327794
+        },
+        "logical_offset": 6642.5,
+        "chain_offset": 38.68840512907472,
+        "allocation": "cut",
+        "ranges": {
+          "h": [
+            -4.0,
+            4.0
+          ],
+          "J": [
+            -1.0,
+            1.0
+          ],
+          "group": [
+            -13.0,
+            10.0
+          ]
+        },
+        "elapsed_seconds": 0.010026500094681978
+      }
+    },
+    "guided_selected": {
+      "variable": 41,
+      "qubit": 298,
+      "evaluation": {
+        "feasible": true,
+        "scale": 0.0037242471888054864,
+        "physical_qubits": 278,
+        "logical_variables": 192,
+        "chain_edges_count": 86,
+        "chain_max": 4,
+        "beta": 20.0,
+        "epsilon_requested": 0.05,
+        "margin_requested": 0.18625198924518746,
+        "margin_min": 0.18625198924518743,
+        "classical_break_bound": 0.048756754746389165,
+        "classical_union_bound": 0.04996216958446791,
+        "quantum_bounds": {
+          "0.0": 0.04996216958446791,
+          "1e-05": 0.04996964958466085,
+          "0.0001": 0.05071017151380387,
+          "0.001": 0.12478146554327794
+        },
+        "logical_offset": 6642.5,
+        "chain_offset": 38.68840512907472,
+        "allocation": "cut",
+        "ranges": {
+          "h": [
+            -4.0,
+            4.0
+          ],
+          "J": [
+            -1.0,
+            1.0
+          ],
+          "group": [
+            -13.0,
+            10.0
+          ]
+        },
+        "elapsed_seconds": 0.010026500094681978
+      }
+    },
+    "candidates": [
+      {
+        "variable": 41,
+        "qubit": 298,
+        "evaluation": {
+          "feasible": true,
+          "scale": 0.0037242471888054864,
+          "physical_qubits": 278,
+          "logical_variables": 192,
+          "chain_edges_count": 86,
+          "chain_max": 4,
+          "beta": 20.0,
+          "epsilon_requested": 0.05,
+          "margin_requested": 0.18625198924518746,
+          "margin_min": 0.18625198924518743,
+          "classical_break_bound": 0.048756754746389165,
+          "classical_union_bound": 0.04996216958446791,
+          "quantum_bounds": {
+            "0.0": 0.04996216958446791,
+            "1e-05": 0.04996964958466085,
+            "0.0001": 0.05071017151380387,
+            "0.001": 0.12478146554327794
+          },
+          "logical_offset": 6642.5,
+          "chain_offset": 38.68840512907472,
+          "allocation": "cut",
+          "ranges": {
+            "h": [
+              -4.0,
+              4.0
+            ],
+            "J": [
+              -1.0,
+              1.0
+            ],
+            "group": [
+              -13.0,
+              10.0
+            ]
+          },
+          "elapsed_seconds": 0.010026500094681978
+        }
+      },
+      {
+        "variable": 50,
+        "qubit": 425,
+        "evaluation": {
+          "feasible": true,
+          "scale": 0.0037242471888054864,
+          "physical_qubits": 278,
+          "logical_variables": 192,
+          "chain_edges_count": 86,
+          "chain_max": 4,
+          "beta": 20.0,
+          "epsilon_requested": 0.05,
+          "margin_requested": 0.18625198924518746,
+          "margin_min": 0.18625198924518743,
+          "classical_break_bound": 0.04875675474638916,
+          "classical_union_bound": 0.04996216958446791,
+          "quantum_bounds": {
+            "0.0": 0.04996216958446791,
+            "1e-05": 0.049969649584660845,
+            "0.0001": 0.05071017151380387,
+            "0.001": 0.12478146554327794
+          },
+          "logical_offset": 6642.5,
+          "chain_offset": 39.08814099400651,
+          "allocation": "cut",
+          "ranges": {
+            "h": [
+              -4.0,
+              4.0
+            ],
+            "J": [
+              -1.0,
+              1.0
+            ],
+            "group": [
+              -13.0,
+              10.0
+            ]
+          },
+          "elapsed_seconds": 0.009856583084911108
+        }
+      },
+      {
+        "variable": 10,
+        "qubit": 485,
+        "evaluation": {
+          "feasible": true,
+          "scale": 0.0037242471888054864,
+          "physical_qubits": 278,
+          "logical_variables": 192,
+          "chain_edges_count": 86,
+          "chain_max": 4,
+          "beta": 20.0,
+          "epsilon_requested": 0.05,
+          "margin_requested": 0.18625198924518746,
+          "margin_min": 0.18625198924518743,
+          "classical_break_bound": 0.04875675474638916,
+          "classical_union_bound": 0.049961831956620906,
+          "quantum_bounds": {
+            "0.0": 0.049961831956620906,
+            "1e-05": 0.04996933195681711,
+            "0.0001": 0.05071183391862359,
+            "0.001": 0.12498145463552367
+          },
+          "logical_offset": 6642.5,
+          "chain_offset": 38.95965446599272,
+          "allocation": "cut",
+          "ranges": {
+            "h": [
+              -4.0,
+              4.0
+            ],
+            "J": [
+              -1.0,
+              1.0
+            ],
+            "group": [
+              -13.0,
+              10.0
+            ]
+          },
+          "elapsed_seconds": 0.009787583956494927
+        }
+      },
+      {
+        "variable": 153,
+        "qubit": 389,
+        "evaluation": {
+          "feasible": true,
+          "scale": 0.0037242471888054864,
+          "physical_qubits": 278,
+          "logical_variables": 192,
+          "chain_edges_count": 86,
+          "chain_max": 4,
+          "beta": 20.0,
+          "epsilon_requested": 0.05,
+          "margin_requested": 0.18625198924518746,
+          "margin_min": 0.18625198924518743,
+          "classical_break_bound": 0.04875675474638916,
+          "classical_union_bound": 0.049961831956620906,
+          "quantum_bounds": {
+            "0.0": 0.049961831956620906,
+            "1e-05": 0.04996933195681711,
+            "0.0001": 0.050711833918623585,
+            "0.001": 0.12498145463552367
+          },
+          "logical_offset": 6642.5,
+          "chain_offset": 39.13096983667777,
+          "allocation": "cut",
+          "ranges": {
+            "h": [
+              -4.0,
+              4.0
+            ],
+            "J": [
+              -1.0,
+              1.0
+            ],
+            "group": [
+              -13.0,
+              10.0
+            ]
+          },
+          "elapsed_seconds": 0.00902916700579226
+        }
+      }
+    ],
+    "elapsed_seconds": 0.041223584208637476
+  },
+  {
+    "name": "random_regular_n64_s3307",
+    "common_graph_valid_candidates": 3,
+    "size_only_accepts": true,
+    "guided_accepts": true,
+    "size_only_selected": {
+      "variable": 137,
+      "qubit": 511,
+      "evaluation": {
+        "feasible": true,
+        "scale": 0.003627876770013513,
+        "physical_qubits": 263,
+        "logical_variables": 192,
+        "chain_edges_count": 71,
+        "chain_max": 4,
+        "beta": 20.0,
+        "epsilon_requested": 0.05,
+        "margin_requested": 0.18146030376488267,
+        "margin_min": 0.18146030376488254,
+        "classical_break_bound": 0.04875383621338194,
+        "classical_union_bound": 0.04995391867723054,
+        "quantum_bounds": {
+          "0.0": 0.04995391867723054,
+          "1e-05": 0.049960058677382214,
+          "0.0001": 0.050567920193898976,
+          "0.001": 0.1113690871099784
+        },
+        "logical_offset": 6858.0,
+        "chain_offset": 32.95944464336895,
+        "allocation": "cut",
+        "ranges": {
+          "h": [
+            -4.0,
+            4.0
+          ],
+          "J": [
+            -1.0,
+            1.0
+          ],
+          "group": [
+            -13.0,
+            10.0
+          ]
+        },
+        "elapsed_seconds": 0.01161458296701312
+      }
+    },
+    "guided_selected": {
+      "variable": 137,
+      "qubit": 511,
+      "evaluation": {
+        "feasible": true,
+        "scale": 0.003627876770013513,
+        "physical_qubits": 263,
+        "logical_variables": 192,
+        "chain_edges_count": 71,
+        "chain_max": 4,
+        "beta": 20.0,
+        "epsilon_requested": 0.05,
+        "margin_requested": 0.18146030376488267,
+        "margin_min": 0.18146030376488254,
+        "classical_break_bound": 0.04875383621338194,
+        "classical_union_bound": 0.04995391867723054,
+        "quantum_bounds": {
+          "0.0": 0.04995391867723054,
+          "1e-05": 0.049960058677382214,
+          "0.0001": 0.050567920193898976,
+          "0.001": 0.1113690871099784
+        },
+        "logical_offset": 6858.0,
+        "chain_offset": 32.95944464336895,
+        "allocation": "cut",
+        "ranges": {
+          "h": [
+            -4.0,
+            4.0
+          ],
+          "J": [
+            -1.0,
+            1.0
+          ],
+          "group": [
+            -13.0,
+            10.0
+          ]
+        },
+        "elapsed_seconds": 0.01161458296701312
+      }
+    },
+    "candidates": [
+      {
+        "variable": 137,
+        "qubit": 511,
+        "evaluation": {
+          "feasible": true,
+          "scale": 0.003627876770013513,
+          "physical_qubits": 263,
+          "logical_variables": 192,
+          "chain_edges_count": 71,
+          "chain_max": 4,
+          "beta": 20.0,
+          "epsilon_requested": 0.05,
+          "margin_requested": 0.18146030376488267,
+          "margin_min": 0.18146030376488254,
+          "classical_break_bound": 0.04875383621338194,
+          "classical_union_bound": 0.04995391867723054,
+          "quantum_bounds": {
+            "0.0": 0.04995391867723054,
+            "1e-05": 0.049960058677382214,
+            "0.0001": 0.050567920193898976,
+            "0.001": 0.1113690871099784
+          },
+          "logical_offset": 6858.0,
+          "chain_offset": 32.95944464336895,
+          "allocation": "cut",
+          "ranges": {
+            "h": [
+              -4.0,
+              4.0
+            ],
+            "J": [
+              -1.0,
+              1.0
+            ],
+            "group": [
+              -13.0,
+              10.0
+            ]
+          },
+          "elapsed_seconds": 0.01161458296701312
+        }
+      },
+      {
+        "variable": 153,
+        "qubit": 824,
+        "evaluation": {
+          "feasible": true,
+          "scale": 0.003627876770013513,
+          "physical_qubits": 263,
+          "logical_variables": 192,
+          "chain_edges_count": 71,
+          "chain_max": 4,
+          "beta": 20.0,
+          "epsilon_requested": 0.05,
+          "margin_requested": 0.18146030376488267,
+          "margin_min": 0.18146030376488254,
+          "classical_break_bound": 0.04875383621338194,
+          "classical_union_bound": 0.04995391867723054,
+          "quantum_bounds": {
+            "0.0": 0.04995391867723054,
+            "1e-05": 0.04996005867738221,
+            "0.0001": 0.050567920193898976,
+            "0.001": 0.1113690871099784
+          },
+          "logical_offset": 6858.0,
+          "chain_offset": 33.00252568001286,
+          "allocation": "cut",
+          "ranges": {
+            "h": [
+              -4.0,
+              4.0
+            ],
+            "J": [
+              -1.0,
+              1.0
+            ],
+            "group": [
+              -13.0,
+              10.0
+            ]
+          },
+          "elapsed_seconds": 0.012632499914616346
+        }
+      },
+      {
+        "variable": 88,
+        "qubit": 267,
+        "evaluation": {
+          "feasible": true,
+          "scale": 0.003627876770013513,
+          "physical_qubits": 263,
+          "logical_variables": 192,
+          "chain_edges_count": 71,
+          "chain_max": 4,
+          "beta": 20.0,
+          "epsilon_requested": 0.05,
+          "margin_requested": 0.18146030376488267,
+          "margin_min": 0.18146030376488254,
+          "classical_break_bound": 0.04875383621338194,
+          "classical_union_bound": 0.0499534234416445,
+          "quantum_bounds": {
+            "0.0": 0.0499534234416445,
+            "1e-05": 0.04995958344179943,
+            "0.0001": 0.050569424990979654,
+            "0.001": 0.11156891859448509
+          },
+          "logical_offset": 6858.0,
+          "chain_offset": 33.00252568001286,
+          "allocation": "cut",
+          "ranges": {
+            "h": [
+              -4.0,
+              4.0
+            ],
+            "J": [
+              -1.0,
+              1.0
+            ],
+            "group": [
+              -13.0,
+              10.0
+            ]
+          },
+          "elapsed_seconds": 0.011325457831844687
+        }
+      }
+    ],
+    "elapsed_seconds": 0.038210583850741386
+  },
+  {
+    "name": "rewired_band_n16_s1101",
+    "common_graph_valid_candidates": 0,
+    "size_only_accepts": false,
+    "guided_accepts": false,
+    "size_only_selected": null,
+    "guided_selected": null,
+    "candidates": [],
+    "elapsed_seconds": 0.00023395894095301628
+  },
+  {
+    "name": "rewired_band_n16_s2203",
+    "common_graph_valid_candidates": 0,
+    "size_only_accepts": false,
+    "guided_accepts": false,
+    "size_only_selected": null,
+    "guided_selected": null,
+    "candidates": [],
+    "elapsed_seconds": 0.00012512505054473877
+  },
+  {
+    "name": "rewired_band_n16_s3307",
+    "common_graph_valid_candidates": 0,
+    "size_only_accepts": false,
+    "guided_accepts": false,
+    "size_only_selected": null,
+    "guided_selected": null,
+    "candidates": [],
+    "elapsed_seconds": 0.00011795898899435997
+  },
+  {
+    "name": "rewired_band_n32_s1101",
+    "common_graph_valid_candidates": 0,
+    "size_only_accepts": false,
+    "guided_accepts": false,
+    "size_only_selected": null,
+    "guided_selected": null,
+    "candidates": [],
+    "elapsed_seconds": 0.0005150840152055025
+  },
+  {
+    "name": "rewired_band_n32_s2203",
+    "common_graph_valid_candidates": 0,
+    "size_only_accepts": false,
+    "guided_accepts": false,
+    "size_only_selected": null,
+    "guided_selected": null,
+    "candidates": [],
+    "elapsed_seconds": 0.00040791695937514305
+  },
+  {
+    "name": "rewired_band_n32_s3307",
+    "common_graph_valid_candidates": 0,
+    "size_only_accepts": false,
+    "guided_accepts": false,
+    "size_only_selected": null,
+    "guided_selected": null,
+    "candidates": [],
+    "elapsed_seconds": 0.00022279098629951477
+  },
+  {
+    "name": "rewired_band_n64_s1101",
+    "common_graph_valid_candidates": 1,
+    "size_only_accepts": true,
+    "guided_accepts": true,
+    "size_only_selected": {
+      "variable": 90,
+      "qubit": 820,
+      "evaluation": {
+        "feasible": true,
+        "scale": 0.008296484425780968,
+        "physical_qubits": 229,
+        "logical_variables": 192,
+        "chain_edges_count": 37,
+        "chain_max": 3,
+        "beta": 20.0,
+        "epsilon_requested": 0.05,
+        "margin_requested": 0.16516625465495538,
+        "margin_min": 0.16516625465495538,
+        "classical_break_bound": 0.04873846775036717,
+        "classical_union_bound": 0.049928881166895235,
+        "quantum_bounds": {
+          "0.0": 0.049928881166895235,
+          "1e-05": 0.049931881166941236,
+          "0.0001": 0.05022888162689555,
+          "0.001": 0.07993348148424227
+        },
+        "logical_offset": 5810.125,
+        "chain_offset": 21.806025834704496,
+        "allocation": "cut",
+        "ranges": {
+          "h": [
+            -4.0,
+            4.0
+          ],
+          "J": [
+            -1.0,
+            1.0
+          ],
+          "group": [
+            -13.0,
+            10.0
+          ]
+        },
+        "elapsed_seconds": 0.009134124964475632
+      }
+    },
+    "guided_selected": {
+      "variable": 90,
+      "qubit": 820,
+      "evaluation": {
+        "feasible": true,
+        "scale": 0.008296484425780968,
+        "physical_qubits": 229,
+        "logical_variables": 192,
+        "chain_edges_count": 37,
+        "chain_max": 3,
+        "beta": 20.0,
+        "epsilon_requested": 0.05,
+        "margin_requested": 0.16516625465495538,
+        "margin_min": 0.16516625465495538,
+        "classical_break_bound": 0.04873846775036717,
+        "classical_union_bound": 0.049928881166895235,
+        "quantum_bounds": {
+          "0.0": 0.049928881166895235,
+          "1e-05": 0.049931881166941236,
+          "0.0001": 0.05022888162689555,
+          "0.001": 0.07993348148424227
+        },
+        "logical_offset": 5810.125,
+        "chain_offset": 21.806025834704496,
+        "allocation": "cut",
+        "ranges": {
+          "h": [
+            -4.0,
+            4.0
+          ],
+          "J": [
+            -1.0,
+            1.0
+          ],
+          "group": [
+            -13.0,
+            10.0
+          ]
+        },
+        "elapsed_seconds": 0.009134124964475632
+      }
+    },
+    "candidates": [
+      {
+        "variable": 90,
+        "qubit": 820,
+        "evaluation": {
+          "feasible": true,
+          "scale": 0.008296484425780968,
+          "physical_qubits": 229,
+          "logical_variables": 192,
+          "chain_edges_count": 37,
+          "chain_max": 3,
+          "beta": 20.0,
+          "epsilon_requested": 0.05,
+          "margin_requested": 0.16516625465495538,
+          "margin_min": 0.16516625465495538,
+          "classical_break_bound": 0.04873846775036717,
+          "classical_union_bound": 0.049928881166895235,
+          "quantum_bounds": {
+            "0.0": 0.049928881166895235,
+            "1e-05": 0.049931881166941236,
+            "0.0001": 0.05022888162689555,
+            "0.001": 0.07993348148424227
+          },
+          "logical_offset": 5810.125,
+          "chain_offset": 21.806025834704496,
+          "allocation": "cut",
+          "ranges": {
+            "h": [
+              -4.0,
+              4.0
+            ],
+            "J": [
+              -1.0,
+              1.0
+            ],
+            "group": [
+              -13.0,
+              10.0
+            ]
+          },
+          "elapsed_seconds": 0.009134124964475632
+        }
+      }
+    ],
+    "elapsed_seconds": 0.009964625118300319
+  },
+  {
+    "name": "rewired_band_n64_s2203",
+    "common_graph_valid_candidates": 0,
+    "size_only_accepts": false,
+    "guided_accepts": false,
+    "size_only_selected": null,
+    "guided_selected": null,
+    "candidates": [],
+    "elapsed_seconds": 0.0006520422175526619
+  },
+  {
+    "name": "rewired_band_n64_s3307",
+    "common_graph_valid_candidates": 1,
+    "size_only_accepts": true,
+    "guided_accepts": true,
+    "size_only_selected": {
+      "variable": 191,
+      "qubit": 47,
+      "evaluation": {
+        "feasible": true,
+        "scale": 0.007370968428097384,
+        "physical_qubits": 235,
+        "logical_variables": 192,
+        "chain_edges_count": 43,
+        "chain_max": 3,
+        "beta": 20.0,
+        "epsilon_requested": 0.05,
+        "margin_requested": 0.16892330973118883,
+        "margin_min": 0.16892330973118874,
+        "classical_break_bound": 0.04874294449682798,
+        "classical_union_bound": 0.04993923010409798,
+        "quantum_bounds": {
+          "0.0": 0.04993923010409798,
+          "1e-05": 0.04994271010415038,
+          "0.0001": 0.05028723062809833,
+          "0.001": 0.08474447045557931
+        },
+        "logical_offset": 5917.25,
+        "chain_offset": 25.925151636276674,
+        "allocation": "cut",
+        "ranges": {
+          "h": [
+            -4.0,
+            4.0
+          ],
+          "J": [
+            -1.0,
+            1.0
+          ],
+          "group": [
+            -13.0,
+            10.0
+          ]
+        },
+        "elapsed_seconds": 0.009308833861723542
+      }
+    },
+    "guided_selected": {
+      "variable": 191,
+      "qubit": 47,
+      "evaluation": {
+        "feasible": true,
+        "scale": 0.007370968428097384,
+        "physical_qubits": 235,
+        "logical_variables": 192,
+        "chain_edges_count": 43,
+        "chain_max": 3,
+        "beta": 20.0,
+        "epsilon_requested": 0.05,
+        "margin_requested": 0.16892330973118883,
+        "margin_min": 0.16892330973118874,
+        "classical_break_bound": 0.04874294449682798,
+        "classical_union_bound": 0.04993923010409798,
+        "quantum_bounds": {
+          "0.0": 0.04993923010409798,
+          "1e-05": 0.04994271010415038,
+          "0.0001": 0.05028723062809833,
+          "0.001": 0.08474447045557931
+        },
+        "logical_offset": 5917.25,
+        "chain_offset": 25.925151636276674,
+        "allocation": "cut",
+        "ranges": {
+          "h": [
+            -4.0,
+            4.0
+          ],
+          "J": [
+            -1.0,
+            1.0
+          ],
+          "group": [
+            -13.0,
+            10.0
+          ]
+        },
+        "elapsed_seconds": 0.009308833861723542
+      }
+    },
+    "candidates": [
+      {
+        "variable": 191,
+        "qubit": 47,
+        "evaluation": {
+          "feasible": true,
+          "scale": 0.007370968428097384,
+          "physical_qubits": 235,
+          "logical_variables": 192,
+          "chain_edges_count": 43,
+          "chain_max": 3,
+          "beta": 20.0,
+          "epsilon_requested": 0.05,
+          "margin_requested": 0.16892330973118883,
+          "margin_min": 0.16892330973118874,
+          "classical_break_bound": 0.04874294449682798,
+          "classical_union_bound": 0.04993923010409798,
+          "quantum_bounds": {
+            "0.0": 0.04993923010409798,
+            "1e-05": 0.04994271010415038,
+            "0.0001": 0.05028723062809833,
+            "0.001": 0.08474447045557931
+          },
+          "logical_offset": 5917.25,
+          "chain_offset": 25.925151636276674,
+          "allocation": "cut",
+          "ranges": {
+            "h": [
+              -4.0,
+              4.0
+            ],
+            "J": [
+              -1.0,
+              1.0
+            ],
+            "group": [
+              -13.0,
+              10.0
+            ]
+          },
+          "elapsed_seconds": 0.009308833861723542
+        }
+      }
+    ],
+    "elapsed_seconds": 0.010187041014432907
+  }
+]

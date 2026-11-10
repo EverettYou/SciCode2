@@ -1,0 +1,137 @@
+{
+  "output": "/Users/home/Library/CloudStorage/Dropbox/Research/[Mercor]SciCode2/benchmarks/qec-annealing-embedding/labs/lab-002-agent-test-general-h/results/theory_validation.json",
+  "comparison": {
+    "decoding_H": [
+      [
+        1,
+        1
+      ]
+    ],
+    "syndrome": [
+      1
+    ],
+    "weights": [
+      0,
+      0
+    ],
+    "tied_optima": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ]
+    ],
+    "target_path_edges": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "native_branches_on_target": [
+      [
+        1
+      ],
+      [
+        2
+      ]
+    ],
+    "encoded_branches_on_target": [
+      [
+        0,
+        1
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "Gamma": 0.02,
+    "physical_problem_J": 0.0001,
+    "physical_chain_K": 1.0,
+    "duration": 39.269785451984625,
+    "initial_logical_state": [
+      0,
+      0
+    ],
+    "native_success_exact_formula": 0.49999687501953116,
+    "native_success_matrix": 0.499996875019531,
+    "encoded_consistent_ground_success_matrix": 0.000493233421335849,
+    "encoded_representative_decode_success_matrix": 0.0012909781490331495,
+    "encoded_success_upper_certificate": 0.016476688757570787,
+    "strict_comparison_proved_without_encoded_simulation": true,
+    "retention_from_optimal_logical_state_01": {
+      "native_success_exact_formula": 0.5000031249804688,
+      "native_success_matrix": 0.500003124980469,
+      "encoded_consistent_ground_success_matrix": 0.997911790904749,
+      "encoded_success_lower_certificate": 0.9835233112424292,
+      "ordering_reverses_when_initial_state_changes": true
+    },
+    "certificate": {
+      "physical_qubits": 4,
+      "logical_variables": 2,
+      "singleton_branches": 0,
+      "size_two_branches": 2,
+      "nonsingleton_physical_qubits": 4,
+      "R": 0.0001,
+      "Gamma": 0.02,
+      "duration": 39.269785451984625,
+      "cut_methods": [
+        "tree-min-edge-exact",
+        "tree-min-edge-exact"
+      ],
+      "branch_minimum_cuts": [
+        1.0,
+        1.0
+      ],
+      "branch_cut_lower_bounds": [
+        1.0,
+        1.0
+      ],
+      "frozen_logical_variables": [
+        0,
+        1
+      ],
+      "required_initial_support": "all branches internally consistent",
+      "numeric_certification": "exact-binary64-rational-with-upward-error-bounds",
+      "sqrt_bound_significant_bits": 128,
+      "exp_taylor_degree": 24,
+      "Delta": 2.0,
+      "g": 1.9198,
+      "b": 0.05656854249492381,
+      "rational_g_witness": {
+        "numerator": "70828118545415194323",
+        "denominator": "36893488147419103232"
+      },
+      "status": "certified",
+      "s": 0.029465851909013338,
+      "unclipped_epsilon": 0.12836155482686704,
+      "state_vector_error_bound": 0.12836155482686704,
+      "event_probability_change_bound": 0.12836155482686704,
+      "initially_zero_event_probability_bound": 0.016476688757570787,
+      "chain_leakage_probability_bound": 0.016476688757570787
+    },
+    "programming_model": {
+      "field_abs_cap": 1,
+      "coupler_abs_cap": 1,
+      "node_absolute_group_cap": 2,
+      "max_actual_node_absolute_coupling_sum": 1.0001,
+      "normalization": "B=2, A=0.04, physical coefficients as stated"
+    },
+    "scope": "closed-system constant hold, conditional on encoded initial state; common problem-energy scale"
+  },
+  "random_checks_passed": true,
+  "random_count": 24,
+  "numeric_bound_checks_passed": true,
+  "elapsed_seconds": 0.17338325013406575
+}

@@ -1,0 +1,150 @@
+{
+  "status": "ok",
+  "scheme": "balanced",
+  "beta": 20,
+  "alpha": 0.04154535487216489,
+  "penalty": 11.75,
+  "repair_witness": {
+    "rank": 8,
+    "basis_columns": [
+      0,
+      2,
+      9,
+      12,
+      1,
+      4,
+      6,
+      15
+    ],
+    "basis_rows": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "inverse_columns_hex": [
+      "0xb9",
+      "0x81",
+      "0x1",
+      "0x5e",
+      "0x2",
+      "0x5b",
+      "0x49",
+      "0x9b"
+    ],
+    "repair_columns": [
+      [
+        0,
+        12,
+        1,
+        4,
+        15
+      ],
+      [
+        0,
+        15
+      ],
+      [
+        0
+      ],
+      [
+        2,
+        9,
+        12,
+        1,
+        6
+      ],
+      [
+        2
+      ],
+      [
+        0,
+        2,
+        12,
+        1,
+        6
+      ],
+      [
+        0,
+        12,
+        6
+      ],
+      [
+        0,
+        2,
+        12,
+        1,
+        15
+      ]
+    ],
+    "repair_loads_exact": [
+      [
+        7,
+        4
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        7,
+        4
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        3,
+        2
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        3,
+        2
+      ]
+    ],
+    "repair_bound_exact": [
+      7,
+      4
+    ],
+    "basis_total_exact": [
+      11,
+      4
+    ],
+    "global_total_exact": [
+      43,
+      4
+    ],
+    "identity_verified": "H[:,B] * inv(H[R,B]) * H[R,:] = H over GF(2)",
+    "proof_scope": "For every residual d in image(H), this linear repair increases signed additive cost by at most C*|d|. No syndrome optimum is solved."
+  },
+  "syndrome_certificate": {
+    "status": "ok",
+    "feasible_probability_lower": 0.9795850969605591,
+    "syndrome_defect_bound": 0.02041490303944092,
+    "conditional_feasible_tv_bound": 0.0,
+    "row_log_factor_range": 0.0,
+    "repair_log_product": 0.02062616741250021,
+    "repair_correction": 0.0,
+    "minimum_repair_margin": 5.476074465205967
+  },
+  "root_readout_tv_bound_including_supplied_physical_errors": 0.06911566947925257,
+  "supplied_chain_defect_bound": 0.04870076643978321,
+  "supplied_rounding_tv": 2.844946500602004e-14,
+  "conditional_feasible_law_exact": true,
+  "decoding_optimization_performed": false,
+  "guarantee_scope": "terminal Gibbs original-error law; supplied physical consistency/rounding bounds must be independently certified",
+  "elapsed_seconds": 0.000618083868175745
+}

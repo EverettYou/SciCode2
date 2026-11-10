@@ -1,0 +1,72 @@
+WHAT A ZERO OF THE PHYSICAL ELECTRON GREEN FUNCTION DOES AND DOES NOT SHOW
+
+1. Exact spectral meaning
+For a normalized physical electron spectral function A(k,w),
+G^R(k,z)=integral A(k,w)/(z-w) dw. Inside a true spectral gap,
+Im G(k,0)=0, and
+Re G(k,0)=-principal_value integral A(k,w)/w dw.
+A zero means cancellation of inverse-energy-weighted particle and hole
+spectral weights. It is not, by itself, a measurement of compressibility,
+phase stiffness, magnetic order, or topological order.
+
+2. Normal charge-conserving one-band case
+When a scalar normal-state Dyson equation applies,
+G^-1(k,z)=z+mu-epsilon(k)-Sigma(k,z), a zero of G with finite bare inverse
+propagator implies a singular self-energy. This is consistent with a
+Mott mechanism, but the premises must actually hold. A charge gap and
+the absence of superconductivity are separate physical statements.
+The existence or geometry of a zero surface is not established by the
+momentum-integrated STS data alone.
+
+3. Ordinary paired state is an explicit counterexample to a Mott diagnosis
+For one physical electron orbital with a singlet paired state, write
+the Nambu matrix (a redundant particle-hole representation, not a second
+physical orbital):
+
+G_N(k,z)=[z I-xi_k tau_z-Re Delta_k tau_x+Im Delta_k tau_y]^-1.
+The physical normal electron component is
+G_11(k,z)=(z+xi_k)/(z^2-xi_k^2-|Delta_k|^2).
+Therefore G_11(k,0)=-xi_k/(xi_k^2+|Delta_k|^2), which vanishes wherever
+xi_k=0 even for a conventional fully gapped superconductor.
+
+At the same momentum the FULL Nambu matrix is nonsingular:
+det G_N(k,0)=-1/(xi_k^2+|Delta_k|^2), and its two eigenvalues are
+plus/minus 1/sqrt(xi_k^2+|Delta_k|^2). Thus a zero of one normal matrix
+component must not be called a zero eigenvalue of the full Nambu Green
+function. If one artificially rewrites only the normal component as a
+scalar Dyson equation, Sigma_normal=|Delta_k|^2/(z+xi_k) has a pole;
+this is the effect of eliminating the anomalous component, not proof
+of a Mott interaction singularity.
+
+4. Area does not generically equal filling in a paired state
+At zero temperature, the one-spin filling is
+nu=(1/N) sum_k [1-xi_k/sqrt(xi_k^2+|Delta_k|^2)]/2.
+The area of xi_k<0 instead integrates a step function. They agree in
+special limits or by particular symmetries, but not generically for
+finite pairing and particle-hole-asymmetric dispersion. Consequently
+an enclosed-zero-area mismatch with nu cannot by itself distinguish a
+Mott state from a paired state.
+
+Primary source discussing the underlying-Fermi-surface/Luttinger-count
+failure in superconductors: Sensarma, Randeria and Trivedi,
+Phys. Rev. Lett. 98, 027004 (2007),
+https://doi.org/10.1103/PhysRevLett.98.027004 .
+The elementary equations above are an explicit independent derivation.
+
+5. Finite-number exact diagonalization
+An exact finite-cluster eigenstate at fixed particle number has vanishing
+anomalous expectation values unless an explicit pairing source is added.
+This does not rule out superconductivity after the thermodynamic limit.
+Conversely, a finite-cluster one-electron addition/removal gap may arise
+from shell spacing or pairing, not necessarily Mott localization.
+One must additionally analyze size dependence of pair-addition gaps,
+compressibility, pair correlations, and stiffness. A single-electron gap
+and spin gap are compatible with a compressible paired state.
+
+On an 8- or 10-site periodic cluster only finitely many momenta are
+available. A smooth closed zero contour requires an interpolation,
+boundary-twist average, cluster embedding or other declared approximation.
+Its area is not an exact finite-cluster observable without that extra
+construction. Different Green-function and self-energy periodizations
+can move zeros; convergence must be tested before reporting a material
+prediction.

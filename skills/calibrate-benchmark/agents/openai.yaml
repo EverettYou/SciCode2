@@ -1,0 +1,4 @@
+interface:
+  display_name: "Calibrate SciCode2 Benchmark"
+  short_description: "Score A/B/C trials and write grounded case reports."
+  default_prompt: "Use $calibrate-benchmark to score these frozen trials, assess their difficulty, and prepare a transcript-grounded case report."

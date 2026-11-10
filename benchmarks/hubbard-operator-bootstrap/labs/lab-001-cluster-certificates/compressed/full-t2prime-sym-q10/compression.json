@@ -1,0 +1,48 @@
+{
+  "source": "/Users/home/Library/CloudStorage/Dropbox/Research/[Mercor]SciCode2/benchmarks/hubbard-operator-bootstrap/labs/lab-003-theory-audit/outputs/pqgt2prime_sym",
+  "threshold_column_norm_squared": 1e-10,
+  "counts": {
+    "P": {
+      "full_factor_columns": 496,
+      "retained_columns": 15,
+      "retained_square_operators": 15,
+      "discarded_trace": 3.475024668947608e-14
+    },
+    "Q": {
+      "full_factor_columns": 496,
+      "retained_columns": 15,
+      "retained_square_operators": 15,
+      "discarded_trace": 3.671471392699564e-14
+    },
+    "G": {
+      "full_factor_columns": 1024,
+      "retained_columns": 16,
+      "retained_square_operators": 16,
+      "discarded_trace": 1.1019874026908677e-13
+    },
+    "n": {
+      "full_factor_columns": 32,
+      "retained_columns": 0,
+      "retained_square_operators": 0,
+      "discarded_trace": 0.0
+    },
+    "hole": {
+      "full_factor_columns": 32,
+      "retained_columns": 0,
+      "retained_square_operators": 0,
+      "discarded_trace": 5.174804671071713e-22
+    },
+    "T2primefull": {
+      "full_factor_columns": 2982,
+      "retained_columns": 16,
+      "retained_square_operators": 32,
+      "discarded_trace": 1.9786556027540448e-12
+    }
+  },
+  "floating_constant": -8.76298265321511,
+  "floating_residual_l1": 0.0019864597383703183,
+  "floating_corrected_lower": -8.76496911295348,
+  "compression_seconds": 1.43637341610156,
+  "initial_search_cost_included_by_reference": "/Users/home/Library/CloudStorage/Dropbox/Research/[Mercor]SciCode2/benchmarks/hubbard-operator-bootstrap/labs/lab-003-theory-audit/outputs/pqgt2prime_sym/result.json",
+  "note": "The physical moment maps and constraints are unchanged; exact certificate verification is required for the compressed factors."
+}

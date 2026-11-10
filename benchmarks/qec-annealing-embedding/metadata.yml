@@ -1,0 +1,132 @@
+benchmark_id: qec-annealing-embedding
+title: Fast Embedding Decisions for General Sparse-H Decoding
+stage: researching
+paper_ids: []
+summary: Theory-guided compact mappings evaluated by original-error decoding under a common finite anneal.
+idea_sources:
+- source_path: problem/USER_REQUEST.md
+  source_field: user-provided-research-question
+  role: primary-question
+- source_path: problem/references/DWaveProposal.pdf
+  source_field: user-provided-research-question
+  role: proposal-context
+research_question: Can a computationally inexpensive, theoretically justified criterion guide the construction
+  or selection of compact annealer embeddings for general sparse parity-decoding instances, and identify
+  when its choices improve original-error decoding under a common finite forward anneal?
+scientific_domain:
+- quantum error correction
+- quantum annealing
+- graph minor embedding
+expected_outcomes:
+- A reusable general sparse-H mapping and embedding decision procedure with explicit useful and inconclusive
+  regimes.
+- A theoretically justified comparison or limitation linked to original-error success under a declared
+  finite forward anneal.
+- Independent checks of reduction fidelity, physical programs, finite-time probabilities, costs, and uncertainty.
+expected_outputs:
+- Reusable source code and public or fully specified sparse-H instances.
+- Mathematical argument for the decision rule, its assumptions, and where it does not apply.
+- English report with matched baselines, finite-time evidence, resource costs, and independently checkable
+  witnesses.
+evidence_requirements:
+- Faithful reduction and independently valid physical embeddings with all coefficients and readout conventions
+  specified.
+- A common finite-forward quantum model, with rigorous theory and tractable full-model anchors.
+- Matched baseline comparisons on structurally diverse ordinary sparse matrices, with reserved inputs
+  and declared budgets.
+- Clear separation of proved guarantees, numerical evidence, heuristics, and inconclusive cases.
+estimated_active_hours: null
+workstation_feasible: uncertain
+expert_review: pending
+expert_notes: ''
+source_mode: user-provided-problem
+problem_sources:
+- path: problem/USER_REQUEST.md
+  sha256: 501fe79c846497a654b4c7c4df45684362a61d27a3e6b2bff76d3e1343a9191c
+  origin: User chat request on 2026-10-07, recorded in English
+- path: problem/references/DWaveProposal.pdf
+  sha256: 8396ef12e56f8d0a5b6a402b54535b989c47a4c08419214bf1e48106665100ca
+  origin: /Users/home/Library/Containers/com.apple.mail/Data/Library/Mail Downloads/5A3B490D-B2BB-4144-8A69-C7089AD538C1/DWaveProposal.pdf
+- path: problem/DESIGN_REVISION.md
+  sha256: 3bcfd0fc82cbb472ff8269882b938d382352bfc9c0b5aedaad1c56d11667cd75
+  origin: User-directed design audit, self-contained scope clarification and general-H/theory refinement;
+    T-0007 M001, M003 and M005
+authorization:
+  origin: User chat on 2026-10-07
+  scope: 'Question design and revision following T-0007 M005: general sparse-H algorithm, efficient evaluation
+    and theory-supported embedding comparison. Document/public-source checks only; no research, simulation,
+    reference pilot or model trial. The later request authorizes preparing an English autonomous-research
+    prompt only; it does not launch execution. User on 2026-10-16 authorizes Lab 004 scientific execution:
+    general-H useful evaluation and evaluation-guided compact embeddings, with autonomous methods and
+    the existing default two-hour budget. Completed Labs 002/003 already record earlier authorized execution;
+    their original scopes and actual conditions remain in their own reports. User on2026-10-16 then authorizes
+    a further three-hour continuing research round and English issue formulation (Lab005), ending2026-10-16T11:57:05Z.
+    User on 2026-10-16 clarified the requested Cycle 2 revision means the documented SciCode2 standards
+    and authorized revising the canonical problem, prompt, PDF, and linked author records.'
+public_target: null
+resource_budget:
+  classical_search_budget: null
+  peak_memory_limit_bytes: null
+  qpu_access: unavailable; not required
+pilot_status: Continuing scientific research completed in Labs002–005; no fresh calibration of the new
+  issue.
+design_preparation:
+  mode:
+  - question-revision
+  status: pass-to-testing
+  audit: evaluation/AUDIT.md
+  task_version: 0.4-finite-forward-general-H
+  frozen: false
+  example_bank_comparison: pending-access
+  reference_solution: not developed; deferred
+  model_trials: Labs 002–005 concern revision 0.3 and are not fresh blind tests of revision 0.4.
+  difficulty: Text-only pass-to-testing; useful-regime feasibility and empirical difficulty remain untested.
+  active_prompt_variants: []
+  screening: text-only editorial pass; no empirical screening
+prompt_preparation:
+  canonical_path: prompt.md
+  compatibility_copy: evaluation/prompt.md
+  revision: 0.1-autonomous
+  question_revision: 0.4-finite-forward-general-H
+  status: Current revision prepared; no revision 0.4 trial has run.
+  default_wall_clock_hours: 2
+  normal_user_selected_range_hours:
+  - 1
+  - 24
+  self_contained: true
+  research_runs: 4
+active_research:
+  lab: lab-005-general-h-annealing-relevance
+  status: completed
+  deadline_utc: '2026-10-16T11:57:05Z'
+  type: continuing scientific research and issue formulation; not blind test
+  scientific_completed_utc: '2026-10-16T11:14:40Z'
+  budget_seconds: 10800
+scientific_evidence:
+  latest_report: labs/lab-005-general-h-annealing-relevance/REPORT.md
+  ordinary_input_matrices: 24
+  successful_main_compiler_models: 47
+  matched_programming_inputs: 48
+  certified_programming_orders_with_particular_upper: 48
+  balanced_compact_reductions: 15
+  balanced_inputs: 23
+  balanced_mean_qubit_reduction_fraction: 0.04075060063412055
+  standard_compact_reductions_with_particular_lp: 1
+  standard_compact_reductions_with_charged_search_lp: 3
+  standard_inputs: 24
+  independent_audits:
+    actual_candidate_program_records: 375
+    additional_curve_program_records: 373
+    n16_readout_programs: 64
+    parent_standard_dual_witnesses: 960
+  guarantee_scope: Static/endpoint and actual original-optimum ideal finite-forward early-time certificates;
+    practical later-time/QPU/window latency remain open.
+  calibration: not assessed
+candidate_issue:
+  path: problem/ISSUE-general-h-finite-annealing.md
+  pdf: problem/issue-general-h-finite-annealing.pdf
+  assessment: evaluation/ISSUE-ASSESSMENT-general-h-finite-annealing.md
+  status: pass-to-testing; not frozen/calibrated/organizer-approved
+  scope: Useful original-error finite-forward quantum comparison and compact general-H mapping; methods
+    open.
+  canonical_question_unchanged: true

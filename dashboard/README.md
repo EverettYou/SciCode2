@@ -49,7 +49,7 @@ Regenerate the data and serve it locally from the repository root:
 uv run ./run_dashboard.sh
 ```
 
-The launcher runs the server with `nohup`, records its PID under `.tmp/`, and writes persistent output to `.tmp/dashboard-8000.log`. It returns the terminal prompt after startup and keeps the local website running if that terminal disconnects. Manage it with:
+The launcher runs the server with `nohup`, records its PID under `.tmp/`, and writes persistent output to `.tmp/dashboard-8765.log`. It returns the terminal prompt after startup and keeps the local website running if that terminal disconnects. Manage it with:
 
 ```bash
 ./run_dashboard.sh status
@@ -68,7 +68,7 @@ recognized and refreshed automatically. To explicitly replace an unrelated
 process, use `./run_dashboard.sh start --takeover` (or
 `./run_dashboard.sh stop --takeover`).
 
-Open <http://localhost:8000>. To use another port, prefix both launch and management commands with `SCICODE_DASHBOARD_PORT=<port>`. The home page summarizes the inventory and shows the derived project knowledge graph; use the navigation bar to switch among Papers, Benchmarks, Wiki, and Talk.
+Open <http://localhost:8765>. To use another port, prefix both launch and management commands with `SCICODE_DASHBOARD_PORT=<port>`. The home page summarizes the inventory and shows the derived project knowledge graph; use the navigation bar to switch among Papers, Benchmarks, Wiki, and Talk.
 
 ## Shared page shell
 

@@ -1,0 +1,92 @@
+{
+  "model": "half-filled linear-dispersion, linear-residue two-pole phenomenology",
+  "parameters": {
+    "t": 0.9970683327571924,
+    "tprime": 0.19534428112180086,
+    "s": 0.5019866383028175,
+    "V": 6.0029920635555865,
+    "r": 0.03237678841126051,
+    "eta": 0.07376847469686423
+  },
+  "KK_quadrature": [
+    {
+      "cutoff": 24,
+      "omega_points_positive": 12001,
+      "max_absolute_error": 1.0422728728512812e-05,
+      "rms_error": 6.461782160103417e-06
+    },
+    {
+      "cutoff": 40,
+      "omega_points_positive": 20001,
+      "max_absolute_error": 2.0068362755563257e-06,
+      "rms_error": 1.2431228270536743e-06
+    },
+    {
+      "cutoff": 80,
+      "omega_points_positive": 40001,
+      "max_absolute_error": 2.394325778138154e-07,
+      "rms_error": 1.4822310780529625e-07
+    }
+  ],
+  "momentum_grid_checks": [
+    {
+      "nk": 128,
+      "Gamma_side_fraction": 0.081298828125,
+      "occupation_per_spin": 0.5,
+      "max_sum_rule_error": 0.0,
+      "minimum_weight": 0.3456281637540537
+    },
+    {
+      "nk": 256,
+      "Gamma_side_fraction": 0.08135986328125,
+      "occupation_per_spin": 0.5,
+      "max_sum_rule_error": 0.0,
+      "minimum_weight": 0.3455875691828505
+    },
+    {
+      "nk": 512,
+      "Gamma_side_fraction": 0.08135986328125,
+      "occupation_per_spin": 0.5,
+      "max_sum_rule_error": 0.0,
+      "minimum_weight": 0.3455774196590168
+    },
+    {
+      "nk": 1024,
+      "Gamma_side_fraction": 0.0813446044921875,
+      "occupation_per_spin": 0.5,
+      "max_sum_rule_error": 0.0,
+      "minimum_weight": 0.3455748822229907
+    },
+    {
+      "nk": 2048,
+      "Gamma_side_fraction": 0.0813140869140625,
+      "occupation_per_spin": 0.5000000000000001,
+      "max_sum_rule_error": 0.0,
+      "minimum_weight": 0.3455742478605424
+    }
+  ],
+  "broadening_checks": [
+    {
+      "eta": 0,
+      "fraction": 0.08135555555555556
+    },
+    {
+      "eta": 0.02,
+      "fraction": 0.08133333333333333
+    },
+    {
+      "eta": 0.04,
+      "fraction": 0.08128888888888888
+    },
+    {
+      "eta": 0.08,
+      "fraction": 0.081
+    },
+    {
+      "eta": 0.16,
+      "fraction": 0.08017777777777778
+    }
+  ],
+  "shifted_momentum_assignment_Gamma_side_fraction": 0.9186859130859375,
+  "note": "The fitted linewidth is excluded from the Hamiltonian. The plotted spectral intensity uses it only as resolution/lifetime broadening. The auxiliary representation does not determine spin vertices, dc transport or a phase diagram."
+}

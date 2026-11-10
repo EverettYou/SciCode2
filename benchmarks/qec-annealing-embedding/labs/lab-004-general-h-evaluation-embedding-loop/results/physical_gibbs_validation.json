@@ -1,0 +1,197 @@
+{
+  "records": [
+    {
+      "name": "random_regular_n6_s6607",
+      "status": "ok",
+      "selected": {
+        "first": {
+          "status": "exact",
+          "physical_qubits": 20,
+          "physical_states": 1048576,
+          "actual_break_probability": 0.01201199526798868,
+          "break_bound": 0.0481856038072576,
+          "actual_root_decoded_optimum_probability": 0.48604519535494434,
+          "actual_consistent_optimum_probability": 0.4741904345374238,
+          "actual_conditional_optimum_probability": 0.47995565964998377,
+          "predicted_conditional_optimum_probability": 0.4799556596499782,
+          "actual_consistent_full_model_ground_probability": 0.47419042506549375,
+          "actual_conditional_full_model_ground_probability": 0.4799556500628936,
+          "predicted_conditional_full_model_ground_probability": 0.4799556500628882,
+          "root_decoded_tv_to_ideal": 0.006170303467356241,
+          "conditional_tv_to_ideal": 8.82182882110288e-15,
+          "elapsed_seconds": 0.20855966699309647
+        },
+        "guided_pool": {
+          "status": "exact",
+          "physical_qubits": 20,
+          "physical_states": 1048576,
+          "actual_break_probability": 0.020818065866416834,
+          "break_bound": 0.0481856038072576,
+          "actual_root_decoded_optimum_probability": 0.6724565412676412,
+          "actual_consistent_optimum_probability": 0.6560551622123328,
+          "actual_conditional_optimum_probability": 0.6700033357874754,
+          "predicted_conditional_optimum_probability": 0.6700033357874855,
+          "actual_consistent_full_model_ground_probability": 0.6560551622123305,
+          "actual_conditional_full_model_ground_probability": 0.6700033357874731,
+          "predicted_conditional_full_model_ground_probability": 0.6700033357874832,
+          "root_decoded_tv_to_ideal": 0.003113823118024535,
+          "conditional_tv_to_ideal": 1.1366250415911201e-14,
+          "elapsed_seconds": 0.18935666582547128
+        },
+        "size_only_pool": {
+          "status": "exact",
+          "physical_qubits": 20,
+          "physical_states": 1048576,
+          "actual_break_probability": 0.020818065866416834,
+          "break_bound": 0.0481856038072576,
+          "actual_root_decoded_optimum_probability": 0.6724565412676412,
+          "actual_consistent_optimum_probability": 0.6560551622123328,
+          "actual_conditional_optimum_probability": 0.6700033357874754,
+          "predicted_conditional_optimum_probability": 0.6700033357874855,
+          "actual_consistent_full_model_ground_probability": 0.6560551622123305,
+          "actual_conditional_full_model_ground_probability": 0.6700033357874731,
+          "predicted_conditional_full_model_ground_probability": 0.6700033357874832,
+          "root_decoded_tv_to_ideal": 0.003113823118024535,
+          "conditional_tv_to_ideal": 1.1366250415911201e-14,
+          "elapsed_seconds": 0.30595025001093745
+        }
+      }
+    },
+    {
+      "name": "irregular_hubs_n6_s6607",
+      "status": "ok",
+      "selected": {
+        "first": {
+          "status": "exact",
+          "physical_qubits": 11,
+          "physical_states": 2048,
+          "actual_break_probability": 0.00021288510891741323,
+          "break_bound": 0.04761904761904755,
+          "actual_root_decoded_optimum_probability": 0.9955293286609542,
+          "actual_consistent_optimum_probability": 0.9955293286609542,
+          "actual_conditional_optimum_probability": 0.9957413071575821,
+          "predicted_conditional_optimum_probability": 0.9957413071575822,
+          "actual_consistent_full_model_ground_probability": 0.9955293286609542,
+          "actual_conditional_full_model_ground_probability": 0.9957413071575821,
+          "predicted_conditional_full_model_ground_probability": 0.9957413071575822,
+          "root_decoded_tv_to_ideal": 0.00021197851364752475,
+          "conditional_tv_to_ideal": 6.288430145166385e-17,
+          "elapsed_seconds": 0.000688083004206419
+        },
+        "guided_pool": {
+          "status": "exact",
+          "physical_qubits": 11,
+          "physical_states": 2048,
+          "actual_break_probability": 0.00021288510891741323,
+          "break_bound": 0.04761904761904755,
+          "actual_root_decoded_optimum_probability": 0.9955293286609542,
+          "actual_consistent_optimum_probability": 0.9955293286609542,
+          "actual_conditional_optimum_probability": 0.9957413071575821,
+          "predicted_conditional_optimum_probability": 0.9957413071575822,
+          "actual_consistent_full_model_ground_probability": 0.9955293286609542,
+          "actual_conditional_full_model_ground_probability": 0.9957413071575821,
+          "predicted_conditional_full_model_ground_probability": 0.9957413071575822,
+          "root_decoded_tv_to_ideal": 0.00021197851364752475,
+          "conditional_tv_to_ideal": 6.288430145166385e-17,
+          "elapsed_seconds": 0.000527041032910347
+        },
+        "size_only_pool": {
+          "status": "exact",
+          "physical_qubits": 11,
+          "physical_states": 2048,
+          "actual_break_probability": 0.00021288510891741323,
+          "break_bound": 0.04761904761904755,
+          "actual_root_decoded_optimum_probability": 0.9955293286609542,
+          "actual_consistent_optimum_probability": 0.9955293286609542,
+          "actual_conditional_optimum_probability": 0.9957413071575821,
+          "predicted_conditional_optimum_probability": 0.9957413071575822,
+          "actual_consistent_full_model_ground_probability": 0.9955293286609542,
+          "actual_conditional_full_model_ground_probability": 0.9957413071575821,
+          "predicted_conditional_full_model_ground_probability": 0.9957413071575822,
+          "root_decoded_tv_to_ideal": 0.00021197851364752475,
+          "conditional_tv_to_ideal": 6.288430145166385e-17,
+          "elapsed_seconds": 0.0005240000318735838
+        }
+      }
+    },
+    {
+      "name": "rewired_band_n6_s6607",
+      "status": "ok",
+      "selected": {
+        "first": {
+          "status": "exact",
+          "physical_qubits": 20,
+          "physical_states": 1048576,
+          "actual_break_probability": 0.0007028939729763045,
+          "break_bound": 0.048475724782847014,
+          "actual_root_decoded_optimum_probability": 0.7225332931624909,
+          "actual_consistent_optimum_probability": 0.7225332931598515,
+          "actual_conditional_optimum_probability": 0.7230415146827336,
+          "predicted_conditional_optimum_probability": 0.72304151468273,
+          "actual_consistent_full_model_ground_probability": 0.7225332926672156,
+          "actual_conditional_full_model_ground_probability": 0.723041514189751,
+          "predicted_conditional_full_model_ground_probability": 0.7230415141897475,
+          "root_decoded_tv_to_ideal": 0.0006632608707971478,
+          "conditional_tv_to_ideal": 3.819579109616542e-15,
+          "elapsed_seconds": 0.19182537496089935
+        },
+        "guided_pool": {
+          "status": "exact",
+          "physical_qubits": 17,
+          "physical_states": 131072,
+          "actual_break_probability": 5.457748529165601e-12,
+          "break_bound": 0.04761904761904765,
+          "actual_root_decoded_optimum_probability": 0.8764122528882595,
+          "actual_consistent_optimum_probability": 0.8764122528882595,
+          "actual_conditional_optimum_probability": 0.8764122528930429,
+          "predicted_conditional_optimum_probability": 0.8764122528930472,
+          "actual_consistent_full_model_ground_probability": 0.8764122528882595,
+          "actual_conditional_full_model_ground_probability": 0.8764122528930429,
+          "predicted_conditional_full_model_ground_probability": 0.8764122528930472,
+          "root_decoded_tv_to_ideal": 5.444170801962624e-12,
+          "conditional_tv_to_ideal": 4.279863223701404e-15,
+          "elapsed_seconds": 0.027586375130340457
+        },
+        "size_only_pool": {
+          "status": "exact",
+          "physical_qubits": 17,
+          "physical_states": 131072,
+          "actual_break_probability": 5.457748529165601e-12,
+          "break_bound": 0.04761904761904765,
+          "actual_root_decoded_optimum_probability": 0.8764122528882595,
+          "actual_consistent_optimum_probability": 0.8764122528882595,
+          "actual_conditional_optimum_probability": 0.8764122528930429,
+          "predicted_conditional_optimum_probability": 0.8764122528930472,
+          "actual_consistent_full_model_ground_probability": 0.8764122528882595,
+          "actual_conditional_full_model_ground_probability": 0.8764122528930429,
+          "predicted_conditional_full_model_ground_probability": 0.8764122528930472,
+          "root_decoded_tv_to_ideal": 5.444170801962624e-12,
+          "conditional_tv_to_ideal": 4.279863223701404e-15,
+          "elapsed_seconds": 0.027824125019833446
+        }
+      }
+    },
+    {
+      "name": "mixed_hypergraph_n6_s6607",
+      "status": "ok",
+      "selected": {
+        "first": {
+          "status": "skipped_exact_state_limit",
+          "physical_qubits": 30,
+          "limit": 22
+        },
+        "guided_pool": {
+          "status": "skipped_exact_state_limit",
+          "physical_qubits": 28,
+          "limit": 22
+        },
+        "size_only_pool": {
+          "status": "skipped_exact_state_limit",
+          "physical_qubits": 28,
+          "limit": 22
+        }
+      }
+    }
+  ],
+  "elapsed_seconds": 2.316505374852568
+}

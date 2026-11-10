@@ -1,0 +1,1378 @@
+{
+  "chinese_pdfs": {
+    "benchmarks/fusion-informed-decoding/evaluation/reviews/2026-10-16-d89b765a/comparative-report-v1/output/pdf/comparative-scoring-report.pdf": "f32a1281671e82c20d5e1cbb2d4710491832e74b7423d723f6c407dbbad47e61",
+    "benchmarks/fusion-informed-decoding/evaluation/reviews/2026-10-16-d89b765a/reference-v1/output/pdf/standard-answer.pdf": "855720ba8e129b6f19ad69038047fe4652ecb2fd787b2fedff5f66c233a9fac7",
+    "benchmarks/fusion-informed-decoding/evaluation/reviews/2026-10-16-d89b765a/reference-v1/output/pdf/rubric-and-scorecards.pdf": "68e1394a5d19e052b22a959be42e5c89fee41de6e0807e7ed11ed90a00154afe"
+  },
+  "original_scores_sha256": "3864e0c08bbd58126fa64ae44530d2fc3a92a7f11e734531512e488a2b7a0d8a",
+  "score_projection": {
+    "Fable03": {
+      "totals": {
+        "A": 26,
+        "B": 15,
+        "C": 19.5,
+        "D": 18,
+        "E": 14,
+        "total": 92.5
+      },
+      "N0": 19,
+      "assessable": true,
+      "criteria": {
+        "A1": {
+          "score": 5,
+          "max": 5.0,
+          "status": "supported"
+        },
+        "A2": {
+          "score": 4,
+          "max": 8.0,
+          "status": "partial"
+        },
+        "A3": {
+          "score": 8,
+          "max": 8.0,
+          "status": "supported"
+        },
+        "A4": {
+          "score": 5,
+          "max": 5.0,
+          "status": "supported"
+        },
+        "A5": {
+          "score": 4,
+          "max": 4.0,
+          "status": "supported"
+        },
+        "B1": {
+          "score": 4,
+          "max": 4.0,
+          "status": "supported"
+        },
+        "B2": {
+          "score": 4,
+          "max": 4.0,
+          "status": "supported"
+        },
+        "B3": {
+          "score": 5,
+          "max": 5.0,
+          "status": "supported"
+        },
+        "B4": {
+          "score": 2,
+          "max": 2.0,
+          "status": "supported"
+        },
+        "C1": {
+          "score": 3,
+          "max": 3,
+          "status": "supported"
+        },
+        "C2": {
+          "score": 5,
+          "max": 5,
+          "status": "supported"
+        },
+        "C3": {
+          "score": 6,
+          "max": 6,
+          "status": "supported"
+        },
+        "C4": {
+          "score": 3.5,
+          "max": 4,
+          "status": "partial"
+        },
+        "C5": {
+          "score": 2,
+          "max": 2,
+          "status": "supported"
+        },
+        "D1": {
+          "score": 6,
+          "max": 6,
+          "status": "supported"
+        },
+        "D2": {
+          "score": 3,
+          "max": 3,
+          "status": "supported"
+        },
+        "D3": {
+          "score": 5,
+          "max": 5,
+          "status": "supported"
+        },
+        "D4": {
+          "score": 1,
+          "max": 3,
+          "status": "partial"
+        },
+        "D5": {
+          "score": 3,
+          "max": 3,
+          "status": "supported"
+        },
+        "E1": {
+          "score": 4,
+          "max": 4,
+          "status": "supported"
+        },
+        "E2": {
+          "score": 3,
+          "max": 3,
+          "status": "supported"
+        },
+        "E3": {
+          "score": 3,
+          "max": 3,
+          "status": "supported"
+        },
+        "E4": {
+          "score": 4,
+          "max": 5,
+          "status": "partial"
+        }
+      },
+      "diagnostics": {
+        "Q01": "E",
+        "Q02": "E",
+        "Q03": "E",
+        "Q04": "I",
+        "Q05": "I",
+        "Q06": "I",
+        "Q07": "M",
+        "Q08": "E",
+        "Q09": "E",
+        "Q10": "E",
+        "Q11": "I",
+        "Q12": "E",
+        "Q13": "E",
+        "Q14": "NA",
+        "Q15": "NA",
+        "Q16": "E",
+        "Q17": "E",
+        "Q18": "E",
+        "Q19": "I",
+        "Q20": "X",
+        "Q21": "M"
+      }
+    },
+    "Opus01": {
+      "totals": {
+        "A": 22,
+        "B": 15,
+        "C": 20,
+        "D": 18,
+        "E": 14.5,
+        "total": 89.5
+      },
+      "N0": 15,
+      "assessable": true,
+      "criteria": {
+        "A1": {
+          "score": 5,
+          "max": 5.0,
+          "status": "supported"
+        },
+        "A2": {
+          "score": 5,
+          "max": 8.0,
+          "status": "partial"
+        },
+        "A3": {
+          "score": 3,
+          "max": 8.0,
+          "status": "partial"
+        },
+        "A4": {
+          "score": 5,
+          "max": 5.0,
+          "status": "supported"
+        },
+        "A5": {
+          "score": 4,
+          "max": 4.0,
+          "status": "supported"
+        },
+        "B1": {
+          "score": 4,
+          "max": 4.0,
+          "status": "supported"
+        },
+        "B2": {
+          "score": 4,
+          "max": 4.0,
+          "status": "supported"
+        },
+        "B3": {
+          "score": 5,
+          "max": 5.0,
+          "status": "supported"
+        },
+        "B4": {
+          "score": 2,
+          "max": 2.0,
+          "status": "supported"
+        },
+        "C1": {
+          "score": 3,
+          "max": 3,
+          "status": "supported"
+        },
+        "C2": {
+          "score": 5,
+          "max": 5,
+          "status": "supported"
+        },
+        "C3": {
+          "score": 6,
+          "max": 6,
+          "status": "supported"
+        },
+        "C4": {
+          "score": 4,
+          "max": 4,
+          "status": "supported"
+        },
+        "C5": {
+          "score": 2,
+          "max": 2,
+          "status": "supported"
+        },
+        "D1": {
+          "score": 6,
+          "max": 6,
+          "status": "supported"
+        },
+        "D2": {
+          "score": 3,
+          "max": 3,
+          "status": "supported"
+        },
+        "D3": {
+          "score": 5,
+          "max": 5,
+          "status": "supported"
+        },
+        "D4": {
+          "score": 1,
+          "max": 3,
+          "status": "partial"
+        },
+        "D5": {
+          "score": 3,
+          "max": 3,
+          "status": "supported"
+        },
+        "E1": {
+          "score": 4,
+          "max": 4,
+          "status": "supported"
+        },
+        "E2": {
+          "score": 3,
+          "max": 3,
+          "status": "supported"
+        },
+        "E3": {
+          "score": 3,
+          "max": 3,
+          "status": "supported"
+        },
+        "E4": {
+          "score": 4.5,
+          "max": 5,
+          "status": "partial"
+        }
+      },
+      "diagnostics": {
+        "Q01": "E",
+        "Q02": "E",
+        "Q03": "E",
+        "Q04": "I",
+        "Q05": "I",
+        "Q06": "I",
+        "Q07": "M",
+        "Q08": "E",
+        "Q09": "E",
+        "Q10": "E",
+        "Q11": "I",
+        "Q12": "E",
+        "Q13": "E",
+        "Q14": "NA",
+        "Q15": "NA",
+        "Q16": "E",
+        "Q17": "E",
+        "Q18": "E",
+        "Q19": "X",
+        "Q20": "X",
+        "Q21": "M"
+      }
+    },
+    "Opus02": {
+      "totals": {
+        "A": 22,
+        "B": 15,
+        "C": 20,
+        "D": 18,
+        "E": 14.5,
+        "total": 89.5
+      },
+      "N0": 15,
+      "assessable": true,
+      "criteria": {
+        "A1": {
+          "score": 5,
+          "max": 5.0,
+          "status": "supported"
+        },
+        "A2": {
+          "score": 5,
+          "max": 8.0,
+          "status": "partial"
+        },
+        "A3": {
+          "score": 3,
+          "max": 8.0,
+          "status": "partial"
+        },
+        "A4": {
+          "score": 5,
+          "max": 5.0,
+          "status": "supported"
+        },
+        "A5": {
+          "score": 4,
+          "max": 4.0,
+          "status": "supported"
+        },
+        "B1": {
+          "score": 4,
+          "max": 4.0,
+          "status": "supported"
+        },
+        "B2": {
+          "score": 4,
+          "max": 4.0,
+          "status": "supported"
+        },
+        "B3": {
+          "score": 5,
+          "max": 5.0,
+          "status": "supported"
+        },
+        "B4": {
+          "score": 2,
+          "max": 2.0,
+          "status": "supported"
+        },
+        "C1": {
+          "score": 3,
+          "max": 3,
+          "status": "supported"
+        },
+        "C2": {
+          "score": 5,
+          "max": 5,
+          "status": "supported"
+        },
+        "C3": {
+          "score": 6,
+          "max": 6,
+          "status": "supported"
+        },
+        "C4": {
+          "score": 4,
+          "max": 4,
+          "status": "supported"
+        },
+        "C5": {
+          "score": 2,
+          "max": 2,
+          "status": "supported"
+        },
+        "D1": {
+          "score": 6,
+          "max": 6,
+          "status": "supported"
+        },
+        "D2": {
+          "score": 3,
+          "max": 3,
+          "status": "supported"
+        },
+        "D3": {
+          "score": 5,
+          "max": 5,
+          "status": "supported"
+        },
+        "D4": {
+          "score": 1,
+          "max": 3,
+          "status": "partial"
+        },
+        "D5": {
+          "score": 3,
+          "max": 3,
+          "status": "supported"
+        },
+        "E1": {
+          "score": 4,
+          "max": 4,
+          "status": "supported"
+        },
+        "E2": {
+          "score": 3,
+          "max": 3,
+          "status": "supported"
+        },
+        "E3": {
+          "score": 3,
+          "max": 3,
+          "status": "supported"
+        },
+        "E4": {
+          "score": 4.5,
+          "max": 5,
+          "status": "partial"
+        }
+      },
+      "diagnostics": {
+        "Q01": "E",
+        "Q02": "E",
+        "Q03": "E",
+        "Q04": "I",
+        "Q05": "I",
+        "Q06": "I",
+        "Q07": "M",
+        "Q08": "E",
+        "Q09": "E",
+        "Q10": "E",
+        "Q11": "I",
+        "Q12": "E",
+        "Q13": "E",
+        "Q14": "NA",
+        "Q15": "NA",
+        "Q16": "E",
+        "Q17": "E",
+        "Q18": "I",
+        "Q19": "X",
+        "Q20": "X",
+        "Q21": "M"
+      }
+    },
+    "Opus03": {
+      "totals": {
+        "A": 22,
+        "B": 15,
+        "C": 19,
+        "D": 18,
+        "E": 14.5,
+        "total": 88.5
+      },
+      "N0": 15,
+      "assessable": true,
+      "criteria": {
+        "A1": {
+          "score": 5,
+          "max": 5.0,
+          "status": "supported"
+        },
+        "A2": {
+          "score": 5,
+          "max": 8.0,
+          "status": "partial"
+        },
+        "A3": {
+          "score": 3,
+          "max": 8.0,
+          "status": "partial"
+        },
+        "A4": {
+          "score": 5,
+          "max": 5.0,
+          "status": "supported"
+        },
+        "A5": {
+          "score": 4,
+          "max": 4.0,
+          "status": "supported"
+        },
+        "B1": {
+          "score": 4,
+          "max": 4.0,
+          "status": "supported"
+        },
+        "B2": {
+          "score": 4,
+          "max": 4.0,
+          "status": "supported"
+        },
+        "B3": {
+          "score": 5,
+          "max": 5.0,
+          "status": "supported"
+        },
+        "B4": {
+          "score": 2,
+          "max": 2.0,
+          "status": "supported"
+        },
+        "C1": {
+          "score": 3,
+          "max": 3,
+          "status": "supported"
+        },
+        "C2": {
+          "score": 5,
+          "max": 5,
+          "status": "supported"
+        },
+        "C3": {
+          "score": 6,
+          "max": 6,
+          "status": "supported"
+        },
+        "C4": {
+          "score": 3,
+          "max": 4,
+          "status": "partial"
+        },
+        "C5": {
+          "score": 2,
+          "max": 2,
+          "status": "supported"
+        },
+        "D1": {
+          "score": 6,
+          "max": 6,
+          "status": "supported"
+        },
+        "D2": {
+          "score": 3,
+          "max": 3,
+          "status": "supported"
+        },
+        "D3": {
+          "score": 5,
+          "max": 5,
+          "status": "supported"
+        },
+        "D4": {
+          "score": 1,
+          "max": 3,
+          "status": "partial"
+        },
+        "D5": {
+          "score": 3,
+          "max": 3,
+          "status": "supported"
+        },
+        "E1": {
+          "score": 4,
+          "max": 4,
+          "status": "supported"
+        },
+        "E2": {
+          "score": 3,
+          "max": 3,
+          "status": "supported"
+        },
+        "E3": {
+          "score": 3,
+          "max": 3,
+          "status": "supported"
+        },
+        "E4": {
+          "score": 4.5,
+          "max": 5,
+          "status": "partial"
+        }
+      },
+      "diagnostics": {
+        "Q01": "E",
+        "Q02": "E",
+        "Q03": "E",
+        "Q04": "I",
+        "Q05": "I",
+        "Q06": "E",
+        "Q07": "E",
+        "Q08": "E",
+        "Q09": "E",
+        "Q10": "E",
+        "Q11": "I",
+        "Q12": "E",
+        "Q13": "E",
+        "Q14": "NA",
+        "Q15": "NA",
+        "Q16": "E",
+        "Q17": "E",
+        "Q18": "E",
+        "Q19": "X",
+        "Q20": "X",
+        "Q21": "M"
+      }
+    },
+    "GPT01": {
+      "totals": {
+        "A": 30,
+        "B": 15,
+        "C": 20,
+        "D": 20,
+        "E": 15,
+        "total": 100
+      },
+      "N0": 13,
+      "assessable": true,
+      "criteria": {
+        "A1": {
+          "score": 5,
+          "max": 5.0,
+          "status": "supported"
+        },
+        "A2": {
+          "score": 8,
+          "max": 8.0,
+          "status": "supported"
+        },
+        "A3": {
+          "score": 8,
+          "max": 8.0,
+          "status": "supported"
+        },
+        "A4": {
+          "score": 5,
+          "max": 5.0,
+          "status": "supported"
+        },
+        "A5": {
+          "score": 4,
+          "max": 4.0,
+          "status": "supported"
+        },
+        "B1": {
+          "score": 4,
+          "max": 4.0,
+          "status": "supported"
+        },
+        "B2": {
+          "score": 4,
+          "max": 4.0,
+          "status": "supported"
+        },
+        "B3": {
+          "score": 5,
+          "max": 5.0,
+          "status": "supported"
+        },
+        "B4": {
+          "score": 2,
+          "max": 2.0,
+          "status": "supported"
+        },
+        "C1": {
+          "score": 3,
+          "max": 3,
+          "status": "supported"
+        },
+        "C2": {
+          "score": 5,
+          "max": 5,
+          "status": "supported"
+        },
+        "C3": {
+          "score": 6,
+          "max": 6,
+          "status": "supported"
+        },
+        "C4": {
+          "score": 4,
+          "max": 4,
+          "status": "supported"
+        },
+        "C5": {
+          "score": 2,
+          "max": 2,
+          "status": "supported"
+        },
+        "D1": {
+          "score": 6,
+          "max": 6,
+          "status": "supported"
+        },
+        "D2": {
+          "score": 3,
+          "max": 3,
+          "status": "supported"
+        },
+        "D3": {
+          "score": 5,
+          "max": 5,
+          "status": "supported"
+        },
+        "D4": {
+          "score": 3,
+          "max": 3,
+          "status": "supported"
+        },
+        "D5": {
+          "score": 3,
+          "max": 3,
+          "status": "supported"
+        },
+        "E1": {
+          "score": 4,
+          "max": 4,
+          "status": "supported"
+        },
+        "E2": {
+          "score": 3,
+          "max": 3,
+          "status": "supported"
+        },
+        "E3": {
+          "score": 3,
+          "max": 3,
+          "status": "supported"
+        },
+        "E4": {
+          "score": 5,
+          "max": 5,
+          "status": "supported"
+        }
+      },
+      "diagnostics": {
+        "Q01": "E",
+        "Q02": "E",
+        "Q03": "E",
+        "Q04": "E",
+        "Q05": "E",
+        "Q06": "E",
+        "Q07": "E",
+        "Q08": "E",
+        "Q09": "E",
+        "Q10": "E",
+        "Q11": "E",
+        "Q12": "E",
+        "Q13": "E",
+        "Q14": "E",
+        "Q15": "I",
+        "Q16": "E",
+        "Q17": "E",
+        "Q18": "E",
+        "Q19": "E",
+        "Q20": "E",
+        "Q21": "M"
+      }
+    },
+    "GPT02": {
+      "totals": {
+        "A": 30,
+        "B": 15,
+        "C": 20,
+        "D": 20,
+        "E": 15,
+        "total": 100
+      },
+      "N0": 13,
+      "assessable": true,
+      "criteria": {
+        "A1": {
+          "score": 5,
+          "max": 5.0,
+          "status": "supported"
+        },
+        "A2": {
+          "score": 8,
+          "max": 8.0,
+          "status": "supported"
+        },
+        "A3": {
+          "score": 8,
+          "max": 8.0,
+          "status": "supported"
+        },
+        "A4": {
+          "score": 5,
+          "max": 5.0,
+          "status": "supported"
+        },
+        "A5": {
+          "score": 4,
+          "max": 4.0,
+          "status": "supported"
+        },
+        "B1": {
+          "score": 4,
+          "max": 4.0,
+          "status": "supported"
+        },
+        "B2": {
+          "score": 4,
+          "max": 4.0,
+          "status": "supported"
+        },
+        "B3": {
+          "score": 5,
+          "max": 5.0,
+          "status": "supported"
+        },
+        "B4": {
+          "score": 2,
+          "max": 2.0,
+          "status": "supported"
+        },
+        "C1": {
+          "score": 3,
+          "max": 3,
+          "status": "supported"
+        },
+        "C2": {
+          "score": 5,
+          "max": 5,
+          "status": "supported"
+        },
+        "C3": {
+          "score": 6,
+          "max": 6,
+          "status": "supported"
+        },
+        "C4": {
+          "score": 4,
+          "max": 4,
+          "status": "supported"
+        },
+        "C5": {
+          "score": 2,
+          "max": 2,
+          "status": "supported"
+        },
+        "D1": {
+          "score": 6,
+          "max": 6,
+          "status": "supported"
+        },
+        "D2": {
+          "score": 3,
+          "max": 3,
+          "status": "supported"
+        },
+        "D3": {
+          "score": 5,
+          "max": 5,
+          "status": "supported"
+        },
+        "D4": {
+          "score": 3,
+          "max": 3,
+          "status": "supported"
+        },
+        "D5": {
+          "score": 3,
+          "max": 3,
+          "status": "supported"
+        },
+        "E1": {
+          "score": 4,
+          "max": 4,
+          "status": "supported"
+        },
+        "E2": {
+          "score": 3,
+          "max": 3,
+          "status": "supported"
+        },
+        "E3": {
+          "score": 3,
+          "max": 3,
+          "status": "supported"
+        },
+        "E4": {
+          "score": 5,
+          "max": 5,
+          "status": "supported"
+        }
+      },
+      "diagnostics": {
+        "Q01": "E",
+        "Q02": "E",
+        "Q03": "E",
+        "Q04": "E",
+        "Q05": "E",
+        "Q06": "I",
+        "Q07": "M",
+        "Q08": "E",
+        "Q09": "E",
+        "Q10": "E",
+        "Q11": "E",
+        "Q12": "E",
+        "Q13": "E",
+        "Q14": "E",
+        "Q15": "E",
+        "Q16": "E",
+        "Q17": "E",
+        "Q18": "E",
+        "Q19": "E",
+        "Q20": "E",
+        "Q21": "M"
+      }
+    },
+    "GPT03": {
+      "totals": {
+        "A": 29,
+        "B": 15,
+        "C": 20,
+        "D": 20,
+        "E": 15,
+        "total": 99
+      },
+      "N0": 14,
+      "assessable": true,
+      "criteria": {
+        "A1": {
+          "score": 5,
+          "max": 5.0,
+          "status": "supported"
+        },
+        "A2": {
+          "score": 7,
+          "max": 8.0,
+          "status": "partial"
+        },
+        "A3": {
+          "score": 8,
+          "max": 8.0,
+          "status": "supported"
+        },
+        "A4": {
+          "score": 5,
+          "max": 5.0,
+          "status": "supported"
+        },
+        "A5": {
+          "score": 4,
+          "max": 4.0,
+          "status": "supported"
+        },
+        "B1": {
+          "score": 4,
+          "max": 4.0,
+          "status": "supported"
+        },
+        "B2": {
+          "score": 4,
+          "max": 4.0,
+          "status": "supported"
+        },
+        "B3": {
+          "score": 5,
+          "max": 5.0,
+          "status": "supported"
+        },
+        "B4": {
+          "score": 2,
+          "max": 2.0,
+          "status": "supported"
+        },
+        "C1": {
+          "score": 3,
+          "max": 3,
+          "status": "supported"
+        },
+        "C2": {
+          "score": 5,
+          "max": 5,
+          "status": "supported"
+        },
+        "C3": {
+          "score": 6,
+          "max": 6,
+          "status": "supported"
+        },
+        "C4": {
+          "score": 4,
+          "max": 4,
+          "status": "supported"
+        },
+        "C5": {
+          "score": 2,
+          "max": 2,
+          "status": "supported"
+        },
+        "D1": {
+          "score": 6,
+          "max": 6,
+          "status": "supported"
+        },
+        "D2": {
+          "score": 3,
+          "max": 3,
+          "status": "supported"
+        },
+        "D3": {
+          "score": 5,
+          "max": 5,
+          "status": "supported"
+        },
+        "D4": {
+          "score": 3,
+          "max": 3,
+          "status": "supported"
+        },
+        "D5": {
+          "score": 3,
+          "max": 3,
+          "status": "supported"
+        },
+        "E1": {
+          "score": 4,
+          "max": 4,
+          "status": "supported"
+        },
+        "E2": {
+          "score": 3,
+          "max": 3,
+          "status": "supported"
+        },
+        "E3": {
+          "score": 3,
+          "max": 3,
+          "status": "supported"
+        },
+        "E4": {
+          "score": 5,
+          "max": 5,
+          "status": "supported"
+        }
+      },
+      "diagnostics": {
+        "Q01": "E",
+        "Q02": "E",
+        "Q03": "E",
+        "Q04": "I",
+        "Q05": "I",
+        "Q06": "I",
+        "Q07": "M",
+        "Q08": "E",
+        "Q09": "E",
+        "Q10": "E",
+        "Q11": "E",
+        "Q12": "E",
+        "Q13": "E",
+        "Q14": "NA",
+        "Q15": "NA",
+        "Q16": "E",
+        "Q17": "E",
+        "Q18": "E",
+        "Q19": "E",
+        "Q20": "E",
+        "Q21": "M"
+      }
+    },
+    "Fable01": {
+      "totals": {
+        "A": null,
+        "B": null,
+        "C": null,
+        "D": null,
+        "E": null,
+        "total": null
+      },
+      "N0": null,
+      "assessable": false,
+      "criteria": {
+        "A1": {
+          "score": null,
+          "max": 5.0,
+          "status": "unknown"
+        },
+        "A2": {
+          "score": null,
+          "max": 8.0,
+          "status": "unknown"
+        },
+        "A3": {
+          "score": null,
+          "max": 8.0,
+          "status": "unknown"
+        },
+        "A4": {
+          "score": null,
+          "max": 5.0,
+          "status": "unknown"
+        },
+        "A5": {
+          "score": null,
+          "max": 4.0,
+          "status": "unknown"
+        },
+        "B1": {
+          "score": null,
+          "max": 4.0,
+          "status": "unknown"
+        },
+        "B2": {
+          "score": null,
+          "max": 4.0,
+          "status": "unknown"
+        },
+        "B3": {
+          "score": null,
+          "max": 5.0,
+          "status": "unknown"
+        },
+        "B4": {
+          "score": null,
+          "max": 2.0,
+          "status": "unknown"
+        },
+        "C1": {
+          "score": null,
+          "max": 3.0,
+          "status": "unknown"
+        },
+        "C2": {
+          "score": null,
+          "max": 5.0,
+          "status": "unknown"
+        },
+        "C3": {
+          "score": null,
+          "max": 6.0,
+          "status": "unknown"
+        },
+        "C4": {
+          "score": null,
+          "max": 4.0,
+          "status": "unknown"
+        },
+        "C5": {
+          "score": null,
+          "max": 2.0,
+          "status": "unknown"
+        },
+        "D1": {
+          "score": null,
+          "max": 6.0,
+          "status": "unknown"
+        },
+        "D2": {
+          "score": null,
+          "max": 3.0,
+          "status": "unknown"
+        },
+        "D3": {
+          "score": null,
+          "max": 5.0,
+          "status": "unknown"
+        },
+        "D4": {
+          "score": null,
+          "max": 3.0,
+          "status": "unknown"
+        },
+        "D5": {
+          "score": null,
+          "max": 3.0,
+          "status": "unknown"
+        },
+        "E1": {
+          "score": null,
+          "max": 4.0,
+          "status": "unknown"
+        },
+        "E2": {
+          "score": null,
+          "max": 3.0,
+          "status": "unknown"
+        },
+        "E3": {
+          "score": null,
+          "max": 3.0,
+          "status": "unknown"
+        },
+        "E4": {
+          "score": null,
+          "max": 5.0,
+          "status": "unknown"
+        }
+      },
+      "diagnostics": {
+        "Q01": "U",
+        "Q02": "U",
+        "Q03": "U",
+        "Q04": "U",
+        "Q05": "U",
+        "Q06": "U",
+        "Q07": "U",
+        "Q08": "U",
+        "Q09": "U",
+        "Q10": "U",
+        "Q11": "U",
+        "Q12": "U",
+        "Q13": "U",
+        "Q14": "U",
+        "Q15": "U",
+        "Q16": "U",
+        "Q17": "U",
+        "Q18": "U",
+        "Q19": "U",
+        "Q20": "U",
+        "Q21": "U"
+      }
+    },
+    "Fable02": {
+      "totals": {
+        "A": null,
+        "B": null,
+        "C": null,
+        "D": null,
+        "E": null,
+        "total": null
+      },
+      "N0": null,
+      "assessable": false,
+      "criteria": {
+        "A1": {
+          "score": null,
+          "max": 5.0,
+          "status": "unknown"
+        },
+        "A2": {
+          "score": null,
+          "max": 8.0,
+          "status": "unknown"
+        },
+        "A3": {
+          "score": null,
+          "max": 8.0,
+          "status": "unknown"
+        },
+        "A4": {
+          "score": null,
+          "max": 5.0,
+          "status": "unknown"
+        },
+        "A5": {
+          "score": null,
+          "max": 4.0,
+          "status": "unknown"
+        },
+        "B1": {
+          "score": null,
+          "max": 4.0,
+          "status": "unknown"
+        },
+        "B2": {
+          "score": null,
+          "max": 4.0,
+          "status": "unknown"
+        },
+        "B3": {
+          "score": null,
+          "max": 5.0,
+          "status": "unknown"
+        },
+        "B4": {
+          "score": null,
+          "max": 2.0,
+          "status": "unknown"
+        },
+        "C1": {
+          "score": null,
+          "max": 3.0,
+          "status": "unknown"
+        },
+        "C2": {
+          "score": null,
+          "max": 5.0,
+          "status": "unknown"
+        },
+        "C3": {
+          "score": null,
+          "max": 6.0,
+          "status": "unknown"
+        },
+        "C4": {
+          "score": null,
+          "max": 4.0,
+          "status": "unknown"
+        },
+        "C5": {
+          "score": null,
+          "max": 2.0,
+          "status": "unknown"
+        },
+        "D1": {
+          "score": null,
+          "max": 6.0,
+          "status": "unknown"
+        },
+        "D2": {
+          "score": null,
+          "max": 3.0,
+          "status": "unknown"
+        },
+        "D3": {
+          "score": null,
+          "max": 5.0,
+          "status": "unknown"
+        },
+        "D4": {
+          "score": null,
+          "max": 3.0,
+          "status": "unknown"
+        },
+        "D5": {
+          "score": null,
+          "max": 3.0,
+          "status": "unknown"
+        },
+        "E1": {
+          "score": null,
+          "max": 4.0,
+          "status": "unknown"
+        },
+        "E2": {
+          "score": null,
+          "max": 3.0,
+          "status": "unknown"
+        },
+        "E3": {
+          "score": null,
+          "max": 3.0,
+          "status": "unknown"
+        },
+        "E4": {
+          "score": null,
+          "max": 5.0,
+          "status": "unknown"
+        }
+      },
+      "diagnostics": {
+        "Q01": "U",
+        "Q02": "U",
+        "Q03": "U",
+        "Q04": "U",
+        "Q05": "U",
+        "Q06": "U",
+        "Q07": "U",
+        "Q08": "U",
+        "Q09": "U",
+        "Q10": "U",
+        "Q11": "U",
+        "Q12": "U",
+        "Q13": "U",
+        "Q14": "U",
+        "Q15": "U",
+        "Q16": "U",
+        "Q17": "U",
+        "Q18": "U",
+        "Q19": "U",
+        "Q20": "U",
+        "Q21": "U"
+      }
+    }
+  }
+}

@@ -1,0 +1,9 @@
+# Physical-program-specific fourth-order original-error certificate
+
+Frozen after the child's relative-event/word-majorant result, before this new calculation. Retain the same48 ordinary fixed-coupling actual program pairs and original-optimum event. No new decoding solve, event enumeration or minor search.
+
+Compute the exact rational q2 and log-probability q4 Walsh polynomials of each actual physical program. Group by unobserved physical-spin mask and original-root GF2 kernel character. Averaging unobserved spins gives a feasible-space polynomial p4_F= q4_(unobserved=0)+.5 Σ_unobserved(g2_unobserved⋆g2_unobserved), where⋆ is XOR convolution. The actual amplified-minus-baseline difference has pointwise feasible lower bound L4=constant−Σ_nonzero_character|coefficient|. This therefore lower-bounds its average over the unknown optimum set, including ties. All arithmetic is exact rational; no reference optimum enters.
+
+Combine the existing actual T² curvature lower A with L4T^4 and the child's proved relative word-majorant remainder only BEYOND T4. Use all exact even order6..12 majorants and the generic relative tail beyond12, taking the minimum of independently valid per-order bounds. On the existing dyadic-duration menu T=2^(−k),k0..80, certify positive A*T²+L4*T4−R_A,>4−R_B,>4. Record every case, exact polynomial coefficients/witnesses, computational cost and gain relative to the word-only/global certificate. NonpositiveA is not an automatic rejection if finiteT could still be certified.
+
+Independently validate the projected polynomial against explicit uniform-unobserved averaging of the exact Dyson T^4 probabilities on small random physical models and generalH affine feasible spaces. Also compare n6 anchor exact scored coefficient using optimum enumeration ONLY for validation. A positive certificate remains a regime-specific finite-time comparison, not a practical-QPU or ordinary moderate-time guarantee.

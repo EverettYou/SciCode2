@@ -1,0 +1,105 @@
+{
+  "name": "irregular_hubs_n16_s3307",
+  "input_sha256": "28a99a2b27d9775e970f398af1a65cbddd47c41ce9e1410b7cdbe46bc624d29c",
+  "parameters": {
+    "n": 16,
+    "N": 68,
+    "eta": {
+      "numerator_hex": "0x6ada26a4ef9f8d",
+      "denominator_hex": "0x400000000000000"
+    },
+    "D": {
+      "numerator_hex": "0x37",
+      "denominator_hex": "0x44"
+    },
+    "rho": {
+      "numerator_hex": "0x5b",
+      "denominator_hex": "0x1000000000000000"
+    },
+    "curvature": {
+      "numerator_hex": "0x16f4de4d6f7b3b35",
+      "denominator_hex": "0xcc000000000000000"
+    },
+    "g0": {
+      "numerator_hex": "0x2c8cafecde5d841",
+      "denominator_hex": "0x100000000000000"
+    },
+    "g1": {
+      "numerator_hex": "0x2c8cafecde5d841",
+      "denominator_hex": "0x100000000000000"
+    },
+    "lambda0": {
+      "numerator_hex": "0x362649bb0e4795a79",
+      "denominator_hex": "0x1000000000000000"
+    },
+    "lambda1": {
+      "numerator_hex": "0x1b0272c77d5e59e59",
+      "denominator_hex": "0x800000000000000"
+    }
+  },
+  "parent_certificate": {
+    "coefficient_lower_exact": [
+      551397129105337625,
+      78398662313265594368
+    ],
+    "coefficient_lower": 0.007033246650332673,
+    "cost_advantage_positive": true,
+    "status": "strict_finite_forward_order",
+    "duration_exact": [
+      1,
+      65536
+    ],
+    "duration": 1.52587890625e-05,
+    "relative_probability_advantage_lower_exact": [
+      24083949586840627563572173148561235931746668737628940584813630300468460836418710604750548637155567422669579953580607499505147602931991760266248023,
+      23632593946874632478772613366179694838384521630292175467735907539671473592032150015731464802900313261728686084215196234043775078134196157282366010489583960064
+    ],
+    "relative_probability_advantage_lower": 1.019098861554539e-12,
+    "remainder_upper_exact": [
+      11237950965837990978498629353489142577594947325202121403714951773419859144350445208970142656499319061964989459730858685115635,
+      18170964807262813932853289107986094974044999458363623128563162329119348092926852333489497151984311664093113970472085645713749863726841856
+    ],
+    "rounding_upper_exact": [
+      91,
+      75433003335677190687502
+    ],
+    "interpretation": "Actual rounded amplified program beats baseline at this certified standard-|+> finite-forward duration. This tiny interval is not a moderate-time guarantee."
+  },
+  "actual_curvature_global_control": {
+    "status": "strict_actual_original_optimum_order",
+    "duration": 1.52587890625e-05,
+    "duration_exact": {
+      "numerator_hex": "0x1",
+      "denominator_hex": "0x10000"
+    },
+    "relative_advantage_lower": 1.0190988627609045e-12,
+    "relative_advantage_lower_exact": {
+      "numerator_hex": "0x5409cee8f8da5c6c68282a7c422838f39e64ff1ff9d3b2176d12e6195e422a2d99044bdd1fe70864bf40da3d75ba488b98dc00ba3",
+      "denominator_hex": "0x4affff1b7996fa3f169c45911b67e7b3537aaecc777b34fe8f84905a99bd9b4a7a5d7f3dad70b00000000000000000000000000000000000000"
+    },
+    "remainder_exact": {
+      "numerator_hex": "0x10fffff33811b97dcdf5e2dff796c5b66892345a914c64eeedc295aa5d41e28aa2312286bcbfb34075354372a5d73d26cd0bffc1f",
+      "denominator_hex": "0x18ffffb3d332536a5cdec1db0922a2911bd38f997d2911aa2fd6dac8dde9de6e28c9d5148f25900000000000000000000000000000000000000"
+    },
+    "menu_index": 16
+  },
+  "relative_event_local": {
+    "status": "strict_actual_original_optimum_order",
+    "duration": 6.103515625e-05,
+    "duration_exact": {
+      "numerator_hex": "0x1",
+      "denominator_hex": "0x4000"
+    },
+    "relative_advantage_lower": 4.136169108936113e-12,
+    "relative_advantage_lower_exact": {
+      "numerator_hex": "0xe7ef9525487cbce9899c5d9ada43f9f140bf76765c7d183a38cb9ea48504c371e98af1b48a7a7d64c17d2fc4703a2ef959182c25f6b27df55d3e38ed68f4e1a86d21e42d1427c66e4965a638e83da8f89663a064f038130511258f39ca68383b590bcc3d15f77eeb7eb014d0317b8ed5a31b137cde044fe98e229e407dcc3952552ac456ef205dc8d5b6678d75565bd09ea2520f0962eae6c0a20283ce5c501d175fbdcbd85d5864852f8222df51597acd1ef27e4d75dbf3440d11381bbe41eb6ad5c20a30ab4acb1e79ad33c53f15073c98fe862bb1ae7d71d288bc286e5601c48312ef501835015e1d50dbdadde3f45a0804ae397efd48a49370161f45d554b984b7e86e506df77f0f93963d794090c1dbdcb7ee4b804a83c7cd14ef809dc0b4c0460ce3",
+      "denominator_hex": "0x32fffd259d5e53186f27cd9c7fd03114ad944b28df1e857e22bedc68ac62d629a232ea79805c55766422dd0dd0cf1801f7dcb0363220b0dcb67b9116289eb2ed2fa798e2680d56c081208996e9fad833b5081b7a3cb4e48d209f6dbad410b8eafb143f37a26019e5069600b017646d702f6a61d069dd1864019a61d6aa0de401b8291a3c1074a4fe132502a7fa68c274bb5fc0de7b4d7ae576b9baeacc3d17b185beb32687e38f0c44c145bde3a2ac65665d9206f935819d708fc56267097f4d43ded8b473ebbcd0e88ca886e5d6772a606b314780bab0b94afaefe5a42d620cc795cb7123fd638256cd5ac2ced0d3f235936913efe12152a3f3ac0d24c9117d2cd18fc3e9cb235cf23ffa36e2171e5614d026658e53af98330000000000000000000000000000000000"
+    },
+    "remainder_exact": {
+      "numerator_hex": "0x1842a90520b78f43e21d947cc48c5606fbaf260148d7004d7054cb5c24c9547f0e63df639fa974502ea65cc64bc362270c3bfb12531963d316e2a1bef81bf01e05b4583b75eebe79fd8a39dc32660f0c2ea55e4ff5f251cd55cb41ddb5bcd863599fe6d95ec5e032acbd168892b8150f3a18abbba86aa7e596877fe6381009c4a12327cc7d7122383c86d0c1e44ef82cbaa395f2b3ae5e240950ed7f3eff0e0f5cc207f9cd1562a29380b25e4b37db42aed9cff127cad568d751b32d51602c47fb0eed6dee35e8a892cb147750bb0c70d8ebd599eae34c559bf7de990f841ea8568b73c8f0f50595ff3ad07d862ed5a6437a9432d58410413a5d4bc8161e88b7ebb48a1de8d4ae690472481b3e09787db03b0897e7bcb9cedc6e2298bcd3ecda56cf0daf6f",
+      "denominator_hex": "0xfffff1adc09837b1dda4a8b736473ca407ed65318d25c137e59fedf9574574446f6e0261e3b15caca14fa0e5fa057d875eae1f2e28cc4090208a5fce99b331d3c208047078bb6d2fb55807fa8c72abae375fe94c7c047b3cdffd21c7ec3fdc735abffc123e1ea0193a282b9c11072a5b485c455768ba342830341d4ea0e65a62fbc94c78cb124b41a15a67af939f6bb35c3aff57c043aa257717be545182f9710dc74707af20ec298147a459cbf9575252260023010c94a7daa9847073a31fa1f54f8b1154ef9fb43efe48eb6898ecc0a2bab1169a3fb351c8af5edb0ff2dd1d02efe91ed2c5b742f4f7bd8b95a9cd88947582e695fba23f733591d38b78d042223a08dc6d6515e6a1e1c4d741b54cfb6374342ff79a08010000000000000000000000000000000000"
+    },
+    "menu_index": 14
+  },
+  "seconds": 0.0067845000885427
+}

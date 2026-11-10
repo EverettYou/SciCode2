@@ -1,0 +1,1632 @@
+{
+  "records": [
+    {
+      "name": "irregular_hubs_n16_s8807_balanced",
+      "statistics": {
+        "status": "ok",
+        "elapsed_seconds": 0.03268554201349616,
+        "original_strength_sum": 10.009456174256208,
+        "relaxed_strength_sum": 10.009456174256208,
+        "original_break_bound": 0.048696412270091624,
+        "relaxed_break_bound": 0.048696412270091624,
+        "changed_edges": 0
+      },
+      "before_dynamics": {
+        "original_variable": 14,
+        "free_origin": 14,
+        "kernel_support": [
+          10,
+          14
+        ],
+        "absolute_weight_cost": 0.5,
+        "branch_size": 2,
+        "branch_defect_bound": 0.003115264797507789,
+        "logical_marginal_min": 0.3971248289962695,
+        "physical_marginal_min": 0.34842841662617785,
+        "root": 523,
+        "status": "certified",
+        "gap_upper_per_attempt": 0.00012251837900081615,
+        "mixing_time_lower_attempts_tv_quarter": 5657.148941333401,
+        "mixing_time_lower_sweeps_tv_quarter": 50.51025840476251
+      },
+      "after_dynamics": {
+        "original_variable": 14,
+        "free_origin": 14,
+        "kernel_support": [
+          10,
+          14
+        ],
+        "absolute_weight_cost": 0.5,
+        "branch_size": 2,
+        "branch_defect_bound": 0.003115264797507789,
+        "logical_marginal_min": 0.3971248289962695,
+        "physical_marginal_min": 0.34842841662617785,
+        "root": 523,
+        "status": "certified",
+        "gap_upper_per_attempt": 0.00012251837900081615,
+        "mixing_time_lower_attempts_tv_quarter": 5657.148941333401,
+        "mixing_time_lower_sweeps_tv_quarter": 50.51025840476251
+      },
+      "numeric_certificate": {
+        "float_projected_ground_states_certified": true,
+        "ideal_repair_margins_positive": true,
+        "actual_repair_margins_positive": true,
+        "coefficient_error_l1_exact": [
+          71,
+          576460752303423488
+        ],
+        "coefficient_error_l1": 1.231653667943533e-16,
+        "physical_nonoptimal_gap_lower_bound_exact": [
+          6016225436388505,
+          576460752303423488
+        ],
+        "physical_nonoptimal_gap_lower_bound": 0.01043648750127195,
+        "actual_margin_min": 0.1442080248948443,
+        "range_violations": [],
+        "logical_gibbs_tv_rounding_correction": 4.926614671774144e-15,
+        "interpretation": "exact logical rational model, actual binary64 alpha and chain couplings as exact parameters; interbranch and field rounding bounded in L1"
+      }
+    },
+    {
+      "name": "irregular_hubs_n16_s9901_balanced",
+      "statistics": {
+        "status": "ok",
+        "elapsed_seconds": 0.02639500005170703,
+        "original_strength_sum": 12.999999888072216,
+        "relaxed_strength_sum": 7.661905656260567,
+        "original_break_bound": 0.003843153156877249,
+        "relaxed_break_bound": 0.04867932165260879,
+        "changed_edges": 12
+      },
+      "before_dynamics": {
+        "original_variable": 10,
+        "free_origin": 1,
+        "kernel_support": [
+          0,
+          1,
+          8,
+          10
+        ],
+        "absolute_weight_cost": 1.0,
+        "branch_size": 2,
+        "branch_defect_bound": 4.164683424564623e-15,
+        "logical_marginal_min": 0.21215670917478915,
+        "physical_marginal_min": 0.2083135559179119,
+        "root": 740,
+        "status": "certified",
+        "gap_upper_per_attempt": 2.428163430263252e-16,
+        "mixing_time_lower_attempts_tv_quarter": 2854615022699674.0,
+        "mixing_time_lower_sweeps_tv_quarter": 27448221372112.25
+      },
+      "after_dynamics": {
+        "original_variable": 10,
+        "free_origin": 1,
+        "kernel_support": [
+          0,
+          1,
+          8,
+          10
+        ],
+        "absolute_weight_cost": 1.0,
+        "branch_size": 2,
+        "branch_defect_bound": 0.0038314160978262335,
+        "logical_marginal_min": 0.21215670917478915,
+        "physical_marginal_min": 0.16347738742218035,
+        "root": 740,
+        "status": "certified",
+        "gap_upper_per_attempt": 0.0002693956672866619,
+        "mixing_time_lower_attempts_tv_quarter": 2572.624192230418,
+        "mixing_time_lower_sweeps_tv_quarter": 24.736771079138634
+      },
+      "numeric_certificate": {
+        "float_projected_ground_states_certified": true,
+        "ideal_repair_margins_positive": true,
+        "actual_repair_margins_positive": true,
+        "coefficient_error_l1_exact": [
+          773,
+          576460752303423488
+        ],
+        "coefficient_error_l1": 1.3409412469300719e-15,
+        "physical_nonoptimal_gap_lower_bound_exact": [
+          4726884511116297,
+          288230376151711744
+        ],
+        "physical_nonoptimal_gap_lower_bound": 0.016399675059329186,
+        "actual_margin_min": 0.13901705077538817,
+        "range_violations": [],
+        "logical_gibbs_tv_rounding_correction": 5.3637649877204314e-14,
+        "interpretation": "exact logical rational model, actual binary64 alpha and chain couplings as exact parameters; interbranch and field rounding bounded in L1"
+      }
+    },
+    {
+      "name": "irregular_hubs_n32_s8807_balanced",
+      "statistics": {
+        "status": "ok",
+        "elapsed_seconds": 0.022767291171476245,
+        "original_strength_sum": 43.390652272895124,
+        "relaxed_strength_sum": 43.390652272895124,
+        "original_break_bound": 0.04875553062948306,
+        "relaxed_break_bound": 0.04875553062948307,
+        "changed_edges": 0
+      },
+      "before_dynamics": {
+        "original_variable": 1,
+        "free_origin": 9,
+        "kernel_support": [
+          0,
+          1,
+          5,
+          9,
+          13
+        ],
+        "absolute_weight_cost": 1.5,
+        "branch_size": 2,
+        "branch_defect_bound": 0.000632511068943703,
+        "logical_marginal_min": 0.35162524923879956,
+        "physical_marginal_min": 0.3028697185093165,
+        "root": 755,
+        "status": "certified",
+        "gap_upper_per_attempt": 9.05045335950154e-06,
+        "mixing_time_lower_attempts_tv_quarter": 76586.66548227755,
+        "mixing_time_lower_sweeps_tv_quarter": 231.37965402500768
+      },
+      "after_dynamics": {
+        "original_variable": 1,
+        "free_origin": 9,
+        "kernel_support": [
+          0,
+          1,
+          5,
+          9,
+          13
+        ],
+        "absolute_weight_cost": 1.5,
+        "branch_size": 2,
+        "branch_defect_bound": 0.000632511068943703,
+        "logical_marginal_min": 0.35162524923879956,
+        "physical_marginal_min": 0.3028697185093165,
+        "root": 755,
+        "status": "certified",
+        "gap_upper_per_attempt": 9.05045335950154e-06,
+        "mixing_time_lower_attempts_tv_quarter": 76586.66548227755,
+        "mixing_time_lower_sweeps_tv_quarter": 231.37965402500768
+      },
+      "numeric_certificate": {
+        "float_projected_ground_states_certified": true,
+        "ideal_repair_margins_positive": true,
+        "actual_repair_margins_positive": true,
+        "coefficient_error_l1_exact": [
+          5907,
+          1152921504606846976
+        ],
+        "coefficient_error_l1": 5.1235057862975e-15,
+        "physical_nonoptimal_gap_lower_bound_exact": [
+          2939483252472161,
+          576460752303423488
+        ],
+        "physical_nonoptimal_gap_lower_bound": 0.0050991906053041176,
+        "actual_margin_min": 0.1841295031505253,
+        "range_violations": [],
+        "logical_gibbs_tv_rounding_correction": 2.04940231451921e-13,
+        "interpretation": "exact logical rational model, actual binary64 alpha and chain couplings as exact parameters; interbranch and field rounding bounded in L1"
+      }
+    },
+    {
+      "name": "irregular_hubs_n32_s9901_balanced",
+      "statistics": {
+        "status": "ok",
+        "elapsed_seconds": 0.019002250162884593,
+        "original_strength_sum": 36.24188662340573,
+        "relaxed_strength_sum": 36.24188662340573,
+        "original_break_bound": 0.04875659221183403,
+        "relaxed_break_bound": 0.04875659221183403,
+        "changed_edges": 0
+      },
+      "before_dynamics": {
+        "original_variable": 24,
+        "free_origin": 24,
+        "kernel_support": [
+          22,
+          24
+        ],
+        "absolute_weight_cost": 1.75,
+        "branch_size": 2,
+        "branch_defect_bound": 0.0005878894767783653,
+        "logical_marginal_min": 0.4151406876147915,
+        "physical_marginal_min": 0.36638409530295746,
+        "root": 153,
+        "status": "certified",
+        "gap_upper_per_attempt": 7.864608925278245e-06,
+        "mixing_time_lower_attempts_tv_quarter": 88134.63726883255,
+        "mixing_time_lower_sweeps_tv_quarter": 273.71005362991474
+      },
+      "after_dynamics": {
+        "original_variable": 24,
+        "free_origin": 24,
+        "kernel_support": [
+          22,
+          24
+        ],
+        "absolute_weight_cost": 1.75,
+        "branch_size": 2,
+        "branch_defect_bound": 0.0005878894767783653,
+        "logical_marginal_min": 0.4151406876147915,
+        "physical_marginal_min": 0.36638409530295746,
+        "root": 153,
+        "status": "certified",
+        "gap_upper_per_attempt": 7.864608925278245e-06,
+        "mixing_time_lower_attempts_tv_quarter": 88134.63726883255,
+        "mixing_time_lower_sweeps_tv_quarter": 273.71005362991474
+      },
+      "numeric_certificate": {
+        "float_projected_ground_states_certified": true,
+        "ideal_repair_margins_positive": true,
+        "actual_repair_margins_positive": true,
+        "coefficient_error_l1_exact": [
+          183,
+          144115188075855872
+        ],
+        "coefficient_error_l1": 1.2698175844150228e-15,
+        "physical_nonoptimal_gap_lower_bound_exact": [
+          5645261331268401,
+          2305843009213693952
+        ],
+        "physical_nonoptimal_gap_lower_bound": 0.0024482418398438445,
+        "actual_margin_min": 0.18595958825110762,
+        "range_violations": [],
+        "logical_gibbs_tv_rounding_correction": 5.07927033766022e-14,
+        "interpretation": "exact logical rational model, actual binary64 alpha and chain couplings as exact parameters; interbranch and field rounding bounded in L1"
+      }
+    },
+    {
+      "name": "irregular_hubs_n64_s8807_balanced",
+      "statistics": {
+        "status": "ok",
+        "elapsed_seconds": 0.024736041901633143,
+        "original_strength_sum": 103.1229500001321,
+        "relaxed_strength_sum": 103.1229500001321,
+        "original_break_bound": 0.0487659494857687,
+        "relaxed_break_bound": 0.0487659494857687,
+        "changed_edges": 0
+      },
+      "before_dynamics": {
+        "original_variable": 14,
+        "free_origin": 14,
+        "kernel_support": [
+          14,
+          22,
+          28,
+          35,
+          51
+        ],
+        "absolute_weight_cost": 2.75,
+        "branch_size": 2,
+        "branch_defect_bound": 0.0001945146858587819,
+        "logical_marginal_min": 0.43863408899702905,
+        "physical_marginal_min": 0.38986813941126036,
+        "root": 171,
+        "status": "certified",
+        "gap_upper_per_attempt": 1.096155378391167e-06,
+        "mixing_time_lower_attempts_tv_quarter": 632343.565817016,
+        "mixing_time_lower_sweeps_tv_quarter": 847.6455305858123
+      },
+      "after_dynamics": {
+        "original_variable": 14,
+        "free_origin": 14,
+        "kernel_support": [
+          14,
+          22,
+          28,
+          35,
+          51
+        ],
+        "absolute_weight_cost": 2.75,
+        "branch_size": 2,
+        "branch_defect_bound": 0.0001945146858587819,
+        "logical_marginal_min": 0.43863408899702905,
+        "physical_marginal_min": 0.38986813941126036,
+        "root": 171,
+        "status": "certified",
+        "gap_upper_per_attempt": 1.096155378391167e-06,
+        "mixing_time_lower_attempts_tv_quarter": 632343.565817016,
+        "mixing_time_lower_sweeps_tv_quarter": 847.6455305858123
+      },
+      "numeric_certificate": {
+        "float_projected_ground_states_certified": true,
+        "ideal_repair_margins_positive": true,
+        "actual_repair_margins_positive": true,
+        "coefficient_error_l1_exact": [
+          20795,
+          4611686018427387904
+        ],
+        "coefficient_error_l1": 4.509196835367213e-15,
+        "physical_nonoptimal_gap_lower_bound_exact": [
+          2585765909093561,
+          2305843009213693952
+        ],
+        "physical_nonoptimal_gap_lower_bound": 0.0011213972064712777,
+        "actual_margin_min": 0.21362020896123018,
+        "range_violations": [],
+        "logical_gibbs_tv_rounding_correction": 1.8036787341470477e-13,
+        "interpretation": "exact logical rational model, actual binary64 alpha and chain couplings as exact parameters; interbranch and field rounding bounded in L1"
+      }
+    },
+    {
+      "name": "irregular_hubs_n64_s9901_balanced",
+      "statistics": {
+        "status": "ok",
+        "elapsed_seconds": 0.04053704091347754,
+        "original_strength_sum": 199.2073496736315,
+        "relaxed_strength_sum": 97.60419286362642,
+        "original_break_bound": 0.0007951339944566173,
+        "relaxed_break_bound": 0.04876461226753972,
+        "changed_edges": 197
+      },
+      "before_dynamics": {
+        "original_variable": 11,
+        "free_origin": 4,
+        "kernel_support": [
+          1,
+          4,
+          5,
+          10,
+          11,
+          14,
+          16,
+          20,
+          21,
+          31,
+          32,
+          35,
+          37,
+          39,
+          56
+        ],
+        "absolute_weight_cost": 6.5,
+        "branch_size": 2,
+        "branch_defect_bound": 1.3545845861637067e-15,
+        "logical_marginal_min": 0.294960812439273,
+        "physical_marginal_min": 0.2941656783448164,
+        "root": 1090,
+        "status": "certified",
+        "gap_upper_per_attempt": 9.75181017929204e-18,
+        "mixing_time_lower_attempts_tv_quarter": 7.107882206647569e+16,
+        "mixing_time_lower_sweeps_tv_quarter": 106246370801906.86
+      },
+      "after_dynamics": {
+        "original_variable": 31,
+        "free_origin": 46,
+        "kernel_support": [
+          10,
+          31,
+          46
+        ],
+        "absolute_weight_cost": 1.5,
+        "branch_size": 2,
+        "branch_defect_bound": 0.00024993741567109573,
+        "logical_marginal_min": 0.4498950318918278,
+        "physical_marginal_min": 0.4011304195242881,
+        "root": 533,
+        "status": "certified",
+        "gap_upper_per_attempt": 1.5552037892722417e-06,
+        "mixing_time_lower_attempts_tv_quarter": 445695.05703918263,
+        "mixing_time_lower_sweeps_tv_quarter": 666.2108475922013
+      },
+      "numeric_certificate": {
+        "float_projected_ground_states_certified": true,
+        "ideal_repair_margins_positive": true,
+        "actual_repair_margins_positive": true,
+        "coefficient_error_l1_exact": [
+          769,
+          72057594037927936
+        ],
+        "coefficient_error_l1": 1.0672018824209317e-14,
+        "physical_nonoptimal_gap_lower_bound_exact": [
+          966027250719087,
+          576460752303423488
+        ],
+        "physical_nonoptimal_gap_lower_bound": 0.0016757901502557331,
+        "actual_margin_min": 0.20735125100255064,
+        "range_violations": [],
+        "logical_gibbs_tv_rounding_correction": 4.268807529684638e-13,
+        "interpretation": "exact logical rational model, actual binary64 alpha and chain couplings as exact parameters; interbranch and field rounding bounded in L1"
+      }
+    },
+    {
+      "name": "mixed_hypergraph_n16_s8807_balanced",
+      "statistics": {
+        "status": "ok",
+        "elapsed_seconds": 0.021303625078871846,
+        "original_strength_sum": 29.754401047566528,
+        "relaxed_strength_sum": 29.754401047566528,
+        "original_break_bound": 0.04874856962777187,
+        "relaxed_break_bound": 0.04874856962777187,
+        "changed_edges": 0
+      },
+      "before_dynamics": {
+        "original_variable": 6,
+        "free_origin": 1,
+        "kernel_support": [
+          1,
+          6,
+          7
+        ],
+        "absolute_weight_cost": 0.75,
+        "branch_size": 2,
+        "branch_defect_bound": 0.0009250693802035156,
+        "logical_marginal_min": 0.3852797930820064,
+        "physical_marginal_min": 0.3365312233542345,
+        "root": 92,
+        "status": "certified",
+        "gap_upper_per_attempt": 1.7630336035911935e-05,
+        "mixing_time_lower_attempts_tv_quarter": 39315.250084924446,
+        "mixing_time_lower_sweeps_tv_quarter": 167.2989365315934
+      },
+      "after_dynamics": {
+        "original_variable": 6,
+        "free_origin": 1,
+        "kernel_support": [
+          1,
+          6,
+          7
+        ],
+        "absolute_weight_cost": 0.75,
+        "branch_size": 2,
+        "branch_defect_bound": 0.0009250693802035156,
+        "logical_marginal_min": 0.3852797930820064,
+        "physical_marginal_min": 0.3365312233542345,
+        "root": 92,
+        "status": "certified",
+        "gap_upper_per_attempt": 1.7630336035911935e-05,
+        "mixing_time_lower_attempts_tv_quarter": 39315.250084924446,
+        "mixing_time_lower_sweeps_tv_quarter": 167.2989365315934
+      },
+      "numeric_certificate": {
+        "float_projected_ground_states_certified": true,
+        "ideal_repair_margins_positive": true,
+        "actual_repair_margins_positive": true,
+        "coefficient_error_l1_exact": [
+          285,
+          576460752303423488
+        ],
+        "coefficient_error_l1": 4.9439619065339e-16,
+        "physical_nonoptimal_gap_lower_bound_exact": [
+          2244341423065629,
+          288230376151711744
+        ],
+        "physical_nonoptimal_gap_lower_bound": 0.007786623509398283,
+        "actual_margin_min": 0.17461790800295662,
+        "range_violations": [],
+        "logical_gibbs_tv_rounding_correction": 1.9775847626135797e-14,
+        "interpretation": "exact logical rational model, actual binary64 alpha and chain couplings as exact parameters; interbranch and field rounding bounded in L1"
+      }
+    },
+    {
+      "name": "mixed_hypergraph_n16_s9901_balanced",
+      "statistics": {
+        "status": "ok",
+        "elapsed_seconds": 0.016454458003863692,
+        "original_strength_sum": 33.36612276047442,
+        "relaxed_strength_sum": 33.36612276047442,
+        "original_break_bound": 0.04875109353858993,
+        "relaxed_break_bound": 0.04875109353858993,
+        "changed_edges": 0
+      },
+      "before_dynamics": {
+        "original_variable": 0,
+        "free_origin": 4,
+        "kernel_support": [
+          0,
+          4
+        ],
+        "absolute_weight_cost": 0.5,
+        "branch_size": 2,
+        "branch_defect_bound": 0.0008190008190008115,
+        "logical_marginal_min": 0.38137258171815186,
+        "physical_marginal_min": 0.33262148807956193,
+        "root": 1141,
+        "status": "certified",
+        "gap_upper_per_attempt": 1.4355842709299492e-05,
+        "mixing_time_lower_attempts_tv_quarter": 48282.933940414725,
+        "mixing_time_lower_sweeps_tv_quarter": 187.87133828955146
+      },
+      "after_dynamics": {
+        "original_variable": 0,
+        "free_origin": 4,
+        "kernel_support": [
+          0,
+          4
+        ],
+        "absolute_weight_cost": 0.5,
+        "branch_size": 2,
+        "branch_defect_bound": 0.0008190008190008115,
+        "logical_marginal_min": 0.38137258171815186,
+        "physical_marginal_min": 0.33262148807956193,
+        "root": 1141,
+        "status": "certified",
+        "gap_upper_per_attempt": 1.4355842709299492e-05,
+        "mixing_time_lower_attempts_tv_quarter": 48282.933940414725,
+        "mixing_time_lower_sweeps_tv_quarter": 187.87133828955146
+      },
+      "numeric_certificate": {
+        "float_projected_ground_states_certified": true,
+        "ideal_repair_margins_positive": true,
+        "actual_repair_margins_positive": true,
+        "coefficient_error_l1_exact": [
+          899,
+          288230376151711744
+        ],
+        "coefficient_error_l1": 3.119032809806299e-15,
+        "physical_nonoptimal_gap_lower_bound_exact": [
+          3485615913904333,
+          288230376151711744
+        ],
+        "physical_nonoptimal_gap_lower_bound": 0.0120931595081764,
+        "actual_margin_min": 0.17766515344318248,
+        "range_violations": [],
+        "logical_gibbs_tv_rounding_correction": 1.2476131239225974e-13,
+        "interpretation": "exact logical rational model, actual binary64 alpha and chain couplings as exact parameters; interbranch and field rounding bounded in L1"
+      }
+    },
+    {
+      "name": "mixed_hypergraph_n32_s8807_balanced",
+      "statistics": {
+        "status": "ok",
+        "elapsed_seconds": 0.021357292076572776,
+        "original_strength_sum": 86.11969279142512,
+        "relaxed_strength_sum": 86.11969279142512,
+        "original_break_bound": 0.048762543242080535,
+        "relaxed_break_bound": 0.048762543242080535,
+        "changed_edges": 0
+      },
+      "before_dynamics": {
+        "original_variable": 13,
+        "free_origin": 13,
+        "kernel_support": [
+          0,
+          2,
+          8,
+          10,
+          12,
+          13,
+          21
+        ],
+        "absolute_weight_cost": 1.0,
+        "branch_size": 2,
+        "branch_defect_bound": 0.00033772374197906115,
+        "logical_marginal_min": 0.37932452920921494,
+        "physical_marginal_min": 0.3305619858671344,
+        "root": 417,
+        "status": "certified",
+        "gap_upper_per_attempt": 2.9924585081650473e-06,
+        "mixing_time_lower_attempts_tv_quarter": 231630.99557138755,
+        "mixing_time_lower_sweeps_tv_quarter": 454.1784226889952
+      },
+      "after_dynamics": {
+        "original_variable": 13,
+        "free_origin": 13,
+        "kernel_support": [
+          0,
+          2,
+          8,
+          10,
+          12,
+          13,
+          21
+        ],
+        "absolute_weight_cost": 1.0,
+        "branch_size": 2,
+        "branch_defect_bound": 0.00033772374197906115,
+        "logical_marginal_min": 0.37932452920921494,
+        "physical_marginal_min": 0.3305619858671344,
+        "root": 417,
+        "status": "certified",
+        "gap_upper_per_attempt": 2.9924585081650473e-06,
+        "mixing_time_lower_attempts_tv_quarter": 231630.99557138755,
+        "mixing_time_lower_sweeps_tv_quarter": 454.1784226889952
+      },
+      "numeric_certificate": {
+        "float_projected_ground_states_certified": true,
+        "ideal_repair_margins_positive": true,
+        "actual_repair_margins_positive": true,
+        "coefficient_error_l1_exact": [
+          1691,
+          2305843009213693952
+        ],
+        "coefficient_error_l1": 7.333543494691952e-16,
+        "physical_nonoptimal_gap_lower_bound_exact": [
+          7096465871250749,
+          1152921504606846976
+        ],
+        "physical_nonoptimal_gap_lower_bound": 0.00615520297166344,
+        "actual_margin_min": 0.1998236136829526,
+        "range_violations": [],
+        "logical_gibbs_tv_rounding_correction": 2.933417397876824e-14,
+        "interpretation": "exact logical rational model, actual binary64 alpha and chain couplings as exact parameters; interbranch and field rounding bounded in L1"
+      }
+    },
+    {
+      "name": "mixed_hypergraph_n32_s9901_balanced",
+      "statistics": {
+        "status": "ok",
+        "elapsed_seconds": 0.021532541839405894,
+        "original_strength_sum": 90.24381213403214,
+        "relaxed_strength_sum": 90.24381213403214,
+        "original_break_bound": 0.0487629550663646,
+        "relaxed_break_bound": 0.0487629550663646,
+        "changed_edges": 0
+      },
+      "before_dynamics": {
+        "original_variable": 28,
+        "free_origin": 11,
+        "kernel_support": [
+          2,
+          11,
+          13,
+          19,
+          28
+        ],
+        "absolute_weight_cost": 1.5,
+        "branch_size": 2,
+        "branch_defect_bound": 0.0003204101249599486,
+        "logical_marginal_min": 0.3373573267075407,
+        "physical_marginal_min": 0.2885943715411761,
+        "root": 680,
+        "status": "certified",
+        "gap_upper_per_attempt": 3.1655863047469883e-06,
+        "mixing_time_lower_attempts_tv_quarter": 218962.93979138747,
+        "mixing_time_lower_sweeps_tv_quarter": 444.1438941001774
+      },
+      "after_dynamics": {
+        "original_variable": 28,
+        "free_origin": 11,
+        "kernel_support": [
+          2,
+          11,
+          13,
+          19,
+          28
+        ],
+        "absolute_weight_cost": 1.5,
+        "branch_size": 2,
+        "branch_defect_bound": 0.0003204101249599486,
+        "logical_marginal_min": 0.3373573267075407,
+        "physical_marginal_min": 0.2885943715411761,
+        "root": 680,
+        "status": "certified",
+        "gap_upper_per_attempt": 3.1655863047469883e-06,
+        "mixing_time_lower_attempts_tv_quarter": 218962.93979138747,
+        "mixing_time_lower_sweeps_tv_quarter": 444.1438941001774
+      },
+      "numeric_certificate": {
+        "float_projected_ground_states_certified": true,
+        "ideal_repair_margins_positive": true,
+        "actual_repair_margins_positive": true,
+        "coefficient_error_l1_exact": [
+          763,
+          576460752303423488
+        ],
+        "coefficient_error_l1": 1.3235940121703038e-15,
+        "physical_nonoptimal_gap_lower_bound_exact": [
+          3243039475183611,
+          576460752303423488
+        ],
+        "physical_nonoptimal_gap_lower_bound": 0.005625776711120514,
+        "actual_margin_min": 0.20113970702008815,
+        "range_violations": [],
+        "logical_gibbs_tv_rounding_correction": 5.2943760486813554e-14,
+        "interpretation": "exact logical rational model, actual binary64 alpha and chain couplings as exact parameters; interbranch and field rounding bounded in L1"
+      }
+    },
+    {
+      "name": "mixed_hypergraph_n64_s9901_balanced",
+      "statistics": {
+        "status": "ok",
+        "elapsed_seconds": 0.028541750041767955,
+        "original_strength_sum": 206.3142104858648,
+        "relaxed_strength_sum": 206.3142104858648,
+        "original_break_bound": 0.04876737083092353,
+        "relaxed_break_bound": 0.048767370830923536,
+        "changed_edges": 0
+      },
+      "before_dynamics": {
+        "original_variable": 6,
+        "free_origin": 18,
+        "kernel_support": [
+          6,
+          18,
+          32,
+          43
+        ],
+        "absolute_weight_cost": 0.75,
+        "branch_size": 2,
+        "branch_defect_bound": 0.00013475272874275679,
+        "logical_marginal_min": 0.46748165052137125,
+        "physical_marginal_min": 0.4187142795904477,
+        "root": 218,
+        "status": "certified",
+        "gap_upper_per_attempt": 5.564255467026611e-07,
+        "mixing_time_lower_attempts_tv_quarter": 1245713.8099159333,
+        "mixing_time_lower_sweeps_tv_quarter": 1251.9736783074707
+      },
+      "after_dynamics": {
+        "original_variable": 6,
+        "free_origin": 18,
+        "kernel_support": [
+          6,
+          18,
+          32,
+          43
+        ],
+        "absolute_weight_cost": 0.75,
+        "branch_size": 2,
+        "branch_defect_bound": 0.00013475272874275679,
+        "logical_marginal_min": 0.46748165052137125,
+        "physical_marginal_min": 0.4187142795904477,
+        "root": 218,
+        "status": "certified",
+        "gap_upper_per_attempt": 5.564255467026611e-07,
+        "mixing_time_lower_attempts_tv_quarter": 1245713.8099159333,
+        "mixing_time_lower_sweeps_tv_quarter": 1251.9736783074707
+      },
+      "numeric_certificate": {
+        "float_projected_ground_states_certified": true,
+        "ideal_repair_margins_positive": true,
+        "actual_repair_margins_positive": true,
+        "coefficient_error_l1_exact": [
+          15761,
+          2305843009213693952
+        ],
+        "coefficient_error_l1": 6.835244176217614e-15,
+        "physical_nonoptimal_gap_lower_bound_exact": [
+          2502939905058197,
+          1152921504606846976
+        ],
+        "physical_nonoptimal_gap_lower_bound": 0.0021709543061318075,
+        "actual_margin_min": 0.22279835840403556,
+        "range_violations": [],
+        "logical_gibbs_tv_rounding_correction": 2.7340976704874193e-13,
+        "interpretation": "exact logical rational model, actual binary64 alpha and chain couplings as exact parameters; interbranch and field rounding bounded in L1"
+      }
+    },
+    {
+      "name": "random_regular_n16_s8807_balanced",
+      "statistics": {
+        "status": "ok",
+        "elapsed_seconds": 0.019227166194468737,
+        "original_strength_sum": 10.104769383545861,
+        "relaxed_strength_sum": 10.104769383545861,
+        "original_break_bound": 0.04870076643978321,
+        "relaxed_break_bound": 0.04870076643978321,
+        "changed_edges": 0
+      },
+      "before_dynamics": {
+        "original_variable": 6,
+        "free_origin": 7,
+        "kernel_support": [
+          0,
+          6,
+          7,
+          12
+        ],
+        "absolute_weight_cost": 1.5,
+        "branch_size": 2,
+        "branch_defect_bound": 0.0029325513196481034,
+        "logical_marginal_min": 0.22333076412187083,
+        "physical_marginal_min": 0.1746299975820876,
+        "root": 513,
+        "status": "certified",
+        "gap_upper_per_attempt": 0.00018005270439986403,
+        "mixing_time_lower_attempts_tv_quarter": 3849.3438878638863,
+        "mixing_time_lower_sweeps_tv_quarter": 34.06499015808749
+      },
+      "after_dynamics": {
+        "original_variable": 6,
+        "free_origin": 7,
+        "kernel_support": [
+          0,
+          6,
+          7,
+          12
+        ],
+        "absolute_weight_cost": 1.5,
+        "branch_size": 2,
+        "branch_defect_bound": 0.0029325513196481034,
+        "logical_marginal_min": 0.22333076412187083,
+        "physical_marginal_min": 0.1746299975820876,
+        "root": 513,
+        "status": "certified",
+        "gap_upper_per_attempt": 0.00018005270439986403,
+        "mixing_time_lower_attempts_tv_quarter": 3849.3438878638863,
+        "mixing_time_lower_sweeps_tv_quarter": 34.06499015808749
+      },
+      "numeric_certificate": {
+        "float_projected_ground_states_certified": true,
+        "ideal_repair_margins_positive": true,
+        "actual_repair_margins_positive": true,
+        "coefficient_error_l1_exact": [
+          205,
+          288230376151711744
+        ],
+        "coefficient_error_l1": 7.112366251504909e-16,
+        "physical_nonoptimal_gap_lower_bound_exact": [
+          2993658315540109,
+          288230376151711744
+        ],
+        "physical_nonoptimal_gap_lower_bound": 0.010386338718041222,
+        "actual_margin_min": 0.14572364044025515,
+        "range_violations": [],
+        "logical_gibbs_tv_rounding_correction": 2.844946500602004e-14,
+        "interpretation": "exact logical rational model, actual binary64 alpha and chain couplings as exact parameters; interbranch and field rounding bounded in L1"
+      }
+    },
+    {
+      "name": "random_regular_n16_s9901_balanced",
+      "statistics": {
+        "status": "ok",
+        "elapsed_seconds": 0.05890320776961744,
+        "original_strength_sum": 10.999999904832475,
+        "relaxed_strength_sum": 8.620811849936082,
+        "original_break_bound": 0.01797940492689125,
+        "relaxed_break_bound": 0.04866278264665679,
+        "changed_edges": 7
+      },
+      "before_dynamics": {
+        "original_variable": 13,
+        "free_origin": 13,
+        "kernel_support": [
+          0,
+          3,
+          5,
+          7,
+          13,
+          15
+        ],
+        "absolute_weight_cost": 1.0,
+        "branch_size": 2,
+        "branch_defect_bound": 1.3896294510948619e-10,
+        "logical_marginal_min": 0.18654599389691184,
+        "physical_marginal_min": 0.16856658887002057,
+        "root": 193,
+        "status": "certified",
+        "gap_upper_per_attempt": 9.266511327314536e-12,
+        "mixing_time_lower_attempts_tv_quarter": 74801309368.0219,
+        "mixing_time_lower_sweeps_tv_quarter": 699077657.6450645
+      },
+      "after_dynamics": {
+        "original_variable": 13,
+        "free_origin": 13,
+        "kernel_support": [
+          0,
+          3,
+          5,
+          7,
+          13,
+          15
+        ],
+        "absolute_weight_cost": 1.0,
+        "branch_size": 2,
+        "branch_defect_bound": 0.004524885076063482,
+        "logical_marginal_min": 0.18654599389691184,
+        "physical_marginal_min": 0.13788321115025504,
+        "root": 193,
+        "status": "certified",
+        "gap_upper_per_attempt": 0.00035575112650695396,
+        "mixing_time_lower_attempts_tv_quarter": 1948.0581442083267,
+        "mixing_time_lower_sweeps_tv_quarter": 18.206150880451652
+      },
+      "numeric_certificate": {
+        "float_projected_ground_states_certified": true,
+        "ideal_repair_margins_positive": true,
+        "actual_repair_margins_positive": true,
+        "coefficient_error_l1_exact": [
+          43,
+          36028797018963968
+        ],
+        "coefficient_error_l1": 1.1934897514720433e-15,
+        "physical_nonoptimal_gap_lower_bound_exact": [
+          5305642305597269,
+          288230376151711744
+        ],
+        "physical_nonoptimal_gap_lower_bound": 0.01840764452531059,
+        "actual_margin_min": 0.134840698658809,
+        "range_violations": [],
+        "logical_gibbs_tv_rounding_correction": 4.7739590058882874e-14,
+        "interpretation": "exact logical rational model, actual binary64 alpha and chain couplings as exact parameters; interbranch and field rounding bounded in L1"
+      }
+    },
+    {
+      "name": "random_regular_n32_s8807_balanced",
+      "statistics": {
+        "status": "ok",
+        "elapsed_seconds": 0.0190997919999063,
+        "original_strength_sum": 25.01812764644716,
+        "relaxed_strength_sum": 25.01812764644716,
+        "original_break_bound": 0.04874529443643934,
+        "relaxed_break_bound": 0.04874529443643934,
+        "changed_edges": 0
+      },
+      "before_dynamics": {
+        "original_variable": 24,
+        "free_origin": 17,
+        "kernel_support": [
+          0,
+          4,
+          17,
+          20,
+          24
+        ],
+        "absolute_weight_cost": 2.0,
+        "branch_size": 2,
+        "branch_defect_bound": 0.0010626992561105204,
+        "logical_marginal_min": 0.3162571929773347,
+        "physical_marginal_min": 0.26751189844089535,
+        "root": 877,
+        "status": "certified",
+        "gap_upper_per_attempt": 2.2691792194278624e-05,
+        "mixing_time_lower_attempts_tv_quarter": 30545.8163119031,
+        "mixing_time_lower_sweeps_tv_quarter": 127.80676281131005
+      },
+      "after_dynamics": {
+        "original_variable": 24,
+        "free_origin": 17,
+        "kernel_support": [
+          0,
+          4,
+          17,
+          20,
+          24
+        ],
+        "absolute_weight_cost": 2.0,
+        "branch_size": 2,
+        "branch_defect_bound": 0.0010626992561105204,
+        "logical_marginal_min": 0.3162571929773347,
+        "physical_marginal_min": 0.26751189844089535,
+        "root": 877,
+        "status": "certified",
+        "gap_upper_per_attempt": 2.2691792194278624e-05,
+        "mixing_time_lower_attempts_tv_quarter": 30545.8163119031,
+        "mixing_time_lower_sweeps_tv_quarter": 127.80676281131005
+      },
+      "numeric_certificate": {
+        "float_projected_ground_states_certified": true,
+        "ideal_repair_margins_positive": true,
+        "actual_repair_margins_positive": true,
+        "coefficient_error_l1_exact": [
+          1673,
+          2305843009213693952
+        ],
+        "coefficient_error_l1": 7.255480938272996e-16,
+        "physical_nonoptimal_gap_lower_bound_exact": [
+          5555828206117513,
+          1152921504606846976
+        ],
+        "physical_nonoptimal_gap_lower_bound": 0.00481891280882308,
+        "actual_margin_min": 0.17114699688160118,
+        "range_violations": [],
+        "logical_gibbs_tv_rounding_correction": 2.9021923753092406e-14,
+        "interpretation": "exact logical rational model, actual binary64 alpha and chain couplings as exact parameters; interbranch and field rounding bounded in L1"
+      }
+    },
+    {
+      "name": "random_regular_n32_s9901_balanced",
+      "statistics": {
+        "status": "ok",
+        "elapsed_seconds": 0.018786583095788956,
+        "original_strength_sum": 33.984484269047144,
+        "relaxed_strength_sum": 33.984484269047144,
+        "original_break_bound": 0.048748569627771896,
+        "relaxed_break_bound": 0.048748569627771896,
+        "changed_edges": 0
+      },
+      "before_dynamics": {
+        "original_variable": 27,
+        "free_origin": 26,
+        "kernel_support": [
+          2,
+          5,
+          14,
+          25,
+          26,
+          27,
+          28,
+          30
+        ],
+        "absolute_weight_cost": 3.75,
+        "branch_size": 2,
+        "branch_defect_bound": 0.0009250693802035156,
+        "logical_marginal_min": 0.15192964774568313,
+        "physical_marginal_min": 0.10318107801791124,
+        "root": 885,
+        "status": "certified",
+        "gap_upper_per_attempt": 4.0638191739447995e-05,
+        "mixing_time_lower_attempts_tv_quarter": 17056.19927147754,
+        "mixing_time_lower_sweeps_tv_quarter": 69.33414337999
+      },
+      "after_dynamics": {
+        "original_variable": 27,
+        "free_origin": 26,
+        "kernel_support": [
+          2,
+          5,
+          14,
+          25,
+          26,
+          27,
+          28,
+          30
+        ],
+        "absolute_weight_cost": 3.75,
+        "branch_size": 2,
+        "branch_defect_bound": 0.0009250693802035156,
+        "logical_marginal_min": 0.15192964774568313,
+        "physical_marginal_min": 0.10318107801791124,
+        "root": 885,
+        "status": "certified",
+        "gap_upper_per_attempt": 4.0638191739447995e-05,
+        "mixing_time_lower_attempts_tv_quarter": 17056.19927147754,
+        "mixing_time_lower_sweeps_tv_quarter": 69.33414337999
+      },
+      "numeric_certificate": {
+        "float_projected_ground_states_certified": true,
+        "ideal_repair_margins_positive": true,
+        "actual_repair_margins_positive": true,
+        "coefficient_error_l1_exact": [
+          545,
+          72057594037927936
+        ],
+        "coefficient_error_l1": 7.563394355258879e-15,
+        "physical_nonoptimal_gap_lower_bound_exact": [
+          3304169317291065,
+          576460752303423488
+        ],
+        "physical_nonoptimal_gap_lower_bound": 0.00573182008330707,
+        "actual_margin_min": 0.1746179080029565,
+        "range_violations": [],
+        "logical_gibbs_tv_rounding_correction": 3.025357742104009e-13,
+        "interpretation": "exact logical rational model, actual binary64 alpha and chain couplings as exact parameters; interbranch and field rounding bounded in L1"
+      }
+    },
+    {
+      "name": "random_regular_n64_s8807_balanced",
+      "statistics": {
+        "status": "ok",
+        "elapsed_seconds": 0.022310165921226144,
+        "original_strength_sum": 79.08101192265896,
+        "relaxed_strength_sum": 79.08101192265896,
+        "original_break_bound": 0.04876208436315648,
+        "relaxed_break_bound": 0.04876208436315648,
+        "changed_edges": 0
+      },
+      "before_dynamics": {
+        "original_variable": 17,
+        "free_origin": 39,
+        "kernel_support": [
+          17,
+          39
+        ],
+        "absolute_weight_cost": 0.25,
+        "branch_size": 2,
+        "branch_defect_bound": 0.0003570153516601214,
+        "logical_marginal_min": 0.4892855223989908,
+        "physical_marginal_min": 0.4405234379358343,
+        "root": 462,
+        "status": "certified",
+        "gap_upper_per_attempt": 2.7644242039858764e-06,
+        "mixing_time_lower_attempts_tv_quarter": 250738.00955861685,
+        "mixing_time_lower_sweeps_tv_quarter": 478.5076518294215
+      },
+      "after_dynamics": {
+        "original_variable": 17,
+        "free_origin": 39,
+        "kernel_support": [
+          17,
+          39
+        ],
+        "absolute_weight_cost": 0.25,
+        "branch_size": 2,
+        "branch_defect_bound": 0.0003570153516601214,
+        "logical_marginal_min": 0.4892855223989908,
+        "physical_marginal_min": 0.4405234379358343,
+        "root": 462,
+        "status": "certified",
+        "gap_upper_per_attempt": 2.7644242039858764e-06,
+        "mixing_time_lower_attempts_tv_quarter": 250738.00955861685,
+        "mixing_time_lower_sweeps_tv_quarter": 478.5076518294215
+      },
+      "numeric_certificate": {
+        "float_projected_ground_states_certified": true,
+        "ideal_repair_margins_positive": true,
+        "actual_repair_margins_positive": true,
+        "coefficient_error_l1_exact": [
+          51,
+          36028797018963968
+        ],
+        "coefficient_error_l1": 1.4155343563970746e-15,
+        "physical_nonoptimal_gap_lower_bound_exact": [
+          1235484298359225,
+          576460752303423488
+        ],
+        "physical_nonoptimal_gap_lower_bound": 0.0021432236165644814,
+        "actual_margin_min": 0.19843436740408232,
+        "range_violations": [],
+        "logical_gibbs_tv_rounding_correction": 5.6621374255884587e-14,
+        "interpretation": "exact logical rational model, actual binary64 alpha and chain couplings as exact parameters; interbranch and field rounding bounded in L1"
+      }
+    },
+    {
+      "name": "random_regular_n64_s9901_balanced",
+      "statistics": {
+        "status": "ok",
+        "elapsed_seconds": 0.02155379205942154,
+        "original_strength_sum": 201.20759841654987,
+        "relaxed_strength_sum": 89.95464083113222,
+        "original_break_bound": 0.0007435919138374545,
+        "relaxed_break_bound": 0.04876467111154816,
+        "changed_edges": 199
+      },
+      "before_dynamics": {
+        "original_variable": 14,
+        "free_origin": 14,
+        "kernel_support": [
+          14,
+          41
+        ],
+        "absolute_weight_cost": 1.75,
+        "branch_size": 2,
+        "branch_defect_bound": 1.011022036031407e-16,
+        "logical_marginal_min": 0.42936282600229775,
+        "physical_marginal_min": 0.4286192339884603,
+        "root": 530,
+        "status": "certified",
+        "gap_upper_per_attempt": 7.0447523844195585e-19,
+        "mixing_time_lower_attempts_tv_quarter": 9.839198636604118e+17,
+        "mixing_time_lower_sweeps_tv_quarter": 1679044135939269.2
+      },
+      "after_dynamics": {
+        "original_variable": 14,
+        "free_origin": 14,
+        "kernel_support": [
+          14,
+          41
+        ],
+        "absolute_weight_cost": 1.75,
+        "branch_size": 2,
+        "branch_defect_bound": 0.00024746340017299317,
+        "logical_marginal_min": 0.42936282600229775,
+        "physical_marginal_min": 0.3805981547907496,
+        "root": 530,
+        "status": "certified",
+        "gap_upper_per_attempt": 1.791324173541857e-06,
+        "mixing_time_lower_attempts_tv_quarter": 386946.4667378438,
+        "mixing_time_lower_sweeps_tv_quarter": 660.3182026243069
+      },
+      "numeric_certificate": {
+        "float_projected_ground_states_certified": true,
+        "ideal_repair_margins_positive": true,
+        "actual_repair_margins_positive": true,
+        "coefficient_error_l1_exact": [
+          17,
+          4503599627370496
+        ],
+        "coefficient_error_l1": 3.774758283725532e-15,
+        "physical_nonoptimal_gap_lower_bound_exact": [
+          585624987450423,
+          288230376151711744
+        ],
+        "physical_nonoptimal_gap_lower_bound": 0.0020317948276977436,
+        "actual_margin_min": 0.2076000092738799,
+        "range_violations": [],
+        "logical_gibbs_tv_rounding_correction": 1.509903313490327e-13,
+        "interpretation": "exact logical rational model, actual binary64 alpha and chain couplings as exact parameters; interbranch and field rounding bounded in L1"
+      }
+    },
+    {
+      "name": "rewired_band_n16_s8807_balanced",
+      "statistics": {
+        "status": "ok",
+        "elapsed_seconds": 0.012701957952231169,
+        "original_strength_sum": 7.345159509029305,
+        "relaxed_strength_sum": 7.345159509029305,
+        "original_break_bound": 0.04862255078704362,
+        "relaxed_break_bound": 0.04862255078704362,
+        "changed_edges": 0
+      },
+      "before_dynamics": {
+        "original_variable": 6,
+        "free_origin": 6,
+        "kernel_support": [
+          6,
+          7
+        ],
+        "absolute_weight_cost": 1.0,
+        "branch_size": 2,
+        "branch_defect_bound": 0.006211180124223604,
+        "logical_marginal_min": 0.15934804424033622,
+        "physical_marginal_min": 0.11072549335329261,
+        "root": 513,
+        "status": "certified",
+        "gap_upper_per_attempt": 0.0006065370271822905,
+        "mixing_time_lower_attempts_tv_quarter": 1142.447894413702,
+        "mixing_time_lower_sweeps_tv_quarter": 10.985075907824058
+      },
+      "after_dynamics": {
+        "original_variable": 6,
+        "free_origin": 6,
+        "kernel_support": [
+          6,
+          7
+        ],
+        "absolute_weight_cost": 1.0,
+        "branch_size": 2,
+        "branch_defect_bound": 0.006211180124223604,
+        "logical_marginal_min": 0.15934804424033622,
+        "physical_marginal_min": 0.11072549335329261,
+        "root": 513,
+        "status": "certified",
+        "gap_upper_per_attempt": 0.0006065370271822905,
+        "mixing_time_lower_attempts_tv_quarter": 1142.447894413702,
+        "mixing_time_lower_sweeps_tv_quarter": 10.985075907824058
+      },
+      "numeric_certificate": {
+        "float_projected_ground_states_certified": true,
+        "ideal_repair_margins_positive": true,
+        "actual_repair_margins_positive": true,
+        "coefficient_error_l1_exact": [
+          279,
+          576460752303423488
+        ],
+        "coefficient_error_l1": 4.839878497975292e-16,
+        "physical_nonoptimal_gap_lower_bound_exact": [
+          5991902254915619,
+          288230376151711744
+        ],
+        "physical_nonoptimal_gap_lower_bound": 0.020788587014720982,
+        "actual_margin_min": 0.12687934538084567,
+        "range_violations": [],
+        "logical_gibbs_tv_rounding_correction": 1.9359513991901353e-14,
+        "interpretation": "exact logical rational model, actual binary64 alpha and chain couplings as exact parameters; interbranch and field rounding bounded in L1"
+      }
+    },
+    {
+      "name": "rewired_band_n16_s9901_balanced",
+      "statistics": {
+        "status": "ok",
+        "elapsed_seconds": 0.012091333046555519,
+        "original_strength_sum": 4.899609116957757,
+        "relaxed_strength_sum": 4.899609116957757,
+        "original_break_bound": 0.04857347640995804,
+        "relaxed_break_bound": 0.04857347640995804,
+        "changed_edges": 0
+      },
+      "before_dynamics": {
+        "original_variable": 10,
+        "free_origin": 10,
+        "kernel_support": [
+          0,
+          10,
+          11,
+          15
+        ],
+        "absolute_weight_cost": 1.25,
+        "branch_size": 2,
+        "branch_defect_bound": 0.008264462809917371,
+        "logical_marginal_min": 0.15108668342739495,
+        "physical_marginal_min": 0.10251320691743691,
+        "root": 163,
+        "status": "certified",
+        "gap_upper_per_attempt": 0.0008806565543413988,
+        "mixing_time_lower_attempts_tv_quarter": 786.7333979665218,
+        "mixing_time_lower_sweeps_tv_quarter": 7.713072529083547
+      },
+      "after_dynamics": {
+        "original_variable": 10,
+        "free_origin": 10,
+        "kernel_support": [
+          0,
+          10,
+          11,
+          15
+        ],
+        "absolute_weight_cost": 1.25,
+        "branch_size": 2,
+        "branch_defect_bound": 0.008264462809917371,
+        "logical_marginal_min": 0.15108668342739495,
+        "physical_marginal_min": 0.10251320691743691,
+        "root": 163,
+        "status": "certified",
+        "gap_upper_per_attempt": 0.0008806565543413988,
+        "mixing_time_lower_attempts_tv_quarter": 786.7333979665218,
+        "mixing_time_lower_sweeps_tv_quarter": 7.713072529083547
+      },
+      "numeric_certificate": {
+        "float_projected_ground_states_certified": true,
+        "ideal_repair_margins_positive": true,
+        "actual_repair_margins_positive": true,
+        "coefficient_error_l1_exact": [
+          43,
+          36028797018963968
+        ],
+        "coefficient_error_l1": 1.1934897514720433e-15,
+        "physical_nonoptimal_gap_lower_bound_exact": [
+          4975154166771097,
+          288230376151711744
+        ],
+        "physical_nonoptimal_gap_lower_bound": 0.017261033459403306,
+        "actual_margin_min": 0.1196872935695511,
+        "range_violations": [],
+        "logical_gibbs_tv_rounding_correction": 4.7739590058882874e-14,
+        "interpretation": "exact logical rational model, actual binary64 alpha and chain couplings as exact parameters; interbranch and field rounding bounded in L1"
+      }
+    },
+    {
+      "name": "rewired_band_n32_s8807_balanced",
+      "statistics": {
+        "status": "ok",
+        "elapsed_seconds": 0.013371667126193643,
+        "original_strength_sum": 18.714656301654262,
+        "relaxed_strength_sum": 18.714656301654262,
+        "original_break_bound": 0.04871660859233083,
+        "relaxed_break_bound": 0.04871660859233084,
+        "changed_edges": 0
+      },
+      "before_dynamics": {
+        "original_variable": 4,
+        "free_origin": 4,
+        "kernel_support": [
+          4,
+          5
+        ],
+        "absolute_weight_cost": 0.75,
+        "branch_size": 2,
+        "branch_defect_bound": 0.002267573696145124,
+        "logical_marginal_min": 0.35784936496729985,
+        "physical_marginal_min": 0.309132756274969,
+        "root": 298,
+        "status": "certified",
+        "gap_upper_per_attempt": 5.0801378425558824e-05,
+        "mixing_time_lower_attempts_tv_quarter": 13643.91273379376,
+        "mixing_time_lower_sweeps_tv_quarter": 65.28187910906105
+      },
+      "after_dynamics": {
+        "original_variable": 4,
+        "free_origin": 4,
+        "kernel_support": [
+          4,
+          5
+        ],
+        "absolute_weight_cost": 0.75,
+        "branch_size": 2,
+        "branch_defect_bound": 0.002267573696145124,
+        "logical_marginal_min": 0.35784936496729985,
+        "physical_marginal_min": 0.309132756274969,
+        "root": 298,
+        "status": "certified",
+        "gap_upper_per_attempt": 5.0801378425558824e-05,
+        "mixing_time_lower_attempts_tv_quarter": 13643.91273379376,
+        "mixing_time_lower_sweeps_tv_quarter": 65.28187910906105
+      },
+      "numeric_certificate": {
+        "float_projected_ground_states_certified": true,
+        "ideal_repair_margins_positive": true,
+        "actual_repair_margins_positive": true,
+        "coefficient_error_l1_exact": [
+          4503,
+          1152921504606846976
+        ],
+        "coefficient_error_l1": 3.905729906161781e-15,
+        "physical_nonoptimal_gap_lower_bound_exact": [
+          5617713607454039,
+          576460752303423488
+        ],
+        "physical_nonoptimal_gap_lower_bound": 0.009745179676164879,
+        "actual_margin_min": 0.15216936817280766,
+        "range_violations": [],
+        "logical_gibbs_tv_rounding_correction": 1.5622919624648344e-13,
+        "interpretation": "exact logical rational model, actual binary64 alpha and chain couplings as exact parameters; interbranch and field rounding bounded in L1"
+      }
+    },
+    {
+      "name": "rewired_band_n32_s9901_balanced",
+      "statistics": {
+        "status": "ok",
+        "elapsed_seconds": 0.014442874817177653,
+        "original_strength_sum": 20.88240536197821,
+        "relaxed_strength_sum": 20.88240536197821,
+        "original_break_bound": 0.04872307616249238,
+        "relaxed_break_bound": 0.04872307616249236,
+        "changed_edges": 0
+      },
+      "before_dynamics": {
+        "original_variable": 23,
+        "free_origin": 23,
+        "kernel_support": [
+          22,
+          23
+        ],
+        "absolute_weight_cost": 0.5,
+        "branch_size": 2,
+        "branch_defect_bound": 0.0019960079840319316,
+        "logical_marginal_min": 0.41465637640792513,
+        "physical_marginal_min": 0.36593330014543274,
+        "root": 886,
+        "status": "certified",
+        "gap_upper_per_attempt": 3.964292242267284e-05,
+        "mixing_time_lower_attempts_tv_quarter": 17484.41837584587,
+        "mixing_time_lower_sweeps_tv_quarter": 80.5733565707183
+      },
+      "after_dynamics": {
+        "original_variable": 23,
+        "free_origin": 23,
+        "kernel_support": [
+          22,
+          23
+        ],
+        "absolute_weight_cost": 0.5,
+        "branch_size": 2,
+        "branch_defect_bound": 0.0019960079840319316,
+        "logical_marginal_min": 0.41465637640792513,
+        "physical_marginal_min": 0.3659333001454328,
+        "root": 886,
+        "status": "certified",
+        "gap_upper_per_attempt": 3.964292242267284e-05,
+        "mixing_time_lower_attempts_tv_quarter": 17484.41837584587,
+        "mixing_time_lower_sweeps_tv_quarter": 80.5733565707183
+      },
+      "numeric_certificate": {
+        "float_projected_ground_states_certified": true,
+        "ideal_repair_margins_positive": true,
+        "actual_repair_margins_positive": true,
+        "coefficient_error_l1_exact": [
+          17,
+          2251799813685248
+        ],
+        "coefficient_error_l1": 7.549516567451064e-15,
+        "physical_nonoptimal_gap_lower_bound_exact": [
+          310522200772163,
+          36028797018963968
+        ],
+        "physical_nonoptimal_gap_lower_bound": 0.008618722423863273,
+        "actual_margin_min": 0.15536520246055466,
+        "range_violations": [],
+        "logical_gibbs_tv_rounding_correction": 3.0198066269808817e-13,
+        "interpretation": "exact logical rational model, actual binary64 alpha and chain couplings as exact parameters; interbranch and field rounding bounded in L1"
+      }
+    },
+    {
+      "name": "rewired_band_n64_s8807_balanced",
+      "statistics": {
+        "status": "ok",
+        "elapsed_seconds": 0.017360041849315166,
+        "original_strength_sum": 47.9999996024032,
+        "relaxed_strength_sum": 37.23175315753578,
+        "original_break_bound": 0.0206095121016159,
+        "relaxed_break_bound": 0.04874580176137604,
+        "changed_edges": 28
+      },
+      "before_dynamics": {
+        "original_variable": 43,
+        "free_origin": 43,
+        "kernel_support": [
+          42,
+          43
+        ],
+        "absolute_weight_cost": 0.5,
+        "branch_size": 2,
+        "branch_defect_bound": 6.652344482551113e-11,
+        "logical_marginal_min": 0.44710084579723847,
+        "physical_marginal_min": 0.4264913335956226,
+        "root": 428,
+        "status": "certified",
+        "gap_upper_per_attempt": 6.295653075460489e-13,
+        "mixing_time_lower_attempts_tv_quarter": 1100993292120.099,
+        "mixing_time_lower_sweeps_tv_quarter": 2548595583.6113405
+      },
+      "after_dynamics": {
+        "original_variable": 28,
+        "free_origin": 28,
+        "kernel_support": [
+          28,
+          29
+        ],
+        "absolute_weight_cost": 0.25,
+        "branch_size": 2,
+        "branch_defect_bound": 0.00104058231052686,
+        "logical_marginal_min": 0.4734759913516153,
+        "physical_marginal_min": 0.4247301894902392,
+        "root": 100,
+        "status": "certified",
+        "gap_upper_per_attempt": 9.858434997520727e-06,
+        "mixing_time_lower_attempts_tv_quarter": 70309.7158986631,
+        "mixing_time_lower_sweeps_tv_quarter": 162.75397198764605
+      },
+      "numeric_certificate": {
+        "float_projected_ground_states_certified": true,
+        "ideal_repair_margins_positive": true,
+        "actual_repair_margins_positive": true,
+        "coefficient_error_l1_exact": [
+          0,
+          1
+        ],
+        "coefficient_error_l1": 0.0,
+        "physical_nonoptimal_gap_lower_bound_exact": [
+          191305209769383,
+          36028797018963968
+        ],
+        "physical_nonoptimal_gap_lower_bound": 0.005309786215417861,
+        "actual_margin_min": 0.17167334211154706,
+        "range_violations": [],
+        "logical_gibbs_tv_rounding_correction": 0.0,
+        "interpretation": "exact logical rational model, actual binary64 alpha and chain couplings as exact parameters; interbranch and field rounding bounded in L1"
+      }
+    },
+    {
+      "name": "rewired_band_n64_s9901_balanced",
+      "statistics": {
+        "status": "ok",
+        "elapsed_seconds": 0.014046583091840148,
+        "original_strength_sum": 38.01407967232647,
+        "relaxed_strength_sum": 38.01407967232647,
+        "original_break_bound": 0.0487500864188387,
+        "relaxed_break_bound": 0.04875008641883869,
+        "changed_edges": 0
+      },
+      "before_dynamics": {
+        "original_variable": 30,
+        "free_origin": 31,
+        "kernel_support": [
+          30,
+          31
+        ],
+        "absolute_weight_cost": 0.25,
+        "branch_size": 2,
+        "branch_defect_bound": 0.0008613264427217938,
+        "logical_marginal_min": 0.4783399956065055,
+        "physical_marginal_min": 0.42958990908766675,
+        "root": 288,
+        "status": "certified",
+        "gap_upper_per_attempt": 7.952510288930773e-06,
+        "mixing_time_lower_attempts_tv_quarter": 87160.45616326312,
+        "mixing_time_lower_sweeps_tv_quarter": 197.19560217932832
+      },
+      "after_dynamics": {
+        "original_variable": 30,
+        "free_origin": 31,
+        "kernel_support": [
+          30,
+          31
+        ],
+        "absolute_weight_cost": 0.25,
+        "branch_size": 2,
+        "branch_defect_bound": 0.0008613264427217938,
+        "logical_marginal_min": 0.4783399956065055,
+        "physical_marginal_min": 0.42958990908766675,
+        "root": 288,
+        "status": "certified",
+        "gap_upper_per_attempt": 7.952510288930773e-06,
+        "mixing_time_lower_attempts_tv_quarter": 87160.45616326312,
+        "mixing_time_lower_sweeps_tv_quarter": 197.19560217932832
+      },
+      "numeric_certificate": {
+        "float_projected_ground_states_certified": true,
+        "ideal_repair_margins_positive": true,
+        "actual_repair_margins_positive": true,
+        "coefficient_error_l1_exact": [
+          21757,
+          2305843009213693952
+        ],
+        "coefficient_error_l1": 9.435594666706848e-15,
+        "physical_nonoptimal_gap_lower_bound_exact": [
+          4997584731437001,
+          1152921504606846976
+        ],
+        "physical_nonoptimal_gap_lower_bound": 0.004334713778403506,
+        "actual_margin_min": 0.17640438210251014,
+        "range_violations": [],
+        "logical_gibbs_tv_rounding_correction": 3.7742378666834516e-13,
+        "interpretation": "exact logical rational model, actual binary64 alpha and chain couplings as exact parameters; interbranch and field rounding bounded in L1"
+      }
+    }
+  ],
+  "elapsed_seconds": 2.934421374928206
+}

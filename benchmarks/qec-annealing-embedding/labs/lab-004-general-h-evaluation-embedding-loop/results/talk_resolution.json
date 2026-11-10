@@ -1,0 +1,39 @@
+{
+  "id": "T-0008",
+  "title": "General-H evaluation-guided embedding research loop",
+  "status": "open",
+  "priority": "normal",
+  "category": "task",
+  "created": "2026-10-16T08:08:51Z",
+  "updated": "2026-10-16T08:55:36Z",
+  "context": "Benchmark: qec-annealing-embedding. User-authorized scientific follow-up after Lab 002 and Lab 003. Methods are autonomous; no new blind trial or formal difficulty claim.",
+  "benchmark_ids": [
+    "qec-annealing-embedding"
+  ],
+  "related": [
+    "benchmarks/qec-annealing-embedding/labs/lab-004-general-h-evaluation-embedding-loop/REPORT.md"
+  ],
+  "messages": [
+    {
+      "id": "M-001",
+      "author": "user",
+      "type": "advice",
+      "created": "2026-10-16T08:08:51Z",
+      "content": "那下一轮就重点解决这个闭环：针对一般稀疏 H，发展在常规实例上有用、计算成本低的理论评价准则，并用它指导更紧凑的 embedding。让 agent 自主选择方法，不要再只靠特殊 toy case 或某一种 code 的结构来完成任务。"
+    },
+    {
+      "id": "M-002",
+      "author": "agent",
+      "type": "acknowledgment",
+      "created": "2026-10-16T08:09:57Z",
+      "content": "Started Lab 004 under the existing default two-hour budget. The scientific researcher autonomously selects methods to close the general-H evaluation-to-compact-embedding loop, with prior code available read-only, diverse routine instances, matched-budget controls and explicit guarantee scope. This is continuing research, not a fresh blind trial. Deadline 2026-10-16T10:02:44Z. No schedule or QPU run is created."
+    },
+    {
+      "id": "M-003",
+      "author": "agent",
+      "type": "resolution",
+      "created": "2026-10-16T08:55:36Z",
+      "content": "Completed Lab 004 general-H evaluation-guided embedding research. Rooted-tree repair/Gibbs bounds and fixed-tree contact allocation guide compactness on ordinary sparse matrices: uniform-guided/pruned33/36 improve(mean6.57%); fresh LP/pruning7/8 improve(mean5.53%). Independent exact/outward audits pass313 selected programs. Interval bounds prove chain-consistent full-QUBO-ground readout improvement8/12 uniform and11/12 LP, but root-decoded optimum0/12 remains inconclusive. Finite-time QA, real-device performance and arbitrary window-change latency remain open. Full English report: benchmarks/qec-annealing-embedding/labs/lab-004-general-h-evaluation-embedding-loop/REPORT.md. No scientific jobs or automations remain active; the original deadline was retained. Scientific research does not establish calibrated difficulty or expert approval."
+    }
+  ]
+}

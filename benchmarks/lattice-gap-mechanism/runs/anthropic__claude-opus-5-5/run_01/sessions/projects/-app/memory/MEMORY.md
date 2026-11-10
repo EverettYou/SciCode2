@@ -1,0 +1,2 @@
+- [pip DNS workaround](pip-install-dns-workaround.md) — files.pythonhosted.org unresolvable; map it to pypi.org CDN IP in /etc/hosts
+- [Container memory limit](container-memory-limit.md) — 32 GiB cgroup cap despite `free` showing 1.4 TB; silent OOM kills
